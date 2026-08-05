@@ -667,6 +667,34 @@ app.post("/rag/search", (req, res) => {
 app.post(
   "/rag/rebuild",
   requireAdminToken,
+  (req, res) => {
+    if (rebuildInProgress) {
+      return res.status(409).json({
+        error: "An index rebuild is already running"
+      });
+    }
+
+    rebuildInProgress = true;
+
+    res.status(202).json({
+      status: "Index rebuild started"
+    });
+
+    buildIndex()
+      .then(result => {
+        console.log("Background rebuild completed:", result);
+      })
+      .catch(error => {
+        console.error(
+          `Background rebuild failed: ${error.message}`
+        );
+      })
+      .finally(() => {
+        rebuildInProgress = false;
+      });
+  }
+);
+  requireAdminToken,
   async (req, res) => {
     if (rebuildInProgress) {
       return res.status(409).json({
