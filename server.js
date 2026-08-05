@@ -119,7 +119,10 @@ function listFiles(folder) {
     if (!item.isFile()) {
       continue;
     }
-
+if (IGNORE_FILES.has(item.name)) {
+  console.warn(`Skipped configured file: ${fullPath}`);
+  continue;
+}
     const lowerPath = fullPath.toLowerCase();
 
     if (lowerPath.endsWith(".docx") || lowerPath.endsWith(".pdf")) {
