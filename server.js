@@ -69,7 +69,9 @@ const IGNORE_DIRS = new Set([
   "dist",
   "build"
 ]);
-
+const IGNORE_FILES = new Set([
+  "ESA-REG-001_rev5_EN.pdf"
+]);
 /*
  * The searchable index is kept in memory after being loaded.
  */
