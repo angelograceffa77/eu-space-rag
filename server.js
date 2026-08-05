@@ -452,7 +452,7 @@ async function buildIndex() {
   try {
     for (const filePath of files) {
       const displayPath = relativeFilePath(filePath);
-
+      console.log(`Processing: ${displayPath}`);
       try {
         const fileStats = await fs.promises.stat(filePath);
 
