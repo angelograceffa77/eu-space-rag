@@ -694,36 +694,7 @@ app.post(
       });
   }
 );
-  requireAdminToken,
-  async (req, res) => {
-    if (rebuildInProgress) {
-      return res.status(409).json({
-        error: "An index rebuild is already running"
-      });
-    }
-
-    rebuildInProgress = true;
-
-    try {
-      const rebuildResult = await buildIndex();
-
-      return res.json({
-        status: "Index rebuilt",
-        ...rebuildResult
-      });
-    } catch (error) {
-      console.error(`Index rebuild failed: ${error.message}`);
-
-      return res.status(500).json({
-        error: "Index rebuild failed",
-        message: error.message
-      });
-    } finally {
-      rebuildInProgress = false;
-    }
-  }
-);
-
+  
 /*
  * Central error handler.
  */
