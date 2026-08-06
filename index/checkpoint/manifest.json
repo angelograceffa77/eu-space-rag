@@ -1,0 +1,94 @@
+{
+  "version": 4,
+  "type": "checkpoint",
+  "complete": false,
+  "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
+  "createdAt": "2026-08-06T20:57:44.472Z",
+  "repository": "angelograceffa77/eu-space-rag",
+  "branch": "main",
+  "shardSizeMB": 20,
+  "totalChunks": 686,
+  "shards": [
+    {
+      "file": "rag-index-0001.ndjson",
+      "chunks": 686,
+      "bytes": 1019135
+    }
+  ],
+  "sources": {
+    "00_GPT_CONFIGURATION/GPT space - embedded instructions- GPT enhanced.docx": {
+      "sha256": "6ab4451f0cc9f82414de7d54230983b3fccacbb9d2e2e6bca450d696eed85add",
+      "size": 38334,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/ESA/CELEX_22004A0806(03)_EN_TXT.pdf": {
+      "sha256": "d81c783719a5d719c84538d999eee01565ece5841f52a0c38d3dd1c40037d914",
+      "size": 170318,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/ESA/cellar_742587dd-44f3-4527-be91-a2eab676330f.0008.02_DOC_1.pdf": {
+      "sha256": "979ba200110397fcbcf0ac109b630f631548c21e3c072f540f7fef69dd8aeabc",
+      "size": 85924,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/ESA/eli_dec_2024_1542_oj_EN_TXT.pdf": {
+      "sha256": "79fc2fa43137db2754a21ee4de2bc75a93d10655e6694be29f42332357d2d2b5",
+      "size": 876645,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/ESA/ESA_Convention_SP-1344_EN.pdf": {
+      "sha256": "3dd5c09a9e229294a57a0364591e2ef88f574bd53d7b6cfe8dd963911e2ed441",
+      "size": 1010228,
+      "status": "indexed",
+      "chunks": 87
+    },
+    "01_POLICY/ESA/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf": {
+      "sha256": "3a360ea84f46bd502bddd447638f1a71a65ab8699ecb4357261b5f51f89169e3",
+      "size": 719607,
+      "status": "indexed",
+      "chunks": 49
+    },
+    "01_POLICY/ESA/ESA_REG_004,rev.2_EN.pdf": {
+      "sha256": "110c4b44f1be0997a3f2765f9951ae8a0959d94eb7f828a7b7e7a34d98b80105",
+      "size": 513420,
+      "status": "indexed",
+      "chunks": 166
+    },
+    "01_POLICY/ESA/ESA_REG_007_rev_14_EN.pdf": {
+      "sha256": "fb073623b01eccc5297d1004b9df64f6be385805c9f6febad96a49b70f499c64",
+      "size": 1060346,
+      "status": "indexed",
+      "chunks": 310
+    },
+    "01_POLICY/ESA/ESA_REG_009_Geo_return_coeff_(extranet).pdf": {
+      "sha256": "407c7e52c4f0507d7a8a34cf5cfa9ed718b6621ae36c646e539462c9927f4d98",
+      "size": 228898,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "01_POLICY/ESA/ESA-ADMIN-IPOL-LEGI(2021)1_EN_final.pdf": {
+      "sha256": "7a9cbae4896e1599ee5c093c35e9d4046996841dfdcc57a04ab062a087b56116",
+      "size": 175686,
+      "status": "indexed",
+      "chunks": 26
+    }
+  },
+  "report": {
+    "discoveredFiles": 158,
+    "unchangedFiles": 0,
+    "changedFiles": 158,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 148,
+    "deletedFiles": [],
+    "indexedFiles": 10,
+    "skippedFiles": 0,
+    "copiedChunks": 0,
+    "newChunks": 686,
+    "totalChunks": 686,
+    "failures": []
+  }
+}
