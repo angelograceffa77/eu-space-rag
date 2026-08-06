@@ -6,12 +6,20 @@ const os = require("os");
 const crypto = require("crypto");
 const readline = require("readline");
 const { once } = require("events");
-const { fork, execFile } = require("child_process");
+const {
+  fork,
+  execFile
+} = require("child_process");
 const { promisify } = require("util");
 
-const execFileAsync = promisify(execFile);
+const execFileAsync =
+  promisify(execFile);
+
 const ROOT_PATH = __dirname;
 
+/*
+ * Folders containing PDF and DOCX files.
+ */
 const SOURCE_FOLDERS = [
   "00_GPT_CONFIGURATION",
   "01_POLICY",
@@ -19,8 +27,16 @@ const SOURCE_FOLDERS = [
   "03_PROCUREMENT",
   "04_FUNDING",
   "05_COMPANIES"
-].map(folder => path.join(ROOT_PATH, folder));
+].map(folder =>
+  path.join(ROOT_PATH, folder)
+);
 
+/*
+ * Folders that must not be scanned.
+ *
+ * This is only a folder-ignore list.
+ * There is no individual file-ignore list.
+ */
 const IGNORE_DIRS = new Set([
   "node_modules",
   ".git",
@@ -30,44 +46,89 @@ const IGNORE_DIRS = new Set([
   "index"
 ]);
 
+/*
+ * GitHub configuration.
+ */
 const GITHUB_OWNER =
-  process.env.GITHUB_OWNER || "angelograceffa77";
+  process.env.GITHUB_OWNER ||
+  "angelograceffa77";
 
 const GITHUB_REPO =
-  process.env.GITHUB_REPO || "eu-space-rag";
+  process.env.GITHUB_REPO ||
+  "eu-space-rag";
 
 const GITHUB_BRANCH =
-  process.env.GITHUB_BRANCH || "main";
+  process.env.GITHUB_BRANCH ||
+  "main";
 
 const GITHUB_INDEX_DIR =
-  process.env.GITHUB_INDEX_DIR || "index";
+  process.env.GITHUB_INDEX_DIR ||
+  "index";
 
+/*
+ * Maximum approximate size of each NDJSON shard.
+ */
 const SHARD_SIZE_MB = Math.max(
-  Number.parseInt(process.env.SHARD_SIZE_MB || "20", 10),
+  Number.parseInt(
+    process.env.SHARD_SIZE_MB ||
+      "20",
+    10
+  ),
   5
 );
 
-const SHARD_SIZE_BYTES = SHARD_SIZE_MB * 1024 * 1024;
+const SHARD_SIZE_BYTES =
+  SHARD_SIZE_MB *
+  1024 *
+  1024;
 
+/*
+ * Each document is processed in a separate worker.
+ *
+ * If the worker reaches this memory limit,
+ * only that document fails.
+ */
 const WORKER_MEMORY_MB = Math.max(
-  Number.parseInt(process.env.WORKER_MEMORY_MB || "300", 10),
+  Number.parseInt(
+    process.env.WORKER_MEMORY_MB ||
+      "180",
+    10
+  ),
   128
 );
 
+/*
+ * Maximum processing time for one document.
+ *
+ * Default: 15 minutes.
+ */
 const WORKER_TIMEOUT_MS = Math.max(
   Number.parseInt(
-    process.env.WORKER_TIMEOUT_MS || "900000",
+    process.env.WORKER_TIMEOUT_MS ||
+      "900000",
     10
   ),
   30000
 );
 
-const LOCAL_INDEX_ROOT = path.join(
-  os.tmpdir(),
-  "eu-space-rag-index"
-);
+/*
+ * Temporary local index folder on Render.
+ *
+ * GitHub remains the permanent storage.
+ */
+const LOCAL_INDEX_ROOT =
+  path.join(
+    os.tmpdir(),
+    "eu-space-rag-index"
+  );
 
-let chunks = [];
+/*
+ * Only the small manifest is kept in memory.
+ *
+ * The full NDJSON index remains on disk.
+ */
+let manifest = null;
+
 let rebuildInProgress = false;
 let indexLoadedAt = null;
 let lastRebuildAt = null;
@@ -75,64 +136,116 @@ let lastPublishedAt = null;
 let lastError = null;
 let lastReport = null;
 
+/*
+ * Return current server and index status.
+ */
 function getStatus() {
   return {
-    indexedChunks: chunks.length,
-    indexLoaded: chunks.length > 0,
+    indexedChunks:
+      manifest?.totalChunks || 0,
+
+    indexLoaded:
+      Boolean(
+        manifest &&
+        manifest.totalChunks > 0
+      ),
+
     indexLoadedAt,
     rebuildInProgress,
     lastRebuildAt,
     lastPublishedAt,
     lastError,
     lastReport,
+
     githubIndexDirectory:
-      `${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_INDEX_DIR}`,
-    shardSizeMB: SHARD_SIZE_MB
+      `${GITHUB_OWNER}/` +
+      `${GITHUB_REPO}/` +
+      `${GITHUB_INDEX_DIR}`,
+
+    shardSizeMB:
+      SHARD_SIZE_MB,
+
+    workerMemoryMB:
+      WORKER_MEMORY_MB,
+
+    workerTimeoutMS:
+      WORKER_TIMEOUT_MS
   };
 }
 
+/*
+ * Return a safe repository-relative file path.
+ */
 function relativeFilePath(filePath) {
   return path
-    .relative(ROOT_PATH, filePath)
+    .relative(
+      ROOT_PATH,
+      filePath
+    )
     .replace(/\\/g, "/");
 }
 
+/*
+ * Find all PDF and DOCX files recursively.
+ */
 function listFiles(folder) {
   const results = [];
 
-  if (!fs.existsSync(folder)) return results;
+  if (!fs.existsSync(folder)) {
+    return results;
+  }
 
   let items;
 
   try {
-    items = fs.readdirSync(folder, {
-      withFileTypes: true
-    });
+    items =
+      fs.readdirSync(
+        folder,
+        {
+          withFileTypes: true
+        }
+      );
   } catch (error) {
     console.error(
-      `Could not read folder ${folder}: ${error.message}`
+      `Could not read folder ` +
+      `${folder}: ` +
+      `${error.message}`
     );
+
     return results;
   }
 
   for (const item of items) {
-    const fullPath = path.join(folder, item.name);
+    const fullPath =
+      path.join(
+        folder,
+        item.name
+      );
 
     if (item.isDirectory()) {
-      if (!IGNORE_DIRS.has(item.name)) {
-        results.push(...listFiles(fullPath));
+      if (
+        !IGNORE_DIRS.has(
+          item.name
+        )
+      ) {
+        results.push(
+          ...listFiles(fullPath)
+        );
       }
 
       continue;
     }
 
-    if (!item.isFile()) continue;
+    if (!item.isFile()) {
+      continue;
+    }
 
-    const lower = item.name.toLowerCase();
+    const lowerName =
+      item.name.toLowerCase();
 
     if (
-      lower.endsWith(".pdf") ||
-      lower.endsWith(".docx")
+      lowerName.endsWith(".pdf") ||
+      lowerName.endsWith(".docx")
     ) {
       results.push(fullPath);
     }
@@ -141,142 +254,395 @@ function listFiles(folder) {
   return results;
 }
 
+/*
+ * Convert a search query into terms.
+ */
 function getQueryTerms(query) {
   return String(query || "")
     .toLowerCase()
-    .split(/[^\p{L}\p{N}_-]+/u)
-    .map(term => term.trim())
-    .filter(term => term.length > 2);
+    .split(
+      /[^\p{L}\p{N}_-]+/u
+    )
+    .map(term =>
+      term.trim()
+    )
+    .filter(term =>
+      term.length > 2
+    );
 }
 
-function countOccurrences(text, term) {
+/*
+ * Count occurrences without using a regular expression.
+ */
+function countOccurrences(
+  text,
+  term
+) {
   let count = 0;
   let position = 0;
 
   while (true) {
-    position = text.indexOf(term, position);
+    position =
+      text.indexOf(
+        term,
+        position
+      );
 
-    if (position === -1) return count;
+    if (position === -1) {
+      return count;
+    }
 
     count += 1;
     position += term.length;
   }
 }
 
-function searchIndex(query, topK) {
-  const terms = getQueryTerms(query);
+/*
+ * Add one search result while keeping only
+ * the best topK results in memory.
+ */
+function addSearchResult(
+  results,
+  result,
+  topK
+) {
+  results.push(result);
 
-  if (terms.length === 0) return [];
+  results.sort(
+    (a, b) =>
+      b.score - a.score
+  );
 
-  const results = [];
+  if (
+    results.length >
+    topK
+  ) {
+    results.length = topK;
+  }
+}
 
-  for (const chunk of chunks) {
-    const text = chunk.content.toLowerCase();
-    let score = 0;
+/*
+ * Search the NDJSON shard files line by line.
+ *
+ * The full index is never loaded into memory.
+ */
+async function searchIndex(
+  query,
+  topK
+) {
+  const terms =
+    getQueryTerms(query);
 
-    for (const term of terms) {
-      score += countOccurrences(text, term);
+  if (
+    terms.length === 0 ||
+    !manifest
+  ) {
+    return [];
+  }
+
+  const bestResults = [];
+
+  for (
+    const shard
+    of manifest.shards || []
+  ) {
+    const shardPath =
+      path.join(
+        LOCAL_INDEX_ROOT,
+        shard.file
+      );
+
+    if (
+      !fs.existsSync(shardPath)
+    ) {
+      console.warn(
+        `Missing local shard: ` +
+        `${shard.file}`
+      );
+
+      continue;
     }
 
-    if (score > 0) {
-      results.push({
-        file: chunk.file,
-        folder: chunk.folder,
-        content: chunk.content,
-        score
+    const input =
+      fs.createReadStream(
+        shardPath,
+        {
+          encoding: "utf8"
+        }
+      );
+
+    const reader =
+      readline.createInterface({
+        input,
+        crlfDelay: Infinity
       });
+
+    try {
+      for await (
+        const line
+        of reader
+      ) {
+        const trimmed =
+          line.trim();
+
+        if (!trimmed) {
+          continue;
+        }
+
+        let item;
+
+        try {
+          item =
+            JSON.parse(trimmed);
+        } catch {
+          continue;
+        }
+
+        if (
+          typeof item.content !==
+            "string" ||
+          typeof item.file !==
+            "string"
+        ) {
+          continue;
+        }
+
+        const text =
+          item.content
+            .toLowerCase();
+
+        let score = 0;
+
+        for (
+          const term
+          of terms
+        ) {
+          score +=
+            countOccurrences(
+              text,
+              term
+            );
+        }
+
+        if (score <= 0) {
+          continue;
+        }
+
+        addSearchResult(
+          bestResults,
+          {
+            file:
+              item.file,
+
+            folder:
+              item.folder,
+
+            content:
+              item.content,
+
+            score
+          },
+          topK
+        );
+      }
+    } finally {
+      reader.close();
+      input.destroy();
     }
   }
 
-  results.sort((a, b) => b.score - a.score);
-
-  return results.slice(0, topK);
+  return bestResults;
 }
 
-async function hashFile(filePath) {
-  return new Promise((resolve, reject) => {
-    const hash = crypto.createHash("sha256");
-    const input = fs.createReadStream(filePath);
+/*
+ * Calculate a SHA-256 hash without loading
+ * the full file into memory.
+ */
+async function hashFile(
+  filePath
+) {
+  return new Promise(
+    (resolve, reject) => {
+      const hash =
+        crypto.createHash(
+          "sha256"
+        );
 
-    input.on("error", reject);
-    input.on("data", data => hash.update(data));
-    input.on("end", () => resolve(hash.digest("hex")));
-  });
+      const input =
+        fs.createReadStream(
+          filePath
+        );
+
+      input.on(
+        "error",
+        reject
+      );
+
+      input.on(
+        "data",
+        data =>
+          hash.update(data)
+      );
+
+      input.on(
+        "end",
+        () =>
+          resolve(
+            hash.digest("hex")
+          )
+      );
+    }
+  );
 }
 
-async function createSourceMap(files) {
-  const result = {};
+/*
+ * Build a map of current source documents.
+ */
+async function createSourceMap(
+  files
+) {
+  const sources = {};
 
-  for (const filePath of files) {
-    const displayPath = relativeFilePath(filePath);
+  for (
+    const filePath
+    of files
+  ) {
+    const displayPath =
+      relativeFilePath(
+        filePath
+      );
 
     try {
-      const stats = await fs.promises.stat(filePath);
+      const stats =
+        await fs.promises.stat(
+          filePath
+        );
 
-      result[displayPath] = {
-        absolutePath: filePath,
-        sha256: await hashFile(filePath),
-        size: stats.size
+      sources[displayPath] = {
+        absolutePath:
+          filePath,
+
+        sha256:
+          await hashFile(
+            filePath
+          ),
+
+        size:
+          stats.size
       };
     } catch (error) {
       console.error(
-        `Could not inspect ${displayPath}: ${error.message}`
+        `Could not inspect ` +
+        `${displayPath}: ` +
+        `${error.message}`
       );
     }
   }
 
-  return result;
+  return sources;
 }
 
-function rawGitHubUrl(repositoryPath) {
-  const encodedPath = repositoryPath
-    .split("/")
-    .map(encodeURIComponent)
-    .join("/");
+/*
+ * Create a raw GitHub URL.
+ */
+function rawGitHubUrl(
+  repositoryPath
+) {
+  const encodedPath =
+    repositoryPath
+      .split("/")
+      .map(
+        encodeURIComponent
+      )
+      .join("/");
 
   return (
-    `https://raw.githubusercontent.com/` +
-    `${encodeURIComponent(GITHUB_OWNER)}/` +
-    `${encodeURIComponent(GITHUB_REPO)}/` +
-    `${encodeURIComponent(GITHUB_BRANCH)}/` +
+    "https://raw.githubusercontent.com/" +
+    `${encodeURIComponent(
+      GITHUB_OWNER
+    )}/` +
+    `${encodeURIComponent(
+      GITHUB_REPO
+    )}/` +
+    `${encodeURIComponent(
+      GITHUB_BRANCH
+    )}/` +
     encodedPath
   );
 }
 
-async function downloadFile(url, destination) {
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent": "eu-space-rag-render"
-    }
-  });
+/*
+ * Download one file using streaming.
+ */
+async function downloadFile(
+  url,
+  destination
+) {
+  const response =
+    await fetch(
+      url,
+      {
+        headers: {
+          "User-Agent":
+            "eu-space-rag-render"
+        },
 
-  if (response.status === 404) return false;
+        redirect:
+          "follow"
+      }
+    );
 
-  if (!response.ok || !response.body) {
+  if (
+    response.status === 404
+  ) {
+    return false;
+  }
+
+  if (
+    !response.ok ||
+    !response.body
+  ) {
     throw new Error(
-      `Download failed: HTTP ${response.status}`
+      `Download failed: ` +
+      `HTTP ${response.status}`
     );
   }
 
-  await fs.promises.mkdir(path.dirname(destination), {
-    recursive: true
-  });
+  await fs.promises.mkdir(
+    path.dirname(
+      destination
+    ),
+    {
+      recursive: true
+    }
+  );
 
-  const output = fs.createWriteStream(destination, {
-    flags: "w"
-  });
+  const output =
+    fs.createWriteStream(
+      destination,
+      {
+        flags: "w"
+      }
+    );
 
   try {
-    for await (const data of response.body) {
-      if (!output.write(data)) {
-        await once(output, "drain");
+    for await (
+      const data
+      of response.body
+    ) {
+      if (
+        !output.write(data)
+      ) {
+        await once(
+          output,
+          "drain"
+        );
       }
     }
 
-    await new Promise((resolve, reject) => {
-      output.once("error", reject);
-      output.end(resolve);
-    });
+    await closeWriteStream(
+      output
+    );
 
     return true;
   } catch (error) {
@@ -285,335 +651,664 @@ async function downloadFile(url, destination) {
   }
 }
 
+/*
+ * Close a writable stream safely.
+ */
+function closeWriteStream(
+  stream
+) {
+  return new Promise(
+    (resolve, reject) => {
+      stream.once(
+        "error",
+        reject
+      );
+
+      stream.end(resolve);
+    }
+  );
+}
+
+/*
+ * Download the manifest and all index shards
+ * from GitHub.
+ *
+ * Only the manifest is kept in memory.
+ */
 async function loadIndexFromGitHub() {
-  await fs.promises.rm(LOCAL_INDEX_ROOT, {
-    recursive: true,
-    force: true
-  });
-
-  await fs.promises.mkdir(LOCAL_INDEX_ROOT, {
-    recursive: true
-  });
-
-  const manifestPath = path.join(
+  await fs.promises.rm(
     LOCAL_INDEX_ROOT,
-    "manifest.json"
+    {
+      recursive: true,
+      force: true
+    }
   );
 
-  const found = await downloadFile(
-    rawGitHubUrl(`${GITHUB_INDEX_DIR}/manifest.json`),
-    manifestPath
+  await fs.promises.mkdir(
+    LOCAL_INDEX_ROOT,
+    {
+      recursive: true
+    }
   );
 
-  if (!found) {
-    chunks = [];
+  const manifestPath =
+    path.join(
+      LOCAL_INDEX_ROOT,
+      "manifest.json"
+    );
+
+  const manifestFound =
+    await downloadFile(
+      rawGitHubUrl(
+        `${GITHUB_INDEX_DIR}/` +
+        `manifest.json`
+      ),
+      manifestPath
+    );
+
+  if (!manifestFound) {
+    manifest = null;
     indexLoadedAt = null;
+
     return false;
   }
 
-  const manifest = JSON.parse(
-    await fs.promises.readFile(manifestPath, "utf8")
-  );
-
-  const loaded = [];
-
-  for (const shard of manifest.shards || []) {
-    const localShard = path.join(
-      LOCAL_INDEX_ROOT,
-      shard.file
+  const downloadedManifest =
+    JSON.parse(
+      await fs.promises.readFile(
+        manifestPath,
+        "utf8"
+      )
     );
 
-    await downloadFile(
-      rawGitHubUrl(
-        `${GITHUB_INDEX_DIR}/${shard.file}`
-      ),
-      localShard
+  if (
+    !Array.isArray(
+      downloadedManifest.shards
+    )
+  ) {
+    throw new Error(
+      "The GitHub manifest has no valid shards list."
     );
+  }
 
-    const input = fs.createReadStream(localShard, {
-      encoding: "utf8"
-    });
+  for (
+    const shard
+    of downloadedManifest.shards
+  ) {
+    if (
+      typeof shard.file !==
+      "string"
+    ) {
+      throw new Error(
+        "The GitHub manifest contains an invalid shard."
+      );
+    }
 
-    const reader = readline.createInterface({
-      input,
-      crlfDelay: Infinity
-    });
+    const localShard =
+      path.join(
+        LOCAL_INDEX_ROOT,
+        shard.file
+      );
 
-    for await (const line of reader) {
-      const trimmed = line.trim();
+    const shardFound =
+      await downloadFile(
+        rawGitHubUrl(
+          `${GITHUB_INDEX_DIR}/` +
+          `${shard.file}`
+        ),
+        localShard
+      );
 
-      if (!trimmed) continue;
-
-      try {
-        const item = JSON.parse(trimmed);
-
-        if (
-          typeof item.file === "string" &&
-          typeof item.folder === "string" &&
-          typeof item.content === "string"
-        ) {
-          loaded.push(item);
-        }
-      } catch {
-        // Ignore one damaged line and continue.
-      }
+    if (!shardFound) {
+      throw new Error(
+        `Missing GitHub shard: ` +
+        `${shard.file}`
+      );
     }
   }
 
-  chunks = loaded;
-  indexLoadedAt = new Date().toISOString();
+  manifest =
+    downloadedManifest;
 
-  return chunks.length > 0;
-}
+  indexLoadedAt =
+    new Date()
+      .toISOString();
 
-async function readOldManifest() {
-  const manifestPath = path.join(
-    LOCAL_INDEX_ROOT,
-    "manifest.json"
+  console.log(
+    `Loaded index manifest with ` +
+    `${manifest.totalChunks || 0} ` +
+    `chunks in ` +
+    `${manifest.shards.length} ` +
+    `shard files.`
   );
 
-  if (!fs.existsSync(manifestPath)) return null;
+  return (
+    manifest.totalChunks > 0
+  );
+}
 
-  try {
-    return JSON.parse(
-      await fs.promises.readFile(manifestPath, "utf8")
+/*
+ * Write one NDJSON line while respecting
+ * stream backpressure.
+ */
+async function writeLine(
+  stream,
+  value
+) {
+  const line =
+    typeof value === "string"
+      ? `${value}\n`
+      : `${JSON.stringify(
+          value
+        )}\n`;
+
+  if (
+    !stream.write(
+      line,
+      "utf8"
+    )
+  ) {
+    await once(
+      stream,
+      "drain"
     );
-  } catch {
-    return null;
   }
 }
 
-async function writeLine(stream, value) {
-  if (!stream.write(`${value}\n`, "utf8")) {
-    await once(stream, "drain");
+/*
+ * Writer that automatically creates new
+ * shard files when the current shard reaches
+ * the configured size.
+ */
+class ShardWriter {
+  constructor(outputDirectory) {
+    this.outputDirectory =
+      outputDirectory;
+
+    this.shards = [];
+    this.shardNumber = 0;
+    this.output = null;
+    this.fileName = "";
+    this.bytes = 0;
+    this.chunkCount = 0;
+    this.totalChunks = 0;
+  }
+
+  async openShard() {
+    this.shardNumber += 1;
+
+    this.fileName =
+      "rag-index-" +
+      String(
+        this.shardNumber
+      ).padStart(
+        4,
+        "0"
+      ) +
+      ".ndjson";
+
+    this.output =
+      fs.createWriteStream(
+        path.join(
+          this.outputDirectory,
+          this.fileName
+        ),
+        {
+          encoding: "utf8",
+          flags: "w"
+        }
+      );
+
+    this.bytes = 0;
+    this.chunkCount = 0;
+  }
+
+  async closeShard() {
+    if (!this.output) {
+      return;
+    }
+
+    await closeWriteStream(
+      this.output
+    );
+
+    this.shards.push({
+      file:
+        this.fileName,
+
+      chunks:
+        this.chunkCount,
+
+      bytes:
+        this.bytes
+    });
+
+    this.output = null;
+  }
+
+  async writeItem(item) {
+    const line =
+      `${JSON.stringify(
+        item
+      )}\n`;
+
+    const lineBytes =
+      Buffer.byteLength(
+        line,
+        "utf8"
+      );
+
+    if (!this.output) {
+      await this.openShard();
+    }
+
+    if (
+      this.chunkCount > 0 &&
+      this.bytes +
+        lineBytes >
+        SHARD_SIZE_BYTES
+    ) {
+      await this.closeShard();
+      await this.openShard();
+    }
+
+    if (
+      !this.output.write(
+        line,
+        "utf8"
+      )
+    ) {
+      await once(
+        this.output,
+        "drain"
+      );
+    }
+
+    this.bytes +=
+      lineBytes;
+
+    this.chunkCount += 1;
+    this.totalChunks += 1;
+  }
+
+  async finish() {
+    await this.closeShard();
+
+    return this.shards;
   }
 }
 
+/*
+ * Copy unchanged chunks from the old shards
+ * directly into the new shard writer.
+ *
+ * No large array is created.
+ */
+async function copyUnchangedChunks(
+  oldShardPaths,
+  unchangedFiles,
+  writer
+) {
+  let copiedChunks = 0;
+
+  if (
+    unchangedFiles.size === 0
+  ) {
+    return copiedChunks;
+  }
+
+  for (
+    const shardPath
+    of oldShardPaths
+  ) {
+    if (
+      !fs.existsSync(
+        shardPath
+      )
+    ) {
+      continue;
+    }
+
+    const input =
+      fs.createReadStream(
+        shardPath,
+        {
+          encoding: "utf8"
+        }
+      );
+
+    const reader =
+      readline.createInterface({
+        input,
+        crlfDelay: Infinity
+      });
+
+    try {
+      for await (
+        const line
+        of reader
+      ) {
+        const trimmed =
+          line.trim();
+
+        if (!trimmed) {
+          continue;
+        }
+
+        let item;
+
+        try {
+          item =
+            JSON.parse(trimmed);
+        } catch {
+          continue;
+        }
+
+        if (
+          unchangedFiles.has(
+            item.file
+          )
+        ) {
+          await writer.writeItem(
+            item
+          );
+
+          copiedChunks += 1;
+        }
+      }
+    } finally {
+      reader.close();
+      input.destroy();
+    }
+  }
+
+  return copiedChunks;
+}
+
+/*
+ * Process one source file in a separate
+ * Node worker process.
+ */
 function processFileInWorker(
   filePath,
   displayPath,
   outputPath
 ) {
-  return new Promise(resolve => {
-    const child = fork(
-      path.join(ROOT_PATH, "index-worker.js"),
-      [filePath, outputPath, displayPath],
-      {
-        execArgv: [
-          `--max-old-space-size=${WORKER_MEMORY_MB}`
-        ],
-        stdio: [
-          "ignore",
-          "inherit",
-          "inherit",
-          "ipc"
-        ]
-      }
-    );
+  return new Promise(
+    resolve => {
+      const workerPath =
+        path.join(
+          ROOT_PATH,
+          "index-worker.js"
+        );
 
-    let finished = false;
-    let message = null;
+      const child =
+        fork(
+          workerPath,
+          [
+            filePath,
+            outputPath,
+            displayPath
+          ],
+          {
+            execArgv: [
+              `--max-old-space-size=` +
+              `${WORKER_MEMORY_MB}`
+            ],
 
-    const finish = result => {
-      if (finished) return;
+            stdio: [
+              "ignore",
+              "inherit",
+              "inherit",
+              "ipc"
+            ]
+          }
+        );
 
-      finished = true;
-      clearTimeout(timer);
-      resolve(result);
-    };
+      let finished = false;
+      let workerMessage = null;
 
-    const timer = setTimeout(() => {
-      child.kill("SIGKILL");
+      const finish =
+        result => {
+          if (finished) {
+            return;
+          }
 
-      finish({
-        ok: false,
-        reason: `Worker exceeded ${WORKER_TIMEOUT_MS} ms`
-      });
-    }, WORKER_TIMEOUT_MS);
+          finished = true;
+          clearTimeout(timer);
+          resolve(result);
+        };
 
-    child.on("message", value => {
-      message = value;
-    });
+      const timer =
+        setTimeout(
+          () => {
+            child.kill(
+              "SIGKILL"
+            );
 
-    child.on("error", error => {
-      finish({
-        ok: false,
-        reason: error.message
-      });
-    });
+            finish({
+              ok: false,
 
-    child.on("exit", (code, signal) => {
-      if (code === 0 && message?.ok) {
-        finish({
-          ok: true,
-          chunks: message.chunks
-        });
-      } else {
-        finish({
-          ok: false,
-          reason:
-            message?.error ||
-            `Worker stopped with code ${code}, signal ${signal}`
-        });
-      }
-    });
-  });
+              reason:
+                `Worker exceeded ` +
+                `${WORKER_TIMEOUT_MS} ms`
+            });
+          },
+          WORKER_TIMEOUT_MS
+        );
+
+      child.on(
+        "message",
+        message => {
+          workerMessage =
+            message;
+        }
+      );
+
+      child.on(
+        "error",
+        error => {
+          finish({
+            ok: false,
+            reason:
+              error.message
+          });
+        }
+      );
+
+      child.on(
+        "exit",
+        (
+          code,
+          signal
+        ) => {
+          if (
+            code === 0 &&
+            workerMessage?.ok
+          ) {
+            finish({
+              ok: true,
+
+              chunks:
+                workerMessage.chunks
+            });
+
+            return;
+          }
+
+          finish({
+            ok: false,
+
+            reason:
+              workerMessage?.error ||
+              `Worker stopped with ` +
+              `code ${code}, ` +
+              `signal ${signal}`
+          });
+        }
+      );
+    }
+  );
 }
 
-async function readAllExistingChunks() {
-  const all = [];
+/*
+ * Copy one worker NDJSON file into the
+ * shard writer line by line.
+ */
+async function appendWorkerFile(
+  workerFile,
+  writer
+) {
+  let addedChunks = 0;
 
-  if (!fs.existsSync(LOCAL_INDEX_ROOT)) return all;
-
-  const files = await fs.promises.readdir(
-    LOCAL_INDEX_ROOT
-  );
-
-  const shards = files
-    .filter(name => /^rag-index-\d+\.ndjson$/.test(name))
-    .sort();
-
-  for (const file of shards) {
-    const input = fs.createReadStream(
-      path.join(LOCAL_INDEX_ROOT, file),
-      { encoding: "utf8" }
+  const input =
+    fs.createReadStream(
+      workerFile,
+      {
+        encoding: "utf8"
+      }
     );
 
-    const reader = readline.createInterface({
+  const reader =
+    readline.createInterface({
       input,
       crlfDelay: Infinity
     });
 
-    for await (const line of reader) {
-      const trimmed = line.trim();
+  try {
+    for await (
+      const line
+      of reader
+    ) {
+      const trimmed =
+        line.trim();
 
-      if (!trimmed) continue;
+      if (!trimmed) {
+        continue;
+      }
+
+      let item;
 
       try {
-        all.push(JSON.parse(trimmed));
+        item =
+          JSON.parse(trimmed);
       } catch {
-        // Ignore damaged lines.
+        continue;
       }
+
+      if (
+        typeof item.file !==
+          "string" ||
+        typeof item.content !==
+          "string"
+      ) {
+        continue;
+      }
+
+      await writer.writeItem(
+        item
+      );
+
+      addedChunks += 1;
     }
+  } finally {
+    reader.close();
+    input.destroy();
   }
 
-  return all;
+  return addedChunks;
 }
 
-async function writeShards(
-  buildDir,
-  chunkItems
-) {
-  const shards = [];
-  let shardNumber = 1;
-  let shardBytes = 0;
-  let shardChunks = 0;
-  let output = null;
-  let fileName = "";
-
-  async function openShard() {
-    fileName =
-      `rag-index-${String(shardNumber).padStart(4, "0")}.ndjson`;
-
-    output = fs.createWriteStream(
-      path.join(buildDir, fileName),
-      {
-        encoding: "utf8",
-        flags: "w"
-      }
-    );
-
-    shardBytes = 0;
-    shardChunks = 0;
-  }
-
-  async function closeShard() {
-    if (!output) return;
-
-    await new Promise((resolve, reject) => {
-      output.once("error", reject);
-      output.end(resolve);
-    });
-
-    shards.push({
-      file: fileName,
-      chunks: shardChunks,
-      bytes: shardBytes
-    });
-
-    output = null;
-    shardNumber += 1;
-  }
-
-  await openShard();
-
-  for (const item of chunkItems) {
-    const line = `${JSON.stringify(item)}\n`;
-    const bytes = Buffer.byteLength(line, "utf8");
-
-    if (
-      shardChunks > 0 &&
-      shardBytes + bytes > SHARD_SIZE_BYTES
-    ) {
-      await closeShard();
-      await openShard();
-    }
-
-    if (!output.write(line, "utf8")) {
-      await once(output, "drain");
-    }
-
-    shardBytes += bytes;
-    shardChunks += 1;
-  }
-
-  await closeShard();
-
-  return shards;
-}
-
+/*
+ * Create Git authentication environment.
+ *
+ * The token is not written into the repository URL.
+ */
 function gitEnvironment() {
-  const token = process.env.GITHUB_TOKEN;
+  const token =
+    process.env.GITHUB_TOKEN;
 
   if (!token) {
-    throw new Error("GITHUB_TOKEN is not configured");
+    throw new Error(
+      "GITHUB_TOKEN is not configured"
+    );
   }
 
-  const basic = Buffer.from(
-    `x-access-token:${token}`,
-    "utf8"
-  ).toString("base64");
+  const basic =
+    Buffer.from(
+      `x-access-token:${token}`,
+      "utf8"
+    ).toString(
+      "base64"
+    );
 
   return {
     ...process.env,
-    GIT_CONFIG_COUNT: "1",
-    GIT_CONFIG_KEY_0: "http.extraHeader",
+
+    GIT_CONFIG_COUNT:
+      "1",
+
+    GIT_CONFIG_KEY_0:
+      "http.extraHeader",
+
     GIT_CONFIG_VALUE_0:
       `AUTHORIZATION: basic ${basic}`,
-    GIT_TERMINAL_PROMPT: "0"
+
+    GIT_TERMINAL_PROMPT:
+      "0"
   };
 }
 
-async function runGit(args, cwd) {
-  const result = await execFileAsync(
-    "git",
-    args,
-    {
-      cwd,
-      env: gitEnvironment(),
-      maxBuffer: 20 * 1024 * 1024
-    }
-  );
+/*
+ * Run one Git command.
+ */
+async function runGit(
+  args,
+  workingDirectory
+) {
+  const result =
+    await execFileAsync(
+      "git",
+      args,
+      {
+        cwd:
+          workingDirectory,
+
+        env:
+          gitEnvironment(),
+
+        maxBuffer:
+          20 *
+          1024 *
+          1024
+      }
+    );
 
   return result.stdout.trim();
 }
 
-async function publishIndexToGitHub(buildDir) {
-  const cloneDir = await fs.promises.mkdtemp(
-    path.join(os.tmpdir(), "rag-publish-")
-  );
+/*
+ * Publish the completed index directory to GitHub.
+ *
+ * The current Render source directory is not modified.
+ */
+async function publishIndexToGitHub(
+  outputDirectory
+) {
+  const cloneDirectory =
+    await fs.promises.mkdtemp(
+      path.join(
+        os.tmpdir(),
+        "rag-publish-"
+      )
+    );
 
   try {
+    const repositoryUrl =
+      `https://github.com/` +
+      `${GITHUB_OWNER}/` +
+      `${GITHUB_REPO}.git`;
+
     await runGit(
       [
         "clone",
@@ -621,36 +1316,48 @@ async function publishIndexToGitHub(buildDir) {
         "1",
         "--branch",
         GITHUB_BRANCH,
-        `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}.git`,
-        cloneDir
+        repositoryUrl,
+        cloneDirectory
       ],
       os.tmpdir()
     );
 
-    const destination = path.join(
-      cloneDir,
-      GITHUB_INDEX_DIR
+    const destination =
+      path.join(
+        cloneDirectory,
+        GITHUB_INDEX_DIR
+      );
+
+    /*
+     * Remove the old index folder inside
+     * the temporary clone.
+     */
+    await fs.promises.rm(
+      destination,
+      {
+        recursive: true,
+        force: true
+      }
     );
 
-    await fs.promises.rm(destination, {
-      recursive: true,
-      force: true
-    });
-
-    await fs.promises.mkdir(destination, {
-      recursive: true
-    });
-
-    for (const name of await fs.promises.readdir(buildDir)) {
-      await fs.promises.copyFile(
-        path.join(buildDir, name),
-        path.join(destination, name)
-      );
-    }
+    /*
+     * Copy the completed index folder.
+     */
+    await fs.promises.cp(
+      outputDirectory,
+      destination,
+      {
+        recursive: true
+      }
+    );
 
     await runGit(
-      ["config", "user.name", "EU Space RAG Bot"],
-      cloneDir
+      [
+        "config",
+        "user.name",
+        "EU Space RAG Bot"
+      ],
+      cloneDirectory
     );
 
     await runGit(
@@ -659,17 +1366,33 @@ async function publishIndexToGitHub(buildDir) {
         "user.email",
         "eu-space-rag-bot@users.noreply.github.com"
       ],
-      cloneDir
+      cloneDirectory
     );
 
-    await runGit(["add", GITHUB_INDEX_DIR], cloneDir);
-
-    const status = await runGit(
-      ["status", "--porcelain"],
-      cloneDir
+    await runGit(
+      [
+        "add",
+        GITHUB_INDEX_DIR
+      ],
+      cloneDirectory
     );
 
-    if (!status) return false;
+    const gitStatus =
+      await runGit(
+        [
+          "status",
+          "--porcelain"
+        ],
+        cloneDirectory
+      );
+
+    if (!gitStatus) {
+      console.log(
+        "GitHub index is already up to date."
+      );
+
+      return false;
+    }
 
     await runGit(
       [
@@ -677,7 +1400,7 @@ async function publishIndexToGitHub(buildDir) {
         "-m",
         "Update RAG index [skip render]"
       ],
-      cloneDir
+      cloneDirectory
     );
 
     await runGit(
@@ -686,20 +1409,40 @@ async function publishIndexToGitHub(buildDir) {
         "origin",
         `HEAD:${GITHUB_BRANCH}`
       ],
-      cloneDir
+      cloneDirectory
     );
 
-    lastPublishedAt = new Date().toISOString();
+    lastPublishedAt =
+      new Date()
+        .toISOString();
+
     return true;
   } finally {
-    await fs.promises.rm(cloneDir, {
-      recursive: true,
-      force: true
-    });
+    await fs.promises.rm(
+      cloneDirectory,
+      {
+        recursive: true,
+        force: true
+      }
+    );
   }
 }
 
-async function rebuildIndex({ publish = true } = {}) {
+/*
+ * Rebuild the complete index.
+ *
+ * Low-memory process:
+ *
+ * 1. Hash source files one by one.
+ * 2. Copy unchanged chunks line by line.
+ * 3. Process changed documents one at a time.
+ * 4. Write chunks directly into shard files.
+ * 5. Never keep the complete index in memory.
+ * 6. Upload only after the new index is complete.
+ */
+async function rebuildIndex({
+  publish = true
+} = {}) {
   if (rebuildInProgress) {
     throw new Error(
       "An index rebuild is already running"
@@ -709,198 +1452,491 @@ async function rebuildIndex({ publish = true } = {}) {
   rebuildInProgress = true;
   lastError = null;
 
-  const buildRoot = await fs.promises.mkdtemp(
-    path.join(os.tmpdir(), "rag-build-")
-  );
+  const buildRoot =
+    await fs.promises.mkdtemp(
+      path.join(
+        os.tmpdir(),
+        "rag-build-"
+      )
+    );
 
   try {
-    const oldManifest = await readOldManifest();
-    const oldSources = oldManifest?.sources || {};
-    const oldChunks = await readAllExistingChunks();
+    /*
+     * Use the manifest and shards already
+     * downloaded from GitHub.
+     */
+    const oldManifest =
+      manifest;
 
-    const files = SOURCE_FOLDERS
-      .flatMap(folder => listFiles(folder))
-      .sort((a, b) => a.localeCompare(b));
+    const oldSources =
+      oldManifest?.sources ||
+      {};
 
-    const currentSources = await createSourceMap(files);
-    const unchanged = new Set();
-    const changed = [];
+    const oldShardPaths =
+      (
+        oldManifest?.shards ||
+        []
+      ).map(
+        shard =>
+          path.join(
+            LOCAL_INDEX_ROOT,
+            shard.file
+          )
+      );
 
-    for (const [name, source] of Object.entries(currentSources)) {
+    /*
+     * Find all current source documents.
+     */
+    const files =
+      SOURCE_FOLDERS
+        .flatMap(
+          folder =>
+            listFiles(folder)
+        )
+        .sort(
+          (a, b) =>
+            a.localeCompare(b)
+        );
+
+    console.log(
+      `Found ${files.length} ` +
+      `PDF/DOCX files.`
+    );
+
+    /*
+     * Calculate source hashes.
+     */
+    const currentSources =
+      await createSourceMap(
+        files
+      );
+
+    const unchangedFiles =
+      new Set();
+
+    const changedFiles = [];
+
+    for (
+      const [
+        displayPath,
+        source
+      ]
+      of Object.entries(
+        currentSources
+      )
+    ) {
       if (
-        oldSources[name]?.sha256 === source.sha256 &&
-        oldSources[name]?.status === "indexed"
+        oldSources[
+          displayPath
+        ]?.sha256 ===
+          source.sha256 &&
+        oldSources[
+          displayPath
+        ]?.status ===
+          "indexed"
       ) {
-        unchanged.add(name);
+        unchangedFiles.add(
+          displayPath
+        );
       } else {
-        changed.push(name);
+        changedFiles.push(
+          displayPath
+        );
       }
     }
 
-    const newChunkItems = oldChunks.filter(
-      item => unchanged.has(item.file)
+    /*
+     * Files present in the old manifest
+     * but not in the repository are deleted.
+     */
+    const deletedFiles =
+      Object.keys(
+        oldSources
+      ).filter(
+        fileName =>
+          !currentSources[
+            fileName
+          ]
+      );
+
+    const outputDirectory =
+      path.join(
+        buildRoot,
+        "index-output"
+      );
+
+    await fs.promises.mkdir(
+      outputDirectory,
+      {
+        recursive: true
+      }
     );
+
+    const writer =
+      new ShardWriter(
+        outputDirectory
+      );
 
     const sourceReport = {};
     const failures = [];
 
-    for (const name of unchanged) {
-      sourceReport[name] = {
-        ...oldSources[name],
-        sha256: currentSources[name].sha256,
-        size: currentSources[name].size
+    /*
+     * Copy unchanged chunks directly from
+     * old shards into new shards.
+     */
+    const copiedChunks =
+      await copyUnchangedChunks(
+        oldShardPaths,
+        unchangedFiles,
+        writer
+      );
+
+    for (
+      const fileName
+      of unchangedFiles
+    ) {
+      sourceReport[
+        fileName
+      ] = {
+        ...oldSources[
+          fileName
+        ],
+
+        sha256:
+          currentSources[
+            fileName
+          ].sha256,
+
+        size:
+          currentSources[
+            fileName
+          ].size
       };
     }
 
-    for (const displayPath of changed) {
-      const source = currentSources[displayPath];
-      const workerFile = path.join(
-        buildRoot,
-        `${crypto
-          .createHash("sha1")
-          .update(displayPath)
-          .digest("hex")}.ndjson`
+    let indexedFiles = 0;
+    let skippedFiles = 0;
+    let newChunks = 0;
+
+    /*
+     * Process new or changed files.
+     */
+    for (
+      const displayPath
+      of changedFiles
+    ) {
+      const source =
+        currentSources[
+          displayPath
+        ];
+
+      const workerFile =
+        path.join(
+          buildRoot,
+
+          crypto
+            .createHash(
+              "sha1"
+            )
+            .update(
+              displayPath
+            )
+            .digest(
+              "hex"
+            ) +
+            ".ndjson"
+        );
+
+      console.log(
+        `Processing: ` +
+        `${displayPath}`
       );
 
-      console.log(`Processing: ${displayPath}`);
-
-      const result = await processFileInWorker(
-        source.absolutePath,
-        displayPath,
-        workerFile
-      );
+      const result =
+        await processFileInWorker(
+          source.absolutePath,
+          displayPath,
+          workerFile
+        );
 
       if (!result.ok) {
+        skippedFiles += 1;
+
         failures.push({
-          file: displayPath,
-          reason: result.reason
+          file:
+            displayPath,
+
+          reason:
+            result.reason
         });
 
-        sourceReport[displayPath] = {
-          sha256: source.sha256,
-          size: source.size,
-          status: "skipped",
-          reason: result.reason,
-          chunks: 0
+        sourceReport[
+          displayPath
+        ] = {
+          sha256:
+            source.sha256,
+
+          size:
+            source.size,
+
+          status:
+            "skipped",
+
+          reason:
+            result.reason,
+
+          chunks:
+            0
         };
+
+        console.warn(
+          `Skipped ` +
+          `${displayPath}: ` +
+          `${result.reason}`
+        );
+
+        await fs.promises.rm(
+          workerFile,
+          {
+            force: true
+          }
+        );
 
         continue;
       }
 
-      const input = fs.createReadStream(workerFile, {
-        encoding: "utf8"
-      });
+      const addedChunks =
+        await appendWorkerFile(
+          workerFile,
+          writer
+        );
 
-      const reader = readline.createInterface({
-        input,
-        crlfDelay: Infinity
-      });
+      indexedFiles += 1;
+      newChunks +=
+        addedChunks;
 
-      for await (const line of reader) {
-        if (!line.trim()) continue;
-        newChunkItems.push(JSON.parse(line));
-      }
+      sourceReport[
+        displayPath
+      ] = {
+        sha256:
+          source.sha256,
 
-      sourceReport[displayPath] = {
-        sha256: source.sha256,
-        size: source.size,
-        status: "indexed",
-        chunks: result.chunks
+        size:
+          source.size,
+
+        status:
+          "indexed",
+
+        chunks:
+          addedChunks
       };
+
+      console.log(
+        `Indexed: ` +
+        `${displayPath} ` +
+        `(${addedChunks} chunks)`
+      );
+
+      await fs.promises.rm(
+        workerFile,
+        {
+          force: true
+        }
+      );
     }
 
-    if (newChunkItems.length === 0) {
+    /*
+     * Close the final shard.
+     */
+    const shards =
+      await writer.finish();
+
+    if (
+      writer.totalChunks === 0
+    ) {
       throw new Error(
         "The completed index contains no chunks."
       );
     }
 
-    const outputDir = path.join(
-      buildRoot,
-      "index-output"
-    );
+    /*
+     * Create the new manifest.
+     */
+    const newManifest = {
+      version: 2,
 
-    await fs.promises.mkdir(outputDir, {
-      recursive: true
-    });
+      createdAt:
+        new Date()
+          .toISOString(),
 
-    const shards = await writeShards(
-      outputDir,
-      newChunkItems
-    );
-
-    const manifest = {
-      version: 1,
-      createdAt: new Date().toISOString(),
       repository:
-        `${GITHUB_OWNER}/${GITHUB_REPO}`,
-      branch: GITHUB_BRANCH,
-      shardSizeMB: SHARD_SIZE_MB,
-      totalChunks: newChunkItems.length,
+        `${GITHUB_OWNER}/` +
+        `${GITHUB_REPO}`,
+
+      branch:
+        GITHUB_BRANCH,
+
+      shardSizeMB:
+        SHARD_SIZE_MB,
+
+      totalChunks:
+        writer.totalChunks,
+
       shards,
-      sources: sourceReport,
+
+      sources:
+        sourceReport,
+
       report: {
-        discoveredFiles: files.length,
-        unchangedFiles: unchanged.size,
-        changedFiles: changed.length,
-        skippedFiles: failures.length,
+        discoveredFiles:
+          files.length,
+
+        unchangedFiles:
+          unchangedFiles.size,
+
+        changedFiles:
+          changedFiles.length,
+
+        deletedFiles,
+
+        indexedFiles,
+
+        skippedFiles,
+
+        copiedChunks,
+
+        newChunks,
+
+        totalChunks:
+          writer.totalChunks,
+
         failures
       }
     };
 
     await fs.promises.writeFile(
-      path.join(outputDir, "manifest.json"),
-      JSON.stringify(manifest, null, 2),
+      path.join(
+        outputDirectory,
+        "manifest.json"
+      ),
+      JSON.stringify(
+        newManifest,
+        null,
+        2
+      ),
       "utf8"
     );
 
+    /*
+     * Publish only after the full new index
+     * has been completed successfully.
+     */
     let published = false;
 
     if (publish) {
-      published = await publishIndexToGitHub(
-        outputDir
-      );
+      published =
+        await publishIndexToGitHub(
+          outputDirectory
+        );
     }
 
-    await fs.promises.rm(LOCAL_INDEX_ROOT, {
-      recursive: true,
-      force: true
-    });
+    /*
+     * Replace the local index only after the
+     * new index has been completed.
+     */
+    await fs.promises.rm(
+      LOCAL_INDEX_ROOT,
+      {
+        recursive: true,
+        force: true
+      }
+    );
 
     await fs.promises.cp(
-      outputDir,
+      outputDirectory,
       LOCAL_INDEX_ROOT,
       {
         recursive: true
       }
     );
 
-    chunks = newChunkItems;
-    indexLoadedAt = new Date().toISOString();
-    lastRebuildAt = new Date().toISOString();
+    manifest =
+      newManifest;
+
+    indexLoadedAt =
+      new Date()
+        .toISOString();
+
+    lastRebuildAt =
+      new Date()
+        .toISOString();
 
     lastReport = {
-      discoveredFiles: files.length,
-      unchangedFiles: unchanged.size,
-      changedFiles: changed.length,
-      skippedFiles: failures.length,
-      indexedChunks: chunks.length,
-      shards: shards.length,
+      discoveredFiles:
+        files.length,
+
+      unchangedFiles:
+        unchangedFiles.size,
+
+      changedFiles:
+        changedFiles.length,
+
+      deletedFiles,
+
+      indexedFiles,
+
+      skippedFiles,
+
+      copiedChunks,
+
+      newChunks,
+
+      indexedChunks:
+        manifest.totalChunks,
+
+      shards:
+        shards.length,
+
       published,
+
       failures
     };
 
+    console.log(
+      "Index rebuild completed."
+    );
+
+    console.log(
+      `Total chunks: ` +
+      `${manifest.totalChunks}`
+    );
+
+    console.log(
+      `Shard files: ` +
+      `${shards.length}`
+    );
+
+    console.log(
+      `Skipped files: ` +
+      `${skippedFiles}`
+    );
+
     return lastReport;
   } catch (error) {
-    lastError = error.message;
+    lastError =
+      error.message;
+
     throw error;
   } finally {
     rebuildInProgress = false;
 
-    await fs.promises.rm(buildRoot, {
-      recursive: true,
-      force: true
-    });
+    await fs.promises.rm(
+      buildRoot,
+      {
+        recursive: true,
+        force: true
+      }
+    );
   }
 }
 
