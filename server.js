@@ -47,8 +47,9 @@ app.get("/", (req, res) => {
 app.get("/health", (req, res) => {
   const status = getStatus();
 
-  res.status(status.indexedChunks > 0 ? 200 : 503).json({
-    status: status.indexedChunks > 0 ? "ok" : "index-not-ready",
+  res.status(200).json({
+    status: "ok",
+    indexReady: status.indexedChunks > 0,
     indexedChunks: status.indexedChunks,
     rebuildInProgress: status.rebuildInProgress,
     lastError: status.lastError
