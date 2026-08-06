@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-06T21:05:14.158Z",
+  "createdAt": "2026-08-06T21:07:12.464Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 2697,
+  "totalChunks": 3094,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -33,6 +33,11 @@
       "file": "rag-index-0005.ndjson",
       "chunks": 119,
       "bytes": 172328
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 397,
+      "bytes": 600494
     }
   ],
   "sources": {
@@ -336,20 +341,80 @@
       "size": 15991,
       "status": "indexed",
       "chunks": 5
+    },
+    "01_POLICY/EU/Council of European Union/other documents/OJ_C_202404371_EN_TXT.pdf": {
+      "sha256": "2eac57828ff06a30b72927b5db6136bb69b71e7076f27d72ad4ddaaa2d84febe",
+      "size": 1528113,
+      "status": "indexed",
+      "chunks": 64
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-10016-2022-INIT_en.pdf": {
+      "sha256": "b34f582c2060e8253470e8072b461153f4fbae6ae67d22404cb582e36d79d5ee",
+      "size": 318010,
+      "status": "indexed",
+      "chunks": 20
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-10289-2023-INIT_en.pdf": {
+      "sha256": "0e3e807b8047d04400cea2b2986bd21ab7229cfe55b0712d81f235d8d01148e0",
+      "size": 347971,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-10474-2017-INIT_en.pdf": {
+      "sha256": "078d0fdac13dd60da71a689897f64f888c8ced84c46183e4911a57ec75aa112f",
+      "size": 211835,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-14280-2023-INIT_en.pdf": {
+      "sha256": "86445cb68e8a5dce2907dccb40690ab7ca854fa03cddca7bba10d97baed48ba8",
+      "size": 637357,
+      "status": "indexed",
+      "chunks": 96
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-15623-2022-INIT_en.pdf": {
+      "sha256": "26627f894164e9c41e8e4761cc8196425437b8e2f92467b65d4d2ab7103afefd",
+      "size": 418073,
+      "status": "indexed",
+      "chunks": 39
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-15880-2022-INIT_en.pdf": {
+      "sha256": "e1cc1789112a65b2b2af9f24a69805091b802ec9251bbdc19c604b314544d01a",
+      "size": 379192,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-7349-2026-INIT_en.pdf": {
+      "sha256": "e2dcf3dd8aaf73ffb650800fa5c67f76f6bfcb297d0e8cbaa5e9589d96a990df",
+      "size": 329544,
+      "status": "indexed",
+      "chunks": 18
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-8396-2021-INIT_en.pdf": {
+      "sha256": "505b2af128ba9fad67e4855db8c70861d587f672e47a0025578d3f6832eaab86",
+      "size": 397116,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-9225-2024-INIT_en.pdf": {
+      "sha256": "e587eaa96a8d8f023a6912e1b2648bb4c4f1dd23e291237087551ea6c32a9bcf",
+      "size": 473205,
+      "status": "indexed",
+      "chunks": 45
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 0,
     "changedFiles": 158,
-    "processedChangedFiles": 50,
-    "remainingChangedFiles": 108,
+    "processedChangedFiles": 60,
+    "remainingChangedFiles": 98,
     "deletedFiles": [],
-    "indexedFiles": 49,
+    "indexedFiles": 59,
     "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 2697,
-    "totalChunks": 2697,
+    "newChunks": 3094,
+    "totalChunks": 3094,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
