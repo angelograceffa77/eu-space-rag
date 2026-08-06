@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-06T21:02:19.164Z",
+  "createdAt": "2026-08-06T21:04:05.658Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 1955,
+  "totalChunks": 2578,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 739,
       "bytes": 1119477
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 623,
+      "bytes": 961545
     }
   ],
   "sources": {
@@ -206,20 +211,80 @@
       "size": 930808,
       "status": "indexed",
       "chunks": 307
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/CELEX_52026PC0152_EN_TXT.pdf": {
+      "sha256": "cf913779501db9e813a8f5bd57ab55ccda422e623f0dd176f84e4796a2b4559d",
+      "size": 809330,
+      "status": "indexed",
+      "chunks": 132
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_10cc7f25-626d-11f0-bf4e-01aa75ed71a1.0001.02_DOC_1.pdf": {
+      "sha256": "9d9f31eb163e422d92754f5cb7da85db0afcf87be87ee95bd45909431be9731a",
+      "size": 273785,
+      "status": "indexed",
+      "chunks": 41
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_10cc7f25-626d-11f0-bf4e-01aa75ed71a1.0001.02_DOC_2.pdf": {
+      "sha256": "e371d1bfdd6f6bb9df966eac4237df2eff86a9b111514398e6a7eb086d05c8a2",
+      "size": 80902,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_c7906dd7-5283-11f0-a9d0-01aa75ed71a1.0001.02_DOC_1.pdf": {
+      "sha256": "0f869fc1922741634094bad66284eb3ab86e91231bed79e79aab815cff893890",
+      "size": 969089,
+      "status": "indexed",
+      "chunks": 327
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_c7906dd7-5283-11f0-a9d0-01aa75ed71a1.0001.02_DOC_2.pdf": {
+      "sha256": "cc5667d8b33897d4bf80f76c1cc77310383d341f95546a3d022b8d5c9e459928",
+      "size": 329138,
+      "status": "indexed",
+      "chunks": 73
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/Index _01Policy_EU_commission_Legislative proposals.docx": {
+      "sha256": "bb611a6d5b75a7eb97e466a3a913268f18e5f16921297005e3d59aea64cfeb81",
+      "size": 14465,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Council of European Union/Historical/122342.pdf": {
+      "sha256": "5d19a83af1939e34c9605ecbd258a318291595233a6cc3d203d537922fb16228",
+      "size": 118909,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/EU/Council of European Union/Historical/137341.pdf": {
+      "sha256": "59568878cdaee5cc9117be02aebd65e42a6660a6b4ac0ae2f370cdb18702fe63",
+      "size": 118196,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "01_POLICY/EU/Council of European Union/Historical/Index _01Policy_EU_Council_historical.docx": {
+      "sha256": "849bbecda6702703032f43efa44edb54ade2b0e7dcd780f6ec92e2050216c88f",
+      "size": 15734,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-10037-2007-INIT_en.pdf": {
+      "sha256": "d611788ad873daa1b1bd3364d5fefa1cf62b423d26e435a11ab49a414ce06dff",
+      "size": 134049,
+      "status": "indexed",
+      "chunks": 17
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 0,
     "changedFiles": 158,
-    "processedChangedFiles": 30,
-    "remainingChangedFiles": 128,
+    "processedChangedFiles": 40,
+    "remainingChangedFiles": 118,
     "deletedFiles": [],
-    "indexedFiles": 29,
+    "indexedFiles": 39,
     "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 1955,
-    "totalChunks": 1955,
+    "newChunks": 2578,
+    "totalChunks": 2578,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
