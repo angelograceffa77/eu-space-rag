@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-06T21:00:24.267Z",
+  "createdAt": "2026-08-06T21:02:19.164Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 1216,
+  "totalChunks": 1955,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 530,
       "bytes": 777433
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 739,
+      "bytes": 1119477
     }
   ],
   "sources": {
@@ -141,20 +146,80 @@
       "size": 1023103,
       "status": "indexed",
       "chunks": 15
+    },
+    "01_POLICY/ESA/OJ_L_202402920_EN_TXT.pdf": {
+      "sha256": "b4e6fc8ec8537cfd6e7673663d187aecca48c7f32fab33f19379d73755ecf443",
+      "size": 753417,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/EU/Commission/CELEX_52011DC0152_EN_TXT.pdf": {
+      "sha256": "ac2a3d0838c2977cd91d2e398d8f057482fc2fd363d2ac0566d38abb569a6ef7",
+      "size": 59051,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "01_POLICY/EU/Commission/CELEX_52013DC0108_EN_TXT.pdf": {
+      "sha256": "cadb836387cf616dc596cc7f0e768695b16496d61ebbb2a854c6fd8090966173",
+      "size": 146843,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/EU/Commission/CELEX_52016DC0705_EN_TXT.pdf": {
+      "sha256": "c51d7ecc52679017ac48c8dc001d22166af3b337abe5dc49486d6c7c2965a1fd",
+      "size": 379252,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "01_POLICY/EU/Commission/celex_52021DC0070_EN_TXT.pdf": {
+      "sha256": "d7a6b966114888352230ae0b093f195813d23cd86a81b6f3bd6f06e9021da6e2",
+      "size": 566961,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "01_POLICY/EU/Commission/CELEX_52025DC0336_EN_TXT.pdf": {
+      "sha256": "7f10a177913d21e989fb138da85b9aaed3b990027c6abdf72231ed895c1dbc58",
+      "size": 330222,
+      "status": "indexed",
+      "chunks": 77
+    },
+    "01_POLICY/EU/Commission/COM_2007_0212_FIN_en_TXT.pdf": {
+      "sha256": "ddda14f1e2125c667a788ed25042bb7f0d2a2123157e1e106cd4b63a6dbe8042",
+      "size": 188041,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/EU/Commission/Index _01Policy_EU_commission.docx": {
+      "sha256": "dd3ecac26c32b05b6729623636e99599c136c942fcb95114e1db3a100d2ed3e0",
+      "size": 14072,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/CELEX_52025PC0543_EN_TXT.pdf": {
+      "sha256": "d9dc77fe6d026b813fcb85c8901fa4db4d5144ae6657bf3120768753b08fa55d",
+      "size": 694017,
+      "status": "indexed",
+      "chunks": 145
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/CELEX_52025PC0555_EN_TXT.pdf": {
+      "sha256": "f0d69f02a2568a37cd10f1eaea4d5b381fb081b0eb4840d8043a1e8ad0c9fdc8",
+      "size": 930808,
+      "status": "indexed",
+      "chunks": 307
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 0,
     "changedFiles": 158,
-    "processedChangedFiles": 20,
-    "remainingChangedFiles": 138,
+    "processedChangedFiles": 30,
+    "remainingChangedFiles": 128,
     "deletedFiles": [],
-    "indexedFiles": 19,
+    "indexedFiles": 29,
     "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 1216,
-    "totalChunks": 1216,
+    "newChunks": 1955,
+    "totalChunks": 1955,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
