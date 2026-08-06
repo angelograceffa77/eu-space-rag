@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-06T21:04:05.658Z",
+  "createdAt": "2026-08-06T21:05:14.158Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 2578,
+  "totalChunks": 2697,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 623,
       "bytes": 961545
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 119,
+      "bytes": 172328
     }
   ],
   "sources": {
@@ -271,20 +276,80 @@
       "size": 134049,
       "status": "indexed",
       "chunks": 17
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-10500-2009-INIT_en.pdf": {
+      "sha256": "53f9f6c1f1f3fab39014709ebb9b0449f9be7ceb108851b6dcc36e0ad336817f",
+      "size": 123503,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-13569-2008-INIT_en.pdf": {
+      "sha256": "f34a2fb4d6077c07009b6c90a6041739ab6fb645d7cec8c54c6159c33f723507",
+      "size": 166295,
+      "status": "indexed",
+      "chunks": 22
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-14470-2014-INIT_en.pdf": {
+      "sha256": "aabec0059225302a9758fea9f6513c8e9db3202267197439f4b88e0aee865c61",
+      "size": 389479,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-15435-2017-INIT_en.pdf": {
+      "sha256": "5e258df6e770b77c548ebf4bb18f6d53d300600e1bdf358dc926d9ec37d6ff81",
+      "size": 326853,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-15944-2014-INIT_en.pdf": {
+      "sha256": "4629dc418feba539ab33c044c656dfc7d600e3ee9ed5aab8dd4154d2e00ec22f",
+      "size": 263888,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-16864-2010-INIT_en.pdf": {
+      "sha256": "88f7f11acf5f67b32fcfb2ad76cb1561365e1a00a0330dcbca08df1e35c688d6",
+      "size": 155980,
+      "status": "indexed",
+      "chunks": 18
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-18232-2011-INIT_en.pdf": {
+      "sha256": "656205547ec710c69c12b8db05c5d4ffab5c881bb8bef72d8037911928571b85",
+      "size": 120516,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-6183-2013-INIT_en.pdf": {
+      "sha256": "99609a1456a33d1ca4528db0527cefff0ae9b65c6b6e39e86d60a3290b67cdbe",
+      "size": 167749,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/EU/Council of European Union/Index _01Policy_EU_Council.docx": {
+      "sha256": "86bb6ba88dfa91909cd4b92bc2eb609bef1613e50160f11f9da0b732092aab93",
+      "size": 15685,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/EU/Council of European Union/other documents/Index _01Policy_EU_Council_other documents.docx": {
+      "sha256": "92a8c58844ec51990ee40ff014d195defaeed24f9aad26e16e8587d94f1a81ec",
+      "size": 15991,
+      "status": "indexed",
+      "chunks": 5
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 0,
     "changedFiles": 158,
-    "processedChangedFiles": 40,
-    "remainingChangedFiles": 118,
+    "processedChangedFiles": 50,
+    "remainingChangedFiles": 108,
     "deletedFiles": [],
-    "indexedFiles": 39,
+    "indexedFiles": 49,
     "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 2578,
-    "totalChunks": 2578,
+    "newChunks": 2697,
+    "totalChunks": 2697,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
