@@ -3,16 +3,21 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-06T20:57:44.472Z",
+  "createdAt": "2026-08-06T21:00:24.267Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 686,
+  "totalChunks": 1216,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
       "chunks": 686,
       "bytes": 1019135
+    },
+    {
+      "file": "rag-index-0002.ndjson",
+      "chunks": 530,
+      "bytes": 777433
     }
   ],
   "sources": {
@@ -75,20 +80,86 @@
       "size": 175686,
       "status": "indexed",
       "chunks": 26
+    },
+    "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2019)1.pdf": {
+      "sha256": "310e76ddafca56d45c671a3acd083a05ed6d3e5132f85db3d6d5d3c65d56539b",
+      "size": 327522,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2023)1_EN.pdf": {
+      "sha256": "e874bb47eb7242a2b22795134353b968078c78240b1f23c78fe7ee40d12f1774",
+      "size": 607193,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf": {
+      "sha256": "188a996b21be24a5056e28ab6b60792a43ff730ba6be32f8b9b54c3690fef3d2",
+      "size": 4009917,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/ESA/ESA-REG-001_rev6_EN.pdf": {
+      "sha256": "8510f92e2b07e8d28f00ac38734d2628b9d92329d81d7c9b60e11f28fdf059eb",
+      "size": 742232,
+      "status": "indexed",
+      "chunks": 168
+    },
+    "01_POLICY/ESA/ESA-REG-002_rev4_EN.pdf": {
+      "sha256": "f6a3c680c27c23b8bc852cbfe6f441dd98485054973349d1fbccc94685846e19",
+      "size": 695464,
+      "status": "indexed",
+      "chunks": 165
+    },
+    "01_POLICY/ESA/ESA-REG-005,rev.3_en.pdf": {
+      "sha256": "1dd14e5d0cb652b558c171a56f6494cd0f7e1c790c8e28668e8b84e6577f313d",
+      "size": 226074,
+      "status": "indexed",
+      "chunks": 67
+    },
+    "01_POLICY/ESA/ESA-REG-006-EN.pdf": {
+      "sha256": "fbfe768f1e65c77a450b782746fb69ad269fb2197f0ae5a1330340fa72b5c995",
+      "size": 112569,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "01_POLICY/ESA/ESA-REG-008-EN.pdf": {
+      "sha256": "dd03adcf3f22a0ed3a653f4a9d1b2f67ba62ce983e290e5b8e8cedf0c9e630a3",
+      "size": 213486,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "01_POLICY/ESA/Index _01Policy_ESA.docx": {
+      "sha256": "d7391c3d0b2517cbcb0e50739d234efebe8ce62c4c394d888c313cfb3ec035b5",
+      "size": 15148,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/ESA/OJ_L_202401543_EN_TXT.pdf": {
+      "sha256": "73519f61cfdb0f86f68d6a44f7a7aa06e163e868a60520986ed9f8f162ef271d",
+      "size": 1023103,
+      "status": "indexed",
+      "chunks": 15
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 0,
     "changedFiles": 158,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 148,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 138,
     "deletedFiles": [],
-    "indexedFiles": 10,
-    "skippedFiles": 0,
+    "indexedFiles": 19,
+    "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 686,
-    "totalChunks": 686,
-    "failures": []
+    "newChunks": 1216,
+    "totalChunks": 1216,
+    "failures": [
+      {
+        "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
