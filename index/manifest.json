@@ -2,17 +2,17 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "86b7c6addb0c5c18ecb7c3566ed33b40fbc1e82d",
-  "createdAt": "2026-08-07T09:25:57.858Z",
+  "buildCommit": "370fee3ca649703dfec36708129ea00b2f09f8e8",
+  "createdAt": "2026-08-07T11:23:57.359Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 7151,
+  "totalChunks": 7336,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 7151,
-      "bytes": 10797577
+      "chunks": 7336,
+      "bytes": 11082055
     }
   ],
   "sources": {
@@ -986,20 +986,32 @@
       "size": 5465416,
       "status": "indexed",
       "chunks": 26
+    },
+    "01_POLICY/Member States/dspsn_2026.pdf": {
+      "sha256": "93d37a030359fcccf6ee0767a8b1caf847bc11e011b4fadf8fb21dcefd137cee",
+      "size": 1381441,
+      "status": "indexed",
+      "chunks": 68
+    },
+    "01_POLICY/Member States/the-german-federal-governments-space-strategy.pdf": {
+      "sha256": "d898d4e165cabc2fec0b3b75271a4f2b5a9ba65dc1d693d7da61e5f65c08ea83",
+      "size": 4771076,
+      "status": "indexed",
+      "chunks": 117
     }
   },
   "report": {
-    "discoveredFiles": 160,
-    "unchangedFiles": 148,
-    "changedFiles": 1,
-    "processedChangedFiles": 1,
+    "discoveredFiles": 162,
+    "unchangedFiles": 149,
+    "changedFiles": 2,
+    "processedChangedFiles": 2,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 1,
+    "indexedFiles": 2,
     "skippedFiles": 0,
-    "copiedChunks": 7125,
-    "newChunks": 26,
-    "totalChunks": 7151,
+    "copiedChunks": 7151,
+    "newChunks": 185,
+    "totalChunks": 7336,
     "failures": []
   }
 }
