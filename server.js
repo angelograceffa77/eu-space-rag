@@ -1,211 +1,325 @@
+"use strict";
+
 const express = require("express");
 const cors = require("cors");
-const fs = require("fs");
-const path = require("path");
-const mammoth = require("mammoth");
-const PDFParser = require("pdf2json");
+
 require("dotenv").config();
 
+const {
+  getStatus,
+  loadIndexFromGitHub,
+  rebuildIndex,
+  searchIndex
+} = require("./index-manager");
+
 const app = express();
+
 app.use(cors());
-app.use(express.json({ limit: "10mb" }));
+app.use(express.json({ limit: "2mb" }));
 
-const PORT = process.env.PORT || 3000;
-const DESKTOP_PATH = __dirname;
+const PORT = Number.parseInt(
+  process.env.PORT || "3000",
+  10
+);
 
-const SOURCE_FOLDERS = [
-  "00_GPT_CONFIGURATION",
-  "01_POLICY",
-  "02_LAW",
-  "03_PROCUREMENT",
-  "04_FUNDING",
-  "05_COMPANIES"
-].map(folder => path.join(DESKTOP_PATH, folder));
+const HOST = "0.0.0.0";
 
-const IGNORE_DIRS = new Set([
-  "node_modules",
-  ".git",
-  ".vscode",
-  "dist",
-  "build"
-]);
-
-let chunks = [];
-
-function listFiles(folder) {
-  let results = [];
-  if (!fs.existsSync(folder)) return results;
-
-  for (const item of fs.readdirSync(folder)) {
-    const fullPath = path.join(folder, item);
-    const stat = fs.statSync(fullPath);
-
-    if (stat.isDirectory()) {
-      if (!IGNORE_DIRS.has(item)) {
-        results = results.concat(listFiles(fullPath));
-      }
-    } else if (
-      fullPath.toLowerCase().endsWith(".docx") ||
-      fullPath.toLowerCase().endsWith(".pdf")
-    ) {
-      results.push(fullPath);
-    }
-  }
-
-  return results;
-}
-
-async function readDocx(filePath) {
-  const result = await mammoth.extractRawText({ path: filePath });
-  return result.value || "";
-}
-
-function readPdf(filePath) {
-  return new Promise((resolve, reject) => {
-    const pdfParser = new PDFParser();
-
-    pdfParser.on("pdfParser_dataError", err => reject(err.parserError));
-    pdfParser.on("pdfParser_dataReady", pdfData => {
-      let text = "";
-
-      for (const page of pdfData.Pages || []) {
-        for (const item of page.Texts || []) {
-          for (const run of item.R || []) {
-            try {
-  text += decodeURIComponent(run.T) + " ";
-} catch {
-  text += run.T + " ";
-};
-          }
-        }
-        text += "\n";
-      }
-
-      resolve(text);
-    });
-
-    pdfParser.loadPDF(filePath);
-  });
-}
-
-function splitText(text, size = 1400, overlap = 200) {
-  const clean = text.replace(/\s+/g, " ").trim();
-  const parts = [];
-
-  for (let i = 0; i < clean.length; i += size - overlap) {
-    const part = clean.slice(i, i + size);
-    if (part.length > 0) parts.push(part);
-  }
-
-  return parts;
-}
-
-function scoreChunk(query, content) {
-  const queryTerms = query
-    .toLowerCase()
-    .split(/\W+/)
-    .filter(term => term.length > 2);
-
-  const text = content.toLowerCase();
-  let score = 0;
-
-  for (const term of queryTerms) {
-    const matches = (text.match(new RegExp(term, "g")) || []).length;
-console.log("Searching:", term, "Matches:", matches);
-    score += matches;
-  }
-
-  return score;
-}
-
-async function buildIndex() {
-  console.log("Building local RAG index...");
-  chunks = [];
-
-  const files = SOURCE_FOLDERS.flatMap(folder => listFiles(folder));
-  console.log(`Found ${files.length} DOCX/PDF files.`);
-
-  for (const file of files) {
-    try {
-      let text = "";
-
-      if (file.toLowerCase().endsWith(".docx")) {
-        text = await readDocx(file);
-        console.log(text.substring(0, 1000));
-      } else if (file.toLowerCase().endsWith(".pdf")) {
-        text = await readPdf(file);
-      }
-
-      const parts = splitText(text);
-console.log("Parts:", parts.length);
-if (file.includes("AG.docx")) {
-  console.log("FULL TEXT HAS TOKEN:", text.includes("987654321"));
-  console.log("FIRST PART HAS TOKEN:", parts[0]?.includes("987654321"));
-}
-
-      for (const content of parts) {
-    chunks.push({
-  file,
-  folder: path.basename(path.dirname(file)),
-  content
-});
-
-if (file.includes("AG.docx")) {
-    console.log("Chunk contains token:", content.includes("987654321"));
-}
-
-if (file.includes("AG.docx")) {
-    console.log(content);
-}
-      }
-
-      console.log(`Indexed: ${file}`);
-    } catch (err) {
-      console.error(`Failed to index ${file}: ${err.message}`);
-    }
-  }
-
-  console.log(`Index ready. Total chunks: ${chunks.length}`);
-}
-
+/*
+ * Home/status endpoint.
+ *
+ * Important:
+ * - indexReady means there is a searchable final index OR checkpoint.
+ * - rebuildInProgress does NOT prevent searches.
+ */
 app.get("/", (req, res) => {
-  res.json({
-    status: "EU Space local RAG API running",
-    indexedChunks: chunks.length,
-    folders: SOURCE_FOLDERS
+  const status = getStatus();
+
+  res.status(200).json({
+    service: "EU Space RAG",
+    status: "ok",
+    indexReady: status.indexedChunks > 0,
+    indexMode: status.indexMode,
+    indexedChunks: status.indexedChunks,
+    finalIndexedChunks: status.finalIndexedChunks,
+    rebuildInProgress: status.rebuildInProgress,
+    ...status
   });
 });
 
-app.post("/rag/search", (req, res) => {
-  const { query, topK = 5 } = req.body;
+/*
+ * Render health check.
+ *
+ * Always return HTTP 200 while the web server itself is alive.
+ * A rebuild or an unavailable index must not make Render consider
+ * the web service unhealthy.
+ */
+app.get("/health", (req, res) => {
+  const status = getStatus();
 
-  if (!query) {
-    return res.status(400).json({ error: "Missing query" });
+  res.status(200).json({
+    status: "ok",
+    indexReady: status.indexedChunks > 0,
+    indexMode: status.indexMode,
+    indexedChunks: status.indexedChunks,
+    rebuildInProgress: status.rebuildInProgress,
+    lastError: status.lastError
+  });
+});
+
+/*
+ * Search endpoint.
+ *
+ * Searches remain available while a rebuild is running.
+ *
+ * index-manager decides what should be searched:
+ * - final index, when one exists;
+ * - otherwise the latest searchable checkpoint.
+ */
+app.post("/rag/search", async (req, res) => {
+  try {
+    const query =
+      typeof req.body?.query === "string"
+        ? req.body.query.trim()
+        : "";
+
+    const requestedTopK =
+      Number.parseInt(req.body?.topK, 10);
+
+    const topK =
+      Number.isFinite(requestedTopK)
+        ? Math.min(
+            Math.max(requestedTopK, 1),
+            50
+          )
+        : 8;
+
+    if (!query) {
+      return res.status(400).json({
+        error: "A non-empty query is required."
+      });
+    }
+
+    const statusBeforeSearch = getStatus();
+
+    /*
+     * Do NOT block merely because rebuildInProgress is true.
+     * If indexedChunks > 0, index-manager has a searchable
+     * final index or checkpoint available.
+     */
+    if (statusBeforeSearch.indexedChunks <= 0) {
+      return res.status(503).json({
+        error: "No searchable index is available yet.",
+        indexReady: false,
+        indexMode: statusBeforeSearch.indexMode,
+        rebuildInProgress:
+          statusBeforeSearch.rebuildInProgress
+      });
+    }
+
+    const results =
+      await searchIndex(query, topK);
+
+    const statusAfterSearch = getStatus();
+
+    return res.status(200).json({
+      query,
+      topK,
+      resultCount: results.length,
+      indexMode: statusAfterSearch.indexMode,
+      indexedChunks: statusAfterSearch.indexedChunks,
+      rebuildInProgress:
+        statusAfterSearch.rebuildInProgress,
+      results
+    });
+  } catch (error) {
+    console.error(
+      "Search failed:",
+      error
+    );
+
+    return res.status(500).json({
+      error: "Search failed.",
+      detail: error.message
+    });
+  }
+});
+
+/*
+ * Protected manual rebuild endpoint.
+ *
+ * Example:
+ * POST /rag/rebuild
+ * Authorization: Bearer <RAG_ADMIN_TOKEN>
+ *
+ * The existing searchable index remains available while the
+ * rebuild runs in the background.
+ */
+app.post("/rag/rebuild", (req, res) => {
+  const configuredToken =
+    process.env.RAG_ADMIN_TOKEN;
+
+  if (!configuredToken) {
+    return res.status(503).json({
+      error:
+        "RAG_ADMIN_TOKEN is not configured."
+    });
   }
 
-  const results = chunks
-    .map(chunk => ({
-      file: chunk.file,
-      folder: chunk.folder,
-      content: chunk.content,
-      score: scoreChunk(query, chunk.content)
-    }))
-    .filter(item => item.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, topK);
+  const authorization =
+    req.get("authorization") || "";
 
-  res.json({ query, results });
-});
+  const expected =
+    `Bearer ${configuredToken}`;
 
-app.post("/rag/rebuild", async (req, res) => {
-  await buildIndex();
-  res.json({
-    status: "Index rebuilt",
-    indexedChunks: chunks.length
+  if (authorization !== expected) {
+    return res.status(401).json({
+      error: "Unauthorized."
+    });
+  }
+
+  const currentStatus = getStatus();
+
+  if (currentStatus.rebuildInProgress) {
+    return res.status(409).json({
+      error:
+        "An index rebuild is already running.",
+      status: currentStatus
+    });
+  }
+
+  /*
+   * Respond immediately. The rebuild continues in the
+   * background, while /rag/search keeps using the best
+   * searchable index exposed by index-manager.
+   */
+  res.status(202).json({
+    accepted: true,
+    message:
+      "Index check/rebuild started in the background.",
+    searchableIndexAvailable:
+      currentStatus.indexedChunks > 0,
+    indexMode: currentStatus.indexMode,
+    indexedChunks: currentStatus.indexedChunks
   });
+
+  rebuildIndex({ publish: true })
+    .then(report => {
+      console.log(
+        "Manual index rebuild completed:",
+        report
+      );
+    })
+    .catch(error => {
+      console.error(
+        "Manual index rebuild failed:",
+        error
+      );
+    });
 });
 
-app.listen(PORT, async () => {
-  console.log(`RAG API running on http://localhost:${PORT}`);
-  await buildIndex();
-});
+/*
+ * Load the permanent GitHub index first.
+ * Then perform the source comparison/rebuild check.
+ *
+ * Because the server has already started listening, the API can
+ * answer health/status requests immediately.
+ */
+async function startIndexInBackground() {
+  try {
+    const loaded =
+      await loadIndexFromGitHub();
+
+    if (loaded) {
+      console.log(
+        "Existing GitHub index downloaded successfully."
+      );
+    } else {
+      console.log(
+        "No completed GitHub index is currently available."
+      );
+    }
+  } catch (error) {
+    console.error(
+      "Could not load completed GitHub index:",
+      error
+    );
+  }
+
+  try {
+    const report =
+      await rebuildIndex({
+        publish: true
+      });
+
+    console.log(
+      "Automatic index check completed:",
+      report
+    );
+  } catch (error) {
+    console.error(
+      "Automatic index startup failed:",
+      error
+    );
+  }
+}
+
+const server = app.listen(
+  PORT,
+  HOST,
+  () => {
+    console.log(
+      `RAG API running on port ${PORT}`
+    );
+
+    /*
+     * Do not await this.
+     * The HTTP service stays available while indexing/checking
+     * happens in the background.
+     */
+    startIndexInBackground();
+  }
+);
+
+function shutdown(signal) {
+  console.log(
+    `${signal} received. Closing HTTP server.`
+  );
+
+  server.close(() => {
+    process.exit(0);
+  });
+
+  setTimeout(() => {
+    process.exit(0);
+  }, 10000).unref();
+}
+
+process.on(
+  "SIGTERM",
+  () => shutdown("SIGTERM")
+);
+
+process.on(
+  "SIGINT",
+  () => shutdown("SIGINT")
+);
+
+process.on(
+  "unhandledRejection",
+  reason => {
+    console.error(
+      "Unhandled promise rejection:",
+      reason
+    );
+  }
+);
+
+process.on(
+  "uncaughtException",
+  error => {
+    console.error(
+      "Uncaught exception:",
+      error
+    );
+  }
+);

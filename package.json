@@ -1,17 +1,23 @@
 {
-  "name": "00_gpt_configuration",
+  "name": "eu-space-rag",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "EU Space RAG server with GitHub-stored multi-file NDJSON index",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "node --check server.js && node --check index-manager.js && node --check index-worker.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "rag",
+    "eu-space",
+    "render",
+    "github",
+    "ndjson"
+  ],
+  "author": "Angelo Graceffa",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "chokidar": "^5.0.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
