@@ -1,13 +1,13 @@
 {
   "version": 4,
-  "type": "checkpoint",
-  "complete": false,
+  "type": "final",
+  "complete": true,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-07T06:02:21.960Z",
+  "createdAt": "2026-08-07T06:54:31.480Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 6521,
+  "totalChunks": 7099,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -83,6 +83,11 @@
       "file": "rag-index-0015.ndjson",
       "chunks": 1029,
       "bytes": 1627900
+    },
+    {
+      "file": "rag-index-0016.ndjson",
+      "chunks": 578,
+      "bytes": 866245
     }
   ],
   "sources": {
@@ -995,20 +1000,69 @@
       "size": 6622141,
       "status": "indexed",
       "chunks": 60
+    },
+    "01_POLICY/Member States/the-space-strategy-of-latvia-2021-2027-1.pdf": {
+      "sha256": "7a3480ff67509948147610a3479a4648ce12104df3cd001c1184a76d9ebb0b05",
+      "size": 3263286,
+      "status": "indexed",
+      "chunks": 52
+    },
+    "01_POLICY/Member States/V4_EN_Austrian-Space-Strategy-2030_0803_taggedv6_PAC2021Approved.pdf": {
+      "sha256": "9dc31ac2fbb2bb5a46cb6cc21e2543d6f7ee39684222f93db22a897399f540dc",
+      "size": 12760945,
+      "status": "indexed",
+      "chunks": 42
+    },
+    "01_POLICY/Member States/VN_2025_8.pdf": {
+      "sha256": "75c3fabff73c3b870a74510025aac74358501afee004ce19785c6346fa2c2b21",
+      "size": 272148,
+      "status": "indexed",
+      "chunks": 58
+    },
+    "01_POLICY/Member States/weltraumstrategie_2030.pdf": {
+      "sha256": "def034a167be6d3b44a0af2b97927a7bdc6574183e0fe6a8862a975b69f646c6",
+      "size": 13051294,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf": {
+      "sha256": "94528bd0dced82ad94ce196d99939dd9d0a244bc2f4331b8f292725603b829d6",
+      "size": 2055696,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "02_LAW/EU legislation/CELEX_32021R0696_EN_TXT.pdf": {
+      "sha256": "960792357bf6ceaab33f689e844b8b5af984eaa5f72d78699b8182385e2f8c6a",
+      "size": 1669728,
+      "status": "indexed",
+      "chunks": 255
+    },
+    "02_LAW/EU legislation/CELEX_32023R0588_EN_TXT.pdf": {
+      "sha256": "526f8ffe3101784831ce7d3d13fa8a4927ab5d3d35f9e71926b4c55cf70ebd58",
+      "size": 964899,
+      "status": "indexed",
+      "chunks": 123
+    },
+    "02_LAW/EU legislation/Index _02LAW_EU legislation.docx": {
+      "sha256": "4e5ffa4a762cc3f777993416e6aaa24d551158e92098580199343a7dd7af3598",
+      "size": 13872,
+      "status": "indexed",
+      "chunks": 1
     }
   },
   "report": {
     "discoveredFiles": 158,
-    "unchangedFiles": 79,
-    "changedFiles": 78,
-    "processedChangedFiles": 150,
+    "unchangedFiles": 140,
+    "changedFiles": 8,
+    "processedChangedFiles": 158,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 140,
-    "skippedFiles": 10,
+    "indexedFiles": 147,
+    "skippedFiles": 11,
     "copiedChunks": 0,
-    "newChunks": 6521,
-    "totalChunks": 6521,
+    "newChunks": 7099,
+    "totalChunks": 7099,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
@@ -1048,6 +1102,10 @@
       },
       {
         "file": "01_POLICY/Member States/psk.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
