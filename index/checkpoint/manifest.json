@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-07T05:57:03.064Z",
+  "createdAt": "2026-08-07T05:58:22.467Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 5155,
+  "totalChunks": 5492,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -73,6 +73,11 @@
       "file": "rag-index-0013.ndjson",
       "chunks": 123,
       "bytes": 179910
+    },
+    {
+      "file": "rag-index-0014.ndjson",
+      "chunks": 337,
+      "bytes": 503046
     }
   ],
   "sources": {
@@ -861,20 +866,83 @@
       "status": "skipped",
       "reason": "Error: Error: unsupported encryption algorithm",
       "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44255 - Council Resolutions and Declarations 1986 - 2025 - February 2026.pdf": {
+      "sha256": "48ffe7dbe1c8fbac2234880bb1902c11e9b01ce26183ff0fc3b3f8da09294fea",
+      "size": 4450161,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/48424 2021.pdf": {
+      "sha256": "ef43c1b6688fde4c07025b2b2b10b53aa24ced69aca731d98a96d2a4d3e5d730",
+      "size": 155315,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/52895 - res 2025 Feb 26.pdf": {
+      "sha256": "88e7b5ca7df9200467b446dd8874d4168872585f6562777b3666c35aba07b8ec",
+      "size": 263151,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/CELEX_32021R0694_EN_TXT.pdf": {
+      "sha256": "2b194dee3c25244556f4b3294d411daf02a9dfa405376ecfdcdb2f4e066d0a17",
+      "size": 958967,
+      "status": "indexed",
+      "chunks": 109
+    },
+    "01_POLICY/International/EUMETSAT/historical/CELEX_32014R0377_EN_TXT.pdf": {
+      "sha256": "854ba9605b43ccdd2358c604d69e48afee78fc7aff6f315c2fd985c17090ba0b",
+      "size": 567844,
+      "status": "indexed",
+      "chunks": 78
+    },
+    "01_POLICY/International/EUMETSAT/historical/Index _01Policy_International_EUMETSAT_historical.docx": {
+      "sha256": "7cea392ac52259f512ab8c886cfa8fdb6d40d63b1b661df1370019c0a2f435dc",
+      "size": 14178,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/International/EUMETSAT/historical/pdf_leg_res_2014.pdf": {
+      "sha256": "b7869a1686244297466552501439799b2c2dab038424ca263ba9bec8b31367c0",
+      "size": 180993,
+      "status": "indexed",
+      "chunks": 90
+    },
+    "01_POLICY/International/EUMETSAT/Index _01Policy_International_EUMETSAT.docx": {
+      "sha256": "8d0725f41ab87e68a2cf99a9ce0c2238880aa213ac202bc981b6a516460fd53c",
+      "size": 16314,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/International/EUMETSAT/pdf_leg_convention.pdf": {
+      "sha256": "d37eb60682aae2ea25e456f97ee7cdf5eaf70df0dda8d6e8a2236db3d9379759",
+      "size": 197242,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/International/EUMETSAT/pdf_leg_protocol.pdf": {
+      "sha256": "7b6289bf43056510855cf8112f06102ecf79196917bc18d762dc3383918a79e1",
+      "size": 150770,
+      "status": "indexed",
+      "chunks": 20
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 79,
     "changedFiles": 78,
-    "processedChangedFiles": 130,
+    "processedChangedFiles": 140,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 124,
-    "skippedFiles": 6,
+    "indexedFiles": 131,
+    "skippedFiles": 9,
     "copiedChunks": 0,
-    "newChunks": 5155,
-    "totalChunks": 5155,
+    "newChunks": 5492,
+    "totalChunks": 5492,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
@@ -898,6 +966,18 @@
       },
       {
         "file": "01_POLICY/International/EUMETSAT/44254 - Staff_Rules.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "01_POLICY/International/EUMETSAT/44255 - Council Resolutions and Declarations 1986 - 2025 - February 2026.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "01_POLICY/International/EUMETSAT/48424 2021.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "01_POLICY/International/EUMETSAT/52895 - res 2025 Feb 26.pdf",
         "reason": "Error: Error: unsupported encryption algorithm"
       }
     ]
