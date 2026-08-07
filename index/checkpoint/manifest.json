@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-06T21:10:15.966Z",
+  "createdAt": "2026-08-07T05:51:06.159Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 3375,
+  "totalChunks": 3755,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -48,6 +48,11 @@
       "file": "rag-index-0008.ndjson",
       "chunks": 138,
       "bytes": 203135
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 380,
+      "bytes": 567848
     }
   ],
   "sources": {
@@ -531,20 +536,80 @@
       "size": 253110,
       "status": "indexed",
       "chunks": 22
+    },
+    "01_POLICY/EU/European Council/210720-euco-final-conclusions-en.pdf": {
+      "sha256": "bb97fc88f1c9a894a11fae7d4a73894a19d5901b5aacaaae2f90057eb7e7f3cf",
+      "size": 636182,
+      "status": "indexed",
+      "chunks": 93
+    },
+    "01_POLICY/EU/European Council/Conclusions-1108_25.pdf": {
+      "sha256": "f166a366ee1209f65f2a5856f66f601d5a6294f044dfede6bfd00879f87c7037",
+      "size": 45477,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "01_POLICY/EU/European Council/Conclusions-14625.pdf": {
+      "sha256": "7d81a3c01ec1143d140bb9a41eb2ba353e5e12d9bb719ba08ed39028b6079d95",
+      "size": 34875,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "01_POLICY/EU/European Council/en-20260319-european-council-conclusions.pdf": {
+      "sha256": "0999539f7a8d66ef1d92ea7383c11bad29e4dc1ff119107cea3f85c6c3a1adff",
+      "size": 306744,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "01_POLICY/EU/European Council/en-20260619-european-council-conclusions.pdf": {
+      "sha256": "5d3c1e4596265d55e639e55207cf8d89af4de042ab8c632cf205bd4533adcfe7",
+      "size": 284969,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "01_POLICY/EU/European Council/euco-conclusions-2122032024.pdf": {
+      "sha256": "7e30dd335485edda757af445616f76e966f29d8218931352c0d9143decbb1c71",
+      "size": 267992,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "01_POLICY/EU/European Council/europeancouncilconclusions-14-15-12-2023-en.pdf": {
+      "sha256": "a913c9f5209fab6e5155a5eef5cbbaccaff1f320c1ec948743d467921a502bfd",
+      "size": 256705,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "01_POLICY/EU/European Council/Index _01Policy_EU_European Council.docx": {
+      "sha256": "bc462768de696448dfd8da5a6d920f483e701337d96d90947f526d7832912211",
+      "size": 14461,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/EUSPA/CELEX_32019R0715_EN_TXT.pdf": {
+      "sha256": "64cdfce7a85ce0f3c21f3f1c9bf4468a25040493761a551b3bbc476ea252de88",
+      "size": 705437,
+      "status": "indexed",
+      "chunks": 111
+    },
+    "01_POLICY/EU/EUSPA/euspa-oed-ab-dec-a11853_1.8_euspa_admin_board_rules_of_procedure.pdf": {
+      "sha256": "fc08c58b2e60f364cc44253d7d7889a6b3bb04074af34071296a2936a4d57825",
+      "size": 259702,
+      "status": "indexed",
+      "chunks": 44
     }
   },
   "report": {
     "discoveredFiles": 158,
-    "unchangedFiles": 0,
-    "changedFiles": 158,
-    "processedChangedFiles": 80,
-    "remainingChangedFiles": 78,
+    "unchangedFiles": 79,
+    "changedFiles": 78,
+    "processedChangedFiles": 90,
+    "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 79,
+    "indexedFiles": 89,
     "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 3375,
-    "totalChunks": 3375,
+    "newChunks": 3755,
+    "totalChunks": 3755,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
