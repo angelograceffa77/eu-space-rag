@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-07T05:53:20.164Z",
+  "createdAt": "2026-08-07T05:54:45.671Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 4410,
+  "totalChunks": 4751,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -58,6 +58,11 @@
       "file": "rag-index-0010.ndjson",
       "chunks": 655,
       "bytes": 991470
+    },
+    {
+      "file": "rag-index-0011.ndjson",
+      "chunks": 341,
+      "bytes": 508600
     }
   ],
   "sources": {
@@ -661,20 +666,80 @@
       "size": 772669,
       "status": "indexed",
       "chunks": 120
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/aa---eda---esa-20-06-11.pdf": {
+      "sha256": "886109f5965772795f8b2a79c907b524372fdf9f0505bdf0dde6af505612d3ad",
+      "size": 1015034,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/CELEX_32015D1835_EN_TXT.pdf": {
+      "sha256": "fa50435eda9209d5b64650252b0ed092d00162aeb34b572f9511ea4ea1d02fac",
+      "size": 417010,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/consolidated-eda-staff-regulations-en.pdf": {
+      "sha256": "3942717c569e6aa92499865d8a4254d8d109f38872e337009772b1d0952b3e8b",
+      "size": 420304,
+      "status": "indexed",
+      "chunks": 178
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/exchange-of-letters---eu-satellite-center.pdf": {
+      "sha256": "90cb0f264f8a8989743143839cbe65147b8ffcefeb8d3d4a76682cdd57767073",
+      "size": 1748234,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/Index _01Policy_EU_Other Eu Agencies_EDA.docx": {
+      "sha256": "a816649767298fdda416c4c2ca146d5d06364837e65cd85b8301fcb2658b869f",
+      "size": 14363,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/sne-rules.pdf": {
+      "sha256": "cea251e543b6f3abffe4fb260ddb0a63bdffdc45e9e75ec0756d6e8e537e19fc",
+      "size": 480139,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_02014D0401-20220701_EN_TXT.pdf": {
+      "sha256": "1059599174c3ce428a0ef55631b18061fa283524ca203f70bc87e49fc7f83436",
+      "size": 258568,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32014D0401_EN_TXT.pdf": {
+      "sha256": "86da10698a4052aff5125d3c6db395f57515401b6121d740593bea5ee6519a73",
+      "size": 382070,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32016D2112_EN_TXT.pdf": {
+      "sha256": "e533c243df6a574436f5d9b8059fb88e27861764c8f2887e6bd53e04ca996a28",
+      "size": 314838,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32023D0994_EN_TXT.pdf": {
+      "sha256": "01fddc577da190b05c16f0181002121fe3a0dd55f7d924ad56b662a6dffd8547",
+      "size": 377340,
+      "status": "indexed",
+      "chunks": 6
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 79,
     "changedFiles": 78,
-    "processedChangedFiles": 100,
+    "processedChangedFiles": 110,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 99,
+    "indexedFiles": 109,
     "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 4410,
-    "totalChunks": 4410,
+    "newChunks": 4751,
+    "totalChunks": 4751,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
