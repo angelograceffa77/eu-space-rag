@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-07T05:56:00.263Z",
+  "createdAt": "2026-08-07T05:57:03.064Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 5032,
+  "totalChunks": 5155,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -68,6 +68,11 @@
       "file": "rag-index-0012.ndjson",
       "chunks": 281,
       "bytes": 412555
+    },
+    {
+      "file": "rag-index-0013.ndjson",
+      "chunks": 123,
+      "bytes": 179910
     }
   ],
   "sources": {
@@ -791,24 +796,109 @@
       "size": 261594,
       "status": "indexed",
       "chunks": 26
+    },
+    "01_POLICY/EU/Parliament/TA-8-2016-0267_EN.pdf": {
+      "sha256": "e2b51f2d909b15846a7bd7c8e54dc8b23bfe484fe3f4ecf77e53a633ea0cd122",
+      "size": 297698,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "01_POLICY/EU/Parliament/TA-8-2016-0268_EN.pdf": {
+      "sha256": "f39ab4d0daabfa4ffd4d7fd6b23d7316f4c0805a0e9f6b8b497ce82f8a728201",
+      "size": 194634,
+      "status": "indexed",
+      "chunks": 18
+    },
+    "01_POLICY/EU/Parliament/TA-8-2017-0323_EN.pdf": {
+      "sha256": "5865ebe5a50f712a0f8787dd3cc7a4b4a535e5db8f8c944581dd96f9501ed6ca",
+      "size": 297413,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/EU/Parliament/TA-9-2022-0355_EN.pdf": {
+      "sha256": "bdb1357a9c90a87af480927ac8ac8eebd434fce85e48403c6c8ce0484a5090f0",
+      "size": 125965,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/EU/Parliament/TA-9-2023-0435_EN.pdf": {
+      "sha256": "85071119473edba67e487d3b932b048a5b86dd4e866024cd29a361451eea33ec",
+      "size": 167030,
+      "status": "indexed",
+      "chunks": 32
+    },
+    "01_POLICY/International/EUMETSAT/44250 -Programmes jan 24.pdf": {
+      "sha256": "86b3371006aaaf540fccc4f1bf8829ad4a33f48cf72493d126e5494507545af8",
+      "size": 1250492,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44251 - Terms_of_Reference(1442024 V1).pdf": {
+      "sha256": "fa3a16e38171d3a85a811352c95b0a8fab0960673421f8a443f6044bd23ee695",
+      "size": 158512,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf": {
+      "sha256": "c8e94716051bef3cf242bf6fe6cfb34a3d251cb16a3b628578105baf207987dc",
+      "size": 319016,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44253 - Basic Documents.pdf": {
+      "sha256": "e36d44e5c4a1368806964a5f619512d0d25846ae31e75a2e34cd32cdbda1fd64",
+      "size": 8785524,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44254 - Staff_Rules.pdf": {
+      "sha256": "1cc5d11154255bdf4860fe2d185592e44a55d39e8b432db906663a8a8cbf8361",
+      "size": 1751276,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 79,
     "changedFiles": 78,
-    "processedChangedFiles": 120,
+    "processedChangedFiles": 130,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 119,
-    "skippedFiles": 1,
+    "indexedFiles": 124,
+    "skippedFiles": 6,
     "copiedChunks": 0,
-    "newChunks": 5032,
-    "totalChunks": 5032,
+    "newChunks": 5155,
+    "totalChunks": 5155,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "01_POLICY/International/EUMETSAT/44250 -Programmes jan 24.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "01_POLICY/International/EUMETSAT/44251 - Terms_of_Reference(1442024 V1).pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "01_POLICY/International/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "01_POLICY/International/EUMETSAT/44253 - Basic Documents.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "01_POLICY/International/EUMETSAT/44254 - Staff_Rules.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
       }
     ]
   }
