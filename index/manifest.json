@@ -2,17 +2,17 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "957099cc6783351f9853d190db9e87fc221a43fb",
-  "createdAt": "2026-08-07T08:13:20.630Z",
+  "buildCommit": "86b7c6addb0c5c18ecb7c3566ed33b40fbc1e82d",
+  "createdAt": "2026-08-07T09:25:57.858Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 7125,
+  "totalChunks": 7151,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 7125,
-      "bytes": 10759233
+      "chunks": 7151,
+      "bytes": 10797577
     }
   ],
   "sources": {
@@ -980,20 +980,26 @@
       "size": 5465416,
       "status": "indexed",
       "chunks": 26
+    },
+    "01_POLICY/International/NATO/1100_North-Atlantic-Treaty__ENG_HR.pdf": {
+      "sha256": "0ede484adb8fc30f23171a6eedfeede877a49b6e557f1986cedf46ff4215ae4d",
+      "size": 5465416,
+      "status": "indexed",
+      "chunks": 26
     }
   },
   "report": {
-    "discoveredFiles": 159,
-    "unchangedFiles": 147,
+    "discoveredFiles": 160,
+    "unchangedFiles": 148,
     "changedFiles": 1,
     "processedChangedFiles": 1,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
     "indexedFiles": 1,
     "skippedFiles": 0,
-    "copiedChunks": 7099,
+    "copiedChunks": 7125,
     "newChunks": 26,
-    "totalChunks": 7125,
+    "totalChunks": 7151,
     "failures": []
   }
 }
