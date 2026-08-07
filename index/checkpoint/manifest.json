@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-07T05:58:22.467Z",
+  "createdAt": "2026-08-07T06:02:21.960Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 5492,
+  "totalChunks": 6521,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -78,6 +78,11 @@
       "file": "rag-index-0014.ndjson",
       "chunks": 337,
       "bytes": 503046
+    },
+    {
+      "file": "rag-index-0015.ndjson",
+      "chunks": 1029,
+      "bytes": 1627900
     }
   ],
   "sources": {
@@ -929,20 +934,81 @@
       "size": 150770,
       "status": "indexed",
       "chunks": 20
+    },
+    "01_POLICY/Member States/03-VCR-03-Ma-CJ_NKP2020.pdf": {
+      "sha256": "1b317ea43192f75a79cd8eff05946e3cc0292ccdc6869d579642ffe999284043",
+      "size": 4072790,
+      "status": "indexed",
+      "chunks": 359
+    },
+    "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf": {
+      "sha256": "2463a881511b5394cebc2fcf2211d3e5cc3f1381364b20c3dd36ed88c106035e",
+      "size": 3817167,
+      "status": "indexed",
+      "chunks": 190
+    },
+    "01_POLICY/Member States/denmarks-national-space-strategy.pdf": {
+      "sha256": "388f163c3100585cdca2d80f900f98571455d3feaed5931b8889ee6b021c9dec",
+      "size": 8909101,
+      "status": "indexed",
+      "chunks": 84
+    },
+    "01_POLICY/Member States/Index _01Policy_Member States.docx": {
+      "sha256": "dd1af89c55824ccbbbc4f58b8b92f065c799b7f216c0c43d00d3faf61a4a9642",
+      "size": 15047,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/Member States/latvijas-kosmosa-strategija-2021.-2027.-gadam-1.pdf": {
+      "sha256": "375062cea746dbec88c211e80be561dd5f30c2c3cd02a00c7efb37a7aa620ed5",
+      "size": 3340806,
+      "status": "indexed",
+      "chunks": 53
+    },
+    "01_POLICY/Member States/National space strategy_ENG.pdf": {
+      "sha256": "71e677d634161bba462427507bc60911df4b529246babd47494ce4322d70b5a2",
+      "size": 681925,
+      "status": "indexed",
+      "chunks": 105
+    },
+    "01_POLICY/Member States/national-space-strategy-for-enterprise-2019-2025.pdf": {
+      "sha256": "a2550c628ff2a45ba43ff7a20664d4f9c515d3c7e586664c6b3b6cd7c05381c9",
+      "size": 4530245,
+      "status": "indexed",
+      "chunks": 96
+    },
+    "01_POLICY/Member States/Program_dzialan_na_rzecz_rozwoju_technologii_kosmicznych.pdf": {
+      "sha256": "af58cd763330ca9a3ca205696653715831d275dba6e5aeea691829c74abe4ab2",
+      "size": 466833,
+      "status": "indexed",
+      "chunks": 81
+    },
+    "01_POLICY/Member States/psk.pdf": {
+      "sha256": "959a5ff7a9f69a1a68b138e528287d11b5624e2ec2a75cb9116a958707c8119c",
+      "size": 2797791,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/strategi-for-rumforskning-og-innovation_-opslag.pdf": {
+      "sha256": "618791e307006f059f6822dd2f199ca15d5e1094f1fe5b2dcbca305a17ddd871",
+      "size": 6622141,
+      "status": "indexed",
+      "chunks": 60
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 79,
     "changedFiles": 78,
-    "processedChangedFiles": 140,
+    "processedChangedFiles": 150,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 131,
-    "skippedFiles": 9,
+    "indexedFiles": 140,
+    "skippedFiles": 10,
     "copiedChunks": 0,
-    "newChunks": 5492,
-    "totalChunks": 5492,
+    "newChunks": 6521,
+    "totalChunks": 6521,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
@@ -979,6 +1045,10 @@
       {
         "file": "01_POLICY/International/EUMETSAT/52895 - res 2025 Feb 26.pdf",
         "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "01_POLICY/Member States/psk.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
   }
