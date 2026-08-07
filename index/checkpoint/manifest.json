@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-07T05:51:06.159Z",
+  "createdAt": "2026-08-07T05:53:20.164Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 3755,
+  "totalChunks": 4410,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -53,6 +53,11 @@
       "file": "rag-index-0009.ndjson",
       "chunks": 380,
       "bytes": 567848
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 655,
+      "bytes": 991470
     }
   ],
   "sources": {
@@ -596,20 +601,80 @@
       "size": 259702,
       "status": "indexed",
       "chunks": 44
+    },
+    "01_POLICY/EU/EUSPA/euspa-sab-acc-mgt-a11803_3.0_sab_rop_approved_by_sab47b_signed.pdf": {
+      "sha256": "49727e46632d6ca24c807ee5c44cb85e0ed7f915f647094eba98f7f8d6e39d41",
+      "size": 453403,
+      "status": "indexed",
+      "chunks": 41
+    },
+    "01_POLICY/EU/EUSPA/euspa-sec-ab-dec-a22114_security_rules_for_protecting_euci.pdf": {
+      "sha256": "9455562134af38b411e0fba3f0668a8e95c4b8954af2a158ec5d435a9479113e",
+      "size": 590790,
+      "status": "indexed",
+      "chunks": 83
+    },
+    "01_POLICY/EU/EUSPA/Index _01Policy_EU_Euspa.docx": {
+      "sha256": "856a7aa41c779274c8ffa9b4aa17e2ef99845317b289cb5383bd64fe34e308ce",
+      "size": 14495,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/EUSPA/Single_Programming_Document_2026-2028.pdf": {
+      "sha256": "a1a540dee04289905da8d1f44618762e5e6a5a6fa87d9f8d3d86b10330522ac4",
+      "size": 1976890,
+      "status": "indexed",
+      "chunks": 208
+    },
+    "01_POLICY/EU/High Representative and EEAS/CELEX_52022JC0004_EN_TXT.pdf": {
+      "sha256": "0142cb5df485ecbb8526a9bb94fd705ca1625a43405af604b236677c6113d9e9",
+      "size": 790415,
+      "status": "indexed",
+      "chunks": 39
+    },
+    "01_POLICY/EU/High Representative and EEAS/eugs_review_web_0.pdf": {
+      "sha256": "1bf801cc73c0ab10cb4a1ad9567a8b59f601170c586b8380cfd3095089eac9f2",
+      "size": 689229,
+      "status": "indexed",
+      "chunks": 87
+    },
+    "01_POLICY/EU/High Representative and EEAS/Index _01Policy_EU_High Representative and EEAS.docx": {
+      "sha256": "7ee9ff9ce21f2c06470026ba61d719c6aeb5398cd7db7360e951df4aa50287b3",
+      "size": 14747,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/High Representative and EEAS/JOIN_2023_9_FIN_EN_TXT.pdf": {
+      "sha256": "1cf1cb77247aaf8411245890d801449b2dfa47a778fb54595453ddacebba300e",
+      "size": 534890,
+      "status": "indexed",
+      "chunks": 44
+    },
+    "01_POLICY/EU/High Representative and EEAS/ST-14512-2023-INIT_en.pdf": {
+      "sha256": "530245a80fd0a5b70c77b4857aa11e8f1d0f728e552de4bf8b073cd59353834f",
+      "size": 364849,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/EU/High Representative and EEAS/ST-7371-2022-INIT_en.pdf": {
+      "sha256": "11a3d79219f2e55b458ad1bd3eadaade6a839604db10d43b3989a4714a6e3d62",
+      "size": 772669,
+      "status": "indexed",
+      "chunks": 120
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 79,
     "changedFiles": 78,
-    "processedChangedFiles": 90,
+    "processedChangedFiles": 100,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 89,
+    "indexedFiles": 99,
     "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 3755,
-    "totalChunks": 3755,
+    "newChunks": 4410,
+    "totalChunks": 4410,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
