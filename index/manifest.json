@@ -1,93 +1,18 @@
 {
-  "version": 4,
+  "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-07T06:54:31.480Z",
+  "buildCommit": "957099cc6783351f9853d190db9e87fc221a43fb",
+  "createdAt": "2026-08-07T08:13:20.630Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 7099,
+  "totalChunks": 7125,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 686,
-      "bytes": 1019135
-    },
-    {
-      "file": "rag-index-0002.ndjson",
-      "chunks": 530,
-      "bytes": 777433
-    },
-    {
-      "file": "rag-index-0003.ndjson",
-      "chunks": 739,
-      "bytes": 1119477
-    },
-    {
-      "file": "rag-index-0004.ndjson",
-      "chunks": 623,
-      "bytes": 961545
-    },
-    {
-      "file": "rag-index-0005.ndjson",
-      "chunks": 119,
-      "bytes": 172328
-    },
-    {
-      "file": "rag-index-0006.ndjson",
-      "chunks": 397,
-      "bytes": 600494
-    },
-    {
-      "file": "rag-index-0007.ndjson",
-      "chunks": 143,
-      "bytes": 209664
-    },
-    {
-      "file": "rag-index-0008.ndjson",
-      "chunks": 138,
-      "bytes": 203135
-    },
-    {
-      "file": "rag-index-0009.ndjson",
-      "chunks": 380,
-      "bytes": 567848
-    },
-    {
-      "file": "rag-index-0010.ndjson",
-      "chunks": 655,
-      "bytes": 991470
-    },
-    {
-      "file": "rag-index-0011.ndjson",
-      "chunks": 341,
-      "bytes": 508600
-    },
-    {
-      "file": "rag-index-0012.ndjson",
-      "chunks": 281,
-      "bytes": 412555
-    },
-    {
-      "file": "rag-index-0013.ndjson",
-      "chunks": 123,
-      "bytes": 179910
-    },
-    {
-      "file": "rag-index-0014.ndjson",
-      "chunks": 337,
-      "bytes": 503046
-    },
-    {
-      "file": "rag-index-0015.ndjson",
-      "chunks": 1029,
-      "bytes": 1627900
-    },
-    {
-      "file": "rag-index-0016.ndjson",
-      "chunks": 578,
-      "bytes": 866245
+      "chunks": 7125,
+      "bytes": 10759233
     }
   ],
   "sources": {
@@ -1049,65 +974,26 @@
       "size": 13872,
       "status": "indexed",
       "chunks": 1
+    },
+    "01_POLICY/International/1100_North-Atlantic-Treaty__ENG_HR.pdf": {
+      "sha256": "0ede484adb8fc30f23171a6eedfeede877a49b6e557f1986cedf46ff4215ae4d",
+      "size": 5465416,
+      "status": "indexed",
+      "chunks": 26
     }
   },
   "report": {
-    "discoveredFiles": 158,
-    "unchangedFiles": 140,
-    "changedFiles": 8,
-    "processedChangedFiles": 158,
+    "discoveredFiles": 159,
+    "unchangedFiles": 147,
+    "changedFiles": 1,
+    "processedChangedFiles": 1,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 147,
-    "skippedFiles": 11,
-    "copiedChunks": 0,
-    "newChunks": 7099,
-    "totalChunks": 7099,
-    "failures": [
-      {
-        "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      },
-      {
-        "file": "01_POLICY/International/EUMETSAT/44250 -Programmes jan 24.pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "01_POLICY/International/EUMETSAT/44251 - Terms_of_Reference(1442024 V1).pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "01_POLICY/International/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "01_POLICY/International/EUMETSAT/44253 - Basic Documents.pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "01_POLICY/International/EUMETSAT/44254 - Staff_Rules.pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "01_POLICY/International/EUMETSAT/44255 - Council Resolutions and Declarations 1986 - 2025 - February 2026.pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "01_POLICY/International/EUMETSAT/48424 2021.pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "01_POLICY/International/EUMETSAT/52895 - res 2025 Feb 26.pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "01_POLICY/Member States/psk.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      },
-      {
-        "file": "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      }
-    ]
+    "indexedFiles": 1,
+    "skippedFiles": 0,
+    "copiedChunks": 7099,
+    "newChunks": 26,
+    "totalChunks": 7125,
+    "failures": []
   }
 }
