@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "d48fe84a6011ff5d6dfb5a4d8db6f1d138b3dbf1",
-  "createdAt": "2026-08-07T05:54:45.671Z",
+  "createdAt": "2026-08-07T05:56:00.263Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 4751,
+  "totalChunks": 5032,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -63,6 +63,11 @@
       "file": "rag-index-0011.ndjson",
       "chunks": 341,
       "bytes": 508600
+    },
+    {
+      "file": "rag-index-0012.ndjson",
+      "chunks": 281,
+      "bytes": 412555
     }
   ],
   "sources": {
@@ -726,20 +731,80 @@
       "size": 377340,
       "status": "indexed",
       "chunks": 6
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/Index _01Policy_EU_Other Eu Agencies_Satcen.docx": {
+      "sha256": "4a0081af9a23a748844883b9306e62e3336c107c87db9226729da71f863fc09e",
+      "size": 14093,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/EU/Parliament/A-5-2003-0294_EN.pdf": {
+      "sha256": "4b3c04af2ff9d049ef00ec4a53a9e2c18700b4f79652dafcad0be54ea2ec2e0b",
+      "size": 161749,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "01_POLICY/EU/Parliament/A-7-2011-0431_EN.pdf": {
+      "sha256": "609ba0744fb570d1aca10db9e0d65a07210e701b086725e433a34e86795afd5d",
+      "size": 182468,
+      "status": "indexed",
+      "chunks": 46
+    },
+    "01_POLICY/EU/Parliament/A-8-2016-0151_EN.pdf": {
+      "sha256": "4ef78225f96ac0f44411b7a8b0712146aae7dfcdb7bf130200056cbbecb5a3f5",
+      "size": 368133,
+      "status": "indexed",
+      "chunks": 53
+    },
+    "01_POLICY/EU/Parliament/A-8-2017-0250_EN.pdf": {
+      "sha256": "9d01e63794283d7d2cffa55bebec0cf93048c506bc2524ae1da21b3ccfe6f9a1",
+      "size": 527699,
+      "status": "indexed",
+      "chunks": 69
+    },
+    "01_POLICY/EU/Parliament/A-9-2023-0334_EN.pdf": {
+      "sha256": "bb0497f4fbe2b49689630a70d218dd37345cb6b618d3a26f8093f2cf8cba0b16",
+      "size": 192559,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/EU/Parliament/Index _01Policy_EU_Parliament.docx": {
+      "sha256": "e2f8e1479f2d86786b5ff96ef6e76f99e728432506185f99ed3519caa1dbec91",
+      "size": 14978,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Parliament/TA-5-2004-0054_EN.pdf": {
+      "sha256": "0c6c29a206fd85478ec575c5f17ff0fdb986b5307ea9d25569f514b86cae3d5c",
+      "size": 129488,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "01_POLICY/EU/Parliament/TA-5-2004-0287_EN.pdf": {
+      "sha256": "978ce3f50f08e4621975cd673f2368d327436e59d66813af10fbb1ceed0d2c30",
+      "size": 199055,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Parliament/TA-7-2012-0013_EN.pdf": {
+      "sha256": "e4825642b669b6aaf61df6e6862a254bb6350154515a2062e21a81051eea2554",
+      "size": 261594,
+      "status": "indexed",
+      "chunks": 26
     }
   },
   "report": {
     "discoveredFiles": 158,
     "unchangedFiles": 79,
     "changedFiles": 78,
-    "processedChangedFiles": 110,
+    "processedChangedFiles": 120,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 109,
+    "indexedFiles": 119,
     "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 4751,
-    "totalChunks": 4751,
+    "newChunks": 5032,
+    "totalChunks": 5032,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
