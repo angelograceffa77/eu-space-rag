@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b976faf65fff3a2b17be85b07a70ab7714c5a48d",
-  "createdAt": "2026-08-10T20:06:49.443Z",
+  "createdAt": "2026-08-10T20:10:35.440Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 8348,
+  "totalChunks": 8965,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 533,
       "bytes": 823360
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 617,
+      "bytes": 934199
     }
   ],
   "sources": {
@@ -1092,24 +1097,54 @@
       "size": 596033,
       "status": "indexed",
       "chunks": 29
+    },
+    "01_POLICY/Member States/Slovenian-space-strategy-2030.pdf": {
+      "sha256": "370f9b2aee85ca284135588667b20e435033a9d2f07e47094060b9eb773ade8f",
+      "size": 2313687,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/Member States/Space Strategy of Hungary.pdf": {
+      "sha256": "70af885e705bb3a67f37506ac5bd98744a75496d1fc28a1c5ff8c281f1ee45d1",
+      "size": 2427573,
+      "status": "indexed",
+      "chunks": 244
+    },
+    "01_POLICY/Member States/stm201920200010000dddpdfs.pdf": {
+      "sha256": "912a0223421d95529f821e46e9fbd5961a45d23d4f4e4e51f2177f50dd9350e8",
+      "size": 16921868,
+      "status": "indexed",
+      "chunks": 264
+    },
+    "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf": {
+      "sha256": "4efff96706c17bcf984ba9341d208f06b538f1d5314af1ad100080f99eb84a7b",
+      "size": 150145,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf": {
+      "sha256": "4659ed79bee39daaeac58bbdb3a42999142587bce87b4a5b056dab79c092bc39",
+      "size": 8586003,
+      "status": "indexed",
+      "chunks": 35
     }
   },
   "report": {
     "discoveredFiles": 181,
     "unchangedFiles": 145,
     "changedFiles": 26,
-    "processedChangedFiles": 20,
-    "remainingChangedFiles": 6,
+    "processedChangedFiles": 25,
+    "remainingChangedFiles": 1,
     "deletedFiles": [
       "01_POLICY/Member States/03-VCR-03-Ma-CJ_NKP2020.pdf",
       "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf",
       "01_POLICY/International/1100_North-Atlantic-Treaty__ENG_HR.pdf"
     ],
-    "indexedFiles": 18,
+    "indexedFiles": 23,
     "skippedFiles": 2,
     "copiedChunks": 6943,
-    "newChunks": 1405,
-    "totalChunks": 8348,
+    "newChunks": 2022,
+    "totalChunks": 8965,
     "failures": [
       {
         "file": "01_POLICY/EU/Commission/CELEX_52024SC0173_EN_TXT.pdf",
