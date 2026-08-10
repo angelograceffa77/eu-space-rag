@@ -3,16 +3,21 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b976faf65fff3a2b17be85b07a70ab7714c5a48d",
-  "createdAt": "2026-08-10T19:59:49.743Z",
+  "createdAt": "2026-08-10T20:02:22.944Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 7196,
+  "totalChunks": 7466,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
       "chunks": 7196,
       "bytes": 10818945
+    },
+    {
+      "file": "rag-index-0002.ndjson",
+      "chunks": 270,
+      "bytes": 420196
     }
   ],
   "sources": {
@@ -180,8 +185,8 @@
       "chunks": 37
     },
     "01_POLICY/EU/Commission/Index _01Policy_EU_commission.docx": {
-      "sha256": "dd3ecac26c32b05b6729623636e99599c136c942fcb95114e1db3a100d2ed3e0",
-      "size": 14072,
+      "sha256": "6ff3936b126254f2210c31fd80a3d0c6fee76b2cd9acdcc3d61eda2671e3de1b",
+      "size": 14311,
       "status": "indexed",
       "chunks": 2
     },
@@ -228,8 +233,8 @@
       "chunks": 73
     },
     "01_POLICY/EU/Commission/Legislative proposals/Index _01Policy_EU_commission_Legislative proposals.docx": {
-      "sha256": "bb611a6d5b75a7eb97e466a3a913268f18e5f16921297005e3d59aea64cfeb81",
-      "size": 14465,
+      "sha256": "4cefb6c053942d5c2816fea5a1e64c83974c939effadf73261f5dfaa686b3ced",
+      "size": 14438,
       "status": "indexed",
       "chunks": 2
     },
@@ -1004,27 +1009,50 @@
       "status": "skipped",
       "reason": "Worker stopped with code null, signal SIGABRT",
       "chunks": 0
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_efb81f6a-5283-11f0-a9d0-01aa75ed71a1.0001.02_DOC_1.pdf": {
+      "sha256": "1eeeb8857acca1a08c16a330a9db9b9d428919e427248975fcf20d52a645f4bc",
+      "size": 1300312,
+      "status": "indexed",
+      "chunks": 201
+    },
+    "01_POLICY/Member States/171825900_webb.pdf": {
+      "sha256": "4f211aa6b6075d051c33e70b0720602d19e9db901fadc4f74a2bc88d311474bf",
+      "size": 358923,
+      "status": "indexed",
+      "chunks": 65
+    },
+    "01_POLICY/Member States/20220120-UK_Defence_Space_Strategy_Feb_22.pdf": {
+      "sha256": "a78d6412d6099bcb24a17b331198176a7269ab2ffb1e134b0f6f575c55f2c1d0",
+      "size": 12274947,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
     }
   },
   "report": {
     "discoveredFiles": 181,
     "unchangedFiles": 145,
     "changedFiles": 26,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 21,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 16,
     "deletedFiles": [
       "01_POLICY/Member States/03-VCR-03-Ma-CJ_NKP2020.pdf",
       "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf",
       "01_POLICY/International/1100_North-Atlantic-Treaty__ENG_HR.pdf"
     ],
-    "indexedFiles": 4,
-    "skippedFiles": 1,
+    "indexedFiles": 8,
+    "skippedFiles": 2,
     "copiedChunks": 6943,
-    "newChunks": 253,
-    "totalChunks": 7196,
+    "newChunks": 523,
+    "totalChunks": 7466,
     "failures": [
       {
         "file": "01_POLICY/EU/Commission/CELEX_52024SC0173_EN_TXT.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "01_POLICY/Member States/20220120-UK_Defence_Space_Strategy_Feb_22.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
