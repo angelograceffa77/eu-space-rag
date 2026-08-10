@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b976faf65fff3a2b17be85b07a70ab7714c5a48d",
-  "createdAt": "2026-08-10T20:02:22.944Z",
+  "createdAt": "2026-08-10T20:04:58.236Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 7466,
+  "totalChunks": 7815,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 270,
       "bytes": 420196
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 349,
+      "bytes": 534081
     }
   ],
   "sources": {
@@ -883,10 +888,10 @@
       "chunks": 84
     },
     "01_POLICY/Member States/Index _01Policy_Member States.docx": {
-      "sha256": "dd1af89c55824ccbbbc4f58b8b92f065c799b7f216c0c43d00d3faf61a4a9642",
-      "size": 15047,
+      "sha256": "c3ca3b898402a0b28794c70a5e2c646286dabde893349adfffa22efb257baa04",
+      "size": 16920,
       "status": "indexed",
-      "chunks": 1
+      "chunks": 2
     },
     "01_POLICY/Member States/latvijas-kosmosa-strategija-2021.-2027.-gadam-1.pdf": {
       "sha256": "375062cea746dbec88c211e80be561dd5f30c2c3cd02a00c7efb37a7aa620ed5",
@@ -1028,24 +1033,48 @@
       "status": "skipped",
       "reason": "Worker stopped with code null, signal SIGABRT",
       "chunks": 0
+    },
+    "01_POLICY/Member States/Cyprus Space Strategy 2022-2027.pdf": {
+      "sha256": "6fd36e52b367d6deff50542495c20e43c790043960e14086edaaa31a7bc62383",
+      "size": 2532498,
+      "status": "indexed",
+      "chunks": 176
+    },
+    "01_POLICY/Member States/Eesti_kosmosepoliitika_A4_EST_web.pdf": {
+      "sha256": "c876f6472d9095b860c486b66760079642fbe39e2fd283f3bb1a212965781680",
+      "size": 10437458,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/Member States/estrategia_portugal_espaco_2030.pdf": {
+      "sha256": "b378649bf704c76b86c32fb898e2613daf651f962dc762cdfa8cf29be810713f",
+      "size": 202555,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/Member States/Kosmoso_pletros_koncepcija_patvirtinta(1).pdf": {
+      "sha256": "7a9f87a50fcd73e0257b33eed9578c7459d35d1fb3fed1c7d9d36f7cb0d5fbae",
+      "size": 663031,
+      "status": "indexed",
+      "chunks": 73
     }
   },
   "report": {
     "discoveredFiles": 181,
     "unchangedFiles": 145,
     "changedFiles": 26,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 16,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 11,
     "deletedFiles": [
       "01_POLICY/Member States/03-VCR-03-Ma-CJ_NKP2020.pdf",
       "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf",
       "01_POLICY/International/1100_North-Atlantic-Treaty__ENG_HR.pdf"
     ],
-    "indexedFiles": 8,
+    "indexedFiles": 13,
     "skippedFiles": 2,
     "copiedChunks": 6943,
-    "newChunks": 523,
-    "totalChunks": 7466,
+    "newChunks": 872,
+    "totalChunks": 7815,
     "failures": [
       {
         "file": "01_POLICY/EU/Commission/CELEX_52024SC0173_EN_TXT.pdf",
