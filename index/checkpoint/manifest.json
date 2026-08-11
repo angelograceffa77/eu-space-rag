@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "3fc816f06d7dce4a644cd3f4bf7cd0ec56c5f6f0",
-  "createdAt": "2026-08-11T12:27:31.170Z",
+  "createdAt": "2026-08-11T12:28:47.559Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 10154,
+  "totalChunks": 10209,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 143,
       "bytes": 213551
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 55,
+      "bytes": 76953
     }
   ],
   "sources": {
@@ -1213,20 +1218,50 @@
       "size": 25381,
       "status": "indexed",
       "chunks": 4
+    },
+    "01_POLICY/International/UN/A_RES_62_101-EN.pdf": {
+      "sha256": "11bbdc67d0d263e4e055e2ec0d177fc55351a6768b289113272ed32ce345e0b0",
+      "size": 32054,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "01_POLICY/International/UN/A_RES_68_74-EN.pdf": {
+      "sha256": "f13a82123997588e5e48f7983d8e031b5878447b042e62cde02e1d50f839fd7a",
+      "size": 42481,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/International/UN/A_RES_75_36-EN.pdf": {
+      "sha256": "e3c6a79c25434c6748c745687d7336a60f4b283b973050753c70deff629dd032",
+      "size": 182852,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "01_POLICY/International/UN/A_RES_76_3-EN.pdf": {
+      "sha256": "d74fe3fb5879d5dc23065391ee232585e7937aca2be0116ac633f704ed46f99c",
+      "size": 241716,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/International/UN/Index _01Policy_International_UN.docx": {
+      "sha256": "d1c0eb840a40956a91eb050bb0df1d68297e3c867614babd3c60250b68a03d9d",
+      "size": 16834,
+      "status": "indexed",
+      "chunks": 3
     }
   },
   "report": {
     "discoveredFiles": 205,
     "unchangedFiles": 169,
     "changedFiles": 24,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 9,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 4,
     "deletedFiles": [],
-    "indexedFiles": 15,
+    "indexedFiles": 20,
     "skippedFiles": 0,
     "copiedChunks": 9543,
-    "newChunks": 611,
-    "totalChunks": 10154,
+    "newChunks": 666,
+    "totalChunks": 10209,
     "failures": []
   }
 }
