@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "3fc816f06d7dce4a644cd3f4bf7cd0ec56c5f6f0",
-  "createdAt": "2026-08-11T12:25:56.159Z",
+  "createdAt": "2026-08-11T12:27:31.170Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 10011,
+  "totalChunks": 10154,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 210,
       "bytes": 317325
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 143,
+      "bytes": 213551
     }
   ],
   "sources": {
@@ -1178,20 +1183,50 @@
       "size": 950971,
       "status": "indexed",
       "chunks": 30
+    },
+    "01_POLICY/International/NATO/NATO’s overarching Space Policy _ NATO Official text.pdf": {
+      "sha256": "752e48df134fce72ad9ed42d5efbf1d00bb0d9d0f70ecc97afa04f8dc47734d1",
+      "size": 167751,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "01_POLICY/International/NATO/Relations with the European Union _ NATO Topic.pdf": {
+      "sha256": "c578fcf7ea54ebd6f2f6bbed4147649622b062597dd55e9c9831937071d61834",
+      "size": 1721040,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/International/UN/A_68_189-EN.pdf": {
+      "sha256": "8b892735cdcad29b46eb3e653b4b0b48780fa8439ccdeda5773478271de52d5a",
+      "size": 100951,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/International/UN/A_RES_1472(XIV)[A]-EN.pdf": {
+      "sha256": "4d83423c1c7f68a8e14362700104f4df28a8013ea2d4783b2c590c7f63a32d36",
+      "size": 122989,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "01_POLICY/International/UN/A_RES_59_115-EN.pdf": {
+      "sha256": "1f80982d46c2bf5b33d2b322067ac1e4cd11893451a9b4204a60adae57ab71f2",
+      "size": 25381,
+      "status": "indexed",
+      "chunks": 4
     }
   },
   "report": {
     "discoveredFiles": 205,
     "unchangedFiles": 169,
     "changedFiles": 24,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 14,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 9,
     "deletedFiles": [],
-    "indexedFiles": 10,
+    "indexedFiles": 15,
     "skippedFiles": 0,
     "copiedChunks": 9543,
-    "newChunks": 468,
-    "totalChunks": 10011,
+    "newChunks": 611,
+    "totalChunks": 10154,
     "failures": []
   }
 }
