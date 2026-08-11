@@ -2,42 +2,37 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "b976faf65fff3a2b17be85b07a70ab7714c5a48d",
-  "createdAt": "2026-08-10T20:11:46.638Z",
+  "buildCommit": "3fc816f06d7dce4a644cd3f4bf7cd0ec56c5f6f0",
+  "createdAt": "2026-08-11T12:30:52.060Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 9543,
+  "totalChunks": 10483,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 7196,
-      "bytes": 10818945
+      "chunks": 9801,
+      "bytes": 14789062
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 270,
-      "bytes": 420196
+      "chunks": 210,
+      "bytes": 317325
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 349,
-      "bytes": 534081
+      "chunks": 143,
+      "bytes": 213551
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 533,
-      "bytes": 823360
+      "chunks": 55,
+      "bytes": 76953
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 617,
-      "bytes": 934199
-    },
-    {
-      "file": "rag-index-0006.ndjson",
-      "chunks": 578,
-      "bytes": 877354
+      "chunks": 274,
+      "bytes": 405814
     }
   ],
   "sources": {
@@ -1138,33 +1133,164 @@
       "size": 3120588,
       "status": "indexed",
       "chunks": 578
+    },
+    "01_POLICY/International/ITU/Constitution-E.pdf": {
+      "sha256": "e737c962504357370a05ad486d6d590ce190e3e5167d4cd32b23ca1be328b83e",
+      "size": 252544,
+      "status": "indexed",
+      "chunks": 65
+    },
+    "01_POLICY/International/ITU/Convention-E.pdf": {
+      "sha256": "c180919b634e4cea59dfa7b8af1460dbb1660b07d3756e6208d7769aa561ce18",
+      "size": 340380,
+      "status": "indexed",
+      "chunks": 101
+    },
+    "01_POLICY/International/ITU/Index _01Policy_International_ITU.docx": {
+      "sha256": "049af0d145d6a7f8d710f4a3e3fe55dcf129e78cd3613ee292a472c37f3883fd",
+      "size": 15263,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/International/NATO/Agreement _ NATO Official text_.pdf": {
+      "sha256": "758e8bd1ddc9e5fda4e2de0a9c5ab0b744b45030e7cc39b652165b695d8fbaf7",
+      "size": 215188,
+      "status": "indexed",
+      "chunks": 63
+    },
+    "01_POLICY/International/NATO/Agreement _ NATO Official text.pdf": {
+      "sha256": "ac11039e283ffc3cd045bdd8ae59cdd9433f514b1291769178ea4c48c1af8ac5",
+      "size": 125358,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/International/NATO/Brussels Summit Communiqué _ NATO Official text.pdf": {
+      "sha256": "08d3fb94fc4865a1104bd178ae310875762c5983d1c89e763341e93d6118641f",
+      "size": 337864,
+      "status": "indexed",
+      "chunks": 150
+    },
+    "01_POLICY/International/NATO/Index _01Policy_International_Nato.docx": {
+      "sha256": "b16c66f4d0ae382100f5b19a538ded315773a8d217edd067cb0601bf095e41a7",
+      "size": 15918,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/International/NATO/Joint Declaration on EU-NATO Cooperation _ NATO Official text.pdf": {
+      "sha256": "7794a03ac2838d8c9cadf113cd693492cd4afa1e1ba5efc55ec59b4e28efa99d",
+      "size": 96668,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/International/NATO/NATO Commercial Space Strategy _ NATO Official text.pdf": {
+      "sha256": "4fede2306e26ff05304aef90269b09fe7b477971214eca63b5b0b6afc5d5e9fd",
+      "size": 317146,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "01_POLICY/International/NATO/NATO’s approach to space _ NATO Topic.pdf": {
+      "sha256": "681d1defac0c19ec8537fece6ffd8a88883c53c2f495934e155904639aaa839e",
+      "size": 950971,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "01_POLICY/International/NATO/NATO’s overarching Space Policy _ NATO Official text.pdf": {
+      "sha256": "752e48df134fce72ad9ed42d5efbf1d00bb0d9d0f70ecc97afa04f8dc47734d1",
+      "size": 167751,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "01_POLICY/International/NATO/Relations with the European Union _ NATO Topic.pdf": {
+      "sha256": "c578fcf7ea54ebd6f2f6bbed4147649622b062597dd55e9c9831937071d61834",
+      "size": 1721040,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/International/UN/A_68_189-EN.pdf": {
+      "sha256": "8b892735cdcad29b46eb3e653b4b0b48780fa8439ccdeda5773478271de52d5a",
+      "size": 100951,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/International/UN/A_RES_1472(XIV)[A]-EN.pdf": {
+      "sha256": "4d83423c1c7f68a8e14362700104f4df28a8013ea2d4783b2c590c7f63a32d36",
+      "size": 122989,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "01_POLICY/International/UN/A_RES_59_115-EN.pdf": {
+      "sha256": "1f80982d46c2bf5b33d2b322067ac1e4cd11893451a9b4204a60adae57ab71f2",
+      "size": 25381,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "01_POLICY/International/UN/A_RES_62_101-EN.pdf": {
+      "sha256": "11bbdc67d0d263e4e055e2ec0d177fc55351a6768b289113272ed32ce345e0b0",
+      "size": 32054,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "01_POLICY/International/UN/A_RES_68_74-EN.pdf": {
+      "sha256": "f13a82123997588e5e48f7983d8e031b5878447b042e62cde02e1d50f839fd7a",
+      "size": 42481,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/International/UN/A_RES_75_36-EN.pdf": {
+      "sha256": "e3c6a79c25434c6748c745687d7336a60f4b283b973050753c70deff629dd032",
+      "size": 182852,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "01_POLICY/International/UN/A_RES_76_3-EN.pdf": {
+      "sha256": "d74fe3fb5879d5dc23065391ee232585e7937aca2be0116ac633f704ed46f99c",
+      "size": 241716,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/International/UN/Index _01Policy_International_UN.docx": {
+      "sha256": "d1c0eb840a40956a91eb050bb0df1d68297e3c867614babd3c60250b68a03d9d",
+      "size": 16834,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/International/UN/Publication_Final_English_June2021.pdf": {
+      "sha256": "9dbdf01acc33174fa10fe241f74fcbdb1ecca936ee0cea0a813c7bdcb7063c47",
+      "size": 1028848,
+      "status": "indexed",
+      "chunks": 69
+    },
+    "01_POLICY/International/UN/ST_SPACE_061Rev01E.pdf": {
+      "sha256": "ba4fa6199c9dc3a98bcb7a0a4cf1fd09646b401339b0096af331db6330673ea9",
+      "size": 597399,
+      "status": "indexed",
+      "chunks": 158
+    },
+    "01_POLICY/International/UN/st_space_49E.pdf": {
+      "sha256": "8587ba4b9efd0a1a59f5ae6c7afb3108cd5025cc8bc74d477f22ae2b1c986177",
+      "size": 733123,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "01_POLICY/International/UN/st_space-088E.pdf": {
+      "sha256": "75ecb9547dea58e3f92775f66f4e4c206aecccf3b91dad514e5667e4533e29ba",
+      "size": 1907599,
+      "status": "indexed",
+      "chunks": 33
     }
   },
   "report": {
-    "discoveredFiles": 181,
-    "unchangedFiles": 145,
-    "changedFiles": 26,
-    "processedChangedFiles": 26,
+    "discoveredFiles": 205,
+    "unchangedFiles": 169,
+    "changedFiles": 24,
+    "processedChangedFiles": 24,
     "remainingChangedFiles": 0,
-    "deletedFiles": [
-      "01_POLICY/Member States/03-VCR-03-Ma-CJ_NKP2020.pdf",
-      "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf",
-      "01_POLICY/International/1100_North-Atlantic-Treaty__ENG_HR.pdf"
-    ],
+    "deletedFiles": [],
     "indexedFiles": 24,
-    "skippedFiles": 2,
-    "copiedChunks": 6943,
-    "newChunks": 2600,
-    "totalChunks": 9543,
-    "failures": [
-      {
-        "file": "01_POLICY/EU/Commission/CELEX_52024SC0173_EN_TXT.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      },
-      {
-        "file": "01_POLICY/Member States/20220120-UK_Defence_Space_Strategy_Feb_22.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      }
-    ]
+    "skippedFiles": 0,
+    "copiedChunks": 9543,
+    "newChunks": 940,
+    "totalChunks": 10483,
+    "failures": []
   }
 }
