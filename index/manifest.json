@@ -2,17 +2,42 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "370fee3ca649703dfec36708129ea00b2f09f8e8",
-  "createdAt": "2026-08-07T11:23:57.359Z",
+  "buildCommit": "b976faf65fff3a2b17be85b07a70ab7714c5a48d",
+  "createdAt": "2026-08-10T20:11:46.638Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 7336,
+  "totalChunks": 9543,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 7336,
-      "bytes": 11082055
+      "chunks": 7196,
+      "bytes": 10818945
+    },
+    {
+      "file": "rag-index-0002.ndjson",
+      "chunks": 270,
+      "bytes": 420196
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 349,
+      "bytes": 534081
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 533,
+      "bytes": 823360
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 617,
+      "bytes": 934199
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 578,
+      "bytes": 877354
     }
   ],
   "sources": {
@@ -126,8 +151,8 @@
       "chunks": 47
     },
     "01_POLICY/ESA/Index _01Policy_ESA.docx": {
-      "sha256": "d7391c3d0b2517cbcb0e50739d234efebe8ce62c4c394d888c313cfb3ec035b5",
-      "size": 15148,
+      "sha256": "7fed68f130dc267c75d9c2e20d51f9f8881a0044cd1987c99f9c9e16d7bf1537",
+      "size": 15395,
       "status": "indexed",
       "chunks": 3
     },
@@ -180,8 +205,8 @@
       "chunks": 37
     },
     "01_POLICY/EU/Commission/Index _01Policy_EU_commission.docx": {
-      "sha256": "dd3ecac26c32b05b6729623636e99599c136c942fcb95114e1db3a100d2ed3e0",
-      "size": 14072,
+      "sha256": "6ff3936b126254f2210c31fd80a3d0c6fee76b2cd9acdcc3d61eda2671e3de1b",
+      "size": 14311,
       "status": "indexed",
       "chunks": 2
     },
@@ -228,8 +253,8 @@
       "chunks": 73
     },
     "01_POLICY/EU/Commission/Legislative proposals/Index _01Policy_EU_commission_Legislative proposals.docx": {
-      "sha256": "bb611a6d5b75a7eb97e466a3a913268f18e5f16921297005e3d59aea64cfeb81",
-      "size": 14465,
+      "sha256": "4cefb6c053942d5c2816fea5a1e64c83974c939effadf73261f5dfaa686b3ced",
+      "size": 14438,
       "status": "indexed",
       "chunks": 2
     },
@@ -865,12 +890,6 @@
       "status": "indexed",
       "chunks": 20
     },
-    "01_POLICY/Member States/03-VCR-03-Ma-CJ_NKP2020.pdf": {
-      "sha256": "1b317ea43192f75a79cd8eff05946e3cc0292ccdc6869d579642ffe999284043",
-      "size": 4072790,
-      "status": "indexed",
-      "chunks": 359
-    },
     "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf": {
       "sha256": "2463a881511b5394cebc2fcf2211d3e5cc3f1381364b20c3dd36ed88c106035e",
       "size": 3817167,
@@ -884,10 +903,10 @@
       "chunks": 84
     },
     "01_POLICY/Member States/Index _01Policy_Member States.docx": {
-      "sha256": "dd1af89c55824ccbbbc4f58b8b92f065c799b7f216c0c43d00d3faf61a4a9642",
-      "size": 15047,
+      "sha256": "c3ca3b898402a0b28794c70a5e2c646286dabde893349adfffa22efb257baa04",
+      "size": 16920,
       "status": "indexed",
-      "chunks": 1
+      "chunks": 2
     },
     "01_POLICY/Member States/latvijas-kosmosa-strategija-2021.-2027.-gadam-1.pdf": {
       "sha256": "375062cea746dbec88c211e80be561dd5f30c2c3cd02a00c7efb37a7aa620ed5",
@@ -950,13 +969,6 @@
       "status": "indexed",
       "chunks": 47
     },
-    "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf": {
-      "sha256": "94528bd0dced82ad94ce196d99939dd9d0a244bc2f4331b8f292725603b829d6",
-      "size": 2055696,
-      "status": "skipped",
-      "reason": "Worker stopped with code null, signal SIGABRT",
-      "chunks": 0
-    },
     "02_LAW/EU legislation/CELEX_32021R0696_EN_TXT.pdf": {
       "sha256": "960792357bf6ceaab33f689e844b8b5af984eaa5f72d78699b8182385e2f8c6a",
       "size": 1669728,
@@ -975,12 +987,6 @@
       "status": "indexed",
       "chunks": 1
     },
-    "01_POLICY/International/1100_North-Atlantic-Treaty__ENG_HR.pdf": {
-      "sha256": "0ede484adb8fc30f23171a6eedfeede877a49b6e557f1986cedf46ff4215ae4d",
-      "size": 5465416,
-      "status": "indexed",
-      "chunks": 26
-    },
     "01_POLICY/International/NATO/1100_North-Atlantic-Treaty__ENG_HR.pdf": {
       "sha256": "0ede484adb8fc30f23171a6eedfeede877a49b6e557f1986cedf46ff4215ae4d",
       "size": 5465416,
@@ -998,20 +1004,167 @@
       "size": 4771076,
       "status": "indexed",
       "chunks": 117
+    },
+    "01_POLICY/ESA/ESA_CM2025_1_Resolution_on_Elevating_Europe_through_Space.pdf": {
+      "sha256": "5f7ca79c99dabda03e9c989fe828d611135e185d1784afa3e0b05d5de88fc7a8",
+      "size": 259570,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "01_POLICY/ESA/ESA_Strategy_2040_InDepth.pdf": {
+      "sha256": "3bd3f8f45dc6bd9597760a52e2509fc85ebd8d80351cab5cf6050a6f1e5fe569",
+      "size": 17371461,
+      "status": "indexed",
+      "chunks": 181
+    },
+    "01_POLICY/EU/Commission/CELEX_52024DC0289_EN_TXT.pdf": {
+      "sha256": "42acfc5e6c0d6480fa6dbba801502a1608d7afd19f112d147c30de932ba6f5e0",
+      "size": 771881,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "01_POLICY/EU/Commission/CELEX_52024SC0173_EN_TXT.pdf": {
+      "sha256": "0773305e7b85e6e52cc9a3014e2f7e7f0758ca79075b0855ad9292a94848d837",
+      "size": 3171707,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_efb81f6a-5283-11f0-a9d0-01aa75ed71a1.0001.02_DOC_1.pdf": {
+      "sha256": "1eeeb8857acca1a08c16a330a9db9b9d428919e427248975fcf20d52a645f4bc",
+      "size": 1300312,
+      "status": "indexed",
+      "chunks": 201
+    },
+    "01_POLICY/Member States/171825900_webb.pdf": {
+      "sha256": "4f211aa6b6075d051c33e70b0720602d19e9db901fadc4f74a2bc88d311474bf",
+      "size": 358923,
+      "status": "indexed",
+      "chunks": 65
+    },
+    "01_POLICY/Member States/20220120-UK_Defence_Space_Strategy_Feb_22.pdf": {
+      "sha256": "a78d6412d6099bcb24a17b331198176a7269ab2ffb1e134b0f6f575c55f2c1d0",
+      "size": 12274947,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/Cyprus Space Strategy 2022-2027.pdf": {
+      "sha256": "6fd36e52b367d6deff50542495c20e43c790043960e14086edaaa31a7bc62383",
+      "size": 2532498,
+      "status": "indexed",
+      "chunks": 176
+    },
+    "01_POLICY/Member States/Eesti_kosmosepoliitika_A4_EST_web.pdf": {
+      "sha256": "c876f6472d9095b860c486b66760079642fbe39e2fd283f3bb1a212965781680",
+      "size": 10437458,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/Member States/estrategia_portugal_espaco_2030.pdf": {
+      "sha256": "b378649bf704c76b86c32fb898e2613daf651f962dc762cdfa8cf29be810713f",
+      "size": 202555,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/Member States/Kosmoso_pletros_koncepcija_patvirtinta(1).pdf": {
+      "sha256": "7a9f87a50fcd73e0257b33eed9578c7459d35d1fb3fed1c7d9d36f7cb0d5fbae",
+      "size": 663031,
+      "status": "indexed",
+      "chunks": 73
+    },
+    "01_POLICY/Member States/Malta-National-Space-Strategy.pdf": {
+      "sha256": "fe7ccb72068ba68ae135668ddb889343ff9ee538fe2a7b2ae46f90776cf9207e",
+      "size": 8273745,
+      "status": "indexed",
+      "chunks": 165
+    },
+    "01_POLICY/Member States/national_space_strategy_in_action.pdf": {
+      "sha256": "dc2f616f1b7a7e3d5aa5fb0b892f34e8557478f652989153db63a77d51725cb2",
+      "size": 1103862,
+      "status": "indexed",
+      "chunks": 76
+    },
+    "01_POLICY/Member States/nkp_2026_2032.pdf": {
+      "sha256": "f7e1aadced4aa87f9eee978b289885a61a92c194c0c6a50d2180b1a94b16da58",
+      "size": 1170222,
+      "status": "indexed",
+      "chunks": 177
+    },
+    "01_POLICY/Member States/NSO-Advies-2026-2028.pdf": {
+      "sha256": "c0806e286977cf7b458ca2a768791e60c470ac334d23ffcd8ad155c211c996d3",
+      "size": 5844712,
+      "status": "indexed",
+      "chunks": 86
+    },
+    "01_POLICY/Member States/ruimtevaartbeleid-2022.pdf": {
+      "sha256": "63809b1b9909a760881da4d8e00a97979539048805ce9b3cd4a88fc1dd795c57",
+      "size": 596033,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/Member States/Slovenian-space-strategy-2030.pdf": {
+      "sha256": "370f9b2aee85ca284135588667b20e435033a9d2f07e47094060b9eb773ade8f",
+      "size": 2313687,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/Member States/Space Strategy of Hungary.pdf": {
+      "sha256": "70af885e705bb3a67f37506ac5bd98744a75496d1fc28a1c5ff8c281f1ee45d1",
+      "size": 2427573,
+      "status": "indexed",
+      "chunks": 244
+    },
+    "01_POLICY/Member States/stm201920200010000dddpdfs.pdf": {
+      "sha256": "912a0223421d95529f821e46e9fbd5961a45d23d4f4e4e51f2177f50dd9350e8",
+      "size": 16921868,
+      "status": "indexed",
+      "chunks": 264
+    },
+    "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf": {
+      "sha256": "4efff96706c17bcf984ba9341d208f06b538f1d5314af1ad100080f99eb84a7b",
+      "size": 150145,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf": {
+      "sha256": "4659ed79bee39daaeac58bbdb3a42999142587bce87b4a5b056dab79c092bc39",
+      "size": 8586003,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "02_LAW/EU legislation/CELEX_02016E_TXT-20250315_EN_TXT.pdf": {
+      "sha256": "f60b7d01c58c0154d6145353607af34399180d7749e173bf8c20effe4fbe6481",
+      "size": 3120588,
+      "status": "indexed",
+      "chunks": 578
     }
   },
   "report": {
-    "discoveredFiles": 162,
-    "unchangedFiles": 149,
-    "changedFiles": 2,
-    "processedChangedFiles": 2,
+    "discoveredFiles": 181,
+    "unchangedFiles": 145,
+    "changedFiles": 26,
+    "processedChangedFiles": 26,
     "remainingChangedFiles": 0,
-    "deletedFiles": [],
-    "indexedFiles": 2,
-    "skippedFiles": 0,
-    "copiedChunks": 7151,
-    "newChunks": 185,
-    "totalChunks": 7336,
-    "failures": []
+    "deletedFiles": [
+      "01_POLICY/Member States/03-VCR-03-Ma-CJ_NKP2020.pdf",
+      "02_LAW/EU legislation/CELEX_12012E_TXT_EN_TXT.pdf",
+      "01_POLICY/International/1100_North-Atlantic-Treaty__ENG_HR.pdf"
+    ],
+    "indexedFiles": 24,
+    "skippedFiles": 2,
+    "copiedChunks": 6943,
+    "newChunks": 2600,
+    "totalChunks": 9543,
+    "failures": [
+      {
+        "file": "01_POLICY/EU/Commission/CELEX_52024SC0173_EN_TXT.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "01_POLICY/Member States/20220120-UK_Defence_Space_Strategy_Feb_22.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
