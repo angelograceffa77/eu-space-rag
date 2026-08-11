@@ -3,16 +3,21 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f8de3de5d6818f338ce6b3a283bcb3d561f14ec",
-  "createdAt": "2026-08-11T14:32:58.519Z",
+  "createdAt": "2026-08-11T14:34:33.416Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 10578,
+  "totalChunks": 10615,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
       "chunks": 10578,
       "bytes": 15942188
+    },
+    {
+      "file": "rag-index-0002.ndjson",
+      "chunks": 37,
+      "bytes": 51618
     }
   ],
   "sources": {
@@ -1287,20 +1292,50 @@
       "size": 856777,
       "status": "indexed",
       "chunks": 47
+    },
+    "02_LAW/EU legislation/CELEX_32023D1053_EN_TXT.pdf": {
+      "sha256": "03fce9d4bc84e440fbb073465f9d0453d310204d3eb0f63047522db8bf45719d",
+      "size": 413879,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "02_LAW/EU legislation/CELEX_32023D1054_EN_TXT.pdf": {
+      "sha256": "4213149ecb0558551f1ecdea62e76c1fc8105280cf3a535ef43c8c0deb23440b",
+      "size": 653934,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "02_LAW/EU legislation/CELEX_32024D1067_EN_TXT.pdf": {
+      "sha256": "342348bf94064ee374991816888c600bf85fa18b11bd239db9bd5641ac3d1fd6",
+      "size": 460181,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/EU legislation/CELEX_32024D3195_EN_TXT.pdf": {
+      "sha256": "fd80bf5894f1a07d82fa598ee6b0f7fe0e7d947fc00a8e939393fbe5608c33eb",
+      "size": 457438,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/EU legislation/CELEX_32025D0469_EN_TXT.pdf": {
+      "sha256": "4661de216356d1266c6eadc0dff3b9f04e38536e328337e32419a547accca023",
+      "size": 453011,
+      "status": "indexed",
+      "chunks": 4
     }
   },
   "report": {
     "discoveredFiles": 217,
     "unchangedFiles": 192,
     "changedFiles": 13,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 8,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 3,
     "deletedFiles": [],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 10482,
-    "newChunks": 96,
-    "totalChunks": 10578,
+    "newChunks": 133,
+    "totalChunks": 10615,
     "failures": []
   }
 }
