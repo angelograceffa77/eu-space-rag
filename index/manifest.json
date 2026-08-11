@@ -2,37 +2,27 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "3fc816f06d7dce4a644cd3f4bf7cd0ec56c5f6f0",
-  "createdAt": "2026-08-11T12:30:52.060Z",
+  "buildCommit": "9f8de3de5d6818f338ce6b3a283bcb3d561f14ec",
+  "createdAt": "2026-08-11T14:35:46.824Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 10483,
+  "totalChunks": 10634,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 9801,
-      "bytes": 14789062
+      "chunks": 10578,
+      "bytes": 15942188
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 210,
-      "bytes": 317325
+      "chunks": 37,
+      "bytes": 51618
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 143,
-      "bytes": 213551
-    },
-    {
-      "file": "rag-index-0004.ndjson",
-      "chunks": 55,
-      "bytes": 76953
-    },
-    {
-      "file": "rag-index-0005.ndjson",
-      "chunks": 274,
-      "bytes": 405814
+      "chunks": 19,
+      "bytes": 26003
     }
   ],
   "sources": {
@@ -977,10 +967,10 @@
       "chunks": 123
     },
     "02_LAW/EU legislation/Index _02LAW_EU legislation.docx": {
-      "sha256": "4e5ffa4a762cc3f777993416e6aaa24d551158e92098580199343a7dd7af3598",
-      "size": 13872,
+      "sha256": "c146a3cbf1a608cad626a990b1ec90a5b12bcf7c40a71d7380307a31bf877ac8",
+      "size": 15409,
       "status": "indexed",
-      "chunks": 1
+      "chunks": 4
     },
     "01_POLICY/International/NATO/1100_North-Atlantic-Treaty__ENG_HR.pdf": {
       "sha256": "0ede484adb8fc30f23171a6eedfeede877a49b6e557f1986cedf46ff4215ae4d",
@@ -1277,20 +1267,92 @@
       "size": 1907599,
       "status": "indexed",
       "chunks": 33
+    },
+    "02_LAW/EU legislation/CELEX_02016D0413-20250608_EN_TXT.pdf": {
+      "sha256": "a8efe1a73bbe9778cbd2465e15bac85c6ac6aba464afbdefad8650d100b34fd6",
+      "size": 161410,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "02_LAW/EU legislation/CELEX_02021D0698-20230320_EN_TXT.pdf": {
+      "sha256": "049a440aac69193f08a1f8c94b7bc07475aff940b8f2194a509d6aeea41fc2d3",
+      "size": 158463,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "02_LAW/EU legislation/CELEX_32011D1104_EN_TXT.pdf": {
+      "sha256": "0dbb03ee5b67c7a34e1bbc1c8958694996733db04262585cf195362325c53848",
+      "size": 1038169,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "02_LAW/EU legislation/CELEX_32017D1406_EN_TXT.pdf": {
+      "sha256": "62d51b23aed750cc89f849dfb88fbba9cd5777466dcee34a0c534dced7e762dd",
+      "size": 327636,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "02_LAW/EU legislation/CELEX_32022D1245_EN_TXT.pdf": {
+      "sha256": "11c511d7925a8688177795531f92821b8ce039f21547db149054c0a5669dcba4",
+      "size": 856777,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "02_LAW/EU legislation/CELEX_32023D1053_EN_TXT.pdf": {
+      "sha256": "03fce9d4bc84e440fbb073465f9d0453d310204d3eb0f63047522db8bf45719d",
+      "size": 413879,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "02_LAW/EU legislation/CELEX_32023D1054_EN_TXT.pdf": {
+      "sha256": "4213149ecb0558551f1ecdea62e76c1fc8105280cf3a535ef43c8c0deb23440b",
+      "size": 653934,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "02_LAW/EU legislation/CELEX_32024D1067_EN_TXT.pdf": {
+      "sha256": "342348bf94064ee374991816888c600bf85fa18b11bd239db9bd5641ac3d1fd6",
+      "size": 460181,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/EU legislation/CELEX_32024D3195_EN_TXT.pdf": {
+      "sha256": "fd80bf5894f1a07d82fa598ee6b0f7fe0e7d947fc00a8e939393fbe5608c33eb",
+      "size": 457438,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/EU legislation/CELEX_32025D0469_EN_TXT.pdf": {
+      "sha256": "4661de216356d1266c6eadc0dff3b9f04e38536e328337e32419a547accca023",
+      "size": 453011,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/EU legislation/CELEX_32025D1205_EN_TXT.pdf": {
+      "sha256": "badf7dccacf6e3ee9bb7faf6db0e300352036d8c3a9c0115240365ca8f61511f",
+      "size": 482455,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "02_LAW/EU legislation/CELEX_32025D1211_EN_TXT.pdf": {
+      "sha256": "5d422912c085d173d94cfdc59aadb0f544b5b036905af07c0095c6910958f9c5",
+      "size": 460072,
+      "status": "indexed",
+      "chunks": 5
     }
   },
   "report": {
-    "discoveredFiles": 205,
-    "unchangedFiles": 169,
-    "changedFiles": 24,
-    "processedChangedFiles": 24,
+    "discoveredFiles": 217,
+    "unchangedFiles": 192,
+    "changedFiles": 13,
+    "processedChangedFiles": 13,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 24,
+    "indexedFiles": 13,
     "skippedFiles": 0,
-    "copiedChunks": 9543,
-    "newChunks": 940,
-    "totalChunks": 10483,
+    "copiedChunks": 10482,
+    "newChunks": 152,
+    "totalChunks": 10634,
     "failures": []
   }
 }
