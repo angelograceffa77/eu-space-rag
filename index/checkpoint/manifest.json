@@ -3,16 +3,21 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "3fc816f06d7dce4a644cd3f4bf7cd0ec56c5f6f0",
-  "createdAt": "2026-08-11T12:24:05.060Z",
+  "createdAt": "2026-08-11T12:25:56.159Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 9801,
+  "totalChunks": 10011,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
       "chunks": 9801,
       "bytes": 14789062
+    },
+    {
+      "file": "rag-index-0002.ndjson",
+      "chunks": 210,
+      "bytes": 317325
     }
   ],
   "sources": {
@@ -1143,20 +1148,50 @@
       "size": 125358,
       "status": "indexed",
       "chunks": 28
+    },
+    "01_POLICY/International/NATO/Brussels Summit Communiqué _ NATO Official text.pdf": {
+      "sha256": "08d3fb94fc4865a1104bd178ae310875762c5983d1c89e763341e93d6118641f",
+      "size": 337864,
+      "status": "indexed",
+      "chunks": 150
+    },
+    "01_POLICY/International/NATO/Index _01Policy_International_Nato.docx": {
+      "sha256": "b16c66f4d0ae382100f5b19a538ded315773a8d217edd067cb0601bf095e41a7",
+      "size": 15918,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/International/NATO/Joint Declaration on EU-NATO Cooperation _ NATO Official text.pdf": {
+      "sha256": "7794a03ac2838d8c9cadf113cd693492cd4afa1e1ba5efc55ec59b4e28efa99d",
+      "size": 96668,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/International/NATO/NATO Commercial Space Strategy _ NATO Official text.pdf": {
+      "sha256": "4fede2306e26ff05304aef90269b09fe7b477971214eca63b5b0b6afc5d5e9fd",
+      "size": 317146,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "01_POLICY/International/NATO/NATO’s approach to space _ NATO Topic.pdf": {
+      "sha256": "681d1defac0c19ec8537fece6ffd8a88883c53c2f495934e155904639aaa839e",
+      "size": 950971,
+      "status": "indexed",
+      "chunks": 30
     }
   },
   "report": {
     "discoveredFiles": 205,
     "unchangedFiles": 169,
     "changedFiles": 24,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 19,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 14,
     "deletedFiles": [],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 9543,
-    "newChunks": 258,
-    "totalChunks": 9801,
+    "newChunks": 468,
+    "totalChunks": 10011,
     "failures": []
   }
 }
