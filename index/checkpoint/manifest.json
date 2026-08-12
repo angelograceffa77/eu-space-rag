@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
-  "createdAt": "2026-08-12T15:00:17.038Z",
+  "createdAt": "2026-08-12T15:01:45.037Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 11624,
+  "totalChunks": 11814,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 642,
       "bytes": 1611947
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 190,
+      "bytes": 371874
     }
   ],
   "sources": {
@@ -1464,20 +1469,50 @@
       "size": 5065892,
       "status": "indexed",
       "chunks": 597
+    },
+    "02_LAW/National law/Greece/FEK_A_200_2017.pdf": {
+      "sha256": "9e9003fdaa59be91b1649b77129d514d9d44128ddfe474f0151208b2ea4aad0d",
+      "size": 278778,
+      "status": "indexed",
+      "chunks": 84
+    },
+    "02_LAW/National law/Index _02LAW_National law.docx": {
+      "sha256": "510363681c342c32a0534b67e3bcc4b14a5958e7208ee9fa6fe343c5f60b0006",
+      "size": 25995,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "02_LAW/National law/Italy/___ ATTO COMPLETO ___.pdf": {
+      "sha256": "7eec36765cf14d77e523cfbd7cf9278f19741f643283da90f7398f2d434a13a7",
+      "size": 148809,
+      "status": "indexed",
+      "chunks": 50
+    },
+    "02_LAW/National law/Italy/___ ATTO COMPLETO ___1.pdf": {
+      "sha256": "b7ee32252bd0039e35eef78904ae4af4b2b4c751d72fbf592744a94093de7573",
+      "size": 83435,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "02_LAW/National law/Italy/___ ATTO COMPLETO ___2.pdf": {
+      "sha256": "77edb36533bfbdbbd60648f7c09bd39b140fec1eb161b94ef0daebcd92ba922d",
+      "size": 111390,
+      "status": "indexed",
+      "chunks": 33
     }
   },
   "report": {
     "discoveredFiles": 264,
     "unchangedFiles": 205,
     "changedFiles": 47,
-    "processedChangedFiles": 20,
-    "remainingChangedFiles": 27,
+    "processedChangedFiles": 25,
+    "remainingChangedFiles": 22,
     "deletedFiles": [],
-    "indexedFiles": 20,
+    "indexedFiles": 25,
     "skippedFiles": 0,
     "copiedChunks": 10634,
-    "newChunks": 990,
-    "totalChunks": 11624,
+    "newChunks": 1180,
+    "totalChunks": 11814,
     "failures": []
   }
 }
