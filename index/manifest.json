@@ -2,27 +2,62 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "9f8de3de5d6818f338ce6b3a283bcb3d561f14ec",
-  "createdAt": "2026-08-11T14:35:46.824Z",
+  "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
+  "createdAt": "2026-08-12T17:52:58.325Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 10634,
+  "totalChunks": 13107,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 10578,
-      "bytes": 15942188
+      "chunks": 10828,
+      "bytes": 16314699
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 37,
-      "bytes": 51618
+      "chunks": 81,
+      "bytes": 119549
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 19,
-      "bytes": 26003
+      "chunks": 73,
+      "bytes": 111285
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 642,
+      "bytes": 1611947
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 190,
+      "bytes": 371874
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 660,
+      "bytes": 990459
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 55,
+      "bytes": 80317
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 64,
+      "bytes": 94538
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 179,
+      "bytes": 277840
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 335,
+      "bytes": 507650
     }
   ],
   "sources": {
@@ -1339,20 +1374,302 @@
       "size": 460072,
       "status": "indexed",
       "chunks": 5
+    },
+    "02_LAW/National law/Austria/BGBLA_2004_I_73.pdf": {
+      "sha256": "9d231c1a4c6bfc40a29af8a433cdedabdb949d01b050d34d6dae1073044f19ea",
+      "size": 612428,
+      "status": "indexed",
+      "chunks": 58
+    },
+    "02_LAW/National law/Austria/ERV_2011_1_132.pdf": {
+      "sha256": "6093df5ca5d95a40038ffffe455ef0b65db78381de29ec40069a5431b1d924ad",
+      "size": 306084,
+      "status": "indexed",
+      "chunks": 23
+    },
+    "02_LAW/National law/Austria/Weltraumverordnung, Fassung vom 12.08.2026.pdf": {
+      "sha256": "6e3f01c0444d457a04d973bbd92f00ae186b60689f4566d81755580485630789",
+      "size": 94821,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/Belgium/AR20220315_2.pdf": {
+      "sha256": "e6d73c6dfce94c4ba799ba489a279b6112d49137b7b79385f2b1a15b5dd12908",
+      "size": 429923,
+      "status": "indexed",
+      "chunks": 81
+    },
+    "02_LAW/National law/Belgium/Loi_fr.pdf": {
+      "sha256": "d8e2b2bbff3baa19e2ed149bcfbff3bead2634d71fd2e5233a0177969439d817",
+      "size": 135159,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "02_LAW/National law/Belgium/SPP-POD.pdf": {
+      "sha256": "c93d3d81158b020b81910c8f2605c0d8a67d290f9b725fe3fd51e9d1b3245032",
+      "size": 644506,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/Denmark/A20160040930.pdf": {
+      "sha256": "2a9f6aa314cca7f610d36507599a53b8f75711e2b921cb0131632056895488a5",
+      "size": 218453,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/Denmark/B20210111605.pdf": {
+      "sha256": "85f20eaef7d3706e1b251d1f119724788086cde588d2bb60071054412d085828",
+      "size": 225315,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "02_LAW/National law/Denmark/B20260034105.pdf": {
+      "sha256": "5c4b10c6e51e40e96efb02accbf4220d33d125275f6fcbdcbeb8d496adec7b2a",
+      "size": 175385,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "02_LAW/National law/Finland/Laki avaruustoiminnasta annetun lain 21 §_n muuttamisesta _ 475_2025 _ Suomen säädöskokoelma _ Finlex.pdf": {
+      "sha256": "5cf5b3f0e072e68e807b4556b30dc0dcf41f3b1e759613c10da63b0064c11d80",
+      "size": 131626,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "02_LAW/National law/Finland/Laki avaruustoiminnasta annetun lain muuttamisesta _ 97_2023 _ Suomen säädöskokoelma _ Finlex.pdf": {
+      "sha256": "8fb6e19bf974634b82d0cb21b7dd19e824c0a39bab555427bf47568029ceba3f",
+      "size": 245281,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "02_LAW/National law/Finland/main (1).pdf": {
+      "sha256": "7e93e1159982ac5b7d282a6556c82c394f960eb6f3299fc1e3e6c32b3cde9262",
+      "size": 136953,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "02_LAW/National law/Finland/main (2).pdf": {
+      "sha256": "875b4716fedb22ae0f8054d790c5a24734774daeff2c6c4bc8dbceacba0b5aab",
+      "size": 105144,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "02_LAW/National law/Finland/main (3).pdf": {
+      "sha256": "b6e6135bdc6054a1736eda2b2cefa69f244d61d43a280b6c55563070d26ccab7",
+      "size": 107940,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "02_LAW/National law/Finland/main.pdf": {
+      "sha256": "19938a69b552255302804c1509da6c8d0b3b7c55fa18083c50a2e2784454edea",
+      "size": 111747,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/National law/Finland/Statsrådets förordning om gränsvärden för satellitbaserad fjärranalys _ 892_2023 _ Legislation _ Finlex.pdf": {
+      "sha256": "03c78ff6f95c5935019c18d1c971ecfde7035e8b2f3f0d7e12f573226dcd268b",
+      "size": 170873,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/National law/Germany/RAÜG - Gesetz zur Übertragung von Verwaltungsaufgaben auf dem Gebiet der Raumfahrt.pdf": {
+      "sha256": "5bdcd3d348a5e44f2e56865e5434af1992fc2e7522e2809e56e308abe33fc656",
+      "size": 92692,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/National law/Germany/SatDSiG.pdf": {
+      "sha256": "36333064dc3ca2044eda850241f106b4fc4562db8fa5e47ac050d73d47896946",
+      "size": 79222,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "02_LAW/National law/Germany/SatDSiV.pdf": {
+      "sha256": "9b3c01ee37a3a0dec273c83a3fc2e7329f0af8417c7b71f4f135b4ea4a451fc8",
+      "size": 96211,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "02_LAW/National law/Greece/FEK_A_167_2019.pdf": {
+      "sha256": "0d1a052ef5866c76175c66421c881e380741d8d736e5dfa9098149ab2ba33bcf",
+      "size": 5065892,
+      "status": "indexed",
+      "chunks": 597
+    },
+    "02_LAW/National law/Greece/FEK_A_200_2017.pdf": {
+      "sha256": "9e9003fdaa59be91b1649b77129d514d9d44128ddfe474f0151208b2ea4aad0d",
+      "size": 278778,
+      "status": "indexed",
+      "chunks": 84
+    },
+    "02_LAW/National law/Index _02LAW_National law.docx": {
+      "sha256": "510363681c342c32a0534b67e3bcc4b14a5958e7208ee9fa6fe343c5f60b0006",
+      "size": 25995,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "02_LAW/National law/Italy/___ ATTO COMPLETO ___.pdf": {
+      "sha256": "7eec36765cf14d77e523cfbd7cf9278f19741f643283da90f7398f2d434a13a7",
+      "size": 148809,
+      "status": "indexed",
+      "chunks": 50
+    },
+    "02_LAW/National law/Italy/___ ATTO COMPLETO ___1.pdf": {
+      "sha256": "b7ee32252bd0039e35eef78904ae4af4b2b4c751d72fbf592744a94093de7573",
+      "size": 83435,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "02_LAW/National law/Italy/___ ATTO COMPLETO ___2.pdf": {
+      "sha256": "77edb36533bfbdbbd60648f7c09bd39b140fec1eb161b94ef0daebcd92ba922d",
+      "size": 111390,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "02_LAW/National law/Italy/___ ATTO COMPLETO ___4.pdf": {
+      "sha256": "eeea4e1637f2c4c74c1aeb5d68332c568ea7fd4b764fecd7f0dad41d799778a4",
+      "size": 563013,
+      "status": "indexed",
+      "chunks": 300
+    },
+    "02_LAW/National law/Italy/Italy.pdf": {
+      "sha256": "2f33f5273a80d6bfddee7ffccef1e8be90c2985da99a4e335aceecbc97df0c53",
+      "size": 7950397,
+      "status": "indexed",
+      "chunks": 314
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-loi-2017-07-20-a674-jo-fr-pdfa.pdf": {
+      "sha256": "861eb27dcfe063516a12f43b9f227aaa450c7316ba8bf5225f16c5cc9fbd1c93",
+      "size": 157787,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-loi-2020-12-15-a1086-jo-fr-pdfa.pdf": {
+      "sha256": "91e6b6e85a34ff3c9a93a349584b610ee3aeaad518891d45302b413550e17111",
+      "size": 158580,
+      "status": "indexed",
+      "chunks": 22
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-loi-2020-12-15-a1087-jo-fr-pdfa.pdf": {
+      "sha256": "c216ff6370e5224ecb227ac1479b74d8b6f1a1b2e5d9de971fdfb8c66730d8f6",
+      "size": 146197,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-rgd-2025-07-11-a301-jo-fr-pdfa.pdf": {
+      "sha256": "e1ac3599352297e53efe98d7d6b923194bd40443617d55d1be6bf564ffa38e06",
+      "size": 182541,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-rgd-2025-07-11-a302-jo-fr-pdfa.pdf": {
+      "sha256": "10b81a1b05c4b9bb7f410d12e346c75b8cacad03c093c0083a09483986dafb72",
+      "size": 179094,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "02_LAW/National law/Netherlands/stb-2007-475.pdf": {
+      "sha256": "25ddf0bf32111b2d05b59ae3e8a454e01879391884380919ee014d5c1a5348a0",
+      "size": 32601,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "02_LAW/National law/Netherlands/stb-2015-18.pdf": {
+      "sha256": "c94396e71e3aea837bcca351779fdd4cc1e1ea59f45bab863bedd7ce05deaccc",
+      "size": 56969,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "02_LAW/National law/Netherlands/stb11309.2s.pdf": {
+      "sha256": "1feeb8b522b435608c4c4732542ad6030bac92b7a775d94be849996a034db704",
+      "size": 31690,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "02_LAW/National law/Netherlands/stcrt-2008-36-p13-SC84552.pdf": {
+      "sha256": "88e9be0acb545bd3789512d8286d787d1ecc43fbb9f575b79325a03a2f683670",
+      "size": 653273,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "02_LAW/National law/Netherlands/wetten.nl - Regeling - Wet ruimtevaartactiviteiten - BWBR0021418.pdf": {
+      "sha256": "b87b7463c9cbbb5a47a37bfb519a10fee588c7573edff98739aed3ff546b51df",
+      "size": 155051,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "02_LAW/National law/Poland/D20141533Lj.pdf": {
+      "sha256": "6625d67974b70b30d2c12a623baf9552b3018c3400cc4034cbc05809f6f0fabf",
+      "size": 304859,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "02_LAW/National law/Poland/D20212248.pdf": {
+      "sha256": "e947a479f939a296a547aa522c4b221bceecdebab55c3b1903fa85bb0e1b7b8c",
+      "size": 214616,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/National law/Poland/D20251890.pdf": {
+      "sha256": "efaaae66bf66f978a2cd4f80646f7b522455fbeb128ef3c8ba3ea09b85384b18",
+      "size": 160774,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "02_LAW/National law/Poland/D20260465L.pdf": {
+      "sha256": "d875e9f3ba2a2f6d1a2efa8e9aa6abbf650484c2610502652061a6ffc11f326d",
+      "size": 377238,
+      "status": "indexed",
+      "chunks": 68
+    },
+    "02_LAW/National law/Slovakia/ZZ_2024_378_20251112.pdf": {
+      "sha256": "7ef1885a1f2d2aff7490c637d42e49b4132fca451a46fdbc6cab881859581b9a",
+      "size": 303270,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "02_LAW/National law/Slovakia/ZZ_2024_378.pdf": {
+      "sha256": "b5bc60b29c2da685394815fc4b8bfb5848dfb91aff69fb99580a86625980ce4a",
+      "size": 302602,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "02_LAW/National law/Slovakia/ZZ_2025_297.pdf": {
+      "sha256": "79d593ef9c4c3d4c385d20fe4caabfadd4f19d21ecad35bee6dcb9b3a6282cbf",
+      "size": 353226,
+      "status": "indexed",
+      "chunks": 38
+    },
+    "02_LAW/National law/Spain/BOE-A-1995-6058-consolidado.pdf": {
+      "sha256": "55bf0ca25fe12a77f1680fd5c51f6477175934439179b8c403fa546e58aaede1",
+      "size": 199008,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "02_LAW/National law/Spain/BOE-A-2022-14581.pdf": {
+      "sha256": "aab455839f4a41e1c111676023cc9040472441cd0bfa4b6e798dd7f3ba1a98a5",
+      "size": 641384,
+      "status": "indexed",
+      "chunks": 226
+    },
+    "02_LAW/National law/Spain/BOE-A-2023-6082.pdf": {
+      "sha256": "f69345377e47f4b96dcea28a2a7a2a21fda429f4a1ee40393d6440a013448806",
+      "size": 428658,
+      "status": "indexed",
+      "chunks": 109
     }
   },
   "report": {
-    "discoveredFiles": 217,
-    "unchangedFiles": 192,
-    "changedFiles": 13,
-    "processedChangedFiles": 13,
+    "discoveredFiles": 264,
+    "unchangedFiles": 245,
+    "changedFiles": 7,
+    "processedChangedFiles": 47,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 13,
+    "indexedFiles": 47,
     "skippedFiles": 0,
-    "copiedChunks": 10482,
-    "newChunks": 152,
-    "totalChunks": 10634,
+    "copiedChunks": 10634,
+    "newChunks": 2473,
+    "totalChunks": 13107,
     "failures": []
   }
 }
