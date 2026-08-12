@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
-  "createdAt": "2026-08-12T15:06:23.737Z",
+  "createdAt": "2026-08-12T17:49:46.035Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 12593,
+  "totalChunks": 12772,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -48,6 +48,11 @@
       "file": "rag-index-0008.ndjson",
       "chunks": 64,
       "bytes": 94538
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 179,
+      "bytes": 277840
     }
   ],
   "sources": {
@@ -1604,20 +1609,50 @@
       "size": 160774,
       "status": "indexed",
       "chunks": 2
+    },
+    "02_LAW/National law/Poland/D20260465L.pdf": {
+      "sha256": "d875e9f3ba2a2f6d1a2efa8e9aa6abbf650484c2610502652061a6ffc11f326d",
+      "size": 377238,
+      "status": "indexed",
+      "chunks": 68
+    },
+    "02_LAW/National law/Slovakia/ZZ_2024_378_20251112.pdf": {
+      "sha256": "7ef1885a1f2d2aff7490c637d42e49b4132fca451a46fdbc6cab881859581b9a",
+      "size": 303270,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "02_LAW/National law/Slovakia/ZZ_2024_378.pdf": {
+      "sha256": "b5bc60b29c2da685394815fc4b8bfb5848dfb91aff69fb99580a86625980ce4a",
+      "size": 302602,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "02_LAW/National law/Slovakia/ZZ_2025_297.pdf": {
+      "sha256": "79d593ef9c4c3d4c385d20fe4caabfadd4f19d21ecad35bee6dcb9b3a6282cbf",
+      "size": 353226,
+      "status": "indexed",
+      "chunks": 38
+    },
+    "02_LAW/National law/Spain/BOE-A-1995-6058-consolidado.pdf": {
+      "sha256": "55bf0ca25fe12a77f1680fd5c51f6477175934439179b8c403fa546e58aaede1",
+      "size": 199008,
+      "status": "indexed",
+      "chunks": 7
     }
   },
   "report": {
     "discoveredFiles": 264,
-    "unchangedFiles": 205,
-    "changedFiles": 47,
-    "processedChangedFiles": 40,
-    "remainingChangedFiles": 7,
+    "unchangedFiles": 245,
+    "changedFiles": 7,
+    "processedChangedFiles": 45,
+    "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 40,
+    "indexedFiles": 45,
     "skippedFiles": 0,
     "copiedChunks": 10634,
-    "newChunks": 1959,
-    "totalChunks": 12593,
+    "newChunks": 2138,
+    "totalChunks": 12772,
     "failures": []
   }
 }
