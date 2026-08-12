@@ -1,0 +1,1378 @@
+{
+  "version": 5,
+  "type": "checkpoint",
+  "complete": false,
+  "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
+  "createdAt": "2026-08-12T14:54:00.345Z",
+  "repository": "angelograceffa77/eu-space-rag",
+  "branch": "main",
+  "shardSizeMB": 20,
+  "totalChunks": 10828,
+  "shards": [
+    {
+      "file": "rag-index-0001.ndjson",
+      "chunks": 10828,
+      "bytes": 16314699
+    }
+  ],
+  "sources": {
+    "00_GPT_CONFIGURATION/GPT space - embedded instructions- GPT enhanced.docx": {
+      "sha256": "6ab4451f0cc9f82414de7d54230983b3fccacbb9d2e2e6bca450d696eed85add",
+      "size": 38334,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/ESA/CELEX_22004A0806(03)_EN_TXT.pdf": {
+      "sha256": "d81c783719a5d719c84538d999eee01565ece5841f52a0c38d3dd1c40037d914",
+      "size": 170318,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/ESA/cellar_742587dd-44f3-4527-be91-a2eab676330f.0008.02_DOC_1.pdf": {
+      "sha256": "979ba200110397fcbcf0ac109b630f631548c21e3c072f540f7fef69dd8aeabc",
+      "size": 85924,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/ESA/eli_dec_2024_1542_oj_EN_TXT.pdf": {
+      "sha256": "79fc2fa43137db2754a21ee4de2bc75a93d10655e6694be29f42332357d2d2b5",
+      "size": 876645,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/ESA/ESA_Convention_SP-1344_EN.pdf": {
+      "sha256": "3dd5c09a9e229294a57a0364591e2ef88f574bd53d7b6cfe8dd963911e2ed441",
+      "size": 1010228,
+      "status": "indexed",
+      "chunks": 87
+    },
+    "01_POLICY/ESA/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf": {
+      "sha256": "3a360ea84f46bd502bddd447638f1a71a65ab8699ecb4357261b5f51f89169e3",
+      "size": 719607,
+      "status": "indexed",
+      "chunks": 49
+    },
+    "01_POLICY/ESA/ESA_REG_004,rev.2_EN.pdf": {
+      "sha256": "110c4b44f1be0997a3f2765f9951ae8a0959d94eb7f828a7b7e7a34d98b80105",
+      "size": 513420,
+      "status": "indexed",
+      "chunks": 166
+    },
+    "01_POLICY/ESA/ESA_REG_007_rev_14_EN.pdf": {
+      "sha256": "fb073623b01eccc5297d1004b9df64f6be385805c9f6febad96a49b70f499c64",
+      "size": 1060346,
+      "status": "indexed",
+      "chunks": 310
+    },
+    "01_POLICY/ESA/ESA_REG_009_Geo_return_coeff_(extranet).pdf": {
+      "sha256": "407c7e52c4f0507d7a8a34cf5cfa9ed718b6621ae36c646e539462c9927f4d98",
+      "size": 228898,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "01_POLICY/ESA/ESA-ADMIN-IPOL-LEGI(2021)1_EN_final.pdf": {
+      "sha256": "7a9cbae4896e1599ee5c093c35e9d4046996841dfdcc57a04ab062a087b56116",
+      "size": 175686,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2019)1.pdf": {
+      "sha256": "310e76ddafca56d45c671a3acd083a05ed6d3e5132f85db3d6d5d3c65d56539b",
+      "size": 327522,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2023)1_EN.pdf": {
+      "sha256": "e874bb47eb7242a2b22795134353b968078c78240b1f23c78fe7ee40d12f1774",
+      "size": 607193,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf": {
+      "sha256": "188a996b21be24a5056e28ab6b60792a43ff730ba6be32f8b9b54c3690fef3d2",
+      "size": 4009917,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/ESA/ESA-REG-001_rev6_EN.pdf": {
+      "sha256": "8510f92e2b07e8d28f00ac38734d2628b9d92329d81d7c9b60e11f28fdf059eb",
+      "size": 742232,
+      "status": "indexed",
+      "chunks": 168
+    },
+    "01_POLICY/ESA/ESA-REG-002_rev4_EN.pdf": {
+      "sha256": "f6a3c680c27c23b8bc852cbfe6f441dd98485054973349d1fbccc94685846e19",
+      "size": 695464,
+      "status": "indexed",
+      "chunks": 165
+    },
+    "01_POLICY/ESA/ESA-REG-005,rev.3_en.pdf": {
+      "sha256": "1dd14e5d0cb652b558c171a56f6494cd0f7e1c790c8e28668e8b84e6577f313d",
+      "size": 226074,
+      "status": "indexed",
+      "chunks": 67
+    },
+    "01_POLICY/ESA/ESA-REG-006-EN.pdf": {
+      "sha256": "fbfe768f1e65c77a450b782746fb69ad269fb2197f0ae5a1330340fa72b5c995",
+      "size": 112569,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "01_POLICY/ESA/ESA-REG-008-EN.pdf": {
+      "sha256": "dd03adcf3f22a0ed3a653f4a9d1b2f67ba62ce983e290e5b8e8cedf0c9e630a3",
+      "size": 213486,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "01_POLICY/ESA/Index _01Policy_ESA.docx": {
+      "sha256": "7fed68f130dc267c75d9c2e20d51f9f8881a0044cd1987c99f9c9e16d7bf1537",
+      "size": 15395,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/ESA/OJ_L_202401543_EN_TXT.pdf": {
+      "sha256": "73519f61cfdb0f86f68d6a44f7a7aa06e163e868a60520986ed9f8f162ef271d",
+      "size": 1023103,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/ESA/OJ_L_202402920_EN_TXT.pdf": {
+      "sha256": "b4e6fc8ec8537cfd6e7673663d187aecca48c7f32fab33f19379d73755ecf443",
+      "size": 753417,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/EU/Commission/CELEX_52011DC0152_EN_TXT.pdf": {
+      "sha256": "ac2a3d0838c2977cd91d2e398d8f057482fc2fd363d2ac0566d38abb569a6ef7",
+      "size": 59051,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "01_POLICY/EU/Commission/CELEX_52013DC0108_EN_TXT.pdf": {
+      "sha256": "cadb836387cf616dc596cc7f0e768695b16496d61ebbb2a854c6fd8090966173",
+      "size": 146843,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/EU/Commission/CELEX_52016DC0705_EN_TXT.pdf": {
+      "sha256": "c51d7ecc52679017ac48c8dc001d22166af3b337abe5dc49486d6c7c2965a1fd",
+      "size": 379252,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "01_POLICY/EU/Commission/celex_52021DC0070_EN_TXT.pdf": {
+      "sha256": "d7a6b966114888352230ae0b093f195813d23cd86a81b6f3bd6f06e9021da6e2",
+      "size": 566961,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "01_POLICY/EU/Commission/CELEX_52025DC0336_EN_TXT.pdf": {
+      "sha256": "7f10a177913d21e989fb138da85b9aaed3b990027c6abdf72231ed895c1dbc58",
+      "size": 330222,
+      "status": "indexed",
+      "chunks": 77
+    },
+    "01_POLICY/EU/Commission/COM_2007_0212_FIN_en_TXT.pdf": {
+      "sha256": "ddda14f1e2125c667a788ed25042bb7f0d2a2123157e1e106cd4b63a6dbe8042",
+      "size": 188041,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/EU/Commission/Index _01Policy_EU_commission.docx": {
+      "sha256": "6ff3936b126254f2210c31fd80a3d0c6fee76b2cd9acdcc3d61eda2671e3de1b",
+      "size": 14311,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/CELEX_52025PC0543_EN_TXT.pdf": {
+      "sha256": "d9dc77fe6d026b813fcb85c8901fa4db4d5144ae6657bf3120768753b08fa55d",
+      "size": 694017,
+      "status": "indexed",
+      "chunks": 145
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/CELEX_52025PC0555_EN_TXT.pdf": {
+      "sha256": "f0d69f02a2568a37cd10f1eaea4d5b381fb081b0eb4840d8043a1e8ad0c9fdc8",
+      "size": 930808,
+      "status": "indexed",
+      "chunks": 307
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/CELEX_52026PC0152_EN_TXT.pdf": {
+      "sha256": "cf913779501db9e813a8f5bd57ab55ccda422e623f0dd176f84e4796a2b4559d",
+      "size": 809330,
+      "status": "indexed",
+      "chunks": 132
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_10cc7f25-626d-11f0-bf4e-01aa75ed71a1.0001.02_DOC_1.pdf": {
+      "sha256": "9d9f31eb163e422d92754f5cb7da85db0afcf87be87ee95bd45909431be9731a",
+      "size": 273785,
+      "status": "indexed",
+      "chunks": 41
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_10cc7f25-626d-11f0-bf4e-01aa75ed71a1.0001.02_DOC_2.pdf": {
+      "sha256": "e371d1bfdd6f6bb9df966eac4237df2eff86a9b111514398e6a7eb086d05c8a2",
+      "size": 80902,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_c7906dd7-5283-11f0-a9d0-01aa75ed71a1.0001.02_DOC_1.pdf": {
+      "sha256": "0f869fc1922741634094bad66284eb3ab86e91231bed79e79aab815cff893890",
+      "size": 969089,
+      "status": "indexed",
+      "chunks": 327
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_c7906dd7-5283-11f0-a9d0-01aa75ed71a1.0001.02_DOC_2.pdf": {
+      "sha256": "cc5667d8b33897d4bf80f76c1cc77310383d341f95546a3d022b8d5c9e459928",
+      "size": 329138,
+      "status": "indexed",
+      "chunks": 73
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/Index _01Policy_EU_commission_Legislative proposals.docx": {
+      "sha256": "4cefb6c053942d5c2816fea5a1e64c83974c939effadf73261f5dfaa686b3ced",
+      "size": 14438,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Council of European Union/Historical/122342.pdf": {
+      "sha256": "5d19a83af1939e34c9605ecbd258a318291595233a6cc3d203d537922fb16228",
+      "size": 118909,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/EU/Council of European Union/Historical/137341.pdf": {
+      "sha256": "59568878cdaee5cc9117be02aebd65e42a6660a6b4ac0ae2f370cdb18702fe63",
+      "size": 118196,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "01_POLICY/EU/Council of European Union/Historical/Index _01Policy_EU_Council_historical.docx": {
+      "sha256": "849bbecda6702703032f43efa44edb54ade2b0e7dcd780f6ec92e2050216c88f",
+      "size": 15734,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-10037-2007-INIT_en.pdf": {
+      "sha256": "d611788ad873daa1b1bd3364d5fefa1cf62b423d26e435a11ab49a414ce06dff",
+      "size": 134049,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-10500-2009-INIT_en.pdf": {
+      "sha256": "53f9f6c1f1f3fab39014709ebb9b0449f9be7ceb108851b6dcc36e0ad336817f",
+      "size": 123503,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-13569-2008-INIT_en.pdf": {
+      "sha256": "f34a2fb4d6077c07009b6c90a6041739ab6fb645d7cec8c54c6159c33f723507",
+      "size": 166295,
+      "status": "indexed",
+      "chunks": 22
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-14470-2014-INIT_en.pdf": {
+      "sha256": "aabec0059225302a9758fea9f6513c8e9db3202267197439f4b88e0aee865c61",
+      "size": 389479,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-15435-2017-INIT_en.pdf": {
+      "sha256": "5e258df6e770b77c548ebf4bb18f6d53d300600e1bdf358dc926d9ec37d6ff81",
+      "size": 326853,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-15944-2014-INIT_en.pdf": {
+      "sha256": "4629dc418feba539ab33c044c656dfc7d600e3ee9ed5aab8dd4154d2e00ec22f",
+      "size": 263888,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-16864-2010-INIT_en.pdf": {
+      "sha256": "88f7f11acf5f67b32fcfb2ad76cb1561365e1a00a0330dcbca08df1e35c688d6",
+      "size": 155980,
+      "status": "indexed",
+      "chunks": 18
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-18232-2011-INIT_en.pdf": {
+      "sha256": "656205547ec710c69c12b8db05c5d4ffab5c881bb8bef72d8037911928571b85",
+      "size": 120516,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/EU/Council of European Union/Historical/ST-6183-2013-INIT_en.pdf": {
+      "sha256": "99609a1456a33d1ca4528db0527cefff0ae9b65c6b6e39e86d60a3290b67cdbe",
+      "size": 167749,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/EU/Council of European Union/Index _01Policy_EU_Council.docx": {
+      "sha256": "86bb6ba88dfa91909cd4b92bc2eb609bef1613e50160f11f9da0b732092aab93",
+      "size": 15685,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/EU/Council of European Union/other documents/Index _01Policy_EU_Council_other documents.docx": {
+      "sha256": "92a8c58844ec51990ee40ff014d195defaeed24f9aad26e16e8587d94f1a81ec",
+      "size": 15991,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/EU/Council of European Union/other documents/OJ_C_202404371_EN_TXT.pdf": {
+      "sha256": "2eac57828ff06a30b72927b5db6136bb69b71e7076f27d72ad4ddaaa2d84febe",
+      "size": 1528113,
+      "status": "indexed",
+      "chunks": 64
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-10016-2022-INIT_en.pdf": {
+      "sha256": "b34f582c2060e8253470e8072b461153f4fbae6ae67d22404cb582e36d79d5ee",
+      "size": 318010,
+      "status": "indexed",
+      "chunks": 20
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-10289-2023-INIT_en.pdf": {
+      "sha256": "0e3e807b8047d04400cea2b2986bd21ab7229cfe55b0712d81f235d8d01148e0",
+      "size": 347971,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-10474-2017-INIT_en.pdf": {
+      "sha256": "078d0fdac13dd60da71a689897f64f888c8ced84c46183e4911a57ec75aa112f",
+      "size": 211835,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-14280-2023-INIT_en.pdf": {
+      "sha256": "86445cb68e8a5dce2907dccb40690ab7ca854fa03cddca7bba10d97baed48ba8",
+      "size": 637357,
+      "status": "indexed",
+      "chunks": 96
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-15623-2022-INIT_en.pdf": {
+      "sha256": "26627f894164e9c41e8e4761cc8196425437b8e2f92467b65d4d2ab7103afefd",
+      "size": 418073,
+      "status": "indexed",
+      "chunks": 39
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-15880-2022-INIT_en.pdf": {
+      "sha256": "e1cc1789112a65b2b2af9f24a69805091b802ec9251bbdc19c604b314544d01a",
+      "size": 379192,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-7349-2026-INIT_en.pdf": {
+      "sha256": "e2dcf3dd8aaf73ffb650800fa5c67f76f6bfcb297d0e8cbaa5e9589d96a990df",
+      "size": 329544,
+      "status": "indexed",
+      "chunks": 18
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-8396-2021-INIT_en.pdf": {
+      "sha256": "505b2af128ba9fad67e4855db8c70861d587f672e47a0025578d3f6832eaab86",
+      "size": 397116,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "01_POLICY/EU/Council of European Union/other documents/ST-9225-2024-INIT_en.pdf": {
+      "sha256": "e587eaa96a8d8f023a6912e1b2648bb4c4f1dd23e291237087551ea6c32a9bcf",
+      "size": 473205,
+      "status": "indexed",
+      "chunks": 45
+    },
+    "01_POLICY/EU/Council of European Union/other documents/st09364-en22.pdf": {
+      "sha256": "2b49d1e64aa2eda76d7eac70ba3c80a483394d926b45cb4b1788c89f23b04df7",
+      "size": 406738,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/EU/Council of European Union/other documents/st09618-en23.pdf": {
+      "sha256": "0961dc8f828a80328d61f7060750e6519d3738e71a18a52d8b72534074760d97",
+      "size": 163949,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "01_POLICY/EU/Council of European Union/ST-10070-2022-INIT_en.pdf": {
+      "sha256": "99cb84d1ef8fbc7b7c71e5894d22c22ef4e35f5a390f2f06a5ae982aca80725f",
+      "size": 302631,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "01_POLICY/EU/Council of European Union/ST-10071-2022-INIT_en.pdf": {
+      "sha256": "efe4d1d384088d0da2ab6306dc204bd721cf98b2eaf98915baba0da7ed3e03d9",
+      "size": 328034,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "01_POLICY/EU/Council of European Union/ST-10142-2024-INIT_en.pdf": {
+      "sha256": "5d63ce00afe3f820d00371bee2121e6bcb08d73f3d8d30610bf8e17c68f4dbe5",
+      "size": 390867,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "01_POLICY/EU/Council of European Union/ST-14307-2021-INIT_en.pdf": {
+      "sha256": "f1d6c96e18e995daa206c88b7b5cd26c5510cea79bb9d61c338bef3c44e67266",
+      "size": 319368,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "01_POLICY/EU/Council of European Union/ST-14603-2019-INIT_en.pdf": {
+      "sha256": "c8485dfa5f15963f51de97c37291a8f65f988c90ccdc37cc3800e9ecd3be7371",
+      "size": 321842,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/EU/Council of European Union/ST-16128-2024-INIT_en.pdf": {
+      "sha256": "77c155a6ed63f67d668f2f994b9a8a11eb3ec9a9db6681494c6473cbea0681bc",
+      "size": 367782,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "01_POLICY/EU/Council of European Union/ST-16137-2024-INIT_en.pdf": {
+      "sha256": "83af04656c4ae921d1a8f7fb1bd487001be0e03746f7457c6eb8701076421367",
+      "size": 300057,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/EU/Council of European Union/ST-16534-2023-INIT_en.pdf": {
+      "sha256": "d74d79a47f3d8499e9e0065b67b5a6f343ea7bae6a17f5d350da0b173a82dc72",
+      "size": 313281,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "01_POLICY/EU/Council of European Union/ST-8512-2020-INIT_en.pdf": {
+      "sha256": "82c5afac18bed4128a34363f497e37ba644b2932c2b9cab17402d3fa04bf4604",
+      "size": 296830,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "01_POLICY/EU/Council of European Union/ST-9163-2021-INIT_en.pdf": {
+      "sha256": "d165c0d56a94c70a28bc88e49fe65b462f2cf8356572cbcfb21f01d354d3665a",
+      "size": 346063,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "01_POLICY/EU/Council of European Union/ST-9288-2025-INIT_en.pdf": {
+      "sha256": "2c7598ac2f2500873f809a6be264ac641e36abdc90551efb2e23c3cc20bd5499",
+      "size": 311788,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "01_POLICY/EU/Council of European Union/ST-9675-2023-INIT_en.pdf": {
+      "sha256": "6dbd8e585e7ec329e841d1461e97d3386f43a3ae4cdea61ae9bf089926c1be18",
+      "size": 284067,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/EU/Council of European Union/ST-9713-2019-INIT_en.pdf": {
+      "sha256": "e6c50f6c89d8e356c9c62fc67c888cb0c90c5b10f8bd3d56614d82cfff05a0bc",
+      "size": 357512,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/EU/Council of European Union/ST-9817-2017-INIT_en.pdf": {
+      "sha256": "c2420e24f394f63fb80237943fb6885d9e6d6cfd20fdec10edc2c8adc84dfac6",
+      "size": 282497,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/EU/European Council/021020-euco-final-conclusions.pdf": {
+      "sha256": "cdd6ebc77362ed725ee88df12c039846da0e88d24890f31896c90481f3240e0c",
+      "size": 288833,
+      "status": "indexed",
+      "chunks": 18
+    },
+    "01_POLICY/EU/European Council/20211022-euco-conclusions-en.pdf": {
+      "sha256": "13fecf8bb364bfa9430672d6ac796fbf9f4706f12172c86a51c9ffe4cbe73977",
+      "size": 342818,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "01_POLICY/EU/European Council/2022-12-15-euco-conclusions-en.pdf": {
+      "sha256": "c9bfbd3135f708c1f00fb70c2b7a78fdf344d0845016a6a249012618e892cb86",
+      "size": 267969,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "01_POLICY/EU/European Council/20251023-european-council-conclusions-en.pdf": {
+      "sha256": "1d4ac5c0d3d210ee76b1906a92abcca3a92ac1b5dc0d9b9a99efd8aaefa9c989",
+      "size": 253110,
+      "status": "indexed",
+      "chunks": 22
+    },
+    "01_POLICY/EU/European Council/210720-euco-final-conclusions-en.pdf": {
+      "sha256": "bb97fc88f1c9a894a11fae7d4a73894a19d5901b5aacaaae2f90057eb7e7f3cf",
+      "size": 636182,
+      "status": "indexed",
+      "chunks": 93
+    },
+    "01_POLICY/EU/European Council/Conclusions-1108_25.pdf": {
+      "sha256": "f166a366ee1209f65f2a5856f66f601d5a6294f044dfede6bfd00879f87c7037",
+      "size": 45477,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "01_POLICY/EU/European Council/Conclusions-14625.pdf": {
+      "sha256": "7d81a3c01ec1143d140bb9a41eb2ba353e5e12d9bb719ba08ed39028b6079d95",
+      "size": 34875,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "01_POLICY/EU/European Council/en-20260319-european-council-conclusions.pdf": {
+      "sha256": "0999539f7a8d66ef1d92ea7383c11bad29e4dc1ff119107cea3f85c6c3a1adff",
+      "size": 306744,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "01_POLICY/EU/European Council/en-20260619-european-council-conclusions.pdf": {
+      "sha256": "5d3c1e4596265d55e639e55207cf8d89af4de042ab8c632cf205bd4533adcfe7",
+      "size": 284969,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "01_POLICY/EU/European Council/euco-conclusions-2122032024.pdf": {
+      "sha256": "7e30dd335485edda757af445616f76e966f29d8218931352c0d9143decbb1c71",
+      "size": 267992,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "01_POLICY/EU/European Council/europeancouncilconclusions-14-15-12-2023-en.pdf": {
+      "sha256": "a913c9f5209fab6e5155a5eef5cbbaccaff1f320c1ec948743d467921a502bfd",
+      "size": 256705,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "01_POLICY/EU/European Council/Index _01Policy_EU_European Council.docx": {
+      "sha256": "bc462768de696448dfd8da5a6d920f483e701337d96d90947f526d7832912211",
+      "size": 14461,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/EUSPA/CELEX_32019R0715_EN_TXT.pdf": {
+      "sha256": "64cdfce7a85ce0f3c21f3f1c9bf4468a25040493761a551b3bbc476ea252de88",
+      "size": 705437,
+      "status": "indexed",
+      "chunks": 111
+    },
+    "01_POLICY/EU/EUSPA/euspa-oed-ab-dec-a11853_1.8_euspa_admin_board_rules_of_procedure.pdf": {
+      "sha256": "fc08c58b2e60f364cc44253d7d7889a6b3bb04074af34071296a2936a4d57825",
+      "size": 259702,
+      "status": "indexed",
+      "chunks": 44
+    },
+    "01_POLICY/EU/EUSPA/euspa-sab-acc-mgt-a11803_3.0_sab_rop_approved_by_sab47b_signed.pdf": {
+      "sha256": "49727e46632d6ca24c807ee5c44cb85e0ed7f915f647094eba98f7f8d6e39d41",
+      "size": 453403,
+      "status": "indexed",
+      "chunks": 41
+    },
+    "01_POLICY/EU/EUSPA/euspa-sec-ab-dec-a22114_security_rules_for_protecting_euci.pdf": {
+      "sha256": "9455562134af38b411e0fba3f0668a8e95c4b8954af2a158ec5d435a9479113e",
+      "size": 590790,
+      "status": "indexed",
+      "chunks": 83
+    },
+    "01_POLICY/EU/EUSPA/Index _01Policy_EU_Euspa.docx": {
+      "sha256": "856a7aa41c779274c8ffa9b4aa17e2ef99845317b289cb5383bd64fe34e308ce",
+      "size": 14495,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/EUSPA/Single_Programming_Document_2026-2028.pdf": {
+      "sha256": "a1a540dee04289905da8d1f44618762e5e6a5a6fa87d9f8d3d86b10330522ac4",
+      "size": 1976890,
+      "status": "indexed",
+      "chunks": 208
+    },
+    "01_POLICY/EU/High Representative and EEAS/CELEX_52022JC0004_EN_TXT.pdf": {
+      "sha256": "0142cb5df485ecbb8526a9bb94fd705ca1625a43405af604b236677c6113d9e9",
+      "size": 790415,
+      "status": "indexed",
+      "chunks": 39
+    },
+    "01_POLICY/EU/High Representative and EEAS/eugs_review_web_0.pdf": {
+      "sha256": "1bf801cc73c0ab10cb4a1ad9567a8b59f601170c586b8380cfd3095089eac9f2",
+      "size": 689229,
+      "status": "indexed",
+      "chunks": 87
+    },
+    "01_POLICY/EU/High Representative and EEAS/Index _01Policy_EU_High Representative and EEAS.docx": {
+      "sha256": "7ee9ff9ce21f2c06470026ba61d719c6aeb5398cd7db7360e951df4aa50287b3",
+      "size": 14747,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/High Representative and EEAS/JOIN_2023_9_FIN_EN_TXT.pdf": {
+      "sha256": "1cf1cb77247aaf8411245890d801449b2dfa47a778fb54595453ddacebba300e",
+      "size": 534890,
+      "status": "indexed",
+      "chunks": 44
+    },
+    "01_POLICY/EU/High Representative and EEAS/ST-14512-2023-INIT_en.pdf": {
+      "sha256": "530245a80fd0a5b70c77b4857aa11e8f1d0f728e552de4bf8b073cd59353834f",
+      "size": 364849,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/EU/High Representative and EEAS/ST-7371-2022-INIT_en.pdf": {
+      "sha256": "11a3d79219f2e55b458ad1bd3eadaade6a839604db10d43b3989a4714a6e3d62",
+      "size": 772669,
+      "status": "indexed",
+      "chunks": 120
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/aa---eda---esa-20-06-11.pdf": {
+      "sha256": "886109f5965772795f8b2a79c907b524372fdf9f0505bdf0dde6af505612d3ad",
+      "size": 1015034,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/CELEX_32015D1835_EN_TXT.pdf": {
+      "sha256": "fa50435eda9209d5b64650252b0ed092d00162aeb34b572f9511ea4ea1d02fac",
+      "size": 417010,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/consolidated-eda-staff-regulations-en.pdf": {
+      "sha256": "3942717c569e6aa92499865d8a4254d8d109f38872e337009772b1d0952b3e8b",
+      "size": 420304,
+      "status": "indexed",
+      "chunks": 178
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/exchange-of-letters---eu-satellite-center.pdf": {
+      "sha256": "90cb0f264f8a8989743143839cbe65147b8ffcefeb8d3d4a76682cdd57767073",
+      "size": 1748234,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/Index _01Policy_EU_Other Eu Agencies_EDA.docx": {
+      "sha256": "a816649767298fdda416c4c2ca146d5d06364837e65cd85b8301fcb2658b869f",
+      "size": 14363,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/EU/Other EU agencies/EDA/sne-rules.pdf": {
+      "sha256": "cea251e543b6f3abffe4fb260ddb0a63bdffdc45e9e75ec0756d6e8e537e19fc",
+      "size": 480139,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_02014D0401-20220701_EN_TXT.pdf": {
+      "sha256": "1059599174c3ce428a0ef55631b18061fa283524ca203f70bc87e49fc7f83436",
+      "size": 258568,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32014D0401_EN_TXT.pdf": {
+      "sha256": "86da10698a4052aff5125d3c6db395f57515401b6121d740593bea5ee6519a73",
+      "size": 382070,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32016D2112_EN_TXT.pdf": {
+      "sha256": "e533c243df6a574436f5d9b8059fb88e27861764c8f2887e6bd53e04ca996a28",
+      "size": 314838,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32023D0994_EN_TXT.pdf": {
+      "sha256": "01fddc577da190b05c16f0181002121fe3a0dd55f7d924ad56b662a6dffd8547",
+      "size": 377340,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "01_POLICY/EU/Other EU agencies/Satcen/Index _01Policy_EU_Other Eu Agencies_Satcen.docx": {
+      "sha256": "4a0081af9a23a748844883b9306e62e3336c107c87db9226729da71f863fc09e",
+      "size": 14093,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/EU/Parliament/A-5-2003-0294_EN.pdf": {
+      "sha256": "4b3c04af2ff9d049ef00ec4a53a9e2c18700b4f79652dafcad0be54ea2ec2e0b",
+      "size": 161749,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "01_POLICY/EU/Parliament/A-7-2011-0431_EN.pdf": {
+      "sha256": "609ba0744fb570d1aca10db9e0d65a07210e701b086725e433a34e86795afd5d",
+      "size": 182468,
+      "status": "indexed",
+      "chunks": 46
+    },
+    "01_POLICY/EU/Parliament/A-8-2016-0151_EN.pdf": {
+      "sha256": "4ef78225f96ac0f44411b7a8b0712146aae7dfcdb7bf130200056cbbecb5a3f5",
+      "size": 368133,
+      "status": "indexed",
+      "chunks": 53
+    },
+    "01_POLICY/EU/Parliament/A-8-2017-0250_EN.pdf": {
+      "sha256": "9d01e63794283d7d2cffa55bebec0cf93048c506bc2524ae1da21b3ccfe6f9a1",
+      "size": 527699,
+      "status": "indexed",
+      "chunks": 69
+    },
+    "01_POLICY/EU/Parliament/A-9-2023-0334_EN.pdf": {
+      "sha256": "bb0497f4fbe2b49689630a70d218dd37345cb6b618d3a26f8093f2cf8cba0b16",
+      "size": 192559,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/EU/Parliament/Index _01Policy_EU_Parliament.docx": {
+      "sha256": "e2f8e1479f2d86786b5ff96ef6e76f99e728432506185f99ed3519caa1dbec91",
+      "size": 14978,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Parliament/TA-5-2004-0054_EN.pdf": {
+      "sha256": "0c6c29a206fd85478ec575c5f17ff0fdb986b5307ea9d25569f514b86cae3d5c",
+      "size": 129488,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "01_POLICY/EU/Parliament/TA-5-2004-0287_EN.pdf": {
+      "sha256": "978ce3f50f08e4621975cd673f2368d327436e59d66813af10fbb1ceed0d2c30",
+      "size": 199055,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/EU/Parliament/TA-7-2012-0013_EN.pdf": {
+      "sha256": "e4825642b669b6aaf61df6e6862a254bb6350154515a2062e21a81051eea2554",
+      "size": 261594,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "01_POLICY/EU/Parliament/TA-8-2016-0267_EN.pdf": {
+      "sha256": "e2b51f2d909b15846a7bd7c8e54dc8b23bfe484fe3f4ecf77e53a633ea0cd122",
+      "size": 297698,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "01_POLICY/EU/Parliament/TA-8-2016-0268_EN.pdf": {
+      "sha256": "f39ab4d0daabfa4ffd4d7fd6b23d7316f4c0805a0e9f6b8b497ce82f8a728201",
+      "size": 194634,
+      "status": "indexed",
+      "chunks": 18
+    },
+    "01_POLICY/EU/Parliament/TA-8-2017-0323_EN.pdf": {
+      "sha256": "5865ebe5a50f712a0f8787dd3cc7a4b4a535e5db8f8c944581dd96f9501ed6ca",
+      "size": 297413,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/EU/Parliament/TA-9-2022-0355_EN.pdf": {
+      "sha256": "bdb1357a9c90a87af480927ac8ac8eebd434fce85e48403c6c8ce0484a5090f0",
+      "size": 125965,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/EU/Parliament/TA-9-2023-0435_EN.pdf": {
+      "sha256": "85071119473edba67e487d3b932b048a5b86dd4e866024cd29a361451eea33ec",
+      "size": 167030,
+      "status": "indexed",
+      "chunks": 32
+    },
+    "01_POLICY/International/EUMETSAT/44250 -Programmes jan 24.pdf": {
+      "sha256": "86b3371006aaaf540fccc4f1bf8829ad4a33f48cf72493d126e5494507545af8",
+      "size": 1250492,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44251 - Terms_of_Reference(1442024 V1).pdf": {
+      "sha256": "fa3a16e38171d3a85a811352c95b0a8fab0960673421f8a443f6044bd23ee695",
+      "size": 158512,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf": {
+      "sha256": "c8e94716051bef3cf242bf6fe6cfb34a3d251cb16a3b628578105baf207987dc",
+      "size": 319016,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44253 - Basic Documents.pdf": {
+      "sha256": "e36d44e5c4a1368806964a5f619512d0d25846ae31e75a2e34cd32cdbda1fd64",
+      "size": 8785524,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44254 - Staff_Rules.pdf": {
+      "sha256": "1cc5d11154255bdf4860fe2d185592e44a55d39e8b432db906663a8a8cbf8361",
+      "size": 1751276,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/44255 - Council Resolutions and Declarations 1986 - 2025 - February 2026.pdf": {
+      "sha256": "48ffe7dbe1c8fbac2234880bb1902c11e9b01ce26183ff0fc3b3f8da09294fea",
+      "size": 4450161,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/48424 2021.pdf": {
+      "sha256": "ef43c1b6688fde4c07025b2b2b10b53aa24ced69aca731d98a96d2a4d3e5d730",
+      "size": 155315,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/52895 - res 2025 Feb 26.pdf": {
+      "sha256": "88e7b5ca7df9200467b446dd8874d4168872585f6562777b3666c35aba07b8ec",
+      "size": 263151,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "01_POLICY/International/EUMETSAT/CELEX_32021R0694_EN_TXT.pdf": {
+      "sha256": "2b194dee3c25244556f4b3294d411daf02a9dfa405376ecfdcdb2f4e066d0a17",
+      "size": 958967,
+      "status": "indexed",
+      "chunks": 109
+    },
+    "01_POLICY/International/EUMETSAT/historical/CELEX_32014R0377_EN_TXT.pdf": {
+      "sha256": "854ba9605b43ccdd2358c604d69e48afee78fc7aff6f315c2fd985c17090ba0b",
+      "size": 567844,
+      "status": "indexed",
+      "chunks": 78
+    },
+    "01_POLICY/International/EUMETSAT/historical/Index _01Policy_International_EUMETSAT_historical.docx": {
+      "sha256": "7cea392ac52259f512ab8c886cfa8fdb6d40d63b1b661df1370019c0a2f435dc",
+      "size": 14178,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/International/EUMETSAT/historical/pdf_leg_res_2014.pdf": {
+      "sha256": "b7869a1686244297466552501439799b2c2dab038424ca263ba9bec8b31367c0",
+      "size": 180993,
+      "status": "indexed",
+      "chunks": 90
+    },
+    "01_POLICY/International/EUMETSAT/Index _01Policy_International_EUMETSAT.docx": {
+      "sha256": "8d0725f41ab87e68a2cf99a9ce0c2238880aa213ac202bc981b6a516460fd53c",
+      "size": 16314,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/International/EUMETSAT/pdf_leg_convention.pdf": {
+      "sha256": "d37eb60682aae2ea25e456f97ee7cdf5eaf70df0dda8d6e8a2236db3d9379759",
+      "size": 197242,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/International/EUMETSAT/pdf_leg_protocol.pdf": {
+      "sha256": "7b6289bf43056510855cf8112f06102ecf79196917bc18d762dc3383918a79e1",
+      "size": 150770,
+      "status": "indexed",
+      "chunks": 20
+    },
+    "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf": {
+      "sha256": "2463a881511b5394cebc2fcf2211d3e5cc3f1381364b20c3dd36ed88c106035e",
+      "size": 3817167,
+      "status": "indexed",
+      "chunks": 190
+    },
+    "01_POLICY/Member States/denmarks-national-space-strategy.pdf": {
+      "sha256": "388f163c3100585cdca2d80f900f98571455d3feaed5931b8889ee6b021c9dec",
+      "size": 8909101,
+      "status": "indexed",
+      "chunks": 84
+    },
+    "01_POLICY/Member States/Index _01Policy_Member States.docx": {
+      "sha256": "c3ca3b898402a0b28794c70a5e2c646286dabde893349adfffa22efb257baa04",
+      "size": 16920,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/Member States/latvijas-kosmosa-strategija-2021.-2027.-gadam-1.pdf": {
+      "sha256": "375062cea746dbec88c211e80be561dd5f30c2c3cd02a00c7efb37a7aa620ed5",
+      "size": 3340806,
+      "status": "indexed",
+      "chunks": 53
+    },
+    "01_POLICY/Member States/National space strategy_ENG.pdf": {
+      "sha256": "71e677d634161bba462427507bc60911df4b529246babd47494ce4322d70b5a2",
+      "size": 681925,
+      "status": "indexed",
+      "chunks": 105
+    },
+    "01_POLICY/Member States/national-space-strategy-for-enterprise-2019-2025.pdf": {
+      "sha256": "a2550c628ff2a45ba43ff7a20664d4f9c515d3c7e586664c6b3b6cd7c05381c9",
+      "size": 4530245,
+      "status": "indexed",
+      "chunks": 96
+    },
+    "01_POLICY/Member States/Program_dzialan_na_rzecz_rozwoju_technologii_kosmicznych.pdf": {
+      "sha256": "af58cd763330ca9a3ca205696653715831d275dba6e5aeea691829c74abe4ab2",
+      "size": 466833,
+      "status": "indexed",
+      "chunks": 81
+    },
+    "01_POLICY/Member States/psk.pdf": {
+      "sha256": "959a5ff7a9f69a1a68b138e528287d11b5624e2ec2a75cb9116a958707c8119c",
+      "size": 2797791,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/strategi-for-rumforskning-og-innovation_-opslag.pdf": {
+      "sha256": "618791e307006f059f6822dd2f199ca15d5e1094f1fe5b2dcbca305a17ddd871",
+      "size": 6622141,
+      "status": "indexed",
+      "chunks": 60
+    },
+    "01_POLICY/Member States/the-space-strategy-of-latvia-2021-2027-1.pdf": {
+      "sha256": "7a3480ff67509948147610a3479a4648ce12104df3cd001c1184a76d9ebb0b05",
+      "size": 3263286,
+      "status": "indexed",
+      "chunks": 52
+    },
+    "01_POLICY/Member States/V4_EN_Austrian-Space-Strategy-2030_0803_taggedv6_PAC2021Approved.pdf": {
+      "sha256": "9dc31ac2fbb2bb5a46cb6cc21e2543d6f7ee39684222f93db22a897399f540dc",
+      "size": 12760945,
+      "status": "indexed",
+      "chunks": 42
+    },
+    "01_POLICY/Member States/VN_2025_8.pdf": {
+      "sha256": "75c3fabff73c3b870a74510025aac74358501afee004ce19785c6346fa2c2b21",
+      "size": 272148,
+      "status": "indexed",
+      "chunks": 58
+    },
+    "01_POLICY/Member States/weltraumstrategie_2030.pdf": {
+      "sha256": "def034a167be6d3b44a0af2b97927a7bdc6574183e0fe6a8862a975b69f646c6",
+      "size": 13051294,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "02_LAW/EU legislation/CELEX_32021R0696_EN_TXT.pdf": {
+      "sha256": "960792357bf6ceaab33f689e844b8b5af984eaa5f72d78699b8182385e2f8c6a",
+      "size": 1669728,
+      "status": "indexed",
+      "chunks": 255
+    },
+    "02_LAW/EU legislation/CELEX_32023R0588_EN_TXT.pdf": {
+      "sha256": "526f8ffe3101784831ce7d3d13fa8a4927ab5d3d35f9e71926b4c55cf70ebd58",
+      "size": 964899,
+      "status": "indexed",
+      "chunks": 123
+    },
+    "02_LAW/EU legislation/Index _02LAW_EU legislation.docx": {
+      "sha256": "c146a3cbf1a608cad626a990b1ec90a5b12bcf7c40a71d7380307a31bf877ac8",
+      "size": 15409,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "01_POLICY/International/NATO/1100_North-Atlantic-Treaty__ENG_HR.pdf": {
+      "sha256": "0ede484adb8fc30f23171a6eedfeede877a49b6e557f1986cedf46ff4215ae4d",
+      "size": 5465416,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "01_POLICY/Member States/dspsn_2026.pdf": {
+      "sha256": "93d37a030359fcccf6ee0767a8b1caf847bc11e011b4fadf8fb21dcefd137cee",
+      "size": 1381441,
+      "status": "indexed",
+      "chunks": 68
+    },
+    "01_POLICY/Member States/the-german-federal-governments-space-strategy.pdf": {
+      "sha256": "d898d4e165cabc2fec0b3b75271a4f2b5a9ba65dc1d693d7da61e5f65c08ea83",
+      "size": 4771076,
+      "status": "indexed",
+      "chunks": 117
+    },
+    "01_POLICY/ESA/ESA_CM2025_1_Resolution_on_Elevating_Europe_through_Space.pdf": {
+      "sha256": "5f7ca79c99dabda03e9c989fe828d611135e185d1784afa3e0b05d5de88fc7a8",
+      "size": 259570,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "01_POLICY/ESA/ESA_Strategy_2040_InDepth.pdf": {
+      "sha256": "3bd3f8f45dc6bd9597760a52e2509fc85ebd8d80351cab5cf6050a6f1e5fe569",
+      "size": 17371461,
+      "status": "indexed",
+      "chunks": 181
+    },
+    "01_POLICY/EU/Commission/CELEX_52024DC0289_EN_TXT.pdf": {
+      "sha256": "42acfc5e6c0d6480fa6dbba801502a1608d7afd19f112d147c30de932ba6f5e0",
+      "size": 771881,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "01_POLICY/EU/Commission/CELEX_52024SC0173_EN_TXT.pdf": {
+      "sha256": "0773305e7b85e6e52cc9a3014e2f7e7f0758ca79075b0855ad9292a94848d837",
+      "size": 3171707,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/EU/Commission/Legislative proposals/cellar_efb81f6a-5283-11f0-a9d0-01aa75ed71a1.0001.02_DOC_1.pdf": {
+      "sha256": "1eeeb8857acca1a08c16a330a9db9b9d428919e427248975fcf20d52a645f4bc",
+      "size": 1300312,
+      "status": "indexed",
+      "chunks": 201
+    },
+    "01_POLICY/Member States/171825900_webb.pdf": {
+      "sha256": "4f211aa6b6075d051c33e70b0720602d19e9db901fadc4f74a2bc88d311474bf",
+      "size": 358923,
+      "status": "indexed",
+      "chunks": 65
+    },
+    "01_POLICY/Member States/20220120-UK_Defence_Space_Strategy_Feb_22.pdf": {
+      "sha256": "a78d6412d6099bcb24a17b331198176a7269ab2ffb1e134b0f6f575c55f2c1d0",
+      "size": 12274947,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/Cyprus Space Strategy 2022-2027.pdf": {
+      "sha256": "6fd36e52b367d6deff50542495c20e43c790043960e14086edaaa31a7bc62383",
+      "size": 2532498,
+      "status": "indexed",
+      "chunks": 176
+    },
+    "01_POLICY/Member States/Eesti_kosmosepoliitika_A4_EST_web.pdf": {
+      "sha256": "c876f6472d9095b860c486b66760079642fbe39e2fd283f3bb1a212965781680",
+      "size": 10437458,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/Member States/estrategia_portugal_espaco_2030.pdf": {
+      "sha256": "b378649bf704c76b86c32fb898e2613daf651f962dc762cdfa8cf29be810713f",
+      "size": 202555,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/Member States/Kosmoso_pletros_koncepcija_patvirtinta(1).pdf": {
+      "sha256": "7a9f87a50fcd73e0257b33eed9578c7459d35d1fb3fed1c7d9d36f7cb0d5fbae",
+      "size": 663031,
+      "status": "indexed",
+      "chunks": 73
+    },
+    "01_POLICY/Member States/Malta-National-Space-Strategy.pdf": {
+      "sha256": "fe7ccb72068ba68ae135668ddb889343ff9ee538fe2a7b2ae46f90776cf9207e",
+      "size": 8273745,
+      "status": "indexed",
+      "chunks": 165
+    },
+    "01_POLICY/Member States/national_space_strategy_in_action.pdf": {
+      "sha256": "dc2f616f1b7a7e3d5aa5fb0b892f34e8557478f652989153db63a77d51725cb2",
+      "size": 1103862,
+      "status": "indexed",
+      "chunks": 76
+    },
+    "01_POLICY/Member States/nkp_2026_2032.pdf": {
+      "sha256": "f7e1aadced4aa87f9eee978b289885a61a92c194c0c6a50d2180b1a94b16da58",
+      "size": 1170222,
+      "status": "indexed",
+      "chunks": 177
+    },
+    "01_POLICY/Member States/NSO-Advies-2026-2028.pdf": {
+      "sha256": "c0806e286977cf7b458ca2a768791e60c470ac334d23ffcd8ad155c211c996d3",
+      "size": 5844712,
+      "status": "indexed",
+      "chunks": 86
+    },
+    "01_POLICY/Member States/ruimtevaartbeleid-2022.pdf": {
+      "sha256": "63809b1b9909a760881da4d8e00a97979539048805ce9b3cd4a88fc1dd795c57",
+      "size": 596033,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/Member States/Slovenian-space-strategy-2030.pdf": {
+      "sha256": "370f9b2aee85ca284135588667b20e435033a9d2f07e47094060b9eb773ade8f",
+      "size": 2313687,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/Member States/Space Strategy of Hungary.pdf": {
+      "sha256": "70af885e705bb3a67f37506ac5bd98744a75496d1fc28a1c5ff8c281f1ee45d1",
+      "size": 2427573,
+      "status": "indexed",
+      "chunks": 244
+    },
+    "01_POLICY/Member States/stm201920200010000dddpdfs.pdf": {
+      "sha256": "912a0223421d95529f821e46e9fbd5961a45d23d4f4e4e51f2177f50dd9350e8",
+      "size": 16921868,
+      "status": "indexed",
+      "chunks": 264
+    },
+    "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf": {
+      "sha256": "4efff96706c17bcf984ba9341d208f06b538f1d5314af1ad100080f99eb84a7b",
+      "size": 150145,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf": {
+      "sha256": "4659ed79bee39daaeac58bbdb3a42999142587bce87b4a5b056dab79c092bc39",
+      "size": 8586003,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "02_LAW/EU legislation/CELEX_02016E_TXT-20250315_EN_TXT.pdf": {
+      "sha256": "f60b7d01c58c0154d6145353607af34399180d7749e173bf8c20effe4fbe6481",
+      "size": 3120588,
+      "status": "indexed",
+      "chunks": 578
+    },
+    "01_POLICY/International/ITU/Constitution-E.pdf": {
+      "sha256": "e737c962504357370a05ad486d6d590ce190e3e5167d4cd32b23ca1be328b83e",
+      "size": 252544,
+      "status": "indexed",
+      "chunks": 65
+    },
+    "01_POLICY/International/ITU/Convention-E.pdf": {
+      "sha256": "c180919b634e4cea59dfa7b8af1460dbb1660b07d3756e6208d7769aa561ce18",
+      "size": 340380,
+      "status": "indexed",
+      "chunks": 101
+    },
+    "01_POLICY/International/ITU/Index _01Policy_International_ITU.docx": {
+      "sha256": "049af0d145d6a7f8d710f4a3e3fe55dcf129e78cd3613ee292a472c37f3883fd",
+      "size": 15263,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/International/NATO/Agreement _ NATO Official text_.pdf": {
+      "sha256": "758e8bd1ddc9e5fda4e2de0a9c5ab0b744b45030e7cc39b652165b695d8fbaf7",
+      "size": 215188,
+      "status": "indexed",
+      "chunks": 63
+    },
+    "01_POLICY/International/NATO/Agreement _ NATO Official text.pdf": {
+      "sha256": "ac11039e283ffc3cd045bdd8ae59cdd9433f514b1291769178ea4c48c1af8ac5",
+      "size": 125358,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/International/NATO/Brussels Summit Communiqué _ NATO Official text.pdf": {
+      "sha256": "08d3fb94fc4865a1104bd178ae310875762c5983d1c89e763341e93d6118641f",
+      "size": 337864,
+      "status": "indexed",
+      "chunks": 150
+    },
+    "01_POLICY/International/NATO/Index _01Policy_International_Nato.docx": {
+      "sha256": "b16c66f4d0ae382100f5b19a538ded315773a8d217edd067cb0601bf095e41a7",
+      "size": 15918,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/International/NATO/Joint Declaration on EU-NATO Cooperation _ NATO Official text.pdf": {
+      "sha256": "7794a03ac2838d8c9cadf113cd693492cd4afa1e1ba5efc55ec59b4e28efa99d",
+      "size": 96668,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/International/NATO/NATO Commercial Space Strategy _ NATO Official text.pdf": {
+      "sha256": "4fede2306e26ff05304aef90269b09fe7b477971214eca63b5b0b6afc5d5e9fd",
+      "size": 317146,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "01_POLICY/International/NATO/NATO’s approach to space _ NATO Topic.pdf": {
+      "sha256": "681d1defac0c19ec8537fece6ffd8a88883c53c2f495934e155904639aaa839e",
+      "size": 950971,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "01_POLICY/International/NATO/NATO’s overarching Space Policy _ NATO Official text.pdf": {
+      "sha256": "752e48df134fce72ad9ed42d5efbf1d00bb0d9d0f70ecc97afa04f8dc47734d1",
+      "size": 167751,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "01_POLICY/International/NATO/Relations with the European Union _ NATO Topic.pdf": {
+      "sha256": "c578fcf7ea54ebd6f2f6bbed4147649622b062597dd55e9c9831937071d61834",
+      "size": 1721040,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/International/UN/A_68_189-EN.pdf": {
+      "sha256": "8b892735cdcad29b46eb3e653b4b0b48780fa8439ccdeda5773478271de52d5a",
+      "size": 100951,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/International/UN/A_RES_1472(XIV)[A]-EN.pdf": {
+      "sha256": "4d83423c1c7f68a8e14362700104f4df28a8013ea2d4783b2c590c7f63a32d36",
+      "size": 122989,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "01_POLICY/International/UN/A_RES_59_115-EN.pdf": {
+      "sha256": "1f80982d46c2bf5b33d2b322067ac1e4cd11893451a9b4204a60adae57ab71f2",
+      "size": 25381,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "01_POLICY/International/UN/A_RES_62_101-EN.pdf": {
+      "sha256": "11bbdc67d0d263e4e055e2ec0d177fc55351a6768b289113272ed32ce345e0b0",
+      "size": 32054,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "01_POLICY/International/UN/A_RES_68_74-EN.pdf": {
+      "sha256": "f13a82123997588e5e48f7983d8e031b5878447b042e62cde02e1d50f839fd7a",
+      "size": 42481,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/International/UN/A_RES_75_36-EN.pdf": {
+      "sha256": "e3c6a79c25434c6748c745687d7336a60f4b283b973050753c70deff629dd032",
+      "size": 182852,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "01_POLICY/International/UN/A_RES_76_3-EN.pdf": {
+      "sha256": "d74fe3fb5879d5dc23065391ee232585e7937aca2be0116ac633f704ed46f99c",
+      "size": 241716,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/International/UN/Index _01Policy_International_UN.docx": {
+      "sha256": "d1c0eb840a40956a91eb050bb0df1d68297e3c867614babd3c60250b68a03d9d",
+      "size": 16834,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/International/UN/Publication_Final_English_June2021.pdf": {
+      "sha256": "9dbdf01acc33174fa10fe241f74fcbdb1ecca936ee0cea0a813c7bdcb7063c47",
+      "size": 1028848,
+      "status": "indexed",
+      "chunks": 69
+    },
+    "01_POLICY/International/UN/ST_SPACE_061Rev01E.pdf": {
+      "sha256": "ba4fa6199c9dc3a98bcb7a0a4cf1fd09646b401339b0096af331db6330673ea9",
+      "size": 597399,
+      "status": "indexed",
+      "chunks": 158
+    },
+    "01_POLICY/International/UN/st_space_49E.pdf": {
+      "sha256": "8587ba4b9efd0a1a59f5ae6c7afb3108cd5025cc8bc74d477f22ae2b1c986177",
+      "size": 733123,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "01_POLICY/International/UN/st_space-088E.pdf": {
+      "sha256": "75ecb9547dea58e3f92775f66f4e4c206aecccf3b91dad514e5667e4533e29ba",
+      "size": 1907599,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "02_LAW/EU legislation/CELEX_02016D0413-20250608_EN_TXT.pdf": {
+      "sha256": "a8efe1a73bbe9778cbd2465e15bac85c6ac6aba464afbdefad8650d100b34fd6",
+      "size": 161410,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "02_LAW/EU legislation/CELEX_02021D0698-20230320_EN_TXT.pdf": {
+      "sha256": "049a440aac69193f08a1f8c94b7bc07475aff940b8f2194a509d6aeea41fc2d3",
+      "size": 158463,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "02_LAW/EU legislation/CELEX_32011D1104_EN_TXT.pdf": {
+      "sha256": "0dbb03ee5b67c7a34e1bbc1c8958694996733db04262585cf195362325c53848",
+      "size": 1038169,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "02_LAW/EU legislation/CELEX_32017D1406_EN_TXT.pdf": {
+      "sha256": "62d51b23aed750cc89f849dfb88fbba9cd5777466dcee34a0c534dced7e762dd",
+      "size": 327636,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "02_LAW/EU legislation/CELEX_32022D1245_EN_TXT.pdf": {
+      "sha256": "11c511d7925a8688177795531f92821b8ce039f21547db149054c0a5669dcba4",
+      "size": 856777,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "02_LAW/EU legislation/CELEX_32023D1053_EN_TXT.pdf": {
+      "sha256": "03fce9d4bc84e440fbb073465f9d0453d310204d3eb0f63047522db8bf45719d",
+      "size": 413879,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "02_LAW/EU legislation/CELEX_32023D1054_EN_TXT.pdf": {
+      "sha256": "4213149ecb0558551f1ecdea62e76c1fc8105280cf3a535ef43c8c0deb23440b",
+      "size": 653934,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "02_LAW/EU legislation/CELEX_32024D1067_EN_TXT.pdf": {
+      "sha256": "342348bf94064ee374991816888c600bf85fa18b11bd239db9bd5641ac3d1fd6",
+      "size": 460181,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/EU legislation/CELEX_32024D3195_EN_TXT.pdf": {
+      "sha256": "fd80bf5894f1a07d82fa598ee6b0f7fe0e7d947fc00a8e939393fbe5608c33eb",
+      "size": 457438,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/EU legislation/CELEX_32025D0469_EN_TXT.pdf": {
+      "sha256": "4661de216356d1266c6eadc0dff3b9f04e38536e328337e32419a547accca023",
+      "size": 453011,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/EU legislation/CELEX_32025D1205_EN_TXT.pdf": {
+      "sha256": "badf7dccacf6e3ee9bb7faf6db0e300352036d8c3a9c0115240365ca8f61511f",
+      "size": 482455,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "02_LAW/EU legislation/CELEX_32025D1211_EN_TXT.pdf": {
+      "sha256": "5d422912c085d173d94cfdc59aadb0f544b5b036905af07c0095c6910958f9c5",
+      "size": 460072,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "02_LAW/National law/Austria/BGBLA_2004_I_73.pdf": {
+      "sha256": "9d231c1a4c6bfc40a29af8a433cdedabdb949d01b050d34d6dae1073044f19ea",
+      "size": 612428,
+      "status": "indexed",
+      "chunks": 58
+    },
+    "02_LAW/National law/Austria/ERV_2011_1_132.pdf": {
+      "sha256": "6093df5ca5d95a40038ffffe455ef0b65db78381de29ec40069a5431b1d924ad",
+      "size": 306084,
+      "status": "indexed",
+      "chunks": 23
+    },
+    "02_LAW/National law/Austria/Weltraumverordnung, Fassung vom 12.08.2026.pdf": {
+      "sha256": "6e3f01c0444d457a04d973bbd92f00ae186b60689f4566d81755580485630789",
+      "size": 94821,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/Belgium/AR20220315_2.pdf": {
+      "sha256": "e6d73c6dfce94c4ba799ba489a279b6112d49137b7b79385f2b1a15b5dd12908",
+      "size": 429923,
+      "status": "indexed",
+      "chunks": 81
+    },
+    "02_LAW/National law/Belgium/Loi_fr.pdf": {
+      "sha256": "d8e2b2bbff3baa19e2ed149bcfbff3bead2634d71fd2e5233a0177969439d817",
+      "size": 135159,
+      "status": "indexed",
+      "chunks": 21
+    }
+  },
+  "report": {
+    "discoveredFiles": 264,
+    "unchangedFiles": 205,
+    "changedFiles": 47,
+    "processedChangedFiles": 5,
+    "remainingChangedFiles": 42,
+    "deletedFiles": [],
+    "indexedFiles": 5,
+    "skippedFiles": 0,
+    "copiedChunks": 10634,
+    "newChunks": 194,
+    "totalChunks": 10828,
+    "failures": []
+  }
+}
