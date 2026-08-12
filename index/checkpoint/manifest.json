@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
-  "createdAt": "2026-08-12T15:04:54.737Z",
+  "createdAt": "2026-08-12T15:06:23.737Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 12529,
+  "totalChunks": 12593,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -43,6 +43,11 @@
       "file": "rag-index-0007.ndjson",
       "chunks": 55,
       "bytes": 80317
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 64,
+      "bytes": 94538
     }
   ],
   "sources": {
@@ -1569,20 +1574,50 @@
       "size": 31690,
       "status": "indexed",
       "chunks": 19
+    },
+    "02_LAW/National law/Netherlands/stcrt-2008-36-p13-SC84552.pdf": {
+      "sha256": "88e9be0acb545bd3789512d8286d787d1ecc43fbb9f575b79325a03a2f683670",
+      "size": 653273,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "02_LAW/National law/Netherlands/wetten.nl - Regeling - Wet ruimtevaartactiviteiten - BWBR0021418.pdf": {
+      "sha256": "b87b7463c9cbbb5a47a37bfb519a10fee588c7573edff98739aed3ff546b51df",
+      "size": 155051,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "02_LAW/National law/Poland/D20141533Lj.pdf": {
+      "sha256": "6625d67974b70b30d2c12a623baf9552b3018c3400cc4034cbc05809f6f0fabf",
+      "size": 304859,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "02_LAW/National law/Poland/D20212248.pdf": {
+      "sha256": "e947a479f939a296a547aa522c4b221bceecdebab55c3b1903fa85bb0e1b7b8c",
+      "size": 214616,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/National law/Poland/D20251890.pdf": {
+      "sha256": "efaaae66bf66f978a2cd4f80646f7b522455fbeb128ef3c8ba3ea09b85384b18",
+      "size": 160774,
+      "status": "indexed",
+      "chunks": 2
     }
   },
   "report": {
     "discoveredFiles": 264,
     "unchangedFiles": 205,
     "changedFiles": 47,
-    "processedChangedFiles": 35,
-    "remainingChangedFiles": 12,
+    "processedChangedFiles": 40,
+    "remainingChangedFiles": 7,
     "deletedFiles": [],
-    "indexedFiles": 35,
+    "indexedFiles": 40,
     "skippedFiles": 0,
     "copiedChunks": 10634,
-    "newChunks": 1895,
-    "totalChunks": 12529,
+    "newChunks": 1959,
+    "totalChunks": 12593,
     "failures": []
   }
 }
