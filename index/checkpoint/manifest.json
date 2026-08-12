@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
-  "createdAt": "2026-08-12T14:57:22.546Z",
+  "createdAt": "2026-08-12T15:00:17.038Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 10982,
+  "totalChunks": 11624,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 73,
       "bytes": 111285
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 642,
+      "bytes": 1611947
     }
   ],
   "sources": {
@@ -1429,20 +1434,50 @@
       "size": 111747,
       "status": "indexed",
       "chunks": 6
+    },
+    "02_LAW/National law/Finland/Statsrådets förordning om gränsvärden för satellitbaserad fjärranalys _ 892_2023 _ Legislation _ Finlex.pdf": {
+      "sha256": "03c78ff6f95c5935019c18d1c971ecfde7035e8b2f3f0d7e12f573226dcd268b",
+      "size": 170873,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/National law/Germany/RAÜG - Gesetz zur Übertragung von Verwaltungsaufgaben auf dem Gebiet der Raumfahrt.pdf": {
+      "sha256": "5bdcd3d348a5e44f2e56865e5434af1992fc2e7522e2809e56e308abe33fc656",
+      "size": 92692,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/National law/Germany/SatDSiG.pdf": {
+      "sha256": "36333064dc3ca2044eda850241f106b4fc4562db8fa5e47ac050d73d47896946",
+      "size": 79222,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "02_LAW/National law/Germany/SatDSiV.pdf": {
+      "sha256": "9b3c01ee37a3a0dec273c83a3fc2e7329f0af8417c7b71f4f135b4ea4a451fc8",
+      "size": 96211,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "02_LAW/National law/Greece/FEK_A_167_2019.pdf": {
+      "sha256": "0d1a052ef5866c76175c66421c881e380741d8d736e5dfa9098149ab2ba33bcf",
+      "size": 5065892,
+      "status": "indexed",
+      "chunks": 597
     }
   },
   "report": {
     "discoveredFiles": 264,
     "unchangedFiles": 205,
     "changedFiles": 47,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 32,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 27,
     "deletedFiles": [],
-    "indexedFiles": 15,
+    "indexedFiles": 20,
     "skippedFiles": 0,
     "copiedChunks": 10634,
-    "newChunks": 348,
-    "totalChunks": 10982,
+    "newChunks": 990,
+    "totalChunks": 11624,
     "failures": []
   }
 }
