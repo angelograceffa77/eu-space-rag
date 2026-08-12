@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
-  "createdAt": "2026-08-12T15:01:45.037Z",
+  "createdAt": "2026-08-12T15:03:32.437Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 11814,
+  "totalChunks": 12474,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -33,6 +33,11 @@
       "file": "rag-index-0005.ndjson",
       "chunks": 190,
       "bytes": 371874
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 660,
+      "bytes": 990459
     }
   ],
   "sources": {
@@ -1499,20 +1504,50 @@
       "size": 111390,
       "status": "indexed",
       "chunks": 33
+    },
+    "02_LAW/National law/Italy/___ ATTO COMPLETO ___4.pdf": {
+      "sha256": "eeea4e1637f2c4c74c1aeb5d68332c568ea7fd4b764fecd7f0dad41d799778a4",
+      "size": 563013,
+      "status": "indexed",
+      "chunks": 300
+    },
+    "02_LAW/National law/Italy/Italy.pdf": {
+      "sha256": "2f33f5273a80d6bfddee7ffccef1e8be90c2985da99a4e335aceecbc97df0c53",
+      "size": 7950397,
+      "status": "indexed",
+      "chunks": 314
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-loi-2017-07-20-a674-jo-fr-pdfa.pdf": {
+      "sha256": "861eb27dcfe063516a12f43b9f227aaa450c7316ba8bf5225f16c5cc9fbd1c93",
+      "size": 157787,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-loi-2020-12-15-a1086-jo-fr-pdfa.pdf": {
+      "sha256": "91e6b6e85a34ff3c9a93a349584b610ee3aeaad518891d45302b413550e17111",
+      "size": 158580,
+      "status": "indexed",
+      "chunks": 22
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-loi-2020-12-15-a1087-jo-fr-pdfa.pdf": {
+      "sha256": "c216ff6370e5224ecb227ac1479b74d8b6f1a1b2e5d9de971fdfb8c66730d8f6",
+      "size": 146197,
+      "status": "indexed",
+      "chunks": 13
     }
   },
   "report": {
     "discoveredFiles": 264,
     "unchangedFiles": 205,
     "changedFiles": 47,
-    "processedChangedFiles": 25,
-    "remainingChangedFiles": 22,
+    "processedChangedFiles": 30,
+    "remainingChangedFiles": 17,
     "deletedFiles": [],
-    "indexedFiles": 25,
+    "indexedFiles": 30,
     "skippedFiles": 0,
     "copiedChunks": 10634,
-    "newChunks": 1180,
-    "totalChunks": 11814,
+    "newChunks": 1840,
+    "totalChunks": 12474,
     "failures": []
   }
 }
