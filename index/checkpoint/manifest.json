@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
-  "createdAt": "2026-08-12T15:03:32.437Z",
+  "createdAt": "2026-08-12T15:04:54.737Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 12474,
+  "totalChunks": 12529,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -38,6 +38,11 @@
       "file": "rag-index-0006.ndjson",
       "chunks": 660,
       "bytes": 990459
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 55,
+      "bytes": 80317
     }
   ],
   "sources": {
@@ -1534,20 +1539,50 @@
       "size": 146197,
       "status": "indexed",
       "chunks": 13
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-rgd-2025-07-11-a301-jo-fr-pdfa.pdf": {
+      "sha256": "e1ac3599352297e53efe98d7d6b923194bd40443617d55d1be6bf564ffa38e06",
+      "size": 182541,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "02_LAW/National law/Luxembourg/eli-etat-leg-rgd-2025-07-11-a302-jo-fr-pdfa.pdf": {
+      "sha256": "10b81a1b05c4b9bb7f410d12e346c75b8cacad03c093c0083a09483986dafb72",
+      "size": 179094,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "02_LAW/National law/Netherlands/stb-2007-475.pdf": {
+      "sha256": "25ddf0bf32111b2d05b59ae3e8a454e01879391884380919ee014d5c1a5348a0",
+      "size": 32601,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "02_LAW/National law/Netherlands/stb-2015-18.pdf": {
+      "sha256": "c94396e71e3aea837bcca351779fdd4cc1e1ea59f45bab863bedd7ce05deaccc",
+      "size": 56969,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "02_LAW/National law/Netherlands/stb11309.2s.pdf": {
+      "sha256": "1feeb8b522b435608c4c4732542ad6030bac92b7a775d94be849996a034db704",
+      "size": 31690,
+      "status": "indexed",
+      "chunks": 19
     }
   },
   "report": {
     "discoveredFiles": 264,
     "unchangedFiles": 205,
     "changedFiles": 47,
-    "processedChangedFiles": 30,
-    "remainingChangedFiles": 17,
+    "processedChangedFiles": 35,
+    "remainingChangedFiles": 12,
     "deletedFiles": [],
-    "indexedFiles": 30,
+    "indexedFiles": 35,
     "skippedFiles": 0,
     "copiedChunks": 10634,
-    "newChunks": 1840,
-    "totalChunks": 12474,
+    "newChunks": 1895,
+    "totalChunks": 12529,
     "failures": []
   }
 }
