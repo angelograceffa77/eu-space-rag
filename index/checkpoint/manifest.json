@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
-  "createdAt": "2026-08-12T14:55:47.940Z",
+  "createdAt": "2026-08-12T14:57:22.546Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 10909,
+  "totalChunks": 10982,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 81,
       "bytes": 119549
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 73,
+      "bytes": 111285
     }
   ],
   "sources": {
@@ -1394,20 +1399,50 @@
       "size": 131626,
       "status": "indexed",
       "chunks": 3
+    },
+    "02_LAW/National law/Finland/Laki avaruustoiminnasta annetun lain muuttamisesta _ 97_2023 _ Suomen säädöskokoelma _ Finlex.pdf": {
+      "sha256": "8fb6e19bf974634b82d0cb21b7dd19e824c0a39bab555427bf47568029ceba3f",
+      "size": 245281,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "02_LAW/National law/Finland/main (1).pdf": {
+      "sha256": "7e93e1159982ac5b7d282a6556c82c394f960eb6f3299fc1e3e6c32b3cde9262",
+      "size": 136953,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "02_LAW/National law/Finland/main (2).pdf": {
+      "sha256": "875b4716fedb22ae0f8054d790c5a24734774daeff2c6c4bc8dbceacba0b5aab",
+      "size": 105144,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "02_LAW/National law/Finland/main (3).pdf": {
+      "sha256": "b6e6135bdc6054a1736eda2b2cefa69f244d61d43a280b6c55563070d26ccab7",
+      "size": 107940,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "02_LAW/National law/Finland/main.pdf": {
+      "sha256": "19938a69b552255302804c1509da6c8d0b3b7c55fa18083c50a2e2784454edea",
+      "size": 111747,
+      "status": "indexed",
+      "chunks": 6
     }
   },
   "report": {
     "discoveredFiles": 264,
     "unchangedFiles": 205,
     "changedFiles": 47,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 37,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 32,
     "deletedFiles": [],
-    "indexedFiles": 10,
+    "indexedFiles": 15,
     "skippedFiles": 0,
     "copiedChunks": 10634,
-    "newChunks": 275,
-    "totalChunks": 10909,
+    "newChunks": 348,
+    "totalChunks": 10982,
     "failures": []
   }
 }
