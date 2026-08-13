@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b9bd65cb5da8d2e7611c49464f4186f79a214ff3",
-  "createdAt": "2026-08-13T14:01:31.567Z",
+  "createdAt": "2026-08-13T14:04:27.967Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 13796,
+  "totalChunks": 14678,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 119,
       "bytes": 181950
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 882,
+      "bytes": 1413927
     }
   ],
   "sources": {
@@ -1681,20 +1686,50 @@
       "size": 141446,
       "status": "indexed",
       "chunks": 19
+    },
+    "02_LAW/National law/France/Journal officiel de la République française - N° 126 du 31 mai 2011.pdf": {
+      "sha256": "e61788e9c0464482cc8d42d2276e4c4eff03715b6e452844e09f811b0c64e40e",
+      "size": 347434,
+      "status": "indexed",
+      "chunks": 57
+    },
+    "02_LAW/National law/France/Journal officiel de la République française - N° 48 du 26 février 2022.pdf": {
+      "sha256": "1fc2a3519d90748e4dca20add99a4f60c3d4f02db0b368caca99d459896c50b2",
+      "size": 199874,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "02_LAW/National law/France/Ordonnance n° 2004-545 du 11 juin 2004 relative à la partie législative du code de la recherche - Légifrance.pdf": {
+      "sha256": "d1a351fb418a44d077877509fa1bec8d53a8234fb2c3610d2222166963249846",
+      "size": 539270,
+      "status": "indexed",
+      "chunks": 187
+    },
+    "02_LAW/National law/Hungary/MK_15_044.pdf": {
+      "sha256": "c9e2c40525e04359ec03c3187c5f6ef66ae7ecdbd0e083ec4cc0d4f207173892",
+      "size": 1204871,
+      "status": "indexed",
+      "chunks": 304
+    },
+    "02_LAW/National law/Hungary/MK_15_157.pdf": {
+      "sha256": "494ec287ae61ac5ad8ff21304b77696d7ea712e50e1678eb832f7e3c4be0047d",
+      "size": 930894,
+      "status": "indexed",
+      "chunks": 317
     }
   },
   "report": {
     "discoveredFiles": 300,
     "unchangedFiles": 251,
     "changedFiles": 37,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 27,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 22,
     "deletedFiles": [],
-    "indexedFiles": 10,
+    "indexedFiles": 15,
     "skippedFiles": 0,
     "copiedChunks": 13100,
-    "newChunks": 696,
-    "totalChunks": 13796,
+    "newChunks": 1578,
+    "totalChunks": 14678,
     "failures": []
   }
 }
