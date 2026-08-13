@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b9bd65cb5da8d2e7611c49464f4186f79a214ff3",
-  "createdAt": "2026-08-13T14:04:27.967Z",
+  "createdAt": "2026-08-13T14:06:35.271Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 14678,
+  "totalChunks": 14747,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 882,
       "bytes": 1413927
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 69,
+      "bytes": 107340
     }
   ],
   "sources": {
@@ -1472,10 +1477,10 @@
       "chunks": 84
     },
     "02_LAW/National law/Index _02LAW_National law.docx": {
-      "sha256": "510363681c342c32a0534b67e3bcc4b14a5958e7208ee9fa6fe343c5f60b0006",
-      "size": 25995,
+      "sha256": "313e895014e9707b26dfb02e75f2f9ebea35ebb8a5b5a7069b977bbd03132d4a",
+      "size": 28874,
       "status": "indexed",
-      "chunks": 7
+      "chunks": 12
     },
     "02_LAW/National law/Italy/___ ATTO COMPLETO ___.pdf": {
       "sha256": "7eec36765cf14d77e523cfbd7cf9278f19741f643283da90f7398f2d434a13a7",
@@ -1716,20 +1721,50 @@
       "size": 930894,
       "status": "indexed",
       "chunks": 317
+    },
+    "02_LAW/National law/Ireland/S.I. No. 291_1979 - European Space Agency (Designation of Organisation) Order, 1979_.pdf": {
+      "sha256": "026fa5635adf4cba73dd6197645960b568b8e5c1e019f0d471d39d9bf2d171ee",
+      "size": 136163,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "02_LAW/National law/Ireland/S.I. No. 324_1976 - European Space Agency (Privileges and Immunities) Order, 1976_.pdf": {
+      "sha256": "ffbd41c5a95fb4f32a7cf200dd7bec90a89e635f2909a23269d9f5ecb12d9128",
+      "size": 69622,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/National law/Latvia/OP2020_132A_1.PDF.pdf": {
+      "sha256": "6af26eba38d91ebc5cf3d50c6a0e2982c496585fa47a3502f0fd8755d0f62db4",
+      "size": 882007,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "02_LAW/National law/Lithuania/Lietuvos Respublikos Vyriausybės ir Europos kosmoso agentūros susitarimas dėl asocijuotos narystės.pdf": {
+      "sha256": "10047a5d4624a5186a5263f724e9493d576150b04d453c9b38e6d39717c5384c",
+      "size": 324090,
+      "status": "indexed",
+      "chunks": 34
     }
   },
   "report": {
     "discoveredFiles": 300,
     "unchangedFiles": 251,
     "changedFiles": 37,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 22,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 17,
     "deletedFiles": [],
-    "indexedFiles": 15,
-    "skippedFiles": 0,
+    "indexedFiles": 19,
+    "skippedFiles": 1,
     "copiedChunks": 13100,
-    "newChunks": 1578,
-    "totalChunks": 14678,
-    "failures": []
+    "newChunks": 1647,
+    "totalChunks": 14747,
+    "failures": [
+      {
+        "file": "02_LAW/National law/Latvia/OP2020_132A_1.PDF.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
