@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b9bd65cb5da8d2e7611c49464f4186f79a214ff3",
-  "createdAt": "2026-08-13T14:10:26.564Z",
+  "createdAt": "2026-08-13T14:55:28.934Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 15173,
+  "totalChunks": 15460,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -43,6 +43,11 @@
       "file": "rag-index-0007.ndjson",
       "chunks": 235,
       "bytes": 367019
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 287,
+      "bytes": 436924
     }
   ],
   "sources": {
@@ -1816,23 +1821,58 @@
       "size": 180910,
       "status": "indexed",
       "chunks": 0
+    },
+    "02_LAW/National law/Romania/HG_923_20.11.1995_ROSA.pdf": {
+      "sha256": "77937bf10adf58479610aee861f9e5e456614c29a7ad0132f43a153ed20bc0b1",
+      "size": 71974,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/Slovenia/u2022043.pdf": {
+      "sha256": "9fbfb6d255c69c2d35825580e8072858d83cd8cd822cd0d926a9e8599451f725",
+      "size": 3194968,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "02_LAW/National law/Slovenia/u2022122.pdf": {
+      "sha256": "74985f183c9fcecebb01d764f114e0722cf6be6dc0331ce6973094180ce3c116",
+      "size": 706601,
+      "status": "indexed",
+      "chunks": 137
+    },
+    "02_LAW/National law/Slovenia/Vsebina Uradnega lista _ Uradni list.pdf": {
+      "sha256": "d820521d651e779ab457fb276ef7f4107d1fbf6aa4042469458fba6e7d691e3c",
+      "size": 1175656,
+      "status": "indexed",
+      "chunks": 144
+    },
+    "02_LAW/National law/Sweden/Förordning (1982_1069) om rymdverksamhet _ Sveriges riksdag.pdf": {
+      "sha256": "b40f5f905055b7a466e0e46283d71a5909a525817f816bb58383442825deff29",
+      "size": 244849,
+      "status": "indexed",
+      "chunks": 6
     }
   },
   "report": {
     "discoveredFiles": 300,
-    "unchangedFiles": 251,
-    "changedFiles": 37,
-    "processedChangedFiles": 30,
-    "remainingChangedFiles": 7,
+    "unchangedFiles": 280,
+    "changedFiles": 7,
+    "processedChangedFiles": 35,
+    "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 29,
-    "skippedFiles": 1,
+    "indexedFiles": 33,
+    "skippedFiles": 2,
     "copiedChunks": 13100,
-    "newChunks": 2073,
-    "totalChunks": 15173,
+    "newChunks": 2360,
+    "totalChunks": 15460,
     "failures": [
       {
         "file": "02_LAW/National law/Latvia/OP2020_132A_1.PDF.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "02_LAW/National law/Slovenia/u2022043.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
