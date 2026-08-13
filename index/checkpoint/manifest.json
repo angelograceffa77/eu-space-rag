@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b9bd65cb5da8d2e7611c49464f4186f79a214ff3",
-  "createdAt": "2026-08-13T14:06:35.271Z",
+  "createdAt": "2026-08-13T14:08:26.662Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 14747,
+  "totalChunks": 14938,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -33,6 +33,11 @@
       "file": "rag-index-0005.ndjson",
       "chunks": 69,
       "bytes": 107340
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 191,
+      "bytes": 293386
     }
   ],
   "sources": {
@@ -1746,20 +1751,50 @@
       "size": 324090,
       "status": "indexed",
       "chunks": 34
+    },
+    "02_LAW/National law/Lithuania/LRV-Europos+kosmoso+agentūros+asocijuotos+narystės+susitarimas+2021.pdf": {
+      "sha256": "a421d2d5655a1b0342fa6322a1b3adab4699462de05eb922c4475bd321d6b52a",
+      "size": 12769147,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/Malta/LEĠIŻLAZZJONI MALTA.pdf": {
+      "sha256": "ded9e38cb87578fe78f9bced695141ea16d465d1127f328e43496e2841697fd1",
+      "size": 3183348,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/Portugal/0005700071.pdf": {
+      "sha256": "318a62960c7bae06f0f442a4a07e211b91e51db752df03d51c3f641a3672ee27",
+      "size": 1454101,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "02_LAW/National law/Portugal/0157601577.pdf": {
+      "sha256": "b2fc9962ba29ab5bf9a7b2de31be5a2c8cd53db682ce0423f95eba452d70a112",
+      "size": 184078,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/Portugal/02400.pdf": {
+      "sha256": "68be46d31a2b5fee33b04354cc124180ae099e64fadd6907cfdd8c0dd3aab4fe",
+      "size": 5222593,
+      "status": "indexed",
+      "chunks": 144
     }
   },
   "report": {
     "discoveredFiles": 300,
     "unchangedFiles": 251,
     "changedFiles": 37,
-    "processedChangedFiles": 20,
-    "remainingChangedFiles": 17,
+    "processedChangedFiles": 25,
+    "remainingChangedFiles": 12,
     "deletedFiles": [],
-    "indexedFiles": 19,
+    "indexedFiles": 24,
     "skippedFiles": 1,
     "copiedChunks": 13100,
-    "newChunks": 1647,
-    "totalChunks": 14747,
+    "newChunks": 1838,
+    "totalChunks": 14938,
     "failures": [
       {
         "file": "02_LAW/National law/Latvia/OP2020_132A_1.PDF.pdf",
