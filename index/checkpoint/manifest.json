@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b9bd65cb5da8d2e7611c49464f4186f79a214ff3",
-  "createdAt": "2026-08-13T13:59:43.061Z",
+  "createdAt": "2026-08-13T14:01:31.567Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 13677,
+  "totalChunks": 13796,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 273,
       "bytes": 468986
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 119,
+      "bytes": 181950
     }
   ],
   "sources": {
@@ -1646,20 +1651,50 @@
       "size": 110064,
       "status": "indexed",
       "chunks": 10
+    },
+    "02_LAW/National law/Estonia/207072015001.pdf": {
+      "sha256": "d47e6d40d40cb6dc12b6969c9e41935ea9777453590fc2060cfeaad894b45c89",
+      "size": 53635,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "02_LAW/National law/Estonia/Eesti Vabariigi valitsuse ja Euroopa Kosmoseagentuuri vaheline Eesti ühinemist Euroopa Kosmoseagentuuri asutamise konventsiooniga käsitlev kokkulepe-Riigi T.pdf": {
+      "sha256": "828b6b7885774c4d6e185816eac1db7a4188b45574783e2bcbcd4c552a1e57b1",
+      "size": 93694,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "02_LAW/National law/Estonia/Euroopa Kosmoseagentuuri asutamise konventsioon-Riigi Teataja.pdf": {
+      "sha256": "d31b73066ed4856abc653ff42196246b4b2fbc385ada4b245391c55314f4266f",
+      "size": 243577,
+      "status": "indexed",
+      "chunks": 62
+    },
+    "02_LAW/National law/France/00JOEP0129008.pdf": {
+      "sha256": "e1483703221b04fe88a10b2d82405dd2ab49f6c19221876e987b2853fa3aa54b",
+      "size": 371883,
+      "status": "indexed",
+      "chunks": 27
+    },
+    "02_LAW/National law/France/00JOEP0132016.pdf": {
+      "sha256": "d29f63760685c15d4eb9a0a4054148de161785df7acf9adc31714b0ef8270b8a",
+      "size": 141446,
+      "status": "indexed",
+      "chunks": 19
     }
   },
   "report": {
     "discoveredFiles": 300,
     "unchangedFiles": 251,
     "changedFiles": 37,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 32,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 27,
     "deletedFiles": [],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 13100,
-    "newChunks": 577,
-    "totalChunks": 13677,
+    "newChunks": 696,
+    "totalChunks": 13796,
     "failures": []
   }
 }
