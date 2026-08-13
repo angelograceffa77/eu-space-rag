@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b9bd65cb5da8d2e7611c49464f4186f79a214ff3",
-  "createdAt": "2026-08-13T14:08:26.662Z",
+  "createdAt": "2026-08-13T14:10:26.564Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 14938,
+  "totalChunks": 15173,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -38,6 +38,11 @@
       "file": "rag-index-0006.ndjson",
       "chunks": 191,
       "bytes": 293386
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 235,
+      "bytes": 367019
     }
   ],
   "sources": {
@@ -1781,20 +1786,50 @@
       "size": 5222593,
       "status": "indexed",
       "chunks": 144
+    },
+    "02_LAW/National law/Portugal/Decreto Legislativo Regional n.º 9_2019_A, de 9 de maio _ DR.pdf": {
+      "sha256": "e1c4d7ff489a5f421f64fec604a82080ae1c62e6ef5fdcecf4a1107dac46c6cb",
+      "size": 398833,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "02_LAW/National law/Portugal/Decreto-Lei n.º 16_2019, de 22 de janeiro _ DR.pdf": {
+      "sha256": "2e90078b8b027422b1b2a59891a9235bd47803effd07a5aa444752488de06281",
+      "size": 407225,
+      "status": "indexed",
+      "chunks": 39
+    },
+    "02_LAW/National law/Portugal/Regulamento n.º 697_2019, de 5 de setembro _ DR.pdf": {
+      "sha256": "b9563d4d1dea4e685a585499175245ed37219a7ea0669c9f8faebd583629c17a",
+      "size": 519369,
+      "status": "indexed",
+      "chunks": 49
+    },
+    "02_LAW/National law/Portugal/Regulamento_alteracRegul697_2019.pdf": {
+      "sha256": "cb9b5abaf25b58cedc763b6b81ff10973d2cc7198ffac3b795c969633db0dea3",
+      "size": 629821,
+      "status": "indexed",
+      "chunks": 112
+    },
+    "02_LAW/National law/Romania/11L665AFP.pdf": {
+      "sha256": "271bc7f870be518c658da0c558caf9726ea00c71bebac45b5ecf4d4553202d76",
+      "size": 180910,
+      "status": "indexed",
+      "chunks": 0
     }
   },
   "report": {
     "discoveredFiles": 300,
     "unchangedFiles": 251,
     "changedFiles": 37,
-    "processedChangedFiles": 25,
-    "remainingChangedFiles": 12,
+    "processedChangedFiles": 30,
+    "remainingChangedFiles": 7,
     "deletedFiles": [],
-    "indexedFiles": 24,
+    "indexedFiles": 29,
     "skippedFiles": 1,
     "copiedChunks": 13100,
-    "newChunks": 1838,
-    "totalChunks": 14938,
+    "newChunks": 2073,
+    "totalChunks": 15173,
     "failures": [
       {
         "file": "02_LAW/National law/Latvia/OP2020_132A_1.PDF.pdf",
