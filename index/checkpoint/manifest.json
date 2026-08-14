@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T13:25:07.803Z",
+  "createdAt": "2026-08-14T13:27:02.014Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 15674,
+  "totalChunks": 15782,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -43,6 +43,11 @@
       "file": "rag-index-0007.ndjson",
       "chunks": 54,
       "bytes": 82218
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 108,
+      "bytes": 168656
     }
   ],
   "sources": {
@@ -1883,20 +1888,50 @@
       "size": 184521,
       "status": "indexed",
       "chunks": 3
+    },
+    "01_POLICY/Member States/Slovakia/03_Vlastny material.pdf": {
+      "sha256": "0906c21efb47a13c680a1994f41cc4746d32f266a13835b38f2cf75c895cda35",
+      "size": 959423,
+      "status": "indexed",
+      "chunks": 57
+    },
+    "01_POLICY/Member States/Slovakia/04_Dolozka vplyvov.pdf": {
+      "sha256": "d53ad7baeaf3494159ee8e3ef881369a3b319aa8a29746e615710009edd61611",
+      "size": 893706,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "01_POLICY/Member States/Slovakia/05_Vyhodnotenie MPK.pdf": {
+      "sha256": "1734f19a7a5633d8b2654eb5082f6f06ec1814c90f2a765ce9e8a67569d95ecb",
+      "size": 728638,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "01_POLICY/Member States/Slovakia/06_Vyhlasenie predkladatela.pdf": {
+      "sha256": "a9ac3235e12fdcc51a7e3cfc5ea181ddb4f81ef6310c5662bdd626b0cb7e0d7b",
+      "size": 415614,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/Member States/Slovakia/07_Priloha c. 1 Hlavne legislativne akty EU.pdf": {
+      "sha256": "3650ac20c9ab3421418706e232fc4f2be52538bf0dbb67cc1e968b7f3baf45c9",
+      "size": 549442,
+      "status": "indexed",
+      "chunks": 8
     }
   },
   "report": {
     "discoveredFiles": 327,
     "unchangedFiles": 285,
     "changedFiles": 29,
-    "processedChangedFiles": 35,
+    "processedChangedFiles": 40,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 33,
+    "indexedFiles": 38,
     "skippedFiles": 2,
     "copiedChunks": 12851,
-    "newChunks": 2823,
-    "totalChunks": 15674,
+    "newChunks": 2931,
+    "totalChunks": 15782,
     "failures": [
       {
         "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
