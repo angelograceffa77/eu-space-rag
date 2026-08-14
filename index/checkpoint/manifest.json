@@ -3,16 +3,21 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T12:34:14.994Z",
+  "createdAt": "2026-08-14T12:38:19.494Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 13124,
+  "totalChunks": 13670,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
       "chunks": 13124,
       "bytes": 20651115
+    },
+    {
+      "file": "rag-index-0002.ndjson",
+      "chunks": 546,
+      "bytes": 860413
     }
   ],
   "sources": {
@@ -1677,14 +1682,44 @@
       "size": 2532498,
       "status": "indexed",
       "chunks": 176
+    },
+    "01_POLICY/Member States/Cyprus/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf": {
+      "sha256": "2463a881511b5394cebc2fcf2211d3e5cc3f1381364b20c3dd36ed88c106035e",
+      "size": 3817167,
+      "status": "indexed",
+      "chunks": 190
+    },
+    "01_POLICY/Member States/Czech Republic/nkp_2026_2032.pdf": {
+      "sha256": "f7e1aadced4aa87f9eee978b289885a61a92c194c0c6a50d2180b1a94b16da58",
+      "size": 1170222,
+      "status": "indexed",
+      "chunks": 177
+    },
+    "01_POLICY/Member States/Denmark/strategi-for-rumforskning-og-innovation_-opslag.pdf": {
+      "sha256": "618791e307006f059f6822dd2f199ca15d5e1094f1fe5b2dcbca305a17ddd871",
+      "size": 6622141,
+      "status": "indexed",
+      "chunks": 60
+    },
+    "01_POLICY/Member States/Estonia/Eesti_kosmosepoliitika_A4_EST_web.pdf": {
+      "sha256": "c876f6472d9095b860c486b66760079642fbe39e2fd283f3bb1a212965781680",
+      "size": 10437458,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/Member States/Finland/VN_2025_8.pdf": {
+      "sha256": "75c3fabff73c3b870a74510025aac74358501afee004ce19785c6346fa2c2b21",
+      "size": 272148,
+      "status": "indexed",
+      "chunks": 58
     }
   },
   "report": {
     "discoveredFiles": 327,
     "unchangedFiles": 256,
     "changedFiles": 59,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 54,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 49,
     "deletedFiles": [
       "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf",
       "01_POLICY/Member States/denmarks-national-space-strategy.pdf",
@@ -1717,11 +1752,11 @@
       "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf",
       "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf"
     ],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 12851,
-    "newChunks": 273,
-    "totalChunks": 13124,
+    "newChunks": 819,
+    "totalChunks": 13670,
     "failures": []
   }
 }
