@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T13:27:02.014Z",
+  "createdAt": "2026-08-14T13:30:12.010Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 15782,
+  "totalChunks": 16018,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -48,6 +48,11 @@
       "file": "rag-index-0008.ndjson",
       "chunks": 108,
       "bytes": 168656
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 236,
+      "bytes": 355166
     }
   ],
   "sources": {
@@ -1918,20 +1923,50 @@
       "size": 549442,
       "status": "indexed",
       "chunks": 8
+    },
+    "01_POLICY/Member States/Slovakia/07_Priloha c. 2 Volitelne programy ESA.pdf": {
+      "sha256": "afa26cfd5d81ecfcf26d75681d9d919a0c1d128c7d6bd42ea6a47d714aad6c8a",
+      "size": 812214,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/Member States/Slovakia/07_Priloha c. 3 Zoznam uspesnych PECS projektov a analyza PECS vyziev.pdf": {
+      "sha256": "4ff2caf4cb0d9c8a8eced59d1ab16d40714da37e503b9f7e05d7f97accb050a9",
+      "size": 690373,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "01_POLICY/Member States/Slovakia/07_Priloha c. 4 Slovnik pojmov.pdf": {
+      "sha256": "d1e1f1d86f46af3609b1bba2920bddd7f1e165b5943f05498b950c8d9050ae75",
+      "size": 400948,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/Member States/Slovenia/Slovenian-space-strategy-2030.pdf": {
+      "sha256": "370f9b2aee85ca284135588667b20e435033a9d2f07e47094060b9eb773ade8f",
+      "size": 2313687,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/Member States/Spain/BOE-A-2025-16214.pdf": {
+      "sha256": "882c3a7519483b816eaafd5578f76b6ee426166550b91c109a153c0d01387b6a",
+      "size": 517860,
+      "status": "indexed",
+      "chunks": 167
     }
   },
   "report": {
     "discoveredFiles": 327,
     "unchangedFiles": 285,
     "changedFiles": 29,
-    "processedChangedFiles": 40,
+    "processedChangedFiles": 45,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 38,
+    "indexedFiles": 43,
     "skippedFiles": 2,
     "copiedChunks": 12851,
-    "newChunks": 2931,
-    "totalChunks": 15782,
+    "newChunks": 3167,
+    "totalChunks": 16018,
     "failures": [
       {
         "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
