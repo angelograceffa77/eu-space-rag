@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T12:45:46.498Z",
+  "createdAt": "2026-08-14T12:49:17.895Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 14995,
+  "totalChunks": 15620,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -33,6 +33,11 @@
       "file": "rag-index-0005.ndjson",
       "chunks": 615,
       "bytes": 989599
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 625,
+      "bytes": 953304
     }
   ],
   "sources": {
@@ -1812,14 +1817,44 @@
       "size": 150145,
       "status": "indexed",
       "chunks": 26
+    },
+    "01_POLICY/Member States/Malta/Malta-National-Space-Strategy.pdf": {
+      "sha256": "fe7ccb72068ba68ae135668ddb889343ff9ee538fe2a7b2ae46f90776cf9207e",
+      "size": 8273745,
+      "status": "indexed",
+      "chunks": 165
+    },
+    "01_POLICY/Member States/Netherlands/NSO-Advies-2026-2028.pdf": {
+      "sha256": "c0806e286977cf7b458ca2a768791e60c470ac334d23ffcd8ad155c211c996d3",
+      "size": 5844712,
+      "status": "indexed",
+      "chunks": 86
+    },
+    "01_POLICY/Member States/Netherlands/ruimtevaartbeleid-2022.pdf": {
+      "sha256": "63809b1b9909a760881da4d8e00a97979539048805ce9b3cd4a88fc1dd795c57",
+      "size": 596033,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/Member States/Norway/stm201920200010000dddpdfs.pdf": {
+      "sha256": "912a0223421d95529f821e46e9fbd5961a45d23d4f4e4e51f2177f50dd9350e8",
+      "size": 16921868,
+      "status": "indexed",
+      "chunks": 264
+    },
+    "01_POLICY/Member States/Poland/Program_dzialan_na_rzecz_rozwoju_technologii_kosmicznych.pdf": {
+      "sha256": "af58cd763330ca9a3ca205696653715831d275dba6e5aeea691829c74abe4ab2",
+      "size": 466833,
+      "status": "indexed",
+      "chunks": 81
     }
   },
   "report": {
     "discoveredFiles": 327,
     "unchangedFiles": 256,
     "changedFiles": 59,
-    "processedChangedFiles": 25,
-    "remainingChangedFiles": 34,
+    "processedChangedFiles": 30,
+    "remainingChangedFiles": 29,
     "deletedFiles": [
       "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf",
       "01_POLICY/Member States/denmarks-national-space-strategy.pdf",
@@ -1852,11 +1887,11 @@
       "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf",
       "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf"
     ],
-    "indexedFiles": 24,
+    "indexedFiles": 29,
     "skippedFiles": 1,
     "copiedChunks": 12851,
-    "newChunks": 2144,
-    "totalChunks": 14995,
+    "newChunks": 2769,
+    "totalChunks": 15620,
     "failures": [
       {
         "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
