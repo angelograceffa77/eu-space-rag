@@ -2,62 +2,57 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "b1fa010dce2103417cf5e40d28e6ceb0c7825e82",
-  "createdAt": "2026-08-12T17:52:58.325Z",
+  "buildCommit": "b9bd65cb5da8d2e7611c49464f4186f79a214ff3",
+  "createdAt": "2026-08-13T14:57:09.643Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 13107,
+  "totalChunks": 15480,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 10828,
-      "bytes": 16314699
+      "chunks": 13404,
+      "bytes": 20970223
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 81,
-      "bytes": 119549
+      "chunks": 273,
+      "bytes": 468986
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 73,
-      "bytes": 111285
+      "chunks": 119,
+      "bytes": 181950
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 642,
-      "bytes": 1611947
+      "chunks": 882,
+      "bytes": 1413927
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 190,
-      "bytes": 371874
+      "chunks": 69,
+      "bytes": 107340
     },
     {
       "file": "rag-index-0006.ndjson",
-      "chunks": 660,
-      "bytes": 990459
+      "chunks": 191,
+      "bytes": 293386
     },
     {
       "file": "rag-index-0007.ndjson",
-      "chunks": 55,
-      "bytes": 80317
+      "chunks": 235,
+      "bytes": 367019
     },
     {
       "file": "rag-index-0008.ndjson",
-      "chunks": 64,
-      "bytes": 94538
+      "chunks": 287,
+      "bytes": 436924
     },
     {
       "file": "rag-index-0009.ndjson",
-      "chunks": 179,
-      "bytes": 277840
-    },
-    {
-      "file": "rag-index-0010.ndjson",
-      "chunks": 335,
-      "bytes": 507650
+      "chunks": 20,
+      "bytes": 28923
     }
   ],
   "sources": {
@@ -1502,10 +1497,10 @@
       "chunks": 84
     },
     "02_LAW/National law/Index _02LAW_National law.docx": {
-      "sha256": "510363681c342c32a0534b67e3bcc4b14a5958e7208ee9fa6fe343c5f60b0006",
-      "size": 25995,
+      "sha256": "313e895014e9707b26dfb02e75f2f9ebea35ebb8a5b5a7069b977bbd03132d4a",
+      "size": 28874,
       "status": "indexed",
-      "chunks": 7
+      "chunks": 12
     },
     "02_LAW/National law/Italy/___ ATTO COMPLETO ___.pdf": {
       "sha256": "7eec36765cf14d77e523cfbd7cf9278f19741f643283da90f7398f2d434a13a7",
@@ -1656,20 +1651,247 @@
       "size": 428658,
       "status": "indexed",
       "chunks": 109
+    },
+    "02_LAW/National law/Bulgaria/Zakon-BAN-2018.pdf": {
+      "sha256": "73e32e6d0bb0359380a6cadf926d017e3a11fb782b9131a114354bc9d5f3410e",
+      "size": 418442,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "02_LAW/National law/Croatia/Izmjene Zakona o elektroničkim komunikacijama_NN_76_22 i 14_24 neslužbeni pročišćeni tekst.pdf": {
+      "sha256": "dedaf4576522bf11435eee13f33e38d53fc7947c384760716db03ec9490a9d6e",
+      "size": 1656329,
+      "status": "indexed",
+      "chunks": 503
+    },
+    "02_LAW/National law/Cyprus/The Space Law.pdf": {
+      "sha256": "9f18711b5251b44a3456fd8904b44f4d63cec3412bcf62369b5408f06529f6e6",
+      "size": 11903695,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/Cyprus/Ο περί Διαστήματος Νόμος του 2023 - 93(I)_2023.pdf": {
+      "sha256": "6069f0139ea61cc4a695002a934b9340ea3ff2b1090d89556105836eb567ef44",
+      "size": 284568,
+      "status": "indexed",
+      "chunks": 50
+    },
+    "02_LAW/National law/Czechia/93_2009 Sb. m. s., 6. 10. 2009, smlouva platná pro čr (nebo právní předchůdce), informativní znění systému e-Sbírka.pdf": {
+      "sha256": "a060e905b3dba2a0d053c37093928110b8cec0f3079e0be5180c429d22341f31",
+      "size": 110064,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "02_LAW/National law/Estonia/207072015001.pdf": {
+      "sha256": "d47e6d40d40cb6dc12b6969c9e41935ea9777453590fc2060cfeaad894b45c89",
+      "size": 53635,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "02_LAW/National law/Estonia/Eesti Vabariigi valitsuse ja Euroopa Kosmoseagentuuri vaheline Eesti ühinemist Euroopa Kosmoseagentuuri asutamise konventsiooniga käsitlev kokkulepe-Riigi T.pdf": {
+      "sha256": "828b6b7885774c4d6e185816eac1db7a4188b45574783e2bcbcd4c552a1e57b1",
+      "size": 93694,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "02_LAW/National law/Estonia/Euroopa Kosmoseagentuuri asutamise konventsioon-Riigi Teataja.pdf": {
+      "sha256": "d31b73066ed4856abc653ff42196246b4b2fbc385ada4b245391c55314f4266f",
+      "size": 243577,
+      "status": "indexed",
+      "chunks": 62
+    },
+    "02_LAW/National law/France/00JOEP0129008.pdf": {
+      "sha256": "e1483703221b04fe88a10b2d82405dd2ab49f6c19221876e987b2853fa3aa54b",
+      "size": 371883,
+      "status": "indexed",
+      "chunks": 27
+    },
+    "02_LAW/National law/France/00JOEP0132016.pdf": {
+      "sha256": "d29f63760685c15d4eb9a0a4054148de161785df7acf9adc31714b0ef8270b8a",
+      "size": 141446,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "02_LAW/National law/France/Journal officiel de la République française - N° 126 du 31 mai 2011.pdf": {
+      "sha256": "e61788e9c0464482cc8d42d2276e4c4eff03715b6e452844e09f811b0c64e40e",
+      "size": 347434,
+      "status": "indexed",
+      "chunks": 57
+    },
+    "02_LAW/National law/France/Journal officiel de la République française - N° 48 du 26 février 2022.pdf": {
+      "sha256": "1fc2a3519d90748e4dca20add99a4f60c3d4f02db0b368caca99d459896c50b2",
+      "size": 199874,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "02_LAW/National law/France/Ordonnance n° 2004-545 du 11 juin 2004 relative à la partie législative du code de la recherche - Légifrance.pdf": {
+      "sha256": "d1a351fb418a44d077877509fa1bec8d53a8234fb2c3610d2222166963249846",
+      "size": 539270,
+      "status": "indexed",
+      "chunks": 187
+    },
+    "02_LAW/National law/Hungary/MK_15_044.pdf": {
+      "sha256": "c9e2c40525e04359ec03c3187c5f6ef66ae7ecdbd0e083ec4cc0d4f207173892",
+      "size": 1204871,
+      "status": "indexed",
+      "chunks": 304
+    },
+    "02_LAW/National law/Hungary/MK_15_157.pdf": {
+      "sha256": "494ec287ae61ac5ad8ff21304b77696d7ea712e50e1678eb832f7e3c4be0047d",
+      "size": 930894,
+      "status": "indexed",
+      "chunks": 317
+    },
+    "02_LAW/National law/Ireland/S.I. No. 291_1979 - European Space Agency (Designation of Organisation) Order, 1979_.pdf": {
+      "sha256": "026fa5635adf4cba73dd6197645960b568b8e5c1e019f0d471d39d9bf2d171ee",
+      "size": 136163,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "02_LAW/National law/Ireland/S.I. No. 324_1976 - European Space Agency (Privileges and Immunities) Order, 1976_.pdf": {
+      "sha256": "ffbd41c5a95fb4f32a7cf200dd7bec90a89e635f2909a23269d9f5ecb12d9128",
+      "size": 69622,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "02_LAW/National law/Latvia/OP2020_132A_1.PDF.pdf": {
+      "sha256": "6af26eba38d91ebc5cf3d50c6a0e2982c496585fa47a3502f0fd8755d0f62db4",
+      "size": 882007,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "02_LAW/National law/Lithuania/Lietuvos Respublikos Vyriausybės ir Europos kosmoso agentūros susitarimas dėl asocijuotos narystės.pdf": {
+      "sha256": "10047a5d4624a5186a5263f724e9493d576150b04d453c9b38e6d39717c5384c",
+      "size": 324090,
+      "status": "indexed",
+      "chunks": 34
+    },
+    "02_LAW/National law/Lithuania/LRV-Europos+kosmoso+agentūros+asocijuotos+narystės+susitarimas+2021.pdf": {
+      "sha256": "a421d2d5655a1b0342fa6322a1b3adab4699462de05eb922c4475bd321d6b52a",
+      "size": 12769147,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/Malta/LEĠIŻLAZZJONI MALTA.pdf": {
+      "sha256": "ded9e38cb87578fe78f9bced695141ea16d465d1127f328e43496e2841697fd1",
+      "size": 3183348,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/Portugal/0005700071.pdf": {
+      "sha256": "318a62960c7bae06f0f442a4a07e211b91e51db752df03d51c3f641a3672ee27",
+      "size": 1454101,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "02_LAW/National law/Portugal/0157601577.pdf": {
+      "sha256": "b2fc9962ba29ab5bf9a7b2de31be5a2c8cd53db682ce0423f95eba452d70a112",
+      "size": 184078,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/Portugal/02400.pdf": {
+      "sha256": "68be46d31a2b5fee33b04354cc124180ae099e64fadd6907cfdd8c0dd3aab4fe",
+      "size": 5222593,
+      "status": "indexed",
+      "chunks": 144
+    },
+    "02_LAW/National law/Portugal/Decreto Legislativo Regional n.º 9_2019_A, de 9 de maio _ DR.pdf": {
+      "sha256": "e1c4d7ff489a5f421f64fec604a82080ae1c62e6ef5fdcecf4a1107dac46c6cb",
+      "size": 398833,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "02_LAW/National law/Portugal/Decreto-Lei n.º 16_2019, de 22 de janeiro _ DR.pdf": {
+      "sha256": "2e90078b8b027422b1b2a59891a9235bd47803effd07a5aa444752488de06281",
+      "size": 407225,
+      "status": "indexed",
+      "chunks": 39
+    },
+    "02_LAW/National law/Portugal/Regulamento n.º 697_2019, de 5 de setembro _ DR.pdf": {
+      "sha256": "b9563d4d1dea4e685a585499175245ed37219a7ea0669c9f8faebd583629c17a",
+      "size": 519369,
+      "status": "indexed",
+      "chunks": 49
+    },
+    "02_LAW/National law/Portugal/Regulamento_alteracRegul697_2019.pdf": {
+      "sha256": "cb9b5abaf25b58cedc763b6b81ff10973d2cc7198ffac3b795c969633db0dea3",
+      "size": 629821,
+      "status": "indexed",
+      "chunks": 112
+    },
+    "02_LAW/National law/Romania/11L665AFP.pdf": {
+      "sha256": "271bc7f870be518c658da0c558caf9726ea00c71bebac45b5ecf4d4553202d76",
+      "size": 180910,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/Romania/HG_923_20.11.1995_ROSA.pdf": {
+      "sha256": "77937bf10adf58479610aee861f9e5e456614c29a7ad0132f43a153ed20bc0b1",
+      "size": 71974,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/Slovenia/u2022043.pdf": {
+      "sha256": "9fbfb6d255c69c2d35825580e8072858d83cd8cd822cd0d926a9e8599451f725",
+      "size": 3194968,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "02_LAW/National law/Slovenia/u2022122.pdf": {
+      "sha256": "74985f183c9fcecebb01d764f114e0722cf6be6dc0331ce6973094180ce3c116",
+      "size": 706601,
+      "status": "indexed",
+      "chunks": 137
+    },
+    "02_LAW/National law/Slovenia/Vsebina Uradnega lista _ Uradni list.pdf": {
+      "sha256": "d820521d651e779ab457fb276ef7f4107d1fbf6aa4042469458fba6e7d691e3c",
+      "size": 1175656,
+      "status": "indexed",
+      "chunks": 144
+    },
+    "02_LAW/National law/Sweden/Förordning (1982_1069) om rymdverksamhet _ Sveriges riksdag.pdf": {
+      "sha256": "b40f5f905055b7a466e0e46283d71a5909a525817f816bb58383442825deff29",
+      "size": 244849,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "02_LAW/National law/Sweden/Förordning (2007_1115) med instruktion för Rymdstyrelsen _ Sveriges riksdag.pdf": {
+      "sha256": "479f9d14db54f35502225bf6f024337b6a7a46961e6c79637611ee1f13ea7502",
+      "size": 269556,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "02_LAW/National law/Sweden/Lag (1982_963) om rymdverksamhet _ Sveriges riksdag.pdf": {
+      "sha256": "c4bf5475ebda1b282efbdcf3d1521f48204894fd58bb01b613c9a9ac6f141089",
+      "size": 248092,
+      "status": "indexed",
+      "chunks": 8
     }
   },
   "report": {
-    "discoveredFiles": 264,
-    "unchangedFiles": 245,
+    "discoveredFiles": 300,
+    "unchangedFiles": 280,
     "changedFiles": 7,
-    "processedChangedFiles": 47,
+    "processedChangedFiles": 37,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 47,
-    "skippedFiles": 0,
-    "copiedChunks": 10634,
-    "newChunks": 2473,
-    "totalChunks": 13107,
-    "failures": []
+    "indexedFiles": 35,
+    "skippedFiles": 2,
+    "copiedChunks": 13100,
+    "newChunks": 2380,
+    "totalChunks": 15480,
+    "failures": [
+      {
+        "file": "02_LAW/National law/Latvia/OP2020_132A_1.PDF.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "02_LAW/National law/Slovenia/u2022043.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
