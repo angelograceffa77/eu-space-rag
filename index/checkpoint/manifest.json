@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T13:30:12.010Z",
+  "createdAt": "2026-08-14T13:37:34.824Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 16018,
+  "totalChunks": 16278,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -53,6 +53,11 @@
       "file": "rag-index-0009.ndjson",
       "chunks": 236,
       "bytes": 355166
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 260,
+      "bytes": 390911
     }
   ],
   "sources": {
@@ -1953,20 +1958,51 @@
       "size": 517860,
       "status": "indexed",
       "chunks": 167
+    },
+    "01_POLICY/Member States/Swizerland/Weltraumpolitik 2023 EN v23.pdf": {
+      "sha256": "4659ed79bee39daaeac58bbdb3a42999142587bce87b4a5b056dab79c092bc39",
+      "size": 8586003,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "01_POLICY/Member States/UK/171825900_webb.pdf": {
+      "sha256": "4f211aa6b6075d051c33e70b0720602d19e9db901fadc4f74a2bc88d311474bf",
+      "size": 358923,
+      "status": "indexed",
+      "chunks": 65
+    },
+    "01_POLICY/Member States/UK/20220120-UK_Defence_Space_Strategy_Feb_22.pdf": {
+      "sha256": "a78d6412d6099bcb24a17b331198176a7269ab2ffb1e134b0f6f575c55f2c1d0",
+      "size": 12274947,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/UK/denmarks-national-space-strategy.pdf": {
+      "sha256": "388f163c3100585cdca2d80f900f98571455d3feaed5931b8889ee6b021c9dec",
+      "size": 8909101,
+      "status": "indexed",
+      "chunks": 84
+    },
+    "01_POLICY/Member States/UK/national_space_strategy_in_action.pdf": {
+      "sha256": "dc2f616f1b7a7e3d5aa5fb0b892f34e8557478f652989153db63a77d51725cb2",
+      "size": 1103862,
+      "status": "indexed",
+      "chunks": 76
     }
   },
   "report": {
     "discoveredFiles": 327,
-    "unchangedFiles": 285,
-    "changedFiles": 29,
-    "processedChangedFiles": 45,
+    "unchangedFiles": 299,
+    "changedFiles": 14,
+    "processedChangedFiles": 50,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 43,
-    "skippedFiles": 2,
+    "indexedFiles": 47,
+    "skippedFiles": 3,
     "copiedChunks": 12851,
-    "newChunks": 3167,
-    "totalChunks": 16018,
+    "newChunks": 3427,
+    "totalChunks": 16278,
     "failures": [
       {
         "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
@@ -1974,6 +2010,10 @@
       },
       {
         "file": "01_POLICY/Member States/Poland/psk.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "01_POLICY/Member States/UK/20220120-UK_Defence_Space_Strategy_Feb_22.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
