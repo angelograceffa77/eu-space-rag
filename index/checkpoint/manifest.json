@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T12:49:17.895Z",
+  "createdAt": "2026-08-14T13:25:07.803Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 15620,
+  "totalChunks": 15674,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -38,6 +38,11 @@
       "file": "rag-index-0006.ndjson",
       "chunks": 625,
       "bytes": 953304
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 54,
+      "bytes": 82218
     }
   ],
   "sources": {
@@ -1847,54 +1852,58 @@
       "size": 466833,
       "status": "indexed",
       "chunks": 81
+    },
+    "01_POLICY/Member States/Poland/psk.pdf": {
+      "sha256": "959a5ff7a9f69a1a68b138e528287d11b5624e2ec2a75cb9116a958707c8119c",
+      "size": 2797791,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/Portugal/estrategia_portugal_espaco_2030.pdf": {
+      "sha256": "b378649bf704c76b86c32fb898e2613daf651f962dc762cdfa8cf29be810713f",
+      "size": 202555,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/Member States/Romania/Strategia spațială – ROSA – Romanian Space Agency.pdf": {
+      "sha256": "8afd7586db4fc08a0d24230c823d29e31cd57337ddd84257bf4caaa17a7e8ac4",
+      "size": 590000,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "01_POLICY/Member States/Slovakia/00_Obal materialu.pdf": {
+      "sha256": "3ca376464a92a77bbd5c4544d946a38fc0215d35393678e6da6bb5c9752054cb",
+      "size": 368966,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/Member States/Slovakia/02_Predkladacia sprava.pdf": {
+      "sha256": "b85031cf7f876243277b8bd884befea71d205b2bbd1c176bbe79ca530fc36e1e",
+      "size": 184521,
+      "status": "indexed",
+      "chunks": 3
     }
   },
   "report": {
     "discoveredFiles": 327,
-    "unchangedFiles": 256,
-    "changedFiles": 59,
-    "processedChangedFiles": 30,
-    "remainingChangedFiles": 29,
-    "deletedFiles": [
-      "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf",
-      "01_POLICY/Member States/denmarks-national-space-strategy.pdf",
-      "01_POLICY/Member States/latvijas-kosmosa-strategija-2021.-2027.-gadam-1.pdf",
-      "01_POLICY/Member States/National space strategy_ENG.pdf",
-      "01_POLICY/Member States/national-space-strategy-for-enterprise-2019-2025.pdf",
-      "01_POLICY/Member States/Program_dzialan_na_rzecz_rozwoju_technologii_kosmicznych.pdf",
-      "01_POLICY/Member States/psk.pdf",
-      "01_POLICY/Member States/strategi-for-rumforskning-og-innovation_-opslag.pdf",
-      "01_POLICY/Member States/the-space-strategy-of-latvia-2021-2027-1.pdf",
-      "01_POLICY/Member States/V4_EN_Austrian-Space-Strategy-2030_0803_taggedv6_PAC2021Approved.pdf",
-      "01_POLICY/Member States/VN_2025_8.pdf",
-      "01_POLICY/Member States/weltraumstrategie_2030.pdf",
-      "01_POLICY/Member States/dspsn_2026.pdf",
-      "01_POLICY/Member States/the-german-federal-governments-space-strategy.pdf",
-      "01_POLICY/Member States/171825900_webb.pdf",
-      "01_POLICY/Member States/20220120-UK_Defence_Space_Strategy_Feb_22.pdf",
-      "01_POLICY/Member States/Cyprus Space Strategy 2022-2027.pdf",
-      "01_POLICY/Member States/Eesti_kosmosepoliitika_A4_EST_web.pdf",
-      "01_POLICY/Member States/estrategia_portugal_espaco_2030.pdf",
-      "01_POLICY/Member States/Kosmoso_pletros_koncepcija_patvirtinta(1).pdf",
-      "01_POLICY/Member States/Malta-National-Space-Strategy.pdf",
-      "01_POLICY/Member States/national_space_strategy_in_action.pdf",
-      "01_POLICY/Member States/nkp_2026_2032.pdf",
-      "01_POLICY/Member States/NSO-Advies-2026-2028.pdf",
-      "01_POLICY/Member States/ruimtevaartbeleid-2022.pdf",
-      "01_POLICY/Member States/Slovenian-space-strategy-2030.pdf",
-      "01_POLICY/Member States/Space Strategy of Hungary.pdf",
-      "01_POLICY/Member States/stm201920200010000dddpdfs.pdf",
-      "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf",
-      "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf"
-    ],
-    "indexedFiles": 29,
-    "skippedFiles": 1,
+    "unchangedFiles": 285,
+    "changedFiles": 29,
+    "processedChangedFiles": 35,
+    "remainingChangedFiles": 0,
+    "deletedFiles": [],
+    "indexedFiles": 33,
+    "skippedFiles": 2,
     "copiedChunks": 12851,
-    "newChunks": 2769,
-    "totalChunks": 15620,
+    "newChunks": 2823,
+    "totalChunks": 15674,
     "failures": [
       {
         "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "01_POLICY/Member States/Poland/psk.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
