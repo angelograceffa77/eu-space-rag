@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T12:43:23.195Z",
+  "createdAt": "2026-08-14T12:45:46.498Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 14380,
+  "totalChunks": 14995,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 235,
       "bytes": 369072
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 615,
+      "bytes": 989599
     }
   ],
   "sources": {
@@ -1777,14 +1782,44 @@
       "size": 660444,
       "status": "indexed",
       "chunks": 62
+    },
+    "01_POLICY/Member States/Legislative Proposals/3d5ddece-b69b-4580-ba7f-7b289fb3c658.pdf": {
+      "sha256": "c3067b5a941a4245075904004643826474c3c7d251f66a577eb80e26d0e71279",
+      "size": 383103,
+      "status": "indexed",
+      "chunks": 46
+    },
+    "01_POLICY/Member States/Legislative Proposals/Index _01Policy_Member States_Legislative Proposals.docx": {
+      "sha256": "89b922c84fa67e143a0b74146b656f57c7904a204485fdb9de662bbec69000c6",
+      "size": 14341,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/Member States/Legislative Proposals/utkast-till-lagradsremiss-en-ny-lag-om-rymdverksamhet.pdf": {
+      "sha256": "046d39931e6cdb81870856a2383275b781d4e976231845b638dfdcb9062ab8e5",
+      "size": 1882686,
+      "status": "indexed",
+      "chunks": 469
+    },
+    "01_POLICY/Member States/Lithuania/Kosmoso_pletros_koncepcija_patvirtinta(1).pdf": {
+      "sha256": "7a9f87a50fcd73e0257b33eed9578c7459d35d1fb3fed1c7d9d36f7cb0d5fbae",
+      "size": 663031,
+      "status": "indexed",
+      "chunks": 73
+    },
+    "01_POLICY/Member States/Luxembourg/stratgie-spatiale-2023-2027.pdf": {
+      "sha256": "4efff96706c17bcf984ba9341d208f06b538f1d5314af1ad100080f99eb84a7b",
+      "size": 150145,
+      "status": "indexed",
+      "chunks": 26
     }
   },
   "report": {
     "discoveredFiles": 327,
     "unchangedFiles": 256,
     "changedFiles": 59,
-    "processedChangedFiles": 20,
-    "remainingChangedFiles": 39,
+    "processedChangedFiles": 25,
+    "remainingChangedFiles": 34,
     "deletedFiles": [
       "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf",
       "01_POLICY/Member States/denmarks-national-space-strategy.pdf",
@@ -1817,11 +1852,11 @@
       "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf",
       "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf"
     ],
-    "indexedFiles": 19,
+    "indexedFiles": 24,
     "skippedFiles": 1,
     "copiedChunks": 12851,
-    "newChunks": 1529,
-    "totalChunks": 14380,
+    "newChunks": 2144,
+    "totalChunks": 14995,
     "failures": [
       {
         "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
