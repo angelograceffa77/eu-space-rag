@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T12:38:19.494Z",
+  "createdAt": "2026-08-14T12:40:34.492Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 13670,
+  "totalChunks": 14145,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 546,
       "bytes": 860413
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 475,
+      "bytes": 714844
     }
   ],
   "sources": {
@@ -871,10 +876,10 @@
       "chunks": 20
     },
     "01_POLICY/Member States/Index _01Policy_Member States.docx": {
-      "sha256": "c3ca3b898402a0b28794c70a5e2c646286dabde893349adfffa22efb257baa04",
-      "size": 16920,
+      "sha256": "abb327b044edc13786ba4cb65a5b6d55a18b048724781e69619fde0c677ae096",
+      "size": 18191,
       "status": "indexed",
-      "chunks": 2
+      "chunks": 3
     },
     "02_LAW/EU legislation/CELEX_32021R0696_EN_TXT.pdf": {
       "sha256": "960792357bf6ceaab33f689e844b8b5af984eaa5f72d78699b8182385e2f8c6a",
@@ -1712,14 +1717,38 @@
       "size": 272148,
       "status": "indexed",
       "chunks": 58
+    },
+    "01_POLICY/Member States/France/National space strategy_ENG.pdf": {
+      "sha256": "71e677d634161bba462427507bc60911df4b529246babd47494ce4322d70b5a2",
+      "size": 681925,
+      "status": "indexed",
+      "chunks": 105
+    },
+    "01_POLICY/Member States/Germany/the-german-federal-governments-space-strategy.pdf": {
+      "sha256": "d898d4e165cabc2fec0b3b75271a4f2b5a9ba65dc1d693d7da61e5f65c08ea83",
+      "size": 4771076,
+      "status": "indexed",
+      "chunks": 117
+    },
+    "01_POLICY/Member States/Greece/General Secretariat of Telecommunications and Post.pdf": {
+      "sha256": "98e29d7c934bd2c75cf4a699e9bb350637c9c6b4b0a305d823e900468e6796d9",
+      "size": 366788,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "01_POLICY/Member States/Hungary/Space Strategy of Hungary.pdf": {
+      "sha256": "70af885e705bb3a67f37506ac5bd98744a75496d1fc28a1c5ff8c281f1ee45d1",
+      "size": 2427573,
+      "status": "indexed",
+      "chunks": 244
     }
   },
   "report": {
     "discoveredFiles": 327,
     "unchangedFiles": 256,
     "changedFiles": 59,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 49,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 44,
     "deletedFiles": [
       "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf",
       "01_POLICY/Member States/denmarks-national-space-strategy.pdf",
@@ -1752,11 +1781,11 @@
       "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf",
       "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf"
     ],
-    "indexedFiles": 10,
+    "indexedFiles": 15,
     "skippedFiles": 0,
     "copiedChunks": 12851,
-    "newChunks": 819,
-    "totalChunks": 13670,
+    "newChunks": 1294,
+    "totalChunks": 14145,
     "failures": []
   }
 }
