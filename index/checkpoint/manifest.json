@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T13:37:34.824Z",
+  "createdAt": "2026-08-14T13:39:18.823Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 16278,
+  "totalChunks": 16463,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -58,6 +58,11 @@
       "file": "rag-index-0010.ndjson",
       "chunks": 260,
       "bytes": 390911
+    },
+    {
+      "file": "rag-index-0011.ndjson",
+      "chunks": 185,
+      "bytes": 278361
     }
   ],
   "sources": {
@@ -1320,10 +1325,10 @@
       "chunks": 84
     },
     "02_LAW/National law/Index _02LAW_National law.docx": {
-      "sha256": "313e895014e9707b26dfb02e75f2f9ebea35ebb8a5b5a7069b977bbd03132d4a",
-      "size": 28874,
+      "sha256": "5fd99ff5cf3edc8607475edd925c8d640c661ef1c3ffe01b9c2262f57601d698",
+      "size": 33447,
       "status": "indexed",
-      "chunks": 12
+      "chunks": 13
     },
     "02_LAW/National law/Italy/___ ATTO COMPLETO ___.pdf": {
       "sha256": "7eec36765cf14d77e523cfbd7cf9278f19741f643283da90f7398f2d434a13a7",
@@ -1989,20 +1994,44 @@
       "size": 1103862,
       "status": "indexed",
       "chunks": 76
+    },
+    "02_LAW/National law/Croatia/NN - 2023 - 40 - 720.pdf": {
+      "sha256": "5cb6b3bc5111a9b1dc2caed9d9d8992bdb6ce5343fb54e5b0ce2b2c656894fe0",
+      "size": 185035,
+      "status": "indexed",
+      "chunks": 79
+    },
+    "02_LAW/National law/Norway/Act relating to activities in outer space (the Space Act) - Lovdata.pdf": {
+      "sha256": "9173567077ab519925b166ffd502ac53bac4a1c8cf544d8d81f9b85e8b2d6607",
+      "size": 249171,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "02_LAW/National law/Norway/Romloven.pdf": {
+      "sha256": "ef41cac021bbe4d4912940b038b05d068c8c95555ad9e53ab076704de8c7a0cf",
+      "size": 218112,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "02_LAW/National law/Swizterland/SR-420.1-01022026-EN.pdf": {
+      "sha256": "5b4cd34f0d88ece43b437703323247f09c79fb5af68325d91d1f670bab503f05",
+      "size": 440455,
+      "status": "indexed",
+      "chunks": 59
     }
   },
   "report": {
     "discoveredFiles": 327,
     "unchangedFiles": 299,
     "changedFiles": 14,
-    "processedChangedFiles": 50,
+    "processedChangedFiles": 55,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 47,
+    "indexedFiles": 52,
     "skippedFiles": 3,
     "copiedChunks": 12851,
-    "newChunks": 3427,
-    "totalChunks": 16278,
+    "newChunks": 3612,
+    "totalChunks": 16463,
     "failures": [
       {
         "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
