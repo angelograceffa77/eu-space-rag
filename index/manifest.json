@@ -2,57 +2,72 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "b9bd65cb5da8d2e7611c49464f4186f79a214ff3",
-  "createdAt": "2026-08-13T14:57:09.643Z",
+  "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
+  "createdAt": "2026-08-14T13:41:22.024Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 15480,
+  "totalChunks": 17017,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 13404,
-      "bytes": 20970223
+      "chunks": 13124,
+      "bytes": 20651115
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 273,
-      "bytes": 468986
+      "chunks": 546,
+      "bytes": 860413
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 119,
-      "bytes": 181950
+      "chunks": 475,
+      "bytes": 714844
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 882,
-      "bytes": 1413927
+      "chunks": 235,
+      "bytes": 369072
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 69,
-      "bytes": 107340
+      "chunks": 615,
+      "bytes": 989599
     },
     {
       "file": "rag-index-0006.ndjson",
-      "chunks": 191,
-      "bytes": 293386
+      "chunks": 625,
+      "bytes": 953304
     },
     {
       "file": "rag-index-0007.ndjson",
-      "chunks": 235,
-      "bytes": 367019
+      "chunks": 54,
+      "bytes": 82218
     },
     {
       "file": "rag-index-0008.ndjson",
-      "chunks": 287,
-      "bytes": 436924
+      "chunks": 108,
+      "bytes": 168656
     },
     {
       "file": "rag-index-0009.ndjson",
-      "chunks": 20,
-      "bytes": 28923
+      "chunks": 236,
+      "bytes": 355166
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 260,
+      "bytes": 390911
+    },
+    {
+      "file": "rag-index-0011.ndjson",
+      "chunks": 185,
+      "bytes": 278361
+    },
+    {
+      "file": "rag-index-0012.ndjson",
+      "chunks": 554,
+      "bytes": 827666
     }
   ],
   "sources": {
@@ -905,84 +920,11 @@
       "status": "indexed",
       "chunks": 20
     },
-    "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf": {
-      "sha256": "2463a881511b5394cebc2fcf2211d3e5cc3f1381364b20c3dd36ed88c106035e",
-      "size": 3817167,
-      "status": "indexed",
-      "chunks": 190
-    },
-    "01_POLICY/Member States/denmarks-national-space-strategy.pdf": {
-      "sha256": "388f163c3100585cdca2d80f900f98571455d3feaed5931b8889ee6b021c9dec",
-      "size": 8909101,
-      "status": "indexed",
-      "chunks": 84
-    },
     "01_POLICY/Member States/Index _01Policy_Member States.docx": {
-      "sha256": "c3ca3b898402a0b28794c70a5e2c646286dabde893349adfffa22efb257baa04",
-      "size": 16920,
+      "sha256": "abb327b044edc13786ba4cb65a5b6d55a18b048724781e69619fde0c677ae096",
+      "size": 18191,
       "status": "indexed",
-      "chunks": 2
-    },
-    "01_POLICY/Member States/latvijas-kosmosa-strategija-2021.-2027.-gadam-1.pdf": {
-      "sha256": "375062cea746dbec88c211e80be561dd5f30c2c3cd02a00c7efb37a7aa620ed5",
-      "size": 3340806,
-      "status": "indexed",
-      "chunks": 53
-    },
-    "01_POLICY/Member States/National space strategy_ENG.pdf": {
-      "sha256": "71e677d634161bba462427507bc60911df4b529246babd47494ce4322d70b5a2",
-      "size": 681925,
-      "status": "indexed",
-      "chunks": 105
-    },
-    "01_POLICY/Member States/national-space-strategy-for-enterprise-2019-2025.pdf": {
-      "sha256": "a2550c628ff2a45ba43ff7a20664d4f9c515d3c7e586664c6b3b6cd7c05381c9",
-      "size": 4530245,
-      "status": "indexed",
-      "chunks": 96
-    },
-    "01_POLICY/Member States/Program_dzialan_na_rzecz_rozwoju_technologii_kosmicznych.pdf": {
-      "sha256": "af58cd763330ca9a3ca205696653715831d275dba6e5aeea691829c74abe4ab2",
-      "size": 466833,
-      "status": "indexed",
-      "chunks": 81
-    },
-    "01_POLICY/Member States/psk.pdf": {
-      "sha256": "959a5ff7a9f69a1a68b138e528287d11b5624e2ec2a75cb9116a958707c8119c",
-      "size": 2797791,
-      "status": "skipped",
-      "reason": "Worker stopped with code null, signal SIGABRT",
-      "chunks": 0
-    },
-    "01_POLICY/Member States/strategi-for-rumforskning-og-innovation_-opslag.pdf": {
-      "sha256": "618791e307006f059f6822dd2f199ca15d5e1094f1fe5b2dcbca305a17ddd871",
-      "size": 6622141,
-      "status": "indexed",
-      "chunks": 60
-    },
-    "01_POLICY/Member States/the-space-strategy-of-latvia-2021-2027-1.pdf": {
-      "sha256": "7a3480ff67509948147610a3479a4648ce12104df3cd001c1184a76d9ebb0b05",
-      "size": 3263286,
-      "status": "indexed",
-      "chunks": 52
-    },
-    "01_POLICY/Member States/V4_EN_Austrian-Space-Strategy-2030_0803_taggedv6_PAC2021Approved.pdf": {
-      "sha256": "9dc31ac2fbb2bb5a46cb6cc21e2543d6f7ee39684222f93db22a897399f540dc",
-      "size": 12760945,
-      "status": "indexed",
-      "chunks": 42
-    },
-    "01_POLICY/Member States/VN_2025_8.pdf": {
-      "sha256": "75c3fabff73c3b870a74510025aac74358501afee004ce19785c6346fa2c2b21",
-      "size": 272148,
-      "status": "indexed",
-      "chunks": 58
-    },
-    "01_POLICY/Member States/weltraumstrategie_2030.pdf": {
-      "sha256": "def034a167be6d3b44a0af2b97927a7bdc6574183e0fe6a8862a975b69f646c6",
-      "size": 13051294,
-      "status": "indexed",
-      "chunks": 47
+      "chunks": 3
     },
     "02_LAW/EU legislation/CELEX_32021R0696_EN_TXT.pdf": {
       "sha256": "960792357bf6ceaab33f689e844b8b5af984eaa5f72d78699b8182385e2f8c6a",
@@ -1007,18 +949,6 @@
       "size": 5465416,
       "status": "indexed",
       "chunks": 26
-    },
-    "01_POLICY/Member States/dspsn_2026.pdf": {
-      "sha256": "93d37a030359fcccf6ee0767a8b1caf847bc11e011b4fadf8fb21dcefd137cee",
-      "size": 1381441,
-      "status": "indexed",
-      "chunks": 68
-    },
-    "01_POLICY/Member States/the-german-federal-governments-space-strategy.pdf": {
-      "sha256": "d898d4e165cabc2fec0b3b75271a4f2b5a9ba65dc1d693d7da61e5f65c08ea83",
-      "size": 4771076,
-      "status": "indexed",
-      "chunks": 117
     },
     "01_POLICY/ESA/ESA_CM2025_1_Resolution_on_Elevating_Europe_through_Space.pdf": {
       "sha256": "5f7ca79c99dabda03e9c989fe828d611135e185d1784afa3e0b05d5de88fc7a8",
@@ -1050,103 +980,6 @@
       "size": 1300312,
       "status": "indexed",
       "chunks": 201
-    },
-    "01_POLICY/Member States/171825900_webb.pdf": {
-      "sha256": "4f211aa6b6075d051c33e70b0720602d19e9db901fadc4f74a2bc88d311474bf",
-      "size": 358923,
-      "status": "indexed",
-      "chunks": 65
-    },
-    "01_POLICY/Member States/20220120-UK_Defence_Space_Strategy_Feb_22.pdf": {
-      "sha256": "a78d6412d6099bcb24a17b331198176a7269ab2ffb1e134b0f6f575c55f2c1d0",
-      "size": 12274947,
-      "status": "skipped",
-      "reason": "Worker stopped with code null, signal SIGABRT",
-      "chunks": 0
-    },
-    "01_POLICY/Member States/Cyprus Space Strategy 2022-2027.pdf": {
-      "sha256": "6fd36e52b367d6deff50542495c20e43c790043960e14086edaaa31a7bc62383",
-      "size": 2532498,
-      "status": "indexed",
-      "chunks": 176
-    },
-    "01_POLICY/Member States/Eesti_kosmosepoliitika_A4_EST_web.pdf": {
-      "sha256": "c876f6472d9095b860c486b66760079642fbe39e2fd283f3bb1a212965781680",
-      "size": 10437458,
-      "status": "indexed",
-      "chunks": 61
-    },
-    "01_POLICY/Member States/estrategia_portugal_espaco_2030.pdf": {
-      "sha256": "b378649bf704c76b86c32fb898e2613daf651f962dc762cdfa8cf29be810713f",
-      "size": 202555,
-      "status": "indexed",
-      "chunks": 37
-    },
-    "01_POLICY/Member States/Kosmoso_pletros_koncepcija_patvirtinta(1).pdf": {
-      "sha256": "7a9f87a50fcd73e0257b33eed9578c7459d35d1fb3fed1c7d9d36f7cb0d5fbae",
-      "size": 663031,
-      "status": "indexed",
-      "chunks": 73
-    },
-    "01_POLICY/Member States/Malta-National-Space-Strategy.pdf": {
-      "sha256": "fe7ccb72068ba68ae135668ddb889343ff9ee538fe2a7b2ae46f90776cf9207e",
-      "size": 8273745,
-      "status": "indexed",
-      "chunks": 165
-    },
-    "01_POLICY/Member States/national_space_strategy_in_action.pdf": {
-      "sha256": "dc2f616f1b7a7e3d5aa5fb0b892f34e8557478f652989153db63a77d51725cb2",
-      "size": 1103862,
-      "status": "indexed",
-      "chunks": 76
-    },
-    "01_POLICY/Member States/nkp_2026_2032.pdf": {
-      "sha256": "f7e1aadced4aa87f9eee978b289885a61a92c194c0c6a50d2180b1a94b16da58",
-      "size": 1170222,
-      "status": "indexed",
-      "chunks": 177
-    },
-    "01_POLICY/Member States/NSO-Advies-2026-2028.pdf": {
-      "sha256": "c0806e286977cf7b458ca2a768791e60c470ac334d23ffcd8ad155c211c996d3",
-      "size": 5844712,
-      "status": "indexed",
-      "chunks": 86
-    },
-    "01_POLICY/Member States/ruimtevaartbeleid-2022.pdf": {
-      "sha256": "63809b1b9909a760881da4d8e00a97979539048805ce9b3cd4a88fc1dd795c57",
-      "size": 596033,
-      "status": "indexed",
-      "chunks": 29
-    },
-    "01_POLICY/Member States/Slovenian-space-strategy-2030.pdf": {
-      "sha256": "370f9b2aee85ca284135588667b20e435033a9d2f07e47094060b9eb773ade8f",
-      "size": 2313687,
-      "status": "indexed",
-      "chunks": 48
-    },
-    "01_POLICY/Member States/Space Strategy of Hungary.pdf": {
-      "sha256": "70af885e705bb3a67f37506ac5bd98744a75496d1fc28a1c5ff8c281f1ee45d1",
-      "size": 2427573,
-      "status": "indexed",
-      "chunks": 244
-    },
-    "01_POLICY/Member States/stm201920200010000dddpdfs.pdf": {
-      "sha256": "912a0223421d95529f821e46e9fbd5961a45d23d4f4e4e51f2177f50dd9350e8",
-      "size": 16921868,
-      "status": "indexed",
-      "chunks": 264
-    },
-    "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf": {
-      "sha256": "4efff96706c17bcf984ba9341d208f06b538f1d5314af1ad100080f99eb84a7b",
-      "size": 150145,
-      "status": "indexed",
-      "chunks": 26
-    },
-    "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf": {
-      "sha256": "4659ed79bee39daaeac58bbdb3a42999142587bce87b4a5b056dab79c092bc39",
-      "size": 8586003,
-      "status": "indexed",
-      "chunks": 35
     },
     "02_LAW/EU legislation/CELEX_02016E_TXT-20250315_EN_TXT.pdf": {
       "sha256": "f60b7d01c58c0154d6145353607af34399180d7749e173bf8c20effe4fbe6481",
@@ -1497,10 +1330,10 @@
       "chunks": 84
     },
     "02_LAW/National law/Index _02LAW_National law.docx": {
-      "sha256": "313e895014e9707b26dfb02e75f2f9ebea35ebb8a5b5a7069b977bbd03132d4a",
-      "size": 28874,
+      "sha256": "5fd99ff5cf3edc8607475edd925c8d640c661ef1c3ffe01b9c2262f57601d698",
+      "size": 33447,
       "status": "indexed",
-      "chunks": 12
+      "chunks": 13
     },
     "02_LAW/National law/Italy/___ ATTO COMPLETO ___.pdf": {
       "sha256": "7eec36765cf14d77e523cfbd7cf9278f19741f643283da90f7398f2d434a13a7",
@@ -1869,27 +1702,376 @@
       "size": 248092,
       "status": "indexed",
       "chunks": 8
+    },
+    "01_POLICY/Member States/Austria/V4_EN_Austrian-Space-Strategy-2030_0803_taggedv6_PAC2021Approved.pdf": {
+      "sha256": "9dc31ac2fbb2bb5a46cb6cc21e2543d6f7ee39684222f93db22a897399f540dc",
+      "size": 12760945,
+      "status": "indexed",
+      "chunks": 42
+    },
+    "01_POLICY/Member States/Austria/weltraumstrategie_2030.pdf": {
+      "sha256": "def034a167be6d3b44a0af2b97927a7bdc6574183e0fe6a8862a975b69f646c6",
+      "size": 13051294,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "01_POLICY/Member States/Belgium/Belgian space strategy.docx": {
+      "sha256": "8f47e9a6f450c1f0b6a6e40716be96e62e64562463824a32e5cb442c802eb0d5",
+      "size": 16759,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "01_POLICY/Member States/Bulgaria/SPACE POLICY - Ministry of Innovation and Growth.pdf": {
+      "sha256": "3d44c54205e087b1bb5b11e332a2db282dba86a0b62d3cbdf53f30f599dc4999",
+      "size": 143681,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "01_POLICY/Member States/Cyprus/Cyprus Space Strategy 2022-2027.pdf": {
+      "sha256": "6fd36e52b367d6deff50542495c20e43c790043960e14086edaaa31a7bc62383",
+      "size": 2532498,
+      "status": "indexed",
+      "chunks": 176
+    },
+    "01_POLICY/Member States/Cyprus/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf": {
+      "sha256": "2463a881511b5394cebc2fcf2211d3e5cc3f1381364b20c3dd36ed88c106035e",
+      "size": 3817167,
+      "status": "indexed",
+      "chunks": 190
+    },
+    "01_POLICY/Member States/Czech Republic/nkp_2026_2032.pdf": {
+      "sha256": "f7e1aadced4aa87f9eee978b289885a61a92c194c0c6a50d2180b1a94b16da58",
+      "size": 1170222,
+      "status": "indexed",
+      "chunks": 177
+    },
+    "01_POLICY/Member States/Denmark/strategi-for-rumforskning-og-innovation_-opslag.pdf": {
+      "sha256": "618791e307006f059f6822dd2f199ca15d5e1094f1fe5b2dcbca305a17ddd871",
+      "size": 6622141,
+      "status": "indexed",
+      "chunks": 60
+    },
+    "01_POLICY/Member States/Estonia/Eesti_kosmosepoliitika_A4_EST_web.pdf": {
+      "sha256": "c876f6472d9095b860c486b66760079642fbe39e2fd283f3bb1a212965781680",
+      "size": 10437458,
+      "status": "indexed",
+      "chunks": 61
+    },
+    "01_POLICY/Member States/Finland/VN_2025_8.pdf": {
+      "sha256": "75c3fabff73c3b870a74510025aac74358501afee004ce19785c6346fa2c2b21",
+      "size": 272148,
+      "status": "indexed",
+      "chunks": 58
+    },
+    "01_POLICY/Member States/France/National space strategy_ENG.pdf": {
+      "sha256": "71e677d634161bba462427507bc60911df4b529246babd47494ce4322d70b5a2",
+      "size": 681925,
+      "status": "indexed",
+      "chunks": 105
+    },
+    "01_POLICY/Member States/Germany/the-german-federal-governments-space-strategy.pdf": {
+      "sha256": "d898d4e165cabc2fec0b3b75271a4f2b5a9ba65dc1d693d7da61e5f65c08ea83",
+      "size": 4771076,
+      "status": "indexed",
+      "chunks": 117
+    },
+    "01_POLICY/Member States/Greece/General Secretariat of Telecommunications and Post.pdf": {
+      "sha256": "98e29d7c934bd2c75cf4a699e9bb350637c9c6b4b0a305d823e900468e6796d9",
+      "size": 366788,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "01_POLICY/Member States/Hungary/Space Strategy of Hungary.pdf": {
+      "sha256": "70af885e705bb3a67f37506ac5bd98744a75496d1fc28a1c5ff8c281f1ee45d1",
+      "size": 2427573,
+      "status": "indexed",
+      "chunks": 244
+    },
+    "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf": {
+      "sha256": "a2550c628ff2a45ba43ff7a20664d4f9c515d3c7e586664c6b3b6cd7c05381c9",
+      "size": 4530245,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/Italy/dspsn_2026.pdf": {
+      "sha256": "93d37a030359fcccf6ee0767a8b1caf847bc11e011b4fadf8fb21dcefd137cee",
+      "size": 1381441,
+      "status": "indexed",
+      "chunks": 68
+    },
+    "01_POLICY/Member States/Latvia/latvijas-kosmosa-strategija-2021.-2027.-gadam-1.pdf": {
+      "sha256": "375062cea746dbec88c211e80be561dd5f30c2c3cd02a00c7efb37a7aa620ed5",
+      "size": 3340806,
+      "status": "indexed",
+      "chunks": 53
+    },
+    "01_POLICY/Member States/Latvia/the-space-strategy-of-latvia-2021-2027-1.pdf": {
+      "sha256": "7a3480ff67509948147610a3479a4648ce12104df3cd001c1184a76d9ebb0b05",
+      "size": 3263286,
+      "status": "indexed",
+      "chunks": 52
+    },
+    "01_POLICY/Member States/Legislative Proposals/2. Kosmosetegevuse seaduse eelnõu projekt_02.05.2025.pdf": {
+      "sha256": "1d3e9dab0280764ad32abbc42b6b8ba6b14cc4928aeb79c792e303ac6336b608",
+      "size": 660444,
+      "status": "indexed",
+      "chunks": 62
+    },
+    "01_POLICY/Member States/Legislative Proposals/3d5ddece-b69b-4580-ba7f-7b289fb3c658.pdf": {
+      "sha256": "c3067b5a941a4245075904004643826474c3c7d251f66a577eb80e26d0e71279",
+      "size": 383103,
+      "status": "indexed",
+      "chunks": 46
+    },
+    "01_POLICY/Member States/Legislative Proposals/Index _01Policy_Member States_Legislative Proposals.docx": {
+      "sha256": "89b922c84fa67e143a0b74146b656f57c7904a204485fdb9de662bbec69000c6",
+      "size": 14341,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/Member States/Legislative Proposals/utkast-till-lagradsremiss-en-ny-lag-om-rymdverksamhet.pdf": {
+      "sha256": "046d39931e6cdb81870856a2383275b781d4e976231845b638dfdcb9062ab8e5",
+      "size": 1882686,
+      "status": "indexed",
+      "chunks": 469
+    },
+    "01_POLICY/Member States/Lithuania/Kosmoso_pletros_koncepcija_patvirtinta(1).pdf": {
+      "sha256": "7a9f87a50fcd73e0257b33eed9578c7459d35d1fb3fed1c7d9d36f7cb0d5fbae",
+      "size": 663031,
+      "status": "indexed",
+      "chunks": 73
+    },
+    "01_POLICY/Member States/Luxembourg/stratgie-spatiale-2023-2027.pdf": {
+      "sha256": "4efff96706c17bcf984ba9341d208f06b538f1d5314af1ad100080f99eb84a7b",
+      "size": 150145,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "01_POLICY/Member States/Malta/Malta-National-Space-Strategy.pdf": {
+      "sha256": "fe7ccb72068ba68ae135668ddb889343ff9ee538fe2a7b2ae46f90776cf9207e",
+      "size": 8273745,
+      "status": "indexed",
+      "chunks": 165
+    },
+    "01_POLICY/Member States/Netherlands/NSO-Advies-2026-2028.pdf": {
+      "sha256": "c0806e286977cf7b458ca2a768791e60c470ac334d23ffcd8ad155c211c996d3",
+      "size": 5844712,
+      "status": "indexed",
+      "chunks": 86
+    },
+    "01_POLICY/Member States/Netherlands/ruimtevaartbeleid-2022.pdf": {
+      "sha256": "63809b1b9909a760881da4d8e00a97979539048805ce9b3cd4a88fc1dd795c57",
+      "size": 596033,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "01_POLICY/Member States/Norway/stm201920200010000dddpdfs.pdf": {
+      "sha256": "912a0223421d95529f821e46e9fbd5961a45d23d4f4e4e51f2177f50dd9350e8",
+      "size": 16921868,
+      "status": "indexed",
+      "chunks": 264
+    },
+    "01_POLICY/Member States/Poland/Program_dzialan_na_rzecz_rozwoju_technologii_kosmicznych.pdf": {
+      "sha256": "af58cd763330ca9a3ca205696653715831d275dba6e5aeea691829c74abe4ab2",
+      "size": 466833,
+      "status": "indexed",
+      "chunks": 81
+    },
+    "01_POLICY/Member States/Poland/psk.pdf": {
+      "sha256": "959a5ff7a9f69a1a68b138e528287d11b5624e2ec2a75cb9116a958707c8119c",
+      "size": 2797791,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/Portugal/estrategia_portugal_espaco_2030.pdf": {
+      "sha256": "b378649bf704c76b86c32fb898e2613daf651f962dc762cdfa8cf29be810713f",
+      "size": 202555,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/Member States/Romania/Strategia spațială – ROSA – Romanian Space Agency.pdf": {
+      "sha256": "8afd7586db4fc08a0d24230c823d29e31cd57337ddd84257bf4caaa17a7e8ac4",
+      "size": 590000,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "01_POLICY/Member States/Slovakia/00_Obal materialu.pdf": {
+      "sha256": "3ca376464a92a77bbd5c4544d946a38fc0215d35393678e6da6bb5c9752054cb",
+      "size": 368966,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/Member States/Slovakia/02_Predkladacia sprava.pdf": {
+      "sha256": "b85031cf7f876243277b8bd884befea71d205b2bbd1c176bbe79ca530fc36e1e",
+      "size": 184521,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/Member States/Slovakia/03_Vlastny material.pdf": {
+      "sha256": "0906c21efb47a13c680a1994f41cc4746d32f266a13835b38f2cf75c895cda35",
+      "size": 959423,
+      "status": "indexed",
+      "chunks": 57
+    },
+    "01_POLICY/Member States/Slovakia/04_Dolozka vplyvov.pdf": {
+      "sha256": "d53ad7baeaf3494159ee8e3ef881369a3b319aa8a29746e615710009edd61611",
+      "size": 893706,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "01_POLICY/Member States/Slovakia/05_Vyhodnotenie MPK.pdf": {
+      "sha256": "1734f19a7a5633d8b2654eb5082f6f06ec1814c90f2a765ce9e8a67569d95ecb",
+      "size": 728638,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "01_POLICY/Member States/Slovakia/06_Vyhlasenie predkladatela.pdf": {
+      "sha256": "a9ac3235e12fdcc51a7e3cfc5ea181ddb4f81ef6310c5662bdd626b0cb7e0d7b",
+      "size": 415614,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/Member States/Slovakia/07_Priloha c. 1 Hlavne legislativne akty EU.pdf": {
+      "sha256": "3650ac20c9ab3421418706e232fc4f2be52538bf0dbb67cc1e968b7f3baf45c9",
+      "size": 549442,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "01_POLICY/Member States/Slovakia/07_Priloha c. 2 Volitelne programy ESA.pdf": {
+      "sha256": "afa26cfd5d81ecfcf26d75681d9d919a0c1d128c7d6bd42ea6a47d714aad6c8a",
+      "size": 812214,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/Member States/Slovakia/07_Priloha c. 3 Zoznam uspesnych PECS projektov a analyza PECS vyziev.pdf": {
+      "sha256": "4ff2caf4cb0d9c8a8eced59d1ab16d40714da37e503b9f7e05d7f97accb050a9",
+      "size": 690373,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "01_POLICY/Member States/Slovakia/07_Priloha c. 4 Slovnik pojmov.pdf": {
+      "sha256": "d1e1f1d86f46af3609b1bba2920bddd7f1e165b5943f05498b950c8d9050ae75",
+      "size": 400948,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "01_POLICY/Member States/Slovenia/Slovenian-space-strategy-2030.pdf": {
+      "sha256": "370f9b2aee85ca284135588667b20e435033a9d2f07e47094060b9eb773ade8f",
+      "size": 2313687,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "01_POLICY/Member States/Spain/BOE-A-2025-16214.pdf": {
+      "sha256": "882c3a7519483b816eaafd5578f76b6ee426166550b91c109a153c0d01387b6a",
+      "size": 517860,
+      "status": "indexed",
+      "chunks": 167
+    },
+    "01_POLICY/Member States/Swizerland/Weltraumpolitik 2023 EN v23.pdf": {
+      "sha256": "4659ed79bee39daaeac58bbdb3a42999142587bce87b4a5b056dab79c092bc39",
+      "size": 8586003,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "01_POLICY/Member States/UK/171825900_webb.pdf": {
+      "sha256": "4f211aa6b6075d051c33e70b0720602d19e9db901fadc4f74a2bc88d311474bf",
+      "size": 358923,
+      "status": "indexed",
+      "chunks": 65
+    },
+    "01_POLICY/Member States/UK/20220120-UK_Defence_Space_Strategy_Feb_22.pdf": {
+      "sha256": "a78d6412d6099bcb24a17b331198176a7269ab2ffb1e134b0f6f575c55f2c1d0",
+      "size": 12274947,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/UK/denmarks-national-space-strategy.pdf": {
+      "sha256": "388f163c3100585cdca2d80f900f98571455d3feaed5931b8889ee6b021c9dec",
+      "size": 8909101,
+      "status": "indexed",
+      "chunks": 84
+    },
+    "01_POLICY/Member States/UK/national_space_strategy_in_action.pdf": {
+      "sha256": "dc2f616f1b7a7e3d5aa5fb0b892f34e8557478f652989153db63a77d51725cb2",
+      "size": 1103862,
+      "status": "indexed",
+      "chunks": 76
+    },
+    "02_LAW/National law/Croatia/NN - 2023 - 40 - 720.pdf": {
+      "sha256": "5cb6b3bc5111a9b1dc2caed9d9d8992bdb6ce5343fb54e5b0ce2b2c656894fe0",
+      "size": 185035,
+      "status": "indexed",
+      "chunks": 79
+    },
+    "02_LAW/National law/Norway/Act relating to activities in outer space (the Space Act) - Lovdata.pdf": {
+      "sha256": "9173567077ab519925b166ffd502ac53bac4a1c8cf544d8d81f9b85e8b2d6607",
+      "size": 249171,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "02_LAW/National law/Norway/Romloven.pdf": {
+      "sha256": "ef41cac021bbe4d4912940b038b05d068c8c95555ad9e53ab076704de8c7a0cf",
+      "size": 218112,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "02_LAW/National law/Swizterland/SR-420.1-01022026-EN.pdf": {
+      "sha256": "5b4cd34f0d88ece43b437703323247f09c79fb5af68325d91d1f670bab503f05",
+      "size": 440455,
+      "status": "indexed",
+      "chunks": 59
+    },
+    "02_LAW/National law/Swizterland/SR-420.125-01022022-EN.pdf": {
+      "sha256": "6b45dedc33bf1127837a213d33128952f871c914118b4e26f02b2cb2f620de61",
+      "size": 335487,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "02_LAW/National law/UK/ukpga_19860038_en.pdf": {
+      "sha256": "ca380404801b99346276d188fb0cf146abc4acff8d1ae46ad59d58d4a04b5687",
+      "size": 181491,
+      "status": "indexed",
+      "chunks": 0
+    },
+    "02_LAW/National law/UK/ukpga_20180005_en.pdf": {
+      "sha256": "4e1e7db8f14e6a2d60f13e982a6cd18ef4c1778e48aacb0f80ee3ff8cf1fadf3",
+      "size": 782032,
+      "status": "indexed",
+      "chunks": 179
+    },
+    "02_LAW/National law/UK/uksi_20210792_en.pdf": {
+      "sha256": "d184cefeed9f3792ae182713cc26fdd40aa7f68bbe6e9756f91b3664410585f3",
+      "size": 816950,
+      "status": "indexed",
+      "chunks": 364
     }
   },
   "report": {
-    "discoveredFiles": 300,
-    "unchangedFiles": 280,
-    "changedFiles": 7,
-    "processedChangedFiles": 37,
+    "discoveredFiles": 327,
+    "unchangedFiles": 299,
+    "changedFiles": 14,
+    "processedChangedFiles": 59,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 35,
-    "skippedFiles": 2,
-    "copiedChunks": 13100,
-    "newChunks": 2380,
-    "totalChunks": 15480,
+    "indexedFiles": 56,
+    "skippedFiles": 3,
+    "copiedChunks": 12851,
+    "newChunks": 4166,
+    "totalChunks": 17017,
     "failures": [
       {
-        "file": "02_LAW/National law/Latvia/OP2020_132A_1.PDF.pdf",
+        "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       },
       {
-        "file": "02_LAW/National law/Slovenia/u2022043.pdf",
+        "file": "01_POLICY/Member States/Poland/psk.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "01_POLICY/Member States/UK/20220120-UK_Defence_Space_Strategy_Feb_22.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
