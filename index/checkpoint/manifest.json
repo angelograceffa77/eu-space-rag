@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T12:40:34.492Z",
+  "createdAt": "2026-08-14T12:43:23.195Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 14145,
+  "totalChunks": 14380,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 475,
       "bytes": 714844
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 235,
+      "bytes": 369072
     }
   ],
   "sources": {
@@ -1741,14 +1746,45 @@
       "size": 2427573,
       "status": "indexed",
       "chunks": 244
+    },
+    "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf": {
+      "sha256": "a2550c628ff2a45ba43ff7a20664d4f9c515d3c7e586664c6b3b6cd7c05381c9",
+      "size": 4530245,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/Member States/Italy/dspsn_2026.pdf": {
+      "sha256": "93d37a030359fcccf6ee0767a8b1caf847bc11e011b4fadf8fb21dcefd137cee",
+      "size": 1381441,
+      "status": "indexed",
+      "chunks": 68
+    },
+    "01_POLICY/Member States/Latvia/latvijas-kosmosa-strategija-2021.-2027.-gadam-1.pdf": {
+      "sha256": "375062cea746dbec88c211e80be561dd5f30c2c3cd02a00c7efb37a7aa620ed5",
+      "size": 3340806,
+      "status": "indexed",
+      "chunks": 53
+    },
+    "01_POLICY/Member States/Latvia/the-space-strategy-of-latvia-2021-2027-1.pdf": {
+      "sha256": "7a3480ff67509948147610a3479a4648ce12104df3cd001c1184a76d9ebb0b05",
+      "size": 3263286,
+      "status": "indexed",
+      "chunks": 52
+    },
+    "01_POLICY/Member States/Legislative Proposals/2. Kosmosetegevuse seaduse eelnõu projekt_02.05.2025.pdf": {
+      "sha256": "1d3e9dab0280764ad32abbc42b6b8ba6b14cc4928aeb79c792e303ac6336b608",
+      "size": 660444,
+      "status": "indexed",
+      "chunks": 62
     }
   },
   "report": {
     "discoveredFiles": 327,
     "unchangedFiles": 256,
     "changedFiles": 59,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 44,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 39,
     "deletedFiles": [
       "01_POLICY/Member States/Cyprus Space Strategy 2025-2030 - for Public Consultation (changes highlighted)_final.pdf",
       "01_POLICY/Member States/denmarks-national-space-strategy.pdf",
@@ -1781,11 +1817,16 @@
       "01_POLICY/Member States/stratgie-spatiale-2023-2027.pdf",
       "01_POLICY/Member States/Weltraumpolitik 2023 EN v23.pdf"
     ],
-    "indexedFiles": 15,
-    "skippedFiles": 0,
+    "indexedFiles": 19,
+    "skippedFiles": 1,
     "copiedChunks": 12851,
-    "newChunks": 1294,
-    "totalChunks": 14145,
-    "failures": []
+    "newChunks": 1529,
+    "totalChunks": 14380,
+    "failures": [
+      {
+        "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
