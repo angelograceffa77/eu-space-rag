@@ -594,37 +594,152 @@ function closeWriteStream(stream) {
   });
 }
 
-async function downloadFile(url, destination) {
-  const response = await fetch(url, {
-    headers: { "User-Agent": "eu-space-rag-render" },
-    redirect: "follow"
-  });
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-  if (response.status === 404) return false;
+function githubDownloadHeaders() {
+  const headers = {
+    "User-Agent": "eu-space-rag-render",
+    "Accept": "application/octet-stream"
+  };
 
-  if (!response.ok || !response.body) {
-    throw new Error(`Download failed: HTTP ${response.status}`);
+  const token = process.env.GITHUB_TOKEN;
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
   }
 
-  await fs.promises.mkdir(path.dirname(destination), {
-    recursive: true
-  });
+  return headers;
+}
 
-  const output = fs.createWriteStream(destination, { flags: "w" });
+function retryDelayMs(response, attempt) {
+  const retryAfter = Number.parseInt(
+    response?.headers?.get("retry-after") || "",
+    10
+  );
 
-  try {
-    for await (const data of response.body) {
-      if (!output.write(data)) {
-        await once(output, "drain");
-      }
+  if (Number.isFinite(retryAfter) && retryAfter >= 0) {
+    return Math.min(Math.max(retryAfter * 1000, 1000), 60000);
+  }
+
+  const rateLimitReset = Number.parseInt(
+    response?.headers?.get("x-ratelimit-reset") || "",
+    10
+  );
+
+  if (Number.isFinite(rateLimitReset)) {
+    const untilReset = rateLimitReset * 1000 - Date.now();
+    if (untilReset > 0) {
+      return Math.min(Math.max(untilReset + 1000, 1000), 60000);
     }
-
-    await closeWriteStream(output);
-    return true;
-  } catch (error) {
-    output.destroy();
-    throw error;
   }
+
+  // 2s, 4s, 8s, 16s, 30s maximum. Small jitter avoids synchronized retries.
+  const exponential = Math.min(2000 * (2 ** attempt), 30000);
+  const jitter = Math.floor(Math.random() * 750);
+  return exponential + jitter;
+}
+
+function shouldRetryDownload(response) {
+  if (!response) return true;
+
+  if (response.status === 429) return true;
+  if ([500, 502, 503, 504].includes(response.status)) return true;
+
+  // GitHub can report rate limiting as HTTP 403.
+  if (response.status === 403) {
+    const remaining = response.headers.get("x-ratelimit-remaining");
+    const retryAfter = response.headers.get("retry-after");
+    return remaining === "0" || Boolean(retryAfter);
+  }
+
+  return false;
+}
+
+async function downloadFile(url, destination) {
+  const maxAttempts = 5;
+  let lastError = null;
+
+  for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+    let response = null;
+
+    try {
+      response = await fetch(url, {
+        headers: githubDownloadHeaders(),
+        redirect: "follow"
+      });
+
+      if (response.status === 404) return false;
+
+      if (!response.ok || !response.body) {
+        const error = new Error(`Download failed: HTTP ${response.status}`);
+
+        if (!shouldRetryDownload(response) || attempt === maxAttempts - 1) {
+          throw error;
+        }
+
+        lastError = error;
+        const waitMs = retryDelayMs(response, attempt);
+        console.warn(
+          `GitHub download returned HTTP ${response.status}. ` +
+          `Retrying in ${waitMs} ms (${attempt + 1}/${maxAttempts - 1}).`
+        );
+
+        try {
+          await response.body?.cancel();
+        } catch {
+          // Ignore response cleanup errors before retrying.
+        }
+
+        await sleep(waitMs);
+        continue;
+      }
+
+      await fs.promises.mkdir(path.dirname(destination), {
+        recursive: true
+      });
+
+      const temporaryDestination = `${destination}.download`;
+      await fs.promises.rm(temporaryDestination, { force: true });
+      const output = fs.createWriteStream(temporaryDestination, { flags: "w" });
+
+      try {
+        for await (const data of response.body) {
+          if (!output.write(data)) {
+            await once(output, "drain");
+          }
+        }
+
+        await closeWriteStream(output);
+        await fs.promises.rename(temporaryDestination, destination);
+        return true;
+      } catch (error) {
+        output.destroy();
+        await fs.promises.rm(temporaryDestination, { force: true });
+        throw error;
+      }
+    } catch (error) {
+      lastError = error;
+
+      if (attempt === maxAttempts - 1) {
+        break;
+      }
+
+      // Network-level failures do not have an HTTP response. Retry them too.
+      if (response && !shouldRetryDownload(response)) {
+        break;
+      }
+
+      const waitMs = retryDelayMs(response, attempt);
+      console.warn(
+        `GitHub download attempt failed: ${error.message}. ` +
+        `Retrying in ${waitMs} ms (${attempt + 1}/${maxAttempts - 1}).`
+      );
+      await sleep(waitMs);
+    }
+  }
+
+  throw lastError || new Error("GitHub download failed after retries.");
 }
 
 async function downloadManifestAndShards(
