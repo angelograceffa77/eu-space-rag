@@ -1,5 +1,7 @@
 "use strict";
 
+/* Multilingual search ranking v3: path targeting + substantive chunk relevance. */
+
 const fs = require("fs");
 const path = require("path");
 const os = require("os");
@@ -161,13 +163,45 @@ function listFiles(folder) {
   return results;
 }
 
-function getQueryTerms(query) {
-  return String(query || "")
+function normaliseSearchText(value) {
+  return String(value || "")
     .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function getQueryTerms(query) {
+  return normaliseSearchText(query)
     .split(/[^\p{L}\p{N}_-]+/u)
     .map(term => term.trim())
     .filter(term => term.length > 2);
 }
+
+/*
+ * Very common space-policy/legal words are useful, but they should not
+ * dominate the ranking.  More distinctive words (for example Italy / Italia,
+ * France, CNES, ASI, etc.) receive a stronger weight automatically.
+ *
+ * This is deliberately a compact list rather than a dictionary.  The GPT
+ * still supplies translated alternateQueries; this code only improves how
+ * those queries are ranked.
+ */
+const GENERIC_QUERY_TERMS = new Set([
+  "space", "spatial", "spatiale", "spaziale", "raumfahrt", "kosmiczny",
+  "law", "laws", "legal", "legislation", "legislative", "regulation",
+  "regulations", "legge", "leggi", "diritto", "loi", "lois", "droit",
+  "gesetz", "recht", "prawo", "zakon", "zakona", "zakonem",
+  "policy", "policies", "politica", "politique", "politik", "polityka",
+  "strategy", "strategies", "strategia", "strategie", "strategii",
+  "national", "nationale", "nazionale", "nationaler", "narodowa", "narodni",
+  "operator", "operators", "operatore", "operatori", "operateur", "operateurs",
+  "licensing", "licence", "license", "authorisation", "authorization",
+  "autorizzazione", "autorizzazioni", "autorisation", "genehmigung",
+  "act", "acts", "programme", "program", "programmes", "programma",
+  "agency", "agencies", "agenzia", "agence", "agentur",
+  "government", "ministry", "commission", "council", "parliament",
+  "european", "europe", "union", "member", "state", "states"
+].map(normaliseSearchText));
 
 function countOccurrences(text, term) {
   let count = 0;
@@ -210,13 +244,116 @@ function sourcesMatchManifest(currentSources, candidateManifest) {
   return true;
 }
 
-async function searchIndex(query, topK) {
+function uniqueSearchQueries(queryOrQueries) {
+  const raw = Array.isArray(queryOrQueries)
+    ? queryOrQueries
+    : [queryOrQueries];
+
+  const seen = new Set();
+  const queries = [];
+
+  for (const value of raw) {
+    if (typeof value !== "string") continue;
+    const cleaned = value.trim();
+    if (!cleaned) continue;
+    const key = normaliseSearchText(cleaned);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    queries.push(cleaned);
+  }
+
+  return queries.slice(0, 8);
+}
+
+function scoreItemAgainstQuery(item, query) {
   const terms = getQueryTerms(query);
+  if (terms.length === 0) return null;
+
+  const contentText = normaliseSearchText(item.content);
+  const pathText = normaliseSearchText(`${item.file || ""} ${item.folder || ""}`);
+  const phrase = normaliseSearchText(query).replace(/\s+/g, " ").trim();
+
+  let score = 0;
+  let contentMatchedTerms = 0;
+  let distinctiveContentMatched = 0;
+  let distinctivePathMatched = 0;
+  const matched = [];
+
+  for (const term of terms) {
+    const contentHits = countOccurrences(contentText, term);
+    const pathHits = countOccurrences(pathText, term);
+    const distinctive = !GENERIC_QUERY_TERMS.has(term);
+
+    /*
+     * PATH RULE (v3):
+     * The path is useful for country/institution targeting, but it must not
+     * make an unrelated chunk relevant.  Therefore:
+     * - generic words such as "law", "national" and "space" get NO path bonus;
+     * - only distinctive words such as "Italy", "Italia", "CNES" or "ASI"
+     *   can contribute a document-level path bonus.
+     */
+    if (distinctive && pathHits > 0) {
+      distinctivePathMatched += 1;
+    }
+
+    if (contentHits <= 0) continue;
+
+    contentMatchedTerms += 1;
+    matched.push(term);
+
+    if (distinctive) distinctiveContentMatched += 1;
+
+    /*
+     * CONTENT RULE:
+     * Reward different concepts much more than repetition of one word.
+     * Occurrence contribution is capped so a long chunk repeating "space"
+     * cannot beat a chunk that actually covers several query concepts.
+     */
+    const cappedHits = Math.min(contentHits, 4);
+    const weight = distinctive ? 8 : 3;
+    score += cappedHits * weight;
+  }
+
+  /*
+   * SUBSTANTIVE-MATCH GATE (v3):
+   * A country/path match alone is never sufficient.  The actual chunk text
+   * must match at least two query concepts.  This filters out unrelated pages
+   * (for example medicine notices inside a large Italian gazette PDF) while
+   * still allowing the Italy/Italia path to steer genuinely relevant chunks.
+   */
+  if (contentMatchedTerms < 2) return null;
+
+  // Strongly reward coverage of several different concepts in the content.
+  score += contentMatchedTerms * contentMatchedTerms * 6;
+
+  // A distinctive term found in the text itself is particularly valuable.
+  score += distinctiveContentMatched * 20;
+
+  // Document-level country/institution bonus, applied only AFTER the chunk
+  // has passed the substantive content gate above.
+  score += distinctivePathMatched * 22;
+
+  // Reward an exact multi-word phrase when present in the actual content.
+  // The path is deliberately not phrase-scored in v3.
+  if (phrase.length > 6 && contentText.includes(phrase)) {
+    score += 35;
+  }
+
+  return {
+    score,
+    matchedTerms: matched,
+    contentMatchedTerms,
+    distinctivePathMatched
+  };
+}
+
+async function searchIndex(queryOrQueries, topK) {
+  const queries = uniqueSearchQueries(queryOrQueries);
   const activeManifest = searchManifest;
   const activeRoot = searchRoot;
 
   if (
-    terms.length === 0 ||
+    queries.length === 0 ||
     !activeManifest ||
     !activeRoot
   ) {
@@ -233,13 +370,8 @@ async function searchIndex(query, topK) {
       continue;
     }
 
-    const input = fs.createReadStream(shardPath, {
-      encoding: "utf8"
-    });
-    const reader = readline.createInterface({
-      input,
-      crlfDelay: Infinity
-    });
+    const input = fs.createReadStream(shardPath, { encoding: "utf8" });
+    const reader = readline.createInterface({ input, crlfDelay: Infinity });
 
     try {
       for await (const line of reader) {
@@ -260,14 +392,33 @@ async function searchIndex(query, topK) {
           continue;
         }
 
-        const text = item.content.toLowerCase();
-        let score = 0;
-
-        for (const term of terms) {
-          score += countOccurrences(text, term);
+        // Configuration/instruction material should not compete with policy,
+        // law, procurement, funding or company documents in ordinary search.
+        if (item.file.startsWith("00_GPT_CONFIGURATION/")) {
+          continue;
         }
 
-        if (score <= 0) continue;
+        let bestQueryScore = 0;
+        let matchedQueryCount = 0;
+        const matchedQueries = [];
+        const matchedTermsSet = new Set();
+
+        for (const query of queries) {
+          const scored = scoreItemAgainstQuery(item, query);
+          if (!scored) continue;
+
+          matchedQueryCount += 1;
+          matchedQueries.push(query);
+          for (const term of scored.matchedTerms) matchedTermsSet.add(term);
+          bestQueryScore = Math.max(bestQueryScore, scored.score);
+        }
+
+        if (bestQueryScore <= 0) continue;
+
+        // Small bonus when the same chunk is relevant in more than one
+        // language/query.  This helps genuine multilingual matches without
+        // allowing many weak translations to overwhelm the ranking.
+        const score = bestQueryScore + Math.max(0, matchedQueryCount - 1) * 8;
 
         addSearchResult(
           bestResults,
@@ -275,7 +426,9 @@ async function searchIndex(query, topK) {
             file: item.file,
             folder: item.folder,
             content: item.content,
-            score
+            score,
+            matchedQueries,
+            matchedTerms: [...matchedTermsSet]
           },
           topK
         );
@@ -287,6 +440,104 @@ async function searchIndex(query, topK) {
   }
 
   return bestResults;
+}
+
+/*
+ * Reconstruct the complete extracted text of one indexed document.
+ * Chunks are stored in document order.  Adjacent chunks overlap, so remove
+ * the largest exact suffix/prefix overlap before joining them.
+ */
+function appendChunkWithoutDuplicateOverlap(currentText, nextChunk) {
+  if (!currentText) return nextChunk;
+  if (!nextChunk) return currentText;
+
+  const maxOverlap = Math.min(1000, currentText.length, nextChunk.length);
+
+  for (let size = maxOverlap; size >= 20; size -= 1) {
+    if (currentText.slice(-size) === nextChunk.slice(0, size)) {
+      return currentText + nextChunk.slice(size);
+    }
+  }
+
+  return `${currentText} ${nextChunk}`;
+}
+
+async function readDocument(file, offset = 0, limit = 40000) {
+  const requestedFile = String(file || "").trim().replace(/\\/g, "/");
+  const activeManifest = searchManifest;
+  const activeRoot = searchRoot;
+
+  if (!requestedFile) {
+    throw new Error("A document file path is required.");
+  }
+
+  if (!activeManifest || !activeRoot) {
+    throw new Error("No searchable index is available.");
+  }
+
+  const chunks = [];
+
+  for (const shard of activeManifest.shards || []) {
+    const shardPath = path.join(activeRoot, shard.file);
+    if (!fs.existsSync(shardPath)) continue;
+
+    const input = fs.createReadStream(shardPath, { encoding: "utf8" });
+    const reader = readline.createInterface({ input, crlfDelay: Infinity });
+
+    try {
+      for await (const line of reader) {
+        const trimmed = line.trim();
+        if (!trimmed) continue;
+
+        let item;
+        try {
+          item = JSON.parse(trimmed);
+        } catch {
+          continue;
+        }
+
+        if (
+          item.file === requestedFile &&
+          typeof item.content === "string"
+        ) {
+          chunks.push(item.content);
+        }
+      }
+    } finally {
+      reader.close();
+      input.destroy();
+    }
+  }
+
+  if (chunks.length === 0) return null;
+
+  let completeText = "";
+  for (const chunk of chunks) {
+    completeText = appendChunkWithoutDuplicateOverlap(completeText, chunk);
+  }
+
+  const safeOffset = Math.min(
+    Math.max(Number.parseInt(offset, 10) || 0, 0),
+    completeText.length
+  );
+  const safeLimit = Math.min(
+    Math.max(Number.parseInt(limit, 10) || 40000, 1000),
+    60000
+  );
+  const end = Math.min(safeOffset + safeLimit, completeText.length);
+  const text = completeText.slice(safeOffset, end);
+  const hasMore = end < completeText.length;
+
+  return {
+    file: requestedFile,
+    offset: safeOffset,
+    returnedCharacters: text.length,
+    totalCharacters: completeText.length,
+    chunkCount: chunks.length,
+    hasMore,
+    nextOffset: hasMore ? end : null,
+    text
+  };
 }
 
 async function hashFile(filePath) {
@@ -1473,5 +1724,6 @@ module.exports = {
   getStatus,
   loadIndexFromGitHub,
   rebuildIndex,
-  searchIndex
+  searchIndex,
+  readDocument
 };

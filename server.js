@@ -9,7 +9,8 @@ const {
   getStatus,
   loadIndexFromGitHub,
   rebuildIndex,
-  searchIndex
+  searchIndex,
+  readDocument
 } = require("./index-manager");
 
 const app = express();
@@ -116,13 +117,24 @@ app.post("/rag/search", async (req, res) => {
       });
     }
 
+    const alternateQueries = Array.isArray(req.body?.alternateQueries)
+      ? req.body.alternateQueries
+          .filter(value => typeof value === "string")
+          .map(value => value.trim())
+          .filter(Boolean)
+          .slice(0, 7)
+      : [];
+
+    const searchQueries = [query, ...alternateQueries];
+
     const results =
-      await searchIndex(query, topK);
+      await searchIndex(searchQueries, topK);
 
     const statusAfterSearch = getStatus();
 
     return res.status(200).json({
       query,
+      alternateQueries,
       topK,
       resultCount: results.length,
       indexMode: statusAfterSearch.indexMode,
@@ -139,6 +151,73 @@ app.post("/rag/search", async (req, res) => {
 
     return res.status(500).json({
       error: "Search failed.",
+      detail: error.message
+    });
+  }
+});
+
+
+/*
+ * Full-document reading endpoint.
+ *
+ * This reads the complete extracted text already stored in the RAG
+ * index. It does NOT re-parse the original PDF/DOCX. Large documents
+ * are returned in successive character ranges using offset/limit.
+ */
+app.post("/rag/document", async (req, res) => {
+  try {
+    const file =
+      typeof req.body?.file === "string"
+        ? req.body.file.trim()
+        : "";
+
+    if (!file) {
+      return res.status(400).json({
+        error: "A non-empty file path is required."
+      });
+    }
+
+    const requestedOffset = Number.parseInt(req.body?.offset, 10);
+    const requestedLimit = Number.parseInt(req.body?.limit, 10);
+
+    const offset = Number.isFinite(requestedOffset)
+      ? Math.max(requestedOffset, 0)
+      : 0;
+
+    const limit = Number.isFinite(requestedLimit)
+      ? Math.min(Math.max(requestedLimit, 1000), 80000)
+      : 40000;
+
+    const statusBeforeRead = getStatus();
+
+    if (statusBeforeRead.indexedChunks <= 0) {
+      return res.status(503).json({
+        error: "No searchable index is available yet."
+      });
+    }
+
+    const document = await readDocument(file, offset, limit);
+
+    if (!document) {
+      return res.status(404).json({
+        error: "Document not found in the active RAG index.",
+        file
+      });
+    }
+
+    const statusAfterRead = getStatus();
+
+    return res.status(200).json({
+      ...document,
+      indexMode: statusAfterRead.indexMode,
+      indexedChunks: statusAfterRead.indexedChunks,
+      rebuildInProgress: statusAfterRead.rebuildInProgress
+    });
+  } catch (error) {
+    console.error("Document read failed:", error);
+
+    return res.status(500).json({
+      error: "Document read failed.",
       detail: error.message
     });
   }
