@@ -6,6 +6,7 @@ const fs = require("fs");
 const path = require("path");
 const os = require("os");
 const crypto = require("crypto");
+const zlib = require("zlib");
 const readline = require("readline");
 const { once } = require("events");
 const { fork, execFile } = require("child_process");
@@ -42,6 +43,7 @@ const GITHUB_INDEX_DIR =
   process.env.GITHUB_INDEX_DIR || "index";
 const GITHUB_CHECKPOINT_DIR =
   `${GITHUB_INDEX_DIR}/checkpoint`;
+const INDEX_BUNDLE_FILE = "rag-index-bundle.jsonl.gz";
 
 const SHARD_SIZE_MB = Math.max(
   Number.parseInt(process.env.SHARD_SIZE_MB || "20", 10),
@@ -742,6 +744,264 @@ async function downloadFile(url, destination) {
   throw lastError || new Error("GitHub download failed after retries.");
 }
 
+async function createIndexBundle(indexDirectory) {
+  const manifestPath = path.join(indexDirectory, "manifest.json");
+
+  if (!fs.existsSync(manifestPath)) {
+    throw new Error(`Cannot create index bundle: missing ${manifestPath}`);
+  }
+
+  const bundleManifest = JSON.parse(
+    await fs.promises.readFile(manifestPath, "utf8")
+  );
+
+  if (!Array.isArray(bundleManifest.shards)) {
+    throw new Error("Cannot create index bundle: invalid manifest");
+  }
+
+  const bundlePath = path.join(indexDirectory, INDEX_BUNDLE_FILE);
+  const temporaryBundlePath = `${bundlePath}.tmp`;
+
+  await fs.promises.rm(temporaryBundlePath, { force: true });
+
+  const gzip = zlib.createGzip({ level: 6 });
+  const output = fs.createWriteStream(temporaryBundlePath, { flags: "w" });
+
+  const outputFinished = new Promise((resolve, reject) => {
+    output.once("finish", resolve);
+    output.once("error", reject);
+    gzip.once("error", reject);
+  });
+
+  gzip.pipe(output);
+
+  const writeBundleLine = async line => {
+    if (!gzip.write(`${line}\n`, "utf8")) {
+      await once(gzip, "drain");
+    }
+  };
+
+  try {
+    await writeBundleLine(
+      JSON.stringify({
+        type: "eu-space-rag-index-bundle",
+        version: 1,
+        manifest: bundleManifest
+      })
+    );
+
+    for (const shard of bundleManifest.shards) {
+      if (typeof shard.file !== "string") {
+        throw new Error("Cannot create index bundle: invalid shard entry");
+      }
+
+      const shardPath = path.join(indexDirectory, shard.file);
+      if (!fs.existsSync(shardPath)) {
+        throw new Error(`Cannot create index bundle: missing ${shard.file}`);
+      }
+
+      const input = fs.createReadStream(shardPath, { encoding: "utf8" });
+      const reader = readline.createInterface({
+        input,
+        crlfDelay: Infinity
+      });
+
+      try {
+        for await (const line of reader) {
+          if (!line.trim()) continue;
+          await writeBundleLine(line);
+        }
+      } finally {
+        reader.close();
+        input.destroy();
+      }
+    }
+
+    gzip.end();
+    await outputFinished;
+
+    await fs.promises.rm(bundlePath, { force: true });
+    await fs.promises.rename(temporaryBundlePath, bundlePath);
+
+    return bundlePath;
+  } catch (error) {
+    gzip.destroy();
+    output.destroy();
+    await fs.promises.rm(temporaryBundlePath, { force: true });
+    throw error;
+  }
+}
+
+async function extractIndexBundle(bundlePath, localDirectory) {
+  const input = fs.createReadStream(bundlePath);
+  const gunzip = zlib.createGunzip();
+  const reader = readline.createInterface({
+    input: input.pipe(gunzip),
+    crlfDelay: Infinity
+  });
+
+  let downloadedManifest = null;
+  let shardIndex = 0;
+  let shardChunkCount = 0;
+  let shardOutput = null;
+  let sawHeader = false;
+
+  const closeShardOutput = async () => {
+    if (!shardOutput) return;
+    await closeWriteStream(shardOutput);
+    shardOutput = null;
+  };
+
+  try {
+    for await (const line of reader) {
+      if (!sawHeader) {
+        const header = JSON.parse(line);
+
+        if (
+          header?.type !== "eu-space-rag-index-bundle" ||
+          !header.manifest ||
+          !Array.isArray(header.manifest.shards)
+        ) {
+          throw new Error("Invalid RAG index bundle header");
+        }
+
+        downloadedManifest = header.manifest;
+        sawHeader = true;
+        continue;
+      }
+
+      if (!line.trim()) continue;
+
+      while (
+        shardIndex < downloadedManifest.shards.length &&
+        Number(downloadedManifest.shards[shardIndex].chunks || 0) === 0
+      ) {
+        shardIndex += 1;
+      }
+
+      if (shardIndex >= downloadedManifest.shards.length) {
+        throw new Error("RAG index bundle contains more chunks than manifest");
+      }
+
+      const shard = downloadedManifest.shards[shardIndex];
+
+      if (!shardOutput) {
+        const shardPath = path.join(localDirectory, shard.file);
+        await fs.promises.mkdir(path.dirname(shardPath), {
+          recursive: true
+        });
+        shardOutput = fs.createWriteStream(shardPath, {
+          encoding: "utf8",
+          flags: "w"
+        });
+        shardChunkCount = 0;
+      }
+
+      if (!shardOutput.write(`${line}\n`, "utf8")) {
+        await once(shardOutput, "drain");
+      }
+
+      shardChunkCount += 1;
+
+      if (shardChunkCount >= Number(shard.chunks || 0)) {
+        await closeShardOutput();
+        shardIndex += 1;
+        shardChunkCount = 0;
+      }
+    }
+
+    await closeShardOutput();
+
+    if (!sawHeader || !downloadedManifest) {
+      throw new Error("RAG index bundle is empty");
+    }
+
+    while (
+      shardIndex < downloadedManifest.shards.length &&
+      Number(downloadedManifest.shards[shardIndex].chunks || 0) === 0
+    ) {
+      shardIndex += 1;
+    }
+
+    if (shardIndex !== downloadedManifest.shards.length) {
+      throw new Error("RAG index bundle ended before all shards were reconstructed");
+    }
+
+    await fs.promises.writeFile(
+      path.join(localDirectory, "manifest.json"),
+      JSON.stringify(downloadedManifest, null, 2),
+      "utf8"
+    );
+
+    return downloadedManifest;
+  } finally {
+    reader.close();
+    input.destroy();
+    gunzip.destroy();
+  }
+}
+
+async function copyIndexFromRepository(
+  githubDirectory,
+  localDirectory
+) {
+  const repositoryDirectory = path.join(
+    ROOT_PATH,
+    ...githubDirectory.split("/")
+  );
+  const repositoryManifestPath = path.join(
+    repositoryDirectory,
+    "manifest.json"
+  );
+
+  if (!fs.existsSync(repositoryManifestPath)) {
+    return null;
+  }
+
+  const repositoryManifest = JSON.parse(
+    await fs.promises.readFile(repositoryManifestPath, "utf8")
+  );
+
+  if (!Array.isArray(repositoryManifest.shards)) {
+    return null;
+  }
+
+  for (const shard of repositoryManifest.shards) {
+    if (
+      typeof shard.file !== "string" ||
+      !fs.existsSync(path.join(repositoryDirectory, shard.file))
+    ) {
+      return null;
+    }
+  }
+
+  await fs.promises.rm(localDirectory, {
+    recursive: true,
+    force: true
+  });
+  await fs.promises.mkdir(localDirectory, {
+    recursive: true
+  });
+
+  await fs.promises.copyFile(
+    repositoryManifestPath,
+    path.join(localDirectory, "manifest.json")
+  );
+
+  for (const shard of repositoryManifest.shards) {
+    await fs.promises.copyFile(
+      path.join(repositoryDirectory, shard.file),
+      path.join(localDirectory, shard.file)
+    );
+  }
+
+  console.log(
+    `Loaded ${githubDirectory} from the repository checkout as a network fallback.`
+  );
+
+  return repositoryManifest;
+}
+
 async function downloadManifestAndShards(
   githubDirectory,
   localDirectory
@@ -754,6 +1014,64 @@ async function downloadManifestAndShards(
     recursive: true
   });
 
+  /*
+   * Preferred path:
+   * download one compressed bundle instead of manifest + every shard separately.
+   * This greatly reduces GitHub requests and therefore the chance of HTTP 429.
+   */
+  const localBundlePath = path.join(localDirectory, INDEX_BUNDLE_FILE);
+
+  try {
+    const bundleFound = await downloadFile(
+      rawGitHubUrl(`${githubDirectory}/${INDEX_BUNDLE_FILE}`),
+      localBundlePath
+    );
+
+    if (bundleFound) {
+      const bundledManifest = await extractIndexBundle(
+        localBundlePath,
+        localDirectory
+      );
+
+      console.log(
+        `Loaded ${githubDirectory} from single GitHub index bundle.`
+      );
+
+      return bundledManifest;
+    }
+  } catch (error) {
+    console.warn(
+      `Single-bundle GitHub download failed for ${githubDirectory}: ` +
+      `${error.message}`
+    );
+  } finally {
+    await fs.promises.rm(localBundlePath, { force: true });
+  }
+
+  /*
+   * If GitHub is temporarily throttling downloads, Render's checked-out
+   * repository may already contain a complete usable copy of the index.
+   * Prefer that over immediately issuing many more GitHub requests.
+   */
+  try {
+    const repositoryManifest = await copyIndexFromRepository(
+      githubDirectory,
+      localDirectory
+    );
+
+    if (repositoryManifest) {
+      return repositoryManifest;
+    }
+  } catch (error) {
+    console.warn(
+      `Repository-copy fallback failed for ${githubDirectory}: ${error.message}`
+    );
+  }
+
+  /*
+   * Backward-compatible legacy fallback for repositories that do not yet
+   * contain the bundle. This preserves the previous manifest/shard behavior.
+   */
   const localManifestPath = path.join(
     localDirectory,
     "manifest.json"
@@ -1266,6 +1584,8 @@ async function commitAndPush(cloneDirectory, commitMessage) {
 }
 
 async function publishCheckpointToGitHub(outputDirectory) {
+  await createIndexBundle(outputDirectory);
+
   const cloneDirectory = await cloneRepository();
 
   try {
@@ -1309,6 +1629,8 @@ async function publishCheckpointToGitHub(outputDirectory) {
 }
 
 async function publishFinalIndexToGitHub(outputDirectory) {
+  await createIndexBundle(outputDirectory);
+
   const cloneDirectory = await cloneRepository();
 
   try {
