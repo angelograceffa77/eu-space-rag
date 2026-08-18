@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "eb4fb4533fe8685aaa7997a85f02c553cec2775d",
-  "createdAt": "2026-08-18T13:52:39.642Z",
+  "createdAt": "2026-08-18T13:54:30.738Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 18768,
+  "totalChunks": 19150,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -38,6 +38,11 @@
       "file": "rag-index-0006.ndjson",
       "chunks": 270,
       "bytes": 413973
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 382,
+      "bytes": 599878
     }
   ],
   "sources": {
@@ -2194,20 +2199,50 @@
       "size": 723403,
       "status": "indexed",
       "chunks": 29
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Introduction of Cooperative Agreements v.2.pdf": {
+      "sha256": "79aee72be13e0a5bcc960570b6f2cc188a0e634bcfc77b2d295369929a9fbcd0",
+      "size": 123219,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ModelSubcontract rev1.docx": {
+      "sha256": "1bdb25f268219039d50230b661b9991d3be84a1b95ef83f44f93db73da8cd4c5",
+      "size": 92255,
+      "status": "indexed",
+      "chunks": 83
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/290rev6-Fren.pdf": {
+      "sha256": "557fc61c7e984d596444328cf2287ac0135dd35c56355b55f555a1cd41ddb940",
+      "size": 167068,
+      "status": "indexed",
+      "chunks": 137
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/290rev6-German.pdf": {
+      "sha256": "ccbf7e7b7b64de6bcf93132f9ae0fb755f47c354f122cb843029f01ea7659dd9",
+      "size": 704260,
+      "status": "indexed",
+      "chunks": 135
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/LicenceNo2-French.pdf": {
+      "sha256": "b39adb4c109d08cb31b267db7506ce9fd0d62b53121dde4599fdb15586cb08e3",
+      "size": 23105,
+      "status": "indexed",
+      "chunks": 14
     }
   },
   "report": {
     "discoveredFiles": 380,
     "unchangedFiles": 315,
     "changedFiles": 49,
-    "processedChangedFiles": 25,
-    "remainingChangedFiles": 24,
+    "processedChangedFiles": 30,
+    "remainingChangedFiles": 19,
     "deletedFiles": [],
-    "indexedFiles": 23,
+    "indexedFiles": 28,
     "skippedFiles": 2,
     "copiedChunks": 18090,
-    "newChunks": 678,
-    "totalChunks": 18768,
+    "newChunks": 1060,
+    "totalChunks": 19150,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf",
