@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "eb4fb4533fe8685aaa7997a85f02c553cec2775d",
-  "createdAt": "2026-08-18T13:57:57.240Z",
+  "createdAt": "2026-08-18T14:00:03.447Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 19338,
+  "totalChunks": 19761,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -53,6 +53,11 @@
       "file": "rag-index-0009.ndjson",
       "chunks": 127,
       "bytes": 203092
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 423,
+      "bytes": 706638
     }
   ],
   "sources": {
@@ -2299,20 +2304,50 @@
       "size": 269292,
       "status": "indexed",
       "chunks": 95
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/co-funded_Model_ Contract_ Template_2025 - FR.docx": {
+      "sha256": "1b433aaff4cc6308a0ee5e7588b92525b6e699a4b977b37e040578817f3010ce",
+      "size": 262363,
+      "status": "indexed",
+      "chunks": 110
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/Standard Model_Contract _Template _2025 - EN.docx": {
+      "sha256": "dd193b3ca6ae35add92b3602cd11bc4c1de7bb6de87c10c2c1c51bb050cab132",
+      "size": 256288,
+      "status": "indexed",
+      "chunks": 101
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/Standard Model_Contract _Template _2025 - FR.docx": {
+      "sha256": "77412f486f852b2efccf85431342b225d897f08033f32c393c2afcbed0e8324a",
+      "size": 256570,
+      "status": "indexed",
+      "chunks": 118
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/STANDARD Proposal_Template_2025 - EN.docx": {
+      "sha256": "e8f84a35ce6c6388b9e59eb81d9a2fc79e8ec5a9c74eddf5ec843162eec2bb5b",
+      "size": 152020,
+      "status": "indexed",
+      "chunks": 43
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/STANDARD Proposal_Template_2025 - FR.docx": {
+      "sha256": "9043f9e0f476dfdb5ed69f8133f7e017ca2c1e0c1b26626f3e59d13a79b4e187",
+      "size": 151182,
+      "status": "indexed",
+      "chunks": 51
     }
   },
   "report": {
     "discoveredFiles": 380,
     "unchangedFiles": 315,
     "changedFiles": 49,
-    "processedChangedFiles": 40,
-    "remainingChangedFiles": 9,
+    "processedChangedFiles": 45,
+    "remainingChangedFiles": 4,
     "deletedFiles": [],
-    "indexedFiles": 38,
+    "indexedFiles": 43,
     "skippedFiles": 2,
     "copiedChunks": 18090,
-    "newChunks": 1248,
-    "totalChunks": 19338,
+    "newChunks": 1671,
+    "totalChunks": 19761,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf",
