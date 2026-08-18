@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "43472be7d90e0c86cb32bfbbe054cf43ad1e1ecb",
-  "createdAt": "2026-08-18T14:59:14.138Z",
+  "createdAt": "2026-08-18T15:01:29.640Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 19107,
+  "totalChunks": 19448,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 5812,
       "bytes": 9015908
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 341,
+      "bytes": 512952
     }
   ],
   "sources": {
@@ -2227,14 +2232,44 @@
       "size": 78564,
       "status": "indexed",
       "chunks": 9
+    },
+    "03_PROCUREMENT/ESA/ESA_Convention_SP-1344_EN.pdf": {
+      "sha256": "3dd5c09a9e229294a57a0364591e2ef88f574bd53d7b6cfe8dd963911e2ed441",
+      "size": 1010228,
+      "status": "indexed",
+      "chunks": 87
+    },
+    "03_PROCUREMENT/ESA/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf": {
+      "sha256": "3a360ea84f46bd502bddd447638f1a71a65ab8699ecb4357261b5f51f89169e3",
+      "size": 719607,
+      "status": "indexed",
+      "chunks": 49
+    },
+    "03_PROCUREMENT/ESA/ESA_REG_004,rev.2_EN.pdf": {
+      "sha256": "110c4b44f1be0997a3f2765f9951ae8a0959d94eb7f828a7b7e7a34d98b80105",
+      "size": 513420,
+      "status": "indexed",
+      "chunks": 166
+    },
+    "03_PROCUREMENT/ESA/ESA_REG_009_Geo_return_coeff_(extranet).pdf": {
+      "sha256": "407c7e52c4f0507d7a8a34cf5cfa9ed718b6621ae36c646e539462c9927f4d98",
+      "size": 228898,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/ESA/ESA-ADMIN-IPOL-LEGI(2021)1_EN_final.pdf": {
+      "sha256": "7a9cbae4896e1599ee5c093c35e9d4046996841dfdcc57a04ab062a087b56116",
+      "size": 175686,
+      "status": "indexed",
+      "chunks": 26
     }
   },
   "report": {
     "discoveredFiles": 380,
     "unchangedFiles": 342,
     "changedFiles": 21,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 16,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 11,
     "deletedFiles": [
       "01_POLICY/ESA/eli_dec_2024_1542_oj_EN_TXT.pdf",
       "01_POLICY/ESA/ESA_Convention_SP-1344_EN.pdf",
@@ -2256,11 +2291,11 @@
       "01_POLICY/ESA/ESA - Procurement policy on fair access for SMEs - the C1-C4 Clauses.pdf",
       "01_POLICY/ESA/ESA-penalty-policy.pdf"
     ],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 19003,
-    "newChunks": 104,
-    "totalChunks": 19107,
+    "newChunks": 445,
+    "totalChunks": 19448,
     "failures": []
   }
 }
