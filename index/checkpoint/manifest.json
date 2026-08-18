@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "eb4fb4533fe8685aaa7997a85f02c553cec2775d",
-  "createdAt": "2026-08-18T13:56:08.744Z",
+  "createdAt": "2026-08-18T13:57:57.240Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 19211,
+  "totalChunks": 19338,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -48,6 +48,11 @@
       "file": "rag-index-0008.ndjson",
       "chunks": 61,
       "bytes": 95153
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 127,
+      "bytes": 203092
     }
   ],
   "sources": {
@@ -2264,20 +2269,50 @@
       "size": 21613,
       "status": "indexed",
       "chunks": 9
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/Principesnouvelleclause46.french.pdf": {
+      "sha256": "734962f9cc5e6648b2f1a7194787ed59014db705616ddf1105638254f29dfb1e",
+      "size": 15728,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/Comparison Table _PBF Forms_ former PSS Forms equivalent.pdf": {
+      "sha256": "0a1361789a7512a6a7f830a3f1076f6674329c55d48d1a29a55c41d81cfcddf6",
+      "size": 106686,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/PBF-7.docx": {
+      "sha256": "4235a405527ff5cfa93d3b4ab86e3ef5260657d2b98e26aef096a09e7f8ccbcf",
+      "size": 28563,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/Quick User Guide for the compilation of the ESA.pdf": {
+      "sha256": "57f8ce9d9a6d549976823eb1f19a3b4d6aeeb72c6415abe788a720669239a139",
+      "size": 209765,
+      "status": "indexed",
+      "chunks": 23
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/co-funded_Model_ Contract_ Template_2025 -  EN.docx": {
+      "sha256": "688548f0c8078d421627f4c142f252c076e90c9aed33b26c0e03dd11bddf2c11",
+      "size": 269292,
+      "status": "indexed",
+      "chunks": 95
     }
   },
   "report": {
     "discoveredFiles": 380,
     "unchangedFiles": 315,
     "changedFiles": 49,
-    "processedChangedFiles": 35,
-    "remainingChangedFiles": 14,
+    "processedChangedFiles": 40,
+    "remainingChangedFiles": 9,
     "deletedFiles": [],
-    "indexedFiles": 33,
+    "indexedFiles": 38,
     "skippedFiles": 2,
     "copiedChunks": 18090,
-    "newChunks": 1121,
-    "totalChunks": 19211,
+    "newChunks": 1248,
+    "totalChunks": 19338,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf",
