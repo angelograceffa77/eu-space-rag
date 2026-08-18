@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "43472be7d90e0c86cb32bfbbe054cf43ad1e1ecb",
-  "createdAt": "2026-08-18T15:01:29.640Z",
+  "createdAt": "2026-08-18T15:04:01.640Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 19448,
+  "totalChunks": 19799,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 341,
       "bytes": 512952
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 351,
+      "bytes": 518137
     }
   ],
   "sources": {
@@ -2262,14 +2267,45 @@
       "size": 175686,
       "status": "indexed",
       "chunks": 26
+    },
+    "03_PROCUREMENT/ESA/ESA-ADMIN-IPOL-WORK(2019)1.pdf": {
+      "sha256": "310e76ddafca56d45c671a3acd083a05ed6d3e5132f85db3d6d5d3c65d56539b",
+      "size": 327522,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/ESA/ESA-penalty-policy.pdf": {
+      "sha256": "9e21f957557f6390f5786b06431c44d1831573db26db58a41506fd9c0cc65918",
+      "size": 81989,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-001_rev5_EN.pdf": {
+      "sha256": "188a996b21be24a5056e28ab6b60792a43ff730ba6be32f8b9b54c3690fef3d2",
+      "size": 4009917,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-001_rev6_EN.pdf": {
+      "sha256": "8510f92e2b07e8d28f00ac38734d2628b9d92329d81d7c9b60e11f28fdf059eb",
+      "size": 742232,
+      "status": "indexed",
+      "chunks": 168
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-002_rev4_EN.pdf": {
+      "sha256": "f6a3c680c27c23b8bc852cbfe6f441dd98485054973349d1fbccc94685846e19",
+      "size": 695464,
+      "status": "indexed",
+      "chunks": 165
     }
   },
   "report": {
     "discoveredFiles": 380,
     "unchangedFiles": 342,
     "changedFiles": 21,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 11,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 6,
     "deletedFiles": [
       "01_POLICY/ESA/eli_dec_2024_1542_oj_EN_TXT.pdf",
       "01_POLICY/ESA/ESA_Convention_SP-1344_EN.pdf",
@@ -2291,11 +2327,16 @@
       "01_POLICY/ESA/ESA - Procurement policy on fair access for SMEs - the C1-C4 Clauses.pdf",
       "01_POLICY/ESA/ESA-penalty-policy.pdf"
     ],
-    "indexedFiles": 10,
-    "skippedFiles": 0,
+    "indexedFiles": 14,
+    "skippedFiles": 1,
     "copiedChunks": 19003,
-    "newChunks": 445,
-    "totalChunks": 19448,
-    "failures": []
+    "newChunks": 796,
+    "totalChunks": 19799,
+    "failures": [
+      {
+        "file": "03_PROCUREMENT/ESA/ESA-REG-001_rev5_EN.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
