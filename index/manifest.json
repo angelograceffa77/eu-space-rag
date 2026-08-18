@@ -2,72 +2,22 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "a0aab32689414abaeab10b0b5d97ce5c6009976b",
-  "createdAt": "2026-08-14T13:41:22.024Z",
+  "buildCommit": "427be8e491d538a7cd9cb010b668b707b2fec743",
+  "createdAt": "2026-08-17T16:38:02.019Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 17017,
+  "totalChunks": 18093,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 13124,
-      "bytes": 20651115
+      "chunks": 13328,
+      "bytes": 20971274
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 546,
-      "bytes": 860413
-    },
-    {
-      "file": "rag-index-0003.ndjson",
-      "chunks": 475,
-      "bytes": 714844
-    },
-    {
-      "file": "rag-index-0004.ndjson",
-      "chunks": 235,
-      "bytes": 369072
-    },
-    {
-      "file": "rag-index-0005.ndjson",
-      "chunks": 615,
-      "bytes": 989599
-    },
-    {
-      "file": "rag-index-0006.ndjson",
-      "chunks": 625,
-      "bytes": 953304
-    },
-    {
-      "file": "rag-index-0007.ndjson",
-      "chunks": 54,
-      "bytes": 82218
-    },
-    {
-      "file": "rag-index-0008.ndjson",
-      "chunks": 108,
-      "bytes": 168656
-    },
-    {
-      "file": "rag-index-0009.ndjson",
-      "chunks": 236,
-      "bytes": 355166
-    },
-    {
-      "file": "rag-index-0010.ndjson",
-      "chunks": 260,
-      "bytes": 390911
-    },
-    {
-      "file": "rag-index-0011.ndjson",
-      "chunks": 185,
-      "bytes": 278361
-    },
-    {
-      "file": "rag-index-0012.ndjson",
-      "chunks": 554,
-      "bytes": 827666
+      "chunks": 4765,
+      "bytes": 7279854
     }
   ],
   "sources": {
@@ -2047,31 +1997,54 @@
       "size": 816950,
       "status": "indexed",
       "chunks": 364
+    },
+    "03_PROCUREMENT/EU/CELEX_32014L0023_EN_TXT.pdf": {
+      "sha256": "f6c151ce46115ce95b4880880f2190560b6e3a3ce6adf4a15b36aed7bf893090",
+      "size": 1292782,
+      "status": "indexed",
+      "chunks": 207
+    },
+    "03_PROCUREMENT/EU/CELEX_32014L0024_EN_TXT.pdf": {
+      "sha256": "d201220851583d0100b88a10fbefd1ea29ba411d38470ee58609f49ae5159b4b",
+      "size": 2344204,
+      "status": "indexed",
+      "chunks": 470
+    },
+    "03_PROCUREMENT/EU/CELEX_32014L0025_EN_TXT.pdf": {
+      "sha256": "36bf0b6ad0d3fde7597225c5cea92dcbdc7827de5bf752dae9e19d415c5645ec",
+      "size": 1848047,
+      "status": "indexed",
+      "chunks": 398
+    },
+    "03_PROCUREMENT/EU/Index _03_Procurement_EU.docx": {
+      "sha256": "e6538ecccbe4b036aed4827b5649993173ee37c03d4449dccb7a49e55a4e851b",
+      "size": 14077,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EU/OJ_L_202402509_EN_TXT.pdf": {
+      "sha256": "ba9aa1bc841ee82c0d9f0cda47f5c1b8ffbedff51f501eb1cee05ac9bed5653e",
+      "size": 3849896,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
     }
   },
   "report": {
-    "discoveredFiles": 327,
-    "unchangedFiles": 299,
-    "changedFiles": 14,
-    "processedChangedFiles": 59,
+    "discoveredFiles": 332,
+    "unchangedFiles": 312,
+    "changedFiles": 5,
+    "processedChangedFiles": 5,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 56,
-    "skippedFiles": 3,
-    "copiedChunks": 12851,
-    "newChunks": 4166,
-    "totalChunks": 17017,
+    "indexedFiles": 4,
+    "skippedFiles": 1,
+    "copiedChunks": 17017,
+    "newChunks": 1076,
+    "totalChunks": 18093,
     "failures": [
       {
-        "file": "01_POLICY/Member States/Ireland/national-space-strategy-for-enterprise-2019-2025.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      },
-      {
-        "file": "01_POLICY/Member States/Poland/psk.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      },
-      {
-        "file": "01_POLICY/Member States/UK/20220120-UK_Defence_Space_Strategy_Feb_22.pdf",
+        "file": "03_PROCUREMENT/EU/OJ_L_202402509_EN_TXT.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
