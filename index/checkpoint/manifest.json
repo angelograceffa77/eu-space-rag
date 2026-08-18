@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "eb4fb4533fe8685aaa7997a85f02c553cec2775d",
-  "createdAt": "2026-08-18T13:43:17.141Z",
+  "createdAt": "2026-08-18T13:46:32.539Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 18195,
+  "totalChunks": 18216,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 4868,
       "bytes": 7430608
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 21,
+      "bytes": 29161
     }
   ],
   "sources": {
@@ -2052,20 +2057,61 @@
       "size": 81989,
       "status": "indexed",
       "chunks": 2
+    },
+    "03_PROCUREMENT/ESA/Index _03Procurement_ESA.docx": {
+      "sha256": "915f4d2e912411ded30bcab5e4dc15b516483b2fbab99af813e5685dd279cdd8",
+      "size": 16216,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA Protective Markings_31102024_v1.pdf": {
+      "sha256": "19e7f765450ea170ed6da6fc333012cc9a2c71fe59ce07fe7fbbe18f0ef46218",
+      "size": 162840,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf": {
+      "sha256": "3a56ae8b235e0d153b51fbcd8c394febe3d7526a853b7054a7fa9dec665e4233",
+      "size": 3561054,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_2023-2024 complete bulletin.pdf": {
+      "sha256": "6b794e0ba91b6f4417d3afc04aea473bdbab12e43cf6ee07aa71067d3da81b6f",
+      "size": 2898120,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_IPC_2022_136_EN.pdf": {
+      "sha256": "dec8c0523a431a04b761057cfa651aa92d9197374c5d9fd592b1cd3be4dc3887",
+      "size": 171561,
+      "status": "indexed",
+      "chunks": 16
     }
   },
   "report": {
     "discoveredFiles": 380,
     "unchangedFiles": 315,
     "changedFiles": 49,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 44,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 39,
     "deletedFiles": [],
-    "indexedFiles": 5,
-    "skippedFiles": 0,
+    "indexedFiles": 8,
+    "skippedFiles": 2,
     "copiedChunks": 18090,
-    "newChunks": 105,
-    "totalChunks": 18195,
-    "failures": []
+    "newChunks": 126,
+    "totalChunks": 18216,
+    "failures": [
+      {
+        "file": "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "03_PROCUREMENT/ESA/Operational documents/ESA_2023-2024 complete bulletin.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
