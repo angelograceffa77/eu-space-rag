@@ -2,22 +2,67 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "427be8e491d538a7cd9cb010b668b707b2fec743",
-  "createdAt": "2026-08-17T16:38:02.019Z",
+  "buildCommit": "eb4fb4533fe8685aaa7997a85f02c553cec2775d",
+  "createdAt": "2026-08-18T14:11:47.780Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 18093,
+  "totalChunks": 19942,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 13328,
-      "bytes": 20971274
+      "chunks": 13327,
+      "bytes": 20971134
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 4765,
-      "bytes": 7279854
+      "chunks": 4868,
+      "bytes": 7430608
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 21,
+      "bytes": 29161
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 130,
+      "bytes": 231637
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 152,
+      "bytes": 234385
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 270,
+      "bytes": 413973
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 382,
+      "bytes": 599878
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 61,
+      "bytes": 95153
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 127,
+      "bytes": 203092
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 423,
+      "bytes": 706638
+    },
+    {
+      "file": "rag-index-0011.ndjson",
+      "chunks": 181,
+      "bytes": 306273
     }
   ],
   "sources": {
@@ -131,8 +176,8 @@
       "chunks": 47
     },
     "01_POLICY/ESA/Index _01Policy_ESA.docx": {
-      "sha256": "7fed68f130dc267c75d9c2e20d51f9f8881a0044cd1987c99f9c9e16d7bf1537",
-      "size": 15395,
+      "sha256": "a0ed591c615dbdb29f7f7114de2ac570d1fa8af73e87893cc6b42d54a6548546",
+      "size": 15717,
       "status": "indexed",
       "chunks": 3
     },
@@ -2028,23 +2073,317 @@
       "status": "skipped",
       "reason": "Worker stopped with code null, signal SIGABRT",
       "chunks": 0
+    },
+    "01_POLICY/ESA/Annex 1 to ESA.C(2022)104.pdf": {
+      "sha256": "4626d049acd6b98d0712515a736be6468aee4b55345a1ff5c2bab7557f0fd50f",
+      "size": 170852,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "01_POLICY/ESA/BEST PRACTICES ESA IPC 275 65 rev 2 Final DG.pdf": {
+      "sha256": "30c205a948afd8b1f25e0315932b3ad8dccebf56e863968c3ff4777a547a6eaa",
+      "size": 228523,
+      "status": "indexed",
+      "chunks": 75
+    },
+    "01_POLICY/ESA/ESA - Procurement policy on fair access for SMEs - the C1-C4 Clauses.pdf": {
+      "sha256": "c8098146061736452e2764e1af0213d94a0199e41121ae1e9596096709a6a82b",
+      "size": 78564,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "01_POLICY/ESA/ESA-penalty-policy.pdf": {
+      "sha256": "9e21f957557f6390f5786b06431c44d1831573db26db58a41506fd9c0cc65918",
+      "size": 81989,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/ESA/Index _03Procurement_ESA.docx": {
+      "sha256": "915f4d2e912411ded30bcab5e4dc15b516483b2fbab99af813e5685dd279cdd8",
+      "size": 16216,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA Protective Markings_31102024_v1.pdf": {
+      "sha256": "19e7f765450ea170ed6da6fc333012cc9a2c71fe59ce07fe7fbbe18f0ef46218",
+      "size": 162840,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf": {
+      "sha256": "3a56ae8b235e0d153b51fbcd8c394febe3d7526a853b7054a7fa9dec665e4233",
+      "size": 3561054,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_2023-2024 complete bulletin.pdf": {
+      "sha256": "6b794e0ba91b6f4417d3afc04aea473bdbab12e43cf6ee07aa71067d3da81b6f",
+      "size": 2898120,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_IPC_2022_136_EN.pdf": {
+      "sha256": "dec8c0523a431a04b761057cfa651aa92d9197374c5d9fd592b1cd3be4dc3887",
+      "size": 171561,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/admin-ipol-work-2017-001e.pdf": {
+      "sha256": "07827cc1db4c5d41db01fd1b6003cfddf821fe524194356fc6b69606affcb86f",
+      "size": 103403,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/CSR Code of Conduct for esa-star Publication.pdf": {
+      "sha256": "f467420b088eaf4cdf3397a25024e2c28c0a4312d2d3640484cd10c79ea768b0",
+      "size": 115114,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/ESA Contracts Privacy Notice_september2023.pdf": {
+      "sha256": "11229ddccf46300d5cd9c8c4424c27fce028688c0fa05d8795178ce815dc6214",
+      "size": 233736,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/ESA ESA_ADMIN_IPOL-LEGI(2021).pdf": {
+      "sha256": "b902f1b904da3262181c457f24b212590fdc720db97e419dd3daf9faf160031f",
+      "size": 610515,
+      "status": "indexed",
+      "chunks": 50
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf": {
+      "sha256": "6c8cf52dbd7abc7125d565808da6609983f30578ec87a46966d6026cda5c3dc3",
+      "size": 383110,
+      "status": "indexed",
+      "chunks": 49
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/ESA-ADMIN-IPOL-HESA(2022)1_EN_Final.pdf": {
+      "sha256": "38f90c4141774eea4e7acf36abf5626d892038a1a698e2d79569a91c7f8e175a",
+      "size": 1011596,
+      "status": "indexed",
+      "chunks": 38
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/esa-star Publication.pdf": {
+      "sha256": "ebf36096f778ca5b8c306c40380ab766f0a6260efb3fa905e2aea145f5f08d1a",
+      "size": 119241,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/Indirect-Payments-Standard Contact Form.docx": {
+      "sha256": "8c0c33fb6be50d12e461b0b11dec1ae7d459514bea2a1542f4f63af99e0c8b4b",
+      "size": 17418,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/ESA/Operational documents/EXPRO/EXPRO Tendering Conditions_2025.pdf": {
+      "sha256": "c532f4d545ad0284983ce2666ce525bf41fe9631fb7c1202dcd6e9ec3f547b84",
+      "size": 193559,
+      "status": "indexed",
+      "chunks": 18
+    },
+    "03_PROCUREMENT/ESA/Operational documents/EXPRO/EXPRO_co-funded Draft_Contract_(RandD)_2025.docx": {
+      "sha256": "b11f46b4d682564e242f0adeb8660df5032a941e96abc2f790e5bfa904967a35",
+      "size": 248915,
+      "status": "indexed",
+      "chunks": 91
+    },
+    "03_PROCUREMENT/ESA/Operational documents/EXPRO/EXPRO_Draft_Contract_(RandD)_2025.docx": {
+      "sha256": "b89bd4a4bef41d1b24c6abccfac621e88a2bf4fccd6f99364014811d96973939",
+      "size": 215665,
+      "status": "indexed",
+      "chunks": 95
+    },
+    "03_PROCUREMENT/ESA/Operational documents/EXPRO/EXPRO_Draft_Contract_(Small Services)_ 2025.docx": {
+      "sha256": "a3b00acd46fe78fb36ca876b2899e263ec20e83c1f838de3e641e8d224941a7c",
+      "size": 232483,
+      "status": "indexed",
+      "chunks": 90
+    },
+    "03_PROCUREMENT/ESA/Operational documents/EXPRO/EXPRO_Proposal_Template_2025.docx": {
+      "sha256": "eb2ff1a359d4bca18d6ac1417105d5808aaf5ff015da3c007beeae7dae859477",
+      "size": 153272,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "03_PROCUREMENT/ESA/Operational documents/EXPRO/EXPRO_RFP_Response_Template_2025.docx": {
+      "sha256": "2ad07b8569d6f99466c0576534bcb296e29d4ffec517fcfa7046dc27d3e5e55e",
+      "size": 59745,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Guidelines to the ESA TENDER CONDITIONS 12.12.2024.pdf": {
+      "sha256": "317b0ef5842368479dd9d4fed6811b74c89f99539a2b37ffd2ebd62de2e191c5",
+      "size": 723403,
+      "status": "indexed",
+      "chunks": 29
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Introduction of Cooperative Agreements v.2.pdf": {
+      "sha256": "79aee72be13e0a5bcc960570b6f2cc188a0e634bcfc77b2d295369929a9fbcd0",
+      "size": 123219,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ModelSubcontract rev1.docx": {
+      "sha256": "1bdb25f268219039d50230b661b9991d3be84a1b95ef83f44f93db73da8cd4c5",
+      "size": 92255,
+      "status": "indexed",
+      "chunks": 83
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/290rev6-Fren.pdf": {
+      "sha256": "557fc61c7e984d596444328cf2287ac0135dd35c56355b55f555a1cd41ddb940",
+      "size": 167068,
+      "status": "indexed",
+      "chunks": 137
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/290rev6-German.pdf": {
+      "sha256": "ccbf7e7b7b64de6bcf93132f9ae0fb755f47c354f122cb843029f01ea7659dd9",
+      "size": 704260,
+      "status": "indexed",
+      "chunks": 135
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/LicenceNo2-French.pdf": {
+      "sha256": "b39adb4c109d08cb31b267db7506ce9fd0d62b53121dde4599fdb15586cb08e3",
+      "size": 23105,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/LicenceNo3-French.pdf": {
+      "sha256": "c2753f0970fee751d814ddf9876340d4458fd9be399b289e718b076855fc4c19",
+      "size": 22337,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/LicenceNo4-French.pdf": {
+      "sha256": "bf32975e496461d0cd6e7ec42669117b6a299c10d08c74b7b5ba266b7afc0b68",
+      "size": 21453,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/LicenceNo5-French.pdf": {
+      "sha256": "818561dee5501ff312659404954d7f94e4cd1dbd3a700aca73c67d41a64c0aa2",
+      "size": 24184,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/non-divulgation-French.pdf": {
+      "sha256": "9ff61bdbd0296019ffc2d63e900ef348f526f372a9448a0f80fde049393a45ac",
+      "size": 20217,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/nondisclosure-Engl.pdf": {
+      "sha256": "845bb8d4ec13cb192ace1a11d38ddc7cb50eaa9dae22be2955288f159d733b6f",
+      "size": 21613,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Non-Disclosure Agreement Templates/Principesnouvelleclause46.french.pdf": {
+      "sha256": "734962f9cc5e6648b2f1a7194787ed59014db705616ddf1105638254f29dfb1e",
+      "size": 15728,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/Comparison Table _PBF Forms_ former PSS Forms equivalent.pdf": {
+      "sha256": "0a1361789a7512a6a7f830a3f1076f6674329c55d48d1a29a55c41d81cfcddf6",
+      "size": 106686,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/PBF-7.docx": {
+      "sha256": "4235a405527ff5cfa93d3b4ab86e3ef5260657d2b98e26aef096a09e7f8ccbcf",
+      "size": 28563,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/Quick User Guide for the compilation of the ESA.pdf": {
+      "sha256": "57f8ce9d9a6d549976823eb1f19a3b4d6aeeb72c6415abe788a720669239a139",
+      "size": 209765,
+      "status": "indexed",
+      "chunks": 23
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/co-funded_Model_ Contract_ Template_2025 -  EN.docx": {
+      "sha256": "688548f0c8078d421627f4c142f252c076e90c9aed33b26c0e03dd11bddf2c11",
+      "size": 269292,
+      "status": "indexed",
+      "chunks": 95
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/co-funded_Model_ Contract_ Template_2025 - FR.docx": {
+      "sha256": "1b433aaff4cc6308a0ee5e7588b92525b6e699a4b977b37e040578817f3010ce",
+      "size": 262363,
+      "status": "indexed",
+      "chunks": 110
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/Standard Model_Contract _Template _2025 - EN.docx": {
+      "sha256": "dd193b3ca6ae35add92b3602cd11bc4c1de7bb6de87c10c2c1c51bb050cab132",
+      "size": 256288,
+      "status": "indexed",
+      "chunks": 101
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/Standard Model_Contract _Template _2025 - FR.docx": {
+      "sha256": "77412f486f852b2efccf85431342b225d897f08033f32c393c2afcbed0e8324a",
+      "size": 256570,
+      "status": "indexed",
+      "chunks": 118
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/STANDARD Proposal_Template_2025 - EN.docx": {
+      "sha256": "e8f84a35ce6c6388b9e59eb81d9a2fc79e8ec5a9c74eddf5ec843162eec2bb5b",
+      "size": 152020,
+      "status": "indexed",
+      "chunks": 43
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/STANDARD Proposal_Template_2025 - FR.docx": {
+      "sha256": "9043f9e0f476dfdb5ed69f8133f7e017ca2c1e0c1b26626f3e59d13a79b4e187",
+      "size": 151182,
+      "status": "indexed",
+      "chunks": 51
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/Tender_Conditions_for_ESATenderActions_with_Proposal Template_2025 - EN.docx": {
+      "sha256": "882df1fcf0ec926f8152fcb412c6858ebf68408df122fc945688bde1417b88ec",
+      "size": 90374,
+      "status": "indexed",
+      "chunks": 24
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/Tender_Conditions_for_ESATenderActions_with_Proposal Template_2025 - FR.docx": {
+      "sha256": "435844b8909042ec4bfc79d7b62d0e273313ad4f6d0119a180ff069e7ba064b5",
+      "size": 92287,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/Tender_Conditions_for_ESATenderActions_without Proposal Template_2025 - EN.docx": {
+      "sha256": "6d10d7e8c7cbbed12581d08cd2058f8556257c003d142590a86818f8d6ed109c",
+      "size": 131748,
+      "status": "indexed",
+      "chunks": 59
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Standard Tender Action Templates — English and French/Tender_Conditions_for_ESATenderActions_without Proposal Template_2025 - FR.docx": {
+      "sha256": "9b344c6843e7234680f0aec9ecbd68174e1bbbd977e99db3d8ef5ff9cb4bac8b",
+      "size": 136781,
+      "status": "indexed",
+      "chunks": 70
     }
   },
   "report": {
-    "discoveredFiles": 332,
-    "unchangedFiles": 312,
-    "changedFiles": 5,
-    "processedChangedFiles": 5,
+    "discoveredFiles": 380,
+    "unchangedFiles": 358,
+    "changedFiles": 4,
+    "processedChangedFiles": 49,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 4,
-    "skippedFiles": 1,
-    "copiedChunks": 17017,
-    "newChunks": 1076,
-    "totalChunks": 18093,
+    "indexedFiles": 47,
+    "skippedFiles": 2,
+    "copiedChunks": 18090,
+    "newChunks": 1852,
+    "totalChunks": 19942,
     "failures": [
       {
-        "file": "03_PROCUREMENT/EU/OJ_L_202402509_EN_TXT.pdf",
+        "file": "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "03_PROCUREMENT/ESA/Operational documents/ESA_2023-2024 complete bulletin.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
