@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "eb4fb4533fe8685aaa7997a85f02c553cec2775d",
-  "createdAt": "2026-08-18T13:46:32.539Z",
+  "createdAt": "2026-08-18T13:48:41.940Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 18216,
+  "totalChunks": 18346,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 21,
       "bytes": 29161
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 130,
+      "bytes": 231637
     }
   ],
   "sources": {
@@ -2089,20 +2094,50 @@
       "size": 171561,
       "status": "indexed",
       "chunks": 16
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/admin-ipol-work-2017-001e.pdf": {
+      "sha256": "07827cc1db4c5d41db01fd1b6003cfddf821fe524194356fc6b69606affcb86f",
+      "size": 103403,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/CSR Code of Conduct for esa-star Publication.pdf": {
+      "sha256": "f467420b088eaf4cdf3397a25024e2c28c0a4312d2d3640484cd10c79ea768b0",
+      "size": 115114,
+      "status": "indexed",
+      "chunks": 14
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/ESA Contracts Privacy Notice_september2023.pdf": {
+      "sha256": "11229ddccf46300d5cd9c8c4424c27fce028688c0fa05d8795178ce815dc6214",
+      "size": 233736,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/ESA ESA_ADMIN_IPOL-LEGI(2021).pdf": {
+      "sha256": "b902f1b904da3262181c457f24b212590fdc720db97e419dd3daf9faf160031f",
+      "size": 610515,
+      "status": "indexed",
+      "chunks": 50
+    },
+    "03_PROCUREMENT/ESA/Operational documents/ESA_SUPPLIER_COMPLIANCE/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf": {
+      "sha256": "6c8cf52dbd7abc7125d565808da6609983f30578ec87a46966d6026cda5c3dc3",
+      "size": 383110,
+      "status": "indexed",
+      "chunks": 49
     }
   },
   "report": {
     "discoveredFiles": 380,
     "unchangedFiles": 315,
     "changedFiles": 49,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 39,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 34,
     "deletedFiles": [],
-    "indexedFiles": 8,
+    "indexedFiles": 13,
     "skippedFiles": 2,
     "copiedChunks": 18090,
-    "newChunks": 126,
-    "totalChunks": 18216,
+    "newChunks": 256,
+    "totalChunks": 18346,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf",
