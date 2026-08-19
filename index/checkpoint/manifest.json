@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "8b76e8bfdf2a1988bc8b6e3bb3b1cec177d25ca5",
-  "createdAt": "2026-08-19T13:32:27.956Z",
+  "createdAt": "2026-08-19T13:34:26.048Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 20856,
+  "totalChunks": 21020,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 7561,
       "bytes": 11624152
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 164,
+      "bytes": 247824
     }
   ],
   "sources": {
@@ -2480,20 +2485,50 @@
       "size": 437654,
       "status": "indexed",
       "chunks": 3
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/annual-list-of-specific-contracts-2025.pdf": {
+      "sha256": "c96dade23cb855b626daa3a77fc02c0b7d3a6c88240e2ea3ea27a867d53f8ae0",
+      "size": 149249,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/CELEX_52019XC0508(01)_EN_TXT.pdf": {
+      "sha256": "44a9cf2611e4fc7c39e5db7bd7634da67d0e7916da14ae00db614daacd5fd318",
+      "size": 573756,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/general-conditions-for-low-value-contracts.pdf": {
+      "sha256": "781344754dbc7d6e833dff6fa6289182dfb816e76a277cbbb886febec5b60e13",
+      "size": 311921,
+      "status": "indexed",
+      "chunks": 56
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/guide-sos_en.pdf": {
+      "sha256": "22180d6260a29fd7a7fc2e4fe01ccaebb68b96d53f8a3c7663d9e08b3a884b64",
+      "size": 90838,
+      "status": "indexed",
+      "chunks": 55
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/privacy-statement.pdf": {
+      "sha256": "17a3a981102f1b30e7fc961cdf971046656baeb7d114dea42f631c992a077043",
+      "size": 127873,
+      "status": "indexed",
+      "chunks": 9
     }
   },
   "report": {
     "discoveredFiles": 414,
     "unchangedFiles": 384,
     "changedFiles": 12,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 7,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 2,
     "deletedFiles": [],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 20459,
-    "newChunks": 397,
-    "totalChunks": 20856,
+    "newChunks": 561,
+    "totalChunks": 21020,
     "failures": []
   }
 }
