@@ -2,8 +2,8 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "eb4fb4533fe8685aaa7997a85f02c553cec2775d",
-  "createdAt": "2026-08-18T14:11:47.780Z",
+  "buildCommit": "43472be7d90e0c86cb32bfbbe054cf43ad1e1ecb",
+  "createdAt": "2026-08-18T15:07:12.642Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
@@ -11,58 +11,33 @@
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 13327,
-      "bytes": 20971134
+      "chunks": 13295,
+      "bytes": 20971491
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 4868,
-      "bytes": 7430608
+      "chunks": 5812,
+      "bytes": 9015908
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 21,
-      "bytes": 29161
+      "chunks": 341,
+      "bytes": 512952
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 130,
-      "bytes": 231637
+      "chunks": 351,
+      "bytes": 518137
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 152,
-      "bytes": 234385
+      "chunks": 142,
+      "bytes": 207387
     },
     {
       "file": "rag-index-0006.ndjson",
-      "chunks": 270,
-      "bytes": 413973
-    },
-    {
-      "file": "rag-index-0007.ndjson",
-      "chunks": 382,
-      "bytes": 599878
-    },
-    {
-      "file": "rag-index-0008.ndjson",
-      "chunks": 61,
-      "bytes": 95153
-    },
-    {
-      "file": "rag-index-0009.ndjson",
-      "chunks": 127,
-      "bytes": 203092
-    },
-    {
-      "file": "rag-index-0010.ndjson",
-      "chunks": 423,
-      "bytes": 706638
-    },
-    {
-      "file": "rag-index-0011.ndjson",
-      "chunks": 181,
-      "bytes": 306273
+      "chunks": 1,
+      "bytes": 802
     }
   ],
   "sources": {
@@ -84,53 +59,11 @@
       "status": "indexed",
       "chunks": 2
     },
-    "01_POLICY/ESA/eli_dec_2024_1542_oj_EN_TXT.pdf": {
-      "sha256": "79fc2fa43137db2754a21ee4de2bc75a93d10655e6694be29f42332357d2d2b5",
-      "size": 876645,
-      "status": "indexed",
-      "chunks": 3
-    },
-    "01_POLICY/ESA/ESA_Convention_SP-1344_EN.pdf": {
-      "sha256": "3dd5c09a9e229294a57a0364591e2ef88f574bd53d7b6cfe8dd963911e2ed441",
-      "size": 1010228,
-      "status": "indexed",
-      "chunks": 87
-    },
-    "01_POLICY/ESA/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf": {
-      "sha256": "3a360ea84f46bd502bddd447638f1a71a65ab8699ecb4357261b5f51f89169e3",
-      "size": 719607,
-      "status": "indexed",
-      "chunks": 49
-    },
-    "01_POLICY/ESA/ESA_REG_004,rev.2_EN.pdf": {
-      "sha256": "110c4b44f1be0997a3f2765f9951ae8a0959d94eb7f828a7b7e7a34d98b80105",
-      "size": 513420,
-      "status": "indexed",
-      "chunks": 166
-    },
     "01_POLICY/ESA/ESA_REG_007_rev_14_EN.pdf": {
       "sha256": "fb073623b01eccc5297d1004b9df64f6be385805c9f6febad96a49b70f499c64",
       "size": 1060346,
       "status": "indexed",
       "chunks": 310
-    },
-    "01_POLICY/ESA/ESA_REG_009_Geo_return_coeff_(extranet).pdf": {
-      "sha256": "407c7e52c4f0507d7a8a34cf5cfa9ed718b6621ae36c646e539462c9927f4d98",
-      "size": 228898,
-      "status": "indexed",
-      "chunks": 13
-    },
-    "01_POLICY/ESA/ESA-ADMIN-IPOL-LEGI(2021)1_EN_final.pdf": {
-      "sha256": "7a9cbae4896e1599ee5c093c35e9d4046996841dfdcc57a04ab062a087b56116",
-      "size": 175686,
-      "status": "indexed",
-      "chunks": 26
-    },
-    "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2019)1.pdf": {
-      "sha256": "310e76ddafca56d45c671a3acd083a05ed6d3e5132f85db3d6d5d3c65d56539b",
-      "size": 327522,
-      "status": "indexed",
-      "chunks": 16
     },
     "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2023)1_EN.pdf": {
       "sha256": "e874bb47eb7242a2b22795134353b968078c78240b1f23c78fe7ee40d12f1774",
@@ -138,58 +71,9 @@
       "status": "indexed",
       "chunks": 40
     },
-    "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf": {
-      "sha256": "188a996b21be24a5056e28ab6b60792a43ff730ba6be32f8b9b54c3690fef3d2",
-      "size": 4009917,
-      "status": "skipped",
-      "reason": "Worker stopped with code null, signal SIGABRT",
-      "chunks": 0
-    },
-    "01_POLICY/ESA/ESA-REG-001_rev6_EN.pdf": {
-      "sha256": "8510f92e2b07e8d28f00ac38734d2628b9d92329d81d7c9b60e11f28fdf059eb",
-      "size": 742232,
-      "status": "indexed",
-      "chunks": 168
-    },
-    "01_POLICY/ESA/ESA-REG-002_rev4_EN.pdf": {
-      "sha256": "f6a3c680c27c23b8bc852cbfe6f441dd98485054973349d1fbccc94685846e19",
-      "size": 695464,
-      "status": "indexed",
-      "chunks": 165
-    },
-    "01_POLICY/ESA/ESA-REG-005,rev.3_en.pdf": {
-      "sha256": "1dd14e5d0cb652b558c171a56f6494cd0f7e1c790c8e28668e8b84e6577f313d",
-      "size": 226074,
-      "status": "indexed",
-      "chunks": 67
-    },
-    "01_POLICY/ESA/ESA-REG-006-EN.pdf": {
-      "sha256": "fbfe768f1e65c77a450b782746fb69ad269fb2197f0ae5a1330340fa72b5c995",
-      "size": 112569,
-      "status": "indexed",
-      "chunks": 9
-    },
-    "01_POLICY/ESA/ESA-REG-008-EN.pdf": {
-      "sha256": "dd03adcf3f22a0ed3a653f4a9d1b2f67ba62ce983e290e5b8e8cedf0c9e630a3",
-      "size": 213486,
-      "status": "indexed",
-      "chunks": 47
-    },
     "01_POLICY/ESA/Index _01Policy_ESA.docx": {
-      "sha256": "a0ed591c615dbdb29f7f7114de2ac570d1fa8af73e87893cc6b42d54a6548546",
-      "size": 15717,
-      "status": "indexed",
-      "chunks": 3
-    },
-    "01_POLICY/ESA/OJ_L_202401543_EN_TXT.pdf": {
-      "sha256": "73519f61cfdb0f86f68d6a44f7a7aa06e163e868a60520986ed9f8f162ef271d",
-      "size": 1023103,
-      "status": "indexed",
-      "chunks": 15
-    },
-    "01_POLICY/ESA/OJ_L_202402920_EN_TXT.pdf": {
-      "sha256": "b4e6fc8ec8537cfd6e7673663d187aecca48c7f32fab33f19379d73755ecf443",
-      "size": 753417,
+      "sha256": "87c647f19f2ce2b5f4330478b8d2cdd4c83d09db7ec6e7753915d538bb40fd7e",
+      "size": 14427,
       "status": "indexed",
       "chunks": 1
     },
@@ -2074,35 +1958,11 @@
       "reason": "Worker stopped with code null, signal SIGABRT",
       "chunks": 0
     },
-    "01_POLICY/ESA/Annex 1 to ESA.C(2022)104.pdf": {
-      "sha256": "4626d049acd6b98d0712515a736be6468aee4b55345a1ff5c2bab7557f0fd50f",
-      "size": 170852,
-      "status": "indexed",
-      "chunks": 16
-    },
-    "01_POLICY/ESA/BEST PRACTICES ESA IPC 275 65 rev 2 Final DG.pdf": {
-      "sha256": "30c205a948afd8b1f25e0315932b3ad8dccebf56e863968c3ff4777a547a6eaa",
-      "size": 228523,
-      "status": "indexed",
-      "chunks": 75
-    },
-    "01_POLICY/ESA/ESA - Procurement policy on fair access for SMEs - the C1-C4 Clauses.pdf": {
-      "sha256": "c8098146061736452e2764e1af0213d94a0199e41121ae1e9596096709a6a82b",
-      "size": 78564,
-      "status": "indexed",
-      "chunks": 9
-    },
-    "01_POLICY/ESA/ESA-penalty-policy.pdf": {
-      "sha256": "9e21f957557f6390f5786b06431c44d1831573db26db58a41506fd9c0cc65918",
-      "size": 81989,
-      "status": "indexed",
-      "chunks": 2
-    },
     "03_PROCUREMENT/ESA/Index _03Procurement_ESA.docx": {
-      "sha256": "915f4d2e912411ded30bcab5e4dc15b516483b2fbab99af813e5685dd279cdd8",
-      "size": 16216,
+      "sha256": "73b00ae63192ab104762fbd037b8b7f70040716d41aa3126710f9c80429fc2fd",
+      "size": 17614,
       "status": "indexed",
-      "chunks": 2
+      "chunks": 4
     },
     "03_PROCUREMENT/ESA/Operational documents/ESA Protective Markings_31102024_v1.pdf": {
       "sha256": "19e7f765450ea170ed6da6fc333012cc9a2c71fe59ce07fe7fbbe18f0ef46218",
@@ -2363,27 +2223,158 @@
       "size": 136781,
       "status": "indexed",
       "chunks": 70
+    },
+    "03_PROCUREMENT/ESA/Annex 1 to ESA.C(2022)104.pdf": {
+      "sha256": "4626d049acd6b98d0712515a736be6468aee4b55345a1ff5c2bab7557f0fd50f",
+      "size": 170852,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/ESA/BEST PRACTICES ESA IPC 275 65 rev 2 Final DG.pdf": {
+      "sha256": "30c205a948afd8b1f25e0315932b3ad8dccebf56e863968c3ff4777a547a6eaa",
+      "size": 228523,
+      "status": "indexed",
+      "chunks": 75
+    },
+    "03_PROCUREMENT/ESA/eli_dec_2024_1542_oj_EN_TXT.pdf": {
+      "sha256": "79fc2fa43137db2754a21ee4de2bc75a93d10655e6694be29f42332357d2d2b5",
+      "size": 876645,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/ESA/ESA - Procurement policy on fair access for SMEs - the C1-C4 Clauses.pdf": {
+      "sha256": "c8098146061736452e2764e1af0213d94a0199e41121ae1e9596096709a6a82b",
+      "size": 78564,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/ESA/ESA_Convention_SP-1344_EN.pdf": {
+      "sha256": "3dd5c09a9e229294a57a0364591e2ef88f574bd53d7b6cfe8dd963911e2ed441",
+      "size": 1010228,
+      "status": "indexed",
+      "chunks": 87
+    },
+    "03_PROCUREMENT/ESA/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf": {
+      "sha256": "3a360ea84f46bd502bddd447638f1a71a65ab8699ecb4357261b5f51f89169e3",
+      "size": 719607,
+      "status": "indexed",
+      "chunks": 49
+    },
+    "03_PROCUREMENT/ESA/ESA_REG_004,rev.2_EN.pdf": {
+      "sha256": "110c4b44f1be0997a3f2765f9951ae8a0959d94eb7f828a7b7e7a34d98b80105",
+      "size": 513420,
+      "status": "indexed",
+      "chunks": 166
+    },
+    "03_PROCUREMENT/ESA/ESA_REG_009_Geo_return_coeff_(extranet).pdf": {
+      "sha256": "407c7e52c4f0507d7a8a34cf5cfa9ed718b6621ae36c646e539462c9927f4d98",
+      "size": 228898,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/ESA/ESA-ADMIN-IPOL-LEGI(2021)1_EN_final.pdf": {
+      "sha256": "7a9cbae4896e1599ee5c093c35e9d4046996841dfdcc57a04ab062a087b56116",
+      "size": 175686,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "03_PROCUREMENT/ESA/ESA-ADMIN-IPOL-WORK(2019)1.pdf": {
+      "sha256": "310e76ddafca56d45c671a3acd083a05ed6d3e5132f85db3d6d5d3c65d56539b",
+      "size": 327522,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/ESA/ESA-penalty-policy.pdf": {
+      "sha256": "9e21f957557f6390f5786b06431c44d1831573db26db58a41506fd9c0cc65918",
+      "size": 81989,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-001_rev5_EN.pdf": {
+      "sha256": "188a996b21be24a5056e28ab6b60792a43ff730ba6be32f8b9b54c3690fef3d2",
+      "size": 4009917,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-001_rev6_EN.pdf": {
+      "sha256": "8510f92e2b07e8d28f00ac38734d2628b9d92329d81d7c9b60e11f28fdf059eb",
+      "size": 742232,
+      "status": "indexed",
+      "chunks": 168
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-002_rev4_EN.pdf": {
+      "sha256": "f6a3c680c27c23b8bc852cbfe6f441dd98485054973349d1fbccc94685846e19",
+      "size": 695464,
+      "status": "indexed",
+      "chunks": 165
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-005,rev.3_en.pdf": {
+      "sha256": "1dd14e5d0cb652b558c171a56f6494cd0f7e1c790c8e28668e8b84e6577f313d",
+      "size": 226074,
+      "status": "indexed",
+      "chunks": 67
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-006-EN.pdf": {
+      "sha256": "fbfe768f1e65c77a450b782746fb69ad269fb2197f0ae5a1330340fa72b5c995",
+      "size": 112569,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/ESA/ESA-REG-008-EN.pdf": {
+      "sha256": "dd03adcf3f22a0ed3a653f4a9d1b2f67ba62ce983e290e5b8e8cedf0c9e630a3",
+      "size": 213486,
+      "status": "indexed",
+      "chunks": 47
+    },
+    "03_PROCUREMENT/ESA/OJ_L_202401543_EN_TXT.pdf": {
+      "sha256": "73519f61cfdb0f86f68d6a44f7a7aa06e163e868a60520986ed9f8f162ef271d",
+      "size": 1023103,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "03_PROCUREMENT/ESA/OJ_L_202402920_EN_TXT.pdf": {
+      "sha256": "b4e6fc8ec8537cfd6e7673663d187aecca48c7f32fab33f19379d73755ecf443",
+      "size": 753417,
+      "status": "indexed",
+      "chunks": 1
     }
   },
   "report": {
     "discoveredFiles": 380,
-    "unchangedFiles": 358,
-    "changedFiles": 4,
-    "processedChangedFiles": 49,
+    "unchangedFiles": 342,
+    "changedFiles": 21,
+    "processedChangedFiles": 21,
     "remainingChangedFiles": 0,
-    "deletedFiles": [],
-    "indexedFiles": 47,
-    "skippedFiles": 2,
-    "copiedChunks": 18090,
-    "newChunks": 1852,
+    "deletedFiles": [
+      "01_POLICY/ESA/eli_dec_2024_1542_oj_EN_TXT.pdf",
+      "01_POLICY/ESA/ESA_Convention_SP-1344_EN.pdf",
+      "01_POLICY/ESA/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf",
+      "01_POLICY/ESA/ESA_REG_004,rev.2_EN.pdf",
+      "01_POLICY/ESA/ESA_REG_009_Geo_return_coeff_(extranet).pdf",
+      "01_POLICY/ESA/ESA-ADMIN-IPOL-LEGI(2021)1_EN_final.pdf",
+      "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2019)1.pdf",
+      "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
+      "01_POLICY/ESA/ESA-REG-001_rev6_EN.pdf",
+      "01_POLICY/ESA/ESA-REG-002_rev4_EN.pdf",
+      "01_POLICY/ESA/ESA-REG-005,rev.3_en.pdf",
+      "01_POLICY/ESA/ESA-REG-006-EN.pdf",
+      "01_POLICY/ESA/ESA-REG-008-EN.pdf",
+      "01_POLICY/ESA/OJ_L_202401543_EN_TXT.pdf",
+      "01_POLICY/ESA/OJ_L_202402920_EN_TXT.pdf",
+      "01_POLICY/ESA/Annex 1 to ESA.C(2022)104.pdf",
+      "01_POLICY/ESA/BEST PRACTICES ESA IPC 275 65 rev 2 Final DG.pdf",
+      "01_POLICY/ESA/ESA - Procurement policy on fair access for SMEs - the C1-C4 Clauses.pdf",
+      "01_POLICY/ESA/ESA-penalty-policy.pdf"
+    ],
+    "indexedFiles": 20,
+    "skippedFiles": 1,
+    "copiedChunks": 19003,
+    "newChunks": 939,
     "totalChunks": 19942,
     "failures": [
       {
-        "file": "03_PROCUREMENT/ESA/Operational documents/ESA_0726 complete bulletin.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      },
-      {
-        "file": "03_PROCUREMENT/ESA/Operational documents/ESA_2023-2024 complete bulletin.pdf",
+        "file": "03_PROCUREMENT/ESA/ESA-REG-001_rev5_EN.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
