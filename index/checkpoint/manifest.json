@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b192c45361ab373b23a95ce569609f5a3af80d40",
-  "createdAt": "2026-08-19T10:33:58.013Z",
+  "createdAt": "2026-08-19T10:35:48.521Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 20129,
+  "totalChunks": 20181,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 110,
       "bytes": 168069
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 52,
+      "bytes": 77530
     }
   ],
   "sources": {
@@ -2383,20 +2388,50 @@
       "size": 428065,
       "status": "indexed",
       "chunks": 5
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2015.pdf": {
+      "sha256": "2fae1e09dd99e181d95bc3bb200ac1dbbd9ddb6eb9613b67b076f5f8e0b61e48",
+      "size": 100706,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2016.pdf": {
+      "sha256": "29db5daedfa71012e5a586cacb205f61641e23a603d7382233474207b0590d30",
+      "size": 89125,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2017.pdf": {
+      "sha256": "ef438938e8d25fbc897def2ae580a39b0fee3d9cb5c2e86e442b93eb0ff29f07",
+      "size": 312897,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2018.pdf": {
+      "sha256": "c87381fcba9bacbc97b5d3c7e881dcff5eafdef7be822de4703ab26e646c753f",
+      "size": 101277,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2019.pdf": {
+      "sha256": "71d891655c2d3f9457eb93a456086f8740895f98bd45b33cc15e20e77ca9d5ab",
+      "size": 118447,
+      "status": "indexed",
+      "chunks": 16
     }
   },
   "report": {
     "discoveredFiles": 402,
     "unchangedFiles": 362,
     "changedFiles": 22,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 12,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 7,
     "deletedFiles": [],
-    "indexedFiles": 10,
+    "indexedFiles": 15,
     "skippedFiles": 0,
     "copiedChunks": 19942,
-    "newChunks": 187,
-    "totalChunks": 20129,
+    "newChunks": 239,
+    "totalChunks": 20181,
     "failures": []
   }
 }
