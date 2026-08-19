@@ -2,12 +2,12 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "43472be7d90e0c86cb32bfbbe054cf43ad1e1ecb",
-  "createdAt": "2026-08-18T15:07:12.642Z",
+  "buildCommit": "b192c45361ab373b23a95ce569609f5a3af80d40",
+  "createdAt": "2026-08-19T10:39:28.813Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 19942,
+  "totalChunks": 20459,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -16,28 +16,28 @@
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 5812,
-      "bytes": 9015908
+      "chunks": 6724,
+      "bytes": 10367651
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 341,
-      "bytes": 512952
+      "chunks": 110,
+      "bytes": 168069
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 351,
-      "bytes": 518137
+      "chunks": 52,
+      "bytes": 77530
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 142,
-      "bytes": 207387
+      "chunks": 196,
+      "bytes": 294771
     },
     {
       "file": "rag-index-0006.ndjson",
-      "chunks": 1,
-      "bytes": 802
+      "chunks": 82,
+      "bytes": 126668
     }
   ],
   "sources": {
@@ -2338,45 +2338,152 @@
       "size": 753417,
       "status": "indexed",
       "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/CELEX_32019D1963_EN_TXT.pdf": {
+      "sha256": "18a10d86321b5ed312e97e283e6377ad18d52462a162accc936edfa8bdee279b",
+      "size": 1163076,
+      "status": "indexed",
+      "chunks": 72
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/2022_euspa_contractors_list_-_corrigendum.pdf": {
+      "sha256": "4513d4bc2053feb47f9e6594c19e0041e5bb5fbbfebd3f151c5048861ad9a251",
+      "size": 162163,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-1.pdf": {
+      "sha256": "4595a1f0729be358dc865970ff71145038e0edf6a1497a6184e1ec9e8e8a47d7",
+      "size": 196800,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-2.pdf": {
+      "sha256": "1a20584a608880a0d5e8ed74270790bb86863203a76cbd5756534af7875e1732",
+      "size": 198457,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-3.pdf": {
+      "sha256": "95a23b2eff9d6ec3e2589bef4ca9a91d3700ecf110615a3e01c186839962fe55",
+      "size": 203591,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/EUSPA List of contractors 2023_3.pdf": {
+      "sha256": "97bd48fde2fc462c494bff1fea7447d7fd64f002606e4e735ea74a69072f6f58",
+      "size": 3582479,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2020.pdf": {
+      "sha256": "6d316a193ce19799cadc2c32e0a1a238127787f4e2cdd37eae58065120145ee9",
+      "size": 130577,
+      "status": "indexed",
+      "chunks": 20
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2021.pdf": {
+      "sha256": "10411ec9813ea750fc1c2f29f5fb2f0c8d302769757547ab09ce4db9e26f6076",
+      "size": 523433,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2022.pdf": {
+      "sha256": "4ce109b5d942c1d3a12771e90edfaea76da1af0731f0a5c6f8da263638c6eadd",
+      "size": 682682,
+      "status": "indexed",
+      "chunks": 24
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/GSA contractors list 2014.pdf": {
+      "sha256": "020047c77b7272a761229c3fce8aeda216114a86fcea9e2b0ed2b133e6f9cc7f",
+      "size": 428065,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2015.pdf": {
+      "sha256": "2fae1e09dd99e181d95bc3bb200ac1dbbd9ddb6eb9613b67b076f5f8e0b61e48",
+      "size": 100706,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2016.pdf": {
+      "sha256": "29db5daedfa71012e5a586cacb205f61641e23a603d7382233474207b0590d30",
+      "size": 89125,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2017.pdf": {
+      "sha256": "ef438938e8d25fbc897def2ae580a39b0fee3d9cb5c2e86e442b93eb0ff29f07",
+      "size": 312897,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2018.pdf": {
+      "sha256": "c87381fcba9bacbc97b5d3c7e881dcff5eafdef7be822de4703ab26e646c753f",
+      "size": 101277,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2019.pdf": {
+      "sha256": "71d891655c2d3f9457eb93a456086f8740895f98bd45b33cc15e20e77ca9d5ab",
+      "size": 118447,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/EUSPA/gsa_financial_regulation_2019_signed.pdf": {
+      "sha256": "f9f2c269823c93cd70622dbfc89d15ebc7fc947e701447cc0902fd944fdb4968",
+      "size": 678174,
+      "status": "indexed",
+      "chunks": 97
+    },
+    "03_PROCUREMENT/EUSPA/gsa_succeeded_by_euspa.pdf": {
+      "sha256": "1e5de2c97de465bf2273cd16debbcf7e93f156ee55462f70a2913b126f2fe39e",
+      "size": 62271,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/EUSPA/Index _03_Procurement_EUSPA.docx": {
+      "sha256": "4de31c4989337604633446713db50c195a4abb96928e7483335d007f9ffe0b4a",
+      "size": 14666,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/Operational documents/euspa_purchase_orders_general_conditions.pdf": {
+      "sha256": "c9e050c3e1608f31d9e1a02d9d5bd9aad52ca031ccb581d710309a12a84391c2",
+      "size": 276399,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "03_PROCUREMENT/EUSPA/Operational documents/general_conditions_applicable_to_purchase_orders_0.pdf": {
+      "sha256": "8f5686029d5f4cafa80c7d4bcfef647490e94dfbc7b01431307a3912ef699b4f",
+      "size": 802193,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "03_PROCUREMENT/EUSPA/Operational documents/General_Conditions_applicable_to_Purchase_Orders_2025.pdf": {
+      "sha256": "f8f22eceae6a5875441d12fe66b40e6f650cd6c945d7c7390092dce5bf31b081",
+      "size": 360992,
+      "status": "indexed",
+      "chunks": 65
+    },
+    "03_PROCUREMENT/EUSPA/Operational documents/privacy_statement_relating_to_euspa_procurement_procedures_grants_prizes_and_selection_of_experts.pdf": {
+      "sha256": "653cd9b35ababea45dd9347a60bb003cf1d9193a8aa438b4cdac5618dfce3234",
+      "size": 281574,
+      "status": "indexed",
+      "chunks": 17
     }
   },
   "report": {
-    "discoveredFiles": 380,
-    "unchangedFiles": 342,
-    "changedFiles": 21,
-    "processedChangedFiles": 21,
+    "discoveredFiles": 402,
+    "unchangedFiles": 362,
+    "changedFiles": 22,
+    "processedChangedFiles": 22,
     "remainingChangedFiles": 0,
-    "deletedFiles": [
-      "01_POLICY/ESA/eli_dec_2024_1542_oj_EN_TXT.pdf",
-      "01_POLICY/ESA/ESA_Convention_SP-1344_EN.pdf",
-      "01_POLICY/ESA/ESA_Principles_of_PDP_Rules_of_Procedure_for_DPSA_and_Policy.pdf",
-      "01_POLICY/ESA/ESA_REG_004,rev.2_EN.pdf",
-      "01_POLICY/ESA/ESA_REG_009_Geo_return_coeff_(extranet).pdf",
-      "01_POLICY/ESA/ESA-ADMIN-IPOL-LEGI(2021)1_EN_final.pdf",
-      "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2019)1.pdf",
-      "01_POLICY/ESA/ESA-REG-001_rev5_EN.pdf",
-      "01_POLICY/ESA/ESA-REG-001_rev6_EN.pdf",
-      "01_POLICY/ESA/ESA-REG-002_rev4_EN.pdf",
-      "01_POLICY/ESA/ESA-REG-005,rev.3_en.pdf",
-      "01_POLICY/ESA/ESA-REG-006-EN.pdf",
-      "01_POLICY/ESA/ESA-REG-008-EN.pdf",
-      "01_POLICY/ESA/OJ_L_202401543_EN_TXT.pdf",
-      "01_POLICY/ESA/OJ_L_202402920_EN_TXT.pdf",
-      "01_POLICY/ESA/Annex 1 to ESA.C(2022)104.pdf",
-      "01_POLICY/ESA/BEST PRACTICES ESA IPC 275 65 rev 2 Final DG.pdf",
-      "01_POLICY/ESA/ESA - Procurement policy on fair access for SMEs - the C1-C4 Clauses.pdf",
-      "01_POLICY/ESA/ESA-penalty-policy.pdf"
-    ],
-    "indexedFiles": 20,
-    "skippedFiles": 1,
-    "copiedChunks": 19003,
-    "newChunks": 939,
-    "totalChunks": 19942,
-    "failures": [
-      {
-        "file": "03_PROCUREMENT/ESA/ESA-REG-001_rev5_EN.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      }
-    ]
+    "deletedFiles": [],
+    "indexedFiles": 22,
+    "skippedFiles": 0,
+    "copiedChunks": 19942,
+    "newChunks": 517,
+    "totalChunks": 20459,
+    "failures": []
   }
 }
