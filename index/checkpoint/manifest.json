@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "b192c45361ab373b23a95ce569609f5a3af80d40",
-  "createdAt": "2026-08-19T10:35:48.521Z",
+  "createdAt": "2026-08-19T10:37:44.713Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 20181,
+  "totalChunks": 20377,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 52,
       "bytes": 77530
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 196,
+      "bytes": 294771
     }
   ],
   "sources": {
@@ -2418,20 +2423,50 @@
       "size": 118447,
       "status": "indexed",
       "chunks": 16
+    },
+    "03_PROCUREMENT/EUSPA/gsa_financial_regulation_2019_signed.pdf": {
+      "sha256": "f9f2c269823c93cd70622dbfc89d15ebc7fc947e701447cc0902fd944fdb4968",
+      "size": 678174,
+      "status": "indexed",
+      "chunks": 97
+    },
+    "03_PROCUREMENT/EUSPA/gsa_succeeded_by_euspa.pdf": {
+      "sha256": "1e5de2c97de465bf2273cd16debbcf7e93f156ee55462f70a2913b126f2fe39e",
+      "size": 62271,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/EUSPA/Index _03_Procurement_EUSPA.docx": {
+      "sha256": "4de31c4989337604633446713db50c195a4abb96928e7483335d007f9ffe0b4a",
+      "size": 14666,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/Operational documents/euspa_purchase_orders_general_conditions.pdf": {
+      "sha256": "c9e050c3e1608f31d9e1a02d9d5bd9aad52ca031ccb581d710309a12a84391c2",
+      "size": 276399,
+      "status": "indexed",
+      "chunks": 48
+    },
+    "03_PROCUREMENT/EUSPA/Operational documents/general_conditions_applicable_to_purchase_orders_0.pdf": {
+      "sha256": "8f5686029d5f4cafa80c7d4bcfef647490e94dfbc7b01431307a3912ef699b4f",
+      "size": 802193,
+      "status": "indexed",
+      "chunks": 48
     }
   },
   "report": {
     "discoveredFiles": 402,
     "unchangedFiles": 362,
     "changedFiles": 22,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 7,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 2,
     "deletedFiles": [],
-    "indexedFiles": 15,
+    "indexedFiles": 20,
     "skippedFiles": 0,
     "copiedChunks": 19942,
-    "newChunks": 239,
-    "totalChunks": 20181,
+    "newChunks": 435,
+    "totalChunks": 20377,
     "failures": []
   }
 }
