@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f16698240f5f0080c6cdd779f135244e8405f1d",
-  "createdAt": "2026-08-20T09:52:38.157Z",
+  "createdAt": "2026-08-20T09:56:35.666Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 21670,
+  "totalChunks": 22149,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 8380,
       "bytes": 12912871
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 479,
+      "bytes": 750680
     }
   ],
   "sources": {
@@ -2522,14 +2527,44 @@
       "size": 2462196,
       "status": "indexed",
       "chunks": 148
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2022_en.pdf": {
+      "sha256": "f197d086bbc73303ff4a350c87d914521f5fbf7272ac9a893ce4c97d29c12152",
+      "size": 1851904,
+      "status": "indexed",
+      "chunks": 90
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2023_annexes_final.pdf": {
+      "sha256": "91516e8b5b41e3cbc48fd8ae333b415fe5c111874076957543abad6d8b0b3017",
+      "size": 7103607,
+      "status": "indexed",
+      "chunks": 97
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2023_final.pdf": {
+      "sha256": "b818538692c29d8398a7e68eccb8007da906b8f14ff77b6ef5dc2cfdded2db2c",
+      "size": 1953131,
+      "status": "indexed",
+      "chunks": 82
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2024_annexes_final.pdf": {
+      "sha256": "83a54f3a1a23c9f6bef08e3d90384e2b711e8cec77402220f265f6e30346b844",
+      "size": 6769207,
+      "status": "indexed",
+      "chunks": 122
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2024_final.pdf": {
+      "sha256": "4b10a9dcbb9877d549422b4bf2b31bf7570b38ab7413a28289d6eb0a08170c13",
+      "size": 2162066,
+      "status": "indexed",
+      "chunks": 88
     }
   },
   "report": {
     "discoveredFiles": 452,
     "unchangedFiles": 389,
     "changedFiles": 45,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 40,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 35,
     "deletedFiles": [
       "01_POLICY/EU/Other EU agencies/Satcen/CELEX_02014D0401-20220701_EN_TXT.pdf",
       "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32014D0401_EN_TXT.pdf",
@@ -2537,11 +2572,11 @@
       "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32023D0994_EN_TXT.pdf",
       "01_POLICY/EU/Other EU agencies/Satcen/Index _01Policy_EU_Other Eu Agencies_Satcen.docx"
     ],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 20980,
-    "newChunks": 690,
-    "totalChunks": 21670,
+    "newChunks": 1169,
+    "totalChunks": 22149,
     "failures": []
   }
 }
