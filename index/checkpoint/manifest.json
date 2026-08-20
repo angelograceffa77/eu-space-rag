@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f16698240f5f0080c6cdd779f135244e8405f1d",
-  "createdAt": "2026-08-20T11:11:48.860Z",
+  "createdAt": "2026-08-20T11:13:40.863Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 22960,
+  "totalChunks": 23010,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -43,6 +43,11 @@
       "file": "rag-index-0007.ndjson",
       "chunks": 50,
       "bytes": 72266
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 50,
+      "bytes": 73788
     }
   ],
   "sources": {
@@ -2686,20 +2691,50 @@
       "size": 273581,
       "status": "indexed",
       "chunks": 4
+    },
+    "03_PROCUREMENT/EUMETSAT/eumits_user_manual.pdf": {
+      "sha256": "9e18bfeecd7b3efbc50eacd5eff5a38dbf3de4103c73ae33d036549ca30ba3d7",
+      "size": 1433750,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "03_PROCUREMENT/EUMETSAT/Index _03_Procurement_EUMETSAT.docx": {
+      "sha256": "5cd283f0bed177b378eecd4bdc272bbf4971c60b84abbadb65d737f131c7ab6d",
+      "size": 15115,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/20250218_ SatCen rules on Public Access to docs67b4b1be0389f3ab3a99a03f.pdf": {
+      "sha256": "bec4a2e81d3671d2290274d367f4b9f04e39a2ad85e003a5297c91c3c919f9b2",
+      "size": 153419,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/Index _03_Procurement_SatCen.docx": {
+      "sha256": "3239402c6c3bd2f429d946f2a7f495297f8b7cd6058271dcf5af459f822c0bac",
+      "size": 15449,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of low and medium value contracts awarded in 2020_amendment60e856d4531f52000180b132.pdf": {
+      "sha256": "0a218349ea5d09fc8f8ad091fe86616590e2cce57a90cbebe0b362a6e492105c",
+      "size": 573639,
+      "status": "indexed",
+      "chunks": 9
     }
   },
   "report": {
     "discoveredFiles": 452,
     "unchangedFiles": 409,
     "changedFiles": 25,
-    "processedChangedFiles": 30,
+    "processedChangedFiles": 35,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 29,
+    "indexedFiles": 34,
     "skippedFiles": 1,
     "copiedChunks": 20980,
-    "newChunks": 1980,
-    "totalChunks": 22960,
+    "newChunks": 2030,
+    "totalChunks": 23010,
     "failures": [
       {
         "file": "03_PROCUREMENT/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf",
