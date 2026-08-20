@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f039f00ecec9161bca683e2579e31f124698231",
-  "createdAt": "2026-08-20T13:30:24.819Z",
+  "createdAt": "2026-08-20T14:23:39.536Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 24464,
+  "totalChunks": 24794,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -43,6 +43,11 @@
       "file": "rag-index-0007.ndjson",
       "chunks": 77,
       "bytes": 118352
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 330,
+      "bytes": 526298
     }
   ],
   "sources": {
@@ -2956,20 +2961,50 @@
       "size": 451960,
       "status": "indexed",
       "chunks": 25
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI_4200-08_26_JUNE_2025.pdf": {
+      "sha256": "5e4a723310faa693cc785f60dcdb088cbeeac92bfa5dcd7b9bc28d438f725166",
+      "size": 488693,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI_4200-09_e_Award_Review_Debarment_Board_TORs-18-12-2025.pdf": {
+      "sha256": "9d3f011df5d7ee26e03dc45dc7eaa911ecfaf54fbf9f4d88da1370b9694f9edb",
+      "size": 378957,
+      "status": "indexed",
+      "chunks": 20
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI-4200-01-NSPA-Procurement-Operating-Instruction-07-2025 (2).pdf": {
+      "sha256": "21b05fac366a6c7171192ccf862d34a4c832d78a97cc4e22080789854ca1f496",
+      "size": 1239135,
+      "status": "indexed",
+      "chunks": 245
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI-4200-02.pdf": {
+      "sha256": "73480e7765241b1e9956e1840fee1f689ae65758eaada2c2ebce8bca4c8009d0",
+      "size": 527885,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI-4200-07.pdf": {
+      "sha256": "06fd2ac7d7c6652836c90fd889a648bd14f14357e98f188bb82dd20b190eba3c",
+      "size": 626720,
+      "status": "indexed",
+      "chunks": 15
     }
   },
   "report": {
     "discoveredFiles": 500,
-    "unchangedFiles": 433,
-    "changedFiles": 48,
-    "processedChangedFiles": 30,
-    "remainingChangedFiles": 18,
+    "unchangedFiles": 463,
+    "changedFiles": 18,
+    "processedChangedFiles": 35,
+    "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 30,
+    "indexedFiles": 35,
     "skippedFiles": 0,
     "copiedChunks": 23170,
-    "newChunks": 1294,
-    "totalChunks": 24464,
+    "newChunks": 1624,
+    "totalChunks": 24794,
     "failures": []
   }
 }
