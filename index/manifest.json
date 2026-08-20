@@ -2,32 +2,62 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "8b76e8bfdf2a1988bc8b6e3bb3b1cec177d25ca5",
-  "createdAt": "2026-08-19T13:36:10.947Z",
+  "buildCommit": "9f16698240f5f0080c6cdd779f135244e8405f1d",
+  "createdAt": "2026-08-20T11:18:50.864Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 21052,
+  "totalChunks": 23170,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 13295,
-      "bytes": 20971491
+      "chunks": 13290,
+      "bytes": 20969767
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 7561,
-      "bytes": 11624152
+      "chunks": 8380,
+      "bytes": 12912871
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 164,
-      "bytes": 247824
+      "chunks": 479,
+      "bytes": 750680
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 32,
-      "bytes": 49113
+      "chunks": 397,
+      "bytes": 600920
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 295,
+      "bytes": 455214
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 69,
+      "bytes": 105783
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 50,
+      "bytes": 72266
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 50,
+      "bytes": 73788
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 49,
+      "bytes": 78707
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 111,
+      "bytes": 170507
     }
   ],
   "sources": {
@@ -104,10 +134,10 @@
       "chunks": 37
     },
     "01_POLICY/EU/Commission/Index _01Policy_EU_commission.docx": {
-      "sha256": "6ff3936b126254f2210c31fd80a3d0c6fee76b2cd9acdcc3d61eda2671e3de1b",
-      "size": 14311,
+      "sha256": "c5d1c37b14fc194bc8fdfba9ca48f31073e6d9c7ca84c5a59412ef9b05683356",
+      "size": 14827,
       "status": "indexed",
-      "chunks": 2
+      "chunks": 3
     },
     "01_POLICY/EU/Commission/Legislative proposals/CELEX_52025PC0543_EN_TXT.pdf": {
       "sha256": "d9dc77fe6d026b813fcb85c8901fa4db4d5144ae6657bf3120768753b08fa55d",
@@ -576,36 +606,6 @@
       "size": 480139,
       "status": "indexed",
       "chunks": 34
-    },
-    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_02014D0401-20220701_EN_TXT.pdf": {
-      "sha256": "1059599174c3ce428a0ef55631b18061fa283524ca203f70bc87e49fc7f83436",
-      "size": 258568,
-      "status": "indexed",
-      "chunks": 28
-    },
-    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32014D0401_EN_TXT.pdf": {
-      "sha256": "86da10698a4052aff5125d3c6db395f57515401b6121d740593bea5ee6519a73",
-      "size": 382070,
-      "status": "indexed",
-      "chunks": 31
-    },
-    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32016D2112_EN_TXT.pdf": {
-      "sha256": "e533c243df6a574436f5d9b8059fb88e27861764c8f2887e6bd53e04ca996a28",
-      "size": 314838,
-      "status": "indexed",
-      "chunks": 3
-    },
-    "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32023D0994_EN_TXT.pdf": {
-      "sha256": "01fddc577da190b05c16f0181002121fe3a0dd55f7d924ad56b662a6dffd8547",
-      "size": 377340,
-      "status": "indexed",
-      "chunks": 6
-    },
-    "01_POLICY/EU/Other EU agencies/Satcen/Index _01Policy_EU_Other Eu Agencies_Satcen.docx": {
-      "sha256": "4a0081af9a23a748844883b9306e62e3336c107c87db9226729da71f863fc09e",
-      "size": 14093,
-      "status": "indexed",
-      "chunks": 1
     },
     "01_POLICY/EU/Parliament/A-5-2003-0294_EN.pdf": {
       "sha256": "4b3c04af2ff9d049ef00ec4a53a9e2c18700b4f79652dafcad0be54ea2ec2e0b",
@@ -1936,10 +1936,10 @@
       "chunks": 398
     },
     "03_PROCUREMENT/EU/Index _03_Procurement_EU.docx": {
-      "sha256": "e6538ecccbe4b036aed4827b5649993173ee37c03d4449dccb7a49e55a4e851b",
-      "size": 14077,
+      "sha256": "e19ba8753c49d6d56482dd2454599f4e1c9f8856ec149d40fe4d270801a092cc",
+      "size": 16134,
       "status": "indexed",
-      "chunks": 1
+      "chunks": 2
     },
     "03_PROCUREMENT/EU/OJ_L_202402509_EN_TXT.pdf": {
       "sha256": "ba9aa1bc841ee82c0d9f0cda47f5c1b8ffbedff51f501eb1cee05ac9bed5653e",
@@ -2532,20 +2532,284 @@
       "size": 722359,
       "status": "indexed",
       "chunks": 7
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/annual-activity-report-2020-defis_en.pdf": {
+      "sha256": "ef9807eb82bc7654eeb2b208d2e82fc2889a0701bdd666d2abef9b3f10591c1f",
+      "size": 1590321,
+      "status": "indexed",
+      "chunks": 105
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/annual-activity-report-2020-defis-annexes_en.pdf": {
+      "sha256": "d5d9b4246460299a3d92885fc4e1575ca4a3d20e168b2ebeee9555a5d8810bb5",
+      "size": 3207375,
+      "status": "indexed",
+      "chunks": 180
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/annual-activity-report-2021-defis_en.pdf": {
+      "sha256": "e647595b6ac1b77bd1367e9309bc52535d9ee502b58b553f0e012f39c1da67d6",
+      "size": 1848281,
+      "status": "indexed",
+      "chunks": 105
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/annual-activity-report-2021-defis-annexes_en.pdf": {
+      "sha256": "54274a9da8cd9635b18fe2b1312cf3372de9d9058300d880d00aa64caece5279",
+      "size": 2380659,
+      "status": "indexed",
+      "chunks": 152
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2022_annexes_en.pdf": {
+      "sha256": "a8dff24398841c5d6929c4155db4589aed4a4a5b4a6d1830ed730db80427a210",
+      "size": 2462196,
+      "status": "indexed",
+      "chunks": 148
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2022_en.pdf": {
+      "sha256": "f197d086bbc73303ff4a350c87d914521f5fbf7272ac9a893ce4c97d29c12152",
+      "size": 1851904,
+      "status": "indexed",
+      "chunks": 90
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2023_annexes_final.pdf": {
+      "sha256": "91516e8b5b41e3cbc48fd8ae333b415fe5c111874076957543abad6d8b0b3017",
+      "size": 7103607,
+      "status": "indexed",
+      "chunks": 97
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2023_final.pdf": {
+      "sha256": "b818538692c29d8398a7e68eccb8007da906b8f14ff77b6ef5dc2cfdded2db2c",
+      "size": 1953131,
+      "status": "indexed",
+      "chunks": 82
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2024_annexes_final.pdf": {
+      "sha256": "83a54f3a1a23c9f6bef08e3d90384e2b711e8cec77402220f265f6e30346b844",
+      "size": 6769207,
+      "status": "indexed",
+      "chunks": 122
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/DEFIS_AAR_2024_final.pdf": {
+      "sha256": "4b10a9dcbb9877d549422b4bf2b31bf7570b38ab7413a28289d6eb0a08170c13",
+      "size": 2162066,
+      "status": "indexed",
+      "chunks": 88
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/defis_aar_2025 _en.pdf": {
+      "sha256": "c9514b1640891b0cdad68646ce4f154e8bedd4b930e4c91045d1deae6069ce08",
+      "size": 1488282,
+      "status": "indexed",
+      "chunks": 90
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/defis_aar_2025_annexes _en.pdf": {
+      "sha256": "5b8649bcdb2e9e5889d73f807215944daf33447ea8511d10ae74300cf3cf310b",
+      "size": 6363735,
+      "status": "indexed",
+      "chunks": 87
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/defis_mp_2026_en.pdf": {
+      "sha256": "716ee067d0a3bdec9f047bd349d94b3ebc5a52d473d0de5e7941eca71c5ac263",
+      "size": 1250359,
+      "status": "indexed",
+      "chunks": 58
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/defis_mp_2022_en.pdf": {
+      "sha256": "5514332967aaa6c625780c86285891e0861381975d6a70e7bc93eee8cb34e04b",
+      "size": 1686304,
+      "status": "indexed",
+      "chunks": 88
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/defis_mp_2023.pdf": {
+      "sha256": "b0cd64570f28b792523eb211170aaa502cd4ba639e19ccddd240fb7ee5f60cc7",
+      "size": 2282657,
+      "status": "indexed",
+      "chunks": 74
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/defis_mp_2024.pdf": {
+      "sha256": "a18e0f044bb47fb3438a7b5f572fc3dab68a28272b164c3089b5b371ccedd5d2",
+      "size": 2059407,
+      "status": "indexed",
+      "chunks": 80
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/defis_mp_2025_en.pdf": {
+      "sha256": "92c1332cf10c21c5190dbdb4e6c9448bd4549bf5d7e704b31eb2da879533b687",
+      "size": 1293896,
+      "status": "indexed",
+      "chunks": 73
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/management-plan-defis-2020_en.pdf": {
+      "sha256": "02b5aece22aa75e16195cb2c58162fdbbf9647a5dd194289aae588409cab78d5",
+      "size": 1182910,
+      "status": "indexed",
+      "chunks": 62
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/management-plan-defis-2021_en.pdf": {
+      "sha256": "6b64578e4a3996f83c724031cf8fb8b25d47e063dd29dd4dbb381fd868147ef4",
+      "size": 1476758,
+      "status": "indexed",
+      "chunks": 77
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/CELEX_02014D0401-20220701_EN_TXT.pdf": {
+      "sha256": "1059599174c3ce428a0ef55631b18061fa283524ca203f70bc87e49fc7f83436",
+      "size": 258568,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/CELEX_32014D0401_EN_TXT.pdf": {
+      "sha256": "86da10698a4052aff5125d3c6db395f57515401b6121d740593bea5ee6519a73",
+      "size": 382070,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/CELEX_32016D2112_EN_TXT.pdf": {
+      "sha256": "e533c243df6a574436f5d9b8059fb88e27861764c8f2887e6bd53e04ca996a28",
+      "size": 314838,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/CELEX_32023D0994_EN_TXT.pdf": {
+      "sha256": "01fddc577da190b05c16f0181002121fe3a0dd55f7d924ad56b662a6dffd8547",
+      "size": 377340,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/Index _01Policy_EU_Other Eu Agencies_Satcen.docx": {
+      "sha256": "4a0081af9a23a748844883b9306e62e3336c107c87db9226729da71f863fc09e",
+      "size": 14093,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EU/DG DEFIS/IRIS2 Industry Information Day - 30 March 2023.pdf": {
+      "sha256": "19bd023393e53889c6759fcf017b3ed3c9f2d6aa1c2169c74ee9b4f93039a449",
+      "size": 6445223,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "03_PROCUREMENT/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf": {
+      "sha256": "c8e94716051bef3cf242bf6fe6cfb34a3d251cb16a3b628578105baf207987dc",
+      "size": 319016,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/EUMETSAT/Annexes I and II to Ombudsman's Announcement of Opportunity.pdf": {
+      "sha256": "e9aef6481dc608ee7b95668f36b0cc8dbc160e5c0d2ebe1f3ac7dfb0999b0e71",
+      "size": 321932,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/EUMETSAT/eumits_business_with_eumetsat (1).pdf": {
+      "sha256": "3948e352c2a726d6ba22f8499266f4909489131f873b4ee190df3d58ba246d19",
+      "size": 273581,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/EUMETSAT/eumits_user_manual.pdf": {
+      "sha256": "9e18bfeecd7b3efbc50eacd5eff5a38dbf3de4103c73ae33d036549ca30ba3d7",
+      "size": 1433750,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "03_PROCUREMENT/EUMETSAT/Index _03_Procurement_EUMETSAT.docx": {
+      "sha256": "5cd283f0bed177b378eecd4bdc272bbf4971c60b84abbadb65d737f131c7ab6d",
+      "size": 15115,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/20250218_ SatCen rules on Public Access to docs67b4b1be0389f3ab3a99a03f.pdf": {
+      "sha256": "bec4a2e81d3671d2290274d367f4b9f04e39a2ad85e003a5297c91c3c919f9b2",
+      "size": 153419,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/Index _03_Procurement_SatCen.docx": {
+      "sha256": "3239402c6c3bd2f429d946f2a7f495297f8b7cd6058271dcf5af459f822c0bac",
+      "size": 15449,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of low and medium value contracts awarded in 2020_amendment60e856d4531f52000180b132.pdf": {
+      "sha256": "0a218349ea5d09fc8f8ad091fe86616590e2cce57a90cbebe0b362a6e492105c",
+      "size": 573639,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of low and medium value contracts awarded in 202162cd9270601f2a0001d77bf3.pdf": {
+      "sha256": "311345631e11126b739b47df2a0fa801c1e797862c2e25addb88c5a6833564fb",
+      "size": 180356,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of low and medium value contracts awarded in 2022649d9315eb04f60001240997.pdf": {
+      "sha256": "1aa2582ad921958a303724aeca0e519940103ea720be0300ae66480a1696e900",
+      "size": 156484,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of low and medium value contracts awarded in 2023667ebe69c180facab99e54ce.pdf": {
+      "sha256": "d38fd7b2006d2432a927332d4606890892c54f317e20607a4fabbd2467684f58",
+      "size": 172143,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of middle and low-value contracts awarded in 2024685a80e108d771430f0ec547.pdf": {
+      "sha256": "fb36a5d124ef277edd73eaf02e66cf690026217db68fe80f2af271bfafb14f2c",
+      "size": 220045,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/SatCen 2025 List of Low and Medium Value Contracts Awarded 6a422d523b32b6b65b531b6b.pdf": {
+      "sha256": "f1a4de1b5336f2608125f45e7e999523578b1bd1f9a3a52e529e0d1d84c8e2ff",
+      "size": 294286,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/Privacy Statement_Procurement and Contract Management.pdf": {
+      "sha256": "6524ac3278d0d863c3d2bf4488f80e02a007337225234cc169e049531573d5fa",
+      "size": 157512,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/SatCen - Low and middle value contracts.pdf": {
+      "sha256": "d0d2adeb2f82ac634faf6ed889bdb06fae0b944ec40ed01184c63f75121c9269",
+      "size": 112053,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/SatCen - Ongoing calls for tender.pdf": {
+      "sha256": "4bb1149ed69d26a04eb050b046f54743bb7221d3a02472d6a152217ecd4b3e2c",
+      "size": 82055,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/SatCen - Policy and procedure.pdf": {
+      "sha256": "c54d1aaff09e37bf9f1ccf62c5aac207a66af3f8f8ccd4db3ef800fef3f28d0c",
+      "size": 114493,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/SatCen_procurement-manual V.03.pdf": {
+      "sha256": "c5bd363b007f3c8b2e6384cd65b275d5cbc5ebff0e14a7cccdcca3f5a922ad6b",
+      "size": 2101050,
+      "status": "indexed",
+      "chunks": 87
     }
   },
   "report": {
-    "discoveredFiles": 414,
-    "unchangedFiles": 384,
-    "changedFiles": 12,
-    "processedChangedFiles": 12,
+    "discoveredFiles": 452,
+    "unchangedFiles": 409,
+    "changedFiles": 25,
+    "processedChangedFiles": 45,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 12,
-    "skippedFiles": 0,
-    "copiedChunks": 20459,
-    "newChunks": 593,
-    "totalChunks": 21052,
-    "failures": []
+    "indexedFiles": 44,
+    "skippedFiles": 1,
+    "copiedChunks": 20980,
+    "newChunks": 2190,
+    "totalChunks": 23170,
+    "failures": [
+      {
+        "file": "03_PROCUREMENT/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      }
+    ]
   }
 }
