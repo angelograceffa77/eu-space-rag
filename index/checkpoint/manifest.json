@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f039f00ecec9161bca683e2579e31f124698231",
-  "createdAt": "2026-08-20T13:22:28.611Z",
+  "createdAt": "2026-08-20T13:24:41.212Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 24092,
+  "totalChunks": 24277,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 784,
       "bytes": 1275401
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 185,
+      "bytes": 292574
     }
   ],
   "sources": {
@@ -2816,20 +2821,50 @@
       "size": 1021274,
       "status": "indexed",
       "chunks": 133
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Standalone Purchase Order Terms and Conditions.pdf": {
+      "sha256": "85b2ad306835b24097564f26dd15c224c01f94cf839ed84c5190356f2b9ad26a",
+      "size": 406925,
+      "status": "indexed",
+      "chunks": 69
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Supplier Code of Business Ethics and Conduct.pdf": {
+      "sha256": "8488ab53bb372d5d1b7335b9eec819264d7763e558a7e0ed3a476811c3485d86",
+      "size": 197066,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/procurement-policy_en.pdf": {
+      "sha256": "e60f6f0f9c61fd2fc890a3d14196e16cf2ed60e26134c19a49b36f1c750c12de",
+      "size": 544768,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/procurement-procedure_en.pdf": {
+      "sha256": "ac307e2d8dd003b6991f96b9939160b37215a7327f8c07e17b28f913455bde39",
+      "size": 510739,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/04. General Provisions Fixed Price Contract - Services.pdf": {
+      "sha256": "0f9d39d8b5c7503ab49ac35614587aede097cb67e34df4fe76278139244b027f",
+      "size": 156001,
+      "status": "indexed",
+      "chunks": 27
     }
   },
   "report": {
     "discoveredFiles": 500,
     "unchangedFiles": 433,
     "changedFiles": 48,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 38,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 33,
     "deletedFiles": [],
-    "indexedFiles": 10,
+    "indexedFiles": 15,
     "skippedFiles": 0,
     "copiedChunks": 23170,
-    "newChunks": 922,
-    "totalChunks": 24092,
+    "newChunks": 1107,
+    "totalChunks": 24277,
     "failures": []
   }
 }
