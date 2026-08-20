@@ -2,12 +2,12 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "b192c45361ab373b23a95ce569609f5a3af80d40",
-  "createdAt": "2026-08-19T10:39:28.813Z",
+  "buildCommit": "8b76e8bfdf2a1988bc8b6e3bb3b1cec177d25ca5",
+  "createdAt": "2026-08-19T13:36:10.947Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 20459,
+  "totalChunks": 21052,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -16,28 +16,18 @@
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 6724,
-      "bytes": 10367651
+      "chunks": 7561,
+      "bytes": 11624152
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 110,
-      "bytes": 168069
+      "chunks": 164,
+      "bytes": 247824
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 52,
-      "bytes": 77530
-    },
-    {
-      "file": "rag-index-0005.ndjson",
-      "chunks": 196,
-      "bytes": 294771
-    },
-    {
-      "file": "rag-index-0006.ndjson",
-      "chunks": 82,
-      "bytes": 126668
+      "chunks": 32,
+      "bytes": 49113
     }
   ],
   "sources": {
@@ -2470,20 +2460,92 @@
       "size": 281574,
       "status": "indexed",
       "chunks": 17
+    },
+    "03_PROCUREMENT/EDA/CELEX_32009L0081_EN_TXT.pdf": {
+      "sha256": "cdfe1c79f90aa00eb07a7d437627db67af108cfa0056966f6121d0c4b320cd87",
+      "size": 1589287,
+      "status": "indexed",
+      "chunks": 208
+    },
+    "03_PROCUREMENT/EDA/CELEX_32013D0488_EN_TXT.pdf": {
+      "sha256": "a7278dece64593cb499f85f87fb158491a262ed2a231677162b4a215b5712762",
+      "size": 1079769,
+      "status": "indexed",
+      "chunks": 132
+    },
+    "03_PROCUREMENT/EDA/CELEX_32016D1353_EN_TXT.pdf": {
+      "sha256": "afa130d765767d6c9fe39e0802bd753a1994ec4c3112be7bf63a25d2d8f1d801",
+      "size": 517026,
+      "status": "indexed",
+      "chunks": 52
+    },
+    "03_PROCUREMENT/EDA/Index _03_Procurement_EDA.docx": {
+      "sha256": "d0f16a8d0510cf20230aad16adce72f77b7e963dc9a330bbb58864904659b768",
+      "size": 15034,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/annual-list-of-contracts-2025.pdf": {
+      "sha256": "e8f82ca5f231ecf9070435acdfe6d4082ea28ed85dbd9a810c4a66fb93b8315a",
+      "size": 437654,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/annual-list-of-specific-contracts-2025.pdf": {
+      "sha256": "c96dade23cb855b626daa3a77fc02c0b7d3a6c88240e2ea3ea27a867d53f8ae0",
+      "size": 149249,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/CELEX_52019XC0508(01)_EN_TXT.pdf": {
+      "sha256": "44a9cf2611e4fc7c39e5db7bd7634da67d0e7916da14ae00db614daacd5fd318",
+      "size": 573756,
+      "status": "indexed",
+      "chunks": 35
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/general-conditions-for-low-value-contracts.pdf": {
+      "sha256": "781344754dbc7d6e833dff6fa6289182dfb816e76a277cbbb886febec5b60e13",
+      "size": 311921,
+      "status": "indexed",
+      "chunks": 56
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/guide-sos_en.pdf": {
+      "sha256": "22180d6260a29fd7a7fc2e4fe01ccaebb68b96d53f8a3c7663d9e08b3a884b64",
+      "size": 90838,
+      "status": "indexed",
+      "chunks": 55
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/privacy-statement.pdf": {
+      "sha256": "17a3a981102f1b30e7fc961cdf971046656baeb7d114dea42f631c992a077043",
+      "size": 127873,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/EDA/Operational Documents/quick-e-submission-guide-for-economic-operators-applicable-for-call-for-tenders-published.pdf": {
+      "sha256": "41dfc95ec3b61ea29184c5fb1c3dbdc4ba5bf00a6193107869e250efeef9d371",
+      "size": 1252209,
+      "status": "indexed",
+      "chunks": 25
+    },
+    "03_PROCUREMENT/EDA/Procurement.pdf": {
+      "sha256": "069771d9d7b0951a5f0a1f3c4c967f8a6f9867dc5a7dacd65f96e411e2137dbe",
+      "size": 722359,
+      "status": "indexed",
+      "chunks": 7
     }
   },
   "report": {
-    "discoveredFiles": 402,
-    "unchangedFiles": 362,
-    "changedFiles": 22,
-    "processedChangedFiles": 22,
+    "discoveredFiles": 414,
+    "unchangedFiles": 384,
+    "changedFiles": 12,
+    "processedChangedFiles": 12,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 22,
+    "indexedFiles": 12,
     "skippedFiles": 0,
-    "copiedChunks": 19942,
-    "newChunks": 517,
-    "totalChunks": 20459,
+    "copiedChunks": 20459,
+    "newChunks": 593,
+    "totalChunks": 21052,
     "failures": []
   }
 }
