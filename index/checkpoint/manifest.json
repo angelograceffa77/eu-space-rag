@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f16698240f5f0080c6cdd779f135244e8405f1d",
-  "createdAt": "2026-08-20T09:59:39.153Z",
+  "createdAt": "2026-08-20T10:02:07.860Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 22546,
+  "totalChunks": 22841,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 397,
       "bytes": 600920
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 295,
+      "bytes": 455214
     }
   ],
   "sources": {
@@ -104,10 +109,10 @@
       "chunks": 37
     },
     "01_POLICY/EU/Commission/Index _01Policy_EU_commission.docx": {
-      "sha256": "6ff3936b126254f2210c31fd80a3d0c6fee76b2cd9acdcc3d61eda2671e3de1b",
-      "size": 14311,
+      "sha256": "c5d1c37b14fc194bc8fdfba9ca48f31073e6d9c7ca84c5a59412ef9b05683356",
+      "size": 14827,
       "status": "indexed",
-      "chunks": 2
+      "chunks": 3
     },
     "01_POLICY/EU/Commission/Legislative proposals/CELEX_52025PC0543_EN_TXT.pdf": {
       "sha256": "d9dc77fe6d026b813fcb85c8901fa4db4d5144ae6657bf3120768753b08fa55d",
@@ -2592,14 +2597,38 @@
       "size": 2282657,
       "status": "indexed",
       "chunks": 74
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/defis_mp_2024.pdf": {
+      "sha256": "a18e0f044bb47fb3438a7b5f572fc3dab68a28272b164c3089b5b371ccedd5d2",
+      "size": 2059407,
+      "status": "indexed",
+      "chunks": 80
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/defis_mp_2025_en.pdf": {
+      "sha256": "92c1332cf10c21c5190dbdb4e6c9448bd4549bf5d7e704b31eb2da879533b687",
+      "size": 1293896,
+      "status": "indexed",
+      "chunks": 73
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/management-plan-defis-2020_en.pdf": {
+      "sha256": "02b5aece22aa75e16195cb2c58162fdbbf9647a5dd194289aae588409cab78d5",
+      "size": 1182910,
+      "status": "indexed",
+      "chunks": 62
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Mangement Plan ( historical)/management-plan-defis-2021_en.pdf": {
+      "sha256": "6b64578e4a3996f83c724031cf8fb8b25d47e063dd29dd4dbb381fd868147ef4",
+      "size": 1476758,
+      "status": "indexed",
+      "chunks": 77
     }
   },
   "report": {
     "discoveredFiles": 452,
     "unchangedFiles": 389,
     "changedFiles": 45,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 30,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 25,
     "deletedFiles": [
       "01_POLICY/EU/Other EU agencies/Satcen/CELEX_02014D0401-20220701_EN_TXT.pdf",
       "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32014D0401_EN_TXT.pdf",
@@ -2607,11 +2636,11 @@
       "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32023D0994_EN_TXT.pdf",
       "01_POLICY/EU/Other EU agencies/Satcen/Index _01Policy_EU_Other Eu Agencies_Satcen.docx"
     ],
-    "indexedFiles": 15,
+    "indexedFiles": 20,
     "skippedFiles": 0,
     "copiedChunks": 20980,
-    "newChunks": 1566,
-    "totalChunks": 22546,
+    "newChunks": 1861,
+    "totalChunks": 22841,
     "failures": []
   }
 }
