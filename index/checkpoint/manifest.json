@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f039f00ecec9161bca683e2579e31f124698231",
-  "createdAt": "2026-08-20T13:24:41.212Z",
+  "createdAt": "2026-08-20T13:26:33.313Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 24277,
+  "totalChunks": 24338,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 185,
       "bytes": 292574
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 61,
+      "bytes": 93919
     }
   ],
   "sources": {
@@ -2851,20 +2856,50 @@
       "size": 156001,
       "status": "indexed",
       "chunks": 27
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/1-Low-Value-Provisions-GOODS-23-March-2026.pdf": {
+      "sha256": "33a4f0ff21974ed8495eba2b880f9a3f1ed9a01cdac513231aa6c168d8098ad7",
+      "size": 193470,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/2-Low-Value-Provisions-WORKS-23-March-2026.pdf": {
+      "sha256": "b8400c81c077605366a92ba80f63558279ede87567b8e7409801bdc85053fbef",
+      "size": 279482,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/3-Low-Value-Provisions-SERVICES-GENERAL-23-March-2026.pdf": {
+      "sha256": "81d835d5c1758a66785bca1651f0b3b522b211078b32b425845e59061e0ac634",
+      "size": 259277,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/4-Low-Value-Provisions-SERVICES-REPAIR-MAINTENANCE-23-March-2026.pdf": {
+      "sha256": "2a819e6b6ba90c9dc07c50baf730e5911750a8e99294f83b8478899b5fcfbe11",
+      "size": 263352,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/5-Low-Value-Provisions-SOFTWARE-23-March-2026.pdf": {
+      "sha256": "ca6f0ea04dc0b08ad1f1ab84c5e465c2864f00f4a1abc81338aa2839f77b4abe",
+      "size": 259644,
+      "status": "indexed",
+      "chunks": 12
     }
   },
   "report": {
     "discoveredFiles": 500,
     "unchangedFiles": 433,
     "changedFiles": 48,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 33,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 28,
     "deletedFiles": [],
-    "indexedFiles": 15,
+    "indexedFiles": 20,
     "skippedFiles": 0,
     "copiedChunks": 23170,
-    "newChunks": 1107,
-    "totalChunks": 24277,
+    "newChunks": 1168,
+    "totalChunks": 24338,
     "failures": []
   }
 }
