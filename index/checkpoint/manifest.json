@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f16698240f5f0080c6cdd779f135244e8405f1d",
-  "createdAt": "2026-08-20T11:13:40.863Z",
+  "createdAt": "2026-08-20T11:15:33.667Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 23010,
+  "totalChunks": 23059,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -48,6 +48,11 @@
       "file": "rag-index-0008.ndjson",
       "chunks": 50,
       "bytes": 73788
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 49,
+      "bytes": 78707
     }
   ],
   "sources": {
@@ -2721,20 +2726,50 @@
       "size": 573639,
       "status": "indexed",
       "chunks": 9
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of low and medium value contracts awarded in 202162cd9270601f2a0001d77bf3.pdf": {
+      "sha256": "311345631e11126b739b47df2a0fa801c1e797862c2e25addb88c5a6833564fb",
+      "size": 180356,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of low and medium value contracts awarded in 2022649d9315eb04f60001240997.pdf": {
+      "sha256": "1aa2582ad921958a303724aeca0e519940103ea720be0300ae66480a1696e900",
+      "size": 156484,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of low and medium value contracts awarded in 2023667ebe69c180facab99e54ce.pdf": {
+      "sha256": "d38fd7b2006d2432a927332d4606890892c54f317e20607a4fabbd2467684f58",
+      "size": 172143,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/List of middle and low-value contracts awarded in 2024685a80e108d771430f0ec547.pdf": {
+      "sha256": "fb36a5d124ef277edd73eaf02e66cf690026217db68fe80f2af271bfafb14f2c",
+      "size": 220045,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/European Union Satellite Centre (EU SatCen)/List of Contracts Supplies and Services Contracts/SatCen 2025 List of Low and Medium Value Contracts Awarded 6a422d523b32b6b65b531b6b.pdf": {
+      "sha256": "f1a4de1b5336f2608125f45e7e999523578b1bd1f9a3a52e529e0d1d84c8e2ff",
+      "size": 294286,
+      "status": "indexed",
+      "chunks": 9
     }
   },
   "report": {
     "discoveredFiles": 452,
     "unchangedFiles": 409,
     "changedFiles": 25,
-    "processedChangedFiles": 35,
+    "processedChangedFiles": 40,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 34,
+    "indexedFiles": 39,
     "skippedFiles": 1,
     "copiedChunks": 20980,
-    "newChunks": 2030,
-    "totalChunks": 23010,
+    "newChunks": 2079,
+    "totalChunks": 23059,
     "failures": [
       {
         "file": "03_PROCUREMENT/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf",
