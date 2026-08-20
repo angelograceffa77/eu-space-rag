@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f039f00ecec9161bca683e2579e31f124698231",
-  "createdAt": "2026-08-20T14:23:39.536Z",
+  "createdAt": "2026-08-20T14:25:49.932Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 24794,
+  "totalChunks": 25155,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -48,6 +48,11 @@
       "file": "rag-index-0008.ndjson",
       "chunks": 330,
       "bytes": 526298
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 361,
+      "bytes": 549216
     }
   ],
   "sources": {
@@ -2991,20 +2996,50 @@
       "size": 626720,
       "status": "indexed",
       "chunks": 15
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/Termination for Convenience_EN (1).pdf": {
+      "sha256": "e6a4dd7ef2319629fc68ce9fd908ca80a18b10450c55cac29c736094a2fc86fd",
+      "size": 27769,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/OCCAR/20240802_OMP_10_Financial_Rules_Issue10_INT.pdf": {
+      "sha256": "55c04e8b8859275931b31f80f4071fcbc8918b236dd793f1605939d61d4c756e",
+      "size": 388333,
+      "status": "indexed",
+      "chunks": 66
+    },
+    "03_PROCUREMENT/OCCAR/20241001OMP12_Handling_of_Non-Classified_OCCAR_Information_Issue5_INT.pdf": {
+      "sha256": "b67c2b5d5f18018020f25f07570685f81a32cbd2085b55d7a4e24a5ca9256596",
+      "size": 251368,
+      "status": "indexed",
+      "chunks": 27
+    },
+    "03_PROCUREMENT/OCCAR/20241205_Annex_OMP_11-F_CIS_Security_Requirements_Issue1.2_INT.pdf": {
+      "sha256": "f241c42b95a1c712182c476d3458abe07863932b27087dbf036314b9e0475b18",
+      "size": 325494,
+      "status": "indexed",
+      "chunks": 39
+    },
+    "03_PROCUREMENT/OCCAR/20251118_Annex_OMP_6-A_OCCAR_Standard_Articles_Issue7_Internet.pdf": {
+      "sha256": "089d5462e0f181fe043c76c3bb44498100d624635c765034806c76ba29793af5",
+      "size": 766266,
+      "status": "indexed",
+      "chunks": 218
     }
   },
   "report": {
     "discoveredFiles": 500,
     "unchangedFiles": 463,
     "changedFiles": 18,
-    "processedChangedFiles": 35,
+    "processedChangedFiles": 40,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 35,
+    "indexedFiles": 40,
     "skippedFiles": 0,
     "copiedChunks": 23170,
-    "newChunks": 1624,
-    "totalChunks": 24794,
+    "newChunks": 1985,
+    "totalChunks": 25155,
     "failures": []
   }
 }
