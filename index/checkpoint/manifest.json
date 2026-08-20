@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f16698240f5f0080c6cdd779f135244e8405f1d",
-  "createdAt": "2026-08-20T11:09:47.468Z",
+  "createdAt": "2026-08-20T11:11:48.860Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 22910,
+  "totalChunks": 22960,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -38,6 +38,11 @@
       "file": "rag-index-0006.ndjson",
       "chunks": 69,
       "bytes": 105783
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 50,
+      "bytes": 72266
     }
   ],
   "sources": {
@@ -1916,10 +1921,10 @@
       "chunks": 398
     },
     "03_PROCUREMENT/EU/Index _03_Procurement_EU.docx": {
-      "sha256": "e6538ecccbe4b036aed4827b5649993173ee37c03d4449dccb7a49e55a4e851b",
-      "size": 14077,
+      "sha256": "e19ba8753c49d6d56482dd2454599f4e1c9f8856ec149d40fe4d270801a092cc",
+      "size": 16134,
       "status": "indexed",
-      "chunks": 1
+      "chunks": 2
     },
     "03_PROCUREMENT/EU/OJ_L_202402509_EN_TXT.pdf": {
       "sha256": "ba9aa1bc841ee82c0d9f0cda47f5c1b8ffbedff51f501eb1cee05ac9bed5653e",
@@ -2656,20 +2661,50 @@
       "size": 14093,
       "status": "indexed",
       "chunks": 1
+    },
+    "03_PROCUREMENT/EU/DG DEFIS/IRIS2 Industry Information Day - 30 March 2023.pdf": {
+      "sha256": "19bd023393e53889c6759fcf017b3ed3c9f2d6aa1c2169c74ee9b4f93039a449",
+      "size": 6445223,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "03_PROCUREMENT/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf": {
+      "sha256": "c8e94716051bef3cf242bf6fe6cfb34a3d251cb16a3b628578105baf207987dc",
+      "size": 319016,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/EUMETSAT/Annexes I and II to Ombudsman's Announcement of Opportunity.pdf": {
+      "sha256": "e9aef6481dc608ee7b95668f36b0cc8dbc160e5c0d2ebe1f3ac7dfb0999b0e71",
+      "size": 321932,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/EUMETSAT/eumits_business_with_eumetsat (1).pdf": {
+      "sha256": "3948e352c2a726d6ba22f8499266f4909489131f873b4ee190df3d58ba246d19",
+      "size": 273581,
+      "status": "indexed",
+      "chunks": 4
     }
   },
   "report": {
     "discoveredFiles": 452,
     "unchangedFiles": 409,
     "changedFiles": 25,
-    "processedChangedFiles": 25,
+    "processedChangedFiles": 30,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 25,
-    "skippedFiles": 0,
+    "indexedFiles": 29,
+    "skippedFiles": 1,
     "copiedChunks": 20980,
-    "newChunks": 1930,
-    "totalChunks": 22910,
-    "failures": []
+    "newChunks": 1980,
+    "totalChunks": 22960,
+    "failures": [
+      {
+        "file": "03_PROCUREMENT/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      }
+    ]
   }
 }
