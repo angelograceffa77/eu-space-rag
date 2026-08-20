@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f039f00ecec9161bca683e2579e31f124698231",
-  "createdAt": "2026-08-20T14:25:49.932Z",
+  "createdAt": "2026-08-20T14:29:08.142Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 25155,
+  "totalChunks": 25448,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -53,6 +53,11 @@
       "file": "rag-index-0009.ndjson",
       "chunks": 361,
       "bytes": 549216
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 293,
+      "bytes": 446189
     }
   ],
   "sources": {
@@ -3026,20 +3031,50 @@
       "size": 766266,
       "status": "indexed",
       "chunks": 218
+    },
+    "03_PROCUREMENT/OCCAR/7_20250801_OMP_11_Security_Regulations_Issue10.1.pdf": {
+      "sha256": "69a01c041bcfa9bcc99123c8f604250edf646a6000afd2297bf2578734fd38d3",
+      "size": 1076692,
+      "status": "indexed",
+      "chunks": 152
+    },
+    "03_PROCUREMENT/OCCAR/Annex_OMP_11-C_Handling_of_OCCAR_Restricted_Information_by_Contractors_Issue7_INT_20170613_0.pdf": {
+      "sha256": "ef565e040292f58587e3c8f203b590526a4897948e92b116197a80cb0d204fb5",
+      "size": 242944,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "03_PROCUREMENT/OCCAR/Annex_OMP_14-B_Qualification_Main_Steps_Issue2_20231218.pdf": {
+      "sha256": "b79528ea4963c766a93f0e71e182edda3954d63fa141ff8dfe52b12348018a7c",
+      "size": 256935,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "03_PROCUREMENT/OCCAR/Index _03_Procurement_OCCAR.docx": {
+      "sha256": "e6da8d2fd914c898a04c7d181a0a77c8c88ff6e169ff11e9695eb84151d672a4",
+      "size": 15490,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/OCCAR/OC_Businessplan_2026_w.pdf": {
+      "sha256": "c3f4d0db50ba166189c6e1ce363d055806f4b54451f03fcc08ed4735b17d95e0",
+      "size": 11753654,
+      "status": "indexed",
+      "chunks": 114
     }
   },
   "report": {
     "discoveredFiles": 500,
     "unchangedFiles": 463,
     "changedFiles": 18,
-    "processedChangedFiles": 40,
+    "processedChangedFiles": 45,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 40,
+    "indexedFiles": 45,
     "skippedFiles": 0,
     "copiedChunks": 23170,
-    "newChunks": 1985,
-    "totalChunks": 25155,
+    "newChunks": 2278,
+    "totalChunks": 25448,
     "failures": []
   }
 }
