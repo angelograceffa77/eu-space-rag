@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f039f00ecec9161bca683e2579e31f124698231",
-  "createdAt": "2026-08-20T13:19:41.924Z",
+  "createdAt": "2026-08-20T13:22:28.611Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 23308,
+  "totalChunks": 24092,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 10018,
       "bytes": 15439282
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 784,
+      "bytes": 1275401
     }
   ],
   "sources": {
@@ -2781,20 +2786,50 @@
       "size": 226187,
       "status": "indexed",
       "chunks": 10
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA _ Procurement Types and Methods.pdf": {
+      "sha256": "a179f26a12656ae6598c428a912049a2c5c0becc80136eec5d16382ff033353b",
+      "size": 118178,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Competitive Procurement Dispute Resolution Procedure.pdf": {
+      "sha256": "9f91040de0e763ca332ace4db39d103a284b3258a07748ffba38e036de4edb1a",
+      "size": 237091,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Contract General Terms and Conditions (Core and Subsets) (1).pdf": {
+      "sha256": "2d1b4df3a5ecd8a6e5c65a8c14a3b7939e6cf4b15ad2e6967e05d7f31b89e0d2",
+      "size": 1286174,
+      "status": "indexed",
+      "chunks": 317
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Contract General Terms and Conditions (Core and Subsets).pdf": {
+      "sha256": "24168ea9a578796a00aeaf8a5870a921bb253bb5620e50259393b23bce58b6d3",
+      "size": 1286174,
+      "status": "indexed",
+      "chunks": 317
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Contract Special Terms and Conditions_July_2026.pdf": {
+      "sha256": "3c6b5c7d29d5f93f32b8a55aafa27baa3fb0efba0ceebc421025d320369c2a22",
+      "size": 1021274,
+      "status": "indexed",
+      "chunks": 133
     }
   },
   "report": {
     "discoveredFiles": 500,
     "unchangedFiles": 433,
     "changedFiles": 48,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 43,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 38,
     "deletedFiles": [],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 23170,
-    "newChunks": 138,
-    "totalChunks": 23308,
+    "newChunks": 922,
+    "totalChunks": 24092,
     "failures": []
   }
 }
