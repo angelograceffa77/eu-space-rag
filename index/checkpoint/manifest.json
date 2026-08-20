@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9f16698240f5f0080c6cdd779f135244e8405f1d",
-  "createdAt": "2026-08-20T10:02:07.860Z",
+  "createdAt": "2026-08-20T11:09:47.468Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 22841,
+  "totalChunks": 22910,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -33,6 +33,11 @@
       "file": "rag-index-0005.ndjson",
       "chunks": 295,
       "bytes": 455214
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 69,
+      "bytes": 105783
     }
   ],
   "sources": {
@@ -2621,26 +2626,50 @@
       "size": 1476758,
       "status": "indexed",
       "chunks": 77
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/CELEX_02014D0401-20220701_EN_TXT.pdf": {
+      "sha256": "1059599174c3ce428a0ef55631b18061fa283524ca203f70bc87e49fc7f83436",
+      "size": 258568,
+      "status": "indexed",
+      "chunks": 28
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/CELEX_32014D0401_EN_TXT.pdf": {
+      "sha256": "86da10698a4052aff5125d3c6db395f57515401b6121d740593bea5ee6519a73",
+      "size": 382070,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/CELEX_32016D2112_EN_TXT.pdf": {
+      "sha256": "e533c243df6a574436f5d9b8059fb88e27861764c8f2887e6bd53e04ca996a28",
+      "size": 314838,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/CELEX_32023D0994_EN_TXT.pdf": {
+      "sha256": "01fddc577da190b05c16f0181002121fe3a0dd55f7d924ad56b662a6dffd8547",
+      "size": 377340,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "01_POLICY/EU/Other EU agencies/European Union Satellite Centre (EU SatCen)/Index _01Policy_EU_Other Eu Agencies_Satcen.docx": {
+      "sha256": "4a0081af9a23a748844883b9306e62e3336c107c87db9226729da71f863fc09e",
+      "size": 14093,
+      "status": "indexed",
+      "chunks": 1
     }
   },
   "report": {
     "discoveredFiles": 452,
-    "unchangedFiles": 389,
-    "changedFiles": 45,
-    "processedChangedFiles": 20,
-    "remainingChangedFiles": 25,
-    "deletedFiles": [
-      "01_POLICY/EU/Other EU agencies/Satcen/CELEX_02014D0401-20220701_EN_TXT.pdf",
-      "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32014D0401_EN_TXT.pdf",
-      "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32016D2112_EN_TXT.pdf",
-      "01_POLICY/EU/Other EU agencies/Satcen/CELEX_32023D0994_EN_TXT.pdf",
-      "01_POLICY/EU/Other EU agencies/Satcen/Index _01Policy_EU_Other Eu Agencies_Satcen.docx"
-    ],
-    "indexedFiles": 20,
+    "unchangedFiles": 409,
+    "changedFiles": 25,
+    "processedChangedFiles": 25,
+    "remainingChangedFiles": 0,
+    "deletedFiles": [],
+    "indexedFiles": 25,
     "skippedFiles": 0,
     "copiedChunks": 20980,
-    "newChunks": 1861,
-    "totalChunks": 22841,
+    "newChunks": 1930,
+    "totalChunks": 22910,
     "failures": []
   }
 }
