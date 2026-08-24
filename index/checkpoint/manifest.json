@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "52b9d2cd69c86b9d12efe6bb82341ebe90e20021",
-  "createdAt": "2026-08-24T10:15:06.581Z",
+  "createdAt": "2026-08-24T10:16:55.025Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 25759,
+  "totalChunks": 25851,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 12469,
       "bytes": 19288369
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 92,
+      "bytes": 136258
     }
   ],
   "sources": {
@@ -3070,24 +3075,59 @@
       "status": "skipped",
       "reason": "Worker stopped with code null, signal SIGABRT",
       "chunks": 0
+    },
+    "03_PROCUREMENT/Member States/Germany/b084-data.pdf": {
+      "sha256": "11b65ae0f668dd219e21f7bf730b81e6f494ac0f9631afbfb346674b03db167f",
+      "size": 39892,
+      "status": "indexed",
+      "chunks": 25
+    },
+    "03_PROCUREMENT/Member States/Germany/b086-data.pdf": {
+      "sha256": "8e23647717210d30616829b3dc0293e65e6e6b0486ec0e112d4a714659612a29",
+      "size": 59772,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "03_PROCUREMENT/Member States/Germany/b086a-data.pdf": {
+      "sha256": "61a6f7f32941483c3862a414a0c3060589d10e2d894c805a61a21c5b35647b02",
+      "size": 39516,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "03_PROCUREMENT/Member States/Germany/b111-data.pdf": {
+      "sha256": "c4c9dfe60b78181e5cb79554efe2e98cba33f85174b70d68ab7dc49fddb11fc8",
+      "size": 124043,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/Member States/Germany/b115-data.pdf": {
+      "sha256": "7cf6ea3b31d449ed153f47d549cbe1b76bb94a51116acc969a70a23b26a2b6d2",
+      "size": 614633,
+      "status": "indexed",
+      "chunks": 4
     }
   },
   "report": {
     "discoveredFiles": 520,
     "unchangedFiles": 481,
     "changedFiles": 20,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 15,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 10,
     "deletedFiles": [],
-    "indexedFiles": 4,
-    "skippedFiles": 1,
+    "indexedFiles": 8,
+    "skippedFiles": 2,
     "copiedChunks": 25589,
-    "newChunks": 170,
-    "totalChunks": 25759,
+    "newChunks": 262,
+    "totalChunks": 25851,
     "failures": [
       {
         "file": "03_PROCUREMENT/Member States/France/DGA/20251209_NP_DGA-S2A_Guide-ACH-0050-Ed04_Clausier-commente-MDS.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "03_PROCUREMENT/Member States/Germany/b111-data.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
       }
     ]
   }
