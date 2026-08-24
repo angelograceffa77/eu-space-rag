@@ -2,12 +2,12 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "9f16698240f5f0080c6cdd779f135244e8405f1d",
-  "createdAt": "2026-08-20T11:18:50.864Z",
+  "buildCommit": "9f039f00ecec9161bca683e2579e31f124698231",
+  "createdAt": "2026-08-20T14:31:01.440Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 23170,
+  "totalChunks": 25589,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -16,48 +16,53 @@
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 8380,
-      "bytes": 12912871
+      "chunks": 10018,
+      "bytes": 15439282
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 479,
-      "bytes": 750680
+      "chunks": 784,
+      "bytes": 1275401
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 397,
-      "bytes": 600920
+      "chunks": 185,
+      "bytes": 292574
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 295,
-      "bytes": 455214
+      "chunks": 61,
+      "bytes": 93919
     },
     {
       "file": "rag-index-0006.ndjson",
-      "chunks": 69,
-      "bytes": 105783
+      "chunks": 49,
+      "bytes": 72927
     },
     {
       "file": "rag-index-0007.ndjson",
-      "chunks": 50,
-      "bytes": 72266
+      "chunks": 77,
+      "bytes": 118352
     },
     {
       "file": "rag-index-0008.ndjson",
-      "chunks": 50,
-      "bytes": 73788
+      "chunks": 330,
+      "bytes": 526298
     },
     {
       "file": "rag-index-0009.ndjson",
-      "chunks": 49,
-      "bytes": 78707
+      "chunks": 361,
+      "bytes": 549216
     },
     {
       "file": "rag-index-0010.ndjson",
-      "chunks": 111,
-      "bytes": 170507
+      "chunks": 293,
+      "bytes": 446189
+    },
+    {
+      "file": "rag-index-0011.ndjson",
+      "chunks": 141,
+      "bytes": 213225
     }
   ],
   "sources": {
@@ -2791,25 +2796,308 @@
       "size": 2101050,
       "status": "indexed",
       "chunks": 87
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/(NPP) NCIA Book I-General Bidding Instructions_July_2026.pdf": {
+      "sha256": "37d9496c6b02cd0ea8afee036293dc7cbef5c10679f3c0ececf4949d9eb412b0",
+      "size": 961435,
+      "status": "indexed",
+      "chunks": 92
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/20150519-security-directive.pdf": {
+      "sha256": "f99fc1f8ce79ddac687bcc9b2728f884b26c7d7546590a4756fdab058a6ff10a",
+      "size": 248468,
+      "status": "indexed",
+      "chunks": 24
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/20170330_nscsr.pdf": {
+      "sha256": "444f0aa8b7f89239564b1d16a4d6a12b00dce023af660e1de9cb0e6df7ff8cb7",
+      "size": 1060763,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/Index _03_Procurement_NATO (NCIA).docx": {
+      "sha256": "e0fb48373d540c322adbb08ac51c47ff2785d4a469ba89afb82f00582e9d1f8e",
+      "size": 15778,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA _ Procurement Process.pdf": {
+      "sha256": "e1c57c88177e4e5ef7086146dcee4987a6652bec47eee09242c31b164eac4d92",
+      "size": 226187,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA _ Procurement Types and Methods.pdf": {
+      "sha256": "a179f26a12656ae6598c428a912049a2c5c0becc80136eec5d16382ff033353b",
+      "size": 118178,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Competitive Procurement Dispute Resolution Procedure.pdf": {
+      "sha256": "9f91040de0e763ca332ace4db39d103a284b3258a07748ffba38e036de4edb1a",
+      "size": 237091,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Contract General Terms and Conditions (Core and Subsets) (1).pdf": {
+      "sha256": "2d1b4df3a5ecd8a6e5c65a8c14a3b7939e6cf4b15ad2e6967e05d7f31b89e0d2",
+      "size": 1286174,
+      "status": "indexed",
+      "chunks": 317
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Contract General Terms and Conditions (Core and Subsets).pdf": {
+      "sha256": "24168ea9a578796a00aeaf8a5870a921bb253bb5620e50259393b23bce58b6d3",
+      "size": 1286174,
+      "status": "indexed",
+      "chunks": 317
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Contract Special Terms and Conditions_July_2026.pdf": {
+      "sha256": "3c6b5c7d29d5f93f32b8a55aafa27baa3fb0efba0ceebc421025d320369c2a22",
+      "size": 1021274,
+      "status": "indexed",
+      "chunks": 133
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Standalone Purchase Order Terms and Conditions.pdf": {
+      "sha256": "85b2ad306835b24097564f26dd15c224c01f94cf839ed84c5190356f2b9ad26a",
+      "size": 406925,
+      "status": "indexed",
+      "chunks": 69
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/NCIA Supplier Code of Business Ethics and Conduct.pdf": {
+      "sha256": "8488ab53bb372d5d1b7335b9eec819264d7763e558a7e0ed3a476811c3485d86",
+      "size": 197066,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/procurement-policy_en.pdf": {
+      "sha256": "e60f6f0f9c61fd2fc890a3d14196e16cf2ed60e26134c19a49b36f1c750c12de",
+      "size": 544768,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "03_PROCUREMENT/NATO/NATO Communications and Information Agency — NCIA/procurement-procedure_en.pdf": {
+      "sha256": "ac307e2d8dd003b6991f96b9939160b37215a7327f8c07e17b28f913455bde39",
+      "size": 510739,
+      "status": "indexed",
+      "chunks": 36
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/04. General Provisions Fixed Price Contract - Services.pdf": {
+      "sha256": "0f9d39d8b5c7503ab49ac35614587aede097cb67e34df4fe76278139244b027f",
+      "size": 156001,
+      "status": "indexed",
+      "chunks": 27
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/1-Low-Value-Provisions-GOODS-23-March-2026.pdf": {
+      "sha256": "33a4f0ff21974ed8495eba2b880f9a3f1ed9a01cdac513231aa6c168d8098ad7",
+      "size": 193470,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/2-Low-Value-Provisions-WORKS-23-March-2026.pdf": {
+      "sha256": "b8400c81c077605366a92ba80f63558279ede87567b8e7409801bdc85053fbef",
+      "size": 279482,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/3-Low-Value-Provisions-SERVICES-GENERAL-23-March-2026.pdf": {
+      "sha256": "81d835d5c1758a66785bca1651f0b3b522b211078b32b425845e59061e0ac634",
+      "size": 259277,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/4-Low-Value-Provisions-SERVICES-REPAIR-MAINTENANCE-23-March-2026.pdf": {
+      "sha256": "2a819e6b6ba90c9dc07c50baf730e5911750a8e99294f83b8478899b5fcfbe11",
+      "size": 263352,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/5-Low-Value-Provisions-SOFTWARE-23-March-2026.pdf": {
+      "sha256": "ca6f0ea04dc0b08ad1f1ab84c5e465c2864f00f4a1abc81338aa2839f77b4abe",
+      "size": 259644,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/6-ADMIN-2025-Practice-Direction-18-12-2025.pdf": {
+      "sha256": "0c9ab711a128a394dadc1cc1c63abd90e85bcbd9fe6349a20ee98c3aa3e91793",
+      "size": 168620,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/Awarded contracts/PO-OA_Apr-Jun2026.pdf": {
+      "sha256": "84e035595adcc55955423242a114149f77f61fee652a072b87b83ccfd4ed0fe2",
+      "size": 155743,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/Awarded contracts/PO-OA-Jan-Mar-2026.pdf": {
+      "sha256": "cff9e719f1c2af94f863abc0be9f5a8f930ab19f4e654508a4dcf3359f3ae804",
+      "size": 132431,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/Bid Openings/BID-OPENINGS-Week-33-2026.pdf": {
+      "sha256": "676f0f874b8985fbbae880378619ab6433c7eeae2d733fcdade791319a2dbf65",
+      "size": 278145,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/GP-FP-Materiel-2025-12-08.pdf": {
+      "sha256": "7db2efd44f5986722198fb6ef2b6a85a1113382e2a3654a08bb0ab535d3d2777",
+      "size": 123209,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/GP-FP-Services-2025-12-08.pdf": {
+      "sha256": "c869d94269cbacd6dd44a47ac84472a0b0cb0443c48dfde53671f417ad27c2e5",
+      "size": 152058,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/GP-FP-Transport-2025-12-08.pdf": {
+      "sha256": "13326c6f84467c779271d92fc23d369438e9610780cda1ca636526685903fea1",
+      "size": 84637,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/Index _03_Procurement_NATO (NSPA).docx": {
+      "sha256": "69dafff80682fe8bb40ddbe0a0c39b27891f17067e6f99d8639b2bfaea1712d0",
+      "size": 16187,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/NSPA-Supplier-Code-of-Conduct.pdf": {
+      "sha256": "89b17030c7db6dd7f8c1d21e2c9c5268f4c67bd469f65e50ed25bc18376d84f4",
+      "size": 367086,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI_2200-01_Acquisition_by_Qualified_Options_e.pdf": {
+      "sha256": "51e6590f96e5403f7b6848fc26724bb5f6ac66bf1b944b7952f7ff0eb89b5b98",
+      "size": 451960,
+      "status": "indexed",
+      "chunks": 25
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI_4200-08_26_JUNE_2025.pdf": {
+      "sha256": "5e4a723310faa693cc785f60dcdb088cbeeac92bfa5dcd7b9bc28d438f725166",
+      "size": 488693,
+      "status": "indexed",
+      "chunks": 10
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI_4200-09_e_Award_Review_Debarment_Board_TORs-18-12-2025.pdf": {
+      "sha256": "9d3f011df5d7ee26e03dc45dc7eaa911ecfaf54fbf9f4d88da1370b9694f9edb",
+      "size": 378957,
+      "status": "indexed",
+      "chunks": 20
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI-4200-01-NSPA-Procurement-Operating-Instruction-07-2025 (2).pdf": {
+      "sha256": "21b05fac366a6c7171192ccf862d34a4c832d78a97cc4e22080789854ca1f496",
+      "size": 1239135,
+      "status": "indexed",
+      "chunks": 245
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI-4200-02.pdf": {
+      "sha256": "73480e7765241b1e9956e1840fee1f689ae65758eaada2c2ebce8bca4c8009d0",
+      "size": 527885,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/OI-4200-07.pdf": {
+      "sha256": "06fd2ac7d7c6652836c90fd889a648bd14f14357e98f188bb82dd20b190eba3c",
+      "size": 626720,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "03_PROCUREMENT/NATO/NATO Support and Procurement Agency — NSPA/Termination for Convenience_EN (1).pdf": {
+      "sha256": "e6a4dd7ef2319629fc68ce9fd908ca80a18b10450c55cac29c736094a2fc86fd",
+      "size": 27769,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/OCCAR/20240802_OMP_10_Financial_Rules_Issue10_INT.pdf": {
+      "sha256": "55c04e8b8859275931b31f80f4071fcbc8918b236dd793f1605939d61d4c756e",
+      "size": 388333,
+      "status": "indexed",
+      "chunks": 66
+    },
+    "03_PROCUREMENT/OCCAR/20241001OMP12_Handling_of_Non-Classified_OCCAR_Information_Issue5_INT.pdf": {
+      "sha256": "b67c2b5d5f18018020f25f07570685f81a32cbd2085b55d7a4e24a5ca9256596",
+      "size": 251368,
+      "status": "indexed",
+      "chunks": 27
+    },
+    "03_PROCUREMENT/OCCAR/20241205_Annex_OMP_11-F_CIS_Security_Requirements_Issue1.2_INT.pdf": {
+      "sha256": "f241c42b95a1c712182c476d3458abe07863932b27087dbf036314b9e0475b18",
+      "size": 325494,
+      "status": "indexed",
+      "chunks": 39
+    },
+    "03_PROCUREMENT/OCCAR/20251118_Annex_OMP_6-A_OCCAR_Standard_Articles_Issue7_Internet.pdf": {
+      "sha256": "089d5462e0f181fe043c76c3bb44498100d624635c765034806c76ba29793af5",
+      "size": 766266,
+      "status": "indexed",
+      "chunks": 218
+    },
+    "03_PROCUREMENT/OCCAR/7_20250801_OMP_11_Security_Regulations_Issue10.1.pdf": {
+      "sha256": "69a01c041bcfa9bcc99123c8f604250edf646a6000afd2297bf2578734fd38d3",
+      "size": 1076692,
+      "status": "indexed",
+      "chunks": 152
+    },
+    "03_PROCUREMENT/OCCAR/Annex_OMP_11-C_Handling_of_OCCAR_Restricted_Information_by_Contractors_Issue7_INT_20170613_0.pdf": {
+      "sha256": "ef565e040292f58587e3c8f203b590526a4897948e92b116197a80cb0d204fb5",
+      "size": 242944,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "03_PROCUREMENT/OCCAR/Annex_OMP_14-B_Qualification_Main_Steps_Issue2_20231218.pdf": {
+      "sha256": "b79528ea4963c766a93f0e71e182edda3954d63fa141ff8dfe52b12348018a7c",
+      "size": 256935,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "03_PROCUREMENT/OCCAR/Index _03_Procurement_OCCAR.docx": {
+      "sha256": "e6da8d2fd914c898a04c7d181a0a77c8c88ff6e169ff11e9695eb84151d672a4",
+      "size": 15490,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/OCCAR/OC_Businessplan_2026_w.pdf": {
+      "sha256": "c3f4d0db50ba166189c6e1ce363d055806f4b54451f03fcc08ed4735b17d95e0",
+      "size": 11753654,
+      "status": "indexed",
+      "chunks": 114
+    },
+    "03_PROCUREMENT/OCCAR/OMP_14_Qualification_Issue2_INT_20231218.docx.pdf": {
+      "sha256": "003871cbf21c79eb54d4761f38d7ad33d0a634c780297a42bd9203eea75d8c86",
+      "size": 163479,
+      "status": "indexed",
+      "chunks": 23
+    },
+    "03_PROCUREMENT/OCCAR/OMP_5_Contract_Placement_Procedure_Issue5_INT_20230726.pdf": {
+      "sha256": "c522648044599480dd5951c26e352e8ca73f0bc08ea636d843f8198c7c82f9af",
+      "size": 811318,
+      "status": "indexed",
+      "chunks": 87
+    },
+    "03_PROCUREMENT/OCCAR/OMP_7_Government_Quality_Assurance_Issue5_20191007_INT (1).pdf": {
+      "sha256": "8922e591d12836db55bc8a1e1da122221ccbb33a958a0271a84d8c6699a80512",
+      "size": 430788,
+      "status": "indexed",
+      "chunks": 31
     }
   },
   "report": {
-    "discoveredFiles": 452,
-    "unchangedFiles": 409,
-    "changedFiles": 25,
-    "processedChangedFiles": 45,
+    "discoveredFiles": 500,
+    "unchangedFiles": 463,
+    "changedFiles": 18,
+    "processedChangedFiles": 48,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 44,
-    "skippedFiles": 1,
-    "copiedChunks": 20980,
-    "newChunks": 2190,
-    "totalChunks": 23170,
-    "failures": [
-      {
-        "file": "03_PROCUREMENT/EUMETSAT/44252 - Financial_Rules(1372887 V1).pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      }
-    ]
+    "indexedFiles": 48,
+    "skippedFiles": 0,
+    "copiedChunks": 23170,
+    "newChunks": 2419,
+    "totalChunks": 25589,
+    "failures": []
   }
 }
