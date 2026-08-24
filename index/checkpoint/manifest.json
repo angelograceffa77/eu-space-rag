@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "52b9d2cd69c86b9d12efe6bb82341ebe90e20021",
-  "createdAt": "2026-08-24T10:18:46.716Z",
+  "createdAt": "2026-08-24T10:21:13.820Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 25965,
+  "totalChunks": 26582,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 114,
       "bytes": 170926
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 617,
+      "bytes": 943069
     }
   ],
   "sources": {
@@ -3141,20 +3146,50 @@
       "size": 870875,
       "status": "indexed",
       "chunks": 86
+    },
+    "03_PROCUREMENT/Member States/Index _03_Procurement_Member States.docx": {
+      "sha256": "1c8331b99b6c15bdd6b8950521d6e666dffa86fd9793f640870ddfb50e8776ee",
+      "size": 20584,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/Member States/Italy/capitolato_generale_per_i_contratti_industriali_di_servizi_di_ricerca_e_sviluppo.pdf": {
+      "sha256": "1b10eef4de1fb68fca0295d4557c02bbe8a16f9862ca673f1c510315a720b781",
+      "size": 1148735,
+      "status": "indexed",
+      "chunks": 132
+    },
+    "03_PROCUREMENT/Member States/Italy/pdf.pdf": {
+      "sha256": "be136a2e6c5319e7a5e7317b1a179bbb15192244ef47097843998a5404fd429d",
+      "size": 2957523,
+      "status": "indexed",
+      "chunks": 374
+    },
+    "03_PROCUREMENT/Member States/Italy/Schema lettera di RdO.pdf": {
+      "sha256": "037e9a8ac0b6885d76c39e0f6378547caf2e14193ab1d517bc07d8b2134111eb",
+      "size": 21262,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/Member States/Italy/Schema-di-Contratto_Redacted.pdf": {
+      "sha256": "4b63eafb47546aa30d8a968843c68236965ac64a666148f88cfee2eee0745566",
+      "size": 1226121,
+      "status": "indexed",
+      "chunks": 106
     }
   },
   "report": {
     "discoveredFiles": 520,
     "unchangedFiles": 481,
     "changedFiles": 20,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 5,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 13,
+    "indexedFiles": 18,
     "skippedFiles": 2,
     "copiedChunks": 25589,
-    "newChunks": 376,
-    "totalChunks": 25965,
+    "newChunks": 993,
+    "totalChunks": 26582,
     "failures": [
       {
         "file": "03_PROCUREMENT/Member States/France/DGA/20251209_NP_DGA-S2A_Guide-ACH-0050-Ed04_Clausier-commente-MDS.pdf",
