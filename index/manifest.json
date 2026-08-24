@@ -2,12 +2,12 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "9f039f00ecec9161bca683e2579e31f124698231",
-  "createdAt": "2026-08-20T14:31:01.440Z",
+  "buildCommit": "52b9d2cd69c86b9d12efe6bb82341ebe90e20021",
+  "createdAt": "2026-08-24T10:22:43.727Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 25589,
+  "totalChunks": 26582,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -16,53 +16,23 @@
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 10018,
-      "bytes": 15439282
+      "chunks": 12469,
+      "bytes": 19288369
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 784,
-      "bytes": 1275401
+      "chunks": 92,
+      "bytes": 136258
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 185,
-      "bytes": 292574
+      "chunks": 114,
+      "bytes": 170926
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 61,
-      "bytes": 93919
-    },
-    {
-      "file": "rag-index-0006.ndjson",
-      "chunks": 49,
-      "bytes": 72927
-    },
-    {
-      "file": "rag-index-0007.ndjson",
-      "chunks": 77,
-      "bytes": 118352
-    },
-    {
-      "file": "rag-index-0008.ndjson",
-      "chunks": 330,
-      "bytes": 526298
-    },
-    {
-      "file": "rag-index-0009.ndjson",
-      "chunks": 361,
-      "bytes": 549216
-    },
-    {
-      "file": "rag-index-0010.ndjson",
-      "chunks": 293,
-      "bytes": 446189
-    },
-    {
-      "file": "rag-index-0011.ndjson",
-      "chunks": 141,
-      "bytes": 213225
+      "chunks": 617,
+      "bytes": 943069
     }
   ],
   "sources": {
@@ -3084,20 +3054,151 @@
       "size": 430788,
       "status": "indexed",
       "chunks": 31
+    },
+    "03_PROCUREMENT/Member States/France/CNES/ccap-cnes-2021.pdf": {
+      "sha256": "16c158be74fb7d250833906980831bdf58542494b945fe29f973294cbe8739a8",
+      "size": 451508,
+      "status": "indexed",
+      "chunks": 135
+    },
+    "03_PROCUREMENT/Member States/France/CNES/spaser-cnes.pdf": {
+      "sha256": "1bd6a686d497efb6fa7ddde20dcb7096b60951308a70741b3b7076b6a29b846c",
+      "size": 731648,
+      "status": "indexed",
+      "chunks": 30
+    },
+    "03_PROCUREMENT/Member States/France/DGA/20251117_NP_DGA-S2A_Formulaire-ACH-0052-ed02_liste-produits-soumis-a-restriction.docx": {
+      "sha256": "a9c4a2f9a66108064b881ab2bccad18c9174c9b5a064f567fe28f177abd44bde",
+      "size": 87061,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/Member States/France/DGA/20251117_NP_DGA-S2A_Formulaire-ACH-0053-Ed02_demande-derogation-produits-soumis-a-restriction (1).docx": {
+      "sha256": "50ca2c4422fcf0baa6a6b0e911d3d1f6975239f166c72546933d4da3f347ce6b",
+      "size": 88428,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/Member States/France/DGA/20251209_NP_DGA-S2A_Guide-ACH-0050-Ed04_Clausier-commente-MDS.pdf": {
+      "sha256": "72d0b62f5477f19da29b9d4316bbb2ad0b2901dd87bb0683e089c649e3209b24",
+      "size": 5719767,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/Member States/Germany/b084-data.pdf": {
+      "sha256": "11b65ae0f668dd219e21f7bf730b81e6f494ac0f9631afbfb346674b03db167f",
+      "size": 39892,
+      "status": "indexed",
+      "chunks": 25
+    },
+    "03_PROCUREMENT/Member States/Germany/b086-data.pdf": {
+      "sha256": "8e23647717210d30616829b3dc0293e65e6e6b0486ec0e112d4a714659612a29",
+      "size": 59772,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "03_PROCUREMENT/Member States/Germany/b086a-data.pdf": {
+      "sha256": "61a6f7f32941483c3862a414a0c3060589d10e2d894c805a61a21c5b35647b02",
+      "size": 39516,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "03_PROCUREMENT/Member States/Germany/b111-data.pdf": {
+      "sha256": "c4c9dfe60b78181e5cb79554efe2e98cba33f85174b70d68ab7dc49fddb11fc8",
+      "size": 124043,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/Member States/Germany/b115-data.pdf": {
+      "sha256": "7cf6ea3b31d449ed153f47d549cbe1b76bb94a51116acc969a70a23b26a2b6d2",
+      "size": 614633,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/Member States/Germany/b116-data.pdf": {
+      "sha256": "f78f9563530536c2125ada4f3d36f0c3a59d6751ff1072491c633af6e3ee117a",
+      "size": 462603,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/Member States/Germany/b119-data.pdf": {
+      "sha256": "b6a0f5232203d4610b2ae241bf92aafe4273a9108db0549c587a5ade5b43e01e",
+      "size": 221597,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/Member States/Germany/b121-data.pdf": {
+      "sha256": "fd8081eee9dd93496b0e9ff321e6f88f4af369e884111083bc89f1e81b852e0c",
+      "size": 225846,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/Member States/Germany/b124-data.pdf": {
+      "sha256": "45c7457ac33771615f353947482f297cdba895a2ff2cba5f4a088e79a9178b6a",
+      "size": 80272,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "03_PROCUREMENT/Member States/Germany/zvb-bmvg-banz-at-13-07-2023-b1-data.pdf": {
+      "sha256": "b51f1d095d521f92a3a85d901c37cbb64c6efa77b36b1a665d4b65e436147c66",
+      "size": 870875,
+      "status": "indexed",
+      "chunks": 86
+    },
+    "03_PROCUREMENT/Member States/Index _03_Procurement_Member States.docx": {
+      "sha256": "1c8331b99b6c15bdd6b8950521d6e666dffa86fd9793f640870ddfb50e8776ee",
+      "size": 20584,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/Member States/Italy/capitolato_generale_per_i_contratti_industriali_di_servizi_di_ricerca_e_sviluppo.pdf": {
+      "sha256": "1b10eef4de1fb68fca0295d4557c02bbe8a16f9862ca673f1c510315a720b781",
+      "size": 1148735,
+      "status": "indexed",
+      "chunks": 132
+    },
+    "03_PROCUREMENT/Member States/Italy/pdf.pdf": {
+      "sha256": "be136a2e6c5319e7a5e7317b1a179bbb15192244ef47097843998a5404fd429d",
+      "size": 2957523,
+      "status": "indexed",
+      "chunks": 374
+    },
+    "03_PROCUREMENT/Member States/Italy/Schema lettera di RdO.pdf": {
+      "sha256": "037e9a8ac0b6885d76c39e0f6378547caf2e14193ab1d517bc07d8b2134111eb",
+      "size": 21262,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/Member States/Italy/Schema-di-Contratto_Redacted.pdf": {
+      "sha256": "4b63eafb47546aa30d8a968843c68236965ac64a666148f88cfee2eee0745566",
+      "size": 1226121,
+      "status": "indexed",
+      "chunks": 106
     }
   },
   "report": {
-    "discoveredFiles": 500,
-    "unchangedFiles": 463,
-    "changedFiles": 18,
-    "processedChangedFiles": 48,
+    "discoveredFiles": 520,
+    "unchangedFiles": 481,
+    "changedFiles": 20,
+    "processedChangedFiles": 20,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 48,
-    "skippedFiles": 0,
-    "copiedChunks": 23170,
-    "newChunks": 2419,
-    "totalChunks": 25589,
-    "failures": []
+    "indexedFiles": 18,
+    "skippedFiles": 2,
+    "copiedChunks": 25589,
+    "newChunks": 993,
+    "totalChunks": 26582,
+    "failures": [
+      {
+        "file": "03_PROCUREMENT/Member States/France/DGA/20251209_NP_DGA-S2A_Guide-ACH-0050-Ed04_Clausier-commente-MDS.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "03_PROCUREMENT/Member States/Germany/b111-data.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
+      }
+    ]
   }
 }
