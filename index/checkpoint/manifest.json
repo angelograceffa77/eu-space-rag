@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "52b9d2cd69c86b9d12efe6bb82341ebe90e20021",
-  "createdAt": "2026-08-24T10:16:55.025Z",
+  "createdAt": "2026-08-24T10:18:46.716Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 25851,
+  "totalChunks": 25965,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 92,
       "bytes": 136258
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 114,
+      "bytes": 170926
     }
   ],
   "sources": {
@@ -3106,20 +3111,50 @@
       "size": 614633,
       "status": "indexed",
       "chunks": 4
+    },
+    "03_PROCUREMENT/Member States/Germany/b116-data.pdf": {
+      "sha256": "f78f9563530536c2125ada4f3d36f0c3a59d6751ff1072491c633af6e3ee117a",
+      "size": 462603,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/Member States/Germany/b119-data.pdf": {
+      "sha256": "b6a0f5232203d4610b2ae241bf92aafe4273a9108db0549c587a5ade5b43e01e",
+      "size": 221597,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/Member States/Germany/b121-data.pdf": {
+      "sha256": "fd8081eee9dd93496b0e9ff321e6f88f4af369e884111083bc89f1e81b852e0c",
+      "size": 225846,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/Member States/Germany/b124-data.pdf": {
+      "sha256": "45c7457ac33771615f353947482f297cdba895a2ff2cba5f4a088e79a9178b6a",
+      "size": 80272,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "03_PROCUREMENT/Member States/Germany/zvb-bmvg-banz-at-13-07-2023-b1-data.pdf": {
+      "sha256": "b51f1d095d521f92a3a85d901c37cbb64c6efa77b36b1a665d4b65e436147c66",
+      "size": 870875,
+      "status": "indexed",
+      "chunks": 86
     }
   },
   "report": {
     "discoveredFiles": 520,
     "unchangedFiles": 481,
     "changedFiles": 20,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 10,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 5,
     "deletedFiles": [],
-    "indexedFiles": 8,
+    "indexedFiles": 13,
     "skippedFiles": 2,
     "copiedChunks": 25589,
-    "newChunks": 262,
-    "totalChunks": 25851,
+    "newChunks": 376,
+    "totalChunks": 25965,
     "failures": [
       {
         "file": "03_PROCUREMENT/Member States/France/DGA/20251209_NP_DGA-S2A_Guide-ACH-0050-Ed04_Clausier-commente-MDS.pdf",
