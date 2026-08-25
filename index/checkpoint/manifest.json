@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
-  "createdAt": "2026-08-25T14:38:22.741Z",
+  "createdAt": "2026-08-25T15:14:37.502Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 34645,
+  "totalChunks": 36299,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -28,6 +28,11 @@
       "file": "rag-index-0004.ndjson",
       "chunks": 2651,
       "bytes": 4100161
+    },
+    {
+      "file": "rag-index-0005.ndjson",
+      "chunks": 1654,
+      "bytes": 2561293
     }
   ],
   "sources": {
@@ -2312,8 +2317,8 @@
       "chunks": 2
     },
     "03_PROCUREMENT/EUSPA/Index _03_Procurement_EUSPA.docx": {
-      "sha256": "4de31c4989337604633446713db50c195a4abb96928e7483335d007f9ffe0b4a",
-      "size": 14666,
+      "sha256": "d7d466a3ffa9e1ba21177230f284675b1ec834e488ffb86b380de25275a84bce",
+      "size": 14661,
       "status": "indexed",
       "chunks": 1
     },
@@ -3093,46 +3098,44 @@
       "size": 24057812,
       "status": "indexed",
       "chunks": 12
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/WebsiteAnnouncement - NAVISP Element 1 Work Plan 2026 (2).pdf": {
+      "sha256": "e4430f2e3124d9020d66c9ed43248d5779a5e1a69944aa084e9a14ae8e7cd5a7",
+      "size": 372504,
+      "status": "indexed",
+      "chunks": 41
+    },
+    "03_PROCUREMENT/EUSPA/Operational documents/MASTER template for all COST SHEETS Ax V3.1.7.xlsx": {
+      "sha256": "3c65dd69c5c7c5ca5e67bf03cc926735e76f66f3f93c51f50d6b432302d601cb",
+      "size": 583175,
+      "status": "indexed",
+      "chunks": 1610
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/2022_euspa_contractors_list_-_corrigendum.pdf": {
+      "sha256": "4513d4bc2053feb47f9e6594c19e0041e5bb5fbbfebd3f151c5048861ad9a251",
+      "size": 162163,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/Annual list of contractors 2013-1.pdf": {
+      "sha256": "4595a1f0729be358dc865970ff71145038e0edf6a1497a6184e1ec9e8e8a47d7",
+      "size": 196800,
+      "status": "indexed",
+      "chunks": 1
     }
   },
   "report": {
     "discoveredFiles": 550,
-    "unchangedFiles": 470,
-    "changedFiles": 60,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 45,
-    "deletedFiles": [
-      "01_POLICY/EU/EUSPA/Single_Programming_Document_2026-2028.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/2022_euspa_contractors_list_-_corrigendum.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-1.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-2.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-3.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/EUSPA List of contractors 2023_3.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2020.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2021.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2022.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/GSA contractors list 2014.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2015.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2016.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2017.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2018.pdf",
-      "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2019.pdf",
-      "03_PROCUREMENT/Member States/Germany/b084-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/b086-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/b086a-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/b111-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/b115-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/b116-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/b119-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/b121-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/b124-data.pdf",
-      "03_PROCUREMENT/Member States/Germany/zvb-bmvg-banz-at-13-07-2023-b1-data.pdf"
-    ],
-    "indexedFiles": 14,
+    "unchangedFiles": 484,
+    "changedFiles": 45,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 25,
+    "deletedFiles": [],
+    "indexedFiles": 19,
     "skippedFiles": 1,
     "copiedChunks": 25990,
-    "newChunks": 8655,
-    "totalChunks": 34645,
+    "newChunks": 10309,
+    "totalChunks": 36299,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf",
