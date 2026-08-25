@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
-  "createdAt": "2026-08-25T16:33:36.109Z",
+  "createdAt": "2026-08-25T16:36:07.908Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 47204,
+  "totalChunks": 47320,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -63,6 +63,11 @@
       "file": "rag-index-0011.ndjson",
       "chunks": 68,
       "bytes": 100349
+    },
+    {
+      "file": "rag-index-0012.ndjson",
+      "chunks": 116,
+      "bytes": 174792
     }
   ],
   "sources": {
@@ -3333,20 +3338,50 @@
       "size": 462603,
       "status": "indexed",
       "chunks": 1
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b119-data.pdf": {
+      "sha256": "b6a0f5232203d4610b2ae241bf92aafe4273a9108db0549c587a5ade5b43e01e",
+      "size": 221597,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b121-data.pdf": {
+      "sha256": "fd8081eee9dd93496b0e9ff321e6f88f4af369e884111083bc89f1e81b852e0c",
+      "size": 225846,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b124-data.pdf": {
+      "sha256": "45c7457ac33771615f353947482f297cdba895a2ff2cba5f4a088e79a9178b6a",
+      "size": 80272,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/zvb-bmvg-banz-at-13-07-2023-b1-data.pdf": {
+      "sha256": "b51f1d095d521f92a3a85d901c37cbb64c6efa77b36b1a665d4b65e436147c66",
+      "size": 870875,
+      "status": "indexed",
+      "chunks": 86
+    },
+    "03_PROCUREMENT/Member States/Germany/DLR/Zuwendung_Definition und Erläuterungen.pdf": {
+      "sha256": "b6b2b16d1d24ac5b69a3ee345c1b4ae31b5cb2985e55ab3f87b33a761be8c047",
+      "size": 111261,
+      "status": "indexed",
+      "chunks": 3
     }
   },
   "report": {
     "discoveredFiles": 550,
     "unchangedFiles": 509,
     "changedFiles": 20,
-    "processedChangedFiles": 50,
+    "processedChangedFiles": 55,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 48,
+    "indexedFiles": 53,
     "skippedFiles": 2,
     "copiedChunks": 25990,
-    "newChunks": 21214,
-    "totalChunks": 47204,
+    "newChunks": 21330,
+    "totalChunks": 47320,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf",
