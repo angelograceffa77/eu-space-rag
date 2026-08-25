@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
-  "createdAt": "2026-08-25T16:31:06.009Z",
+  "createdAt": "2026-08-25T16:33:36.109Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 47136,
+  "totalChunks": 47204,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -58,6 +58,11 @@
       "file": "rag-index-0010.ndjson",
       "chunks": 489,
       "bytes": 773227
+    },
+    {
+      "file": "rag-index-0011.ndjson",
+      "chunks": 68,
+      "bytes": 100349
     }
   ],
   "sources": {
@@ -3297,24 +3302,59 @@
       "size": 39892,
       "status": "indexed",
       "chunks": 25
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b086-data.pdf": {
+      "sha256": "8e23647717210d30616829b3dc0293e65e6e6b0486ec0e112d4a714659612a29",
+      "size": 59772,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b086a-data.pdf": {
+      "sha256": "61a6f7f32941483c3862a414a0c3060589d10e2d894c805a61a21c5b35647b02",
+      "size": 39516,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b111-data.pdf": {
+      "sha256": "c4c9dfe60b78181e5cb79554efe2e98cba33f85174b70d68ab7dc49fddb11fc8",
+      "size": 124043,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b115-data.pdf": {
+      "sha256": "7cf6ea3b31d449ed153f47d549cbe1b76bb94a51116acc969a70a23b26a2b6d2",
+      "size": 614633,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b116-data.pdf": {
+      "sha256": "f78f9563530536c2125ada4f3d36f0c3a59d6751ff1072491c633af6e3ee117a",
+      "size": 462603,
+      "status": "indexed",
+      "chunks": 1
     }
   },
   "report": {
     "discoveredFiles": 550,
     "unchangedFiles": 509,
     "changedFiles": 20,
-    "processedChangedFiles": 45,
+    "processedChangedFiles": 50,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 44,
-    "skippedFiles": 1,
+    "indexedFiles": 48,
+    "skippedFiles": 2,
     "copiedChunks": 25990,
-    "newChunks": 21146,
-    "totalChunks": 47136,
+    "newChunks": 21214,
+    "totalChunks": 47204,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
+      },
+      {
+        "file": "03_PROCUREMENT/Member States/Germany/BAAINBw/b111-data.pdf",
+        "reason": "Error: Error: unsupported encryption algorithm"
       }
     ]
   }
