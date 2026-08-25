@@ -53,6 +53,16 @@ const WORKER_MEMORY_MB = Math.max(
   Number.parseInt(process.env.WORKER_MEMORY_MB || "180", 10),
   128
 );
+
+/*
+ * Excel workbooks can require more heap while SheetJS parses ZIP/XML or
+ * binary workbook structures. Keep the normal worker limit unchanged and
+ * apply a separate, bounded limit only to Excel files.
+ */
+const EXCEL_WORKER_MEMORY_MB = Math.max(
+  Number.parseInt(process.env.EXCEL_WORKER_MEMORY_MB || "300", 10),
+  WORKER_MEMORY_MB
+);
 const WORKER_TIMEOUT_MS = Math.max(
   Number.parseInt(process.env.WORKER_TIMEOUT_MS || "300000", 10),
   30000
@@ -114,6 +124,7 @@ function getStatus() {
       `${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_CHECKPOINT_DIR}`,
     shardSizeMB: SHARD_SIZE_MB,
     workerMemoryMB: WORKER_MEMORY_MB,
+    excelWorkerMemoryMB: EXCEL_WORKER_MEMORY_MB,
     workerTimeoutMS: WORKER_TIMEOUT_MS,
     workerKillGraceMS: WORKER_KILL_GRACE_MS,
     checkpointEveryFiles: CHECKPOINT_EVERY_FILES,
@@ -154,7 +165,11 @@ function listFiles(folder) {
     const lowerName = item.name.toLowerCase();
     if (
       lowerName.endsWith(".pdf") ||
-      lowerName.endsWith(".docx")
+      lowerName.endsWith(".docx") ||
+      lowerName.endsWith(".xlsx") ||
+      lowerName.endsWith(".xls") ||
+      lowerName.endsWith(".xlsm") ||
+      lowerName.endsWith(".xlsb")
     ) {
       results.push(fullPath);
     }
@@ -221,6 +236,29 @@ function addSearchResult(results, result, topK) {
   if (results.length > topK) results.length = topK;
 }
 
+const EXCEL_INDEXER_REVISION = 2;
+
+function isExcelFilePath(fileName) {
+  return /\.(xlsx|xls|xlsm|xlsb)$/i.test(String(fileName || ""));
+}
+
+function isCompletedSourceState(fileName, saved, current) {
+  if (!saved || !current || saved.sha256 !== current.sha256) return false;
+
+  if (saved.status === "indexed") return true;
+
+  if (saved.status !== "skipped") return false;
+
+  // Retry Excel files skipped by the older Excel worker exactly once under
+  // the current memory-efficient Excel indexer. If they fail again, the
+  // revision marker below prevents retrying them on every future deploy.
+  if (isExcelFilePath(fileName)) {
+    return saved.excelIndexerRevision === EXCEL_INDEXER_REVISION;
+  }
+
+  return true;
+}
+
 function sourcesMatchManifest(currentSources, candidateManifest) {
   const savedSources = candidateManifest?.sources || {};
   const currentNames = Object.keys(currentSources);
@@ -232,11 +270,7 @@ function sourcesMatchManifest(currentSources, candidateManifest) {
     const current = currentSources[fileName];
     const saved = savedSources[fileName];
 
-    if (
-      !saved ||
-      saved.sha256 !== current.sha256 ||
-      (saved.status !== "indexed" && saved.status !== "skipped")
-    ) {
+    if (!isCompletedSourceState(fileName, saved, current)) {
       return false;
     }
   }
@@ -475,7 +509,44 @@ async function readDocument(file, offset = 0, limit = 40000) {
     throw new Error("No searchable index is available.");
   }
 
-  const chunks = [];
+  const requestedOffset = Math.max(Number.parseInt(offset, 10) || 0, 0);
+  const safeLimit = Math.min(
+    Math.max(Number.parseInt(limit, 10) || 40000, 1000),
+    60000
+  );
+  const requestedEnd = requestedOffset + safeLimit;
+
+  let chunkCount = 0;
+  let totalCharacters = 0;
+  let previousTail = "";
+  let hasReconstructedText = false;
+  const requestedParts = [];
+
+  /*
+   * Stream the document reconstruction instead of first collecting every
+   * chunk and building one potentially huge completeText string in memory.
+   * The last 1000 reconstructed characters are sufficient to reproduce the
+   * same adjacent-chunk overlap removal used by the original implementation.
+   */
+  const consumeAddition = addition => {
+    if (!addition) return;
+
+    const additionStart = totalCharacters;
+    const additionEnd = additionStart + addition.length;
+
+    if (
+      additionEnd > requestedOffset &&
+      additionStart < requestedEnd
+    ) {
+      const sliceStart = Math.max(requestedOffset - additionStart, 0);
+      const sliceEnd = Math.min(requestedEnd - additionStart, addition.length);
+      requestedParts.push(addition.slice(sliceStart, sliceEnd));
+    }
+
+    totalCharacters = additionEnd;
+    previousTail = (previousTail + addition).slice(-1000);
+    hasReconstructedText = true;
+  };
 
   for (const shard of activeManifest.shards || []) {
     const shardPath = path.join(activeRoot, shard.file);
@@ -497,11 +568,37 @@ async function readDocument(file, offset = 0, limit = 40000) {
         }
 
         if (
-          item.file === requestedFile &&
-          typeof item.content === "string"
+          item.file !== requestedFile ||
+          typeof item.content !== "string"
         ) {
-          chunks.push(item.content);
+          continue;
         }
+
+        chunkCount += 1;
+        const chunk = item.content;
+
+        if (!hasReconstructedText) {
+          consumeAddition(chunk);
+          continue;
+        }
+
+        if (!chunk) continue;
+
+        const maxOverlap = Math.min(
+          1000,
+          previousTail.length,
+          chunk.length
+        );
+
+        let overlap = 0;
+        for (let size = maxOverlap; size >= 20; size -= 1) {
+          if (previousTail.slice(-size) === chunk.slice(0, size)) {
+            overlap = size;
+            break;
+          }
+        }
+
+        consumeAddition(overlap > 0 ? chunk.slice(overlap) : ` ${chunk}`);
       }
     } finally {
       reader.close();
@@ -509,31 +606,19 @@ async function readDocument(file, offset = 0, limit = 40000) {
     }
   }
 
-  if (chunks.length === 0) return null;
+  if (chunkCount === 0) return null;
 
-  let completeText = "";
-  for (const chunk of chunks) {
-    completeText = appendChunkWithoutDuplicateOverlap(completeText, chunk);
-  }
-
-  const safeOffset = Math.min(
-    Math.max(Number.parseInt(offset, 10) || 0, 0),
-    completeText.length
-  );
-  const safeLimit = Math.min(
-    Math.max(Number.parseInt(limit, 10) || 40000, 1000),
-    60000
-  );
-  const end = Math.min(safeOffset + safeLimit, completeText.length);
-  const text = completeText.slice(safeOffset, end);
-  const hasMore = end < completeText.length;
+  const safeOffset = Math.min(requestedOffset, totalCharacters);
+  const end = Math.min(safeOffset + safeLimit, totalCharacters);
+  const text = requestedParts.join("");
+  const hasMore = end < totalCharacters;
 
   return {
     file: requestedFile,
     offset: safeOffset,
     returnedCharacters: text.length,
-    totalCharacters: completeText.length,
-    chunkCount: chunks.length,
+    totalCharacters,
+    chunkCount,
     hasMore,
     nextOffset: hasMore ? end : null,
     text
@@ -906,7 +991,11 @@ function processFileInWorker(
       {
         detached: true,
         execArgv: [
-          `--max-old-space-size=${WORKER_MEMORY_MB}`
+          `--max-old-space-size=${
+            /\.(xlsx|xls|xlsm|xlsb)$/i.test(displayPath)
+              ? EXCEL_WORKER_MEMORY_MB
+              : WORKER_MEMORY_MB
+          }`
         ],
         stdio: [
           "ignore",
@@ -1442,14 +1531,7 @@ async function rebuildIndex({ publish = true } = {}) {
     for (const [displayPath, sourceState] of Object.entries(baseSources)) {
       const current = currentSources[displayPath];
 
-      if (
-        current &&
-        sourceState.sha256 === current.sha256 &&
-        (
-          sourceState.status === "indexed" ||
-          sourceState.status === "skipped"
-        )
-      ) {
+      if (isCompletedSourceState(displayPath, sourceState, current)) {
         completedFiles.add(displayPath);
       }
     }
@@ -1573,7 +1655,10 @@ async function rebuildIndex({ publish = true } = {}) {
           size: source.size,
           status: "skipped",
           reason: result.reason,
-          chunks: 0
+          chunks: 0,
+          ...(isExcelFilePath(displayPath)
+            ? { excelIndexerRevision: EXCEL_INDEXER_REVISION }
+            : {})
         };
 
         console.warn(`Skipped ${displayPath}: ${result.reason}`);
