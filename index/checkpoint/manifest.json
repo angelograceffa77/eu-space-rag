@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
-  "createdAt": "2026-08-25T14:30:23.343Z",
+  "createdAt": "2026-08-25T14:34:11.742Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 26092,
+  "totalChunks": 31994,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -18,6 +18,11 @@
       "file": "rag-index-0002.ndjson",
       "chunks": 12810,
       "bytes": 19801435
+    },
+    {
+      "file": "rag-index-0003.ndjson",
+      "chunks": 5902,
+      "bytes": 9211526
     }
   ],
   "sources": {
@@ -3022,14 +3027,44 @@
       "size": 85388,
       "status": "indexed",
       "chunks": 27
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/PBF-7.xlsx": {
+      "sha256": "f8e89976ee949143ed0dba68d650f0e1124f68f025797585ce5d4de7d4eabe95",
+      "size": 37518,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/620bc84520454e78d575df56_files_231d72fdac_gstp-e1-compendia-2026-2028.pdf": {
+      "sha256": "b6bf55cad66f87d88cb45c94bff7d0bcc7922917901027373196ecbe37dd34e8",
+      "size": 6837402,
+      "status": "indexed",
+      "chunks": 637
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/ARTES-Technology-and-Products-overview-18-May-2026.pdf": {
+      "sha256": "758d1384d5b857ba305d545f68bc52adb6f97b79efbf5e85ba11fd1cc4e95588",
+      "size": 2386153,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/CM25_exploration_factsheet.pdf": {
+      "sha256": "e7d8a854e0ea933b4c62753baa6a634c72784ee8a9aa3e6a3202f850e3c2e697",
+      "size": 1908729,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/ESA_Publication_Tender_Actions_2026-08-25.xlsx": {
+      "sha256": "51440a6798091f5a12db1b34af07609a7ee96007aa41e421e8e0ce68632b6531",
+      "size": 1411458,
+      "status": "indexed",
+      "chunks": 5248
     }
   },
   "report": {
     "discoveredFiles": 550,
     "unchangedFiles": 470,
     "changedFiles": 60,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 55,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 50,
     "deletedFiles": [
       "01_POLICY/EU/EUSPA/Single_Programming_Document_2026-2028.pdf",
       "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/2022_euspa_contractors_list_-_corrigendum.pdf",
@@ -3057,11 +3092,11 @@
       "03_PROCUREMENT/Member States/Germany/b124-data.pdf",
       "03_PROCUREMENT/Member States/Germany/zvb-bmvg-banz-at-13-07-2023-b1-data.pdf"
     ],
-    "indexedFiles": 5,
+    "indexedFiles": 10,
     "skippedFiles": 0,
     "copiedChunks": 25990,
-    "newChunks": 102,
-    "totalChunks": 26092,
+    "newChunks": 6004,
+    "totalChunks": 31994,
     "failures": []
   }
 }
