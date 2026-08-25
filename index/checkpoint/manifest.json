@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
-  "createdAt": "2026-08-25T15:23:04.201Z",
+  "createdAt": "2026-08-25T15:26:01.012Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 46362,
+  "totalChunks": 46647,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -48,6 +48,11 @@
       "file": "rag-index-0008.ndjson",
       "chunks": 41,
       "bytes": 60548
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 285,
+      "bytes": 437397
     }
   ],
   "sources": {
@@ -3227,20 +3232,50 @@
       "size": 101277,
       "status": "indexed",
       "chunks": 11
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/gsa_contractors_list_2019.pdf": {
+      "sha256": "71d891655c2d3f9457eb93a456086f8740895f98bd45b33cc15e20e77ca9d5ab",
+      "size": 118447,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/Single_Programming_Document_2026-2028.pdf": {
+      "sha256": "a1a540dee04289905da8d1f44618762e5e6a5a6fa87d9f8d3d86b10330522ac4",
+      "size": 1976890,
+      "status": "indexed",
+      "chunks": 208
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/donnees-essentielles-2020.xlsx": {
+      "sha256": "33b1f4c1cea340b60011792589dd7ca1dfada096f3213264e97896c1183808f0",
+      "size": 19031,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/donnees-essentielles-2021.xlsx": {
+      "sha256": "fe2107d4ffd9965e35f231eabeb61f8d0eddb0851fc185bb78011b8ebf9b847a",
+      "size": 35442,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/donnees-essentielles-2022.xlsx": {
+      "sha256": "d20d9315247122357751fdada8033c9d8c05b7be840fc692e16b3eb5661ee1be",
+      "size": 24739,
+      "status": "indexed",
+      "chunks": 13
     }
   },
   "report": {
     "discoveredFiles": 550,
     "unchangedFiles": 484,
     "changedFiles": 45,
-    "processedChangedFiles": 35,
-    "remainingChangedFiles": 10,
+    "processedChangedFiles": 40,
+    "remainingChangedFiles": 5,
     "deletedFiles": [],
-    "indexedFiles": 34,
+    "indexedFiles": 39,
     "skippedFiles": 1,
     "copiedChunks": 25990,
-    "newChunks": 20372,
-    "totalChunks": 46362,
+    "newChunks": 20657,
+    "totalChunks": 46647,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf",
