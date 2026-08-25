@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
-  "createdAt": "2026-08-25T16:36:07.908Z",
+  "createdAt": "2026-08-25T16:40:00.617Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 47320,
+  "totalChunks": 79594,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -68,6 +68,21 @@
       "file": "rag-index-0012.ndjson",
       "chunks": 116,
       "bytes": 174792
+    },
+    {
+      "file": "rag-index-0013.ndjson",
+      "chunks": 14018,
+      "bytes": 20970629
+    },
+    {
+      "file": "rag-index-0014.ndjson",
+      "chunks": 14056,
+      "bytes": 20970685
+    },
+    {
+      "file": "rag-index-0015.ndjson",
+      "chunks": 4200,
+      "bytes": 6265257
     }
   ],
   "sources": {
@@ -3032,10 +3047,10 @@
       "chunks": 0
     },
     "03_PROCUREMENT/Member States/Index _03_Procurement_Member States.docx": {
-      "sha256": "1c8331b99b6c15bdd6b8950521d6e666dffa86fd9793f640870ddfb50e8776ee",
-      "size": 20584,
+      "sha256": "a9ea4a5694ad2b81a83d3eab7751e74dd0d77927eff71f98b9d7a42d3a34f787",
+      "size": 20010,
       "status": "indexed",
-      "chunks": 3
+      "chunks": 4
     },
     "03_PROCUREMENT/Member States/Italy/capitolato_generale_per_i_contratti_industriali_di_servizi_di_ricerca_e_sviluppo.pdf": {
       "sha256": "1b10eef4de1fb68fca0295d4557c02bbe8a16f9862ca673f1c510315a720b781",
@@ -3368,20 +3383,45 @@
       "size": 111261,
       "status": "indexed",
       "chunks": 3
+    },
+    "03_PROCUREMENT/Member States/Italy/Future purchases/068_programma_triennale_acquisti_beni_servizi_e_forniture_20252027_red.pdf": {
+      "sha256": "7c04bf0e7554c089159fd118ca35bf1fe0a13926d2b5ddc2d5b49f6d8d16a6a4",
+      "size": 5498302,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/Member States/Italy/Future purchases/2026_04_28_del_042_programma_acquisti_beni_servizi_e_forniture_20262028.pdf": {
+      "sha256": "8cd7e8e64156428b19161bb07205db6c05ea6503083ebd72cbc7a74b7b7fc6cc",
+      "size": 2031855,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "03_PROCUREMENT/Member States/Italy/historical procurement data/ASI_Procurement_Readable.xlsx": {
+      "sha256": "1117cb09f400a3a89d407e31ba0a72f2fbccee2c5986b582f3d846bd25e4d391",
+      "size": 344143,
+      "status": "indexed",
+      "chunks": 870
+    },
+    "05_COMPANIES/ESA_Companies_2026-08-25.xlsx": {
+      "sha256": "9a5c343adc30f3ac051de4e2acc2aab15d09eb589fbfe122f21a5b9a5733c371",
+      "size": 10680793,
+      "status": "indexed",
+      "chunks": 31369
     }
   },
   "report": {
     "discoveredFiles": 550,
     "unchangedFiles": 509,
     "changedFiles": 20,
-    "processedChangedFiles": 55,
+    "processedChangedFiles": 60,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 53,
-    "skippedFiles": 2,
+    "indexedFiles": 57,
+    "skippedFiles": 3,
     "copiedChunks": 25990,
-    "newChunks": 21330,
-    "totalChunks": 47320,
+    "newChunks": 53604,
+    "totalChunks": 79594,
     "failures": [
       {
         "file": "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf",
@@ -3390,6 +3430,10 @@
       {
         "file": "03_PROCUREMENT/Member States/Germany/BAAINBw/b111-data.pdf",
         "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "03_PROCUREMENT/Member States/Italy/Future purchases/068_programma_triennale_acquisti_beni_servizi_e_forniture_20252027_red.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
   }
