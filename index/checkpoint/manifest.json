@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
-  "createdAt": "2026-08-25T14:34:11.742Z",
+  "createdAt": "2026-08-25T14:38:22.741Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 31994,
+  "totalChunks": 34645,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 5902,
       "bytes": 9211526
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 2651,
+      "bytes": 4100161
     }
   ],
   "sources": {
@@ -3057,14 +3062,45 @@
       "size": 1411458,
       "status": "indexed",
       "chunks": 5248
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/ESA_Tender_Actions_2026-08-25.xlsx": {
+      "sha256": "d781d1ce37903ec124e0e8aaef35494426c9f3926f3bbc9b0977d0acc1ef4eb3",
+      "size": 668983,
+      "status": "indexed",
+      "chunks": 2612
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/FutureEO_brochure_2026.pdf": {
+      "sha256": "0c2991c92d2e1514235724483a25cca0ed83a60ad7b66b34b2cc4bec4895f40f",
+      "size": 2648171,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/NAVISP Element 1 Work Plan 2026 Addendum - website.pdf": {
+      "sha256": "7326d79581feaf296fa4ef64a24e453ca5ddec32975a6ab909798db77f2e646d",
+      "size": 365035,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf": {
+      "sha256": "0f0b2e37dee1b75efb476012e083d7c8db9d7d63ad201925ca10454277b232b5",
+      "size": 4121826,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Space_Safety_Brochure_CM25.pdf": {
+      "sha256": "4a66017cdbba6a083c826985ba2d92fa119eb056e5b642b50328c3bfb1599b0a",
+      "size": 24057812,
+      "status": "indexed",
+      "chunks": 12
     }
   },
   "report": {
     "discoveredFiles": 550,
     "unchangedFiles": 470,
     "changedFiles": 60,
-    "processedChangedFiles": 10,
-    "remainingChangedFiles": 50,
+    "processedChangedFiles": 15,
+    "remainingChangedFiles": 45,
     "deletedFiles": [
       "01_POLICY/EU/EUSPA/Single_Programming_Document_2026-2028.pdf",
       "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/2022_euspa_contractors_list_-_corrigendum.pdf",
@@ -3092,11 +3128,16 @@
       "03_PROCUREMENT/Member States/Germany/b124-data.pdf",
       "03_PROCUREMENT/Member States/Germany/zvb-bmvg-banz-at-13-07-2023-b1-data.pdf"
     ],
-    "indexedFiles": 10,
-    "skippedFiles": 0,
+    "indexedFiles": 14,
+    "skippedFiles": 1,
     "copiedChunks": 25990,
-    "newChunks": 6004,
-    "totalChunks": 31994,
-    "failures": []
+    "newChunks": 8655,
+    "totalChunks": 34645,
+    "failures": [
+      {
+        "file": "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
