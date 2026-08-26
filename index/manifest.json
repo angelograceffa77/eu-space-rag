@@ -2,12 +2,12 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
-  "createdAt": "2026-08-25T16:42:41.742Z",
+  "buildCommit": "45d767ec6e978c37e5deb18820a3d9a4fd040e6e",
+  "createdAt": "2026-08-26T14:20:38.435Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 79594,
+  "totalChunks": 80233,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -16,73 +16,28 @@
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 12810,
-      "bytes": 19801435
+      "chunks": 13550,
+      "bytes": 20970533
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 5902,
-      "bytes": 9211526
+      "chunks": 13571,
+      "bytes": 20971048
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 2651,
-      "bytes": 4100161
+      "chunks": 13847,
+      "bytes": 20971435
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 1654,
-      "bytes": 2561293
+      "chunks": 14058,
+      "bytes": 20970079
     },
     {
       "file": "rag-index-0006.ndjson",
-      "chunks": 9198,
-      "bytes": 14034842
-    },
-    {
-      "file": "rag-index-0007.ndjson",
-      "chunks": 824,
-      "bytes": 1260173
-    },
-    {
-      "file": "rag-index-0008.ndjson",
-      "chunks": 41,
-      "bytes": 60548
-    },
-    {
-      "file": "rag-index-0009.ndjson",
-      "chunks": 285,
-      "bytes": 437397
-    },
-    {
-      "file": "rag-index-0010.ndjson",
-      "chunks": 489,
-      "bytes": 773227
-    },
-    {
-      "file": "rag-index-0011.ndjson",
-      "chunks": 68,
-      "bytes": 100349
-    },
-    {
-      "file": "rag-index-0012.ndjson",
-      "chunks": 116,
-      "bytes": 174792
-    },
-    {
-      "file": "rag-index-0013.ndjson",
-      "chunks": 14018,
-      "bytes": 20970629
-    },
-    {
-      "file": "rag-index-0014.ndjson",
-      "chunks": 14056,
-      "bytes": 20970685
-    },
-    {
-      "file": "rag-index-0015.ndjson",
-      "chunks": 4200,
-      "bytes": 6265257
+      "chunks": 11925,
+      "bytes": 17824758
     }
   ],
   "sources": {
@@ -3408,33 +3363,32 @@
       "size": 10680793,
       "status": "indexed",
       "chunks": 31369
+    },
+    "03_PROCUREMENT/EU/DG DEFIS/Procurement Data/EC_DG_DEFIS_Funding_Tenders_2026-08-26.xlsx": {
+      "sha256": "9f0cafc635677a2d96f5b198c9ef1f2c1fcdd36bc5d2f39238c383faea5a1f59",
+      "size": 60086,
+      "status": "indexed",
+      "chunks": 210
+    },
+    "03_PROCUREMENT/EU/DG DEFIS/Procurement Data/EC_DG_DEFIS_TED_Procurements_2026-08-26.xlsx": {
+      "sha256": "94bfc1b67074bb18513049497c08fed68448913a08ae08ecc580eb67913d068d",
+      "size": 107108,
+      "status": "indexed",
+      "chunks": 429
     }
   },
   "report": {
-    "discoveredFiles": 550,
-    "unchangedFiles": 509,
-    "changedFiles": 20,
-    "processedChangedFiles": 60,
+    "discoveredFiles": 552,
+    "unchangedFiles": 527,
+    "changedFiles": 2,
+    "processedChangedFiles": 2,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 57,
-    "skippedFiles": 3,
-    "copiedChunks": 25990,
-    "newChunks": 53604,
-    "totalChunks": 79594,
-    "failures": [
-      {
-        "file": "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      },
-      {
-        "file": "03_PROCUREMENT/Member States/Germany/BAAINBw/b111-data.pdf",
-        "reason": "Error: Error: unsupported encryption algorithm"
-      },
-      {
-        "file": "03_PROCUREMENT/Member States/Italy/Future purchases/068_programma_triennale_acquisti_beni_servizi_e_forniture_20252027_red.pdf",
-        "reason": "Worker stopped with code null, signal SIGABRT"
-      }
-    ]
+    "indexedFiles": 2,
+    "skippedFiles": 0,
+    "copiedChunks": 79594,
+    "newChunks": 639,
+    "totalChunks": 80233,
+    "failures": []
   }
 }
