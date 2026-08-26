@@ -2,37 +2,87 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "52b9d2cd69c86b9d12efe6bb82341ebe90e20021",
-  "createdAt": "2026-08-24T10:22:43.727Z",
+  "buildCommit": "9e8ca59aa43713756538b692c36742e976282f1e",
+  "createdAt": "2026-08-25T16:42:41.742Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 26582,
+  "totalChunks": 79594,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
-      "chunks": 13290,
-      "bytes": 20969767
+      "chunks": 13282,
+      "bytes": 20971126
     },
     {
       "file": "rag-index-0002.ndjson",
-      "chunks": 12469,
-      "bytes": 19288369
+      "chunks": 12810,
+      "bytes": 19801435
     },
     {
       "file": "rag-index-0003.ndjson",
-      "chunks": 92,
-      "bytes": 136258
+      "chunks": 5902,
+      "bytes": 9211526
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 114,
-      "bytes": 170926
+      "chunks": 2651,
+      "bytes": 4100161
     },
     {
       "file": "rag-index-0005.ndjson",
-      "chunks": 617,
-      "bytes": 943069
+      "chunks": 1654,
+      "bytes": 2561293
+    },
+    {
+      "file": "rag-index-0006.ndjson",
+      "chunks": 9198,
+      "bytes": 14034842
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 824,
+      "bytes": 1260173
+    },
+    {
+      "file": "rag-index-0008.ndjson",
+      "chunks": 41,
+      "bytes": 60548
+    },
+    {
+      "file": "rag-index-0009.ndjson",
+      "chunks": 285,
+      "bytes": 437397
+    },
+    {
+      "file": "rag-index-0010.ndjson",
+      "chunks": 489,
+      "bytes": 773227
+    },
+    {
+      "file": "rag-index-0011.ndjson",
+      "chunks": 68,
+      "bytes": 100349
+    },
+    {
+      "file": "rag-index-0012.ndjson",
+      "chunks": 116,
+      "bytes": 174792
+    },
+    {
+      "file": "rag-index-0013.ndjson",
+      "chunks": 14018,
+      "bytes": 20970629
+    },
+    {
+      "file": "rag-index-0014.ndjson",
+      "chunks": 14056,
+      "bytes": 20970685
+    },
+    {
+      "file": "rag-index-0015.ndjson",
+      "chunks": 4200,
+      "bytes": 6265257
     }
   ],
   "sources": {
@@ -67,8 +117,8 @@
       "chunks": 40
     },
     "01_POLICY/ESA/Index _01Policy_ESA.docx": {
-      "sha256": "87c647f19f2ce2b5f4330478b8d2cdd4c83d09db7ec6e7753915d538bb40fd7e",
-      "size": 14427,
+      "sha256": "06b389b1e59c8ac2b8c29962837f307baeb728f7aa29696b81e3966b40f19e13",
+      "size": 14393,
       "status": "indexed",
       "chunks": 1
     },
@@ -499,16 +549,10 @@
       "chunks": 83
     },
     "01_POLICY/EU/EUSPA/Index _01Policy_EU_Euspa.docx": {
-      "sha256": "856a7aa41c779274c8ffa9b4aa17e2ef99845317b289cb5383bd64fe34e308ce",
-      "size": 14495,
+      "sha256": "80058ca81dd9a4b8aaf7fd05f9837a1397a1f632885ee58be19da0dd0b6fd136",
+      "size": 14502,
       "status": "indexed",
       "chunks": 2
-    },
-    "01_POLICY/EU/EUSPA/Single_Programming_Document_2026-2028.pdf": {
-      "sha256": "a1a540dee04289905da8d1f44618762e5e6a5a6fa87d9f8d3d86b10330522ac4",
-      "size": 1976890,
-      "status": "indexed",
-      "chunks": 208
     },
     "01_POLICY/EU/High Representative and EEAS/CELEX_52022JC0004_EN_TXT.pdf": {
       "sha256": "0142cb5df485ecbb8526a9bb94fd705ca1625a43405af604b236677c6113d9e9",
@@ -1924,8 +1968,8 @@
       "chunks": 0
     },
     "03_PROCUREMENT/ESA/Index _03Procurement_ESA.docx": {
-      "sha256": "73b00ae63192ab104762fbd037b8b7f70040716d41aa3126710f9c80429fc2fd",
-      "size": 17614,
+      "sha256": "7c2918070f471276f8a799aa12f35b8a5ea7dc4fbe889ce388b0833171cf15c9",
+      "size": 18292,
       "status": "indexed",
       "chunks": 4
     },
@@ -2310,90 +2354,6 @@
       "status": "indexed",
       "chunks": 72
     },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/2022_euspa_contractors_list_-_corrigendum.pdf": {
-      "sha256": "4513d4bc2053feb47f9e6594c19e0041e5bb5fbbfebd3f151c5048861ad9a251",
-      "size": 162163,
-      "status": "indexed",
-      "chunks": 1
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-1.pdf": {
-      "sha256": "4595a1f0729be358dc865970ff71145038e0edf6a1497a6184e1ec9e8e8a47d7",
-      "size": 196800,
-      "status": "indexed",
-      "chunks": 1
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-2.pdf": {
-      "sha256": "1a20584a608880a0d5e8ed74270790bb86863203a76cbd5756534af7875e1732",
-      "size": 198457,
-      "status": "indexed",
-      "chunks": 1
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/Annual list of contractors 2013-3.pdf": {
-      "sha256": "95a23b2eff9d6ec3e2589bef4ca9a91d3700ecf110615a3e01c186839962fe55",
-      "size": 203591,
-      "status": "indexed",
-      "chunks": 2
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/EUSPA List of contractors 2023_3.pdf": {
-      "sha256": "97bd48fde2fc462c494bff1fea7447d7fd64f002606e4e735ea74a69072f6f58",
-      "size": 3582479,
-      "status": "indexed",
-      "chunks": 40
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2020.pdf": {
-      "sha256": "6d316a193ce19799cadc2c32e0a1a238127787f4e2cdd37eae58065120145ee9",
-      "size": 130577,
-      "status": "indexed",
-      "chunks": 20
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2021.pdf": {
-      "sha256": "10411ec9813ea750fc1c2f29f5fb2f0c8d302769757547ab09ce4db9e26f6076",
-      "size": 523433,
-      "status": "indexed",
-      "chunks": 21
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/euspa_contractors_list_2022.pdf": {
-      "sha256": "4ce109b5d942c1d3a12771e90edfaea76da1af0731f0a5c6f8da263638c6eadd",
-      "size": 682682,
-      "status": "indexed",
-      "chunks": 24
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/GSA contractors list 2014.pdf": {
-      "sha256": "020047c77b7272a761229c3fce8aeda216114a86fcea9e2b0ed2b133e6f9cc7f",
-      "size": 428065,
-      "status": "indexed",
-      "chunks": 5
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2015.pdf": {
-      "sha256": "2fae1e09dd99e181d95bc3bb200ac1dbbd9ddb6eb9613b67b076f5f8e0b61e48",
-      "size": 100706,
-      "status": "indexed",
-      "chunks": 6
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2016.pdf": {
-      "sha256": "29db5daedfa71012e5a586cacb205f61641e23a603d7382233474207b0590d30",
-      "size": 89125,
-      "status": "indexed",
-      "chunks": 7
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2017.pdf": {
-      "sha256": "ef438938e8d25fbc897def2ae580a39b0fee3d9cb5c2e86e442b93eb0ff29f07",
-      "size": 312897,
-      "status": "indexed",
-      "chunks": 12
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2018.pdf": {
-      "sha256": "c87381fcba9bacbc97b5d3c7e881dcff5eafdef7be822de4703ab26e646c753f",
-      "size": 101277,
-      "status": "indexed",
-      "chunks": 11
-    },
-    "03_PROCUREMENT/EUSPA/EUSPA LIST OF CONTRACTORS/gsa_contractors_list_2019.pdf": {
-      "sha256": "71d891655c2d3f9457eb93a456086f8740895f98bd45b33cc15e20e77ca9d5ab",
-      "size": 118447,
-      "status": "indexed",
-      "chunks": 16
-    },
     "03_PROCUREMENT/EUSPA/gsa_financial_regulation_2019_signed.pdf": {
       "sha256": "f9f2c269823c93cd70622dbfc89d15ebc7fc947e701447cc0902fd944fdb4968",
       "size": 678174,
@@ -2407,8 +2367,8 @@
       "chunks": 2
     },
     "03_PROCUREMENT/EUSPA/Index _03_Procurement_EUSPA.docx": {
-      "sha256": "4de31c4989337604633446713db50c195a4abb96928e7483335d007f9ffe0b4a",
-      "size": 14666,
+      "sha256": "d7d466a3ffa9e1ba21177230f284675b1ec834e488ffb86b380de25275a84bce",
+      "size": 14661,
       "status": "indexed",
       "chunks": 1
     },
@@ -3086,72 +3046,11 @@
       "reason": "Worker stopped with code null, signal SIGABRT",
       "chunks": 0
     },
-    "03_PROCUREMENT/Member States/Germany/b084-data.pdf": {
-      "sha256": "11b65ae0f668dd219e21f7bf730b81e6f494ac0f9631afbfb346674b03db167f",
-      "size": 39892,
-      "status": "indexed",
-      "chunks": 25
-    },
-    "03_PROCUREMENT/Member States/Germany/b086-data.pdf": {
-      "sha256": "8e23647717210d30616829b3dc0293e65e6e6b0486ec0e112d4a714659612a29",
-      "size": 59772,
-      "status": "indexed",
-      "chunks": 37
-    },
-    "03_PROCUREMENT/Member States/Germany/b086a-data.pdf": {
-      "sha256": "61a6f7f32941483c3862a414a0c3060589d10e2d894c805a61a21c5b35647b02",
-      "size": 39516,
-      "status": "indexed",
-      "chunks": 26
-    },
-    "03_PROCUREMENT/Member States/Germany/b111-data.pdf": {
-      "sha256": "c4c9dfe60b78181e5cb79554efe2e98cba33f85174b70d68ab7dc49fddb11fc8",
-      "size": 124043,
-      "status": "skipped",
-      "reason": "Error: Error: unsupported encryption algorithm",
-      "chunks": 0
-    },
-    "03_PROCUREMENT/Member States/Germany/b115-data.pdf": {
-      "sha256": "7cf6ea3b31d449ed153f47d549cbe1b76bb94a51116acc969a70a23b26a2b6d2",
-      "size": 614633,
-      "status": "indexed",
-      "chunks": 4
-    },
-    "03_PROCUREMENT/Member States/Germany/b116-data.pdf": {
-      "sha256": "f78f9563530536c2125ada4f3d36f0c3a59d6751ff1072491c633af6e3ee117a",
-      "size": 462603,
-      "status": "indexed",
-      "chunks": 1
-    },
-    "03_PROCUREMENT/Member States/Germany/b119-data.pdf": {
-      "sha256": "b6a0f5232203d4610b2ae241bf92aafe4273a9108db0549c587a5ade5b43e01e",
-      "size": 221597,
-      "status": "indexed",
-      "chunks": 2
-    },
-    "03_PROCUREMENT/Member States/Germany/b121-data.pdf": {
-      "sha256": "fd8081eee9dd93496b0e9ff321e6f88f4af369e884111083bc89f1e81b852e0c",
-      "size": 225846,
-      "status": "indexed",
-      "chunks": 4
-    },
-    "03_PROCUREMENT/Member States/Germany/b124-data.pdf": {
-      "sha256": "45c7457ac33771615f353947482f297cdba895a2ff2cba5f4a088e79a9178b6a",
-      "size": 80272,
-      "status": "indexed",
-      "chunks": 21
-    },
-    "03_PROCUREMENT/Member States/Germany/zvb-bmvg-banz-at-13-07-2023-b1-data.pdf": {
-      "sha256": "b51f1d095d521f92a3a85d901c37cbb64c6efa77b36b1a665d4b65e436147c66",
-      "size": 870875,
-      "status": "indexed",
-      "chunks": 86
-    },
     "03_PROCUREMENT/Member States/Index _03_Procurement_Member States.docx": {
-      "sha256": "1c8331b99b6c15bdd6b8950521d6e666dffa86fd9793f640870ddfb50e8776ee",
-      "size": 20584,
+      "sha256": "a9ea4a5694ad2b81a83d3eab7751e74dd0d77927eff71f98b9d7a42d3a34f787",
+      "size": 20010,
       "status": "indexed",
-      "chunks": 3
+      "chunks": 4
     },
     "03_PROCUREMENT/Member States/Italy/capitolato_generale_per_i_contratti_industriali_di_servizi_di_ricerca_e_sviluppo.pdf": {
       "sha256": "1b10eef4de1fb68fca0295d4557c02bbe8a16f9862ca673f1c510315a720b781",
@@ -3176,28 +3075,365 @@
       "size": 1226121,
       "status": "indexed",
       "chunks": 106
+    },
+    "01_POLICY/ESA/Technology_2040.pdf": {
+      "sha256": "bc98643fef68175613ee5c806e8ba11638cf7c107cba474cc692a307f839e54c",
+      "size": 13678373,
+      "status": "indexed",
+      "chunks": 68
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/ESA Price Breakdown Forms _ Issue 6 Released.xlsx": {
+      "sha256": "99a79daeb4279026e228c340fb456fa18a578f0a8c5524ca2d299819ca1c408a",
+      "size": 85388,
+      "status": "indexed",
+      "chunks": 27
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Price Breakdown Forms (PBF)/PBF-7.xlsx": {
+      "sha256": "f8e89976ee949143ed0dba68d650f0e1124f68f025797585ce5d4de7d4eabe95",
+      "size": 37518,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/620bc84520454e78d575df56_files_231d72fdac_gstp-e1-compendia-2026-2028.pdf": {
+      "sha256": "b6bf55cad66f87d88cb45c94bff7d0bcc7922917901027373196ecbe37dd34e8",
+      "size": 6837402,
+      "status": "indexed",
+      "chunks": 637
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/ARTES-Technology-and-Products-overview-18-May-2026.pdf": {
+      "sha256": "758d1384d5b857ba305d545f68bc52adb6f97b79efbf5e85ba11fd1cc4e95588",
+      "size": 2386153,
+      "status": "indexed",
+      "chunks": 9
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/CM25_exploration_factsheet.pdf": {
+      "sha256": "e7d8a854e0ea933b4c62753baa6a634c72784ee8a9aa3e6a3202f850e3c2e697",
+      "size": 1908729,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/ESA_Publication_Tender_Actions_2026-08-25.xlsx": {
+      "sha256": "51440a6798091f5a12db1b34af07609a7ee96007aa41e421e8e0ce68632b6531",
+      "size": 1411458,
+      "status": "indexed",
+      "chunks": 5248
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/ESA_Tender_Actions_2026-08-25.xlsx": {
+      "sha256": "d781d1ce37903ec124e0e8aaef35494426c9f3926f3bbc9b0977d0acc1ef4eb3",
+      "size": 668983,
+      "status": "indexed",
+      "chunks": 2612
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/FutureEO_brochure_2026.pdf": {
+      "sha256": "0c2991c92d2e1514235724483a25cca0ed83a60ad7b66b34b2cc4bec4895f40f",
+      "size": 2648171,
+      "status": "indexed",
+      "chunks": 8
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/NAVISP Element 1 Work Plan 2026 Addendum - website.pdf": {
+      "sha256": "7326d79581feaf296fa4ef64a24e453ca5ddec32975a6ab909798db77f2e646d",
+      "size": 365035,
+      "status": "indexed",
+      "chunks": 19
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf": {
+      "sha256": "0f0b2e37dee1b75efb476012e083d7c8db9d7d63ad201925ca10454277b232b5",
+      "size": 4121826,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Space_Safety_Brochure_CM25.pdf": {
+      "sha256": "4a66017cdbba6a083c826985ba2d92fa119eb056e5b642b50328c3bfb1599b0a",
+      "size": 24057812,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "03_PROCUREMENT/ESA/Operational documents/Procurement Data/WebsiteAnnouncement - NAVISP Element 1 Work Plan 2026 (2).pdf": {
+      "sha256": "e4430f2e3124d9020d66c9ed43248d5779a5e1a69944aa084e9a14ae8e7cd5a7",
+      "size": 372504,
+      "status": "indexed",
+      "chunks": 41
+    },
+    "03_PROCUREMENT/EUSPA/Operational documents/MASTER template for all COST SHEETS Ax V3.1.7.xlsx": {
+      "sha256": "3c65dd69c5c7c5ca5e67bf03cc926735e76f66f3f93c51f50d6b432302d601cb",
+      "size": 583175,
+      "status": "indexed",
+      "chunks": 1610
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/2022_euspa_contractors_list_-_corrigendum.pdf": {
+      "sha256": "4513d4bc2053feb47f9e6594c19e0041e5bb5fbbfebd3f151c5048861ad9a251",
+      "size": 162163,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/Annual list of contractors 2013-1.pdf": {
+      "sha256": "4595a1f0729be358dc865970ff71145038e0edf6a1497a6184e1ec9e8e8a47d7",
+      "size": 196800,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/Annual list of contractors 2013-2.pdf": {
+      "sha256": "1a20584a608880a0d5e8ed74270790bb86863203a76cbd5756534af7875e1732",
+      "size": 198457,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/Annual list of contractors 2013-3.pdf": {
+      "sha256": "95a23b2eff9d6ec3e2589bef4ca9a91d3700ecf110615a3e01c186839962fe55",
+      "size": 203591,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/EUSPA 2024 List of Contractors_1.xlsx": {
+      "sha256": "57b4f3aa214cf33ea1c2c194c78275015a38c8114cc0975db095c44505540ce3",
+      "size": 303711,
+      "status": "indexed",
+      "chunks": 4473
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/EUSPA 2025 List of Contractors.xlsx": {
+      "sha256": "566fa22e73a299fc0f02efc7b83113dd551d7a4444cee48e225fc431e529abf5",
+      "size": 99007,
+      "status": "indexed",
+      "chunks": 4682
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/EUSPA List of contractors 2023_3.pdf": {
+      "sha256": "97bd48fde2fc462c494bff1fea7447d7fd64f002606e4e735ea74a69072f6f58",
+      "size": 3582479,
+      "status": "indexed",
+      "chunks": 40
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/EUSPA_Closed_Procurements_2026-08-25.xlsx": {
+      "sha256": "48f4247bd15f2eb1067e04e60f944e311b957e455d976627df0da5485fb912b4",
+      "size": 89333,
+      "status": "indexed",
+      "chunks": 702
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/euspa_contractors_list_2020.pdf": {
+      "sha256": "6d316a193ce19799cadc2c32e0a1a238127787f4e2cdd37eae58065120145ee9",
+      "size": 130577,
+      "status": "indexed",
+      "chunks": 20
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/euspa_contractors_list_2021.pdf": {
+      "sha256": "10411ec9813ea750fc1c2f29f5fb2f0c8d302769757547ab09ce4db9e26f6076",
+      "size": 523433,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/euspa_contractors_list_2022.pdf": {
+      "sha256": "4ce109b5d942c1d3a12771e90edfaea76da1af0731f0a5c6f8da263638c6eadd",
+      "size": 682682,
+      "status": "indexed",
+      "chunks": 24
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/EUSPA_Current_Planned_Procurements_2026-08-25.xlsx": {
+      "sha256": "1720ddbb02a1df2420c773b124d952a06259620cb1a07e039d4209bb0544c178",
+      "size": 14997,
+      "status": "indexed",
+      "chunks": 57
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/GSA contractors list 2014.pdf": {
+      "sha256": "020047c77b7272a761229c3fce8aeda216114a86fcea9e2b0ed2b133e6f9cc7f",
+      "size": 428065,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/gsa_contractors_list_2015.pdf": {
+      "sha256": "2fae1e09dd99e181d95bc3bb200ac1dbbd9ddb6eb9613b67b076f5f8e0b61e48",
+      "size": 100706,
+      "status": "indexed",
+      "chunks": 6
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/gsa_contractors_list_2016.pdf": {
+      "sha256": "29db5daedfa71012e5a586cacb205f61641e23a603d7382233474207b0590d30",
+      "size": 89125,
+      "status": "indexed",
+      "chunks": 7
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/gsa_contractors_list_2017.pdf": {
+      "sha256": "ef438938e8d25fbc897def2ae580a39b0fee3d9cb5c2e86e442b93eb0ff29f07",
+      "size": 312897,
+      "status": "indexed",
+      "chunks": 12
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/gsa_contractors_list_2018.pdf": {
+      "sha256": "c87381fcba9bacbc97b5d3c7e881dcff5eafdef7be822de4703ab26e646c753f",
+      "size": 101277,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/gsa_contractors_list_2019.pdf": {
+      "sha256": "71d891655c2d3f9457eb93a456086f8740895f98bd45b33cc15e20e77ca9d5ab",
+      "size": 118447,
+      "status": "indexed",
+      "chunks": 16
+    },
+    "03_PROCUREMENT/EUSPA/Procurement Data/Single_Programming_Document_2026-2028.pdf": {
+      "sha256": "a1a540dee04289905da8d1f44618762e5e6a5a6fa87d9f8d3d86b10330522ac4",
+      "size": 1976890,
+      "status": "indexed",
+      "chunks": 208
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/donnees-essentielles-2020.xlsx": {
+      "sha256": "33b1f4c1cea340b60011792589dd7ca1dfada096f3213264e97896c1183808f0",
+      "size": 19031,
+      "status": "indexed",
+      "chunks": 11
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/donnees-essentielles-2021.xlsx": {
+      "sha256": "fe2107d4ffd9965e35f231eabeb61f8d0eddb0851fc185bb78011b8ebf9b847a",
+      "size": 35442,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/donnees-essentielles-2022.xlsx": {
+      "sha256": "d20d9315247122357751fdada8033c9d8c05b7be840fc692e16b3eb5661ee1be",
+      "size": 24739,
+      "status": "indexed",
+      "chunks": 13
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/donnees-essentielles-2023.xlsx": {
+      "sha256": "79f3ad64ee9a79a6cb591477040e0c3ebba61afc2053757300f80b6235d98c5d",
+      "size": 28367,
+      "status": "indexed",
+      "chunks": 17
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/donnees-essentielles-2024.xlsx": {
+      "sha256": "9eab7216e4d8ee00ec240fdd4449a598cc799516e8d7842cd635ebbefb9e2e4c",
+      "size": 29989,
+      "status": "indexed",
+      "chunks": 20
+    },
+    "03_PROCUREMENT/Member States/France/CNES/historical procurement data/Rapport-Prestations-conseils-CNES-2025-et-2024-20260410.pdf": {
+      "sha256": "3d4c9c498bd1a56eab332fd8b20b806184eb6e6da38ff72f8a5291aa1de642c8",
+      "size": 340882,
+      "status": "indexed",
+      "chunks": 5
+    },
+    "03_PROCUREMENT/Member States/France/DGA/historical procurement data/French_Defence_Procurement_Cleaned.xlsx": {
+      "sha256": "3f7f2a23d95676a557a4b263d6170b0c84b0c721bbbb988b8cffef1345751f36",
+      "size": 159092,
+      "status": "indexed",
+      "chunks": 422
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b084-data.pdf": {
+      "sha256": "11b65ae0f668dd219e21f7bf730b81e6f494ac0f9631afbfb346674b03db167f",
+      "size": 39892,
+      "status": "indexed",
+      "chunks": 25
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b086-data.pdf": {
+      "sha256": "8e23647717210d30616829b3dc0293e65e6e6b0486ec0e112d4a714659612a29",
+      "size": 59772,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b086a-data.pdf": {
+      "sha256": "61a6f7f32941483c3862a414a0c3060589d10e2d894c805a61a21c5b35647b02",
+      "size": 39516,
+      "status": "indexed",
+      "chunks": 26
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b111-data.pdf": {
+      "sha256": "c4c9dfe60b78181e5cb79554efe2e98cba33f85174b70d68ab7dc49fddb11fc8",
+      "size": 124043,
+      "status": "skipped",
+      "reason": "Error: Error: unsupported encryption algorithm",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b115-data.pdf": {
+      "sha256": "7cf6ea3b31d449ed153f47d549cbe1b76bb94a51116acc969a70a23b26a2b6d2",
+      "size": 614633,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b116-data.pdf": {
+      "sha256": "f78f9563530536c2125ada4f3d36f0c3a59d6751ff1072491c633af6e3ee117a",
+      "size": 462603,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b119-data.pdf": {
+      "sha256": "b6a0f5232203d4610b2ae241bf92aafe4273a9108db0549c587a5ade5b43e01e",
+      "size": 221597,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b121-data.pdf": {
+      "sha256": "fd8081eee9dd93496b0e9ff321e6f88f4af369e884111083bc89f1e81b852e0c",
+      "size": 225846,
+      "status": "indexed",
+      "chunks": 4
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/b124-data.pdf": {
+      "sha256": "45c7457ac33771615f353947482f297cdba895a2ff2cba5f4a088e79a9178b6a",
+      "size": 80272,
+      "status": "indexed",
+      "chunks": 21
+    },
+    "03_PROCUREMENT/Member States/Germany/BAAINBw/zvb-bmvg-banz-at-13-07-2023-b1-data.pdf": {
+      "sha256": "b51f1d095d521f92a3a85d901c37cbb64c6efa77b36b1a665d4b65e436147c66",
+      "size": 870875,
+      "status": "indexed",
+      "chunks": 86
+    },
+    "03_PROCUREMENT/Member States/Germany/DLR/Zuwendung_Definition und Erläuterungen.pdf": {
+      "sha256": "b6b2b16d1d24ac5b69a3ee345c1b4ae31b5cb2985e55ab3f87b33a761be8c047",
+      "size": 111261,
+      "status": "indexed",
+      "chunks": 3
+    },
+    "03_PROCUREMENT/Member States/Italy/Future purchases/068_programma_triennale_acquisti_beni_servizi_e_forniture_20252027_red.pdf": {
+      "sha256": "7c04bf0e7554c089159fd118ca35bf1fe0a13926d2b5ddc2d5b49f6d8d16a6a4",
+      "size": 5498302,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "03_PROCUREMENT/Member States/Italy/Future purchases/2026_04_28_del_042_programma_acquisti_beni_servizi_e_forniture_20262028.pdf": {
+      "sha256": "8cd7e8e64156428b19161bb07205db6c05ea6503083ebd72cbc7a74b7b7fc6cc",
+      "size": 2031855,
+      "status": "indexed",
+      "chunks": 31
+    },
+    "03_PROCUREMENT/Member States/Italy/historical procurement data/ASI_Procurement_Readable.xlsx": {
+      "sha256": "1117cb09f400a3a89d407e31ba0a72f2fbccee2c5986b582f3d846bd25e4d391",
+      "size": 344143,
+      "status": "indexed",
+      "chunks": 870
+    },
+    "05_COMPANIES/ESA_Companies_2026-08-25.xlsx": {
+      "sha256": "9a5c343adc30f3ac051de4e2acc2aab15d09eb589fbfe122f21a5b9a5733c371",
+      "size": 10680793,
+      "status": "indexed",
+      "chunks": 31369
     }
   },
   "report": {
-    "discoveredFiles": 520,
-    "unchangedFiles": 481,
+    "discoveredFiles": 550,
+    "unchangedFiles": 509,
     "changedFiles": 20,
-    "processedChangedFiles": 20,
+    "processedChangedFiles": 60,
     "remainingChangedFiles": 0,
     "deletedFiles": [],
-    "indexedFiles": 18,
-    "skippedFiles": 2,
-    "copiedChunks": 25589,
-    "newChunks": 993,
-    "totalChunks": 26582,
+    "indexedFiles": 57,
+    "skippedFiles": 3,
+    "copiedChunks": 25990,
+    "newChunks": 53604,
+    "totalChunks": 79594,
     "failures": [
       {
-        "file": "03_PROCUREMENT/Member States/France/DGA/20251209_NP_DGA-S2A_Guide-ACH-0050-Ed04_Clausier-commente-MDS.pdf",
+        "file": "03_PROCUREMENT/ESA/Operational documents/Procurement Data/Science_Programme_Technology_Development_Plan_Web_June2025.pdf",
         "reason": "Worker stopped with code null, signal SIGABRT"
       },
       {
-        "file": "03_PROCUREMENT/Member States/Germany/b111-data.pdf",
+        "file": "03_PROCUREMENT/Member States/Germany/BAAINBw/b111-data.pdf",
         "reason": "Error: Error: unsupported encryption algorithm"
+      },
+      {
+        "file": "03_PROCUREMENT/Member States/Italy/Future purchases/068_programma_triennale_acquisti_beni_servizi_e_forniture_20252027_red.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
       }
     ]
   }
