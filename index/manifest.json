@@ -2,12 +2,12 @@
   "version": 5,
   "type": "final",
   "complete": true,
-  "buildCommit": "45d767ec6e978c37e5deb18820a3d9a4fd040e6e",
-  "createdAt": "2026-08-26T14:20:38.435Z",
+  "buildCommit": "fb2dba1014c840907016677250df27366cb36b1c",
+  "createdAt": "2026-09-23T13:34:46.781Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 80233,
+  "totalChunks": 90100,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -26,18 +26,23 @@
     },
     {
       "file": "rag-index-0004.ndjson",
-      "chunks": 13847,
-      "bytes": 20971435
+      "chunks": 13846,
+      "bytes": 20970985
     },
     {
       "file": "rag-index-0005.ndjson",
       "chunks": 14058,
-      "bytes": 20970079
+      "bytes": 20970080
     },
     {
       "file": "rag-index-0006.ndjson",
-      "chunks": 11925,
-      "bytes": 17824758
+      "chunks": 13861,
+      "bytes": 20970634
+    },
+    {
+      "file": "rag-index-0007.ndjson",
+      "chunks": 7932,
+      "bytes": 12792420
     }
   ],
   "sources": {
@@ -3001,12 +3006,6 @@
       "reason": "Worker stopped with code null, signal SIGABRT",
       "chunks": 0
     },
-    "03_PROCUREMENT/Member States/Index _03_Procurement_Member States.docx": {
-      "sha256": "a9ea4a5694ad2b81a83d3eab7751e74dd0d77927eff71f98b9d7a42d3a34f787",
-      "size": 20010,
-      "status": "indexed",
-      "chunks": 4
-    },
     "03_PROCUREMENT/Member States/Italy/capitolato_generale_per_i_contratti_industriali_di_servizi_di_ricerca_e_sviluppo.pdf": {
       "sha256": "1b10eef4de1fb68fca0295d4557c02bbe8a16f9862ca673f1c510315a720b781",
       "size": 1148735,
@@ -3375,20 +3374,28 @@
       "size": 107108,
       "status": "indexed",
       "chunks": 429
+    },
+    "03_PROCUREMENT/Member States/Procurement Data/EU27_MEMBER_STATES_SPACE_PROCUREMENT_FINAL_2026-09-22.xlsx": {
+      "sha256": "17d57f06e79023a11d86c14db0be16936ef6761e385516f4224a4360d9638498",
+      "size": 2419284,
+      "status": "indexed",
+      "chunks": 9871
     }
   },
   "report": {
     "discoveredFiles": 552,
-    "unchangedFiles": 527,
-    "changedFiles": 2,
-    "processedChangedFiles": 2,
+    "unchangedFiles": 528,
+    "changedFiles": 1,
+    "processedChangedFiles": 1,
     "remainingChangedFiles": 0,
-    "deletedFiles": [],
-    "indexedFiles": 2,
+    "deletedFiles": [
+      "03_PROCUREMENT/Member States/Index _03_Procurement_Member States.docx"
+    ],
+    "indexedFiles": 1,
     "skippedFiles": 0,
-    "copiedChunks": 79594,
-    "newChunks": 639,
-    "totalChunks": 80233,
+    "copiedChunks": 80229,
+    "newChunks": 9871,
+    "totalChunks": 90100,
     "failures": []
   }
 }
