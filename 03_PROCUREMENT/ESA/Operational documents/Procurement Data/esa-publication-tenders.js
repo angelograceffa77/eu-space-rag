@@ -1248,6 +1248,30 @@ function createSheet(
 
 
 // =====================================================
+// GITHUB-READABLE JSONL
+// =====================================================
+
+function createJsonl(records, excelPath) {
+  const jsonlPath = excelPath.replace(/\.xlsx$/i, ".jsonl");
+  const lines = records.map(record => JSON.stringify({
+    ...record,
+    ragText: createRagText(record)
+  }));
+
+  // Export the complete dataset once, not the duplicate ESA/Non ESA sheet views.
+  fs.writeFileSync(
+    jsonlPath,
+    lines.length ? lines.join("\n") + "\n" : "",
+    "utf8"
+  );
+
+  console.log("JSONL created:");
+  console.log(jsonlPath);
+  return jsonlPath;
+}
+
+
+// =====================================================
 // MAIN
 // =====================================================
 
@@ -1523,6 +1547,8 @@ async function main() {
     await workbook.xlsx.writeFile(
       fullPath
     );
+
+    createJsonl(all, fullPath);
 
 
     console.log("");
