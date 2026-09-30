@@ -1004,6 +1004,30 @@ function createRagText(
 
 
 // =====================================================
+// GITHUB-READABLE JSONL
+// =====================================================
+
+function createJsonl(records, excelPath) {
+  const jsonlPath = excelPath.replace(/\.xlsx$/i, ".jsonl");
+  const lines = records.map(record => JSON.stringify({
+    ...record,
+    ragText: createRagText(record)
+  }));
+
+  // One complete normalized record per line; preserve Unicode and embedded newlines.
+  fs.writeFileSync(
+    jsonlPath,
+    lines.length ? lines.join("\n") + "\n" : "",
+    "utf8"
+  );
+
+  console.log("JSONL created:");
+  console.log(jsonlPath);
+  return jsonlPath;
+}
+
+
+// =====================================================
 // CREATE EXCEL
 // =====================================================
 
@@ -1448,6 +1472,8 @@ async function createExcel(
   await workbook.xlsx.writeFile(
     fullPath
   );
+
+  createJsonl(records, fullPath);
 
   return fullPath;
 }
