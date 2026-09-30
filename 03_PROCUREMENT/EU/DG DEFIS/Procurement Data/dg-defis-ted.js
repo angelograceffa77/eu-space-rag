@@ -2185,6 +2185,24 @@ function createSheet(
 }
 
 // ======================================================
+// GITHUB-READABLE JSONL
+// ======================================================
+
+function createJsonl(records, excelPath) {
+  const jsonlPath = excelPath.replace(/\.xlsx$/i, ".jsonl");
+  // Reuse the complete normalized Excel records, including their existing ragText.
+  const lines = records.map(record => JSON.stringify(record));
+  fs.writeFileSync(
+    jsonlPath,
+    lines.length ? lines.join("\n") + "\n" : "",
+    "utf8"
+  );
+  console.log("JSONL created:");
+  console.log(jsonlPath);
+  return jsonlPath;
+}
+
+// ======================================================
 // MAIN
 // ======================================================
 
@@ -2367,6 +2385,8 @@ async function main() {
     await workbook.xlsx.writeFile(
       fullPath
     );
+
+    createJsonl(records, fullPath);
 
     console.log("");
     console.log(
