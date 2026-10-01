@@ -726,6 +726,74 @@ function createSheet(
 
 
 // ======================================================
+// GITHUB-READABLE JSONL
+// ======================================================
+
+// GitHub browser uploads allow 25 MiB. Count UTF-8 bytes, not characters.
+function createGithubJsonlWriter(filename) {
+  const limit = 20_000_000;
+  const directory = path.dirname(filename);
+  const stem = path.basename(filename, ".jsonl");
+  const temporary = fs.mkdtempSync(path.join(directory, ".jsonl-export-"));
+  const files = [];
+  let fd = null, bytes = 0, closed = false;
+  function closePart() { if (fd !== null) { fs.closeSync(fd); fd = null; } }
+  return {
+    write(line) {
+      const buffer = Buffer.from(line, "utf8");
+      if (buffer.length > limit) throw new Error("One JSONL record exceeds 20 MB; export stopped without truncating it.");
+      if (fd === null || bytes + buffer.length > limit) {
+        closePart();
+        const name = stem + ".part-" + String(files.length + 1).padStart(4, "0") + ".jsonl";
+        files.push(name);
+        fd = fs.openSync(path.join(temporary, name), "wx");
+        bytes = 0;
+      }
+      let offset = 0;
+      while (offset < buffer.length) {
+        const written = fs.writeSync(fd, buffer, offset, buffer.length - offset);
+        if (!written) throw new Error("Could not finish writing JSONL record.");
+        offset += written;
+      }
+      bytes += buffer.length;
+    },
+    finish() {
+      closePart();
+      // Publish only after all records were written successfully.
+      for (const name of files) fs.renameSync(path.join(temporary, name), path.join(directory, name));
+      // Remove surplus parts from an earlier run of this same dated dataset.
+      for (const name of fs.readdirSync(directory)) {
+        if (name.startsWith(stem + ".part-") && /^\d+\.jsonl$/.test(name.slice((stem + ".part-").length)) && !files.includes(name)) {
+          fs.unlinkSync(path.join(directory, name));
+        }
+      }
+      fs.rmdirSync(temporary); closed = true;
+      const result = files.map(name => path.join(directory, name));
+      console.log("GitHub JSONL parts (each <= 20 MB):", result);
+      return result;
+    },
+    abort() {
+      closePart();
+      if (!closed) {
+        for (const name of fs.readdirSync(temporary)) fs.unlinkSync(path.join(temporary, name));
+        fs.rmdirSync(temporary); closed = true;
+      }
+    }
+  };
+}
+
+function createJsonl(companies, excelPath) {
+  const writer = createGithubJsonlWriter(excelPath.replace(/\.xlsx$/i, ".jsonl"));
+  try {
+    for (const company of companies) {
+      const record = {...company, description: cleanHtml(company.description), entityDescription: cleanHtml(company.entityDescription), ragText: createRagText(company)};
+      writer.write(JSON.stringify(record) + "\n");
+    }
+    return writer.finish();
+  } catch (error) { writer.abort(); throw error; }
+}
+
+// ======================================================
 // MAIN
 // ======================================================
 
@@ -826,6 +894,8 @@ async function main() {
     await workbook.xlsx.writeFile(
       fullPath
     );
+
+    createJsonl(allCompanies, fullPath);
 
 
     console.log("");

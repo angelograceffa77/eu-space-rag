@@ -3217,44 +3217,16 @@ function reconstructRawTedJson(row) {
 }
 
 function writeRawTedSourceJsonl(rows) {
-  const byPublication =
-    new Map();
-
-  for (const row of rows) {
-    if (!row.publicationNumber) continue;
-    byPublication.set(
-      row.publicationNumber,
-      row
-    );
-  }
-
-  const fd =
-    fs.openSync(
-      RAW_TED_SOURCE_JSONL,
-      "w"
-    );
-
+  const byPublication = new Map();
+  for (const row of rows) if (row.publicationNumber) byPublication.set(row.publicationNumber, row);
+  const writer = createGithubJsonlWriter(RAW_TED_SOURCE_JSONL);
   try {
     for (const row of byPublication.values()) {
-      const raw =
-        reconstructRawTedJson(row);
-
-      if (raw) {
-        fs.writeSync(
-          fd,
-          raw + "\n",
-          null,
-          "utf8"
-        );
-      }
+      const raw = reconstructRawTedJson(row);
+      if (raw) writer.write(raw + "\n");
     }
-  } finally {
-    fs.closeSync(fd);
-  }
-
-  console.log(
-    `Raw TED source JSONL: ${RAW_TED_SOURCE_JSONL}`
-  );
+    return writer.finish();
+  } catch (error) { writer.abort(); throw error; }
 }
 
 function copySourceScriptToOutput() {
@@ -3277,6 +3249,75 @@ function copySourceScriptToOutput() {
       `WARNING: could not copy source script: ${error.message}`
     );
   }
+}
+
+// ============================================================
+// NORMALIZED GITHUB-READABLE OUTPUT
+// ============================================================
+
+// GitHub browser uploads allow 25 MiB. Count UTF-8 bytes, not characters.
+function createGithubJsonlWriter(filename) {
+  const limit = 20_000_000;
+  const directory = path.dirname(filename);
+  const stem = path.basename(filename, ".jsonl");
+  const temporary = fs.mkdtempSync(path.join(directory, ".jsonl-export-"));
+  const files = [];
+  let fd = null, bytes = 0, closed = false;
+  function closePart() { if (fd !== null) { fs.closeSync(fd); fd = null; } }
+  return {
+    write(line) {
+      const buffer = Buffer.from(line, "utf8");
+      if (buffer.length > limit) throw new Error("One JSONL record exceeds 20 MB; export stopped without truncating it.");
+      if (fd === null || bytes + buffer.length > limit) {
+        closePart();
+        const name = stem + ".part-" + String(files.length + 1).padStart(4, "0") + ".jsonl";
+        files.push(name);
+        fd = fs.openSync(path.join(temporary, name), "wx");
+        bytes = 0;
+      }
+      let offset = 0;
+      while (offset < buffer.length) {
+        const written = fs.writeSync(fd, buffer, offset, buffer.length - offset);
+        if (!written) throw new Error("Could not finish writing JSONL record.");
+        offset += written;
+      }
+      bytes += buffer.length;
+    },
+    finish() {
+      closePart();
+      // Publish only after all records were written successfully.
+      for (const name of files) fs.renameSync(path.join(temporary, name), path.join(directory, name));
+      // Remove surplus parts from an earlier run of this same dated dataset.
+      for (const name of fs.readdirSync(directory)) {
+        if (name.startsWith(stem + ".part-") && /^\d+\.jsonl$/.test(name.slice((stem + ".part-").length)) && !files.includes(name)) {
+          fs.unlinkSync(path.join(directory, name));
+        }
+      }
+      fs.rmdirSync(temporary); closed = true;
+      const result = files.map(name => path.join(directory, name));
+      console.log("GitHub JSONL parts (each <= 20 MB):", result);
+      return result;
+    },
+    abort() {
+      closePart();
+      if (!closed) {
+        for (const name of fs.readdirSync(temporary)) fs.unlinkSync(path.join(temporary, name));
+        fs.rmdirSync(temporary); closed = true;
+      }
+    }
+  };
+}
+
+function writeNormalizedJsonl(rows, columns, filename) {
+  const writer = createGithubJsonlWriter(filename);
+  try {
+    for (const row of rows) {
+      const out = {};
+      for (const key of columns) out[key] = row[key] === undefined || row[key] === null ? "" : row[key];
+      writer.write(JSON.stringify(out) + "\n");
+    }
+    return writer.finish();
+  } catch (error) { writer.abort(); throw error; }
 }
 
 // ============================================================
@@ -3548,6 +3589,17 @@ async function main() {
 
   await workbook.xlsx.writeFile(
     FINAL_XLSX
+  );
+
+  writeNormalizedJsonl(
+    finalMaster,
+    MASTER_COLUMNS,
+    FINAL_XLSX.replace(/\.xlsx$/i, ".jsonl")
+  );
+  writeNormalizedJsonl(
+    tedUnique,
+    NOTICE_COLUMNS,
+    path.join(OUTPUT_DIR, "EU27_TED_NOTICE_HISTORY_" + TODAY + ".jsonl")
   );
 
   console.log("");
