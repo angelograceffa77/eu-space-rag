@@ -1,0 +1,4646 @@
+{
+  "schemaVersion": 1,
+  "dataset": "ESA esa-match company directory",
+  "source": "https://esastar-esamatch-ext.sso.esa.int/api/companiesDirectory/filter",
+  "sourceDate": "2026-10-01",
+  "generatedAt": "2026-10-01T19:53:04.336Z",
+  "generation": "snapshot-2026-10-01-2ad3b58f-73d1-45ec-a1bb-ba0ef1c60c4a",
+  "totalRecordCount": 19650,
+  "totalCompanyCount": 19650,
+  "countMeaning": "Directory profiles, including business units; not distinct legal entities",
+  "uniqueCompanyProfileIdCount": 19636,
+  "missingCompanyProfileIdCount": 0,
+  "duplicateCompanyProfileIdCount": 14,
+  "smeCount": 4017,
+  "legalEntityCount": 18028,
+  "countryCounts": {
+    "DE-Germany": 2600,
+    "FI-Finland": 288,
+    "GB-United Kingdom": 2816,
+    "IT-Italy": 2401,
+    "NO-Norway": 321,
+    "FR-France": 1950,
+    "CH-Switzerland": 561,
+    "NL-Netherlands": 1016,
+    "BE-Belgium": 653,
+    "PL-Poland": 684,
+    "ES-Spain": 1153,
+    "DK-Denmark": 304,
+    "BG-Bulgaria": 223,
+    "CZ-Czech Republic": 453,
+    "IE-Ireland": 307,
+    "SI-Slovenia": 181,
+    "HU-Hungary": 350,
+    "GR-Greece": 438,
+    "SK-Slovakia": 186,
+    "LV-Latvia": 153,
+    "CA-Canada": 355,
+    "HR-Croatia": 182,
+    "AT-Austria": 404,
+    "LU-Luxembourg": 196,
+    "LT-Lithuania": 171,
+    "SE-Sweden": 240,
+    "EE-Estonia": 177,
+    "CY-Cyprus": 145,
+    "PT-Portugal": 364,
+    "RO-Romania": 306,
+    "MT-Malta": 70,
+    "PF-French Polynesia": 1,
+    "GF-French Guiana": 1
+  },
+  "sourceFiles": [
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0001.jsonl",
+      "sha256": "92dec176214ea6701bc92d92b899465bd7e5dd9a45982079cceec1fc50987d40"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0002.jsonl",
+      "sha256": "702f6afb5ff820a80024ac6b653fb27893a4427643be6b594d5a54eea3ba0df1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0003.jsonl",
+      "sha256": "d8f025fbe835d4ebc56f664f61a0b048bde4757eb9e33227cb94420cada03ef3"
+    }
+  ],
+  "encoding": "UTF-8",
+  "maxPartBytes": 131072,
+  "pathBase": "snapshot-2026-10-01-2ad3b58f-73d1-45ec-a1bb-ba0ef1c60c4a",
+  "parts": [
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0001.jsonl",
+      "recordCount": 55,
+      "bytes": 128917,
+      "sha256": "657f857cf75909c08ffe41f725926abc67b78fde52dfc9d63818b4538025f0aa"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0002.jsonl",
+      "recordCount": 53,
+      "bytes": 129564,
+      "sha256": "0dd1f8d4c9df812967623b27ca206c09c9fb9282dc1d26106d35864722cb791e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0003.jsonl",
+      "recordCount": 52,
+      "bytes": 129543,
+      "sha256": "26b2a6f9937e01577280a5dd1807e6747fb0b407d393a7e176f28465cd32f903"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0004.jsonl",
+      "recordCount": 45,
+      "bytes": 129482,
+      "sha256": "416ab4e99f747ed2c3248d436e27dc5547be6e258a16f5e5e83a79bd7ca05f15"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0005.jsonl",
+      "recordCount": 50,
+      "bytes": 126597,
+      "sha256": "87fad207e89758ca937bcb3956ba69964a09386148fa1381cdd223c91d16bc99"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0006.jsonl",
+      "recordCount": 51,
+      "bytes": 130975,
+      "sha256": "fe44fc0346330246296d9a4c9fc463dd57f818d2a9d7756593ecf3cac4140d94"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0007.jsonl",
+      "recordCount": 47,
+      "bytes": 129091,
+      "sha256": "0196b33561e8fe361b8a95f0977ac303cdd0e7c4443c1494a062e7505ec2bcb0"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0008.jsonl",
+      "recordCount": 56,
+      "bytes": 129259,
+      "sha256": "d217d69ca4803c39358bc3f922635860f36dcd44e4725b06ec8a64dac131c85f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0009.jsonl",
+      "recordCount": 51,
+      "bytes": 129846,
+      "sha256": "de3fcf8cf9e8d99c0d0ff6ec4865f8d73ec2ef190626590adda5ed17b393157a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0010.jsonl",
+      "recordCount": 55,
+      "bytes": 130021,
+      "sha256": "741b3e8fe55db57edeeefd211868cb2ee81ac68e1f4eb755ac891f1acdb21dc8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0011.jsonl",
+      "recordCount": 51,
+      "bytes": 130897,
+      "sha256": "72ecdfbd1ad80fd67bbb706f9a61b0458d3928fee64bc76a7c5f696ad975e413"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0012.jsonl",
+      "recordCount": 50,
+      "bytes": 130441,
+      "sha256": "75c527b69471271e6fc4bc414d478c52b43612405736b30470a3d67cbbf0a52b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0013.jsonl",
+      "recordCount": 62,
+      "bytes": 130192,
+      "sha256": "2b934be40e8448c078eaee27dd228e1af81284bcd300ece3c0f663f2ce0f5fc6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0014.jsonl",
+      "recordCount": 50,
+      "bytes": 129155,
+      "sha256": "e702a5fde2a60261a356a11a409a0c6abf08f509deaa8164b83ede2195db0475"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0015.jsonl",
+      "recordCount": 53,
+      "bytes": 130324,
+      "sha256": "f20fbcafa1df086bf999ee02b844ab96d41edc7530750817b4437e95ec22d7bd"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0016.jsonl",
+      "recordCount": 52,
+      "bytes": 129571,
+      "sha256": "902d07d14d42303ea24552422a0aeb56059aecea64de0ccd7ecf523ca9cb9ca1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0017.jsonl",
+      "recordCount": 55,
+      "bytes": 130549,
+      "sha256": "664c4dcde109d5e2fab57d65cfb238e6934ca9edaa2b95a43cea5b6f671315ab"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0018.jsonl",
+      "recordCount": 41,
+      "bytes": 127774,
+      "sha256": "feb40a1453a1af7733619cddff2d03e20de084be1ac871b210c28b689dcaa544"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0019.jsonl",
+      "recordCount": 43,
+      "bytes": 129203,
+      "sha256": "30a69664387179acb7d0cb9ea0591cc2051f02f195d69c883e5082eb5796cbda"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0020.jsonl",
+      "recordCount": 45,
+      "bytes": 126226,
+      "sha256": "23391bb0ada7e6187d95642fd80ead62e71565634611cbf66b6e0f654ba2bc63"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0021.jsonl",
+      "recordCount": 48,
+      "bytes": 130356,
+      "sha256": "7c1d1000bca76bdaa08847a64e89ba3866917e42e0e0ce794e13cf2d15754d89"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0022.jsonl",
+      "recordCount": 46,
+      "bytes": 127786,
+      "sha256": "1b10fd48c159ff42170b74d67614baf9aef8998f6ec1cf3c88686f8ba8f1906f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0023.jsonl",
+      "recordCount": 48,
+      "bytes": 130432,
+      "sha256": "0132bd69058a9b542ca8126a7899963f618d4ffe532a66ac07f2861e8e73d989"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0024.jsonl",
+      "recordCount": 51,
+      "bytes": 129518,
+      "sha256": "da5018375adf21a9d9f4e581ca68d99eceb0291dac43881199ce02357c9781ec"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0025.jsonl",
+      "recordCount": 51,
+      "bytes": 130183,
+      "sha256": "d2e6533a8c8b55b84059098d421707a24bb2e2a92369b69394195eea8aceec1e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0026.jsonl",
+      "recordCount": 53,
+      "bytes": 130156,
+      "sha256": "c39fcd4e568c168aaf0257429292b75f4dd01710ae79ca0bd10b3dbd02001a61"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0027.jsonl",
+      "recordCount": 51,
+      "bytes": 128113,
+      "sha256": "6ac676bf9236bc904f4c5c9d84f65344bb4375c791e2519c9535874d9eddad70"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0028.jsonl",
+      "recordCount": 46,
+      "bytes": 129748,
+      "sha256": "d5acd68db9b3dd76c92a3129d5ab85272ab56368dcb4b45a9d92f4b605711694"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0029.jsonl",
+      "recordCount": 48,
+      "bytes": 130330,
+      "sha256": "8c3b0075c94da39670d0dfefc93c4e18742b54ab4d40f21f90bb692854bcee8b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0030.jsonl",
+      "recordCount": 50,
+      "bytes": 124152,
+      "sha256": "ea3de344ed533c78e72ae543b430c86e1e8818dd80fd84687332454fcb0f4eae"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0031.jsonl",
+      "recordCount": 48,
+      "bytes": 129589,
+      "sha256": "13f63e6d896cfa4d40e8d085b66f725f3979d6154672f3e772133540c3af30e2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0032.jsonl",
+      "recordCount": 53,
+      "bytes": 129703,
+      "sha256": "0bd9159982f96e9dc42f3c564ab28616e284868d956f7fc26b5b8f5888d1594d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0033.jsonl",
+      "recordCount": 50,
+      "bytes": 130392,
+      "sha256": "07956f2700d03ce203f85e89b95c62e8bfdf0117902e6f888d12b5fe4aa1109a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0034.jsonl",
+      "recordCount": 58,
+      "bytes": 128235,
+      "sha256": "17f98aa55034dbcfdd71d55c776d3dfaa21b502f8d978231e7779a1f3406c601"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0035.jsonl",
+      "recordCount": 48,
+      "bytes": 130636,
+      "sha256": "a54f05dcedf64f907b0667a984e2688761ebe426a047fcf2c4fdf899ad5bd90b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0036.jsonl",
+      "recordCount": 50,
+      "bytes": 130944,
+      "sha256": "604ae56760a72a492ab29a598275738026032ea7a3ea146bc7ec639a4b9c21b8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0037.jsonl",
+      "recordCount": 52,
+      "bytes": 130922,
+      "sha256": "c13f0a3acade4213253bc9d066f6520db416f9ece80c0b6091acf7d2c32c5419"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0038.jsonl",
+      "recordCount": 55,
+      "bytes": 129357,
+      "sha256": "49d7affe973db0910397a898eb6fc64b6a1bb7995e273b8905f462b63fb88964"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0039.jsonl",
+      "recordCount": 50,
+      "bytes": 126163,
+      "sha256": "382b261c8d3eb243b4f5ded0d3d211863b0c26f188504d38fd46e8146c6bc73a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0040.jsonl",
+      "recordCount": 50,
+      "bytes": 129578,
+      "sha256": "3d6ec644f78d618f8c266432831439bf661089c15f2e42c608e8215e1e2494b1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0041.jsonl",
+      "recordCount": 48,
+      "bytes": 130665,
+      "sha256": "a8c1b56854d79eb5f77bb9398f51d1f1914dde20ccd1d690520b7577a561987e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0042.jsonl",
+      "recordCount": 52,
+      "bytes": 125383,
+      "sha256": "9937262cd3d1fc8376b38e98001dcfbcdb2878d21becc9815fe0bf85370628ea"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0043.jsonl",
+      "recordCount": 52,
+      "bytes": 127968,
+      "sha256": "b39a4986472a733588fe2fe96b79b7ade6626c8d97708ba14c7d9530ea39ed36"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0044.jsonl",
+      "recordCount": 51,
+      "bytes": 130240,
+      "sha256": "aca2d2ac798a823e24fed98a853e3ffe3c512f2c1dbd9f6ca4f623541e3b8897"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0045.jsonl",
+      "recordCount": 55,
+      "bytes": 128487,
+      "sha256": "9e3a56ddca901c1f120f7842443d1523241be5c2978696b4028f14ae6d9e6591"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0046.jsonl",
+      "recordCount": 52,
+      "bytes": 128361,
+      "sha256": "052c850fd0928b9e170a5e5c8b67b384359a18de765b103835f17b67567bfeed"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0047.jsonl",
+      "recordCount": 48,
+      "bytes": 130573,
+      "sha256": "5523329ffee92f26aa48bee589b7a89e501b6ee44d06decd4f86fb551bd46bd6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0048.jsonl",
+      "recordCount": 54,
+      "bytes": 127669,
+      "sha256": "b70eb4f69880ebde69869834859b8183279769ae689a5fbaaf681708d9580cb1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0049.jsonl",
+      "recordCount": 48,
+      "bytes": 127922,
+      "sha256": "9f1283d6c2ce5d2fac1025f855aacd7835ba07dcf3deeef60821c6e929e24a50"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0050.jsonl",
+      "recordCount": 50,
+      "bytes": 130368,
+      "sha256": "f89f949eeb50d17d8239726ecf584d36495e35863596c542391dfddc8550c010"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0051.jsonl",
+      "recordCount": 50,
+      "bytes": 130352,
+      "sha256": "b52dbea11e303d2aa0116d40c0637d491139823d5629309d7f9c8d8cd9d32268"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0052.jsonl",
+      "recordCount": 54,
+      "bytes": 127760,
+      "sha256": "90b35717c25783ec0897c0bebc7435541d719499105ea2c841d1a31b7e9fbaac"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0053.jsonl",
+      "recordCount": 47,
+      "bytes": 127920,
+      "sha256": "52ba0821aa4ce256697cf01d76cf019cef0db720528568cf8bf2368c7cad5743"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0054.jsonl",
+      "recordCount": 54,
+      "bytes": 130715,
+      "sha256": "4868f4518fd7c3ed66dfcec991945c5f51880824d0ec4c90187b02e7690885b2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0055.jsonl",
+      "recordCount": 45,
+      "bytes": 129880,
+      "sha256": "5490c6a61ba5e8234c4fd92d646545b9c2b82db2dc85ea58a2940cb911e9ad5a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0056.jsonl",
+      "recordCount": 46,
+      "bytes": 130294,
+      "sha256": "52cbd0083dd0d1a867a74676aa6b93d6c8a26bf4e25c221ecff4c8e276065511"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0057.jsonl",
+      "recordCount": 58,
+      "bytes": 130662,
+      "sha256": "6ea85c9235b0b17dcc58022f87c6ebc7323b921e1b3f9ece36bb479ac3c3e55d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0058.jsonl",
+      "recordCount": 51,
+      "bytes": 129989,
+      "sha256": "47d59604db114ff1bcc30ae019e398c6d8a23ea19f1c33c2358e1f300069c84d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0059.jsonl",
+      "recordCount": 46,
+      "bytes": 130764,
+      "sha256": "9a5c57695566fd7de8a101f0f9d4c63c92700078bd47bfd27358df26fa9db262"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0060.jsonl",
+      "recordCount": 53,
+      "bytes": 128710,
+      "sha256": "6239ca29df16265197a8982c2355011ab9f825ba0be9e012758a32da31497c84"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0061.jsonl",
+      "recordCount": 50,
+      "bytes": 129155,
+      "sha256": "89c1ccbe5bffe39e7e6b4b534a1857f92dbaacc51f1157612bb0326f47397f7d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0062.jsonl",
+      "recordCount": 55,
+      "bytes": 129942,
+      "sha256": "23042c0fd7d710c5e62fcd162217b6ee33f801eae0a093d950e16f5daf840848"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0063.jsonl",
+      "recordCount": 55,
+      "bytes": 129537,
+      "sha256": "576e621008c2c5a9f650207089f7b08cc39f75e59e761b992102460baebe01ba"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0064.jsonl",
+      "recordCount": 57,
+      "bytes": 129187,
+      "sha256": "464cc6380b6ac3d569cbc8d41d2abcb906a81031e04adf4eeaec5fc3353dffd4"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0065.jsonl",
+      "recordCount": 47,
+      "bytes": 126173,
+      "sha256": "5d725da044efe91b8d25f8f902fa54fc7ffd920406dac5ccb2755a0c18c4c6af"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0066.jsonl",
+      "recordCount": 54,
+      "bytes": 128083,
+      "sha256": "098d41a40fd885b6bd88b6c60fd31c4c09d7c9d320a146bfb9d621328dd27a9f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0067.jsonl",
+      "recordCount": 52,
+      "bytes": 129009,
+      "sha256": "cf87856aaa2e0161e68faf2f1261dc0de37e1563287ab05a513cdf80727d2fee"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0068.jsonl",
+      "recordCount": 49,
+      "bytes": 129910,
+      "sha256": "f893e417fc9145166d8fa7c7d6d2c278fa6a05178465f1cacd03743229ed0524"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0069.jsonl",
+      "recordCount": 52,
+      "bytes": 131002,
+      "sha256": "27e67a4d66a94aaea524d029b7f09bec5c842b356fb8f2186aaaba731fc2cd07"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0070.jsonl",
+      "recordCount": 51,
+      "bytes": 127924,
+      "sha256": "d317ace2dc7dff343d020b99d6ef66984a7fd37fe66e5f83b61f294880dc5021"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0071.jsonl",
+      "recordCount": 49,
+      "bytes": 130504,
+      "sha256": "0613f9bfb49381cf054db55e666a64b44eaba91741c074c1b06230973171d406"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0072.jsonl",
+      "recordCount": 49,
+      "bytes": 128316,
+      "sha256": "5dedc78dd256a8469d170fbac0754aa53333b538574530c1cdde30b5441c63c1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0073.jsonl",
+      "recordCount": 58,
+      "bytes": 130306,
+      "sha256": "e4f813d593ba38b36175c30bb2ffe3bdb6bf16a5eac7984f198ba15f10f3375f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0074.jsonl",
+      "recordCount": 46,
+      "bytes": 129304,
+      "sha256": "207db6f44d1432e2d8235a346c30b8bbcaef16a62dd0ae90038bb572797057bd"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0075.jsonl",
+      "recordCount": 51,
+      "bytes": 128983,
+      "sha256": "990f4e6e7623c14fd62a86aa1125d49c85c76b3ca67bf75c06f1bc9d6222a68f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0076.jsonl",
+      "recordCount": 54,
+      "bytes": 130214,
+      "sha256": "908151736b7c041891b62c50de9be479be3eb98f1d5f064200e3a212813bac27"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0077.jsonl",
+      "recordCount": 49,
+      "bytes": 129367,
+      "sha256": "0163378141eb0818650b493442922c469098f6cb1630f25f4d0c0a90eba4c85e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0078.jsonl",
+      "recordCount": 51,
+      "bytes": 130616,
+      "sha256": "8a16b775c9baf470b5ab32ce8ee3c10112d720b741023af0e2d8947e62eb5e39"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0079.jsonl",
+      "recordCount": 53,
+      "bytes": 130175,
+      "sha256": "5efaab109d622a239d4a6b3209f0a301d3186bd49a7ef2221e00ad5bfc21d5a2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0080.jsonl",
+      "recordCount": 48,
+      "bytes": 130099,
+      "sha256": "6abf5704f86f7681a066560151ad53ef6da7711d35bd6b6dc390dacd7066f95f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0081.jsonl",
+      "recordCount": 50,
+      "bytes": 128517,
+      "sha256": "9021e095f40039953f3d5f950f613410bdd614dd9fc1b96670a69a7f3ea4b6d4"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0082.jsonl",
+      "recordCount": 42,
+      "bytes": 123408,
+      "sha256": "c7163962947819822bebca2b2695211820beb28bea285fe380700778ce5ab54f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0083.jsonl",
+      "recordCount": 52,
+      "bytes": 129608,
+      "sha256": "e903730d1e23040d1dd87bc5a177736a48fdf6cea1c025b30cea0db857de37f3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0084.jsonl",
+      "recordCount": 53,
+      "bytes": 130913,
+      "sha256": "5da75c4f464f4b5f7082493e6a48f2bf99f392a22e9699c86bf169e2f4aa9df9"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0085.jsonl",
+      "recordCount": 61,
+      "bytes": 130954,
+      "sha256": "a2c9d3f5fa8ca6b1b9e47c784ddf0ad398b80444723ca1faa50409d78232b749"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0086.jsonl",
+      "recordCount": 50,
+      "bytes": 130478,
+      "sha256": "38954a1cab63bd41ecc85fe90098f8bb5da823268559d10a8f17bdbb091ea331"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0087.jsonl",
+      "recordCount": 47,
+      "bytes": 130031,
+      "sha256": "e6df3f1ddc01ef06dd20d0d2e7632865351d280a1e06ba442e55c1e90522c131"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0088.jsonl",
+      "recordCount": 48,
+      "bytes": 128663,
+      "sha256": "5e8b8e4d9cf79f0d9e53d2a7fd62e3f3f0160370fbc4db589a265bb012bb2202"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0089.jsonl",
+      "recordCount": 51,
+      "bytes": 128356,
+      "sha256": "9c45f7d15794757a46a131312c8481769a21602a965ecdb69c3f573193a39a1b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0090.jsonl",
+      "recordCount": 53,
+      "bytes": 130299,
+      "sha256": "46ee92ef6fd07b67e4eda3429e3c157f6096d8a6ab907db74fee0f810b7fc67a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0091.jsonl",
+      "recordCount": 49,
+      "bytes": 128207,
+      "sha256": "e83274f85e0516e27cd5b9175e70e86b4b011ca9c7f94fd45ed07ace73cea824"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0092.jsonl",
+      "recordCount": 50,
+      "bytes": 128425,
+      "sha256": "47f6dd24516abb44f9f1c010f7a6457bb46791f4d2e090654be1b22f00de0528"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0093.jsonl",
+      "recordCount": 58,
+      "bytes": 129990,
+      "sha256": "3cd44c84c2258239465b5a8ff8d12b3c71399d42648218f23e041333dd22fd6a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0094.jsonl",
+      "recordCount": 51,
+      "bytes": 129807,
+      "sha256": "2336fa54a0ffb10f981408db378872c106962950bed9ae66bcf0f8f2ec3e75be"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0095.jsonl",
+      "recordCount": 49,
+      "bytes": 125046,
+      "sha256": "51145ad807cae308277be23657b196ca8b3986f1af021866f40f2f869b2398b4"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0096.jsonl",
+      "recordCount": 41,
+      "bytes": 129319,
+      "sha256": "4ac1d17b51635c0a5997a80207b30332c73b16f5ef46bdc9b46021ed02381de8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0097.jsonl",
+      "recordCount": 49,
+      "bytes": 127755,
+      "sha256": "5e61e55dbb2a4d61375fc120558a191f6f4114421733b38ad5761f998a16c0e3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0098.jsonl",
+      "recordCount": 53,
+      "bytes": 130914,
+      "sha256": "b967e7ffe9bffa71c81b4836d47c90d015ee874f5708faf03f5c81f39ad51dbc"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0099.jsonl",
+      "recordCount": 47,
+      "bytes": 129520,
+      "sha256": "396211a94b2bf650c7ea5ebec477395570488d25e3535cb3050ed45d3425d6b7"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0100.jsonl",
+      "recordCount": 52,
+      "bytes": 129317,
+      "sha256": "09cb81fa1791107589e9417be14d2843f6a5f19a556612a88f7f6fcabaae880d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0101.jsonl",
+      "recordCount": 51,
+      "bytes": 130459,
+      "sha256": "4217bcd6be570e902c26592849a2839ba0736a7765dc84c9a811ce912c3dc945"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0102.jsonl",
+      "recordCount": 47,
+      "bytes": 125290,
+      "sha256": "88735dface5be0d598c1ce82a867f062e23a24036f4319957fd922b5f500b860"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0103.jsonl",
+      "recordCount": 40,
+      "bytes": 130151,
+      "sha256": "5ae3002df6ec747c05f8241229baf6b667e0f663e6837e22ec66f51f41c42ed0"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0104.jsonl",
+      "recordCount": 49,
+      "bytes": 129512,
+      "sha256": "542ea9934f858c5d92687384b7e55bec59b6fc315e223ed1303f58ed185872cf"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0105.jsonl",
+      "recordCount": 53,
+      "bytes": 128927,
+      "sha256": "28fd1a4af6b4d06a14cff220ffa0aef45d1ab88770e3d0adb76e8ede5caa761d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0106.jsonl",
+      "recordCount": 53,
+      "bytes": 130591,
+      "sha256": "bf009ff9708ff1b86d060fc10fc498584babad61fd29b25eb1e19132dd56599d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0107.jsonl",
+      "recordCount": 55,
+      "bytes": 130926,
+      "sha256": "57fde38d951a376c7eb4e3519e26155970c1fa36923a92604def34ee5efd4b56"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0108.jsonl",
+      "recordCount": 50,
+      "bytes": 130180,
+      "sha256": "dc7118424593a46907a4cbe17354055720beaa17f1fad68a80b821130b71f1e9"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0109.jsonl",
+      "recordCount": 66,
+      "bytes": 129031,
+      "sha256": "8bea151eacac87a27f9c0cd5e8d63decbd20e6a408d53a37ba89f7364c5505d2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0110.jsonl",
+      "recordCount": 51,
+      "bytes": 129746,
+      "sha256": "3e45b40ed5900722f90cbe2839c101ad1e017ba5f0da77be1e2150652e96597b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0111.jsonl",
+      "recordCount": 53,
+      "bytes": 129089,
+      "sha256": "60e01be7bc301fdb29e31eb485c0139337364f3a53bda1260f278c9b9a4a42e8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0112.jsonl",
+      "recordCount": 48,
+      "bytes": 128791,
+      "sha256": "9cf2a67edda9047209add6072772682d37d72c663fc5175b7062a82046b4569a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0113.jsonl",
+      "recordCount": 55,
+      "bytes": 130009,
+      "sha256": "f3d9edb564853d511f7f1ae4d46afe0730b93a38e8d6430e9aa7ac90660b710e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0114.jsonl",
+      "recordCount": 55,
+      "bytes": 129267,
+      "sha256": "b467a98ab3bc6cf48c19a1b3f54aa35172a0b30912b7073b807494da6ba562fa"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0115.jsonl",
+      "recordCount": 63,
+      "bytes": 130115,
+      "sha256": "d94e371930c6a18043eda33778c5b14eab8e4bbafad63aeeaae98add95675ce3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0116.jsonl",
+      "recordCount": 50,
+      "bytes": 130492,
+      "sha256": "e9022a3a945b140ef102105496a3adf78a608b9de5e0618ff7639ca0fdc6db73"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0117.jsonl",
+      "recordCount": 60,
+      "bytes": 130600,
+      "sha256": "4b828a44070b4acb60cf8e417f19da7e9296882850ef4c00f992e47ee80e8f50"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0118.jsonl",
+      "recordCount": 62,
+      "bytes": 130222,
+      "sha256": "418bd3b6ae43eff81424e84b4ea39b5c2c8f1b80536129007c9476cc0e4b77e8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0119.jsonl",
+      "recordCount": 58,
+      "bytes": 130544,
+      "sha256": "180acd24b92d20a37ef23906ea99eebffce069db545e40f680d2bf5db308dbc2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0120.jsonl",
+      "recordCount": 63,
+      "bytes": 128727,
+      "sha256": "74d74262b53406b4fd8af6f0541273f67e021f7dc8a078ab9ec7af1e3c53dba1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0121.jsonl",
+      "recordCount": 48,
+      "bytes": 130040,
+      "sha256": "d2193e818a17e18748868e67a36e170405d31a5337a3fbf8c1f5481917192929"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0122.jsonl",
+      "recordCount": 47,
+      "bytes": 126153,
+      "sha256": "bfaafd4c7ff30d9fa042bb9ec68b106795f5ca7225d4c9b194dc870bd60d5c32"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0123.jsonl",
+      "recordCount": 52,
+      "bytes": 130884,
+      "sha256": "8f7b7ac8a95587a0674ab721388663104c6476a90507fd71c9cdd91cd24ae5c6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0124.jsonl",
+      "recordCount": 61,
+      "bytes": 130182,
+      "sha256": "cdb93f68222437392b6d8565bc69f013099ba2a22c60555d96a159ff6436d63c"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0125.jsonl",
+      "recordCount": 52,
+      "bytes": 130137,
+      "sha256": "46d4eec3741db30854b67eec29e1327e2020115a5428fac48aace8bb3de4a532"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0126.jsonl",
+      "recordCount": 52,
+      "bytes": 130196,
+      "sha256": "5588b168ece6b33b62c4cccfb2b6a6b7366840ab54734ce7785cf2e0716f54be"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0127.jsonl",
+      "recordCount": 60,
+      "bytes": 131035,
+      "sha256": "b1726d4b45efd1f22132a39a7a5422cdbf7354488d6d5191b98dc73faac0f7da"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0128.jsonl",
+      "recordCount": 50,
+      "bytes": 129855,
+      "sha256": "48d1f8c75c86ae64fcdafa7bc84430007d5ff430066f9c5d8d19b989eb24ab36"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0129.jsonl",
+      "recordCount": 48,
+      "bytes": 127227,
+      "sha256": "b1d186a32a92512b221ebca83b9b7a97a6314795f7897b0ca3713868ddc5fb64"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0130.jsonl",
+      "recordCount": 46,
+      "bytes": 130730,
+      "sha256": "be7668dbeb3944672a573a84657b5e9b08b870241fdf5f6c7aef5d5d9eb0cc3c"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0131.jsonl",
+      "recordCount": 50,
+      "bytes": 129658,
+      "sha256": "e5ca55f3b31b6152c8462bfd1ca2dba1c4c5e23368f948bfa6aa56b1d3ea4cb4"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0132.jsonl",
+      "recordCount": 46,
+      "bytes": 130994,
+      "sha256": "7e4ac73e5d1355659390b638e8fb19e7eca8b64dd1a873a09fa89837493ef3dd"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0133.jsonl",
+      "recordCount": 51,
+      "bytes": 130005,
+      "sha256": "df31c0103a6595b0f83600cc75c8989c23b44341da69cf8d2ac2bd111cc20fa4"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0134.jsonl",
+      "recordCount": 51,
+      "bytes": 130925,
+      "sha256": "28b3a87be0ff8540edb754115c5faa183ebc7a4ecbf696a35d9eddcfb22cc45b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0135.jsonl",
+      "recordCount": 49,
+      "bytes": 129046,
+      "sha256": "7e60387ad072ffac832a905652467ad1f5a44cec79f46f89ab8349433f92d91b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0136.jsonl",
+      "recordCount": 57,
+      "bytes": 128780,
+      "sha256": "7e21580520c7433c10d3bbeed19e41fb7888e5fab88abc81e4792288eda784a2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0137.jsonl",
+      "recordCount": 56,
+      "bytes": 129430,
+      "sha256": "da4c133e734de18774de6ee5e7d2dc8e74285e8a3acd2a806d0eae6b4021f460"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0138.jsonl",
+      "recordCount": 52,
+      "bytes": 130578,
+      "sha256": "d999eef8383ed363ba548316ac6b8a038fb1357179be43b04a28e35beb20ae13"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0139.jsonl",
+      "recordCount": 52,
+      "bytes": 129237,
+      "sha256": "47ed2102f6d0d974b3cba6d8289456f3a7c40b2e82e642f7c6a705cb6cde47f5"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0140.jsonl",
+      "recordCount": 53,
+      "bytes": 129458,
+      "sha256": "319dd6179506e03fd95f28b2a3c04100342d405d4cfa5182ca4eb6b1c420958c"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0141.jsonl",
+      "recordCount": 44,
+      "bytes": 131046,
+      "sha256": "bcd432c9e9a43a57a908ecc68a4ae797369eb0a671c9246b52546583e099c4c3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0142.jsonl",
+      "recordCount": 58,
+      "bytes": 129531,
+      "sha256": "d361e643bb7f948a45c0d2335b209fef46d48726719940541443d4f0f49fe604"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0143.jsonl",
+      "recordCount": 52,
+      "bytes": 129887,
+      "sha256": "3b11de503a10eede0986e194b4d0743c06e049f8e817a98905219d66660790a7"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0144.jsonl",
+      "recordCount": 64,
+      "bytes": 130329,
+      "sha256": "432fc8407fe2e2805827d6eafe477316d2b9aea11ec23ea0ac3acc68d7ef24bb"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0145.jsonl",
+      "recordCount": 51,
+      "bytes": 130993,
+      "sha256": "ae4fca568a3746dcdc9489b1b89914689a984c4588eda66e6cea9f1034358815"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0146.jsonl",
+      "recordCount": 53,
+      "bytes": 129348,
+      "sha256": "04cc7afad3393f995d3fb58c99f2f019e8795df4ac44ffa011276c0d19fd23f2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0147.jsonl",
+      "recordCount": 50,
+      "bytes": 127336,
+      "sha256": "f9180a4ec9971720db11753997d40ab3d0964b31663518c9801ee225647669f3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0148.jsonl",
+      "recordCount": 56,
+      "bytes": 127579,
+      "sha256": "2a341d6d0b8672c412b1976176527a389c63036999e5f96523314d4c9ae1f4c6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0149.jsonl",
+      "recordCount": 62,
+      "bytes": 130456,
+      "sha256": "3b400baf1102e7194674d22c5670b3f2846e95afc76ef1bd502038aeace490aa"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0150.jsonl",
+      "recordCount": 53,
+      "bytes": 130260,
+      "sha256": "8d7e35c8bee6830986f246de4fe7ffab7f0409600890c852cb078017e1dc46f7"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0151.jsonl",
+      "recordCount": 58,
+      "bytes": 130519,
+      "sha256": "80e433dd8870bcb07e08f9d88525d221314705cf1df4423c7321e0328fac6474"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0152.jsonl",
+      "recordCount": 66,
+      "bytes": 130951,
+      "sha256": "35938d404055aea2ccd42021c05c9a22b0e7d0bc60cfa9f50db0b9e112a7ad60"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0153.jsonl",
+      "recordCount": 58,
+      "bytes": 130447,
+      "sha256": "47c6f9ef12d83cfdbe0e7f4be1140adcfe4dec1648f7bc1cf4fefad8947e9306"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0154.jsonl",
+      "recordCount": 48,
+      "bytes": 130711,
+      "sha256": "5d035daa93443f4aa086bcfc66af98d1977d26daf2dcfef5e04b81a4eac6cf85"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0155.jsonl",
+      "recordCount": 60,
+      "bytes": 130919,
+      "sha256": "88ab36c190cca62d144213b7d7beba2cc66294b17a62190b3a8acd7d9f1c4e00"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0156.jsonl",
+      "recordCount": 53,
+      "bytes": 130291,
+      "sha256": "b240fcecacc6ea4d9a8080e11b7567a0c9b70eba02868709c2c1c18bd1d36144"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0157.jsonl",
+      "recordCount": 59,
+      "bytes": 126823,
+      "sha256": "a13c15994a15fe89a65760b73e24024b1cf28c924afdb7f7e2876c5663bf202b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0158.jsonl",
+      "recordCount": 56,
+      "bytes": 127658,
+      "sha256": "698183b0f9d40b39bac8f28c3949764ae740b5318f9733c6358253e3b8d88519"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0159.jsonl",
+      "recordCount": 56,
+      "bytes": 127026,
+      "sha256": "a5fa430eb1086e418d7d48601a182cd73a9ad1f477a9f0b22cbd646237a60902"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0160.jsonl",
+      "recordCount": 55,
+      "bytes": 130846,
+      "sha256": "cb6fce77c03dbe94d2b7bf872d90a99e03881d599d0cc1e4f04107dd760d3928"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0161.jsonl",
+      "recordCount": 55,
+      "bytes": 129874,
+      "sha256": "484e55c9936406d9617d2256f3671206326dd05dd26a319020002ad808cbdf8d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0162.jsonl",
+      "recordCount": 51,
+      "bytes": 127981,
+      "sha256": "6f2c9bc574ea9b93e6dd403f4de99507fd8b15e2f737ad4b27e5b82e22c22e43"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0163.jsonl",
+      "recordCount": 47,
+      "bytes": 130216,
+      "sha256": "a3e13e678bab954a7667060ef98a39886ffdf4b333648ae5b47d574f5f34e29e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0164.jsonl",
+      "recordCount": 56,
+      "bytes": 130494,
+      "sha256": "cee356dd42c54895d9ed88c7d089b3808f08fd5862b6c4cb2cd97426ef28b8f1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0165.jsonl",
+      "recordCount": 57,
+      "bytes": 129874,
+      "sha256": "8d7c374cde54a19ed02acc857f531634e30cebafbb9fd5cf67ef8cdff8e1da55"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0166.jsonl",
+      "recordCount": 53,
+      "bytes": 130055,
+      "sha256": "7c1f3d4f8dc0951b17073022230d78c76ed729c998d03ddd6e64c0c591ce092b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0167.jsonl",
+      "recordCount": 64,
+      "bytes": 130452,
+      "sha256": "dc5b7a9e6ed9a80391a8e58ae42fe772a333658296b1eca1900efd418f722553"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0168.jsonl",
+      "recordCount": 48,
+      "bytes": 127139,
+      "sha256": "82aa440ff638ed4cff192afead529d0fa149c81af1ccd3c07e2a3dba84240eb2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0169.jsonl",
+      "recordCount": 60,
+      "bytes": 130076,
+      "sha256": "799257aebf212f46132c95fa885b854021620571b380a52ed0bc0ff63ec7c06b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0170.jsonl",
+      "recordCount": 59,
+      "bytes": 130223,
+      "sha256": "feb9f2d627a5895787c78cb7cd5f7f4675a9b317c9ab6540f6fc89b6c1c1536f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0171.jsonl",
+      "recordCount": 53,
+      "bytes": 130835,
+      "sha256": "62b37b6ea1cd6538930315891d571f29d55af8e4615731bfe301b4f2193c3e7a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0172.jsonl",
+      "recordCount": 48,
+      "bytes": 129618,
+      "sha256": "6523e2197c6cf231c694ef908a52ddb3a357b2ee7fc4065444ab3f4d898c46c5"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0173.jsonl",
+      "recordCount": 59,
+      "bytes": 130697,
+      "sha256": "be9bc5b4bfef30fb5a9286b30c87941fa9e2f3dc2f96d03da95bfacb48af3563"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0174.jsonl",
+      "recordCount": 55,
+      "bytes": 129589,
+      "sha256": "f2ee73f1f6ef331af5b2b5dbf3a1a1373ddf3ac47057eb5197fc65fbb439bbee"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0175.jsonl",
+      "recordCount": 76,
+      "bytes": 130935,
+      "sha256": "a011391dcb1b8e36530fb42fd528285e84951d84f6bb37bcabb8ca12d0ee9c8a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0176.jsonl",
+      "recordCount": 58,
+      "bytes": 130663,
+      "sha256": "fd9c70fd97ac856921fa9adc81ee35dd9f965064ae7495503ec31c0e24a36f12"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0177.jsonl",
+      "recordCount": 49,
+      "bytes": 129940,
+      "sha256": "2d5555d711135b26d7f113e41389fbddd90249de7034be2786634348870582e5"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0178.jsonl",
+      "recordCount": 55,
+      "bytes": 130063,
+      "sha256": "1f5a8f7d2806c657fea91bec519e74cc850847b391b9d24cb46adf99bc763434"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0179.jsonl",
+      "recordCount": 52,
+      "bytes": 130157,
+      "sha256": "39cfa698c48423c9de174f22de9593b22828788ad48835931413a903bd8a599c"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0180.jsonl",
+      "recordCount": 56,
+      "bytes": 128263,
+      "sha256": "fe5abde1a6ead131751d00de22071c0ea18807be3e5ded525be0930e205cd44b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0181.jsonl",
+      "recordCount": 57,
+      "bytes": 130097,
+      "sha256": "b6c8abdf6757a05a71a1e7b112c834ff2789046ba3ea07fc50a5976b487472ad"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0182.jsonl",
+      "recordCount": 57,
+      "bytes": 129222,
+      "sha256": "ae63b1d29e2ff6f5a08d2535def8523871143b43cffe42176e696e753cf37770"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0183.jsonl",
+      "recordCount": 52,
+      "bytes": 130718,
+      "sha256": "53b029280c197eb0757a5130b85f5628c54cf88ec64cd3b4d145155e22c3e880"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0184.jsonl",
+      "recordCount": 55,
+      "bytes": 127193,
+      "sha256": "e9a99c84465c525d23793842284bc175481cd7451e2980a6939bca397d424c0e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0185.jsonl",
+      "recordCount": 50,
+      "bytes": 130089,
+      "sha256": "1d0b96e1fae4ce4aed3761d866c9f7f53c15ccb1eb9bf073cf4b6c9d09a8d05c"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0186.jsonl",
+      "recordCount": 47,
+      "bytes": 128172,
+      "sha256": "ffd18d3c783507eed3870101eac0b54770f607a547436c0538c6e5d0d389a468"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0187.jsonl",
+      "recordCount": 52,
+      "bytes": 127284,
+      "sha256": "bb2b08180adf9743880d29e6cd66eb7fc40bf32af2d909301b29b4b0004b61c2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0188.jsonl",
+      "recordCount": 50,
+      "bytes": 130193,
+      "sha256": "1309e3e6f92b9660e1f3ee675c82033a0ca5a93a6f6bc84154077613694b2770"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0189.jsonl",
+      "recordCount": 52,
+      "bytes": 130534,
+      "sha256": "49367908197bebc23cd4891d1ff77f95566f7bb14b6cd2eb328a352373369033"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0190.jsonl",
+      "recordCount": 53,
+      "bytes": 130486,
+      "sha256": "b6c0a4781b20aca8b38543f89dfae671b32904ef69f7ff6c29b1f597d89c17f5"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0191.jsonl",
+      "recordCount": 48,
+      "bytes": 130227,
+      "sha256": "4ab0703e5450a57b23e9d0f71a478f7241a1456519fa3ea93086cdf33d4622a0"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0192.jsonl",
+      "recordCount": 58,
+      "bytes": 126858,
+      "sha256": "b623fcc1b07d365fbcd885e2555a2dbe5c232f52efff2025de217ed6fe527f95"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0193.jsonl",
+      "recordCount": 54,
+      "bytes": 127584,
+      "sha256": "6b856c577558ea0822bcbf1b49f939586e71ec5d08acdb68bf441b859f4e2463"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0194.jsonl",
+      "recordCount": 54,
+      "bytes": 130258,
+      "sha256": "9d434389976d579702618ecee955289b998c5511023c8c4b37838df4c404bc4f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0195.jsonl",
+      "recordCount": 53,
+      "bytes": 128841,
+      "sha256": "1b77e1651ca435b5d187ef5085eaedc16f205f76c80f6df9fd77429a02d1e651"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0196.jsonl",
+      "recordCount": 62,
+      "bytes": 130923,
+      "sha256": "b67fe8d1ede3ef66c1b239bc26367501a12caed2bf57161797e28d422e64e7f3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0197.jsonl",
+      "recordCount": 51,
+      "bytes": 130822,
+      "sha256": "1eb05d18be7d46a499e0482d49aa00bb59c7824113c84239801ebd341d6300a3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0198.jsonl",
+      "recordCount": 51,
+      "bytes": 129679,
+      "sha256": "990f3c7c40247fc9ee8caadd8add5d8d4a7ab5f1eba9ce2220af6983adfcc979"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0199.jsonl",
+      "recordCount": 53,
+      "bytes": 130806,
+      "sha256": "eedab9c13bfdb71c16ac7c8247f1b751eea91f66d0ea3d3987f450d022b6e27b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0200.jsonl",
+      "recordCount": 45,
+      "bytes": 131017,
+      "sha256": "8846e734b7e3d670ba29a8e11a21d6364c45c90f1ac12c0cc66a96a56b15e22a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0201.jsonl",
+      "recordCount": 44,
+      "bytes": 130919,
+      "sha256": "02de24f6dafc20b25c8b9400522c6def5f4ccc442210029e00d2e428d37ccb20"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0202.jsonl",
+      "recordCount": 57,
+      "bytes": 125163,
+      "sha256": "5de6844ddac427311d916dc8400404302e26dddf5adf94f1d48ea590b952893d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0203.jsonl",
+      "recordCount": 51,
+      "bytes": 127359,
+      "sha256": "a1ea3b5e10c8d7315e5add8151fec72308fb89c4dad584f5f682b3fd5ae3781b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0204.jsonl",
+      "recordCount": 54,
+      "bytes": 129265,
+      "sha256": "08c0fa42147777be7cc67ffed06babd184fdab0ba93c580c9429913ff1632616"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0205.jsonl",
+      "recordCount": 47,
+      "bytes": 130602,
+      "sha256": "8f1a0ab17a1bd4ab78a3203ae64fa7c0631a7e2a0e2c66264af178adb2c94b98"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0206.jsonl",
+      "recordCount": 53,
+      "bytes": 129256,
+      "sha256": "d9203f3612c9082b6c0ae1a3dc2f0a16658c25d55c89271f79a6a4aeb9bdb27a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0207.jsonl",
+      "recordCount": 52,
+      "bytes": 131039,
+      "sha256": "0de708f9be9a3ee38ef60182ad441debf95d69b8e41b000bb0e38d2c1a7f2dea"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0208.jsonl",
+      "recordCount": 48,
+      "bytes": 130939,
+      "sha256": "88d15387d39532219d0aabb2d10f27cc8a9496440898b6f108f05f2d8e8578a8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0209.jsonl",
+      "recordCount": 52,
+      "bytes": 130362,
+      "sha256": "0302e636308a4ee68314a85aa6c74992549039e2f2a76f4b8d934b8d50a844e7"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0210.jsonl",
+      "recordCount": 49,
+      "bytes": 126706,
+      "sha256": "039d18d2dcd56542f0e35aa9bd34e853bcedf39a3f70db242a361d23983389ab"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0211.jsonl",
+      "recordCount": 48,
+      "bytes": 130878,
+      "sha256": "9987622b0b205a1d752420443de9ef06ff9e08cdcbcf69e3c2ac5b38afe47fed"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0212.jsonl",
+      "recordCount": 57,
+      "bytes": 130196,
+      "sha256": "c7156a0e8d902e389d31dbab17701469a4672e9a0fa755c173d173943753c923"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0213.jsonl",
+      "recordCount": 40,
+      "bytes": 128116,
+      "sha256": "5af60df1835609537b1748028d1be8b4dab6fc12186234801a54d0cd5e68cd68"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0214.jsonl",
+      "recordCount": 51,
+      "bytes": 130969,
+      "sha256": "76172b05beb620bcb7c9176c2250429f090424de0cb8d541ae7d678dc7cfed10"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0215.jsonl",
+      "recordCount": 55,
+      "bytes": 127755,
+      "sha256": "a8170e917cfbfdeb88bffa60a0e252c54b828d45fe9d009f4c7ca7e39729d447"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0216.jsonl",
+      "recordCount": 48,
+      "bytes": 130891,
+      "sha256": "ee5759b251a190eaa5a9a1c0123fa17aa0c21ae7d6499755d8c7b61da7f39b30"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0217.jsonl",
+      "recordCount": 42,
+      "bytes": 130937,
+      "sha256": "6092f9297f26eeb952c2f1af8092b82b314d4927f4e532cf9e12e8b7f378ee93"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0218.jsonl",
+      "recordCount": 54,
+      "bytes": 130423,
+      "sha256": "7ab97bd4a55c5070e2e48afbec3633a19826ac407ea0e193b8b21bbb0b161056"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0219.jsonl",
+      "recordCount": 45,
+      "bytes": 130019,
+      "sha256": "9f0c5d816f349169b07a4091fcdbbc390b15666c6a347d7e855e39d23002745d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0220.jsonl",
+      "recordCount": 40,
+      "bytes": 129462,
+      "sha256": "1276c0f2175e02baa68a6952483c27705da32ea3ecb857cedad8c1c03edc7877"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0221.jsonl",
+      "recordCount": 61,
+      "bytes": 130810,
+      "sha256": "7968edb898794d060fe8afd4d5cb32070c24033a728fba385ff624351babe570"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0222.jsonl",
+      "recordCount": 48,
+      "bytes": 126666,
+      "sha256": "3f59dc8c2b94cefb76f62773e87523c562f132c0677e502dca3b1b967db63d9e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0223.jsonl",
+      "recordCount": 51,
+      "bytes": 130365,
+      "sha256": "68b94a58c2f011a5eecac6702807bf1d946f4fac64438e78b7f858752f73e312"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0224.jsonl",
+      "recordCount": 52,
+      "bytes": 130917,
+      "sha256": "c5233fffb644605c48f40d3bb2af37741d5b6f9bd0d37affc4ef5aca06ebd334"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0225.jsonl",
+      "recordCount": 41,
+      "bytes": 129839,
+      "sha256": "f15c45cde6a32f6ffe53be1cbf858bb100ac7d2d42559dabc393fe415426db56"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0226.jsonl",
+      "recordCount": 55,
+      "bytes": 129834,
+      "sha256": "2eb07b2292c8941ad4eea1f95127b094fb8359bb9835e622bd760a9d9ad3f310"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0227.jsonl",
+      "recordCount": 51,
+      "bytes": 128615,
+      "sha256": "128e8b384cf9b73df104b3daa26d246519b3edcea3a66a9d2ecd4a15ed1de2a1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0228.jsonl",
+      "recordCount": 48,
+      "bytes": 130703,
+      "sha256": "dc6ad42b79a1ff35c8c36a9ccaddde6c56dc4c7e2b03bf34046f9cf38056142f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0229.jsonl",
+      "recordCount": 48,
+      "bytes": 128682,
+      "sha256": "efd79539b3c50efcf1725be85672325e3560cb98003e676f372e136c8c2b50f0"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0230.jsonl",
+      "recordCount": 51,
+      "bytes": 128548,
+      "sha256": "a2666e0730428e331b881390df21a941bad1639e0459d4b7240bcb4da588e53f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0231.jsonl",
+      "recordCount": 46,
+      "bytes": 125895,
+      "sha256": "21661bd3f07e2020951bc30bf8497f5055ce8d42cc13f9cd1e374bdf95cf2187"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0232.jsonl",
+      "recordCount": 46,
+      "bytes": 130034,
+      "sha256": "bced1982c53c4883bc1aa53185fe82d822560b52f9d44beea449ddad40af24e4"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0233.jsonl",
+      "recordCount": 50,
+      "bytes": 130059,
+      "sha256": "687cabce591a667ff7a2fc01e20f00f4763b0a74ab861a9652a6862659130bab"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0234.jsonl",
+      "recordCount": 54,
+      "bytes": 129227,
+      "sha256": "952715929898ebd042693bd807b0b30debe889bf041bf3a4521f859c3aefa69e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0235.jsonl",
+      "recordCount": 59,
+      "bytes": 128821,
+      "sha256": "a337bcdf390d5ae10a21252b0f379a8b3d7064e7b368426606c1f6b25dc1defa"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0236.jsonl",
+      "recordCount": 53,
+      "bytes": 130559,
+      "sha256": "2ffa8d054527cc6448bcbb0d97230a7f364df27fd72f9784282e4635cadcdd45"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0237.jsonl",
+      "recordCount": 48,
+      "bytes": 128008,
+      "sha256": "74b5b423e3bdf293ba32d86db10d8dc72221b32d4b30408d1cb93222684bceb6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0238.jsonl",
+      "recordCount": 48,
+      "bytes": 125254,
+      "sha256": "3d103efb6cea5a238e6bd891304dbd388191ab67f7cb82396668c5b77597fa1f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0239.jsonl",
+      "recordCount": 47,
+      "bytes": 128128,
+      "sha256": "44142b7e1db9705ac3f772fb347f96cdf3b994f3500b6cb7842ef40928b03f71"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0240.jsonl",
+      "recordCount": 54,
+      "bytes": 128580,
+      "sha256": "7ac22da7fb36aee1188b46da15c00ce90d96f203a2de7cfb018fb95559cca49c"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0241.jsonl",
+      "recordCount": 58,
+      "bytes": 127963,
+      "sha256": "b03a1a8a14bf62f8e70db81f39d75a934f7ff798410428a71b68988249f77fb6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0242.jsonl",
+      "recordCount": 57,
+      "bytes": 130676,
+      "sha256": "d3a2588c496fc1d2c333af8bdd62670dd2716e2e625c6d645d0f925faeaf1870"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0243.jsonl",
+      "recordCount": 63,
+      "bytes": 129842,
+      "sha256": "cc35764eca40dea44f38ce57deee9c50cbaaff13b8d84c1a1493f2336c9652fd"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0244.jsonl",
+      "recordCount": 68,
+      "bytes": 130994,
+      "sha256": "6613f9ed7d21f802051a95911e4fbe24c361e897eccb4e005815cc5ff1b906b8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0245.jsonl",
+      "recordCount": 63,
+      "bytes": 129737,
+      "sha256": "12b40794a98358ecb1b2ce4d04a3df322cf571a905a4dd19db0e017a93401678"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0246.jsonl",
+      "recordCount": 49,
+      "bytes": 129515,
+      "sha256": "0764ef4f8e7be497d08af501aa2b0aa31ce76c564c6195de75d97263aca34df7"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0247.jsonl",
+      "recordCount": 54,
+      "bytes": 131056,
+      "sha256": "fc67af8918dd358c3e24597d633ff12f8ec32d3d9e2347f639c3622bd4af57a9"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0248.jsonl",
+      "recordCount": 49,
+      "bytes": 129278,
+      "sha256": "c04f66080be56705afa53d24daaa4560ede1ca85f669f52755a3e06d56680076"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0249.jsonl",
+      "recordCount": 59,
+      "bytes": 130295,
+      "sha256": "86c6ff38a94cfce7f96f4c5e9f9e0cb129abc26ee6c4030f36c2c49ccc16c82b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0250.jsonl",
+      "recordCount": 59,
+      "bytes": 128090,
+      "sha256": "ccc83b5d6a3a6f3b959922b7da4e3e35bed2f83882a8f94371c29d17deb16aa7"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0251.jsonl",
+      "recordCount": 57,
+      "bytes": 130906,
+      "sha256": "8699508c8dca8c37efef76d57f8158c3bf29695186bb3dd863a0102147e1a487"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0252.jsonl",
+      "recordCount": 60,
+      "bytes": 129671,
+      "sha256": "ee44489e3dc395df6bce0e907659d0c098b13b2eba158a40d1efd8a489e3ec53"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0253.jsonl",
+      "recordCount": 54,
+      "bytes": 129650,
+      "sha256": "ff7e40a3ec857558bdb11cd5cf58ec39b1aac9e97d2f62cc8b408936f7e5d5d3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0254.jsonl",
+      "recordCount": 60,
+      "bytes": 130397,
+      "sha256": "c1738a6e21110953056908eb85ca7aa7f7bed40d36699568520511bc4dd62141"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0255.jsonl",
+      "recordCount": 52,
+      "bytes": 130127,
+      "sha256": "ab1dd9d5b387630f152f1ea2a01f22aa7d4ecbf496f21dc2beaa08952013054e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0256.jsonl",
+      "recordCount": 64,
+      "bytes": 129990,
+      "sha256": "91ee0c4dfff1ae387e5aced769b6c18be4882b977671872c790e3ea2f4fa13c4"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0257.jsonl",
+      "recordCount": 54,
+      "bytes": 129900,
+      "sha256": "d10f2b9fa7e2151e240d175caf0266f77bcd929a37281a0b827757d93341d074"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0258.jsonl",
+      "recordCount": 62,
+      "bytes": 130572,
+      "sha256": "cf414c3ea9e08ae024e71571762d46fd534531c46d0061449a9962f2279af5e6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0259.jsonl",
+      "recordCount": 59,
+      "bytes": 130614,
+      "sha256": "b220c1787de3c0543f1c4ed0d6501c5c52760b96ae53063f871f4b6c71dbbb37"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0260.jsonl",
+      "recordCount": 50,
+      "bytes": 129611,
+      "sha256": "562a4d86159634a1fc45224a2b13eddb4616cbf7837db58f2f5cef513ca1c302"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0261.jsonl",
+      "recordCount": 58,
+      "bytes": 130881,
+      "sha256": "b34c3b933acdbb2adf5913f949265ac5b08334d7caa30c35398c8390df5c3ebc"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0262.jsonl",
+      "recordCount": 54,
+      "bytes": 128547,
+      "sha256": "b65c1d131e22160dbb32bd3d50d613e6b31d0884e3fc673323df843334133f66"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0263.jsonl",
+      "recordCount": 57,
+      "bytes": 127155,
+      "sha256": "5e42e385f518e568e8200847b469a83072ef88996c77c7a9f1a20ce54c48faad"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0264.jsonl",
+      "recordCount": 58,
+      "bytes": 130472,
+      "sha256": "56936c5182d6f8a808c07a6bc9e79dcb8f021dbab4263e6ff7ccf7ddeb5a4469"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0265.jsonl",
+      "recordCount": 61,
+      "bytes": 127068,
+      "sha256": "c1a5065a829870ded6aed075a01cacaae3a847fa56f5f81e7f4ed43337a8e103"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0266.jsonl",
+      "recordCount": 58,
+      "bytes": 130702,
+      "sha256": "ab92e7a431d71ecf0e2bae561925fba624b5e8ffcc5334fb1a98ed12b50bf71f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0267.jsonl",
+      "recordCount": 66,
+      "bytes": 131069,
+      "sha256": "a078f011be19f445d54b7744c1362ea889c3c03a52b1e97167a964290cdfee55"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0268.jsonl",
+      "recordCount": 63,
+      "bytes": 129091,
+      "sha256": "befb21823e44584b5ea18094ae670f422934065782e73d8566b7f44ede7471b2"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0269.jsonl",
+      "recordCount": 62,
+      "bytes": 130646,
+      "sha256": "3d60e2bf1057b090cf1846d109eae7f098e188df83855846f7592dd07b690900"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0270.jsonl",
+      "recordCount": 58,
+      "bytes": 130974,
+      "sha256": "440bd1f8ce961d9c13276bd2e9fdbed2e91bdd18ab952025abc7b9b87ba5c311"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0271.jsonl",
+      "recordCount": 69,
+      "bytes": 130053,
+      "sha256": "d4ed486f14acb56594739697523450b2f2070227c44838ca181de41a0e6640ab"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0272.jsonl",
+      "recordCount": 61,
+      "bytes": 130099,
+      "sha256": "e5dfb79e828befd45b0fca6abed9be037fc3cd88095efb1536ef0b5109380c3f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0273.jsonl",
+      "recordCount": 69,
+      "bytes": 130311,
+      "sha256": "94ff571bca2aa6481234e4963a77f0e7064f791d16022b8f9d9fd0c2e7dbe832"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0274.jsonl",
+      "recordCount": 62,
+      "bytes": 130103,
+      "sha256": "ab7c220875300a73f6aa73e7e3ad8964a5ef4ea9112b1cc4f4e5ca74cd02b02b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0275.jsonl",
+      "recordCount": 60,
+      "bytes": 130606,
+      "sha256": "880685acb61aad480c535f9a040999e1958d2925606a0e445d425805605b0e8d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0276.jsonl",
+      "recordCount": 53,
+      "bytes": 129799,
+      "sha256": "b275051a543f2ceb3086130ac9f78f2ef69c6a2a142ad8418d9362a8fdabeac8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0277.jsonl",
+      "recordCount": 54,
+      "bytes": 128304,
+      "sha256": "42a76c1980f7025942722893cde1cca12c98f1feefbb6e28bd09007e3d699fd1"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0278.jsonl",
+      "recordCount": 76,
+      "bytes": 130426,
+      "sha256": "3ae80a24bc80f769a83cbbba7d3b4c75e96d1045165cb9a43b03d6f3504fd158"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0279.jsonl",
+      "recordCount": 86,
+      "bytes": 130101,
+      "sha256": "ca654ef581bb42f09662399d855919f27eb920fb850e624255778d0c5a8d1e27"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0280.jsonl",
+      "recordCount": 87,
+      "bytes": 128709,
+      "sha256": "e8529f99efe0a911e45897d8254470414fac2b0feb980db4c83cd43104a2083e"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0281.jsonl",
+      "recordCount": 82,
+      "bytes": 129523,
+      "sha256": "2bd05dd7b6a516377c44145ca5cde88732096ef978983e60fb89be9e7d4c0771"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0282.jsonl",
+      "recordCount": 68,
+      "bytes": 130357,
+      "sha256": "2b158dff0ae80f61f3ffb67668a0cdb0fc3b7a143d5e05c0d34c04b800b51e61"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0283.jsonl",
+      "recordCount": 69,
+      "bytes": 129227,
+      "sha256": "bb2d5f650ee68ab7482cfd667fd1e97818d9a7f742e1451f60c22a40e3af8167"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0284.jsonl",
+      "recordCount": 73,
+      "bytes": 130353,
+      "sha256": "738ed2e6e03a82132d13d245663bdbb9e5418123937d2266d7746bb6ec1c562f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0285.jsonl",
+      "recordCount": 53,
+      "bytes": 130022,
+      "sha256": "36019813c7a7b184eacb55f83c14f21d5a33cac39c7689c3fbb232a1ea789061"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0286.jsonl",
+      "recordCount": 64,
+      "bytes": 130898,
+      "sha256": "f86e4bc180ef62fa1c3b0b2be4f478d31fe8b7249949a630c05ea54f6e7252fb"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0287.jsonl",
+      "recordCount": 58,
+      "bytes": 130736,
+      "sha256": "d7fb1ee9e9a04996ddf717b6b741ca8b009c5f6d821ccd49e23ecbbf75bad5f7"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0288.jsonl",
+      "recordCount": 70,
+      "bytes": 128743,
+      "sha256": "723cf9680b2ac3d6f480991c7e1e260ea605d9889d7bfd3e70cb1f5d9c86583f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0289.jsonl",
+      "recordCount": 66,
+      "bytes": 129941,
+      "sha256": "92aa1e06372edf9df57a917933f79e6abc19edbecd0a3d3bf6c5fbf590265112"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0290.jsonl",
+      "recordCount": 66,
+      "bytes": 129554,
+      "sha256": "035cd6c5745923a4b04755dbbd5a5c02aca0eb08450f7a20d0ea93fb95b743d6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0291.jsonl",
+      "recordCount": 63,
+      "bytes": 130866,
+      "sha256": "4b7c7e6a043956ac42638a1aeb5a4b6c4e15e42f240fe8afccf2fb96ffd4d148"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0292.jsonl",
+      "recordCount": 64,
+      "bytes": 130317,
+      "sha256": "11ec0605a6e9378c77c837fd6faa81c2e8304eb02a089b5074611801f344e5cd"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0293.jsonl",
+      "recordCount": 74,
+      "bytes": 130266,
+      "sha256": "c8b66e6680ae866a018c37bd5a09f0c63be4288eb90a21f021aa4c10f4480f02"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0294.jsonl",
+      "recordCount": 60,
+      "bytes": 131037,
+      "sha256": "2509679343032eedb2da24bbee3a26164c725391a11e16dd56e21047928342ab"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0295.jsonl",
+      "recordCount": 62,
+      "bytes": 130119,
+      "sha256": "644e232a3ded127176602e9e7ecf170735b1d2487fcc0481c2a3b39abff5e599"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0296.jsonl",
+      "recordCount": 66,
+      "bytes": 130457,
+      "sha256": "db8ce49fca3f0d93d5c6c184c11babc0213ad4f38f1e6a4ff13676a81741671f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0297.jsonl",
+      "recordCount": 70,
+      "bytes": 130459,
+      "sha256": "d336802516a7c2a458b7e059dd24f2e446c46f5a4fb388bca00eb08cd94a193b"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0298.jsonl",
+      "recordCount": 63,
+      "bytes": 128898,
+      "sha256": "4f7fa56d383140207fc9754934d94280c0d6a980533cadf2c66bbae1198bb968"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0299.jsonl",
+      "recordCount": 68,
+      "bytes": 128194,
+      "sha256": "ce71d00886170efad77334089ac5f6f731f54e4874e0b0627cbabebd1e4c4912"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0300.jsonl",
+      "recordCount": 70,
+      "bytes": 130459,
+      "sha256": "b2c109e48c3d04850f07ca39a7199cf5ead5c50bae4522c3eb8731442a217df9"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0301.jsonl",
+      "recordCount": 69,
+      "bytes": 130806,
+      "sha256": "4a5f50f52ff6e78d1a79aab6e18df0e62709617e1ebfa80722281ede00220003"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0302.jsonl",
+      "recordCount": 70,
+      "bytes": 130838,
+      "sha256": "39649facb8c3e4c5cbb7467471bad89e424f3a4d1c498fc2664e61498f7ae975"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0303.jsonl",
+      "recordCount": 74,
+      "bytes": 130300,
+      "sha256": "fa197e70d44aa539306ddf7fce65a78d358f7f151dbebe2a8cd75477693c9b68"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0304.jsonl",
+      "recordCount": 67,
+      "bytes": 130624,
+      "sha256": "9ec508493bc58fd8784debcd93d9b26358ea28b3a00eda4af03ac4e3d580e3af"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0305.jsonl",
+      "recordCount": 73,
+      "bytes": 129579,
+      "sha256": "c21ea760f08d12cc943152f1091c4ae523642abcf936efef6cef5ba4c88cdede"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0306.jsonl",
+      "recordCount": 69,
+      "bytes": 129586,
+      "sha256": "44197cf2332d76b0b9365c0131cdf026f1e90d26cf0be4b27f851a054ca0e56d"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0307.jsonl",
+      "recordCount": 65,
+      "bytes": 125600,
+      "sha256": "86ac10ea24486846195f26ff9df6751a586ebb0046d30b758cb9ca991ad14ff8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0308.jsonl",
+      "recordCount": 57,
+      "bytes": 129400,
+      "sha256": "f4646b539bca898264536b7e0ffc8527ca7915e9f27377abe2d41d86a77a45bf"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0309.jsonl",
+      "recordCount": 63,
+      "bytes": 129311,
+      "sha256": "f9dd19969d1fb9b7f883051df08fbed88ec7c0e775b9a543a6662b9d521ca429"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0310.jsonl",
+      "recordCount": 63,
+      "bytes": 128226,
+      "sha256": "57ed4155b9b935889eecdd63a2a573e4a4ad0af4c90cafcff5ff2b5cf969e166"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0311.jsonl",
+      "recordCount": 73,
+      "bytes": 130629,
+      "sha256": "0f0790d3d2ad950895a295d47c168cdb2349c4e7f7f60f1a7d9b3b78338d8890"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0312.jsonl",
+      "recordCount": 74,
+      "bytes": 129778,
+      "sha256": "9686977e8c9017d91834371671a866d260d33f192084a620bf9f8f6b5398db9a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0313.jsonl",
+      "recordCount": 67,
+      "bytes": 130027,
+      "sha256": "b02f8ad0dd5d567c205a40733fa27a277434589384a693bd3accb8c0ab900693"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0314.jsonl",
+      "recordCount": 60,
+      "bytes": 128783,
+      "sha256": "88fd6419788c5eaf432662982e5a8daa33bcb38a6cdf28cfb6f68dc20fd978a8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0315.jsonl",
+      "recordCount": 67,
+      "bytes": 129233,
+      "sha256": "92efd3efd320564668385929c74d84fef0c67727f1cb54b02e24464bef5188e4"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0316.jsonl",
+      "recordCount": 63,
+      "bytes": 130657,
+      "sha256": "5fbae5a266cc71bde7f323f6f58739e2f755e43b77c066d09ddfe152ddae64ea"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0317.jsonl",
+      "recordCount": 69,
+      "bytes": 130299,
+      "sha256": "c00059dc9af93433e36be3614b7e3dba805e55b0432c9381f92449fa85850996"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0318.jsonl",
+      "recordCount": 53,
+      "bytes": 129737,
+      "sha256": "826400c477bc4cd7d93a1d60a468f30653875caf1602ff0ccc50695618e9abd5"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0319.jsonl",
+      "recordCount": 65,
+      "bytes": 129336,
+      "sha256": "74290bf242fa3b7943eaee1b7004240b78811d5baf6c4746308224f4fa9d37a9"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0320.jsonl",
+      "recordCount": 65,
+      "bytes": 130281,
+      "sha256": "0f45fdb68f4fc898829ad50a366b9be8a3a8548573e9859d3b914c75ad6876f9"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0321.jsonl",
+      "recordCount": 68,
+      "bytes": 129223,
+      "sha256": "2d0a1bca931945fe9f0cce7b5c3448a0ef1abe6d93d44238d4b3725fc17e3867"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0322.jsonl",
+      "recordCount": 64,
+      "bytes": 130410,
+      "sha256": "fbec31d41956fa1abc8f79bcd10451883f1c6254c1f418e5bb8ba3a97fbf7e28"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0323.jsonl",
+      "recordCount": 61,
+      "bytes": 130949,
+      "sha256": "e1295af765e2c53e75f97a5a1e44818ba8140c541eb82ef09a0bd420efcd3fa0"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0324.jsonl",
+      "recordCount": 58,
+      "bytes": 130291,
+      "sha256": "fb29d1728c49437edc1460e4e23f368fd8a3e70933bdc3f852bf2e3608f92690"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0325.jsonl",
+      "recordCount": 64,
+      "bytes": 130138,
+      "sha256": "d869a68453e0b5899bde342795fa8f463fcf015f2ecac66397ba149d7c212611"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0326.jsonl",
+      "recordCount": 48,
+      "bytes": 131005,
+      "sha256": "b3adf7a9541eaf4c5bc4a6fb98ae36666fce90740fd26c3a09cb9db288103556"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0327.jsonl",
+      "recordCount": 49,
+      "bytes": 130694,
+      "sha256": "6065e810d34fd8aaa0364c5bc69ce4941a8165ef94d81a75cbc44da03e7d3e20"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0328.jsonl",
+      "recordCount": 52,
+      "bytes": 129696,
+      "sha256": "4f1d6e264dd5eac7f927ca7a973da76487123122b229f5d307147961ae486178"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0329.jsonl",
+      "recordCount": 51,
+      "bytes": 129237,
+      "sha256": "bec9640829f20921ee5c60ef6a04fdb8a40e29823b2236320ce8fc4952d5a681"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0330.jsonl",
+      "recordCount": 55,
+      "bytes": 129891,
+      "sha256": "4d6112e21c47957f9d0193cffb15e97a5b0acf1985c4026b52212be97d8647b6"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0331.jsonl",
+      "recordCount": 54,
+      "bytes": 129026,
+      "sha256": "dee84b0a71866d6413bf735e9fe32910317312f40c1a80327c88aaa2e48b8677"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0332.jsonl",
+      "recordCount": 47,
+      "bytes": 129414,
+      "sha256": "15338adfd791be75f229ebed5960a54ca28ac63e4f808b198326589da455d5cb"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0333.jsonl",
+      "recordCount": 51,
+      "bytes": 130153,
+      "sha256": "e9782bf6d891a57a070cdb030d379289d17aa85f8f198c8d1dd56c7f3ed64a83"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0334.jsonl",
+      "recordCount": 47,
+      "bytes": 130912,
+      "sha256": "a80cf14616b92ac90c44d5d8d9e929b10759d55cc01640a12ce5f8264ce4d052"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0335.jsonl",
+      "recordCount": 52,
+      "bytes": 129371,
+      "sha256": "17615a94ff80b8acbf1cd80b8effa1fea29f7ec7cd185f205519bee44cf5de0f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0336.jsonl",
+      "recordCount": 51,
+      "bytes": 130335,
+      "sha256": "ec38d103312d54107ffcc3a0eb4ab9d55dd38cbd011092e2737b30328791ead3"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0337.jsonl",
+      "recordCount": 51,
+      "bytes": 129956,
+      "sha256": "125e6cef8d103e554286e0aa0b75d049d9fb107092c1c6164f696bf0a53389b9"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0338.jsonl",
+      "recordCount": 49,
+      "bytes": 129254,
+      "sha256": "e62e4a1c5d3c703df0e8c908a2ac4ef4a0e215d6169484953bed98c92a15e4c5"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0339.jsonl",
+      "recordCount": 49,
+      "bytes": 129463,
+      "sha256": "a8b02b860a055977935dacff48553dc4c39a583063b0240e5ae91ecae5017a35"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0340.jsonl",
+      "recordCount": 49,
+      "bytes": 130876,
+      "sha256": "3f5872af436e8f4fe44d15481b3dbfd792730c9311e3dc625d541f6fced1969a"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0341.jsonl",
+      "recordCount": 51,
+      "bytes": 130898,
+      "sha256": "c6444d25a0ca8522963587f5150d16992736029b58648eb0d37ee58fb74b7088"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0342.jsonl",
+      "recordCount": 48,
+      "bytes": 130611,
+      "sha256": "d7d20a938c426da55cc343892b874ce717a69485f8935b44a71d5f2bea283e5c"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0343.jsonl",
+      "recordCount": 45,
+      "bytes": 127415,
+      "sha256": "99e899c70262224fe2c7d44db325757ee0448a7f6fa4f8032830ddde98770374"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0344.jsonl",
+      "recordCount": 45,
+      "bytes": 128936,
+      "sha256": "ac74dc53cfb704076ccf9952cc889bdbb1631345e141a7c8fa8203502cb96b7f"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0345.jsonl",
+      "recordCount": 55,
+      "bytes": 128280,
+      "sha256": "28b274ceb63dbef185c2e2de7361354029bce2bf3eea826f5df8040db81642c9"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0346.jsonl",
+      "recordCount": 50,
+      "bytes": 129185,
+      "sha256": "fef61140c388fb2b527c7761dfa58d81915c1c9eb8e2ebc876f08638fc3b1835"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0347.jsonl",
+      "recordCount": 50,
+      "bytes": 126309,
+      "sha256": "6767f2779d9a17de79591d8f0ae19ee1fb323dd503219d335c08d12ca812c307"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0348.jsonl",
+      "recordCount": 46,
+      "bytes": 126630,
+      "sha256": "26c784ddfa4acbea6237d6c86f61d0c4ec01ffb18768303c2a17b80b082d7d29"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0349.jsonl",
+      "recordCount": 51,
+      "bytes": 131015,
+      "sha256": "8512b1198acf9527a4976609511e620935417c331f80bd90f199dffc7348af62"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0350.jsonl",
+      "recordCount": 52,
+      "bytes": 128119,
+      "sha256": "21a6a0fe5a5dae8f0e3ee4d91a1628c967a5b0a851451b3ecdcf59313ff74eca"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0351.jsonl",
+      "recordCount": 42,
+      "bytes": 129080,
+      "sha256": "4e6b55ba210622a80e56725975ba872c037e9da71e2050187accf25f4e1fae52"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0352.jsonl",
+      "recordCount": 43,
+      "bytes": 128085,
+      "sha256": "1bdd083ee442ce2ca9535bfcfd5b5d7fa90f64f5c2ee0298130b6dd50d149dc0"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0353.jsonl",
+      "recordCount": 52,
+      "bytes": 129942,
+      "sha256": "c7251bfb434d29316b12c859acf632e1d710308f2168d94e42e12f7b6fed7934"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0354.jsonl",
+      "recordCount": 53,
+      "bytes": 130303,
+      "sha256": "fab1dc8536958832e9793672258598bf2bd09740e5b48156c18ddfbc44277c39"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0355.jsonl",
+      "recordCount": 56,
+      "bytes": 129541,
+      "sha256": "f0487c1a4d4c6ddb986ff2dc25cef941f41f82c6384ed51b4197b5cab18ee242"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0356.jsonl",
+      "recordCount": 41,
+      "bytes": 127853,
+      "sha256": "5a5a4f2218f9ee8ff79fdedc50052f4b5bdb44d3f4aa5f8aa96585f4f2b769e8"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0357.jsonl",
+      "recordCount": 53,
+      "bytes": 128096,
+      "sha256": "02fcd49679952b43c0f1d80f3703c0464770d25d79a3945af3ad3ec889194722"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0358.jsonl",
+      "recordCount": 50,
+      "bytes": 129918,
+      "sha256": "17ffd0f874a5e6800eda0e366d1ab232c061ee5e390e2c96eaeff5f4f2161e56"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0359.jsonl",
+      "recordCount": 60,
+      "bytes": 130796,
+      "sha256": "8f30c7cdb0150ff1bddf63db81091983f1eafb91f79577c2d18ebb15f0e5ebec"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0360.jsonl",
+      "recordCount": 63,
+      "bytes": 128402,
+      "sha256": "5bde3bee28a1e6e36aa3e9b78eb3beb9ce635700d6f6ed94cc7e268191418b99"
+    },
+    {
+      "filename": "ESA_Companies_2026-10-01.part-0361.jsonl",
+      "recordCount": 33,
+      "bytes": 71668,
+      "sha256": "7077cb11f2624b0bf7a70d3a48d7aed5cdff5ed86c1c9499f02de7eebf4ebc60"
+    }
+  ],
+  "indexParts": [
+    {
+      "filename": "companies-index.part-0001.jsonl",
+      "recordCount": 514,
+      "bytes": 130909,
+      "sha256": "3500bb639ed27f9cbcd24ea4679ed905e4dc6e7bc9ac64a7b0c6ae1448b29e3e"
+    },
+    {
+      "filename": "companies-index.part-0002.jsonl",
+      "recordCount": 513,
+      "bytes": 131040,
+      "sha256": "f62864b9c849f3caf688bb021e061be5de64e570f33b0689414aa60cb9c3aeca"
+    },
+    {
+      "filename": "companies-index.part-0003.jsonl",
+      "recordCount": 511,
+      "bytes": 131065,
+      "sha256": "d7a6da71040ae5569d347c0574d5c635d177a24235dc5558d7d9473752bc058e"
+    },
+    {
+      "filename": "companies-index.part-0004.jsonl",
+      "recordCount": 512,
+      "bytes": 130926,
+      "sha256": "bffa462a28fc9d08a2be4e6e6f6c877be8759d7844d783ba16884e3be6575902"
+    },
+    {
+      "filename": "companies-index.part-0005.jsonl",
+      "recordCount": 514,
+      "bytes": 130829,
+      "sha256": "6e2b8de574d74e07a57dd4208909dc040110a5f0c4f1a9442d77b122cfc7ee44"
+    },
+    {
+      "filename": "companies-index.part-0006.jsonl",
+      "recordCount": 512,
+      "bytes": 131032,
+      "sha256": "f1729d4741c1c8d09668c7b630ad81dabd0b03a891fbbfc8b0e96c13d99ce1ed"
+    },
+    {
+      "filename": "companies-index.part-0007.jsonl",
+      "recordCount": 515,
+      "bytes": 130885,
+      "sha256": "5de1e0177f684d1a7df3ae611fc2ec58a1441686ec90012bd9f9ad81795b81de"
+    },
+    {
+      "filename": "companies-index.part-0008.jsonl",
+      "recordCount": 513,
+      "bytes": 130847,
+      "sha256": "388e28fca3f4556b5f936033eeac66ab619b57c4a9d8e5b40db4c3c2fb34780e"
+    },
+    {
+      "filename": "companies-index.part-0009.jsonl",
+      "recordCount": 511,
+      "bytes": 130935,
+      "sha256": "0c03d1485a947d8d7d9fea7348480303d21c81a2289b94dc4043cdae4bd712d3"
+    },
+    {
+      "filename": "companies-index.part-0010.jsonl",
+      "recordCount": 511,
+      "bytes": 130949,
+      "sha256": "3d3727d8caba8ea7d049e408122153e688158dec7eef34fdc21cd9fe9f532403"
+    },
+    {
+      "filename": "companies-index.part-0011.jsonl",
+      "recordCount": 512,
+      "bytes": 130977,
+      "sha256": "2013b4dc3373f16d308282df975a594757f4cc0dd3d82a1fe10b875964611d82"
+    },
+    {
+      "filename": "companies-index.part-0012.jsonl",
+      "recordCount": 513,
+      "bytes": 131033,
+      "sha256": "11c8c8506aa91b37798f565937c31a05b5bb288cb17e7849c3fdfde962ae16cd"
+    },
+    {
+      "filename": "companies-index.part-0013.jsonl",
+      "recordCount": 511,
+      "bytes": 130980,
+      "sha256": "90c0d7b761098fff3ac5dcc20a7c230db227af6fa401c2303c8e204c0c793d3a"
+    },
+    {
+      "filename": "companies-index.part-0014.jsonl",
+      "recordCount": 510,
+      "bytes": 130850,
+      "sha256": "902a34527e13bed9d7d43150ca8ab10efccf8985521cac3a93fda0725bb52c7e"
+    },
+    {
+      "filename": "companies-index.part-0015.jsonl",
+      "recordCount": 515,
+      "bytes": 130824,
+      "sha256": "a30c8cbc20d319118da8e15cc0bedfdab23af907f8a3c2290aff7310becd8d17"
+    },
+    {
+      "filename": "companies-index.part-0016.jsonl",
+      "recordCount": 515,
+      "bytes": 130970,
+      "sha256": "6ebcf8b5a2aeb515c32b96623641bc82ec044b96c3e6a46dea60cfc112f4a3ba"
+    },
+    {
+      "filename": "companies-index.part-0017.jsonl",
+      "recordCount": 516,
+      "bytes": 131009,
+      "sha256": "c29e034f2b1f1f4178639c429ed23c7a77bd33fee938f1d23071e5d2d886d805"
+    },
+    {
+      "filename": "companies-index.part-0018.jsonl",
+      "recordCount": 514,
+      "bytes": 130950,
+      "sha256": "d8b336a364f4978baea24b2336499488122c3739df55645c1d966be18019ec00"
+    },
+    {
+      "filename": "companies-index.part-0019.jsonl",
+      "recordCount": 514,
+      "bytes": 130901,
+      "sha256": "d32c63fc2ce891cbf73c64a3a7796eda3e2593d0886930593abc5c14ecd00b9d"
+    },
+    {
+      "filename": "companies-index.part-0020.jsonl",
+      "recordCount": 514,
+      "bytes": 130965,
+      "sha256": "904d2b896710b789c88de885c5cf15c95e01005c4a0e7050efa1d63e921d69c6"
+    },
+    {
+      "filename": "companies-index.part-0021.jsonl",
+      "recordCount": 512,
+      "bytes": 130902,
+      "sha256": "0eca9c9b3d7d6b64381e53aff267543710c7b9c30388827a5ce5e1eff4aab41c"
+    },
+    {
+      "filename": "companies-index.part-0022.jsonl",
+      "recordCount": 513,
+      "bytes": 130974,
+      "sha256": "5f14e76b558ddcf439565f1377805670052d9ff915ce37506323ef3ac8d7a7bb"
+    },
+    {
+      "filename": "companies-index.part-0023.jsonl",
+      "recordCount": 511,
+      "bytes": 130882,
+      "sha256": "90d1fc02fb68f3dfbbc5affe088127c130f49881ed0e08de00ee66a3844e1c4a"
+    },
+    {
+      "filename": "companies-index.part-0024.jsonl",
+      "recordCount": 513,
+      "bytes": 131033,
+      "sha256": "343528910bb9c11764f7b89cd9e0d3fc2fb2309c99efbc6ea0f5e14d9aa0f88a"
+    },
+    {
+      "filename": "companies-index.part-0025.jsonl",
+      "recordCount": 515,
+      "bytes": 130915,
+      "sha256": "d399025784a862f67008b11e83a0aec722ac59e068f70db6c10608fa2f64a12e"
+    },
+    {
+      "filename": "companies-index.part-0026.jsonl",
+      "recordCount": 521,
+      "bytes": 130973,
+      "sha256": "aaa319ff94e90c74c14c5a0d1e747c15b190e163b90186de980ab23abb39930f"
+    },
+    {
+      "filename": "companies-index.part-0027.jsonl",
+      "recordCount": 518,
+      "bytes": 131001,
+      "sha256": "6d5b06327024367959f517f299c79c15ec8e238c3c98f4aff615167708043acd"
+    },
+    {
+      "filename": "companies-index.part-0028.jsonl",
+      "recordCount": 516,
+      "bytes": 131043,
+      "sha256": "ff8cf2275372f79c5f0b856f1842556aff15e3669a02e59df072d98998b0d363"
+    },
+    {
+      "filename": "companies-index.part-0029.jsonl",
+      "recordCount": 498,
+      "bytes": 130789,
+      "sha256": "6f0c2519b18718ac19be0113e4ca7f55b882129dc79f154312720d3e4fcb5178"
+    },
+    {
+      "filename": "companies-index.part-0030.jsonl",
+      "recordCount": 492,
+      "bytes": 130860,
+      "sha256": "e33785b26b8fb6b83b0d89550d7916446fb19e30f6247d4f7eec3e8cc0391349"
+    },
+    {
+      "filename": "companies-index.part-0031.jsonl",
+      "recordCount": 509,
+      "bytes": 130960,
+      "sha256": "fddba01278701ff048ec9a5815989312161fd757e782a998efe89125ba56287f"
+    },
+    {
+      "filename": "companies-index.part-0032.jsonl",
+      "recordCount": 510,
+      "bytes": 130941,
+      "sha256": "4a21f4a5953265a6cf820b792c0c9934b95d353ba34ae0b78bac309fb14a0cb7"
+    },
+    {
+      "filename": "companies-index.part-0033.jsonl",
+      "recordCount": 516,
+      "bytes": 130995,
+      "sha256": "da4ddc925ea53cd69169119ddee79b866742a92316c3c3c95ed41d33f2ff5bd2"
+    },
+    {
+      "filename": "companies-index.part-0034.jsonl",
+      "recordCount": 513,
+      "bytes": 130965,
+      "sha256": "c6fd7cffd59c443864df3c034743ac02f6565548c680826ed8a2ef5765b6f517"
+    },
+    {
+      "filename": "companies-index.part-0035.jsonl",
+      "recordCount": 516,
+      "bytes": 131043,
+      "sha256": "7c5dec581d8b1b1bb5b022bf399f917b02307d2f928ded87e1eb7db6cc3c3c3a"
+    },
+    {
+      "filename": "companies-index.part-0036.jsonl",
+      "recordCount": 512,
+      "bytes": 130849,
+      "sha256": "5a00c23d5eccb5ff0a0bc578eeb8f4ebd967742c1367d1e301a5ae2663970aca"
+    },
+    {
+      "filename": "companies-index.part-0037.jsonl",
+      "recordCount": 511,
+      "bytes": 130835,
+      "sha256": "cac65cb2497c948c1962c3c955a0423e98d453ae51dcd6de6b4c6f59a4b55c76"
+    },
+    {
+      "filename": "companies-index.part-0038.jsonl",
+      "recordCount": 512,
+      "bytes": 130970,
+      "sha256": "4d07f022b12706123b3d44aafaa823924df2f9714d6fb10abd5d030ca7057cb1"
+    },
+    {
+      "filename": "companies-index.part-0039.jsonl",
+      "recordCount": 182,
+      "bytes": 46141,
+      "sha256": "3f40f4f2bf3079aad87c6d7ec1a895519bee5b280d0c95c0bc70bd38dbfe2cec"
+    }
+  ],
+  "searchParts": [
+    {
+      "filename": "companies-search.part-0001.txt",
+      "recordCount": 55,
+      "bytes": 128889,
+      "sha256": "8402984531d441a4e5ef3eb0dc49b60e13e42f655f418e5c71b91d2efaee635f"
+    },
+    {
+      "filename": "companies-search.part-0002.txt",
+      "recordCount": 53,
+      "bytes": 129595,
+      "sha256": "257b117ca2aae866434e03ef9bf2229a5b67d2c30ff45bd9442e0f80d2a29fda"
+    },
+    {
+      "filename": "companies-search.part-0003.txt",
+      "recordCount": 52,
+      "bytes": 129687,
+      "sha256": "2fd925c404fc87d246d4d6b4c5e5ad602fd2071e399eaeff68ac0e7ecca08ced"
+    },
+    {
+      "filename": "companies-search.part-0004.txt",
+      "recordCount": 45,
+      "bytes": 129643,
+      "sha256": "ddeaa0e16722104c07ef11dd0964fb5ba2e06d468d0f1fcb4dcbe51fec245da1"
+    },
+    {
+      "filename": "companies-search.part-0005.txt",
+      "recordCount": 50,
+      "bytes": 126814,
+      "sha256": "ef22cd7c1d770273f949cf820bd5714c6c8263c31a546ac6c8039415d22e2e5b"
+    },
+    {
+      "filename": "companies-search.part-0006.txt",
+      "recordCount": 51,
+      "bytes": 130984,
+      "sha256": "24dd349a060e3b2a8fd2e5e8313fa56ef2a6696ed15c3b943d51412a269335b7"
+    },
+    {
+      "filename": "companies-search.part-0007.txt",
+      "recordCount": 47,
+      "bytes": 129287,
+      "sha256": "e793f82ad8ca3aafda3e966ed739b5804fe781e481b6920b9dcd41cfa18fb821"
+    },
+    {
+      "filename": "companies-search.part-0008.txt",
+      "recordCount": 56,
+      "bytes": 129419,
+      "sha256": "7c607557b1c718b61ba18a472f7bd19830df3e7a40bc8069ff4c09e9ba4de5f5"
+    },
+    {
+      "filename": "companies-search.part-0009.txt",
+      "recordCount": 51,
+      "bytes": 129989,
+      "sha256": "5dd40f3c905536a02c8fdf8c62dd8e3b5690b2e14be81553c5e818cc984e586c"
+    },
+    {
+      "filename": "companies-search.part-0010.txt",
+      "recordCount": 55,
+      "bytes": 130098,
+      "sha256": "d2d91e4bb09eb8775d57f9f331c490d904b27afed1036c9d64828f013d96e822"
+    },
+    {
+      "filename": "companies-search.part-0011.txt",
+      "recordCount": 51,
+      "bytes": 131047,
+      "sha256": "d304df42484d204d42f96249db38bf22efcc29f9f43e3c253e9c7df28f4193a1"
+    },
+    {
+      "filename": "companies-search.part-0012.txt",
+      "recordCount": 50,
+      "bytes": 130460,
+      "sha256": "a0b14d2fac592218cce671a1a6118f3df94ea33678f4697ee46e5bc9381d9145"
+    },
+    {
+      "filename": "companies-search.part-0013.txt",
+      "recordCount": 62,
+      "bytes": 130282,
+      "sha256": "113e93e8415cbdc50375b17af6e3bb6ff9a3067f4301db1a73594d0c1d6edc19"
+    },
+    {
+      "filename": "companies-search.part-0014.txt",
+      "recordCount": 50,
+      "bytes": 129285,
+      "sha256": "9b97b10df2184d842820b11c3cdb14bc7959417761bf3db0e6105ec7eafc45f6"
+    },
+    {
+      "filename": "companies-search.part-0015.txt",
+      "recordCount": 53,
+      "bytes": 130468,
+      "sha256": "2ad73e7340dfdee933f5e3bd3a514c12274f622289840a21f1cb13a87a5d0406"
+    },
+    {
+      "filename": "companies-search.part-0016.txt",
+      "recordCount": 52,
+      "bytes": 129635,
+      "sha256": "5f3b5f599264429cd1063e0a16de14b73028f58db8bae5ce888065cce4ea7417"
+    },
+    {
+      "filename": "companies-search.part-0017.txt",
+      "recordCount": 55,
+      "bytes": 130698,
+      "sha256": "622f3f838cc360a0a8c1b243af12111f648e936c9c7fbf16228cc9471598e89d"
+    },
+    {
+      "filename": "companies-search.part-0018.txt",
+      "recordCount": 41,
+      "bytes": 127942,
+      "sha256": "3cb97a0f7b4738798a5969a5d7a0db0fc962de6d1eaef6f7c2a78ad95721e0ee"
+    },
+    {
+      "filename": "companies-search.part-0019.txt",
+      "recordCount": 43,
+      "bytes": 129361,
+      "sha256": "4738e7cba418d0b72fe7c0db24e13baec8898ab4a9d3ca84e4bd598b00f072a1"
+    },
+    {
+      "filename": "companies-search.part-0020.txt",
+      "recordCount": 45,
+      "bytes": 126425,
+      "sha256": "e9c450890c5f2a756962ae6fe474ec15cb470cc7751d41e99d9aa6e35413044b"
+    },
+    {
+      "filename": "companies-search.part-0021.txt",
+      "recordCount": 48,
+      "bytes": 130533,
+      "sha256": "29fd7d5d7a024c6ce124621559fb9de00b318821991476457006925669aec039"
+    },
+    {
+      "filename": "companies-search.part-0022.txt",
+      "recordCount": 46,
+      "bytes": 127917,
+      "sha256": "2692814d091641b8e65112e72bca7b4bdf7a209e4bb9ab6958e10d7384f2dc13"
+    },
+    {
+      "filename": "companies-search.part-0023.txt",
+      "recordCount": 48,
+      "bytes": 130445,
+      "sha256": "4eac53e54ba01fef2f9fe67f75c6fb29b28da356a5e16e7722d9f42045ba0129"
+    },
+    {
+      "filename": "companies-search.part-0024.txt",
+      "recordCount": 51,
+      "bytes": 129696,
+      "sha256": "7c9fe757a2d8fe0bd29051526de398c2891e5ef1261ebbba1f16f8a824a0f721"
+    },
+    {
+      "filename": "companies-search.part-0025.txt",
+      "recordCount": 51,
+      "bytes": 130406,
+      "sha256": "515d71a1bafcd95e2b673c5f38885fe227898e504f23fefb4aba4747b8efd659"
+    },
+    {
+      "filename": "companies-search.part-0026.txt",
+      "recordCount": 53,
+      "bytes": 130357,
+      "sha256": "316e141e4c2c4fb283cd27822f958c29c3a2ea41f142a90e403b7def074d5c86"
+    },
+    {
+      "filename": "companies-search.part-0027.txt",
+      "recordCount": 51,
+      "bytes": 128158,
+      "sha256": "2c6564f0d1a5d5194c169375e0b1ac9d06b47c8456aede685da93636c70357f4"
+    },
+    {
+      "filename": "companies-search.part-0028.txt",
+      "recordCount": 46,
+      "bytes": 129993,
+      "sha256": "a08f7e1ec6bbcc529c9e1fd331be86ac0e7d9984e9ab79877a997b05fc1bebed"
+    },
+    {
+      "filename": "companies-search.part-0029.txt",
+      "recordCount": 48,
+      "bytes": 130340,
+      "sha256": "cfc4f5e290734e62b4992b0ee279600102e2e38797738a24c1aad6a643653348"
+    },
+    {
+      "filename": "companies-search.part-0030.txt",
+      "recordCount": 50,
+      "bytes": 124235,
+      "sha256": "16e7bba419552b215514203bcf5bbd2def9557af937b197fa5e5240bb7000dbd"
+    },
+    {
+      "filename": "companies-search.part-0031.txt",
+      "recordCount": 48,
+      "bytes": 129595,
+      "sha256": "a3ef9784d4b52364b1244d315ceff85fbfd036adbf856eec0ea9ddda623a483b"
+    },
+    {
+      "filename": "companies-search.part-0032.txt",
+      "recordCount": 53,
+      "bytes": 129799,
+      "sha256": "3546523535abb38a58f2259819e1c6fee63537f4ce88027c4e199a4910af5414"
+    },
+    {
+      "filename": "companies-search.part-0033.txt",
+      "recordCount": 50,
+      "bytes": 130562,
+      "sha256": "b6f62ca05f7b7dbf4ce7ab1132ab4935f780fdc5981b7c202e7f54ee721e6abe"
+    },
+    {
+      "filename": "companies-search.part-0034.txt",
+      "recordCount": 58,
+      "bytes": 128310,
+      "sha256": "d110c80593ab88093619163c982d4309a6a72d175fdec89661d0365a63e48826"
+    },
+    {
+      "filename": "companies-search.part-0035.txt",
+      "recordCount": 48,
+      "bytes": 130715,
+      "sha256": "b7f7b865f8579094e12536f7ffeec0c8d9091ac3bcd94691cd7f8e496970da7a"
+    },
+    {
+      "filename": "companies-search.part-0036.txt",
+      "recordCount": 50,
+      "bytes": 131016,
+      "sha256": "f098aabfa2ed21b72a91f9e3bb1df78dc145a65feed6ca2c6849d75e0eb56068"
+    },
+    {
+      "filename": "companies-search.part-0037.txt",
+      "recordCount": 51,
+      "bytes": 128275,
+      "sha256": "cc3f97ff251ce73a638a2b11198de72cf6313190bf38b3747bb8e5268f37b2ca"
+    },
+    {
+      "filename": "companies-search.part-0038.txt",
+      "recordCount": 55,
+      "bytes": 129081,
+      "sha256": "324feb9474bb6103198347b3fba1cda0ce61c91a1f623d616e093f1147d411f3"
+    },
+    {
+      "filename": "companies-search.part-0039.txt",
+      "recordCount": 51,
+      "bytes": 129470,
+      "sha256": "c8d94c26a1348e672d14efc4d7db6e1cc6b5e628544e5be539941f6026e9e933"
+    },
+    {
+      "filename": "companies-search.part-0040.txt",
+      "recordCount": 50,
+      "bytes": 129810,
+      "sha256": "3b156db71a04e925d2cf27d24845032854eca252c9f4660c3474250e516abe31"
+    },
+    {
+      "filename": "companies-search.part-0041.txt",
+      "recordCount": 48,
+      "bytes": 130801,
+      "sha256": "f3783dfd582867fdbd2d9dc0847184928cee8835e7893ab3f00462c1d457b4a0"
+    },
+    {
+      "filename": "companies-search.part-0042.txt",
+      "recordCount": 52,
+      "bytes": 125395,
+      "sha256": "294095677e6483f878dde31833a2840aa86dcb7ba4abb3d295eb64d1431fcb33"
+    },
+    {
+      "filename": "companies-search.part-0043.txt",
+      "recordCount": 52,
+      "bytes": 128030,
+      "sha256": "a84b25d0f993fbb4f4145c1f425a4fe13ca07cb30dd460df6db71fabd649b955"
+    },
+    {
+      "filename": "companies-search.part-0044.txt",
+      "recordCount": 51,
+      "bytes": 130347,
+      "sha256": "48afa09d787da40eb712fc4cebcd72e49d835afadd0fa48da7f9d14d2132b46b"
+    },
+    {
+      "filename": "companies-search.part-0045.txt",
+      "recordCount": 55,
+      "bytes": 128560,
+      "sha256": "1a24a5c87530b243e61531984cf62c07564be91f3cf3c7cf1f0c86a6871ce1fb"
+    },
+    {
+      "filename": "companies-search.part-0046.txt",
+      "recordCount": 52,
+      "bytes": 128456,
+      "sha256": "bf76c00935e7dfeb83c4a877a2cab365a1fd7320190d65bc79791a9ce0a1d6e0"
+    },
+    {
+      "filename": "companies-search.part-0047.txt",
+      "recordCount": 48,
+      "bytes": 130691,
+      "sha256": "22657dd646502ae2722609d4c33e3889f39e40e5e1f31f1bc49908d3ce07e61a"
+    },
+    {
+      "filename": "companies-search.part-0048.txt",
+      "recordCount": 54,
+      "bytes": 127728,
+      "sha256": "0ed777770141b7812cca10cabe4c82e3e7d7951f12249e8846f19290722a7fec"
+    },
+    {
+      "filename": "companies-search.part-0049.txt",
+      "recordCount": 48,
+      "bytes": 128132,
+      "sha256": "2df4cbac722d94a6dee677b1a8562757e03ba159b10800283ca24fc493010c09"
+    },
+    {
+      "filename": "companies-search.part-0050.txt",
+      "recordCount": 50,
+      "bytes": 130495,
+      "sha256": "4ae7e419245468458c95a534ad35abcdc508917a9364ee781e017dc03cac4ad2"
+    },
+    {
+      "filename": "companies-search.part-0051.txt",
+      "recordCount": 50,
+      "bytes": 130539,
+      "sha256": "48ac90d3efdd1e154406dd33a25dc39917c4f4d6fc67a015a5f0e414d301f4b0"
+    },
+    {
+      "filename": "companies-search.part-0052.txt",
+      "recordCount": 54,
+      "bytes": 127879,
+      "sha256": "7c3d1491fca9beb4aaac515c0231ffe75f415ee194d181e91e83c24c1dc50b55"
+    },
+    {
+      "filename": "companies-search.part-0053.txt",
+      "recordCount": 47,
+      "bytes": 128027,
+      "sha256": "0bf40af53c0bcf182de0715e743ef381370969b56cc6c01dda5bd8e3385699f7"
+    },
+    {
+      "filename": "companies-search.part-0054.txt",
+      "recordCount": 54,
+      "bytes": 130872,
+      "sha256": "1fd37bae113d78773c43c30e205ebd02a8b32f1ac694bfb0ba726adaaabbb855"
+    },
+    {
+      "filename": "companies-search.part-0055.txt",
+      "recordCount": 45,
+      "bytes": 130076,
+      "sha256": "c720978d83c5592b82aa2eb45bcc554d00b1f67af8710f921d4407b6cc3b3125"
+    },
+    {
+      "filename": "companies-search.part-0056.txt",
+      "recordCount": 46,
+      "bytes": 130403,
+      "sha256": "e98690a53243cc01f99d912496b6cf3242b32fa8684f3612cd5ee021d7240618"
+    },
+    {
+      "filename": "companies-search.part-0057.txt",
+      "recordCount": 58,
+      "bytes": 130839,
+      "sha256": "bf16fb0ba7710a3e3085aea393e55b42c3a1909ebee9443a31a3b0ccf74c845a"
+    },
+    {
+      "filename": "companies-search.part-0058.txt",
+      "recordCount": 51,
+      "bytes": 130033,
+      "sha256": "1dace7ab7649fe3e288e8e2a8e002c2243a23a6ef5c72a0cadf536202b7e83fe"
+    },
+    {
+      "filename": "companies-search.part-0059.txt",
+      "recordCount": 46,
+      "bytes": 130733,
+      "sha256": "a65ffbade7c1c779d3160035d97b26b23e1e67d06b849786daa06ced62dc5503"
+    },
+    {
+      "filename": "companies-search.part-0060.txt",
+      "recordCount": 53,
+      "bytes": 128862,
+      "sha256": "527ea4e9322c98817aa7b60489ba01a2d6a5e5c1a926f9d2e07bfe559678c302"
+    },
+    {
+      "filename": "companies-search.part-0061.txt",
+      "recordCount": 50,
+      "bytes": 129271,
+      "sha256": "a82242d7e06e6ed913dc71b4a942cf83d8e7dc683aa89d48ac490a6e49bcbdf8"
+    },
+    {
+      "filename": "companies-search.part-0062.txt",
+      "recordCount": 55,
+      "bytes": 130112,
+      "sha256": "dee90bca7e78be7027cccc9405963b6375380c0ddf06517ad741d5d6afbf32f4"
+    },
+    {
+      "filename": "companies-search.part-0063.txt",
+      "recordCount": 55,
+      "bytes": 129673,
+      "sha256": "0938cb379e259c372db74c4c62dcbc99ba9cc60cdc6ac22e0a9c6c8f9798aab8"
+    },
+    {
+      "filename": "companies-search.part-0064.txt",
+      "recordCount": 57,
+      "bytes": 129325,
+      "sha256": "bb38e3bb45354d069ef294ed7f6ce3912bbc69d9156747488353ca1f138b55c4"
+    },
+    {
+      "filename": "companies-search.part-0065.txt",
+      "recordCount": 47,
+      "bytes": 126255,
+      "sha256": "1a041b827c19cc42154623a686667ac43c84351de259cac6b2984ce34521462a"
+    },
+    {
+      "filename": "companies-search.part-0066.txt",
+      "recordCount": 54,
+      "bytes": 128069,
+      "sha256": "2aa53e69bc9ca2b2c310719fb9beeaaabb85df0449c7d8eda764c7c44384f0e0"
+    },
+    {
+      "filename": "companies-search.part-0067.txt",
+      "recordCount": 52,
+      "bytes": 129202,
+      "sha256": "aca42c801a9a766b223ca5ca085cb566be7174c2c3e412490a71282300b5ae91"
+    },
+    {
+      "filename": "companies-search.part-0068.txt",
+      "recordCount": 49,
+      "bytes": 130000,
+      "sha256": "d2c6e23f53604650a4f0fc6779f72b5718cc186755a9b07af63e9b3ece706816"
+    },
+    {
+      "filename": "companies-search.part-0069.txt",
+      "recordCount": 51,
+      "bytes": 128223,
+      "sha256": "0f6d3a016be427d1fc35ef8e4d187c3b9761e3ce52d6b9a50602266f0443564f"
+    },
+    {
+      "filename": "companies-search.part-0070.txt",
+      "recordCount": 52,
+      "bytes": 130853,
+      "sha256": "85325516ced12b80a557e6a02a1888267c6b7c5f42bb24009278aac13dfb8e98"
+    },
+    {
+      "filename": "companies-search.part-0071.txt",
+      "recordCount": 49,
+      "bytes": 130645,
+      "sha256": "77c4deeaf99e85e803976a5d02594db498e388087b712316f33d1fabfcb350d6"
+    },
+    {
+      "filename": "companies-search.part-0072.txt",
+      "recordCount": 49,
+      "bytes": 128359,
+      "sha256": "eff19c6a791899073f36b7e5e6959687e9c5bfd5ee57d1b791a4507405e801d3"
+    },
+    {
+      "filename": "companies-search.part-0073.txt",
+      "recordCount": 58,
+      "bytes": 130276,
+      "sha256": "f2dbd60f07cd3cfc466dad42e2fc30723900dcaf7306dc01b6ca0bca8e87f6c9"
+    },
+    {
+      "filename": "companies-search.part-0074.txt",
+      "recordCount": 46,
+      "bytes": 129319,
+      "sha256": "ba3a87d5e7c115ca301edce8321ef6d3c8343a09b480ef8d843d4d2737a4cc26"
+    },
+    {
+      "filename": "companies-search.part-0075.txt",
+      "recordCount": 51,
+      "bytes": 129059,
+      "sha256": "e7fb9efc8723b5f3f6376a1c175a780f670ffcda937cd20ec8111731024693e0"
+    },
+    {
+      "filename": "companies-search.part-0076.txt",
+      "recordCount": 54,
+      "bytes": 130193,
+      "sha256": "fb495afd6cd9c3ab6070fc19801415af9fc6c5e62e091c8b4047c5b842cf496b"
+    },
+    {
+      "filename": "companies-search.part-0077.txt",
+      "recordCount": 49,
+      "bytes": 129562,
+      "sha256": "986f3977c02fad6c5234176aa0755b9f369bfd93288eb5b91409749fa0babbb3"
+    },
+    {
+      "filename": "companies-search.part-0078.txt",
+      "recordCount": 51,
+      "bytes": 130653,
+      "sha256": "035bda437bfb384dc89430679c01b22a1bfeaa4dc33c05d4f7e1820e743d203b"
+    },
+    {
+      "filename": "companies-search.part-0079.txt",
+      "recordCount": 53,
+      "bytes": 130232,
+      "sha256": "30b65118a8169382be61d521e60997374b7a3050d5a7bd00f9ea02d4432c1c28"
+    },
+    {
+      "filename": "companies-search.part-0080.txt",
+      "recordCount": 48,
+      "bytes": 130274,
+      "sha256": "6c99a3fe755612635c42e02b0dbecad0aa1406cbb12a916f3085f3650eb68c5d"
+    },
+    {
+      "filename": "companies-search.part-0081.txt",
+      "recordCount": 50,
+      "bytes": 128462,
+      "sha256": "cdcf0e0e785edf73c3a25d3a86a5bc4c9249853e7105d28aeb5c402feaf66dd1"
+    },
+    {
+      "filename": "companies-search.part-0082.txt",
+      "recordCount": 42,
+      "bytes": 123178,
+      "sha256": "ff55150dc0ee88f2c0e9a881175d04fbecc0b9c511c6b278c5e2c3cd7b0b91f5"
+    },
+    {
+      "filename": "companies-search.part-0083.txt",
+      "recordCount": 52,
+      "bytes": 129742,
+      "sha256": "f70c2fedac09c835efae777bdb7f3b76ac090d97b393849f3c8409aa4823ca93"
+    },
+    {
+      "filename": "companies-search.part-0084.txt",
+      "recordCount": 52,
+      "bytes": 129664,
+      "sha256": "22a4216a838cd36c6cc4b035dc132d45000276fb94a8316d82ea3364821c7523"
+    },
+    {
+      "filename": "companies-search.part-0085.txt",
+      "recordCount": 60,
+      "bytes": 129676,
+      "sha256": "cd7723076dd8ee44ad830e0180072f038a7e976cf716b88d020bafe23d8f171e"
+    },
+    {
+      "filename": "companies-search.part-0086.txt",
+      "recordCount": 50,
+      "bytes": 127226,
+      "sha256": "5c0f9a827559f2b7e05f44d3faef58f472f3fd68d7ad580c0abe076f6d31ceac"
+    },
+    {
+      "filename": "companies-search.part-0087.txt",
+      "recordCount": 47,
+      "bytes": 130827,
+      "sha256": "49d8e6c4b4520b8c6af673042dff766a88d62bc4b0bfbbbbe342f3dbb7ed32bf"
+    },
+    {
+      "filename": "companies-search.part-0088.txt",
+      "recordCount": 48,
+      "bytes": 130833,
+      "sha256": "b2c3064c214016150ec0c6df1725d26b96f4d7da4ad5433df8c7b5bedc827208"
+    },
+    {
+      "filename": "companies-search.part-0089.txt",
+      "recordCount": 52,
+      "bytes": 129097,
+      "sha256": "872a5e3ec2ac419829ba4c329d726e9ff398d784ca0d41636678d362824bafc7"
+    },
+    {
+      "filename": "companies-search.part-0090.txt",
+      "recordCount": 53,
+      "bytes": 130349,
+      "sha256": "c0897ef23968c115a6f6ddc796ad137e8262395dab1669e8c3a90dbc63ef4331"
+    },
+    {
+      "filename": "companies-search.part-0091.txt",
+      "recordCount": 50,
+      "bytes": 131042,
+      "sha256": "256b4bbf67d3c8d4395c61ada5f6dc1a4c88b51a479f7936b7282199692e1e1f"
+    },
+    {
+      "filename": "companies-search.part-0092.txt",
+      "recordCount": 50,
+      "bytes": 128539,
+      "sha256": "e60d0ce3642be43cad06e7c12c269155f1dd16b67b215ce2e7b285ef8cc56a0e"
+    },
+    {
+      "filename": "companies-search.part-0093.txt",
+      "recordCount": 58,
+      "bytes": 130055,
+      "sha256": "51667d71f92c36acef622bdf944b96cd73821a75e848123bc3ea10b18526d547"
+    },
+    {
+      "filename": "companies-search.part-0094.txt",
+      "recordCount": 51,
+      "bytes": 129918,
+      "sha256": "5b57fa5b42d1e0bd45dadef801701a9a8c4bec1e506e1f063e89473a86e15abc"
+    },
+    {
+      "filename": "companies-search.part-0095.txt",
+      "recordCount": 49,
+      "bytes": 125102,
+      "sha256": "5f799ee90edd783b695b2e9a18684ec47e8469be176912fc0f9ca84b2184bc96"
+    },
+    {
+      "filename": "companies-search.part-0096.txt",
+      "recordCount": 41,
+      "bytes": 129467,
+      "sha256": "2134a044741b20bece682ac5ad315e4d32ba2e1e98f7c608c70269197256894a"
+    },
+    {
+      "filename": "companies-search.part-0097.txt",
+      "recordCount": 49,
+      "bytes": 127825,
+      "sha256": "a3c16d0dd3227e38eab2b84b247caa1141de77011ce86c674047b73b0475041a"
+    },
+    {
+      "filename": "companies-search.part-0098.txt",
+      "recordCount": 53,
+      "bytes": 130939,
+      "sha256": "fbb76f347a9bc48238cb94b53a5a15756781d2bf21ac8630bc603ab22501a2f0"
+    },
+    {
+      "filename": "companies-search.part-0099.txt",
+      "recordCount": 47,
+      "bytes": 129648,
+      "sha256": "31cbefb2128ecf9edb4014cbaac787c1771efb0bd978f33d80698af80de1c9f6"
+    },
+    {
+      "filename": "companies-search.part-0100.txt",
+      "recordCount": 52,
+      "bytes": 129469,
+      "sha256": "0a9be06950d57bd0dbc7e50781de65d8fa7b823dad5c513df00f3a889a8070b9"
+    },
+    {
+      "filename": "companies-search.part-0101.txt",
+      "recordCount": 51,
+      "bytes": 130668,
+      "sha256": "9369f671e48abf266c42d670fb04fb5f38c08b772cb9c03b0c3ccc6a2f3bf924"
+    },
+    {
+      "filename": "companies-search.part-0102.txt",
+      "recordCount": 47,
+      "bytes": 125332,
+      "sha256": "803616c427a83cb0ad0acc7d0d54b2065c846a21bbb967968ab1252d63c201bb"
+    },
+    {
+      "filename": "companies-search.part-0103.txt",
+      "recordCount": 40,
+      "bytes": 130084,
+      "sha256": "8dd55af03642f2bc9cd8e0f4f9d347cb86630a4e83fb079da197571e16fe1e82"
+    },
+    {
+      "filename": "companies-search.part-0104.txt",
+      "recordCount": 49,
+      "bytes": 129618,
+      "sha256": "5c790b14e4b9d6820022e3678a51f40532cae0c15d1363165afc61e4067cf58e"
+    },
+    {
+      "filename": "companies-search.part-0105.txt",
+      "recordCount": 53,
+      "bytes": 129142,
+      "sha256": "9fac1f338be95190d90c49c220a65c787fb0a65ae7ccbee8cad1985128a27c52"
+    },
+    {
+      "filename": "companies-search.part-0106.txt",
+      "recordCount": 53,
+      "bytes": 130602,
+      "sha256": "ee5ffe3916d38944b06c0ddab8a4a886d41bc7acb1a93c9e9196be93d3e5bf79"
+    },
+    {
+      "filename": "companies-search.part-0107.txt",
+      "recordCount": 54,
+      "bytes": 129734,
+      "sha256": "a36d0118a0ff9964fe4b2c6712af7b24bcec99acfeac022affb954efcad06f6c"
+    },
+    {
+      "filename": "companies-search.part-0108.txt",
+      "recordCount": 50,
+      "bytes": 128990,
+      "sha256": "90f33e6f9e43f0669ee07b363eaa1d804e6f69840d97d176b20cce5d8c1ad91f"
+    },
+    {
+      "filename": "companies-search.part-0109.txt",
+      "recordCount": 66,
+      "bytes": 130111,
+      "sha256": "e5e9917d3e0172710b10e96f7f56494e574df6efe9c753615c6bf5ce76ca32fe"
+    },
+    {
+      "filename": "companies-search.part-0110.txt",
+      "recordCount": 51,
+      "bytes": 129427,
+      "sha256": "a4863de0cd0d20def8f77887b9e6e617fab7910d4a5f35b2cc0f5dc0858ffd3d"
+    },
+    {
+      "filename": "companies-search.part-0111.txt",
+      "recordCount": 53,
+      "bytes": 127662,
+      "sha256": "b30ea2aab915b684ab4341a9c0270aacc977d43f18322d51a4d93861c69cd79f"
+    },
+    {
+      "filename": "companies-search.part-0112.txt",
+      "recordCount": 48,
+      "bytes": 130708,
+      "sha256": "bc6d03557ca1bc197a20b7d5f809ee9c6d0b931088d9dd6284ec1d666e4d166a"
+    },
+    {
+      "filename": "companies-search.part-0113.txt",
+      "recordCount": 55,
+      "bytes": 128655,
+      "sha256": "955c67421b0625a431dda5b184eb800b995a36ff7e640ae28f936f540530d651"
+    },
+    {
+      "filename": "companies-search.part-0114.txt",
+      "recordCount": 55,
+      "bytes": 128825,
+      "sha256": "e622fb8f2376cc7e94397e8d117917a1a4e99f3ddfc68f2ffd418094fa736877"
+    },
+    {
+      "filename": "companies-search.part-0115.txt",
+      "recordCount": 62,
+      "bytes": 130361,
+      "sha256": "545d429a6cf502c6438b57cd22af40282bb26eefe3316dc3994955fc6e2fbe18"
+    },
+    {
+      "filename": "companies-search.part-0116.txt",
+      "recordCount": 49,
+      "bytes": 125157,
+      "sha256": "438b5159820b695650913cfe0f13218d421d40341d87d4d85ba343fa923b5524"
+    },
+    {
+      "filename": "companies-search.part-0117.txt",
+      "recordCount": 58,
+      "bytes": 127506,
+      "sha256": "755afdb1141e6b8151ca8ef33aea0a92397bd6fadb472389ba347430601d8773"
+    },
+    {
+      "filename": "companies-search.part-0118.txt",
+      "recordCount": 64,
+      "bytes": 130511,
+      "sha256": "bc5babd220663b25ad28c733f4e128f165f23a851e9dee0d699d8ff61cc122f2"
+    },
+    {
+      "filename": "companies-search.part-0119.txt",
+      "recordCount": 56,
+      "bytes": 130933,
+      "sha256": "99c70f01e699fcb8e2f835b4cf2da46eb82dbb121a20121fa78bec593780b6ff"
+    },
+    {
+      "filename": "companies-search.part-0120.txt",
+      "recordCount": 62,
+      "bytes": 127749,
+      "sha256": "5472d949fc1be06e036f808b19761e064b291530b18b3a582fcaf54391878717"
+    },
+    {
+      "filename": "companies-search.part-0121.txt",
+      "recordCount": 48,
+      "bytes": 126575,
+      "sha256": "f2914845bec4186d9921c2f9f30d55993ef2d796a7ffd8ce3cb5bdcd3a2fa839"
+    },
+    {
+      "filename": "companies-search.part-0122.txt",
+      "recordCount": 47,
+      "bytes": 128171,
+      "sha256": "6cea7a91d7bdce19546c3f635a6c22602111415ae857662e830b672e5d72b5f0"
+    },
+    {
+      "filename": "companies-search.part-0123.txt",
+      "recordCount": 52,
+      "bytes": 130688,
+      "sha256": "21df17a10359c675a7153d0142b4ad5c6c2361790e5c7550ce6a6ec63d01ab6c"
+    },
+    {
+      "filename": "companies-search.part-0124.txt",
+      "recordCount": 59,
+      "bytes": 129911,
+      "sha256": "fd5df783c4706fb628fa7999a53ecd06bd45dcd9838b576ee624dbd53e81fe24"
+    },
+    {
+      "filename": "companies-search.part-0125.txt",
+      "recordCount": 55,
+      "bytes": 129330,
+      "sha256": "fe1eea74d667fd4d0da2131936d3519b028f5be5989a4bfd96b505ea1dc7aa93"
+    },
+    {
+      "filename": "companies-search.part-0126.txt",
+      "recordCount": 51,
+      "bytes": 128625,
+      "sha256": "018c72fcf78c56c0275de0eb9787cf35564c94e63cf160de3f517a9cb50e13d7"
+    },
+    {
+      "filename": "companies-search.part-0127.txt",
+      "recordCount": 56,
+      "bytes": 129104,
+      "sha256": "0265f78eca53752d44601ef81ffc5f839df56be0edc28b53452a1e1f662fa807"
+    },
+    {
+      "filename": "companies-search.part-0128.txt",
+      "recordCount": 54,
+      "bytes": 129229,
+      "sha256": "b4a20269723c4cd4c43ab535577628c4bfd442a8ad64be1f6f693dbf8c2ca30e"
+    },
+    {
+      "filename": "companies-search.part-0129.txt",
+      "recordCount": 48,
+      "bytes": 127883,
+      "sha256": "478b87ed43d353709542628b9eb3d4469597570ad9ce7a05900009bd74db8269"
+    },
+    {
+      "filename": "companies-search.part-0130.txt",
+      "recordCount": 44,
+      "bytes": 130488,
+      "sha256": "21aadd6616134e55236aa0aee3cec434d8e78a8768bbdf0a403d28b2e9ae7248"
+    },
+    {
+      "filename": "companies-search.part-0131.txt",
+      "recordCount": 48,
+      "bytes": 129606,
+      "sha256": "58d4433019d3cee7b5488861c454bc605acdae390688f81a22cfbbfcf9b697a4"
+    },
+    {
+      "filename": "companies-search.part-0132.txt",
+      "recordCount": 49,
+      "bytes": 126860,
+      "sha256": "9d0d254fff20dde3ffa5a484cd365a8c545d67b9eb6940e40c7f9523b79a9361"
+    },
+    {
+      "filename": "companies-search.part-0133.txt",
+      "recordCount": 49,
+      "bytes": 127691,
+      "sha256": "88207edc673fa221e90cef987f3dd4ca64f3b12de5c5ec3456fbc1f4c826d503"
+    },
+    {
+      "filename": "companies-search.part-0134.txt",
+      "recordCount": 53,
+      "bytes": 131037,
+      "sha256": "7ee80f7f50af331a2b04e7f21b68acac9044e42a86d270e4c43794633bc68037"
+    },
+    {
+      "filename": "companies-search.part-0135.txt",
+      "recordCount": 47,
+      "bytes": 128924,
+      "sha256": "a57fc4cf04b745f65f2551d1b0f4ea8c7e5b106364fdd09619c21d1d058e73c5"
+    },
+    {
+      "filename": "companies-search.part-0136.txt",
+      "recordCount": 54,
+      "bytes": 130290,
+      "sha256": "6bfbe9497ef97c2142cf3718e4ad11f98df27057710a91e7c228c274eb14489e"
+    },
+    {
+      "filename": "companies-search.part-0137.txt",
+      "recordCount": 58,
+      "bytes": 128064,
+      "sha256": "4edb7e5ae78a811ef65f76dd91575dd9e9fc92906d078b0d1328776c9a459de2"
+    },
+    {
+      "filename": "companies-search.part-0138.txt",
+      "recordCount": 49,
+      "bytes": 130666,
+      "sha256": "2232922770f16c8824e4b351474c1f2d7ef67e3e37cb84ff47d4635870822eb4"
+    },
+    {
+      "filename": "companies-search.part-0139.txt",
+      "recordCount": 56,
+      "bytes": 129961,
+      "sha256": "179afac79ac16eb957c063a9b09cec09893b36ae47a9d1dcc129f5d1a2a1c7b3"
+    },
+    {
+      "filename": "companies-search.part-0140.txt",
+      "recordCount": 53,
+      "bytes": 130781,
+      "sha256": "6cb5fbb20a75a5b4443d636bdac171daa2977accef6ba3b847b50a2e81137f1d"
+    },
+    {
+      "filename": "companies-search.part-0141.txt",
+      "recordCount": 44,
+      "bytes": 127006,
+      "sha256": "2d789cc6a60d783c63c4297b7780fc50214e08a815dd874279bdcd42156f0c2e"
+    },
+    {
+      "filename": "companies-search.part-0142.txt",
+      "recordCount": 51,
+      "bytes": 129502,
+      "sha256": "215c293fe01522b02bf38539008ac4995db7cf7bdbf5a2fbc6f3ce439d835f32"
+    },
+    {
+      "filename": "companies-search.part-0143.txt",
+      "recordCount": 55,
+      "bytes": 129084,
+      "sha256": "2c6dca5b27ebd7303f9646ca36715db4f64a878ad74e5be74cba0dc0193f2a59"
+    },
+    {
+      "filename": "companies-search.part-0144.txt",
+      "recordCount": 61,
+      "bytes": 130802,
+      "sha256": "5376a036bc7060334059400ae34e7b75fc3fac41f193bb1cb819f73708645758"
+    },
+    {
+      "filename": "companies-search.part-0145.txt",
+      "recordCount": 57,
+      "bytes": 130938,
+      "sha256": "acea9c8434976a0209bcffa0428defad5a59631e3fb43da34b1dfa56aae0b68f"
+    },
+    {
+      "filename": "companies-search.part-0146.txt",
+      "recordCount": 53,
+      "bytes": 130666,
+      "sha256": "fa7516e4d38ac91f7b2ddecf7ad3c3a507190d7a4427a554b21c61900c1432f8"
+    },
+    {
+      "filename": "companies-search.part-0147.txt",
+      "recordCount": 49,
+      "bytes": 129588,
+      "sha256": "381b1213866c2bb04a2af23c5605ae6b0527ce38d0296715b6891e0eefb24f67"
+    },
+    {
+      "filename": "companies-search.part-0148.txt",
+      "recordCount": 57,
+      "bytes": 130502,
+      "sha256": "7955068be9c0a02fcebc12f16aa4483376e55383fc2a9f65c68a97f09251dbff"
+    },
+    {
+      "filename": "companies-search.part-0149.txt",
+      "recordCount": 59,
+      "bytes": 128986,
+      "sha256": "14d96279baaa1ea01ec677b6c2ad6fdd726d9ffb7289b48c00c6df0fe07a88a9"
+    },
+    {
+      "filename": "companies-search.part-0150.txt",
+      "recordCount": 52,
+      "bytes": 130493,
+      "sha256": "3ca6cd07e88ec71cf4a64884a701aa119366b4826c6a027404eb1838c3178ce3"
+    },
+    {
+      "filename": "companies-search.part-0151.txt",
+      "recordCount": 64,
+      "bytes": 131030,
+      "sha256": "0ddec76107d442aa213df7f23b98da4a0e11fd1d58fd6a8eda84d2157dbeb48b"
+    },
+    {
+      "filename": "companies-search.part-0152.txt",
+      "recordCount": 61,
+      "bytes": 130796,
+      "sha256": "9d793630c97829f3fc5506b3d608734523ac59ebab739994968a2de53608a422"
+    },
+    {
+      "filename": "companies-search.part-0153.txt",
+      "recordCount": 60,
+      "bytes": 129984,
+      "sha256": "440bbcf249f118406ef45f49bf727a5eb95788be673037f47de125e5376ae993"
+    },
+    {
+      "filename": "companies-search.part-0154.txt",
+      "recordCount": 51,
+      "bytes": 127592,
+      "sha256": "1b5140782d6e6ca52b147046a3bed4ce42f78ddb6c529f92b7911162af3c59a2"
+    },
+    {
+      "filename": "companies-search.part-0155.txt",
+      "recordCount": 54,
+      "bytes": 130510,
+      "sha256": "a0ad69dadf2b50255ed0a61745346f2ed47649bb28b9f80c221aaab18f021915"
+    },
+    {
+      "filename": "companies-search.part-0156.txt",
+      "recordCount": 54,
+      "bytes": 128142,
+      "sha256": "63aecfc7a4fbf5eec3cdf7ac9844f9fe0edca6b6832ecf3e92e5c82d7f4ff0e4"
+    },
+    {
+      "filename": "companies-search.part-0157.txt",
+      "recordCount": 60,
+      "bytes": 129469,
+      "sha256": "b4e809a01eb5f8b118fff1bf88b69117bf7b64296a9214b0a13220b6a4eec4a4"
+    },
+    {
+      "filename": "companies-search.part-0158.txt",
+      "recordCount": 56,
+      "bytes": 129463,
+      "sha256": "f9dfc7e4c0a0c9182504a049924cc9d49ec1dacc17d193bab6d0ea7564fd3efe"
+    },
+    {
+      "filename": "companies-search.part-0159.txt",
+      "recordCount": 58,
+      "bytes": 130431,
+      "sha256": "64d3bd1764c8ec01ac4d4ddddf1a9619c53847dd57976089fb300d4cf5e3fcfc"
+    },
+    {
+      "filename": "companies-search.part-0160.txt",
+      "recordCount": 55,
+      "bytes": 130266,
+      "sha256": "8c980ac2283d975a40f51042823a1ce4c5c99cf65f5e6cdd8a405eda768697e8"
+    },
+    {
+      "filename": "companies-search.part-0161.txt",
+      "recordCount": 54,
+      "bytes": 130109,
+      "sha256": "a7171269a3e042e633e28533f4503f0c6977ed3ec238b0aa05bd9867959a2cc1"
+    },
+    {
+      "filename": "companies-search.part-0162.txt",
+      "recordCount": 55,
+      "bytes": 129078,
+      "sha256": "bca32cf859159a776b77909babe53c82104d094c13a36e020726a1102108c374"
+    },
+    {
+      "filename": "companies-search.part-0163.txt",
+      "recordCount": 45,
+      "bytes": 130320,
+      "sha256": "18c458739cbcb71cbc06f1e3bc4593047b7948e1f24182fca72a8b406e8d156d"
+    },
+    {
+      "filename": "companies-search.part-0164.txt",
+      "recordCount": 53,
+      "bytes": 131045,
+      "sha256": "10f1bbf78cbe86075eaf6aa1521d77682c80b7d81ee7cba46185d574e359beb7"
+    },
+    {
+      "filename": "companies-search.part-0165.txt",
+      "recordCount": 64,
+      "bytes": 130565,
+      "sha256": "768a86b69865417dffb501bc70729645d280a5d35206c4b92d418e641c4a470e"
+    },
+    {
+      "filename": "companies-search.part-0166.txt",
+      "recordCount": 49,
+      "bytes": 129252,
+      "sha256": "67814fcbdee249a7ec15721a6bbf6b183f7e645f579ece49d8a3be52b12847eb"
+    },
+    {
+      "filename": "companies-search.part-0167.txt",
+      "recordCount": 64,
+      "bytes": 129874,
+      "sha256": "8c0ca37e6fac62f9d298bee508714eb3f00d1060e692fc45b5f9ae8133e94f58"
+    },
+    {
+      "filename": "companies-search.part-0168.txt",
+      "recordCount": 47,
+      "bytes": 131036,
+      "sha256": "b5e315a4faeb56de26a3d5707aeb518b5d9982b6ef7e8d6a98a498d9b69f8949"
+    },
+    {
+      "filename": "companies-search.part-0169.txt",
+      "recordCount": 61,
+      "bytes": 129210,
+      "sha256": "a4fe8d0cca0c39724812fe2f6512d0c859935fd45147af8395ec51fb7cf02487"
+    },
+    {
+      "filename": "companies-search.part-0170.txt",
+      "recordCount": 60,
+      "bytes": 128733,
+      "sha256": "f82e5216e770d2d05405944476403735b644c6a2448c8f1de9b8eb8e94da0fb1"
+    },
+    {
+      "filename": "companies-search.part-0171.txt",
+      "recordCount": 54,
+      "bytes": 130947,
+      "sha256": "a39414c949735ca6ecdf6c4894fcc4dfb49f207ca53e0a5e3c6219cc019d213c"
+    },
+    {
+      "filename": "companies-search.part-0172.txt",
+      "recordCount": 48,
+      "bytes": 130258,
+      "sha256": "af34a5f6983ac2bd6c4ef3ae0c87d4faed4c7ccc0d8708f68be5f8ab8614c9c8"
+    },
+    {
+      "filename": "companies-search.part-0173.txt",
+      "recordCount": 54,
+      "bytes": 124142,
+      "sha256": "385ceb5545f7bdc49f30d408c01c1a3d0311fd5199fccb49407dc4d79c5960c1"
+    },
+    {
+      "filename": "companies-search.part-0174.txt",
+      "recordCount": 55,
+      "bytes": 128342,
+      "sha256": "fba1eb2f9cc7fdfb6137407e88a293a4ff82f0285226794cec30fbb4920c2a3e"
+    },
+    {
+      "filename": "companies-search.part-0175.txt",
+      "recordCount": 79,
+      "bytes": 130989,
+      "sha256": "308c7bc872dab0cebd5ae324ddaddac63b206aa3f0895544f7e881f218c12e87"
+    },
+    {
+      "filename": "companies-search.part-0176.txt",
+      "recordCount": 53,
+      "bytes": 128874,
+      "sha256": "3dcb94d7ff332cbac9f7a2fa3e45b7b0680d6d056cea22d2bcfb80a3203fe94d"
+    },
+    {
+      "filename": "companies-search.part-0177.txt",
+      "recordCount": 56,
+      "bytes": 130872,
+      "sha256": "47c7148cc7ea570470d6f39d5efbbccf3c05e0dfdec0ea7da50fdeb3a855d7f8"
+    },
+    {
+      "filename": "companies-search.part-0178.txt",
+      "recordCount": 51,
+      "bytes": 130273,
+      "sha256": "0145bf3185556c8853b6052ce275ccbfd0c99aed15ea7784706ea2af28f9a75e"
+    },
+    {
+      "filename": "companies-search.part-0179.txt",
+      "recordCount": 50,
+      "bytes": 128904,
+      "sha256": "4cedde2ec7e53144caeb0e1e2dd67a458dfcb30ec915bc188c089e4f8b321819"
+    },
+    {
+      "filename": "companies-search.part-0180.txt",
+      "recordCount": 55,
+      "bytes": 130030,
+      "sha256": "044e6a2efd53df6bbfdc281d930035e164f36a64e8dce2f4b51e2738ec80930a"
+    },
+    {
+      "filename": "companies-search.part-0181.txt",
+      "recordCount": 55,
+      "bytes": 130917,
+      "sha256": "b30e1f737f3933649db6de7dd8acd287db8f1387e36c17ce7d6d65b041eb8a8d"
+    },
+    {
+      "filename": "companies-search.part-0182.txt",
+      "recordCount": 58,
+      "bytes": 130666,
+      "sha256": "6dcd926eeffeccdd66268ba65e0deffbd02b5b708178c5d979933a8b6a1a3734"
+    },
+    {
+      "filename": "companies-search.part-0183.txt",
+      "recordCount": 57,
+      "bytes": 130949,
+      "sha256": "27f6bc06e35c82fb7a9f9aab7151c1bc9554bd66653e111c9ca1c1ee218ea4f2"
+    },
+    {
+      "filename": "companies-search.part-0184.txt",
+      "recordCount": 54,
+      "bytes": 129186,
+      "sha256": "077ddff00107e61b0bbda8f94f266173e592c52615d7346098b91e84a60af331"
+    },
+    {
+      "filename": "companies-search.part-0185.txt",
+      "recordCount": 51,
+      "bytes": 131002,
+      "sha256": "fbb1a243d9c6f16e696be098a8b88384955f0bc66255509eed3dbffc59085e36"
+    },
+    {
+      "filename": "companies-search.part-0186.txt",
+      "recordCount": 51,
+      "bytes": 130264,
+      "sha256": "39239caa038e6dc586fe4167eb07cbbfde4da42e61c56dad640e5e416f2bf7ed"
+    },
+    {
+      "filename": "companies-search.part-0187.txt",
+      "recordCount": 46,
+      "bytes": 126549,
+      "sha256": "b09ad628ce4f6647d0be9a33c4994bf513f037adc273c080a20b7b65503e7902"
+    },
+    {
+      "filename": "companies-search.part-0188.txt",
+      "recordCount": 52,
+      "bytes": 130898,
+      "sha256": "be247570a9c36cfc6fcccc8056b9af0bbb9a62bc4a27ed911f9db2ff6d757f15"
+    },
+    {
+      "filename": "companies-search.part-0189.txt",
+      "recordCount": 49,
+      "bytes": 130213,
+      "sha256": "260626dfb3217ce2e1907980004c7993c805e6a188e878c0934feb676d088e17"
+    },
+    {
+      "filename": "companies-search.part-0190.txt",
+      "recordCount": 57,
+      "bytes": 130444,
+      "sha256": "db06cbe822e103ff03d8f95a85d7c29d0b230868cb5d32114981738ea7746e45"
+    },
+    {
+      "filename": "companies-search.part-0191.txt",
+      "recordCount": 49,
+      "bytes": 126089,
+      "sha256": "9c7d2dd620669bcb5c336b12e0bb5113847e6c307e2e4fcd2af3c690bb08f803"
+    },
+    {
+      "filename": "companies-search.part-0192.txt",
+      "recordCount": 58,
+      "bytes": 130067,
+      "sha256": "72e1d2fcf065663f078eeda190deaf606d7930faba3c0d193496c7b205cab456"
+    },
+    {
+      "filename": "companies-search.part-0193.txt",
+      "recordCount": 56,
+      "bytes": 129293,
+      "sha256": "7ef1a45212faa7cfe21f1f70be4f8a5a826d07dbd6029350c3509818d72d095c"
+    },
+    {
+      "filename": "companies-search.part-0194.txt",
+      "recordCount": 51,
+      "bytes": 130951,
+      "sha256": "de5fc5654486cebe4595ac5c459bc56116f7c2215a1aa177cf3ddd652314563d"
+    },
+    {
+      "filename": "companies-search.part-0195.txt",
+      "recordCount": 57,
+      "bytes": 130849,
+      "sha256": "54f975d871d6da7ebf293a63c156762ad3cf7efe48f8e657ce56130d7cbd2ae5"
+    },
+    {
+      "filename": "companies-search.part-0196.txt",
+      "recordCount": 57,
+      "bytes": 130216,
+      "sha256": "61d38e7f567042a79f5cd1efb74a4a1f384b9d7bb5213cba89d6fbd96dce2c3f"
+    },
+    {
+      "filename": "companies-search.part-0197.txt",
+      "recordCount": 54,
+      "bytes": 128432,
+      "sha256": "848c95358f711d3e521d742d83d55e08fbe0900a974d75e8a37e233b121da664"
+    },
+    {
+      "filename": "companies-search.part-0198.txt",
+      "recordCount": 50,
+      "bytes": 130415,
+      "sha256": "94734211dce00d6f7a2e835c81d771db7cce39554d8a2f9f910ebb11d423fc89"
+    },
+    {
+      "filename": "companies-search.part-0199.txt",
+      "recordCount": 52,
+      "bytes": 130717,
+      "sha256": "d2853bed3494c95ba1f3aeef9b5e2393d54590b4201a0aac05877f729ec9ee09"
+    },
+    {
+      "filename": "companies-search.part-0200.txt",
+      "recordCount": 44,
+      "bytes": 129462,
+      "sha256": "d1f33bc8577faa3fdd2b581d1f40014c431fdd13a466cc8e651f7d65e10e223e"
+    },
+    {
+      "filename": "companies-search.part-0201.txt",
+      "recordCount": 47,
+      "bytes": 129827,
+      "sha256": "67092c695c32b3e2581634755a456788c946e6118b3c56096c11c5c4af77c18e"
+    },
+    {
+      "filename": "companies-search.part-0202.txt",
+      "recordCount": 54,
+      "bytes": 130305,
+      "sha256": "4409fb8cb69627c1eb8347a206851de7a562d1947f0f11945ff51ae48b21103b"
+    },
+    {
+      "filename": "companies-search.part-0203.txt",
+      "recordCount": 54,
+      "bytes": 127982,
+      "sha256": "3af15031502ce5adb3f5d299edfe8087ee048af5935a546b64f5d53b3553eae4"
+    },
+    {
+      "filename": "companies-search.part-0204.txt",
+      "recordCount": 53,
+      "bytes": 127459,
+      "sha256": "20b130b88306bd90084859cfba632901a72860e47448ec760ea6ed8fc4b9a4c7"
+    },
+    {
+      "filename": "companies-search.part-0205.txt",
+      "recordCount": 49,
+      "bytes": 127317,
+      "sha256": "eada10fabe6a23b89a14f02f9edb8cf2900af211ac112f7a365ecd37148a667c"
+    },
+    {
+      "filename": "companies-search.part-0206.txt",
+      "recordCount": 49,
+      "bytes": 130958,
+      "sha256": "e2173b61beb375917d7cce33bbeb019ffd58d82c144a1824b384923149e3eae8"
+    },
+    {
+      "filename": "companies-search.part-0207.txt",
+      "recordCount": 54,
+      "bytes": 131057,
+      "sha256": "4232ed8b849a90873401dcfa310d9f6d02e510ec4cfd53bdfe9a4679901bffca"
+    },
+    {
+      "filename": "companies-search.part-0208.txt",
+      "recordCount": 48,
+      "bytes": 130510,
+      "sha256": "788464215660d75bcc1409b913f5bbaf4c9f88f75ba7b817bcec84101824a115"
+    },
+    {
+      "filename": "companies-search.part-0209.txt",
+      "recordCount": 52,
+      "bytes": 130928,
+      "sha256": "4e68127c882d279665288e47edfaba553216fe799a6fabaab8047524202a20c9"
+    },
+    {
+      "filename": "companies-search.part-0210.txt",
+      "recordCount": 48,
+      "bytes": 127889,
+      "sha256": "8a3ca07035f71e4b13a6269a00aab7c40056219ab1c5e943c6b04eb77688d2c5"
+    },
+    {
+      "filename": "companies-search.part-0211.txt",
+      "recordCount": 46,
+      "bytes": 126807,
+      "sha256": "e92da107def9f00abfa93e24ef033b975b2b413fd95a1a3eaf2d853e962b5e07"
+    },
+    {
+      "filename": "companies-search.part-0212.txt",
+      "recordCount": 58,
+      "bytes": 130410,
+      "sha256": "59707d66fcf49d6ca3516d6cc30366d5c30141761026946ab43832175dca19a3"
+    },
+    {
+      "filename": "companies-search.part-0213.txt",
+      "recordCount": 40,
+      "bytes": 125708,
+      "sha256": "5256fe8716731e7588344eb45251b228b7b45f5e30148f4d23a56feb5a248a64"
+    },
+    {
+      "filename": "companies-search.part-0214.txt",
+      "recordCount": 48,
+      "bytes": 129414,
+      "sha256": "0035497bb8034743bb113f2458530665ae7574009a16dda8f19ffd4c783d040c"
+    },
+    {
+      "filename": "companies-search.part-0215.txt",
+      "recordCount": 58,
+      "bytes": 128856,
+      "sha256": "7ae1ba4444114781eeeb6a87649449f22186837955b83c9b35c475974ee150fc"
+    },
+    {
+      "filename": "companies-search.part-0216.txt",
+      "recordCount": 48,
+      "bytes": 129534,
+      "sha256": "3af62ed945e38cebda97049aa0571b1a322a3c242eec9a2fe110b57c8d36ded2"
+    },
+    {
+      "filename": "companies-search.part-0217.txt",
+      "recordCount": 42,
+      "bytes": 126876,
+      "sha256": "6cd4553d7f9eb0162256c6d72011a4c5aff3899c1fd128d95a2c98e3f2fea07f"
+    },
+    {
+      "filename": "companies-search.part-0218.txt",
+      "recordCount": 50,
+      "bytes": 128039,
+      "sha256": "c290e50769aab9e66d191c4de59fe6fd360338f0f2fa18729b335cd92ce214f1"
+    },
+    {
+      "filename": "companies-search.part-0219.txt",
+      "recordCount": 48,
+      "bytes": 129674,
+      "sha256": "8d820700f396e5e3a8ab5195979b6b95d8922abdec446f5f234ce56c21d19ba4"
+    },
+    {
+      "filename": "companies-search.part-0220.txt",
+      "recordCount": 39,
+      "bytes": 125675,
+      "sha256": "98e85e7cda77c8b370d3013a77adf5038d956ac55b5de1e1d1a954b27bf88ee7"
+    },
+    {
+      "filename": "companies-search.part-0221.txt",
+      "recordCount": 51,
+      "bytes": 129531,
+      "sha256": "7b28eb5ac91c7fc62324dff75fbcc1190678b127ade7f16327fcef1d6c3a36c9"
+    },
+    {
+      "filename": "companies-search.part-0222.txt",
+      "recordCount": 58,
+      "bytes": 130611,
+      "sha256": "b1182336bf2b137c318d3584eb9727250c761d6ad72a7f0ccd14f294330ecd04"
+    },
+    {
+      "filename": "companies-search.part-0223.txt",
+      "recordCount": 46,
+      "bytes": 128678,
+      "sha256": "fd707865c56db5d93abeaf086dc07165adf9f9a4b0632d423a1fb81677ab797c"
+    },
+    {
+      "filename": "companies-search.part-0224.txt",
+      "recordCount": 54,
+      "bytes": 130507,
+      "sha256": "e9ac738979fdbe700bf1e5535231a745eee8df3951b572a1625eb1a852c6581a"
+    },
+    {
+      "filename": "companies-search.part-0225.txt",
+      "recordCount": 42,
+      "bytes": 129965,
+      "sha256": "b49705ae606f401320cbc4c4ee4e68ab221f20c3d0d08c9d2cdb37d4400fcbac"
+    },
+    {
+      "filename": "companies-search.part-0226.txt",
+      "recordCount": 54,
+      "bytes": 128207,
+      "sha256": "c57c309c3d601f551cc6e04ab5ee0b86e14713424fd28003c3b192be4c04edc9"
+    },
+    {
+      "filename": "companies-search.part-0227.txt",
+      "recordCount": 49,
+      "bytes": 130756,
+      "sha256": "7aca2876fba6956efe052656992a3b6f2d546d01d312434450b44547e9ef74b9"
+    },
+    {
+      "filename": "companies-search.part-0228.txt",
+      "recordCount": 49,
+      "bytes": 130257,
+      "sha256": "46ea4da2b77a3fb0719be3a621b636d78d11a12b0cc6559429a0424830404ebf"
+    },
+    {
+      "filename": "companies-search.part-0229.txt",
+      "recordCount": 48,
+      "bytes": 127162,
+      "sha256": "7d47870ebbb7bfa3affde030512e55ec6f815b7b2defe089f821e8fcab902750"
+    },
+    {
+      "filename": "companies-search.part-0230.txt",
+      "recordCount": 48,
+      "bytes": 129632,
+      "sha256": "d1e8c1eff8b345ac961a73e28ba7e492575db6fe440871b7f8dbbd26bf1cf168"
+    },
+    {
+      "filename": "companies-search.part-0231.txt",
+      "recordCount": 48,
+      "bytes": 121593,
+      "sha256": "d55d7d5081afb0b33cb7a156f7fe3c0032781ec014d997d08985b02264e5c94b"
+    },
+    {
+      "filename": "companies-search.part-0232.txt",
+      "recordCount": 44,
+      "bytes": 130681,
+      "sha256": "3f896c2d13cbafa287ba6745049bedb8fd8c35d98de4772e6eecfbbc603fc264"
+    },
+    {
+      "filename": "companies-search.part-0233.txt",
+      "recordCount": 51,
+      "bytes": 131001,
+      "sha256": "62702f2b96276eb231d32c4a44154738d2fcb223152929d2e251fd50b9844325"
+    },
+    {
+      "filename": "companies-search.part-0234.txt",
+      "recordCount": 53,
+      "bytes": 130343,
+      "sha256": "1203acaed3dc59a0869cf60d4feb919626adbc9ab996953ca5399ed01393ba96"
+    },
+    {
+      "filename": "companies-search.part-0235.txt",
+      "recordCount": 60,
+      "bytes": 130167,
+      "sha256": "3135c88f5e495ec1f05c9adbf83ffd9b80decfa6c9691653811daf8d3789bbf7"
+    },
+    {
+      "filename": "companies-search.part-0236.txt",
+      "recordCount": 56,
+      "bytes": 129095,
+      "sha256": "426a654c61c582be0c33f44b1259e108bca77e7230a676af6f9d37ecb498c50f"
+    },
+    {
+      "filename": "companies-search.part-0237.txt",
+      "recordCount": 45,
+      "bytes": 130598,
+      "sha256": "e661716590d125160ce23664b1861035f7af3e7746bf378a4c68bbda04a59e8c"
+    },
+    {
+      "filename": "companies-search.part-0238.txt",
+      "recordCount": 52,
+      "bytes": 128693,
+      "sha256": "6dc847b7d3066a85e432b7b36213c87534f23422612763014020379e0a0bc00f"
+    },
+    {
+      "filename": "companies-search.part-0239.txt",
+      "recordCount": 48,
+      "bytes": 131048,
+      "sha256": "2afd26aa47db81f561085ac54fa77a97a2ad15d5c36c2da0235c4e8fcfc06130"
+    },
+    {
+      "filename": "companies-search.part-0240.txt",
+      "recordCount": 52,
+      "bytes": 130030,
+      "sha256": "d83d16cc681b896b9039dddc01289664d8d08644105da6615643c1406b1654a9"
+    },
+    {
+      "filename": "companies-search.part-0241.txt",
+      "recordCount": 57,
+      "bytes": 128921,
+      "sha256": "2a3402b866a741694c3bf56ed11395266077d336d0164ca9956b82cf9a2d81ab"
+    },
+    {
+      "filename": "companies-search.part-0242.txt",
+      "recordCount": 53,
+      "bytes": 129221,
+      "sha256": "051084cded9bd6cb68c89ff7db682ab84245b0360d74336faa97f47e65b2c7f2"
+    },
+    {
+      "filename": "companies-search.part-0243.txt",
+      "recordCount": 68,
+      "bytes": 130843,
+      "sha256": "3f1c0bded504ceeac6e21a2b295e7374d08f5083bf60eeba921fc7185c2d9b72"
+    },
+    {
+      "filename": "companies-search.part-0244.txt",
+      "recordCount": 69,
+      "bytes": 130779,
+      "sha256": "a1079ad114f3eeca4d3b3d1c13aa91601cfd5187e43b705fecf3ec095383271a"
+    },
+    {
+      "filename": "companies-search.part-0245.txt",
+      "recordCount": 63,
+      "bytes": 130380,
+      "sha256": "0f578f200ffbe32423a33ef13aea27d74d150a0742a46d5a989bc685f9b78ae5"
+    },
+    {
+      "filename": "companies-search.part-0246.txt",
+      "recordCount": 50,
+      "bytes": 128838,
+      "sha256": "47bf555e18931247165360ecd69740f069a996110ce1f475a053a3079ec153e3"
+    },
+    {
+      "filename": "companies-search.part-0247.txt",
+      "recordCount": 52,
+      "bytes": 130755,
+      "sha256": "3d2a9355be36401e3bd58dead3cbe78c115db49d4f42615cf202cb25ffb3bd43"
+    },
+    {
+      "filename": "companies-search.part-0248.txt",
+      "recordCount": 50,
+      "bytes": 130362,
+      "sha256": "4d7beaf86ccd1b5e19869cd9106af01b6fbcdf70ea7a9e37b16cbf2d237a7e7b"
+    },
+    {
+      "filename": "companies-search.part-0249.txt",
+      "recordCount": 61,
+      "bytes": 130191,
+      "sha256": "d431bc30320252927accd8a66c51f67c0f7cd9da10298088d666843daa5f4e90"
+    },
+    {
+      "filename": "companies-search.part-0250.txt",
+      "recordCount": 57,
+      "bytes": 128624,
+      "sha256": "1f615414f5fc8750c62efd606cba68924fe58800564387b0471504d557453047"
+    },
+    {
+      "filename": "companies-search.part-0251.txt",
+      "recordCount": 55,
+      "bytes": 130923,
+      "sha256": "68d167ae0f0ca97b1f2e3cb137dc9d0c9c2f9defe0d7213806fd5ccf07fcdd0f"
+    },
+    {
+      "filename": "companies-search.part-0252.txt",
+      "recordCount": 61,
+      "bytes": 131045,
+      "sha256": "795bcaeb9749e0e3a4fc97fa5599615efa2429715824508fbef241a92eeaef58"
+    },
+    {
+      "filename": "companies-search.part-0253.txt",
+      "recordCount": 61,
+      "bytes": 130542,
+      "sha256": "28aba2fb24c59beaca3105ad8b404d1ece941821c51906e67d5ffd45e7b8c4aa"
+    },
+    {
+      "filename": "companies-search.part-0254.txt",
+      "recordCount": 56,
+      "bytes": 129425,
+      "sha256": "96e04f940590cf5a9584e1649ac0955f32e3bb92ea9729245af568cdef893ce5"
+    },
+    {
+      "filename": "companies-search.part-0255.txt",
+      "recordCount": 52,
+      "bytes": 129715,
+      "sha256": "06e58fc1a032e2332eb712799d03ca9a057d396a33349ffac74a76f343bf46c7"
+    },
+    {
+      "filename": "companies-search.part-0256.txt",
+      "recordCount": 58,
+      "bytes": 130265,
+      "sha256": "b69eaef2ef1a42da5caa64ce752624269a058aefb0329d1b041dc7df382761ee"
+    },
+    {
+      "filename": "companies-search.part-0257.txt",
+      "recordCount": 56,
+      "bytes": 129789,
+      "sha256": "976da1b5a115974ac3a30fec2cb98f884d86c0993e9653594b9ed3e957629569"
+    },
+    {
+      "filename": "companies-search.part-0258.txt",
+      "recordCount": 62,
+      "bytes": 130921,
+      "sha256": "7d6da9558c0e42fb8b329d528efdefbd9be85331f78caa689c47384ed912fd16"
+    },
+    {
+      "filename": "companies-search.part-0259.txt",
+      "recordCount": 60,
+      "bytes": 128336,
+      "sha256": "51017dda89c63293af4925bf713a7686ddbf5f63c220993a633bfd6336274375"
+    },
+    {
+      "filename": "companies-search.part-0260.txt",
+      "recordCount": 52,
+      "bytes": 128256,
+      "sha256": "16c583fed5faf72aeefc3455b5f039f372e4a647d27917c41d0994cb150ee148"
+    },
+    {
+      "filename": "companies-search.part-0261.txt",
+      "recordCount": 52,
+      "bytes": 130541,
+      "sha256": "12a6cd5895e5684c49bc8e079b7b77a3ebc8d3ea0b1a85e38a2cf45add1e6d65"
+    },
+    {
+      "filename": "companies-search.part-0262.txt",
+      "recordCount": 61,
+      "bytes": 129884,
+      "sha256": "e3668bf1745aa64e992e2ebdb480ae33672d7be2e62e0cb3d3000846f1bed40c"
+    },
+    {
+      "filename": "companies-search.part-0263.txt",
+      "recordCount": 54,
+      "bytes": 127914,
+      "sha256": "b77ee39e5bd10981d1e8ec907ad3966ab141d3b994c04ee5250c80f2f4293bc8"
+    },
+    {
+      "filename": "companies-search.part-0264.txt",
+      "recordCount": 56,
+      "bytes": 128794,
+      "sha256": "ce6665ce3aef0c80590e4d9518aa159e69a314efad874e0797c3c16f0059cf7a"
+    },
+    {
+      "filename": "companies-search.part-0265.txt",
+      "recordCount": 68,
+      "bytes": 130845,
+      "sha256": "55e850179dfd8520d6a34f5edc0982231d9bcd7d43cb98d935cb65ce33919b59"
+    },
+    {
+      "filename": "companies-search.part-0266.txt",
+      "recordCount": 54,
+      "bytes": 130210,
+      "sha256": "027e8ab26b9bb72e0dcfe0ae8d08fc21bf23963a4aeb55735d623be98945015c"
+    },
+    {
+      "filename": "companies-search.part-0267.txt",
+      "recordCount": 64,
+      "bytes": 130019,
+      "sha256": "ea6a32b426400398323db571cd2257fef91c444eea62009a3d8badf0933a644c"
+    },
+    {
+      "filename": "companies-search.part-0268.txt",
+      "recordCount": 64,
+      "bytes": 130775,
+      "sha256": "25a2a9ae002ba82c7b78d4d1fbf57d90996c392162bc97a03186f6422b7730fb"
+    },
+    {
+      "filename": "companies-search.part-0269.txt",
+      "recordCount": 68,
+      "bytes": 130847,
+      "sha256": "933d4ff8b383d7273747b1818a270c49c741a454171a4531962db2b277b50eea"
+    },
+    {
+      "filename": "companies-search.part-0270.txt",
+      "recordCount": 53,
+      "bytes": 128331,
+      "sha256": "21c40954bc6d8c00911e4da67b29f2356c86d8666aac5d31288b339218ef472f"
+    },
+    {
+      "filename": "companies-search.part-0271.txt",
+      "recordCount": 65,
+      "bytes": 128878,
+      "sha256": "6e3d2e47dbecf95a5b45c2cec2b758abaf5e78e5f8670dcc623f87ae6982b7e0"
+    },
+    {
+      "filename": "companies-search.part-0272.txt",
+      "recordCount": 67,
+      "bytes": 130382,
+      "sha256": "ac255b81b76a6b48285077ac471bac8b9fcb1e5f6e66e8d08ec48de2316aa770"
+    },
+    {
+      "filename": "companies-search.part-0273.txt",
+      "recordCount": 63,
+      "bytes": 130518,
+      "sha256": "a7ab77c0680a0a3339a5828ee0ec4490be43205512b146e10adce59c5e41443e"
+    },
+    {
+      "filename": "companies-search.part-0274.txt",
+      "recordCount": 64,
+      "bytes": 129179,
+      "sha256": "51e70eaffee75dc327b563a2d900fc33f5a6079f048aeede1599367f6e4b3a91"
+    },
+    {
+      "filename": "companies-search.part-0275.txt",
+      "recordCount": 59,
+      "bytes": 130285,
+      "sha256": "4c70b06465cdb4faf53b27b26f40d4de57918fa9e69a60161c798426e9721462"
+    },
+    {
+      "filename": "companies-search.part-0276.txt",
+      "recordCount": 55,
+      "bytes": 128566,
+      "sha256": "ddcb4157845a18d9b503c77d3fe24ba5bffbaf9ef2c6d8a40e7882cd6d2a8ec1"
+    },
+    {
+      "filename": "companies-search.part-0277.txt",
+      "recordCount": 54,
+      "bytes": 128009,
+      "sha256": "3025743fa8068015ae1a7bd4b579289dabcec1dffb54f092bfca69c765ca6e63"
+    },
+    {
+      "filename": "companies-search.part-0278.txt",
+      "recordCount": 70,
+      "bytes": 130296,
+      "sha256": "968b151bbbdce28a2fbb00877f7c00f80e40baa3eee56cbe2cc1b49705208e8d"
+    },
+    {
+      "filename": "companies-search.part-0279.txt",
+      "recordCount": 83,
+      "bytes": 131026,
+      "sha256": "48a671e4be315eb135903e84bbe74d8a7affa19fb7a0a12628c9756f8fcb59f0"
+    },
+    {
+      "filename": "companies-search.part-0280.txt",
+      "recordCount": 94,
+      "bytes": 128248,
+      "sha256": "b11d4ceb12dc1389bc1508900f4b49fec03fc38dd5583419cf24afc5d3880e62"
+    },
+    {
+      "filename": "companies-search.part-0281.txt",
+      "recordCount": 75,
+      "bytes": 130524,
+      "sha256": "c9e03b14e96a674ae3c8b66733ceaab3ba420860438f04409837476a3fe92bf5"
+    },
+    {
+      "filename": "companies-search.part-0282.txt",
+      "recordCount": 69,
+      "bytes": 130630,
+      "sha256": "975c23efe2788252ff89d040a51534d4438f75f6ba725bfece7c2ec633737659"
+    },
+    {
+      "filename": "companies-search.part-0283.txt",
+      "recordCount": 75,
+      "bytes": 129393,
+      "sha256": "548e2a21905983742127d3d666709ecf0c5ac78ba1678055302e501eee523b14"
+    },
+    {
+      "filename": "companies-search.part-0284.txt",
+      "recordCount": 66,
+      "bytes": 130613,
+      "sha256": "406d116b6ac86178d49fe62911faa257751e1cbf51bb7e49c0deb27ea077fe2b"
+    },
+    {
+      "filename": "companies-search.part-0285.txt",
+      "recordCount": 61,
+      "bytes": 131024,
+      "sha256": "a9f528ec8c0ae01f8613bada254c2e779da9accde2b51e2ba026553969336a7c"
+    },
+    {
+      "filename": "companies-search.part-0286.txt",
+      "recordCount": 65,
+      "bytes": 124743,
+      "sha256": "2b096871eba9b0253694728df15ec4f5f931f90cc5c02cbeac319bf28604bf78"
+    },
+    {
+      "filename": "companies-search.part-0287.txt",
+      "recordCount": 59,
+      "bytes": 127728,
+      "sha256": "1b5f72f5207458bb8b9499bdee7b13b1901c32aa581d07dad0e050681e81cd46"
+    },
+    {
+      "filename": "companies-search.part-0288.txt",
+      "recordCount": 63,
+      "bytes": 129057,
+      "sha256": "22cd23ad23929da9210a4fb5791bd902417e2f62ceabdbb3cf7a069639bddeaf"
+    },
+    {
+      "filename": "companies-search.part-0289.txt",
+      "recordCount": 71,
+      "bytes": 129683,
+      "sha256": "ab305b73b4158786bbda2683c949af9a1b7f2afffca34c0cd13856295cb596f1"
+    },
+    {
+      "filename": "companies-search.part-0290.txt",
+      "recordCount": 61,
+      "bytes": 130312,
+      "sha256": "069e3aa20591afe8320f27988c688f7909e49b088a2add704b7ee4f03553f1e2"
+    },
+    {
+      "filename": "companies-search.part-0291.txt",
+      "recordCount": 61,
+      "bytes": 127705,
+      "sha256": "ebb6c5976829ce09277f9df37cd89546847c6f1d52324cfba939202fcf087edb"
+    },
+    {
+      "filename": "companies-search.part-0292.txt",
+      "recordCount": 59,
+      "bytes": 130079,
+      "sha256": "fdb7627eaef9ed2d5414c58550878b98d2ad15569e8ea8ad76c8d2039b1ecc16"
+    },
+    {
+      "filename": "companies-search.part-0293.txt",
+      "recordCount": 80,
+      "bytes": 130694,
+      "sha256": "671b5fcffc28ba1f1bdc697ea153c23135a036e54b2fb6d7d6045de95882dee1"
+    },
+    {
+      "filename": "companies-search.part-0294.txt",
+      "recordCount": 64,
+      "bytes": 130077,
+      "sha256": "8e949a482005a362332a6313d11995daf7dad1062a7e31570f50e2c08dcb2600"
+    },
+    {
+      "filename": "companies-search.part-0295.txt",
+      "recordCount": 61,
+      "bytes": 130324,
+      "sha256": "1a818702fed4e6c9d57bda054c9228a18cdb962aee5e1ec9d93b50c373a70066"
+    },
+    {
+      "filename": "companies-search.part-0296.txt",
+      "recordCount": 60,
+      "bytes": 129542,
+      "sha256": "cb0eff2686d00d8e19070c8b2280938187282a38c892975c1e7e688f76fd98d9"
+    },
+    {
+      "filename": "companies-search.part-0297.txt",
+      "recordCount": 72,
+      "bytes": 130896,
+      "sha256": "95b9e0fb45e72921b9d1d2927b8db1e4a428bf51b059bda4cc51cb974b9d2bde"
+    },
+    {
+      "filename": "companies-search.part-0298.txt",
+      "recordCount": 66,
+      "bytes": 130432,
+      "sha256": "5966da335569e52add56e38b8f7ea12d0017e5ea7fbbf78ba4bfb562be348a73"
+    },
+    {
+      "filename": "companies-search.part-0299.txt",
+      "recordCount": 64,
+      "bytes": 128384,
+      "sha256": "b6ea441e324ffc2081d8f0f360753832f1a4e6eefcd33878ae0c9384ed7393cc"
+    },
+    {
+      "filename": "companies-search.part-0300.txt",
+      "recordCount": 71,
+      "bytes": 130830,
+      "sha256": "fa7d46befcd4d3cd236b362b2a25811e509be360671c1189edd6ac5f811506b0"
+    },
+    {
+      "filename": "companies-search.part-0301.txt",
+      "recordCount": 71,
+      "bytes": 129852,
+      "sha256": "198e9ebfdd112f61d78884b23e6432f29b452b1342fbb893333e15a9438bb9c3"
+    },
+    {
+      "filename": "companies-search.part-0302.txt",
+      "recordCount": 70,
+      "bytes": 127636,
+      "sha256": "045d58ef0e5ebef3a809985f0d25a9e780f12fa03c7179b3e9120bbc1d48fd54"
+    },
+    {
+      "filename": "companies-search.part-0303.txt",
+      "recordCount": 68,
+      "bytes": 129882,
+      "sha256": "bb5c536f230841197a4a15e2b6e831d9dcfcf81b36a9a5816d523dcb7ca8bba4"
+    },
+    {
+      "filename": "companies-search.part-0304.txt",
+      "recordCount": 71,
+      "bytes": 128928,
+      "sha256": "cac76358cb06ad2d8f7668db54a37e5193ffe5b123d6d88613e0b9ff56b919d3"
+    },
+    {
+      "filename": "companies-search.part-0305.txt",
+      "recordCount": 73,
+      "bytes": 130968,
+      "sha256": "5448306196907bdf9e93955f1d795a25fc3c922a6143f40adf541ea6665c6a4f"
+    },
+    {
+      "filename": "companies-search.part-0306.txt",
+      "recordCount": 69,
+      "bytes": 129842,
+      "sha256": "4feee6da8ca8b78fddec9e56a96703378174b40192054b028a22c9748ba560b5"
+    },
+    {
+      "filename": "companies-search.part-0307.txt",
+      "recordCount": 67,
+      "bytes": 130710,
+      "sha256": "1124de19e86d8c9c4e2b78eb68114cf953e70240d4a385ebe6db80e0786f80f6"
+    },
+    {
+      "filename": "companies-search.part-0308.txt",
+      "recordCount": 62,
+      "bytes": 126639,
+      "sha256": "648932b135debfa244b14d5c27441b3e03fe8efbbed437524bc9f64a920af63f"
+    },
+    {
+      "filename": "companies-search.part-0309.txt",
+      "recordCount": 61,
+      "bytes": 130753,
+      "sha256": "fb787d1df7998ab20bbc9a3a3dc1ccac8633ec7778d5832720d2a0897226671f"
+    },
+    {
+      "filename": "companies-search.part-0310.txt",
+      "recordCount": 61,
+      "bytes": 129071,
+      "sha256": "67fe8680c88e2d6dd0dbf817b00f1b82d34ff83e034dc89c33378143cc8d46f1"
+    },
+    {
+      "filename": "companies-search.part-0311.txt",
+      "recordCount": 72,
+      "bytes": 128599,
+      "sha256": "3f01f6fc44f00676b960a57005a3fc561fd9737d1983f5c06a30b8a2be6e40ed"
+    },
+    {
+      "filename": "companies-search.part-0312.txt",
+      "recordCount": 70,
+      "bytes": 130539,
+      "sha256": "0a81b367b0f534d5ddcd94f9d68f9d8ce908769703a887d053af912d19c111b5"
+    },
+    {
+      "filename": "companies-search.part-0313.txt",
+      "recordCount": 71,
+      "bytes": 129975,
+      "sha256": "3e49a11c79002f399b8bdb9061956c354036039f7ad72b348e83271076124f83"
+    },
+    {
+      "filename": "companies-search.part-0314.txt",
+      "recordCount": 61,
+      "bytes": 130869,
+      "sha256": "db53fe627d697e9f9949b013f99c295f3b85da4e60d4b5f79881b6221d900638"
+    },
+    {
+      "filename": "companies-search.part-0315.txt",
+      "recordCount": 68,
+      "bytes": 129654,
+      "sha256": "bf2c8640e13db3825ba1c11c67020dedc5303bc3d7ec99d290104874352a4950"
+    },
+    {
+      "filename": "companies-search.part-0316.txt",
+      "recordCount": 65,
+      "bytes": 130898,
+      "sha256": "0558d65d911084f576e0eb1bc1e015bd27997787083f7f9552138381d613fefa"
+    },
+    {
+      "filename": "companies-search.part-0317.txt",
+      "recordCount": 66,
+      "bytes": 130326,
+      "sha256": "89c22f9fcdd9a59dd281cfe7e9d68798ef36cac2e6de3b913abadd16b60fa35f"
+    },
+    {
+      "filename": "companies-search.part-0318.txt",
+      "recordCount": 59,
+      "bytes": 130311,
+      "sha256": "0384ffa0e15012f014df47d0dc1e9ae13b7869d4993ad6d8f8d2c0aedcf65350"
+    },
+    {
+      "filename": "companies-search.part-0319.txt",
+      "recordCount": 63,
+      "bytes": 130142,
+      "sha256": "597ab8e05ddd6cac9f19be8e67d858015f51f7f3679890e5d5785fef1dbad2ff"
+    },
+    {
+      "filename": "companies-search.part-0320.txt",
+      "recordCount": 64,
+      "bytes": 130529,
+      "sha256": "d22a18807069474ad97a96440746f957781bb46815ccc44d61a9b8b8f4b6d68c"
+    },
+    {
+      "filename": "companies-search.part-0321.txt",
+      "recordCount": 68,
+      "bytes": 129866,
+      "sha256": "bd1b2a914d23ed56281a7ec1d8836ecc3fbcdb9902503a2560cadf53f7c376d9"
+    },
+    {
+      "filename": "companies-search.part-0322.txt",
+      "recordCount": 65,
+      "bytes": 128212,
+      "sha256": "7682df1f32b107cc50e3e5aff6074d0b4689bff4036b4a4af06407e5e18b5bb6"
+    },
+    {
+      "filename": "companies-search.part-0323.txt",
+      "recordCount": 64,
+      "bytes": 130348,
+      "sha256": "ac1bfc81b2c6102f75ee1a91c3374f274f77d7cef80949181210f645ce28e2a4"
+    },
+    {
+      "filename": "companies-search.part-0324.txt",
+      "recordCount": 59,
+      "bytes": 126139,
+      "sha256": "95305d06724599634f811ba76567a5f25ef8dc71a345d270d7ec91490d151cfc"
+    },
+    {
+      "filename": "companies-search.part-0325.txt",
+      "recordCount": 55,
+      "bytes": 125676,
+      "sha256": "6702b9763d5c6337bea62b816ce834ca29ca8e90101cae3fc6ddfedc1a469dda"
+    },
+    {
+      "filename": "companies-search.part-0326.txt",
+      "recordCount": 56,
+      "bytes": 130960,
+      "sha256": "16255bf61758589070509b791ccfabd28969b162931fb5641326b792c8744008"
+    },
+    {
+      "filename": "companies-search.part-0327.txt",
+      "recordCount": 45,
+      "bytes": 129456,
+      "sha256": "8fe36a43075c839431525b2e91607870a8c862c6afc3bc8d79102c5ac302c727"
+    },
+    {
+      "filename": "companies-search.part-0328.txt",
+      "recordCount": 51,
+      "bytes": 129111,
+      "sha256": "f8508bf61c87db648cb7b14cc7b755190762c1d9e80af52636981abeb724a23d"
+    },
+    {
+      "filename": "companies-search.part-0329.txt",
+      "recordCount": 52,
+      "bytes": 127784,
+      "sha256": "703c925f70ab5fae1ad39979018ef9a93974f6564eedf3e8f30ea78b2cfb3cae"
+    },
+    {
+      "filename": "companies-search.part-0330.txt",
+      "recordCount": 49,
+      "bytes": 130359,
+      "sha256": "5b86dba000f84676e4efa827f82d0c96f0da4758628043f128dec5e5b01e64ad"
+    },
+    {
+      "filename": "companies-search.part-0331.txt",
+      "recordCount": 57,
+      "bytes": 130191,
+      "sha256": "eae9753284a7fed700910bb47a230d2e8e990b7268dc55e1c902a1c34a480385"
+    },
+    {
+      "filename": "companies-search.part-0332.txt",
+      "recordCount": 49,
+      "bytes": 129916,
+      "sha256": "65540ecbbb4239a95ca8cfd391d785b36e58e98c8b6d8ed7690a77759e55a698"
+    },
+    {
+      "filename": "companies-search.part-0333.txt",
+      "recordCount": 52,
+      "bytes": 129259,
+      "sha256": "abd5389d7b89dfa9f3a3b372b7754fd4cd92bb42a896cb8b911c9c12d3f8e7a1"
+    },
+    {
+      "filename": "companies-search.part-0334.txt",
+      "recordCount": 47,
+      "bytes": 124767,
+      "sha256": "eb5f8fdfc169a0d00882e67aa4e306ab67db9cadfbec65045708eaa7673c2e5b"
+    },
+    {
+      "filename": "companies-search.part-0335.txt",
+      "recordCount": 44,
+      "bytes": 126826,
+      "sha256": "b1392d29410450efde0af084066af545f11bc4d3df5665d5d1b8fdae172f434b"
+    },
+    {
+      "filename": "companies-search.part-0336.txt",
+      "recordCount": 53,
+      "bytes": 128951,
+      "sha256": "fe6f5884c187ed89b7734681e7cd835b468524ff85da9628f8ccc168e7917947"
+    },
+    {
+      "filename": "companies-search.part-0337.txt",
+      "recordCount": 50,
+      "bytes": 129776,
+      "sha256": "3d3d7bb1d6067fee101532fbdbef8e3442a509d0d6faeb245465946cb11b3fd8"
+    },
+    {
+      "filename": "companies-search.part-0338.txt",
+      "recordCount": 48,
+      "bytes": 129903,
+      "sha256": "bfe03efdf0d7e7cc8b8ea6721ba70d6f2694826aca1324f99f0db8659f21d0cf"
+    },
+    {
+      "filename": "companies-search.part-0339.txt",
+      "recordCount": 58,
+      "bytes": 130911,
+      "sha256": "15df5c7a5b734493e621572f0eb824bd0c248019f0940998a4f0ae95096a65a4"
+    },
+    {
+      "filename": "companies-search.part-0340.txt",
+      "recordCount": 45,
+      "bytes": 129108,
+      "sha256": "850e027bd3d9aed8d93f18285d5eac60b7ace2e8b290a87546039d2dfc857f81"
+    },
+    {
+      "filename": "companies-search.part-0341.txt",
+      "recordCount": 49,
+      "bytes": 130497,
+      "sha256": "9344f19ec667a9a37a424be7506672e3c59596d7daeaeca6cbc889e857868360"
+    },
+    {
+      "filename": "companies-search.part-0342.txt",
+      "recordCount": 48,
+      "bytes": 130283,
+      "sha256": "c18f9b0b9fe382d61154ab3b46c0b775b355cdaacde22a5c215ffea5260f03f1"
+    },
+    {
+      "filename": "companies-search.part-0343.txt",
+      "recordCount": 50,
+      "bytes": 126907,
+      "sha256": "16bd7d46f7547c3f07d11c1195e921980c5cdcb659ac708ba6942f709d5cca82"
+    },
+    {
+      "filename": "companies-search.part-0344.txt",
+      "recordCount": 43,
+      "bytes": 129280,
+      "sha256": "06ae6463f749de87203d5c8dd1082d43012a41fba385a29fe2c5a0fc84e472aa"
+    },
+    {
+      "filename": "companies-search.part-0345.txt",
+      "recordCount": 51,
+      "bytes": 131055,
+      "sha256": "222518181e2b0c7b0a772137dbcb1b7b38123df032b2e86f8cd9e5ce7af6e640"
+    },
+    {
+      "filename": "companies-search.part-0346.txt",
+      "recordCount": 51,
+      "bytes": 129471,
+      "sha256": "3efcf0a15ff1db51c861360deec7ded4858c9d8dc6dce2ef910f8ab8a2e30fc4"
+    },
+    {
+      "filename": "companies-search.part-0347.txt",
+      "recordCount": 50,
+      "bytes": 130307,
+      "sha256": "af94d65fd391fd36794e7aae38f08b7d003c44b07db1696fe97ea578b146363a"
+    },
+    {
+      "filename": "companies-search.part-0348.txt",
+      "recordCount": 53,
+      "bytes": 129505,
+      "sha256": "5e1046818533f97950d8d6ac7049b4d2e6e2836c6fda326115316e5fc920154e"
+    },
+    {
+      "filename": "companies-search.part-0349.txt",
+      "recordCount": 44,
+      "bytes": 130215,
+      "sha256": "c8066175d804a8fe52f9a487afdbab7a19a7ae62bdc9ab8f6654e3cd30280896"
+    },
+    {
+      "filename": "companies-search.part-0350.txt",
+      "recordCount": 53,
+      "bytes": 129305,
+      "sha256": "688b3aba77e8e759540756714ac803a1c55a46f35368d98b860c4713a2b5fc1c"
+    },
+    {
+      "filename": "companies-search.part-0351.txt",
+      "recordCount": 50,
+      "bytes": 130697,
+      "sha256": "e0d00032c495eaef063858fe83d7a520aeac286fc2aa19fb3af7e0a467b376ac"
+    },
+    {
+      "filename": "companies-search.part-0352.txt",
+      "recordCount": 41,
+      "bytes": 129686,
+      "sha256": "8bd87f71df253d8bc2faac6e494356f5a4f34682057fd5980d62ad06617f6cd4"
+    },
+    {
+      "filename": "companies-search.part-0353.txt",
+      "recordCount": 47,
+      "bytes": 127375,
+      "sha256": "21a0b64e73d426e95f1d8d4112bfa0ea82b8aa179ea44bf52dbc3e4d4e73240b"
+    },
+    {
+      "filename": "companies-search.part-0354.txt",
+      "recordCount": 56,
+      "bytes": 131066,
+      "sha256": "a126b4a64abae46c9c781dccb767b9952c1caadb38ba55d45657cc8e9da7617a"
+    },
+    {
+      "filename": "companies-search.part-0355.txt",
+      "recordCount": 54,
+      "bytes": 127751,
+      "sha256": "d42acb88711a62cf20ed943a900d2c87e3763d0226fbfe33adb04c18decd5ae7"
+    },
+    {
+      "filename": "companies-search.part-0356.txt",
+      "recordCount": 48,
+      "bytes": 129982,
+      "sha256": "013681d70146ca3cdf25fcc8ca77d6b7e55a6c1416463e6ad39ea46da2396003"
+    },
+    {
+      "filename": "companies-search.part-0357.txt",
+      "recordCount": 47,
+      "bytes": 129677,
+      "sha256": "4a3fad47e3607f371f103bb761f4c8bc1d69bfe9ef40b0153f90e8e3beae86b0"
+    },
+    {
+      "filename": "companies-search.part-0358.txt",
+      "recordCount": 50,
+      "bytes": 131005,
+      "sha256": "795df6bb294aa2e739e1468fb05a48623e055fbd544615f3b7c0fc8447600fdb"
+    },
+    {
+      "filename": "companies-search.part-0359.txt",
+      "recordCount": 55,
+      "bytes": 129918,
+      "sha256": "718bab5a1ccde09459871ae58e891cefcf0fdca8721fb96aee5df8da618246bb"
+    },
+    {
+      "filename": "companies-search.part-0360.txt",
+      "recordCount": 66,
+      "bytes": 129977,
+      "sha256": "ac54fa2165a326ede528dedbb0ea78e2e18a9a92b5395ebfebb3ffc9463e4317"
+    },
+    {
+      "filename": "companies-search.part-0361.txt",
+      "recordCount": 53,
+      "bytes": 114347,
+      "sha256": "03e3195ea96a3d0b846b61e2860123ddbbbc88eb59cf7bd37902717862ffb371"
+    }
+  ],
+  "workbook": {
+    "filename": "ESA_Companies_2026-10-01.xlsx",
+    "bytes": 11507579,
+    "sha256": "5085c42572844cf2b8394ba3681259daf6e0b17af0b8fae44d30e40953125ce1"
+  },
+  "queryInstructions": "Read this manifest once; resolve filenames under pathBase. Use countryCounts for totals, indexParts for names/countries and record locations, parts for exhaustive filtering. Search is discovery only; never infer complete counts from search hits. Do not combine historical snapshots or legacy exports."
+}

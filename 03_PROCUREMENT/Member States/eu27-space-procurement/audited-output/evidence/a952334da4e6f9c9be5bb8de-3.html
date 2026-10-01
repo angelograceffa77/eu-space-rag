@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="de" xml:lang="de" xmlns:wicket="http://wicket.apache.org">
+<head><script type="text/javascript" src="../../../../wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-3.7.1-ver-318207600000.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-318207600000.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" id="wicket-ajax-debug-enable" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY">
+/*<![CDATA[*/
+Wicket.Log.enabled=true;
+/*]]>*/
+</script>
+<script type="text/javascript" id="wicket-ajax-base-url" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY">
+/*<![CDATA[*/
+Wicket.Ajax.baseUrl="company/project/CXS0YEADYR9ZB365/de/overview";
+/*]]>*/
+</script>
+<script type="text/javascript" src="../../../../wicket/resource/com.cosinex.commons.ui.wicket.components.FeedbackPanel/FeedbackPanel-ver-1790850660000.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../wicket/resource/com.cosinex.commons.ui.wicket.components.MainNavPanel/MainNavPanel-ver-1790850660000.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../assets/js/project_room_header.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../wicket/resource/com.cosinex.ikm.satellite.web.common.project.HeaderInfoPanel/HeaderInfoPanel-ver-1790850660000.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<link rel="stylesheet" type="text/css" href="../../../../wicket/resource/com.cosinex.basic.dialog.CsxModalDialog/CsxModalDialog-ver-1790842382000.css" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY" />
+<script type="text/javascript" src="../../../../wicket/resource/com.cosinex.basic.dialog.CsxModalDialog/CsxModalDialog-ver-1790842382000.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<link rel="stylesheet" type="text/css" href="../../../../wicket/resource/org.apache.wicket.extensions.ajax.markup.html.modal.theme.DefaultTheme/theme-ver-318207600000.css" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Expires" content="Fri, 05 Mar 1999 06:00:00 GMT" />
+<meta http-equiv="Last-Modified" content="Thu, 01 Oct 2026 20:17:03 +0200" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="Cache-Control" content="max-age=0" />
+<meta http-equiv="Cache-Control" content="must-revalidate" />
+<meta http-equiv="Cache-Control" content="proxy-revalidate" />
+<meta http-equiv="Cache-Control" content="post-check=0, pre-check=0, FALSE" />
+<meta name="language" content="de" />
+<meta name="revisit-after" content="1 days" />
+<meta name="robots" content="noindex" />
+<meta name="audience" content="alle" />
+<meta name="date" content="2013-06-11" />
+<meta name="copyright" content="cosinex GmbH, Gesundheitscampus-S&#252;d 31, 44801 Bochum, www.cosinex.de" />
+<meta name="keywords" content="&Ouml;ffentliche Ausschreibungen, Ausschreibung, Vergabe, &ouml;ffentliche Bekanntmachung, Auktion, Auftr&auml;ge, Beschaffung, Vergabemarktplatz, E-Government, Vergabeplattform, Ausschreibungsdienst, elektronische Vergabe, eVergabe, Vergabel&ouml;sung, Vergabeunterlagen" />
+<meta name="description" content="Auf dem Deutschen Vergabeportal (DTVP) k&ouml;nnen Sie als Unternehmen nach Bekanntmachungen zu Ausschreibungen und Auktionen suchen. Als registriertes Unternehmen k&ouml;nnen Sie au&szlig;erdem die Vergabeunterlagen herunterladen, an der Kommunikation mit der Vergabestelle teilnehmen und elektronische Angebote abgeben." />
+<link rel="stylesheet" type="text/css" href="../../../../../styles/style.css" media="all" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY" />
+<link rel="stylesheet" type="text/css" href="../../../../../styles/10_dtvp_custom.css" media="all" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY" />
+<link rel="stylesheet" type="text/css" href="../../../../../styles/common_input_validation.css" media="all" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY" />
+<script type="text/javascript" src="../../../../../assets/js/functions.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" id="ping" src="../../../../../assets/js/ping.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../assets/js/openbox.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../js/calendar.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../js/jQuery/jquery.layout.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../js/jQuery/jquery.plugins.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../js/jQuery/jquery.init.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../js/jQuery/jquery.features.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../js/jQuery/jquery.filter_input.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../js/jQuery/jquery.features.filter.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../../assets/js/cx_formular.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<script type="text/javascript" src="../../../../wicket/resource/com.cosinex.commons.ui.wicket.components.BasePage/BasePage-ver-1790850660000.js" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY"></script>
+<title>CXS0YEADYR9ZB365 | Satellitenprojekt: Startdienstleistung f�r vier 3U-CubeSats in Formation/Satellite project: Launch service for four 3U CubeSats in formation | www.dtvp.de</title><meta name="title" content="CXS0YEADYR9ZB365 | Satellitenprojekt: Startdienstleistung f�r vier 3U-CubeSats in Formation/Satellite project: Launch service for four 3U CubeSats in formation | www.dtvp.de" />
+<link rel="shortcut icon" href="/Satellite/images/custom/dtvp/favicon.ico" type="image/x-icon">
+<script type="text/javascript" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY">
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { 
+Wicket.Ajax.ajax({"u":"./overview;jsessionid=Eq4ViB9M8iLYVRYCXGixfMTG2qyoXFvX3myXpm9Y.psat02?0-1.0-contentComponent-participationInfo-loginLink","c":"loginLink1","e":"click","pd":true});;
+initSystemMessageOnScroll("Systemmeldungen anzeigen", "Systemmeldungen ausblenden");;
+CXBasePage.initWaitClick({loadingText:"Bitte warten..."});;
+Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+;});
+/*]]>*/
+</script>
+<script type="text/javascript" nonce="vvFICwOvHZ1Q5Tk3dhmQ8BXY">
+/*<![CDATA[*/
+Wicket.Event.add(window, "load", function(event) { 
+setTimeout(function() {Wicket.Ajax.ajax({"u":"./overview;jsessionid=Eq4ViB9M8iLYVRYCXGixfMTG2qyoXFvX3myXpm9Y.psat02?0-1.0-","dep":[function(attrs){return {'windowName': window.name}}]});}, 30);;
+;});
+/*]]>*/
+</script>
+</head>
+
+<body>
+	<!--  START EINBAU LOGIC FUER TESTSYSTEMBOX -->
+	<wicket:panel>
+		<div wicket:id="testHeader">
+			
+		</div>
+		
+		
+	
+	</wicket:panel>
+
+	<!--  ENDE EINBAU LOGIC FUER TESTSYSTEMBOX -->
+	<div id="mainBox" class="fluid">
+		<!--  HEADER  -->
+		<div id="header" class="header" wicket:id="headerPanel"><wicket:panel xmlns:wicket="http://wicket.apache.org">
+  <div id="topHeader">
+    <wicket:child><wicket:extend>
+  <div class="topHeaderLeft">
+    <a href="https://www.dtvp.de"
+       title="Zur Startseite des Deutschen Vergabeportals"></a>
+  </div>
+
+  <div class="topHeaderCenter">
+    <a title="Zur Startseite Bundesanzeiger Verlag" target="_blank"
+       href="http://www.bundesanzeiger-verlag.de"></a>
+
+  </div>
+  <div class="topHeaderRight">
+    <a title="Zur Startseite der cosinex GmbH" target="_blank"
+       href="http://www.cosinex.de/"></a>
+  </div>
+</wicket:extend></wicket:child>
+  </div>
+</wicket:panel></div>
+
+		<!--  MAINNAV  -->
+		<div id="mainNav">
+			<!-- mainNav Start -->
+			<div class="sticky-logo"></div>
+			<div wicket:id="mainNavPanel"><wicket:panel>
+		<div wicket:id="mainNavDisplay">		
+			<ul>
+        <li id="backToCenter"><a wicket:id="centerLink" wicket:message="title:Navigation.MainNav.backToCenter" href="https://www.dtvp.de/Center/" title="Zur Vergabeplattform">
+          <wicket:message key="Navigation.MainNav.backToCenter">Zur Vergabeplattform</wicket:message>
+        </a></li>
+				<li><a href="javascript:void(0);" wicket:message="title:Navigation.MainNav.print" data-print-page="" title="Seite drucken"><wicket:message key="Navigation.MainNav.print">Seite drucken</wicket:message></a></li>
+			</ul>
+		</div>
+
+		<div class="contentFileSystemMessage" id="contentFileSystemMessage">
+			<a tabindex="0"
+			   title=""
+			   id="contentFileSystemMessageButton"
+			   aria-haspopup="true"
+			   aria-controls="expand_systemmessage"
+			   aria-expanded="false"
+			   href="javascript: void(0);"
+			   class="contentFileSystemMessage__button">
+					<span class="contentFileSystemMessage__statusbox">
+						<span class="contentFileSystemMessage__statusbox-noticebox"
+							  data-system-status="error">
+						</span>
+
+						<span class="contentFileSystemMessage__statusbox-noticebox"
+							  data-system-status="warning">
+						</span>
+
+						<span class="contentFileSystemMessage__statusbox-noticebox"
+							  data-system-status="info" >
+						</span>
+
+						<span class="contentFileSystemMessage__statusbox-noticebox"
+							  data-system-status="success">
+						</span>
+					</span>
+				<span class="linkClosed" aria-hidden="true"
+					  id="contentFileSystemMessageToggleIcon"></span>
+			</a>
+			<div class="contentFileSystemMessage__content" id="expand_systemmessage"></div>
+		</div>
+		<!-- der Initialisierungscode ist nun in MainNavPanel#renderHead zu finden -->
+
+		
+		
+			
+		
+		
+		
+		
+		
+		
+	</wicket:panel></div>
+			<!-- mainNav End -->
+		</div>
+
+		<!--  SUBNAV  -->
+		<div id="subNav">
+			<!-- subNav Start -->
+			<wicket:panel>
+		<ul>
+			<li wicket:id="links"><wicket:panel>
+		<a wicket:id="link" id="subActive" href="./overview;jsessionid=Eq4ViB9M8iLYVRYCXGixfMTG2qyoXFvX3myXpm9Y.psat02">�bersicht</a>
+		
+		
+		
+		
+		
+
+	</wicket:panel></li><li wicket:id="links"><wicket:panel>
+		<a wicket:id="link" href="../../../../CXS0YEADYR9ZB365/de/processdata;jsessionid=Eq4ViB9M8iLYVRYCXGixfMTG2qyoXFvX3myXpm9Y.psat02">Verfahrensangaben</a>
+		
+		
+		
+		
+		
+
+	</wicket:panel></li><li wicket:id="links"><wicket:panel>
+		<a wicket:id="link" href="./documents;jsessionid=Eq4ViB9M8iLYVRYCXGixfMTG2qyoXFvX3myXpm9Y.psat02">Vergabeunterlagen</a>
+		
+		
+		
+		
+		
+
+	</wicket:panel></li><li wicket:id="links"><wicket:panel>
+		<a wicket:id="link" href="./communication/anonym;jsessionid=Eq4ViB9M8iLYVRYCXGixfMTG2qyoXFvX3myXpm9Y.psat02">Kommunikation</a>
+		
+		
+		
+		
+		
+
+	</wicket:panel></li><li wicket:id="links" class="disabled"><wicket:panel>
+		Angebote
+		
+		
+		
+		
+		
+
+	</wicket:panel></li>
+		</ul>
+		<div id="participateToolTippText" class="tooltip"
+			data-extra-tool-tip="">
+			<table>
+				<thead>
+					<tr>
+						<th><wicket:message key="common.company.menu.notice">Hinweis</wicket:message></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><wicket:message key="common.company.menu.participationHintForDisabledModules">Um Zugriff auf dieses Modul zu erhalten m�ssen Sie am Vergabeverfahren teilnehmen.</wicket:message>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</wicket:panel>
+			<!-- subNav End -->
+		</div>
+
+		<!--  CONTENT  -->
+		<div id="content">
+
+			<span wicket:id="headerInfoPanel"><wicket:panel>
+  <div id="projectRoomTitleBox">
+    <a href="#projectRoomContent" rel="toggle" class="toggleLinkShow"></a>
+    <div id="projectRoomTitleText">
+      <span wicket:id="interfaceIcon"></span>
+      <span wicket:id="projectTitle" title="Satellitenprojekt: Startdienstleistung f�r vier 3U-CubeSats in Formation/Satellite project: Launch service for four 3U CubeSats in formation">Satellitenprojekt: Startdienstleistung f�r vier 3U-CubeSats in Formation/Satellite...</span>
+    </div>
+    <div class="projectRoomTitleData" id="projectRoomContent">
+      <table>
+        <tbody>
+        <tr>
+          <td class="tdLabel">
+            <abbr wicket:message="title:common.projectRoomHeader.contractingRule" title="Vergabeordnung">
+              <wicket:message key="common.projectRoomHeader.contractingRule.short">VO:</wicket:message>
+            </abbr>
+          </td>
+          <td>
+            VgV
+          </td>
+          <td class="tdSpace"></td>
+          <td class="tdLabel">
+            <span><wicket:message key="common.projectRoomHeader.type">Vergabeart:</wicket:message></span>
+          </td>
+          <td>
+            <span wicket:id="flags" class="margin-right-4 flagIcon flagEuro">&nbsp;</span>
+            <span wicket:id="kindContractValue">Offenes Verfahren</span>
+          </td>
+          <td class="tdSpace"></td>
+          <td class="tdLabel">
+            <span><wicket:message key="common.projectRoomHeader.state">Status:</wicket:message></span>
+          </td>
+          <td>
+            <span wicket:id="statusValue">Ver�ffentlicht</span>
+          </td>
+        </tr>
+        <div wicket:id="secondRowTarget"><wicket:panel xmlns:wicket="http://wicket.apache.org">
+</wicket:panel></div>
+        <div wicket:id="connectedProjects">
+  </div>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <span wicket:id="infoText"><wicket:panel xmlns:wicket="http://wicket.apache.org">
+</wicket:panel></span>
+
+  
+
+
+  
+
+  
+
+  
+
+  
+</wicket:panel></span>
+			<span wicket:id="formDownloadPanel"><wicket:panel>
+		
+	</wicket:panel></span>
+			<span wicket:id="feedbackPanel" id="feedbackPanel"><wicket:panel>
+  
+</wicket:panel></span>
+			<div wicket:id="contentComponent"><wicket:panel>
+		
+		<div wicket:id="procedureHint"><wicket:panel>
+		
+	</wicket:panel></div>
+	
+		<h2>
+			<wicket:message key="Projectroom.overview.headline">�bersicht</wicket:message>
+		</h2>
+		<div wicket:id="incompleteCompanyDataHint"><wicket:panel>
+		
+	</wicket:panel></div>
+		<!--  TEILNEHMEN NUTZER ANGEMELDET -->
+		<div wicket:id="participationInfo"><wicket:panel>
+        <div class="participateContainer">
+            <div class="ribbon-wrapper">
+                <div class="ribbon"><wicket:message key="Projectroom.overview.participation.ribbon">teilnehmen</wicket:message></div>
+            </div>
+            <h2><wicket:message key="Projectroom.overview.participation.headline">Teilnahme am Verfahren</wicket:message></h2>
+
+            <p class="showInfoIcon margin-right-35">
+                <span class="screenReaderText">Info</span>
+                <wicket:message key="Projectroom.overview.participation.hint.text"><b>Ohne Best�tigung</b> der Teilnahme an diesem Verfahren erfolgt <b>keine E-Mail Benachrichtigung</b> �ber neue Nachrichten der Vergabestelle (z.B. Aktualisierung der Vergabeunterlagen).</wicket:message>
+            </p>
+            <p><wicket:message key="Projectroom.overview.participation.text.intro">Best�tigen Sie die Teilnahme am Verfahren um folgende Vorteile nutzen zu k�nnen:</wicket:message></p>
+            <ol class="defaultList margin-top--10 margin-left-18">
+                <li>
+                        <span class="text">
+                            <wicket:message key="Projectroom.overview.participation.text.li1">Sie werden �ber neue Nachrichten der Vergabestelle automatisch per E-Mail informiert (z.B. �nderungen an den Vergabeunterlagen).</wicket:message>
+                        </span>
+                </li>
+                <li>
+                        <span class="text">
+                            <wicket:message key="Projectroom.overview.participation.text.li2">Sie k�nnen direkt �ber den Kommunikationsbereich der Vergabestelle eigene Nachrichten zukommen lassen.</wicket:message>
+                        </span>
+                </li>
+                <li>
+                        <span class="text">
+                            <wicket:message key="Projectroom.overview.participation.text.li3">Sie k�nnen elektr. Angebote / Teilnahmeantr�ge abgeben, sofern diese M�glichkeit von der Vergabestelle zugelassen wurde.</wicket:message>
+                        </span>
+                </li>
+            </ol>
+            <div class="buttonContainer no-border">
+                <a wicket:id="participateLink" class="participateLink disabled" title="Jetzt teilnehmen">Jetzt teilnehmen</a>
+                <a wicket:id="loginLink" id="loginLink1" href="#" class="participateLink login" title="Anmelden">Anmelden</a>
+            </div>
+        </div>
+    </wicket:panel></div>
+
+		<div wicket:id="unreadedMessageHint"><wicket:panel>
+		
+	</wicket:panel></div>
+		<div wicket:id="documentsDownload"><wicket:panel>
+		<div wicket:id="target">
+			<table class="margin-bottom-20">
+				<thead>
+					<tr>
+						<th scope="col"><wicket:message key="ProcessData.formDownload.table.header.filename">Dateiname</wicket:message></th>
+						<th class="table-head-column-width-100" scope="col"><wicket:message key="ProcessData.formDownload.table.header.type">Typ</wicket:message></th>
+						<th class="table-head-column-width-120" scope="col"><wicket:message key="ProcessData.formDownload.table.header.fileSize">Gr��e</wicket:message></th>
+						<th class="table-head-column-width-150" scope="col"><wicket:message key="ProcessData.formDownload.table.header.addDate">Hinzugef�gt am</wicket:message></th>
+						<th class="table-head-action-column-default" scope="col"><wicket:message key="ProcessData.formDownload.table.header.action">Aktion</wicket:message></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr wicket:id="rows">
+						<td class="truncate-data-cell-nowrap"><span wicket:id="datarow1" data-title-with-breaks="" class="truncate-span-ie8-ie9" title="Hinweis auf Bekanntmachungsorte.pdf">Hinweis auf Bekanntmachungsorte.pdf</span></td>
+						<td class="text-center"><span wicket:id="datarow2" class="fileTypeContainer icon-correction cursor-default pdfIcon"></span></td>
+						<td wicket:id="datarow3" class="text-center">38,6 KB</td>
+						<td wicket:id="datarow4" class="text-center">18.09.2026 12:13 Uhr</td>
+						<td class="text-center"> <a wicket:id="downloadLink" href="./announcements/13002397/Hinweis+auf+Bekanntmachungsorte.pdf;jsessionid=Eq4ViB9M8iLYVRYCXGixfMTG2qyoXFvX3myXpm9Y.psat02"><span class="actionDownloadIcon" wicket:message="title:ProcessData.formDownload.table.header.action.download" title="Das Dokument herunterladen">&#160;</span></a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		
+
+		
+	</wicket:panel></div>
+		<div wicket:id="organisationPanel" class="reset-sub-headline-container"><wicket:panel>
+
+		<div wicket:id="groupFragment">
+			<div class="sub-headline-container">
+				<h4 class="sub-headline">
+					<span wicket:id="legend">Auftraggeber / Ausschreibende Stelle</span><span class="mandatoryField" wicket:id="mandatoryField"><wicket:panel>
+		
+	</wicket:panel></span>
+				</h4>
+			</div>
+			<div wicket:id="children" class="control-group">Technische Universit�t Berlin</div>
+			
+		</div>
+
+		
+
+		
+		
+		
+
+	
+	</wicket:panel></div>
+		<div wicket:id="timelimitsPanel"><wicket:panel>
+
+		<div wicket:id="groupFragment">
+			<div class="sub-headline-container">
+				<h4 class="sub-headline">
+					<span wicket:id="legend">Abgabefrist</span><span class="mandatoryField" wicket:id="mandatoryField"><wicket:panel>
+		
+	</wicket:panel></span>
+				</h4>
+			</div>
+			<div wicket:id="children" class="control-group">20.10.2026 10:00 Ortszeit</div>
+			
+		</div>
+
+		
+
+		
+		
+		
+
+	
+	</wicket:panel></div>
+		<div wicket:id="timeDisclosurePanel"><wicket:panel>
+
+		<div wicket:id="groupFragment">
+			<div class="sub-headline-container">
+				<h4 class="sub-headline">
+					<span wicket:id="legend">Frist zur Einreichung von Aufkl�rungsfragen</span><span class="mandatoryField" wicket:id="mandatoryField"><wicket:panel>
+		
+	</wicket:panel></span>
+				</h4>
+			</div>
+			<div wicket:id="children" class="control-group">09.10.2026 23:59 Ortszeit</div>
+			
+		</div>
+
+		
+
+		
+		
+		
+
+	
+	</wicket:panel></div>
+		<div wicket:id="tenderingPanel"><wicket:panel>
+
+		<div wicket:id="groupFragment">
+			<div class="sub-headline-container">
+				<h4 class="sub-headline">
+					<span wicket:id="legend">Folgende M�glichkeiten der Abgabe von Angeboten sind m�glich</span><span class="mandatoryField" wicket:id="mandatoryField"><wicket:panel>
+		
+	</wicket:panel></span>
+				</h4>
+			</div>
+			<div wicket:id="children" class="control-group">
+			<div class="controls-float-none">
+				<label class="checkbox inline-block-element read-only"> <input
+					type="checkbox" disabled="true" /> <span wicket:id="labelSpan" class="label-inside-label">Postalischer Versand</span>
+				</label>
+			</div>
+		</div><div wicket:id="children" class="control-group">
+			<div class="controls-float-none">
+				<label class="checkbox inline-block-element read-only"> <span
+					class="checked-element"></span> <span wicket:id="labelSpan" class="label-inside-label">Elektronische Abgabe (Textform)</span>
+				</label>
+			</div>
+		</div><div wicket:id="children" class="control-group">
+			<div class="controls-float-none">
+				<label class="checkbox inline-block-element read-only"> <input
+					type="checkbox" disabled="true" /> <span wicket:id="labelSpan" class="label-inside-label">Elektronische Abgabe (Fortgeschrittene elektr. Signatur)</span>
+				</label>
+			</div>
+		</div><div wicket:id="children" class="control-group">
+			<div class="controls-float-none">
+				<label class="checkbox inline-block-element read-only"> <input
+					type="checkbox" disabled="true" /> <span wicket:id="labelSpan" class="label-inside-label">Elektronische Abgabe (Qualifizierte elektr. Signatur)</span>
+				</label>
+			</div>
+		</div>
+			
+		</div>
+
+		
+
+		
+		
+		
+
+	
+	</wicket:panel></div>
+		<div wicket:id="publicProjectPanel"><wicket:panel>
+
+		<div wicket:id="groupFragment">
+			<div class="sub-headline-container">
+				<h4 class="sub-headline">
+					<span wicket:id="legend">Ausschreibungs-ID</span><span class="mandatoryField" wicket:id="mandatoryField"><wicket:panel>
+		
+	</wicket:panel></span>
+				</h4>
+			</div>
+			<div wicket:id="children" class="control-group">CXS0YEADYR9ZB365</div>
+			
+		</div>
+
+		
+
+		
+		
+		
+
+	
+	</wicket:panel></div>
+		<div wicket:id="cpvCodePanel"><wicket:panel>
+
+		<div wicket:id="groupFragment">
+			<div class="sub-headline-container">
+				<h4 class="sub-headline">
+					<span wicket:id="legend">Auftragsgegenstand</span><span class="mandatoryField" wicket:id="mandatoryField"><wicket:panel>
+		
+	</wicket:panel></span>
+				</h4>
+			</div>
+			<div wicket:id="children" class="control-group"><p class='margin-bottom-10'><b>60500000-3</b> Raumtransportdienste</p></div><div wicket:id="children" class="control-group"><p class='margin-bottom-10'><b>60510000-6</b> Satellitenstartdienste</p></div>
+			
+		</div>
+
+		
+
+		
+		
+		
+
+	
+	</wicket:panel></div>
+
+		
+
+		
+
+		
+
+		
+		
+		
+	</wicket:panel></div>
+		</div>
+
+		<!--  FOOTER  -->
+		<div id="footer" wicket:id="footerPanel"><wicket:panel>
+		
+		<div wicket:id="footerContent">
+			<p>
+				<span class="toolLink-mandatorNumberHint mandatorNumber" wicket:id="mandatorNumber"><wicket:panel>
+		
+	</wicket:panel></span>
+				DTVP 11.5.1 <span wicket:id="vendor">
+			| &copy; 2026 
+				<a href="http://www.dtvp.de" title="Startseite Deutsches Vergabeportal GmbH" target="_blank">Deutsches Vergabeportal GmbH</a>
+		</span> |
+				<wicket:message key="common.systemTime">Systemzeit</wicket:message>: 01.10.2026 20:17 Uhr |  
+				<a wicket:id="imprintLink" href="https://dtvp.de/impressum" target="_blank"><wicket:message key="common.footer.impression">Impressum</wicket:message></a>
+				<span wicket:id="dsgvo"><wicket:panel>
+		
+	</wicket:panel></span>
+				<span wicket:id="accessibility"><wicket:panel>
+		
+	</wicket:panel></span>
+			</p>
+			<div class="tooltip" id="mandatorNumberHint">
+			<table class="margin-bottom-0">
+				<thead>
+					<tr>
+						<th>Mandantennummer</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Die systemweite interne Identifikationsnummer dieses Mandanten.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<!-- TOP BUTTON  -->
+			<a title="Zum Seitenanfang" class="to-top-button display-block" href="#">
+			    <span class="arrow-up"></span>
+			</a>
+		</div>
+		<span id="LOGIN" wicket:id="login"><wicket:panel>
+		
+	</wicket:panel></span>
+		
+		
+
+		
+		
+	</wicket:panel></div>
+
+		<!--  DEBUG  -->
+		<div id="debug" wicket:id="debugPanel" class="footer"><wicket:panel>
+		
+	</wicket:panel></div>
+
+		<div wicket:id="templateDialog" id="templateDialog2" class="dialog-theme-default"><wicket:panel xmlns:wicket="http://wicket.apache.org">
+	
+</wicket:panel></div>
+
+		<div id="WaitingBox:bgHidden" class="bgHidden waiting-overlay-offscreen"></div>
+		
+		<div id="WaitingBox:openBox" class="waitingDialogBox">
+			<div id="WaitingBox:openBoxcontent" class="containerLoadingAnim">
+				<div class="loading-anim-box">
+					<span class="spinnerContainer"> <span class="spinner"></span>
+					</span> <span class="work-in-progress-text" id="waitingDialogText"><wicket:message key="common.loadingText">Bitte warten...</wicket:message></span>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+</body>
+</html>

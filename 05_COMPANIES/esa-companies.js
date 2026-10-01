@@ -11,9 +11,9 @@ const PAGE_SIZE = 10;
 // Salva un checkpoint ogni 500 aziende
 const CHECKPOINT_EVERY = 500;
 
-// NUOVA CARTELLA
-const OUTPUT_FOLDER =
-  "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\05_COMPANIES";
+// Defaults to this script's folder; override for isolated validation runs.
+const OUTPUT_FOLDER = process.env.ESA_OUTPUT_DIR || __dirname;
+const { exportSnapshot, readJsonlFiles } = require("./company-export");
 
 const CHECKPOINT_FILE =
   path.join(
@@ -89,12 +89,13 @@ function saveCheckpoint(
   };
 
   fs.writeFileSync(
-    CHECKPOINT_FILE,
+    CHECKPOINT_FILE + ".tmp",
     JSON.stringify(checkpoint),
     "utf8"
   );
 
   console.log("");
+  fs.renameSync(CHECKPOINT_FILE + ".tmp", CHECKPOINT_FILE);
   console.log(
     `CHECKPOINT SAVED: ${companies.length} / ${total}`
   );
@@ -114,14 +115,20 @@ function loadCheckpoint() {
         "utf8"
       );
 
-    return JSON.parse(raw);
+    const checkpoint = JSON.parse(raw);
+    if (!Array.isArray(checkpoint.companies) || !Number.isSafeInteger(checkpoint.total) ||
+        !Number.isSafeInteger(checkpoint.nextStart) || checkpoint.nextStart < 0 || checkpoint.total < 0 ||
+        checkpoint.companies.length !== Math.min(checkpoint.nextStart, checkpoint.total)) {
+      throw new Error("Invalid checkpoint");
+    }
+    return checkpoint;
 
   } catch (error) {
     console.log(
       "Checkpoint exists but could not be read."
     );
 
-    return null;
+    throw error;
   }
 }
 
@@ -173,6 +180,10 @@ async function downloadCompanies() {
     const data =
       await getPage(start);
 
+    if (!Number.isSafeInteger(data.total) || data.total < 0 || !Array.isArray(data.items)) {
+      throw new Error("Invalid ESA page response; nothing published");
+    }
+    if (total !== null && total !== data.total) throw new Error("ESA total changed during download; restart with a fresh checkpoint");
     if (total === null) {
       total = data.total;
 
@@ -188,14 +199,8 @@ async function downloadCompanies() {
       `Found: ${items.length}`
     );
 
-    if (items.length === 0) {
-      console.log(
-        "No records returned. Waiting and retrying..."
-      );
-
-      await sleep(10000);
-
-      continue;
+    if (items.length !== Math.min(PAGE_SIZE, total - start)) {
+      throw new Error("Incomplete ESA page; checkpoint preserved, nothing published");
     }
 
     allCompanies.push(...items);
@@ -222,6 +227,11 @@ async function downloadCompanies() {
     await sleep(500);
   }
 
+  if (allCompanies.length !== total) throw new Error("Downloaded count does not match ESA total");
+  const profileIds = allCompanies.map(c => c.companyProfileId);
+  if (profileIds.some(id => id == null) || new Set(profileIds).size !== profileIds.length) {
+    throw new Error("Missing or duplicate profile IDs; restart download with a fresh checkpoint");
+  }
   // Ultimo checkpoint prima dell'Excel
   saveCheckpoint(
     allCompanies,
@@ -726,74 +736,6 @@ function createSheet(
 
 
 // ======================================================
-// GITHUB-READABLE JSONL
-// ======================================================
-
-// GitHub browser uploads allow 25 MiB. Count UTF-8 bytes, not characters.
-function createGithubJsonlWriter(filename) {
-  const limit = 20_000_000;
-  const directory = path.dirname(filename);
-  const stem = path.basename(filename, ".jsonl");
-  const temporary = fs.mkdtempSync(path.join(directory, ".jsonl-export-"));
-  const files = [];
-  let fd = null, bytes = 0, closed = false;
-  function closePart() { if (fd !== null) { fs.closeSync(fd); fd = null; } }
-  return {
-    write(line) {
-      const buffer = Buffer.from(line, "utf8");
-      if (buffer.length > limit) throw new Error("One JSONL record exceeds 20 MB; export stopped without truncating it.");
-      if (fd === null || bytes + buffer.length > limit) {
-        closePart();
-        const name = stem + ".part-" + String(files.length + 1).padStart(4, "0") + ".jsonl";
-        files.push(name);
-        fd = fs.openSync(path.join(temporary, name), "wx");
-        bytes = 0;
-      }
-      let offset = 0;
-      while (offset < buffer.length) {
-        const written = fs.writeSync(fd, buffer, offset, buffer.length - offset);
-        if (!written) throw new Error("Could not finish writing JSONL record.");
-        offset += written;
-      }
-      bytes += buffer.length;
-    },
-    finish() {
-      closePart();
-      // Publish only after all records were written successfully.
-      for (const name of files) fs.renameSync(path.join(temporary, name), path.join(directory, name));
-      // Remove surplus parts from an earlier run of this same dated dataset.
-      for (const name of fs.readdirSync(directory)) {
-        if (name.startsWith(stem + ".part-") && /^\d+\.jsonl$/.test(name.slice((stem + ".part-").length)) && !files.includes(name)) {
-          fs.unlinkSync(path.join(directory, name));
-        }
-      }
-      fs.rmdirSync(temporary); closed = true;
-      const result = files.map(name => path.join(directory, name));
-      console.log("GitHub JSONL parts (each <= 20 MB):", result);
-      return result;
-    },
-    abort() {
-      closePart();
-      if (!closed) {
-        for (const name of fs.readdirSync(temporary)) fs.unlinkSync(path.join(temporary, name));
-        fs.rmdirSync(temporary); closed = true;
-      }
-    }
-  };
-}
-
-function createJsonl(companies, excelPath) {
-  const writer = createGithubJsonlWriter(excelPath.replace(/\.xlsx$/i, ".jsonl"));
-  try {
-    for (const company of companies) {
-      const record = {...company, description: cleanHtml(company.description), entityDescription: cleanHtml(company.entityDescription), ragText: createRagText(company)};
-      writer.write(JSON.stringify(record) + "\n");
-    }
-    return writer.finish();
-  } catch (error) { writer.abort(); throw error; }
-}
-
-// ======================================================
 // MAIN
 // ======================================================
 
@@ -815,8 +757,20 @@ async function main() {
     }
 
 
-    const allCompanies =
-      await downloadCompanies();
+    const args = process.argv.slice(2);
+    const offline = args[0] === "--from-jsonl";
+    if (args.length && (!offline || args.length < 2)) {
+      throw new Error("Usage: node esa-companies.js [--from-jsonl file1.jsonl file2.jsonl ...]");
+    }
+    if (offline && !process.env.ESA_SOURCE_DATE) throw new Error("Offline import requires ESA_SOURCE_DATE=YYYY-MM-DD");
+    const sourceFiles = offline ? args.slice(1) : [];
+    const allCompanies = offline ? readJsonlFiles(sourceFiles) : await downloadCompanies();
+    // Offline migration preserves existing JSONL records exactly (no repeated HTML cleaning).
+    const records = offline ? allCompanies : allCompanies.map(company => ({
+      ...company, description: cleanHtml(company.description),
+      entityDescription: cleanHtml(company.entityDescription), ragText: createRagText(company)
+    }));
+
 
 
     const smeCompanies =
@@ -869,20 +823,11 @@ async function main() {
 
 
     const today =
-      new Date()
-        .toISOString()
-        .slice(0, 10);
+      process.env.ESA_SOURCE_DATE || new Date().toISOString().slice(0, 10);
 
 
     const filename =
       `ESA_Companies_${today}.xlsx`;
-
-
-    const fullPath =
-      path.join(
-        OUTPUT_FOLDER,
-        filename
-      );
 
 
     console.log("");
@@ -891,12 +836,13 @@ async function main() {
     );
 
 
-    await workbook.xlsx.writeFile(
-      fullPath
-    );
-
-    createJsonl(allCompanies, fullPath);
-
+    const manifest = await exportSnapshot(records, {
+      outputDir: OUTPUT_FOLDER, sourceDate: today,
+      sourceFiles: sourceFiles.map(filename => ({ filename: path.basename(filename),
+        sha256: require("node:crypto").createHash("sha256").update(fs.readFileSync(filename)).digest("hex") })),
+      writeWorkbook: filename => workbook.xlsx.writeFile(filename)
+    });
+    console.log(`Published ${manifest.parts.length} JSONL parts via esa-companies-manifest.json`);
 
     console.log("");
     console.log("DONE!");
@@ -920,7 +866,7 @@ async function main() {
     );
 
     console.log(
-      fullPath
+      path.join(OUTPUT_FOLDER, manifest.generation, filename)
     );
 
 
@@ -928,7 +874,7 @@ async function main() {
     // se Excel è stato creato correttamente
 
     if (
-      fs.existsSync(
+      !offline && fs.existsSync(
         CHECKPOINT_FILE
       )
     ) {
@@ -945,7 +891,7 @@ async function main() {
     }
 
   } catch (error) {
-
+    process.exitCode = 1;
     console.error("");
 
     console.error(
@@ -969,4 +915,5 @@ async function main() {
 }
 
 
-main();
+if (require.main === module) main();
+module.exports = { cleanHtml, createRagText, createSheet, downloadCompanies };
