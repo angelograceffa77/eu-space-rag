@@ -1,0 +1,17 @@
+{
+  "name": "procurement-data-scrapers",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node validate-scrapers.cjs && npm --prefix EU27/National-Portals test"
+  },
+  "dependencies": {
+    "axios": "1.19.0",
+    "cheerio": "1.2.0",
+    "exceljs": "4.4.0"
+  }
+}

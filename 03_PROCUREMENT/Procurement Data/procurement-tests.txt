@@ -1,0 +1,66 @@
+
+> procurement-data-scrapers@1.0.0 test
+> node validate-scrapers.cjs && npm --prefix EU27/National-Portals test
+
+JSONL created:
+C:\Users\angel\OneDrive\Desktop\knowledge\eu-space-rag\03_PROCUREMENT\Procurement Data\validation-output\scrape-esa-publication-tenders.jsonl
+PASS scrape-esa-publication-tenders.js
+JSONL created:
+C:\Users\angel\OneDrive\Desktop\knowledge\eu-space-rag\03_PROCUREMENT\Procurement Data\validation-output\scrape-esa-tender-actions.jsonl
+PASS scrape-esa-tender-actions.js
+JSONL created:
+C:\Users\angel\OneDrive\Desktop\knowledge\eu-space-rag\03_PROCUREMENT\Procurement Data\validation-output\scrape-dg-defis-funding-tenders.jsonl
+PASS scrape-dg-defis-funding-tenders.js
+JSONL created:
+C:\Users\angel\OneDrive\Desktop\knowledge\eu-space-rag\03_PROCUREMENT\Procurement Data\validation-output\scrape-dg-defis-ted-procurements.jsonl
+PASS scrape-dg-defis-ted-procurements.js
+JSONL created:
+C:\Users\angel\OneDrive\Desktop\knowledge\eu-space-rag\03_PROCUREMENT\Procurement Data\validation-output\scrape-euspa-closed-procurements.jsonl
+PASS scrape-euspa-closed-procurements.js
+JSONL created:
+C:\Users\angel\OneDrive\Desktop\knowledge\eu-space-rag\03_PROCUREMENT\Procurement Data\validation-output\scrape-euspa-current-planned-procurements.jsonl
+PASS scrape-euspa-current-planned-procurements.js
+GitHub JSONL parts (each <= 20 MB): [
+  'C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\03_PROCUREMENT\\Procurement Data\\validation-output\\scrape-eu27-ted-space-procurements.part-0001.jsonl'
+]
+PASS scrape-eu27-ted-space-procurements.js
+All seven offline scraper validations passed. These are not live collection tests.
+
+> eu27-national-space-scrapers@1.0.0 test
+> node --test test/*.test.cjs
+
+✔ partial ZIP recovery emits complete XML members and omits a truncated member (31.2656ms)
+✔ German eForms buyer references resolve the buyer rather than the review body (2.1403ms)
+✔ Spanish archive prefilter preserves relevant records and rejects truncated feeds (12.2128ms)
+✔ EPPS search rows preserve lifecycle status and genuine notice links (4.2224ms)
+✔ Dutch historical notices preserve lot scope and lifecycle (0.9662ms)
+✔ INAF search forms are not notices and encoded detail URLs retain their procurement stage (1.9995ms)
+✔ orbital welding and inflected agency names do not create space relevance (0.1447ms)
+✔ Italian and Spanish closed statuses override a future deadline (0.25ms)
+✔ German lots keep separate descriptions and submission deadlines (0.5897ms)
+✔ French space transport and DLR name variants are distinguished (0.172ms)
+✔ audited live false positives are excluded from confirmed space (0.2919ms)
+✔ all 27 EU countries have a portal and space-body source (0.17ms)
+✔ space and defence need separate evidence; ordinary defence is not automatically space (0.1424ms)
+✔ real lexical false positives stay out of confirmed space results (0.1622ms)
+✔ a space-agency buyer alone does not make office procurement space technology (0.629ms)
+✔ local European deadlines are converted without using host timezone (12.5685ms)
+✔ only dated verified tenders are open; award, cancellation and planning override future dates (0.654ms)
+✔ a later award supersedes a tender only within the same source and procedure (0.1115ms)
+✔ namespace-independent Atom parses deadline and pagination (1.3019ms)
+✔ EU SST prior information is not a bidding opportunity (2.0115ms)
+✔ generic pages cannot become verified open tenders just by containing a deadline (1.3616ms)
+✔ EPPS extracts submission deadline rather than clarification deadline (1.9067ms)
+✔ HTML error pages cannot silently pass as empty feeds (0.1544ms)
+✔ Polish result notices keep procedure ID for lifecycle consolidation (0.2066ms)
+✔ BZP follows documented SearchAfter cursor and never invents page numbers (6.1205ms)
+✔ Excel and UTF8 JSONL share all normalized fields (53.5799ms)
+✔ CLI rejects unsupported options and invalid history range (0.5168ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 926.6167

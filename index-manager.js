@@ -25,6 +25,9 @@ const SOURCE_FOLDERS = [
 
 const IGNORE_DIRS = new Set([
   "node_modules",
+  "validation-output",
+  "runtime",
+  "_V5_CACHE",
   ".git",
   ".vscode",
   "dist",
