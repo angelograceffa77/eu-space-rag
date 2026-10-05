@@ -7,9 +7,9 @@ function parseResults(html,url){const $=cheerio.load(html),rows=[];
 async function epps(ctx){
  const browser=await chromium.launch(process.env.SCRAPER_BROWSER_PATH?{headless:true,executablePath:process.env.SCRAPER_BROWSER_PATH}:{headless:true,channel:'msedge'}),context=await browser.newContext(),page=await context.newPage(),seen=new Set();
  const origin=new URL(ctx.source.url).origin;
- try{for(const term of ['satellite','GNSS','Copernicus','Galileo','earth observation','remote sensing','spacecraft','ground station','CubeSat']){
+ try{for(const term of ['satellite','GNSS','Copernicus','Galileo','earth observation','remote sensing','spacecraft','ground station','CubeSat',...(ctx.source.country==='LT'?['palydov','kosmos','nuotolinis']:[])]){
   if(!ctx.canFetch())break;ctx.recordRequest();await page.goto(origin+'/epps/prepareAdvancedSearch.do?type=cftFTS',{waitUntil:'networkidle',timeout:ctx.options.timeout});
-  await page.locator('input[name="title"]').fill(term);await page.locator('input[type="submit"][value="Search"]').click();await page.waitForLoadState('networkidle');
+  await page.locator('input[name="title"]').fill(term);if(await page.locator('input[name="captcha"]').isVisible())throw Error('Public advanced search requires CAPTCHA');await page.locator('input[type="submit"]').click();await page.waitForLoadState('networkidle');
   let previous='';while(ctx.canFetch()){
    ctx.recordRequest();const html=await page.content(),raw=ctx.saveRendered(page.url()+'#title='+encodeURIComponent(term)+'&page='+previous,html),rows=parseResults(html,page.url());
    if(!rows.length){const body=await page.locator('body').innerText();if(!/0 results|no results|no records|no items/i.test(body))ctx.gap('No recognized result rows for '+term);break;}
@@ -21,7 +21,7 @@ async function epps(ctx){
   }
  }
  if(!ctx.canFetch())ctx.gap('EPPS request budget reached');
- ctx.gap('Public title keyword searches only; descriptions may contain additional space contracts. Irish current platform history begins May 2023; 2020–early 2023 needs the legacy archive.');
+ ctx.gap('Public title keyword searches only; descriptions may contain additional space contracts. Platform migrations can leave older notices in a separate legacy archive.');
  }finally{await context.close();await browser.close();}
 }
 module.exports={epps,parseResults};

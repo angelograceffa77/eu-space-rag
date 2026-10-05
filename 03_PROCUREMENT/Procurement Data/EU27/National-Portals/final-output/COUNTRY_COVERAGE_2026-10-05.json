@@ -1,0 +1,592 @@
+[
+  {
+    "code": "AT",
+    "name": "Austria",
+    "latestRecords": 78,
+    "confirmedSpace": 73,
+    "open": 1,
+    "review": 5,
+    "nationalSources": [
+      {
+        "sourceId": "AT-portal",
+        "state": "partial",
+        "records": 78,
+        "finishedAt": "2026-10-01T18:41:42.965Z",
+        "error": "",
+        "gaps": [
+          "Austrian keyword searches cover indexed publications; historical completeness depends on the source."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "latestRecords": 319,
+    "confirmedSpace": 101,
+    "open": 1,
+    "review": 218,
+    "nationalSources": [
+      {
+        "sourceId": "BE-portal",
+        "state": "partial",
+        "records": 411,
+        "finishedAt": "2026-10-05T14:11:59.050Z",
+        "error": "",
+        "gaps": [
+          "Current federal search platform; legacy pre-migration publications and unindexed local portals may be missing."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "latestRecords": 144,
+    "confirmedSpace": 134,
+    "open": 1,
+    "review": 10,
+    "nationalSources": [
+      {
+        "sourceId": "BG-portal",
+        "state": "partial",
+        "records": 142,
+        "finishedAt": "2026-10-05T14:25:25.682Z",
+        "error": "",
+        "gaps": [
+          "CAIS EOP published-tender keyword search with all statuses; legacy pre-migration AOP archive remains separate. Closed listings do not distinguish award from cancellation."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "latestRecords": 23,
+    "confirmedSpace": 22,
+    "open": 2,
+    "review": 1,
+    "nationalSources": [
+      {
+        "sourceId": "HR-portal",
+        "state": "partial",
+        "records": 59,
+        "finishedAt": "2026-10-05T14:38:10.274Z",
+        "error": "",
+        "gaps": [
+          "Croatian detail 86624: HTTP 500",
+          "Croatian detail 84700: HTTP 500",
+          "Croatian detail 75749: HTTP 500",
+          "Croatian detail 75792: HTTP 500",
+          "Croatian detail 55189: HTTP 500",
+          "Croatian detail 47194: HTTP 500",
+          "Croatian detail 55944: HTTP 500",
+          "Croatian detail 47578: HTTP 500",
+          "Croatian detail 34874: HTTP 500",
+          "Croatian detail 20566: HTTP 500",
+          "Croatian detail 22819: HTTP 500",
+          "Croatian detail 20051: HTTP 500",
+          "Croatian detail 27843: HTTP 500",
+          "Croatian detail 23404: HTTP 500",
+          "Croatian detail 20437: HTTP 500",
+          "Croatian detail 15198: HTTP 500",
+          "Croatian detail 4383: HTTP 500",
+          "Croatian detail 2190: HTTP 500",
+          "Current EOJN notice search; legacy EOJN history and notices whose space scope appears only in attachments remain gaps."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "CY",
+    "name": "Cyprus",
+    "latestRecords": 5,
+    "confirmedSpace": 2,
+    "open": 0,
+    "review": 3,
+    "nationalSources": [
+      {
+        "sourceId": "CY-portal",
+        "state": "partial",
+        "records": 2,
+        "finishedAt": "2026-10-05T14:46:19.022Z",
+        "error": "",
+        "gaps": [
+          "No current public notice links found",
+          "Advanced search requires CAPTCHA. Public latest-CfT listing also returned no accessible notice rows; only individually accessible seeded notices are collected; full 2020 onward history and description-only matches are unavailable through this route."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "CZ",
+    "name": "Czechia",
+    "latestRecords": 91,
+    "confirmedSpace": 90,
+    "open": 5,
+    "review": 1,
+    "nationalSources": [
+      {
+        "sourceId": "CZ-portal",
+        "state": "partial",
+        "records": 108,
+        "finishedAt": "2026-10-05T14:17:17.718Z",
+        "error": "",
+        "gaps": [
+          "NEN public keyword searches; other Czech contracting platforms and records absent from NEN remain outside coverage."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "latestRecords": 125,
+    "confirmedSpace": 44,
+    "open": 1,
+    "review": 81,
+    "nationalSources": [
+      {
+        "sourceId": "DK-portal",
+        "state": "partial",
+        "records": 125,
+        "finishedAt": "2026-10-05T14:17:29.179Z",
+        "error": "",
+        "gaps": [
+          "Current Danish search including historical notices; separate 2022–2024 below-threshold archive not yet enumerated. Portal may also publish EU institution notices; buyer provenance retained."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "latestRecords": 27,
+    "confirmedSpace": 25,
+    "open": 0,
+    "review": 2,
+    "nationalSources": [
+      {
+        "sourceId": "EE-portal",
+        "state": "partial",
+        "records": 25,
+        "finishedAt": "2026-10-05T14:17:47.842Z",
+        "error": "",
+        "gaps": [
+          "National quick-search matches titles and buyers; description-only matches and unindexed history are not exhaustive."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "latestRecords": 99,
+    "confirmedSpace": 96,
+    "open": 0,
+    "review": 3,
+    "nationalSources": [
+      {
+        "sourceId": "FI-portal",
+        "state": "partial",
+        "records": 128,
+        "finishedAt": "2026-10-05T14:12:13.666Z",
+        "error": "",
+        "gaps": [
+          "Public multilingual keyword search, including closed notices; unindexed archives and notices lacking searched terms remain outside coverage."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "latestRecords": 1293,
+    "confirmedSpace": 260,
+    "open": 6,
+    "review": 1033,
+    "nationalSources": [
+      {
+        "sourceId": "FR-portal",
+        "state": "partial",
+        "records": 1457,
+        "finishedAt": "2026-10-01T17:27:24.307Z",
+        "error": "",
+        "gaps": [
+          "BOAMP keyword/CPV retrieval is broad but not an exhaustive semantic search of all French procurement."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "latestRecords": 3006,
+    "confirmedSpace": 1286,
+    "open": 9,
+    "review": 1720,
+    "nationalSources": [
+      {
+        "sourceId": "DE-portal",
+        "state": "partial",
+        "records": 4135,
+        "finishedAt": "2026-10-01T19:05:13.275Z",
+        "error": "",
+        "gaps": [
+          "Monthly archive begins December 2022. Later exports contain some older migrated notices; complete coverage before December 2022 is not established.",
+          "Current month export stops at yesterday; today requires a live portal check."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "latestRecords": 412,
+    "confirmedSpace": 407,
+    "open": 2,
+    "review": 5,
+    "nationalSources": [
+      {
+        "sourceId": "GR-portal",
+        "state": "partial",
+        "records": 2628,
+        "finishedAt": "2026-10-05T14:55:52.146Z",
+        "error": "",
+        "gaps": [
+          "Explicit raw cache reused for previously collected historical search pages.",
+          "KIMDIS public notice title search, with cancellation and linked-award flags; some invitations are addressed to selected suppliers. Unlinked awards and description-only matches require further checking."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "latestRecords": 15,
+    "confirmedSpace": 12,
+    "open": 0,
+    "review": 4,
+    "nationalSources": [
+      {
+        "sourceId": "HU-portal",
+        "state": "partial",
+        "records": 15,
+        "finishedAt": "2026-10-05T14:18:00.046Z",
+        "error": "",
+        "gaps": [
+          "EKR all-procedure keyword search; only public search summaries are extracted, with current lifecycle status."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "latestRecords": 14,
+    "confirmedSpace": 11,
+    "open": 0,
+    "review": 3,
+    "nationalSources": [
+      {
+        "sourceId": "IE-portal",
+        "state": "partial",
+        "records": 13,
+        "finishedAt": "2026-10-01T18:47:25.991Z",
+        "error": "",
+        "gaps": [
+          "Public title keyword searches only; descriptions may contain additional space contracts. Irish current platform history begins May 2023; 2020–early 2023 needs the legacy archive."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "latestRecords": 126,
+    "confirmedSpace": 46,
+    "open": 0,
+    "review": 80,
+    "nationalSources": [
+      {
+        "sourceId": "IT-portal",
+        "state": "partial",
+        "records": 0,
+        "finishedAt": "2026-10-05T14:31:13.363Z",
+        "error": "",
+        "gaps": [
+          "Consip public calls and archived calls only; MePA RDOs, regional platforms and the full ANAC national database require separate collection."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "latestRecords": 79,
+    "confirmedSpace": 75,
+    "open": 0,
+    "review": 4,
+    "nationalSources": [
+      {
+        "sourceId": "LV-portal",
+        "state": "partial",
+        "records": 75,
+        "finishedAt": "2026-10-05T14:16:40.264Z",
+        "error": "",
+        "gaps": [
+          "EIS public keyword search; search summaries may omit description-only matches and publications available only in the IUB legacy archive."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "latestRecords": 48,
+    "confirmedSpace": 47,
+    "open": 0,
+    "review": 1,
+    "nationalSources": [
+      {
+        "sourceId": "LT-portal",
+        "state": "partial",
+        "records": 47,
+        "finishedAt": "2026-10-05T14:32:32.197Z",
+        "error": "",
+        "gaps": [
+          "No recognized result rows for satellite",
+          "No recognized result rows for Copernicus",
+          "No recognized result rows for Galileo",
+          "No recognized result rows for earth observation",
+          "No recognized result rows for remote sensing",
+          "No recognized result rows for spacecraft",
+          "No recognized result rows for ground station",
+          "No recognized result rows for CubeSat",
+          "Public title keyword searches only; descriptions may contain additional space contracts. Platform migrations can leave older notices in a separate legacy archive."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LU",
+    "name": "Luxembourg",
+    "latestRecords": 18,
+    "confirmedSpace": 4,
+    "open": 0,
+    "review": 14,
+    "nationalSources": [
+      {
+        "sourceId": "LU-portal",
+        "state": "partial",
+        "records": 17,
+        "finishedAt": "2026-10-05T14:32:51.196Z",
+        "error": "",
+        "gaps": [
+          "No recognized Luxembourg rows for Copernicus",
+          "No recognized Luxembourg rows for Galileo",
+          "No recognized Luxembourg rows for EGNOS",
+          "No recognized Luxembourg rows for spacecraft",
+          "No recognized Luxembourg rows for CubeSat",
+          "No recognized Luxembourg rows for télédétection",
+          "No recognized Luxembourg rows for Raumfahrt",
+          "Luxembourg public keyword search includes the indexed archive; notices without searched terms and separate award notices can remain missing."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "MT",
+    "name": "Malta",
+    "latestRecords": 4,
+    "confirmedSpace": 2,
+    "open": 0,
+    "review": 2,
+    "nationalSources": [
+      {
+        "sourceId": "MT-portal",
+        "state": "partial",
+        "records": 2,
+        "finishedAt": "2026-10-05T14:46:25.659Z",
+        "error": "",
+        "gaps": [
+          "No current public notice links found",
+          "Advanced search requires CAPTCHA. Public latest-CfT listing also returned no accessible notice rows; only individually accessible seeded notices are collected; full 2020 onward history and description-only matches are unavailable through this route."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "latestRecords": 455,
+    "confirmedSpace": 71,
+    "open": 0,
+    "review": 384,
+    "nationalSources": [
+      {
+        "sourceId": "NL-portal",
+        "state": "partial",
+        "records": 627,
+        "finishedAt": "2026-10-01T18:43:49.221Z",
+        "error": "",
+        "gaps": [
+          "TenderNed RSS covers recent publications only. Historical XML files can be supplied with --import-dir; the full XML API requires credentials.",
+          "Dutch public historical dataset ends 2026-06-30; recent RSS does not fill the full intervening period. Full current XML API requires separately issued credentials.",
+          "Dutch historical dataset includes notice types and lots. Later portal amendments must be checked before treating historical future deadlines as current opportunities."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "latestRecords": 410,
+    "confirmedSpace": 299,
+    "open": 1,
+    "review": 111,
+    "nationalSources": [
+      {
+        "sourceId": "PL-portal",
+        "state": "partial",
+        "records": 912,
+        "finishedAt": "2026-10-05T14:51:05.189Z",
+        "error": "",
+        "gaps": [
+          "Native BZP keyword search includes result and amendment notices. New-system history starts in 2021; 2020 and separately published above-threshold notices remain gaps."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "latestRecords": 25,
+    "confirmedSpace": 24,
+    "open": 0,
+    "review": 1,
+    "nationalSources": [
+      {
+        "sourceId": "PT-portal",
+        "state": "partial",
+        "records": 25,
+        "finishedAt": "2026-10-05T14:47:12.875Z",
+        "error": "BASE public search page unavailable or access blocked",
+        "gaps": [
+          "Only the first public search response captured before access failed is retained. BASE subsequently returned HTTP 999 / an unavailable public search page. Full history and current announcements were not collected."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "latestRecords": 118,
+    "confirmedSpace": 94,
+    "open": 2,
+    "review": 24,
+    "nationalSources": [
+      {
+        "sourceId": "RO-portal",
+        "state": "partial",
+        "records": 118,
+        "finishedAt": "2026-10-05T14:12:32.546Z",
+        "error": "",
+        "gaps": [
+          "SEAP initiation-notice title search with current procedure status; separate direct-purchase catalogue and description-only matches remain outside this adapter."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "latestRecords": 15,
+    "confirmedSpace": 11,
+    "open": 0,
+    "review": 7,
+    "nationalSources": [
+      {
+        "sourceId": "SK-portal",
+        "state": "partial",
+        "records": 13,
+        "finishedAt": "2026-10-05T14:42:45.940Z",
+        "error": "",
+        "gaps": [
+          "Public EVO order title search and notice details. Full UVO and non-EVO procurement coverage is not established."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "latestRecords": 4,
+    "confirmedSpace": 2,
+    "open": 0,
+    "review": 2,
+    "nationalSources": [
+      {
+        "sourceId": "SI-portal",
+        "state": "partial",
+        "records": 4,
+        "finishedAt": "2026-10-05T14:33:14.480Z",
+        "error": "",
+        "gaps": [
+          "National title search with individual notice details; legacy forms may have different detail schemas and description-only matches remain outside coverage."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "latestRecords": 374,
+    "confirmedSpace": 165,
+    "open": 1,
+    "review": 214,
+    "nationalSources": [
+      {
+        "sourceId": "ES-portal",
+        "state": "partial",
+        "records": 1099,
+        "finishedAt": "2026-10-01T19:52:03.365Z",
+        "error": "Annual download timed out; server did not support byte-range resumption.",
+        "gaps": [
+          "Recovered 790 complete Atom members containing 393530 notices from an interrupted 2026 annual archive. The trailing incomplete member was omitted. Full 2026 and 2020-onward coverage is not complete."
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "latestRecords": 28,
+    "confirmedSpace": 3,
+    "open": 1,
+    "review": 26,
+    "nationalSources": [
+      {
+        "sourceId": "SE-portal",
+        "state": "discovery_only",
+        "records": 0,
+        "finishedAt": "2026-10-01T18:14:22.791Z",
+        "error": "",
+        "gaps": [
+          "Web traversal budget reached; 29 queued links remain.",
+          "Generic public-page extraction is partial. Login, JavaScript forms, document-only notices and unlinked archives require additional adapters or reviewed seeds."
+        ]
+      },
+      {
+        "sourceId": "SE-eavrop",
+        "state": "partial",
+        "records": 28,
+        "finishedAt": "2026-10-05T14:50:11.396Z",
+        "error": "",
+        "gaps": [
+          "e-Avrop current keyword search and public recent awards catalogue only. The award catalogue currently exposes recent months, not all history since 2020. Search snippets may match incidental mentions and need relevance review. Publication dates unavailable in this listing; undated historical matches are retained for review, not proof of 2020 onward completeness. Other Swedish registered databases remain separate."
+        ]
+      }
+    ]
+  }
+]

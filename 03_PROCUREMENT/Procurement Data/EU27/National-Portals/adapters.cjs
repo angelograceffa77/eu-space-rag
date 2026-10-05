@@ -149,9 +149,9 @@ function parsePage(html,url,source){
   const value=re=>pairs.find(([k])=>re.test(k))?.[1]||'';
   const eTitle=value(/^(title|τιτλος|pavadinimas)\s*:/);
   const due=value(/time-limit for receipt of tenders|προθεσμια παραλαβης των προσφορων|pasiulymu.*pateikimo.*termin/);
-  const publication=value(/date of publication|ημερομηνια δημοσιευσης|paskelbimo data/);
-  const award=value(/^(date of award|award date|ημερομηνια αναθεσης)\s*:/);
-  if(eTitle)return {row:{noticeId:new URL(url).searchParams.get('resourceId'),procedureId:new URL(url).searchParams.get('resourceId'),sourceUrl:url,title:eTitle,description:value(/^(description|περιγραφη|aprasymas)\s*:/),buyer:value(/name of contracting authority|ονομα αναθετουσας αρχης/),publicationDate:parseDate(publication,source.timeZone).iso.slice(0,10),deadlineRaw:due,noticeType:award?'award':'tender',noticeVerified:true,sourceStatus:award?'awarded':'',cpv:value(/cpv/),value:value(/estimated value/),currency:/estimated value.*eur/i.test(pairs.map(p=>p[0]).join(' '))?'EUR':''},links};
+  const publication=value(/date of publication|ημερομηνια δημοσιευσης|paskelbimo.*data/);
+  const award=value(/^(date of award|award date|ημερομηνια αναθεσης|laimetojo nustatymo data)\s*:/);
+  if(eTitle)return {row:{noticeId:new URL(url).searchParams.get('resourceId'),procedureId:new URL(url).searchParams.get('resourceId'),sourceUrl:url,title:eTitle,description:value(/^(description|περιγραφη|aprasymas)\s*:/),buyer:value(/name of contracting authority|ονομα αναθετουσας αρχης|pirkimo vykdytojo pavadinimas/),publicationDate:parseDate(publication,source.timeZone).iso.slice(0,10),deadlineRaw:due,noticeType:award?'award':'tender',noticeVerified:true,sourceStatus:award?'awarded':'',cpv:value(/cpv|bvpz/),value:value(/estimated value|numatoma verte/),currency:/estimated value.*eur/i.test(pairs.map(p=>p[0]).join(' '))?'EUR':''},links};
  }
  const kind=/call for proposals|grant funding|bourse|scholarship|vacanc|recruitment|emploi/i.test(title)?'non_tender':/prior information|pre-information|market consultation/i.test(title)?'planning':procurement.test(title)||/notice|tender|detail|consultation|appalt|licitaci|oglosze/i.test(url)?'tender':'unknown';
  // Unstructured pages remain candidates even when they have procurement words.

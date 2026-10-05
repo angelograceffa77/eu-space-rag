@@ -7,7 +7,7 @@ const hash=s=>crypto.createHash('sha256').update(String(s)).digest('hex');
 function htmlText(s){const $=cheerio.load(String(s||''));$('script,style,nav,header,footer,noscript').remove();return clean($.text());}
 // Stems include all EU official-language families. Broad applications are retained
 // as review candidates; an agency's name alone does not prove a space contract.
-const strong=/\b(satellit\w*|satelit\w*|satelit|satcom|gnss|egnos|copernicus|galileo|cubesat\w*|smallsat\w*|spacecraft|spaceport|spaceflight|spaceborne|space[- ]based|space surveillance|space traffic|space debris|earth observation|remote sensing|launch vehicle|ground segment|ground station|orbital|in-orbit|raumfahrt\w*|weltraum\w*|erdbeobacht\w*|fernerkund\w*|spazial\w*|telerilev\w*|teledetec\w*|teledetek\w*|avaru\w*|kosm\w*|kozm\w*|vesmir\w*|vesolj\w*|svemir\w*|rumfart\w*|ruimtevaart\w*|aardobserv\w*|rymd\w*|fjarranalys\w*|palydov\w*|kaugseire|kaukokartoit\w*|muhold\w*|urkutat\w*|taverzekel\w*|spatiale?s?|spatiali|observation de la terre|observacion de la tierra|observacao da terra)\b|δορυφορ|διαστημ|τηλεπισκοπ|сателит|космич|спътник/giu;
+const strong=/\b(satellit\w*|satelit\w*|satelit|satcom|gnss|egnos|copernicus|galileo|cubesat\w*|smallsat\w*|spacecraft|spaceport|spaceflight|spaceborne|space[- ]based|space surveillance|space traffic|space debris|earth observation|remote sensing|launch vehicle|ground segment|ground station|orbital|in-orbit|raumfahrt\w*|weltraum\w*|erdbeobacht\w*|fernerkund\w*|spazial\w*|telerilev\w*|teledetec\w*|teledetek\w*|avaru\w*|kosm\w*|kozm\w*|vesmir\w*|vesolj\w*|svemir\w*|rumfart\w*|ruimtevaart\w*|aardobserv\w*|rymd\w*|fjarranalys\w*|palydov\w*|kaugseire|kaukokartoit\w*|muhold\w*|urkutat\w*|taverzekel\w*|spatiale?s?|spatiali|observation de la terre|observacion de la tierra|observacao da terra)\b|δορυφορ|διαστημικ|διαστημο|τηλεπισκοπ|сателит|космич|спътник/giu;
 const broad=/\b(geospatial|geo[- ]information|gis|lidar|radar|hyperspectral|multispectral|wildfire|forest monitoring|environmental monitoring|quantum communication|laser ranging|telescop\w*|astronom\w*)\b/giu;
 const defence=/\b(defen[cs]e|military|dual[- ]use|counterspace|armed forces|verteidigung|militar\w*|difesa|defesa|obron\w*|honved\w*)\b/giu;
 const procurement=/tender|procurement|contract notice|invitation to bid|march[eé]|appel d.offres|ausschreibung|vergabe|licitaci|contrataci|appalt|gara|zam[oó]wie|przetarg|hankin|riigihank|pirkim|iepirk|beszerz|διαγωνισ|προκήρυξ|поръч|nabav|naročil|obstar[aá]v|udbud|upphandl|aanbested|konkurrenc|concurso|achizi/i;
@@ -20,7 +20,7 @@ function classify(title,description,cpv=''){
    // frequent real false positives. Keep weak matches for review, not OPEN.
    const escaped=h.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
    const nearby=new RegExp('.{0,70}\\b'+escaped+'\\b.{0,70}','g');
-   const clear=(t.match(nearby)||[]).some(x=>/orbit|aerospac|aerospat|satcom|gnss|egnos|space|telecom|communication|navigation|imager|imag[ei]n|meteorolog|weather|earth|terre|payload|lanceur|spatial launch|terre|observation|tracking|surveillance|antenne|antenna|downlink/.test(x));
+   const clear=(t.match(nearby)||[]).some(x=>/orbit|aerospac|aerospat|satcom|gnss|egnos|space|telecom|communication|telemetry|navigation|imager|imag[ei]n|meteorolog|weather|earth|terre|payload|lanceur|spatial launch|terre|observation|tracking|surveillance|antenne|antenna|downlink/.test(x));
    if(!clear){b.push('ambiguous: '+h);return false;}
   }
   return true;
@@ -37,6 +37,9 @@ function classify(title,description,cpv=''){
  }
  if(/koparko|excavator|backhoe|bulldozer|kanalinspektionsfahrzeug/.test(heading)&&!/gnss|satellit|satelit|navigation/.test(heading)){
   if(hits.length||codes.length||b.length)b.push('Navigation appears incidental to construction machinery');hits.length=0;codes.length=0;
+ }
+ if(/ladestandere|galeria satelit|satellit.{0,12}(kitchen|kuche|urgentni center)|softwares? satelites|program.{0,15}satellit/.test(heading)||(/\brymd\b/.test(t)&&!hits.some(h=>h!=='rymd')&&!codes.length)){
+  b.push('Ambiguous name or non-space use of the search term');hits.length=0;codes.length=0;
  }
  return {relevance:hits.length||codes.length?'space':b.length?'possible_space':'unrelated',spaceEvidence:[...hits,...codes].join(' | '),defenceEvidence:[...new Set(t.match(defence)||[])].join(' | '),reviewEvidence:b.join(' | ')};
 }
@@ -78,6 +81,7 @@ function normalize(x,source,rawFile,now=new Date()){
  const r={country:source.country,sourceId:source.id,sourceName:source.name,timeZone:source.timeZone||'Europe/Brussels',...x};
  r.title=clean(r.title);r.description=clean(r.description);r.textTruncated=r.description.length>29000;r.description=r.description.slice(0,29000);
  Object.assign(r,classify(r.title,r.description,r.cpv));
+ if(x.relevanceReviewReason&&r.relevance!=='unrelated'){r.relevance='possible_space';r.reviewEvidence=[r.reviewEvidence,x.relevanceReviewReason].filter(Boolean).join(' | ');}
  if(r.relevance==='unrelated'&&source.kind==='space_body'&&r.noticeVerified===true&&['tender','planning'].includes(r.noticeType)){
   r.relevance='possible_space';r.reviewEvidence='Procurement by a space body; substantive space relevance needs review';
  }

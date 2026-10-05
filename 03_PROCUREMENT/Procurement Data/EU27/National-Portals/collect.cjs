@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 'use strict';
 const fs=require('node:fs');const path=require('node:path');const ExcelJS=require('exceljs');
-const {sources}=require('./sources.cjs');const {hash,normalize,latestRecords,fields,statusOf}=require('./core.cjs');const adapters=require('./adapters.cjs');
+const {sources,countries}=require('./sources.cjs');const {hash,normalize,latestRecords,fields,statusOf}=require('./core.cjs');const adapters=require('./adapters.cjs');
 const {spanishArchives,readArchive}=require('./archives.cjs');const {PublicBrowser}=require('./browser.cjs');
 adapters.epps=ctx=>require('./epps.cjs').epps(ctx);
 function args(argv){
  const o={from:'2020-01-01',to:new Date().toISOString().slice(0,10),mode:'refresh',pages:2000,webPages:100,depth:3,delay:1200,timeout:45000,searchLimit:20,concurrency:2,output:path.join(__dirname,'data'),sources:'all'};
  const names={'from':'from','to':'to','mode':'mode','max-pages':'pages','web-pages':'webPages','depth':'depth','delay-ms':'delay','timeout-ms':'timeout','search-limit':'searchLimit','concurrency':'concurrency','output':'output','sources':'sources','seeds':'seedsFile','import-dir':'importDir','resume':'resume','discover':'discover','list-sources':'list','help':'help'};
- names.archives='archives';names.render='render';names.browser='browser';
+ names['raw-cache-dir']='rawCacheDir';names.archives='archives';names.render='render';names.browser='browser';
  names['archive-timeout-ms']='archiveTimeout';
  for(const a of argv){const m=a.match(/^--([\w-]+)(?:=(.*))?$/);if(!m||!names[m[1]])throw Error('Unknown option: '+a);const k=names[m[1]];o[k]=['resume','discover','list','help','archives','render','browser'].includes(k)?true:m[2];if(o[k]===undefined)throw Error('Use --name=value: '+a);}
  if(!['refresh','smoke'].includes(o.mode))throw Error('mode must be refresh or smoke');
@@ -32,16 +32,17 @@ async function request(url,options,init={},binary=false){
   }catch(e){if(attempt>=2||/HTTP 4\d\d|exceeds/.test(e.message))throw e;await sleep(1000*2**attempt);}
  }
 }
-async function exportData(dir,rows,coverage,now){
+async function exportData(dir,rows,coverage,now,options={}){
+ fs.mkdirSync(dir,{recursive:true});
  // Keep every notice version in HISTORY. Only consolidate stable procedure IDs
  // within the same source. Cross-portal near-duplicates are retained with provenance.
  const history=[...new Map(rows.map(r=>[r.recordId,r])).values()];
- for(const r of history){[r.status,r.statusEvidence]=statusOf(r,now);r.ragText=[r.title,r.description,`Country: ${r.country}; Buyer: ${r.buyer||''}; Status: ${r.status}; Deadline: ${r.deadline||r.deadlineRaw||'unknown'}; Source: ${r.sourceUrl}`].join('\n').slice(0,32000);}
+ for(const r of history){if(options.preserveStatus)continue;[r.status,r.statusEvidence]=statusOf(r,now);r.ragText=[r.title,r.description,`Country: ${r.country}; Buyer: ${r.buyer||''}; Status: ${r.status}; Deadline: ${r.deadline||r.deadlineRaw||'unknown'}; Source: ${r.sourceUrl}`].join('\n').slice(0,32000);}
  const latest=latestRecords(history).sort((a,b)=>String(a.deadline||'9999').localeCompare(String(b.deadline||'9999')));
  const confirmed=latest.filter(r=>r.noticeVerified===true&&r.relevance==='space');
  const open=confirmed.filter(r=>r.status==='open');
  const review=latest.filter(r=>r.noticeVerified!==true||r.relevance==='possible_space'||r.dateScope==='unknown_publication_date');
- const base='EU27_NATIONAL_SPACE_'+now.toISOString().slice(0,10);
+ const base=(options.prefix||'EU27_NATIONAL_SPACE')+'_'+now.toISOString().slice(0,10);
  const sets={MASTER:latest,OPEN:open,HISTORY:history,REVIEW:review};
  for(const [suffix,data] of Object.entries(sets))writeLines(path.join(dir,base+'_'+suffix+'.jsonl'),data);
  writeLines(path.join(dir,base+'_COVERAGE.jsonl'),coverage);
@@ -54,7 +55,21 @@ async function exportData(dir,rows,coverage,now){
  const read=new ExcelJS.Workbook();await read.xlsx.readFile(file);let compared=0;
  for(const [name,data] of Object.entries(sets)){const sheet=read.getWorksheet(name);if(sheet.actualRowCount!==data.length+1)throw Error('Excel count mismatch: '+name);data.forEach((r,i)=>fields.forEach((k,j)=>{if((sheet.getCell(i+2,j+1).value??'')!==r[k])throw Error(`Excel mismatch ${name} row ${i+2} ${k}`);compared++;}));}
  const summary={createdAt:now.toISOString(),files:[file,...Object.keys(sets).map(k=>path.join(dir,base+'_'+k+'.jsonl')),path.join(dir,base+'_COVERAGE.jsonl')],counts:Object.fromEntries(Object.entries(sets).map(([k,v])=>[k,v.length])),coverageCounts:coverage.reduce((a,c)=>(a[c.state]=(a[c.state]||0)+1,a),{}),excelJsonlFieldsCompared:compared};
+ if(!options.singleCountry)summary.countries=await exportCountries(dir,rows,coverage,now);
  writeJSON(path.join(dir,'validation.json'),summary);return summary;
+}
+async function exportCountries(dir,rows,coverage,now,options={}){
+ // Fail explicitly rather than silently dropping records with an unknown country.
+ const groups=new Map(countries.map(([code,name])=>[code,name]));
+ groups.set('EU','European Union');
+ for(const r of [...rows,...coverage])if(!groups.has(r.country))throw Error('Unknown country in export: '+r.country);
+ const results={};
+ for(const [code,name] of groups){
+  const countryRows=rows.filter(r=>r.country===code),countryCoverage=coverage.filter(r=>r.country===code);
+  if(code==='EU'&&!countryRows.length&&!countryCoverage.length)continue;
+  results[code]=await exportData(path.join(dir,name),countryRows,countryCoverage,now,{singleCountry:true,prefix:code+'_NATIONAL_SPACE',preserveStatus:options.preserveStatus===true});
+ }
+ return results;
 }
 async function main(){
  const o=args(process.argv.slice(2));
@@ -82,7 +97,7 @@ async function main(){
     emit:(x,rawFile)=>{const r=normalize(x,source,rawFile,now);if(r.relevance==='unrelated')return;if(r.publicationDate&&(r.publicationDate<o.from||r.publicationDate>o.to))return;gathered.push(r);report.records++;progress();}
    };
    console.log(`[${source.id}] collecting ${source.name}`);
-   try{const fn={...require('./priority.cjs'),...require('./italy.cjs'),...require('./spain-agency.cjs'),epps:adapters.epps,dlr:adapters.dlr,austria:adapters.austria,boamp:adapters.boamp,bzp:adapters.bzp,placsp:adapters.feed,tenderned:adapters.feed,eusst:adapters.eusst,web:adapters.web}[source.adapter];await fn(ctx);if(o.archives&&o.mode!=='smoke'&&source.adapter==='placsp'){await spanishArchives(ctx,path.join(dir,'raw'));}if(o.archives&&o.mode!=='smoke'&&source.adapter==='tenderned')await require('./netherlands.cjs').dutchArchives(ctx);report.state=source.adapter==='web'&&!gathered.some(r=>r.noticeVerified===true)?'discovery_only':report.gaps.length?'partial':'collected';}
+   try{const fn={...require("./native-portals-final.cjs"),...require("./native-portals-more.cjs"),...require("./native-portals-extra.cjs"),...require('./native-portals.cjs'),...require('./priority.cjs'),...require('./italy.cjs'),...require('./spain-agency.cjs'),epps:adapters.epps,dlr:adapters.dlr,austria:adapters.austria,boamp:adapters.boamp,bzp:adapters.bzp,placsp:adapters.feed,tenderned:adapters.feed,eusst:adapters.eusst,web:adapters.web}[source.adapter];await fn(ctx);if(o.archives&&o.mode!=='smoke'&&source.adapter==='placsp'){await spanishArchives(ctx,path.join(dir,'raw'));}if(o.archives&&o.mode!=='smoke'&&source.adapter==='tenderned')await require('./netherlands.cjs').dutchArchives(ctx);report.state=source.adapter==='web'&&!gathered.some(r=>r.noticeVerified===true)?'discovery_only':report.gaps.length?'partial':'collected';}
    catch(e){report.state='failed';report.error=e.message;}
    report.finishedAt=new Date().toISOString();state.rows.push(...gathered);state.coverage.push(report);state.completed.push(source.id);save();progress(true);console.log(`[${source.id}] ${report.state}: ${report.records} candidate records, ${report.requests} requests${report.error?' — '+report.error:''}`);
   }}
@@ -96,4 +111,4 @@ async function main(){
  }finally{await browser.close();fs.unlinkSync(lock);}
 }
 if(require.main===module)main().catch(e=>{console.error(e.stack||e.message);process.exitCode=1;});
-module.exports={args,exportData,request,main};
+module.exports={args,exportData,exportCountries,request,main};
