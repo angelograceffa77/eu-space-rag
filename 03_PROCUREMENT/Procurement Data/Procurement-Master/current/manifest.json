@@ -1,156 +1,262 @@
 {
   "schemaVersion": 1,
   "dataset": "GAGARIN procurement master",
-  "generation": "snapshot-2026-10-15T20-32-07-251Z-97ee22d5",
-  "createdAt": "2026-10-15T20:32:07.251Z",
-  "asOf": "2026-10-15T20:32:07.249Z",
+  "generation": "snapshot-2026-10-16T07-29-06-833Z-21e86003",
+  "createdAt": "2026-10-16T07:29:06.833Z",
+  "asOf": "2026-10-16T07:29:06.831Z",
   "sourceRefreshPerformed": true,
   "refreshRuns": [],
   "reconciliation": {
-    "plan": "master/phase5-reconciliation.json",
-    "planSha256": "8efa5208626e525442f9ef39f3812abcaf8f9e4b152ff7dab77076fa0749508c",
-    "selectedInputs": 127,
-    "policy": "Preserve original source records as immutable evidence. Historical assessments have priority 10; existing current assessments retain their higher priorities. No live verification inferred. Raw archive checksums and locations are recorded in linked audit manifests."
+    "plan": ".procurement-runs/daily-2026-10-15T21-00-48-779Z/daily-reconciliation.json",
+    "planSha256": "f1c9ef71ed18f97bbfd501d61d43a6cc124538c70c04177e6feff50072a9ec54",
+    "selectedInputs": 726,
+    "policy": "Retain all prior source evidence. Prefer fresh observed records. Missing or failed observations are stale/unverified, never silently closed. All coverage gaps remain visible.",
+    "dailyRefresh": {
+      "asOf": "2026-10-15",
+      "startedAt": "2026-10-15T21:00:48.779Z",
+      "attemptedJobs": 65,
+      "acceptedJobs": 63,
+      "jobStates": {
+        "EC-DG-AGRI--scrape-dg-agri-ted-procurements": "unassessed",
+        "EC-DG-CLIMA--scrape-dg-clima-ted-procurements": "unassessed",
+        "EC-DG-CLIMA--scrape-dg-clima-funding-tenders": "unassessed",
+        "EC-DG-CONNECT--scrape-dg-connect-ted-procurements": "unassessed",
+        "EC-DG-CONNECT--scrape-dg-connect-funding-tenders": "unassessed",
+        "EC-DG-AGRI--scrape-dg-agri-funding-tenders": "unassessed",
+        "EC-DG-DEFIS--scrape-dg-defis-ted-procurements": "unassessed",
+        "EC-DG-ECHO--scrape-dg-echo-ted-procurements": "unassessed",
+        "EC-DG-DEFIS--scrape-dg-defis-funding-tenders": "unassessed",
+        "EC-DG-ENV--scrape-dg-env-funding-tenders": "unassessed",
+        "EC-DG-ENV--scrape-dg-env-ted-procurements": "unassessed",
+        "EC-DG-HOME--scrape-dg-home-ted-procurements": "unassessed",
+        "EC-DG-ECHO--scrape-dg-echo-funding-tenders": "unassessed",
+        "EC-DG-MARE--scrape-dg-mare-ted-procurements": "unassessed",
+        "EC-DG-HOME--scrape-dg-home-funding-tenders": "unassessed",
+        "EC-DG-MOVE--scrape-dg-move-ted-procurements": "unassessed",
+        "EC-DG-MARE--scrape-dg-mare-funding-tenders": "unassessed",
+        "EC-DG-RTD--scrape-dg-rtd-ted-procurements": "unassessed",
+        "ECMWF--scrape-ecmwf-procurements": "unassessed",
+        "EDA--scrape-eda-procurements": "partial",
+        "EEA--scrape-eea-procurements": "unassessed",
+        "EC-DG-MOVE--scrape-dg-move-funding-tenders": "unassessed",
+        "EMSA--scrape-emsa-procurements": "unassessed",
+        "EC-DG-RTD--scrape-dg-rtd-funding-tenders": "unassessed",
+        "ESO--scrape-eso-procurements": "partial",
+        "ESA--scrape-esa-tender-actions": "unassessed",
+        "EU-SatCen--scrape-satcen-procurements": "unassessed",
+        "ESA--scrape-esa-publication-tenders": "unassessed",
+        "EUSPA--scrape-euspa-current-planned-procurements": "unassessed",
+        "EUMETSAT--scrape-eumetsat-procurements": "unassessed",
+        "Eurocontrol--scrape-eurocontrol-procurements": "unassessed",
+        "Frontex--scrape-frontex-procurements": "unassessed",
+        "NATO--scrape-nato-procurements": "partial",
+        "JRC--scrape-jrc-procurements": "unassessed",
+        "OCCAR--scrape-occar-procurements": "partial",
+        "EUSPA--scrape-euspa-closed-procurements": "unassessed",
+        "national-BE": "partial",
+        "national-BG": "partial",
+        "national-AT": "partial",
+        "national-CY": "unexpectedly_empty",
+        "EU27-TED--scrape-eu27-ted-space-procurements": "unassessed",
+        "national-DK": "partial",
+        "national-HR": "failed",
+        "national-FI": "partial",
+        "national-CZ": "partial",
+        "national-EE": "partial",
+        "national-DE": "partial",
+        "national-FR": "partial",
+        "national-IE": "partial",
+        "national-GR": "partial",
+        "national-HU": "partial",
+        "national-IT": "failed",
+        "national-LT": "partial",
+        "national-LV": "partial",
+        "national-MT": "partial",
+        "national-NL": "partial",
+        "national-PT": "partial",
+        "national-LU": "partial",
+        "national-PL": "partial",
+        "national-SK": "failed",
+        "national-RO": "partial",
+        "national-SI": "partial",
+        "national-EU": "partial",
+        "national-SE": "partial",
+        "national-ES": "failed"
+      },
+      "freshFiles": 87,
+      "baselineGeneration": "snapshot-2026-10-15T20-32-07-251Z-97ee22d5",
+      "coverageStatus": "partial",
+      "sourceCoverageCatalog": {
+        "format": "json-array-catalog-v1",
+        "records": 205,
+        "parts": [
+          {
+            "file": "metadata/coverage.part-00001.json",
+            "sha256": "f2e85659015e6063e35ee72d6691bba49a4706b84d27daa032627bd57b662009",
+            "records": 205,
+            "bytes": 79006
+          }
+        ]
+      }
+    }
   },
   "coverageStatus": "partial",
   "counts": {
-    "inputRows": 254644,
-    "sourceRecords": 199343,
+    "inputRows": 364202,
+    "sourceRecords": 245497,
     "malformed": 1,
-    "procurements": 108976,
-    "lots": 1853,
-    "lotEvidence": 37413,
-    "exactRepeatedSourceRows": 55301,
-    "linkedSourceRecords": 90366,
-    "sourceFileCount": 190,
+    "procurements": 112215,
+    "lots": 1854,
+    "lotEvidence": 45765,
+    "exactRepeatedSourceRows": 118705,
+    "linkedSourceRecords": 133281,
+    "sourceFileCount": 726,
     "companyRecords": 19650
   },
   "data": {
     "directory": "data",
-    "logicalRecords": 347992,
+    "logicalRecords": 406275,
     "recordTypes": {
-      "source_file": 190,
-      "source_record": 199342,
+      "source_file": 726,
+      "source_record": 245496,
       "quarantined_source_record": 1,
-      "lot": 1853,
-      "lot_evidence": 37413,
-      "procurement": 108976,
-      "coverage": 217
+      "lot": 1854,
+      "lot_evidence": 45765,
+      "procurement": 112215,
+      "coverage": 218
     },
     "maxPartBytes": 262144,
     "partsCatalog": {
       "format": "json-array-catalog-v1",
-      "records": 10556,
+      "records": 12521,
       "parts": [
         {
           "file": "metadata/data.part-00001.json",
-          "sha256": "bf6a46b20124eacbf0aa14bf02417ae7d026309f81cf395049ef3bf880bd5844",
+          "sha256": "efdf3b5b2b54a450fedb110f45f5726a99341adc2bef9b0a1c8463761421faae",
           "records": 789,
-          "bytes": 130923
+          "bytes": 130936
         },
         {
           "file": "metadata/data.part-00002.json",
-          "sha256": "c9b341851d3a7958fe3f841d5f7b6833a1ac5695f4b00d3a3f96f6bf33b7a9f7",
+          "sha256": "38f27a190f68daa410fc8e95f574b32d02746242c8516a90f7425e70ae874cf3",
           "records": 789,
           "bytes": 130947
         },
         {
           "file": "metadata/data.part-00003.json",
-          "sha256": "6df4beac4a7078cbb5438e4b50de064784f1c93014f9ea0daeb941c2ac2724d1",
+          "sha256": "1a3bac356183a21fdea4a3d2d40d641a8f96afa57225f6c0ba461421f3733e3e",
+          "records": 789,
+          "bytes": 130942
+        },
+        {
+          "file": "metadata/data.part-00004.json",
+          "sha256": "b19e94483f54bb91a7c645aadccb889ed0ba0e07823465a006e69629a1235b93",
+          "records": 789,
+          "bytes": 130922
+        },
+        {
+          "file": "metadata/data.part-00005.json",
+          "sha256": "a4dbc840b9c3489cd4d521a68b4b603f8eb02865f4f3ee5c648eb7a31f83193e",
           "records": 789,
           "bytes": 130936
         },
         {
-          "file": "metadata/data.part-00004.json",
-          "sha256": "6c305cea57cc27683e49c17004b27982fcafbe88a3d4a2358fd334aa99d743ad",
-          "records": 789,
-          "bytes": 130911
-        },
-        {
-          "file": "metadata/data.part-00005.json",
-          "sha256": "f17cac44e29b315314da74a0b204dc2cca108222d5af48131c1afd91ba3a2cc8",
-          "records": 789,
-          "bytes": 130941
-        },
-        {
           "file": "metadata/data.part-00006.json",
-          "sha256": "fc79f536df9546a03eb2c84bc0312112dae1b4059236199a45d4b570ee89426f",
+          "sha256": "a3252eeaa946fdddb9eb9854ee0506ed3555e0d6f14097cb2369b80a270e99e7",
           "records": 789,
-          "bytes": 130940
+          "bytes": 130943
         },
         {
           "file": "metadata/data.part-00007.json",
-          "sha256": "9ee50cc3941b93362e247b3e953584cb3f364c1482d098136f8f110d1f5be458",
+          "sha256": "62d422626aea28881a8da4388169156029311b03e3acb330a90b8de0c69262c3",
           "records": 789,
-          "bytes": 130938
+          "bytes": 130947
         },
         {
           "file": "metadata/data.part-00008.json",
-          "sha256": "af9f1d1628ce55da19b155da83b016571997b9404d4cc4ecedeb9b1249e46db5",
+          "sha256": "53d802b413f873eca1e2f24de4d060a716a3c780b9bb35c111b94a33e17a756c",
           "records": 789,
-          "bytes": 130940
+          "bytes": 130943
         },
         {
           "file": "metadata/data.part-00009.json",
-          "sha256": "792eb124c17c016d9345b5d901c765d645a41b042c3edee747529f85fe72568f",
+          "sha256": "11fc7e20d5cf0a67afec051d5a916cf5405d911c6c9d97d40ad7f754dd89be1a",
           "records": 789,
-          "bytes": 130951
+          "bytes": 130931
         },
         {
           "file": "metadata/data.part-00010.json",
-          "sha256": "805e5bdc06dca2e947315d73c288e7d399211df5584c4f407cee5fe283db45e6",
+          "sha256": "b2611530ce4b1fddb13c1aff4ed830b84ec9d043c3bf6db3100556dd64f97645",
           "records": 789,
-          "bytes": 130941
+          "bytes": 130959
         },
         {
           "file": "metadata/data.part-00011.json",
-          "sha256": "0851b1df4a3f68fe5f587325461134f019380e3585fe20d8de6640d3ed1d186f",
+          "sha256": "19f48afec3ef7ce04fd55a71845f5b93b915a840c8eb372143321e38229f87fb",
           "records": 789,
-          "bytes": 130940
+          "bytes": 130950
         },
         {
           "file": "metadata/data.part-00012.json",
-          "sha256": "2abf6b39983e01ac8bee8b1284122f88674dbc871a1d098965a471062e7bbdb4",
-          "records": 788,
-          "bytes": 130986
+          "sha256": "b5cdcb7f5d9771fe82fc151355c8fa5f68d4ec235a1757c583bc37cdd7c0954c",
+          "records": 789,
+          "bytes": 130947
         },
         {
           "file": "metadata/data.part-00013.json",
-          "sha256": "05beebcca493f4897f7097f57395f057b1930d96d21883ba7a6374096a30f2dd",
+          "sha256": "b4946a22cf11a7b609f1c991a26be0e25d25461738a7d153b69f60329486df15",
           "records": 789,
-          "bytes": 130968
+          "bytes": 130942
         },
         {
           "file": "metadata/data.part-00014.json",
-          "sha256": "bb8e2d3fcf596a8ca6c7d876287f5965d31175a3c472d4c5824e0141d51758ef",
-          "records": 300,
-          "bytes": 49762
+          "sha256": "28589825dfab0c170cc4603de10a9881fdf6857e257cbd85ec9e6bb6bde848d5",
+          "records": 788,
+          "bytes": 131015
+        },
+        {
+          "file": "metadata/data.part-00015.json",
+          "sha256": "30b43d877f9b2f8759bd7adfaa825260c85a481d77d6c33386f53e82aea4c527",
+          "records": 789,
+          "bytes": 130970
+        },
+        {
+          "file": "metadata/data.part-00016.json",
+          "sha256": "d2c9921d0d2c5d38ae50a9b8dbb17b6d2fa86cbb3b580c3b9a80184e30edd08a",
+          "records": 687,
+          "bytes": 113972
         }
       ]
     }
   },
   "index": {
     "directory": "index",
-    "logicalRecords": 347992,
+    "logicalRecords": 406275,
     "recordTypes": {
-      "lookup": 347992
+      "lookup": 406275
     },
     "maxPartBytes": 131072,
     "partsCatalog": {
       "format": "json-array-catalog-v1",
-      "records": 756,
+      "records": 855,
       "parts": [
         {
           "file": "metadata/index.part-00001.json",
-          "sha256": "439b490acddd7bab53bb8c37436c574c15c2a4ff75003245948f496dde553e8d",
-          "records": 756,
-          "bytes": 126253
+          "sha256": "7f856d5cdde9df81653ba2227b2460344694369d00ac937d34e7c3344cd40dee",
+          "records": 784,
+          "bytes": 130930
+        },
+        {
+          "file": "metadata/index.part-00002.json",
+          "sha256": "d2e63b403e9bc97a4d272e1905cc69911aa68e2efdd3d5f13ab8913618d006b5",
+          "records": 71,
+          "bytes": 11858
         }
       ]
     }
   },
   "inputsFile": "inputs.json",
-  "inputsSha256": "468fbec94810efecc1b26c84719b68b5f43c6cd13fa639f304e7bcbc3ed5a3b1",
+  "inputsSha256": "926b3093302652cd4b3684fbd8a33d43dd9ef1a35ee5b0be92ee55c5db467395",
   "recovery": [
     {
       "damagedRecordId": "src-dd5efa5ff577edd3ca14a6b4ff05cf9ac60ed3a9b978b62933c6ead5b798cea9",
@@ -166,21 +272,19 @@
   ],
   "companyMatching": {
     "procurements": {
-      "not_current_open_tender": 105337,
-      "insufficient_capability_evidence": 2647,
-      "deadline_review_required": 756,
-      "scope_review_shortlist": 95,
-      "candidate_shortlist": 51,
-      "excluded_scope": 50,
-      "scope_review_required": 40
+      "not_current_open_tender": 105995,
+      "excluded_scope": 5469,
+      "deadline_review_required": 379,
+      "scope_review_shortlist": 103,
+      "candidate_shortlist": 45,
+      "insufficient_capability_evidence": 222,
+      "scope_review_required": 2
     },
     "lots": {
-      "not_current_open_tender": 1824,
-      "excluded_scope": 17,
-      "insufficient_capability_evidence": 9,
-      "candidate_shortlist": 3
+      "not_current_open_tender": 1852,
+      "candidate_shortlist": 2
     },
-    "candidatePairs": 1490,
+    "candidatePairs": 1500,
     "companyCoverage": {
       "inputRows": 19650,
       "profiles": 19636,
@@ -206,19 +310,19 @@
     "publication": "Validated GitHub snapshot; source files remain in the local audit archive."
   },
   "validation": {
-    "originalRecordsRoundTripped": 199343,
-    "entitiesRoundTripped": 148242,
+    "originalRecordsRoundTripped": 245497,
+    "entitiesRoundTripped": 159834,
     "allPartChecksumsVerified": true,
-    "indexLocationsVerified": 347992,
+    "indexLocationsVerified": 406275,
     "allEntityRelationshipsVerified": true,
     "allInputsArchivedAndVerified": true,
     "companyMatchEvidenceVerified": true,
-    "companyCandidatePairsVerified": 1490
+    "companyCandidatePairsVerified": 1500
   },
   "publication": {
     "metadataFormat": "json-array-catalog-v1",
-    "originalManifestSha256": "31c94cdd4b5144ad5652e7e61e6fd369cbf9d1dbf938b9ff89ab3f66a6cbc834",
-    "originalInputsSha256": "27bbe5c19779b5678a2a8583515b1c04d7614d6d5fb1840621927865ba5105b3",
+    "originalManifestSha256": "2a652d6b59a4175919859431ef1056318e5da8cab5bbf356c51e0667c3d3f305",
+    "originalInputsSha256": "490d7f94e69ccdc2a2ac5f3c422a39d0e9346a0d351ea157d6bcde8878c202d8",
     "instructions": "Read data.partsCatalog and index.partsCatalog referenced JSON arrays to obtain every part. inputsFile is a catalog of unchanged input metadata. Verify each catalog part checksum. Source records remain unchanged."
   }
 }
