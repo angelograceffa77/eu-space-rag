@@ -3,14 +3,14 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const {hashFile}=require('../master/util.cjs'),{verify}=require('../master/verify.cjs');
 function git(repo,args,input,env={}){return new Promise((resolve,reject)=>{const c=spawn('git',['--git-dir='+repo,...args],{env:{...process.env,...env,GIT_TERMINAL_PROMPT:'0'},windowsHide:true,stdio:['pipe','pipe','pipe']});let out='',err='';c.stdout.on('data',b=>out+=b);c.stderr.on('data',b=>err+=b);c.on('error',reject);c.on('close',code=>code===0?resolve(out.trimEnd()):reject(Error('git '+args[0]+' failed: '+err.slice(-2500))));c.stdin.end(input||'');});}
 async function packageFiles(master,stage){
- await verify(master);const pointer=JSON.parse(fs.readFileSync(path.join(master,'manifest.json'))),mf=path.resolve(master,pointer.manifest),dir=path.dirname(mf),m=JSON.parse(fs.readFileSync(mf));
+ await verify(master);const pointer=JSON.parse(fs.readFileSync(path.join(master,'manifest.json'))),mf=path.resolve(master,pointer.manifest),dir=path.dirname(mf),m=require('../master/catalogs.cjs').hydrate(dir,JSON.parse(fs.readFileSync(mf)));
  if(!m.validation?.allInputsArchivedAndVerified||!m.validation?.companyMatchEvidenceVerified)throw Error('Snapshot lacks required validation');
  fs.mkdirSync(stage,{recursive:true});const {writeCatalog}=require('../master/catalogs.cjs'),published=structuredClone(m),files=[];
  const addGenerated=(name,text)=>{const f=path.join(stage,name);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,text);files.push({source:f,target:name,generated:true});};
  const metadataStage=path.join(stage,'current');
  for(const key of ['data','index']){const group=m[key];for(const part of group.parts)files.push({source:path.join(dir,group.directory,part.file),target:'current/'+group.directory+'/'+part.file});published[key].partsCatalog=writeCatalog(metadataStage,key,group.parts);delete published[key].parts;for(const part of published[key].partsCatalog.parts)files.push({source:path.join(metadataStage,part.file),target:'current/'+part.file,generated:true});}
  const coverage=published.reconciliation?.dailyRefresh?.sourceCoverage;if(coverage){const catalog=writeCatalog(metadataStage,'coverage',coverage);published.reconciliation.dailyRefresh.sourceCoverageCatalog=catalog;delete published.reconciliation.dailyRefresh.sourceCoverage;for(const part of catalog.parts)files.push({source:path.join(metadataStage,part.file),target:'current/'+part.file,generated:true});}
- const inputs=JSON.parse(fs.readFileSync(path.join(dir,m.inputsFile)));if(!Array.isArray(inputs))throw Error('Expected input list');
+ const inputData=JSON.parse(fs.readFileSync(path.join(dir,m.inputsFile))),inputs=Array.isArray(inputData)?inputData:require('../master/catalogs.cjs').readCatalog(dir,inputData);
  const inputsCatalog=writeCatalog(metadataStage,'inputs',inputs);for(const part of inputsCatalog.parts)files.push({source:path.join(metadataStage,part.file),target:'current/'+part.file,generated:true});
  const inputsText=JSON.stringify(inputsCatalog,null,2);addGenerated('current/'+m.inputsFile,inputsText);published.inputsSha256=crypto.createHash('sha256').update(inputsText).digest('hex');
  published.publication={metadataFormat:'json-array-catalog-v1',originalManifestSha256:pointer.manifestSha256,originalInputsSha256:m.inputsSha256,instructions:'Read data.partsCatalog and index.partsCatalog referenced JSON arrays to obtain every part. inputsFile is a catalog of unchanged input metadata. Verify each catalog part checksum. Source records remain unchanged.'};
@@ -28,3 +28,4 @@ for(const f of pack.files)if(await hashFile(f.source)!==f.sha256)throw Error('Pu
 }finally{fs.unlinkSync(lock);}}
 if(require.main===module){const config=JSON.parse(fs.readFileSync(path.join(__dirname,'config.json')));publish(config,{dryRun:process.argv.includes('--dry-run')}).catch(e=>{console.error(e.stack);process.exitCode=1;});}
 module.exports={publish,packageFiles,git};
+
