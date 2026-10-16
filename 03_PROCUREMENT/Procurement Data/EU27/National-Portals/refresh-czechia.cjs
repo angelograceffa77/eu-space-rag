@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+'use strict';
+// Full Czech refresh, then reconcile monthly archive opportunities with live notices.
+const fs=require('fs'),path=require('path'),{main,args,exportData}=require('./collect.cjs'),{sources}=require('./sources.cjs'),{finalizeCzech,verifyArchiveLive}=require('./czech-release.cjs');
+async function refreshCzechia(){
+ const defaults=['--sources=CZ-portal,CZ-space,CZ-description,CZ-cenia,CZ-research,CZ-ufa,CZ-rvz','--max-pages=10000','--concurrency=1'];process.argv=[...process.argv.slice(0,2),...defaults,...process.argv.slice(2)];const options=args(process.argv.slice(2));if(options.help||options.list)return main();if(options.sources.split(',').some(id=>!id.startsWith('CZ-')))throw Error('This entry point is only for Czechia');await main();
+ const state=JSON.parse(fs.readFileSync(path.join(options.output,'checkpoint.json'))),now=new Date(),input=state.rows.map(r=>({...r,rawFile:path.isAbsolute(r.rawFile)?r.rawFile:path.join(options.output,state.runId,r.rawFile)})),verification=await verifyArchiveLive(input,sources,path.join(options.output,state.runId,'raw'),options,now),result=finalizeCzech(verification.rows,sources,now),out=path.resolve(process.env.PROCUREMENT_FINAL_OUTPUT_DIR||path.join(__dirname,'final-output')),country=path.join(out,'Czechia');fs.mkdirSync(country,{recursive:true});
+ const report=state.coverage.find(x=>x.sourceId==='CZ-description');if(report){report.requests+=verification.audit.length;report.records=result.rows.filter(x=>x.sourceId==='CZ-description').length;for(const a of verification.audit.filter(x=>!x.parsed))report.gaps.push('Direct archive verification failed: '+a.url+' '+a.error);}fs.writeFileSync(path.join(country,'CZ_DIRECT_VERIFICATION_'+now.toISOString().slice(0,10)+'.json'),JSON.stringify(verification.audit,null,2));
+ await exportData(country,result.rows,state.coverage,now,{singleCountry:true,prefix:'CZ_NATIONAL_SPACE'});fs.writeFileSync(path.join(country,'CZ_OPEN_VERIFICATION_'+now.toISOString().slice(0,10)+'.json'),JSON.stringify(result.audit,null,2));console.log('Czechia Excel and UTF-8 JSONL saved to '+country);return result;
+}
+if(require.main===module)refreshCzechia().catch(e=>{console.error(e.stack);process.exitCode=1});module.exports={refreshCzechia};

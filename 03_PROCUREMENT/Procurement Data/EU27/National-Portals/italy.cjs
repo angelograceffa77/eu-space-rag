@@ -22,10 +22,12 @@ function parseInaf(html,url){const u=new URL(url);if(!u.searchParams.get('codice
  const description=t.split('Sezione Dati generali')[1]?.split('Sezione Documentazione')[0]||title;
  return {noticeId:new URL(url).searchParams.get('codice')||url,procedureId:new URL(url).searchParams.get('codice')||url,sourceUrl:url,title,description,buyer:t.match(/Denominazione\s*:\s*(.*?)\s*RUP\s*:/i)?.[1]||'INAF',publicationDate:parseDate(t.match(/Data pubblicazione\s*:\s*(\d{2}\/\d{2}\/\d{4})/i)?.[1]||'','Europe/Rome').iso,deadlineRaw:deadline?deadline[1]+(deadline[2]?' '+deadline[2]:''):'',noticeType:/Esiti/.test(u.searchParams.get('actionPath'))?'award':/indagine di mercato|consultazione preliminare/i.test(description)?'planning':'tender',sourceStatus:t.match(/Stato\s*:\s*(.*?)\s*(?:Lotti|Dati aperti|Altri atti|Sezione)/i)?.[1]||'',noticeVerified:true,documents:$('a[href]').map((i,e)=>new URL($(e).attr('href'),url).href).get().filter(u=>/download|document|\.pdf/i.test(u)).join(' | ')};
 }
-async function inaf(ctx){const queue=[ctx.source.url],seen=new Set();while(queue.length&&ctx.canFetch()){
- const url=queue.shift();if(seen.has(url))continue;seen.add(url);try{const {body,rawFile}=await ctx.get(url),$=cheerio.load(body),r=parseInaf(body,url);if(r)ctx.emit(r,rawFile);
+async function inaf(ctx){let challenge=false;const queue=[ctx.source.url],seen=new Set();while(queue.length&&ctx.canFetch()){
+ const url=queue.shift();if(seen.has(url))continue;seen.add(url);try{const {body,rawFile}=await ctx.get(url),$=cheerio.load(body),r=parseInaf(body,url);if(body.includes('.frc-captcha'))challenge=true;if(r)ctx.emit(r,rawFile);
  $('a[href]').each((i,e)=>{const u=new URL($(e).attr('href'),url);u.hash='';for(const key of ['font','skin','request_locale'])u.searchParams.delete(key);if(u.hostname!=='inaf.ubuy.cineca.it')return;if(/\/en\//.test(u.pathname))return;if(/\/(Bandi|Esiti)\/view\.action$/.test(u.searchParams.get('actionPath')||'')||/ppgare_(?:bandi_scaduti|esiti_lista|bandi_archivio)\.wp$/.test(u.pathname)&&!u.searchParams.has('actionPath'))queue.push(u.href);});
  }catch(e){ctx.gap(url+': '+e.message);}}
+ if(challenge)ctx.gap('INAF historical search presents a CAPTCHA; no challenge was bypassed. Only publicly linked notices were followed.');
  ctx.gap('INAF public linked notices collected; historical search forms and procedures before 2024 need separate archive retrieval.');
  if(queue.length)ctx.gap('INAF request budget reached');}
 module.exports={asi,inaf,parseAsi,parseInaf};
+

@@ -1,0 +1,10 @@
+node_modules/
+raw/
+checkpoints/
+logs/
+smoke-test/
+# Choose explicitly which validated generated snapshots to publish.
+
+# Local full exports: publish manifest.json and funding-*.part-*.jsonl instead.
+/generated/snapshots/**/funding-*.jsonl
+!/generated/snapshots/**/funding-*.part-*.jsonl

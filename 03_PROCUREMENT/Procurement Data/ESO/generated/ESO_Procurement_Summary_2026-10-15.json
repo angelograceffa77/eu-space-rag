@@ -1,0 +1,87 @@
+{
+  "runDate": "2026-10-15",
+  "historicalStart": 2020,
+  "sourceCounts": {
+    "inTend": 0,
+    "legacyAbove150k": 94,
+    "legacy50to150k": 39
+  },
+  "liveInTendLayerAccessible": false,
+  "publicListingRecordsObserved": 0,
+  "portalAccess": {
+    "checkedAt": "2026-10-15T12:25:06.268Z",
+    "coverage": "partial",
+    "checks": [
+      {
+        "route": "Home",
+        "url": "https://in-tendhost.co.uk/eso/aspx/Home",
+        "finalURL": "https://sell2.in-tend.co.uk/uk/home",
+        "state": "redirected-outside-eso",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\03_PROCUREMENT\\Procurement Data\\.procurement-runs\\phase4-eso-final-2026-10-15\\jobs\\ESO--scrape-eso-procurements\\output\\_ESO_PORTAL_EVIDENCE\\Home.html",
+        "sha256": "4cbb49610992ce04ee1804dbfb54335669c60f53555acc6684c93f43dc1185a4",
+        "checkedAt": "2026-10-15T12:24:59.894Z"
+      },
+      {
+        "route": "Tenders/Current",
+        "url": "https://in-tendhost.co.uk/eso/aspx/Tenders/Current",
+        "finalURL": "https://sell2.in-tend.co.uk/uk/home",
+        "state": "redirected-outside-eso",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\03_PROCUREMENT\\Procurement Data\\.procurement-runs\\phase4-eso-final-2026-10-15\\jobs\\ESO--scrape-eso-procurements\\output\\_ESO_PORTAL_EVIDENCE\\Tenders-Current.html",
+        "sha256": "4cbb49610992ce04ee1804dbfb54335669c60f53555acc6684c93f43dc1185a4",
+        "checkedAt": "2026-10-15T12:25:01.503Z"
+      },
+      {
+        "route": "Tenders/Forthcoming",
+        "url": "https://in-tendhost.co.uk/eso/aspx/Tenders/Forthcoming",
+        "finalURL": "https://sell2.in-tend.co.uk/uk/home",
+        "state": "redirected-outside-eso",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\03_PROCUREMENT\\Procurement Data\\.procurement-runs\\phase4-eso-final-2026-10-15\\jobs\\ESO--scrape-eso-procurements\\output\\_ESO_PORTAL_EVIDENCE\\Tenders-Forthcoming.html",
+        "sha256": "4cbb49610992ce04ee1804dbfb54335669c60f53555acc6684c93f43dc1185a4",
+        "checkedAt": "2026-10-15T12:25:03.039Z"
+      },
+      {
+        "route": "Tenders/Awarded",
+        "url": "https://in-tendhost.co.uk/eso/aspx/Tenders/Awarded",
+        "finalURL": "https://sell2.in-tend.co.uk/uk/home",
+        "state": "redirected-outside-eso",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\03_PROCUREMENT\\Procurement Data\\.procurement-runs\\phase4-eso-final-2026-10-15\\jobs\\ESO--scrape-eso-procurements\\output\\_ESO_PORTAL_EVIDENCE\\Tenders-Awarded.html",
+        "sha256": "d0f738c94122fdddc32c450011182d9dda1b38d971749d754e63f2c641a66c6b",
+        "checkedAt": "2026-10-15T12:25:04.503Z"
+      },
+      {
+        "route": "BuyerProfiles",
+        "url": "https://in-tendhost.co.uk/eso/aspx/BuyerProfiles",
+        "finalURL": "https://sell2.in-tend.co.uk/uk/home",
+        "state": "redirected-outside-eso",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\03_PROCUREMENT\\Procurement Data\\.procurement-runs\\phase4-eso-final-2026-10-15\\jobs\\ESO--scrape-eso-procurements\\output\\_ESO_PORTAL_EVIDENCE\\BuyerProfiles.html",
+        "sha256": "4cbb49610992ce04ee1804dbfb54335669c60f53555acc6684c93f43dc1185a4",
+        "checkedAt": "2026-10-15T12:25:05.910Z"
+      }
+    ],
+    "limitations": [
+      "No authenticated collection attempted. A redirect, challenge or unparsed listing is not evidence of zero tenders.",
+      "Public listing pagination and record completeness remain unverified."
+    ]
+  },
+  "collectionStatus": "partial",
+  "currentTenderCountVerified": false,
+  "totalUniqueProcurementRecords": 117,
+  "spaceIndustryRelevantIncludingManualReview": 77,
+  "ragReadySpaceIndustry": 63,
+  "openSpaceIndustry": 0,
+  "plannedSpaceIndustry": 0,
+  "historicalSpaceIndustry": 63,
+  "awardedSpaceIndustry": 0,
+  "manualReview": 14,
+  "methodology": [
+    "ESO In-Tend public portal for current, forthcoming and awarded procurement since November 2022",
+    "Official ESO legacy procurement tables for historical calls and price inquiries around the 2020-2022 transition; the >=150 kEUR page is parsed with its native Cft No/Date/Division/Subject/Details structure and preserves later award/status updates",
+    "Conservative European space-industry classifier focused on telescope/instrument systems, optics, adaptive optics, detectors, cryogenics, RF/receivers, precision mechanics, scientific software/data and observatory engineering"
+  ],
+  "limitations": [
+    "The ESO In-Tend portal is JavaScript-heavy and can present reCAPTCHA/anti-bot challenges. If the local run returns zero In-Tend rows, this does NOT mean ESO has zero current/forthcoming/awarded procurements; it means the live layer is not machine-readable through plain HTTP from this collector.",
+    "ESO is an intergovernmental astronomy organisation, not an EU agency. The RAG scope therefore means procurement relevant to the European space/astronomy industrial supply chain, not EU public procurement in the narrow legal sense.",
+    "Generic catering, office, travel, HR and non-technical facilities procurement is excluded.",
+    "Supplier/award details depend on what the public In-Tend pages expose without authentication."
+  ]
+}

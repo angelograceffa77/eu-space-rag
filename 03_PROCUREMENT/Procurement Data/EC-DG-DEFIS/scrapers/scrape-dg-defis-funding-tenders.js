@@ -827,6 +827,12 @@ function getStatusAtDownload(
       planningDateText
     );
 
+  if (planningIdentifier && submissions !== "true") {
+    if (!planningDate) return "PLANNING NOTICE - DATE NOT PROVIDED";
+    return planningDate.getTime() >= now.getTime() ? "FORTHCOMING / PLANNED" : "PLANNING NOTICE - PLANNED DATE PASSED";
+  }
+  if (submissions === "false") return "CLOSED / SUBMISSIONS NOT ALLOWED";
+
   if (
     submissions === "true" &&
     (
@@ -1258,75 +1264,32 @@ function createRagText(
 
 async function searchPage(
   searchTerm,
-  pageNumber
+  pageNumber, partition = null
 ) {
   let attempt = 1;
 
   while (true) {
     try {
-      const query = {
-        bool: {
-          must: [
-            {
-              terms: {
-                type: ["0"]
-              }
-            }
-          ]
-        }
-      };
-
-      const form =
-        new FormData();
-
-      form.append(
-        "query",
-        new Blob(
-          [
-            JSON.stringify(
-              query
-            )
-          ],
-          {
-            type:
-              "application/json"
-          }
-        ),
-        "query.json"
-      );
-
-      form.append(
-        "pageNumber",
-        String(pageNumber)
-      );
-
-      form.append(
-        "pageSize",
-        String(PAGE_SIZE)
-      );
-
-      form.append(
-        "language",
-        "en"
-      );
-
-      form.append(
-        "text",
-        searchTerm
-      );
+      const transport = require('../../current/sedia.cjs');
+      const {url: requestUrl, form} = transport.request(searchTerm, pageNumber, PAGE_SIZE, partition);
 
       const response =
         await axios.post(
-          API_URL,
+          requestUrl,
           form,
           {
             timeout: 60000
           }
         );
 
+      transport.validate(response.data, pageNumber, PAGE_SIZE);
+      transport.saveResponse(OUTPUT_FOLDER, searchTerm, pageNumber, response.data, requestUrl, partition);
       return response.data;
 
     } catch (error) {
+      // PHASE2_BOUNDED_RETRY: preserve checkpoints and return control to coordinator.
+      const httpStatus = Number(error.response?.status || 0);
+      if (error.permanent || attempt >= 3 || (httpStatus >= 400 && httpStatus < 500 && httpStatus !== 408 && httpStatus !== 429)) throw error;
       console.log("");
       console.log(
         `API error. Search "${searchTerm}", page ${pageNumber}, attempt ${attempt}.`
@@ -1414,7 +1377,9 @@ function loadCheckpoint() {
 // DOWNLOAD
 // ======================================================
 
-async function downloadAll() {
+async function downloadAll() { return require('../../current/sedia-collection.cjs').collect({terms:SEARCH_TERMS,size:PAGE_SIZE,output:OUTPUT_FOLDER,searchPage,accept:isDefisResult}); }
+
+async function downloadAllLegacy() {
   let termIndex = 0;
   let pageNumber = 1;
   let matchedResults = [];

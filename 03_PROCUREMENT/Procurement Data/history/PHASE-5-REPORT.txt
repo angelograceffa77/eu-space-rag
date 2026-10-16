@@ -1,0 +1,26 @@
+PHASE 5 — HISTORICAL COVERAGE PASS
+
+Purpose: expand accessible procurement history from 2020 while preserving original source evidence. This is a targeted historical pass, not a claim that all national procurement is available or that every candidate is a confirmed space tender.
+
+Completed collection work
+- Spain: selected annual and recent public archives reconciled. Country export has 37,083 historical versions, including 6,947 explicit lot versions. The selected archives were completed; nationwide coverage remains partial.
+- Poland: recovered 67 older CBK portal listings and one official 2020 award document. Merged country export: 2,137 latest records and 3,962 historical versions.
+- Italy: added Rome, Arcetri, IAPS and Capodimonte institutional sources. Capodimonte: 308 distinct documents read, no document failures. Merged country export: 689 latest records and 691 historical versions; 527 require review. These are the historical export's counts, not a fresh count of all Italian open tenders.
+- EUROCONTROL: fixed an incorrect duplicate key that merged different award documents under one tender reference. All 309 distinct publicly exposed award documents were recovered across 282 references and matched between Excel and JSONL. Catalogue collection and the key fix were live-tested; this supplement did not rerun all award-PDF enrichment.
+
+Remaining coverage limits
+- Germany: complete national history before December 2022 is not established. The old federal board does not provide long-term archiving; the DLR directory provides current notices.
+- Poland: the national 2020 mirror returned no rows; the legacy service timed out. Some institutional 2020 records are available and retained.
+- Italy: the legacy ANAC catalogue rejected access. Restricted central searches, other institutional archives and unindexed records mean national history remains incomplete.
+- Sweden: the existing collectors cover the five registered database providers, but their public interfaces do not expose all historical records. Private archives were not accessed.
+- Denmark: the published below-threshold archive begins in March 2022; earlier low-value history remains a gap.
+- OCCAR: the current source returned an access challenge and the public historical index timed out. Older saved evidence is preserved; the 2020–2023 gap remains.
+- All sources: unpublished purchases, restricted documents, removed notices and terminology-only discovery limits remain. Source-reported open status is not independent confirmation that bidding is possible.
+
+Preservation and validation
+Original downloaded files were retained. Normalized dates, values, classifications and duplicate handling are derived fields; missing publication dates were not invented from annual reporting years or upload filenames. Uncertain candidates remain available for review. Excel/JSONL comparisons passed. There were 492 passing automated tests across the national collectors, coordinator, master builder and EUROCONTROL identity fix.
+
+Master successfully generated and validated:
+C:\Users\angel\OneDrive\Desktop\knowledge\eu-space-rag\03_PROCUREMENT\Procurement Data\Procurement-Master\snapshot-2026-10-15T19-20-42-169Z-af681a0e
+
+Master counts: 199343 preserved source records; 108976 linked procurement groups; 1853 identified lots. 642 input/archive pairs reverified. Every output part checksum, index location and entity relationship passed verification. Coverage remains partial. No GitHub push, source-file deletion, daily automation or Phase 6 work was performed.

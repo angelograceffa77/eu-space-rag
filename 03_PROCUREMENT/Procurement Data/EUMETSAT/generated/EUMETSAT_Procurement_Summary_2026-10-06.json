@@ -1,0 +1,21 @@
+{
+  "runDate": "2026-10-06",
+  "historicalStart": 2020,
+  "currentRows": 9,
+  "intendedRows": 18,
+  "archivedRowsBeforeDedup": 571,
+  "totalUniqueProcurementRecords": 391,
+  "spaceRelevantIncludingManualReview": 112,
+  "ragReadySpace": 112,
+  "openSpace": 3,
+  "plannedSpace": 7,
+  "historicalSpace": 102,
+  "manualReview": 0,
+  "methodology": [
+    "Official public EUMITS Current ITT page",
+    "Official public EUMITS Intended ITT page",
+    "Weekly-deduplicated Internet Archive snapshots of the official EUMITS Current ITT page from 2020-present where available",
+    "High-recall EUMETSAT mission/space classifier with separate manual-review layer"
+  ],
+  "limitation": "Public EUMITS exposes current and intended ITTs but not a complete public live archive. Historical reconstruction therefore depends on archived snapshots and can only cover periods for which snapshots exist. When the Wayback CDX index is unavailable from the user network, the collector falls back to a verified list of archived EUMITS snapshots from 2020-2026. Award details may require registered EUMITS access."
+}

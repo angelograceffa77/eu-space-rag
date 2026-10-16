@@ -1,0 +1,47 @@
+{
+  "collectionStatus": "partial",
+  "runDate": "2026-10-15",
+  "historicalStart": "2020-01-01",
+  "currentSourceChecks": [
+    {
+      "source": "EDA Funding & Tenders",
+      "state": "complete",
+      "reportedTotal": 221,
+      "rawRecords": 221,
+      "pages": 3,
+      "error": null
+    },
+    {
+      "source": "https://www.eda.europa.eu/procurement",
+      "state": "partial",
+      "mode": "explicit-provider-snapshot",
+      "sourceObservedAt": "2026-10-15T12:51:10.193Z",
+      "evidenceFile": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\03_PROCUREMENT\\Procurement Data\\.procurement-runs\\phase4-eda-final-v3-2026-10-15\\jobs\\EDA--scrape-eda-procurements\\output\\_EDA_CACHE\\2026-10-15\\eda-provider-response.json",
+      "sha256": "63b407788e200cdb2c4c7f909308b57808c5181e6696afee4e3bfdbc8a5b123c",
+      "error": "Remote source representation; imported snapshot is not a new local live fetch"
+    },
+    {
+      "source": "EDA Other notices discovery",
+      "state": "partial",
+      "discoveredUrls": 5,
+      "error": "Combined landing and index; full historical archive not available"
+    }
+  ],
+  "sourceCounts": {
+    "fundingTenders": 107,
+    "edaWebsite": 8
+  },
+  "totalUniqueProcurementRecords": 109,
+  "spaceRelevantIncludingManualReview": 13,
+  "ragReadySpace": 11,
+  "openSpace": 0,
+  "historicalSpace": 13,
+  "manualReview": 2,
+  "methodology": [
+    "Exact EDA buyer filter on EU Funding & Tenders Portal using cftPartyLegalEntityId=47352396",
+    "Official EDA procurement page for current formal calls",
+    "Official EDA Other notices index for current low-value/ex-ante/market-consultation notices",
+    "High-recall space/defence-space classifier with manual-review layer"
+  ],
+  "limitation": "EDA does not expose a complete machine-readable historical archive of all Other notices. Formal historical tender coverage from 2020 is anchored on the Funding & Tenders Portal. If the EDA website returns HTTP 403, the supplemental website layer is skipped without blocking completion."
+}

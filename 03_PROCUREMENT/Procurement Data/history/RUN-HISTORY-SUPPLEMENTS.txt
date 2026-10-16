@@ -1,0 +1,17 @@
+PHASE 5 HISTORICAL SUPPLEMENTS
+
+Run commands from the Procurement Data folder. These commands retain official source evidence and generate Excel plus UTF-8 JSONL. Use a new output directory for a fresh run; use the same arguments with --resume to retry an interrupted run. Read coverage and validation results: a successful process exit alone does not prove full collection.
+
+Poland public institutional history:
+node ".\EU27\National-Portals\collect.cjs" --sources=PL-CBK-archive,PL-CBK-documents --from=2020-01-01 --concurrency=1 --delay-ms=2100 --max-pages=1000 --output=".\.procurement-runs\poland-history-refresh"
+
+Italy public institutional history:
+node ".\EU27\National-Portals\collect.cjs" --sources=IT-INAF-Rome-history,IT-INAF-Arcetri-history,IT-INAF-IAPS-history,IT-INAF-IAPS-annual,IT-INAF-Capodimonte-history --from=2020-01-01 --concurrency=1 --delay-ms=1200 --max-pages=2000 --output=".\.procurement-runs\italy-history-refresh"
+
+EUROCONTROL full existing collector:
+node ".\Eurocontrol\scrapers\scrape-eurocontrol-procurements.js"
+The award identity now includes the award document, signature date and title. Different contracts sharing a procedure reference remain separate; exact repeats still collapse. The full collector also performs its existing relevant-document enrichment.
+
+The coordinator reads new national source IDs automatically from the source registry. Source archives and historical snapshots are not evidence that a tender is open now. Annual disclosure years and administrative decision dates are kept separate from actual publication dates.
+
+Only the validated Procurement-Master generation and its manifest/index are intended for GitHub ingestion. Intermediate country exports, raw archives, test files and checkpoints are not additional RAG inputs.

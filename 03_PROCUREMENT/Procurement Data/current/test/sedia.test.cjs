@@ -1,0 +1,4 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),{request,validate}=require('../sedia.cjs');
+test('SEDIA pagination and search are URL parameters; language is a JSON part',async()=>{const r=request('DEFIS/',2,100),u=new URL(r.url);assert.equal(u.searchParams.get('pageNumber'),'2');assert.equal(u.searchParams.get('text'),'DEFIS/');assert.deepEqual(JSON.parse(await r.form.get('languages').text()),['en']);assert.equal(r.form.has('language'),false);});
+test('short, empty and wrong pages fail reconciliation',()=>{const data={results:[{}],totalResults:101,pageNumber:2,pageSize:100};assert.equal(validate(data,2,100),data);assert.throws(()=>validate({...data,results:[]},2,100),/count mismatch/);assert.throws(()=>validate(data,1,100),/pagination mismatch/);assert.throws(()=>validate({...data,totalResults:102},2,100),/count mismatch/);});

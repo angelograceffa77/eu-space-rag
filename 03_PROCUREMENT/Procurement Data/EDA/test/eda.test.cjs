@@ -1,0 +1,7 @@
+const test=require('node:test'),a=require('node:assert/strict'),fs=require('fs');
+const api=require('../scrapers/scrape-eda-procurements.js');
+test('actual EDA page has three isolated formal cards',()=>{const rows=api.parseEdaCards(JSON.parse(fs.readFileSync(require('path').join(__dirname,'fixtures/provider-response.json'))).html);a.equal(rows.length,3);a.equal(rows[0].reference,'EDA/2026/OP/0010');a.ok(!rows[0].text.includes('EDA/2026/OP/0009'));a.ok(!rows[1].text.includes('gas'));});
+test('short and long month dates preserve the calendar day',()=>{a.equal(api.isoDate('12 Oct 2026'),'2026-10-12');a.equal(api.isoDate('31 August 2026'),'2026-08-31');});
+test('relative Other notices links retain procurement directory',()=>a.equal(api.normalizeUrl('other-notices/test'),'https://www.eda.europa.eu/procurement/other-notices/test'));
+test('different source deadlines are retained and not advertised open',()=>{const r=api.mergeRows([{reference:'EDA/2026/OP/0010',sourceType:'EU Funding & Tenders Portal',deadline:'2026-11-16',status:'OPEN',openNow:'YES',sourceURL:'https://example.com/one'},{reference:'EDA/2026/OP/0010',deadline:'2026-11-17',sourceURL:'https://example.com/two'}])[0];a.equal(r.status,'UNKNOWN_DEADLINE_CONFLICT');a.equal(r.openNow,'NO');a.equal(r.deadlineConflict.length,2);});
+test('same date at different precision is not a conflict',()=>{const r=api.mergeRows([{reference:'x',deadline:'2026-11-16T12:00:00Z',status:'OPEN'},{reference:'x',deadline:'2026-11-16'}])[0];a.equal(r.status,'OPEN');a.equal(r.deadlineConflict,undefined);});

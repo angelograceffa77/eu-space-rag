@@ -9,13 +9,17 @@
   },
   "scripts": {
     "test": "node --test test/*.test.cjs",
-    "start": "node collect.cjs"
+    "start": "node refresh-eu27-national-space-procurements.cjs",
+    "collect:legacy": "node collect.cjs"
   },
   "dependencies": {
     "cheerio": "1.2.0",
     "exceljs": "4.4.0",
+    "fast-csv": "4.3.6",
     "pdf2json": "4.0.3",
     "playwright-core": "1.63.0",
-    "unzipper": "0.10.14"
+    "unzipper": "0.10.14",
+    "word-extractor": "1.0.4",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   }
 }

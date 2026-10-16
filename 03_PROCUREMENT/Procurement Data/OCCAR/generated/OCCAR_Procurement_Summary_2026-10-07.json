@@ -1,0 +1,32 @@
+{
+  "runDate": "2026-10-07",
+  "historicalStart": 2020,
+  "sourceCounts": {
+    "currentAdvertisements": 10,
+    "archivedAdvertisementRowsBeforeDedup": 278,
+    "spaceRelevantContractNews": 0,
+    "verifiedMusisHistoricalFallback": 4
+  },
+  "totalUniqueProcurementRecords": 31,
+  "spaceRelevantIncludingManualReview": 4,
+  "ragReadySpace": 4,
+  "openSpace": 0,
+  "plannedSpace": 0,
+  "historicalSpace": 4,
+  "manualReview": 0,
+  "methodology": [
+    "Official OCCAR Current Advertisements page",
+    "Internet Archive snapshots of OCCAR Current Advertisements with verified snapshot-list fallback",
+    "Official OCCAR news articles for procurement/contract awards/signatures/amendments",
+    "Conservative space classifier requiring explicit satellite/space/PNT/EO/ground-segment evidence",
+    "MUSIS treated as OCCAR's core space-based imaging programme"
+  ],
+  "limitations": [
+    "OCCAR's public website does not expose a single machine-readable historical procurement database.",
+    "If the user's local network returns HTTP 403 for OCCAR pages, the collector uses verified current-advertisement and MUSIS historical fallback records from the official OCCAR website instead of aborting.",
+    "Wayback coverage for the current-advertisements page begins only where public snapshots exist, mainly from late 2023 onward; when CDX is unavailable, the collector uses a verified snapshot list.",
+    "Historical contract coverage before that relies on official OCCAR news/programme pages and is therefore not guaranteed to be exhaustive.",
+    "Generic defence programmes such as air-defence, hypersonic-defence, naval, land and RPAS are not indexed as space unless explicit space dependencies are present."
+  ],
+  "note": "The authoritative MUSIS programme page records the original Stage 2 contract signed in 2019, outside the 2020-present production window. It remains listed in the Sources file for provenance."
+}

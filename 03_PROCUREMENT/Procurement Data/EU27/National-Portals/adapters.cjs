@@ -17,7 +17,7 @@ function parseFeed(xml,source){
    kind=['ADJ','RES'].includes(status)?'award':status==='PRE'?'planning':'tender';
    const period=local(el,'TenderSubmissionDeadlinePeriod').first();deadline=first(period,'EndDate');const time=first(period,'EndTime');if(deadline&&time)deadline+='T'+time;
    const issueDates=local(el,'IssueDate').map((i,x)=>$(x).text()).get().filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)).sort();publication=issueDates[0]||'';
-  }else if(source.adapter==='dlr'){
+  }else if(['dlr','dlrDetailed'].includes(source.adapter)){
    deadline=htmlText(content).match(/(?:Angebotsfrist|Abgabefrist|Teilnahmefrist|Frist.*?Angebot)\s*:?\s*(\d{1,2}\.\d{1,2}\.\d{4}(?:\s+\d{1,2}:\d{2})?)/i)?.[1]||'';
    kind=/market consultation|markterkundung|prior information/i.test(title+' '+htmlText(content))?'planning':'tender';status=/widerruf|annull/i.test(title)?'cancelled':'';
   }else{
@@ -151,7 +151,7 @@ function parsePage(html,url,source){
   const due=value(/time-limit for receipt of tenders|προθεσμια παραλαβης των προσφορων|pasiulymu.*pateikimo.*termin/);
   const publication=value(/date of publication|ημερομηνια δημοσιευσης|paskelbimo.*data/);
   const award=value(/^(date of award|award date|ημερομηνια αναθεσης|laimetojo nustatymo data)\s*:/);
-  if(eTitle)return {row:{noticeId:new URL(url).searchParams.get('resourceId'),procedureId:new URL(url).searchParams.get('resourceId'),sourceUrl:url,title:eTitle,description:value(/^(description|περιγραφη|aprasymas)\s*:/),buyer:value(/name of contracting authority|ονομα αναθετουσας αρχης|pirkimo vykdytojo pavadinimas/),publicationDate:parseDate(publication,source.timeZone).iso.slice(0,10),deadlineRaw:due,noticeType:award?'award':'tender',noticeVerified:true,sourceStatus:award?'awarded':'',cpv:value(/cpv|bvpz/),value:value(/estimated value|numatoma verte/),currency:/estimated value.*eur/i.test(pairs.map(p=>p[0]).join(' '))?'EUR':''},links};
+  if(eTitle)return {row:{noticeId:new URL(url).searchParams.get('resourceId'),procedureId:new URL(url).searchParams.get('resourceId'),sourceUrl:url,title:eTitle,description:value(/^(description|περιγραφη|aprasymas)\s*:/),buyer:value(/name of contracting authority|ονομα αναθετουσας αρχης|pirkimo vykdytojo pavadinimas/),publicationDate:parseDate(publication,source.timeZone).iso.slice(0,10),deadlineRaw:due,noticeType:award?'award':'tender',noticeVerified:true,sourceStatus:value(/^(status|κατασταση|busena)\s*:/)||(award?'awarded':''),cpv:value(/cpv|bvpz/),value:value(/estimated value|numatoma verte/),currency:/estimated value.*eur/i.test(pairs.map(p=>p[0]).join(' '))?'EUR':''},links};
  }
  const kind=/call for proposals|grant funding|bourse|scholarship|vacanc|recruitment|emploi/i.test(title)?'non_tender':/prior information|pre-information|market consultation/i.test(title)?'planning':procurement.test(title)||/notice|tender|detail|consultation|appalt|licitaci|oglosze/i.test(url)?'tender':'unknown';
  // Unstructured pages remain candidates even when they have procurement words.

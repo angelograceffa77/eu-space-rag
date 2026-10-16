@@ -52,6 +52,9 @@ async function getPage(start) {
       return response.data;
 
     } catch (error) {
+      // PHASE2_BOUNDED_RETRY: preserve checkpoints and return control to coordinator.
+      const httpStatus = Number(error.response?.status || 0);
+      if (attempt >= 3 || (httpStatus >= 400 && httpStatus < 500 && httpStatus !== 408 && httpStatus !== 429)) throw error;
       console.log("");
 
       console.log(

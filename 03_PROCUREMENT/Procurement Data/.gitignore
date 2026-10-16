@@ -3,3 +3,21 @@ validation-output/
 **/runtime/
 **/_V5_CACHE/
 **/*checkpoint.json
+
+.procurement-runs/
+
+# Master working database and interrupted builds
+.master-work/
+Procurement-Master/.staging-*/
+Procurement-Master/.build.lock*
+
+# Daily runtime state; published data is explicitly allowlisted
+daily/state.json
+daily/last-reconciliation.json
+daily/.daily.lock*
+
+# Local collector caches and resumable evidence (not GitHub publication data)
+EU27/National-Portals/.runtime-python/
+EU27/National-Portals/.country-history/
+EU27/National-Portals/.country-staging/
+**/*.log

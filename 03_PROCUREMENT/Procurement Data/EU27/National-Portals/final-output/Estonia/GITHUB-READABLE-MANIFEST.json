@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-10-14T09:12:21.482Z",
+  "country": "EE",
+  "encoding": "UTF-8",
+  "maximumPartBytes": 131072,
+  "recordsAreUnmodified": true,
+  "views": {
+    "MASTER": {
+      "file": "EE_NATIONAL_SPACE_2026-10-14_MASTER.jsonl",
+      "records": 578,
+      "sha256": "9290b5e8ea66e2f02c6b8bab72dcd6c29089fd156df2b9c4d5023350f4d7513d",
+      "partCount": 13,
+      "indexes": [
+        {
+          "path": "github-readable/2026-10-14-9290b5e8ea66/MASTER/index-001.json",
+          "parts": 13,
+          "records": 578,
+          "sha256": "b21c2df10be5377b2b4d22f5acc28578cd34ea95a06ae6942aa60c782a492b6c"
+        }
+      ]
+    },
+    "HISTORY": {
+      "file": "EE_NATIONAL_SPACE_2026-10-14_HISTORY.jsonl",
+      "records": 1501,
+      "sha256": "a46073ebd945a793210591ca06d3e7f8515a5113f355a4f20fa5cf286cad3047",
+      "partCount": 35,
+      "indexes": [
+        {
+          "path": "github-readable/2026-10-14-a46073ebd945/HISTORY/index-001.json",
+          "parts": 35,
+          "records": 1501,
+          "sha256": "ea529f2d01e2f820dc06022da28e2646348628b0c27e59a08f6aba8054996047"
+        }
+      ]
+    },
+    "OPEN": {
+      "file": "EE_NATIONAL_SPACE_2026-10-14_OPEN.jsonl",
+      "records": 0
+    },
+    "REVIEW": {
+      "file": "EE_NATIONAL_SPACE_2026-10-14_REVIEW.jsonl",
+      "records": 468
+    },
+    "COVERAGE": {
+      "file": "EE_NATIONAL_SPACE_2026-10-14_COVERAGE.jsonl",
+      "records": 3
+    }
+  },
+  "instructions": "Read MASTER parts for the latest records, HISTORY parts for all preserved versions. Scan every part for exhaustive questions. OPEN and REVIEW are filtered views, not extra unique tenders."
+}

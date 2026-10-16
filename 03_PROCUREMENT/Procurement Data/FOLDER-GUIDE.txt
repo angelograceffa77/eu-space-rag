@@ -1,0 +1,37 @@
+PROCUREMENT FOLDER GUIDE
+
+Keep these files and folders:
+- Authority folders: collector scripts, required saved source inputs and fixtures.
+- EU27/National-Portals: country collectors, source definitions, package files,
+  tests, and the local history/checkpoints used to resume collection.
+- orchestration, current, master, daily: coordinator, lifecycle rules, master
+  builder, quality checks, publication code, configuration and tests.
+- Procurement-Master: the one current validated master snapshot and its pointer.
+- Root entry scripts, package.json, package-lock.json and operating instructions.
+- Migration manifests referenced by the existing offline validation scripts.
+- .procurement-runs and daily state: local operating evidence and required
+  historical input paths. Do not remove them solely because they are hidden.
+- node_modules and the Python runtime: installed local dependencies.
+
+GITHUB
+The daily publisher uploads ONLY the validated Procurement-Master package.
+Collector code and configuration are needed to maintain/regenerate it; installed
+dependencies, caches and run state are local operating files, not data to upload.
+.gitignore does not remove files already tracked by Git. This cleanup does not
+commit or push changes, and does not change the publication allowlist.
+The current installation uses local paths and needs the separate company database
+at 05_COMPANIES. A fresh GitHub checkout alone is not a fully configured runner.
+
+ARCHIVE
+Obsolete snapshots, interrupted build databases, duplicate/unneeded exports and
+old reports are moved under:
+C:\Users\angel\OneDrive\Desktop\knowledge\03_PROCUREMENT\Procurement Data
+Original relative folders are preserved. If a different file already occupied
+the same archive path, the moved version is under _versions/cleanup-<timestamp>.
+_audit/cleanup-<timestamp>/moves.jsonl records every original and archive path,
+SHA-256 checksum and verified move. plan.json explains each selection.
+Required master inputs and validation fixtures are intentionally retained locally.
+Source record contents and the current master are not changed by the cleanup.
+
+AUTOMATION
+Daily runs are paused at the user's request. Cleanup does not resume them.

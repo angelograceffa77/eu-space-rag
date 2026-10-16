@@ -1,0 +1,33 @@
+{
+  "completedAt": "2026-10-15T19:32:16.900Z",
+  "phase": 5,
+  "status": "complete_targeted_historical_pass",
+  "coverageStatus": "partial",
+  "generation": "snapshot-2026-10-15T19-20-42-169Z-af681a0e",
+  "masterManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\03_PROCUREMENT\\Procurement Data\\Procurement-Master\\snapshot-2026-10-15T19-20-42-169Z-af681a0e\\manifest.json",
+  "counts": {
+    "inputRows": 254644,
+    "sourceRecords": 199343,
+    "malformed": 1,
+    "procurements": 108976,
+    "lots": 1853,
+    "lotEvidence": 37413,
+    "exactRepeatedSourceRows": 55301,
+    "linkedSourceRecords": 90366,
+    "sourceFileCount": 190,
+    "companyRecords": 19650
+  },
+  "validation": {
+    "originalRecordsRoundTripped": 199343,
+    "entitiesRoundTripped": 148242,
+    "allPartChecksumsVerified": true,
+    "indexLocationsVerified": 347992,
+    "allEntityRelationshipsVerified": true,
+    "allInputsArchivedAndVerified": true
+  },
+  "inputArchivePairsReverified": 642,
+  "testsPassed": 492,
+  "nextPhase": 6,
+  "nextPhaseRequiresUserPermission": true,
+  "githubPushed": false
+}

@@ -1,0 +1,29 @@
+{
+  "runDate": "2026-10-08",
+  "historicalStart": 2020,
+  "sourceCounts": {
+    "inTend": 0,
+    "legacyAbove150k": 94,
+    "legacy50to150k": 39
+  },
+  "liveInTendLayerAccessible": false,
+  "totalUniqueProcurementRecords": 117,
+  "spaceIndustryRelevantIncludingManualReview": 77,
+  "ragReadySpaceIndustry": 63,
+  "openSpaceIndustry": 0,
+  "plannedSpaceIndustry": 0,
+  "historicalSpaceIndustry": 63,
+  "awardedSpaceIndustry": 0,
+  "manualReview": 14,
+  "methodology": [
+    "ESO In-Tend public portal for current, forthcoming and awarded procurement since November 2022",
+    "Official ESO legacy procurement tables for historical calls and price inquiries around the 2020-2022 transition; the >=150 kEUR page is parsed with its native Cft No/Date/Division/Subject/Details structure and preserves later award/status updates",
+    "Conservative European space-industry classifier focused on telescope/instrument systems, optics, adaptive optics, detectors, cryogenics, RF/receivers, precision mechanics, scientific software/data and observatory engineering"
+  ],
+  "limitations": [
+    "The ESO In-Tend portal is JavaScript-heavy and can present reCAPTCHA/anti-bot challenges. If the local run returns zero In-Tend rows, this does NOT mean ESO has zero current/forthcoming/awarded procurements; it means the live layer is not machine-readable through plain HTTP from this collector.",
+    "ESO is an intergovernmental astronomy organisation, not an EU agency. The RAG scope therefore means procurement relevant to the European space/astronomy industrial supply chain, not EU public procurement in the narrow legal sense.",
+    "Generic catering, office, travel, HR and non-technical facilities procurement is excluded.",
+    "Supplier/award details depend on what the public In-Tend pages expose without authentication."
+  ]
+}

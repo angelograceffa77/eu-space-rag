@@ -1,0 +1,1693 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-15T13:12:34.288Z",
+  "policy": "Preserve original source records as immutable evidence. Historical assessments have priority 10; existing current assessments retain their higher priorities. No live verification inferred. Raw archive checksums and locations are recorded in linked audit manifests.",
+  "inputs": [
+    {
+      "path": ".procurement-runs/phase4-esa-euspa-2026-10-15/jobs/ESA--scrape-esa-publication-tenders/output/ESA_Publication_Tender_Actions_2026-10-15.jsonl",
+      "sha256": "c80255d7641380f9dc5eb73dcf86e66797635eea7f36c2ca145494572ffd7169",
+      "authority": "ESA",
+      "family": "esa",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-esa-euspa-2026-10-15/jobs/ESA--scrape-esa-tender-actions/output/ESA_Tender_Actions_2026-10-15.jsonl",
+      "sha256": "d5d05bb0ab21501f1530154c504c92ca17ad983b5b02a62d32b1f3bb42ae7ff6",
+      "authority": "ESA",
+      "family": "esa",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-esa-euspa-2026-10-15/jobs/EUSPA--scrape-euspa-closed-procurements/output/EUSPA_Closed_Procurements_2026-10-15.jsonl",
+      "sha256": "ae4e13a1417eac593b8807753c92af4da1e1a8fd742909650d683734550b9f55",
+      "authority": "EUSPA",
+      "family": "euspa",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-esa-euspa-2026-10-15/jobs/EUSPA--scrape-euspa-current-planned-procurements/output/EUSPA_Current_Planned_Procurements_2026-10-15.jsonl",
+      "sha256": "c92ff7ffc80d6cc947d7315c38c78d38921de519a25ad45511cfebe8bcdaf284",
+      "authority": "EUSPA",
+      "family": "euspa",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-defis-partitioned-2026-10-15/jobs/EC-DG-DEFIS--scrape-dg-defis-funding-tenders/output/EC_DG_DEFIS_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "3d40637a375197081335359c2606bb68e77f15950f62a474d781e6fc40db807c",
+      "authority": "EC-DG-DEFIS",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-AGRI--scrape-dg-agri-funding-tenders/output/EC_DG_AGRI_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "0076bb6d5d1ff7460d3969dde61b0ec08425b35ac62fdf7e04bd609ddabd037f",
+      "authority": "EC-DG-AGRI",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-CLIMA--scrape-dg-clima-funding-tenders/output/EC_DG_CLIMA_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "fe8a85af63db4d556ecf1e0128287c5dad4c52c601c2db51fdcc03e156c35a18",
+      "authority": "EC-DG-CLIMA",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-CONNECT--scrape-dg-connect-funding-tenders/output/EC_DG_CONNECT_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "26d6f959fa3e6caf669a8133ec869308cc091f89cd2433d2a2ead3ca45b0e411",
+      "authority": "EC-DG-CONNECT",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-ECHO--scrape-dg-echo-funding-tenders/output/EC_DG_ECHO_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "342295e109fa6605b212c73db00a47727180961cb1576846f54bf47f3d84cbdc",
+      "authority": "EC-DG-ECHO",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-ENV--scrape-dg-env-funding-tenders/output/EC_DG_ENV_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "0b992462b528e7a85e8094722ed855dcd0d7254c2e4987909969e3f9d872625a",
+      "authority": "EC-DG-ENV",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-HOME--scrape-dg-home-funding-tenders/output/EC_DG_HOME_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "7d87d3ebc76bc564199cc74c5ebe1c067e974a3feb02eff830243a4113d38359",
+      "authority": "EC-DG-HOME",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-MARE--scrape-dg-mare-funding-tenders/output/EC_DG_MARE_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "0d87ce3bc14711a05bf73d426db7a2fe0e9fe17cc071e473589cbdbc39812450",
+      "authority": "EC-DG-MARE",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-MOVE--scrape-dg-move-funding-tenders/output/EC_DG_MOVE_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "4299e9a7ccc6057d4a90264a9b8a1f4badf8a863c8641ccba37b49fb71bbca09",
+      "authority": "EC-DG-MOVE",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/jobs/EC-DG-RTD--scrape-dg-rtd-funding-tenders/output/EC_DG_RTD_Funding_Tenders_2026-10-15.jsonl",
+      "sha256": "21e1c40d610aab00427a73f9db4ea7e839d5a38777a2c3d6aa38076bf5a77fde",
+      "authority": "EC-DG-RTD",
+      "family": "funding",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/jobs/EEA--scrape-eea-procurements/output/EEA_Procurement_All_2026-10-15.csv",
+      "sha256": "e73675c0024be627d6113eaf5eea81fe26f4451d2f405400e6e9b159ad01e6b2",
+      "authority": "EEA",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/jobs/EUMETSAT--scrape-eumetsat-procurements/output/EUMETSAT_Procurement_All_2026-10-15.csv",
+      "sha256": "6b99ffbb8d4cf3ab656fc4b2bf97a3e48cb3eb935713b48322c6a981d20b8748",
+      "authority": "EUMETSAT",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/jobs/Frontex--scrape-frontex-procurements/output/Frontex_Procurement_All_2026-10-15.csv",
+      "sha256": "38b53bf6dfa07128175e14276d5c336812d1cd934ed8f45ae38f32a56941c91c",
+      "authority": "Frontex",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/jobs/NATO--scrape-nato-procurements/output/NATO_Procurement_All_2026-10-15.csv",
+      "sha256": "5fc956bcf5248b1327f75309c182e3db7db1547039c3f81ce51f6aa310becdd9",
+      "authority": "NATO",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false,
+      "conditionalEvidenceOnly": "Allied Command Transformation|\\bACT\\b|NCIA|Communications and Information Agency"
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/jobs/ECMWF--scrape-ecmwf-procurements/output/ECMWF_Procurement_All_2026-10-15.csv",
+      "sha256": "29e6a71fed40465630b5dadd8a1fada1f769cc858340dea885959ea536f3c240",
+      "authority": "ECMWF",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/jobs/EMSA--scrape-emsa-procurements/output/EMSA_Procurement_All_2026-10-15.csv",
+      "sha256": "ff58766cced525baf4024a94fa86ca6aeb87fa9ae8bdf05736a38f9e94ff181c",
+      "authority": "EMSA",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/jobs/Eurocontrol--scrape-eurocontrol-procurements/output/EUROCONTROL_Procurement_All_2026-10-15.csv",
+      "sha256": "286f0511affb076cb4def104ea0995efffd237a67a0341d086fe4d5a3bd14f84",
+      "authority": "Eurocontrol",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/jobs/JRC--scrape-jrc-procurements/output/JRC_Procurement_All_2026-10-15.csv",
+      "sha256": "37ea085938ce3701f6e04482422cfe38d2c1254a3e1eea0e1a0e225d08fd5518",
+      "authority": "JRC",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-occar-health-fixed-2026-10-15/jobs/OCCAR--scrape-occar-procurements/output/OCCAR_Procurement_All_2026-10-15.csv",
+      "sha256": "0ed5bd85e940c69722e44c541aa28d2eeed8a188852f8e9cf64c46c264fd7311",
+      "authority": "OCCAR",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-satcen-text-fixed-2026-10-15/jobs/EU-SatCen--scrape-satcen-procurements/output/SatCen_Procurement_All_2026-10-15.csv",
+      "sha256": "21b407c43f31e7fccc0098819337adccf046ef8bd17cb2ca8931aecb0df7b7e6",
+      "authority": "EU-SatCen",
+      "family": "agency-csv",
+      "format": "csv",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-croatia-current-2026-10-15/2026-10-15T09-52-55-344Z/EU27_NATIONAL_SPACE_2026-10-15_MASTER.jsonl",
+      "sha256": "ca050a34ea4b7d253742822a373cb1355adee34f6ddb70973b943bd67b19c5a1",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 40,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-croatia-current-2026-10-15/2026-10-15T09-52-55-344Z/EU27_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "29c367a771d517a1bd5c2c1a1f2d05315ddc0296d25bcaf90927135d67a95f14",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase4-croatia-pending-2026-10-15/2026-10-15T10-12-09-490Z/EU27_NATIONAL_SPACE_2026-10-15_MASTER.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 40,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-croatia-pending-2026-10-15/2026-10-15T10-12-09-490Z/EU27_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase4-italy-current-2026-10-15/2026-10-15T10-27-14-736Z/EU27_NATIONAL_SPACE_2026-10-15_MASTER.jsonl",
+      "sha256": "87eac8140df6b496b4c24c8995b490ca0f3b5ef19f255ec485ea3b0d6a53abf4",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 40,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-italy-current-2026-10-15/2026-10-15T10-27-14-736Z/EU27_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "205559f2709cf9fe005c7fe6aee324ecb7683f2b9fd44c07d6503ee48be1a702",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase4-italy-anac-2026-10-15/2026-10-15T10-38-23-644Z/EU27_NATIONAL_SPACE_2026-10-15_MASTER.jsonl",
+      "sha256": "1efc5d0fcb6843952d4d06a973bfa981de0161425cca877ec03de3b6d570a90c",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 40,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-italy-anac-2026-10-15/2026-10-15T10-38-23-644Z/EU27_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "ee2028b0b6b2523fe1e0bd0f33ccbe0e1cc364f2cb5cee613230ac029432365a",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase4-cyprus-final-2026-10-15/Cyprus/CY_NATIONAL_SPACE_2026-10-15_MASTER.jsonl",
+      "sha256": "25c51dd376344bb8715b68e9cf8f7a2d09eb794ab3cdaa8b61eb490230412142",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 40,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-cyprus-final-2026-10-15/Cyprus/CY_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "7aca5b512ff6985a057bc72a34bce8850e645c4e6650e07a6b2df4c5c90947a0",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase4-malta-final-2026-10-15/Malta/MT_NATIONAL_SPACE_2026-10-15_MASTER.jsonl",
+      "sha256": "c7a1d12aa4add6f7d380b2dd821468bdc0ae526da28f6359be7fdbd55c1fec79",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 40,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-malta-final-2026-10-15/Malta/MT_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "e9842690966d3f020667e7e895639290b0bcb4c50a1bb6995b658da2c5018a05",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase4-sweden-final-v2-2026-10-15/Sweden/SE_NATIONAL_SPACE_2026-10-15_MASTER.jsonl",
+      "sha256": "8d7c9df7751e7246a47ec27afb44eeca62c6567a436d2c36f8ff6ce0b7ec3271",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 40,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-sweden-final-v2-2026-10-15/Sweden/SE_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "7d34bf25deb92b14f4812bbf9b5149d588f94b6857c0130c12cdc076b617f93e",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase4-eso-final-2026-10-15/jobs/ESO--scrape-eso-procurements/output/ESO_All_2026-10-15.jsonl",
+      "sha256": "b02aefbac5efbfead30f0610be1c14e36a9825d034783371049d21064502eed2",
+      "authority": "ESO",
+      "family": "agency-jsonl",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-ncia-final-2026-10-15/jobs/NATO--scrape-nato-procurements/output/NCIA_All_2026-10-15.jsonl",
+      "sha256": "8f193b8fb08400368fc4cb2d3ecbe116c4ba9fb6c4a82b7feb8713c6d32321be",
+      "authority": "NATO",
+      "family": "agency-jsonl",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-act-final-v2-2026-10-15/jobs/NATO--scrape-nato-procurements/output/ACT_All_2026-10-15.jsonl",
+      "sha256": "731eaee66d002aac435f8550efe7b1412ec419e10ca6f62ee04e5b141d68105a",
+      "authority": "NATO",
+      "family": "agency-jsonl",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-act-final-v2-2026-10-15/jobs/NATO--scrape-nato-procurements/output/ACT_Lots_2026-10-15.jsonl",
+      "sha256": "aafb0e1b7f6eec1a3051c4d67ac1cc9cf75e1b69d136995ddb6ffbfe35382647",
+      "authority": "NATO",
+      "family": "agency-jsonl",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-eda-final-v3-2026-10-15/jobs/EDA--scrape-eda-procurements/output/EDA_All_2026-10-15.jsonl",
+      "sha256": "2e47cef60cf48b93fa96195b0ca68a7ac8501f1fbfceb6beac357447618539f8",
+      "authority": "EDA",
+      "family": "agency-jsonl",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase4-eda-final-v3-2026-10-15/jobs/EDA--scrape-eda-procurements/output/EDA_Source_Records_2026-10-15.jsonl",
+      "sha256": "1472b43d0ca4a90b7a39f93225b1aa5c01da3c3408a89cf3d74c182562741c59",
+      "authority": "EDA",
+      "family": "agency-jsonl",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 20,
+      "evidenceOnly": true
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Sweden/SE_PHASE4_EXCLUDED_2026-10-15.jsonl",
+      "sha256": "0bf073ae6ac05c5245b0f6a01c2b7f54444b0d1a77dcd51ee220951d989536ff",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 100,
+      "exclusionLedger": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-export-2026-10-15T18-24-37-872Z/Spain/ES_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "2c2a5103eb5b530205d487e0f0df9ac61ddd303e02ff2cbdc347acdfcfb0c111",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 10,
+      "evidenceOnly": false
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Spain/ES_NATIONAL_SPACE_2026-10-13_HISTORY.jsonl",
+      "sha256": "a8e25ab316e790e7b200e578ed47e854e89463ccbad8a5eed083b560e58dc4ab",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/records/ES_HISTORY_2020.jsonl",
+      "sha256": "d80e577e9ea9b0b88316eaca1ae20e11c2ee4632c14c60c8025a55374216b373",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2020.jsonl",
+      "sha256": "d8ed7c9cdad1b0bb77ec7a1686fd6a41c1f60dbee28401cdd4260abd1fabafa0",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/records/ES_HISTORY_2021.jsonl",
+      "sha256": "a3a144e3b98cfb993ec42065c51b21747d7c91177e26c9ac390a14c69df53bb2",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2021.jsonl",
+      "sha256": "166bf140814fd282bac36befddd8e122d322c5d5100edd31f83d95f0701730e3",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/records/ES_HISTORY_2022.jsonl",
+      "sha256": "f193186b0aa1aa4ab0a3e71e5f14a28e701a711a9f2bf60a3b118bce13bf4690",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2022.jsonl",
+      "sha256": "c494925b5f911a413f02401273ab6bc765f29e8158bed87cc82a4db0545b9a52",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/records/ES_HISTORY_2023.jsonl",
+      "sha256": "2e8642ef00e194d81492128b2c04a17f73d9f1072da497bad5ea66e83fa848ee",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2023.jsonl",
+      "sha256": "c5da9e876e08c409cd9cdb906517c7e0abe0033a26d74e52a764d3f047c5acde",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/records/ES_HISTORY_2024.jsonl",
+      "sha256": "ff5f77b1b28ad818e7f4a45724215b3ce6b71ca5d29fa0243237445a9b37e851",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2024.jsonl",
+      "sha256": "769b1844322c2371eb203737bea8d98de25e08bace4c986444d8cbbe5d327912",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/records/ES_HISTORY_2025.jsonl",
+      "sha256": "518b4f8631cf536a81b68c1b73c206cf82381d9b0bffe6c6ef40598c31340129",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2025.jsonl",
+      "sha256": "2f4b134c12900d4964081bbe35a65b595d7e81c7a4fa2efff5e89cd3f473e8b2",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/records/ES_HISTORY_2026.jsonl",
+      "sha256": "7b589d420318b64363104f5fa147ac9ba31bddfab8f563b1dbbf7fe2466144b2",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2026.jsonl",
+      "sha256": "9ab8436fc4edc1b64c7add25c14026623ff2e55578601c8edcb3bdb35cff37c3",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-history-2026-10-15/recent-feed/2026-10-15T15-41-50-490Z/ES_RECENT_UPDATES.jsonl",
+      "sha256": "5713219d07a88bd04c357f165fc6a1a04a901d042fec76d9d724e8e90620ebaa",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/records/ES_HISTORY_2020.jsonl",
+      "sha256": "6505fd55e2f86e5ca7cca2e68a604924d9eb68c28f084a4670bc020568b9897c",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2020.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/records/ES_HISTORY_2021.jsonl",
+      "sha256": "754554f0665c89035ad32eabbc3fab0531371929d5f9cfdf1370b16047b7a73c",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2021.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/records/ES_HISTORY_2022.jsonl",
+      "sha256": "54008f1649b1b110e2732c6dd6e9b00ad10d37483b696f71de559650043ac7c7",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2022.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/records/ES_HISTORY_2023.jsonl",
+      "sha256": "c2305320995353cd207b67a79e78bdf6c22768fdfd5fcabffb7489442c7c72a3",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2023.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/records/ES_HISTORY_2024.jsonl",
+      "sha256": "898e9fd9f62ef31e48502576b6b10cf58af17ec501df8df9b66879936578508c",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2024.jsonl",
+      "sha256": "135ff85480ab4d07ae3785d20a35dda000c02ffa0a1d64f4ac16f3f0f7ad58b5",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/records/ES_HISTORY_2025.jsonl",
+      "sha256": "1e039331252f8a9891f4e6fa0c13d3ad7b0d75535d8c669a6cdc5e22f68207e8",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2025.jsonl",
+      "sha256": "34f54335cffc78eefe61914826d398a3a817900f3b7e66e36e92ef591a2c6072",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/records/ES_HISTORY_2026.jsonl",
+      "sha256": "5d3093a304ef61d4cdc643916ce2891b3125ab165e151ce8bfd5e05cbd1bc840",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2026.jsonl",
+      "sha256": "be0198018b908766dfedea7264ae730df216298b2c2f0604561e23d7faeb75fb",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-regional-history-2026-10-15/recent-feed/2026-10-15T15-49-54-981Z/ES_RECENT_UPDATES.jsonl",
+      "sha256": "dc0220e28ad4dd533129af40d3e8597d31c93afe149bf6a5fa431748952d82db",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/records/ES_HISTORY_2022.jsonl",
+      "sha256": "d2d633e27d6ed3ea10c54948a31cec197bba80313bb7942893c2aa115346c232",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2022.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/records/ES_HISTORY_2023.jsonl",
+      "sha256": "25f35de4f2435a433bea5db0df95f3ad082b490a3ad1c8e0ade8234c6ff069dd",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2023.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/records/ES_HISTORY_2024.jsonl",
+      "sha256": "53754680fb8fdb71824a17baad89b2eac0197347d125345c3a72007f43c2dd4f",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2024.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/records/ES_HISTORY_2025.jsonl",
+      "sha256": "f701d46da9a133e1844dfa83ba478bc4ba6d653f258e16d6efb1563416854809",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2025.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/records/ES_HISTORY_2026.jsonl",
+      "sha256": "33a49e9c6958f802bc5a440d3f528a9539c745b4ce7803eb620252fa7c78c505",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2026.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-inhouse-history-2026-10-15/recent-feed/2026-10-15T15-50-38-208Z/ES_RECENT_UPDATES.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/records/ES_HISTORY_2022.jsonl",
+      "sha256": "11c96c6d250fa1dfab3ee2e14243973bdb855973a94550a6c491cee64420ad87",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2022.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/records/ES_HISTORY_2023.jsonl",
+      "sha256": "b5bea64b5119ea9b2a9bccc765b8ef71a9877349d3086b744864fd3444766941",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2023.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/records/ES_HISTORY_2024.jsonl",
+      "sha256": "8ee5c1bd54dc5b95ac0b6ff7b1c3ada07a8e77bf0d02fb6668be71c4e3d98e79",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2024.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/records/ES_HISTORY_2025.jsonl",
+      "sha256": "89dfab50ec26699074974d7a31a57a53fed98f20549c9bf644fa955672906590",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2025.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/records/ES_HISTORY_2026.jsonl",
+      "sha256": "d6f8801f6ee2d4f7a906ffadd1467b10a163b2efa089e9b0ce741d2ac2bb9fc1",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2026.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-consultation-history-2026-10-15/recent-feed/2026-10-15T15-50-56-396Z/ES_RECENT_UPDATES.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/records/ES_HISTORY_2020.jsonl",
+      "sha256": "447f9d088197c1a0cb1c604ed2f9e7337836e643000d31af7504ad99af28d898",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2020.jsonl",
+      "sha256": "9afa23868e8619aa792e4c6745944807ec44bf6328e5caea2c27abb145384c76",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/records/ES_HISTORY_2021.jsonl",
+      "sha256": "1df0f726c4b85f6ead8ac37d956ee63e4915975de8ac3c71921ae0b7d2f6ee0a",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2021.jsonl",
+      "sha256": "1da09af42dcbbb025bc5035ff34e0ef6718f95858b4883bd251585f7b2a3847f",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/records/ES_HISTORY_2022.jsonl",
+      "sha256": "f9ed7409d39852c4ed92e9f6f1eb9fb6db1829130667131fafbe87dc22a260d1",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2022.jsonl",
+      "sha256": "2e1c06476d8bd2a94fabfe3b732837cecef4948369c92a3a46bee2dd286d3f78",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/records/ES_HISTORY_2023.jsonl",
+      "sha256": "c29e8cf9c8043f16c5416ea3c9c986a1258e7ae9aedf02ab44ab44549cb0a984",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2023.jsonl",
+      "sha256": "6564f123fa48a05e2a9b980da2a3504a8d96516e5c3371588d7448853bca5372",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/records/ES_HISTORY_2024.jsonl",
+      "sha256": "284ebb3e404441b22f7f82d3992af7ce2b86c46b62f385e52481954e6e62fe0f",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2024.jsonl",
+      "sha256": "c8a97144c9895160fa29376b939358b6cc2a07785f69bad1f32a7b07b91bc9c6",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/records/ES_HISTORY_2025.jsonl",
+      "sha256": "7ab16be842011f994868f1236c4a75656c0ed02b12b54db30957abc04bce21e1",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2025.jsonl",
+      "sha256": "e42f5cb9ff60684a1b179a92fc50a934c41f48cefb7614e510e2e985bf27036e",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/records/ES_HISTORY_2026.jsonl",
+      "sha256": "1ff679bac453f36a73b26e3afd057432874d8eb29c02f8e20d7b93e4280a57a3",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/lot-records/ES_HISTORY_LOTS_2026.jsonl",
+      "sha256": "2a3590631d482644120d26aa70d283d649ae7bb563a4f6c47102feacc65e986f",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-minor-history-2026-10-15/recent-feed/2026-10-15T15-51-18-539Z/ES_RECENT_UPDATES.jsonl",
+      "sha256": "33b8bccd7161a3e0d3d0826acdfb67d919e84c15676280a34bda6e98032580ed",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-poland-history-2026-10-15/merged/Poland/PL_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "ffaf777fe3a899535bd9bfbb2ba01e2b5913ed975f0480ccce92974ec70e948a",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 10,
+      "evidenceOnly": false
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Poland/PL_NATIONAL_SPACE_2026-10-13_HISTORY.jsonl",
+      "sha256": "b5fa927fa048e299665aee6abbc6712dc340627badff8037fc62f3773916900b",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-poland-history-2026-10-15/cbk-smartpzp-final/2026-10-15T18-46-40-762Z/Poland/PL_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "2c722deaf8790f69940503291cacda277e0b850428fa165ebf20c9482eca1eed",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-poland-history-2026-10-15/cbk-documents-verified/2026-10-15T18-51-55-058Z/Poland/PL_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "9ebdc1baf8ca453ab5a15ceda014d81e5602d57998a7ce745a8befd8aea7abc7",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/merged/Italy/IT_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "f3004c21a8fafbdec18f6a47a964d8b86e54233ac37c4a247b0a1391b7b6765d",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Italy/IT_NATIONAL_SPACE_2026-10-13_HISTORY.jsonl",
+      "sha256": "78206db6fee6ed1c48d1cbf4c869780787a85808661cfc7a4269363940c9168a",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/rome/2026-10-15T18-57-03-883Z/Italy/IT_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "2dc4c32c13228fdb012eda7379ec949f6c85826dcaa23f3f1f84e46785f58b0d",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/arcetri-verified/2026-10-15T18-59-03-376Z/Italy/IT_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "1ea13040fa5f2b80a344228f1810e2c373ae5a30d103ce025826a4656c5f9459",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/iaps/2026-10-15T19-01-33-035Z/Italy/IT_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "e2683caee20a0b8360527f0443fcc2f00a4c72fa76d02b3dab6519750cadc9e1",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-eurocontrol-history-2026-10-15/EUROCONTROL_Award_History_2026-10-15.jsonl",
+      "sha256": "ae77b619934dacc75337d738d748dbce8c2a28fcca632c6602312642a05a9e69",
+      "authority": "Eurocontrol",
+      "family": "agency-csv",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 10,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-final-2026-10-15/merged/Italy/IT_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "fbf47fbc84f96dd01e9f6bfbf08c48a5099c71ed0bdf5af135d995d34d77c02e",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 10,
+      "evidenceOnly": false
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/capodimonte/2026-10-15T19-10-39-496Z/Italy/IT_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "bf747bfac4f6ef3c193ba83def789d5ee4bf8daeee3bff432e7c5333aeae77c5",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/iaps-annual-verified/2026-10-15T19-18-05-180Z/Italy/IT_NATIONAL_SPACE_2026-10-15_HISTORY.jsonl",
+      "sha256": "0d89cd76270f41bf8e0f43f6f6735b720f0ff0ff19702f09cfa7195adf069ec3",
+      "authority": "EU27",
+      "family": "national",
+      "format": "jsonl",
+      "date": "2026-10-15",
+      "priority": 0,
+      "evidenceOnly": true
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".procurement-runs/phase4-esa-euspa-2026-10-15/run-state.json",
+      "sha256": "9aa37a94d033be4cb25251beaea6265aabf040426dca2152a5a24ceb518ac246"
+    },
+    {
+      "path": ".procurement-runs/phase4-defis-partitioned-2026-10-15/run-state.json",
+      "sha256": "dca332b2897cc768e89375fa920346c631dac1a709cea466b4b93d3e96aefb51"
+    },
+    {
+      "path": ".procurement-runs/phase4-dg-partitioned-2026-10-15/run-state.json",
+      "sha256": "abe7170bd9626307e44b5d5375f1afc76fd49b8cba8c2f74a09d4c77f7410825"
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/run-state.json",
+      "sha256": "2089721b8787c2f5d840f5f8894d669c3c223a5ad74d7ebc21d84643b7b5379b"
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/jobs/EEA--scrape-eea-procurements/output/EEA_Procurement_Summary_2026-10-15.json",
+      "sha256": "fb2d068876d539dd6a843f34bc7c4a976b91c04cca22b7b43bf3c6d2615ebd87"
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/jobs/EUMETSAT--scrape-eumetsat-procurements/output/EUMETSAT_Procurement_Summary_2026-10-15.json",
+      "sha256": "a9ab79ceffc2559a80c143d6850f3be0fbd84c9e7a3f31c98bbf8c611bf2ce21"
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/jobs/Frontex--scrape-frontex-procurements/output/Frontex_Procurement_Summary_2026-10-15.json",
+      "sha256": "73357f5910c365003c3e13c01c987bcc46cbd7313f7032f43039cfc73e5fc0a3"
+    },
+    {
+      "path": ".procurement-runs/phase4-priority-fixed-2026-10-15/jobs/NATO--scrape-nato-procurements/output/NATO_Procurement_Summary_2026-10-15.json",
+      "sha256": "caaf9e24cd5359f971a40113a9f97a1390460a6a5fd5219dd7ac2c564f770529"
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/run-state.json",
+      "sha256": "eaf6ce1ff5a0d6f71c649fa4d348c7aa607eb75b436dda853aa26c7a7c8f749d"
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/jobs/ECMWF--scrape-ecmwf-procurements/output/ECMWF_Procurement_Summary_2026-10-15.json",
+      "sha256": "4adec27ebad12100d9a6d71af29dc074cccc884ed0251699cd1bf48c4c9479a5"
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/jobs/EMSA--scrape-emsa-procurements/output/EMSA_Procurement_Summary_2026-10-15.json",
+      "sha256": "992b9863fa1eb2fd6ca4e491cd529addb57a236a4a1a209c535813a89985224c"
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/jobs/Eurocontrol--scrape-eurocontrol-procurements/output/EUROCONTROL_Procurement_Summary_2026-10-15.json",
+      "sha256": "8382652b703ce4a996eb67ea12d23da01a487c319dd38a96e150c22fc0403903"
+    },
+    {
+      "path": ".procurement-runs/phase4-other-authorities-2026-10-15/jobs/JRC--scrape-jrc-procurements/output/JRC_Procurement_Summary_2026-10-15.json",
+      "sha256": "aba0a58abd11d4c9f6d5e73cb43a7363cd088787b8ff99f1e0735ac067e585f3"
+    },
+    {
+      "path": ".procurement-runs/phase4-occar-health-fixed-2026-10-15/run-state.json",
+      "sha256": "08b252e7d4b316202a5664d1f08d39e1a47a2895b1b2d898f8e8dda2f13e4b13"
+    },
+    {
+      "path": ".procurement-runs/phase4-occar-health-fixed-2026-10-15/jobs/OCCAR--scrape-occar-procurements/output/OCCAR_Procurement_Summary_2026-10-15.json",
+      "sha256": "93f7a58e469021fb3aea110d3c7cdece580fb0f25d530dc382f038ff66baa888"
+    },
+    {
+      "path": ".procurement-runs/phase4-satcen-text-fixed-2026-10-15/run-state.json",
+      "sha256": "5305571a63da29cf989a24187a550c06f35c858944029361c30d3a26cbd78126"
+    },
+    {
+      "path": ".procurement-runs/phase4-satcen-text-fixed-2026-10-15/jobs/EU-SatCen--scrape-satcen-procurements/output/SatCen_Procurement_Summary_2026-10-15.json",
+      "sha256": "99664dd09bf9ec85ad2c627a2f7d736eef7d3b5c7783904a631132e78ae5684a"
+    },
+    {
+      "path": ".procurement-runs/phase4-croatia-current-2026-10-15/run-state.json",
+      "sha256": "4499c0a3fd6af9e1074ca629d4f2a2ad3ac56bafac0a67603c824504f0e0279a"
+    },
+    {
+      "path": ".procurement-runs/phase4-croatia-current-2026-10-15/2026-10-15T09-52-55-344Z/EU27_NATIONAL_SPACE_2026-10-15_COVERAGE.jsonl",
+      "sha256": "a130f8a9a1fa8a1ebad151910d83ca3bc68a7b9c604f31487dd14380591629ed"
+    },
+    {
+      "path": ".procurement-runs/phase4-croatia-pending-2026-10-15/run-state.json",
+      "sha256": "6360cb7a55a1fb1b3270c194f6095cc0c6b486042946a975ae66286a672f63d1"
+    },
+    {
+      "path": ".procurement-runs/phase4-croatia-pending-2026-10-15/2026-10-15T10-12-09-490Z/EU27_NATIONAL_SPACE_2026-10-15_COVERAGE.jsonl",
+      "sha256": "dcad6238415678856176cf33998a86f1fe7060b82d5d169c10e9c411d4cd7c7f"
+    },
+    {
+      "path": ".procurement-runs/phase4-italy-current-2026-10-15/run-state.json",
+      "sha256": "8293cefdb93bad9ddc663e82cf38ef820c255f7f0a090a6a5303ff874d985175"
+    },
+    {
+      "path": ".procurement-runs/phase4-italy-current-2026-10-15/2026-10-15T10-27-14-736Z/EU27_NATIONAL_SPACE_2026-10-15_COVERAGE.jsonl",
+      "sha256": "7396b42b037f9eba5b05aad2c43d3cc24b5d561097ff84799bfd6ac16cc3e402"
+    },
+    {
+      "path": ".procurement-runs/phase4-italy-anac-2026-10-15/run-state.json",
+      "sha256": "d090cea0c95fa00ec109e14b029113c2df172058c96cf3bda252f3376088c048"
+    },
+    {
+      "path": ".procurement-runs/phase4-italy-anac-2026-10-15/2026-10-15T10-38-23-644Z/EU27_NATIONAL_SPACE_2026-10-15_COVERAGE.jsonl",
+      "sha256": "73e03ad5ecdb8e12f078f02292bc96e9996ee7f180cb672a72e240a3795b934c"
+    },
+    {
+      "path": ".procurement-runs/phase4-cyprus-final-2026-10-15/run-state.json",
+      "sha256": "ec38858481cc00e51c628228c3bfd3e3231748267ea35402dc1382f4e2b1f49e"
+    },
+    {
+      "path": ".procurement-runs/phase4-cyprus-final-2026-10-15/Cyprus/CY_NATIONAL_SPACE_2026-10-15_COVERAGE.jsonl",
+      "sha256": "b06a323dca0ec9e69b0d1326f8cc0fdc386d47dcdb6594022446b1cf857b2fc8"
+    },
+    {
+      "path": ".procurement-runs/phase4-malta-final-2026-10-15/run-state.json",
+      "sha256": "0b6ce2bff24162c11c0f64ff77d2741eb5d6217ea00828a136a0c264055228a5"
+    },
+    {
+      "path": ".procurement-runs/phase4-malta-final-2026-10-15/Malta/MT_NATIONAL_SPACE_2026-10-15_COVERAGE.jsonl",
+      "sha256": "c14b7bffcf9db5f6b1ea2195f8e4f3b98d04479b4b5c68f5fef6fed6d6bb84a5"
+    },
+    {
+      "path": ".procurement-runs/phase4-sweden-final-v2-2026-10-15/run-state.json",
+      "sha256": "151b62727c1ee807f7441bcf0f9211f79c32346c2d966e3aab180974c2721782"
+    },
+    {
+      "path": ".procurement-runs/phase4-sweden-final-v2-2026-10-15/Sweden/SE_NATIONAL_SPACE_2026-10-15_COVERAGE.jsonl",
+      "sha256": "3013ead34432ecc60f58aa04f5d6b30a72bec1da9cede1f96ecf57d44d5c8dd3"
+    },
+    {
+      "path": ".procurement-runs/phase4-eso-final-2026-10-15/run-state.json",
+      "sha256": "e4b664c691498980250c706b86f5c2e8d6107f7d38b64cae491c84d9f46b11ea"
+    },
+    {
+      "path": ".procurement-runs/phase4-eso-final-2026-10-15/jobs/ESO--scrape-eso-procurements/output/ESO_Procurement_Summary_2026-10-15.json",
+      "sha256": "9afed397d3463309244b6972809963ee298b0f3a0d113dda04caec1fddd2a208"
+    },
+    {
+      "path": ".procurement-runs/phase4-ncia-final-2026-10-15/run-state.json",
+      "sha256": "ba08be3bfe3418def882497e86e5974fb1aafe9642fc66b9946baa625236e289"
+    },
+    {
+      "path": ".procurement-runs/phase4-ncia-final-2026-10-15/jobs/NATO--scrape-nato-procurements/output/NCIA_Procurement_Summary_2026-10-15.json",
+      "sha256": "2f23f07917fca0936f9233943ada8c9ab251c6773559e07862a7bd18837f783e"
+    },
+    {
+      "path": ".procurement-runs/phase4-act-final-v2-2026-10-15/run-state.json",
+      "sha256": "c7db597dde56e28755d71b09a95ae3f77401415baf0d0d1ad4d13dc6530f25a9"
+    },
+    {
+      "path": ".procurement-runs/phase4-act-final-v2-2026-10-15/jobs/NATO--scrape-nato-procurements/output/ACT_Procurement_Summary_2026-10-15.json",
+      "sha256": "8638923e5a4b3ef0e6640187e43154d5211a4e030076e83f44f776db8cf0677e"
+    },
+    {
+      "path": ".procurement-runs/phase4-eda-final-v3-2026-10-15/run-state.json",
+      "sha256": "ba8cdcc05c373891d2ed43510a69f065f6fcc7870c12a8add78ae3334e682635"
+    },
+    {
+      "path": ".procurement-runs/phase4-eda-final-v3-2026-10-15/jobs/EDA--scrape-eda-procurements/output/EDA_Procurement_Summary_2026-10-15.json",
+      "sha256": "fbfefa6c495fde8b175651c314f07f86a833eec54812b98d97e47a125b5ae6d8"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Sweden/SE_PHASE4_CATALOGUE_COVERAGE_2026-10-15.json",
+      "sha256": "62eafe90935f2078ff085bba53ede6e407826b6a3aa84cb205859dd5a21eba6b"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Sweden/SE_PHASE4_DETAIL_ASSESSMENT_2026-10-15.json",
+      "sha256": "cc93c73687532f013301b83e17954421409a897576c8fecd1f032edc3c7758fb"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Sweden/SE_PHASE4_PROVENANCE_2026-10-15.json",
+      "sha256": "855a935d2dde8d4f2269f29722d2997baa91736b2304e041efd4919ba3fd2496"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Sweden/SE_PHASE4_VALIDATION_2026-10-15.json",
+      "sha256": "faf73e677ef9bae7bb80fee94d356c716856f86fc16222a291d14a4ff7c63664"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Cyprus/CY_PHASE4_PROVENANCE_2026-10-15.json",
+      "sha256": "9dd450f5ce206201808e2f753181a1bb38ee3544f474df42381ad6bbf0363c8a"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Cyprus/CY_PHASE4_VALIDATION_2026-10-15.json",
+      "sha256": "75144ffdb37194ec452e59c9f326df4501decf8729686e573f4b223649f43919"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Malta/MT_PHASE4_COVERAGE_2026-10-15.json",
+      "sha256": "34108d87e5923720ea217d9091a353357717733b0e7f4800911e832dabdbc5d1"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Malta/MT_PHASE4_PROVENANCE_2026-10-15.json",
+      "sha256": "9705418cf2508dbbb22f2e4e05ea533dc580d66a1f9f2fc395d4b0c1134b205a"
+    },
+    {
+      "path": "EU27/National-Portals/final-output/Malta/MT_PHASE4_VALIDATION_2026-10-15.json",
+      "sha256": "63ef3fe2b177ea23eb17b6ea36e73afcd1b2bc83d0e8b04ad3d5b12cc6a10b72"
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-export-2026-10-15T18-24-37-872Z/history-reconciliation.json",
+      "sha256": "e2088e1a063da2f02d907e09b9a097d5560c3e49324eb7852c152c54b73cb1b1"
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-export-2026-10-15T18-24-37-872Z/final-country-validation.json",
+      "sha256": "4e326a1d5a742b568fecb9509c14f668626c747ceb787193f8a5d797bc093b91"
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-export-2026-10-15T18-24-37-872Z/country-publication.json",
+      "sha256": "60e4922b7e705c3ad7e7823b41354e9c08d9b885a366d1141a7e4e8d8d092ee3"
+    },
+    {
+      "path": ".procurement-runs/phase5-spain-export-2026-10-15T18-24-37-872Z/all-source-archive-verification.json",
+      "sha256": "7a9206689e7751ec8776552fd5119b611261fa6f3199197ebddcca00018b8127"
+    },
+    {
+      "path": ".procurement-runs/phase5-poland-history-2026-10-15/history-reconciliation.json",
+      "sha256": "5fcb18a6097b98d674c40dbdf495cccddf5b9f61519f53d2f883452013261af9"
+    },
+    {
+      "path": ".procurement-runs/phase5-poland-history-2026-10-15/final-country-validation.json",
+      "sha256": "dd2237ce954b976fa4aecf4383cc7fcdcce7bdf5b96c1a831c89838f354bd3c0"
+    },
+    {
+      "path": ".procurement-runs/phase5-poland-history-2026-10-15/country-publication.json",
+      "sha256": "23612a6fbe59dd0c3957aff5d1c7104f4f83eb355ea068e9d2b6862b3410c536"
+    },
+    {
+      "path": ".procurement-runs/phase5-poland-history-2026-10-15/all-source-archive-verification.json",
+      "sha256": "7e2067c07e483bd2f6a477455af4b251cbfc95a862625a81dc0e8b38f40da3ad"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/history-reconciliation.json",
+      "sha256": "2c9de923bac6ec6ddf8be80c26f6fce410c487e1299fc350bcf00488c55ee270"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/final-country-validation.json",
+      "sha256": "32ae792d0c733adef4fdcaf217c9e8c6135cb69633d2859319949e442452d93b"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/country-publication.json",
+      "sha256": "b6b06e05781b50b31a13df91a6cbf074e37768f2a5aa6458abda670daa939679"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-history-2026-10-15/all-source-archive-verification.json",
+      "sha256": "1d661d8e541a9ebf0ca06d3e289d2849adb3f8e16f7057a708f53644bf734887"
+    },
+    {
+      "path": ".procurement-runs/phase5-eurocontrol-history-2026-10-15/final-validation.json",
+      "sha256": "bf75ae170b7482d34734f59b4511914875e615d0a856cf45373f15cadd38420d"
+    },
+    {
+      "path": ".procurement-runs/phase5-eurocontrol-history-2026-10-15/archive-verification.json",
+      "sha256": "3ce0d2cf66d87810afef892b44a7ad9e188bef4d95b04379051bc4c18495f5bb"
+    },
+    {
+      "path": ".procurement-runs/phase5-eurocontrol-history-2026-10-15/catalogue-reconciliation.json",
+      "sha256": "b28e6f5ad4443a8af6edfb9f7b5eb5e6f30c41dc4ac0304ee350c551dd8cbd28"
+    },
+    {
+      "path": ".procurement-runs/phase5-eurocontrol-history-2026-10-15/catalogue-sorts-reconciliation.json",
+      "sha256": "2ef474dc30c54d900282c6bdb18118b14ed2189cbb8ab5aee8dc7aec9b7aad53"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-final-2026-10-15/history-reconciliation.json",
+      "sha256": "d5ceb3593a490f60affb7fd30fa5c678309943be8c034a4440b02ab821171288"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-final-2026-10-15/final-country-validation.json",
+      "sha256": "519e9f71550b237d2b09d88ec96354c3de1224b240a71781f314f0383185e52a"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-final-2026-10-15/country-publication.json",
+      "sha256": "2088bde0e35e9d65247a22fd0a22bcd851ec7601d061fa3cdf2e3cfc9d142ce2"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-final-2026-10-15/all-source-archive-verification.json",
+      "sha256": "222c919f609823a72ac06a55d4c3784ba581524668f84abc01fce21206a30388"
+    },
+    {
+      "path": ".procurement-runs/phase5-audit-2026-10-15/phase5-gap-ledger.json",
+      "sha256": "64c6eaee06276776410631f92a0d5ef748107c160eb84778df509873991eb363"
+    },
+    {
+      "path": ".procurement-runs/phase5-italy-final-2026-10-15/code-final-manifest.json",
+      "sha256": "97afed04d313af2aa511b37cf62bae2f312fab43ca4fc224e495f23450a4701c"
+    }
+  ],
+  "supersededScopes": [
+    {
+      "authority": "ESA",
+      "family": "esa"
+    },
+    {
+      "authority": "EUSPA",
+      "family": "euspa"
+    },
+    {
+      "authority": "EC-DG-DEFIS",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-AGRI",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-CLIMA",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-CONNECT",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-ECHO",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-ENV",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-HOME",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-MARE",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-MOVE",
+      "family": "funding"
+    },
+    {
+      "authority": "EC-DG-RTD",
+      "family": "funding"
+    },
+    {
+      "authority": "EEA",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "EUMETSAT",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "Frontex",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "NATO",
+      "buyerPattern": "Allied Command Transformation|\\bACT\\b|NCIA|Communications and Information Agency"
+    },
+    {
+      "authority": "ECMWF",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "EMSA",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "Eurocontrol",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "JRC",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "OCCAR",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "EU-SatCen",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "EU27",
+      "family": "national",
+      "country": "HR"
+    },
+    {
+      "authority": "EU27",
+      "family": "national",
+      "country": "IT"
+    },
+    {
+      "authority": "EU27",
+      "family": "national",
+      "country": "CY"
+    },
+    {
+      "authority": "EU27",
+      "family": "national",
+      "country": "MT"
+    },
+    {
+      "authority": "EU27",
+      "family": "national",
+      "country": "SE"
+    },
+    {
+      "authority": "ESO",
+      "family": "agency-jsonl"
+    },
+    {
+      "authority": "EDA",
+      "family": "agency-jsonl"
+    },
+    {
+      "authority": "EDA",
+      "family": "agency-csv"
+    },
+    {
+      "authority": "ESO",
+      "family": "agency-csv"
+    }
+  ],
+  "updatedAt": "2026-10-15T19:20:42.024Z",
+  "phase": 5
+}

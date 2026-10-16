@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-10-14T10:46:55.335Z",
+  "country": "FR",
+  "encoding": "UTF-8",
+  "maximumPartBytes": 131072,
+  "recordsAreUnmodified": true,
+  "views": {
+    "MASTER": {
+      "file": "FR_NATIONAL_SPACE_2026-10-14_MASTER.jsonl",
+      "records": 6884,
+      "sha256": "5a1b0cd022b968c9020eab395e337a218c76daf08cef00a0017516f1e8986587",
+      "partCount": 228,
+      "indexes": [
+        {
+          "path": "github-readable/2026-10-14-5a1b0cd022b9/MASTER/index-001.json",
+          "parts": 100,
+          "records": 3172,
+          "sha256": "a8585f6c762c37e38f54caa5682eb76027358ee1e014695ec521322b604f5f77"
+        },
+        {
+          "path": "github-readable/2026-10-14-5a1b0cd022b9/MASTER/index-002.json",
+          "parts": 100,
+          "records": 2807,
+          "sha256": "4704e1c3d2b61c513456ffdc52a4701788841049c03219f5852af308de8ac023"
+        },
+        {
+          "path": "github-readable/2026-10-14-5a1b0cd022b9/MASTER/index-003.json",
+          "parts": 28,
+          "records": 905,
+          "sha256": "cd05f2e1e657c4f484845bff97145867f9a641291bf119c187732ea9eabd2b9a"
+        }
+      ]
+    },
+    "HISTORY": {
+      "file": "FR_NATIONAL_SPACE_2026-10-14_HISTORY.jsonl",
+      "records": 8346,
+      "sha256": "5acb2916bbb7f6c30b39f7d45dcc0d1cb6886987fca3416186352d5429221df3",
+      "partCount": 298,
+      "indexes": [
+        {
+          "path": "github-readable/2026-10-14-5acb2916bbb7/HISTORY/index-001.json",
+          "parts": 100,
+          "records": 2306,
+          "sha256": "0d2b139be92ef046360ca46631658fc3683ca6b5ff639de7ec4502cde1624fed"
+        },
+        {
+          "path": "github-readable/2026-10-14-5acb2916bbb7/HISTORY/index-002.json",
+          "parts": 100,
+          "records": 3016,
+          "sha256": "cb9f42d0df6b8ed7a2ee17b0febe460519188d8efdb368203ec2f0a2719f387a"
+        },
+        {
+          "path": "github-readable/2026-10-14-5acb2916bbb7/HISTORY/index-003.json",
+          "parts": 98,
+          "records": 3024,
+          "sha256": "c062a74ad77848fca0317c0c7862db43f8ff32f217107852557c6b1bda35d22a"
+        }
+      ]
+    },
+    "OPEN": {
+      "file": "FR_NATIONAL_SPACE_2026-10-14_OPEN.jsonl",
+      "records": 10
+    },
+    "REVIEW": {
+      "file": "FR_NATIONAL_SPACE_2026-10-14_REVIEW.jsonl",
+      "records": 6556
+    },
+    "COVERAGE": {
+      "file": "FR_NATIONAL_SPACE_2026-10-14_COVERAGE.jsonl",
+      "records": 3
+    }
+  },
+  "instructions": "Read MASTER parts for the latest records, HISTORY parts for all preserved versions. Scan every part for exhaustive questions. OPEN and REVIEW are filtered views, not extra unique tenders."
+}

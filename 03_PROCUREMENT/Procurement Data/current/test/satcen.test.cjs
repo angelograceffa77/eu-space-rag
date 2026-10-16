@@ -1,0 +1,3 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),{labelledDate}=require('../satcen.cjs');
+test('SatCen day-first date and explicit timezone are preserved',()=>{assert.equal(labelledDate('Deadline: 03/11/2026 - 16:00h CET','Deadline'),'2026-11-03T15:00:00.000Z');assert.equal(labelledDate('Deadline: 29/10/2026 - 16:00 h CET','Deadline'),'2026-10-29T15:00:00.000Z');assert.equal(labelledDate('Deadline: 03/07/2026 - 16:00 CEST','Deadline'),'2026-07-03T14:00:00.000Z');assert.equal(labelledDate('Launch date: 04/09/2026','Launch date'),'2026-09-04');assert.equal(labelledDate('Deadline: 31/02/2026','Deadline'),'');});

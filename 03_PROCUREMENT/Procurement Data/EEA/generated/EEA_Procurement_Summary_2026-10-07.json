@@ -1,0 +1,32 @@
+{
+  "runDate": "2026-10-07",
+  "historicalStart": 2020,
+  "sourceCounts": {
+    "ted": 424,
+    "planning": 15,
+    "topicCentreSpace": 1,
+    "awardCandidateRows": 256
+  },
+  "totalUniqueProcurementRecords": 550,
+  "spaceRelevantIncludingManualReview": 342,
+  "ragReadySpace": 97,
+  "groupedSpaceAwardsSuppliers": 99,
+  "openSpace": 1,
+  "plannedSpace": 14,
+  "historicalSpace": 84,
+  "manualReview": 2,
+  "methodology": [
+    "Official TED Search API for formal EEA procurement from 2020-present",
+    "Official EEA Procurement Plan 2026",
+    "Official EEA Topic Centre contracting page with explicit CLMS/In Situ call extraction",
+    "Official EEA anticipated contracting opportunities 2026",
+    "Official EEA annual lists of contracts 2020-2025 using verified direct-download URLs and PDF signature validation; annual award fragments are grouped into a separate supplier/award intelligence layer rather than mixed into the primary procurement RAG",
+    "Conservative classifier focused on CLMS, Copernicus In Situ, Earth Observation, Sentinel, land-cover mapping, European Ground Motion Service and geospatial/GIS procurement"
+  ],
+  "limitations": [
+    "EEA above-threshold tender documents are managed through the EU Funding & Tenders Portal; TED provides the formal public procurement lifecycle backbone.",
+    "The EEA procurement plan and anticipated contracting lists are indicative and may change before formal publication.",
+    "Annual contract PDFs have heterogeneous table layouts; grant-agreement files are excluded, direct PDF bytes are validated before parsing, raw fragments are preserved in the audit output, and production award/supplier records are grouped by normalized EEA reference or year/title fallback.",
+    "Generic environmental data, corporate IT and non-EO environmental procurement are not included in the production space RAG."
+  ]
+}

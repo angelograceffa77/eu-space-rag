@@ -38,8 +38,12 @@ const CACHE_DIR = path.join(OUTPUT_DIR, "_V5_CACHE");
 const API_URL =
   "https://api.ted.europa.eu/v3/notices/search";
 
-const START_YEAR = 2020;
-const END_YEAR = new Date().getFullYear();
+const REFRESH_FROM = process.env.PROCUREMENT_FROM_DATE || null;
+const REFRESH_TO = process.env.PROCUREMENT_TO_DATE || null;
+for (const date of [REFRESH_FROM,REFRESH_TO]) if(date && (!/^\d{4}-\d{2}-\d{2}$/.test(date)||new Date(date).toISOString().slice(0,10)!==date)) throw Error('Invalid procurement refresh date');
+if(REFRESH_FROM && REFRESH_TO && REFRESH_FROM>REFRESH_TO)throw Error('Invalid procurement refresh range');
+const START_YEAR = REFRESH_FROM ? Number(REFRESH_FROM.slice(0,4)) : 2020;
+const END_YEAR = REFRESH_TO ? Number(REFRESH_TO.slice(0,4)) : new Date().getFullYear();
 
 const PAGE_SIZE = 250;
 const NORMAL_WAIT_MS = 1500;
@@ -1981,10 +1985,10 @@ function tedQuery(
   year
 ) {
   const start =
-    `${year}0101`;
+    [`${year}0101`, (REFRESH_FROM || "").replaceAll("-", "")].sort().at(-1);
 
   const end =
-    `${year}1231`;
+    [`${year}1231`, (REFRESH_TO || `${year}-12-31`).replaceAll("-", "")].sort()[0];
 
   return (
     `buyer-country = ${countryCode} ` +
@@ -3245,7 +3249,7 @@ function createGithubJsonlWriter(filename) {
   const limit = 20_000_000;
   const directory = path.dirname(filename);
   const stem = path.basename(filename, ".jsonl");
-  const temporary = fs.mkdtempSync(path.join(directory, ".jsonl-export-"));
+  const temporary = fs.mkdtempSync(path.toNamespacedPath(path.join(directory, ".jsonl-export-")));
   const files = [];
   let fd = null, bytes = 0, closed = false;
   function closePart() { if (fd !== null) { fs.closeSync(fd); fd = null; } }

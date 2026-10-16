@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-10-14T12:14:05.488Z",
+  "country": "HU",
+  "encoding": "UTF-8",
+  "maximumPartBytes": 131072,
+  "recordsAreUnmodified": true,
+  "views": {
+    "MASTER": {
+      "file": "HU_NATIONAL_SPACE_2026-10-14_MASTER.jsonl",
+      "records": 2770,
+      "sha256": "fb9e023397bd3dc1e8697b792e57cfb39299b24cb5007eeb01436e5ff37a976d",
+      "partCount": 51,
+      "indexes": [
+        {
+          "path": "github-readable/2026-10-14-fb9e023397bd/MASTER/index-001.json",
+          "parts": 51,
+          "records": 2770,
+          "sha256": "2154f60c231f86e703a3de2e910487a47752a5527362564729bc12fadc83e754"
+        }
+      ]
+    },
+    "HISTORY": {
+      "file": "HU_NATIONAL_SPACE_2026-10-14_HISTORY.jsonl",
+      "records": 2770,
+      "sha256": "d86a0557b960796ab93c24356f230497efea020e68d5694fa2029c3d1a3a248a",
+      "partCount": 51,
+      "indexes": [
+        {
+          "path": "github-readable/2026-10-14-d86a0557b960/HISTORY/index-001.json",
+          "parts": 51,
+          "records": 2770,
+          "sha256": "a9446bb3cd0112656ca0041b314c56fd4425590c86878abc70662dcc3d973c23"
+        }
+      ]
+    },
+    "OPEN": {
+      "file": "HU_NATIONAL_SPACE_2026-10-14_OPEN.jsonl",
+      "records": 0
+    },
+    "REVIEW": {
+      "file": "HU_NATIONAL_SPACE_2026-10-14_REVIEW.jsonl",
+      "records": 2689
+    },
+    "COVERAGE": {
+      "file": "HU_NATIONAL_SPACE_2026-10-14_COVERAGE.jsonl",
+      "records": 2
+    }
+  },
+  "instructions": "Read MASTER parts for the latest records, HISTORY parts for all preserved versions. Scan every part for exhaustive questions. OPEN and REVIEW are filtered views, not extra unique tenders."
+}

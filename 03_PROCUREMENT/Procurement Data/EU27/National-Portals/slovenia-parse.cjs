@@ -1,0 +1,24 @@
+'use strict';
+const {normalize,fold}=require('./core.cjs'),{candidate}=require('./slovenia-details.cjs');
+function cpvMap(tree){const m=new Map();function visit(a){for(const x of a){m.set(x.id,String(x.label||x.koda||'').match(/^\d{8}/)?.[0]||'');visit(x.children||[])}}visit(tree);return m;}
+function normalizeSI(d,s,header,raw,map,now=new Date()){
+ const lots=d.obrazecSklop||[],phase=d.idSifPostopekFaza||d.idSifPostopekFazaStari||s.idSifPostopekFaza,phaseText=fold(s.sifPostopekFazaNaziv||d.sifObrazecNaziv||s.sifObrazecNaziv||''),kind=phase===1||phase===4||/rezultat|oddaji|sprememb.*pogodb/.test(phaseText)?'award':phase===6?'planning':phase===5||/transparentnost/.test(phaseText)?'direct_award':'tender';
+ const cpvs=[d.idSifCpv,...(d.obrazecCpv||[]).map(x=>x.idSifCpv||x.id),...lots.flatMap(l=>[l.idSifCpv,...(l.obrazecSklopCpv||[]).map(x=>x.idSifCpv||x.id)])].map(id=>map.get(id)).filter(Boolean),description=[d.kratekOpis,d.glavneZnacilnostiPostopka,...lots.map(l=>[l.naslov,l.opis,l.opcijeInfo].filter(Boolean).join(': ')),d.popravekOpis,d.spremembaOpis].filter(Boolean).join('\n'),title=d.naslov||s.naslov||header.naslov||'',pub=d.objavaDejanskaDatum||s.objavaDejanskaDatum||'';
+ const deadline=d.datumDoPonudba||d.datumDoPrijavaSodelovanja||d.datumDoPrijavaInteresa||'',r=normalize({noticeId:String(d.id||s.idObrazec),procedureId:String(d.idDosje||s.idDosje),title,description,buyer:s.narocnikNaziv||header.narocnikNaziv||(d.narocnik||[]).map(x=>x.naziv).filter(Boolean).join(' | '),publicationDate:pub,sourceUpdated:pub,deadlineRaw:deadline,noticeType:kind,sourceStatus:kind==='award'?'awarded':'',cpv:[...new Set(cpvs)].join(' | '),value:d.vrednostOcenjenaBrezDDV??d.vrednostSkupna??'',currency:'',documents:[d.razpisnaDokumentacijaURL].filter(Boolean),sourceUrl:'https://www.enarocanje.si/#/pregled-objav/'+(d.id||s.idObrazec),noticeVerified:true},{id:'SI-portal',country:'SI',name:'Slovenia eNarocanje public notices',timeZone:'Europe/Ljubljana'},raw,now);
+ const t=fold(title+' '+description),tt=fold(title),strong=/satelit|satellit|vesolj|\bgnss\b|\bsatcom\b|copernicus|egnos|earth observation|remote sensing|spacecraft|cubesat/;
+ if(strong.test(tt)||(/\bgps\b/.test(tt)&&/sprejemnik|meril|navigac|sleden|receiver|tracking/.test(tt))){r.relevance='space';r.spaceEvidence='Explicit satellite, space or GNSS procurement in notice title';}
+ else if(lots.some(l=>strong.test(fold(l.naslov||'')))){r.relevance='space';r.spaceEvidence='An explicitly named satellite, space or GNSS lot is part of this procurement';}
+ else if(candidate.test(t)||/geodetsk|vesolj|jozef.*stefan|institut.*stefan/.test(fold(r.buyer))||cpvs.some(x=>/^(3253|34712|35631|381121|6051|71354|71355|71351810|38635)/.test(x))){r.relevance='possible_space';r.spaceEvidence='';r.reviewEvidence='Candidate in scope, lot descriptions, procurement classification or buyer; substantive space scope needs review';}
+ if(/omrezj.{0,10}signal/.test(tt)&&/geodetsk/.test(fold(r.buyer))){r.relevance='space';r.spaceEvidence='Procurement explicitly supports the national SIGNAL GNSS reference-station network; official context: https://www.gov.si/zbirke/storitve/storitve-omrezja-signal/';}
+ if(/satelitsk\w*\s+racun(?:i|ov|e|a|om)?\b|satellite account|satelitsk.{0,12}urgentn/.test(t)){r.relevance='possible_space';r.spaceEvidence='';r.reviewEvidence='Economic satellite accounts or satellite emergency medical centres do not establish a space procurement';}
+ if(kind==='direct_award'){r.status='closed';r.statusEvidence='Voluntary transparency or direct award notice, not an open competition';}
+ if(s.dinamicniNabavniSistem||/dinamicni nabavni/.test(fold(header.sifPostopekVrstaNaziv||''))){r.status='qualification_or_planning';r.statusEvidence='Dynamic purchasing system admission is not an individual open tender';}
+ if(/druga faza|ponovno odpiranje|brez predhodne objave/.test(fold(header.sifPostopekVrstaNaziv||''))&&r.status==='open'){r.status='needs_verification';r.statusEvidence='Procedure may restrict participation; public eligibility not verified';}
+ if(d.popravljenSPopravkom){r.status='superseded';r.statusEvidence='Source marks notice as corrected by a later notice';}
+ if(r.status==='open'&&r.deadline.slice(0,4)>'2035'){r.status='needs_verification';r.statusEvidence='Implausibly distant source deadline requires verification';}
+ if(d.obrazecOdlocitev&&Object.values(d.obrazecOdlocitev).some(Boolean)&&r.status==='open'){r.status='needs_verification';r.statusEvidence='Decision is attached; decision outcome must be checked before treating as open';}
+ if(!description){r.reviewEvidence=[r.reviewEvidence,'Migrated notice API supplies title and classification but no substantive description'].filter(Boolean).join(' | ');}
+ r.ragText=[r.title,r.description,`Country: SI; Buyer: ${r.buyer}; Status: ${r.status}; Deadline: ${r.deadline}; Source: ${r.sourceUrl}`,r.reviewEvidence].join('\n').slice(0,32000);return r;
+}
+module.exports={normalizeSI,cpvMap};
+

@@ -1,0 +1,27 @@
+{
+  "runDate": "2026-10-07",
+  "historicalStart": 2020,
+  "sourceCounts": {
+    "currentCalls": 6,
+    "archivedCalls2020Present": 243,
+    "spaceAwardCandidatesAfterPrecisionFilter": 314
+  },
+  "totalUniqueProcurementRecords": 561,
+  "spaceRelevantIncludingManualReview": 135,
+  "ragReadySpace": 129,
+  "openSpace": 0,
+  "plannedSpace": 0,
+  "historicalSpace": 135,
+  "manualReview": 6,
+  "methodology": [
+    "Official EMSA ongoing Calls for Tenders page",
+    "Official EMSA archived Calls for Tenders page with full pagination to 2020",
+    "Official EMSA Awarded Contracts page and annual XLSX/PDF contract lists with same-row keyword/reference qualification to prevent cross-row false positives",
+    "Conservative maritime-space classifier tuned to satellite imagery, EO, SAR/optical, SAT-AIS, SATCOM, CleanSeaNet and Copernicus Maritime Surveillance"
+  ],
+  "limitations": [
+    "Open procedures may have their full procurement documentation hosted on the EU Funding & Tenders Portal; EMSA pages preserve the procurement reference and link.",
+    "Awarded-contract annual files have heterogeneous layouts; V1.1 combines keyword matching with known/dynamically discovered space framework references so specific contracts and order forms can be recovered even when their subject is abbreviated.",
+    "Generic maritime surveillance, RPAS and AIS procurements are not treated as space unless explicit satellite/EO/SATCOM evidence is present."
+  ]
+}

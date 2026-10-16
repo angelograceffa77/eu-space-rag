@@ -74,4 +74,165 @@ for(const [id,adapter] of Object.entries({"LV-portal":"latvia","PL-portal":"pola
 for(const [id,adapter] of Object.entries({'BG-portal':'bulgaria','HR-portal':'croatia'}))Object.assign(sources.find(s=>s.id===id),{adapter});
 for(const [id,adapter] of Object.entries({'SI-portal':'slovenia','IT-portal':'consip','LU-portal':'luxembourg','CY-portal':'eppsLatest','MT-portal':'eppsLatest','LT-portal':'epps'}))Object.assign(sources.find(s=>s.id===id),{adapter});
 for(const [id,adapter] of Object.entries({"PT-portal":"portugal","SK-portal":"slovakia","SE-eavrop":"sweden"}))Object.assign(sources.find(s=>s.id===id),{adapter});
+Object.assign(sources.find(s=>s.id==="PT-portal"),{adapter:"portugalOpenData",reference:"https://dados.gov.pt/pt/organizations/impic-i-p-instituto-dos-mercados-publicos-do/"});
+Object.assign(sources.find(s=>s.id==="PT-space"),{adapter:"portugalSpace"});
+Object.assign(sources.find(s=>s.id==="PT-azores"),{url:"https://spaceazores.pt/",allowedHosts:["spaceazores.pt"],seeds:["https://spaceazores.pt/"]});
+sources.push({...sources.find(s=>s.id==="CY-portal"),id:"CY-awards",name:"Cyprus Treasury annual awarded-contract exports",adapter:"cyprusAwards",url:"https://www.data.gov.cy/index.php/el/dataset/katalogos-dimosion-symbaseon-poy-katakyrothikan",reference:"https://www.data.gov.cy/index.php/el/dataset/katalogos-dimosion-symbaseon-poy-katakyrothikan"});
+Object.assign(sources.find(s=>s.id==="CY-portal"),{adapter:"cyprusBuyers"});
+Object.assign(sources.find(s=>s.id==="CY-space"),{adapter:"cyprusBuyers",name:"Cyprus Department of Electronic Communications procurement",url:"https://www.eprocurement.gov.cy/epps/prepareViewCAOrganisation.do?id=1658",seeds:["https://www.eprocurement.gov.cy/epps/prepareViewCAOrganisation.do?id=1658"],allowedHosts:["www.eprocurement.gov.cy"],reference:"https://www.gov.cy/dmrid-dec/en/documents/national-space-strategy/"});
+Object.assign(sources.find(s=>s.id==="MT-portal"),{adapter:"eppsBuyers"});
+Object.assign(sources.find(s=>s.id==="MT-space"),{adapter:"maltaSpace",reference:"https://xjenzamalta.mt/services/space/"});
 module.exports={countries,sources};
+Object.assign(sources.find(s=>s.id==='IT-defence'),{adapter:'teledife',url:'https://www.difesa.it/dna/staff/dt/teledife/amministrazione-trasparente/25270.html'});
+sources.push({...sources.find(s=>s.id==='IT-space'),id:'IT-suppliers',name:'ASI public supplier portal',adapter:'asiSuppliers',url:'https://app.albofornitori.it/alboeproc/albo_asi',allowedHosts:['app.albofornitori.it'],reference:'https://www.asi.it/bandi-/'});
+sources.push({...sources.find(s=>s.id==='IT-portal'),id:'IT-mepa',name:'MePA public RDOs and Altri Bandi',adapter:'mepa',url:'https://www.acquistinretepa.it/opencms/opencms/vetrina_bandi.html?filter=RDO',reference:'https://www.acquistinretepa.it/opencms/opencms/vetrina_bandi.html'});
+Object.assign(sources.find(s=>s.id==='SE-portal'),{adapter:'kommers'});
+Object.assign(sources.find(s=>s.id==='SE-mercell'),{adapter:'mercellPublic',url:'https://app.mercell.com/search?filter=delivery_place_code%3ASE'});
+
+Object.assign(sources.find(s=>s.id==='SE-space'),{adapter:'swedenSpace'});
+
+sources.push({...sources.find(s=>s.id==='NL-portal'),id:'NL-public',name:'TenderNed public TNS notice service',adapter:'dutchPublic',url:'https://www.tenderned.nl/papi/tenderned-rs-tns/v2/publicaties',reference:'https://data.overheid.nl/dataset/aankondigingen-van-overheidsopdrachten---tenderned'});
+
+Object.assign(sources.find(s=>s.id==='NL-space'),{adapter:'dutchSpace'});
+
+sources.push({...sources.find(s=>s.id==='ES-portal'),id:'ES-public',name:'PLACSP public historical procurement search',adapter:'placspSearch',reference:'https://contrataciondelestado.es/wps/portal/licitaciones'});
+
+sources.push({...sources.find(s=>s.id==='ES-portal'),id:'ES-monthly',name:'PLACSP current-month official archive',adapter:'placspMonthly'});
+sources.push({...sources.find(s=>s.id==='ES-portal'),id:'ES-documents',name:'PLACSP public document metadata search',adapter:'placspDocuments',reference:'https://contrataciondelestado.es/wps/portal/AyudaBuscadorDocumental'});
+sources.push({...sources.find(s=>s.id==='ES-portal'),id:'ES-Catalonia',name:'Catalonia official PSCP open data',adapter:'catalonia',url:'https://contractaciopublica.cat/',reference:'https://analisi.transparenciacatalunya.cat/d/ybgg-dgi6'});
+
+sources.push({...sources.find(s=>s.id==='ES-portal'),id:'ES-agencies',name:'Spanish space and astronomy bodies current notices',adapter:'placspSearch',reference:'https://contrataciondelestado.es/wps/portal/licitaciones'});
+
+sources.push({...sources.find(s=>s.id==='DE-portal'),id:'DE-live',name:'German public live competition search',adapter:'germanLive'});
+
+Object.assign(sources.find(s=>s.id==='DE-space'),{adapter:'dlrDetailed'});
+
+sources.push({...sources.find(s=>s.id==='DE-live'),id:'DE-cpv',name:'German public live space-category competition search'});
+
+sources.push({...sources.find(s=>s.id==='IE-portal'),id:'IE-archive',name:'OGP official historical procurement open data',adapter:'irishArchive',url:'https://data.gov.ie/dataset/contract-notices-published-on-etenders',reference:'https://data.gov.ie/dataset/contract-notices-published-on-etenders'});
+
+for(const id of ['IE-portal','IE-space'])Object.assign(sources.find(s=>s.id===id),{adapter:'irishPublic'});
+
+sources.push({...sources.find(s=>s.id==='IE-portal'),id:'IE-cpv',name:'Irish live space and astronomy procurement categories'});
+
+Object.assign(sources.find(s=>s.id==='PL-space'),{adapter:'polsaPublic',url:'https://platformazakupowa.pl/pn/polsa/proceedings'});
+
+sources.push({...sources.find(s=>s.id==='PL-portal'),id:'PL-public',name:'Polish public BZP and TED Board search',adapter:'polandBoard'});
+
+sources.push({...sources.find(s=>s.id==='PL-public'),id:'PL-legacy',name:'Polish public legacy-law BZP mirror',url:'https://ezamowienia.gov.pl/bzp-archival-client'});
+
+sources.push({...sources.find(s=>s.id==='PL-space'),id:'PL-CBK',name:'CBK PAN public procurement',adapter:'cbkPublic',url:'https://cbkpan.ezamawiajacy.pl/',reference:'https://cbkpan.pl/o-nas/zamowienia-publiczne/'});
+
+Object.assign(sources.find(s=>s.id==='PL-polsa'),{adapter:'polsaDirectory'});
+for(const id of ['LT-portal','LT-space'])Object.assign(sources.find(s=>s.id===id),{adapter:'lithuaniaPublic'});
+sources.push({...sources.find(s=>s.id==='LT-portal'),id:'LT-cpv',name:'Lithuanian public space procurement categories'});
+
+Object.assign(sources.find(s=>s.id==='LT-legacy'),{adapter:'lithuaniaLegacy'});
+
+sources.push({...sources.find(s=>s.id==='LT-space'),id:'LT-agency',name:'Innovation Agency pre-commercial procurements',adapter:'lithuaniaAgency'});
+
+Object.assign(sources.find(s=>s.id==='DK-portal'),{adapter:'danishPublic'});
+sources.push({...sources.find(s=>s.id==='DK-portal'),id:'DK-cpv',name:'Danish public space procurement categories'});
+sources.push({...sources.find(s=>s.id==='DK-portal'),id:'DK-buyers',name:'DTU national buyer procurement notices'});
+sources.push({...sources.find(s=>s.id==='DK-portal'),id:'DK-archive',name:'Danish official 2022–2024 below-threshold archive',adapter:'danishArchive'});
+
+sources.push({...sources.find(s=>s.id==='DK-space'),id:'DK-DTU',name:'DTU Space Swarm DISC procurements',adapter:'danishSwarm',url:'https://www.space.dtu.dk/english/research-divisions/geomagnetism-and-geospace/projects/swarm/swarm-disc-invitations-to-tender'});
+
+Object.assign(sources.find(s=>s.id==='DK-space'),{adapter:'danishAgency',url:'https://ufsn.dk/forskning-og-innovation/rumomraadet/aktuelt/opslag/aktuelle-opslag/'});
+
+Object.assign(sources.find(s=>s.id==='DK-buyers'),{name:'Danish DTU, DMI and climate-data buyer notices'});
+
+Object.assign(sources.find(s=>s.id==='BE-portal'),{adapter:'belgianPublic'});
+sources.push({...sources.find(s=>s.id==='BE-portal'),id:'BE-cpv',name:'Belgian space procurement categories'});
+sources.push({...sources.find(s=>s.id==='BE-portal'),id:'BE-buyers',name:'Belgian space, astronomy and Earth-observation buyers'});
+
+Object.assign(sources.find(s=>s.id==='BE-space'),{adapter:'belgianAgency'});
+
+Object.assign(sources.find(s=>s.id==='BG-portal'),{adapter:'bulgarianPublic'});
+sources.push({...sources.find(s=>s.id==='BG-portal'),id:'BG-cpv',name:'Bulgarian space procurement categories'});
+sources.push({...sources.find(s=>s.id==='BG-portal'),id:'BG-buyers',name:'Bulgarian space and astronomy institute buyers',kind:'space_body'});
+
+Object.assign(sources.find(s=>s.id==='BG-space'),{adapter:'bulgarianAgency',url:'http://www.space.bas.bg/bg/procurement/procurement.html'});
+sources.push({...sources.find(s=>s.id==='BG-portal'),id:'BG-legacy',name:'Bulgarian pre-CAIS public register export',adapter:'bulgarianLegacy',url:'https://www.aop.bg/esearch_cases_from_to.php'});
+
+sources.push({...sources.find(s=>s.id==='BG-portal'),id:'BG-open',name:'Bulgarian complete current-open register screening'});
+
+sources.push({...sources.find(s=>s.id==='HR-portal'),id:'HR-archive',name:'Croatian legacy EOJN monthly XML archive',adapter:'croatianArchive',url:'https://eojn.nn.hr/SPIN/application/ipn/Oglasnik/PreuzimanjeObavijesti.aspx'});
+
+Object.assign(sources.find(s=>s.id==='HR-portal'),{adapter:'croatianPublic'});
+for(const [id,name]of [['HR-cpv','Croatian space procurement categories'],['HR-buyers','Croatian space, geodesy and research buyers'],['HR-open','Croatian complete published and invitation-stage procedure screening']])sources.push({...sources.find(s=>s.id==='HR-portal'),id,name});
+
+Object.assign(sources.find(s=>s.id==='HR-space'),{adapter:'croatianAgency',url:'https://mzom.gov.hr/pristup-informacijama/javna-nabava/92'});
+
+Object.assign(sources.find(s=>s.id==='LV-iub'),{adapter:'latvianArchive',url:'https://open.iub.gov.lv/data'});
+
+Object.assign(sources.find(s=>s.id==='LV-portal'),{adapter:'latvianPublic'});
+for(const [id,name]of [['LV-open','Latvian full announced-procedure screening'],['LV-buyers','Latvian space, science and geospatial buyer searches']])sources.push({...sources.find(s=>s.id==='LV-portal'),id,name});
+
+Object.assign(sources.find(s=>s.id==='LV-space'),{adapter:'latvianAgency',url:'https://www.izm.gov.lv/lv/iepirkumi'});
+
+sources.push({...sources.find(s=>s.id==='CZ-portal'),id:'CZ-rvz',name:'Czech official RVZ and historical VVZ open data',adapter:'czechArchive',url:'https://isvz.nipez.cz/opendata'});
+
+Object.assign(sources.find(s=>s.id==='CZ-portal'),{adapter:'czechPublic'});
+Object.assign(sources.find(s=>s.id==='CZ-space'),{adapter:'czechPublic',url:'https://nen.nipez.cz/en/profily-zadavatelu-platne/detail-profilu/mdcr'});
+
+sources.push({...sources.find(s=>s.id==='CZ-portal'),id:'CZ-research',name:'Czech astronomy and Earth-observation research buyer profiles',adapter:'czechAgency',url:'https://www.vhodne-uverejneni.cz/profil/67985815'});
+sources.push({...sources.find(s=>s.id==='CZ-portal'),id:'CZ-ufa',name:'Czech Institute of Atmospheric Physics procurement profile',adapter:'czechUfa',url:'https://www.e-zakazky.cz/profil-zadavatele/f56f00fb-93a2-4453-9863-6aaca1b48c5f'});
+
+sources.push({...sources.find(s=>s.id==='CZ-portal'),id:'CZ-cenia',name:'CENIA current NEN procurement profile',adapter:'czechPublic',url:'https://nen.nipez.cz/profil/CENIA'});
+
+sources.push({...sources.find(s=>s.id==='CZ-portal'),id:'CZ-description',name:'Czech NEN subject-description searches',adapter:'czechPublic',url:'https://nen.nipez.cz/en/verejne-zakazky'});
+
+Object.assign(sources.find(s=>s.id==="SK-space"),{adapter:"slovakiaUvo",name:"Slovak space-related institutions — UVO procurement",url:"https://www.uvo.gov.sk/vyhladavanie/vyhladavanie-zakaziek",kind:"national_portal"});
+sources.push({...sources.find(s=>s.id==="SK-portal"),id:"SK-uvo",adapter:"slovakiaUvo",name:"Slovakia UVO procedure register and notice histories",url:"https://www.uvo.gov.sk/vyhladavanie/vyhladavanie-zakaziek"});
+
+sources.push({...sources.find(s=>s.id==="SK-space"),id:"SK-astronomy",adapter:"slovakiaAstronomy",kind:"space_body",name:"Slovak Astronomical Institute public procurement register",url:"https://www.astro.sk/rozne/verejne-obstaravanie/zmluvy-zakazky/zakazky/"});
+
+sources.push({...sources.find(s=>s.id==="SK-uvo"),id:"SK-archives",adapter:"slovakiaArchives",name:"Slovakia official procurement bulletin open data",url:"https://data.slovensko.sk/",reference:"https://data.slovensko.sk/datasety"});
+
+sources.push({...sources.find(s=>s.id==="SK-uvo"),id:"SK-live",name:"Slovakia archive-discovered live procedure checks"});
+
+sources.push({...sources.find(s=>s.id==="SK-space"),id:"SK-sario",name:"SARIO and Slovak Space Office procurement pages",adapter:"slovakiaSario",url:"https://www.sario.sk/sk/o-nas/verejne-obstaravanie"});
+
+sources.push({...sources.find(s=>s.id==="SK-uvo"),id:"SK-fallback",adapter:"slovakiaFallback",name:"Slovakia unavailable archive HTML fallback"});
+
+Object.assign(sources.find(s=>s.id==="SK-portal"),{url:"https://evo.isepvo.sk/evoportal/en-us/public/ordersearch/index"});
+
+// Romania expanded source registration.
+Object.assign(sources.find(s=>s.id==='RO-portal'),{adapter:'romaniaEnhanced'});
+Object.assign(sources.find(s=>s.id==='RO-space'),{adapter:'romaniaRosa',reference:'https://rosa.ro/'});
+sources.push({...sources.find(s=>s.id==='RO-portal'),id:'RO-advertisements',name:'Romania SEAP public advertisements',adapter:'romaniaAdvertisements',url:'https://www.e-licitatie.ro/pub/adv-notices/list/1'});
+sources.push({...sources.find(s=>s.id==='RO-portal'),id:'RO-archives',name:'Romania ADR official procurement archives',adapter:'romaniaArchives',url:'https://data.gov.ro/'});
+
+// Austria expanded national and FFG source collection.
+Object.assign(sources.find(s=>s.id==='AT-portal'),{adapter:'austriaEnhanced'});
+Object.assign(sources.find(s=>s.id==='AT-space'),{adapter:'austriaAgency',url:'https://www.ffg.at/weltraum'});
+
+sources.push({...sources.find(s=>s.id==='IT-portal'),id:'IT-anac',name:'Italy ANAC national legal-publication portal',adapter:'italyAnac',url:'https://pubblicitalegale.anticorruzione.it/bandi'});
+
+sources.push({...sources.find(s=>s.id==="CY-portal"),id:"CY-published",name:"Cyprus all-buyer published-notice catalogue",adapter:"cyprusPublished",url:"https://www.eprocurement.gov.cy/epps/notices/viewPublishedNotices.do",reference:"https://www.eprocurement.gov.cy/epps/notices/viewPublishedNotices.do"});
+sources.push({...sources.find(s=>s.id==='CY-published'),id:'CY-published-created',name:'Cyprus all-buyer catalogue creation-date reconciliation',sortField:'dateCreated'});
+
+sources.push({...sources.find(s=>s.id==="MT-portal"),id:"MT-published",name:"Malta all-buyer published-notice catalogue",adapter:"cyprusPublished",url:"https://www.etenders.gov.mt/epps/notices/viewPublishedNotices.do",reference:"https://www.etenders.gov.mt/epps/notices/viewPublishedNotices.do"});
+sources.push({...sources.find(s=>s.id==="MT-published"),id:"MT-published-created",name:"Malta all-buyer creation-date reconciliation",sortField:"dateCreated"});
+
+for(const [id,name,url,adapter] of [["SE-clira","Clira public procurement catalogue","https://public.clira.io/upphandling","cliraPublic"],["SE-konstpool","Konstpool public procurement calls","https://konstpool.se/sv/","konstpoolPublic"]])sources.push({...sources.find(s=>s.id==="SE-portal"),id,name,url,adapter,reference:"https://www.konkurrensverket.se/upphandling/registrerade-annonsdatabaser/annonsdatabasregistret/"});
+
+Object.assign(sources.find(s=>s.id==="SE-eavrop"),{adapter:"swedenDetailed"});
+
+sources.push({...sources.find(s=>s.id==='PL-CBK'),id:'PL-CBK-archive',name:'CBK PAN historical SmartPZP profile',adapter:'cbkArchive',url:'https://portal.smartpzp.pl/cbkpan/',reference:'https://cbkpan.pl/o-nas/zamowienia-publiczne/'});
+
+sources.push({...sources.find(s=>s.id==='PL-CBK'),id:'PL-CBK-documents',name:'CBK PAN recovered historical documents',adapter:'cbkHistoricalDocuments',url:'https://cbkpan.pl/o-nas/zamowienia-publiczne/'});
+
+sources.push({...sources.find(s=>s.id==='IT-inaf'),id:'IT-INAF-Rome-history',name:'INAF Rome historical procurement disclosures',adapter:'inafRomeArchive',url:'https://www.oa-roma.inaf.it/bandi-di-gara/'});
+
+sources.push({...sources.find(s=>s.id==='IT-inaf'),id:'IT-INAF-Arcetri-history',name:'INAF Arcetri historical procurement disclosures',adapter:'inafArcetriArchive',url:'https://www.arcetri.inaf.it/articoli/amministrazione-trasparente/informazionitabellariannualisuproceduredigaraecontratti'});
+
+sources.push({...sources.find(s=>s.id==='IT-inaf'),id:'IT-INAF-IAPS-history',name:'INAF IAPS public procurement directory',adapter:'inafIapsHistory',url:'https://www.iaps.inaf.it/index.php/it/amministrazione-trasparente/bandi-di-gara'});
+
+sources.push({...sources.find(s=>s.id==='IT-inaf'),id:'IT-INAF-Capodimonte-history',name:'INAF Capodimonte historical procurement documents',adapter:'inafCapodimonteHistory',url:'https://www.oacn.inaf.it/uffici-e-servizi-generali/amministrazione-trasparente-archivio/'});
+
+// Each institutional supplement cites its own official directory.
+for(const s of sources.filter(s=>/^IT-INAF-(Rome|Arcetri|IAPS|Capodimonte)-history$/.test(s.id)))s.reference=s.url;
+
+sources.push({...sources.find(s=>s.id==='IT-INAF-IAPS-history'),id:'IT-INAF-IAPS-annual',name:'INAF IAPS annual contract disclosures',adapter:'inafIapsAnnual'});

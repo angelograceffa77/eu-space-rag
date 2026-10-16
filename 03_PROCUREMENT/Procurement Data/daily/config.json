@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "root": "C:/Users/angel/OneDrive/Desktop/knowledge/eu-space-rag/03_PROCUREMENT/Procurement Data",
+  "archiveRoot": "C:/Users/angel/OneDrive/Desktop/knowledge/03_PROCUREMENT/Procurement Data",
+  "remote": "https://github.com/angelograceffa77/eu-space-rag.git",
+  "branch": "main",
+  "publishPrefix": "03_PROCUREMENT/Procurement Data/Procurement-Master",
+  "authorName": "angelograceffa77",
+  "authorEmail": "angelograceffa77@gmail.com",
+  "workers": 3,
+  "lookbackDays": 14,
+  "jobTimeoutMs": 2700000,
+  "jobTimeouts": {
+    "national-CZ": 5400000,
+    "national-RO": 7200000
+  },
+  "retryJobs": [
+    "national-EE",
+    "national-AT",
+    "national-SK",
+    "national-ES"
+  ]
+}

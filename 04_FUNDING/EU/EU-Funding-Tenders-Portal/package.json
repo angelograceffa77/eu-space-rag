@@ -1,0 +1,9 @@
+{
+  "name": "eu-funding-tenders-collector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Phase 1 item 1: official EU Funding & Tenders calls, 2020 onward",
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test tests/*.test.js", "collect": "node scrapers/scrape-eu-funding-tenders.js" },
+  "dependencies": { "exceljs": "4.4.0" }
+}

@@ -8,19 +8,19 @@ function parseGerman(xml){
  const $=cheerio.load(xml,{xml:true}),root=$.root(),doc=root.children().first();
  const project=doc.children().filter((i,e)=>e.name?.split(':').pop()==='ProcurementProject').first();
  const notice=doc.children().filter((i,e)=>e.name?.split(':').pop()==='ID').text();
- const type=val(root,'NoticeTypeCode'),kind=/^can-|result|award/.test(type)?'award':/^pin-|planning/.test(type)?'planning':'tender';
+ const type=val(root,'NoticeTypeCode'),kind=/^can-|result|award/.test(type)?'award':/^pin-(?!cfc)|planning/.test(type)?'planning':'tender';
  const lots=nodes(root,'ProcurementProjectLot');
  const contracting=nodes(root,'ContractingParty').first();let buyer=val(contracting,'Name');
  if(!buyer){const buyerId=val(nodes(contracting,'PartyIdentification').first(),'ID');if(buyerId){const organization=nodes(root,'Organization').filter((i,e)=>val(nodes($(e),'PartyIdentification').first(),'ID')===buyerId).first();buyer=val(nodes(organization,'PartyName').first(),'Name');}}
  const scopes=lots.length?lots.toArray().map(e=>$(e)):[root];
  return scopes.map(lot=>{
-  const period=nodes(lot,'TenderSubmissionDeadlinePeriod').first();
+  const submission=nodes(lot,'TenderSubmissionDeadlinePeriod').first();const period=submission.length?submission:nodes(lot,'ParticipationRequestReceptionPeriod').first();
   const date=val(period,'EndDate').slice(0,10),time=val(period,'EndTime');
   const lotId=lot===root?'':val(lot,'ID');
   const cpv=[...new Set(nodes(lot,'ItemClassificationCode').map((i,e)=>$(e).text()).get())].join(' | ');
   const lotProject=nodes(lot,'ProcurementProject').first();
   const title=val(lotProject,'Name')||val(project,'Name')||val(lot,'Name');
-  return {noticeId:notice+'|'+lotId,procedureId:(val(root,'ContractFolderID')||notice)+'|'+lotId,title,description:val(lotProject,'Description')||val(project,'Description'),sourceUrl:'https://oeffentlichevergabe.de/ui/de/notices/'+notice,buyer,publicationDate:(val(root,'RequestedPublicationDate')||val(root,'IssueDate')).slice(0,10),sourceUpdated:val(root,'IssueDate').slice(0,10)+'T'+(val(root,'IssueTime')||'00:00:00'),deadlineRaw:date?(time?date+'T'+time:date):'',noticeType:kind,sourceStatus:type,noticeVerified:true,cpv,documents:[...new Set(nodes(lot,'URI').map((i,e)=>$(e).text()).get())].join(' | ')};
+  return {noticeId:notice+'|'+lotId,procedureId:(val(root,'ContractFolderID')||notice)+'|'+lotId,title,description:val(lotProject,'Description')||val(project,'Description'),sourceUrl:'https://oeffentlichevergabe.de/ui/de/notices/'+notice,buyer,publicationDate:(val(root,'RequestedPublicationDate')||val(root,'IssueDate')).slice(0,10),sourceUpdated:val(root,'IssueDate')?val(root,'IssueDate').slice(0,10)+'T'+(val(root,'IssueTime')||'00:00:00'):val(root,'RequestedPublicationDate').slice(0,10),deadlineRaw:date?(time?date+'T'+time:date):'',noticeType:kind,sourceStatus:type,noticeVerified:true,cpv,documents:[...new Set(nodes(lot,'URI').map((i,e)=>$(e).text()).get())].join(' | ')};
  });
 }
 async function germany(ctx){
@@ -53,7 +53,7 @@ async function germanyMonthly(ctx){
    const xml=(await f.buffer()).toString('utf8');scanned++;
    // Broad lexical prefilter only saves XML parsing; final normalized records
    // still undergo the same substantive classification used by daily exports.
-   if(!/satellit|satelit|satcom|gnss|egnos|copernicus|galileo|cubesat|smallsat|nanosat|space(?:craft|port|flight|borne|[- ]based| surveillance| traffic| debris)|earth observation|remote sensing|launch vehicle|ground (?:segment|station)|orbital|in-orbit|raumfahrt|weltraum|erdbeobacht|fernerkund|spazial|telerilev|teledetec|teledetek|avaru|kosm|kozm|vesmir|vesolj|svemir|rumfart|ruimtevaart|aardobserv|rymd|fjarranalys|palydov|kaugseire|kaukokartoit|muhold|urkutat|taverzekel|spatial|geospatial|geo.information|\bgis\b|lidar|radar|hyperspectral|multispectral|wildfire|forest monitoring|environmental monitoring|quantum communication|laser ranging|telescop|astronom|bodenstation|\beu\s*sst\b|34712\d{3}|3563[12]\d{3}|3253\d{4}|38112100|38235000|60510000/iu.test(xml))continue;
+   if(!/satellit|satelit|satcom|gnss|egnos|copernicus|galileo|cubesat|smallsat|nanosat|space(?:craft|port|flight|borne|[- ]based| surveillance| traffic| debris)|earth observation|remote sensing|launch vehicle|ground (?:segment|station)|orbital|in-orbit|raumfahrt|weltraum|erdbeobacht|fernerkund|spazial|telerilev|teledetec|teledetek|avaru|kosm|kozm|vesmir|vesolj|svemir|rumfart|ruimtevaart|aardobserv|rymd|fjarranalys|palydov|kaugseire|kaukokartoit|muhold|urkutat|taverzekel|spatial|geospatial|geo.information|\bgis\b|lidar|radar|hyperspectral|multispectral|wildfire|forest monitoring|environmental monitoring|quantum communication|laser ranging|telescop|teleskop|astronom|bodenstation|\beu\s*sst\b|34712\d{3}|3563[12]\d{3}|3253\d{4}|38112100|38235000|60510000/iu.test(xml))continue;
    for(const r of parseGerman(xml))ctx.emit(r,file+'#'+f.path);
   }
   console.log('[DE-portal] '+month+': scanned '+scanned+' notices');
