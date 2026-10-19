@@ -1,5 +1,14 @@
 [
   {
+    "job": "EC-DG-CLIMA--scrape-dg-clima-funding-tenders",
+    "sourceId": "EC-DG-CLIMA--scrape-dg-clima-funding-tenders",
+    "state": "unassessed",
+    "error": "",
+    "gaps": [
+      "Valid output; source completeness not independently assessed."
+    ]
+  },
+  {
     "job": "EC-DG-AGRI--scrape-dg-agri-ted-procurements",
     "sourceId": "EC-DG-AGRI--scrape-dg-agri-ted-procurements",
     "state": "unassessed",
@@ -18,26 +27,8 @@
     ]
   },
   {
-    "job": "EC-DG-CLIMA--scrape-dg-clima-funding-tenders",
-    "sourceId": "EC-DG-CLIMA--scrape-dg-clima-funding-tenders",
-    "state": "unassessed",
-    "error": "",
-    "gaps": [
-      "Valid output; source completeness not independently assessed."
-    ]
-  },
-  {
     "job": "EC-DG-CONNECT--scrape-dg-connect-ted-procurements",
     "sourceId": "EC-DG-CONNECT--scrape-dg-connect-ted-procurements",
-    "state": "unassessed",
-    "error": "",
-    "gaps": [
-      "Valid output; source completeness not independently assessed."
-    ]
-  },
-  {
-    "job": "EC-DG-CONNECT--scrape-dg-connect-funding-tenders",
-    "sourceId": "EC-DG-CONNECT--scrape-dg-connect-funding-tenders",
     "state": "unassessed",
     "error": "",
     "gaps": [
@@ -63,6 +54,15 @@
     ]
   },
   {
+    "job": "EC-DG-CONNECT--scrape-dg-connect-funding-tenders",
+    "sourceId": "EC-DG-CONNECT--scrape-dg-connect-funding-tenders",
+    "state": "unassessed",
+    "error": "",
+    "gaps": [
+      "Valid output; source completeness not independently assessed."
+    ]
+  },
+  {
     "job": "EC-DG-ECHO--scrape-dg-echo-ted-procurements",
     "sourceId": "EC-DG-ECHO--scrape-dg-echo-ted-procurements",
     "state": "unassessed",
@@ -72,8 +72,8 @@
     ]
   },
   {
-    "job": "EC-DG-DEFIS--scrape-dg-defis-funding-tenders",
-    "sourceId": "EC-DG-DEFIS--scrape-dg-defis-funding-tenders",
+    "job": "EC-DG-ENV--scrape-dg-env-funding-tenders",
+    "sourceId": "EC-DG-ENV--scrape-dg-env-funding-tenders",
     "state": "unassessed",
     "error": "",
     "gaps": [
@@ -81,8 +81,8 @@
     ]
   },
   {
-    "job": "EC-DG-ENV--scrape-dg-env-funding-tenders",
-    "sourceId": "EC-DG-ENV--scrape-dg-env-funding-tenders",
+    "job": "EC-DG-DEFIS--scrape-dg-defis-funding-tenders",
+    "sourceId": "EC-DG-DEFIS--scrape-dg-defis-funding-tenders",
     "state": "unassessed",
     "error": "",
     "gaps": [
@@ -201,8 +201,8 @@
     ]
   },
   {
-    "job": "EC-DG-MOVE--scrape-dg-move-funding-tenders",
-    "sourceId": "EC-DG-MOVE--scrape-dg-move-funding-tenders",
+    "job": "EMSA--scrape-emsa-procurements",
+    "sourceId": "EMSA--scrape-emsa-procurements",
     "state": "unassessed",
     "error": "",
     "gaps": [
@@ -210,8 +210,8 @@
     ]
   },
   {
-    "job": "EMSA--scrape-emsa-procurements",
-    "sourceId": "EMSA--scrape-emsa-procurements",
+    "job": "EC-DG-MOVE--scrape-dg-move-funding-tenders",
+    "sourceId": "EC-DG-MOVE--scrape-dg-move-funding-tenders",
     "state": "unassessed",
     "error": "",
     "gaps": [
@@ -333,6 +333,13 @@
   {
     "job": "NATO--scrape-nato-procurements",
     "sourceId": "https://www.act.nato.int/opportunities/contracting/ifib-act-sact-25-23/",
+    "state": "blocked",
+    "error": "HTTP 403",
+    "gaps": []
+  },
+  {
+    "job": "NATO--scrape-nato-procurements",
+    "sourceId": "https://www.act.nato.int/opportunities/contracting/nopo-act-sact-26-101/",
     "state": "blocked",
     "error": "HTTP 403",
     "gaps": []
@@ -493,6 +500,13 @@
   },
   {
     "job": "NATO--scrape-nato-procurements",
+    "sourceId": "https://www.act.nato.int/opportunities/contracting/nopo-act-sact-26-101/",
+    "state": "blocked",
+    "error": "HTTP 403",
+    "gaps": []
+  },
+  {
+    "job": "NATO--scrape-nato-procurements",
     "sourceId": "https://www.act.nato.int/opportunities/contracting/rfi-act-jatec-01-26/",
     "state": "blocked",
     "error": "HTTP 403",
@@ -590,6 +604,13 @@
     "gaps": []
   },
   {
+    "job": "OCCAR--scrape-occar-procurements",
+    "sourceId": "https://occar.int/business-opportunities/current-advertisements",
+    "state": "blocked",
+    "error": "HTTP 403; embedded listings retained as historical evidence, not live verification",
+    "gaps": []
+  },
+  {
     "job": "JRC--scrape-jrc-procurements",
     "sourceId": "JRC--scrape-jrc-procurements",
     "state": "unassessed",
@@ -599,15 +620,36 @@
     ]
   },
   {
-    "job": "OCCAR--scrape-occar-procurements",
-    "sourceId": "https://occar.int/business-opportunities/current-advertisements",
-    "state": "blocked",
-    "error": "HTTP 403; embedded listings retained as historical evidence, not live verification",
-    "gaps": []
-  },
-  {
     "job": "EUSPA--scrape-euspa-closed-procurements",
     "sourceId": "EUSPA--scrape-euspa-closed-procurements",
+    "state": "unassessed",
+    "error": "",
+    "gaps": [
+      "Valid output; source completeness not independently assessed."
+    ]
+  },
+  {
+    "job": "national-AT",
+    "sourceId": "AT-portal",
+    "state": "partial",
+    "error": "",
+    "gaps": [
+      "69 reconciled keyword/category/register queries; 2929 candidates; 36 HTML detail pages and 2915 publisher XML notices retrieved; 0 unresolved and 0 unvisited.",
+      "Indexed history from 2020 onward; source removals, unindexed documents and restricted purchases remain gaps. Placeholder qualification deadlines cannot establish an open tender."
+    ]
+  },
+  {
+    "job": "national-AT",
+    "sourceId": "AT-space",
+    "state": "partial",
+    "error": "",
+    "gaps": [
+      "ASAP grant calls are excluded; procured R&D service scopes are extracted separately. Unlinked archives or procurement outside these sources may remain. ÖAW, FFG, GeoSphere and BEV buyer searches are included in the national source."
+    ]
+  },
+  {
+    "job": "EU27-TED--scrape-eu27-ted-space-procurements",
+    "sourceId": "EU27-TED--scrape-eu27-ted-space-procurements",
     "state": "unassessed",
     "error": "",
     "gaps": [
@@ -639,6 +681,7 @@
     "state": "partial",
     "error": "",
     "gaps": [
+      "External 3P document links are retained; their separate interactive download flow is not parsed automatically.",
       "National public search, published workspace versions and XML, from 2020 where indexed. Public dossier history is checked for future deadlines and selected space-body buyers. Unindexed legacy notices, restricted attachments and unpublished low-value purchases are not claimed complete."
     ]
   },
@@ -653,86 +696,12 @@
     ]
   },
   {
-    "job": "national-BG",
-    "sourceId": "BG-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "CAIS EOP searches and public notice versions are collected from 2020 where indexed. Older ROP notices, unindexed documents and unpublished low-value purchases are separate coverage gaps."
-    ]
-  },
-  {
-    "job": "national-BG",
-    "sourceId": "BG-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "SRTI website is accessible over HTTP; HTTPS failed. Current SRTI and astronomy procurement is collected from their CAIS EOP buyer profiles. Institute archives are not a complete record of low-value or unpublished purchases; rentals and research publications are excluded."
-    ]
-  },
-  {
-    "job": "national-BG",
-    "sourceId": "BG-cpv",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "CAIS EOP searches and public notice versions are collected from 2020 where indexed. Older ROP notices, unindexed documents and unpublished low-value purchases are separate coverage gaps."
-    ]
-  },
-  {
-    "job": "national-BG",
-    "sourceId": "BG-buyers",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "CAIS EOP searches and public notice versions are collected from 2020 where indexed. Older ROP notices, unindexed documents and unpublished low-value purchases are separate coverage gaps."
-    ]
-  },
-  {
-    "job": "national-BG",
-    "sourceId": "BG-legacy",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Complete official legacy register export reconciled for the requested dates. Listing descriptions may be abbreviated; full notice search returned a database error, and current awards/cancellations are not inferred from old listings."
-    ]
-  },
-  {
-    "job": "national-BG",
-    "sourceId": "BG-open",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public specification 588184/59130825: fetch failed",
-      "CAIS EOP searches and public notice versions are collected from 2020 where indexed. Older ROP notices, unindexed documents and unpublished low-value purchases are separate coverage gaps."
-    ]
-  },
-  {
-    "job": "national-AT",
-    "sourceId": "AT-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "69 reconciled keyword/category/register queries; 409 candidates; 0 HTML detail pages and 426 publisher XML notices retrieved; 0 unresolved and 0 unvisited.",
-      "Indexed history from 2020 onward; source removals, unindexed documents and restricted purchases remain gaps. Placeholder qualification deadlines cannot establish an open tender."
-    ]
-  },
-  {
-    "job": "national-AT",
-    "sourceId": "AT-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "ASAP grant calls are excluded; procured R&D service scopes are extracted separately. Unlinked archives or procurement outside these sources may remain. ÖAW, FFG, GeoSphere and BEV buyer searches are included in the national source."
-    ]
-  },
-  {
     "job": "national-CY",
     "sourceId": "CY-portal",
     "state": "partial",
     "error": "",
     "gaps": [
-      "44 seeded or linked detail pages did not expose a recognized public notice; these pages are not counted as verified notices.",
+      "52 seeded or linked detail pages did not expose a recognized public notice; these pages are not counted as verified notices.",
       "Public buyer profiles and notice lists identified through 2020 onward award seeds were followed in descending publication order back to the requested start date. National CAPTCHA-restricted search was not used. New buyers absent from the award exports and description-only matches remain outside this route."
     ]
   },
@@ -760,8 +729,27 @@
     "state": "partial",
     "error": "",
     "gaps": [
+      "Published-notice detail 8018966: Tender workspace requires login",
+      "Published-notice detail 7857032: Tender workspace requires login",
+      "Published-notice detail 7632605: Tender workspace requires login",
+      "Published-notice detail 7358936: Tender workspace requires login",
+      "Published-notice detail 7358600: Tender workspace requires login",
+      "Published-notice detail 7124734: Tender workspace requires login",
+      "Published-notice detail 7071889: Tender workspace requires login",
+      "Published-notice detail 7057768: Tender workspace requires login",
+      "Published-notice detail 6796666: Tender workspace requires login",
+      "Published-notice detail 6372071: Tender workspace requires login",
+      "Published-notice detail 5785292: Tender workspace requires login",
+      "Published-notice detail 5780520: Tender workspace requires login",
+      "Published-notice detail 5784229: Tender workspace requires login",
+      "Published-notice detail 5780563: Tender workspace requires login",
+      "Published-notice detail 5783576: Tender workspace requires login",
+      "Published-notice detail 5702606: Tender workspace requires login",
+      "Published-notice detail 4463031: Tender workspace requires login",
+      "80 repeated listing rows across pages; stable total alone does not prove complete coverage. Combine publication-date and creation-date passes.",
       "All-buyer public published-notice catalogue screened by title, with matching tender details fetched. This is independent of CAPTCHA-protected search. Description-only and attachment-only matches, unpublished notices and restricted documents remain outside discovery. Publication events and raw pages are retained separately; publication does not mean bidding is open.",
-      "17 listing rows have no publication date; creation date was used only for scope filtering, without changing source publication dates."
+      "17 listing rows have no publication date; creation date was used only for scope filtering, without changing source publication dates.",
+      "829 listing rows have no title, so their relevance could not be screened; their metadata and source pages are retained in the listing index."
     ]
   },
   {
@@ -770,17 +758,41 @@
     "state": "partial",
     "error": "",
     "gaps": [
-      "All-buyer public published-notice catalogue screened by title, with matching tender details fetched. This is independent of CAPTCHA-protected search. Description-only and attachment-only matches, unpublished notices and restricted documents remain outside discovery. Publication events and raw pages are retained separately; publication does not mean bidding is open."
+      "Published-notice detail 8018966: Tender workspace requires login",
+      "Published-notice detail 7857032: Tender workspace requires login",
+      "Published-notice detail 7632605: Tender workspace requires login",
+      "Published-notice detail 7358936: Tender workspace requires login",
+      "Published-notice detail 7358600: Tender workspace requires login",
+      "Published-notice detail 7124734: Tender workspace requires login",
+      "Published-notice detail 7071889: Tender workspace requires login",
+      "Published-notice detail 7057768: Tender workspace requires login",
+      "Published-notice detail 6796666: Tender workspace requires login",
+      "Published-notice detail 6372071: Tender workspace requires login",
+      "Published-notice detail 5785292: Tender workspace requires login",
+      "Published-notice detail 5780520: Tender workspace requires login",
+      "Published-notice detail 5784229: Tender workspace requires login",
+      "Published-notice detail 5780563: Tender workspace requires login",
+      "Published-notice detail 5783576: Tender workspace requires login",
+      "Published-notice detail 5702606: Tender workspace requires login",
+      "Published-notice detail 4463031: Tender workspace requires login",
+      "All-buyer public published-notice catalogue screened by title, with matching tender details fetched. This is independent of CAPTCHA-protected search. Description-only and attachment-only matches, unpublished notices and restricted documents remain outside discovery. Publication events and raw pages are retained separately; publication does not mean bidding is open.",
+      "17 listing rows have no publication date; creation date was used only for scope filtering, without changing source publication dates.",
+      "829 listing rows have no title, so their relevance could not be screened; their metadata and source pages are retained in the listing index."
     ]
   },
   {
-    "job": "EU27-TED--scrape-eu27-ted-space-procurements",
-    "sourceId": "EU27-TED--scrape-eu27-ted-space-procurements",
-    "state": "unassessed",
-    "error": "",
-    "gaps": [
-      "Valid output; source completeness not independently assessed."
-    ]
+    "job": "national-BG",
+    "sourceId": "national-BG",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
+    "gaps": []
+  },
+  {
+    "job": "national-HR",
+    "sourceId": "national-HR",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
+    "gaps": []
   },
   {
     "job": "national-DK",
@@ -837,64 +849,12 @@
     ]
   },
   {
-    "job": "national-HR",
-    "sourceId": "HR-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Current EOJN public procedures and published notices are collected; separate legacy archives cover earlier records. Login-restricted technical attachments, invitation-only participation, and unpublished purchases remain limitations."
-    ]
-  },
-  {
-    "job": "national-HR",
-    "sourceId": "HR-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Ministry procurement pages and all linked 2020-onward XLSX plan versions were checked. Plans are planning records, not open tenders. National current/legacy collectors cover published contracts; restricted documents, other-body plans and unpublished purchases remain gaps."
-    ]
-  },
-  {
-    "job": "national-HR",
-    "sourceId": "HR-archive",
-    "state": "failed",
-    "error": "No dated archive download links",
-    "gaps": []
-  },
-  {
-    "job": "national-HR",
-    "sourceId": "HR-cpv",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Current EOJN public procedures and published notices are collected; separate legacy archives cover earlier records. Login-restricted technical attachments, invitation-only participation, and unpublished purchases remain limitations."
-    ]
-  },
-  {
-    "job": "national-HR",
-    "sourceId": "HR-buyers",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Current EOJN public procedures and published notices are collected; separate legacy archives cover earlier records. Login-restricted technical attachments, invitation-only participation, and unpublished purchases remain limitations."
-    ]
-  },
-  {
-    "job": "national-HR",
-    "sourceId": "HR-open",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Current EOJN public procedures and published notices are collected; separate legacy archives cover earlier records. Login-restricted technical attachments, invitation-only participation, and unpublished purchases remain limitations."
-    ]
-  },
-  {
     "job": "national-FI",
     "sourceId": "FI-portal",
     "state": "partial",
     "error": "",
     "gaps": [
-      "138606 indexed notices screened from 2020 through 2026-10-15; all 7 yearly counts and pagination reconciled. 4107 selected procedures fully checked, including future-deadline and relevant-agency candidates.",
+      "138757 indexed notices screened from 2020 through 2026-10-19; all 7 yearly counts and pagination reconciled. 4105 selected procedures fully checked, including future-deadline and relevant-agency candidates.",
       "Coverage is complete for the indexed screening pass, not all possible Finnish procurement. Removed, restricted, below-threshold and attachment-only scope can remain outside coverage.",
       "Notices aggregate lots. Multiple deadlines and qualification/DPS admission are marked for review rather than confirmed open. Direct awards and market consultations are not open tenders."
     ]
@@ -912,75 +872,12 @@
     ]
   },
   {
-    "job": "national-CZ",
-    "sourceId": "CZ-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public NEN HTML result pages and details are fully paginated where audited; records on other tools are supplemented by official RVZ/VVZ exports. Restricted attachments and unpublished purchases remain outside coverage."
-    ]
-  },
-  {
-    "job": "national-CZ",
-    "sourceId": "CZ-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public NEN HTML result pages and details are fully paginated where audited; records on other tools are supplemented by official RVZ/VVZ exports. Restricted attachments and unpublished purchases remain outside coverage."
-    ]
-  },
-  {
-    "job": "national-CZ",
-    "sourceId": "CZ-rvz",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Official RVZ monthly/annual exports plus legacy VVZ standard and defence forms from 2020. The latest exported period and parse/download gaps are in the audit; current portal checks supplement the monthly publication delay. Qualification systems and DNS admission remain planning records outside OPEN."
-    ]
-  },
-  {
-    "job": "national-CZ",
-    "sourceId": "CZ-research",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Direct public ASU, CzechGlobe and CENIA buyer profiles supplement RVZ/NEN. Routine institutional purchases are not classified as space solely because of the buyer; other institutional tools and unpublished purchases remain coverage limits."
-    ]
-  },
-  {
-    "job": "national-CZ",
-    "sourceId": "CZ-ufa",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "UFA public profile provides title, classification, dates and status; some technical scope exists only in attachments and generic computing purchases remain unconfirmed."
-    ]
-  },
-  {
-    "job": "national-CZ",
-    "sourceId": "CZ-cenia",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public NEN HTML result pages and details are fully paginated where audited; records on other tools are supplemented by official RVZ/VVZ exports. Restricted attachments and unpublished purchases remain outside coverage."
-    ]
-  },
-  {
-    "job": "national-CZ",
-    "sourceId": "CZ-description",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public NEN HTML result pages and details are fully paginated where audited; records on other tools are supplemented by official RVZ/VVZ exports. Restricted attachments and unpublished purchases remain outside coverage."
-    ]
-  },
-  {
     "job": "national-EE",
     "sourceId": "EE-archive",
     "state": "partial",
     "error": "",
     "gaps": [
-      "164 monthly notice/award exports, 177495 parsed notices, zero unresolved parsing failures. January 2020 through 2026-10-15; current month is a collection-date snapshot.",
+      "164 monthly notice/award exports, 177668 parsed notices, zero unresolved parsing failures. January 2020 through 2026-10-19; current month is a collection-date snapshot.",
       "Space relevance uses notice titles, descriptions and CPVs; attachment-only, removed, restricted or unpublished procurements may be absent. Amendments and awards are preserved, not separate unique procedures."
     ]
   },
@@ -990,7 +887,7 @@
     "state": "partial",
     "error": "",
     "gaps": [
-      "75 search queries including date splits; 1609 candidates all detail-checked. Capped 500-row searches split until each leaf is below the cap.",
+      "75 search queries including date splits; 1597 candidates all detail-checked. Capped 500-row searches split until each leaf is below the cap.",
       "Ongoing-status scans supplement Estonian/English terms, CPVs, agency buyers and future archive deadlines. Dynamic qualification and invitation-only procedures are not confirmed open tenders. Restricted documents and attachment-only relevance remain gaps."
     ]
   },
@@ -1000,51 +897,8 @@
     "state": "partial",
     "error": "",
     "gaps": [
-      "Legacy EAS attachment link failed (HTTP 526); retrieved same published path on current EIS domain: https://eas.ee/wp-content/uploads/2022/10/hankeplaani-lisa.docx",
+      "Legacy EAS attachment link failed (HTTP 521); retrieved same published path on current EIS domain: https://eas.ee/wp-content/uploads/2022/10/hankeplaani-lisa.docx",
       "The Space Estonia page directs procurement opportunities to ESA, EUSPA and EUMETSAT; these international sources are separate collectors. EIS states that its national procurements are in the Estonian register. Annual plans are not live tender invitations. Unlinked historical agency attachments are not exhaustive."
-    ]
-  },
-  {
-    "job": "national-DE",
-    "sourceId": "DE-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Bulk export is available through yesterday; today needs a separate live portal check."
-    ]
-  },
-  {
-    "job": "national-DE",
-    "sourceId": "DE-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "DLR linked RSS feeds cover current advertised opportunities only; they do not provide the 2020 archive.",
-      "https://www.subreport-elvis.de/browseVerdingungsunterlagen.html#ELVISID:E94581745: Error: Error: Invalid XRef stream header",
-      "https://www.subreport-elvis.de/browseVerdingungsunterlagen.html#ELVISID:E32383864: Error: Error: Invalid XRef stream header",
-      "https://www.subreport-elvis.de/browseVerdingungsunterlagen.html#ELVISID:E99151975: Error: Error: Invalid XRef stream header",
-      "https://www.subreport-elvis.de/browseVerdingungsunterlagen.html#ELVISID:E68951821: Error: Error: Invalid XRef stream header",
-      "https://www.subreport-elvis.de/browseVerdingungsunterlagen.html#ELVISID:E36896383: Error: Error: Invalid XRef stream header",
-      "https://www.subreport-elvis.de/browseVerdingungsunterlagen.html#ELVISID:E48749855: Error: Error: Invalid XRef stream header",
-      "Only anonymous public contract notices are downloaded; restricted tender packages and archived opportunities absent from the feeds remain unavailable."
-    ]
-  },
-  {
-    "job": "national-DE",
-    "sourceId": "DE-live",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Live keyword searches cover active competition notices; historical coverage remains in the separate bulk archive. Unpublished notices, document-only wording and notices absent from this aggregation are not covered."
-    ]
-  },
-  {
-    "job": "national-DE",
-    "sourceId": "DE-cpv",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Live category-code searches cover active competition notices; historical coverage remains in the separate bulk archive. Unpublished notices, document-only wording and notices absent from this aggregation are not covered."
     ]
   },
   {
@@ -1080,6 +934,27 @@
       "Closed native portal history is supplemented by BOAMP and preserved prior records, not claimed exhaustive. Login-only documents and private invitations were not accessed.",
       "Cross-source duplicates are retained with provenance. OPEN counts are source records, not necessarily unique opportunities."
     ]
+  },
+  {
+    "job": "national-GR",
+    "sourceId": "national-GR",
+    "state": "failed",
+    "error": "Collector exited 1",
+    "gaps": []
+  },
+  {
+    "job": "national-CZ",
+    "sourceId": "national-CZ",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
+    "gaps": []
+  },
+  {
+    "job": "national-DE",
+    "sourceId": "national-DE",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
+    "gaps": []
   },
   {
     "job": "national-IE",
@@ -1118,37 +993,13 @@
     ]
   },
   {
-    "job": "national-GR",
-    "sourceId": "GR-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Historical title searches from 2020; 7522 future-deadline notices screened regardless of title. Space-category and four verified space/research/aerospace buyer searches completed.",
-      "Category pagination inconsistencies resolved through recursively smaller date windows; raw parent and child responses preserved.",
-      "Not universal coverage: unpublished/restricted notices, incomplete source metadata, historical description-only matches outside selected categories/buyers, and procurement outside KIMDIS may be absent.",
-      "Direct-award invitations are invitation_only. Ongoing ambiguous geospatial/radar contracts stay in REVIEW. Only relevant ongoing candidates had linked documents parsed; all attachments were not exhaustively searched.",
-      "Source midnight deadlines are retained as date-only because an exact closing time is not established."
-    ]
-  },
-  {
-    "job": "national-GR",
-    "sourceId": "GR-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Greek and English announcement pagination reconciled. HSC procurement also collected through its KIMDIS buyer identifier.",
-      "Agency announcements may duplicate national notices; preserved as separate source evidence. Website migration timestamps do not establish original publication dates or current deadlines.",
-      "Educational competitions and job invitations are not open procurement. Agency attachments and procurement on other agencies' standalone sites are not exhaustively covered."
-    ]
-  },
-  {
     "job": "national-HU",
     "sourceId": "HU-portal",
     "state": "partial",
     "error": "",
     "gaps": [
-      "46 reconciled keyword/CPV/current queries; 1358 current procedures screened; 4064 full metadata and lot records checked.",
-      "1661 public notice PDFs extracted; 0 document errors. PDFs selected for current public bidding and relevant titles/lots; attachment-only historical relevance may remain undiscovered.",
+      "46 reconciled keyword/CPV/current queries; 1312 current procedures screened; 4019 full metadata and lot records checked.",
+      "1681 public notice PDFs extracted; 0 document errors. PDFs selected for current public bidding and relevant titles/lots; attachment-only historical relevance may remain undiscovered.",
       "2020 onward history is query-based. Official bulk archive returned HTTP 403; no claim of exhaustive historical coverage. Restricted, removed and below-threshold tenders can remain missing.",
       "Qualification and DPS admission are separate from public bidding; document-only relevance is retained for review."
     ]
@@ -1199,11 +1050,9 @@
   {
     "job": "national-IT",
     "sourceId": "IT-defence",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "TELEDIFE public historical call list and current procedure list checked from 2020. Only substantive space matches are emitted; ordinary radar/defence purchases are excluded. Deadlines confined to linked documents are not assumed open. Classified, unpublished, other defence buyers and description-only title misses remain outside this route."
-    ]
+    "state": "failed",
+    "error": "The operation was aborted due to timeout",
+    "gaps": []
   },
   {
     "job": "national-IT",
@@ -1263,151 +1112,54 @@
     "job": "national-IT",
     "sourceId": "IT-INAF-Capodimonte-history",
     "state": "failed",
-    "error": "No annual archive documents recognized",
+    "error": "fetch failed",
     "gaps": []
   },
   {
     "job": "national-IT",
     "sourceId": "IT-INAF-IAPS-annual",
-    "state": "failed",
-    "error": "No annual tables found",
+    "state": "partial",
+    "error": "",
+    "gaps": [
+      "Published IAPS annual tables only; reporting year is not an exact publication date. All parsed candidates and original files retained. Unpublished and retired archive records remain unavailable."
+    ]
+  },
+  {
+    "job": "national-LU",
+    "sourceId": "LU-portal",
+    "state": "partial",
+    "error": "1 document errors",
+    "gaps": [
+      "All indexed listings reconciled: index 18019; awards-index 434; information-index 56. 18509 unique indexed procedures screened; 838 selected full details checked.",
+      "455 public PDF/RTF notices extracted; 1 document errors. Records focus on 2020 onward. Future-deadline procedures were selected regardless of title.",
+      "Public listing pages and unique procedure counts reconciled.",
+      "Historical attachment-only relevance, unpublished/restricted procurements and unindexed removals can remain missing. Economic satellite accounts, spatial planning, DPS admission and placeholder future dates are excluded from confirmed OPEN."
+    ]
+  },
+  {
+    "job": "national-LU",
+    "sourceId": "LU-space",
+    "state": "partial",
+    "error": "",
+    "gaps": [
+      "LSA, ESRIC and LIST public pages checked; funding, education calls and ESA-administered programmes are not reclassified as Luxembourg procurement. Relevant national tender records are collected from PMP.",
+      "Unpublished, restricted and programme-specific ESA opportunities can remain outside this national collection.",
+      "Website crawl: 35 pages; 18 queued links remain outside this bounded website review. Buyer-associated records overlap LU-portal."
+    ]
+  },
+  {
+    "job": "national-LV",
+    "sourceId": "national-LV",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
     "gaps": []
   },
   {
     "job": "national-LT",
-    "sourceId": "LT-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "No directly named technical specification or procurement ZIP listed for 9988684",
-      "No directly named PDF/DOCX technical specification in https://viesiejipirkimai.lt/epps/cft/downloadContractDocument.do?documentId=9974338&resourceId=9974215",
-      "No directly named technical specification or procurement ZIP listed for 10061044",
-      "New CVP IS public title/description, space CPV and space-body buyer searches; pre-December-2024 notices are handled by LT-legacy. Restricted documents and records missing from public search remain gaps."
-    ]
-  },
-  {
-    "job": "national-LT",
-    "sourceId": "LT-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "New CVP IS public title/description, space CPV and space-body buyer searches; pre-December-2024 notices are handled by LT-legacy. Restricted documents and records missing from public search remain gaps."
-    ]
-  },
-  {
-    "job": "national-LT",
-    "sourceId": "LT-legacy",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Legacy CVPP title and description searches from 2020. The portal warns that international-notice CPV search is unavailable; keyword searches supplement it. Historical summaries are not promoted to current OPEN without a current-platform status. Attachments and old CTM-only detailed records remain partial."
-    ]
-  },
-  {
-    "job": "national-LT",
-    "sourceId": "LT-cpv",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "No directly named technical specification or procurement ZIP listed for 9988684",
-      "New CVP IS public title/description, space CPV and space-body buyer searches; pre-December-2024 notices are handled by LT-legacy. Restricted documents and records missing from public search remain gaps."
-    ]
-  },
-  {
-    "job": "national-LT",
-    "sourceId": "LT-agency",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Agency procurement directory points to national CVP IS/legacy CVPP; those buyer searches are collected under LT-space. This source separately checks the pre-commercial procurement listing.",
-      "The agency listing is a current index, not a complete historical archive. Publication dates are left unknown where not explicitly identified; dated document revisions are not substituted for original publication."
-    ]
-  },
-  {
-    "job": "national-LV",
-    "sourceId": "LV-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "EIS current public search and detail pages; full notice-text history is supplemented by IUB daily open data. Restricted attachments and unpublished purchases remain outside coverage."
-    ]
-  },
-  {
-    "job": "national-LV",
-    "sourceId": "LV-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "University contract table contains 973 rows with missing subject text; EIS/IUB supply the complementary notice data.",
-      "https://www.venta.lv/zinatne/projekti/irbenes-radioteleskopu-kompleksa-modernizacijas-4-karta: HTTP 403",
-      "https://www.venta.lv/noslegts-ligums-par-radioteleskopa-rt-32-uztvereju-kabines-izgatavosanu-un-piegadi: HTTP 403",
-      "Ministry and university procurement records are supplemented by national EIS buyer searches and IUB open data. Space-office ESA/EUSPA and funding referrals are audited outside national OPEN records. Unpublished low-value purchases and missing source-table subjects remain gaps."
-    ]
-  },
-  {
-    "job": "national-LV",
-    "sourceId": "LV-iub",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Official IUB daily public JSON/XML archive; latest publication day and any listed download failures are explicit in the audit. Non-public purchases and restricted technical documents are not covered."
-    ]
-  },
-  {
-    "job": "national-LV",
-    "sourceId": "LV-open",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "EIS current public search and detail pages; full notice-text history is supplemented by IUB daily open data. Restricted attachments and unpublished purchases remain outside coverage."
-    ]
-  },
-  {
-    "job": "national-LV",
-    "sourceId": "LV-buyers",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "EIS current public search and detail pages; full notice-text history is supplemented by IUB daily open data. Restricted attachments and unpublished purchases remain outside coverage."
-    ]
-  },
-  {
-    "job": "national-MT",
-    "sourceId": "MT-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "6 seeded or linked detail pages did not expose a recognized public notice; these pages are not counted as verified notices.",
-      "Public linked buyer notice lists were checked from bundled official notice and buyer-profile seeds, newest first back to the requested start date. National search requires CAPTCHA. Unseeded buyers, description-only matches and unpublished notices remain gaps. The separate contracts.gov.mt annual award-PDF archive returned HTTP 403 through direct and browser access during the 5 October 2026 audit and is not included by this adapter."
-    ]
-  },
-  {
-    "job": "national-MT",
-    "sourceId": "MT-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Official Xjenza public posts/pages searched for PECS and procurement terms. Only call announcements linking identified ESA tender activities are normalized as tenders; briefings, jobs, grants and exhibition participation are excluded. Deadlines come from the national announcement and should be checked for amendments on ESA Star. Legacy MCST content before the current website and document-only tenders are not exhaustive. National ePPS buyer notices are collected separately."
-    ]
-  },
-  {
-    "job": "national-MT",
-    "sourceId": "MT-published",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "3 repeated listing rows across pages; stable total alone does not prove complete coverage. Combine publication-date and creation-date passes.",
-      "All-buyer public published-notice catalogue screened by title, with matching tender details fetched. This is independent of CAPTCHA-protected search. Description-only and attachment-only matches, unpublished notices and restricted documents remain outside discovery. Publication events and raw pages are retained separately; publication does not mean bidding is open."
-    ]
-  },
-  {
-    "job": "national-MT",
-    "sourceId": "MT-published-created",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "All-buyer public published-notice catalogue screened by title, with matching tender details fetched. This is independent of CAPTCHA-protected search. Description-only and attachment-only matches, unpublished notices and restricted documents remain outside discovery. Publication events and raw pages are retained separately; publication does not mean bidding is open."
-    ]
+    "sourceId": "national-LT",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
+    "gaps": []
   },
   {
     "job": "national-NL",
@@ -1433,6 +1185,9 @@
     "state": "partial",
     "error": "",
     "gaps": [
+      "Notice 263416: HTTP 404",
+      "Notice 252005: HTTP 404",
+      "Notice 191986: HTTP 404",
       "Public TNS service searches all exposed history, without the default last-30-days filter, then enforces 2020 onward dates. Separate source preserves notice-level summaries alongside annual lot-level OCDS data; cross-source duplicates may exist. Document-only space mentions, unavailable notices and unpublished procurements remain gaps. Individual lot values/details are retained in annual archives, not supplied by this summary endpoint."
     ]
   },
@@ -1464,203 +1219,92 @@
     ]
   },
   {
-    "job": "national-LU",
-    "sourceId": "LU-portal",
-    "state": "partial",
-    "error": "1 document errors",
-    "gaps": [
-      "All indexed listings reconciled: index 17991; awards-index 436; information-index 56. 18483 unique indexed procedures screened; 821 selected full details checked.",
-      "442 public PDF/RTF notices extracted; 1 document errors. Records focus on 2020 onward. Future-deadline procedures were selected regardless of title.",
-      "Public listing pages and unique procedure counts reconciled.",
-      "Historical attachment-only relevance, unpublished/restricted procurements and unindexed removals can remain missing. Economic satellite accounts, spatial planning, DPS admission and placeholder future dates are excluded from confirmed OPEN."
-    ]
-  },
-  {
-    "job": "national-LU",
-    "sourceId": "LU-space",
+    "job": "national-MT",
+    "sourceId": "MT-portal",
     "state": "partial",
     "error": "",
     "gaps": [
-      "LSA, ESRIC and LIST public pages checked; funding, education calls and ESA-administered programmes are not reclassified as Luxembourg procurement. Relevant national tender records are collected from PMP.",
-      "Unpublished, restricted and programme-specific ESA opportunities can remain outside this national collection.",
-      "Website crawl: 35 pages; 18 queued links remain outside this bounded website review. Buyer-associated records overlap LU-portal."
+      "12 seeded or linked detail pages did not expose a recognized public notice; these pages are not counted as verified notices.",
+      "Public linked buyer notice lists were checked from bundled official notice and buyer-profile seeds, newest first back to the requested start date. National search requires CAPTCHA. Unseeded buyers, description-only matches and unpublished notices remain gaps. The separate contracts.gov.mt annual award-PDF archive returned HTTP 403 through direct and browser access during the 5 October 2026 audit and is not included by this adapter."
     ]
   },
   {
-    "job": "national-PL",
-    "sourceId": "PL-portal",
+    "job": "national-MT",
+    "sourceId": "MT-space",
     "state": "partial",
     "error": "",
     "gaps": [
-      "Official platform rules describe four-year public retention followed by a non-public archive; accessible older records are retained when returned. https://ezamowienia.gov.pl/pl/regulamin/",
-      "Native BZP title/lot keyword search includes results and amendments from 2021. The PL-public source supplements current full text and category searches, including the national TED mirror. The original 2020 portal and unindexed notices remain outside verified complete coverage."
+      "Official Xjenza public posts/pages searched for PECS and procurement terms. Only call announcements linking identified ESA tender activities are normalized as tenders; briefings, jobs, grants and exhibition participation are excluded. Deadlines come from the national announcement and should be checked for amendments on ESA Star. Legacy MCST content before the current website and document-only tenders are not exhaustive. National ePPS buyer notices are collected separately."
     ]
   },
   {
-    "job": "national-PL",
-    "sourceId": "PL-space",
+    "job": "national-MT",
+    "sourceId": "MT-published",
     "state": "partial",
     "error": "",
     "gaps": [
-      "All four public POLSA procurement tabs are enumerated. Login-only documents, older unlinked BIP archives and opportunities published outside this profile may be absent. Ordinary agency supplies remain review candidates."
+      "Published-notice detail 12304735: Tender workspace requires login",
+      "Published-notice detail 11740369: Tender workspace requires login",
+      "Published-notice detail 11156375: Tender workspace requires login",
+      "Published-notice detail 10773461: Tender workspace requires login",
+      "Published-notice detail 10612723: Tender workspace requires login",
+      "Published-notice detail 8838329: Tender workspace requires login",
+      "Published-notice detail 8665821: Tender workspace requires login",
+      "Published-notice detail 8609764: Tender workspace requires login",
+      "Published-notice detail 8519548: Tender workspace requires login",
+      "Published-notice detail 8523018: Tender workspace requires login",
+      "Published-notice detail 8119717: Tender workspace requires login",
+      "Published-notice detail 7283548: Tender workspace requires login",
+      "Published-notice detail 8051204: Tender workspace requires login",
+      "Published-notice detail 7907194: Tender workspace requires login",
+      "Published-notice detail 6922341: Tender workspace requires login",
+      "Published-notice detail 6795776: Tender workspace requires login",
+      "Published-notice detail 6726860: Tender workspace requires login",
+      "43 repeated listing rows across pages; stable total alone does not prove complete coverage. Combine publication-date and creation-date passes.",
+      "All-buyer public published-notice catalogue screened by title, with matching tender details fetched. This is independent of CAPTCHA-protected search. Description-only and attachment-only matches, unpublished notices and restricted documents remain outside discovery. Publication events and raw pages are retained separately; publication does not mean bidding is open.",
+      "1055 listing rows have no title, so their relevance could not be screened; their metadata and source pages are retained in the listing index."
     ]
   },
   {
-    "job": "national-PL",
-    "sourceId": "PL-polsa",
+    "job": "national-MT",
+    "sourceId": "MT-published-created",
     "state": "partial",
     "error": "",
     "gaps": [
-      "Official POLSA website routes procurement to https://platformazakupowa.pl/pn/polsa, collected by PL-space. This directory source emits no duplicate tender records.",
-      "Official BIP archive https://pak.bip.gov.pl/ unavailable: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pak.bip.gov.pl/\nCall log:\n\u001b[2m  - navigating to \"https://pak.bip.gov.pl/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      "Published-notice detail 12304735: Tender workspace requires login",
+      "Published-notice detail 11740369: Tender workspace requires login",
+      "Published-notice detail 11156375: Tender workspace requires login",
+      "Published-notice detail 10773461: Tender workspace requires login",
+      "Published-notice detail 10612723: Tender workspace requires login",
+      "Published-notice detail 8838329: Tender workspace requires login",
+      "Published-notice detail 8665821: Tender workspace requires login",
+      "Published-notice detail 8609764: Tender workspace requires login",
+      "Published-notice detail 8519548: Tender workspace requires login",
+      "Published-notice detail 8523018: Tender workspace requires login",
+      "Published-notice detail 8119717: Tender workspace requires login",
+      "Published-notice detail 7283548: Tender workspace requires login",
+      "Published-notice detail 8051204: Tender workspace requires login",
+      "Published-notice detail 7907194: Tender workspace requires login",
+      "Published-notice detail 6922341: Tender workspace requires login",
+      "Published-notice detail 6795776: Tender workspace requires login",
+      "Published-notice detail 6726860: Tender workspace requires login",
+      "All-buyer public published-notice catalogue screened by title, with matching tender details fetched. This is independent of CAPTCHA-protected search. Description-only and attachment-only matches, unpublished notices and restricted documents remain outside discovery. Publication events and raw pages are retained separately; publication does not mean bidding is open.",
+      "1058 listing rows have no title, so their relevance could not be screened; their metadata and source pages are retained in the listing index."
     ]
   },
   {
-    "job": "national-PL",
-    "sourceId": "PL-public",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Official platform rules describe four-year public retention followed by a non-public archive. Accessible older records are retained when returned; missing older notices are not treated as evidence of no procurement. https://ezamowienia.gov.pl/pl/regulamin/",
-      "Public BZP/TED mirror: current deadline-bearing full-text matches plus space-category history from 2021. National title searches are collected separately. Legacy 2020 BZP search presents an access challenge; notices without deadlines and descriptions available only in restricted attachments remain gaps."
-    ]
-  },
-  {
-    "job": "national-PL",
-    "sourceId": "PL-legacy",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Official platform rules describe four-year public retention followed by a non-public archive. Accessible older records are retained when returned; missing older notices are not treated as evidence of no procurement. https://ezamowienia.gov.pl/pl/regulamin/",
-      "Official archival BZP mirror provides legacy-law notices published from 2021; direct 2020 date-range check returned zero. This does not establish 2020 completeness. Original legacy portal requires CAPTCHA."
-    ]
-  },
-  {
-    "job": "national-PL",
-    "sourceId": "PL-CBK",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "CBK PAN public PZP, excluded-procedure and consultation tabs are enumerated, including current and archived notices. Attachment-only specifications and separately archived older notices may add detail not available in the public notice summaries."
-    ]
-  },
-  {
-    "job": "national-PL",
-    "sourceId": "PL-CBK-archive",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "All public CBK SmartPZP listing rows and detail cards enumerated. This is the older buyer profile; newer notices use the separately collected Marketplanet profile. Attachment contents, older unlinked pages and unpublished procurement are not claimed complete. Source selection-of-best-offer wording is preserved and not treated as proof of a signed contract."
-    ]
-  },
-  {
-    "job": "national-PL",
-    "sourceId": "PL-CBK-documents",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Discovered official archived PDF seed retained with original bytes and extracted text. No complete public index of the older CBK document directory was exposed. Printed document date is an event date, not an inferred website publication date."
-    ]
-  },
-  {
-    "job": "national-SK",
-    "sourceId": "SK-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public EVO order title search and notice details. Full UVO and non-EVO procurement coverage is not established."
-    ]
-  },
-  {
-    "job": "national-SK",
-    "sourceId": "SK-uvo",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Current-only national pass: latest dated notices fetched; older notice headers retained in audit. Full historical backfill is supplied separately by SK-archives and SK-fallback.",
-      "UVO public procedure searches with linked notice histories, 2020 onward. Keyword/CPV discovery is not exhaustive; unindexed, document-only and unpublished purchases remain gaps. Active registry labels alone are never evidence of an open tender."
-    ]
-  },
-  {
-    "job": "national-SK",
-    "sourceId": "SK-astronomy",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Dated public purchase register, not an open-tender invitation. Category-only optical purchases retained for review; no deadline invented."
-    ]
-  },
-  {
-    "job": "national-SK",
-    "sourceId": "SK-archives",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Archive Vestník 131/2026: HTTP 404",
-      "Official bulletin JSON and legacy XML. Summary reports without an individual procedure title are retained in raw evidence but not normalized; 680 such or unsupported entries. Live verification is required for archive-only future deadlines.",
-      "1 archive files failed"
-    ]
-  },
-  {
-    "job": "national-SK",
-    "sourceId": "SK-sario",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "SARIO/Slovak Space Office official procurement pages checked; buyer profile is separately searched through UVO. Document-only opportunities with generic titles and historical purchase-order spreadsheets remain a coverage gap."
-    ]
-  },
-  {
-    "job": "national-SK",
-    "sourceId": "SK-fallback",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "HTML fallback for unavailable official bulletin archives; summary awards are split into individual titles; administrative notices without a procedure title are not normalized."
-    ]
-  },
-  {
-    "job": "national-SK",
-    "sourceId": "SK-space",
+    "job": "national-RO",
+    "sourceId": "national-RO",
     "state": "failed",
-    "error": "The operation was aborted due to timeout",
+    "error": "Collector exited 1",
     "gaps": []
   },
   {
-    "job": "national-RO",
-    "sourceId": "RO-portal",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Title search candidates enriched with official descriptions. Description-only matches without searched title terms and unpublished procurements are not exhaustive."
-    ]
-  },
-  {
-    "job": "national-RO",
-    "sourceId": "RO-advertisements",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public advertisement title search; unadvertised catalogue purchases are historical evidence, not publicly open competitions."
-    ]
-  },
-  {
-    "job": "national-RO",
-    "sourceId": "RO-space",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Current ROSA public posts and pages searched in Romanian and English, plus the public-interest category. Historical content absent from the current site may remain missing. Procurement plans are retained as consolidated review records, not verified open tenders."
-    ]
-  },
-  {
-    "job": "national-RO",
-    "sourceId": "RO-archives",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Published national quarterly archives only. Old initiation files can omit titles and deadlines; archived records do not prove current availability. No archive has been published for a period still in progress."
-    ]
+    "job": "national-PL",
+    "sourceId": "national-PL",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
+    "gaps": []
   },
   {
     "job": "national-SI",
@@ -1668,9 +1312,9 @@
     "state": "partial",
     "error": "",
     "gaps": [
-      "189559 unique indexed notices screened from 2020 onward; annual pagination counts reconciled. 837 current-deadline notices and 939 CPV matches examined.",
-      "5804 selected notice details and 1900 candidate procedure histories retrieved; 13 additional lot-title searches.",
-      "14536 preserved notices have no substantive API description, mainly migrated legacy data. Public attachments and restricted documents are not exhaustively extracted.",
+      "189773 unique indexed notices screened from 2020 onward; annual pagination counts reconciled. 810 current-deadline notices and 939 CPV matches examined.",
+      "5782 selected notice details and 1902 candidate procedure histories retrieved; 13 additional lot-title searches.",
+      "14541 preserved notices have no substantive API description, mainly migrated legacy data. Public attachments and restricted documents are not exhaustively extracted.",
       "Source date filters can overlap at year boundaries; duplicate IDs are removed. Historical notices with relevance only in attachments or unsearched descriptions can remain missing. Live archive is not an atomic snapshot. Defence exemptions and unpublished or removed procurements are outside coverage.",
       "DPS admission, direct awards, contract changes and superseded notices are not confirmed open tenders. Broad radar, geospatial, GPS and institutional matches require review."
     ]
@@ -1683,17 +1327,8 @@
     "gaps": [
       "Slovenian Space Office, ESA cooperation and national procurement pages checked. Funding and ESA-administered opportunities are not reclassified as national procurement. Website review is bounded; source links are preserved.",
       "Unpublished, restricted and programme-specific ESA opportunities can remain outside this national collection.",
-      "34 pages reviewed; 132 queued links remain outside the bounded crawl. ESA and funding calls are separate from national procurement.",
+      "34 pages reviewed; 138 queued links remain outside the bounded crawl. ESA and funding calls are separate from national procurement.",
       "https://ejn.gov.si/mojejn/pages/registracija/narocnik/uporabnik/registracija_uporabnik.xhtml: HTTP 400"
-    ]
-  },
-  {
-    "job": "national-EU",
-    "sourceId": "EU-SST",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "EU SST list has no publication dates for many entries; retain them with an unknown date scope."
     ]
   },
   {
@@ -1721,38 +1356,34 @@
     "error": "",
     "gaps": [
       "e-Avrop current keyword search and public recent awards catalogue only. The award catalogue currently exposes recent months, not all history since 2020. Search snippets may match incidental mentions and need relevance review. Publication dates unavailable in this listing; undated historical matches are retained for review, not proof of 2020 onward completeness. Other Swedish registered databases remain separate.",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73828; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74069; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73834; not presented as verified open",
+      "e-Avrop detail 74101: Public e-Avrop notice metadata not found",
+      "Conflicting public JSON/eForms deadlines for e-Avrop 74062; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74458; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74028; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 74062; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74539; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73837; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74137; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73838; not presented as verified open",
+      "Conflicting public JSON/eForms deadlines for e-Avrop 74552; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74478; not presented as verified open",
       "e-Avrop detail 74240: Public e-Avrop notice metadata not found",
       "Conflicting public JSON/eForms deadlines for e-Avrop 72289; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73866; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73563; not presented as verified open",
-      "e-Avrop detail 74265: Public e-Avrop notice metadata not found",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74517; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74252; not presented as verified open",
+      "Conflicting public JSON/eForms deadlines for e-Avrop 73866; not presented as verified open",
+      "Conflicting public JSON/eForms deadlines for e-Avrop 73563; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74350; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74142; not presented as verified open",
+      "Conflicting public JSON/eForms deadlines for e-Avrop 73286; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74397; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 71879; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73286; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74031; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74310; not presented as verified open",
+      "Conflicting public JSON/eForms deadlines for e-Avrop 74644; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 73904; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 74414; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74445; not presented as verified open",
+      "Conflicting public JSON/eForms deadlines for e-Avrop 74414; not presented as verified open",
       "Conflicting public JSON/eForms deadlines for e-Avrop 74415; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73929; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 74216; not presented as verified open",
-      "Conflicting public JSON/eForms deadlines for e-Avrop 73883; not presented as verified open"
+      "Conflicting public JSON/eForms deadlines for e-Avrop 74216; not presented as verified open"
     ]
   },
   {
@@ -1783,69 +1414,26 @@
     ]
   },
   {
-    "job": "national-ES",
-    "sourceId": "ES-space",
+    "job": "national-EU",
+    "sourceId": "EU-SST",
     "state": "partial",
     "error": "",
     "gaps": [
-      "AEE profile listings have some date-only deadlines and omit publication dates. Retained as undated review records; archive membership does not establish 2020-onward completeness."
+      "EU SST list has no publication dates for many entries; retain them with an unknown date scope."
     ]
   },
   {
-    "job": "national-ES",
-    "sourceId": "ES-public",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public PLACSP forms searched using space CPV families and the Spanish Space Agency buyer, with 2020 onward publication-date filters. Notice details, current status and explicit closing times were collected. Linked documents are preserved but not fully text-extracted; other CPVs, regional-only notices and unindexed documents remain gaps. The date of the latest displayed notice establishes event scope when an older procedure has been updated."
-    ]
+    "job": "national-SK",
+    "sourceId": "national-SK",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
+    "gaps": []
   },
   {
     "job": "national-ES",
-    "sourceId": "ES-monthly",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Complete monthly PLACSP update archive for 202610, through the publisher latest daily update. This source is not the complete 2020-onward historical archive. Other months, minor contracts and regional-only platforms remain separate."
-    ]
-  },
-  {
-    "job": "national-ES",
-    "sourceId": "ES-documents",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Document query satélite|2026-10-01|2026-10-15: Repeated document result page",
-      "Document query espacial|2026-10-01|2026-10-15: Repeated document result page",
-      "Document query teledetección|2026-10-01|2026-10-15: Repeated document result page",
-      "Document query GNSS|2026-10-01|2026-10-15: Repeated document result page",
-      "Document query Galileo|2026-10-01|2026-10-15: Repeated document result page",
-      "Public document metadata search using ten space terms since 2020. Capped date ranges are split recursively. Contract detail pages verify records; full attachment text is not extracted. Regional-only publications, unindexed documents and other terminology remain gaps."
-    ]
-  },
-  {
-    "job": "national-ES",
-    "sourceId": "ES-Catalonia",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Official Catalonia PSCP dataset searched by contract/lot descriptions and space CPVs across exposed history, then filtered to publication events since 2020. Full document text and other regions are separate. Publisher metadata describes known historical dataset incidents; raw metadata is retained. Lot-level records can overlap national notices."
-    ]
-  },
-  {
-    "job": "national-ES",
-    "sourceId": "ES-agencies",
-    "state": "partial",
-    "error": "",
-    "gaps": [
-      "Public PLACSP forms searched for currently published notices from AEE, INTA, IAC, IEEC and CDTI buyer names. Future deadlines and subject relevance determine inclusion in OPEN. The published state can include expired notices; these are not treated as open. Buyer-name variants, CSIC institutes without separate buyer identities and regional-only platforms remain gaps."
-    ]
-  },
-  {
-    "job": "national-ES",
-    "sourceId": "ES-portal",
-    "state": "failed",
-    "error": "The operation was aborted due to timeout",
+    "sourceId": "national-ES",
+    "state": "timed_out",
+    "error": "Collector exceeded time limit; checkpoint retained",
     "gaps": []
   }
 ]
