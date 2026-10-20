@@ -1,0 +1,64 @@
+{
+  "version": 5,
+  "type": "checkpoint",
+  "complete": false,
+  "buildCommit": "8869fc6f99cbe9d7ec7c41a54812cec8501b79a7",
+  "createdAt": "2026-10-20T04:08:47.043Z",
+  "repository": "angelograceffa77/eu-space-rag",
+  "branch": "main",
+  "shardSizeMB": 20,
+  "totalChunks": 375,
+  "shards": [
+    {
+      "file": "rag-index-0001.ndjson",
+      "chunks": 375,
+      "bytes": 554684
+    }
+  ],
+  "sources": {
+    "00_GPT_CONFIGURATION/GPT space - embedded instructions- GPT enhanced.docx": {
+      "sha256": "6ab4451f0cc9f82414de7d54230983b3fccacbb9d2e2e6bca450d696eed85add",
+      "size": 38334,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/ESA/CELEX_22004A0806(03)_EN_TXT.pdf": {
+      "sha256": "d81c783719a5d719c84538d999eee01565ece5841f52a0c38d3dd1c40037d914",
+      "size": 170318,
+      "status": "indexed",
+      "chunks": 15
+    },
+    "01_POLICY/ESA/cellar_742587dd-44f3-4527-be91-a2eab676330f.0008.02_DOC_1.pdf": {
+      "sha256": "979ba200110397fcbcf0ac109b630f631548c21e3c072f540f7fef69dd8aeabc",
+      "size": 85924,
+      "status": "indexed",
+      "chunks": 2
+    },
+    "01_POLICY/ESA/ESA_CM2025_1_Resolution_on_Elevating_Europe_through_Space.pdf": {
+      "sha256": "5f7ca79c99dabda03e9c989fe828d611135e185d1784afa3e0b05d5de88fc7a8",
+      "size": 259570,
+      "status": "indexed",
+      "chunks": 33
+    },
+    "01_POLICY/ESA/ESA_REG_007_rev_14_EN.pdf": {
+      "sha256": "fb073623b01eccc5297d1004b9df64f6be385805c9f6febad96a49b70f499c64",
+      "size": 1060346,
+      "status": "indexed",
+      "chunks": 310
+    }
+  },
+  "report": {
+    "discoveredFiles": 552,
+    "unchangedFiles": 0,
+    "changedFiles": 552,
+    "processedChangedFiles": 5,
+    "remainingChangedFiles": 547,
+    "deletedFiles": [],
+    "indexedFiles": 5,
+    "skippedFiles": 0,
+    "copiedChunks": 0,
+    "newChunks": 375,
+    "totalChunks": 375,
+    "failures": []
+  }
+}
