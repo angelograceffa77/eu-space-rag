@@ -3,11 +3,11 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "8869fc6f99cbe9d7ec7c41a54812cec8501b79a7",
-  "createdAt": "2026-10-20T16:11:09.320Z",
+  "createdAt": "2026-10-20T16:15:10.116Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 831,
+  "totalChunks": 1335,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
@@ -23,6 +23,11 @@
       "file": "rag-index-0003.ndjson",
       "chunks": 175,
       "bytes": 260820
+    },
+    {
+      "file": "rag-index-0004.ndjson",
+      "chunks": 504,
+      "bytes": 789525
     }
   ],
   "sources": {
@@ -117,20 +122,50 @@
       "status": "skipped",
       "reason": "Worker stopped with code null, signal SIGABRT",
       "chunks": 0
+    },
+    "01_POLICY/EU/Commission/CELEX_52025DC0336_EN_TXT.pdf": {
+      "sha256": "7f10a177913d21e989fb138da85b9aaed3b990027c6abdf72231ed895c1dbc58",
+      "size": 330222,
+      "status": "indexed",
+      "chunks": 77
+    },
+    "01_POLICY/EU/Commission/COM_2007_0212_FIN_en_TXT.pdf": {
+      "sha256": "ddda14f1e2125c667a788ed25042bb7f0d2a2123157e1e106cd4b63a6dbe8042",
+      "size": 188041,
+      "status": "indexed",
+      "chunks": 37
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/annual-activity-report-2020-defis_en.pdf": {
+      "sha256": "ef9807eb82bc7654eeb2b208d2e82fc2889a0701bdd666d2abef9b3f10591c1f",
+      "size": 1590321,
+      "status": "indexed",
+      "chunks": 105
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/annual-activity-report-2020-defis-annexes_en.pdf": {
+      "sha256": "d5d9b4246460299a3d92885fc4e1575ca4a3d20e168b2ebeee9555a5d8810bb5",
+      "size": 3207375,
+      "status": "indexed",
+      "chunks": 180
+    },
+    "01_POLICY/EU/Commission/DG DEFIS/Annual Activity Report ( historical)/annual-activity-report-2021-defis_en.pdf": {
+      "sha256": "e647595b6ac1b77bd1367e9309bc52535d9ee502b58b553f0e012f39c1da67d6",
+      "size": 1848281,
+      "status": "indexed",
+      "chunks": 105
     }
   },
   "report": {
     "discoveredFiles": 552,
     "unchangedFiles": 9,
     "changedFiles": 542,
-    "processedChangedFiles": 15,
-    "remainingChangedFiles": 527,
+    "processedChangedFiles": 20,
+    "remainingChangedFiles": 522,
     "deletedFiles": [],
-    "indexedFiles": 13,
+    "indexedFiles": 18,
     "skippedFiles": 2,
     "copiedChunks": 0,
-    "newChunks": 831,
-    "totalChunks": 831,
+    "newChunks": 1335,
+    "totalChunks": 1335,
     "failures": [
       {
         "file": "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2023)1_EN.pdf",
