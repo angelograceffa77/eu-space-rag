@@ -1,0 +1,30 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+function evidence(dir,job,p){if(!p||path.basename(p.file)!==p.file)throw Error('Invalid evidence path');const raw=fs.readFileSync(path.join(dir,job,p.file));if(sha(raw)!==p.sha256)throw Error('Raw evidence changed');return raw;}
+function exportCandidates(dir){
+ const m=JSON.parse(fs.readFileSync(path.join(dir,'manifest.json'))),out=path.join(dir,'candidates'),pending=out+'.pending';
+ if(!m.finishedAt||!Number.isFinite(Date.parse(m.finishedAt))||Object.values(m.jobs||{}).some(j=>['running','queued','pending'].includes(j.state)))throw Error('Cannot export an unfinished collection');
+ if(fs.existsSync(out)||fs.existsSync(pending))throw Error('Candidate export exists; verify it before retrying');
+ fs.mkdirSync(pending);let index=0,bytes=0,rows=0,partRows=0,chunks=[],parts=[];
+ function flush(){if(!partRows)return;const body=Buffer.concat(chunks),file='candidates.part-'+String(++index).padStart(4,'0')+'.jsonl';fs.writeFileSync(path.join(pending,file),body,{flag:'wx'});parts.push({file,rows:partRows,bytes:body.length,sha256:sha(body)});chunks=[];bytes=0;partRows=0;}
+ function emit(value){const line=Buffer.from(JSON.stringify(value)+'\n');if(line.length>8*1024*1024)throw Error('Oversized candidate requires separate document handling');if(bytes+line.length>8*1024*1024)flush();chunks.push(line);bytes+=line.length;partRows++;rows++;}
+ for(const [job,result]of Object.entries(m.jobs)){
+  if(!fs.existsSync(path.join(dir,job,'state.json'))){if(result.state!=='failed')throw Error('Missing successful job checkpoint');continue;}
+  const state=JSON.parse(fs.readFileSync(path.join(dir,job,'state.json'))),base={job,collectionState:result.state,verifiedOpen:false,spaceRelevance:'not_assessed'};let count=0;
+  if(['anac-deadline-json','nato-deadline-json','austria-index-json','mercell-current-json','eks-current-json','romania-adv-current-json'].includes(state.format)){for(const p of state.pages){const d=JSON.parse(evidence(dir,job,p));for(const i of p.selectedRows){emit({...base,recordType:'discovery_candidate',original:(d.content||d.items||d.results||d.aaData||d.data)[i],evidence:{file:job+'/'+p.file,sha256:p.sha256,url:p.url,row:i,retrievedAt:p.retrievedAt}});count++;}}if(count!==state.received)throw Error('ANAC export count mismatch');}else if(state.format==='institution-html'){for(const p of state.pages){const d=require('./institution-intake.cjs').parse(evidence(dir,job,p),p.url,p.parser);for(let i=0;i<d.rows.length;i++){const details=d.rows[i].links.map(u=>state.details[sha(u)]).filter(Boolean);for(const detail of details)if(detail.file)evidence(dir,job,detail);emit({...base,recordType:'institution_discovery_candidate',extracted:d.rows[i],evidence:{file:job+'/'+p.file,sha256:p.sha256,url:p.url,parser:p.parser,row:i,retrievedAt:p.retrievedAt},scopeEvidence:(state.scopeEvidence||[]).map(x=>{evidence(dir,job,x);return {...x,file:job+'/'+x.file};}),details:details.map(x=>({...x,file:x.file?job+'/'+x.file:undefined}))});count++;}}if(count!==state.received)throw Error('Institutional export mismatch');}else if(['atexo-html','epps-html','nen-html','kommers-html','luxembourg-html','spain-html'].includes(state.format)){for(const p of state.pages){const parsed=require(state.format==='atexo-html'?'./atexo-intake.cjs':state.format==='spain-html'?'./spain-intake.cjs':state.format==='luxembourg-html'?'./luxembourg-intake.cjs':state.format==='kommers-html'?'./kommers-intake.cjs':state.format==='nen-html'?'./nen-intake.cjs':'./epps-intake.cjs').parse(evidence(dir,job,p),p.url);for(let i=0;i<parsed.rows.length;i++){emit({...base,recordType:state.format==='atexo-html'?'atexo_discovery_candidate':state.format==='spain-html'?'spain_discovery_candidate':state.format==='luxembourg-html'?'luxembourg_discovery_candidate':state.format==='kommers-html'?'kommers_discovery_candidate':state.format==='nen-html'?'nen_discovery_candidate':'epps_discovery_candidate',extracted:parsed.rows[i],evidence:{file:job+'/'+p.file,sha256:p.sha256,url:p.url,row:i,retrievedAt:p.retrievedAt}});count++;}}if(count!==state.received)throw Error('EPPS export count mismatch');}else if(state.listing){
+   const raw=evidence(dir,job,state.listing),parsed=require('./euspa-intake.cjs').parse(raw);
+   if(JSON.stringify(parsed)!==JSON.stringify(state.rows)||parsed.length!==state.total)throw Error('Listing extraction differs from saved source');
+   for(let i=0;i<parsed.length;i++){
+    const r=parsed[i],detail=state.details[sha(r.sourceUrl)];if(detail?.file)evidence(dir,job,detail);
+    emit({...base,recordType:'listing_discovery_candidate',extracted:r,evidence:{listing:{...state.listing,file:job+'/'+state.listing.file,selector:'.block-ongoing-procedures table tbody tr',row:i},detail:detail?.file?{...detail,file:job+'/'+detail.file}:null}});count++;
+   }
+  }else{
+   for(const p of state.pages){const d=JSON.parse(evidence(dir,job,p)),records=Array.isArray(d)?d:d.notices||d.results||d.value||d.resultatElementDtoList||d.content||d.elements||d.EventData?.Items||d.CurrentPageResults||d.publications||d.items||d.eljarasTalalatok||d.payload?.elencoBandi||d.data;if(!Array.isArray(records))throw Error('Unknown response records');for(let i=0;i<records.length;i++){emit({...base,recordType:'discovery_candidate',evidence:{file:job+'/'+p.file,sha256:p.sha256,row:i,retrievedAt:p.retrievedAt},original:records[i]});count++;}}
+   if(count!==state.received)throw Error('Export count does not match checkpoint');
+  }
+ }
+ flush();const manifest={schemaVersion:1,role:'unclassified-discovery-only-not-public-master',rows,parts,coverage:m.coverage,sourceManifestSha256:sha(fs.readFileSync(path.join(dir,'manifest.json')))};
+ fs.writeFileSync(path.join(pending,'manifest.json'),JSON.stringify(manifest,null,2));fs.renameSync(pending,out);return manifest;
+}
+if(require.main===module)console.log(JSON.stringify(exportCandidates(path.resolve(process.argv[2])),null,2));module.exports={exportCandidates};

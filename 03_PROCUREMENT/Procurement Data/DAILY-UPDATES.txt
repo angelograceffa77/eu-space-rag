@@ -1,79 +1,42 @@
-PROCUREMENT DAILY UPDATES
+# Procurement master: operating guide
 
-Run from:
-C:\Users\angel\OneDrive\Desktop\knowledge\eu-space-rag\03_PROCUREMENT\Procurement Data
+The authoritative package is Procurement-Master/manifest.json and the data/index files it references. Only verified, currently open, space-related procurement opportunities are included: core space, space/defence dual use, downstream space applications and other explicitly evidenced space requirements. Counts by buyer and category are in the snapshot manifest. Source text is preserved unchanged; normalized fields and company matches are separate.
 
-One command to collect, archive, build, check and publish:
-node .\daily\daily.cjs --publish
+For retrieval, count records whose recordType is procurement. Lots are separate parts of a tender, and source_record rows are supporting evidence, not additional opportunities. Use summary.openProcurements and summary.byBuyer for totals. Space categories can overlap and must not be added together. Read every JSONL part referenced by the manifest; never combine the current package with archived snapshots.
 
-The daily controller runs the registered procurement collectors with three workers.
-Where supported, it requests the latest 14 days. TED also retains its separate
-search for still-open notices. Existing historical evidence is retained in the
-master; this daily command does not claim a new complete historical crawl.
+Counts and verified status are dated to the snapshot. For a question about what is open now, also compare the current time with each submission deadline: a tender can expire between daily runs. The next successful daily update archives its verified expiry.
 
-A run interrupted before completion resumes its recorded job selection. Do not
-delete checkpoints or start a second collector manually in the same run folder.
-Austria and Estonia receive one bounded checkpoint retry after a failed attempt.
-The default job limit is 45 minutes; Czechia has a 90-minute allowance following
-the first live run. A longer allowance does not imply complete source coverage.
-An active-run lock prevents two daily runs from overlapping. A held run requires
-review of its error; the last validated published snapshot remains available.
+Use `npm test` for offline regression checks. Legacy collection/build commands are disabled for the open-space master.
 
-Status is stored in daily\state.json. Collector logs and original outputs are in
-.procurement-runs\daily-<timestamp>\collectors. Each collector's run-state.json
-records its assessment. Valid output is not proof of complete source coverage.
+Daily operation: run `node --use-system-ca --max-old-space-size=8192 daily/daily.cjs --publish` from this folder. The local automation runs Monday-Friday at 10:00 Europe/Budapest, starting 21 October 2026. The computer and local execution environment must be available. It discovers new open notices and rechecks existing open tenders regardless of publication date. No 2020 historical backfill is run. An unavailable notice is not considered closed. Unresolved previous open tenders hold publication and preserve the last good master.
 
-Before building, original run evidence is copied and checksum-verified under:
+Operating folders:
+- Procurement-Master: current validated local master, its manifest and searchable JSONL parts. GitHub receives the normalized current/ representation produced by the publisher.
+- open-only/controller: source-specific current-notice collectors, coverage checks and candidate export.
+- open-only/master: space screening, document evidence, lifecycle verification, company matching, build and daily controller.
+- open-only/state: local daily state and reviewed-document bindings; source qualification ledgers document limitations. Runtime state is not published.
+- daily: settings, isolated Git publisher, publication allowlist, archive/retention controls and tests.
+- master: common validation, JSONL splitting, normalisation and company matching support.
+- orchestration: shared locks, atomic state writes and collector support.
+- EU27/National-Portals and authority scraper folders: maintained collector code and local dependencies. Generated outputs and caches are archived; only explicitly allowlisted operating files are published.
+- node_modules: installed local dependencies; never published.
+
+The company catalogue under ../../05_COMPANIES remains a required external input for company matching. Eligibility is not inferred from technical fit. Recreate dependencies from package-lock files, including the National-Portals browser dependencies; the collectors use installed Microsoft Edge where necessary.
+
+GitHub rule: daily/publication-policy.cjs is the default-deny allowlist. The publisher replaces only 03_PROCUREMENT/Procurement Data on configured main with the validated master and allowlisted operating files. Other repository paths are preserved. Raw downloads, Excel collector exports, caches, checkpoints, candidate masters, personal review state and logs remain local. Publication uses an isolated Git index, never stages the user's working tree and never force-pushes. Use the controller rather than manually committing a local snapshot pointer.
+
+Archive root:
 C:\Users\angel\OneDrive\Desktop\knowledge\03_PROCUREMENT\Procurement Data
-The original relative folder structure is preserved. Audit receipts are in
-_audit. Source files are not rewritten or deleted by the daily controller.
 
-The master retains original source records alongside normalized procurement,
-lot and company-match records. Missing observations never imply closure.
-Previously open tenders without a fresh observation are marked stale/unverified.
-Company matches are suggestions backed by evidence, not eligibility assurances.
+- open-only/daily-runs: original discovery responses, live checks, reviewed documents and resumable checkpoints for each run.
+- open-only/previous-masters and open-only/retired-local-snapshots: superseded master snapshots, archived before removing local copies.
+- open-only/completed-packages and open-only/master-snapshots: completed candidate/build audit packages.
+- open-only/historical-tenders: compact records of verified closures or expired deadlines from previously open tenders; separate from the open master. No historical backfill.
+- open-only/qualification: uncertain/excluded candidates and validation results.
+- _maintenance/cutover-2026-10-20: backed-up code and obsolete files moved during cleanup, preserving their relative folder structure.
+- _publication: isolated Git repository and publication receipts.
+- _retention: managed archive inventory, protected-file checks and deletion receipts.
 
-Publication is held if fewer than half of jobs produce accepted nonempty data,
-source-record counts fall, malformed records increase, required validation fails,
-or procurement counts change beyond the configured review limits.
-Partial source coverage remains explicit even when publication passes.
-When a country export contains a successful current source and a failed archive,
-only records attributed to the successful source can count as fresh. The failed
-source remains visible and its records are retained only as unverified evidence.
-Every previous original record must survive with the identical text checksum.
-Newly retrieved older notices cannot override later awards or cancellations.
-Publication stops if GitHub contains a different master than the expected baseline.
-Newly collected records whose original timestamp is fixed at noon are recognized
-through their existing raw files inside the current run, without rewriting dates.
+Retention runs after successful publication, at most once every 14 days. Only registered obsolete units archived at least 14 days earlier are eligible. Current-master evidence, active/resumable run inputs, reviewed-document dependencies and historical tender records with their referenced closure evidence are protected. Failed runs keep their evidence. The archive root and publication Git repository are never swept. Cleanup failures are reported separately from publication success.
 
-GitHub receives only the authoritative Procurement-Master package on main:
-03_PROCUREMENT/Procurement Data/Procurement-Master/manifest.json
-03_PROCUREMENT/Procurement Data/Procurement-Master/current/...
-Start retrieval with manifest.json, then follow its data and index manifests.
-Data parts are authoritative; index files aid discovery. Do not ingest both as
-duplicate substantive records, or combine this master with older source exports.
-
-The publisher uses an isolated Git repository under the external archive's
-_publication folder. It preserves every remote path outside Procurement-Master,
-does not stage local unrelated work, and never force-pushes. The normal checkout's
-branch/index are not advanced by this isolated publication. Do not reset local
-work just because its branch is behind the newly published remote commit.
-
-Publication receipts, uploaded-file hashes and commit IDs are retained in
-_publication\runs; _publication\latest.json records the latest verified push.
-
-The scheduled local automation requires the computer and Codex app to be running.
-A manual successful run and the first scheduled run are separate verification
-steps. Consult the Phase 7 status report for which have actually completed.
-
-The published current/manifest.json uses small metadata catalogs. Follow
- data.partsCatalog.parts to read the complete list of authoritative data parts,
- and index.partsCatalog.parts for lookup parts. Each referenced file is a JSON
- array with a recorded SHA-256 checksum. current/inputs.json similarly lists
- catalogs of preserved input metadata. The local full manifest remains intact.
-The supplied master reader and verifier support both layouts.
-
-National daily collection keeps the 2020 onward date scope: an older publication
-can still be open today. TED uses a recent-notice window plus its separate all-open
-deadline search. The first scheduled run will verify the final national scope
-policy live; the initial manual run used the narrower recent-notice window.
+Coverage remains partial: restricted/log-in-only systems, incomplete official indexes, ambiguous deadlines/statuses and unavailable technical documents are recorded as gaps. A successful publication does not mean exhaustive coverage of all EU tenders.

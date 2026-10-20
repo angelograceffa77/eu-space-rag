@@ -1,94 +1,42 @@
-# Procurement Data
-For the current retained-file layout and archive policy, read [FOLDER-GUIDE.txt](FOLDER-GUIDE.txt). Obsolete builds and unneeded exports have been archived; required source inputs, test fixtures and files referenced by the repository index remain. The daily publisher publishes only the validated master package. Automatic daily runs are currently paused.
+# Procurement master: operating guide
 
+The authoritative package is Procurement-Master/manifest.json and the data/index files it references. Only verified, currently open, space-related procurement opportunities are included: core space, space/defence dual use, downstream space applications and other explicitly evidenced space requirements. Counts by buyer and category are in the snapshot manifest. Source text is preserved unchanged; normalized fields and company matches are separate.
 
-Consolidated procurement scrapers, generated intelligence and authority reference documents. Paths are relative to this folder; Node.js 22 or newer is required.
+For retrieval, count records whose recordType is procurement. Lots are separate parts of a tender, and source_record rows are supporting evidence, not additional opportunities. Use summary.openProcurements and summary.byBuyer for totals. Space categories can overlap and must not be added together. Read every JSONL part referenced by the manifest; never combine the current package with archived snapshots.
 
-| Folder | Contents |
-| --- | --- |
-| ESA/scrapers | ESA Match tender actions and ESA Publication tender actions |
-| EC-DG-DEFIS/scrapers | Commission Funding & Tenders and TED procurement collection |
-| EUSPA/scrapers | Current/planned and closed EUSPA procurements |
-| EU27/TED/scrapers | EU27 TED space procurement master, source and notice history |
-| EU27/National-Portals | National portal/agency adapters, source register, CLI, refresh, tests and dated snapshots |
-| Authority/generated | Existing dated Excel/UTF-8 JSONL intelligence; original contents preserved |
-| Authority/reference-documents | Programme plans, contractor lists and source screenshots |
-| EU27/National-Portals/final-output | Automatic national portal intelligence and coverage |
-| EU27/National-Portals/reviewed-output | Dated manual verification; do not treat as a current automatic scrape |
+Counts and verified status are dated to the snapshot. For a question about what is open now, also compare the current time with each submission deadline: a tender can expire between daily runs. The next successful daily update archives its verified expiry.
 
-## Install and validate
+Use `npm test` for offline regression checks. Legacy collection/build commands are disabled for the open-space master.
 
-Run from this folder:
+Daily operation: run `node --use-system-ca --max-old-space-size=8192 daily/daily.cjs --publish` from this folder. The local automation runs Monday-Friday at 10:00 Europe/Budapest, starting 21 October 2026. The computer and local execution environment must be available. It discovers new open notices and rechecks existing open tenders regardless of publication date. No 2020 historical backfill is run. An unavailable notice is not considered closed. Unresolved previous open tenders hold publication and preserve the last good master.
 
-```powershell
-npm ci --ignore-scripts
-npm --prefix EU27/National-Portals ci --ignore-scripts
-npm test
-node smoke-sources.cjs
-```
+Operating folders:
+- Procurement-Master: current validated local master, its manifest and searchable JSONL parts. GitHub receives the normalized current/ representation produced by the publisher.
+- open-only/controller: source-specific current-notice collectors, coverage checks and candidate export.
+- open-only/master: space screening, document evidence, lifecycle verification, company matching, build and daily controller.
+- open-only/state: local daily state and reviewed-document bindings; source qualification ledgers document limitations. Runtime state is not published.
+- daily: settings, isolated Git publisher, publication allowlist, archive/retention controls and tests.
+- master: common validation, JSONL splitting, normalisation and company matching support.
+- orchestration: shared locks, atomic state writes and collector support.
+- EU27/National-Portals and authority scraper folders: maintained collector code and local dependencies. Generated outputs and caches are archived; only explicitly allowlisted operating files are published.
+- node_modules: installed local dependencies; never published.
 
-`npm test` runs offline syntax/dependency/path checks, saved-record JSONL export round trips, relocated workbook reads and the national collector's 27 regression tests. `node smoke-sources.cjs` uses each standalone scraper's real request function, with a 25-second bound per source. A source response does not verify full pagination, detail enrichment, completeness, or the complete live export pipeline. Inspect `validation-output/live-source-checks.json` for individual results. Validation writes only to ignored `validation-output`.
+The company catalogue under ../../05_COMPANIES remains a required external input for company matching. Eligibility is not inferred from technical fit. Recreate dependencies from package-lock files, including the National-Portals browser dependencies; the collectors use installed Microsoft Edge where necessary.
 
-## Run a full scraper
+GitHub rule: daily/publication-policy.cjs is the default-deny allowlist. The publisher replaces only 03_PROCUREMENT/Procurement Data on configured main with the validated master and allowlisted operating files. Other repository paths are preserved. Raw downloads, Excel collector exports, caches, checkpoints, candidate masters, personal review state and logs remain local. Publication uses an isolated Git index, never stages the user's working tree and never force-pushes. Use the controller rather than manually committing a local snapshot pointer.
 
-```powershell
-node ESA/scrapers/scrape-esa-tender-actions.js
-node ESA/scrapers/scrape-esa-publication-tenders.js
-node EC-DG-DEFIS/scrapers/scrape-dg-defis-ted-procurements.js
-node EC-DG-DEFIS/scrapers/scrape-dg-defis-funding-tenders.js
-node EUSPA/scrapers/scrape-euspa-current-planned-procurements.js
-node EUSPA/scrapers/scrape-euspa-closed-procurements.js
-node EU27/TED/scrapers/scrape-eu27-ted-space-procurements.js
-node EU27/National-Portals/scrape-eu27-national-space-procurements.js --help
-node EU27/National-Portals/refresh-eu27-national-space-procurements.cjs --help
-```
+Archive root:
+C:\Users\angel\OneDrive\Desktop\knowledge\03_PROCUREMENT\Procurement Data
 
-Standalone scripts default to their authority's `generated` folder regardless of working directory. Set `PROCUREMENT_OUTPUT_DIR` to isolate a refresh; checkpoint/cache paths follow that destination. Source code remains in `scrapers` and is not copied into generated output. Full live runs may be long and may replace same-day output or resume checkpoints.
+- open-only/daily-runs: original discovery responses, live checks, reviewed documents and resumable checkpoints for each run.
+- open-only/previous-masters and open-only/retired-local-snapshots: superseded master snapshots, archived before removing local copies.
+- open-only/completed-packages and open-only/master-snapshots: completed candidate/build audit packages.
+- open-only/historical-tenders: compact records of verified closures or expired deadlines from previously open tenders; separate from the open master. No historical backfill.
+- open-only/qualification: uncertain/excluded candidates and validation results.
+- _maintenance/cutover-2026-10-20: backed-up code and obsolete files moved during cleanup, preserving their relative folder structure.
+- _publication: isolated Git repository and publication receipts.
+- _retention: managed archive inventory, protected-file checks and deletion receipts.
 
-National collection supports `--output=DIR`, `--mode=smoke`, source selection and request budgets. Its default collection destination remains `EU27/National-Portals/data`. The refresh wrapper merges the latest dated HISTORY baseline into `final-output`; set `PROCUREMENT_FINAL_OUTPUT_DIR` to test consolidation elsewhere. Browser adapters require Edge/Chromium (`SCRAPER_BROWSER_PATH`), and optional discovery uses `FIRECRAWL_API_KEY`.
+Retention runs after successful publication, at most once every 14 days. Only registered obsolete units archived at least 14 days earlier are eligible. Current-master evidence, active/resumable run inputs, reviewed-document dependencies and historical tender records with their referenced closure evidence are protected. Failed runs keep their evidence. The archive root and publication Git repository are never swept. Cleanup failures are reported separately from publication success.
 
-## Migration and indexing
-
-`migration-manifest.json` records every original/destination path, original byte count and original SHA-256. Code/docs/manifests intentionally change after moving; all 78 moved intelligence/reference assets retain exact bytes. Dated output names, chunk numbering and provenance content are preserved. Historical rawFile/evidenceFiles references in national output remain provenance, as explained by the national README; the old clean package did not contain those raw archives.
-
-Local `index/manifest.json` source keys and shard file references follow the new layout. All 90,100 existing indexed text chunks are retained; this path migration is not a fresh reindex of the latest intelligence. The index scanner excludes installed dependencies, validation output and runtime caches. No GitHub publication was performed.
-
-See `MIGRATION-REPORT.md`, `preservation-validation.json`, `jsonl-validation.json`, `index-migration-validation.json` and test logs for verification and limits. Existing repository changes, including pre-existing deletions and a modified national workbook, were preserved.
-
-## Expanded authority collectors (2026-10-13)
-
-21 additional authority folders use `AUTHORITY/scrapers` and `AUTHORITY/generated`. Generated data and cache evidence retain original bytes. Run `npm run test:expanded` for 30 offline validations. PDF collectors require the declared pdf-parse 1.1.1 dependency. Tests do not establish full live source coverage.
-
-- `node ECMWF/scrapers/scrape-ecmwf-procurements.js`
-- `node EC-DG-AGRI/scrapers/scrape-dg-agri-funding-tenders.js`
-- `node EC-DG-AGRI/scrapers/scrape-dg-agri-ted-procurements.js`
-- `node EC-DG-CLIMA/scrapers/scrape-dg-clima-funding-tenders.js`
-- `node EC-DG-CLIMA/scrapers/scrape-dg-clima-ted-procurements.js`
-- `node EC-DG-CONNECT/scrapers/scrape-dg-connect-funding-tenders.js`
-- `node EC-DG-CONNECT/scrapers/scrape-dg-connect-ted-procurements.js`
-- `node EC-DG-ECHO/scrapers/scrape-dg-echo-funding-tenders.js`
-- `node EC-DG-ECHO/scrapers/scrape-dg-echo-ted-procurements.js`
-- `node EC-DG-ENV/scrapers/scrape-dg-env-funding-tenders.js`
-- `node EC-DG-ENV/scrapers/scrape-dg-env-ted-procurements.js`
-- `node EC-DG-HOME/scrapers/scrape-dg-home-funding-tenders.js`
-- `node EC-DG-HOME/scrapers/scrape-dg-home-ted-procurements.js`
-- `node EC-DG-MARE/scrapers/scrape-dg-mare-funding-tenders.js`
-- `node EC-DG-MARE/scrapers/scrape-dg-mare-ted-procurements.js`
-- `node EC-DG-MOVE/scrapers/scrape-dg-move-funding-tenders.js`
-- `node EC-DG-MOVE/scrapers/scrape-dg-move-ted-procurements.js`
-- `node EC-DG-RTD/scrapers/scrape-dg-rtd-funding-tenders.js`
-- `node EC-DG-RTD/scrapers/scrape-dg-rtd-ted-procurements.js`
-- `node EDA/scrapers/scrape-eda-procurements.js`
-- `node JRC/scrapers/scrape-jrc-procurements.js`
-- `node EEA/scrapers/scrape-eea-procurements.js`
-- `node EMSA/scrapers/scrape-emsa-procurements.js`
-- `node EU-SatCen/scrapers/scrape-satcen-procurements.js`
-- `node Frontex/scrapers/scrape-frontex-procurements.js`
-- `node EUMETSAT/scrapers/scrape-eumetsat-procurements.js`
-- `node Eurocontrol/scrapers/scrape-eurocontrol-procurements.js`
-- `node ESO/scrapers/scrape-eso-procurements.js`
-- `node NATO/scrapers/scrape-nato-procurements.js`
-- `node OCCAR/scrapers/scrape-occar-procurements.js`
-
-Set `PROCUREMENT_OUTPUT_DIR` to isolate a run. Existing dated outputs and cache folder names are preserved; source scripts stay in `scrapers`. Original scraper sources are archived in `migration-21-original-scrapers.zip`. See `MIGRATION-21-REPORT.md` and `migration-21-manifest.json`.
-
+Coverage remains partial: restricted/log-in-only systems, incomplete official indexes, ambiguous deadlines/statuses and unavailable technical documents are recorded as gaps. A successful publication does not mean exhaustive coverage of all EU tenders.

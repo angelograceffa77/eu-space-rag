@@ -1,340 +1,178 @@
 {
   "schemaVersion": 1,
-  "dataset": "GAGARIN procurement master",
-  "generation": "snapshot-2026-10-19T13-42-52-151Z-2714df7b",
-  "createdAt": "2026-10-19T13:42:52.151Z",
-  "asOf": "2026-10-19T13:42:52.150Z",
-  "sourceRefreshPerformed": true,
-  "refreshRuns": [],
-  "reconciliation": {
-    "plan": ".procurement-runs/daily-2026-10-19T08-04-47-687Z/daily-reconciliation.json",
-    "planSha256": "c57a7d91a73d5f6cb2788749488e8bab60874198c8c47b2523057013576063d4",
-    "selectedInputs": 1063,
-    "policy": "Retain all prior source evidence. Prefer fresh observed records. Missing or failed observations are stale/unverified, never silently closed. All coverage gaps remain visible.",
-    "dailyRefresh": {
-      "asOf": "2026-10-19",
-      "startedAt": "2026-10-19T08:04:47.687Z",
-      "attemptedJobs": 65,
-      "acceptedJobs": 54,
-      "jobStates": {
-        "EC-DG-CLIMA--scrape-dg-clima-funding-tenders": "unassessed",
-        "EC-DG-AGRI--scrape-dg-agri-ted-procurements": "unassessed",
-        "EC-DG-CLIMA--scrape-dg-clima-ted-procurements": "unassessed",
-        "EC-DG-CONNECT--scrape-dg-connect-ted-procurements": "unassessed",
-        "EC-DG-AGRI--scrape-dg-agri-funding-tenders": "unassessed",
-        "EC-DG-DEFIS--scrape-dg-defis-ted-procurements": "unassessed",
-        "EC-DG-CONNECT--scrape-dg-connect-funding-tenders": "unassessed",
-        "EC-DG-ECHO--scrape-dg-echo-ted-procurements": "unassessed",
-        "EC-DG-ENV--scrape-dg-env-funding-tenders": "unassessed",
-        "EC-DG-DEFIS--scrape-dg-defis-funding-tenders": "unassessed",
-        "EC-DG-ENV--scrape-dg-env-ted-procurements": "unassessed",
-        "EC-DG-HOME--scrape-dg-home-ted-procurements": "unassessed",
-        "EC-DG-ECHO--scrape-dg-echo-funding-tenders": "unassessed",
-        "EC-DG-MARE--scrape-dg-mare-ted-procurements": "unassessed",
-        "EC-DG-HOME--scrape-dg-home-funding-tenders": "unassessed",
-        "EC-DG-MOVE--scrape-dg-move-ted-procurements": "unassessed",
-        "EC-DG-MARE--scrape-dg-mare-funding-tenders": "unassessed",
-        "EC-DG-RTD--scrape-dg-rtd-ted-procurements": "unassessed",
-        "ECMWF--scrape-ecmwf-procurements": "unassessed",
-        "EDA--scrape-eda-procurements": "partial",
-        "EEA--scrape-eea-procurements": "unassessed",
-        "EMSA--scrape-emsa-procurements": "unassessed",
-        "EC-DG-MOVE--scrape-dg-move-funding-tenders": "unassessed",
-        "EC-DG-RTD--scrape-dg-rtd-funding-tenders": "unassessed",
-        "ESO--scrape-eso-procurements": "partial",
-        "ESA--scrape-esa-tender-actions": "unassessed",
-        "EU-SatCen--scrape-satcen-procurements": "unassessed",
-        "ESA--scrape-esa-publication-tenders": "unassessed",
-        "EUSPA--scrape-euspa-current-planned-procurements": "unassessed",
-        "EUMETSAT--scrape-eumetsat-procurements": "unassessed",
-        "Eurocontrol--scrape-eurocontrol-procurements": "unassessed",
-        "Frontex--scrape-frontex-procurements": "unassessed",
-        "NATO--scrape-nato-procurements": "partial",
-        "OCCAR--scrape-occar-procurements": "partial",
-        "JRC--scrape-jrc-procurements": "unassessed",
-        "EUSPA--scrape-euspa-closed-procurements": "unassessed",
-        "national-AT": "partial",
-        "EU27-TED--scrape-eu27-ted-space-procurements": "unassessed",
-        "national-BE": "partial",
-        "national-CY": "partial",
-        "national-BG": "timed_out",
-        "national-HR": "timed_out",
-        "national-DK": "partial",
-        "national-FI": "partial",
-        "national-EE": "partial",
-        "national-FR": "partial",
-        "national-GR": "failed",
-        "national-CZ": "timed_out",
-        "national-DE": "timed_out",
-        "national-IE": "partial",
-        "national-HU": "partial",
-        "national-IT": "failed",
-        "national-LU": "partial",
-        "national-LV": "timed_out",
-        "national-LT": "timed_out",
-        "national-NL": "partial",
-        "national-PT": "partial",
-        "national-MT": "partial",
-        "national-RO": "failed",
-        "national-PL": "timed_out",
-        "national-SI": "partial",
-        "national-SE": "partial",
-        "national-EU": "partial",
-        "national-SK": "timed_out",
-        "national-ES": "timed_out"
-      },
-      "freshFiles": 72,
-      "baselineGeneration": "snapshot-2026-10-16T07-29-06-833Z-21e86003",
-      "coverageStatus": "partial",
-      "sourceCoverageCatalog": {
-        "format": "json-array-catalog-v1",
-        "records": 157,
-        "parts": [
-          {
-            "file": "metadata/coverage.part-00001.json",
-            "sha256": "b70386cdc921759d3c033af6d99343ad0077859d1e5bb3753e456de38651fd99",
-            "records": 157,
-            "bytes": 61059
-          }
-        ]
-      }
-    }
-  },
-  "coverageStatus": "partial",
+  "generation": "open-space-2026-10-20T15-57-51-973Z",
+  "datasetMode": "open-space-v1",
+  "asOf": "2026-10-20T15:57:51.973Z",
   "counts": {
-    "inputRows": 440747,
-    "sourceRecords": 285863,
-    "malformed": 1,
-    "procurements": 113212,
-    "lots": 1854,
-    "lotEvidence": 47628,
-    "exactRepeatedSourceRows": 154884,
-    "linkedSourceRecords": 172650,
-    "sourceFileCount": 1063,
-    "companyRecords": 19650
+    "procurements": 175,
+    "lots": 31,
+    "sourceRecords": 251
   },
   "data": {
     "directory": "data",
-    "logicalRecords": 449839,
+    "logicalRecords": 457,
     "recordTypes": {
-      "source_file": 1063,
-      "source_record": 285862,
-      "quarantined_source_record": 1,
-      "lot": 1854,
-      "lot_evidence": 47628,
-      "procurement": 113212,
-      "coverage": 219
+      "procurement": 175,
+      "lot": 31,
+      "source_record": 251
     },
     "maxPartBytes": 262144,
     "partsCatalog": {
       "format": "json-array-catalog-v1",
-      "records": 13733,
+      "records": 51,
       "parts": [
         {
           "file": "metadata/data.part-00001.json",
-          "sha256": "491c0bdc1e19ba9f3dbbd62586543ab70a7ec66e46fb61e63e41d5e29ea89157",
-          "records": 789,
-          "bytes": 130941
-        },
-        {
-          "file": "metadata/data.part-00002.json",
-          "sha256": "bc926f264a53f959c832d6ce6e2ec83e507ee1f3eae00602121c71099fd06929",
-          "records": 789,
-          "bytes": 130946
-        },
-        {
-          "file": "metadata/data.part-00003.json",
-          "sha256": "3c8830450c110f02d5f2e4addeab25ab5025313eed4ff979fd6c6c07ffe45e0e",
-          "records": 789,
-          "bytes": 130956
-        },
-        {
-          "file": "metadata/data.part-00004.json",
-          "sha256": "a26f408ee7d7e96dc89840dac567e580944ed768f862f0b56fa9d8dd7ce05042",
-          "records": 789,
-          "bytes": 130946
-        },
-        {
-          "file": "metadata/data.part-00005.json",
-          "sha256": "e133f0c47a180e312e0d24f389f5bd8b5583afff5fa9c1913e0414b12f16b1de",
-          "records": 789,
-          "bytes": 130931
-        },
-        {
-          "file": "metadata/data.part-00006.json",
-          "sha256": "be3bd82d287e14ed313d8ae7d8d6dee24834c5f53ed20c9b548ada6da36ddce1",
-          "records": 789,
-          "bytes": 130935
-        },
-        {
-          "file": "metadata/data.part-00007.json",
-          "sha256": "0fd296a9f35d1e82e8cac1d6c400120167aaa3e938c75835b575c32e85d818bc",
-          "records": 789,
-          "bytes": 130947
-        },
-        {
-          "file": "metadata/data.part-00008.json",
-          "sha256": "69e7646b95663911db6478196f66921e75fb232073f42cbd6cf051a3d775fed8",
-          "records": 789,
-          "bytes": 130945
-        },
-        {
-          "file": "metadata/data.part-00009.json",
-          "sha256": "292c37fa4de267fca345d1d31366cbcb9cdbd315b33421a3158f181ba57f230a",
-          "records": 789,
-          "bytes": 130946
-        },
-        {
-          "file": "metadata/data.part-00010.json",
-          "sha256": "e0e444ce2c6c70384b46009e7750f33783836037480acdafa9805d606f13f21a",
-          "records": 789,
-          "bytes": 130943
-        },
-        {
-          "file": "metadata/data.part-00011.json",
-          "sha256": "afbe10d45ae317275e19f404c3c658cf4123bf1d220563f8d38a41e41c42a5fa",
-          "records": 789,
-          "bytes": 130967
-        },
-        {
-          "file": "metadata/data.part-00012.json",
-          "sha256": "76825965d0730f2568b6c4eb1b3a19123332dafe40b0b198613518344db3b128",
-          "records": 789,
-          "bytes": 130955
-        },
-        {
-          "file": "metadata/data.part-00013.json",
-          "sha256": "48df91b6db1ae6f970dca344f303bd90b0ad0fae2bf1b28a321774a5ce026bf3",
-          "records": 789,
-          "bytes": 130953
-        },
-        {
-          "file": "metadata/data.part-00014.json",
-          "sha256": "489999b8be76a058ac7477969a4a24fd74188d084d4ed33050abafa6929801fb",
-          "records": 789,
-          "bytes": 130956
-        },
-        {
-          "file": "metadata/data.part-00015.json",
-          "sha256": "2fc54ea5fcb0aa2027ae531c3a64cdf67d15c9f97f3a7a4d305a5a2e1780ab19",
-          "records": 788,
-          "bytes": 131011
-        },
-        {
-          "file": "metadata/data.part-00016.json",
-          "sha256": "8f909134cd475eb6873272b6656dfb36fe8a7251506f1f562050dbb4b0412b92",
-          "records": 789,
-          "bytes": 130968
-        },
-        {
-          "file": "metadata/data.part-00017.json",
-          "sha256": "3b1f7e236d78cde8e5ae82fc8025594c826233a4a0bbc0e8715b3d46845a65b2",
-          "records": 789,
-          "bytes": 130959
-        },
-        {
-          "file": "metadata/data.part-00018.json",
-          "sha256": "04b10839fa3ee84693126c7691f4bb2f88848533969fce2c8ad9cd3dc92b7b9c",
-          "records": 321,
-          "bytes": 53206
+          "sha256": "62f5afc6b815536b9cf7be66d0ed468759aee5d91357591bc4f128ef19c0faaa",
+          "records": 51,
+          "bytes": 8427
         }
       ]
     }
   },
   "index": {
     "directory": "index",
-    "logicalRecords": 449839,
+    "logicalRecords": 457,
     "recordTypes": {
-      "lookup": 449839
+      "lookup": 457
     },
-    "maxPartBytes": 131072,
+    "maxPartBytes": 262144,
     "partsCatalog": {
       "format": "json-array-catalog-v1",
-      "records": 925,
+      "records": 1,
       "parts": [
         {
           "file": "metadata/index.part-00001.json",
-          "sha256": "cd1c3b52b14f406896b60b47420cc4395aed4171a2148b30217e249549663196",
-          "records": 784,
-          "bytes": 130930
-        },
-        {
-          "file": "metadata/index.part-00002.json",
-          "sha256": "e6713f04f08bd17ecbdb0950d38985cf10076fcf4a219159b5dfba9cf95f2ab1",
-          "records": 141,
-          "bytes": 23548
+          "sha256": "a3dd6aca9eb8f36512400315758e89fdb65f550457beba822b6bf20656b5f7e4",
+          "records": 1,
+          "bytes": 168
         }
       ]
     }
   },
   "inputsFile": "inputs.json",
-  "inputsSha256": "f11db3997f947128a7dcdaba5b89bb4a524373737a0e55757511138800dcff77",
-  "recovery": [
-    {
-      "damagedRecordId": "src-dd5efa5ff577edd3ca14a6b4ff05cf9ac60ed3a9b978b62933c6ead5b798cea9",
-      "sourceFileId": "file-cc4c417a52f5158c0bb47f41c05e9c28df0c632fbb903930ced2765d37c3b13f",
-      "line": 1,
-      "publicationNumber": "711084-2024",
-      "error": "Unterminated string in JSON at position 360000 (line 1 column 360001)"
+  "inputsSha256": "ecb2317e2a161e3821f827858af83018ce1e53cf4aa2368d03130f69a04b7a31",
+  "summary": {
+    "openProcurements": 175,
+    "openLots": 31,
+    "byBuyer": {
+      "VIVA SERVIZI S.P.A.": 1,
+      "INAF Osservatorio di Astrofisica e Scienza dello Spazio di Bologna": 1,
+      "REGIONE AUTONOMA VALLE D'AOSTA | INVA SPA": 1,
+      "ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ,\n.,\n.,\n.": 1,
+      "Centre National d’Études Spatiales (CNES)": 4,
+      "Intendente de San Fernando": 1,
+      "Jefatura de la Sección Económico-Administrativa 62 - Base Aérea de Cuatro Vientos": 1,
+      "Dirección Económico-Financiera de ENAIRE": 1,
+      "Hiiumaa Vallavalitsus": 1,
+      "Ministerstvo vnitra": 1,
+      "MTES-MCTRCT-MER / AC / DGAC / NA / DTI / SG - Secrétariat Général de la DGAC": 1,
+      "MEFSIN / DGFIP-RDA / DGFIP-DNS / SDNC - SERVICE DE LA DOCUMENTATION NATIONALE DU CADASTRE": 1,
+      "EOESRI / UMAY - UNIVERSITE DE MAYOTTE": 1,
+      "FuturEnergy Ireland Development DAC": 1,
+      "European Space Agency": 132,
+      "Hogeschool Gent": 1,
+      "O3.06.04 - Direction des Cours d'eau non navigables": 1,
+      "Instytut Chemii Bioorganicznej Polskiej Akademii Nauk, Poznańskie Centrum Superkomputerowo-Sieciowe": 2,
+      "Instytut Chemii Bioorganicznej Polskiej Akademii Nauk, Poznańskie Centrum Superkomputerowo-Sieciowe | Centrum Badań Kosmicznych Polskiej Akademii Nauk (CBK) | Wojskowa Akademia Techniczna im. Jarosława Dąbrowskiego (WAT)": 1,
+      "Centrum Zasobów Cyberprzestrzeni Sił Zbrojnych": 1,
+      "RADIOTELEVIZIJA SLOVENIJA javni zavod, Ljubljana": 1,
+      "MINISTRSTVO ZA OKOLJE IN PROSTOR, GEODETSKA UPRAVA REPUBLIKE SLOVENIJE": 1,
+      "Conseil Départemental des Yvelines": 1,
+      "Kaakkois-Suomen Ammattikorkeakoulu Oy": 1,
+      "European Commission, DG DEFIS - Defence Industry and Space": 1,
+      "OPH de la Haute-Saône": 1,
+      "France Télévisions": 1,
+      "European Centre for Medium Range Weather Forecasts (ECMWF)": 1,
+      "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH": 1,
+      "Department of Climate Energy and the Environment": 1,
+      "European Commission, DG JRC - Joint Research Centre": 1,
+      "AB Via Lietuva (PV)": 1,
+      "Lietuvos Respublikos aplinkos ministerijos Aplinkos projektų valdymo agentūra": 1,
+      "Valstybės įmonė Valstybinių miškų urėdija (PV)": 1,
+      "AUTORITATEA NATIONALA DE REGLEMENTARE IN DOMENIUL MINIER PETROLIER SI AL STOCARII GEOLOGICE A DIOXIDULUI DE CARBON": 1,
+      "Ústav materiálov a mechaniky strojov Slovenskej akadémie vied, verejná výskumná inštitúcia": 1,
+      "European Union Satellite Centre": 1,
+      "Fundació Institut d'Estudis Espacials de Catalunya | Fundació Institut d'Estudis Espacials de Catalunya": 1,
+      "European Union Agency for the Space Programme": 1,
+      "EUMETSAT": 1
     },
-    {
-      "recoveredRecordId": "src-4acdafca96a5fac9fe2e95d7b0bf82edbc7f057dd8f2fc8dbbb6fd27a3b58ce1",
-      "publicationNumber": "711084-2024"
+    "byCategory": {
+      "core_space": 129,
+      "downstream_space": 60,
+      "dual_use_space_defence": 7,
+      "other_space_related": 64
+    },
+    "categoriesOverlap": true
+  },
+  "coverage": {
+    "status": "partial",
+    "candidateObservations": 213734,
+    "review": 398,
+    "excluded": 129,
+    "admissions": 7,
+    "discoveryInput": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\cutover-2026-10-20\\discovery",
+    "qualificationArchive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\qualification\\open-space-2026-10-20T15-57-51-973Z",
+    "limitations": [
+      "Only fresh identity-matched, parsed open bidding evidence is admitted. Other candidates remain outside this master.",
+      "National portals and restricted agency systems have documented gaps; this is not exhaustive EU coverage.",
+      "Latest award notices with unresolved surviving lots are held out pending reconciliation.",
+      "Date-only deadlines need rechecking on their closing day.",
+      "Space classification and company matching are evidence-linked rules and require specification review."
+    ]
+  },
+  "reconciliation": {
+    "dailyRefresh": {
+      "mode": "open-space-v1",
+      "sourceManifestSha256": "787bca75d801edd6dfc1e12f3d4da3128edaf89f07a0701f6617ebc1140d9b30",
+      "sourceCoverageCatalog": {
+        "format": "json-array-catalog-v1",
+        "records": 100,
+        "parts": [
+          {
+            "file": "metadata/coverage.part-00001.json",
+            "sha256": "e64230a52e0d3934cd4300f07f725ec8f2cad920266d835996b9f5625dad86cf",
+            "records": 100,
+            "bytes": 61847
+          }
+        ]
+      }
     }
-  ],
-  "companyMatching": {
-    "procurements": {
-      "not_current_open_tender": 107054,
-      "excluded_scope": 5585,
-      "deadline_review_required": 385,
-      "candidate_shortlist": 14,
-      "scope_review_shortlist": 44,
-      "insufficient_capability_evidence": 128,
-      "scope_review_required": 2
-    },
-    "lots": {
-      "not_current_open_tender": 1852,
-      "candidate_shortlist": 2
-    },
-    "candidatePairs": 600,
-    "companyCoverage": {
-      "inputRows": 19650,
-      "profiles": 19636,
-      "rowsWithDescription": 19121,
-      "profilesWithRecognizedCapabilities": 7207,
-      "profilesWithMultipleSourceVariants": 0
-    },
-    "dictionaryVersion": "2026-10-15.1",
-    "dictionarySha256": "64be73c0bdcdbf0c77f48eef3c45aaae519d5232fd449c258ddd0b7e328b1b6f",
-    "eligibilityVerified": false
   },
-  "companyDatabase": {
-    "manifestSha256": "913a887bcf615a5c0ddae8688bd799d34b69c405f9ec24b7d727368f03cb8a4c",
-    "sourceDate": "2026-10-01"
-  },
-  "policies": {
-    "sourceValues": "originalText stores the unchanged input JSONL record text; CSV stores a JSON object of original cell strings. Full byte-identical input files are checksum-verified in the archive.",
-    "deduplication": "Only strong procedure/notice identifiers and specific source URLs merge procedures. Every source version and occurrence is preserved.",
-    "lots": "Explicit lot IDs remain separate. Unidentified descriptions are retained as lot_evidence and are not claimed to identify distinct lots.",
-    "values": "Decimal strings and currency codes are derived; ambiguous amounts remain unresolved. Values are never summed or converted automatically.",
-    "companies": "Name-only matches are candidates, not verified legal-entity links. Capability shortlists use traceable company-description and tender-text overlap. Scores are not eligibility or suitability probabilities; uncertain scope and missing deadlines are flagged. Lot matching uses lot-specific text only.",
-    "currentStatus": "Derived from preserved source records and listed refresh runs. Collection coverage remains partial. Use master/read.cjs with --current to recheck deadline expiry. Individual live verification is not inferred from process success.",
-    "publication": "Validated GitHub snapshot; source files remain in the local audit archive."
+  "history": {
+    "newlyArchived": 0,
+    "archive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\historical-tenders\\open-space-2026-10-20T15-57-51-973Z\\records.jsonl",
+    "historicalBackfill": false
   },
   "validation": {
-    "originalRecordsRoundTripped": 285863,
-    "entitiesRoundTripped": 162694,
-    "allPartChecksumsVerified": true,
-    "indexLocationsVerified": 449839,
-    "allEntityRelationshipsVerified": true,
     "allInputsArchivedAndVerified": true,
     "companyMatchEvidenceVerified": true,
-    "companyCandidatePairsVerified": 600
+    "openLifecycleVerified": true,
+    "publicationAllowed": true,
+    "pendingPreviouslyOpen": 0
+  },
+  "companyMatching": {
+    "inputRows": 19650,
+    "profiles": 19636,
+    "rowsWithDescription": 19121,
+    "profilesWithRecognizedCapabilities": 7207,
+    "profilesWithMultipleSourceVariants": 0,
+    "sourceDate": "2026-10-01"
+  },
+  "policy": {
+    "sourceValues": "Original candidate lines and live response text remain unchanged; normalized fields are separate.",
+    "spaceScope": [
+      "core_space",
+      "dual_use_space_defence",
+      "downstream_space",
+      "other_space_related"
+    ],
+    "history": "Only future transitions from the open master; no 2020 history import"
   },
   "publication": {
     "metadataFormat": "json-array-catalog-v1",
-    "originalManifestSha256": "9e5e666fca3a1973aa998edb8ad7e3d52191bab5f9e09e7402c91fcee87b05be",
-    "originalInputsSha256": "7dfbd66bebd49108c63600689cd0e952e416eb0fec8fccfc1755070f14746e11",
+    "originalManifestSha256": "b13260f05ca71bd50bd61f68d80804a1274b5e63f58a3d8ce9ae93c5b2d886a5",
+    "originalInputsSha256": "755a8b78af1ab252facdd6d05419dc9f31ab678b9303da5d12a2e01530b750db",
     "instructions": "Read data.partsCatalog and index.partsCatalog referenced JSON arrays to obtain every part. inputsFile is a catalog of unchanged input metadata. Verify each catalog part checksum. Source records remain unchanged."
   }
 }

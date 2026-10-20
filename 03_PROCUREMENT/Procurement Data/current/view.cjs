@@ -2,6 +2,7 @@
 const {evaluate}=require('./lifecycle.cjs');
 function currentView(record,asOf=new Date().toISOString()){
  if(!['procurement','lot'].includes(record.recordType)||!record.availability)return record;
+ if(record.masterMode==='open-space-v1')return require('../open-only/master/view.cjs').currentView(record,asOf);
  const saved=record.availability,n={title:record.title,stage:saved.opportunityType||saved.sourceDerivedStatus,sourceStatus:saved.sourceDerivedStatus,status:saved.sourceDerivedStatus,deadline:saved.deadline};
  const availability={...saved,...evaluate(n,asOf)};
  if(saved.stale){availability.currentStatus='stale_unverified';availability.liveVerified=false;availability.reason='No fresh source observation in the daily run.';}

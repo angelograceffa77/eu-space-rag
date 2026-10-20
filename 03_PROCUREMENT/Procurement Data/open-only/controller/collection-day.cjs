@@ -1,0 +1,3 @@
+'use strict';
+function assertCurrentCollectionDay(day,previous,now=new Date()){if(!/^\d{4}-\d{2}-\d{2}$/.test(day)||new Date(day+'T00:00:00Z').toISOString().slice(0,10)!==day)throw Error('Invalid collection date');const today=now.toISOString().slice(0,10),yesterday=new Date(Date.parse(today+'T00:00:00Z')-86400000).toISOString().slice(0,10);if(day>today)throw Error('A future collection date can omit open notices; use the current UTC date');if(previous){if((previous.day||previous.asOf)!==day)throw Error('Interrupted collection date cannot change');return;}if(day<yesterday)throw Error('Historical collection is disabled: a new snapshot must use the current UTC date (or yesterday for an overnight qualification batch)');}
+module.exports={assertCurrentCollectionDay};

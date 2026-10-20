@@ -19,5 +19,12 @@
     "national-AT",
     "national-SK",
     "national-ES"
-  ]
+  ],
+  "publishRuntime": true,
+  "retention": {
+    "intervalDays": 14,
+    "minimumAgeDays": 14,
+    "protectCurrentMasterEvidence": true
+  },
+  "maxPages": 10000
 }

@@ -1,0 +1,4 @@
+const{test}=require('node:test'),a=require('node:assert/strict'),{decode}=require('../controller/mercell-current.cjs');
+function page(results,extra={}){return Buffer.from(JSON.stringify({results,page:1,pageSize:20,numRes:results.length,failedShards:0,...extra}));}
+test('Mercell keeps undated active candidates but excludes terminal and elapsed listings',()=>{const rows=[['a','Open','2026-11-01'],['b','Open','2026-09-01'],['c','NoTimeLimit',null],['d','Awarded','2026-11-01']].map(([id,tenderStatus,deadline])=>({id,title:id,tenderStatus,deadline}));a.deepEqual(decode(page(rows),1,'2026-10-20').selected,[0,2]);});
+test('Mercell rejects capped, incomplete and wrong-page searches',()=>{a.throws(()=>decode(page([],{numRes:10000}),1,'2026-10-20'),/capped/);a.throws(()=>decode(page([],{failedShards:1}),1,'2026-10-20'),/shard/);a.throws(()=>decode(page([]),2,'2026-10-20'),/page/);});
