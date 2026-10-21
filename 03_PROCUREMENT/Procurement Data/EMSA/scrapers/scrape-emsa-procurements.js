@@ -508,6 +508,7 @@ async function collectCurrentCalls() {
 }
 
 async function collectArchivedCalls() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== EMSA archived Calls for Tenders ===");
 
   const all = [];
@@ -857,6 +858,7 @@ async function parseAwardFile(link, index, dynamicRefs = []) {
 }
 
 async function collectAwards(dynamicRefs = []) {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== EMSA awarded contracts ===");
 
   let html = readCache("awarded-contracts.html");

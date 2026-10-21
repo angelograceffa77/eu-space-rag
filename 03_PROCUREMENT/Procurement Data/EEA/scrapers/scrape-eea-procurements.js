@@ -472,7 +472,7 @@ async function collectTedQuery(qi, buyerQuery, year) {
   while (true) {
     const body = {
       query:
-        `${buyerQuery} AND publication-date >= ${year}0101 AND publication-date <= ${year}1231`,
+        require('../../daily/scope.cjs').active()?require('../../daily/scope.cjs').ted(buyerQuery):`${buyerQuery} AND publication-date >= ${year}0101 AND publication-date <= ${year}1231`,
       limit: PAGE_SIZE,
       fields: TED_FIELDS,
       paginationMode: "ITERATION"
@@ -578,7 +578,7 @@ async function collectTed() {
   const notices = [];
 
   for (let qi = 0; qi < BUYER_QUERIES.length; qi++) {
-    for (let year = START_YEAR; year <= END_YEAR; year++) {
+    for (let year = require('../../daily/scope.cjs').active()?END_YEAR:START_YEAR; year <= END_YEAR; year++) {
       const part =
         await collectTedQuery(qi+1, BUYER_QUERIES[qi], year);
       notices.push(...part);
@@ -967,6 +967,7 @@ function awardRowsFromText(text, sourceURL, year) {
 }
 
 async function collectAwards() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== EEA annual awarded contracts ===");
 
   const links = await awardPdfLinks();

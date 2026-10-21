@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "activation": "active-open-space",
+  "historicalBackfillEnabled": false,
+  "historicalImportsEnabled": false,
+  "skipDailyDates": [
+    "2026-10-20"
+  ],
+  "timeZone": "Europe/Budapest",
+  "publishTarget": "Procurement-Master",
+  "cutoverApproved": true,
+  "retainLegacyMasterUntilValidated": true,
+  "dailyPaused": false,
+  "dailyMode": "open-space-v1",
+  "phase4Status": "live-validated-open-only",
+  "dailyDiscovery": "new_open_space_and_existing_open",
+  "notBeforeDate": "2026-10-21",
+  "cutoverAt": "2026-10-20T16:00:08.481Z",
+  "cutoverGeneration": "open-space-2026-10-20T15-57-51-973Z"
+}

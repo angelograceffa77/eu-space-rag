@@ -1152,6 +1152,7 @@ function selectMonthlySnapshots(cdx) {
 }
 
 async function collectActWayback() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== ACT historical snapshots 2020-present ===");
 
   const cdx = await collectWaybackIndex();
@@ -1239,6 +1240,7 @@ async function collectActWayback() {
 // ------------------------------------------------------------
 
 function collectVerifiedActSpaceHistory() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== Verified ACT space-history fallback ===");
 
   const rows = VERIFIED_ACT_SPACE_HISTORY.map(x => {

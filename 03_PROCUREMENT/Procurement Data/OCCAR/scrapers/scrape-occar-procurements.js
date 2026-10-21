@@ -796,6 +796,7 @@ function selectSnapshots(cdx) {
 }
 
 async function collectArchivedAds() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== Historical OCCAR advertisements via archive ===");
 
   const cdx = await collectCdx();
@@ -860,6 +861,7 @@ async function collectArchivedAds() {
 
 
 function collectVerifiedMusisHistory() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== Verified MUSIS historical fallback ===");
 
   const rows = VERIFIED_MUSIS_HISTORY.map(x =>

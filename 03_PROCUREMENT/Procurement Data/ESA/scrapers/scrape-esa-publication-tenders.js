@@ -1475,13 +1475,13 @@ async function main() {
     const esa =
       esaRecords.map(
         normalizeESA
-      );
+      ).filter(r=>require('../../daily/scope.cjs').wanted(r));
 
 
     const nonEsa =
       nonEsaRecords.map(
         normalizeNonESA
-      );
+      ).filter(r=>require('../../daily/scope.cjs').wanted(r));
 
 
     const all =

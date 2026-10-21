@@ -635,7 +635,7 @@ async function ftPost(query, pageNumber) {
 
       form.append(
         "query",
-        new Blob([JSON.stringify(query)], { type: "application/json" }),
+        new Blob([JSON.stringify(require('../../daily/scope.cjs').sediaQuery(query))], { type: "application/json" }),
         "query.json"
       );
 
@@ -927,7 +927,7 @@ async function collectTedQuery(qi, buyerQuery, year) {
   while (true) {
     const body = {
       query:
-        `${buyerQuery} AND publication-date >= ${year}0101 AND publication-date <= ${year}1231`,
+        require('../../daily/scope.cjs').active()?require('../../daily/scope.cjs').ted(buyerQuery):`${buyerQuery} AND publication-date >= ${year}0101 AND publication-date <= ${year}1231`,
       limit: 250,
       fields: TED_FIELDS,
       paginationMode: "ITERATION"
@@ -1043,7 +1043,7 @@ async function collectTed() {
   const notices = [];
 
   for (let qi = 0; qi < TED_BUYER_QUERIES.length; qi++) {
-    for (let year = START_YEAR; year <= END_YEAR; year++) {
+    for (let year = require('../../daily/scope.cjs').active()?END_YEAR:START_YEAR; year <= END_YEAR; year++) {
       try {
         const part =
           await collectTedQuery(qi + 1, TED_BUYER_QUERIES[qi], year);

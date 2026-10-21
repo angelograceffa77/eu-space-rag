@@ -543,7 +543,7 @@ async function fntPage(pageNumber) {
     const form = new FormData();
     form.append(
       "query",
-      new Blob([JSON.stringify(query)], { type: "application/json" }),
+      new Blob([JSON.stringify(require('../../daily/scope.cjs').sediaQuery(query))], { type: "application/json" }),
       "query.json"
     );
     form.append(

@@ -530,6 +530,7 @@ function parseIttTables(html, sourceType, sourceUrl, historical = false) {
 // ------------------------------------------------------------
 
 async function collectPage(url, cache, sourceType, historical = false) {
+  if(historical&&require('../../daily/scope.cjs').active())return [];
   let html = readCache(cache);
 
   if (html === null) {
@@ -760,6 +761,7 @@ function snapshotsFromCdx(cdx) {
 }
 
 async function collectArchivedCopernicus() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== Archived Copernicus ITTs ===");
 
   const cdx = await collectCdx();

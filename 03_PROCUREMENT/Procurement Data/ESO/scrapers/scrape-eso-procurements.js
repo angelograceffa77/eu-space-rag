@@ -650,6 +650,7 @@ function parseLegacyGt150(html, sourceURL) {
 }
 
 async function collectLegacy(url, cache, label) {
+  if(require('../../daily/scope.cjs').active())return [];
   let html = readCache(cache);
 
   if (html === null) {

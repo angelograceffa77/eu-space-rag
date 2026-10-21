@@ -472,7 +472,7 @@ async function collectTedQuery(queryIndex, buyerQuery, year) {
 
   while (true) {
     const body = {
-      query: tedQuery(buyerQuery, year),
+      query: require('../../daily/scope.cjs').active()?require('../../daily/scope.cjs').ted(buyerQuery):tedQuery(buyerQuery, year),
       limit: PAGE_SIZE,
       fields: TED_FIELDS,
       paginationMode: "ITERATION"
@@ -620,7 +620,7 @@ async function collectTed() {
   const notices = [];
 
   for (let qi = 0; qi < BUYER_QUERIES.length; qi++) {
-    for (let year = START_YEAR; year <= END_YEAR; year++) {
+    for (let year = require('../../daily/scope.cjs').active()?END_YEAR:START_YEAR; year <= END_YEAR; year++) {
       const part = await collectTedQuery(
         qi + 1,
         BUYER_QUERIES[qi],
@@ -952,6 +952,7 @@ function subjectFromSegment(segment, ref) {
 }
 
 async function collectHistoricalLowMiddle() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== SatCen historical low/middle-value awards ===");
 
   const links = await completedPageLinks();

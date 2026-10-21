@@ -618,7 +618,7 @@ async function main() {
 
 
     const allTenders =
-      await downloadTenders();
+      (await downloadTenders()).filter(r=>require('../../daily/scope.cjs').wanted(r));
 
 
     const esaTenders =

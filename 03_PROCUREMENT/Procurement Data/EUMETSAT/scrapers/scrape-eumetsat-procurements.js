@@ -671,6 +671,7 @@ function snapshotSelection(cdx) {
 }
 
 async function collectHistorical() {
+  if(require('../../daily/scope.cjs').active())return [];
   console.log("\n=== Historical reconstruction via archived EUMITS listings ===");
 
   const cdx = await collectCdxSnapshots();

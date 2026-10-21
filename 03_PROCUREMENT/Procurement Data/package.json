@@ -7,15 +7,14 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "node validate-scrapers.cjs && npm --prefix EU27/National-Portals test",
-    "test:expanded": "node validate-expanded-scrapers.cjs",
-    "procurement:refresh": "node refresh-procurement.cjs",
-    "procurement:list": "node refresh-procurement.cjs --list",
+    "test": "node --test open-only/tests/*.test.cjs open-only/master/*.test.cjs master/test/*.test.cjs daily/test/*.test.cjs",
+    "procurement:refresh": "node --use-system-ca --max-old-space-size=8192 daily/daily.cjs --publish",
     "test:coordinator": "node --test orchestration/test/*.test.cjs",
-    "procurement:master": "node --max-old-space-size=8192 build-procurement-master.cjs",
-    "procurement:update": "node --max-old-space-size=8192 update-procurement.cjs",
+    "procurement:update": "node --use-system-ca --max-old-space-size=8192 daily/daily.cjs --publish",
     "procurement:verify": "node master/verify.cjs",
-    "test:master": "node --test master/test/*.test.cjs"
+    "test:master": "node --test master/test/*.test.cjs",
+    "test:daily": "node --test daily/test/*.test.cjs",
+    "procurement:daily": "node --use-system-ca --max-old-space-size=8192 daily/daily.cjs --publish"
   },
   "dependencies": {
     "axios": "1.19.0",

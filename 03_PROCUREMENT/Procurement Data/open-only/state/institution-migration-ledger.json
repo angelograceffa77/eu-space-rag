@@ -1,0 +1,401 @@
+{
+  "phase": 3,
+  "complete": false,
+  "updatedAt": "2026-10-20T10:03:16.995Z",
+  "note": "Qualification and shared-query mapping do not certify all opportunities for an authority.",
+  "routes": [
+    {
+      "legacyJob": "EC-DG-AGRI--scrape-dg-agri-funding-tenders",
+      "authority": "EC-DG-AGRI",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-AGRI--scrape-dg-agri-ted-procurements",
+      "authority": "EC-DG-AGRI",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-CLIMA--scrape-dg-clima-funding-tenders",
+      "authority": "EC-DG-CLIMA",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-CLIMA--scrape-dg-clima-ted-procurements",
+      "authority": "EC-DG-CLIMA",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-CONNECT--scrape-dg-connect-funding-tenders",
+      "authority": "EC-DG-CONNECT",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-CONNECT--scrape-dg-connect-ted-procurements",
+      "authority": "EC-DG-CONNECT",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-DEFIS--scrape-dg-defis-funding-tenders",
+      "authority": "EC-DG-DEFIS",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-DEFIS--scrape-dg-defis-ted-procurements",
+      "authority": "EC-DG-DEFIS",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-ECHO--scrape-dg-echo-funding-tenders",
+      "authority": "EC-DG-ECHO",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-ECHO--scrape-dg-echo-ted-procurements",
+      "authority": "EC-DG-ECHO",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-ENV--scrape-dg-env-funding-tenders",
+      "authority": "EC-DG-ENV",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-ENV--scrape-dg-env-ted-procurements",
+      "authority": "EC-DG-ENV",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-HOME--scrape-dg-home-funding-tenders",
+      "authority": "EC-DG-HOME",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-HOME--scrape-dg-home-ted-procurements",
+      "authority": "EC-DG-HOME",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-MARE--scrape-dg-mare-funding-tenders",
+      "authority": "EC-DG-MARE",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-MARE--scrape-dg-mare-ted-procurements",
+      "authority": "EC-DG-MARE",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-MOVE--scrape-dg-move-funding-tenders",
+      "authority": "EC-DG-MOVE",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-MOVE--scrape-dg-move-ted-procurements",
+      "authority": "EC-DG-MOVE",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-RTD--scrape-dg-rtd-funding-tenders",
+      "authority": "EC-DG-RTD",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EC-DG-RTD--scrape-dg-rtd-ted-procurements",
+      "authority": "EC-DG-RTD",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "ECMWF--scrape-ecmwf-procurements",
+      "authority": "ECMWF",
+      "state": "qualified-current-listings",
+      "jobs": [
+        "institution-ECMWF-Copernicus-current",
+        "institution-ECMWF-DestinE-current"
+      ],
+      "gap": "Other procurement channels and private invitations remain outside these two public tables.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EDA--scrape-eda-procurements",
+      "authority": "EDA",
+      "state": "blocked-public-access",
+      "gap": "Official public route returned an access challenge; no qualified current inventory.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EEA--scrape-eea-procurements",
+      "authority": "EEA",
+      "state": "shared-formal-notices-with-gap",
+      "jobs": [
+        "sedia-open"
+      ],
+      "gap": "Formal tenders link to SEDIA. Separate low-value invitations remain unqualified.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EMSA--scrape-emsa-procurements",
+      "authority": "EMSA",
+      "state": "qualified-current-listing",
+      "jobs": [
+        "institution-EMSA-current"
+      ],
+      "gap": "Ongoing page includes lifecycle categories requiring later verification.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "ESA--scrape-esa-publication-tenders",
+      "authority": "ESA",
+      "state": "shared-issued-current-query",
+      "jobs": [
+        "institution-ESA-issued-competition",
+        "institution-ESA-issued-cfp"
+      ],
+      "gap": "Only source-issued competitions/calls are collected; bidder access and actual deadline require later checks.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "ESA--scrape-esa-tender-actions",
+      "authority": "ESA",
+      "state": "shared-issued-current-query",
+      "jobs": [
+        "institution-ESA-issued-competition",
+        "institution-ESA-issued-cfp"
+      ],
+      "gap": "Only source-issued competitions/calls are collected; bidder access and actual deadline require later checks.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "ESO--scrape-eso-procurements",
+      "authority": "ESO",
+      "state": "unqualified-redirected-portal",
+      "gap": "Former tender route redirects to a supplier/login portal; a complete public current inventory is not qualified.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EU-SatCen--scrape-satcen-procurements",
+      "authority": "EU-SatCen",
+      "state": "qualified-formal-current-listing-with-gap",
+      "jobs": [
+        "institution-SatCen-current"
+      ],
+      "gap": "Low/middle-value supplier-admission registry remains a separate unqualified scope.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EUMETSAT--scrape-eumetsat-procurements",
+      "authority": "EUMETSAT",
+      "state": "qualified-current-listing",
+      "jobs": [
+        "institution-EUMETSAT-current"
+      ],
+      "gap": "Current public table and linked evidence only; eligibility requires later checks.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EUSPA--scrape-euspa-closed-procurements",
+      "authority": "EUSPA",
+      "state": "disabled-historical-route",
+      "jobs": [],
+      "gap": "Closed-only collection is outside the requested open-only architecture.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EUSPA--scrape-euspa-current-planned-procurements",
+      "authority": "EUSPA",
+      "state": "qualified-current-listing",
+      "jobs": [
+        "institution-EUSPA-current"
+      ],
+      "gap": "Planned, closed and awarded notices are not treated as open competitions.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "Eurocontrol--scrape-eurocontrol-procurements",
+      "authority": "Eurocontrol",
+      "state": "qualified-current-listing",
+      "jobs": [
+        "institution-EUROCONTROL-current"
+      ],
+      "gap": "Native current tab and public documents; invitations and eligibility require later checks.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "Frontex--scrape-frontex-procurements",
+      "authority": "Frontex",
+      "state": "shared-formal-notices-with-gap",
+      "jobs": [
+        "sedia-open"
+      ],
+      "gap": "Formal tenders link to SEDIA; separate low-value invitations remain unqualified.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "JRC--scrape-jrc-procurements",
+      "authority": "JRC",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Replaces buyer/keyword subsets on these same public systems; other channels are not implied.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "NATO--scrape-nato-procurements",
+      "authority": "NATO",
+      "state": "partial-current-deadline-catalogue",
+      "gap": "Current-deadline public catalogue is collected. Undated opportunities, missing central-index entries, NCIA access and native bidding verification remain gaps. See the selected run for current counts.",
+      "countryOrAuthorityComplete": false,
+      "jobs": [
+        "institution-NATO-current-deadline"
+      ],
+      "evidenceRun": "phase3-nato-current-fresh"
+    },
+    {
+      "legacyJob": "OCCAR--scrape-occar-procurements",
+      "authority": "OCCAR",
+      "state": "blocked-public-access",
+      "gap": "Public route presented an access challenge; no qualified current inventory.",
+      "countryOrAuthorityComplete": false
+    },
+    {
+      "legacyJob": "EU27-TED--scrape-eu27-ted-space-procurements",
+      "authority": "EU27/TED",
+      "state": "shared-broad-current-queries",
+      "jobs": [
+        "sedia-open",
+        "ted-*"
+      ],
+      "gap": "Broad current procurement queries replace keyword/buyer subsets; no historical backfill.",
+      "countryOrAuthorityComplete": false
+    }
+  ],
+  "documentQualification": {
+    "recoveredRequests": 10,
+    "readableEvidenceVersions": 62,
+    "retainedOriginalEmptyResponses": 7,
+    "sourceEvidenceUnchanged": true,
+    "automaticOpenClassification": false,
+    "remaining": "Restricted systems, private invitations, incomplete listings, scanned-only or ambiguous documents still require official access or manual review."
+  }
+}

@@ -1356,9 +1356,7 @@ async function downloadAllNotices() {
     queryIndex++
   ) {
     const query =
-      BUYER_QUERIES[
-        queryIndex
-      ];
+      require('../../daily/scope.cjs').ted(BUYER_QUERIES[queryIndex]);
 
     console.log("");
 
