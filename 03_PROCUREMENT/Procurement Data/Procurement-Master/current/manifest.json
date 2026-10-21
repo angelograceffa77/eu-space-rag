@@ -1,40 +1,40 @@
 {
   "schemaVersion": 1,
-  "generation": "open-space-2026-10-20T15-57-51-973Z",
+  "generation": "open-space-2026-10-21T10-24-41-870Z",
   "datasetMode": "open-space-v1",
-  "asOf": "2026-10-20T15:57:51.973Z",
+  "asOf": "2026-10-21T10:24:41.870Z",
   "counts": {
-    "procurements": 175,
-    "lots": 31,
-    "sourceRecords": 251
+    "procurements": 179,
+    "lots": 33,
+    "sourceRecords": 258
   },
   "data": {
     "directory": "data",
-    "logicalRecords": 457,
+    "logicalRecords": 470,
     "recordTypes": {
-      "procurement": 175,
-      "lot": 31,
-      "source_record": 251
+      "procurement": 179,
+      "lot": 33,
+      "source_record": 258
     },
     "maxPartBytes": 262144,
     "partsCatalog": {
       "format": "json-array-catalog-v1",
-      "records": 51,
+      "records": 53,
       "parts": [
         {
           "file": "metadata/data.part-00001.json",
-          "sha256": "62f5afc6b815536b9cf7be66d0ed468759aee5d91357591bc4f128ef19c0faaa",
-          "records": 51,
-          "bytes": 8427
+          "sha256": "e0c5793d60075b9276bb1cebd992c01c7f333fba31a4c6852dcd7d1f30e3fcc0",
+          "records": 53,
+          "bytes": 8759
         }
       ]
     }
   },
   "index": {
     "directory": "index",
-    "logicalRecords": 457,
+    "logicalRecords": 470,
     "recordTypes": {
-      "lookup": 457
+      "lookup": 470
     },
     "maxPartBytes": 262144,
     "partsCatalog": {
@@ -43,7 +43,7 @@
       "parts": [
         {
           "file": "metadata/index.part-00001.json",
-          "sha256": "a3dd6aca9eb8f36512400315758e89fdb65f550457beba822b6bf20656b5f7e4",
+          "sha256": "f957b83d8c40fed493b89ee1ea07181fee0d33193866162abab216197822805b",
           "records": 1,
           "bytes": 168
         }
@@ -51,68 +51,70 @@
     }
   },
   "inputsFile": "inputs.json",
-  "inputsSha256": "ecb2317e2a161e3821f827858af83018ce1e53cf4aa2368d03130f69a04b7a31",
+  "inputsSha256": "4a4e3a75dddc9dea3ed4179a0dd37205ae36743fa61f55fa079d31e7269d770e",
   "summary": {
-    "openProcurements": 175,
-    "openLots": 31,
+    "openProcurements": 179,
+    "openLots": 33,
     "byBuyer": {
+      "ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ,\n.,\n.,\n.": 1,
+      "Centre National d’Études Spatiales (CNES)": 5,
       "VIVA SERVIZI S.P.A.": 1,
       "INAF Osservatorio di Astrofisica e Scienza dello Spazio di Bologna": 1,
       "REGIONE AUTONOMA VALLE D'AOSTA | INVA SPA": 1,
-      "ΥΠΟΥΡΓΕΙΟ ΕΘΝΙΚΗΣ ΑΜΥΝΑΣ,\n.,\n.,\n.": 1,
-      "Centre National d’Études Spatiales (CNES)": 4,
-      "Intendente de San Fernando": 1,
-      "Jefatura de la Sección Económico-Administrativa 62 - Base Aérea de Cuatro Vientos": 1,
-      "Dirección Económico-Financiera de ENAIRE": 1,
+      "European Union Satellite Centre": 1,
+      "EUMETSAT": 1,
+      "European Centre for Medium Range Weather Forecasts (ECMWF)": 1,
       "Hiiumaa Vallavalitsus": 1,
-      "Ministerstvo vnitra": 1,
       "MTES-MCTRCT-MER / AC / DGAC / NA / DTI / SG - Secrétariat Général de la DGAC": 1,
       "MEFSIN / DGFIP-RDA / DGFIP-DNS / SDNC - SERVICE DE LA DOCUMENTATION NATIONALE DU CADASTRE": 1,
       "EOESRI / UMAY - UNIVERSITE DE MAYOTTE": 1,
+      "European Space Agency": 133,
       "FuturEnergy Ireland Development DAC": 1,
-      "European Space Agency": 132,
       "Hogeschool Gent": 1,
       "O3.06.04 - Direction des Cours d'eau non navigables": 1,
-      "Instytut Chemii Bioorganicznej Polskiej Akademii Nauk, Poznańskie Centrum Superkomputerowo-Sieciowe": 2,
-      "Instytut Chemii Bioorganicznej Polskiej Akademii Nauk, Poznańskie Centrum Superkomputerowo-Sieciowe | Centrum Badań Kosmicznych Polskiej Akademii Nauk (CBK) | Wojskowa Akademia Techniczna im. Jarosława Dąbrowskiego (WAT)": 1,
-      "Centrum Zasobów Cyberprzestrzeni Sił Zbrojnych": 1,
+      "Ministerstvo vnitra": 1,
       "RADIOTELEVIZIJA SLOVENIJA javni zavod, Ljubljana": 1,
       "MINISTRSTVO ZA OKOLJE IN PROSTOR, GEODETSKA UPRAVA REPUBLIKE SLOVENIJE": 1,
+      "Intendente de San Fernando": 1,
+      "Jefatura de la Sección Económico-Administrativa 62 - Base Aérea de Cuatro Vientos": 1,
+      "Dirección Económico-Financiera de ENAIRE": 1,
       "Conseil Départemental des Yvelines": 1,
       "Kaakkois-Suomen Ammattikorkeakoulu Oy": 1,
       "European Commission, DG DEFIS - Defence Industry and Space": 1,
+      "Instytut Chemii Bioorganicznej Polskiej Akademii Nauk, Poznańskie Centrum Superkomputerowo-Sieciowe": 2,
+      "Instytut Chemii Bioorganicznej Polskiej Akademii Nauk, Poznańskie Centrum Superkomputerowo-Sieciowe | Centrum Badań Kosmicznych Polskiej Akademii Nauk (CBK) | Wojskowa Akademia Techniczna im. Jarosława Dąbrowskiego (WAT)": 1,
+      "Centrum Zasobów Cyberprzestrzeni Sił Zbrojnych": 1,
+      "European Union Agency for the Space Programme": 1,
+      "European Commission, DG JRC - Joint Research Centre": 1,
       "OPH de la Haute-Saône": 1,
       "France Télévisions": 1,
-      "European Centre for Medium Range Weather Forecasts (ECMWF)": 1,
       "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH": 1,
+      "Ministerium für Ländlichen Raum, Landwirtschaft und Heimat Baden-Württemberg": 1,
       "Department of Climate Energy and the Environment": 1,
-      "European Commission, DG JRC - Joint Research Centre": 1,
       "AB Via Lietuva (PV)": 1,
       "Lietuvos Respublikos aplinkos ministerijos Aplinkos projektų valdymo agentūra": 1,
       "Valstybės įmonė Valstybinių miškų urėdija (PV)": 1,
+      "Gmina Uniejów": 1,
       "AUTORITATEA NATIONALA DE REGLEMENTARE IN DOMENIUL MINIER PETROLIER SI AL STOCARII GEOLOGICE A DIOXIDULUI DE CARBON": 1,
       "Ústav materiálov a mechaniky strojov Slovenskej akadémie vied, verejná výskumná inštitúcia": 1,
-      "European Union Satellite Centre": 1,
-      "Fundació Institut d'Estudis Espacials de Catalunya | Fundació Institut d'Estudis Espacials de Catalunya": 1,
-      "European Union Agency for the Space Programme": 1,
-      "EUMETSAT": 1
+      "Fundació Institut d'Estudis Espacials de Catalunya | Fundació Institut d'Estudis Espacials de Catalunya": 1
     },
     "byCategory": {
-      "core_space": 129,
-      "downstream_space": 60,
+      "core_space": 132,
       "dual_use_space_defence": 7,
-      "other_space_related": 64
+      "other_space_related": 66,
+      "downstream_space": 63
     },
     "categoriesOverlap": true
   },
   "coverage": {
     "status": "partial",
-    "candidateObservations": 213734,
-    "review": 398,
-    "excluded": 129,
+    "candidateObservations": 209786,
+    "review": 387,
+    "excluded": 125,
     "admissions": 7,
-    "discoveryInput": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\cutover-2026-10-20\\discovery",
-    "qualificationArchive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\qualification\\open-space-2026-10-20T15-57-51-973Z",
+    "discoveryInput": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-10-21-1792569631893\\discovery",
+    "qualificationArchive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\qualification\\open-space-2026-10-21T10-24-41-870Z",
     "limitations": [
       "Only fresh identity-matched, parsed open bidding evidence is admitted. Other candidates remain outside this master.",
       "National portals and restricted agency systems have documented gaps; this is not exhaustive EU coverage.",
@@ -124,16 +126,16 @@
   "reconciliation": {
     "dailyRefresh": {
       "mode": "open-space-v1",
-      "sourceManifestSha256": "787bca75d801edd6dfc1e12f3d4da3128edaf89f07a0701f6617ebc1140d9b30",
+      "sourceManifestSha256": "e3295ac153b77f385fdd96f8fc4193f99acb3103df5c98b794c54c4c2d211225",
       "sourceCoverageCatalog": {
         "format": "json-array-catalog-v1",
         "records": 100,
         "parts": [
           {
             "file": "metadata/coverage.part-00001.json",
-            "sha256": "e64230a52e0d3934cd4300f07f725ec8f2cad920266d835996b9f5625dad86cf",
+            "sha256": "fe2757570d96273b10417626f653ef65eace893974c1daae94b55d5a4aef5eaa",
             "records": 100,
-            "bytes": 61847
+            "bytes": 61957
           }
         ]
       }
@@ -141,7 +143,7 @@
   },
   "history": {
     "newlyArchived": 0,
-    "archive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\historical-tenders\\open-space-2026-10-20T15-57-51-973Z\\records.jsonl",
+    "archive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\historical-tenders\\open-space-2026-10-21T10-24-41-870Z\\records.jsonl",
     "historicalBackfill": false
   },
   "validation": {
@@ -171,8 +173,8 @@
   },
   "publication": {
     "metadataFormat": "json-array-catalog-v1",
-    "originalManifestSha256": "b13260f05ca71bd50bd61f68d80804a1274b5e63f58a3d8ce9ae93c5b2d886a5",
-    "originalInputsSha256": "755a8b78af1ab252facdd6d05419dc9f31ab678b9303da5d12a2e01530b750db",
+    "originalManifestSha256": "821ee540ed4484ffc2067dd1bc3bab0cd9aeb5fc57d2a7f57a199cce2dc1096c",
+    "originalInputsSha256": "b0b91cc6ce2058dfad749acdbae802adb94808123ba73f69844bbfcefbaaa9e0",
     "instructions": "Read data.partsCatalog and index.partsCatalog referenced JSON arrays to obtain every part. inputsFile is a catalog of unchanged input metadata. Verify each catalog part checksum. Source records remain unchanged."
   }
 }
