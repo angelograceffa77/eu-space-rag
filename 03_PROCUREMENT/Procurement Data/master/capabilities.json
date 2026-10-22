@@ -1,40 +1,678 @@
 {
-  "version": "2026-10-15.1",
+  "version": "2026-10-21.2",
   "policy": "Conservative multilingual phrase dictionary. Tags describe mentions, not verified requirements or supplier qualifications. Generic space/software/research words alone never qualify a match. Coverage is incomplete across EU languages.",
   "capabilities": [
-    {"id":"earth_observation","label":"Earth observation and remote sensing","space":true,"terms":["earth observation","remote sensing","erdbeobachtung","fernerkundung","observation de la terre","teledetection","teledeteccion","observacion de la tierra","osservazione della terra","telerilevamento","obserwacji ziemi","teledetekcj[a-z]*","dalkov[a-z]* pruzkum[a-z]* zem[eiy]","fjaerranalys","fjärranalys","aardobservatie","observarea pamantului"]},
-    {"id":"satellite_navigation","label":"Satellite navigation and positioning","space":true,"terms":["gnss","gps","egnos","satellite navigation","satellitennavigation","navigation satellitaire","navegacion por satelite","navigazione satellitare","positioning,? navigation (?:and|or) timing"]},
-    {"id":"satellite_communications","label":"Satellite communications","space":true,"terms":["satcom","vsat","satellite communications?","satellite internet","satellite broadband","satellite telephon[a-z]*","satellitenfunk[a-z]*","satellitenkommunikation","communication[a-z]* satellit[a-z]*","reseau satellitaire","satelitni komunikac[a-z]*","satelitnich komunikac[a-z]*","satelitniho internetu","comunicacion[a-z]* por satelite","comunicazioni satellitari","komunikacji satelitarnej","satelitne komunik[a-z]*","satelitn[a-z]* komunikacn[a-z]*"]},
-    {"id":"ground_segment","label":"Ground segment and ground stations","space":true,"terms":["ground segment","ground stations?","segment sol","station[a-z]* sol","bodenstation[a-z]*","segmento (?:terrestre|di terra)","estacion[a-z]* terrestre[a-z]*"]},
-    {"id":"mission_operations","label":"Spacecraft mission operations","space":true,"terms":["mission operations","spacecraft operations","satellite operations","mission control","flight dynamics","dynamique du vol","operations spatiales","systemes spatiaux","flugbahndynamik"]},
-    {"id":"space_surveillance","label":"Space surveillance and debris","space":true,"terms":["space situational awareness","space surveillance","space traffic","space debris","orbital debris","debris spatiaux","weltraumschrott","space object tracking"]},
-    {"id":"launch","label":"Launch systems and services","space":true,"terms":["launch vehicles?","launch services?","rocket[a-z]*","lanceur[a-z]*","tragerrakete[a-z]*","lanzador[a-z]*","lanciator[a-z]*"]},
-    {"id":"propulsion","label":"Space propulsion","space":true,"terms":["space propulsion","electric propulsion","rocket propulsion","thruster[a-z]*","propulsion spatiale","propulsion electrique","propulsione spaziale"]},
-    {"id":"spacecraft","label":"Spacecraft platforms and small satellites","space":true,"terms":["spacecraft","cubesat[a-z]*","nanosat[a-z]*","smallsat[a-z]*","satellite bus","satellite platform","plateforme satellitaire","kleinsatellit[a-z]*"]},
-    {"id":"space_weather","label":"Space weather","space":true,"terms":["space weather","weltraumwetter","meteorologie spatiale","ionospher[a-z]*"]},
-    {"id":"optics","label":"Optics and photonics","terms":["optic[a-z]*","optik[a-z]*","optique[a-z]*","ottic[a-z]*","photon[a-z]*","foton[a-z]*","interferometr[a-z]*"]},
-    {"id":"radar","label":"Radar systems","terms":["radar[a-z]*","synthetic aperture"]},
-    {"id":"lidar","label":"LiDAR and laser ranging","terms":["lidar","laser ranging","laser scanning","laserscanning"]},
-    {"id":"radio_frequency","label":"Radio frequency and microwave systems","terms":["radio frequency","radiofrequency","microwave[a-z]*","radiofrequen[a-z]*","mikrowelle[a-z]*","rf systems?","rf amplifier[a-z]*"]},
-    {"id":"antennas","label":"Antennas","terms":["antenna[a-z]*","antenne[a-z]*","antena[a-z]*"]},
-    {"id":"spectrometry","label":"Spectrometry and spectroscopy","terms":["spectrometr[a-z]*","spectroscop[a-z]*","spektrometr[a-z]*","spektroskop[a-z]*"]},
-    {"id":"infrared","label":"Infrared imaging and detectors","terms":["infrared","infra-rouge","infrarouge","infrarot","infrarrojo[a-z]*","infraross[a-z]*"]},
-    {"id":"cryogenics","label":"Cryogenics and vacuum equipment","terms":["cryogen[a-z]*","kryogen[a-z]*","criogen[a-z]*","vacuum chamber[a-z]*","thermal vacuum","chambre a vide","vakuumkammer[a-z]*"]},
-    {"id":"geospatial","label":"Geospatial information and mapping","terms":["geospatial","geographic information","geographical information","geographisches informationssystem","geoinformat[a-z]*","gis","geomatic[a-z]*","geomatiq[a-z]*","cartograph[a-z]*","cartograf[a-z]*","geographic data","geolocalisa[a-z]*","geolocaliza[a-z]*"]},
-    {"id":"surveying","label":"Surveying and geodesy","terms":["hydrographic","hydrographique","hydrograf[a-z]*","geodes[a-z]*","geodetic","landmeetkundig[a-z]*","topograph[a-z]*","topograf[a-z]*","total station[a-z]*","totalstation[a-z]*"]},
-    {"id":"atmosphere","label":"Atmospheric modelling and greenhouse gases","terms":["atmospheric","atmospherique","atmosphar[a-z]*","greenhouse gas[a-z]*","ghg","gaz a effet de serre","treibhausgas[a-z]*","meteorolog[a-z]*"]},
-    {"id":"marine","label":"Ocean and marine monitoring","terms":["oceanograph[a-z]*","oceanograf[a-z]*","marine monitoring","ocean monitoring","maritime surveillance"]},
-    {"id":"agriculture","label":"Agronomy and agricultural monitoring","terms":["agronom[a-z]*","precision agriculture","smart agriculture","crop monitoring","agriculture de precision"]},
-    {"id":"forests","label":"Forest and wildfire monitoring","terms":["wildfire","forest monitoring","deforestation","waldbrand[a-z]*","feux de foret","incendios forestales"]},
-    {"id":"water","label":"Water and hydrological monitoring","terms":["hydrolog[a-z]*","water monitoring","water management","wasserwirtschaft","gewassermonitoring","gestion de l.eau"]},
-    {"id":"robotics","label":"Robotics and autonomous systems","terms":["robotic[a-z]*","robotik","robotique","robotica","robotisch[a-z]*","robotick[a-z]*","autonomous systems?"]},
-    {"id":"cybersecurity","label":"Cybersecurity and cryptography","terms":["cybersecurity","cyber security","cybersecurite","cybersicherheit","cryptograph[a-z]*","kryptograph[a-z]*","criptograf[a-z]*"]},
-    {"id":"electronics","label":"Embedded electronics and avionics","terms":["embedded systems?","embedded software","fpga","asic","avionics","avionique","microelectron[a-z]*","microelektron[a-z]*","on-board computer","onboard computer"]},
-    {"id":"materials","label":"Composite and advanced materials","terms":["composite materials?","materiaux composites","werkstoff[a-z]*","materiali compositi","additive manufacturing","3d printing"]},
-    {"id":"thermal","label":"Thermal control","terms":["thermal control","thermal management","controle thermique","thermische regelung","controllo termico"]},
-    {"id":"computing","label":"High performance computing and servers","terms":["high performance computing","supercomput[a-z]*","hpc","computing servers?","serwerow obliczeniowych","compute clusters?"]},
-    {"id":"artificial_intelligence","label":"Artificial intelligence and machine learning","generic":true,"terms":["artificial intelligence","machine learning","intelligence artificielle","intelligenza artificiale","kunstliche intelligenz","deep learning"]},
-    {"id":"software","label":"Software development","generic":true,"terms":["software development","developpement logiciel","softwareentwicklung","sviluppo software","desarrollo de software"]},
-    {"id":"simulation","label":"Simulation and digital twins","generic":true,"terms":["simulation","digital twin[a-z]*","jumeau numerique","digitaler zwilling"]}
+    {
+      "id": "earth_observation",
+      "label": "Earth observation and remote sensing",
+      "space": true,
+      "terms": [
+        "earth observation",
+        "remote sensing",
+        "erdbeobachtung",
+        "fernerkundung",
+        "observation de la terre",
+        "teledetection",
+        "teledeteccion",
+        "observacion de la tierra",
+        "osservazione della terra",
+        "telerilevamento",
+        "obserwacji ziemi",
+        "teledetekcj[a-z]*",
+        "dalkov[a-z]* pruzkum[a-z]* zem[eiy]",
+        "fjaerranalys",
+        "fjärranalys",
+        "aardobservatie",
+        "observarea pamantului"
+      ]
+    },
+    {
+      "id": "satellite_navigation",
+      "label": "Satellite navigation and positioning",
+      "space": true,
+      "terms": [
+        "gnss",
+        "gps",
+        "egnos",
+        "satellite navigation",
+        "satellitennavigation",
+        "navigation satellitaire",
+        "navegacion por satelite",
+        "navigazione satellitare",
+        "positioning,? navigation (?:and|or) timing"
+      ]
+    },
+    {
+      "id": "satellite_communications",
+      "label": "Satellite communications",
+      "space": true,
+      "terms": [
+        "satcom",
+        "vsat",
+        "satellite communications?",
+        "satellite internet",
+        "satellite broadband",
+        "satellite telephon[a-z]*",
+        "satellitenfunk[a-z]*",
+        "satellitenkommunikation",
+        "communication[a-z]* satellit[a-z]*",
+        "reseau satellitaire",
+        "satelitni komunikac[a-z]*",
+        "satelitnich komunikac[a-z]*",
+        "satelitniho internetu",
+        "comunicacion[a-z]* por satelite",
+        "comunicazioni satellitari",
+        "komunikacji satelitarnej",
+        "satelitne komunik[a-z]*",
+        "satelitn[a-z]* komunikacn[a-z]*",
+        "space telecommunications",
+        "satellite networks?",
+        "satellite connectivity",
+        "optical communications?"
+      ]
+    },
+    {
+      "id": "ground_segment",
+      "label": "Ground segment and ground stations",
+      "space": true,
+      "terms": [
+        "ground segment",
+        "ground stations?",
+        "segment sol",
+        "station[a-z]* sol",
+        "bodenstation[a-z]*",
+        "segmento (?:terrestre|di terra)",
+        "estacion[a-z]* terrestre[a-z]*"
+      ]
+    },
+    {
+      "id": "mission_operations",
+      "label": "Spacecraft mission operations",
+      "space": true,
+      "terms": [
+        "mission operations",
+        "spacecraft operations",
+        "satellite operations",
+        "mission control",
+        "flight dynamics",
+        "dynamique du vol",
+        "operations spatiales",
+        "systemes spatiaux",
+        "flugbahndynamik"
+      ]
+    },
+    {
+      "id": "space_surveillance",
+      "label": "Space surveillance and debris",
+      "space": true,
+      "terms": [
+        "space situational awareness",
+        "space surveillance",
+        "space traffic",
+        "space debris",
+        "orbital debris",
+        "debris spatiaux",
+        "weltraumschrott",
+        "space object tracking"
+      ]
+    },
+    {
+      "id": "launch",
+      "label": "Launch systems and services",
+      "space": true,
+      "terms": [
+        "launch vehicles?",
+        "launch services?",
+        "rocket[a-z]*",
+        "lanceur[a-z]*",
+        "tragerrakete[a-z]*",
+        "lanzador[a-z]*",
+        "lanciator[a-z]*"
+      ]
+    },
+    {
+      "id": "propulsion",
+      "label": "Space propulsion",
+      "space": true,
+      "terms": [
+        "space propulsion",
+        "electric propulsion",
+        "rocket propulsion",
+        "thruster[a-z]*",
+        "propulsion spatiale",
+        "propulsion electrique",
+        "propulsione spaziale"
+      ]
+    },
+    {
+      "id": "spacecraft",
+      "label": "Spacecraft platforms and small satellites",
+      "space": true,
+      "terms": [
+        "spacecraft",
+        "cubesat[a-z]*",
+        "nanosat[a-z]*",
+        "smallsat[a-z]*",
+        "satellite bus",
+        "satellite platform",
+        "plateforme satellitaire",
+        "kleinsatellit[a-z]*",
+        "small satellites?",
+        "satellite constellations?",
+        "satellite systems?"
+      ]
+    },
+    {
+      "id": "space_weather",
+      "label": "Space weather",
+      "space": true,
+      "terms": [
+        "space weather",
+        "weltraumwetter",
+        "meteorologie spatiale",
+        "ionospher[a-z]*"
+      ]
+    },
+    {
+      "id": "optics",
+      "label": "Optics and photonics",
+      "terms": [
+        "optic[a-z]*",
+        "optik[a-z]*",
+        "optique[a-z]*",
+        "ottic[a-z]*",
+        "photon[a-z]*",
+        "foton[a-z]*",
+        "interferometr[a-z]*"
+      ]
+    },
+    {
+      "id": "radar",
+      "label": "Radar systems",
+      "terms": [
+        "radar[a-z]*",
+        "synthetic aperture"
+      ]
+    },
+    {
+      "id": "lidar",
+      "label": "LiDAR and laser ranging",
+      "terms": [
+        "lidar",
+        "laser ranging",
+        "laser scanning",
+        "laserscanning"
+      ]
+    },
+    {
+      "id": "radio_frequency",
+      "label": "Radio frequency and microwave systems",
+      "terms": [
+        "radio frequency",
+        "radiofrequency",
+        "microwave[a-z]*",
+        "radiofrequen[a-z]*",
+        "mikrowelle[a-z]*",
+        "rf systems?",
+        "rf amplifier[a-z]*",
+        "radio-frequency",
+        "radio frequency systems?"
+      ]
+    },
+    {
+      "id": "antennas",
+      "label": "Antennas",
+      "terms": [
+        "antenna[a-z]*",
+        "antenne[a-z]*",
+        "antena[a-z]*"
+      ]
+    },
+    {
+      "id": "spectrometry",
+      "label": "Spectrometry and spectroscopy",
+      "terms": [
+        "spectrometr[a-z]*",
+        "spectroscop[a-z]*",
+        "spektrometr[a-z]*",
+        "spektroskop[a-z]*"
+      ]
+    },
+    {
+      "id": "infrared",
+      "label": "Infrared imaging and detectors",
+      "terms": [
+        "infrared",
+        "infra-rouge",
+        "infrarouge",
+        "infrarot",
+        "infrarrojo[a-z]*",
+        "infraross[a-z]*"
+      ]
+    },
+    {
+      "id": "cryogenics",
+      "label": "Cryogenics and vacuum equipment",
+      "terms": [
+        "cryogen[a-z]*",
+        "kryogen[a-z]*",
+        "criogen[a-z]*",
+        "vacuum chamber[a-z]*",
+        "thermal vacuum",
+        "chambre a vide",
+        "vakuumkammer[a-z]*"
+      ]
+    },
+    {
+      "id": "geospatial",
+      "label": "Geospatial information and mapping",
+      "terms": [
+        "geospatial",
+        "geographic information",
+        "geographical information",
+        "geographisches informationssystem",
+        "geoinformat[a-z]*",
+        "gis",
+        "geomatic[a-z]*",
+        "geomatiq[a-z]*",
+        "cartograph[a-z]*",
+        "cartograf[a-z]*",
+        "geographic data",
+        "geolocalisa[a-z]*",
+        "geolocaliza[a-z]*"
+      ]
+    },
+    {
+      "id": "surveying",
+      "label": "Surveying and geodesy",
+      "terms": [
+        "hydrographic",
+        "hydrographique",
+        "hydrograf[a-z]*",
+        "geodes[a-z]*",
+        "geodetic",
+        "landmeetkundig[a-z]*",
+        "topograph[a-z]*",
+        "topograf[a-z]*",
+        "total station[a-z]*",
+        "totalstation[a-z]*"
+      ]
+    },
+    {
+      "id": "atmosphere",
+      "label": "Atmospheric modelling and greenhouse gases",
+      "terms": [
+        "atmospheric",
+        "atmospherique",
+        "atmosphar[a-z]*",
+        "greenhouse gas[a-z]*",
+        "ghg",
+        "gaz a effet de serre",
+        "treibhausgas[a-z]*",
+        "meteorolog[a-z]*"
+      ]
+    },
+    {
+      "id": "marine",
+      "label": "Ocean and marine monitoring",
+      "terms": [
+        "oceanograph[a-z]*",
+        "oceanograf[a-z]*",
+        "marine monitoring",
+        "ocean monitoring",
+        "maritime surveillance"
+      ]
+    },
+    {
+      "id": "agriculture",
+      "label": "Agronomy and agricultural monitoring",
+      "terms": [
+        "agronom[a-z]*",
+        "precision agriculture",
+        "smart agriculture",
+        "crop monitoring",
+        "agriculture de precision"
+      ]
+    },
+    {
+      "id": "forests",
+      "label": "Forest and wildfire monitoring",
+      "terms": [
+        "wildfire",
+        "forest monitoring",
+        "deforestation",
+        "waldbrand[a-z]*",
+        "feux de foret",
+        "incendios forestales"
+      ]
+    },
+    {
+      "id": "water",
+      "label": "Water and hydrological monitoring",
+      "terms": [
+        "hydrolog[a-z]*",
+        "water monitoring",
+        "water management",
+        "wasserwirtschaft",
+        "gewassermonitoring",
+        "gestion de l.eau"
+      ]
+    },
+    {
+      "id": "robotics",
+      "label": "Robotics and autonomous systems",
+      "terms": [
+        "robotic[a-z]*",
+        "robotik",
+        "robotique",
+        "robotica",
+        "robotisch[a-z]*",
+        "robotick[a-z]*",
+        "autonomous systems?"
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "label": "Cybersecurity and cryptography",
+      "terms": [
+        "cybersecurity",
+        "cyber security",
+        "cybersecurite",
+        "cybersicherheit",
+        "cryptograph[a-z]*",
+        "kryptograph[a-z]*",
+        "criptograf[a-z]*"
+      ]
+    },
+    {
+      "id": "electronics",
+      "label": "Embedded electronics and avionics",
+      "terms": [
+        "embedded systems?",
+        "embedded software",
+        "fpga",
+        "asic",
+        "avionics",
+        "avionique",
+        "microelectron[a-z]*",
+        "microelektron[a-z]*",
+        "on-board computer",
+        "onboard computer",
+        "power electronics",
+        "electronic systems?",
+        "printed circuit boards?",
+        "pcb design",
+        "semiconductors?",
+        "semiconductor (?:testing|qualification)",
+        "leistungselektronik",
+        "electronique de puissance",
+        "elettronica di potenza"
+      ]
+    },
+    {
+      "id": "materials",
+      "label": "Composite and advanced materials",
+      "terms": [
+        "composite materials?",
+        "materiaux composites",
+        "werkstoff[a-z]*",
+        "materiali compositi",
+        "additive manufacturing",
+        "3d printing",
+        "additive-manufacturing",
+        "composite structures?"
+      ]
+    },
+    {
+      "id": "thermal",
+      "label": "Thermal control",
+      "terms": [
+        "thermal control",
+        "thermal management",
+        "controle thermique",
+        "thermische regelung",
+        "controllo termico"
+      ]
+    },
+    {
+      "id": "computing",
+      "label": "High performance computing and servers",
+      "terms": [
+        "high performance computing",
+        "supercomput[a-z]*",
+        "hpc",
+        "computing servers?",
+        "serwerow obliczeniowych",
+        "compute clusters?",
+        "high-performance computing"
+      ]
+    },
+    {
+      "id": "artificial_intelligence",
+      "label": "Artificial intelligence and machine learning",
+      "generic": true,
+      "terms": [
+        "artificial intelligence",
+        "machine learning",
+        "intelligence artificielle",
+        "intelligenza artificiale",
+        "kunstliche intelligenz",
+        "deep learning",
+        "machine-learning",
+        "deep-learning"
+      ]
+    },
+    {
+      "id": "software",
+      "label": "Software development",
+      "generic": true,
+      "terms": [
+        "software development",
+        "developpement logiciel",
+        "softwareentwicklung",
+        "sviluppo software",
+        "desarrollo de software",
+        "software (?:design|engineering)",
+        "(?:develops?|developing|development of) (?:custom |application |embedded )?software",
+        "orchestration software",
+        "logiciels? sur mesure",
+        "ingenierie logicielle",
+        "software solutions",
+        "software applications",
+        "software products",
+        "software platforms",
+        "application development",
+        "web development",
+        "desenvolvimento de software",
+        "desenvolvimento de sistemas",
+        "programvareutvikling"
+      ]
+    },
+    {
+      "id": "simulation",
+      "label": "Simulation and digital twins",
+      "generic": true,
+      "terms": [
+        "simulation",
+        "digital twin[a-z]*",
+        "jumeau numerique",
+        "digitaler zwilling"
+      ]
+    },
+    {
+      "id": "precision_manufacturing",
+      "label": "Precision machining and mechanical engineering",
+      "terms": [
+        "precision machining",
+        "cnc machining",
+        "metal machining",
+        "mechanical engineering",
+        "precision engineering",
+        "usinage de precision",
+        "usinage cnc",
+        "feinmechanik",
+        "precision mechanical",
+        "lavorazioni meccaniche di precisione"
+      ]
+    },
+    {
+      "id": "environmental_qualification",
+      "label": "Environmental testing and component qualification",
+      "terms": [
+        "environmental testing",
+        "electromagnetic compatibility",
+        "thermal cycling",
+        "vibration testing",
+        "component qualification",
+        "qualification of semiconductors",
+        "reliability assessment",
+        "essais environnementaux",
+        "umwelttests"
+      ]
+    },
+    {
+      "id": "systems_engineering",
+      "label": "Systems engineering",
+      "terms": [
+        "systems engineering",
+        "system engineering",
+        "ingenierie systeme",
+        "ingegneria dei sistemi"
+      ]
+    },
+    {
+      "id": "control_automation",
+      "label": "Industrial control and automation",
+      "terms": [
+        "industrial automation",
+        "control systems",
+        "automation systems",
+        "automatisation industrielle",
+        "automazione industriale",
+        "automatisierungstechnik"
+      ]
+    },
+    {
+      "id": "electrical_engineering",
+      "label": "Electrical engineering",
+      "terms": [
+        "electrical engineering",
+        "electrical design",
+        "ingenierie electrique",
+        "ingegneria elettrica",
+        "elektrotechnik"
+      ]
+    },
+    {
+      "id": "data_engineering",
+      "label": "Data engineering and processing",
+      "terms": [
+        "data engineering",
+        "data processing",
+        "data integration",
+        "data infrastructure",
+        "traitement des donnees",
+        "elaborazione dati",
+        "datenverarbeitung"
+      ]
+    },
+    {
+      "id": "instrumentation",
+      "label": "Scientific instrumentation and metrology",
+      "terms": [
+        "scientific instruments?",
+        "scientific instrumentation",
+        "measurement systems",
+        "measurement equipment",
+        "metrology",
+        "metrologie",
+        "metrologia"
+      ]
+    },
+    {
+      "id": "chemical_engineering",
+      "label": "Chemical engineering",
+      "terms": [
+        "chemical engineering",
+        "process engineering",
+        "ingenierie chimique",
+        "ingegneria chimica",
+        "verfahrenstechnik"
+      ]
+    },
+    {
+      "id": "quality_assurance",
+      "label": "Quality assurance and product assurance",
+      "terms": [
+        "quality assurance",
+        "product assurance",
+        "assurance qualite",
+        "assurance produit",
+        "qualitatssicherung"
+      ]
+    },
+    {
+      "id": "technical_consulting",
+      "label": "Technical and engineering consulting",
+      "terms": [
+        "engineering consultancy",
+        "engineering consulting",
+        "technical consultancy",
+        "technical consulting",
+        "conseil en ingenierie",
+        "consulenza tecnica"
+      ],
+      "generic": true
+    },
+    {
+      "id": "project_management",
+      "label": "Project and programme management",
+      "terms": [
+        "project management",
+        "programme management",
+        "gestion de projet",
+        "projektmanagement",
+        "gestione di progetti"
+      ],
+      "generic": true
+    },
+    {
+      "id": "business_consulting",
+      "label": "Business and management consulting",
+      "terms": [
+        "management consulting",
+        "management consultancy",
+        "business consulting",
+        "business consultancy",
+        "conseil en strategie",
+        "unternehmensberatung"
+      ],
+      "generic": true
+    },
+    {
+      "id": "legal_services",
+      "label": "Legal and intellectual property services",
+      "terms": [
+        "legal services",
+        "legal advice",
+        "intellectual property law",
+        "patent attorneys?",
+        "patent attorney",
+        "rechtsberatung"
+      ],
+      "generic": true
+    },
+    {
+      "id": "training_services",
+      "label": "Training services",
+      "terms": [
+        "professional training",
+        "technical training",
+        "training services",
+        "formation professionnelle",
+        "formazione professionale"
+      ],
+      "generic": true
+    }
   ]
 }

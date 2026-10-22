@@ -16,5 +16,12 @@
   "dailyDiscovery": "new_open_space_and_existing_open",
   "notBeforeDate": "2026-10-21",
   "cutoverAt": "2026-10-20T16:00:08.481Z",
-  "cutoverGeneration": "open-space-2026-10-20T15-57-51-973Z"
+  "cutoverGeneration": "open-space-2026-10-20T15-57-51-973Z",
+  "awaitingRecheck": {
+    "enabled": true,
+    "maxCount": 5,
+    "maxFraction": 0.05,
+    "smallListAllowance": 1,
+    "policy": "Unverified previously open tenders remain searchable separately and are rechecked daily; never count as open or infer closure."
+  }
 }
