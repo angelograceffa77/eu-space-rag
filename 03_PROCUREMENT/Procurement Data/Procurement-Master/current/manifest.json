@@ -1,21 +1,20 @@
 {
   "schemaVersion": 1,
-  "generation": "open-space-2026-10-22T11-49-23-915Z",
+  "generation": "open-space-2026-10-23T12-34-48-657Z",
   "datasetMode": "open-space-v1",
-  "asOf": "2026-10-22T11:49:23.915Z",
+  "asOf": "2026-10-23T12:34:48.657Z",
   "counts": {
-    "procurements": 170,
-    "lots": 31,
-    "sourceRecords": 244
+    "procurements": 175,
+    "lots": 33,
+    "sourceRecords": 252
   },
   "data": {
     "directory": "data",
-    "logicalRecords": 448,
+    "logicalRecords": 460,
     "recordTypes": {
-      "procurement": 170,
-      "lot": 31,
-      "awaiting_recheck": 3,
-      "source_record": 244
+      "procurement": 175,
+      "lot": 33,
+      "source_record": 252
     },
     "maxPartBytes": 262144,
     "partsCatalog": {
@@ -24,18 +23,18 @@
       "parts": [
         {
           "file": "metadata/data.part-00001.json",
-          "sha256": "fec50d729473f50be9a11c29922870fdcc4848f0975c28fac47b429b3e2261da",
+          "sha256": "365e26b2a8029cbc7f0141599bb63f8675f7357ec6bd4861896dd0480ba4753a",
           "records": 53,
-          "bytes": 8760
+          "bytes": 8759
         }
       ]
     }
   },
   "index": {
     "directory": "index",
-    "logicalRecords": 448,
+    "logicalRecords": 460,
     "recordTypes": {
-      "lookup": 448
+      "lookup": 460
     },
     "maxPartBytes": 262144,
     "partsCatalog": {
@@ -44,7 +43,7 @@
       "parts": [
         {
           "file": "metadata/index.part-00001.json",
-          "sha256": "08b6fe866ca48824c19dd573aaee4f126530fc9adb0de6e1012302fdd67ea9ad",
+          "sha256": "1c20070334578b7bfe80eaa45aa8bd7aa18fd360e00b947b8ee503b833cf78f5",
           "records": 1,
           "bytes": 168
         }
@@ -52,11 +51,11 @@
     }
   },
   "inputsFile": "inputs.json",
-  "inputsSha256": "7f78486947c589d4ef0d755747207e86e19fbebdaa03752ee22b039b11c3a62d",
+  "inputsSha256": "e66936d08caa0c4d7e6a0600e5a59e3a6c04eec070b58f532099e435c921b462",
   "summary": {
-    "openProcurements": 170,
-    "openLots": 31,
-    "awaitingRecheck": 3,
+    "openProcurements": 175,
+    "openLots": 33,
+    "awaitingRecheck": 0,
     "byBuyer": {
       "Hogeschool Gent": 1,
       "O3.06.04 - Direction des Cours d'eau non navigables": 1,
@@ -69,9 +68,7 @@
       "European Union Satellite Centre": 1,
       "EUMETSAT": 1,
       "European Centre for Medium Range Weather Forecasts (ECMWF)": 1,
-      "European Space Agency": 128,
       "FuturEnergy Ireland Development DAC": 1,
-      "Ministerstvo vnitra": 1,
       "MINISTRSTVO ZA OKOLJE IN PROSTOR, GEODETSKA UPRAVA REPUBLIKE SLOVENIJE": 1,
       "Conseil Départemental des Yvelines": 1,
       "Kaakkois-Suomen Ammattikorkeakoulu Oy": 1,
@@ -93,26 +90,31 @@
       "Gmina Uniejów": 1,
       "AUTORITATEA NATIONALA DE REGLEMENTARE IN DOMENIUL MINIER PETROLIER SI AL STOCARII GEOLOGICE A DIOXIDULUI DE CARBON": 1,
       "Fundació Institut d'Estudis Espacials de Catalunya | Fundació Institut d'Estudis Espacials de Catalunya": 1,
-      "Intendente de San Fernando": 1,
       "Jefatura de la Sección Económico-Administrativa 62 - Base Aérea de Cuatro Vientos": 1,
-      "Dirección Económico-Financiera de ENAIRE": 1
+      "Dirección Económico-Financiera de ENAIRE": 1,
+      "MTES-MCTRCT-MER / AC / DGAC / NA / DTI / SG - Secrétariat Général de la DGAC": 1,
+      "MEFSIN / DGFIP-RDA / DGFIP-DNS / SDNC - SERVICE DE LA DOCUMENTATION NATIONALE DU CADASTRE": 1,
+      "EOESRI / UMAY - UNIVERSITE DE MAYOTTE": 1,
+      "Troms Fylkeskommune": 1,
+      "Department for Science, Innovation & Technology": 1,
+      "European Space Agency": 130
     },
     "byCategory": {
-      "core_space": 125,
-      "downstream_space": 63,
+      "core_space": 129,
+      "downstream_space": 65,
       "dual_use_space_defence": 7,
-      "other_space_related": 63
+      "other_space_related": 65
     },
     "categoriesOverlap": true
   },
   "coverage": {
     "status": "partial",
-    "candidateObservations": 185416,
-    "review": 369,
-    "excluded": 132,
-    "admissions": 7,
-    "discoveryInput": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-10-22-1792656024815\\discovery",
-    "qualificationArchive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\qualification\\open-space-2026-10-22T11-49-23-915Z",
+    "candidateObservations": 15834,
+    "review": 102,
+    "excluded": 111,
+    "admissions": 11,
+    "discoveryInput": "C:/Users/angel/OneDrive/Desktop/knowledge/03_PROCUREMENT/Procurement Data/open-only/country-extension-runs/2026-10-23-stable",
+    "qualificationArchive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\qualification\\open-space-2026-10-23T12-34-48-657Z",
     "limitations": [
       "Only fresh identity-matched, parsed open bidding evidence is admitted. Other candidates remain outside this master.",
       "National portals and restricted agency systems have documented gaps; this is not exhaustive EU coverage.",
@@ -124,24 +126,24 @@
   "reconciliation": {
     "dailyRefresh": {
       "mode": "open-space-v1",
-      "sourceManifestSha256": "fb083a01fca571f1fb3e7aa4d9423a1f669b3d21e40dc0a2a976c1934d7c93d4",
+      "sourceManifestSha256": "5c13ee29749db0efdb02e2b79e2aa69644a006d35aa12e54465c0003f916967e",
       "sourceCoverageCatalog": {
         "format": "json-array-catalog-v1",
-        "records": 100,
+        "records": 12,
         "parts": [
           {
             "file": "metadata/coverage.part-00001.json",
-            "sha256": "a1d861d531ad801d4a10b1e9136f472e727527eadedd1c4cc152f89d6ecdae51",
-            "records": 100,
-            "bytes": 62137
+            "sha256": "4a3e7917e168f6a232f4a1565927ab0d5cc0f009da328bace32d91842998ce27",
+            "records": 12,
+            "bytes": 7168
           }
         ]
       }
     }
   },
   "history": {
-    "newlyArchived": 8,
-    "archive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\historical-tenders\\open-space-2026-10-22T11-49-23-915Z\\records.jsonl",
+    "newlyArchived": 3,
+    "archive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\historical-tenders\\open-space-2026-10-23T12-34-48-657Z\\records.jsonl",
     "historicalBackfill": false
   },
   "validation": {
@@ -149,7 +151,7 @@
     "companyMatchEvidenceVerified": true,
     "openLifecycleVerified": true,
     "publicationAllowed": true,
-    "pendingPreviouslyOpen": 3,
+    "pendingPreviouslyOpen": 0,
     "awaitingRecheckPolicy": {
       "enabled": true,
       "maxCount": 5,
@@ -157,7 +159,7 @@
       "smallListAllowance": 1,
       "policy": "Unverified previously open tenders remain searchable separately and are rechecked daily; never count as open or infer closure."
     },
-    "trackedPreviously": 178
+    "trackedPreviously": 173
   },
   "companyMatching": {
     "profilesWithSourceDescriptionCapabilities": 8876,
@@ -182,8 +184,8 @@
   },
   "publication": {
     "metadataFormat": "json-array-catalog-v1",
-    "originalManifestSha256": "80e765652b4ba51569b8b2afb4a4b52df1936408cc85137ccb70b45dee5259aa",
-    "originalInputsSha256": "a0028a4507a4e5eeadd1acb85a2ce7e8e69219add82f405af98d510f928c62f2",
+    "originalManifestSha256": "2e178cab33f9e92e14704f262012ad70fd535d3a95eefa27e73d5bc533a46966",
+    "originalInputsSha256": "c7f33b62a04ed148c46691aeffd1aa4db0963cf87ef449fb6a45c51c98a7b9d3",
     "instructions": "Read data.partsCatalog and index.partsCatalog referenced JSON arrays to obtain every part. inputsFile is a catalog of unchanged input metadata. Verify each catalog part checksum. Source records remain unchanged."
   }
 }

@@ -24167,6 +24167,58 @@
       ],
       "limitation": "2724 recent metadata observations; 853 current candidate observations / 824 distinct source IDs. Twenty-nine repeated identities retained. Recent fourteen-day window plus today only; older still-open advertisements remain a gap because native deadline filtering is ignored.",
       "nextAction": "Verify native bidding eligibility and space relevance before master admission; preserve unresolved channels."
+    },
+    {
+      "id": "GB-additional-portals",
+      "country": "GB",
+      "name": "United Kingdom Find a Tender and Contracts Finder",
+      "url": "https://www.find-tender.service.gov.uk/",
+      "jobs": [
+        "national-GB-FTS-open",
+        "national-GB-ContractsFinder-open",
+        "ted-GBR"
+      ],
+      "limitation": "Public open listing is mutable and rate limited. Planning and supplier admission schemes remain separate. Devolved, below-threshold and restricted defence notices may be absent.",
+      "discoveryQualification": "live-tested-partial",
+      "nativeOpenStatusVerified": true,
+      "countryComplete": false,
+      "evidenceRun": "C:/Users/angel/OneDrive/Desktop/knowledge/03_PROCUREMENT/Procurement Data/open-only/country-extension-runs",
+      "nextAction": "Daily discovery and current-detail rechecks through existing controller; retain explicit access and scope gaps."
+    },
+    {
+      "id": "CH-additional-portals",
+      "country": "CH",
+      "name": "Switzerland SIMAP and TED",
+      "url": "https://www.simap.ch/",
+      "jobs": [
+        "national-CH-SIMAP-tenders",
+        "ted-CHE"
+      ],
+      "limitation": "Latest tender metadata index has no deadline filter. Only currently verified detail or TED lots qualify; multi-lot native details and restricted documents remain gaps.",
+      "discoveryQualification": "live-tested-partial",
+      "nativeOpenStatusVerified": true,
+      "countryComplete": false,
+      "evidenceRun": "C:/Users/angel/OneDrive/Desktop/knowledge/03_PROCUREMENT/Procurement Data/open-only/country-extension-runs",
+      "nextAction": "Daily discovery and current-detail rechecks through existing controller; retain explicit access and scope gaps."
+    },
+    {
+      "id": "NO-additional-portals",
+      "country": "NO",
+      "name": "Norway Doffin and TED",
+      "url": "https://www.doffin.no/",
+      "jobs": [
+        "national-NO-DOFFIN-ANNOUNCEMENT_OF_COMPETITION",
+        "national-NO-DOFFIN-DYNAMIC_PURCHASING_SCHEME",
+        "national-NO-DOFFIN-PRE_ANNOUNCEMENT",
+        "national-NO-DOFFIN-QUALIFICATION_SCHEME",
+        "ted-NOR"
+      ],
+      "limitation": "Active inventory split by notice type to stay below the result cap. Supplier admission and planning are separate; multi-lot procedures require TED verification and restricted documents remain gaps.",
+      "discoveryQualification": "live-tested-partial",
+      "nativeOpenStatusVerified": true,
+      "countryComplete": false,
+      "evidenceRun": "C:/Users/angel/OneDrive/Desktop/knowledge/03_PROCUREMENT/Procurement Data/open-only/country-extension-runs",
+      "nextAction": "Daily discovery and current-detail rechecks through existing controller; retain explicit access and scope gaps."
     }
   ],
   "updatedAt": "2026-10-20T10:03:16.988Z"
