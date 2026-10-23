@@ -1,0 +1,2350 @@
+{
+  "schemaVersion": 2,
+  "generation": "2026-10-23T07-28-57-760Z",
+  "asOf": "2026-10-23T07:28:57.760Z",
+  "status": "partial_source_coverage",
+  "summary": {
+    "openFunding": 45,
+    "awaitingRecheck": 0,
+    "historicalTransitions": 0,
+    "contextProjects": 5,
+    "byFunder": {
+      "European Cybersecurity Competence Centre": 3,
+      "European Commission — DG DEFIS": 2,
+      "European Commission / responsible programme authority": 6,
+      "EU-funded cascade programme (see source)": 2,
+      "EuroHPC Joint Undertaking": 1,
+      "European Space Agency": 25,
+      "EUREKA / participating national funding bodies": 1,
+      "NATO Science for Peace and Security": 1,
+      "Austria — FFG": 1,
+      "Luxembourg — Ministry of the Economy, Directorate of Defence and FNR": 1,
+      "Portugal — Portuguese Space Agency": 1,
+      "Sweden — Swedish National Space Agency": 1
+    }
+  },
+  "files": [
+    {
+      "file": "open-funding.part-0001.jsonl",
+      "records": 6,
+      "bytes": 461993,
+      "sha256": "db2c45645858586c79ac5a3cb09e884ec8e33184feba94af3d028f5631f1c49f"
+    },
+    {
+      "file": "open-funding.part-0002.jsonl",
+      "records": 5,
+      "bytes": 393514,
+      "sha256": "3cfbf46ebcac05d47264744fa2e9bb747e64a8ee8cdcdc48ec1020fdfd3cfb1b"
+    },
+    {
+      "file": "open-funding.part-0003.jsonl",
+      "records": 14,
+      "bytes": 512679,
+      "sha256": "1871c2ae607573092ebce14f4fa02ab0e9780ace6931b76e995227092e76f737"
+    },
+    {
+      "file": "open-funding.part-0004.jsonl",
+      "records": 19,
+      "bytes": 521705,
+      "sha256": "c8ee30c1305efd0a0495c5e647419fe16a938b1d57b1d4053de7599e90bec7e9"
+    },
+    {
+      "file": "open-funding.part-0005.jsonl",
+      "records": 1,
+      "bytes": 14189,
+      "sha256": "5233bdc572cb82a5df3b8873e77fa46e64bd891ea9850bcf2d48f83a30c8d69e"
+    },
+    {
+      "file": "project-context.part-0001.jsonl",
+      "records": 5,
+      "bytes": 113460,
+      "sha256": "00e6a1802b8734022a6b1ced3961c00d790dd7e2f0875f4517535f755786be4b"
+    }
+  ],
+  "companyCatalog": {
+    "profilesWithSourceDescriptionCapabilities": 8876,
+    "enrichedProfiles": 29,
+    "staleEnrichmentProfiles": 0,
+    "inputRows": 19650,
+    "profiles": 19636,
+    "rowsWithDescription": 19121,
+    "profilesWithRecognizedCapabilities": 8905,
+    "profilesWithMultipleSourceVariants": 0
+  },
+  "sourceCollection": {
+    "runRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\funding data\\01_Daily-Update\\Runs\\2026-10-23T07-14-16-585Z",
+    "status": "complete",
+    "records": 1204,
+    "conflictingIdentities": [
+      "eu-ft:topic:ERASMUS-EDU-2022-ECHE-CERT-FP"
+    ]
+  },
+  "coverage": [
+    {
+      "id": "EUSPA-Horizon",
+      "folder": "EUSPA",
+      "rootUrl": "https://www.euspa.europa.eu/opportunities/horizon-europe",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUSPA-Horizon\\manifest.json"
+    },
+    {
+      "id": "EUSPA-Startups",
+      "folder": "EUSPA",
+      "rootUrl": "https://www.euspa.europa.eu/opportunities/for-startups",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 4,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUSPA-Startups\\manifest.json"
+    },
+    {
+      "id": "CASSINI",
+      "folder": "DG-DEFIS-EUDIS/CASSINI",
+      "rootUrl": "https://www.euspa.europa.eu/cassinichallenges",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 3,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\CASSINI\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CASSINI\\manifest.json"
+    },
+    {
+      "id": "EUSPA-Undated-1",
+      "folder": "EUSPA",
+      "rootUrl": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants/call-proposals-egnos-service-performance-monitoring-1",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUSPA-Undated-1\\manifest.json"
+    },
+    {
+      "id": "EUSPA-Undated-0",
+      "folder": "EUSPA",
+      "rootUrl": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants/call-proposals-egnos-service-performance-monitoring-0",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUSPA-Undated-0\\manifest.json"
+    },
+    {
+      "id": "EDF",
+      "folder": "DG-DEFIS-EUDIS/European-Defence-Fund",
+      "rootUrl": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/european-defence-fund-edf-official-webpage-european-commission_en",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 28,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\European-Defence-Fund\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EDF\\manifest.json"
+    },
+    {
+      "id": "EUDIS",
+      "folder": "DG-DEFIS-EUDIS/EUDIS",
+      "rootUrl": "https://eudis.europa.eu/index_en",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 6,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUDIS\\manifest.json"
+    },
+    {
+      "id": "EUDIS-SME",
+      "folder": "DG-DEFIS-EUDIS/EUDIS",
+      "rootUrl": "https://eudis.europa.eu/eudis-tracks/sme-calls_en",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [
+        "EDF-2026-LS-DIS-RA-SMERO-NT",
+        "EDF-2026-LS-DA-SME-NT"
+      ],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUDIS-SME\\manifest.json"
+    },
+    {
+      "id": "EUDIS-Spin-in",
+      "folder": "DG-DEFIS-EUDIS/EUDIS",
+      "rootUrl": "https://eudis.europa.eu/eudis-tracks/spin-calls_en",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUDIS-Spin-in\\manifest.json"
+    },
+    {
+      "id": "CINEA",
+      "folder": "Sectoral-Portals/CINEA",
+      "rootUrl": "https://cinea.ec.europa.eu/life-calls-proposals-2026_en",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 7,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [
+        "LIFE-2026-SAP-ENV-ENVIRONMENT ",
+        "LIFE-2026-SAP-CLIMA-GOV ",
+        "LIFE-2026-NGO-OG-FPA ",
+        "LIFE-2026-NGO-OG-SGA "
+      ],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\CINEA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CINEA\\manifest.json"
+    },
+    {
+      "id": "EIC",
+      "folder": "Sectoral-Portals/EIC",
+      "rootUrl": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 41,
+      "errors": [],
+      "remaining": 0,
+      "cap": 100,
+      "topicIds": [
+        "HORIZON-EIC-2026-ACCELERATOR-01",
+        "HORIZON-EIC-2026-STEP",
+        "HORIZON-EIC-2026-DEFENCE-01",
+        "HORIZON-EIC-2026-TRANSITIONOPEN"
+      ],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EIC\\manifest.json"
+    },
+    {
+      "id": "EIC-Challenges",
+      "folder": "Sectoral-Portals/EIC",
+      "rootUrl": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator/eic-accelerator-challenges-2026_en",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 8,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EIC-Challenges\\manifest.json"
+    },
+    {
+      "id": "DG-CONNECT",
+      "folder": "Sectoral-Portals/DG-CONNECT",
+      "rootUrl": "https://digital-strategy.ec.europa.eu/en/funding",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 12,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [
+        "CREA-CROSS-2027-MEDIALITERACY",
+        "CREA-CROSS-2022-MEDIALITERACY",
+        "CREA-CROSS-2023-MEDIALITERACY",
+        "CREA-CROSS-2024-MEDIALITERACY",
+        "CREA-CROSS-2025-MEDIALITERACY",
+        "CREA-CROSS-2026-MEDIALITERACY",
+        "CREA-CROSS-2027-JOURPART-COLLABORATIONS",
+        "CREA-CROSS-2027-JOURPART-PLURALISM",
+        "CREA-CROSS-2027-MFP"
+      ],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\DG-CONNECT\\Collection-Runs\\2026-10-23T07-14-16-585Z\\DG-CONNECT\\manifest.json"
+    },
+    {
+      "id": "Interreg",
+      "folder": "Sectoral-Portals/Interreg",
+      "rootUrl": "https://interreg.eu/calls-for-projects/",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 2,
+      "errors": [],
+      "remaining": 0,
+      "cap": 100,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\Interreg\\Collection-Runs\\2026-10-23T07-14-16-585Z\\Interreg\\manifest.json"
+    },
+    {
+      "id": "CORDIS-PROTEUS",
+      "folder": "CORDIS",
+      "rootUrl": "https://cordis.europa.eu/project/id/101296397",
+      "status": "partial",
+      "scope": "Explicit project-context sample; not a project census",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [
+        "HORIZON-CL4-2025-02-SPACE-45"
+      ],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CORDIS-PROTEUS\\manifest.json"
+    },
+    {
+      "id": "CORDIS-COMUNIDAD",
+      "folder": "CORDIS",
+      "rootUrl": "https://cordis.europa.eu/project/id/101131859",
+      "status": "partial",
+      "scope": "Explicit project-context sample; not a project census",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [
+        "HORIZON-EUSPA-2022-SPACE-02-56"
+      ],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CORDIS-COMUNIDAD\\manifest.json"
+    },
+    {
+      "id": "CORDIS-CURE",
+      "folder": "CORDIS",
+      "rootUrl": "https://cordis.europa.eu/project/id/870337",
+      "status": "partial",
+      "scope": "Explicit project-context sample; not a project census",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [
+        "LC-SPACE-04-EO-2019"
+      ],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CORDIS-CURE\\manifest.json"
+    },
+    {
+      "id": "ESA-STAR-issued-CFP",
+      "status": "complete_public_issued_cfp_traversal",
+      "total": 109,
+      "error": null,
+      "limitations": [
+        "Issued status alone is insufficient. Funding purpose must pass bound review and closing/opening checks.",
+        "Ordinary procurement frameworks, ambiguous support and unresolved overlapping legacy calls are excluded.",
+        "National authorization, full documents and applicant eligibility remain unverified."
+      ]
+    },
+    {
+      "group": "Business-Applications",
+      "rootUrl": "https://business.esa.int/funding",
+      "status": "partial",
+      "pages": 15,
+      "errors": [],
+      "remaining": 0,
+      "scope": "Registered official programme pages and linked calls; no historical backfill",
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Applications\\Collection-Runs\\2026-10-23T07-14-16-585Z\\e608898be2\\manifest.json"
+    },
+    {
+      "group": "ARTES",
+      "rootUrl": "https://resilience.esa.int/how-apply",
+      "status": "partial",
+      "pages": 4,
+      "errors": [],
+      "remaining": 0,
+      "scope": "Registered official programme pages and linked calls; no historical backfill",
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\ARTES\\Collection-Runs\\2026-10-23T07-14-16-585Z\\70166f7d54\\manifest.json"
+    },
+    {
+      "group": "NAVISP",
+      "rootUrl": "https://navisp.esa.int/opportunity",
+      "status": "partial",
+      "pages": 34,
+      "errors": [],
+      "remaining": 0,
+      "scope": "Registered official programme pages and linked calls; no historical backfill",
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\NAVISP\\Collection-Runs\\2026-10-23T07-14-16-585Z\\07dad2ae51\\manifest.json"
+    },
+    {
+      "group": "Technology-Programmes",
+      "rootUrl": "https://technology.esa.int/",
+      "status": "failed",
+      "pages": 0,
+      "errors": [
+        {
+          "url": "https://technology.esa.int/",
+          "error": "Official site unavailable page"
+        }
+      ],
+      "remaining": 0,
+      "scope": "Registered official programme pages and linked calls; no historical backfill",
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\131755fd28\\manifest.json"
+    },
+    {
+      "group": "Technology-Programmes",
+      "rootUrl": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/GSTP_FAQ2",
+      "status": "partial",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "scope": "Registered official programme pages and linked calls; no historical backfill",
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\f523731ccd\\manifest.json"
+    },
+    {
+      "group": "Other-ESA-Programmes",
+      "rootUrl": "https://ideas.esa.int/core/servlet/hype/IMT?userAction=BrowseRoot&templateName=&enforceGuest=true",
+      "status": "failed",
+      "pages": 0,
+      "errors": [
+        {
+          "url": "https://ideas.esa.int/core/servlet/hype/IMT?userAction=BrowseRoot&templateName=&enforceGuest=true",
+          "error": "Official site unavailable page"
+        }
+      ],
+      "remaining": 0,
+      "scope": "Registered official programme pages and linked calls; no historical backfill",
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\aebfb0a19d\\manifest.json"
+    },
+    {
+      "group": "Other-ESA-Programmes",
+      "rootUrl": "https://incubed.esa.int/how-to-apply/",
+      "status": "partial",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "scope": "Registered official programme pages and linked calls; no historical backfill",
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\1aba378a96\\manifest.json"
+    },
+    {
+      "group": "Other-ESA-Programmes",
+      "rootUrl": "https://incubed.esa.int/national-requirements/",
+      "status": "partial",
+      "pages": 2,
+      "errors": [],
+      "remaining": 0,
+      "scope": "Registered official programme pages and linked calls; no historical backfill",
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\d79756b75f\\manifest.json"
+    },
+    {
+      "id": "EUREKA",
+      "folder": "EUREKA",
+      "rootUrl": "https://www.eurekanetwork.org/programmes-and-calls/?status=open",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 25,
+      "errors": [
+        {
+          "url": "https://www.eurekanetwork.org/cdn-cgi/l/email-protection",
+          "error": "HTTP 404 https://www.eurekanetwork.org/cdn-cgi/l/email-protection"
+        }
+      ],
+      "remaining": 0,
+      "cap": 100,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUREKA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUREKA\\manifest.json"
+    },
+    {
+      "id": "EUMETSAT",
+      "folder": "EUMETSAT",
+      "rootUrl": "https://www.eumetsat.int/research-fellowships",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUMETSAT\\manifest.json"
+    },
+    {
+      "id": "NATO-DIANA",
+      "folder": "NATO-DIANA",
+      "rootUrl": "https://www.diana.nato.int/challenges.html",
+      "status": "failed",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 0,
+      "errors": [
+        {
+          "url": "https://www.diana.nato.int/challenges.html",
+          "error": "HTTP 403 https://www.diana.nato.int/challenges.html"
+        }
+      ],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\NATO-DIANA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\NATO-DIANA\\manifest.json"
+    },
+    {
+      "id": "ECMWF",
+      "folder": "ECMWF",
+      "rootUrl": "https://www.ecmwf.int/en/about/grants",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 25,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-10-23T07-14-16-585Z\\ECMWF\\manifest.json"
+    },
+    {
+      "id": "ECMWF-C3S",
+      "folder": "ECMWF",
+      "rootUrl": "https://climate.copernicus.eu/grants",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 3,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-10-23T07-14-16-585Z\\ECMWF-C3S\\manifest.json"
+    },
+    {
+      "id": "NATO-SPS",
+      "folder": "Other-Organizations/NATO-SPS",
+      "rootUrl": "https://www.nato.int/en/about-us/organization/nato-structure/science-for-peace-and-security-hub",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 2,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\NATO-SPS\\manifest.json"
+    },
+    {
+      "id": "NATO-SPS-Current-Call",
+      "folder": "Other-Organizations/NATO-SPS",
+      "rootUrl": "https://www.nato.int/content/dam/nato/webready/documents/sps/grants/SPS-Call4proposals-2027-1.pdf",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 1,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\NATO-SPS-Current-Call\\manifest.json"
+    },
+    {
+      "id": "EUMETSAT-call-announcement",
+      "folder": "EUMETSAT",
+      "rootUrl": "https://www.eumetsat.int/eumetsat-fellowships-calls-2025",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 2,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUMETSAT-call-announcement\\manifest.json"
+    },
+    {
+      "id": "EUMETSAT-news",
+      "folder": "EUMETSAT",
+      "rootUrl": "https://www.eumetsat.int/news/latest-news",
+      "status": "partial",
+      "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
+      "pages": 2,
+      "errors": [],
+      "remaining": 0,
+      "cap": 40,
+      "topicIds": [],
+      "limitations": [
+        "Access-restricted and unlinked calls remain outside coverage.",
+        "Page access and funding keywords do not establish open application status.",
+        "Documents and ambiguous rolling or multistage access require evidence-bound review."
+      ],
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUMETSAT-news\\manifest.json"
+    },
+    {
+      "id": "Austria-1",
+      "country": "Austria",
+      "url": "https://www.ffg.at/asap-dzoe-2026",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 70,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Austria-2",
+      "country": "Austria",
+      "url": "https://www.ffg.at/foerderungen",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 141,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Austria-3",
+      "country": "Austria",
+      "url": "https://www.ffg.at/thema/weltraum-und-luftfahrt",
+      "status": "partial",
+      "pages": 12,
+      "remaining": 6,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Belgium-1",
+      "country": "Belgium",
+      "url": "https://www.belspo.be/belspo/defra/call_en.stm",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 134,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Belgium-2",
+      "country": "Belgium",
+      "url": "https://www.belspo.be/belspo/space/index_en.stm",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 48,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Belgium-3",
+      "country": "Belgium",
+      "url": "https://www.vlaio.be/en/subsidies-financing",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.vlaio.be/en/subsidies-financing",
+          "status": 403,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-10-23T07-14-16-585Z\\fb6d0749fde8a47c08b7efb0385b5bf358b8ce138b5dfd8071c3d08f5b3a72ac-1792739910517.raw",
+            "sha256": "7dfdc55e6d40ece0d594f592301bdaa43a642fc756800dd9d9416c790c184691",
+            "bytes": 2866,
+            "checkedAt": "2026-10-23T07:18:30.519Z",
+            "url": "https://www.vlaio.be/en/subsidies-financing",
+            "httpStatus": 403
+          }
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Belgium-4",
+      "country": "Belgium",
+      "url": "https://eo.belspo.be/en/stereo-in-action/calls",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://eo.belspo.be/en/stereo-in-action/calls",
+          "status": 404,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-10-23T07-14-16-585Z\\7470bfa88280aea79701f0d4e67fdc95673c2a11ae808d64d3f1696a85f863ce-1792739911840.raw",
+            "sha256": "40226672716c671ddeaf80dad4b999834d0649f6dc3ab2bb034f5f8b98d3d8b0",
+            "bytes": 42246,
+            "checkedAt": "2026-10-23T07:18:31.841Z",
+            "url": "https://eo.belspo.be/en/stereo-in-action/calls",
+            "httpStatus": 404
+          }
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Bulgaria-1",
+      "country": "Bulgaria",
+      "url": "https://nif.government.bg/en",
+      "status": "partial",
+      "pages": 6,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Bulgaria-2",
+      "country": "Bulgaria",
+      "url": "https://www.fni.bg/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Croatia-1",
+      "country": "Croatia",
+      "url": "https://hamagbicro.hr/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 88,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Croatia-2",
+      "country": "Croatia",
+      "url": "https://hrzz.hr/en/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 8,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Cyprus-1",
+      "country": "Cyprus",
+      "url": "https://www.research.org.cy/en/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Cyprus-2",
+      "country": "Cyprus",
+      "url": "https://iris.research.org.cy/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Czechia-1",
+      "country": "Czechia",
+      "url": "https://www.tacr.cz/en/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Czechia-2",
+      "country": "Czechia",
+      "url": "https://www.czechspaceportal.cz/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 94,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Czechia-3",
+      "country": "Czechia",
+      "url": "https://www.czechspaceportal.cz/category/aktuality/",
+      "status": "partial",
+      "pages": 12,
+      "remaining": 7,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Denmark-1",
+      "country": "Denmark",
+      "url": "https://innovationsfonden.dk/en",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Denmark-2",
+      "country": "Denmark",
+      "url": "https://ufsn.dk/english/research-and-innovation/space-and-denmark/",
+      "status": "partial",
+      "pages": 5,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Estonia-1",
+      "country": "Estonia",
+      "url": "https://eis.ee/en/",
+      "status": "partial",
+      "pages": 2,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Estonia-2",
+      "country": "Estonia",
+      "url": "https://etag.ee/en/funding/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 1167,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Finland-1",
+      "country": "Finland",
+      "url": "https://www.businessfinland.fi/en/for-finnish-customers/services/funding",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 34,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Finland-2",
+      "country": "Finland",
+      "url": "https://www.esaphilab.fi/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Finland-3",
+      "country": "Finland",
+      "url": "https://www.aka.fi/en/research-funding/apply-for-funding/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 88,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "France-1",
+      "country": "France",
+      "url": "https://www.connectbycnes.fr/",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.connectbycnes.fr/",
+          "status": 503,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z\\a3c5301b9af888ae9adfa890eb47665a081a4a48e29db21bdefabc3608dbc54b-1792739985213.raw",
+            "sha256": "0b3050c1aed4d52daca9804979e93aedc4f8f64d808696b1a95eae02de7251c3",
+            "bytes": 9481,
+            "checkedAt": "2026-10-23T07:19:45.233Z",
+            "url": "https://www.connectbycnes.fr/",
+            "httpStatus": 503
+          }
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "France-2",
+      "country": "France",
+      "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours",
+          "status": 403,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z\\a2b5569474111c9043c78ebee2a73b91b76e3beb364860b6c649e86c15c862ad-1792739985325.raw",
+            "sha256": "f863b868a3756f0be7fc96f123ed4a8fdd4abccd65343e73fced90b2705501d6",
+            "bytes": 919,
+            "checkedAt": "2026-10-23T07:19:45.325Z",
+            "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours",
+            "httpStatus": 403
+          }
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "France-3",
+      "country": "France",
+      "url": "https://cnes.fr/",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://cnes.fr/",
+          "status": 502,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z\\73648aa6605a3ed5d18bb568d11f3860da9ecc8c5516a7c9c9dd9e9633dee249-1792739985469.raw",
+            "sha256": "8128514a9917b6dcdf20f7ee24d6b00a27b2a6aa0f971acb988f358f25ac4005",
+            "bytes": 332,
+            "checkedAt": "2026-10-23T07:19:45.476Z",
+            "url": "https://cnes.fr/",
+            "httpStatus": 502
+          }
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Germany-1",
+      "country": "Germany",
+      "url": "https://www.dlr.de/en/ar",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 14,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Germany-2",
+      "country": "Germany",
+      "url": "https://www.foerderdatenbank.de/FDB/DE/Home/home.html",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Germany-3",
+      "country": "Germany",
+      "url": "https://www.dlr-innospace.de/gefoerderte-projekte/galileo-und-newspace/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Germany-4",
+      "country": "Germany",
+      "url": "https://raumfahrtkoordinator.hessen.de/ausschreibungen-und-foerderprogramme",
+      "status": "partial",
+      "pages": 5,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Greece-1",
+      "country": "Greece",
+      "url": "https://gsri.gov.gr/en/",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://gsri.gov.gr/en/",
+          "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Greece-2",
+      "country": "Greece",
+      "url": "https://www.elked.gr/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Hungary-1",
+      "country": "Hungary",
+      "url": "https://nkfih.gov.hu/english",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 489,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Hungary-2",
+      "country": "Hungary",
+      "url": "https://space.kormany.hu/",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://space.kormany.hu/",
+          "error": "unable to get local issuer certificate"
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Ireland-1",
+      "country": "Ireland",
+      "url": "https://www.enterprise-ireland.com/en/supports",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Ireland-2",
+      "country": "Ireland",
+      "url": "https://www.researchireland.ie/funding/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 35,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Ireland-3",
+      "country": "Ireland",
+      "url": "https://www.enterprise-ireland.com/en/supports/funding-and-grants",
+      "status": "partial",
+      "pages": 12,
+      "remaining": 5,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Italy-1",
+      "country": "Italy",
+      "url": "https://www.asi.it/bandi-e-concorsi/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 112,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Italy-2",
+      "country": "Italy",
+      "url": "https://www.mimit.gov.it/it/incentivi",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.mimit.gov.it/it/incentivi",
+          "error": "connect ETIMEDOUT 81.126.92.6:443"
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Latvia-1",
+      "country": "Latvia",
+      "url": "https://latviaspace.gov.lv/en/",
+      "status": "partial",
+      "pages": 13,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Latvia-2",
+      "country": "Latvia",
+      "url": "https://www.liaa.gov.lv/en",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.liaa.gov.lv/en",
+          "error": "connect ETIMEDOUT 212.70.163.179:443"
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Latvia-3",
+      "country": "Latvia",
+      "url": "https://www.lzp.gov.lv/en",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.lzp.gov.lv/en",
+          "error": "connect ETIMEDOUT 212.70.163.179:443"
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Lithuania-1",
+      "country": "Lithuania",
+      "url": "https://inovacijuagentura.lt/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Lithuania-2",
+      "country": "Lithuania",
+      "url": "https://lmt.lrv.lt/en/",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://lmt.lrv.lt/en/",
+          "status": 403,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Lithuania\\Collection-Runs\\2026-10-23T07-14-16-585Z\\5665d8a741fa369d907aa79ca4d6617728d49a9b90e332934fd9274b49a76f62-1792740136890.raw",
+            "sha256": "49f4708dec105362822d8a0d8e1d9cd992482720c44abdb85faeb4c68f235315",
+            "bytes": 5364,
+            "checkedAt": "2026-10-23T07:22:16.892Z",
+            "url": "https://lmt.lrv.lt/en/",
+            "httpStatus": 403
+          }
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Luxembourg-1",
+      "country": "Luxembourg",
+      "url": "https://space-agency.public.lu/en.html",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 10,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Luxembourg-2",
+      "country": "Luxembourg",
+      "url": "https://www.fnr.lu/funding-instruments/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Luxembourg-3",
+      "country": "Luxembourg",
+      "url": "https://www.esric.lu/commercialization/business-incubator/ssp6",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Luxembourg-4",
+      "country": "Luxembourg",
+      "url": "https://www.fnr.lu/funding-instruments/joint-call-defence/",
+      "status": "partial",
+      "pages": 8,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Luxembourg-5",
+      "country": "Luxembourg",
+      "url": "https://research-industry-collaboration.lu/calls/joint-call-defence-2026",
+      "status": "partial",
+      "pages": 3,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Malta-1",
+      "country": "Malta",
+      "url": "https://xjenzamalta.mt/",
+      "status": "partial",
+      "pages": 7,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Malta-2",
+      "country": "Malta",
+      "url": "https://xjenzamalta.mt/open-funding-schemes/",
+      "status": "partial",
+      "pages": 5,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Netherlands-1",
+      "country": "Netherlands",
+      "url": "https://www.nlsa.nl/en/what-does-nlsa-do/stimulate-innovation/funding-through-esa/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Netherlands-2",
+      "country": "Netherlands",
+      "url": "https://www.rvo.nl/subsidies-financiering",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 2,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Poland-1",
+      "country": "Poland",
+      "url": "https://polsa.gov.pl/",
+      "status": "partial",
+      "pages": 13,
+      "remaining": 50,
+      "errors": [
+        {
+          "url": "https://polsa.gov.pl/wp-content/uploads/2026/10/Raport-KdK-final.pdf",
+          "error": "Source response too large"
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Poland-2",
+      "country": "Poland",
+      "url": "https://www.gov.pl/web/ncbr",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 45,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Poland-3",
+      "country": "Poland",
+      "url": "https://www.parp.gov.pl/component/grants/grants",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Portugal-1",
+      "country": "Portugal",
+      "url": "https://ptspace.pt/calls/",
+      "status": "partial",
+      "pages": 8,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
+          "status": 404,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-10-23T07-14-16-585Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1792740245702.raw",
+            "sha256": "a6c54d79ce2e0bafb44004227cf88a67abdff419e8ff3fad783729aa4990fe23",
+            "bytes": 91673,
+            "checkedAt": "2026-10-23T07:24:05.703Z",
+            "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
+            "httpStatus": 404
+          }
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Portugal-2",
+      "country": "Portugal",
+      "url": "https://www.fct.pt/en/concursos/",
+      "status": "partial",
+      "pages": 6,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Portugal-3",
+      "country": "Portugal",
+      "url": "https://ptspace.pt/pts_lgla_edu_reg_001394_apoios_patrocinios_v04/",
+      "status": "partial",
+      "pages": 7,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
+          "status": 404,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-10-23T07-14-16-585Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1792740265304.raw",
+            "sha256": "a6c54d79ce2e0bafb44004227cf88a67abdff419e8ff3fad783729aa4990fe23",
+            "bytes": 91673,
+            "checkedAt": "2026-10-23T07:24:25.307Z",
+            "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
+            "httpStatus": 404
+          }
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Romania-1",
+      "country": "Romania",
+      "url": "https://rosa.ro/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 99,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Romania-2",
+      "country": "Romania",
+      "url": "https://uefiscdi.gov.ro/",
+      "status": "partial",
+      "pages": 9,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Slovakia-1",
+      "country": "Slovakia",
+      "url": "https://www.sario.sk/en/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Slovakia-2",
+      "country": "Slovakia",
+      "url": "https://www.apvv.sk/?lang=en",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 767,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Slovenia-1",
+      "country": "Slovenia",
+      "url": "https://www.gov.si/en/state-authorities/ministries/ministry-of-the-economy-labour-and-sport/about-the-ministry-of-economy-tourism-and-sport/slovenian-space-office/",
+      "status": "partial",
+      "pages": 2,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.gov.si/en/topics/cooperation-with-the-european-space-agency/",
+          "error": "socket hang up"
+        }
+      ],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Slovenia-2",
+      "country": "Slovenia",
+      "url": "https://www.aris-rs.si/en/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 5,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Slovenia-3",
+      "country": "Slovenia",
+      "url": "https://www.spiritslovenia.si/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Spain-1",
+      "country": "Spain",
+      "url": "https://www.aee.gob.es/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Spain-2",
+      "country": "Spain",
+      "url": "https://www.cdti.es/ayudas",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Sweden-1",
+      "country": "Sweden",
+      "url": "https://www.rymdstyrelsen.se/forskning/utlysningar/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 22,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Sweden-2",
+      "country": "Sweden",
+      "url": "https://www.vinnova.se/en/apply-for-funding/find-the-right-funding/",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 134,
+      "errors": [],
+      "cap": 14,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Sweden-3",
+      "country": "Sweden",
+      "url": "https://www.rymdstyrelsen.se/forskning/utlysningar/aktiva-utlysningar/resor-och-evenemang-2026/",
+      "status": "partial",
+      "pages": 3,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Sweden-4",
+      "country": "Sweden",
+      "url": "https://www.rymdstyrelsen.se/rymddata/utlysningar/",
+      "status": "partial",
+      "pages": 5,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Cyprus-3",
+      "country": "Cyprus",
+      "url": "https://www.research.org.cy/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Cyprus-4",
+      "country": "Cyprus",
+      "url": "https://www.fundingprogrammesportal.gov.cy/",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.fundingprogrammesportal.gov.cy/",
+          "error": "Source timeout"
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Czechia-4",
+      "country": "Czechia",
+      "url": "https://tacr.gov.cz/en/programmes/",
+      "status": "partial",
+      "pages": 12,
+      "remaining": 4,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Estonia-3",
+      "country": "Estonia",
+      "url": "https://eis.ee/en/innovate-and-safeguard-your-business/space-estonia/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "France-4",
+      "country": "France",
+      "url": "https://cnes.fr/scientifiques/appels-contributions",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://cnes.fr/scientifiques/appels-contributions",
+          "status": 502,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z-additional-routes\\b2394f777c2e318750d61a21ff5a97c37bfd6e8f08271922428432e759abcf1f-1792740364930.raw",
+            "sha256": "8128514a9917b6dcdf20f7ee24d6b00a27b2a6aa0f971acb988f358f25ac4005",
+            "bytes": 332,
+            "checkedAt": "2026-10-23T07:26:04.933Z",
+            "url": "https://cnes.fr/scientifiques/appels-contributions",
+            "httpStatus": 502
+          }
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "France-5",
+      "country": "France",
+      "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
+          "status": 502,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z-additional-routes\\cb08e81d5f7b2eddbd7d974d167f40cc04aa8b8a90fbe179bda4fd9d002827fa-1792740365148.raw",
+            "sha256": "8128514a9917b6dcdf20f7ee24d6b00a27b2a6aa0f971acb988f358f25ac4005",
+            "bytes": 332,
+            "checkedAt": "2026-10-23T07:26:05.149Z",
+            "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
+            "httpStatus": 502
+          }
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Slovakia-3",
+      "country": "Slovakia",
+      "url": "https://spaceoffice.sk/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Sweden-5",
+      "country": "Sweden",
+      "url": "https://www.rymdstyrelsen.se/rymddata/utlysningar/aktiva-utlysningar/space-for-climate-observatory-2027/",
+      "status": "partial",
+      "pages": 4,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Belgium-3-browser",
+      "country": "Belgium",
+      "url": "https://www.vlaio.be/en/subsidies-financing",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Belgium-4-browser",
+      "country": "Belgium",
+      "url": "https://eo.belspo.be/en/stereo-in-action/calls",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Cyprus-2-browser",
+      "country": "Cyprus",
+      "url": "https://iris.research.org.cy/",
+      "status": "public_page_read",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Cyprus-4-browser",
+      "country": "Cyprus",
+      "url": "https://www.fundingprogrammesportal.gov.cy/",
+      "status": "failed",
+      "scope": "Rendered root page only; linked call collection may remain incomplete",
+      "error": "page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.fundingprogrammesportal.gov.cy/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "id": "France-1-browser",
+      "country": "France",
+      "url": "https://www.connectbycnes.fr/",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "France-2-browser",
+      "country": "France",
+      "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "France-3-browser",
+      "country": "France",
+      "url": "https://cnes.fr/",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "France-4-browser",
+      "country": "France",
+      "url": "https://cnes.fr/scientifiques/appels-contributions",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "France-5-browser",
+      "country": "France",
+      "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Greece-1-browser",
+      "country": "Greece",
+      "url": "https://gsri.gov.gr/en/",
+      "status": "public_page_read",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Hungary-2-browser",
+      "country": "Hungary",
+      "url": "https://space.kormany.hu/",
+      "status": "public_page_read",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Italy-2-browser",
+      "country": "Italy",
+      "url": "https://www.mimit.gov.it/it/incentivi",
+      "status": "failed",
+      "scope": "Rendered root page only; linked call collection may remain incomplete",
+      "error": "page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.mimit.gov.it/it/incentivi\nCall log:\n\u001b[2m  - navigating to \"https://www.mimit.gov.it/it/incentivi\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "id": "Latvia-2-browser",
+      "country": "Latvia",
+      "url": "https://www.liaa.gov.lv/en",
+      "status": "failed",
+      "scope": "Rendered root page only; linked call collection may remain incomplete",
+      "error": "page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.liaa.gov.lv/en\nCall log:\n\u001b[2m  - navigating to \"https://www.liaa.gov.lv/en\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "id": "Latvia-3-browser",
+      "country": "Latvia",
+      "url": "https://www.lzp.gov.lv/en",
+      "status": "failed",
+      "scope": "Rendered root page only; linked call collection may remain incomplete",
+      "error": "page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.lzp.gov.lv/en\nCall log:\n\u001b[2m  - navigating to \"https://www.lzp.gov.lv/en\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "id": "Lithuania-2-browser",
+      "country": "Lithuania",
+      "url": "https://lmt.lrv.lt/en/",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Luxembourg-2-browser",
+      "country": "Luxembourg",
+      "url": "https://www.fnr.lu/funding-instruments/",
+      "status": "public_page_read",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Poland-3-browser",
+      "country": "Poland",
+      "url": "https://www.parp.gov.pl/component/grants/grants",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Slovenia-3-browser",
+      "country": "Slovenia",
+      "url": "https://www.spiritslovenia.si/",
+      "status": "public_page_read",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "Spain-2-browser",
+      "country": "Spain",
+      "url": "https://www.cdti.es/ayudas",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
+      "id": "national-reviewed-calls",
+      "status": "reviewed_subset",
+      "errors": [],
+      "reviewed": 4,
+      "limitations": [
+        "Only evidence-bound reviewed calls admitted; no claim of all open national grants."
+      ]
+    },
+    {
+      "id": "Interreg-public-index",
+      "status": "reconciled_public_open_index",
+      "reportedTotal": 31,
+      "detailChecks": 32,
+      "detailFailures": 3,
+      "limitations": [
+        "Native Open status can include expired deadlines; verify each programme detail.",
+        "This is the central Interreg index, not every unlisted regional or programme call."
+      ]
+    },
+    {
+      "id": "EUSPA-grants-listing",
+      "status": "complete_listing_traversal",
+      "checkedAt": "2026-10-23T07:16:23.278Z",
+      "pages": [
+        {
+          "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants",
+          "file": "page-1.html",
+          "sha256": "4295b48585ca303bab9bf6206f2a55ab5ed541cf387aa66fee03b9af074d0a63"
+        },
+        {
+          "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=1",
+          "file": "page-2.html",
+          "sha256": "60b7140d0650a8408a8c6a380e8086d9585ab99ff8617f06beb4b00590cbef38"
+        },
+        {
+          "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=2",
+          "file": "page-3.html",
+          "sha256": "3f56c1ac9ff7966d3f1301d542e4212966b50d01c4d4ef482f6194c9ee39020e"
+        },
+        {
+          "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=3",
+          "file": "page-4.html",
+          "sha256": "151948193e6e44c48264874a0615a8078531e0b9480404253726cb9d577ab6b5"
+        },
+        {
+          "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=4",
+          "file": "page-5.html",
+          "sha256": "957afad106c51598da09dd8f6a4e3c13d4cb5dcd5e0c5fee16c09f0f70ac4859"
+        }
+      ],
+      "listed": 48,
+      "nonClosedCandidates": 2,
+      "verifiedOpenFunding": 0,
+      "limitations": [
+        "Only the dedicated EUSPA grants listing. Horizon, prizes and startup programmes are separate routes. Non-closed records require deadline/timezone and detail checks before master admission."
+      ],
+      "output": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-16-22-693Z"
+    }
+  ],
+  "validation": {
+    "publicationAllowed": true,
+    "pendingLimit": 2,
+    "sourceEvidenceUnchanged": true
+  },
+  "limitations": [
+    "Coverage is partial: only accessible registered EU, ESA, international and national routes and current portal records.",
+    "Unlisted, restricted, document-only and ambiguous calls remain outside verified open funding.",
+    "Date-only deadlines are excluded on closing day; rolling and later-stage entry require explicit review.",
+    "Company suggestions are capability matches, never proof of applicant eligibility.",
+    "CORDIS records are context only and are excluded from open-funding counts."
+  ]
+}
