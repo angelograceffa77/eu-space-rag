@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generation": "2026-10-23T11-42-41-318Z",
-  "asOf": "2026-10-23T11:42:41.318Z",
+  "generation": "2026-10-23T11-56-22-679Z",
+  "asOf": "2026-10-23T11:56:22.679Z",
   "status": "partial_source_coverage",
   "summary": {
-    "openFunding": 51,
+    "openFunding": 52,
     "awaitingRecheck": 0,
     "historicalTransitions": 0,
     "contextProjects": 5,
@@ -24,7 +24,8 @@
       "UK Space Agency": 2,
       "Switzerland — SERI/SBFI": 1,
       "Norwegian Space Agency": 2,
-      "Norwegian Space Agency / ESA": 1
+      "Norwegian Space Agency / ESA": 1,
+      "Switzerland — Innosuisse and armasuisse": 1
     }
   },
   "files": [
@@ -54,15 +55,15 @@
     },
     {
       "file": "open-funding.part-0005.jsonl",
-      "records": 7,
-      "bytes": 273181,
-      "sha256": "7397034caca41577505cf23d2f79c7c26e4cc1d20fbdf1144116ff34b5b7e003"
+      "records": 8,
+      "bytes": 413237,
+      "sha256": "5a9175cb978cd78e434edcf58e3a4b06ec9d99bb12ea88b35e40e5a1cc13c6ba"
     },
     {
       "file": "project-context.part-0001.jsonl",
       "records": 5,
-      "bytes": 113460,
-      "sha256": "19e63580580238650ad6d72eebd9e6d1691a37edd7712afbfbda7f8e9397b55b"
+      "bytes": 113486,
+      "sha256": "11ff5539c5ec4da6ad49dc562ade76114e8051aee52cc9301a3ddbcb647b82fb"
     }
   ],
   "companyCatalog": {
@@ -76,7 +77,7 @@
     "profilesWithMultipleSourceVariants": 0
   },
   "sourceCollection": {
-    "runRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\funding data\\01_Daily-Update\\Runs\\2026-10-23T11-25-29-176Z",
+    "runRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\funding data\\01_Daily-Update\\Runs\\three-country-swiss-pdf-1792756581395",
     "status": "complete",
     "records": 1205,
     "conflictingIdentities": [
@@ -2218,35 +2219,6 @@
       ]
     },
     {
-      "id": "Switzerland-3",
-      "country": "Switzerland",
-      "url": "https://www.innosuisse.admin.ch/en/funding-opportunities",
-      "status": "failed",
-      "pages": 0,
-      "remaining": 0,
-      "errors": [
-        {
-          "url": "https://www.innosuisse.admin.ch/en/funding-opportunities",
-          "status": 404,
-          "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Switzerland\\Collection-Runs\\2026-10-23T11-25-29-176Z\\741ef9edf92867e61aec49fd853af960f079b2d44117bc28187aa73f80e8f841-1792755589482.raw",
-            "sha256": "e2be74cd573ca91eb4cb011ee8f3664a9b627971a8a7591ef015beaaf243f6e0",
-            "bytes": 108349,
-            "checkedAt": "2026-10-23T11:39:49.483Z",
-            "url": "https://www.innosuisse.admin.ch/en/funding-opportunities",
-            "httpStatus": 404
-          }
-        }
-      ],
-      "cap": 8,
-      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
-      "limitations": [
-        "Bounded public listings; no exhaustive regional or defence portal census.",
-        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
-        "Keyword candidates are not verified open funding; dated evidence-bound review required."
-      ]
-    },
-    {
       "id": "Norway-1",
       "country": "Norway",
       "url": "https://romdirektoratet.no/utlysninger-og-info-for-romaktoerer",
@@ -2439,10 +2411,42 @@
       "scope": "Rendered root page only; linked call collection may remain incomplete"
     },
     {
+      "id": "Switzerland-3",
+      "country": "Switzerland",
+      "url": "https://www.innosuisse.admin.ch/en/calls-for-projects-and-applications",
+      "status": "partial",
+      "pages": 8,
+      "remaining": 1,
+      "errors": [],
+      "cap": 8,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Switzerland-Flagship-Guidelines",
+      "country": "Switzerland",
+      "url": "https://www.innosuisse.admin.ch/dam/en/sd-web/JRohWtihkxer/Flagship%20Initiative_Guide%20for%20applicants_Call%202026.pdf",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 1,
+      "scope": "Current official space/defence call guidelines",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
       "id": "national-reviewed-calls",
       "status": "reviewed_subset",
       "errors": [],
-      "reviewed": 10,
+      "reviewed": 11,
       "limitations": [
         "Only evidence-bound reviewed calls admitted; no claim of all open national grants."
       ]
