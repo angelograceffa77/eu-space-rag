@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generation": "2026-10-23T07-28-57-760Z",
-  "asOf": "2026-10-23T07:28:57.760Z",
+  "generation": "2026-10-23T11-42-41-318Z",
+  "asOf": "2026-10-23T11:42:41.318Z",
   "status": "partial_source_coverage",
   "summary": {
-    "openFunding": 45,
+    "openFunding": 51,
     "awaitingRecheck": 0,
     "historicalTransitions": 0,
     "contextProjects": 5,
@@ -20,7 +20,11 @@
       "Austria — FFG": 1,
       "Luxembourg — Ministry of the Economy, Directorate of Defence and FNR": 1,
       "Portugal — Portuguese Space Agency": 1,
-      "Sweden — Swedish National Space Agency": 1
+      "Sweden — Swedish National Space Agency": 1,
+      "UK Space Agency": 2,
+      "Switzerland — SERI/SBFI": 1,
+      "Norwegian Space Agency": 2,
+      "Norwegian Space Agency / ESA": 1
     }
   },
   "files": [
@@ -28,37 +32,37 @@
       "file": "open-funding.part-0001.jsonl",
       "records": 6,
       "bytes": 461993,
-      "sha256": "db2c45645858586c79ac5a3cb09e884ec8e33184feba94af3d028f5631f1c49f"
+      "sha256": "e43e074a516f6bdfe36ee4587563e9b18ee2af6fda0c5d35b0c0dcc747140ffd"
     },
     {
       "file": "open-funding.part-0002.jsonl",
       "records": 5,
-      "bytes": 393514,
-      "sha256": "3cfbf46ebcac05d47264744fa2e9bb747e64a8ee8cdcdc48ec1020fdfd3cfb1b"
+      "bytes": 429438,
+      "sha256": "b9178033185a60c0f8d6cb80768b5d3c03102ebc81bf0d55ec534c8204fc171e"
     },
     {
       "file": "open-funding.part-0003.jsonl",
-      "records": 14,
-      "bytes": 512679,
-      "sha256": "1871c2ae607573092ebce14f4fa02ab0e9780ace6931b76e995227092e76f737"
+      "records": 15,
+      "bytes": 518667,
+      "sha256": "1f3c8f6ea185d8c037a1c61182677eace459836d30cfcd648df8f96d7cf94cc4"
     },
     {
       "file": "open-funding.part-0004.jsonl",
-      "records": 19,
-      "bytes": 521705,
-      "sha256": "c8ee30c1305efd0a0495c5e647419fe16a938b1d57b1d4053de7599e90bec7e9"
+      "records": 18,
+      "bytes": 515717,
+      "sha256": "6a9136246aae2689a84a48a7aa290ba24be1da8ebb30655c76f9f284f3cfbcf0"
     },
     {
       "file": "open-funding.part-0005.jsonl",
-      "records": 1,
-      "bytes": 14189,
-      "sha256": "5233bdc572cb82a5df3b8873e77fa46e64bd891ea9850bcf2d48f83a30c8d69e"
+      "records": 7,
+      "bytes": 273181,
+      "sha256": "7397034caca41577505cf23d2f79c7c26e4cc1d20fbdf1144116ff34b5b7e003"
     },
     {
       "file": "project-context.part-0001.jsonl",
       "records": 5,
       "bytes": 113460,
-      "sha256": "00e6a1802b8734022a6b1ced3961c00d790dd7e2f0875f4517535f755786be4b"
+      "sha256": "19e63580580238650ad6d72eebd9e6d1691a37edd7712afbfbda7f8e9397b55b"
     }
   ],
   "companyCatalog": {
@@ -72,9 +76,9 @@
     "profilesWithMultipleSourceVariants": 0
   },
   "sourceCollection": {
-    "runRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\funding data\\01_Daily-Update\\Runs\\2026-10-23T07-14-16-585Z",
+    "runRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\funding data\\01_Daily-Update\\Runs\\2026-10-23T11-25-29-176Z",
     "status": "complete",
-    "records": 1204,
+    "records": 1205,
     "conflictingIdentities": [
       "eu-ft:topic:ERASMUS-EDU-2022-ECHE-CERT-FP"
     ]
@@ -96,7 +100,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUSPA-Horizon\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUSPA-Horizon\\manifest.json"
     },
     {
       "id": "EUSPA-Startups",
@@ -114,7 +118,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUSPA-Startups\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUSPA-Startups\\manifest.json"
     },
     {
       "id": "CASSINI",
@@ -132,7 +136,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\CASSINI\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CASSINI\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\CASSINI\\Collection-Runs\\2026-10-23T11-25-29-176Z\\CASSINI\\manifest.json"
     },
     {
       "id": "EUSPA-Undated-1",
@@ -150,7 +154,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUSPA-Undated-1\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUSPA-Undated-1\\manifest.json"
     },
     {
       "id": "EUSPA-Undated-0",
@@ -168,7 +172,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUSPA-Undated-0\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUSPA-Undated-0\\manifest.json"
     },
     {
       "id": "EDF",
@@ -186,7 +190,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\European-Defence-Fund\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EDF\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\European-Defence-Fund\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EDF\\manifest.json"
     },
     {
       "id": "EUDIS",
@@ -204,7 +208,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUDIS\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUDIS\\manifest.json"
     },
     {
       "id": "EUDIS-SME",
@@ -225,7 +229,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUDIS-SME\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUDIS-SME\\manifest.json"
     },
     {
       "id": "EUDIS-Spin-in",
@@ -243,7 +247,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUDIS-Spin-in\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUDIS-Spin-in\\manifest.json"
     },
     {
       "id": "CINEA",
@@ -266,7 +270,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\CINEA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CINEA\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\CINEA\\Collection-Runs\\2026-10-23T11-25-29-176Z\\CINEA\\manifest.json"
     },
     {
       "id": "EIC",
@@ -289,7 +293,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EIC\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EIC\\manifest.json"
     },
     {
       "id": "EIC-Challenges",
@@ -307,7 +311,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EIC-Challenges\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EIC-Challenges\\manifest.json"
     },
     {
       "id": "DG-CONNECT",
@@ -335,7 +339,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\DG-CONNECT\\Collection-Runs\\2026-10-23T07-14-16-585Z\\DG-CONNECT\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\DG-CONNECT\\Collection-Runs\\2026-10-23T11-25-29-176Z\\DG-CONNECT\\manifest.json"
     },
     {
       "id": "Interreg",
@@ -353,7 +357,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\Interreg\\Collection-Runs\\2026-10-23T07-14-16-585Z\\Interreg\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\Interreg\\Collection-Runs\\2026-10-23T11-25-29-176Z\\Interreg\\manifest.json"
     },
     {
       "id": "CORDIS-PROTEUS",
@@ -373,7 +377,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CORDIS-PROTEUS\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T11-25-29-176Z\\CORDIS-PROTEUS\\manifest.json"
     },
     {
       "id": "CORDIS-COMUNIDAD",
@@ -393,7 +397,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CORDIS-COMUNIDAD\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T11-25-29-176Z\\CORDIS-COMUNIDAD\\manifest.json"
     },
     {
       "id": "CORDIS-CURE",
@@ -413,7 +417,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\CORDIS-CURE\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-10-23T11-25-29-176Z\\CORDIS-CURE\\manifest.json"
     },
     {
       "id": "ESA-STAR-issued-CFP",
@@ -434,7 +438,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Applications\\Collection-Runs\\2026-10-23T07-14-16-585Z\\e608898be2\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Applications\\Collection-Runs\\2026-10-23T11-25-29-176Z\\e608898be2\\manifest.json"
     },
     {
       "group": "ARTES",
@@ -444,7 +448,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\ARTES\\Collection-Runs\\2026-10-23T07-14-16-585Z\\70166f7d54\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\ARTES\\Collection-Runs\\2026-10-23T11-25-29-176Z\\70166f7d54\\manifest.json"
     },
     {
       "group": "NAVISP",
@@ -454,7 +458,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\NAVISP\\Collection-Runs\\2026-10-23T07-14-16-585Z\\07dad2ae51\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\NAVISP\\Collection-Runs\\2026-10-23T11-25-29-176Z\\07dad2ae51\\manifest.json"
     },
     {
       "group": "Technology-Programmes",
@@ -469,7 +473,7 @@
       ],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\131755fd28\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-10-23T11-25-29-176Z\\131755fd28\\manifest.json"
     },
     {
       "group": "Technology-Programmes",
@@ -479,7 +483,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\f523731ccd\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-10-23T11-25-29-176Z\\f523731ccd\\manifest.json"
     },
     {
       "group": "Other-ESA-Programmes",
@@ -494,7 +498,7 @@
       ],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\aebfb0a19d\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T11-25-29-176Z\\aebfb0a19d\\manifest.json"
     },
     {
       "group": "Other-ESA-Programmes",
@@ -504,7 +508,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\1aba378a96\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T11-25-29-176Z\\1aba378a96\\manifest.json"
     },
     {
       "group": "Other-ESA-Programmes",
@@ -514,7 +518,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T07-14-16-585Z\\d79756b75f\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-10-23T11-25-29-176Z\\d79756b75f\\manifest.json"
     },
     {
       "id": "EUREKA",
@@ -537,7 +541,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUREKA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUREKA\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUREKA\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUREKA\\manifest.json"
     },
     {
       "id": "EUMETSAT",
@@ -555,7 +559,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUMETSAT\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUMETSAT\\manifest.json"
     },
     {
       "id": "NATO-DIANA",
@@ -578,7 +582,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\NATO-DIANA\\Collection-Runs\\2026-10-23T07-14-16-585Z\\NATO-DIANA\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\NATO-DIANA\\Collection-Runs\\2026-10-23T11-25-29-176Z\\NATO-DIANA\\manifest.json"
     },
     {
       "id": "ECMWF",
@@ -596,7 +600,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-10-23T07-14-16-585Z\\ECMWF\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-10-23T11-25-29-176Z\\ECMWF\\manifest.json"
     },
     {
       "id": "ECMWF-C3S",
@@ -614,7 +618,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-10-23T07-14-16-585Z\\ECMWF-C3S\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-10-23T11-25-29-176Z\\ECMWF-C3S\\manifest.json"
     },
     {
       "id": "NATO-SPS",
@@ -632,7 +636,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\NATO-SPS\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-10-23T11-25-29-176Z\\NATO-SPS\\manifest.json"
     },
     {
       "id": "NATO-SPS-Current-Call",
@@ -650,7 +654,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-10-23T07-14-16-585Z\\NATO-SPS-Current-Call\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-10-23T11-25-29-176Z\\NATO-SPS-Current-Call\\manifest.json"
     },
     {
       "id": "EUMETSAT-call-announcement",
@@ -668,7 +672,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUMETSAT-call-announcement\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUMETSAT-call-announcement\\manifest.json"
     },
     {
       "id": "EUMETSAT-news",
@@ -686,7 +690,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T07-14-16-585Z\\EUMETSAT-news\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-10-23T11-25-29-176Z\\EUMETSAT-news\\manifest.json"
     },
     {
       "id": "Austria-1",
@@ -694,7 +698,7 @@
       "url": "https://www.ffg.at/asap-dzoe-2026",
       "status": "partial",
       "pages": 14,
-      "remaining": 70,
+      "remaining": 69,
       "errors": [],
       "cap": 14,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
@@ -780,10 +784,10 @@
           "url": "https://www.vlaio.be/en/subsidies-financing",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-10-23T07-14-16-585Z\\fb6d0749fde8a47c08b7efb0385b5bf358b8ce138b5dfd8071c3d08f5b3a72ac-1792739910517.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-10-23T11-25-29-176Z\\fb6d0749fde8a47c08b7efb0385b5bf358b8ce138b5dfd8071c3d08f5b3a72ac-1792755034158.raw",
             "sha256": "7dfdc55e6d40ece0d594f592301bdaa43a642fc756800dd9d9416c790c184691",
             "bytes": 2866,
-            "checkedAt": "2026-10-23T07:18:30.519Z",
+            "checkedAt": "2026-10-23T11:30:34.159Z",
             "url": "https://www.vlaio.be/en/subsidies-financing",
             "httpStatus": 403
           }
@@ -809,10 +813,10 @@
           "url": "https://eo.belspo.be/en/stereo-in-action/calls",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-10-23T07-14-16-585Z\\7470bfa88280aea79701f0d4e67fdc95673c2a11ae808d64d3f1696a85f863ce-1792739911840.raw",
-            "sha256": "40226672716c671ddeaf80dad4b999834d0649f6dc3ab2bb034f5f8b98d3d8b0",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-10-23T11-25-29-176Z\\7470bfa88280aea79701f0d4e67fdc95673c2a11ae808d64d3f1696a85f863ce-1792755036482.raw",
+            "sha256": "938779d5ddd936df4c0351c3c05b4c3b9a81976b0129281c2875653a3d85fe8d",
             "bytes": 42246,
-            "checkedAt": "2026-10-23T07:18:31.841Z",
+            "checkedAt": "2026-10-23T11:30:36.483Z",
             "url": "https://eo.belspo.be/en/stereo-in-action/calls",
             "httpStatus": 404
           }
@@ -923,6 +927,43 @@
       ]
     },
     {
+      "id": "Cyprus-3",
+      "country": "Cyprus",
+      "url": "https://www.research.org.cy/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Cyprus-4",
+      "country": "Cyprus",
+      "url": "https://www.fundingprogrammesportal.gov.cy/",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.fundingprogrammesportal.gov.cy/",
+          "error": "Source timeout"
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
       "id": "Czechia-1",
       "country": "Czechia",
       "url": "https://www.tacr.cz/en/",
@@ -944,7 +985,7 @@
       "url": "https://www.czechspaceportal.cz/",
       "status": "partial",
       "pages": 14,
-      "remaining": 94,
+      "remaining": 105,
       "errors": [],
       "cap": 14,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
@@ -960,7 +1001,23 @@
       "url": "https://www.czechspaceportal.cz/category/aktuality/",
       "status": "partial",
       "pages": 12,
-      "remaining": 7,
+      "remaining": 9,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Czechia-4",
+      "country": "Czechia",
+      "url": "https://tacr.gov.cz/en/programmes/",
+      "status": "partial",
+      "pages": 12,
+      "remaining": 4,
       "errors": [],
       "cap": 12,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
@@ -1035,6 +1092,22 @@
       ]
     },
     {
+      "id": "Estonia-3",
+      "country": "Estonia",
+      "url": "https://eis.ee/en/innovate-and-safeguard-your-business/space-estonia/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
       "id": "Finland-1",
       "country": "Finland",
       "url": "https://www.businessfinland.fi/en/for-finnish-customers/services/funding",
@@ -1094,10 +1167,10 @@
           "url": "https://www.connectbycnes.fr/",
           "status": 503,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z\\a3c5301b9af888ae9adfa890eb47665a081a4a48e29db21bdefabc3608dbc54b-1792739985213.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T11-25-29-176Z\\a3c5301b9af888ae9adfa890eb47665a081a4a48e29db21bdefabc3608dbc54b-1792755189731.raw",
             "sha256": "0b3050c1aed4d52daca9804979e93aedc4f8f64d808696b1a95eae02de7251c3",
             "bytes": 9481,
-            "checkedAt": "2026-10-23T07:19:45.233Z",
+            "checkedAt": "2026-10-23T11:33:09.731Z",
             "url": "https://www.connectbycnes.fr/",
             "httpStatus": 503
           }
@@ -1123,10 +1196,10 @@
           "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z\\a2b5569474111c9043c78ebee2a73b91b76e3beb364860b6c649e86c15c862ad-1792739985325.raw",
-            "sha256": "f863b868a3756f0be7fc96f123ed4a8fdd4abccd65343e73fced90b2705501d6",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T11-25-29-176Z\\a2b5569474111c9043c78ebee2a73b91b76e3beb364860b6c649e86c15c862ad-1792755189938.raw",
+            "sha256": "76b3607fa4bd915dfd276b2383cc108b7a347f6f6b3dae2fcf8704131c5db6b6",
             "bytes": 919,
-            "checkedAt": "2026-10-23T07:19:45.325Z",
+            "checkedAt": "2026-10-23T11:33:09.939Z",
             "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours",
             "httpStatus": 403
           }
@@ -1152,11 +1225,69 @@
           "url": "https://cnes.fr/",
           "status": 502,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z\\73648aa6605a3ed5d18bb568d11f3860da9ecc8c5516a7c9c9dd9e9633dee249-1792739985469.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T11-25-29-176Z\\73648aa6605a3ed5d18bb568d11f3860da9ecc8c5516a7c9c9dd9e9633dee249-1792755190054.raw",
             "sha256": "8128514a9917b6dcdf20f7ee24d6b00a27b2a6aa0f971acb988f358f25ac4005",
             "bytes": 332,
-            "checkedAt": "2026-10-23T07:19:45.476Z",
+            "checkedAt": "2026-10-23T11:33:10.054Z",
             "url": "https://cnes.fr/",
+            "httpStatus": 502
+          }
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "France-4",
+      "country": "France",
+      "url": "https://cnes.fr/scientifiques/appels-contributions",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://cnes.fr/scientifiques/appels-contributions",
+          "status": 502,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T11-25-29-176Z\\b2394f777c2e318750d61a21ff5a97c37bfd6e8f08271922428432e759abcf1f-1792755190090.raw",
+            "sha256": "8128514a9917b6dcdf20f7ee24d6b00a27b2a6aa0f971acb988f358f25ac4005",
+            "bytes": 332,
+            "checkedAt": "2026-10-23T11:33:10.091Z",
+            "url": "https://cnes.fr/scientifiques/appels-contributions",
+            "httpStatus": 502
+          }
+        }
+      ],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "France-5",
+      "country": "France",
+      "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
+          "status": 502,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T11-25-29-176Z\\cb08e81d5f7b2eddbd7d974d167f40cc04aa8b8a90fbe179bda4fd9d002827fa-1792755190227.raw",
+            "sha256": "8128514a9917b6dcdf20f7ee24d6b00a27b2a6aa0f971acb988f358f25ac4005",
+            "bytes": 332,
+            "checkedAt": "2026-10-23T11:33:10.228Z",
+            "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
             "httpStatus": 502
           }
         }
@@ -1190,7 +1321,7 @@
       "country": "Germany",
       "url": "https://www.foerderdatenbank.de/FDB/DE/Home/home.html",
       "status": "partial",
-      "pages": 1,
+      "pages": 6,
       "remaining": 0,
       "errors": [],
       "cap": 14,
@@ -1478,10 +1609,10 @@
           "url": "https://lmt.lrv.lt/en/",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Lithuania\\Collection-Runs\\2026-10-23T07-14-16-585Z\\5665d8a741fa369d907aa79ca4d6617728d49a9b90e332934fd9274b49a76f62-1792740136890.raw",
-            "sha256": "49f4708dec105362822d8a0d8e1d9cd992482720c44abdb85faeb4c68f235315",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Lithuania\\Collection-Runs\\2026-10-23T11-25-29-176Z\\5665d8a741fa369d907aa79ca4d6617728d49a9b90e332934fd9274b49a76f62-1792755385375.raw",
+            "sha256": "082a1445af26dfd422efa5d47d0ca4bcd1f0ec56041b2f3e2dbdec78142afa26",
             "bytes": 5364,
-            "checkedAt": "2026-10-23T07:22:16.892Z",
+            "checkedAt": "2026-10-23T11:36:25.377Z",
             "url": "https://lmt.lrv.lt/en/",
             "httpStatus": 403
           }
@@ -1580,7 +1711,7 @@
       "country": "Malta",
       "url": "https://xjenzamalta.mt/",
       "status": "partial",
-      "pages": 7,
+      "pages": 8,
       "remaining": 0,
       "errors": [],
       "cap": 14,
@@ -1704,10 +1835,10 @@
           "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-10-23T07-14-16-585Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1792740245702.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-10-23T11-25-29-176Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1792755506128.raw",
             "sha256": "a6c54d79ce2e0bafb44004227cf88a67abdff419e8ff3fad783729aa4990fe23",
             "bytes": 91673,
-            "checkedAt": "2026-10-23T07:24:05.703Z",
+            "checkedAt": "2026-10-23T11:38:26.129Z",
             "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
             "httpStatus": 404
           }
@@ -1749,10 +1880,10 @@
           "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-10-23T07-14-16-585Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1792740265304.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-10-23T11-25-29-176Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1792755525036.raw",
             "sha256": "a6c54d79ce2e0bafb44004227cf88a67abdff419e8ff3fad783729aa4990fe23",
             "bytes": 91673,
-            "checkedAt": "2026-10-23T07:24:25.307Z",
+            "checkedAt": "2026-10-23T11:38:45.037Z",
             "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
             "httpStatus": 404
           }
@@ -1772,7 +1903,7 @@
       "url": "https://rosa.ro/",
       "status": "partial",
       "pages": 14,
-      "remaining": 99,
+      "remaining": 131,
       "errors": [],
       "cap": 14,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
@@ -1831,18 +1962,29 @@
       ]
     },
     {
+      "id": "Slovakia-3",
+      "country": "Slovakia",
+      "url": "https://spaceoffice.sk/",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 12,
+      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
       "id": "Slovenia-1",
       "country": "Slovenia",
       "url": "https://www.gov.si/en/state-authorities/ministries/ministry-of-the-economy-labour-and-sport/about-the-ministry-of-economy-tourism-and-sport/slovenian-space-office/",
       "status": "partial",
-      "pages": 2,
+      "pages": 3,
       "remaining": 0,
-      "errors": [
-        {
-          "url": "https://www.gov.si/en/topics/cooperation-with-the-european-space-agency/",
-          "error": "socket hang up"
-        }
-      ],
+      "errors": [],
       "cap": 14,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
       "limitations": [
@@ -1888,7 +2030,7 @@
       "country": "Spain",
       "url": "https://www.aee.gob.es/",
       "status": "partial",
-      "pages": 1,
+      "pages": 4,
       "remaining": 0,
       "errors": [],
       "cap": 14,
@@ -1980,149 +2122,6 @@
       ]
     },
     {
-      "id": "Cyprus-3",
-      "country": "Cyprus",
-      "url": "https://www.research.org.cy/",
-      "status": "partial",
-      "pages": 1,
-      "remaining": 0,
-      "errors": [],
-      "cap": 12,
-      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
-      "limitations": [
-        "Bounded public listings; no exhaustive regional or defence portal census.",
-        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
-        "Keyword candidates are not verified open funding; dated evidence-bound review required."
-      ]
-    },
-    {
-      "id": "Cyprus-4",
-      "country": "Cyprus",
-      "url": "https://www.fundingprogrammesportal.gov.cy/",
-      "status": "failed",
-      "pages": 0,
-      "remaining": 0,
-      "errors": [
-        {
-          "url": "https://www.fundingprogrammesportal.gov.cy/",
-          "error": "Source timeout"
-        }
-      ],
-      "cap": 12,
-      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
-      "limitations": [
-        "Bounded public listings; no exhaustive regional or defence portal census.",
-        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
-        "Keyword candidates are not verified open funding; dated evidence-bound review required."
-      ]
-    },
-    {
-      "id": "Czechia-4",
-      "country": "Czechia",
-      "url": "https://tacr.gov.cz/en/programmes/",
-      "status": "partial",
-      "pages": 12,
-      "remaining": 4,
-      "errors": [],
-      "cap": 12,
-      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
-      "limitations": [
-        "Bounded public listings; no exhaustive regional or defence portal census.",
-        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
-        "Keyword candidates are not verified open funding; dated evidence-bound review required."
-      ]
-    },
-    {
-      "id": "Estonia-3",
-      "country": "Estonia",
-      "url": "https://eis.ee/en/innovate-and-safeguard-your-business/space-estonia/",
-      "status": "partial",
-      "pages": 1,
-      "remaining": 0,
-      "errors": [],
-      "cap": 12,
-      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
-      "limitations": [
-        "Bounded public listings; no exhaustive regional or defence portal census.",
-        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
-        "Keyword candidates are not verified open funding; dated evidence-bound review required."
-      ]
-    },
-    {
-      "id": "France-4",
-      "country": "France",
-      "url": "https://cnes.fr/scientifiques/appels-contributions",
-      "status": "failed",
-      "pages": 0,
-      "remaining": 0,
-      "errors": [
-        {
-          "url": "https://cnes.fr/scientifiques/appels-contributions",
-          "status": 502,
-          "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z-additional-routes\\b2394f777c2e318750d61a21ff5a97c37bfd6e8f08271922428432e759abcf1f-1792740364930.raw",
-            "sha256": "8128514a9917b6dcdf20f7ee24d6b00a27b2a6aa0f971acb988f358f25ac4005",
-            "bytes": 332,
-            "checkedAt": "2026-10-23T07:26:04.933Z",
-            "url": "https://cnes.fr/scientifiques/appels-contributions",
-            "httpStatus": 502
-          }
-        }
-      ],
-      "cap": 12,
-      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
-      "limitations": [
-        "Bounded public listings; no exhaustive regional or defence portal census.",
-        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
-        "Keyword candidates are not verified open funding; dated evidence-bound review required."
-      ]
-    },
-    {
-      "id": "France-5",
-      "country": "France",
-      "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
-      "status": "failed",
-      "pages": 0,
-      "remaining": 0,
-      "errors": [
-        {
-          "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
-          "status": 502,
-          "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-10-23T07-14-16-585Z-additional-routes\\cb08e81d5f7b2eddbd7d974d167f40cc04aa8b8a90fbe179bda4fd9d002827fa-1792740365148.raw",
-            "sha256": "8128514a9917b6dcdf20f7ee24d6b00a27b2a6aa0f971acb988f358f25ac4005",
-            "bytes": 332,
-            "checkedAt": "2026-10-23T07:26:05.149Z",
-            "url": "https://www.comet-cnes.fr/cc/actualite/challenge-rt-operer-les-systemes-spatiaux-complexes-du-futur",
-            "httpStatus": 502
-          }
-        }
-      ],
-      "cap": 12,
-      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
-      "limitations": [
-        "Bounded public listings; no exhaustive regional or defence portal census.",
-        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
-        "Keyword candidates are not verified open funding; dated evidence-bound review required."
-      ]
-    },
-    {
-      "id": "Slovakia-3",
-      "country": "Slovakia",
-      "url": "https://spaceoffice.sk/",
-      "status": "partial",
-      "pages": 1,
-      "remaining": 0,
-      "errors": [],
-      "cap": 12,
-      "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
-      "limitations": [
-        "Bounded public listings; no exhaustive regional or defence portal census.",
-        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
-        "Keyword candidates are not verified open funding; dated evidence-bound review required."
-      ]
-    },
-    {
       "id": "Sweden-5",
       "country": "Sweden",
       "url": "https://www.rymdstyrelsen.se/rymddata/utlysningar/aktiva-utlysningar/space-for-climate-observatory-2027/",
@@ -2132,6 +2131,163 @@
       "errors": [],
       "cap": 12,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "United-Kingdom-1",
+      "country": "United Kingdom",
+      "url": "https://www.gov.uk/guidance/apply-for-funding-academic-community-and-educational",
+      "status": "partial",
+      "pages": 14,
+      "remaining": 0,
+      "errors": [],
+      "cap": 16,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "United-Kingdom-2",
+      "country": "United Kingdom",
+      "url": "https://www.ukri.org/opportunity/",
+      "status": "partial",
+      "pages": 2,
+      "remaining": 0,
+      "errors": [],
+      "cap": 8,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "United-Kingdom-3",
+      "country": "United Kingdom",
+      "url": "https://find-government-grants.service.gov.uk/grants/esero-uk-1",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 8,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Switzerland-1",
+      "country": "Switzerland",
+      "url": "https://www.sbfi.admin.ch/de/foerderung-von-nationalen-aktivitaeten-im-bereich-der-raumfahrt",
+      "status": "partial",
+      "pages": 4,
+      "remaining": 0,
+      "errors": [],
+      "cap": 16,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Switzerland-2",
+      "country": "Switzerland",
+      "url": "https://www.sbfi.admin.ch/de/richtlinien-und-vorgaben-fuer-die-einreichung-von-vorschlaegen-bei-der-abteilung-raumfahrt-des-sbfi",
+      "status": "partial",
+      "pages": 7,
+      "remaining": 0,
+      "errors": [],
+      "cap": 8,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Switzerland-3",
+      "country": "Switzerland",
+      "url": "https://www.innosuisse.admin.ch/en/funding-opportunities",
+      "status": "failed",
+      "pages": 0,
+      "remaining": 0,
+      "errors": [
+        {
+          "url": "https://www.innosuisse.admin.ch/en/funding-opportunities",
+          "status": 404,
+          "evidence": {
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Switzerland\\Collection-Runs\\2026-10-23T11-25-29-176Z\\741ef9edf92867e61aec49fd853af960f079b2d44117bc28187aa73f80e8f841-1792755589482.raw",
+            "sha256": "e2be74cd573ca91eb4cb011ee8f3664a9b627971a8a7591ef015beaaf243f6e0",
+            "bytes": 108349,
+            "checkedAt": "2026-10-23T11:39:49.483Z",
+            "url": "https://www.innosuisse.admin.ch/en/funding-opportunities",
+            "httpStatus": 404
+          }
+        }
+      ],
+      "cap": 8,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Norway-1",
+      "country": "Norway",
+      "url": "https://romdirektoratet.no/utlysninger-og-info-for-romaktoerer",
+      "status": "partial",
+      "pages": 16,
+      "remaining": 1,
+      "errors": [],
+      "cap": 16,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Norway-2",
+      "country": "Norway",
+      "url": "https://www.romsenter.no/midler-til-nasjonal-infrastruktur-og-tekniske-aktiviteter",
+      "status": "partial",
+      "pages": 1,
+      "remaining": 0,
+      "errors": [],
+      "cap": 8,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
+      "limitations": [
+        "Bounded public listings; no exhaustive regional or defence portal census.",
+        "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
+        "Keyword candidates are not verified open funding; dated evidence-bound review required."
+      ]
+    },
+    {
+      "id": "Norway-3",
+      "country": "Norway",
+      "url": "https://www.forskningsradet.no/utlysninger/",
+      "status": "partial",
+      "pages": 8,
+      "remaining": 66,
+      "errors": [],
+      "cap": 8,
+      "scope": "Official national funding and space-agency routes; partial regional and defence coverage; eligibility must be verified per call",
       "limitations": [
         "Bounded public listings; no exhaustive regional or defence portal census.",
         "Restricted, dynamic and unlinked notices require additional source-specific adapters.",
@@ -2276,10 +2432,17 @@
       "scope": "Rendered root page only; linked call collection may remain incomplete"
     },
     {
+      "id": "Switzerland-3-browser",
+      "country": "Switzerland",
+      "url": "https://www.innosuisse.admin.ch/en/funding-opportunities",
+      "status": "restricted_or_unverified",
+      "scope": "Rendered root page only; linked call collection may remain incomplete"
+    },
+    {
       "id": "national-reviewed-calls",
       "status": "reviewed_subset",
       "errors": [],
-      "reviewed": 4,
+      "reviewed": 10,
       "limitations": [
         "Only evidence-bound reviewed calls admitted; no claim of all open national grants."
       ]
@@ -2298,32 +2461,32 @@
     {
       "id": "EUSPA-grants-listing",
       "status": "complete_listing_traversal",
-      "checkedAt": "2026-10-23T07:16:23.278Z",
+      "checkedAt": "2026-10-23T11:28:04.399Z",
       "pages": [
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants",
           "file": "page-1.html",
-          "sha256": "4295b48585ca303bab9bf6206f2a55ab5ed541cf387aa66fee03b9af074d0a63"
+          "sha256": "97da30b058eb4a616a63ee5df06aea3b5f362ea1e1c224a6196813554352a36f"
         },
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=1",
           "file": "page-2.html",
-          "sha256": "60b7140d0650a8408a8c6a380e8086d9585ab99ff8617f06beb4b00590cbef38"
+          "sha256": "3b07dc19013fa296c86bb30ce0d8c70f4c419dfc4de3964c6bc8460ca8332ee0"
         },
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=2",
           "file": "page-3.html",
-          "sha256": "3f56c1ac9ff7966d3f1301d542e4212966b50d01c4d4ef482f6194c9ee39020e"
+          "sha256": "19c31585dbfa3a7915754469119c1284eb9f5c34b2f27219e55db6d69370b82e"
         },
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=3",
           "file": "page-4.html",
-          "sha256": "151948193e6e44c48264874a0615a8078531e0b9480404253726cb9d577ab6b5"
+          "sha256": "ea5e4af9984adfd4339d264ebef9fac3ded2839d3bc9a81f699403eb1249e7a0"
         },
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=4",
           "file": "page-5.html",
-          "sha256": "957afad106c51598da09dd8f6a4e3c13d4cb5dcd5e0c5fee16c09f0f70ac4859"
+          "sha256": "647cd62a02e4fd6b5bece1c1099f129f8d4dae8e6f07cc9f2063cda3a983cf79"
         }
       ],
       "listed": 48,
@@ -2332,7 +2495,7 @@
       "limitations": [
         "Only the dedicated EUSPA grants listing. Horizon, prizes and startup programmes are separate routes. Non-closed records require deadline/timezone and detail checks before master admission."
       ],
-      "output": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T07-16-22-693Z"
+      "output": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-10-23T11-28-03-613Z"
     }
   ],
   "validation": {
