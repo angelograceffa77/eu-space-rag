@@ -1,6 +1,6 @@
 # ESA company exports
 
-Start every query with `05_COMPANIES/esa-companies-manifest.json`.
+For ESA supplier-directory queries, start with `05_COMPANIES/esa-companies-manifest.json`.
 Resolve its `parts`, `indexParts`, `searchParts`, and `workbook` filenames under
 `05_COMPANIES/<pathBase>/`. Read that manifest once per query to pin a consistent
 snapshot. Never sum the legacy exports and snapshots together.
@@ -71,3 +71,12 @@ Incomplete pages, changing API totals, count mismatches, and missing/duplicate
 profile IDs prevent live publication. Resume checkpoints are validated and saved
 through a temporary-file rename. A changing directory may require moving the old
 checkpoint aside and restarting a fresh scrape; no automatic data deletion occurs.
+
+## Space startup, investor and incubator discovery
+
+For investment ecosystem queries, use `Investment-Discovery/Investment-Master/manifest.json` and `Investment-Discovery/RETRIEVAL-GUIDE.txt`. This is a separate, partially covered research catalogue. ESA incubatees/alumni are not automatically currently operating startups or raising money; ESA investor-network members are not all direct equity investors. Use `company-datasets.json` to choose the dataset. Shared-domain links to this supplier directory require legal-identity review. Do not combine profile counts across datasets as distinct companies.
+
+
+## Private client discovery
+
+See [Private-Client-Discovery/RETRIEVAL-GUIDE.txt](Private-Client-Discovery/RETRIEVAL-GUIDE.txt). This separate catalogue includes an Africa view and sector-to-supplier matching. Ownership-unverified leads must not be presented as verified private clients; no buying intent is established.

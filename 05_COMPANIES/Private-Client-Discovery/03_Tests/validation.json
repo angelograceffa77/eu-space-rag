@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-10-24T10:51:15.402931+00:00",
+  "generation": "2026-10-24T10-49-36-878256Z",
+  "checks": [
+    "manifest and shard hashes",
+    "UTF-8 decoding and row counts",
+    "unique client source IDs",
+    "raw evidence hashes",
+    "all sector and Africa references resolve",
+    "11 regression tests"
+  ],
+  "regressionOutput": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.020s\n\nOK\n",
+  "evidenceFilesVerified": 14,
+  "counts": {
+    "clientProfiles": 15807,
+    "sourceAssertedPrivate": 13,
+    "ownershipUnverified": 15794,
+    "excludedProfiles": 48,
+    "africaProfiles": 140,
+    "countries": 117,
+    "supplierProfiles": 21414,
+    "businessAreas": 17
+  },
+  "strictPrivateClientCount": 13,
+  "sourceFailures": [
+    {
+      "url": "https://www.mscgroup.com/en/about-us",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://linkham.com/",
+      "error": "Ownership wording not reproduced"
+    },
+    {
+      "url": "https://safrica-logistics.co.za/about-us/",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://phelangreen.com/company/",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

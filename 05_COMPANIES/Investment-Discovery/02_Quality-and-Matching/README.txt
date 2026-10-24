@@ -1,0 +1,1 @@
+Matching currently uses shared capability terms and country to suggest research leads only. See ../ARCHITECTURE.txt for the full target design. Stage, cheque size, geographic mandate, legal identity and eligibility remain unknown unless primary evidence is reviewed. Implementation: ../01_Collectors/core.cjs (propose).

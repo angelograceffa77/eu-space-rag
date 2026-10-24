@@ -1,0 +1,21 @@
+Start with Investment-Master/manifest.json and pin the referenced generation. Verify its SHA-256, then read the listed JSONL parts. coverage.json reports gaps; source-results.json reports collection outcomes.
+
+Use recordType startup_profile for company discovery. Filter inGeographicScope=true for the inherited European country scope. Classification is ESA incubatee/alumnus, not verified current startup or fundraising status. Treat incubation start/end dates separately from founding dates.
+Use investor_network_member for ESA Investor Network members. Some members are banks, advisers, public institutions or associations. Investor type, mandate and active availability require review.
+Use incubation_location for individual ESA-listed locations; do not count all locations as separate programmes.
+Use support_programme for separately collected programme context, not verified open applications.
+Use external_discovery_lead only for further research. These are global secondary-directory observations and may overlap primary profiles. Never sum them with primary profiles as distinct organisations.
+Use discovery_source for a directory landing page, not a company.
+
+The companyDirectoryLinks field contains shared-domain candidate links to the existing ESA company catalogue. It does not prove legal identity.
+Provider websiteEvidence contains observed text, not a verified investment mandate. Source text can include portfolio-company technology rather than an investor's own mandate.
+Matching results are discovery_lead_only. Confirm stage, location rules, cheque size, current mandate and eligibility before presenting a shortlist as suitable.
+
+Local examples (from this folder):
+node 01_Collectors/query.cjs --type startup_profile --country France --text satellite
+node 01_Collectors/query.cjs --type investor_network_member
+node 01_Collectors/query.cjs --type incubation_location --country Norway
+node 01_Collectors/query.cjs --match-startup <exact startup id>
+node --use-system-ca --max-old-space-size=8192 01_Collectors/collect.cjs
+
+Collection is manual; scheduling, publication and deletion are disabled. Only share a validated complete manifest package. Original evidence and run logs remain local in the separate archive. Do not stage the whole repository.

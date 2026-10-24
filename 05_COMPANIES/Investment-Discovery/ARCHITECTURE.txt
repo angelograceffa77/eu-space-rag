@@ -1,0 +1,54 @@
+GAGARIN — EUROPEAN SPACE INVESTMENT DISCOVERY
+
+Purpose
+Help investors discover European space startups, and help startups discover investors, incubators and accelerators. This is a research catalogue, not a list of companies currently raising money or a recommendation to invest. It extends 05_COMPANIES without replacing its ESA directory or changing procurement/funding controls.
+
+Recommended architecture
+1. Shared identity: retain the existing company profile IDs. Give each new source profile a stable ID. Link verified legal identifiers when available; shared names or website domains only produce review links. Do not merge parent companies, subsidiaries, fund managers, individual funds or business units blindly.
+2. Separate datasets: startup profiles; investor/fund profiles; incubator/accelerator locations and programmes; financing events; relationships; source/coverage records. The initial collection implements the first three and separate secondary discovery leads. Detailed financing events and reviewed investment mandates remain to be enriched.
+3. Evidence layer: preserve the original response, URL, retrieval time, checksum, source record ID and source date. Keep original values, currencies and date precision. Unknown is a value, not zero or false. Preserve conflicting claims rather than choosing a convenient one.
+4. Matching layer: two directions, investor-to-startups and startup-to-investors/incubators. Explain sector overlap, stage, geography, cheque size, instrument, eligibility, application status and conflicts. Unknown constraints remain unknown. Initial matching only produces transparent research leads from shared capability terms and country; it does not claim suitability or eligibility.
+5. Retrieval layer: a versioned Investment-Master manifest, small UTF-8 JSONL shards, coverage and source-result files. Consumers pin one manifest and verify hashes. Keep procurement, funding, planned opportunities and awarded contracts in their own masters; link to them instead of copying their records or statuses.
+6. Refresh and publication: source-aware, bounded collectors, exclusive lock, reconciled pagination, immutable evidence and atomic validated master replacement. Failed required collections keep the last good master. Missing records are preserved as not observed, never assumed closed. Future scheduling should be separate from tender collection: weekly directory discovery, monthly mandates/profile review, shorter refresh for dated applications or fundraising claims. No new schedule, deletion or GitHub push is enabled by this initial installation.
+
+Folder layout under 05_COMPANIES/Investment-Discovery
+00_Control: configuration, source register and inherited geographic scope.
+01_Collectors: public directory collection, rebuild and query entry points.
+02_Quality-and-Matching: matching specification and validation guidance.
+03_Tests: test instructions and validation receipts.
+Investment-Master: validated current pointer and immutable JSONL snapshots.
+
+Separate audit archive
+C:\Users\angel\OneDrive\Desktop\knowledge\05_COMPANIES\Investment-Discovery
+Runs/<timestamp>/Original-Responses: original downloaded bytes.
+Runs/<timestamp>/fetches.json: URL, response status, checksum and time.
+Runs/<timestamp>/records.json: normalized run evidence.
+Runs/<timestamp>/route-*.json: national/international discovery links requiring review.
+Runs/<timestamp>/coverage.json: explicit country gaps.
+Failure receipts and superseded master pointers are retained. No automatic deletion.
+
+Geographic and institutional scope
+Inherit the existing funding country-scope.json (49 countries/territories at creation), rather than inventing a competing country list. Inherit national source routes and international organisation routes. ESA, EU/EUSPA/CASSINI/EIC/EIF/EIB, NATO/DIANA/NIF, EUREKA, EUMETSAT and ECMWF must remain distinct organisations/roles. A grant authority, bank, association or investor network is not automatically a venture-capital fund. Initial institutional pages are context/discovery routes, not proof of an open programme.
+
+Startup information to collect
+Legal/trading names; source IDs; website; headquarters and operating locations; founding date; startup/scaleup/alumni classification; operating status; products; upstream/downstream/dual-use applications; evidenced capabilities; founders' publicly published professional roles; employee bands and date; revenue and period; funding rounds, original amount/currency/date/instrument; investors; valuation type/date; grants; verified contract wins; incubation participation; public business contact route; explicitly announced fundraising status and expiry. Current initial records intentionally leave unsupported financial and operating fields unknown.
+
+Investor/fund information to collect
+Separate manager and fund; investor type; headquarters; actual investment geography; sectors; stages; ticket range and currency; equity/debt/grant instrument; lead/co-investor preference; publicly evidenced portfolio; fund vintage/status; announced investment mandate and date; application/contact page; exclusions and ownership/nationality conditions. Fund size is not cheque size. Portfolio membership is not a current offer to invest. ESA network membership is not a verified mandate.
+
+Incubator/accelerator information to collect
+Operator, programme and physical location; countries served; local-establishment requirement; age/SME/ownership rules; space connection; application opening/closing dates; duration; grant and equity terms; services, technical facilities, mentors and investor introductions; cohort/alumni links; official application contact. Incubation dates must never be used as company founding dates. Several locations can share the same programme.
+
+Quality rules
+Never infer that a startup is raising money from a recent round, directory entry or accelerator membership.
+Never infer investor cheque size from total fund assets or a portfolio company's whole funding round.
+Never convert a news mention, sponsor logo or network membership into a verified investment.
+Never label every ESA directory company an operating European startup. Keep country, alumni status and verification gaps visible.
+Keep secondary directory claims separate until confirmed by primary sources.
+Check dated eligibility/application claims at answer time; stale or unknown is not open.
+Do not give an unexplained investability score or probability of investment.
+
+Source strategy and remaining expansion
+Initial: full reconciled ESA incubatee/alumni directory, ESA incubation locations, ESA Investor Network, public provider websites, NewSpace Index discovery leads, selected EU/international programmes, first national discovery route per country.
+Next: review national discovery links, local ESA BIC alumni, CASSINI cohorts, EIC portfolio, national space clusters and agency catalogues; verify European scope and legal identity; obtain primary investor mandates and current application rules; populate financing events and relationship evidence; measure false matches with reviewed examples. Dealroom may be used for public discovery, but the initial collector only assesses its public landing page and does not enumerate its restricted catalogue.
+Exhaustiveness is tracked country by country and source by source. A reconciled directory does not establish complete European coverage.

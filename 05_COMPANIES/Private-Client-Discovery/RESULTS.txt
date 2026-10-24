@@ -1,0 +1,46 @@
+CLIENT DISCOVERY — VALIDATED RESULT
+{
+  "clientProfiles": 15807,
+  "sourceAssertedPrivate": 13,
+  "ownershipUnverified": 15794,
+  "excludedProfiles": 48,
+  "africaProfiles": 140,
+  "countries": 117,
+  "supplierProfiles": 21414,
+  "businessAreas": 17
+}
+Strict private non-space clients: 13
+Strict examples:
+Linfox | Australia | transport-logistics
+NATCO Logistics | South Africa | transport-logistics
+Africa Insurance Company | Ethiopia | insurance-finance
+NICE Insurance | Ethiopia | insurance-finance
+ORELYNX Mining & Technical Services | Ghana | mining
+TMK | Nigeria | mining
+M and J Mining | South Africa | mining
+Wild Africa Logistics | Tanzania | transport-logistics
+Meili Logistics | South Africa | transport-logistics
+SARGE | South Africa | energy
+Dimsum Energy | South Africa | energy
+Sahan Seafood | Somalia | maritime
+Al Habib Fishing Company | Somalia | maritime
+
+Coverage is partial. Broad leads have unverified ownership and demand. Source errors:
+[
+  {
+    "url": "https://www.mscgroup.com/en/about-us",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://linkham.com/",
+    "error": "Ownership wording not reproduced"
+  },
+  {
+    "url": "https://safrica-logistics.co.za/about-us/",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://phelangreen.com/company/",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

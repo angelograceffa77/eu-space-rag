@@ -1,0 +1,1 @@
+Run node --test ../01_Collectors/core.test.cjs, then node ../01_Collectors/validate.cjs. validation.json gives collection coverage. integrity-validation.json verifies current shards, original evidence and matching caveats. These checks do not establish complete European coverage.

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "datasets": [
+    {
+      "id": "esa-supplier-directory",
+      "manifest": "esa-companies-manifest.json",
+      "role": "Company supplier profiles and capabilities"
+    },
+    {
+      "coverage": "partial",
+      "role": "Startup alumni, investor network members and incubation locations",
+      "manifest": "Investment-Discovery/Investment-Master/manifest.json",
+      "guide": "Investment-Discovery/RETRIEVAL-GUIDE.txt",
+      "id": "space-investment-discovery",
+      "currentFundraisingVerified": false
+    },
+    {
+      "id": "private-client-discovery",
+      "manifest": "Private-Client-Discovery/Client-Master/manifest.json",
+      "guide": "Private-Client-Discovery/RETRIEVAL-GUIDE.txt",
+      "role": "Potential non-space private clients and separate ownership-unverified research leads; not open buying requests",
+      "coverage": "partial"
+    }
+  ]
+}

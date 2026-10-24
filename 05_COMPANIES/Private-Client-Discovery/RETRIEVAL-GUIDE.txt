@@ -1,0 +1,20 @@
+PRIVATE CLIENT DISCOVERY — separate from procurement, funding and investment
+
+Start at Client-Master/manifest.json. Resolve its path, verify the snapshot manifest hash, then read only the parts listed by that snapshot. JSONL is authoritative. Each source profile retains its own identity; profile totals are NOT counts of unique legal entities.
+
+For a request for private non-space clients, use clients.py query --root <module>. Strict private-only retrieval is the default; --private-only also makes it explicit. This includes only source-asserted private ownership and reviewed non-space business activity. Use --include-unverified only for an explicitly labelled broader research-leads list. The broader clients shards also contain ownership-unverified research leads. Never present those as verified private clients. Publicly listed companies can be private-sector companies, but a stock identifier alone is not proof of ownership/control.
+
+Add --africa for companies whose source-reported country is in Africa. Africa/manifest.json points to the current master, and each snapshot has Africa/clients-index parts. This does not identify all foreign companies operating in Africa. Missing countries are coverage gaps, never proof of no clients.
+
+Add --sector agriculture (or another businessArea) to filter by sector.
+Add --supplier <exact supplier profile ID> to find clients in sectors with a documented supplier-capability overlap. Supplier IDs and evidence are in supplier-profiles parts. All existing ESA company and startup catalogue profiles are indexed, including profiles without recognized capabilities; unmatched profiles remain unmatched. Startup alumni are not necessarily currently active startups.
+
+Matching explanation: supplier evidence -> capability -> analyst sector use-case hypothesis -> prospective client. It does NOT establish client demand, current buying intent, willingness to pay, budget, product readiness, country eligibility or a commercial relationship. Geospatial mappings can include terrestrial applications. Generic software capability alone does not qualify a match. Group-level capability does not prove subsidiary capacity.
+
+Each client includes name, source identity, location, source sector, normalized business area, ownership classification, space-business review state, possible exact-name duplicates, use-case hypothesis, evidence URL/hash/date and source row or page. Unknown budget, operating status and contact page remain unknown. Official company website links are provided where independently collected; no guessed email addresses or personal contacts are collected.
+
+Sector indexes expose all matching supplier profile IDs, with no hidden top-ten limit. Do not sum overlapping supplier indexes. Supplier profiles may overlap between ESA and startup catalogues. Exact-name overlap with the supplier directory requires identity review and is excluded from strict private-client retrieval.
+
+Freshness: checkedAt is collection time, not a guarantee that ownership or operations have not changed. Recheck official pages before outreach or consequential decisions. This module contains no confirmed active buying requests.
+
+Run refresh.ps1 with a Python executable containing openpyxl and Node. It downloads the official SBTi workbook, verifies existing supplier inputs, collects the allowlisted public company pages, validates a new snapshot and atomically changes its pointer. One lock prevents duplicate refresh commands. A crash can leave a lock: verify process liveness before manual recovery. Optional page failures are reported; previous snapshots and their evidence remain archived. No schedule, deletion or GitHub push is activated.

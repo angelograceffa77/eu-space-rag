@@ -1,0 +1,152 @@
+[
+  {
+    "id": "agriculture",
+    "pattern": "agricultur|animal source|food production",
+    "capabilityIds": [
+      "earth_observation",
+      "satellite_navigation"
+    ],
+    "hypothesis": "Crop, pasture and irrigation monitoring"
+  },
+  {
+    "id": "forestry",
+    "pattern": "forest|paper|timber",
+    "capabilityIds": [
+      "earth_observation"
+    ],
+    "hypothesis": "Forest inventory, fire exposure and land-use monitoring"
+  },
+  {
+    "id": "maritime",
+    "pattern": "water transportation|fish|seafood|shipping",
+    "capabilityIds": [
+      "earth_observation",
+      "satellite_navigation",
+      "satellite_communications"
+    ],
+    "hypothesis": "Vessel tracking, route planning and remote connectivity"
+  },
+  {
+    "id": "insurance-finance",
+    "pattern": "bank|financ|insurance",
+    "capabilityIds": [
+      "earth_observation",
+      "geospatial"
+    ],
+    "hypothesis": "Asset exposure, flood and crop-risk analysis"
+  },
+  {
+    "id": "transport-logistics",
+    "pattern": "transport|freight|logistic|automobil|tires",
+    "capabilityIds": [
+      "satellite_navigation",
+      "satellite_communications"
+    ],
+    "hypothesis": "Fleet positioning and connectivity"
+  },
+  {
+    "id": "energy",
+    "pattern": "electric utilities|power producer|gas utilities|renewable|energy",
+    "capabilityIds": [
+      "earth_observation",
+      "satellite_communications"
+    ],
+    "hypothesis": "Asset monitoring and remote-site connectivity"
+  },
+  {
+    "id": "mining",
+    "pattern": "mining|mineral",
+    "capabilityIds": [
+      "earth_observation",
+      "satellite_navigation"
+    ],
+    "hypothesis": "Surface-change monitoring and positioning"
+  },
+  {
+    "id": "water",
+    "pattern": "water utilities",
+    "capabilityIds": [
+      "earth_observation"
+    ],
+    "hypothesis": "Catchment, drought and water-quality indicators"
+  },
+  {
+    "id": "waste-environment",
+    "pattern": "waste",
+    "capabilityIds": [
+      "earth_observation",
+      "satellite_navigation"
+    ],
+    "hypothesis": "Site monitoring and collection routing"
+  },
+  {
+    "id": "construction-infrastructure",
+    "pattern": "construction|building|real estate",
+    "capabilityIds": [
+      "earth_observation",
+      "satellite_navigation"
+    ],
+    "hypothesis": "Site surveying and infrastructure change monitoring"
+  },
+  {
+    "id": "food-supply-chains",
+    "pattern": "food|beverage|tobacco",
+    "capabilityIds": [
+      "earth_observation",
+      "satellite_navigation"
+    ],
+    "hypothesis": "Agricultural sourcing exposure and shipment visibility"
+  },
+  {
+    "id": "retail-distribution",
+    "pattern": "retail|trading|distributor",
+    "capabilityIds": [
+      "satellite_navigation",
+      "geospatial"
+    ],
+    "hypothesis": "Distribution planning and location analytics"
+  },
+  {
+    "id": "tourism-hospitality",
+    "pattern": "hotel|tourism|leisure",
+    "capabilityIds": [
+      "satellite_communications",
+      "geospatial"
+    ],
+    "hypothesis": "Remote-property connectivity and environmental exposure"
+  },
+  {
+    "id": "telecommunications",
+    "pattern": "telecommunication",
+    "capabilityIds": [
+      "satellite_communications"
+    ],
+    "hypothesis": "Terrestrial network resilience; satellite-provider identity requires review"
+  },
+  {
+    "id": "healthcare",
+    "pattern": "health|pharmaceut|biotech",
+    "capabilityIds": [
+      "satellite_navigation",
+      "satellite_communications"
+    ],
+    "hypothesis": "Medical logistics and remote-service connectivity"
+  },
+  {
+    "id": "manufacturing-materials",
+    "pattern": "equipment|machinery|chemicals|semiconductor|packaging|consumer durables|textile",
+    "capabilityIds": [
+      "earth_observation",
+      "satellite_navigation"
+    ],
+    "hypothesis": "Facility climate exposure and supply-chain visibility"
+  },
+  {
+    "id": "professional-services",
+    "pattern": "professional|software|media|education|specialized consumer",
+    "capabilityIds": [
+      "geospatial"
+    ],
+    "hypothesis": "Geospatial products or customer analytics; indirect fit requires review"
+  }
+]
