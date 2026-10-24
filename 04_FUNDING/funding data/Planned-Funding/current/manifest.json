@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "generation": "2026-10-24T07-01-43-988Z",
+  "dataset": "planned_funding",
+  "excludedFromOpenCount": true,
+  "recordCount": 18,
+  "files": [
+    {
+      "file": "records.part-0001.jsonl",
+      "rows": 18,
+      "bytes": 162396,
+      "sha256": "2e2b3ff99ce596c54e0b2963dd5d4962af8a8ab25cb4f9f8b5cb00cfcc5f6eaa"
+    }
+  ],
+  "coverage": "partial_source_and_query_coverage",
+  "sources": [
+    {
+      "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Planned-and-Awarded\\Runs\\2026-10-23T21-23-42-801Z-2026-10-24T07-01-43-752Z\\planned-funding.jsonl",
+      "sha256": "2e2b3ff99ce596c54e0b2963dd5d4962af8a8ab25cb4f9f8b5cb00cfcc5f6eaa",
+      "rows": 18
+    }
+  ],
+  "asOf": "2026-10-24T07:01:44.000Z",
+  "retrievalRules": [
+    "Not open for applications/bids.",
+    "Recheck status and expected opening before acting.",
+    "Do not combine with open counts."
+  ],
+  "validation": {
+    "publicationAllowed": true
+  },
+  "retrievalScope": "planned_not_open"
+}
