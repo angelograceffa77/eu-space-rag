@@ -1,0 +1,22 @@
+'use strict';
+const path=require('path');
+function parse(raw,notice,cheerio){
+ const $=cheerio.load(raw,{xmlMode:true}),local=e=>(e.name||'').split(':').at(-1),all=(n,k)=>n.find('*').filter((i,e)=>local(e)===k),child=(n,k)=>n.children().filter((i,e)=>local(e)===k),text=(n,k)=>child(n,k).first().text().trim(),root=$.root().children().first(),rows=[];
+ if(local(root[0])==='TED_EXPORT'){
+  const forms=all(root,'FORM_SECTION').children(),form=forms.filter((i,e)=>$(e).attr('CATEGORY')==='ORIGINAL').first().length?forms.filter((i,e)=>$(e).attr('CATEGORY')==='ORIGINAL').first():forms.first();
+  const doc=all(root,'DOC_ID').first().text();if(doc&&!doc.includes(notice['publication-number'].split('-')[0].padStart(6,'0')))throw Error('Legacy XML notice identity mismatch');
+  const obj=child(form,'OBJECT_CONTRACT'),title=text(obj,'TITLE'),description=text(obj,'SHORT_DESCR');
+  child(form,'AWARD_CONTRACT').each((i,e)=>{const n=$(e),award=child(n,'AWARDED_CONTRACT');if(!award.length)return;const descriptions=child(obj,'OBJECT_DESCR'),lotId=text(n,'LOT_NO'),matching=descriptions.filter((i,e)=>text($(e),'LOT_NO')===lotId),lot=matching.length===1?matching:descriptions.length===1?descriptions.first():null,mappingUnresolved=descriptions.length>1&&!lot;const amount=child(award,'VALUES').children('VAL_TOTAL').first();rows.push({contractId:text(n,'CONTRACT_NO')||null,lotId:lotId||null,title:text(n,'TITLE')||(lot?text(lot,'TITLE'):'')||(mappingUnresolved?'':title),description:lot?text(lot,'SHORT_DESCR')||description:mappingUnresolved?'':description,mappingUnresolved,awardDate:text(award,'DATE_CONCLUSION_CONTRACT')||null,winners:all(award,'ADDRESS_CONTRACTOR').map((i,e)=>({name:text($(e),'OFFICIALNAME'),identifier:text($(e),'NATIONALID')||null})).get().filter(x=>x.name),amount:amount.text().trim()||null,currency:amount.attr('CURRENCY')||null,amountScope:'awarded_contract_total',sourcePointer:'FORM_SECTION/AWARD_CONTRACT/'+i});});
+ }else if(local(root[0])==='ContractAwardNotice'){
+  if(![].concat(notice['notice-identifier']).includes(text(root,'ID')))throw Error('eForms XML identity mismatch');
+  const project=child(root,'ProcurementProject'),nr=all(root,'NoticeResult').first(),orgs=new Map(),parties=new Map(),tenders=new Map(),contracts=new Map();
+  all(root,'Organization').each((i,e)=>{const company=child($(e),'Company');if(company.length)orgs.set(text(child(company,'PartyIdentification'),'ID')||text(company,'ID'),{name:text(child(company,'PartyName'),'Name')||all(company,'RegistrationName').first().text().trim(),identifier:all(company,'CompanyID').first().text().trim()||null});});
+  child(nr,'TenderingParty').each((i,e)=>{const n=$(e);parties.set(text(n,'ID'),child(n,'Tenderer').map((i,t)=>orgs.get(text($(t),'ID'))).get().filter(x=>x?.name));});
+  child(nr,'LotTender').each((i,e)=>tenders.set(text($(e),'ID'),$(e)));
+  child(nr,'SettledContract').each((i,e)=>contracts.set(text($(e),'ID'),$(e)));
+  child(nr,'LotResult').each((i,e)=>{const lr=$(e);if(text(lr,'TenderResultCode')!=='selec-w')return;const lotId=text(child(lr,'TenderLot'),'ID');const linkedContracts=child(lr,'SettledContract').map((i,e)=>contracts.get(text($(e),'ID'))).get();child(lr,'LotTender').each((j,e)=>{const tender=tenders.get(text($(e),'ID'));if(!tender)return;const party=text(child(tender,'TenderingParty'),'ID'),amount=child(child(tender,'LegalMonetaryTotal'),'PayableAmount');const lot=child(root,'ProcurementProjectLot').filter((i,e)=>text($(e),'ID')===lotId).first(),lp=child(lot,'ProcurementProject');const matchingContracts=linkedContracts.filter(c=>child(c,'LotTender').toArray().some(e=>text($(e),'ID')===text(tender,'ID'))),selectedContracts=matchingContracts.length?matchingContracts:linkedContracts.length===1&&child(lr,'LotTender').length===1?linkedContracts:[],dates=[...new Set(selectedContracts.map(c=>text(c,'IssueDate')).filter(Boolean))];rows.push({contractId:selectedContracts.map(c=>text(c,'ID')).join('|')||null,lotId:lotId||text(child(tender,'TenderLot'),'ID'),title:text(lp,'Name')||text(project,'Name'),description:child(lp,'Description').text()||child(project,'Description').text(),awardDate:dates.length===1?dates[0]:text(lr,'AwardDate')||null,winners:parties.get(party)||[],amount:amount.text().trim()||null,currency:amount.attr('currencyID')||null,amountScope:'winning_tender_total_not_allocated_between_consortium_members',sourcePointer:'NoticeResult/LotResult/'+text(lr,'ID')+'/LotTender/'+text(tender,'ID')});});});
+ }
+ return rows;
+}
+module.exports={parse};
+

@@ -43,3 +43,6 @@ Coverage remains partial: restricted/log-in-only systems, incomplete official in
 
 ### Tenders awaiting recheck
 The master includes `recordType: awaiting_recheck` separately from verified open procurements and lots. Never include these records in open counts or imply their saved lastOpenRecord is currently verified. Read summary.awaitingRecheck for the separate count. Last successful records, lots and unchanged source evidence are retained, and their recheck seeds are checked on every daily run until resolved. Missing observations never imply closure. Publication stops if pending tenders exceed five or 5% of previously tracked tenders (one is allowed for small lists). Evidence corruption and other integrity gates still block publication. Reviewed-document downloads receive up to three attempts.
+
+
+Planned opportunities and contract awards are separate from the open master. Read Planned-and-Awarded/RETRIEVAL-GUIDE.txt and the separate Lifecycle-Data manifests. Never add planned or awarded records to open counts.

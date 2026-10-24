@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "retrievalDefault": "verified_open_only",
+  "datasets": [
+    {
+      "name": "Open procurement",
+      "manifest": "Procurement-Master/manifest.json",
+      "recordType": "procurement",
+      "includeInOpenCount": true
+    },
+    {
+      "name": "Planned procurement - not open",
+      "manifest": "Lifecycle-Data/Planned-Procurement/manifest.json",
+      "recordType": "planned_procurement",
+      "includeInOpenCount": false,
+      "countMeaning": "planned notice records; repeated market-dialogue notices may describe the same eventual procurement"
+    },
+    {
+      "name": "Awarded procurement contracts from2020",
+      "manifest": "Lifecycle-Data/Awarded-Contracts/manifest.json",
+      "recordType": "awarded_contract",
+      "includeInOpenCount": false,
+      "countMeaning": "notice-version contract/lot records; reconcile corrections before unique contract counts"
+    },
+    {
+      "name": "Open funding",
+      "repositoryManifest": "04_FUNDING/funding data/Funding-Master/manifest.json",
+      "recordType": "funding_opportunity",
+      "includeInOpenCount": true
+    },
+    {
+      "name": "Planned funding - not open",
+      "repositoryManifest": "04_FUNDING/funding data/Planned-Funding/manifest.json",
+      "recordType": "planned_funding",
+      "includeInOpenCount": false
+    }
+  ],
+  "rule": "Resolve each manifest separately; never merge lifecycle categories or treat expired tenders as awards"
+}

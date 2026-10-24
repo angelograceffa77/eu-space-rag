@@ -1,0 +1,21 @@
+PLANNED OPPORTUNITIES AND AWARDED CONTRACTS
+
+These are separate datasets. Never combine their counts with open opportunities.
+
+OPEN PROCUREMENT: Procurement-Master/manifest.json. Existing verified-open tender and lot rules continue to apply, including checking deadlines at answer time.
+OPEN FUNDING: 04_FUNDING/funding data/Funding-Master/manifest.json. Existing open funding rules continue to apply.
+PLANNED PROCUREMENT: Lifecycle-Data/Planned-Procurement/manifest.json. Records have recordType=planned_procurement and excludedFromOpenCount=true. An expected notice publication date is a forecast, not a submission deadline. Do not say applications are open. At or after the expected date, request a source recheck rather than assuming that the tender opened.
+PLANNED FUNDING: 04_FUNDING/funding data/Planned-Funding/manifest.json. Records have recordType=planned_funding. Read the expected opening, source-check date, mechanism and eligibility limitations. Once the expected opening arrives, an independently verified open record is required; do not automatically relabel the planned record as open.
+AWARDED CONTRACTS: Lifecycle-Data/Awarded-Contracts/manifest.json. Records have recordType=awarded_contract. Require explicit official award/contract outcome evidence, named winner and a verified award/contract date from 2020 onward. An expired tender is not proof of an award. An award notice can also contain unawarded lots; only actual award relationships are extracted.
+
+For award answers return the named winner(s), tender/contract description, lot, award date, amount and currency as published, amount scope and official source link. Missing amount or currency means unavailable, not zero. A consortium total must not be assigned in full to each company. Do not convert currency without a separate dated exchange-rate source. Records are notice-version outcomes; do not add repeated corrections or treat every notice as a distinct contract. Use procedure, contract and lot identifiers to reconcile versions; uncertain relationships stay explicit.
+
+Funding grants are not procurement contracts. CORDIS project partners are not automatically contract winners. Grant contributions are not contract prices. The new historical contract dataset does not reclassify funding projects as contracts.
+
+Coverage: the initial awards adapter uses TED public search and legacy/eForms XML. Discovery is keyword/CPV limited and does not cover all national below-threshold awards, private contracts or inaccessible agency systems. The initial planned-funding source is the official EU Funding and Tenders portal, with evidence-bound relevance review. A registered source or an empty query is not proof of complete coverage.
+
+Archives: original bytes and resumable historical checkpoints remain under the mirrored archive roots in Planned-and-Awarded. Previous normalized packages are archived separately. The new historical evidence is not eligible for the open-master 14-day obsolete-run cleanup. Do not delete it while any current award/planned record depends on it.
+
+Daily operation: planned discovery and recent award notices are separate from open collection. Daily updates do not repeat the full 2020 backfill. The monthly historical runner is resumable and separate; its lock defers overlapping lifecycle updates. Source errors preserve earlier packages and are reported separately from open publication.
+
+Planned procurement counts are notice records, not guaranteed unique future purchases. Repeated market-dialogue notices can describe the same intended purchase; group only where official identity evidence establishes the relationship.

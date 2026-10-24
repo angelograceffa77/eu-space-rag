@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "generation": "2026-10-24T07-29-19-645Z",
+  "dataset": "planned_procurement",
+  "excludedFromOpenCount": true,
+  "recordCount": 166,
+  "files": [
+    {
+      "file": "records.part-0001.jsonl",
+      "rows": 42,
+      "bytes": 196735,
+      "sha256": "246a5ec929eb36ae6712f2ddeacfac7fc7b65146f85ae4a7ba2a1c33c7d4ea6a"
+    },
+    {
+      "file": "records.part-0002.jsonl",
+      "rows": 36,
+      "bytes": 197617,
+      "sha256": "8f930e85d4b336038b70dd28a546b190f451658828d202b401518984514bee7c"
+    },
+    {
+      "file": "records.part-0003.jsonl",
+      "rows": 44,
+      "bytes": 195800,
+      "sha256": "75d7129c46f42c6006304794dc14d6228f2a476b0214d534efb6a794eae87f7d"
+    },
+    {
+      "file": "records.part-0004.jsonl",
+      "rows": 41,
+      "bytes": 184100,
+      "sha256": "243e1f49be6ae441639e97a6231b998017ca0d138d74e299c56d044fadb69c36"
+    },
+    {
+      "file": "records.part-0005.jsonl",
+      "rows": 3,
+      "bytes": 23981,
+      "sha256": "7d5159522307bf012b1640c84b78d007450a3c0bf922552ef51d407749baac68"
+    }
+  ],
+  "coverage": "partial_source_and_query_coverage",
+  "sources": [
+    {
+      "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\Planned-Runs\\2026-10-24T07-28-02-564Z\\planned.jsonl",
+      "sha256": "389e910156fed3acf798b0ee5d3a77aa9d582800ed3070bc02adbdaddf5d1001",
+      "rows": 9,
+      "coverage": "partial_TED_information_only_future_publication_date",
+      "pending": 4
+    },
+    {
+      "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\ESA-Intended\\2026-10-24T07-26-20-677Z\\planned.jsonl",
+      "rows": 157,
+      "sha256": "d9ac507a22c6fb641724d1b154277b41eaaeab3a79b03e781efd91259238e506",
+      "coverage": [
+        {
+          "tenderType": 5,
+          "status": "reconciled",
+          "total": 207,
+          "pages": [
+            {
+              "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\ESA-Intended\\2026-10-24T07-26-20-677Z\\type-5-page-1-630947a8f0105c731a1238e57341da9271bd4dea251ffc5bd781e080f358ea9e.json",
+              "sha256": "630947a8f0105c731a1238e57341da9271bd4dea251ffc5bd781e080f358ea9e",
+              "url": "https://esastar-publication-ext.sso.esa.int/api/tenderAction/filter/50?s=1&tType=5&isF=false&isA=false&sortBy=LastUpdateTime&sortDir=1",
+              "checkedAt": "2026-10-24T07:26:28.478Z"
+            },
+            {
+              "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\ESA-Intended\\2026-10-24T07-26-20-677Z\\type-5-page-2-187e45534457fb2abd7de12f2a2258510d57909299d5720197bc42ec775b2530.json",
+              "sha256": "187e45534457fb2abd7de12f2a2258510d57909299d5720197bc42ec775b2530",
+              "url": "https://esastar-publication-ext.sso.esa.int/api/tenderAction/filter/50/50?s=1&tType=5&isF=false&isA=false&sortBy=LastUpdateTime&sortDir=1",
+              "checkedAt": "2026-10-24T07:26:30.634Z"
+            },
+            {
+              "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\ESA-Intended\\2026-10-24T07-26-20-677Z\\type-5-page-3-2e6206e5d7cfdd1bcdd28cf88ed5dde24509c45421ce605f8808c0bbf1da7486.json",
+              "sha256": "2e6206e5d7cfdd1bcdd28cf88ed5dde24509c45421ce605f8808c0bbf1da7486",
+              "url": "https://esastar-publication-ext.sso.esa.int/api/tenderAction/filter/50/100?s=1&tType=5&isF=false&isA=false&sortBy=LastUpdateTime&sortDir=1",
+              "checkedAt": "2026-10-24T07:26:32.448Z"
+            },
+            {
+              "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\ESA-Intended\\2026-10-24T07-26-20-677Z\\type-5-page-4-06abe983f47d6a1fe60df812290786f7bac048e2704e872a0b336178ccfea0a2.json",
+              "sha256": "06abe983f47d6a1fe60df812290786f7bac048e2704e872a0b336178ccfea0a2",
+              "url": "https://esastar-publication-ext.sso.esa.int/api/tenderAction/filter/50/150?s=1&tType=5&isF=false&isA=false&sortBy=LastUpdateTime&sortDir=1",
+              "checkedAt": "2026-10-24T07:26:34.479Z"
+            },
+            {
+              "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\ESA-Intended\\2026-10-24T07-26-20-677Z\\type-5-page-5-4eb950cff85cda6c5d20b44d38e4aaff93e6d6dfe79a2357b05c0906f620e316.json",
+              "sha256": "4eb950cff85cda6c5d20b44d38e4aaff93e6d6dfe79a2357b05c0906f620e316",
+              "url": "https://esastar-publication-ext.sso.esa.int/api/tenderAction/filter/50/200?s=1&tType=5&isF=false&isA=false&sortBy=LastUpdateTime&sortDir=1",
+              "checkedAt": "2026-10-24T07:26:35.878Z"
+            }
+          ]
+        },
+        {
+          "tenderType": 7,
+          "status": "reconciled",
+          "total": 18,
+          "pages": [
+            {
+              "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\ESA-Intended\\2026-10-24T07-26-20-677Z\\type-7-page-1-ef7c42efc9a47fce1bc6083b19798d0b344cce9a8c8aa9af722b694c7936dfd0.json",
+              "sha256": "ef7c42efc9a47fce1bc6083b19798d0b344cce9a8c8aa9af722b694c7936dfd0",
+              "url": "https://esastar-publication-ext.sso.esa.int/api/tenderAction/filter/50?s=1&tType=7&isF=false&isA=false&sortBy=LastUpdateTime&sortDir=1",
+              "checkedAt": "2026-10-24T07:27:12.664Z"
+            }
+          ]
+        }
+      ],
+      "pending": 25
+    }
+  ],
+  "asOf": "2026-10-24T07:29:19.658Z",
+  "retrievalRules": [
+    "Not open for applications/bids.",
+    "Recheck status and expected opening before acting.",
+    "Do not combine with open counts."
+  ]
+}

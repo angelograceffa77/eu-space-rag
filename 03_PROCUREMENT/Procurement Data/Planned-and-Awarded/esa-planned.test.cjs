@@ -1,0 +1,2 @@
+const test=require('node:test'),assert=require('node:assert/strict'),{decodeIntended}=require('./esa-planned.cjs');
+test('Planned ESA decoding accepts Intended only and validates page scope',()=>{const r={start:0,total:1,items:[{id:1,status:{id:1},tenderType:{id:5}}]};assert.equal(decodeIntended(r,1,50,5).rows.length,1);assert.throws(()=>decodeIntended({...r,items:[{...r.items[0],status:{id:2}}]},1,50,5),/scope/);assert.throws(()=>decodeIntended(r,2,50,5),/scope/);assert.throws(()=>decodeIntended(r,1,50,7),/scope/);});

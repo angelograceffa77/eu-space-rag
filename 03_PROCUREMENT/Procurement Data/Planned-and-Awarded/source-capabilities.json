@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-24T07:30:17.878Z",
+  "openArchitectureUnchanged": true,
+  "awardsDateBasis": "Verified contract conclusion or award date >=2020-01-01; publication date alone insufficient",
+  "sources": [
+    {
+      "source": "TED",
+      "planned": "live_validated_9_space_planning_notice_versions",
+      "awards": "82_months_scanned_2020_01_through_2026_10_24_2542_distinct_notice_version_lot_records",
+      "limitations": [
+        "Keyword/CPV discovery is not exhaustive",
+        "Below-threshold and unpublished contracts may be absent",
+        "Unavailable or unmapped winners/dates remain pending",
+        "Notice revisions must not be summed",
+        "2172 historical exclusion/review entries: 924 unsupported/no awarded relation, 271 missing/invalid/out-of-scope dates or winners, 977 unresolved lot mapping. Not all are missing space contracts."
+      ]
+    },
+    {
+      "source": "ESA-STAR",
+      "planned": "live_reconciled_207_intended_procurement_rows_157_space_active_records",
+      "awards": "not_qualified",
+      "limitations": [
+        "Closed is not awarded",
+        "Intended CFP needs funding mechanism review",
+        "18 intended CFP rows reconciled; 8 space CFP candidates require funding-mechanism review; not included as grants."
+      ]
+    },
+    {
+      "source": "EU Funding and Tenders",
+      "planned": "18_reviewed_forthcoming_calls_from_current_portal_snapshot",
+      "awards": "contract_awards_in_TED_where_published",
+      "limitations": [
+        "Grant beneficiaries and CORDIS projects are not procurement winners"
+      ]
+    },
+    {
+      "source": "National portals and other agencies",
+      "planned": "source_specific_adapters_not_yet_qualified",
+      "awards": "TED_published_awards_only_initially",
+      "limitations": [
+        "Existing open adapters do not establish planned or historical award coverage"
+      ]
+    }
+  ]
+}
