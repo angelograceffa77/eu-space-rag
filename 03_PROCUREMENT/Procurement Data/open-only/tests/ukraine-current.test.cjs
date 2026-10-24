@@ -1,0 +1,4 @@
+const {test}=require('node:test'),a=require('node:assert/strict'),{parse,searchUrl}=require('../controller/ukraine-current.cjs');
+const row={tenderID:'UA-2026-10-23-000001-a',title:'Satellite service',status:'active.tendering',tenderPeriod:{endDate:'2026-11-01T12:00:00+02:00'}};
+test('Ukraine uses one-based pages and preserves original tender evidence',()=>{const d=parse(JSON.stringify({page:1,per_page:20,total:1,data:[row]}),searchUrl());a.deepEqual(d.rows[0].sourceRow,row);a.equal(d.rows[0].status,'unverified');a.equal(d.nextUrl,null);});
+test('Ukraine rejects wrong stage, incomplete page and altered query scope',()=>{const raw=JSON.stringify({page:1,per_page:20,total:21,data:[row]});a.throws(()=>parse(raw,searchUrl()),/count/);a.throws(()=>parse(raw,searchUrl()+'&text=space'),/scope/);a.throws(()=>parse(JSON.stringify({page:1,per_page:20,total:1,data:[{...row,status:'complete'}]}),searchUrl()),/stage/);});

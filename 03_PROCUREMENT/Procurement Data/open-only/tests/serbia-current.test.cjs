@@ -1,0 +1,6 @@
+const {test}=require('node:test'),a=require('node:assert/strict'),{parse,searchUrl}=require('../controller/serbia-current.cjs');
+const row={Id:1,Name:'Space',TenderStatusId:4,NoOfDaysSinceSubmission:0,SubmissionDeadline:'2026-11-02T10:00:00'};
+test('Serbian future-date discovery never converts suspended status into verified bidding',()=>{const d=parse(JSON.stringify({data:[row],totalCount:1}),searchUrl());a.equal(d.rows[0].status,'unverified');a.equal(d.rows[0].sourceRow.TenderStatusId,4);a.equal(d.reportedTotal,1);});
+test('Serbian scope and count drift fail closed',()=>{const raw=JSON.stringify({data:[row],totalCount:21});a.throws(()=>parse(raw,searchUrl()),/count/);a.throws(()=>parse(JSON.stringify({data:[],totalCount:0}),searchUrl()+'&search=space'),/scope/);a.equal(parse(JSON.stringify({data:[],totalCount:0}),searchUrl()).rows.length,0);});
+
+test('Current scope rejects overdue rows while original broad evidence remains reproducible',()=>{const m=require('../controller/serbia-current.cjs'),raw=JSON.stringify({data:[{...row,NoOfDaysSinceSubmission:486,SubmissionDeadline:"2022-09-05T10:00:00"}],totalCount:1});a.throws(()=>m.parse(raw,m.searchUrl()),/scope/);const u=new URL(m.searchUrl());u.searchParams.set('filter',JSON.stringify(['NoOfDaysSinceSubmission','>=','0']));a.equal(m.parseLegacy(raw,u.href).rows.length,1);});

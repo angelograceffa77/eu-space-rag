@@ -1,0 +1,7 @@
+'use strict';
+const {test}=require('node:test'),a=require('node:assert/strict'),{parse,searchUrl}=require('../controller/eso-current.cjs');
+const row={ProjectID:1,Reference:'ESO-1',Title:'Telescope control',Description:'Call scheduled to be issued next year',DateDocsAvailableUntil:'/Date(1900000000000)/',Type:'Advanced Information'};
+const payload=(data=[row],total=data.length)=>JSON.stringify({Error:'',RecordCount:total,PageSize:10,PageCount:Math.max(1,Math.ceil(total/10)),Data:data});
+test('ESO candidate preserves source fields without turning document availability into a bid deadline',()=>{const d=parse(payload(),searchUrl());a.equal(d.reportedTotal,1);a.deepEqual(d.rows[0].sourceRow,row);a.equal(d.rows[0].deadline,undefined);a.equal(d.rows[0].status,'unverified');a.equal(d.rows[0].stage,'prior information');});
+test('ESO pagination requires exact totals and the current broad scope',()=>{const rows=Array.from({length:10},(_,i)=>({...row,ProjectID:i+1}));a.equal(parse(payload(rows,11),searchUrl()).nextUrl,searchUrl(2));a.throws(()=>parse(payload(),searchUrl().replace('Current','Past')),/scope/);a.throws(()=>parse(payload([row],11),searchUrl()),/count/);a.throws(()=>parse(payload([row,row]),searchUrl()),/duplicate/);});
+test('ESO verified empty inventory needs a structured zero count and no source error',()=>{a.equal(parse(payload([],0),searchUrl()).rows.length,0);a.throws(()=>parse(JSON.stringify({Error:'Authentication failed',Data:[]}),searchUrl()),/schema/);});
