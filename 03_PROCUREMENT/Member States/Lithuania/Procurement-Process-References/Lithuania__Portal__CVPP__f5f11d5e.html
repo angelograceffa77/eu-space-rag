@@ -1,0 +1,1184 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CVPP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="culture" content="lt-LT" />
+<script src="/Libs/globalize/globalize.js" type="text/javascript"></script>
+
+<script src="/Scripts/modernizr-2.6.2.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-2.0.3.min.js" type="text/javascript"></script>
+<script src="/bundles/jqueryui?v=WC6N8m9Trn14rslRsG2Vsaigcmmzs0atpBd-erCo_RQ1"></script>
+
+<script src="/Scripts/localization/jquery.ui.datepicker-lt.js" type="text/javascript"></script>
+<script src="/Scripts/globalization/globalize.js" type="text/javascript"></script>
+<script src="/Scripts/globalization/cultures/globalize.culture.lt.js" type="text/javascript"></script>
+<script src="/Libs/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/Libs/bootstrap/js/bootstrap-multiselect.js" type="text/javascript"></script>
+<link href="/Libs/bootstrap/css/bootstrap-multiselect.css" rel="stylesheet" />
+<script src="/bundles/jqueryval?v=5ivtw5gcYADJrWVT8BOgqscD1CJ0AG4-J3DvkAK2EU81"></script>
+
+<script src="/bundles/scripts?v=hkYW_DjZYUtMCHnjs5SAvQH1w7-XXFqPwsFAQ9jgYhY1"></script>
+
+<script src="/bundles/jqtree?v=LuyKPlFfGxtPhe8qB2A_vMFJ5smjCLGPtgLXHFFLTpA1"></script>
+
+<script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#changePasswordLink").click(function (e) {
+            e.preventDefault();
+            window.open('/Account/ChangePassword', 'Change Password', 'width=600,height=400,resizable,scrollbars=yes,location=no');
+        });
+
+        $("#updatePersonalDataLink").click(function (e) {
+            e.preventDefault();
+            window.open('/Account/UpdatePersonalData', 'Update Personal Data', 'width=600,height=400,resizable,scrollbars=yes,location=no');
+        });
+    });
+</script>
+    <link href="/Content/Images/cvpp_logo_square.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/Libs/normalize/css?v=Xf7S1Le7NUp7pJJKteA3lV-HEBndNZkJXPa-3LWFLfY1" rel="stylesheet"/>
+<link href="/Libs/jqueryui/themes/doffin/css?v=oXfeyDJlqSx65HY4GWv0GdgECN5mmtcAENTseQH0pso1" rel="stylesheet"/>
+<link href="/Libs/bootstrap/css/styles?v=vBwfhC60Y4DTTW3Xzc1zNvGoGOZe0tknG-Cvj7tc36o1" rel="stylesheet"/>
+<link href="/Content/css?v=Be12_bettg91Oh2xL-wHAMfNdJoaHJ4quMq75HwOadY1" rel="stylesheet"/>
+<link href="/Libs/jqueryuitimepicker?v=mgLqMZx-pjvsV7kRBczDmNd51vZtaA9eWz6iNuxUD3Y1" rel="stylesheet"/>
+
+    
+    <link href="/Content/autocomplete?v=" rel="stylesheet"/>
+<link href="/Libs/jqtree/jqtree/css?v=PBpiOv6qrnlx-dmDpkUENgGsa_HEIrzaXQZHUIGeZTU1" rel="stylesheet"/>
+
+    <style type="text/css">
+        .cpv-input {
+            width: 166px;
+        }
+
+        .tree-checkbox {
+            margin-right: 5px !important;
+        }
+
+        .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+            font-size: 14px;
+        }
+
+        .left-col {
+            width: 600px;
+            float: left;
+        }
+
+        .right-col {
+            width: 200px;
+            float: right;
+            text-align: right;
+        }
+        .search-ddl {
+            width: 70px;
+            float: left;
+        }
+    </style>
+
+    
+    <script type="text/javascript">
+    $(function () {
+        var selectedItems = [];
+        var $cpvInputField = $('#Cpvs');
+
+        var $dialog = $('#dialog').dialog({
+            autoOpen: false,
+            height: 800,
+            width: 800,
+            modal: true
+        });
+
+        var $tree = $('#cpvtree');
+        var $filterInput = $dialog.find('#cpvFilterInput');
+        
+        var createCheckBox = function(node) {
+            var checkBox = $('<input type="checkbox" class="tree-checkbox" data-node-id="' + node.id + '" />');
+            checkBox.on('click', updateCheckedState);
+            initCheckBoxState(checkBox);
+            return checkBox;
+        };
+
+        var initCheckBoxState = function($checkBox) {
+            var nodeId = $checkBox.data('nodeId');
+            var inarray = $.inArray(nodeId, selectedItems);
+            $checkBox.prop('checked', inarray >= 0);
+        };
+
+        var setTreeNodeHtml = function(node, $li) {
+            var checkBox = createCheckBox(node);
+            $li.find('.jqtree-title').prepend(checkBox);
+        };
+
+        var updateCheckedState = function(e) {
+            if ($(this).prop('checked')) {
+                selectedItems.push($(this).data('nodeId'));
+            } else {
+                removeFromSelectionArray($(this).data('nodeId'));
+            }
+
+        };
+
+        var clearCheckedState = function() {
+            selectedItems = [];
+            if (isTree($tree)) {
+                $.each(
+                    $tree.find('.tree-checkbox'),
+                    function(_, checkbox) {
+                        $(checkbox).prop('checked', false);
+                    });
+            }
+        };
+
+        var RefreshSelectedNodes = function() {
+            if (isTree($tree)) {
+                $.each(
+                    $tree.find('.tree-checkbox'),
+                    function(_, checkbox) {
+                        initCheckBoxState($(checkbox));
+                    });
+            }
+        };
+
+        var removeFromSelectionArray = function(nodeId) {
+            selectedItems = jQuery.grep(selectedItems, function(value) {
+                return value != nodeId;
+            });
+
+        };
+
+
+        var updateCpvInput = function() {
+            $cpvInputField.val(selectedItems.join(' '));
+        };
+
+
+        var isTree = function($node) {
+            return $node.data('hasTree');
+        };
+
+
+        var createTree = function(data) {
+            if (!isTree($tree)) {
+                $tree.data('hasTree', true);
+                $tree.tree({
+                    data: data,
+                    onCreateLi: setTreeNodeHtml
+                });
+            }
+        };
+
+        var cpvTreeFilter = function($filterInput, $tree, $filter) {
+            var searchText = $filterInput.val();
+            if (!searchText) {
+                RefreshSelectedNodes();
+                $tree.show();
+                $filter.hide();
+                return;
+            }
+            $tree.hide();
+            $filter.show();
+
+            $.get('/CpvTree/GetMatchingNodesInFilteredCpvTree?filter=' + encodeURIComponent(searchText), function(data) {
+
+                var isLeafNode = function(node) {
+                    return !node.children || node.children.length === 0 || !node.load_on_demand;
+                };
+
+                var pleaseOpen = function($t, thisNode) {
+                    if (!thisNode)
+                        return;
+
+                    if (isLeafNode(thisNode)) {
+                        $t.tree('openNode', thisNode.parent, false);
+                    } else {
+                        $t.tree('openNode', thisNode, false);
+                    }
+                };
+
+
+                $filter.html(data);
+
+
+                if (!$filter.data('hasAccordion')) {
+                    $filter.accordion({
+                        collapsible: true,
+                        heightStyle: 'content',
+                        active: 'none',
+                        beforeActivate: function(event, ui) {
+                            var $panel = ui.newPanel;
+                            var nodeId = $panel.data('nodeId');
+                            if (nodeId) {
+                                var node = $panel.tree('getNodeById', nodeId);
+                                if (!node)
+                                    $.get('/CpvTree/GetNodeTreeDataInFilteredCpvTree?node=' + nodeId, function(result) {
+                                        $panel.tree({
+                                            data: result,
+                                            onCreateLi: setTreeNodeHtml
+                                        });
+
+                                        node = $panel.tree('getNodeById', nodeId);
+                                        pleaseOpen($panel, node);
+                                    });
+                            }
+                        }
+                    });
+                    $filter.data('hasAccordion', true);
+                } else {
+                    $filter.accordion('refresh');
+                    $filter.accordion({ active: 'none' });
+                }
+
+
+            });
+        };
+
+        var initTree = function() {
+
+            $dialog.find('#cpvDialogLoadingMessage').hide();
+            $dialog.find('#cpvFilterInputBox').show();
+
+            var $filter = $dialog.find('#cpvFilter');
+            var $filterInputBtn = $dialog.find('#cpvFilterInputBtn');
+            var $filterResetBtn = $dialog.find('#cpvFilterResetBtn');
+
+            $filterInputBtn.on('click', function() {
+                cpvTreeFilter($filterInput, $tree, $filter);
+            });
+
+            $filterResetBtn.on('click', function() {
+                $filterInput.val('');
+                cpvTreeFilter($filterInput, $tree, $filter);
+            });
+
+            $filterInput
+                .bind("keydown", function(event) {
+                    if (event.keyCode === $.ui.keyCode.TAB &&
+                        $(this).data("ui-autocomplete").menu.active) {
+                        event.preventDefault();
+                    } else if (event.keyCode === $.ui.keyCode.ENTER) {
+                        cpvTreeFilter($filterInput, $tree, $filter);
+                        event.preventDefault();
+                    }
+                })
+                .autocomplete({
+                    minLength: 3,
+                    source: function(request, response) {
+                        $.getJSON("/CpvTree/CpvSuggetions", { term: request.term }, response);
+                    },
+                    select: function(event, ui) {
+                        this.value = ui.item.value;
+                        cpvTreeFilter($filterInput, $tree, $filter);
+                        return false;
+                    }
+                });
+
+            $tree.show();
+
+            $dialog.dialog({
+                buttons: {
+                    'Pasirinkti': function() {
+                        updateCpvInput();
+                        $(this).dialog("close");
+                    },
+                    'Atšaukti': function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+        };
+
+        var openCpvSelectDialog = function(e) {
+            $dialog.find('#cpvDialogLoadingMessage').show();
+            $dialog.find('#cpvFilter, #cpvtree, #cpvFilterInputBox').hide();
+            $filterInput.val('');
+            clearCheckedState();
+
+            $dialog.dialog({
+                title: 'Pasirinkti kategorijas (iš BVPŽ medžio)',
+                buttons: {}
+            });
+
+            if (!isTree($tree)) {
+                $.get('/CpvTree/CpvTree').done(function(data) {
+                    createTree(data);
+                    initTree();
+                });
+            } else {
+                initTree();
+            }
+
+            $dialog.dialog('open');
+            e.preventDefault();
+        };
+
+        $('#selectCpvAction').click(openCpvSelectDialog);
+        $('#Cpvs').click(function(e) {
+            e.preventDefault();
+            openCpvSelectDialog();
+        });
+    });
+</script>
+
+
+    
+    <script type="text/javascript">
+        $(function() {
+
+            var form = $("#searchForm");
+
+            var submitForm = function() {
+                if (form.valid()) {
+                    $("#PageNumber").val(1);
+                    form.submit();
+                }
+            };
+
+            $('#ContractTypes, #ProcedureSearchTypes,#NoticeTypes,#PublicationTypes,#SectorSearchTypes').multiselect({
+                nonSelectedText: "Visi",
+                allSelectedText: "Visi",
+                selectAllText: "Visi",
+                    includeSelectAllOption: true,
+                    buttonWidth: '220px',
+                    selectedClass: ''
+                },
+                'selectAll');
+
+            // Get the items from post back 
+            $.urlParam = function(name) {
+                var result = [],
+                    tmp = [];
+                location.search
+                    .substr(1)
+                    .split("&")
+                    .forEach(function (item) {
+                        tmp = item.split("=");
+                        if (tmp[0] === name) result.push(decodeURIComponent(tmp[1]));
+                    });
+                return result;
+            }
+
+            var noticeTypeIds = $.urlParam('NoticeTypeIds').toString();
+            var publicationTypeIds = $.urlParam('PublicationTypeIds').toString();
+            var typeContractIds = $.urlParam('TypeContractIds').toString();
+            var procedureSearchTypeIds = $.urlParam('ProcedureSearchTypeIds').toString();
+            var sectorSearchTypeIds = $.urlParam('SectorSearchTypeIds').toString();
+
+            // Update the selected list on the UI 
+            if (typeContractIds != null) {
+                $('#ContractTypes').val(typeContractIds.split(','));
+                $('#ContractTypes').multiselect('rebuild');
+            }
+           
+            if (procedureSearchTypeIds != null) {
+                $('#ProcedureSearchTypes').val(procedureSearchTypeIds.split(','));
+            $('#ProcedureSearchTypes').multiselect('rebuild');
+            }
+            if (noticeTypeIds != null) {
+                $('#NoticeTypes').val(noticeTypeIds.split(','));
+            $('#NoticeTypes').multiselect('rebuild');
+            }
+            if (publicationTypeIds != null) {
+                $('#PublicationTypes').val(publicationTypeIds.split(','));
+            $('#PublicationTypes').multiselect('rebuild');
+            }
+            if (sectorSearchTypeIds != null) {
+                $('#SectorSearchTypes').val(sectorSearchTypeIds.split(','));
+            $('#SectorSearchTypes').multiselect('rebuild');
+            }
+
+            $('#OrderingType').on('change',
+                function(e) {
+                    if (this.value == 1 || this.value == 2)
+                        $("#OrderingDirection").val("1");
+                    else
+                        $("#OrderingDirection").val("0");
+
+                    submitForm();
+                });
+
+            $('#OrderingDirection').on('change',
+                function() {
+                    submitForm();
+                });
+
+            if ($('#OrderingType').val() === "0") $('#OrderingDirection').hide();
+            else $('#OrderingDirection').show();
+
+            $('#mainSearchBox, #mainFilterBox')
+                .keypress(function(e) {
+                    if ((e.which && e.which == $.ui.keyCode.ENTER) ||
+                        (e.keyCode && e.keyCode == $.ui.keyCode.ENTER)) {
+                        if (!$(e.target).is('#selectCpvAction')) {
+                            submitForm();
+                        }
+                    }
+                });
+
+            $('.notice-input-date').datepicker();
+
+            $('.btn-notice-search').click(function () {
+                submitForm();
+            });
+
+            $('#PageSize').change(function(e) {
+                submitForm();
+            });
+
+
+            var split = function(val) {
+                
+                return val.split(/[ "+\-(&]+/);
+            };
+
+            var extractLast = function(term) {
+                return split(term).pop();
+            };
+
+            $("#Query")
+                // don't navigate away from the field on tab when selecting an item
+                .bind("keydown",
+                    function(event) {
+                        if (event.keyCode === $.ui.keyCode.TAB &&
+                            $(this).data("ui-autocomplete").menu.active) {
+                            event.preventDefault();
+                        }
+                    })
+                .autocomplete({
+                    minLength: 3,
+                    source: function(request, response) {
+                        // delegate back to autocomplete, but extract the last term
+                        var term = extractLast(request.term);
+                        if (term.length >= 3) {
+                            $.getJSON("/Notice/Suggetions", { term: term }, response);
+                        }
+
+                    },
+                    focus: function() {
+                        // prevent value inserted on focus
+                        return false;
+                    },
+                    select: function(event, ui) {
+                        // Remove the typed value with the selected value
+                        var lastTerm = extractLast(this.value);
+                        var query = this.value;
+
+                        query = query.substring(0, query.length - lastTerm.length) + ui.item.value;
+                        this.value = query;
+                        return false;
+
+                    }
+                });
+
+            $(".show-more a").on("click",
+                function() {
+                    var $link = $(this);
+                    var $content = $link.parent().prev("div.text-content");
+                    var linkText = $link.text();
+
+                    switchClasses($content);
+
+                    $link.text(getShowLinkText(linkText));
+
+                    return false;
+                });
+
+            function switchClasses($content) {
+                if ($content.hasClass("short-text")) {
+                    $content.switchClass("short-text", "full-text", 400);
+                } else {
+                    $content.switchClass("full-text", "short-text", 400);
+                }
+
+
+            }
+
+            function getShowLinkText(currentText) {
+                var newText = '';
+
+                if (currentText.toUpperCase() === "[...]") {
+                    newText = "Show less";
+                } else {
+                    newText = "[...]";
+                }
+
+                return newText;
+            }
+
+            $("#helpTooltip").tooltip({
+                position: {
+                    my: 'left center',
+                    at: 'right+10 center'
+                }
+
+            });
+
+            $("#IncludeExpired").each(function () {
+                fixHiddenCheckField(this);
+            });
+
+            $("#IncludeExpired").change(function () {
+                fixHiddenCheckField(this);
+            });
+
+            $("#IsGreenProcurement").each(function () {
+                fixHiddenCheckField(this);
+            });
+            $("#IsGreenProcurement").change(function () {
+                fixHiddenCheckField(this);
+            });
+            function fixHiddenCheckField(checkField) {
+                var name = $(checkField).attr("name");
+                var hiddenSelector = "input:hidden[name=" + name + "]";
+                var checkBoxesInListSelector = "input:checkbox[name=" + name + "]";
+                var checkedCheckBoxesInListSelector = "input:checked[name=" + name + "]";
+
+                if ($(checkedCheckBoxesInListSelector).length >= 1 || $(checkBoxesInListSelector).length > 1) {
+                    $("input").remove(hiddenSelector);
+                }
+                else {
+                    if ($(hiddenSelector).length == 0)
+                        $(checkField).parents("form").append("<input type='hidden' name='"+name+"' value='false' />");
+                }
+            }
+        });
+
+
+        //var filterObj = (function ($) {
+
+        //}(jQuery));
+    </script>
+
+</head>
+<body>
+    <div class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="header-content lit-header-content">
+                        <div class="cvpp-logo">
+                            <div class="pull-left span3">
+                                <a class="span2" href="/">
+                                    <img alt="CVPP" src="/Content/Images/cvpp_logo.png">
+                                </a>
+                                <h5 class="span3">Centrinis viešųjų pirkimų portalas</h5>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <div class="span3">
+                                <a target="_blank" href="http://vpt.lrv.lt/"><img alt="CVPP" src="/Content/Images/logo_lit.png"></a>
+                            </div>
+                        </div>
+                        <div class="pull-right lit-header-tooling">
+                            <div class="lit-languages-list">
+
+
+                                <a href="/Home/SetCulture?code=EN">EN</a> | <a href="/Home/SetCulture?code=LT">LT</a>
+                            </div>
+	                        <div>
+			                        <ul class="nav nav-pills">
+				                        <li class="active">
+					                        <a target="_blank" href="https://pirkimai.eviesiejipirkimai.lt/login.asp?B=PPO">Prisijungimas prie CVP IS</a>
+				                        </li>
+			                        </ul>
+	                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-menu-box">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="menu-content lit-menu-content">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <ul class="nav ">
+                                    <li>
+                                        <a target="_blank" href="http://www.cvpp.lt"><b>Pirkimų skelbimai <span style="color:red"> iki </span> 2017 m. liepos 1 d</b></a>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" href="http://www.cvpp.lt/index.php?option=com_vptpublic&task=sutartys&Itemid=109"><b>Sutartys</b></a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Ataskaitos</b><b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a target="_blank" href="http://www.cvpp.lt/index.php?option=com_profile&task=ataskaitos&Itemid=86&Itemid=91">Ataskaitos (iki 2017 m. liepos 1 d.)</a>
+                                            </li>
+                                            <li>
+                                                <a href=/ReportsOrProtocol>Ataskaitos (nuo 2017 m. liepos 1 d.)</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Metinis pirkimų planas</b><b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                    <li>
+                                                <a target="_blank" href="http://www.cvpp.lt/index.php?option=com_vptpublic&Itemid=88">Metiniai pirkimų planai (iki 2018 m. sausio 1 d.)</a>
+                                            </li>
+                                            <li>
+                                                <a href=/PlannedProcurement/List>Metiniai pirkimų planai (nuo 2018 m. sausio 1 d.)</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li>
+                                        <a target="_blank" href="https://vpt.lrv.lt/lt/pasalinimo-pagrindai-1/nepatikimu-tiekeju-sarasas-1/"><b>Nepatikimi tiekėjai</b></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://vpt.lrv.lt/lt/nuorodos/kuro-skelbimai-ir-ataskaitos"><b>Kuro pirkimai</b></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://www.cvpp.lt/?option=com_social&Itemid=108"><b>VPĮ 23 str. įmonės</b></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main-content-box">
+        <div class="container">
+            
+
+
+
+
+<form action="/" id="searchForm" method="get">    <div class="row">
+        <div class="span9">
+            <div class="content-box-left">
+                <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+                <h2>
+                    Pirkimų skelbimai nuo 2017 m. liepos 1 d. </br><font size="2" color="black" face="Calibri,Arial,sans-serif">Paieška gali būti vykdoma pagal pirkimo pavadinimą ar jo fragmentą. Tam paieškos lauko kairėje pusėje pasirinkite paieškos kriterijų. </font></br><font size="2" color="black" face="Calibri,Arial,sans-serif"><b>Tarptautinių pirkimų paieška pagal BVPŽ kodus CVPP laikinai neveikia. RSS prenumeratos pranešimai apie tarptautinius pirkimus taip pat nėra siunčiami. Tarptautinių skelbimų CVPP paiešką atlikite pagal pavadinimo raktinius žodžius arba TED puslapyje.</br> Daugiau informacijos apie paiešką rasite <a href="https://vpt.lrv.lt/lt/naujienos-3/tarptautiniu-pirkimu-kai-paskelbta-skelbimo-e-forma-paieska-cvpp-ir-ted/">čia.</a></b></font>
+                    <i id="helpTooltip" title="Paieška gali būti vykdoma pagal pirkimo pavadinimą ar jo fragmentą, pirkimo aprašymą, perkančiosios organizacijos kodą ar pavadinimą. Tam paieškos lauko kairėje pusėje pasirinkite paieškos kriterijų." style="margin-top: 6px" class="icon-question-sign"></i>
+                </h2>
+
+                <div class="input-append" id="mainSearchBox">
+                    <select class="search-ddl" data-val="true" data-val-number="The field SelectedTextFilter must be a number." id="SelectedTextFilter" name="SelectedTextFilter"><option value="">Visi</option>
+<option value="1">Pirkimo pavadinimas</option>
+<option value="2">Pirkimo aprašymas</option>
+<option value="3">Perkančiosios organizacijos pavadinimas</option>
+<option value="4">Perkančiosios organizacijos kodas</option>
+</select>
+                    <input class="span7" id="Query" name="Query" placeholder="Ieškoti" type="text" value="" />
+                    <button class="btn btn-notice-search" type="button" id="searchBtn">Ieškoti</button>
+                </div>
+                <div class="notice-search-result">
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/686856?B=PPO" target="_blank">Statinio bendrosios projekto ekspertizės ir statinio darbo projekto dalies (konstrukcijų) ekspertizės paslaugų centralizuotas viešasis pirkimas, taikant dinaminę pirkimo sistemą</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/34617" target="_blank">Viešoji įstaiga CPO LT</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Skelbimas apie sutarties skyrimą</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>648563</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-658225</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2033-03-29</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                    <div>
+<a href="/ReportsOrProtocol/Details/2023-624284?formTypeId=1" target="_blank">Nuoroda į ataskaitą</a>                                            </div>
+                                                                                                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/773649?B=PPO" target="_blank">26531 KVS: „Rail Baltica&quot; projekto projektinės dokumentacijos ekspertinio tikrinimo vertinimo paslaugos&quot;.</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/4670" target="_blank">AB &quot;Lietuvos geležinkeliai&quot;</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Pranešimas apie pakeitimus</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>730675</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-662696</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2034-10-31</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                                                                                            </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/761843?B=PPO" target="_blank">Paprastojo remonto darbų pirkimas, siekiant sukurti dinaminę pirkimo sistemą</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/6770" target="_blank">Valstybės įmonė Ignalinos atominė elektrinė</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Pranešimas apie pakeitimus</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>719510</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-614157</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2029-07-07</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                    <div>
+<a href="/ReportsOrProtocol/Details/2024-669914?formTypeId=1" target="_blank">Nuoroda į ataskaitą</a>                                            </div>
+                                                                                                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/774101?B=PPO" target="_blank">Nr. 27427 KVS: Atskirų &quot;Rail Baltica&quot; projekto objektų projektavimas ir rangos darbai</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/4670" target="_blank">AB &quot;Lietuvos geležinkeliai&quot;</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Pranešimas apie pakeitimus</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>731106</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-675709</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2034-08-27</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                                                                                            </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/686861?B=PPO" target="_blank">Statinių ekspertizės paslaugų centralizuotas viešasis pirkimas, taikant dinaminę pirkimo sistemą</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/34617" target="_blank">Viešoji įstaiga CPO LT</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Skelbimas apie sutarties skyrimą</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>648568</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-613528</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2033-06-27</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                    <div>
+<a href="/ReportsOrProtocol/Details/2023-648604?formTypeId=1" target="_blank">Nuoroda į ataskaitą</a>                                            </div>
+                                                                                                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/765140?B=PPO" target="_blank">DPS. Griovimo darbų pirkimas</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/6770" target="_blank">Valstybės įmonė Ignalinos atominė elektrinė</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Pranešimas apie pakeitimus</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>722621</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-688175</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2029-07-24</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                    <div>
+<a href="/ReportsOrProtocol/Details/2024-638119?formTypeId=1" target="_blank">Nuoroda į ataskaitą</a>                                            </div>
+                                                                                                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/792693?B=PPO" target="_blank">IT techninės įrangos garantinė priežiūra</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/2334" target="_blank">VĮ Registrų centras </a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Pranešimas apie pakeitimus</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>748675</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-604512</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2033-01-13</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                                                                                            </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/771357?B=PPO" target="_blank">VP-2156 Inžineriniu sistemu projektavimas, irengimas ir remontas (DPS)</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/595" target="_blank">VĮ Turto bankas</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Pranešimas apie pakeitimus</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>728513</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-621136</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2029-08-05</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                    <div>
+<a href="/ReportsOrProtocol/Details/2024-610279?formTypeId=1" target="_blank">Nuoroda į ataskaitą</a>                                            </div>
+                                                                                                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/615117?B=PPO" target="_blank">VP-1507 Statybos darbai</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/595" target="_blank">VĮ Turto bankas</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Pranešimas apie pakeitimus</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>580915</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-637862</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2027-01-31</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                    <div>
+<a href="/ReportsOrProtocol/Details/2023-651887?formTypeId=1" target="_blank">Nuoroda į ataskaitą</a>                                            </div>
+                                                                                                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                                <div class="notice-search-item">
+                                    <div class="notice-search-item-header">
+
+                                        <img class="pull-right" alt="" src="/Content/Images/flag_eu.png" />
+                                                                                    <a class="" href="https://pirkimai.eviesiejipirkimai.lt/ctm/Supplier/PublicPurchase/704987?B=PPO" target="_blank">VP-765 Elektromobilių įkrovimo stotelių montavimas ir nuoma</a>
+                                        </div>
+
+
+                                    <div class="left-col">
+                                            <div>
+                                                Pirkimo vykdytojas:
+                                                    <a href="https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/595" target="_blank">VĮ Turto bankas</a>
+
+                                            </div>
+                                        
+                                            <div>Skelbimo tipas: <strong>Pranešimas apie pakeitimus</strong></div>
+                                                                                    <div>Pirkimo numeris: <strong>665908</strong></div>
+                                    </div>
+                                    <div class="right-col">
+                                        <div>Skelbimo kodas: 2024-635337</div>
+                                            <div>Pasiūlymų pateikimo terminas: <span class="label label-info">2028-05-26</span></div>
+                                                                                    <div>Paskelbimo data: 2024-12-02</div>
+                                                                                    <div>
+<a href="/ReportsOrProtocol/Details/2024-681510?formTypeId=1" target="_blank">Nuoroda į ataskaitą</a>                                            </div>
+                                                                                                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+
+
+                                </div>
+                                <hr />
+                </div>
+
+            </div>
+        </div>
+        <div class="span3">
+
+            <div class="content-box-right" id="mainFilterBox">
+
+                <h2>Rūšiuoti:</h2>
+                <div>
+                    <select data-val="true" data-val-number="The field OrderingType must be a number." id="OrderingType" name="OrderingType"><option value="0">Nepasirinkta</option>
+<option value="1">Paskelbimo data</option>
+<option value="2">Pasiūlymų pateikimo terminas</option>
+<option value="3">Skelbimo kodas</option>
+<option value="4">Pirkimo pavadinimas</option>
+<option value="5">Pirkimo vykdytojas</option>
+</select>
+                    <select data-val="true" data-val-required="The OrderingDirection field is required." id="OrderingDirection" name="OrderingDirection" style="display:none;"><option selected="selected" value="0">Didėjančia tvarka</option>
+<option value="1">Mažėjančia tvarka</option>
+</select>
+                </div>
+                <hr />
+
+                <h2>Filtras</h2>
+                <div>
+                    <label for="TypeContracts">Pirkimo objekto rūšis</label>
+                    <select id="ContractTypes" multiple="multiple" name="TypeContractIds"><option value="1">Darbai</option>
+<option value="2">Paslaugos</option>
+<option value="3">Prekės</option>
+</select>
+                </div>
+                <div>
+                    <label for="ProcedureSearchTypes">Procedūros tipas</label>
+                    <select id="ProcedureSearchTypes" multiple="multiple" name="ProcedureSearchTypeIds"><option value="1">Atviras konkursas </option>
+<option value="2">Ribotas konkursas </option>
+<option value="3">Skelbiamos derybos </option>
+<option value="4">Konkurencinis dialogas </option>
+<option value="5">Inovacijų partnerystė </option>
+<option value="6">Projekto konkursas </option>
+</select>
+                </div>
+                <div>
+                    <label for="NoticeTypes">Skelbimo tipas</label>
+                    <select id="NoticeTypes" multiple="multiple" name="NoticeTypeIds"><option value="1">Išankstinis informacinis pranešimas</option>
+<option value="2">Skelbimas apie pirkimą</option>
+<option value="3">Skelbimas apie sutarties skyrimą</option>
+<option value="4">Savanoriškas išankstinis skaidrumo skelbimas</option>
+<option value="6">Skelbimas pirkėjo profilyje</option>
+<option value="9">Skelbimas apie pakeitimą</option>
+</select>
+                </div>
+                <div>
+                    <label for="PublicationTypes">Skelbimo forma</label>
+                    <select id="PublicationTypes" multiple="multiple" name="PublicationTypeIds"><option value="1">Supaprastinti skelbimai (be MV)</option>
+<option value="2">Tarptautiniai skelbimai</option>
+<option value="3">Mažos vertės (MV) pirkimo skelbimai</option>
+<option value="4">Techninių specifikacijų projektas</option>
+<option value="5">Rinkos konsultacija</option>
+<option value="6">Europos –  e. Formas</option>
+</select>
+                </div>
+                <div>
+                    <label for="SectorSearchTypes">Skyrius</label>
+                    <select id="SectorSearchTypes" multiple="multiple" name="SectorSearchTypeIds"><option value="3">Gynyba</option>
+<option value="4">Koncesija</option>
+</select>
+                </div>
+                <div>
+                    <label class="checkbox">
+                        <input data-val="true" data-val-required="The IncludeExpired field is required." id="IncludeExpired" name="IncludeExpired" type="checkbox" value="true" /><input name="IncludeExpired" type="hidden" value="false" /> Įtraukti pasibaigusius skelbimus
+                    </label>
+                </div>
+                <hr />
+                <div>
+                    <label for="Cpvs">BVPŽ kodas</label>
+
+                    <div class="input-append">
+                        <input Id="Cpvs" class="cpv-input" data-val="true" data-val-regex="Neleistinos kategorijos (BVPŽ kodai)" data-val-regex-pattern="^[ \t,:;]*((\d{8})(-\d)?([ \t,:;])*)*$" id="Cpvs" name="Cpvs" type="text" value="" />
+                        <button class="btn" id="selectCpvAction" type="button"><i class="icon-list-alt"></i></button>
+                    </div>
+                </div>
+                <div>
+                    <label for="TenderId">Pirkimo numeris</label>
+                    <input id="TenderId" name="TenderId" type="text" value="" />
+                </div>
+                <div>
+                    <label for="EpsReferenceNr">Skelbimo kodas</label>
+                    <input id="EpsReferenceNr" name="EpsReferenceNr" type="text" value="" />
+                </div>
+                <hr />
+                <div>
+                    <label for="DeadlineFromDate">Pasiūlymo pateikimo terminas nuo</label>
+                    
+<input class="date-picker" data-val="true" data-val-date="The field DeadlineFromDate must be a date." id="DeadlineFromDate" name="DeadlineFromDate" type="text" value="" />
+                </div>
+                <div>
+                    <label for="DeadlineToDate">Pasiūlymo pateikimo terminas iki</label>
+                    
+<input class="date-picker" data-val="true" data-val-date="The field DeadlineToDate must be a date." id="DeadlineToDate" name="DeadlineToDate" type="text" value="" />
+                </div>
+                <hr />
+                <div>
+                    <label for="PublishedFromDate">Paskelbimo data nuo</label>
+                    
+<input class="date-picker" data-val="true" data-val-date="The field PublishedFromDate must be a date." id="PublishedFromDate" name="PublishedFromDate" type="text" value="" />
+                </div>
+                <div>
+
+                    <label for="PublishedToDate">Paskelbimo data iki</label>
+                    
+<input class="date-picker" data-val="true" data-val-date="The field PublishedToDate must be a date." id="PublishedToDate" name="PublishedToDate" type="text" value="" />
+                </div>
+                <hr />
+                <div>
+                    <label class="checkbox">
+                        <input data-val="true" data-val-required="The IsGreenProcurement field is required." id="IsGreenProcurement" name="IsGreenProcurement" type="checkbox" value="true" /><input name="IsGreenProcurement" type="hidden" value="false" /> Rodyti tik žaliuosius pirkimus
+                    </label>
+                </div>
+                <hr />
+                <div id="filterNoticeSearch" class="pagination-right">
+                    <button class="btn btn-notice-search" type="button">Ieškoti</button>
+                </div>
+                <hr />
+            </div>
+
+        </div>
+    </div>
+        <div class="row">
+            <div class="span12">
+                <div class="content-box">
+                    <div class="pagination ctm-pagination"><ul><li class="disabled"><a><i class="icon-step-backward"></i></a></li><li class="disabled"><a><i class="icon-backward"></i></a></li><li><a class="state-active action-numeric pager-action" data-current-page="1" href="/?pageNumber=1&amp;pageSize=10">1</a></li><li><a class="action-numeric pager-action" data-current-page="2" href="/?pageNumber=2&amp;pageSize=10">2</a></li><li><a class="action-numeric pager-action" data-current-page="3" href="/?pageNumber=3&amp;pageSize=10">3</a></li><li><a class="action-numeric pager-action" data-current-page="4" href="/?pageNumber=4&amp;pageSize=10">4</a></li><li><a class="action-numeric pager-action" data-current-page="5" href="/?pageNumber=5&amp;pageSize=10">5</a></li><li><a class="action-numeric pager-action" data-current-page="6" href="/?pageNumber=6&amp;pageSize=10">6</a></li><li><a class="action-numeric pager-action" data-current-page="7" href="/?pageNumber=7&amp;pageSize=10">7</a></li><li><a class="action-numeric pager-action" data-current-page="8" href="/?pageNumber=8&amp;pageSize=10">8</a></li><li><a class="action-numeric pager-action" data-current-page="9" href="/?pageNumber=9&amp;pageSize=10">9</a></li><li><a class="action-numeric pager-action" data-current-page="10" href="/?pageNumber=10&amp;pageSize=10">10</a></li><li><a class="action-numeric pager-action" data-current-page="11" href="/?pageNumber=11&amp;pageSize=10">...</a></li><li><a class="pager-action ctm-icon-link" data-current-page="2" href="/?pageNumber=2&amp;pageSize=10"><i class="icon-forward"></i></a></li><li><a class="pager-action ctm-icon-link" data-current-page="75" href="/?pageNumber=75&amp;pageSize=10"><i class="icon-step-forward"></i></a></li></ul><ul class="ctm-pager-info"><li><span><label for="PageNumber">Puslapis</label></span></li><li><span class="ctm-pager-input"><input data-val="true" data-val-number="The field PageNumber must be a number." id="PageNumber" name="PageNumber" type="text" value="1" /></span></li><li><span>iš 75</span></li></ul><ul class="ctm-pager-info pull-right"><li><span>Parodyti</span></li><li><span class="ctm-pager-input"><select data-val="true" data-val-number="The field PageSize must be a number." id="PageSize" name="PageSize"><option selected="selected" value="10">10</option>
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select></span></li><li><span><label for="PageSize">per puslapį</label></span></li></ul></div>
+                </div>
+            </div>
+        </div>
+</form>
+<div id="dialog">
+    <div class="tree-load-message hide" id="cpvDialogLoadingMessage">Įkelti kategorijas (iš BVPŽ medžio)</div>
+    <div class="input-append hide" id="cpvFilterInputBox">
+        <input class="span4" id="cpvFilterInput" name="cpvFilterInput" placeholder="Filtras" type="text" value="" />
+        <button id="cpvFilterInputBtn" class="btn" type="button">Taikyti</button>
+        <button id="cpvFilterResetBtn" class="btn" type="button">Nustatyti iš naujo</button>
+    </div>
+    <div id="cpvFilter" class="hide"></div>
+    <div id="cpvtree" class="hide" data-url="/CpvTree/CpvTree"></div>
+</div>
+
+
+
+
+
+        </div>
+    </div>
+
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-73905230-3', 'auto');
+        ga('send', 'pageview');
+
+    </script> 
+
+
+</body>
+</html>

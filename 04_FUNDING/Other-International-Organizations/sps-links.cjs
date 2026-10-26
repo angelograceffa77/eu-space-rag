@@ -1,0 +1,2 @@
+const cheerio=require('../funding data/node_modules/cheerio');
+function links(body,url){const $=cheerio.load(body.toString()),out=[];$('a[href]').each((_,e)=>{try{const u=new URL($(e).attr('href'),url);if(u.protocol==='https:'&&u.hostname==='www.nato.int'&&u.pathname.startsWith('/content/dam/')&&/sps.*(?:call|proposal).*\.pdf$/i.test(u.pathname))out.push({url:u.href,title:$(e).text().trim()||'SPS call document'});}catch{}});return [...new Map(out.map(x=>[x.url,x])).values()];}module.exports={links};

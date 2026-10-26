@@ -1,0 +1,1 @@
+This directory keeps supplier access and repayable/investment finance separate from open tenders and grants. Daily collection archives unchanged official pages and a UTF-8 directory. Records never enter either open master without the existing qualification workflow. Coverage is limited to registered public routes; private sourcing remains inaccessible.

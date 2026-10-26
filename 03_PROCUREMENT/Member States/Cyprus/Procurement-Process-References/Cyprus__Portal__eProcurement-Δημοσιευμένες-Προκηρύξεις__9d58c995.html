@@ -1,0 +1,1133 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+    
+        <!-- ceproc.ok -->
+    
+    
+	<html>
+
+
+	<head>
+		<!--  -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title>eProcurement - Δημοσιευμένες Προκηρύξεις</title>
+        <meta name="Description" content="e-Procurement platform home page"/>
+		<meta content="e-Procurement platform - Home page" name="Title"/>
+		<meta content="57" name="Type"/>
+		<meta content="DOCUMENTS/COMM/EN" name="Reference"/>
+		<meta content="European Dynamics" name="Creator"/>
+		<meta name="Language" content="el"/>
+		<meta content="25" name="Classification"/>
+		<meta content="tenders, e-procurement, documents, european law, legislation, economic operator, tenderer, procurement, contract, contracting authority, supplier, awarding authority, institutions, european union, eu" name="Keywords"/>
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+        
+        
+
+
+<script type="text/javascript">
+//<![CDATA[
+window["_tsbp_"] = { ba : "X-TS-BP-Action", bh : "X-TS-AJAX-Request"};
+//]]>
+</script><script type="text/javascript" src="/TSbd/08cbf80939ab20007982dae66e2407e4978deaf7c88f9f0a241d31fc80d42ada9df03fdacd278354?type=2"></script><script>
+	const PAGE_LITERAL = 'Σελίδα';
+	const RESULTS_PER_PAGE_LITERAL = 'Αποτελέσματα ανά σελίδα';
+	const ERROR_MSG_LITERAL = 'Παρουσιάστηκε σφάλμα';
+	const WARNING_MSG_LITERAL = 'Προειδοποίηση';
+	const GOTO_PAGE_LITERAL = 'Πήγαινε στη σελίδα';
+    const RESULTS_PER_PAGE_OPTIONS_LITERAL = ["10","20","50","100"];
+    const CONTEXT_PATH_LITERAL = '/epps';
+    const UPLOAD_ACCEPT_LITERAL = '.7z,.avi,.csv,.doc,.docm,.docx,.dot,.dotx,.dwg,.e0x,.fr,.geojson,.info,.jpeg,.jpg,.json,.mov,.mp4,.mpp,.msg,.odp,.ods,.odt,.p7m,.pages,.pdf,.png,.ppt,.pptx,.rar,.rtf,.svg,.tar,.tiff,.txt,.util,.webp,.wmv,.xls,.xlsb,.xlsm,.xlsx,.xml,.zip,.zipx';
+</script>
+
+        
+        <script src="/epps/scripts/bt/jquery-1.11.3.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/popper.min.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/navScroll.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/epps/scripts/jquery.cookie.js"></script>
+        <script type="text/javascript">
+	        //<![CDATA[
+	        var $j = jQuery.noConflict();
+	        //]]>
+        </script>
+        <script type="text/javascript">
+            var LOCALE = '';
+            var INVALID_CHARACTERS = '<>%';
+            
+            var defaults = {
+            		language: 'el', 
+                    showOn: "both",
+                    buttonText: "Calendar",
+                    buttonImage: "/epps/images/action_calendar.gif",
+                    buttonImageOnly: true, clearBtn: true,
+                    firstDay: 1,
+                    weekStart: 0,
+                    format: "dd/mm/yyyy",
+                    mandatory: false,
+                    todayHighlight: true
+           };
+            
+        </script>
+        <script type="text/javascript" src="/epps/scripts/common.js"></script>
+        <script type="text/javascript" src="/epps/scripts/bt/common.js"></script>
+        
+        <script type="text/javascript" src="/epps/scripts/jqComm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqForm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqTableSet.js"></script>
+        
+		
+        	<script type="text/javascript" src="/epps/scripts/bt/htmx.min.js"></script>
+			<!-- Morph Swaps supported on Chrome <script src="https://unpkg.com/idiomorph@0.3.0"></script> -->
+			<script type="text/javascript" src="/epps/scripts/bt/htmx.common.js"></script>     	
+		
+		
+		<link href="/epps/css/bt/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<link href="/epps/css/bt/bootstrap-datepicker3.min.css" rel="stylesheet" media='screen'/> 	
+		<link href="/epps/css/bt/jquery.treefilter.css" rel="stylesheet"/>
+		<link href="/epps/css/quill.css" rel="stylesheet">
+     	<script type="text/javascript" src="/epps/scripts/bt/bootstrap-datepicker.min.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/jquery.formatCurrency-1.4.0.min.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/jquery.formatCurrency.all.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/bt/jcv_handleMessages.js"></script>
+		
+       	<script type="text/javascript">
+			// functions from bt/common.js
+			$j(document).ready(function(){
+				noResultFoundBeautifier();
+				stackModeDataColumn();
+				$j('.countdown').textCountdown({remaining_text: " εναπομήναντες χαρακτήρες"});
+				//TODO: modify to be enabled in internal sorting:
+				// tableSawSortableStackMode();
+				
+				
+		   		
+	            // Show the cookie popup on load if not previously accepted
+	            if ( shouldShowPopupFun() ) {
+	            	$j('#cookieButton').click();
+	            } 
+	           
+	        });
+
+	        /**
+	         * Should the cookie popup be shown?
+	         */
+	         function shouldShowPopupFun() {                       
+	                if ( $j.cookie('acceptCookies') ) {
+	                	return false;	              	               
+	                } else {
+	                	return true;               	
+	                }
+	            };
+
+	        // Modal dismiss btn - consent
+	        function acceptCookiesFun(){
+	        		$j.cookie('acceptCookies', 'accept');
+	        		// Checks if the session cookies is blocked
+	        		if ( $j.cookie('acceptCookies') ) {	
+	        			document.getElementById("cookieModal").style.display = "none";              	               
+	                } else {
+	                	alert("Παρακαλούμε, ενεργοποιήστε τα session cookies για να χρησιμοποιήσετε αυτό το διαδικτυακό τόπο με το φυλλομετρητή σας."); 
+	                	document.getElementById("cookieModal").style.display = "none";            	
+	                }      		        		 
+	            }
+		</script>
+		
+        <script type="text/javascript">
+            function setParentHref(link){
+                window.location.href=link;
+            }
+            
+            if(typeof String.prototype.trim !== 'function') {
+	             String.prototype.trim = function() {
+	            	  return this.replace(/^\s+|\s+$/g, ''); 
+	             }
+             }   
+        </script>		
+        
+      
+       
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<link href="/epps/css/bt/custom.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/bootstrap-datetimepicker.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/mm-folder.css" rel="stylesheet"/>
+		<script src="/epps/scripts/bt/tablesaw.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/tablesaw-init.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/jquery.treefilter.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/moment.min.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/bt/bootstrap-datetimepicker.js" type="text/javascript" ></script>
+     	<script src="/epps/scripts/bt/metisMenu.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/bt/maincard.js" type="text/javascript"></script>
+		<script src="/epps/scripts/quill.js"></script>
+		<script src="/epps/scripts/quill.commons.js"></script>
+     	
+     	<script type="text/javascript">
+     		
+     			HtmxCommon.addEventListeners();
+			
+		</script>
+	</head>
+	<body class="">
+	
+		<header>
+			<nav class="navbar navbar-dark navbar-expand-md p-0 NavbarSG fixed-top">
+				<div class="flex-column col-12 p-0">
+					<div class="row no-gutters py-0 px-2 align-items-center">
+						<div class="col">	
+							
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+<button class="navbar-toggler pl-0 border-0" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="fa fa-bars" aria-hidden="true"></span>
+</button>
+
+<a class="navbar-brand  mr-0 py-lg-1 py-xl-1 px-lg-2 px-xl-2" href="/epps">
+	<img class="mr-lg-2 mr-xl-2 img-fluid " src="/epps/images/bt/logo.png" alt="Αρχική Σελίδα " />
+</a>
+
+						</div>
+						
+						
+
+
+
+
+
+
+
+
+
+
+	<div id="htmx-load-indicator" class="progress">
+		<div class="indeterminate"></div>
+	</div>
+
+
+						
+						<div class="col">
+							<ul class="navbar-nav flex-row justify-content-end">
+								
+								<!-- Search -->
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function checkSubmit() {
+		var	quicSearchForm = document.forms["searchForm"];
+		var col = document.getElementsByName("searchType")[0];
+		if (col.selectedIndex != 0) {
+			if(checkInputField(quicSearchForm))quicSearchForm.submit();
+    	}
+    	return false;
+	}
+	
+	function checkInputField(form){
+		var input = form[1].value;
+		if(containForbidenChars(input)){
+			form[1].value = '*';
+			alert("Χρησιμοποιήθηκε μη αποδεκτός χαρακτήρας στην Αναζήτηση. Οι μη αποδεκτοί χαρακτήρες περιλαμβάνουν τους : <, >, % .");
+			return false;
+		}
+		return true;
+	}
+	
+	function containForbidenChars(input){
+    	return input.indexOf("<")!=-1 || input.indexOf(">")!=-1 || input.indexOf("%")!=-1 || input.indexOf("&")!=-1;
+    }
+    
+    $j(document).ready(function(){
+        $j('#SearchInput').mouseover(function() {
+           $j(this).attr('title', "Σημείωση: Γράψτε μια λέξη κλειδί ανάμεσα σε αστερισκούς π.χ. *κατασκευή*");
+
+        });
+    });
+	
+	function openForm() {
+		document.getElementById("simple-search").style.height = "100%";
+		$j(".container").attr("aria-hidden","false");
+		$j("#simple-search").attr("aria-hidden","false");
+		$j("#simple-search").css("display", "block");
+	}
+	function closeForm() {
+		document.getElementById("simple-search").style.height = "0%";
+		$j(".container").attr("aria-hidden","true");
+		$j("#simple-search").attr("aria-hidden","true");
+		$j("#simple-search").css("display", "none");
+	}
+	
+</script>
+	
+	
+	 
+        <li class="nav-item mr-2">
+            <div>
+                <a href="/epps/prepareAdvancedSearch.do?type=cftFTS" class="nav-link p-2"><span class="fa fa-search" aria-label='Σύνθετη Αναζήτηση'></span>
+                    
+                     	
+			       	
+					
+                    
+                    <span class="d-none d-lg-inline">Σύνθετη Αναζήτηση</span></a>
+            </div>
+        </li>
+        <li class="nav-item mr-2">
+            <div>
+                <a href="/epps/prepareCurrentOpportunities.do?currentType=cft" class="nav-link p-2"><span class="fa fa-search-plus" aria-label='Πρόσφατοι Διαγωνισμοί'></span>
+                        <span class="d-none d-lg-inline">Πρόσφατοι Διαγωνισμοί</span></a>
+            </div>
+        </li>
+                 
+    
+	
+	
+	
+    <li class="nav-item mr-2 dropdown">
+		<a class="nav-item nav-link dropdown-toggle mr-md-2 font-weight-bold lang" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			EL
+		</a>	
+		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+		 	
+			 	
+        	
+			 	
+	               <a class="dropdown-item" href="/epps/changeLanguage.do?language=en">EN</a>
+	            
+        	
+		</div>
+	</li> 
+	
+
+
+
+								<!--// Search -->
+								
+								<li class="nav-item dropdown user">
+									
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+    	
+	    	<a href="/epps/authenticate/login" id="loginButton" role="button" class="btn login" aria-label="Είσοδος">
+				<i class="fa fa-sign-in" aria-hidden="true"></i>
+				<span>Είσοδος</span>
+	    	</a>
+        
+        
+	
+
+
+								</li>
+								
+							</ul>
+						</div>	
+					</div>	
+					<!-- MAIN NAVIGATION MENU -->
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- /.#mainnav || MAIN NAVIGATION MENU-->
+				</div>		
+			</nav>
+		</header> <!-- /.header -->
+		
+		
+				
+		<div id="main-container" class="container-fluid pt-0">
+		
+         	
+            
+                
+                
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<h1 class="my-4">Δημοσιευμένες Προκηρύξεις</h1>
+
+
+
+
+            
+			<div class="row">
+				<div id="msgCol" class="col">
+          			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          		</div>
+    		</div>
+    		
+			<div class="row">
+				<div class="col">
+                	
+
+
+
+
+
+
+
+
+
+
+<noscript>
+	<div id="NoJavascriptMessage" class="alert alert-warning alert-dismissible">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		For enjoying the full functionality of this application, please ensure that Javascript is enabled in your browser.
+	</div>
+</noscript>
+
+          		</div>
+    		</div>
+			
+            <div class="row">
+				<div class="col">
+					
+         			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 		
+<script type="text/javascript">
+    $j('document').ready(function(ev) {
+    	// Adding column-toggle to T01
+        var table01 = $j("#T01");
+        table01.attr('data-tablesaw-mode', 'columntoggle');
+
+        //data-tablesaw-sortable-col
+        $j("#T01 thead th").each(function(index) {
+            $j(this).attr('data-tablesaw-sortable-col', '');
+            if([0,1,2,5].indexOf(index) <= -1) {  
+           		$(this).attr('data-tablesaw-priority', index);
+            }            
+        });
+    });
+</script>
+
+
+<div class="card-wrapper">
+	
+	<div class="Pagination6 row p-1 m-1  justify-content-between table-pagination">
+		<div class="col-12 col-sm-6"> 
+		 	| Προβολή των: <strong>1-10</strong> | <strong>50,929</strong> συνολικών αποτελεσμάτων.
+		</div>
+
+
+		<div>
+			<script type="text/javascript">
+				var scriptNode = $j(document.currentScript.parentElement);
+				writePageSelection("5,093", "?d-446978-p=", this, scriptNode, "1");
+			</script>
+		</div>
+		
+		<div class="btn-group align-self-end" role="group" aria-label="pagination toolbar">
+			<button type="button" class="btn btn-primary btn-lg rounded-left" title="Πρώτη Σελίδα" type="button" id="firstNav" disabled="disabled">
+				<i class="fa fa-angle-double-left"></i>
+			</button>
+			<button type="button" class="btn btn-primary btn-lg" title="Προηγούμενη" type="button" id="previousNav" disabled="disabled">
+				<i class="fa fa-angle-left"></i>
+			</button>
+			
+			<div class="btn-group" role="group">
+				<!-- Go to Page: JS Code Append -->
+			</div>
+			
+			<button type="button" class="btn btn-lg btn-primary" title="Επόμενο" type="button" id="nextNav"
+				onclick=window.location.href=this.getAttribute("href") href="?d-446978-p=2">
+				<i class="fa fa-angle-right"></i>
+			</button>
+			<button type="button" class="btn btn-lf btn-primary rounded-right btn-primary" title="Τελευταία" type="button" id="lastNav"
+				onclick=window.location.href=this.getAttribute("href") href="?d-446978-p=5093">
+				<i class="fa fa-angle-double-right"></i>
+			</button>
+		</div>
+
+	</div>
+
+<table id="T01" class="table table-striped tablesaw">
+<thead>
+<tr>
+<th>Τύπος<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=title.keyword&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=title.keyword&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Τίτλος<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=noticeTitle.keyword&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=noticeTitle.keyword&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Ημερομηνία υποβολής<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=dateCreated&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=dateCreated&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Γλώσσα<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=language&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=language&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Κατάσταση<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=status&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=status&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Ημερομηνία δημοσίευσης<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=datePublished&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=datePublished&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th></tr></thead>
+<tbody>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65134" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6611034&amp;documentId=6693279&amp;noticeType=14&amp;extId=6693276&amp;lang=EN&amp;noticeId=6693276&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            ΑΝΤΙΚΑΤΑΣΤΑΣΗ ΥΔΡΕΥΤΙΚΟΥ ΔΙΚΤΥΟΥ ΣΕ ΔΙΑΦΟΡΕΣ ΠΕΡΟΙΧΕΣ ΤΗΣ ΛΕΜΕΣΟΥ (1/2024)
+	        
+	        
+	    </td>
+<td>
+			
+				19/02/2024 19:39:42
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65135" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6565354&amp;documentId=6693283&amp;noticeType=14&amp;extId=6693280&amp;lang=EN&amp;noticeId=6693280&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Provision of advanced data analytics services to the Health Insurance Organisation
+	        
+	        
+	    </td>
+<td>
+			
+				19/02/2024 19:53:10
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65136" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6377199&amp;documentId=6693287&amp;noticeType=14&amp;extId=6693284&amp;lang=EN&amp;noticeId=6693284&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            SYL 01/2023: Supply, Installation, Operation and Maintenance of a complete Smart Water Metering System
+	        
+	        
+	    </td>
+<td>
+			
+				19/02/2024 20:13:38
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65133" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6250537&amp;documentId=6693275&amp;noticeType=14&amp;extId=6693272&amp;lang=EN&amp;noticeId=6693272&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            ΟΛΟΚΛΗΡΩΣΗ ΚΑΤΑΣΚΕΥΗΣ ΓΕΦΥΡΑΣ ΓΙΑ ΤΗ ΔΙΑΣΥΝΔΕΣΗ ΒΙΟΤΕΧΝΙΚΗΣ ΚΑΙ ΒΙΟΜΗΧΑΝΙΚΗΣ ΖΩΝΗΣ ΤΡΕΜΙΘΟΥΣΑΣ ΜΕ ΤΗ ΒΙΟΜΗΧΑΝΙΚΗ ΠΕΡΙΟΧΗ ΠΑΦΟΥ (ΜΕΣΟΓΗΣ), ΑΡ. ΔΙΑΓΩΝΙΣΜΟΥ: ΚΠΣ/20/2023/Ε(Α)
+	        
+	        
+	    </td>
+<td>
+			
+				19/02/2024 19:19:50
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65132" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6575127&amp;documentId=6693271&amp;noticeType=14&amp;extId=6693268&amp;lang=EN&amp;noticeId=6693268&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Διαγωνισμός για τον σχεδιασμό και εφαρμογή ηλεκτρονικής πλατφόρμας τηλεκπαίδευσης για το Εθνικό Κέντρο Κλινικής Τεκμηρίωσης
+	        
+	        
+	    </td>
+<td>
+			
+				19/02/2024 18:42:47
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65514" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=4135601&amp;documentId=6726817&amp;noticeType=20&amp;extId=6726814&amp;lang=EN&amp;noticeId=6726814&amp;isNational=false">Προκήρυξη Τροποποίησης</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Request for Proposal for the Provision of Owner’s Engineer Services for the Cyprus LNG Import Terminal Project
+	        
+	        
+	    </td>
+<td>
+			
+				06/03/2024 14:34:44
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65691" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6565354&amp;documentId=6744007&amp;noticeType=14&amp;extId=6744004&amp;lang=EN&amp;noticeId=6744004&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Provision of advanced data analytics services to the Health Insurance Organisation
+	        
+	        
+	    </td>
+<td>
+			
+				14/03/2024 14:41:49
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65940" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6538905&amp;documentId=6770498&amp;noticeType=14&amp;extId=6770495&amp;lang=EN&amp;noticeId=6770495&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Ανάπλαση οδών και διευκόλυνση ΑΜΕΑ, στο Αστικό Κέντρο - Φάση Β. (αρ.διαγ. 56/2023)
+	        
+	        
+	    </td>
+<td>
+			
+				28/03/2024 18:40:42
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_66423" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6417678&amp;documentId=6818714&amp;noticeType=14&amp;extId=6818711&amp;lang=EN&amp;noticeId=6818711&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Purchase of ‘Connectivity and Management of the CY SMART CITY PLATFORM, integration of existing solutions from individual Municipalities and development of three vertical solutions and applications’
+	        
+	        
+	    </td>
+<td>
+			
+				22/04/2024 18:12:23
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_65546" value=""/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=6417678&amp;documentId=6732097&amp;noticeType=14&amp;extId=6732094&amp;lang=EN&amp;noticeId=6732094&amp;isNational=false">Διορθωτική Προκήρυξη</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Purchase of ‘Connectivity and Management of the CY SMART CITY PLATFORM, integration of existing solutions from individual Municipalities and development of three vertical solutions and applications’
+	        
+	        
+	    </td>
+<td>
+			
+				08/03/2024 19:34:34
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Δημοσιεύθηκε
+	    </td>
+<td>
+			
+	    </td></tr></tbody></table><input type="hidden" name="tableUid" value="notice">
+</div>
+
+
+
+				</div>
+			</div>
+						
+			
+			
+			
+
+		</div><!-- /.container-fluid -->
+		
+	
+	
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	<script type="text/javascript">
+	
+	    $j('document').ready(function(ev){
+	    	$j("a.PopUp").click(function(){
+	    		PopUpOpts = {
+	        		windowname: 'popupwindow',
+	        		width:		810,
+	        		height:		600,
+	        		scroll:		1,
+	        		resizable:	0
+	        	};
+	           	$j(this).PopUp(this.href, PopUpOpts); 
+	            return false; 
+	        }); 
+	    });
+	    
+	</script>
+	
+	<footer>
+	
+	
+		<div class="container-fluid">
+			<div class="row">
+			
+				<div class="col-md">
+					<ul class="list-unstyled">
+                        
+                            <li>
+                                <a href="/epps/app/viewPublication.do">Δημοσιευμένο Ετήσιο Πλάνο Διαγωνισμών.</a>
+                            </li>
+                        
+			        	<li>
+		                   <a href="/epps/prepareCurrentOpportunities.do?mode=cft">Πρόσφατοι Διαγωνισμοί</a>
+	                    </li>
+			        	
+				        	<li>
+				 				<a href="/epps/common/viewOpenedTenders.do">Πληροφορίες Αποσφράγισης</a>
+				        	
+				        	</li>
+			        	
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=legal">Νομοθεσία Δημοσίων Συμβάσεων</a>
+			            </li>
+			      		
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=statistics">Στατιστικά</a>
+			            </li>
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=calendar">Ημερολόγιο</a>
+			            </li>
+					</ul>
+				</div>
+				<div class="col-md">
+					<ul class="list-unstyled">
+						<li>
+			            	<a href="/epps/viewInfo.do?section=eproc">Ηλεκτρονικές Δημόσιες Συμβάσεις</a>
+			            </li>
+			            <li>
+			               <a href="/epps/viewInfo.do?section=newItems">Νέα</a>
+			            </li>
+			            <li>
+			            	<a href="/epps/viewInfo.do?section=links">Σχετικοί Σύνδεσμοι</a>
+			            </li>
+		        		<li>
+			            	<a href="/epps/viewInfo.do?section=faq">Συχνές Ερωτήσεις</a>
+			            </li>
+		        		<li>
+			            	<a href="/epps/viewInfo.do?section=thresholds">Νομοθεσία Κατώτατων Ορίων</a>
+			            </li>
+					</ul>
+				</div>
+			
+				<div class="col-md">
+					<ul class="list-unstyled">
+						<li id="UserAgreement">
+				            <a href="/epps/viewUserAgreement.do">User Agreement</a>
+				        </li>		        	
+		    		    
+				        
+				        
+				        
+									        
+			        	<li id="Help">
+				            <a href="/epps/viewInfo.do?section=userGuides&amp;helpPage=true">Βοήθεια</a>
+				        </li>
+				        <li id="About">
+				            <a href="/epps/DisplayHeaderStaticTextAction.do" class="PopUp ml-0">Σχετικά</a>
+				        </li>
+				        <li class="Last" id="Contact">
+				            <a href="/epps/PrepareContactUsAction.do" class="PopUp ml-0">Επικοινωνία</a>
+				        </li>
+					</ul>
+				</div>	
+				<div class="col-md-6">
+					<div class="d-flex flex-column align-items-end">
+						<img src="/epps/images/bt/logo-menu.png" style="max-width:600px; width:100%" class="FooterLogo FL1" alt="Republic of Cyprus">
+						<div class="FooterLogo row" style="border:none">
+							<img class="col-10 FooterLogo" src="/epps/images/bt/NextGeneration_gr.png" alt="Next Generation">
+							<img class="col-2 FooterLogo p-0" src="/epps/images/bt/govcy-logo-blue-background.png" alt="Republic of Cyprus">						
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col text-center">
+					<span>Copyright &copy; European Dynamics - Τελευταία ενημέρωση: 24 Οκτωβρίου 2026</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Footer // -->
+
+
+
+        
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+<button id="cookieButton" type="button" class="d-none" data-toggle="modal" data-target="#cookieModal">
+  Launch demo modal
+</button>
+
+<div class="modal" id="cookieModal" tabindex="-1" data-backdrop="static" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σας στον ιστότοπό μας. Με την περιήγηση σε αυτόν τον ιστότοπο αναγνωρίζετε ότι έχετε διαβάσει και κατανοήσει την <a href="#" onclick="javascript:window.open('/epps/viewCookiesPolicy.do','Cookies Policy','toolbar=no,resizable=yes,scrollbars=yes,width=850,height=700,top=50,left=50')">πολιτική Cookies.</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="acceptCookiesFun()">Την έχω διαβάσει και την κατανοώ.</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+		
+	</body>
+	
+	
+</html>
+

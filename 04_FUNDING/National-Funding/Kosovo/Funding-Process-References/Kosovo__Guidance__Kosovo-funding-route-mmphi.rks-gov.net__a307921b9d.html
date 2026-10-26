@@ -1,0 +1,928 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web faqja zyrtare e Ministrisë së Mjedisit dhe Planifikimit Hapësinor">
+    <meta name="keywords" content="Ministria e Mjedisi, Ministria e Planifikimit Hapësinor,Mjedisi,Planifikimi Hapesinor,GlobalCT, Digital Kosova,Republika e Kosovës">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="facebook-domain-verification" content="gkjls5paklhcf3vsdkbeewovhinhg6" />
+    <title>MMPHI</title>
+    <link rel="icon" href="/img/Logo-rks.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/img/ic_launcher.png">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="all" />
+
+    <link rel="stylesheet" href="/css/style.css" media="all">
+    <link rel="stylesheet" href="/css/site.css" media="all" />
+    <link rel="stylesheet" href="/font-awesome/all.min.css" media="all">
+    <link rel="stylesheet" href="/MaterialDesign-Webfont-master/css/materialdesignicons.min.css" media="all">
+    <link rel="stylesheet" href="/lib/owlCarousel/owl.css" media="all" />
+    <link rel="stylesheet" href="/lib/owlCarousel/assets/owl.carousel.min.css" media="all" />
+    <link rel="stylesheet" href="/lib/owlCarousel/assets/owl.theme.default.min.css" media="all" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lazyframe/dist/lazyframe.css" media="all" />
+    <link rel="stylesheet" href="/css/calendar.css" media="all" />
+
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .language-mobile {
+            position: fixed;
+            bottom: 13%;
+            right: 3%;
+            z-index: 1000;
+        }
+
+        .webmail {
+            position: fixed;
+            bottom: 3%;
+            right: 3%;
+            z-index: 1000;
+        }
+
+            .webmail img {
+                vertical-align: middle;
+                border-style: none;
+                max-width: 100%;
+            }
+
+            .webmail a {
+                box-shadow: -1px 1px 14px 0px #787878;
+            }
+
+        .avatar {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .language-mobile img {
+            vertical-align: middle;
+            border-style: none;
+            max-width: 100%;
+        }
+    </style>
+
+	<meta name="theme-color" content="#3367D6" />
+	<link rel="manifest" href="/manifest.webmanifest" />
+</head>
+<body>
+    <script type="text/javascript" src="js/calendar/caleandar.js"></script>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/js/popper/popper.js" async defer></script>
+
+    <script src="/js/bootstrap/bootstrap.min.js" async defer></script>
+
+    <script src="/lib/owlCarousel/assets/owl.carousel.min.js" async defer></script>
+
+    <script src="/js/site.js?v=llbSVe2phY-f5urUDp6ylEoDfxrW7-AFWd6AwBEIgiU" async defer></script>
+
+
+    <script src="/js/main.js" async defer></script>
+    <script>
+        function changeLanguage(newLanguage) {
+            window.location.href = "/Others/ChangeLanguage?language=" + newLanguage + "&url=" + this.window.location;
+        }
+    </script>
+    <header>
+        <div class="row header-container m-0 ">
+            <div class="col-md-9 col-12 d-flex  d-sm-flex justify-content-lg-start justify-content-md-start justify-content-center active-class" style="margin-top: 10px;">
+                <a href="/" class=" active tab-strip-m d-flex">
+                    <i style="color: #012042;" class="fa-solid fa-tree-city m-auto px-md-3 px-1"></i>  <h4 class="m-auto" style="color: #012042; margin-bottom: 0px; font-weight: bold">Mjedisi dhe Planifikimi hap&#xEB;sinor</h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-0">
+                <div class="d-md-flex d-none justify-content-end lang-active" style="margin-top: 15px; margin-right: 15px;">
+                    <a onclick="changeLanguage('sq-AL');" href="#" class="active sq"><p style="color: #012042; margin: auto 0px auto 20px; font-weight: bold">Shqip</p></a>
+                    <a onclick="changeLanguage('en-US');" href="#" class=" en"> <p style="color: #012042; margin: auto 0px auto 20px; font-weight: bold">English</p> </a>
+                    <a onclick="changeLanguage('sr-Latn-RS');" href="#" class=" sr"><p style="color: #012042; margin: auto 0px auto 13px; font-weight: bold">Srpski</p></a>
+                    <a title="Webmail" href="https://mail.rks-gov.net" target="_blank"><img style="width: 30px; margin: auto 0px 5px 13px;" src="/img/mail.png" /></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="language-mobile d-md-none d-flex">
+            <div class="dropdown">
+                <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="avatar  align-self-center bg-transparent"><img alt="" src="/img/flags/ks.svg" alt="img"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item" href="#" onclick="return changeLanguage('en-US')" style="cursor: pointer;">
+                        <span class="avatar  align-self-center bg-transparent"><img alt="" src="/img/flags/gb.svg" alt="img"></span>
+                    </a>
+                    <a class="dropdown-item" href="#" onclick="return changeLanguage('sr-Latn-RS')" style="cursor: pointer;">
+                        <span class="avatar  align-self-center bg-transparent"><img alt="" src="/img/flags/rs.svg" alt="img"></span>
+                    </a>
+
+                </div>
+            </div>
+
+    </div>
+    <div class="webmail d-md-none d-flex">
+        <a class="btn bg-light" type="button" href="https://mail.rks-gov.net" target="_blank">
+            <span class="avatar align-self-center bg-transparent"><img alt="" src="/img/mail.png" alt="img"></span>
+        </a>
+    </div>
+
+    <main role="main" class="pb-3 container-body">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<style>
+    /*   .years {
+        background: #cadbe8;
+        padding: 7px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: 1px solid #f0f4f7;
+    }
+        .years.active {
+            background: #f0f4f7;
+            border: 1px solid #cadbe8;
+            box-shadow: 0 0.25rem 0.85rem rgb(0 0 0 / 19%)
+        }*/
+    .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+        .scrolling-wrapper a {
+            display: inline-block;
+            width: 25rem;
+        }
+
+    .button-download {
+        border: none;
+        font-size: 28px
+    }
+
+    .pagination {
+        padding: 30px 0;
+    }
+
+    .pagination ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .pagination a {
+        /*font-size: 18px;*/
+        display: inline-block;
+        padding: 3px 18px;
+        color: #222;
+    }
+
+    .justify-content-center {
+        justify-content: start !important;
+    }
+
+    @media (min-width:1600px) {
+            .yearsCountainer {
+            margin-left: 14rem !important;
+        }
+    }
+</style>
+<div id="menu"></div>
+<div class="docs mt-3 pl-md-5 pl-0 ml-5  text-left">
+    <h1 style="color: #012042; margin: auto 0px auto 0px; font-weight: bold; padding: 10px 0px;">Shpalljet</h1>
+</div>
+<div class="row justify-content-md-start justify-content-center">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-12 d-flex justify-content-center pl-3 pr-0">
+
+        <div class="middle mt-5">
+            <div class="menu">
+                <ul>
+                    <li class="item">
+                        <a href="/Document/Announcements" class="btn">Shpalljet</a>
+                    </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=1" class="btn">Njoftime</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=2" class="btn">Njoftime p&#xEB;r debate publike dhe Raporte t&#xEB; VNM-s&#xEB;</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=3" class="btn">Njoftim publik p&#xEB;r konsultime t&#xEB; Kushteve Nd&#xEB;rtimore</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=4" class="btn">Konsultim publik i draft lejeve mjedisore t&#xEB; integruara</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=5" class="btn">Raportimi i cilesis&#xEB; s&#xEB; ajrit</a>
+                            </li>
+                            <li class="item" id="Konkurse">
+                                <a href="#Konkurse" class="btn d-flex justify-content-between submenu"><span>Konkurse</span> <i class="fa-solid fa-angle-down pl-2 my-auto"></i></a>
+                                <div class="smenu">
+                                            <a href="/Document/Announcements?type=6&amp;subType=1" class="btn">Konkurse Inovacioni</a>
+                                            <a href="/Document/Announcements?type=6&amp;subType=2" class="btn">Aplikacioni p&#xEB;r pun&#xEB;sim</a>
+                                            <a href="/Document/Announcements?type=6&amp;subType=28" class="btn">Konkurse</a>
+                                </div>
+                            </li>
+                            <li class="item" id="Regjistrat">
+                                <a href="#Regjistrat" class="btn d-flex justify-content-between submenu"><span>Regjistrat</span> <i class="fa-solid fa-angle-down pl-2 my-auto"></i></a>
+                                <div class="smenu">
+                                            <a href="/Document/Announcements?type=7&amp;subType=3" class="btn">Regjistri i pelqimeve mjedisore</a>
+                                            <a href="/Document/Announcements?type=7&amp;subType=4" class="btn">Regjistri i lejeve mjedisore</a>
+                                            <a href="/Document/Announcements?type=7&amp;subType=5" class="btn">Regjistri i lejeve te integruara</a>
+                                            <a href="/Document/Announcements?type=7&amp;subType=6" class="btn">Regjistri i lejeve ujore</a>
+                                            <a href="/Document/Announcements?type=7&amp;subType=7" class="btn">Regjistri i tabelave te lendeve te kryera sipas komunave nga Zyra Ligjore</a>
+                                            <a href="/Document/Announcements?type=7&amp;subType=8" class="btn">Rexhistri i ndertimeve pa leje ne komunat e Kosoves</a>
+                                            <a href="/Document/Announcements?type=7&amp;subType=9" class="btn">Regjistri i arkitekteve dhe inxhiniereve</a>
+                                            <a href="/Document/Announcements?type=7&amp;subType=11" class="btn">Bordi per licencim</a>
+                                </div>
+                            </li>
+                            <li class="item" id="Licensa">
+                                <a href="#Licensa" class="btn d-flex justify-content-between submenu"><span>Licensa</span> <i class="fa-solid fa-angle-down pl-2 my-auto"></i></a>
+                                <div class="smenu">
+                                            <a href="/Document/Announcements?type=8&amp;subType=12" class="btn">Lista e ndermjetesve per mbeturina</a>
+                                            <a href="/Document/Announcements?type=8&amp;subType=13" class="btn">Lista e tregtareve te regjistruar per mbeturina</a>
+                                            <a href="/Document/Announcements?type=8&amp;subType=14" class="btn">Lista e kompanive qe kane marrur leje per import te produkteve biocide 2017</a>
+                                            <a href="/Document/Announcements?type=8&amp;subType=15" class="btn">Lista e operatoreve/kompanive, te licencuara per menaxhimin te mbeturinave komunale ne Kosove</a>
+                                            <a href="/Document/Announcements?type=8&amp;subType=16" class="btn">Lista e personave fizik dhe juridik te licencuar nga MMPH per kompensim  te demit</a>
+                                            <a href="/Document/Announcements?type=8&amp;subType=17" class="btn">Lista e personave juridik te licencuar per hartimin e raporteve te VNM-se</a>
+                                </div>
+                            </li>
+                            <li class="item" id="Leje">
+                                <a href="#Leje" class="btn d-flex justify-content-between submenu"><span>Leje</span> <i class="fa-solid fa-angle-down pl-2 my-auto"></i></a>
+                                <div class="smenu">
+                                            <a href="/Document/Announcements?type=9&amp;subType=18" class="btn">Lejet mjedisore</a>
+                                            <a href="/Document/Announcements?type=9&amp;subType=19" class="btn">Aplikacioni dhe Formularet p&#xEB;r Leje Mjedisore</a>
+                                            <a href="/Document/Announcements?type=9&amp;subType=20" class="btn">Leje Mjedisore</a>
+                                            <a href="/Document/Announcements?type=9&amp;subType=21" class="btn">Leja mjedisore e integruar</a>
+                                            <a href="/Document/Announcements?type=9&amp;subType=22" class="btn">Lejet Ndertimore</a>
+                                            <a href="/Document/Announcements?type=9&amp;subType=23" class="btn">Si te pajisem me leje ndertimore?</a>
+                                            <a href="/Document/Announcements?type=9&amp;subType=24" class="btn">Leje Importi dhe Eksporti</a>
+                                            <a href="/Document/Announcements?type=9&amp;subType=25" class="btn">Lejet Ujore</a>
+                                </div>
+                            </li>
+                            <li class="item" id="Pelqimet">
+                                <a href="#Pelqimet" class="btn d-flex justify-content-between submenu"><span>Pelqimet</span> <i class="fa-solid fa-angle-down pl-2 my-auto"></i></a>
+                                <div class="smenu">
+                                            <a href="/Document/Announcements?type=10&amp;subType=26" class="btn">P&#xEB;lqimet Mjedisor</a>
+                                            <a href="/Document/Announcements?type=10&amp;subType=27" class="btn">P&#xEB;lqimet Ujore</a>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=11" class="btn">Grante</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=12" class="btn">Tendera</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=13" class="btn">Kushtet Nd&#xEB;rtimore</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=14" class="btn">Pasqyra e Taksave</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=15" class="btn">List&#xEB;n e personave fizik dhe juridik t&#xEB; autorizuar dhe licensuar nga MMPH p&#xEB;r hartim t&#xEB; raportit p&#xEB;r vler&#xEB;sim dhe kompenzim t&#xEB; d&#xEB;mit q&#xEB; shkaktohen nga llojet e egra t&#xEB; shtaz&#xEB;ve strikt t&#xEB; mbrojtura.</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=16" class="btn">Konsultimet me publikun</a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=18" class="btn"></a>
+                            </li>
+                            <li class="item">
+                                <a href="/Document/Announcements?type=53" class="btn">Dokumentacioni i nevojshem p&#xEB;r t&#x2019;u pajisur me Leje p&#xEB;r Import t&#xEB; Produkteve Biocide</a>
+                            </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-xl-8 col-lg-8 col-md-7 col-12 pl-4 pr-0">
+        <div class="pagination justify-content-center active-years mt-2 px-1 pb-5 yearsCountainer">
+            <ul class="years-container">
+
+                <li>
+                </li>
+
+                    <li>
+                        <a class="years active" onclick="changeYear(2026);">
+                            2026
+                        </a>
+                    </li>
+                    <li>
+                        <a class="years " onclick="changeYear(2025);">
+                            2025
+                        </a>
+                    </li>
+                    <li>
+                        <a class="years " onclick="changeYear(2024);">
+                            2024
+                        </a>
+                    </li>
+                    <li>
+                        <a class="years " onclick="changeYear(2023);">
+                            2023
+                        </a>
+                    </li>
+                    <li>
+                        <a class="years " onclick="changeYear(2022);">
+                            2022
+                        </a>
+                    </li>
+
+                <li>
+                        <a onclick="changeYear(2026 - 1);"><img style="height:100%" src="/img/right-arrow.png" class="previouS" /></a>
+                </li>
+            </ul>
+        </div>
+        <style>
+            .years-container {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                height: 100% !important
+            }
+        </style>
+
+
+
+
+
+        <div class="documents">
+            <ul style="list-style-type: none;" class="mt-2">
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Konsultime me publikun-LUANTINI BETON&quot; Sh.p.k. Fush&#xEB; Kosov&#xEB;, p&#xEB;r vazhdimin e Lejes Mjedisore p&#xEB;r Baz&#xEB; p&#xEB;r prodhimin e betonit, Harilaq, Fush&#xEB; Kosov&#xEB; &#xEB;sht&#xEB; e plot&#xEB;suar administrativisht, ju lutemi q&#xEB; aplikacioni p&#xEB;r Leje Mjedisore (t&#xEB; bashk&#xEB;lidhur) t&#xEB; publikohet n&#xEB; ueb-faqen e MMPH-s&#xEB; p&#xEB;r konsultim me publikun dhe pranimin e komenteve brenda afatit prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB;sh.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_d3723628-e017-4d94-9804-448ae44a7d25.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Konsultime me publikun-LUANTINI BETON&quot; Sh.p.k. Fush&#xEB; Kosov&#xEB;, p&#xEB;r vazhdimin e Lejes Mjedisore p&#xEB;r Baz&#xEB; p&#xEB;r prodhimin e betonit, Harilaq, Fush&#xEB; Kosov&#xEB; &#xEB;sht&#xEB; e plot&#xEB;suar administrativisht, ju lutemi q&#xEB; aplikacioni p&#xEB;r Leje Mjedisore (t&#xEB; bashk&#xEB;lidhur) t&#xEB; publikohet n&#xEB; ueb-faqen e MMPH-s&#xEB; p&#xEB;r konsultim me publikun dhe pranimin e komenteve brenda afatit prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB;sh</h5>
+                                                    <span class="ml-4">23.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Konsultime me publikun-LUANTINI BETON&quot; Sh.p.k. Fush&#xEB; Kosov&#xEB;, p&#xEB;r vazhdimin e Lejes Mjedisore p&#xEB;r Baz&#xEB; p&#xEB;r prodhimin e betonit, Harilaq, Fush&#xEB; Kosov&#xEB; &#xEB;sht&#xEB; e plot&#xEB;suar administrativisht, ju lutemi q&#xEB; aplikacioni p&#xEB;r Leje Mjedisore (t&#xEB; bashk&#xEB;lidhur) t&#xEB; publikohet n&#xEB; ueb-faqen e MMPH-s&#xEB; p&#xEB;r konsultim me publikun dhe pranimin e komenteve brenda afatit prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB;sh.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_d3723628-e017-4d94-9804-448ae44a7d25.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="PROJEKT RREGULLORE (MMPH) NR. ______ /2026 P&#xCB;R CERTIFIKIMIN E PERFORMANC&#xCB;S ENERGJETIKE T&#xCB; ND&#xCB;RTESAVE (CPE)&#xA;Komentet dhe sugjerimet e juaja, mund t&#x2019;i d&#xEB;rgoni n&#xEB; webfaqen e MMPH-s&#xEB; ose E-mail: ardian.recica@rks-gov.net  dhe Arben.Ajazi@rks-gov.net, n&#xEB; afat kohor prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB; pune. &#xA;.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_7d53366f-2991-4acb-bffd-1515f653f49b.docx" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/docx.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/docx.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">PROJEKT RREGULLORE (MMPH) NR. ______ /2026 P&#xCB;R CERTIFIKIMIN E PERFORMANC&#xCB;S ENERGJETIKE T&#xCB; ND&#xCB;RTESAVE (CPE)&#xA;Komentet dhe sugjerimet e juaja, mund t&#x2019;i d&#xEB;rgoni n&#xEB; webfaqen e MMPH-s&#xEB; ose E-mail: ardian.recica@rks-gov.net  dhe Arben.Ajazi@rks-gov.net, n&#xEB; afat kohor prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB; pune. &#xA;</h5>
+                                                    <span class="ml-4">21.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="PROJEKT RREGULLORE (MMPH) NR. ______ /2026 P&#xCB;R CERTIFIKIMIN E PERFORMANC&#xCB;S ENERGJETIKE T&#xCB; ND&#xCB;RTESAVE (CPE)&#xA;Komentet dhe sugjerimet e juaja, mund t&#x2019;i d&#xEB;rgoni n&#xEB; webfaqen e MMPH-s&#xEB; ose E-mail: ardian.recica@rks-gov.net  dhe Arben.Ajazi@rks-gov.net, n&#xEB; afat kohor prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB; pune. &#xA;.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_7d53366f-2991-4acb-bffd-1515f653f49b.docx" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Pelqim mjedisor Badalli s 1028 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_354d8f52-b6cc-40b0-9096-34dbeab27c8d.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Pelqim mjedisor Badalli s 1028 2 26</h5>
+                                                    <span class="ml-4">19.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Pelqim mjedisor Badalli s 1028 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_354d8f52-b6cc-40b0-9096-34dbeab27c8d.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Pelqim mjedisore Eling group 1770 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_82eb66dd-c9be-45b6-aae1-7287387dc989.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Pelqim mjedisore Eling group 1770 2 26</h5>
+                                                    <span class="ml-4">19.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Pelqim mjedisore Eling group 1770 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_82eb66dd-c9be-45b6-aae1-7287387dc989.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Pelqim mjedisore Fidani beton 2192 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_cf9a7c0c-ef10-4f25-a7af-2ebef1eed1b8.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Pelqim mjedisore Fidani beton 2192 2 26</h5>
+                                                    <span class="ml-4">19.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Pelqim mjedisore Fidani beton 2192 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_cf9a7c0c-ef10-4f25-a7af-2ebef1eed1b8.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Pelqim mjedisore Frutti 2677 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_36b2025d-6c0f-46df-a2e3-33bc9e39a90e.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Pelqim mjedisore Frutti 2677 2 26</h5>
+                                                    <span class="ml-4">19.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Pelqim mjedisore Frutti 2677 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_36b2025d-6c0f-46df-a2e3-33bc9e39a90e.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Pelqim mjedisore Obo Estate 3023 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_5ace647a-9347-43e0-b6fd-ad1dcc838403.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Pelqim mjedisore Obo Estate 3023 2 26</h5>
+                                                    <span class="ml-4">19.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Pelqim mjedisore Obo Estate 3023 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_5ace647a-9347-43e0-b6fd-ad1dcc838403.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Pelqim mjedisore Produkt Farm 8555 2 25.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_0e8ee2c6-817a-41bc-a1d8-ea3db8a7c963.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Pelqim mjedisore Produkt Farm 8555 2 25</h5>
+                                                    <span class="ml-4">19.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Pelqim mjedisore Produkt Farm 8555 2 25.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_0e8ee2c6-817a-41bc-a1d8-ea3db8a7c963.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Pelqim mjedisore Ritek construction 2636 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_fd59289a-77c5-4057-a050-26b8ef51f05e.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Pelqim mjedisore Ritek construction 2636 2 26</h5>
+                                                    <span class="ml-4">19.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Pelqim mjedisore Ritek construction 2636 2 26.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_fd59289a-77c5-4057-a050-26b8ef51f05e.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Debat publik nga kompanin&#xEB; &#x201C;FOCUS Recycling &amp; Trade&#x201D; Sh.p.k. Ferizaj Mitrovic&#xEB;.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_10850894-331b-4af4-b4f3-afc3b4fb5ddd.docx" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/docx.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/docx.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Debat publik nga kompanin&#xEB; &#x201C;FOCUS Recycling &amp; Trade&#x201D; Sh.p.k. Ferizaj Mitrovic&#xEB;</h5>
+                                                    <span class="ml-4">16.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Debat publik nga kompanin&#xEB; &#x201C;FOCUS Recycling &amp; Trade&#x201D; Sh.p.k. Ferizaj Mitrovic&#xEB;.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_10850894-331b-4af4-b4f3-afc3b4fb5ddd.docx" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="RAPORTI I VLER&#xCB;SIMIT T&#xCB; NDIKIMIT N&#xCB; MJEDIS  P&#xCB;R QENDR&#xCB;N P&#xCB;R GRUMBULLIMIN, SELEKSIONIMIN, P&#xCB;RPUNIMIN MEKANIK DHE SHKRIRJEN E MBETURINAVE METALIKE T&#xCB; NGJYROSURA&#xA; Parcela num&#xEB;r: P-70917093-00690-2, Z.K. Koxhaj, Ka&#xE7;anik  &#xA;&#xA;.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_d35bf370-9248-43e6-9ad6-0a767515480b.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">RAPORTI I VLER&#xCB;SIMIT T&#xCB; NDIKIMIT N&#xCB; MJEDIS  P&#xCB;R QENDR&#xCB;N P&#xCB;R GRUMBULLIMIN, SELEKSIONIMIN, P&#xCB;RPUNIMIN MEKANIK DHE SHKRIRJEN E MBETURINAVE METALIKE T&#xCB; NGJYROSURA&#xA; Parcela num&#xEB;r: P-70917093-00690-2, Z.K. Koxhaj, Ka&#xE7;anik  &#xA;&#xA;</h5>
+                                                    <span class="ml-4">16.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="RAPORTI I VLER&#xCB;SIMIT T&#xCB; NDIKIMIT N&#xCB; MJEDIS  P&#xCB;R QENDR&#xCB;N P&#xCB;R GRUMBULLIMIN, SELEKSIONIMIN, P&#xCB;RPUNIMIN MEKANIK DHE SHKRIRJEN E MBETURINAVE METALIKE T&#xCB; NGJYROSURA&#xA; Parcela num&#xEB;r: P-70917093-00690-2, Z.K. Koxhaj, Ka&#xE7;anik  &#xA;&#xA;.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_d35bf370-9248-43e6-9ad6-0a767515480b.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Debat publik nga operatori &quot;Bardhi- SG&quot; Sh.p.k. Prizren.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_c38d8f77-1b8c-45cb-bad3-b8de09bc9c0a.docx" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/docx.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/docx.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Debat publik nga operatori &quot;Bardhi- SG&quot; Sh.p.k. Prizren</h5>
+                                                    <span class="ml-4">16.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Debat publik nga operatori &quot;Bardhi- SG&quot; Sh.p.k. Prizren.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_c38d8f77-1b8c-45cb-bad3-b8de09bc9c0a.docx" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Debat publik p&#xEB;r kompanin&#xEB;  &#x201C;Menti&#x2019;&#x2019;Sh.p.k., Banje- Istog, k&#xEB;rkesa p&#xEB;r Leje Mjedisore, me nr. prot 26/772/MMPH, p&#xEB;r bazen e betonit n&#xEB; Caralluk&#xEB;, Istog.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_a13797c5-ea81-4e88-9e6a-c5b9801f0126.docx" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/docx.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/docx.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Debat publik p&#xEB;r kompanin&#xEB;  &#x201C;Menti&#x2019;&#x2019;Sh.p.k., Banje- Istog, k&#xEB;rkesa p&#xEB;r Leje Mjedisore, me nr. prot 26/772/MMPH, p&#xEB;r bazen e betonit n&#xEB; Caralluk&#xEB;, Istog</h5>
+                                                    <span class="ml-4">15.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Debat publik p&#xEB;r kompanin&#xEB;  &#x201C;Menti&#x2019;&#x2019;Sh.p.k., Banje- Istog, k&#xEB;rkesa p&#xEB;r Leje Mjedisore, me nr. prot 26/772/MMPH, p&#xEB;r bazen e betonit n&#xEB; Caralluk&#xEB;, Istog.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_a13797c5-ea81-4e88-9e6a-c5b9801f0126.docx" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="DEBAT PUBLIK per Leje Mjedisore Famis CO- HC SH.A, Shirok&#xEB;- Suharek&#xEB; (1)....pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_1a66dc1d-848c-4956-af44-da2855a54f80.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">DEBAT PUBLIK per Leje Mjedisore Famis CO- HC SH.A, Shirok&#xEB;- Suharek&#xEB; (1)...</h5>
+                                                    <span class="ml-4">15.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="DEBAT PUBLIK per Leje Mjedisore Famis CO- HC SH.A, Shirok&#xEB;- Suharek&#xEB; (1)....pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_1a66dc1d-848c-4956-af44-da2855a54f80.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="DEBAT PUBLIK per Leje Mjedisore ENISI SH.P.K. Studen&#xE7;an- Suharek&#xEB; (1).docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_9e66edc2-4074-4536-b90c-dfe11447b037.docx" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/docx.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/docx.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">DEBAT PUBLIK per Leje Mjedisore ENISI SH.P.K. Studen&#xE7;an- Suharek&#xEB; (1)</h5>
+                                                    <span class="ml-4">15.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="DEBAT PUBLIK per Leje Mjedisore ENISI SH.P.K. Studen&#xE7;an- Suharek&#xEB; (1).docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_9e66edc2-4074-4536-b90c-dfe11447b037.docx" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="DEBAT PUBLIK per Leje Mjedisore Delti Sh.P.K. Studen&#xE7;an- Suharek&#xEB; (1)11.....docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_424a1e78-7f77-48ab-8eab-b7aba26c5a57.docx" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/docx.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/docx.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">DEBAT PUBLIK per Leje Mjedisore Delti Sh.P.K. Studen&#xE7;an- Suharek&#xEB; (1)11....</h5>
+                                                    <span class="ml-4">14.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="DEBAT PUBLIK per Leje Mjedisore Delti Sh.P.K. Studen&#xE7;an- Suharek&#xEB; (1)11.....docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_424a1e78-7f77-48ab-8eab-b7aba26c5a57.docx" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="K&#xEB;rkesat p&#xEB;r tu pajisur me Leje Mjedisore .xlsx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_bb42bbdd-60cb-46fe-862d-19e0d1ca045c.xlsx" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/xlsx.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/xlsx.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">K&#xEB;rkesat p&#xEB;r tu pajisur me Leje Mjedisore </h5>
+                                                    <span class="ml-4">14.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="K&#xEB;rkesat p&#xEB;r tu pajisur me Leje Mjedisore .xlsx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_bb42bbdd-60cb-46fe-862d-19e0d1ca045c.xlsx" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="PROJEKT RREGULLORE (QRK) NR. ___/2026 P&#xCB;R NDRYSHIMIN DHE PLOT&#xCB;SIMIN E RREGULLORES (QRK) NR.18/2018 P&#xCB;R BURIMET DHE PRAKTIKAT E RREZATIMIT JONIZUES&#xA;Komentet dhe sugjerimet e juaja, mund t&#x2019;i d&#xEB;rgoni n&#xEB; webfaqen e MMPH-s&#xEB; ose E-mail: ardian.recica@rks-gov.net dhe Fjona.Ymeri@rks-gov.net, n&#xEB; afat kohor prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB; pune. &#xA;&#xA;.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_7bc2c98e-2265-4257-bb72-84d98c8d4503.docx" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/docx.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/docx.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">PROJEKT RREGULLORE (QRK) NR. ___/2026 P&#xCB;R NDRYSHIMIN DHE PLOT&#xCB;SIMIN E RREGULLORES (QRK) NR.18/2018 P&#xCB;R BURIMET DHE PRAKTIKAT E RREZATIMIT JONIZUES&#xA;Komentet dhe sugjerimet e juaja, mund t&#x2019;i d&#xEB;rgoni n&#xEB; webfaqen e MMPH-s&#xEB; ose E-mail: ardian.recica@rks-gov.net dhe Fjona.Ymeri@rks-gov.net, n&#xEB; afat kohor prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB; pune. &#xA;&#xA;</h5>
+                                                    <span class="ml-4">13.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="PROJEKT RREGULLORE (QRK) NR. ___/2026 P&#xCB;R NDRYSHIMIN DHE PLOT&#xCB;SIMIN E RREGULLORES (QRK) NR.18/2018 P&#xCB;R BURIMET DHE PRAKTIKAT E RREZATIMIT JONIZUES&#xA;Komentet dhe sugjerimet e juaja, mund t&#x2019;i d&#xEB;rgoni n&#xEB; webfaqen e MMPH-s&#xEB; ose E-mail: ardian.recica@rks-gov.net dhe Fjona.Ymeri@rks-gov.net, n&#xEB; afat kohor prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB; pune. &#xA;&#xA;.docx" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_7bc2c98e-2265-4257-bb72-84d98c8d4503.docx" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="Konsultim me publikun &quot;Bardhi- SG&quot; Sh.p.k. Prizren, p&#xEB;r Leje Mjedisore p&#xEB;r th&#xEB;rrmim dhe seperim t&#xEB; gurit g&#xEB;lqerorn&#xEB; Samadrexh&#xEB;- Suharek&#xEB;, &#xEB;sht&#xEB; e plot&#xEB;suar administrativisht, ju lutemi q&#xEB; aplikacioni p&#xEB;r Leje Mjedisore (t&#xEB; bashk&#xEB;lidhur) t&#xEB; publikohet n&#xEB; ueb-faqen e MMPH-s&#xEB; p&#xEB;r konsultim me publikun dhe pranimin e komenteve brenda afatit prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB;sh.&#xA;&#xA;.doc" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_71f12cee-0b4a-47dc-b6a1-43178dee43e4.doc" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/doc.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/doc.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">Konsultim me publikun &quot;Bardhi- SG&quot; Sh.p.k. Prizren, p&#xEB;r Leje Mjedisore p&#xEB;r th&#xEB;rrmim dhe seperim t&#xEB; gurit g&#xEB;lqerorn&#xEB; Samadrexh&#xEB;- Suharek&#xEB;, &#xEB;sht&#xEB; e plot&#xEB;suar administrativisht, ju lutemi q&#xEB; aplikacioni p&#xEB;r Leje Mjedisore (t&#xEB; bashk&#xEB;lidhur) t&#xEB; publikohet n&#xEB; ueb-faqen e MMPH-s&#xEB; p&#xEB;r konsultim me publikun dhe pranimin e komenteve brenda afatit prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB;sh.&#xA;&#xA;</h5>
+                                                    <span class="ml-4">13.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="Konsultim me publikun &quot;Bardhi- SG&quot; Sh.p.k. Prizren, p&#xEB;r Leje Mjedisore p&#xEB;r th&#xEB;rrmim dhe seperim t&#xEB; gurit g&#xEB;lqerorn&#xEB; Samadrexh&#xEB;- Suharek&#xEB;, &#xEB;sht&#xEB; e plot&#xEB;suar administrativisht, ju lutemi q&#xEB; aplikacioni p&#xEB;r Leje Mjedisore (t&#xEB; bashk&#xEB;lidhur) t&#xEB; publikohet n&#xEB; ueb-faqen e MMPH-s&#xEB; p&#xEB;r konsultim me publikun dhe pranimin e komenteve brenda afatit prej pes&#xEB;mb&#xEB;dhjet&#xEB; (15) dit&#xEB;sh.&#xA;&#xA;.doc" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_71f12cee-0b4a-47dc-b6a1-43178dee43e4.doc" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li id="doc-title">
+                                    <a style="color: inherit;" download="RAPORTI I VLER&#xCB;SIMIT T&#xCB; NDIKIMIT N&#xCB; MJEDIS &#x201C;Funksionimi i fabrik&#xEB;s ekzistuese BNF-i p&#xEB;r prodhimin e lla&#xE7;eve suvatuese, gletit final, suvatuesve dekorativ&#xEB; p&#xEB;r fasada, ngjit&#xEB;sve p&#xEB;r pllaka, kontakt-betonit si dhe bluarjen dhe separimin e gurit g&#xEB;lqeror 0&#x2013;30 mm p&#xEB;r nevoja vetanake&#x201D;.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_4d5f8335-d321-4fef-8148-e62f9702820f.pdf" target="_blank">
+                                        <div class="d-flex  justify-content-between">
+                                            <div class="d-flex">
+                                                <picture>
+                                                    <source type="image/webp" srcset="/img/icons/pdf.webp">
+                                                    <img loading="lazy" style="object-fit: cover;" class="my-auto" alt="" src="/img/icons/pdf.png" />
+                                                </picture>
+                                                <div>
+                                                    <h5 style="font-weight:bold; " class="ml-3 mb-0">RAPORTI I VLER&#xCB;SIMIT T&#xCB; NDIKIMIT N&#xCB; MJEDIS &#x201C;Funksionimi i fabrik&#xEB;s ekzistuese BNF-i p&#xEB;r prodhimin e lla&#xE7;eve suvatuese, gletit final, suvatuesve dekorativ&#xEB; p&#xEB;r fasada, ngjit&#xEB;sve p&#xEB;r pllaka, kontakt-betonit si dhe bluarjen dhe separimin e gurit g&#xEB;lqeror 0&#x2013;30 mm p&#xEB;r nevoja vetanake&#x201D;</h5>
+                                                    <span class="ml-4">12.10.2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="mr-3">
+                                                <a class="button-download" style="color: inherit;" download="RAPORTI I VLER&#xCB;SIMIT T&#xCB; NDIKIMIT N&#xCB; MJEDIS &#x201C;Funksionimi i fabrik&#xEB;s ekzistuese BNF-i p&#xEB;r prodhimin e lla&#xE7;eve suvatuese, gletit final, suvatuesve dekorativ&#xEB; p&#xEB;r fasada, ngjit&#xEB;sve p&#xEB;r pllaka, kontakt-betonit si dhe bluarjen dhe separimin e gurit g&#xEB;lqeror 0&#x2013;30 mm p&#xEB;r nevoja vetanake&#x201D;.pdf" href="https://mmphi.rks-gov.net/MMPHIFolder/AnnouncementFiles/2026_4d5f8335-d321-4fef-8148-e62f9702820f.pdf" target="_blank"><i class="mdi mdi-tray-arrow-down"></i></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <hr />
+            </ul>
+        </div>
+        <div class="pagination p1 mt-3" style=" justify-content: start;">
+            <ul>
+                        <a onclick="changeNewsPage(1);" class="is-active">
+                        <li>1</li></a>
+                        <a onclick="changeNewsPage(2);">
+                        <li>2</li></a>
+                        <a onclick="changeNewsPage(3);">
+                        <li>3</li></a>
+                        <a onclick="changeNewsPage(4);">
+                        <li>4</li></a>
+                        <a onclick="changeNewsPage(5);">
+                        <li>5</li></a>
+                        <a onclick="changeNewsPage(6);">
+                        <li>6</li></a>
+                        <a onclick="changeNewsPage(7);">
+                        <li>7</li></a>
+                        <a onclick="changeNewsPage(8);">
+                        <li>8</li></a>
+                        <a onclick="changeNewsPage(9);">
+                        <li>9</li></a>
+                        <a onclick="changeNewsPage(10);">
+                        <li>10</li></a>
+                        <a onclick="changeNewsPage(11);">
+                        <li>11</li></a>
+                        <a onclick="changeNewsPage(12);">
+                        <li>12</li></a>
+                        <a onclick="changeNewsPage(13);">
+                        <li>13</li></a>
+                        <a onclick="changeNewsPage(14);">
+                        <li>14</li></a>
+                        <a onclick="changeNewsPage(15);">
+                        <li>15</li></a>
+                        <a onclick="changeNewsPage(16);">
+                        <li>16</li></a>
+                        <a onclick="changeNewsPage(17);">
+                        <li>17</li></a>
+                        <a onclick="changeNewsPage(18);">
+                        <li>18</li></a>
+                        <a onclick="changeNewsPage(19);">
+                        <li>19</li></a>
+                        <a onclick="changeNewsPage(20);">
+                        <li>20</li></a>
+                        <a onclick="changeNewsPage(21);">
+                        <li>21</li></a>
+                        <a onclick="changeNewsPage(22);">
+                        <li>22</li></a>
+                        <a onclick="changeNewsPage(23);">
+                        <li>23</li></a>
+                        <a onclick="changeNewsPage(24);">
+                        <li>24</li></a>
+                        <a onclick="changeNewsPage(25);">
+                        <li>25</li></a>
+                        <a onclick="changeNewsPage(26);">
+                        <li>26</li></a>
+                        <a onclick="changeNewsPage(27);">
+                        <li>27</li></a>
+                        <a onclick="changeNewsPage(28);">
+                        <li>28</li></a>
+                        <a onclick="changeNewsPage(29);">
+                        <li>29</li></a>
+                        <a onclick="changeNewsPage(30);">
+                        <li>30</li></a>
+                        <a onclick="changeNewsPage(31);">
+                        <li>31</li></a>
+                        <a onclick="changeNewsPage(32);">
+                        <li>32</li></a>
+                        <a onclick="changeNewsPage(33);">
+                        <li>33</li></a>
+                        <a onclick="changeNewsPage(34);">
+                        <li>34</li></a>
+                        <a onclick="changeNewsPage(35);">
+                        <li>35</li></a>
+                        <a onclick="changeNewsPage(36);">
+                        <li>36</li></a>
+                        <a onclick="changeNewsPage(37);">
+                        <li>37</li></a>
+                        <a onclick="changeNewsPage(38);">
+                        <li>38</li></a>
+                        <a onclick="changeNewsPage(39);">
+                        <li>39</li></a>
+                        <a onclick="changeNewsPage(40);">
+                        <li>40</li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#menu").load("/Headers/NavigationBar")
+
+        $(".first-tab-active").addClass("active");
+    })
+</script>
+
+<script>
+    function changeYear(year) {
+        var typeID = '';
+        var subTypeID = '';
+
+        var type = typeID > 0 ? "&type=" + typeID : "";
+        var subType = subTypeID > 0 ? "&subType=" + subTypeID : "";
+        window.location.href = '/Document/Announcements' + "?Year=" + year + type + subType;
+    }
+    function changeNewsPage(page) {
+        var typeID = '';
+        var subTypeID = '';
+
+        var type = typeID > 0 ? "&type=" + typeID: "";
+        var subType = subTypeID > 0 ? "&subType=" + subTypeID : "";
+        window.location.href = '/Document/Announcements' + "?year=2026" + "&pageNumber=" + page + type + subType;
+    }
+</script>
+
+    </main>
+
+    <div class="footer pb-0 mt-0 pt-0">
+        <div class="container-fluid px-xl-5 px-lg-2 px-md-0 px-5">
+            <div class="row  px-lg-5 px-0" id="showFooter">
+
+
+            </div>
+
+        </div>
+        <div class="copyright pb-4 px-3" style="white-space: normal;line-height:1.2">
+
+
+            <span>
+                Copyright &copy;
+                <span id="newYear"></span>
+            </span>
+            <p>
+                Ministria e Mjedisit dhe Planifikimit Hap&#xEB;sinor
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#showFooter").load("/Footer/Index");
+            var newYear = new Date().getFullYear();
+            $("#newYear").text(newYear);
+
+        })
+    </script>
+
+
+
+    <!-- SweetAlert  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async defer></script>
+    <!-- reCaptcha  -->
+
+    <script src="/font-awesome/all.min.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyframe/dist/lazyframe.min.js"></script>
+
+
+
+	<script nws-csp-add-nonce='true'>'serviceWorker'in navigator&&navigator.serviceWorker.register('/serviceworker', { scope: '/' })</script></body> 
+</html>

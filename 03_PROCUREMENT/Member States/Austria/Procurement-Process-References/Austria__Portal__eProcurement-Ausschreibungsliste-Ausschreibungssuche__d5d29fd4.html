@@ -1,0 +1,6457 @@
+<!DOCTYPE HTML>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="eProcurement - Ausschreibungsliste">
+  <meta name="x-implemented-by" content="BRZ" >
+  <meta name="author" content="BRZ GmbH">
+  <title>eProcurement - Ausschreibungsliste - Ausschreibungssuche</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="/at.gv.bmdw.eproc-p/favicons/favicon-27f9eb5239da2dfc209b0ff0cee558fd.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/at.gv.bmdw.eproc-p/favicons/favicon-16x16-9a297223d14267b1fcf7d33c9b6fefa7.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/at.gv.bmdw.eproc-p/favicons/favicon-32x32-be7c3e0a00cb3b99f0f7c4189a4df7b4.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/at.gv.bmdw.eproc-p/favicons/apple-touch-icon-ad469d2b22e20e802883accfb8b5d241.png">
+
+  <link rel="stylesheet" type="text/css" href="/at.gv.bmdw.eproc-p/css/usp-b51b6ace1f69182e45fe328e19515a8e.css">
+  <link rel="stylesheet" type="text/css" href="/at.gv.bmdw.eproc-p/webjars/font-awesome/7.3.0/css/all.min-f0ab311f858ccafaf6f30d704fe999ab.css">
+  <link rel="stylesheet" type="text/css" href="/at.gv.bmdw.eproc-p/css/default.min-ca5de7b2e1baa1205b2f17e29314c412.css">
+
+  <script src="/at.gv.bmdw.eproc-p/webjars/jquery/3.7.1/dist/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+  <script src="/at.gv.bmdw.eproc-p/webjars/jquery-placeholder/2.3.1/jquery.placeholder.min-ee60835ea8faa661d4e1ce6c1a97b141.js"></script>
+  <script src="/at.gv.bmdw.eproc-p/webjars/datatables/2.3.7/js/dataTables.min-d46144a0fa554fd82e4b1442c7239415.js"></script>
+  <script src="/at.gv.bmdw.eproc-p/webjars/datatables/2.3.7/js/dataTables.bootstrap5.min-bf0f4663934b55be3664f357ccd07a57.js"></script>
+  <script src="/at.gv.bmdw.eproc-p/webjars/moment/2.29.4/min/moment-with-locales-d07131713d356424c14481ed9e77ced2.js"></script>
+  <script id="sessionTtlJs" src="/at.gv.bmdw.eproc-p/js/session-ttl.min-3ab712de833f3ebfca2e36f8295d3f14.js"></script>
+  <script src="/at.gv.bmdw.eproc-p/js/login-info.min-d4ecd64837a43ec69a9d740dd7e876fd.js"></script>
+  <script src="/at.gv.bmdw.eproc-p/js/input-validation.min-126091fb89b68fb6438db265e87d5cbc.js"></script>
+  <script>
+    // Required for login-info.js fetching of ttl
+    const uspSessionUrl = "https:\/\/pro.services.usp.gv.at\/asg\/session";
+  </script>
+</head>
+
+<body>
+
+<div class="container-fluid" id="skiplinks-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="Seitenbereiche">
+          <ul id="skiplinks">
+            <li>
+              <a href="#content" class="visually-hidden visually-hidden-focusable" accesskey="1"><span class="skiplink-text">Zum Inhalt <span class="visually-hidden" lang="en">Accesskey</span> [1]</span></a>
+            </li>
+            <li>
+              <a href="#topnavigation" class="visually-hidden visually-hidden-focusable" accesskey="2"><span class="skiplink-text">Zum Hauptmenü <span class="visually-hidden" lang="en">Accesskey</span> [2]</span></a>
+            </li>
+            <li>
+              <a href="#subnavigation" class="visually-hidden visually-hidden-focusable" accesskey="3"><span class="skiplink-text">Zum Untermenü <span class="visually-hidden" lang="en">Accesskey</span> [3]</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="page">
+  <header>
+    <div id="page-top">
+
+  <div class="container-fluid" id="header-wrapper">
+    <div class="container px-0" id="header-container">
+      <nav class="navbar navbar-expand" aria-label="Hauptnavigation">
+        <div class="container px-0 align-items-end">
+          <a class="navbar-brand" href="https://www.usp.gv.at/" target="_blank">
+            <img src="/at.gv.bmdw.eproc-p/usp/BMDW_Unternehmensserviceportal_Logo_srgb-1c150ed750f005da64846e5abe7359ea.png" width="300" height="39" class="img-fluid logo-2x" alt="Unternehmensservice Portal - Startseite">
+          </a><!-- /.navbar-brand -->
+          
+          <div class="justify-content-end ms-auto" id="topnavigation" tabindex="-1">
+            <ul class="navbar-nav">
+              <li class="nav-item d-none d-xl-flex" role="none presentation">
+                <a class="nav-link" href="https://www.usp.gv.at/aktuelles">Aktuelles</a>
+              </li>
+              <li class="nav-item d-none d-xl-flex" role="none presentation">
+                <a class="nav-link" href="https://www.usp.gv.at/themen">Themen</a>
+              </li>
+              <li class="nav-item d-none d-xl-flex" role="none presentation">
+                <a class="nav-link active" href="https://www.usp.gv.at/services">Services</a>
+              </li>
+
+              <li class="nav-item d-none d-xl-flex" role="none presentation">
+                <a class="nav-link" href="https://www.usp.gv.at/ueber-das-usp">Über das USP</a>
+              </li>
+
+              <li class="nav-item d-none d-xl-flex" role="none presentation">
+                <a class="nav-link" href="https://www.usp.gv.at/hilfe-und-support">Hilfe &amp; Support</a>
+              </li>
+
+              <li class="nav-item header-button" id="header-buttons" role="none presentation" data-login-url="https://mein.usp.gv.at/">
+                <a class="btn btn-link"
+                   href="https://mein.usp.gv.at/" aria-label="Anmelden">
+                  <span class="icon icon-user" aria-hidden="true"></span>
+                </a>
+
+                
+              </li>
+
+              <li class="nav-item header-button d-xl-none">
+                <button class="btn btn-link" type="button" title="Navigation einblenden" data-bs-toggle="collapse" data-bs-target="#mobileheader-wrapper" id="mobilenav-toggler" aria-expanded="false"><span class="icon icon-menue" aria-hidden="true"></span><span class="visually-hidden">Navigation einblenden</span></button>
+              </li>
+
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /#navbarSupportedContent -->
+        </div><!-- /.container -->
+      </nav><!-- /.navbar -->
+    </div><!-- /#header-container -->
+  </div><!-- /#header-wrapper -->
+
+  <div class="container-fluid bg-brand1" id="breadcrumb-wrapper">
+
+    <div class="container px-0" id="breadcrumb-container">
+
+      <nav aria-label="Positionsanzeige">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="https://www.usp.gv.at/" title="Startseite">
+              <span class="icon icon-breadcrumb_home" aria-hidden="true"></span><span class="visually-hidden">Startseite</span>
+            </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="https://www.usp.gv.at/services">Services</a>
+          </li>
+          
+          <li class="breadcrumb-item active" aria-current="page">Ausschreibungssuche</li>
+        </ol>
+      </nav>
+
+    </div><!-- /#breadcrumb-container -->
+
+  </div><!-- /#breadcrumb-wrapper -->
+</div>
+  </header>
+
+  <div id="page-bottom">
+
+    <div class="container-fluid" id="content-wrapper">
+      <div class="container px-0" id="content-container">
+        <div class="row">
+          <aside class="col-12 col-xl-3 d-xl-block subnavigation" id="subnavigation" tabindex="-1">
+            
+  <nav aria-label="Unternavigation">
+    <ul>
+      <!--Ausschreibungssuche-->
+      <li class="active current">
+        <a
+           href="/at.gv.bmdw.eproc-p/public/tenderlist">Ausschreibungssuche</a>
+
+        <ul>
+          <!--Auswertungen zur öffentlichen Auftragsvergabe-->
+          
+
+          <!--Aktuelles zum Vergaberecht-->
+          <li>
+            <a
+              href="https://www.bmj.gv.at/themen/Vergaberecht/Aktuelles-im-Vergaberecht.html"
+              target="_blank">Aktuelles zum Vergaberecht</a>
+          </li>
+
+          <!--Meine Metadaten-->
+          
+
+          <!--Publikationen/Downloads-->
+          <li>
+            <a
+              href="/at.gv.bmdw.eproc-p/public/publications">Publikationen/Downloads</a>
+          </li>
+
+          <!--Kerndatenquelle Test-Upload-->
+          <li>
+            <a
+              href="/at.gv.bmdw.eproc-p/public/test-kdq-upload">Kerndatenquelle Test-Upload</a>
+          </li>
+
+          <!-- Kerndaten Test-Upload-->
+          <li>
+            <a href="/at.gv.bmdw.eproc-p/public/test-kd-upload">Kerndaten Test-Upload</a>
+          </li>
+
+          <!--Test-Kerndatenquelle indexieren-->
+          <li>
+            
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!--FILTER CONTENT -->
+  <div id="filtercont">
+
+    <h2 class="visually-hidden">Filter</h2>
+
+    <form id="filterform" action="/at.gv.bmdw.eproc-p/public/tenderlist" method="GET">
+      <input type="hidden" name="q" value="">
+      <input type="hidden" name="loaded" value="true">
+      <input type="hidden" name="orderColumn" value="2">
+      <input type="hidden" name="orderDir" value="desc">
+      <input type="hidden" name="callerId" value="">
+      <input type="hidden" name="pageLength" value="0">
+      <div class="d-flex">
+        <button class="btn mt-2 mb-2 ms-auto mr-auto btn-outline-secondary btn-block"
+                onclick="resetFilterForm()"
+                type="button">Filter zurücksetzen
+        </button>
+      </div>
+
+      <!--KD Art-->
+      <div class="card">
+        <fieldset>
+          <legend class="card-header"><strong>Bekanntmachung/Bekanntgabe</strong></legend>
+          <div class="form-container card-body">
+            <input type="hidden" name="_kdBaseTypes" value="on"/>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb form-control"
+                     name="kdBaseTypes"
+                     id="kdbtbm" value="bm"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="kdbtbm">Bekanntmachung (29870)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb form-control"
+                     name="kdBaseTypes"
+                     id="kdbtbg" value="bg"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="kdbtbg">Bekanntgabe (143224)</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!--eForms Art-->
+      
+
+      <!--eForms/KD-->
+      <div class="card">
+        <fieldset>
+          <legend class="card-header"><strong>Datenformat</strong></legend>
+          <div class="form-container card-body">
+            <input type="hidden" name="_kdTypes" value="on"/>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb form-control"
+                     name="kdTypes"
+                     id="kdteforms" value="eforms"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="kdteforms">eforms (ab 01.10.2026) (1443)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb form-control"
+                     name="kdTypes"
+                     id="kdtkd" value="kd"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="kdtkd">Kerndaten (bis 30.09.2026) (171651)</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!--Veröffentlichungszeitraum-->
+      <div class="card">
+        <fieldset>
+          <legend class="card-header"><strong>Veröffentlichungszeitraum</strong></legend>
+          <div class="form-container card-body">
+            <div class="mb-2">
+              <div class="input-group datepicker datepicker-date">
+                <label class="form-label" for="fromdate">von</label>
+                <input type="date" id="fromdate" name="fromdate" class="form-control" value="">
+              </div>
+            </div>
+            <div class="mb-2">
+              <div class="input-group datepicker datepicker-date">
+                <label class="form-label" for="todate">bis</label>
+                <input type="date" id="todate" name="todate" class="form-control" value="">
+              </div>
+            </div>
+            <div class="d-flex">
+              <button class="btn ms-auto btn-outline-secondary btn-sm btn-block" id="updateViewDatePicker"
+                      onclick="submitFilterForm(this);" type="button">Ansicht aktualisieren
+              </button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!--Kategorie (CPV)-->
+      <div class="card">
+        <fieldset>
+          <legend class="card-header"><strong>Kategorie (CPV)</strong></legend>
+          <div class="form-container card-body">
+            <input type="hidden" name="_cpvList" value="on"/>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45000000" value="45000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45000000">Bauarbeiten (9515)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72000000" value="72000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72000000">IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung (9322)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71000000" value="71000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71000000">Dienstleistungen von Architektur-, Konstruktions- und Ingenieurbüros und Prüfstellen (5659)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv48000000" value="48000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv48000000">Softwarepaket und Informationssysteme (4377)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72200000" value="72200000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72200000">Softwareprogrammierung und -beratung (3965)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45233120" value="45233120"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45233120">Straßenbauarbeiten (3681)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45210000" value="45210000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45210000">Bauleistungen im Hochbau (3303)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv32400000" value="32400000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv32400000">Netzwerke (2557)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71520000" value="71520000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71520000">Bauaufsicht (2420)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45200000" value="45200000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45200000">Komplett- oder Teilbauleistungen im Hochbau sowie Tiefbauarbeiten (2112)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv55900000" value="55900000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv55900000">Einzelhandelsdienste (1910)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45311200" value="45311200"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45311200">Elektroinstallationsarbeiten (1895)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72260000" value="72260000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72260000">Dienstleistungen in Verbindung mit Software (1861)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71300000" value="71300000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71300000">Dienstleistungen von Ingenieurbüros (1839)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71240000" value="71240000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71240000">Dienstleistungen von Architektur- und Ingenieurbüros sowie planungsbezogene Leistungen (1823)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv80400000" value="80400000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv80400000">Erwachsenenbildung und sonstiger Unterricht (1781)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv79620000" value="79620000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv79620000">Überlassung von Personal einschließlich Zeitarbeitskräfte (1681)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv48820000" value="48820000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv48820000">Server (1667)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv79340000" value="79340000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv79340000">Werbe- und Marketingdienstleistungen (1664)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv38000000" value="38000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv38000000">Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) (1645)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45233110" value="45233110"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45233110">Bauarbeiten für Autobahnen (1581)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv75130000" value="75130000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv75130000">Unterstützende Dienste für die öffentliche Verwaltung (1520)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45221250" value="45221250"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45221250">Tiefbauarbeiten, außer Tunneln, Schächten und Unterführungen (1420)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72267000" value="72267000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72267000">Software-Wartung und -Reparatur (1371)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv60000000" value="60000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv60000000">Transport- und Beförderungsdienstleistungen (außer Abfalltransport) (1344)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71320000" value="71320000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71320000">Planungsleistungen im Bauwesen (1334)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45331000" value="45331000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45331000">Installation von Heizungs-, Lüftungs- und Klimaanlagen (1267)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv79000000" value="79000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv79000000">Dienstleistungen für Unternehmen: Recht, Marketing, Consulting, Einstellungen, Druck und Sicherheit (1214)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45262670" value="45262670"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45262670">Metallbauarbeiten (1205)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45311000" value="45311000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45311000">Installation von Elektroanlagen (1194)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv90000000" value="90000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv90000000">Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste (1156)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72263000" value="72263000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72263000">Software-Implementierung (1095)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv90620000" value="90620000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv90620000">Schneeräumung (1061)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34144210" value="34144210"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34144210">Feuerwehrfahrzeuge (1056)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72262000" value="72262000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72262000">Software-Entwicklung (1029)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv79410000" value="79410000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv79410000">Unternehmens- und Managementberatung (983)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34947100" value="34947100"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34947100">Schwellen (961)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45234100" value="45234100"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45234100">Bauarbeiten für Eisenbahnlinien (955)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34941800" value="34941800"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34941800">Weichen (946)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72266000" value="72266000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72266000">Software-Beratung (934)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv09134220" value="09134220"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv09134220">Dieselkraftstoff (EN 590) (888)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72230000" value="72230000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72230000">Entwicklung von kundenspezifischer Software (885)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71500000" value="71500000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71500000">Dienstleistungen im Bauwesen (856)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72220000" value="72220000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72220000">Systemberatung und technische Beratung (849)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv50000000" value="50000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv50000000">Reparatur- und Wartungsdienste (848)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv14212300" value="14212300"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv14212300">Schotter und Kleinschlag (837)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv60160000" value="60160000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv60160000">Postbeförderung auf der Straße (813)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv64112000" value="64112000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv64112000">Briefpostdienste (792)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34140000" value="34140000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34140000">Schwerlastfahrzeuge (791)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv79400000" value="79400000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv79400000">Unternehmens- und Managementberatung und zugehörige Dienste (776)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45421000" value="45421000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45421000">Bautischlerarbeiten (755)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45300000" value="45300000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45300000">Bauinstallationsarbeiten (745)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv79421000" value="79421000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv79421000">Projektmanagement, außer Projektüberwachung von Bauarbeiten (717)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv30213100" value="30213100"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv30213100">Tragbare Computer (694)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv77200000" value="77200000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv77200000">Dienstleistungen in der Forstwirtschaft (666)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72210000" value="72210000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72210000">Programmierung von Softwarepaketen (659)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45315100" value="45315100"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45315100">Elektrotechnikinstallation (645)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34631000" value="34631000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34631000">Teile für Lokomotiven oder rollendes Material (630)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45330000" value="45330000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45330000">Installateurarbeiten (622)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34946110" value="34946110"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34946110">Eisenbahnschienen (619)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv90910000" value="90910000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv90910000">Reinigungsdienste (605)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34946000" value="34946000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34946000">Gleisbaumaterial und -teile (576)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34941000" value="34941000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34941000">Schienen und Zubehör (573)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45233100" value="45233100"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45233100">Bauarbeiten für Fernstraßen und Straßen (572)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv90900000" value="90900000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv90900000">Reinigungs- und Hygienedienste (570)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv90911000" value="90911000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv90911000">Wohnungs-, Gebäude- und Fensterreinigung (564)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv90911200" value="90911200"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv90911200">Gebäudereinigung (559)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71250000" value="71250000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71250000">Dienstleistungen von Architektur- und Ingenieurbüros sowie Vermessungsdienste (556)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45230000" value="45230000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45230000">Bauarbeiten für Rohrleitungen, Fernmelde- und Stromleitungen, für Autobahnen, Straßen, Flugplätze und Eisenbahnen; Nivellierungsarbeiten (553)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45324000" value="45324000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45324000">Gipskartonarbeiten (549)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34144000" value="34144000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34144000">Kraftfahrzeuge für besondere Zwecke (543)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34920000" value="34920000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34920000">Straßenausrüstung (532)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45442100" value="45442100"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45442100">Anstricharbeiten (523)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45422000" value="45422000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45422000">Zimmer- und Tischlerarbeiten (520)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71356400" value="71356400"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71356400">Technische Planungsleistungen (509)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71322500" value="71322500"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71322500">Technische Planungsleistungen für Verkehrsanlagen (503)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72240000" value="72240000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72240000">Systemanalyse und Programmierung (481)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72250000" value="72250000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72250000">Systemdienstleistungen und Unterstützungsdienste (481)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv30000000" value="30000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv30000000">Maschinen, Material und Zubehör für Büro und Computer, außer Möbeln und Softwarepaketen (468)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45310000" value="45310000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45310000">Installation von elektrischen Leitungen (463)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv33140000" value="33140000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv33140000">Medizinische Verbrauchsartikel (457)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71319000" value="71319000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71319000">Gutachterische Tätigkeit (454)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34947000" value="34947000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34947000">Schwellen und Teile von Schwellen (447)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45443000" value="45443000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45443000">Fassadenarbeiten (445)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45261210" value="45261210"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45261210">Dachdeckarbeiten (441)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv79710000" value="79710000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv79710000">Dienstleistungen von Sicherheitsdiensten (439)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34000000" value="34000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34000000">Transportmittel und Erzeugnisse für Verkehrszwecke (431)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34600000" value="34600000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34600000">Eisenbahn- und Straßenbahnlokomotiven und rollendes Material sowie zugehörige Teile (418)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv39130000" value="39130000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv39130000">Büromöbel (415)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv31000000" value="31000000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv31000000">Elektrische Maschinen, Geräte, Ausstattung und Verbrauchsartikel; Beleuchtung (412)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34632200" value="34632200"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34632200">Elektrische Signaleinrichtungen für den Eisenbahnverkehr (411)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71322000" value="71322000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71322000">Technische Planungsleistungen im Tief- und Hochbau (411)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv30200000" value="30200000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv30200000">Computeranlagen und Zubehör (410)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71200000" value="71200000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71200000">Dienstleistungen von Architekturbüros (409)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv33100000" value="33100000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv33100000">Medizinische Geräte (404)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv71541000" value="71541000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv71541000">Projektmanagement im Bauwesen (399)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv72265000" value="72265000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv72265000">Software-Konfiguration (398)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45431000" value="45431000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45431000">Boden- und Fliesenarbeiten (395)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv34100000" value="34100000"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv34100000">Kraftfahrzeuge (383)</label>
+            </div>
+            <div class="form-check cpv-hide"
+                 style="display: none">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name="cpvList"
+                     id="cpv45316200" value="45316200"
+                     onclick="javascript:debounceFilterForm(this);">
+              <label class="form-label" for="cpv45316200">Installation von Signalanlagen (382)</label>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!--Link Alle anzeigen/Ausblenden-->
+            <div class="d-flex mb-2">
+              <button id="displayAll" class="btn ms-auto btn-outline-secondary btn-sm btn-block" type="button" aria-expanded="false"
+                      onclick="displayHideCPV()">&gt; Alle anzeigen
+              </button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!--Erfüllungsort-->
+      <div class=" card">
+        <fieldset>
+          <legend class="card-header"><strong>Erfüllungsort</strong></legend>
+          <div class="form-container card-body">
+            <input type="hidden" name="_nutsList" value="on"/>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT" value="AT"
+                     onclick="checkUncheckNuts(&#39;true&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT">Österreich (29362)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT11" value="AT11"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT11">Burgenland (204)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT21" value="AT21"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT21">Kärnten (1375)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT12" value="AT12"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT12">Niederösterreich (7765)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT31" value="AT31"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT31">Oberösterreich (2008)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT32" value="AT32"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT32">Salzburg (2681)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT22" value="AT22"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT22">Steiermark (2435)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT33" value="AT33"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT33">Tirol (2768)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT34" value="AT34"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT34">Vorarlberg (440)</label>
+            </div>
+            <div class="form-check ms-3">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntAT13" value="AT13"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntAT13">Wien (2104)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntZZ" value="ZZ"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntZZ">International (21)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"
+                     class="form-check-input filter-cb"
+                     name = "nutsList"
+                     id="ntXX" value="XX"
+                     onclick="checkUncheckNuts(&#39;false&#39;, this.checked);debounceFilterForm(this);">
+              <label class="form-label" for="ntXX">unbekannter Erfüllungsort (83)</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+  </div>
+
+          </aside><!-- /#subnavigation -->
+
+          <main class="col-12 col-xl-9 content" id="content" tabindex="-1">
+            
+  
+
+  <h1 id="heading_tenderlist"><span class="title">Ausschreibungssuche</span></h1>
+
+  <div class="alert alert-info">
+    <strong>Hinweis:</strong> Wird im nachfolgenden Filter eine Check-Box aktiviert bzw. deaktiviert, dann wird das Suchergebnis automatisch gefiltert und aktualisiert.
+  </div>
+
+  
+
+  <!-- KD Table -->
+  <!-- Search input field-->
+  <div class="mb-3 card">
+    <div class="card-body">
+      <form id="freetextsearch" action="/at.gv.bmdw.eproc-p/public/tenderlist" method="GET">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-9 mb-md-0 pr-md-0 text-start">
+            <label for="queryinput" class="form-label visually-hidden">Suchtext</label>
+            <input id="queryinput" class="form-control" name="q" type="text" placeholder="Geben Sie ihren Suchtext ein..."
+                   value="" maxlength="200">
+          </div>
+          <div class="col-12 col-md-3 text-end">
+            <button class="btn px-2 btn-primary btn-block btn-with-icon" type="submit" name="searchtext" id="searchtext">
+              <span class="icon icon-lupe"></span> Suchen
+            </button>
+          </div>
+        </div>
+        <input type="hidden" name="loaded" value="true">
+        <input type="hidden" name="orderColumn" value="2">
+        <input type="hidden" name="orderDir" value="desc">
+        <input type="hidden" name="callerId" value="">
+        <input type="hidden" name="pageLength" value="0">
+        <div>
+          <input type="hidden" name="_kdTypes" value="on">
+          
+        </div>
+        <input type="hidden" name="_kdBaseTypes" value="on">
+        
+        
+        <input type="hidden" name="fromdate" value="">
+        <input type="hidden" name="todate" value="">
+        <input type="hidden" name="_cpvList" value="on">
+        
+        <input type="hidden" name="_nutsList" value="on">
+        
+      </form>
+    </div>
+  </div>
+  <!-- Search Content-->
+  <div id="tlistcont" class="table-responsive-lg">
+    <table id="tenderlist" class="table table-sm" style="width: 100%;" role="grid" aria-labelledby="heading_tenderlist">
+      <thead>
+      <tr>
+        <th style="width: 43% !important;" scope="col"><span role="button">Bezeichnung</span></th>
+        <th style="width: 30% !important;" scope="col"><span role="button">Organisation</span></th>
+        <th style="width: 15% !important;" scope="col"><span role="button">Veröffentlicht am</span></th>
+        <th style="width: 12% !important;" scope="col"><span role="button">Angebots­frist</span></th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <div class="d-flex justify-content-end mt-2">Letzte Aktualisierung am 24.10.2026, 22:33 Uhr</div>
+  </div>
+  <script>
+    const RATE_LIMIT_SEARCH_MS = 1000;
+    const RATE_LIMIT_PAGINATION = 500;
+    const LOCAL_STORAGE_LAST_PAGINATION = "LAST_PAGINATION_TIMESTAMP";
+    const LOCAL_STORAGE_LAST_SEARCH = "LAST_SEARCH_TIMESTAMP";
+
+    $(document).ready(function () {
+      $.fn.dataTable.ext.classes.sLengthSelect = '';
+      $.fn.dataTable.ext.classes.sPageButton = $.fn.dataTable.ext.classes.sPageButton + ' tenderlist-page-item';
+      $.fn.dataTable.ext.errMode = 'none';
+      const pageLengthParam = Number.parseInt($("input[name='pageLength']").val());
+      const pageLength = pageLengthParam && pageLengthParam > 0 ? pageLengthParam : 25;
+      let pendingTableRequest = null;
+      let table = $('#tenderlist').DataTable({
+        serverSide: true,
+        "lengthMenu": [ [25, 50, 100], [25, 50, 100] ], /*the whitespaces are needed, else thymeleaf can't parse the field*/
+        "order": [ [$("input:hidden[name='orderColumn']").val(), $("input:hidden[name='orderDir']").val()] ], /*the whitespaces are needed, else thymeleaf can't parse the field*/
+        "pageLength": pageLength,
+        "displayStart": 0,
+        "bFilter": false,
+        "layout": {
+          topStart: 'info',
+          topEnd: 'pageLength',
+          bottomStart: 'div',
+          bottomEnd: {
+            paging: {
+              firstLast: false
+            }
+          }
+        },
+        ajax: function(data, callback) {
+          clearTimeout(pendingTableRequest);
+          const wait = waitTimeToNextRequest(getNumberFromLocalStorage(LOCAL_STORAGE_LAST_PAGINATION), RATE_LIMIT_PAGINATION);
+
+          data.orderColumn = data.order[0]?.column;
+          data.orderDir = data.order[0]?.dir;
+          data.kdTypes = [];
+          $("input:checked[id^='kdt']").each(function () {
+            data.kdTypes.push($(this).attr("value"));
+          });
+          data.cpvList = [];
+          $("input:checked[id^='cpv']").each(function () {
+            data.cpvList.push($(this).attr("value"));
+          });
+          data.kdBaseTypes = [];
+          $("input:checked[id^='kdbt']").each(function () {
+            data.kdBaseTypes.push($(this).attr("value"));
+          });
+          data.eFormsBaseTypes = [];
+          $("input:checked[id^='efbt']").each(function () {
+            data.eFormsBaseTypes.push($(this).attr("value"));
+          });
+          data.nutsList = [];
+          $("input:checked[id^='nt']").each(function () {
+            data.nutsList.push($(this).attr("value"));
+          });
+          data.q = null
+          data.fromdate = null
+          data.todate = null
+
+          pendingTableRequest = setTimeout(() => {
+            writeNumberToLocalStorage(LOCAL_STORAGE_LAST_PAGINATION, String(Date.now()));
+            $.ajax({
+              url: "\/at.gv.bmdw.eproc-p\/public\/api\/tenderlist",
+              contentType: "application/json; charset=utf-8",
+              data: data,
+              dataType: "json",
+              success: function (json) {
+                callback(json);
+              }
+            });
+          }, wait);
+        },
+        drawCallback: function (settings) {
+          $('#tenderlist_paginate ul.pagination').attr('aria-label', 'Paginierung');
+          $('#tenderlist th').each(function () {
+            const th = $(this);
+            const ariaLabel = th.attr('aria-label');
+            th.removeAttr('aria-label');
+            th.children('span').attr('aria-label', ariaLabel);
+          });
+          const inputCaller = $("input[name=callerId]");
+          const callerId = inputCaller.val();
+          if (callerId.trim() === "") {
+            $('#tenderlist_wrapper table tbody tr:eq(0) td:eq(0) a').focus();
+          } else {
+            inputCaller.val('')
+            $("#" + callerId).focus();
+          }
+          $('.dt-paging nav').attr('aria-label', 'paginierung');
+        },
+        "language": {
+          "url": "\/at.gv.bmdw.eproc-p\/json\/datatables-info-d4464a047a9f487a30251e7b1b4992e5.json"
+        },
+        columns: [
+          {
+            data: "0", type: "string", render: function (data, type, row, meta) {
+              return '<a href="' + (row[5] ? 'notice' : 'tender') + '-detail?object=' + row[4] + '&amp;backlink=' + "L2F0Lmd2LmJtZHcuZXByb2MtcC9wdWJsaWMvdGVuZGVybGlzdD9sb2FkPXRydWU=" + '&amp;orderColumn='
+                + meta.settings.aaSorting[0][0] + '&amp;orderDir=' + meta.settings.aaSorting[0][1] + '&amp;start=' + meta.settings._iDisplayStart + '">' + (data ?? "(Kein Titel)") + '</a>'
+            }
+          },
+          {data: "1", type: "string"},
+          {data: "2", type: "string"},
+          {
+            data: "3",
+            type: "string",
+            render: function (data, type, row) {
+              if (row[5]) {
+                let text = '';
+                if (row[6] !== null) {
+                  text += '<b>Angebot:</b> ' + row[6];
+                }
+                if (row[7] !== null) {
+                  if (text.length > 0) {
+                    text += '<br/>';
+                  }
+                  text += '<b>Teiln.Antrag:</b> ' + row[7];
+                }
+                return text;
+              } else {
+                return data;
+              }
+            },
+            orderable: false
+          }
+        ],
+        "initComplete": function (settings, json) {
+          $('#tenderlist_wrapper').find('div:first').addClass('text-center');
+        }
+      });
+    });
+  </script>
+  <script>
+    // we use RATE_LIMIT_SEARCH_MS / 2 since in comparison to the other buttons and inputs, we do
+    // not wait for the exact amount of time to elapse since the last request, but rather always wait
+    // the full specified amount of time as we would like to have debounce as well so that the user can
+    // click multiple filters without having to endure a page reload between each selected criteria
+    const filterFormDebounce = debounce(() => {$('#filterform').submit()}, RATE_LIMIT_SEARCH_MS / 2);
+
+    const freeTextSearchForm = document.getElementById("freetextsearch");
+    const filterForm = document.getElementById("filterform");
+    let freeTextSearchFormPendingSubmission = null;
+    let filterFormPendingSubmission = null;
+    let resetFilterPendingSubmission = null;
+
+    freeTextSearchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        if (!validateSearchForm()){
+          return;
+        }
+
+        clearTimeout(freeTextSearchFormPendingSubmission);
+        const wait = waitTimeToNextRequest(getNumberFromLocalStorage(LOCAL_STORAGE_LAST_SEARCH), RATE_LIMIT_SEARCH_MS);
+        freeTextSearchFormPendingSubmission = setTimeout(() => {
+          writeNumberToLocalStorage(LOCAL_STORAGE_LAST_SEARCH, String(Date.now()));
+          const textSearchButton = document.getElementById("searchtext");
+          setFilterFormFields(textSearchButton);
+          freeTextSearchForm.submit();
+        },wait);
+    });
+
+    function validateSearchForm() {
+      const errorMessageContainer = $('#error-message');
+      const searchTerm = $('#queryinput').val();
+
+      if (validateString(searchTerm)) {
+        errorMessageContainer.text();
+        errorMessageContainer.removeClass();
+
+        return true;
+      }
+
+      errorMessageContainer.addClass('alert');
+      errorMessageContainer.addClass('alert-danger');
+      errorMessageContainer.text("Der Suchtext enthält ungültige Zeichen: " + getInvalidCharacters(searchTerm));
+      return false;
+    }
+
+    function checkUncheckNuts(isAustrian, checkedValue) {
+      if (isAustrian === 'true') {
+        const austrianStates = ['ntAT11', 'ntAT21', 'ntAT12', 'ntAT31', 'ntAT32', 'ntAT22', 'ntAT33', 'ntAT34', 'ntAT13'];
+        austrianStates.forEach(function (element) {
+          document.getElementById(element).checked = checkedValue
+        });
+      }
+    }
+
+    function displayHideCPV() {
+        $('.cpv-hide').toggle();
+      const linkText = document.getElementById('displayAll').textContent;
+      if (linkText.indexOf('Alle anzeigen') > 0) {
+            $('.cpv-hide:eq(0) label').focus();
+            document.getElementById('displayAll').innerHTML = '&gt; Weniger anzeigen';
+        } else {
+            document.getElementById('displayAll').innerHTML = '&gt; Alle anzeigen';
+        }
+    }
+
+    function displayHideContacts(count) {
+        $('.group-hide').toggle();
+      const linkText = document.getElementById('displayAllContacts').textContent;
+      if (linkText.indexOf('Alle') > 0) {
+            document.getElementById('displayAllContacts').innerHTML = '&gt; weniger Auftraggeber anzeigen';
+        } else {
+            document.getElementById('displayAllContacts').innerHTML = '&gt; Alle ' + count + ' Auftraggeber anzeigen';
+        }
+    }
+
+    function getNumberFromLocalStorage(localStorageKey) {
+      let number = -1;
+
+      if (localStorage != null) {
+        number = localStorage.getItem(localStorageKey);
+      }
+
+      return number;
+    }
+
+    function writeNumberToLocalStorage(localStorageKey, localStorageValue) {
+      if (localStorage != null) {
+        localStorage.setItem(localStorageKey, localStorageValue);
+      }
+    }
+
+    function waitTimeToNextRequest(lastRequestTimestamp, rateLimitDelay) {
+      const lastRequestTime = lastRequestTimestamp || 0;
+      const now = Date.now();
+      // First we calculate the time remaining until the next request can be sent to not hit
+      // the rate limit. If it is a negative value, we can already send a new request, so we assume zero
+      // milliseconds are left. In order to also cover the case where the last request timestamp
+      // could be in the future, if the user tampered with it, we take the full rate limit delay
+      // until the next request can be sent, instead of letting the user wait unnecessary long.
+      return Math.min(rateLimitDelay, Math.max(0, rateLimitDelay - (now - lastRequestTime)));
+    }
+
+    function resetFilterForm() {
+      clearTimeout(resetFilterPendingSubmission);
+      const wait = waitTimeToNextRequest(getNumberFromLocalStorage(LOCAL_STORAGE_LAST_SEARCH), RATE_LIMIT_SEARCH_MS);
+      resetFilterPendingSubmission = setTimeout(() => {
+        writeNumberToLocalStorage(LOCAL_STORAGE_LAST_SEARCH, String(Date.now()));
+        window.location.href='tenderlist';
+      }, wait);
+    }
+
+    function submitFilterForm(element) {
+      setFilterFormFields(element);
+      clearTimeout(filterFormPendingSubmission);
+      const wait = waitTimeToNextRequest(getNumberFromLocalStorage(LOCAL_STORAGE_LAST_SEARCH), RATE_LIMIT_SEARCH_MS);
+      filterFormPendingSubmission = setTimeout(() => {
+        writeNumberToLocalStorage(LOCAL_STORAGE_LAST_SEARCH, String(Date.now()));
+        filterForm.submit();
+      },wait);
+    }
+
+    function debounceFilterForm(element) {
+      setFilterFormFields(element);
+      filterFormDebounce();
+    }
+
+    function setFilterFormFields(element) {
+      $("input[name='callerId']").val($(element).attr('id'));
+      $("input[name='pageLength']").val($('#tenderlist').DataTable().page.len());
+    }
+
+    function debounce(fn, delay) {
+      let pendingRequest = null;
+
+      return function () {
+        clearTimeout(pendingRequest);
+        pendingRequest = setTimeout(() => {
+          writeNumberToLocalStorage(LOCAL_STORAGE_LAST_SEARCH, String(Date.now()));
+          fn.apply(this);
+        }, delay);
+      };
+    }
+
+
+  </script>
+  <script>
+  $(document).ready(function () {
+    const datesErrorHandling = function(event) {
+      const selector = "div#" + event.target.id + " > small.invalid-feedback";
+      if (event.namespace === 'error') {
+        if (!event.date.isValid()) {
+          $(selector).addClass('d-block');
+          $(selector).removeClass('d-none');
+        }
+      }
+      if (event.namespace === 'change') {
+        if (event.date.isValid()) {
+          $(selector).addClass('d-none');
+          $(selector).removeClass('d-block');
+        }
+      }
+    };
+  });
+  </script>
+
+          </main><!-- /#content -->
+
+        </div><!-- /.row -->
+
+      </div><!-- #content-container -->
+
+    </div><!-- #content-wrapper -->
+
+    
+  <footer>
+    <div class="container-fluid page-section page-section-sm bg-brand1" id="linklists-wrapper">
+      <div class="container px-0" id="linklists-container">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <h2>
+              <button class="d-lg-none btn btn-link collapse-lg-down" data-bs-toggle="collapse" data-bs-target="#linklist1" aria-expanded="false" aria-controls="linklist1" id="linklist1heading">Aktuelles<span class="icon icon-navigation_pfeil_unten" aria-hidden="true"></span></button> <strong class="d-none d-lg-block">Aktuelles</strong>
+            </h2>
+            <nav class="collapse" id="linklist1" aria-labelledby="linklist1heading">
+              <ul>
+                <li>
+                  <a href="https://www.usp.gv.at/aktuelles/newsliste.html">Aktuelle Newsbeiträge</a>
+                </li>
+                <li>
+                  <a href="https://www.usp.gv.at/aktuelles/newsreihen.html">Newsreihen</a>
+                </li>
+                <li>
+                  <a href="https://www.usp.gv.at/aktuelles/gesetzliche-neuerungen.html">Gesetzliche Neuerungen</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h2>
+              <button class="d-lg-none btn btn-link collapse-lg-down" data-bs-toggle="collapse" data-bs-target="#linklist2" aria-expanded="false" aria-controls="linklist2" id="linklist2heading">Themen<span class="icon icon-navigation_pfeil_unten" aria-hidden="true"></span></button> <strong class="d-none d-lg-block">Themen</strong>
+            </h2>
+            <nav class="collapse" id="linklist2" aria-labelledby="linklist2heading">
+              <ul>
+                <li>
+                  <a href="https://www.usp.gv.at/themen/Themenuebersicht.html">Themenübersicht</a>
+                </li>
+                <li>
+                  <a href="https://www.usp.gv.at/themen/steuern-finanzen.html">Steuern und Finanzen</a>
+                </li>
+                <li>
+                  <a href="https://www.usp.gv.at/laufender-betrieb/elektronische-zustellung.html">Elektronische Zustellung</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h2>
+              <button class="d-lg-none btn btn-link collapse-lg-down" data-bs-toggle="collapse" data-bs-target="#linklist3" aria-expanded="false" aria-controls="linklist3" id="linklist3heading">Services<span class="icon icon-navigation_pfeil_unten" aria-hidden="true"></span></button> <strong class="d-none d-lg-block">Services</strong>
+            </h2>
+            <nav class="collapse" id="linklist3" aria-labelledby="linklist3heading">
+              <ul>
+                <li>
+                  <a href="https://www.usp.gv.at/services/mein-usp.html">Mein USP</a>
+                </li>
+                <li>
+                  <a href="https://www.usp.gv.at/services/egruendung.html">eGründung</a>
+                </li>
+                <li>
+                  <a href="https://www.usp.gv.at/services/ausschreibungssuche.html">Ausschreibungssuche</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h2>
+              <button class="d-lg-none btn btn-link collapse-lg-down" data-bs-toggle="collapse" data-bs-target="#linklist4" aria-expanded="false" aria-controls="linklist4" id="linklist4heading">Hilfe & Support<span class="icon icon-navigation_pfeil_unten" aria-hidden="true"></span></button> <strong class="d-none d-lg-block">Hilfe & Support</strong>
+            </h2>
+            <nav class="collapse" id="linklist4" aria-labelledby="linklist4heading">
+              <ul>
+                <li>
+                  <a href="https://www.usp.gv.at/hilfe-und-support/supportuebersicht.html">Hilfeportal</a>
+                </li>
+                <li>
+                  <a href="https://www.usp.gv.at/hilfe-und-support/registrieren.html">Registrierung zu Mein USP</a>
+                </li>
+                <li>
+                  <a href="https://www.usp.gv.at/hilfe-und-support/profilverwaltung/erster-einstieg.html">Erste Schritte in Mein USP</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid page-section page-section-sm" id="footer-wrapper">
+      <div class="container px-0" id="footer-container">
+        <nav class="footer-links" aria-label="Fußnavigation">
+          <ul class="list-unstyled text-center mb-0">
+            <li class="d-block d-md-inline">
+              <a href="https://www.usp.gv.at/ueber-das-usp/rechtliche-informationen/datenschutzerklaerung.html" class="d-inline">Datenschutzerklärung</a> <span class="d-none d-md-inline">/</span>
+            </li>
+            <li class="d-block d-md-inline">
+              <a href="https://www.usp.gv.at/ueber-das-usp/rechtliche-informationen/erklaerung-zur-barrierefreiheit.html" class="d-inline">Barrierefreiheit</a> <span class="d-none d-md-inline">/</span>
+            </li>
+            <li class="d-block d-md-inline">
+              <a href="https://www.usp.gv.at/ueber-das-usp/rechtliche-informationen/impressum.html" class="d-inline">Impressum</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/at.gv.bmdw.eproc-p/js/default-6bbb6f866e731cda046647cc712efb3a.js"></script>
+
+
+
+  </div><!-- /#page-bottom -->
+</div>
+
+
+  <div class="container-fluid fullscreen collapse" id="mobileheader-wrapper">
+    <div class="levels-wrapper">
+      <div class="controls">
+        <div class="row">
+          <div class="col-3 text-start">
+            <button class="btn btn-link navbar-back" title="Zurück"><span class="icon icon-navigation_pfeil_links_gross" aria-hidden="true"></span><span class="visually-hidden">Zurück</span></button>
+          </div>
+          <div class="col-9 text-end">
+            <ul class="list-unstyled">
+              <li class="d-inline-block">
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#mobileheader-wrapper"><span class="icon icon-navigation_pfeil_schliessen_gross" aria-hidden="true"></span><span class="visually-hidden">Navigation schließen</span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="levels" aria-label="Hauptnavigation">
+        <ul>
+          <li>
+            <a href="https://www.usp.gv.at/aktuelles">Aktuelles</a>
+          </li>
+          <li>
+            <a href="https://www.usp.gv.at/themen">Themen</a>
+          </li>
+          <li>
+            <a href="https://www.usp.gv.at/services">Services</a>
+          </li>
+          <li>
+            <a href="https://www.usp.gv.at/ueber-das-usp">Über das USP</a>
+          </li>
+          <li>
+            <a href="https://www.usp.gv.at/hilfe-und-support">Hilfe &amp; Support</a>
+          </li>
+        </ul>
+        <nav id="mobile-nav-footer" aria-label="Fußnavigation">
+          <div class="footer-links">
+            <p class="mb-4">
+              <span class="d-block">Sprachwahl:</span> <strong class="d-block"><span class="visually-hidden">Ausgewählte Sprache:</span> Deutsch</strong>
+            </p>
+            <a href="https://www.usp.gv.at/ueber-das-usp/rechtliche-informationen/datenschutzerklaerung.html" class="d-block">Datenschutzerklärung</a>
+            <a href="https://www.usp.gv.at/ueber-das-usp/rechtliche-informationen/erklaerung-zur-barrierefreiheit.html" class="d-block">Barrierefreiheit</a>
+            <a href="https://www.usp.gv.at/ueber-das-usp/rechtliche-informationen/impressum.html" class="d-block">Impressum</a>
+          </div>
+        </nav>
+      </nav>
+    </div>
+  </div>
+
+<script src="/at.gv.bmdw.eproc-p/js/app.min-fd55c542bc0b44487da61ca53a052f14.js"></script>
+
+</body>
+</html>

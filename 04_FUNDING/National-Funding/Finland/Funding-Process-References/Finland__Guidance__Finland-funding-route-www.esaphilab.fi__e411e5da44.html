@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="fi" class="no-js">
+<head>
+  <meta charset="UTF-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MX8RZ4NN');</script>
+    <!-- End Google Tag Manager --><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MX8RZ4NN');</script>
+<!-- End Google Tag Manager --><title>ESA Phi-Lab Finland | Boosting disruptive geospatial innovations for space</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<meta name="dc.title" content="ESA Phi-Lab Finland | Boosting disruptive geospatial innovations for space">
+<meta name="dc.description" content="Making your space research a reality. Boosting disruptive geospatial innovations for space. Apply Anytime: Permanent Open Call">
+<meta name="dc.relation" content="https://www.esaphilab.fi/">
+<meta name="dc.source" content="https://www.esaphilab.fi/">
+<meta name="dc.language" content="fi">
+<meta name="description" content="Making your space research a reality. Boosting disruptive geospatial innovations for space. Apply Anytime: Permanent Open Call">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.esaphilab.fi/">
+<script id="website-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.esaphilab.fi/#website","name":"esaphilab.fi","alternateName":"esaphilab.fi","description":"","url":"https://www.esaphilab.fi"}</script>
+<meta property="og:url" content="https://www.esaphilab.fi/">
+<meta property="og:site_name" content="esaphilab.fi">
+<meta property="og:locale" content="fi">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ESA Phi-Lab Finland | Boosting disruptive geospatial innovations for space">
+<meta property="og:description" content="Making your space research a reality. Boosting disruptive geospatial innovations for space. Apply Anytime: Permanent Open Call">
+<meta property="og:image" content="https://www.esaphilab.fi/wp-content/uploads/2024/12/logo.svg">
+<meta property="og:image:secure_url" content="https://www.esaphilab.fi/wp-content/uploads/2024/12/logo.svg">
+<meta property="og:image:width" content="0">
+<meta property="og:image:height" content="0">
+<meta property="og:image:alt" content="logo">
+<meta property="fb:pages" content="">
+<meta property="fb:app_id" content="">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="">
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="ESA Phi-Lab Finland | Boosting disruptive geospatial innovations for space">
+<meta name="twitter:description" content="Making your space research a reality. Boosting disruptive geospatial innovations for space. Apply Anytime: Permanent Open Call">
+<meta name="twitter:image" content="https://www.esaphilab.fi/wp-content/uploads/2024/12/logo.svg">
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.esaphilab.fi/wp-includes/css/dist/block-library/style.min.css?ver=6.7.10' media='all' />
+<style id='wpseopress-local-business-style-inline-css'>
+span.wp-block-wpseopress-local-business-field{margin-right:8px}
+
+</style>
+<style id='wpseopress-table-of-contents-style-inline-css'>
+.wp-block-wpseopress-table-of-contents li.active>a{font-weight:bold}
+
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='x-style-css' href='https://www.esaphilab.fi/wp-content/themes/esaphilab/dist/styles/main.css?ver=1737538927639' media='all' />
+<style id='x-style-inline-css'>
+.background-color.background-color--default{background: transparent;}.background-color.background-color--light{background: hsl(0, 0%, 95%);}.background-color.background-color--primary-light{background: #22274E;}
+</style>
+<link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://www.esaphilab.fi/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://www.esaphilab.fi/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://www.esaphilab.fi/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://www.esaphilab.fi/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=3.1.1' media='all' />
+<script src="https://www.esaphilab.fi/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.esaphilab.fi/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script defer='defer' src="https://www.esaphilab.fi/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=3.1.1" id="gform_json-js"></script>
+<script id="gform_gravityforms-js-extra">
+var gf_global = {"gf_currency_config":{"name":"Euro","symbol_left":"","symbol_right":"&#8364;","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2,"code":"EUR"},"base_url":"https:\/\/www.esaphilab.fi\/wp-content\/plugins\/gravityforms","number_formats":[],"version_hash":"b0383b23c8b2f2aa716eb80e1ae9d868","countries":{"AF":"Afganistan","AX":"Ahvenanmaa","AL":"Albania","DZ":"Algeria","AS":"Amerikan Samoa","AD":"Andorra","AO":"Angola","AI":"Anguilla","AQ":"Etel\u00e4napamanner","AG":"Antigua ja Barbuda","AR":"Argentiina","AM":"Armenia","AW":"Aruba","AU":"Australia","AT":"It\u00e4valta","AZ":"Azerbaid\u017ean","BS":"Bahama","BH":"Bahrain","BD":"Bangladesh","BB":"Barbados","BY":"Valko-Ven\u00e4j\u00e4","BE":"Belgia","BZ":"Belize","BJ":"Benin","BM":"Bermuda","BT":"Bhutan","BO":"Bolivia","BQ":"Bonaire, Sint Eustatius ja Saba","BA":"Bosnia ja Herzegovina","BW":"Botswana","BV":"Bouvet\u2019nsaari","BR":"Brasilia","IO":"Brittil\u00e4inen Intian valtameren alue","BN":"Brunei Darussalam","BG":"Bulgaria","BF":"Burkina Faso","BI":"Burundi","CV":"Kap Verde","KH":"Kambod\u017ea","CM":"Kamerun","CA":"Kanada","KY":"Caymansaaret","CF":"Keski-Afrikan tasavalta","TD":"T\u0161ad","CL":"Chile","CN":"Kiina","CX":"Joulusaari","CC":"Kookossaaret","CO":"Kolumbia","KM":"Komorit","CD":"Kongon demokraattinen tasavalta","CG":"Congo","CK":"Cookinsaaret","CR":"Costa Rica","CI":"Norsunluurannikko","HR":"Kroatia","CU":"Kuuba","CW":"Cura\u00e7ao","CY":"Kypros","CZ":"Tsekki","DK":"Tanska","DJ":"Djibouti","DM":"Dominica","DO":"Dominikaaninen tasavalta","EC":"Ecuador","EG":"Egypti","SV":"El Salvador","GQ":"P\u00e4iv\u00e4ntasaajan Guinea","ER":"Eritrea","EE":"Viro","SZ":"Eswatini","ET":"Etiopia","FK":"Falklandin saaret","FO":"F\u00e4rsaaret","FJ":"Fid\u017ei","FI":"Suomi","FR":"Ranska","GF":"Ranskan Guiana","PF":"Ranskan Polynesia","TF":"Ranskan etel\u00e4iset ja antarktiset alueet","GA":"Gabon","GM":"Gambia","GE":"Georgia","DE":"Saksa","GH":"Ghana","GI":"Gibraltar","GR":"Kreikka","GL":"Gr\u00f6nlanti","GD":"Grenada","GP":"Guadeloupe","GU":"Guam","GT":"Guatemala","GG":"Guernsey","GN":"Guinea","GW":"Guinea-Bissau","GY":"Guyana","HT":"Haiti","HM":"Heard ja McDonaldinsaaret","VA":"Pyh\u00e4 Meri","HN":"Honduras","HK":"Hongkong","HU":"Unkari","IS":"Islanti","IN":"Intia","ID":"Indonesia","IR":"Iran","IQ":"Irak","IE":"Irlanti","IM":"Mansaaret","IL":"Israel","IT":"Italia","JM":"Jamaika","JP":"Japani","JE":"Jersey","JO":"Jordania","KZ":"Kazakstan","KE":"Kenia","KI":"Kiribati","KP":"Korea, Democratic People's Republic of","KR":"Korean tasavalta","KW":"Kuwait","KG":"Kirgisia","LA":"Laosin demokraattinen kansantasavalta","LV":"Latvia","LB":"Libanon","LS":"Lesotho","LR":"Liberia","LY":"Libya","LI":"Liechtenstein","LT":"Liettua","LU":"Luxemburg","MO":"Macao","MG":"Madagaskar","MW":"Malawi","MY":"Malesia","MV":"Malediivit","ML":"Mali","MT":"Malta","MH":"Marshallinsaaret","MQ":"Martinique","MR":"Mauritania","MU":"Mauritius","YT":"Mayotte","MX":"Meksiko","FM":"Mikronesia","MD":"Moldova","MC":"Monaco","MN":"Mongolia","ME":"Montenegro","MS":"Montserrat","MA":"Marokko","MZ":"Mosambik","MM":"Myanmar","NA":"Namibia","NR":"Nauru","NP":"Nepal","NL":"Alankomaat","NC":"Uusi Kaledonia","NZ":"Uusi-Seelanti","NI":"Nicaragua","NE":"Niger","NG":"Nigeria","NU":"Niue","NF":"Norfolkin saaret","MK":"Pohjois Makedonia","MP":"Pohjois-Mariaanit","NO":"Norja","OM":"Oman","PK":"Pakistan","PW":"Palau","PS":"Palestiinan valtio","PA":"Panama","PG":"Papua-Uusi-Guinea","PY":"Paraguay","PE":"Peru","PH":"Filippiinit","PN":"Pitcairn","PL":"Puola","PT":"Portugal","PR":"Puerto Rico","QA":"Qatar","RE":"R\u00e9union","RO":"Romania","RU":"Ven\u00e4j\u00e4","RW":"Ruanda","BL":"Saint-Barth\u00e9lemy","SH":"Saint Helena, Ascension and Tristan da Cunha","KN":"Saint Kitts ja Nevis","LC":"Saint Kitts ja Nevis","MF":"Saint Martin","PM":"Saint-Pierre ja Miquelon","VC":"Saint Vincent ja Grenadiinit","WS":"Samoa","SM":"San Marino","ST":"S\u00e3o Tom\u00e9 ja Pr\u00edncipe","SA":"Saudi-Arabia","SN":"Senegal","RS":"Serbia","SC":"Seychellit","SL":"Sierra Leone","SG":"Singapore","SX":"Sint Maarten","SK":"Slovakia","SI":"Slovenia","SB":"Salomonsaaret","SO":"Somalia","ZA":"Etel\u00e4-Afrikka","GS":"Etel\u00e4 Georgia ja Etel\u00e4iset Sandwichsaaret","SS":"Etel\u00e4-Sudan","ES":"Espanja","LK":"Sri Lanka","SD":"Sudan","SR":"Suriname","SJ":"Huippuvuoret ja Jan Mayen","SE":"Ruotsi","CH":"Sveitsi","SY":"Syria Arab Republic","TW":"Taiwan","TJ":"Tad\u017eikistan","TZ":"Tanzania, the United Republic of","TH":"Thaimaa","TL":"It\u00e4-Timor","TG":"Togo","TK":"Tokelau","TO":"Tonga","TT":"Trinidad ja Tobago","TN":"Tunisia","TR":"Turkki","TM":"Turkmenistan","TC":"Turks- ja Caicossaaret","TV":"Tuvalu","UG":"Uganda","UA":"Ukraina","AE":"Arabiemiirikunnat","GB":"Yhdistynyt kuningaskunta","US":"Yhdysvallat","UY":"Uruguay","UM":"US Minor Outlying Islands","UZ":"Uzbekistan","VU":"Vanuatu","VE":"Venezuela","VN":"Vietnam","VG":"Brittil\u00e4iset Neitsytsaaret","VI":"Yhdysvaltain Neitsytsaaret","WF":"Wallis and Futuna","EH":"L\u00e4nsi Sahara","YE":"Jemen","ZM":"Sambia","ZW":"Zimbabwe"},"strings":{"newRowAdded":"Uusi rivi lis\u00e4tty.","rowRemoved":"Rivi poistettu","formSaved":"Lomake on tallennettu. Sis\u00e4lt\u00f6 sis\u00e4lt\u00e4\u00e4 linkin palataksesi ja t\u00e4ytt\u00e4\u00e4ksesi lomakkeen."}};
+var gform_i18n = {"datepicker":{"wdOffset":1,"helpTextShort":"Press F1 for help","helpText":"Press the arrow keys to navigate by day, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year, or Escape to cancel.","openOnFocusHelpText":"Press Down arrow to browse the calendar, or Escape to close.","tooltipTxt":"Press Escape to cancel","disabledTxt":"Pois k\u00e4yt\u00f6st\u00e4","markedTxt":"Valittu","prevTxt":"Edellinen","nextTxt":"Seuraava","monthTxt":"Kuukausi","yearTxt":"Vuosi","months":["Tammikuu","Helmikuu","Maaliskuu","Huhtikuu","Toukokuu","Kes\u00e4kuu","Hein\u00e4kuu","Elokuu","Syyskuu","Lokakuu","Marraskuu","Joulukuu"],"days":[{"s":"S","l":"Sunnuntai"},{"s":"M","l":"maanantai"},{"s":"T","l":"tiistai"},{"s":"W","l":"keskiviikko"},{"s":"T","l":"torstai"},{"s":"F","l":"perjantai"},{"s":"S","l":"lauantai"}]}};
+var gf_legacy_multi = {"1":""};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"T\u00e4m\u00e4n tyyppinen tiedosto ei ole sallittu. Sen pit\u00e4\u00e4 olla yksi seuraavista:","file_uploaded":"File uploaded","delete_file":"Poista t\u00e4m\u00e4 tiedosto","in_progress":"k\u00e4ynniss\u00e4","file_exceeds_limit":"Tiedoston koko ylitt\u00e4\u00e4 enimm\u00e4israjan","illegal_extension":"T\u00e4m\u00e4n tyyppinen tiedosto ei ole sallittu.","max_reached":"Tiedostoja on enimm\u00e4ism\u00e4\u00e4r\u00e4","unknown_error":"Tiedoston tallentaminen palvelimelle ep\u00e4onnistui","currently_uploading":"Odota kunnes lataus on valmis","cancel":"Peruuta","cancel_upload":"Peruuta lataus","cancelled":"Peruutettu","error":"Virhe","message":"Viesti"},"vars":{"images_url":"https:\/\/www.esaphilab.fi\/wp-content\/plugins\/gravityforms\/images"}};
+</script>
+<script defer='defer' src="https://www.esaphilab.fi/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=3.1.1" id="gform_gravityforms-js"></script>
+<script defer='defer' src="https://www.esaphilab.fi/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=69a9db57304a9f86c3d1a0bea5fd2cf9" id="gform_gravityforms_utils-js"></script>
+
+<link rel='shortlink' href='https://www.esaphilab.fi/' />
+<script>(function(d){d.className = d.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name="upkeep-monitor-uuid" content="3ddca52d-f9dc-4b78-9964-d693b3b3004a" />
+<link rel="icon" href="https://www.esaphilab.fi/wp-content/uploads/2025/01/cropped-esab-color-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.esaphilab.fi/wp-content/uploads/2025/01/cropped-esab-color-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.esaphilab.fi/wp-content/uploads/2025/01/cropped-esab-color-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.esaphilab.fi/wp-content/uploads/2025/01/cropped-esab-color-favicon-270x270.png" />
+</head>
+
+<body class="home page-template-default page page-id-11 front-end" itemscope itemtype="https://schema.org/WebPage">
+
+
+    <div class="mobile-menu js-mobile-menu">
+      <div class="mobile-menu__nav" role="dialog">
+        
+    <button class="js-menu-toggle menu-toggle">
+
+      <span class="menu-toggle__icon">
+        
+    <svg aria-hidden="true" class="icon icon-menu">
+            <use xlink:href="https://www.esaphilab.fi/wp-content/themes/esaphilab/dist/sprite/sprite.svg?ver=1737538931307#icon-menu"></use>
+    </svg>
+
+            
+    <svg aria-hidden="true" class="icon icon-close">
+            <use xlink:href="https://www.esaphilab.fi/wp-content/themes/esaphilab/dist/sprite/sprite.svg?ver=1737538931307#icon-close"></use>
+    </svg>
+
+          </span>
+
+      
+      <span class="menu-toggle__label-open">
+        Open menu      </span>
+
+      <span class="menu-toggle__label-close">
+        Close menu      </span>
+
+    </button>
+
+            <div class="mobile-menu__nav__inner">
+          
+    <nav class="js-navigation primary-navigation header-navigation" data-navigation-type="mobile" aria-label="Primary Menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+
+      <ul id="menu-paavalikko" class="primary-navigation__items"><li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-25"><span class="menu-item__link"><a href="https://www.esaphilab.fi/" aria-current="page">ESA Phi-lab finland</a></span></li>
+<li id="menu-item-111" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-111"><span class="menu-item__link"><a href="/#contact" aria-current="page">Contact</a></span></li>
+<li id="menu-item-112" class="cta menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-112"><span class="menu-item__link"><a href="/#apply" aria-current="page">Apply</a></span></li>
+</ul>
+    </nav>
+
+                      </div>
+      </div>
+      <div class="mobile-menu__overlay" data-a11y-dialog-hide tabindex="-1"></div>
+    </div>
+
+    
+<div id="page" class="site js-page">
+
+  <a class="skip-to-content" href="#content">Skip to content</a>
+
+      <header class="site-header" id="masthead" itemscope itemtype="https://schema.org/WPHeader">
+
+      <div class="site-header__inner">
+
+        <div class="site-header__branding">
+          <a href="https://www.esaphilab.fi/" class="site-header__title" rel="home" itemprop="headline">
+            <img class="site-header__logo" width="200" height="120" src="https://www.esaphilab.fi/wp-content/themes/esaphilab/dist/images/logo.svg" loading="lazy" alt="esaphilab.fi" />
+          </a>
+        </div>
+
+        
+    <button class="js-menu-toggle menu-toggle">
+
+      <span class="menu-toggle__icon">
+        
+    <svg aria-hidden="true" class="icon icon-menu">
+            <use xlink:href="https://www.esaphilab.fi/wp-content/themes/esaphilab/dist/sprite/sprite.svg?ver=1737538931307#icon-menu"></use>
+    </svg>
+
+            
+    <svg aria-hidden="true" class="icon icon-close">
+            <use xlink:href="https://www.esaphilab.fi/wp-content/themes/esaphilab/dist/sprite/sprite.svg?ver=1737538931307#icon-close"></use>
+    </svg>
+
+          </span>
+
+      
+      <span class="menu-toggle__label-open">
+        Open menu      </span>
+
+      <span class="menu-toggle__label-close">
+        Close menu      </span>
+
+    </button>
+
+    
+        <div class="site-header__menus">
+          
+          
+    <nav class="site-header__main desktop-menu js-navigation primary-navigation header-navigation" data-navigation-type="desktop" aria-label="Primary Menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+
+      <ul id="menu-paavalikko-1" class="primary-navigation__items"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-25"><span class="menu-item__link"><a href="https://www.esaphilab.fi/" aria-current="page">ESA Phi-lab finland</a></span></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-111"><span class="menu-item__link"><a href="/#contact" aria-current="page">Contact</a></span></li>
+<li class="cta menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-112"><span class="menu-item__link"><a href="/#apply" aria-current="page">Apply</a></span></li>
+</ul>
+    </nav>
+
+    
+        </div>
+
+      </div>
+
+    </header>
+    
+  <div id="content" class="site-content" role="main" itemscope itemprop="mainContentOfPage">
+
+  <div id="primary" class="primary primary--page">
+
+      
+        <article id="post-11" class="entry entry--page post-11 page type-page status-publish has-post-thumbnail hentry">
+
+          
+          <div class="entry__content blocks">
+
+            
+<h1 class="wp-block-heading"></h1>
+
+
+<div class="wp-block-hero alignfull">
+  
+    <div class="hero hero-bg is-dark-mode hero-bg--has-media">
+
+            <div class="hero-bg__media">
+                      <div class="hero-bg__media__video">
+              <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" width="1280" height="720" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                <source src="https://www.esaphilab.fi/wp-content/uploads/2025/04/ESA-Phi-Lab-launch-video_SD-no-QR-code.mp4" type="video/mp4">
+              </video>
+            </div>
+                    <div class="hero-bg__media__dimming" style="opacity:0"></div>
+        </div>
+      
+      <div class="hero-bg__container">
+        <div class="hero-bg__container__inner inner-blocks">
+          
+
+
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+<h1 class="wp-block-heading">ESA Phi-lab Finland</h1>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+
+
+
+
+<h2 class="wp-block-heading">Apply Anytime: Permanent Open Call</h2>
+
+
+
+<p class="wp-block-paragraph">ESA Phi-Lab Finland is offering 4.4 M€ of space related funding and support of geospatial innovation projects between 2025 and 2030.</p>
+
+
+
+<p class="wp-block-paragraph">We conduct selections for research projects at least once a year. </p>
+
+
+
+<div class="wp-block-acf-button buttons buttons--align-center buttons--layout-horizontal">
+                  <a class="c-button c-button--type-default" href="#apply" target="_self">
+        <span>Apply</span>
+      </a>
+          </div>
+
+
+
+<p class="wp-block-paragraph"><br>Next cutoff day for the call is currently planned for second half of 2027.</p>
+</div></div>
+
+
+
+<h2 class="wp-block-heading has-text-align-center">THEMES OF OUR OPEN CALL</h2>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Esa Phi-Lab Finland Open Call" width="800" height="450" src="https://www.youtube.com/embed/7W_Yma6WcJU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group is-layout-grid wp-container-core-group-is-layout-2 wp-block-group-is-layout-grid">
+<p class="wp-block-paragraph has-text-align-center"><strong>Sensor technologies related to space</strong></p>
+
+
+
+<ol start="1" class="wp-block-list">
+<li class="wp-block-list-item">EO sensors upstream&nbsp;</li>
+</ol>
+
+
+
+<ol start="2" class="wp-block-list">
+<li class="wp-block-list-item">Navigation sensors &nbsp;</li>
+</ol>
+
+
+
+<ol start="3" class="wp-block-list">
+<li class="wp-block-list-item">Distributed sensor systems&nbsp;</li>
+</ol>
+
+
+
+<ol start="4" class="wp-block-list">
+<li class="wp-block-list-item">Signals and systems innovation&nbsp;</li>
+</ol>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group is-layout-grid wp-container-core-group-is-layout-3 wp-block-group-is-layout-grid">
+<p class="wp-block-paragraph has-text-align-center"><strong>Advanced computation for geospatial services</strong></p>
+
+
+
+<ol start="1" class="wp-block-list">
+<li class="wp-block-list-item">AI applications in upstream and downstream&nbsp;</li>
+</ol>
+
+
+
+<ol start="2" class="wp-block-list">
+<li class="wp-block-list-item">Cost efficient computation&nbsp;</li>
+</ol>
+
+
+
+<ol start="3" class="wp-block-list">
+<li class="wp-block-list-item">Algorithms and signal processing&nbsp;</li>
+</ol>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group is-layout-grid wp-container-core-group-is-layout-4 wp-block-group-is-layout-grid">
+<p class="wp-block-paragraph has-text-align-center"><strong>Novel digital geospatial services</strong></p>
+
+
+
+<ol start="1" class="wp-block-list">
+<li class="wp-block-list-item">EO service innovation&nbsp;</li>
+</ol>
+
+
+
+<ol start="2" class="wp-block-list">
+<li class="wp-block-list-item">Navigation and positioning services&nbsp;</li>
+</ol>
+
+
+
+<ol start="3" class="wp-block-list">
+<li class="wp-block-list-item">Service platforms&nbsp;</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-group alignwide wp-group-cards"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Layer_1.svg" alt="" class="wp-image-122" style="width:114px;height:auto" /></figure></div>
+
+
+<h3 class="wp-block-heading has-text-align-center">We are looking for</h3>
+
+
+
+<p class="wp-block-paragraph has-text-align-center">Groundbreaking science and technology development that have a potential in high-yield commercialisation</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Layer_2.svg" alt="" class="wp-image-121" style="width:102px;height:auto" /></figure></div>
+
+
+<h3 class="wp-block-heading has-text-align-center">We are offering</h3>
+
+
+
+<p class="wp-block-paragraph has-text-align-center">Funding, research infrastructure, business and technical support for space related geospatial research projects. Upstream and downstream<br>with access to European wide ESA Phi-Lab network</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Layer_3.svg" alt="" class="wp-image-120" style="width:134px;height:auto" /></figure></div>
+
+
+<h3 class="wp-block-heading has-text-align-center">Call to action</h3>
+
+
+
+<p class="wp-block-paragraph has-text-align-center">Sign up for our email list below and get latest information about the funding opportunities</p>
+</div>
+</div>
+</div></div>
+
+
+
+<p class="wp-block-paragraph has-text-align-center">________________</p>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">CURRENT PROJECTS IN OUR ESA PHI-LAB</h1>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex"></div>
+
+
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-6 wp-block-group-is-layout-flex">
+<figure class="wp-block-image size-full is-resized"><a href="https://sharpnav.com/"><img decoding="async" width="343" height="100" src="https://www.esaphilab.fi/wp-content/uploads/2026/03/SharpNav.png" alt="" class="wp-image-456" style="width:172px;height:auto" /></a></figure>
+
+
+
+<figure class="wp-block-image size-full is-resized"><a href="https://www.yieldsystems.tech/"><img fetchpriority="high" decoding="async" width="574" height="108" src="https://www.esaphilab.fi/wp-content/uploads/2026/03/Yield-Systems.png" alt="" class="wp-image-457" style="width:244px;height:auto" srcset="https://www.esaphilab.fi/wp-content/uploads/2026/03/Yield-Systems.png 574w, https://www.esaphilab.fi/wp-content/uploads/2026/03/Yield-Systems-400x75.png 400w" sizes="(max-width: 574px) 100vw, 574px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-full is-resized"><a href="https://www.zerogravity.fi/"><img loading="lazy" decoding="async" width="613" height="135" src="https://www.esaphilab.fi/wp-content/uploads/2026/03/Zero-Gravity.png" alt="" class="wp-image-458" style="width:200px;height:auto" srcset="https://www.esaphilab.fi/wp-content/uploads/2026/03/Zero-Gravity.png 613w, https://www.esaphilab.fi/wp-content/uploads/2026/03/Zero-Gravity-400x88.png 400w" sizes="auto, (max-width: 613px) 100vw, 613px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-full is-resized"><a href="https://kokoforest.com/home/"><img loading="lazy" decoding="async" width="361" height="99" src="https://www.esaphilab.fi/wp-content/uploads/2026/03/KOKO-forest-logo.png" alt="" class="wp-image-464" style="width:150px;height:auto" /></a></figure>
+</div>
+
+
+
+<p class="wp-block-paragraph has-text-align-center">________________</p>
+
+
+
+<div class="wp-block-group group-partners"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading has-text-align-center">services for research projects</h2>
+
+
+
+
+</div></div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h3 class="wp-block-heading has-text-align-center">INNOVATION FUNDING</h3>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h3 class="wp-block-heading has-text-align-center">SUPPORT AND COACHING</h3>
+
+
+
+
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h3 class="wp-block-heading has-text-align-center">ESA PHI-LAB<br>NETWORK</h3>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">Each selected project will get ESA seed funding between 200 000 &#8211; 500 000 € and over 100 hours of business and technical advisory based the project needs. </p>
+
+
+
+<p class="wp-block-paragraph">Check the application documents for detailed information.</p>
+
+
+
+<p class="wp-block-paragraph has-text-align-center">________________</p>
+
+
+
+<h2 class="wp-block-heading has-text-align-center">Upcoming Events</h2>
+
+
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-8 wp-block-group-is-layout-flex">
+<div class="wp-block-acf-button buttons buttons--align-center buttons--layout-horizontal">
+                  <a class="c-button c-button--type-default" href="https://2026.geoforumsummit.fi/" target="_self">
+        <span>GeoForum Summit, 27.-28.10.</span>
+      </a>
+                    <a class="c-button c-button--type-default" href="https://spacefinland.fi/en/space-business-forum-en" target="_self">
+        <span>Space Business Forum, 16.11.</span>
+      </a>
+                    <a class="c-button c-button--type-default" href="https://www.businessfinland.fi/en/whats-new/Events/2026/happiness-lounge-space-and-comprehensive-security/" target="_self">
+        <span>Comprehensive Security – from Space to Earth, 18.11. </span>
+      </a>
+                    <a class="c-button c-button--type-default" href="https://spaceworkshop.fi/" target="_self">
+        <span>Winter Satellite Workshop, 19.-21.1.</span>
+      </a>
+          </div>
+</div>
+
+
+
+<h2 class="wp-block-heading has-text-align-center">Past Events</h2>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-acf-button buttons buttons--align-center buttons--layout-horizontal">
+                  <a class="c-button c-button--type-default" href="https://spaceworkshop.fi/" target="_self">
+        <span>Winter Satellite Workshop 2026, 20.-23.1.</span>
+      </a>
+                    <a class="c-button c-button--type-default" href="https://startupcenter.aalto.fi/demo-day-2026" target="_self">
+        <span>Aalto Demo Day, 4.3.</span>
+      </a>
+                    <a class="c-button c-button--type-default" href="https://isd.esa.int/ " target="_self">
+        <span>ESA Industry Space Days 2026, 16.-17.9. </span>
+      </a>
+          </div>
+</div></div>
+
+
+
+<p class="wp-block-paragraph has-text-align-center">________________</p>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">FAQ</h1>
+
+
+
+<div class="wp-block-group group-partners"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<p class="wp-block-paragraph">For any questions regarding the application process, funding or further information on Finnish space activities, please read our FAQ <a href="https://www.esaphilab.fi/frequently-asked-questions/" data-type="page" data-id="281">here</a>. </p>
+
+
+
+<p class="wp-block-paragraph has-text-align-center">________________</p>
+
+
+
+<h2 class="wp-block-heading has-text-align-center" id="partners">ESA phi-lab FINLAND PartnerS</h2>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-5 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><a href="https://startupcenter.aalto.fi/"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Frame-93.svg" alt="" class="wp-image-200" style="width:auto;height:115px" /></a></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><a href="https://en.ilmatieteenlaitos.fi/"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Frame-94.svg" alt="" class="wp-image-203" style="width:auto;height:115px" /></a></figure>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-6 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><a href="https://www.maanmittauslaitos.fi/en/research"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Frame-90.svg" alt="" class="wp-image-205" style="width:auto;height:115px" /></a></figure></div></div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><a href="https://sites.uwasa.fi/vaasaspaceavenue/"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Frame-91.svg" alt="" class="wp-image-206" style="width:auto;height:115px" /></a></figure></div></div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-8 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph has-text-align-center">________________</p>
+
+
+
+<h2 class="wp-block-heading has-text-align-center">Funding organizations</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><a href="https://commercialisation.esa.int/scaleup/"><img loading="lazy" decoding="async" width="800" height="502" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/ESA_logo_2020_White-800x502.png" alt="" class="wp-image-231" style="width:390px;height:auto" srcset="https://www.esaphilab.fi/wp-content/uploads/2025/01/ESA_logo_2020_White-800x502.png 800w, https://www.esaphilab.fi/wp-content/uploads/2025/01/ESA_logo_2020_White-400x251.png 400w, https://www.esaphilab.fi/wp-content/uploads/2025/01/ESA_logo_2020_White-768x482.png 768w, https://www.esaphilab.fi/wp-content/uploads/2025/01/ESA_logo_2020_White-1536x964.png 1536w, https://www.esaphilab.fi/wp-content/uploads/2025/01/ESA_logo_2020_White-2048x1286.png 2048w, https://www.esaphilab.fi/wp-content/uploads/2025/01/ESA_logo_2020_White-1216x763.png 1216w, https://www.esaphilab.fi/wp-content/uploads/2025/01/ESA_logo_2020_White-1824x1145.png 1824w" sizes="auto, (max-width: 800px) 100vw, 800px" /></a></figure></div>
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><a href="https://www.amerinkulttuurisaatio.fi/"><img loading="lazy" decoding="async" width="500" height="200" src="https://www.esaphilab.fi/wp-content/uploads/2025/11/Amer-logo-1-1.png" alt="" class="wp-image-435" style="width:auto;height:115px" srcset="https://www.esaphilab.fi/wp-content/uploads/2025/11/Amer-logo-1-1.png 500w, https://www.esaphilab.fi/wp-content/uploads/2025/11/Amer-logo-1-1-400x160.png 400w" sizes="auto, (max-width: 500px) 100vw, 500px" /></a></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><a href="https://kaute.fi/?lang=en"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Frame-87.svg" alt="" class="wp-image-208" style="width:auto;height:115px" /></a></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><a href="https://techfinland100.fi/en/"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Frame-89.svg" alt="" class="wp-image-209" style="width:auto;height:115px" /></a></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full"><a href="https://weisell.fi/"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/Frame-88.svg" alt="" class="wp-image-211" /></a></figure></div></div>
+</div>
+
+
+
+<p class="wp-block-paragraph"><font></font></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h3 class="wp-block-heading"></h3>
+</div></div>
+
+
+    <div class="wp-block-acf-spacer spacer spacer--size-m">
+          </div>
+    
+
+
+<div id="apply" class="wp-block-group form-container"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h3 class="wp-block-heading has-text-align-center" style="text-transform:uppercase">To receive the application documents for ESA Phi-Lab Finland open call, Please Fill your email details below</h3>
+
+
+
+<p class="wp-block-paragraph has-text-align-center"></p>
+
+
+
+                <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital gform-asterisk_wrapper' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_1' ><style>#gform_wrapper_1[data-form-index="0"].gform-theme{--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #ffffff;--gf-color-secondary-contrast-rgb: 255, 255, 255;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(255, 255, 255, 0.1);--gf-color-out-ctrl-light-rgb: 255, 255, 255;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #ffffff;--gf-color-out-ctrl-dark-lighter: rgba(255, 255, 255, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #ffffff;--gf-color-in-ctrl-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(255, 255, 255, 0.1);--gf-color-in-ctrl-light-rgb: 255, 255, 255;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #ffffff;--gf-color-in-ctrl-dark-lighter: rgba(255, 255, 255, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 15px;--gf-font-size-tertiary: 20px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(255, 255, 255, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(255, 255, 255, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(255, 255, 255, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #ffffff;--gf-ctrl-label-color-secondary: #ffffff;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-btn-bg-color-hover-tertiary: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(255, 255, 255, 0.8);}</style><div id='gf_1' class='gform_anchor' tabindex='-1'></div>
+                        <div class='gform_heading'>
+							<p class='gform_required_legend'></p>
+                        </div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1' class='gform-asterisk' action='/#gf_1' data-formid='1' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_1_4" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_4'><span class='gform-field-label__text'>Company</span></label><div class='ginput_container'><input name='input_4' id='input_1_4' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_1_4'>Kenttä on validointitarkoituksiin ja tulee jättää koskemattomaksi.</div></div><div id="field_1_1" class="gfield gfield--type-email gfield--input-type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_1'><span class='gform-field-label__text'>Email</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_1_1' type='email' value='' class='large'   placeholder='Enter your email' aria-required="true" aria-invalid="false"  />
+                        </div></div><fieldset id="field_1_3" class="gfield gfield--type-consent gfield--type-choice gfield--input-type-consent gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible gfield--choice-align-vertical"  ><legend class='gfield_label gform-field-label gfield_label_before_complex' ><span class='gform-field-label__text'>Suostumus</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></legend><div class='ginput_container ginput_container_consent'><input name='input_3.1' id='input_1_3_1' type='checkbox' value='1'   aria-required="true" aria-invalid="false"   /> <label class="gform-field-label gform-field-label--type-inline gfield_consent_label" for='input_1_3_1' ><span class='gform-field-label__text'>Please read and accept the Privacy Note for Customer register of ESA Phi-Lab Finland. and Aalto Startup Center <a href="https://www.esaphilab.fi/tietosuojaseloste">here </a></span><span class="gfield_required gfield_required_asterisk">*</span></label><input type='hidden' name='input_3.2' value='Please read and accept the Privacy Note for Customer register of ESA Phi-Lab Finland. and Aalto Startup Center &lt;a href=&quot;https://www.esaphilab.fi/tietosuojaseloste&quot;&gt;here &lt;/a&gt;' class='gform_hidden' /><input type='hidden' name='input_3.3' value='1' class='gform_hidden' /></div></fieldset></div></div>
+        <div class='gform-footer gform_footer top_label'> <div class="gf-turnstile-container"> <div id="cf-turnstile-gf-1" class="cf-turnstile" data-sitekey="0x4AAAAAAA5YDW2clJCY1ohb" data-theme="light" data-language="auto" data-size="normal" data-retry="auto" data-retry-interval="1000" data-refresh-expired="auto" data-refresh-timeout="auto" data-action="gravity-form-1" data-callback="turnstileGravityCallback" data-appearance="always"></div> <br class="cf-turnstile-br cf-turnstile-br-gf-1"> </div> <style> .gf-turnstile-container { width: 100%; } .gform_footer.top_label { display: flex; flex-wrap: wrap; } </style> <script>document.addEventListener("DOMContentLoaded", function() {document.addEventListener('gform/post_render', function handlePostRender(event) {if (event.detail.formId !== 1) {return;}gform.utils.addAsyncFilter('gform/submission/pre_submission', async function handlePreSubmission(data) {document.addEventListener('gform/post_render', function rerenderTurnstile(event) {if (event.detail.formId !== 1) {return;}const turnstileElement = document.getElementById('cf-turnstile-gf-1');if (turnstileElement) {turnstile.remove('#cf-turnstile-gf-1');turnstile.render('#cf-turnstile-gf-1', (typeof window.cfturnstileOpts === "function" ? window.cfturnstileOpts(turnstileElement) : {}));}document.removeEventListener('gform/post_render', rerenderTurnstile);});gform.utils.removeFilter('gform/submission/pre_submission', handlePreSubmission);return data;});document.removeEventListener('gform/post_render', handlePostRender);});});</script><button type='submit' id='gform_submit_button_1' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' >send</button> <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=&amp;description=&amp;tabindex=0&amp;theme=orbital&amp;styles={&quot;inputColor&quot;:&quot;#ffffff&quot;,&quot;inputPrimaryColor&quot;:&quot;#204ce5&quot;,&quot;labelFontSize&quot;:&quot;15&quot;,&quot;labelColor&quot;:&quot;#ffffff&quot;,&quot;descriptionFontSize&quot;:&quot;20&quot;}&amp;hash=b392f2574d1b814172f3c9b2eed1145b' />
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_1' value='iframe' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_1' id='gform_theme_1' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_1' id='gform_style_settings_1' value='{&quot;inputColor&quot;:&quot;#ffffff&quot;,&quot;inputPrimaryColor&quot;:&quot;#204ce5&quot;,&quot;labelFontSize&quot;:&quot;15&quot;,&quot;labelColor&quot;:&quot;#ffffff&quot;,&quot;descriptionFontSize&quot;:&quot;20&quot;}' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='EUR' value='RLgguNeFhTL90RpA/u+6dbjmK+UKkQQa4kdtE228AQi4yxzd3IajRmB2cLVuhYLJiCpt7nYMOMo6kT7StOQ/t+sRt4rC6c38NVtlXVyY8MmGxpU=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJ7XCIzLjFcIjpcImM3YTA4ZTA4MjY1ZWY3Y2E3NDBhYzU4NzQ1NjMxNWI5XCIsXCIzLjJcIjpcIjVlNzVmYWExMDFlZTcyMGFiM2RkZTIxYWE2NDE1MTM0XCIsXCIzLjNcIjpcImM3YTA4ZTA4MjY1ZWY3Y2E3NDBhYzU4NzQ1NjMxNWI5XCIsXCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcImUxZTNhOTdlMDQwYTgzNjhkMDcwMzI5ZDBkODU0NGMzXCIsXCJlMTVjMTQ4ZTFkYTQyNDIyYTRjZTJkYzgyN2RlZDU0MFwiLFwiZTJmNThkZTg0MTMyMDViYWIwMmM2NzE5NmM4NzFhMmNcIl0sXCJnZm9ybV90aGVtZVwiOlwiZjAwNDJiMDViMGIxMjYwZjY4NjQxMTliYTI5NGIzYjFcIixcImdmb3JtX3N0eWxlX3NldHRpbmdzXCI6XCJlYTJlMTMwZTEzZTlkMjkxNTQ4OGVmYzc5OWM3OTgyM1wiLFwiZm9ybV9pZFwiOlwiYzdhMDhlMDgyNjVlZjdjYTc0MGFjNTg3NDU2MzE1YjlcIixcInVybFwiOlwiNzMyMWM0NGQ1NzNjYmZhMDBmZTQzODQwYjAzMGZlODhcIixcInN0YXRlX3RpbWVzdGFtcFwiOlwiZTc0YmY4YTdjZTkwYmM5MzZmYjI1ZjZjNWYxZWNjODNcIn0iLCJjMWM0MjA2Njg1ZWMwMjM5ZGQ0YjNlNmRiMmZlOGI0ZCIsMTc5MjkxOTczNl0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script>
+gform.initializeOnLoaded( function() {jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );var current_page = jQuery('#gform_source_page_number_1').val();jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+</div></div>
+
+
+
+<div class="wp-block-acf-background alignfull contact">
+  
+    <section class="background js-background background--type-color background-color background-color--primary-light background--height-none background--vertical-align-middle background--content-background-none is-dark-mode background--env-front">
+      
+      <div class="background__content inner-blocks">
+        
+
+<h2 class="wp-block-heading has-text-align-left" id="contact">Contact information</h2>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h3 class="wp-block-heading" style="text-transform:uppercase">miika kostamo</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Project Manager </strong><br><strong>ESA Phi-Lab Finland, Aalto University, Aalto Startup Center</strong></p>
+
+
+
+<p class="wp-block-paragraph">A Grid, Otakaari 5, Espoo</p>
+
+
+
+<p class="wp-block-paragraph" style="font-style:normal;font-weight:600">+358 50 307 2264<br><a href="mailto:esaphilab@aalto.fi">esaphilabfinland[at]aalto.fi</a></p>
+
+
+
+<h3 class="wp-block-heading" style="text-transform:uppercase">svenja fassbender</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Project Coordinator </strong><br><strong>ESA Phi-Lab Finland, Aalto University, Aalto Startup Center</strong></p>
+
+
+
+<p class="wp-block-paragraph">A Grid, Otakaari 5, Espoo</p>
+
+
+
+<p class="wp-block-paragraph" style="font-style:normal;font-weight:600">+358 50 479 4775<br><a href="mailto:esaphilab@aalto.fi">esaphilabfinland[at]aalto.fi</a></p>
+</div>
+</div>
+
+      </div>
+
+    </section>
+    </div>
+
+          </div>
+
+        </article>
+
+      
+  </div><!-- #primary -->
+
+
+  </div><!-- #content -->
+
+      <footer class="site-footer js-site-footer" id="colophon" itemscope itemtype="https://schema.org/WPFooter">
+
+      <div class="site-footer__container">
+        <div class="site-footer__main">
+          <div class="site-footer__company">
+            
+<h3 class="wp-block-heading">ESA Phi-Lab Finland</h3>
+
+<p class="wp-block-paragraph">A Grid, Otakaari 5, <br>02150 Espoo, Finland</p>
+          </div>
+          <div class="site-footer__contact">
+            
+<h3 class="wp-block-heading has-text-align-left">Contact us</h3>
+
+<p class="wp-block-paragraph"><a href="mailto:esaphilabfinland@aalto.fi" target="_blank" rel="noreferrer noopener">esaphilabfinland@aalto.fi</a></p>
+
+<figure class="wp-block-image size-full"><a href="https://www.linkedin.com/company/esa-phi-lab-finland" target="_blank" rel=" noreferrer noopener"><img decoding="async" src="https://www.esaphilab.fi/wp-content/uploads/2025/01/linkedin-icon.svg" alt="icon linkedIn" class="wp-image-107" /></a></figure>
+          </div>
+
+          <div>
+                      
+    <nav class="footer-navigation" aria-label="Footer Menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+
+      <ul id="menu-footerin-valikko" class="footer-navigation__items"><li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-28"><span class="menu-item__link"><a href="https://www.esaphilab.fi/" aria-current="page">ESA Phi-lab finland</a></span></li>
+<li id="menu-item-161" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-161"><span class="menu-item__link"><a href="/#contact" aria-current="page">Contact</a></span></li>
+<li id="menu-item-162" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-162"><span class="menu-item__link"><a href="/#apply" aria-current="page">Apply</a></span></li>
+</ul>
+    </nav>
+
+                          </div>
+
+          </div>
+      </div>
+
+
+
+      <div class="site-footer__additional">
+        <div class="site-header__branding">
+          <a href="https://www.esaphilab.fi/" class="site-header__title" rel="home" itemprop="headline">
+            <img class="site-header__logo" width="200" height="120" src="https://www.esaphilab.fi/wp-content/themes/esaphilab/dist/images/logo.svg" loading="lazy" alt="esaphilab.fi" />
+          </a>
+        </div>
+        <div class="site-footer__additional-container">
+          <div class="legal-navigation__container">
+            
+    <nav class="legal-navigation" aria-label="Legal Menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+
+      <ul id="menu-evastevalikko" class="legal-navigation__items"><li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><span class="menu-item__link"><a href="https://www.esaphilab.fi/cookie-declaration/">Cookie Declaration</a></span></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-27"><span class="menu-item__link"><a rel="privacy-policy" href="https://www.esaphilab.fi/tietosuojaseloste/">Privacy Policy</a></span></li>
+</ul>
+    </nav>
+
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+    
+</div><!-- #page -->
+
+
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  var gnxUser = 0;
+  var gnxLanguage = "fi";
+  function gtag(){dataLayer.push(arguments);}
+
+  if (gnxUser === 0) {
+    dataLayer.push({"event": "logged-out"});
+    gtag("consent", "default", {"anonymous_user": "granted"});
+  }
+  else {
+    dataLayer.push({"event": "logged-in"});
+    gtag("consent", "default", {"anonymous_user": "denied"});
+  }
+  </script>
+  <style id='core-block-supports-inline-css'>
+.wp-container-core-group-is-layout-2{grid-template-columns:repeat(auto-fill, minmax(min(12rem, 100%), 1fr));container-type:inline-size;}.wp-container-core-group-is-layout-3{grid-template-columns:repeat(auto-fill, minmax(min(12rem, 100%), 1fr));container-type:inline-size;}.wp-container-core-group-is-layout-4{grid-template-columns:repeat(auto-fill, minmax(min(12rem, 100%), 1fr));container-type:inline-size;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-3{flex-wrap:nowrap;}.wp-container-core-group-is-layout-6{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-4{flex-wrap:nowrap;}.wp-container-core-group-is-layout-8{flex-direction:column;align-items:center;}.wp-container-core-columns-is-layout-5{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-6{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-7{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-8{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-9{flex-wrap:nowrap;}
+</style>
+<script id="x-js-js-extra">
+var theme_strings_lightbox = {"prev":"Previous","next":"Next","close":"Close","loading":"Loading"};
+</script>
+<script data-cookieconsent="ignore" src="https://www.esaphilab.fi/wp-content/themes/esaphilab/dist/scripts/main.js?ver=1737538927660" id="x-js-js"></script>
+<script src="https://www.esaphilab.fi/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script src="https://www.esaphilab.fi/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://www.esaphilab.fi/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-12-08 11:20:13+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"fi"},"Notifications":["Ilmoitukset"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+</script>
+<script src="https://www.esaphilab.fi/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js"></script>
+<script defer='defer' src="https://www.esaphilab.fi/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=3.1.1" id="gform_placeholder-js"></script>
+<script defer='defer' src="https://www.esaphilab.fi/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=0c901cb641ce64b99c20ea1a4d208cc9" id="gform_gravityforms_theme_vendors-js"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"b0383b23c8b2f2aa716eb80e1ae9d868"},"ajax":{"ajaxurl":"https:\/\/www.esaphilab.fi\/wp-admin\/admin-ajax.php","ajax_submission_nonce":"e991363979","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}},"product_meta":[],"pagination":{"1":""}}},"hmr_dev":"","public_path":"https:\/\/www.esaphilab.fi\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/","config_nonce":"f152602442"};
+</script>
+<script defer='defer' src="https://www.esaphilab.fi/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=e27d9712159624c99129c8c208f022ad" id="gform_gravityforms_theme-js"></script>
+<script id="cfturnstile-js-before" data-cfasync="false">
+(function(w,d){var q=w.cfturnstileQueue=w.cfturnstileQueue||[];if(w.cfturnstileRender)return;var ready=false,hooked=false,ticks=0,timer=null;var cbs=["callback","error-callback","expired-callback","timeout-callback","unsupported-callback","before-interactive-callback","after-interactive-callback"];function opts(e){var p={};for(var i=0;i<cbs.length;i++){(function(n){var v=e.getAttribute("data-"+n);if(!v)return;p[n]=function(){var f=w[v];if(typeof f==="function")return f.apply(w,arguments);};})(cbs[i]);}return p;}w.cfturnstileOpts=function(e){if(typeof e==="string")e=d.querySelector(e);return e&&e.getAttribute?opts(e):{};};function one(id){var e=d.getElementById("cf-turnstile"+id);if(!e)return false;if(e.firstElementChild)return true;try{w.turnstile.render(e,opts(e));return true;}catch(_){return false;}}function drain(){if(!ready)return;for(var i=q.length-1;i>=0;i--){if(one(q[i]))q.splice(i,1);}if(q.length&&!hooked&&d.readyState==="loading"){hooked=true;d.addEventListener("DOMContentLoaded",function(){hooked=false;drain();});}}function watch(){timer=null;if(!q.length)return;if(!ready&&w.turnstile&&typeof w.turnstile.render==="function")ready=true;drain();if(q.length&&++ticks<170)timer=setTimeout(watch,ticks<20?100:2000);}w.cfturnstileRender=function(){drain();if(q.length&&!timer)timer=setTimeout(watch,100);};w.cfturnstileOnload=function(){ready=true;w.cfturnstileRender();};w.cfturnstileRender();})(window,document);
+(function(w,d){if(w.cfturnstileRefresh)return;w.cfturnstileRefresh=1;var F="input[name=cf-turnstile-response]",S="form.checkout, form.woocommerce-checkout",u=false;function go(){u=true;}w.addEventListener("pagehide",go);w.addEventListener("beforeunload",go);d.addEventListener("submit",function(e){var f=e.target,s=[];if(!f||!f.querySelectorAll)return;try{if(S&&f.matches&&f.matches(S))return;}catch(_){}f.querySelectorAll(".cf-turnstile").forEach(function(el){var i=el.querySelector(F);if(i&&i.value)s.push([el,i.value]);});if(!s.length)return;setTimeout(function(){if(u||!w.turnstile||d.querySelector("#wfls-prompt-overlay,#wfls-token,#fls_2fa_form,.fls_2fs"))return;s.forEach(function(x){var i=x[0].querySelector(F);if(i&&i.value===x[1]){try{w.turnstile.reset(x[0]);}catch(_){}}});},2000);},true);})(window,document);
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&amp;onload=cfturnstileOnload" id="cfturnstile-js" defer data-wp-strategy="defer"></script>
+<script id="cfturnstile-render-js-after" data-cfasync="false">
+(window.cfturnstileQueue=window.cfturnstileQueue||[]).push("-gf-1");if(window.cfturnstileRender)window.cfturnstileRender();
+</script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX8RZ4NN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

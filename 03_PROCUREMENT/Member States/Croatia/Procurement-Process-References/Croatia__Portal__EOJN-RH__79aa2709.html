@@ -1,0 +1,1132 @@
+
+
+<!DOCTYPE html>
+
+<html lang="hr" xmlns:asp="http://www.w3.org/1999/html">
+<head><title>
+	EOJN RH
+</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4DWT0P0KB9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-4DWT0P0KB9');
+      // DEMO: G-52CFFX2195
+    </script>
+
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="content-type" content="text/html;charset=utf-8" charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=5.0" /><link rel="icon" href="Images/EOJN_25_08_2023_symbol square.png" type="image/png" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback" />
+    
+
+    
+    <!-- jQuery -->
+    <script src="https://eojn.hr/Theme/plugins/jQuery/jquery-3.6.0.min.js?v=0732e3eabbf8aa7ce7f69eedbd07dfdd"></script>
+
+    
+    <script src="https://unpkg.com/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+    <script src="https://fastly.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <script src="https://fastly.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js" integrity="sha384-GzAyPc+9MeNdsDGfpe/gNkeDXXSbdZdY0yKEFBGFxqmq/97NJ92k5oyF1YPOOhm5" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" integrity="sha384-qrt37eUXKQgF1p6OlpdB29OTyKryxbxdJHkvfVN4suujWnn6PibIvbnygcK4uJfA" crossorigin="anonymous" /><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://eojn.hr/CSS/font-awesome.min.css?v=a0e784c4ca94c271b0338dfb02055be6" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://eojn.hr/CSS/ionicons.min.css?v=e5c40720e40dfc20694f2333b08480bb" />
+    <!-- Theme style -->
+    <!-- Font for angular components-->
+    <link rel="stylesheet" href="https://eojn.hr/css/open-iconic-bootstrap.css?v=deafb896385c702463f2bcd67f265bbe" />
+
+    <!-- DevExtreme themes -->
+    
+    <link rel='stylesheet '
+          href="https://eojn.hr/css/dx/dx.eojn.light.css?v=e41d369e30c7e17570452a52063654ff" 
+          id='dx-light-css'/>
+    <link rel="stylesheet  alternate" 
+          href="https://eojn.hr/css/dx/dx.eojn.dark.css?v=cdef299cf22e4c3c719f8353b2cbbff8"
+          id='dx-dark-css'/>
+    
+    <!-- site.css -->
+    <link rel="stylesheet" href="https://eojn.hr/css/site.css?v=19e0238a4efe286b05e0f70a32c552f8" />
+    
+
+
+    
+    <!-- -->
+    <script src="https://eojn.hr/Common/Scripts/webApiModule.js?v=9ce59c167a6d1f87742c93e9e7b2d3f3"></script>
+    <!-- jQuery.fileDownload -->
+    <script src="https://eojn.hr/Common/Scripts/jquery.fileDownload.js?v=fdc7e37a1d8612e08e345ceaa50655ac"></script>
+    
+    <link href='https://eojn.hr/Scripts/app.css?v=185a5c7a78c0603319da70f63058d1b3' type='text/css' rel='stylesheet' />
+
+    <style>
+        .nav-link-active {
+            position: absolute;
+            height: 3px;
+            transform-origin: bottom;
+            right: 16px;
+            left: 16px;
+            transform: scaleY(1);
+            bottom: 0;
+        }
+        
+        .nav-link-dark-line {
+             background: #fff;
+        }
+        
+        .nav-link-light-line {
+             background: grey;
+        }
+        
+        a.nav-link {
+            display: flex;
+            align-items: baseline;
+        }
+        
+        a.nav-link > .nav-icon{
+            display:block;
+        }
+        
+        .search-title .text-light {
+            color: black !important;
+            background: yellow;
+        }
+        
+        
+
+        
+    </style>
+
+
+    
+    </head>
+<body id="uiBodyTag" class="sidebar-mini layout-fixed" style="font-size:100%;">
+
+<form method="post" action="./" id="form1" role="presentation">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="https://eojn.hr/Common/Scripts/dx/jszip.min.js?v=7a4daf0415f1e96242758bbb617272b8" type="text/javascript"></script>
+<script src="https://eojn.hr/Common/Scripts/dx/dx.web.js?v=7fc452c046c9ee21628fbd51c5d251a5" type="text/javascript"></script>
+<script src="https://eojn.hr/Common/Scripts/dx/polyfill.min.js?v=92bedd522f8bb819f74bfe805fe8663c" type="text/javascript"></script>
+<script src="https://eojn.hr/Common/Scripts/dx/exceljs.min.js?v=59d3defc2c76ebb3586ba11a93505eae" type="text/javascript"></script>
+<script src="https://eojn.hr/Common/Scripts/dx/FileSaver.min.js?v=fb29bcc2a4c7f0f15f4841681089b35b" type="text/javascript"></script>
+<script src="https://eojn.hr/Scripts/app.js?v=4a380550e1ac15714c93836bbdd0ecbf" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yDjs2xN707hUolQ3KjJBBTGxjsqxQVVArPf-u_Pa8rHL1bpIYm5gLnf9zCmd3lomo0EcrICiUT4fDXmDCa3NJUoyiLApbiRUVCuY1CPXB61Y-2IjJqBy5r6KcC723Y-mxeDNzck1&amp;t=5c0e0825" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6CF21064" />
+
+
+<input type="hidden" name="ctl00$uiUserToken" id="uiUserToken" value="28c2b8d2-8ac4-4019-b4f0-dec68ee060a0" />
+<input type="hidden" name="ctl00$uiPageId" id="uiPageId" value="8297e125-34da-47e7-b968-dba7539fc0e9" />
+
+<div class="wrapper">
+
+
+
+<style>
+.cookies-banner-background {
+  background-color: #484848;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1050;
+}
+.cookies-banner > .alert {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 1051;
+  margin-bottom: 0;
+  width: 100%;
+}
+.cookies-banner-text {
+  width: 100%;
+  text-align: justify;
+  margin-right: 1.25rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.cookies-banner > .alert > button {
+  height: 100%;
+  margin-top: auto;
+  white-space: nowrap;
+  margin-bottom: auto;
+}
+</style>
+
+<div class="cookies-banner" role="region" aria-label="Obavijest o kolačićima">
+  <div class="cookies-banner-background"></div>
+  <div class="alert alert-light">
+    <div class="cookies-banner-text">Elektronički oglasnik javne nabave Republike Hrvatske koristi "kolačiće" ("cookies"). Postavke kolačića mogu se kontrolirati i konfigurirati u vašem web-pregledniku. Za nastavak korištenja EOJN RH potrebno je kliknuti na "Slažem se".</div>
+    <button type="button" class="btn btn-secondary cookies-accept-button" id="uiAcceptCookies">Slažem se</button>
+  </div>
+</div>
+
+<script>
+    $(function () {
+      $('.cookies-accept-button').on('click', function (e) {
+          document.cookie = "cookies-accepted=true; SameSite=Lax; path=/; Max-Age=2592000";
+          $(".cookies-banner").remove();
+      });
+      $('.cookies-accept-button').on('keydown', function (e) {
+         if (e.key === 'Tab') {
+             e.preventDefault();
+         }
+      });
+    });
+</script>
+
+<a href="#uiContent" id="skip-link">Skočite na glavni sadržaj</a>
+
+<header id="uiMainNav" class="main-header navbar navbar-expand navbar-light">
+
+<!-- Header - left part -->
+<div class="navbar-nav" >
+
+    <!-- Togle menu -->
+    <a class="nav-link" data-widget="pushmenu" href="#" role="button" aria-label="Prikaži ili sakrij izbornik"><i class="fas fa-bars" aria-hidden="true"></i></a>
+
+    <ul class="nav nav-treeview">
+        <li class="nav-item d-none d-sm-inline-block">
+            <a id="uiPublicProcurement" class="nav-link active" href="javascript:__doPostBack(&#39;ctl00$uiPublicProcurement&#39;,&#39;&#39;)">
+                <span data-name="Top.Procurement">Nabava</span>
+                <span id="uiPublicProcurementNavLink" class="nav-indicator nav-link-active nav-link-light-line" aria-hidden="true"></span>
+            </a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a id="uiConcessions" class="nav-link" href="javascript:__doPostBack(&#39;ctl00$uiConcessions&#39;,&#39;&#39;)">
+                <span data-name="Top.Concessions">Koncesije</span>
+                <span id="uiConcessionsNavLink" class="nav-indicator" aria-hidden="true"></span>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+<div id="navbar-title-container" style="display: none" aria-hidden="true">
+    <div id="navbar-title"></div>
+</div>
+
+<!-- Header - right part -->
+<div class="navbar-nav ml-auto">
+
+<div class="nav-item mr-2 language-selector">
+
+    
+        <div class="text-sm mr-1 font-italic" aria-hidden="true">HRV</div>
+    
+
+    <div role="presentation" aria-hidden="true">|</div>
+
+    <a onclick="clearSessionStorage();" id="uiSetLanguageEnglish" aria-label="English" lang="en" href="javascript:__doPostBack(&#39;ctl00$uiSetLanguageEnglish&#39;,&#39;&#39;)">
+            <span class="text-sm ml-1 font-italic" aria-hidden="true">ENG</span>
+        </a>
+    
+
+</div>
+
+<div id="uiTicketMenu" class="nav-item dropdown" data-function="15001" data-toggle="tooltip" data-placement="bottom" title="Prijave problema / upita / prijedloga">
+    <a href="/wizard/2001" id="uiTicketUrl" target="_blank" class="nav-link" aria-label="Prijave problema / upita / prijedloga">
+        <i class="fas fa-medkit" style="color: #dc3535;"></i>
+    </a>    
+</div>    
+
+<div id="uiLoginBox" class="nav-item dropdown" data-toggle="tooltip" data-placement="bottom" title="Prijava | Registracija">
+    <a id="uiLoginLink" class="nav-link" aria-label="Prijava | Registracija" href="javascript:__doPostBack(&#39;ctl00$uiLoginLink&#39;,&#39;&#39;)">
+        <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+
+    
+    
+
+    
+    <div class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Puni zaslon">
+        <a href="javascript:void(0)" class="nav-link" data-widget="fullscreen" role="button" aria-label="Puni zaslon">
+            <i class="fas fa-expand-arrows-alt" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    
+    <div class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Postavke i dodatne informacije">
+        <a href="javascript:void(0);" class="nav-link" data-widget="control-sidebar" data-slide="true" role="button" aria-label="Postavke i dodatne informacije">
+            <i class="fas fa-th-large" aria-hidden="true"></i>
+        </a>
+    </div>
+
+</div>
+</header>
+
+<aside id="uiMainSidebar" class="main-sidebar elevation-4 sidebar-light-primary">
+    <!--
+    -->
+    <a href="/konzola" class="brand-link" aria-label="Početna stranica">
+        <img src="/Images/EOJN_25_08_2023_symbol square.png" alt="" class="brand-image" >
+        <span class="brand-text font-weight-light" aria-hidden="true">EOJN RH</span>
+    </a>
+       
+    <div class="sidebar">
+
+        <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search" data-not-found-text="Nisu pronađeni rezultati">
+                <input aria-label="Pretraga" id="menu-search" autocomplete="off" class="form-control form-control-sidebar" data-name="Menu.Search" onkeydown="return event.key != 'Enter';" placeholder="Pretraga" type="search">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-sidebar" aria-label="Pretraga">
+                        <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+       
+        <nav class="mt-2" aria-label="Izbornik">
+
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" data-accordion="false">
+
+                
+                        <li id="uiMenu_uiMenuItem_0" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_0" class="nav-link" role="button" aria-label="Planovi nabave">
+                                <i id="uiMenu_uiIcon_0" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_0" data-name="Menu.ProcurementPlans">Planovi nabave</p>
+                                <i id="uiMenu_uiCollapser_0" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="procurement-plans-all" id="uiMenu_uiSubMenu_0_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_0_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_0_uiCaption_0" data-name="Menu.ProcurementPlans.All">Planovi nabave</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="centralized-procurement-plans" id="uiMenu_uiSubMenu_0_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_0_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_0_uiCaption_1" data-name="Menu.ProcurementCentralPlans.All">Planovi središnje nabave</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="procurement-plans-analysis" id="uiMenu_uiSubMenu_0_uiMenuItem_2" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_0_uiIcon_2" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_0_uiCaption_2" data-name="Menu.ProcurementPlans.Analysis">Sve planirane nabave</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                        <li id="uiMenu_uiMenuItem_1" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_1" class="nav-link" role="button" aria-label="Istraživanja tržišta">
+                                <i id="uiMenu_uiIcon_1" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_1" data-name="Menu.Procurements.MarketResearch">Istraživanja tržišta</p>
+                                <i id="uiMenu_uiCollapser_1" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="market-research-all" id="uiMenu_uiSubMenu_1_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_1_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_1_uiCaption_0" data-name="Menu.Procurements.MarketResearch.All">Istraživanja tržišta</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="market-research-notices-all" id="uiMenu_uiSubMenu_1_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_1_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_1_uiCaption_1" data-name="Menu.Procurements.MarketResearch.Notices">Objave</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                        <li id="uiMenu_uiMenuItem_2" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_2" class="nav-link" role="button" aria-label="Prethodna savjetovanja">
+                                <i id="uiMenu_uiIcon_2" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_2" data-name="Menu.Procurements.PriorConsultation">Prethodna savjetovanja</p>
+                                <i id="uiMenu_uiCollapser_2" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="prior-consultations-all" id="uiMenu_uiSubMenu_2_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_2_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_2_uiCaption_0" data-name="Menu.Procurements.PriorConsultation.All">Savjetovanja</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="prior-consultation-notices-all" id="uiMenu_uiSubMenu_2_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_2_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_2_uiCaption_1" data-name="Menu.Procurements.PriorConsultation.Notices">Objave</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                        <li id="uiMenu_uiMenuItem_3" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_3" class="nav-link" role="button" aria-label="Postupci">
+                                <i id="uiMenu_uiIcon_3" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_3" data-name="Menu.Procurements">Postupci</p>
+                                <i id="uiMenu_uiCollapser_3" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="procurements-all" id="uiMenu_uiSubMenu_3_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_3_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_3_uiCaption_0" data-name="Menu.Procurements.All">Sve nabave</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="procurements-public" id="uiMenu_uiSubMenu_3_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_3_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_3_uiCaption_1" data-name="Menu.Procurements.PublicProcurement">Javna nabava</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="procurements-simple" id="uiMenu_uiSubMenu_3_uiMenuItem_2" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_3_uiIcon_2" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_3_uiCaption_2" data-name="Menu.Procurements.ProcurementSimple">Jednostavna nabava</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="procurements-restoration" id="uiMenu_uiSubMenu_3_uiMenuItem_3" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_3_uiIcon_3" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_3_uiCaption_3" data-name="Menu.Procurements.ProcurementRestoration">Obnova</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="dynamic-purchasing-systems" id="uiMenu_uiSubMenu_3_uiMenuItem_4" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_3_uiIcon_4" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_3_uiCaption_4" data-name="Menu.Procurements.DPS">Dinamički sustavi nabave</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="qualification-systems" id="uiMenu_uiSubMenu_3_uiMenuItem_5" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_3_uiIcon_5" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_3_uiCaption_5" data-name="Menu.Procurements.QS">Sustavi kvalifikacije</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                        <li id="uiMenu_uiMenuItem_4" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_4" class="nav-link" role="button" aria-label="Objave javne nabave">
+                                <i id="uiMenu_uiIcon_4" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_4" data-name="Menu.Notices">Objave</p>
+                                <i id="uiMenu_uiCollapser_4" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="notices-all" id="uiMenu_uiSubMenu_4_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_4_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_4_uiCaption_0" data-name="Menu.Procurements.Notices">Sve objave</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="notices-simple" id="uiMenu_uiSubMenu_4_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_4_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_4_uiCaption_1" data-name="Menu.Procurements.NoticesSimple">Jednostavna nabava</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="notices-restoration" id="uiMenu_uiSubMenu_4_uiMenuItem_2" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_4_uiIcon_2" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_4_uiCaption_2" data-name="Menu.Procurements.NoticesRestoration">Obnova</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                        <li id="uiMenu_uiMenuItem_5" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_5" class="nav-link" role="button" aria-label="Odluke">
+                                <i id="uiMenu_uiIcon_5" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_5" data-name="Menu.Decisions">Odluke</p>
+                                <i id="uiMenu_uiCollapser_5" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="award-decisions" id="uiMenu_uiSubMenu_5_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_5_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_5_uiCaption_0" data-name="Menu.Decisions.Award">Odluke o odabiru</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="award-framework-agreement-decisions" id="uiMenu_uiSubMenu_5_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_5_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_5_uiCaption_1" data-name="Menu.Decisions.FAAward">Odluke o sklapanju okvirnog sporazuma</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="cancellation-decisions" id="uiMenu_uiSubMenu_5_uiMenuItem_2" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_5_uiIcon_2" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_5_uiCaption_2" data-name="Menu.Decisions.Cancellation">Odluke o poništenju</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                        <li id="uiMenu_uiMenuItem_6" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_6" class="nav-link" role="button" aria-label="Žalbe">
+                                <i id="uiMenu_uiIcon_6" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_6" data-name="Menu.Complaints">Žalbe</p>
+                                <i id="uiMenu_uiCollapser_6" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="complaint-decisions" id="uiMenu_uiSubMenu_6_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_6_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_6_uiCaption_0" data-name="Menu.Complaints.Decisions">Rješenja DKOM-a</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="complaint-court-decisions" id="uiMenu_uiSubMenu_6_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_6_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_6_uiCaption_1" data-name="Menu.Complaints.DecisionsHACourt">Odluke VUS-a</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                        <li id="uiMenu_uiMenuItem_7" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_7" class="nav-link" role="button" aria-label="Registar Ugovora">
+                                <i id="uiMenu_uiIcon_7" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_7" data-name="Menu.ContractRegister">Registar ugovora</p>
+                                <i id="uiMenu_uiCollapser_7" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="contracts" id="uiMenu_uiSubMenu_7_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_7_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_7_uiCaption_0" data-name="Menu.Decisions.Contracts">Ugovori</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="framework-agreements" id="uiMenu_uiSubMenu_7_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_7_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_7_uiCaption_1" data-name="Menu.Decisions.FrameworkAgreements">Okvirni sporazumi</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                        <li id="uiMenu_uiMenuItem_39" class="nav-header" data-name="Menu.RegistersCodelists">JAVNI I OTVORENI PODACI</li>
+                    
+                        <li id="uiMenu_uiMenuItem_41" class="nav-item">
+                            <a href="#" id="uiMenu_uiMenuItemDetails_41" class="nav-link" role="button" aria-label="Zakonske klasifikacije">
+                                <i id="uiMenu_uiIcon_41" class="nav-icon fas fa-th" aria-hidden="true"></i>
+                                <p id="uiMenu_uiCaption_41" data-name="Menu.Registers.Codelists">Šifarnici i liste</p>
+                                <i id="uiMenu_uiCollapser_41" class="fas fa-angle-left right" style="right: 1rem" aria-hidden="true"></i>
+                            </a>
+                            
+                                    <ul class="nav nav-treeview" style="white-space: normal;display: none">
+                                
+                                    <li class="nav-item">
+                                        <a href="cpv" id="uiMenu_uiSubMenu_41_uiMenuItem_0" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_41_uiIcon_0" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_41_uiCaption_0" data-name="Menu.Registers.Codelists.CPV">CPV</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="nuts" id="uiMenu_uiSubMenu_41_uiMenuItem_1" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_41_uiIcon_1" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_41_uiCaption_1" data-name="Menu.Registers.Codelists.NUTS">NUTS klasifikacija</p>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="social-services" id="uiMenu_uiSubMenu_41_uiMenuItem_2" class="nav-link">
+                                            <i id="uiMenu_uiSubMenu_41_uiIcon_2" class="nav-icon far fa-circle" aria-hidden="true"></i>
+                                            <p id="uiMenu_uiSubMenu_41_uiCaption_2" data-name="Menu.Registers.Codelists.SocialServices">Društvene i druge posebne usluge</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    
+                
+            </ul>
+        </nav>
+       
+    </div>
+       
+</aside>
+       
+       
+       
+<div id="uiContentWrapper" class="content-wrapper" style="min-height: 724px;">
+    <main id="uiContent" class="content" style="overflow: visible;">
+        
+<style>
+
+    .carousel .carousel-indicators li {
+        border-color: black;
+    }
+    .carousel .carousel-indicators li.active {
+        background-color: black;
+        border-color: black;
+    }
+
+    .carousel .item > iframe {
+        display: block;
+        margin: auto;
+    }
+
+    .carousel .item > img {
+        display: block;
+        line-height: 1;
+    }
+
+    .dashboard-counter {
+        font-size: 2.2em;
+        font-weight: 700;
+    }
+                      
+</style>
+    
+    
+    
+    
+          <section class="content" style="min-height: auto;">
+                <div class="container-fluid">
+        <div class="card card-default">
+
+  <div class="card-header">     
+	<h1 class="card-title h3" style="color: #48a0af">      
+      <font size="7">ELEKTRONIČKI OGLASNIK JAVNE NABAVE RH </font>      
+    </h1>   
+  </div>
+
+  <div class="card-header">
+
+
+    
+    
+</div>
+    
+      <div class="card-body">
+        
+   <!--    
+<div class="alert alert-danger alert-dismissible">     
+  <div class="h5"><i class="icon fas fa-info"></i>OBAVIJEST</div>
+ 
+ <p style="font-size: 20px;">
+Poštovani korisnici, <br>
+zbog radova na infrastrukturi, EOJN RH neće biti dostupan u srijedu, 16. rujna 2026. između 21:00 i 00:00 sati.<br>
+Hvala na razumijevanju.
+      
+        </div>
+  
+    -->
+   
+   <!--       
+    
+<div class="alert alert-danger alert-dismissible">     
+  <div class="h5"><i class="icon fas fa-ban"></i>OBAVIJEST</div>
+  <font size="4">   
+Dohvat kaznene evidencije putem EOJN RH trenutno nije dostupan!  </font>
+  <br>
+</div>
+
+-->
+        
+        
+        
+       <div class="alert alert-warning alert-dismissible">    
+      <div class="h5"><i class="icon fas fa-check"></i>NAPOMENE KORISNICIMA</div>
+      
+ 
+Sukladno izmjenama i dopunama Zakona o javnoj nabavi, na EOJN RH su razvijeni novi moduli te dorađeni postojeći kako bi se EOJN RH uskladio s novim zakonskim i podzakonskim odredbama. <br>
+Ključne dorade i nove funkcionalnosti:
+   <ul>
+   <li>  Jednostavna nabava</li>
+<li>Analiza tržišta i savjetovanje s tržištem</li>
+<li>Razmjena Ugovora putem EOJN RH</li>
+<li>Usklađivanje planova nabave s izmjenama ZJN</li>
+ <li>Nove funkcionalnosti za ponuditelje</li>
+   
+   </ul>
+
+   Više infomacija o novim funkcionalnostima na EOJN RH možete vidjeti <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/4844/Izmjene-ZJN" target='_BLANK'><b>ovdje.</b></a> 
+   
+          
+    </div>  
+        
+ <!--       
+<div class="alert alert-danger alert-dismissible">     
+  <div class="h5"><i class="icon fas fa-info"></i>OBAVIJEST</div>
+ 
+ <p style="font-size: 20px;">
+Poštovani korisnici, <br>
+zbog radova na infrastrukturi EOJN RH, danas (20. kolovoza 2026.), moguće su tehničke poteškoće u radu EOJN RH između 16 i 20 sati.<br>
+Hvala na razumijevanju.
+      
+        </div>
+  
+    
+  -->      
+   <!--     
+     <div class="alert bg-success alert-dismissible">
+      <div class="h5"><i class="icon fas fa-check"></i>Provedba istraživanja tržišta putem Elektroničkog oglasnika javne nabave RH</div>
+     
+      Poštovani, <br>
+
+<b>2. srpnja 2026.</b> godine prezentirat ćemo modul „Istraživanja tržišta“ na online platformi Microsoft Teams.<br>
+Na prezentaciji ćete moći vidjeti koje su nove nadograđene mogućnosti provedbe istraživanja tržišta na Elektroničkom oglasniku javne nabave RH. <br>
+Nadograđeni modul biti će u produkciji na EOJN RH krajem srpnja 2026. godine.<br><br>
+ <ul>     
+<li>Prezentacija će se održati 2. srpnja 2026. od 9 do 10:30 sati.
+<li>Prezentacija je besplatna
+<li>Prezentacija će se snimati kako bi bila objavljena za daljnje upute korisnicima
+<li>Ograničenje na 50 polaznika
+<li>Maksimalno tri polaznika iz istog poslovnog subjekta
+   </ul>    
+      
+  <b>  Prijave su popunjene.</b>
+      
+    </div>   
+        
+       --> 
+        
+                    <div class="alert alert-success alert-dismissible">
+      <div class="h5"><i class="icon fas fa-check"></i>NOVOSTI NA EOJN RH</div>
+      <div>
+        Od 1. rujna 2026., u produkciji je nova  <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/4835/Verzija-1.18" target='_BLANK' rel='noopener noreferrer'><b>verzija 1.18</b></a>.
+                     
+           <ul>
+        <li>Jednostavna nabava</li>
+        <li>Pregled i ocjena - prilozi uz zapisnik</li>
+         <li>Uvid u dokumentaciju (ponude i priloge uz zapisnik)</li>  
+      </ul>            
+                      
+                      </div>                
+                      <br />
+                      
+      <div>
+                              
+      Od 23. srpnja 2026. u produkciji je nova verzija 1.17. u kojoj su nadograđeni, između ostalog, i sljedeći moduli:
+      
+      <ul>
+        <li>Istraživanje tržišta – <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/4566/Video-uputa" target='_BLANK' rel='noopener noreferrer'>video upute i prezentacija</a>
+</li>
+        <li>Objava Pravilnika o jednostavnoj nabavi i njihov pregled</li>
+         <li>Usklađivanje planova nabave s izmjenama ZJN</li>  
+      </ul>
+
+      Detaljan popis promjena u verziji 1.17. možete vidjeti <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/4570/Verzija-1.17" target='_BLANK' rel='noopener noreferrer'>ovdje.</a> 
+    </div>
+   </div>                
+
+        <!--
+        <div class="alert alert-info alert-dismissible">       
+      <div class="h5"><i class="icon fas fa-info"></i>IZMJENE I DOPUNE ZAKONA O JAVNOJ NABAVI</div>
+     
+Obavještavamo korisnike da je Zakon o izmjenama i dopunama Zakona o javnoj nabavi objavljen u Narodnim novinama, broj 48/26, te da stupa na snagu osmog 
+  dana od dana objave u Narodnim novinama, odnosno 16. svibnja 2026. godine. Iznimno, pojedine odredbe koje se odnose na obveze u području jednostavne nabave te
+  digitalnu razmjenu ugovora putem EOJN RH stupaju na snagu <b> 1. rujna 2026.</b> godine. Opći akti kojima se uređuju pravila, uvjeti i postupci jednostavne nabave te 
+  planovi nabave moraju se uskladiti s odredbama istog Zakona do <b>16. kolovoza 2026.</b>
+  <br />  <br /> 
+  
+    
+ <a href="https://dev.azure.com/deanfirkelj/ef287928-1616-4717-86cc-ac7987b03d83/_apis/git/repositories/571c9f59-3206-4d5e-bd67-032dafdc53e7/Items?path=/.attachments/SmjerniceJednostavnaNabava-96508484-b18d-480d-8644-a5a2f779fd20.pdf&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&includeContentMetadata=true&versionDescriptor.version=main" target='_BLANK'><b>Smjernice za provedbu postupaka jednostavne nabave</b></a> <br/> <br/>
+
+         
+          
+          <a href="https://narodne-novine.nn.hr/clanci/sluzbeni/2026_08_94_1148.html" target='_BLANK' rel='noopener noreferrer'>Pravilnik o dokumentaciji o nabavi te ponudi u postupcima javne nabave NN 94/2026</a>  |
+      <a href="https://narodne-novine.nn.hr/clanci/sluzbeni/2026_08_86_1074.html" target='_BLANK' rel='noopener noreferrer'>Pravilnik o planu nabave, registru ugovora i pripremi postupka javne nabave NN 86/2026</a>
+          
+          <br> <br>
+          
+  <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/4048/Izmjene-i-dopune-Zakona-o-javnoj-nabavi" target='_BLANK' rel='noopener noreferrer'>Obavijest Uprave za politiku javne nabave</a>
+    | <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/4052/Verzija-1.16" target='_BLANK' rel='noopener noreferrer'>Izmjene na EOJN RH sukladno izmjenama ZJN</a>
+     | <a href="https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_48_584.html" target='_BLANK' rel='noopener noreferrer'>Zakon o izmjenama i dopunama Zakona o javnoj nabavi</a>
+     | <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/4294/Jednostavna-nabava-na-EOJN-RH" target='_BLANK' rel='noopener noreferrer'>Modul jednostavne nabave</a>
+    </div>  
+    
+
+
+  -->
+  
+
+
+
+
+    <div class="alert alert-info alert-dismissible">       
+      <div class="h5"><i class="icon fas fa-info"></i>OSNOVNE INFORMACIJE</div>
+      Elektronički oglasnik javne nabave RH razvijen je i implementiran projektom Nacionalnog plana oporavka i otpornosti unutar komponente »C2.3. R3-I9 Uspostava nove platforme Elektroničkog oglasnika javne nabave RH«.<br />       
+      Elektronički oglasnik javne nabave Republike Hrvatske platforma je za provođenje postupka javne nabave. <br/>       
+      Sukladno Zakonu o javnoj nabavi, naručitelji objavljuju postupke javne nabave dok gospodarski subjekti sudjeluju kao ponuditelji u postupcima javne nabave.<br><br>                 
+
+      <div class="h5"><i class="icon fas fa-question"></i><b><a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/220/Upute-EOJN-RH#" target='_BLANK' rel='noopener noreferrer'> UPUTE</a></b></div>
+      Kako biste mogli koristiti novi Elektronički oglasnik javne nabave potrebna je registracija korisnika. (Pristupni podaci sa "starog" EOJN RH ne primjenjuju se na "novom" EOJN RH).
+      <br>
+      <br>        
+      <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1025/Pregled-klju%C4%8Dnih-funkcionalnosti-na-novom-EOJN-RH" target='_BLANK' rel='noopener noreferrer'> Pregled ključnih funkcionalnosti na novom EOJN RH.</a> |       
+      <b> <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/227/Naj%C4%8De%C5%A1%C4%87a-pitanja-i-odgovori" target='_BLANK' rel='noopener noreferrer'> Najčešća pitanja i odgovori.</a> </b> |
+      <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/220/Upute-EOJN-RH#" target='_BLANK' rel='noopener noreferrer'>Upute EOJN RH</a> |
+      <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/435/Video-upute" target='_BLANK' rel='noopener noreferrer'>Video upute</a>  |
+      <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1090/Radionica-za-ponuditelje" target='_BLANK' rel='noopener noreferrer'>Snimka radionice za ponuditelje</a>  |
+      <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1091/Snimka-radionice-za-naru%C4%8Ditelje#" target='_BLANK' rel='noopener noreferrer'>Snimka radionice za naručitelje</a> 
+    </div>   
+
+<!--
+     <div class="alert alert-warning alert-dismissible">
+      <div class="h5"><i class="icon fas fa-info"></i>ANKETA O ZADOVOLJSTVU KORISNIKA</div>
+	  
+U cilju unaprjeđenja kvalitete i učinkovitosti Elektroničkog oglasnika javne nabave Republike Hrvatske (EOJN RH), provodimo anketu o zadovoljstvu korisnika.<br>
+Anketa je anonimna, a njezino ispunjavanje traje svega nekoliko minuta.<br><br>
+
+     Anketu možete ispuniti u razdoblju od <b>4. do 11. lipnja 2025.</b> putem sljedeće poveznice - <a href="https://forms.gle/ihDdk3o64eUmi5318" target='_BLANK' rel='noopener noreferrer'>ANKETA</a> 
+       
+       
+    -->
+
+       <div class="alert alert-success alert-dismissible">
+      <div>
+					<i class="icon fas fa-exclamation-triangle"></i>INFO - NOVA VERZIJA - 1.17 dostupna na DEMO okolini
+					</div>
+					<a href="https://eojn-web-demo.azurewebsites.net" target='_BLANK'>Demo instanca novog EOJN RH.</a> (verzija 1.17).
+					<br>       Na demo instanci možete vježbati funkcionalnosti novog EOJN RH kao naručitelji i/ili ponuditelji. Opis
+					<a href='https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/4547/Verzija-1.17' target='_blank'>verzije 1.17</a>
+				</div>
+
+       
+    <div class="alert alert-warning alert-dismissible">    
+      <div class="h5"><i class="icon fas fa-check"></i>SLUŽBA ZA KORISNIKE</div>
+      Radno vrijeme: ponedjeljak – petak, od 8 do 16 sati<br>        
+      E-mail: <a href = "mailto: eojn@nn.hr">eojn@nn.hr</a><br>       Telefon:  (01) 6652-899<br>
+      <p>
+        Prijavu možete podnijeti i putem EOJN RH, klikom na
+        <i class="fas fa-medkit" style="color: #dc3535;"></i> u gornjem desnom kutu aplikacije.
+      </p>
+      <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1020/NEDOSTUPNOST" target='_BLANK' rel='noopener noreferrer'>Prijava nedostupnosti</a>
+      | <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1050/Lista-postupaka-za-koje-su-utvr%C4%91ene-nedostupnosti" target='_BLANK' rel='noopener noreferrer'>Lista postupaka za koje su utvrđene nedostupnosti</a>
+    | <a href="https://dev.azure.com/deanfirkelj/ef287928-1616-4717-86cc-ac7987b03d83/_apis/git/repositories/571c9f59-3206-4d5e-bd67-032dafdc53e7/Items?path=/.attachments/NN_Interni%20protokol_EOJN_nedostupnost-2578476a-16fb-4328-949d-65c621c721b1.pdf&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&includeContentMetadata=true&versionDescriptor.version=main" target='_BLANK' rel='noopener noreferrer'>Interni protokol</a>
+        </div>   
+  </div> </div>   
+                </div>
+          </section>
+        
+    
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="m-0 h3">Danas</div>
+            </div>
+        </div>
+    
+    
+            
+    
+    <section id="uiMainContentPH_uiProcurementConsole" class="content" style="min-height: auto;">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-3 col-6">
+            
+            <div class="small-box bg-info">
+            <div class="inner">
+            <div class="dashboard-counter"><span id="uiMainContentPH_uiTendersPublishedTodayNo">4</span></div>
+            <p data-name="Dashboard.NewProcurements">Novi postupci</p>
+            </div>
+            <div class="icon">
+            <i class="ion ion-bag"></i>
+            </div>
+                
+                 <a id="uiMainContentPH_uiTendersPublishedTodayHref" class="small-box-footer" href="/procurements-all?initFilter=[&quot;NoticePublishDate&quot;,&quot;>=&quot;,&quot;2026-10-24&quot;]"><span data-name="Dashboard.QuickLink">Pregled</span> <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+            </div>
+            </div>
+            
+            <div class="col-lg-3 col-6">
+            
+            <div class="small-box bg-success">
+            <div class="inner">
+            <div class="dashboard-counter"><span id="uiMainContentPH_uiPriorConsultationsTodayNo">1</span></div>
+            <p data-name="Dashboard.PriorConsultations">Nova prethodna savjetovanja</p>
+            </div>
+            <div class="icon">
+            <i class="ion ion-search"></i>
+            </div>
+            <a id="uiMainContentPH_uiPriorConsultationsTodayHref" class="small-box-footer" href="/prior-consultations-all?initFilter=[&quot;NoticePublishDate&quot;,&quot;>=&quot;,&quot;2026-10-24&quot;]"><span data-name="Dashboard.QuickLink">Pregled</span>  <i class="fas fa-arrow-circle-right"></i>
+                                            </a>
+            </div>
+            </div>
+            
+            <div class="col-lg-3 col-6">
+            
+            <div class="small-box bg-warning">
+            <div class="inner">
+            <div class="dashboard-counter"><span id="uiMainContentPH_uiNoticesPublishedTodayNo">20</span></div>
+            <p data-name="Dashboard.Notices">Nove objave</p>
+            </div>
+            <div class="icon">
+            <i class="ion ion-document"></i>
+            </div>
+                <a id="uiMainContentPH_uiNoticesTodayHref" class="small-box-footer" href="/notices-all?initFilter=[&quot;PublishDate&quot;,&quot;>=&quot;,&quot;2026-10-24&quot;]"><span data-name="Dashboard.QuickLink">Pregled</span>  <i class="fas fa-arrow-circle-right"></i>
+                </a>
+            </div>
+            </div>
+            
+            <div class="col-lg-3 col-6">
+            
+            <div class="small-box bg-danger">
+            <div class="inner">
+            <div class="dashboard-counter"><span id="uiMainContentPH_uiProcurementPlansNewUpdatedItemsNo">9</span></div>
+            <p data-name="Dashboard.PlannedProcurements">Nove planirane nabave</p>
+            </div>
+            <div class="icon">
+            <i class="ion ion-calendar"></i>
+            </div>
+                <a id="uiMainContentPH_uiProcurementPlansNewUpdatedItemsHref" class="small-box-footer" href="/procurement-plans-analysis?initFilter=[&quot;LastModificationDate&quot;,&quot;>=&quot;,&quot;2026-10-24&quot;]"><span data-name="Dashboard.QuickLink">Pregled</span>  <i class="fas fa-arrow-circle-right"></i>
+                </a>
+            </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+      <section class="content" style="min-height: auto;">
+            <div class="container-fluid">
+    <div class="card card-default">
+
+  <div class="card-header">
+    <div class="card-title h3">
+      INFORMACIJE
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div class="callout callout-danger">
+      <div class="h5">OBJAVE NA »STAROM« EOJN RH</div>
+        <div class="nav-pills"  style="display: flex">
+      <a class="nav-link" href="https://eojn.nn.hr/SPIN/application/ipn/DocumentManagement/NewPreglediDokumenataFrm.aspx" target='_BLANK' rel='noopener noreferrer'>Javna nabava</a>  
+      <a class="nav-link" href="https://eojn.nn.hr/SPIN/application/ipn/DocumentManagement/NewPreglediDokumenataFrm.aspx?ObjektPregledaDokumenata=bagatelne" target='_BLANK' rel='noopener noreferrer'>Jednostavna nabava</a> 
+      <a class="nav-link" href="https://eojn.nn.hr/SPIN/application/ipn/DocumentManagement/NewPreglediDokumenataFrm.aspx?ObjektPregledaDokumenata=obnova" target='_BLANK' rel='noopener noreferrer'>Obnova</a>  
+      <a class="nav-link" href="https://eojn.nn.hr/SPIN/application/ipn/DocumentManagement/NewPreglediDokumenataFrm.aspx?ObjektPregledaDokumenata=KONCESIJA" target='_BLANK' rel='noopener noreferrer'>Koncesije</a>  
+      <a class="nav-link" href="https://eojn.nn.hr/Spin/application/ipn/JavniReporti/RptPlanoviNabave.aspx" target='_BLANK' rel='noopener noreferrer'>Planovi nabave</a> 
+      <a class="nav-link" href="https://eojn.nn.hr/Spin/application/ipn/PreglediFrm.aspx?method=PostupciObjavljeniSavjetovanje" target='_BLANK' rel='noopener noreferrer'>Prethodna savjetovanja</a> 
+      <a class="nav-link" href="https://eojn.nn.hr/Spin/application/ipn/JavniReporti/RptRegistarUgovora.aspx" target='_BLANK' rel='noopener noreferrer'>Registri ugovora</a> 
+    </div>
+  </div>
+    <div class="callout callout-info">
+      <div class="nav-pills"  style="display: flex">
+      <a class="nav-link" href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1027/Cjenik-objava-u-Elektroni%C4%8Dkom-oglasniku-javne-nabave-Republike-Hrvatske" target='_BLANK' rel='noopener noreferrer'>CJENIK OBJAVA U ELEKTRONIČKOM OGLASNIKU JAVNE NABAVE RH</a>
+      <a class="nav-link" href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1057/Cjenik-usluge-%C2%BBPretra%C5%BEujemo-EOJN-za-Vas%C2%AB" target='_BLANK' rel='noopener noreferrer'>CJENIK USLUGE »PRETRAŽUJEMO EOJN ZA VAS«</a>
+    </div>
+  </div>
+  </div>
+</div>
+            </div>
+      </section>
+    
+
+    </main>
+</div>
+
+
+<aside id="uiRightSidebar" class="control-sidebar control-sidebar-light" style="display: none;" aria-label="Postavke i dodatne informacije">
+    <div class="control-sidebar-content">
+        <div id="control-sidebar-settings-container">
+            <div class="p-2 pl-3 pr-3" id="font-settings"></div>
+            <div style="display: none" aria-hidden="true">
+                <div id="font-settings-open-drawer-btn-label">Prikaži ili sakrij ladicu postavki fonta</div>
+                <div id="font-size-minus-label">Povećaj veličinu fonta</div>
+                <div id="font-size-reset-label">Poništi veličinu fonta</div>
+                <div id="font-size-plus-label">Povećaj veličinu fonta</div>
+                <div id="dyslexic-btn-label">Omogući font za osobe s disleksijom</div>
+            </div>
+            <div class="p-2 pl-3 pr-3" id="theme-switcher"></div>
+            <div style="display: none" aria-hidden="true">
+                <div id="dark-mode-switch-label">Tamni način rada</div>
+            </div>
+        </div>
+        <div class="p-2 pl-3 pr-3">
+            <div class="h4">Pomoć</div>
+<div class="mb-1">
+    <a href='https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1023/Op%C4%87i-uvjeti-poslovanja' target='_BLANK' rel='noopener noreferrer'>Opći uvjeti poslovanja</a>
+</div>
+<div class="mb-1">
+    <a href='https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1040/Politika-privatnosti-Privacy-Policy' target='_BLANK' rel='noopener noreferrer'>Politika privatnosti</a>
+</div>
+<div class="mb-1">
+    <a href='https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/2375/Izjava-o-pristupa%C4%8Dnosti' rel='noopener noreferrer'>Izjava o pristupačnosti</a>
+</div>
+<div class="mb-1">
+    <a href='https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/UputeEOJN/220/Upute-EOJN' target='_BLANK' rel='noopener noreferrer'>Korisničke upute</a>
+</div>
+<div class="mb-1">
+    <a href='https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1022/Zakoni-podzakonski-akti-i-EU-propisi' target='_BLANK' rel='noopener noreferrer'>Zakon i podzakonski propisi</a>
+</div>
+<div class="mb-1">
+    <a href="https://dev.azure.com/deanfirkelj/Upute%20EOJN/_wiki/wikis/Upute%20EOJN%20RH/1020/NEDOSTUPNOST" target='_BLANK' rel='noopener noreferrer'>Prijava nedostupnosti</a>
+</div>
+        </div>
+        <div class="p-2 pl-3 pr-3">
+            <div class="h4">Korisni linkovi</div>
+<div class="mb-1">
+  <a href='https://eojn.nn.hr/Oglasnik/' target='_BLANK' rel='noopener noreferrer'>»Stari« EOJN</a>
+</div>
+<div class="mb-1">
+  <a href="http://javnanabava.hr/" target='_BLANK' rel='noopener noreferrer'>Uprava za politiku javne nabave</a>
+</div>
+<div class="mb-1">
+  <a href="https://dkom.hr/" target='_BLANK' rel='noopener noreferrer'>DKOM</a>
+</div>
+<div class="mb-1">
+  <a href="https://narodne-novine.nn.hr/" target='_BLANK' rel='noopener noreferrer'>Narodne novine</a>
+</div>
+<div class="mb-1">
+  <a href="https://zelenanabava.hr/" target='_BLANK' rel='noopener noreferrer'>Zelena javna nabava</a>
+</div>
+<div class="mb-1">
+  <a href="https://ted.europa.eu/TED/main/HomePage.do" target='_BLANK' rel='noopener noreferrer'>Tenders electronic daily – TED</a>
+</div>
+<div class="mb-1">
+  <a href="https://webgate.ec.europa.eu/procurementbuyers/#/procumementlocation" target='_BLANK' rel='noopener noreferrer'>Procurement for Buyers</a>
+</div>
+        </div>
+    </div>
+</aside>
+       
+<footer id="uiMainFooter" class="main-footer">
+        <img src="\Images\EU_logo_hr.png"  alt="" height="50" style="right: 5px" />
+<span>Elektronički oglasnik javne nabave RH razvijen je i implementiran projektom Nacionalnog plana oporavka i otpornosti unutar komponente »C2.3. R3-I9 Uspostava nove platforme Elektroničkog oglasnika javne nabave RH«.</span>
+  
+
+
+</footer>
+<!-- ./wrapper -->
+</div>
+
+<!-- GLOBAL JS VARIABLES -->
+<script>
+
+            function clearSessionStorage() {
+                sessionStorage.clear();
+            }
+
+            var globals = (function() {
+                var my = {};
+
+                my.baseUrl = "/";
+                my.apiBaseUrl = 'https://eojn.hr/';
+                my.apiUrl = my.apiBaseUrl + 'api/';
+                my.dateFormat = 'dd.MM.yyyy';
+
+                
+
+                my.getMessage = function(key) {
+                    return app.compat.getDxMessage(key);
+                }
+
+                my.notifyGenericError = function()
+                {
+                    DevExpress.ui.notify(my.getMessage('custom-dxToast-error'), 'error');
+                }
+
+                my.resolveUrl = function(url, shouldEncode) {
+                    if (url.indexOf("~/") === 0) {
+                        url = my.baseUrl + url.substring(2);
+                    }
+
+                    if (shouldEncode)
+                        url = encodeURI(url);
+
+                    return url;
+                }
+                
+                my.getUserToken = function () {
+                    return $('#uiUserToken').val();
+                };
+
+                Object.defineProperty(my, 'setFontSize', {
+                  get: function() { return app.setFontSize }
+                });
+                
+                Object.defineProperty(my, 'setDarkMode', {
+                  get: function() { return app.setDarkMode }
+                });
+                
+                return my;
+            })();
+
+            $(function () {
+                
+            });
+
+            function showResetPasswordSuccessAlert() {
+                setTimeout(function () { $('.alert-reset-pwd-success').fadeTo(0, 1000) }, 500);
+                setTimeout(function () { $(".alert-reset-pwd-success").fadeTo(1000, 0) }, 5000);
+            }
+
+            function showResetPasswordFailAlert() {
+                setTimeout(function () { $('.alert-reset-pwd-fail').fadeTo(0, 1000) }, 500);
+                setTimeout(function () { $(".alert-reset-pwd-fail").fadeTo(1000, 0) }, 5000);
+            }
+
+            try {
+              localStorage.setItem('AdminLTE:IFrame:Options', JSON.stringify({
+                autoIframeMode: false
+              }));
+            } catch (e) {
+              console.warn('localStorage not available:', e);
+            }
+            
+        </script>
+
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+Both of these plugins are recommended to enhance the
+user experience. Slimscroll is required when using the
+fixed layout. -->
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+    window.isMobileDevice = function() {
+        if(window._isMobileDevice === true || window._isMobileDevice === false) {
+            return window._isMobileDevice;
+        }
+        window._isMobileDevice = false;
+        (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) window._isMobileDevice = true;})(navigator.userAgent||navigator.vendor||window.opera);
+        return window._isMobileDevice;
+    };
+$(function() { DevExpress.localization.locale('hr-HR'); });app.init({"baseUrl":"https://eojn.hr/","apiBaseUrl":"https://eojn.hr/","apiUrl":"https://eojn.hr/api/","dxDateFormat":"dd.MM.yyyy","dxDateTimeFormat":"dd.MM.yyyy HH:mm:ss","dxMessages":"{\"Yes\":\"Da\",\"No\":\"Ne\",\"Cancel\":\"Odustani\",\"Clear\":\"Očisti\",\"Done\":\"Gotovo\",\"Loading\":\"Učitavanje...\",\"Select\":\"Odredite\",\"Search\":\"Pretraži\",\"Back\":\"Povratak\",\"OK\":\"OK\",\"dxCollectionWidget-noDataText\":\"-\",\"dxList-nextButtonText\":\"Više\",\"validation-required\":\"Obavezno\",\"validation-required-formatted\":\"{0} je obavezno\",\"validation-custom\":\"Vrijednost\",\"validation-custom-formatted\":\"Vrijednost polja \\\"{0}\\\" je neispravno\",\"dxDataGrid-editingEditRow\":\"Izmijeni\",\"dxDataGrid-editingSaveRowChanges\":\"Spremi\",\"dxDataGrid-editingCancelRowChanges\":\"Odustani\",\"dxDataGrid-editingDeleteRow\":\"Izbriši\",\"dxDataGrid-editingConfirmDeleteMessage\":\"Želite li sigurno izbrisati ovaj zapis?\",\"dxDataGrid-validationCancelChanges\":\"Odustani od promjena\",\"dxDataGrid-noDataText\":\"Nema podataka\",\"dxDataGrid-searchPanelPlaceholder\":\"Pretraži...\",\"dxDataGrid-filterRowShowAllText\":\"(Sve)\",\"dxDataGrid-filterRowResetOperationText\":\"Reset\",\"dxDataGrid-filterRowOperationEquals\":\"Jednako\",\"dxDataGrid-filterRowOperationNotEquals\":\"Nije jednako\",\"dxDataGrid-filterRowOperationLess\":\"Manje od\",\"dxDataGrid-filterRowOperationLessOrEquals\":\"Manje od ili jednako\",\"dxDataGrid-filterRowOperationGreater\":\"Veće od\",\"dxDataGrid-filterRowOperationGreaterOrEquals\":\"Veće od ili jednako\",\"dxDataGrid-filterRowOperationStartsWith\":\"Počinje sa\",\"dxDataGrid-filterRowOperationContains\":\"Sadrži\",\"dxDataGrid-filterRowOperationNotContains\":\"Ne sadrži\",\"dxDataGrid-filterRowOperationEndsWith\":\"Završava sa\",\"dxDataGrid-filterRowOperationBetween\":\"Između\",\"dxDataGrid-filterRowOperationBetweenStartText\":\"Od\",\"dxDataGrid-filterRowOperationBetweenEndText\":\"Do\",\"dxDataGrid-applyFilterText\":\"Primjeni pretragu\",\"dxDataGrid-trueText\":\"Da\",\"dxDataGrid-falseText\":\"Ne\",\"dxDataGrid-editingAddRow\":\"Dodaj red\",\"dxDataGrid-selectedRows\":\"Označeni redovi\",\"dxDataGrid-filterBuilderPopupTitle\":\"Kreiranje filtera za pretragu\",\"dxDataGrid-filterPanelCreateFilter\":\"Kreiraj filter\",\"dxDataGrid-filterPanelClearFilter\":\"Očisti\",\"dxDataGrid-filterPanelFilterEnabledHint\":\"Omogući filter\",\"dxDataGrid-columnFixingFix\":\"Fix\",\"dxDataGrid-columnFixingUnfix\":\"Unfix\",\"dxDataGrid-columnFixingLeftPosition\":\"To the left\",\"dxDataGrid-columnFixingRightPosition\":\"To the right\",\"dxDataGrid-sortingAscendingText\":\"Sortiraj uzlazno\",\"dxDataGrid-sortingDescendingText\":\"Sortiraj silazno\",\"dxDataGrid-sortingClearText\":\"Poništi sortiranje\",\"dxDataGrid-groupPanelEmptyText\":\"Povucite zaglavlje stupca ovdje za grupiranje prema tom stupcu\",\"dxDataGrid-ariaAdaptiveCollapse\":\"Sakrij dodatne podatke\",\"dxDataGrid-ariaAdaptiveExpand\":\"Prikaži dodatne podatke\",\"dxDataGrid-ariaColumn\":\"Stupac\",\"dxDataGrid-ariaValue\":\"Vrijednost\",\"dxDataGrid-ariaFilterCell\":\"Filter ćelija\",\"dxDataGrid-ariaCollapse\":\"Zatvori\",\"dxDataGrid-ariaExpand\":\"Otvori\",\"dxDataGrid-ariaDataGrid\":\"Tablica podataka\",\"dxDataGrid-ariaSearchInGrid\":\"Pretraži u tablici podataka\",\"dxDataGrid-ariaSelectAll\":\"Odaberi sve\",\"dxDataGrid-ariaSelectRow\":\"Select row\",\"dxDataGrid-ariaToolbar\":\"Alatna traka tablice podataka\",\"dxDataGrid-custom-actionLink\":\"Akcija\",\"dxDataGrid-custom-detailLink\":\"Detalj\",\"dxDataGrid-custom-downloadDocumentLink\":\"Preuzimanje dokumenta\",\"dxDataGrid-custom-downloadDocumentGroupLink\":\"Preuzimanje dokumenata\",\"dxPager-infoText\":\"Stranica {0} od {1} ({2} stavke)\",\"dxPager-pagesCountText\":\"od\",\"dxPager-page\":\"Stranica {0}\",\"dxPager-prevPage\":\"Prethodna stranica\",\"dxPager-nextPage\":\"Slijedeća stranica\",\"dxPager-ariaLabel\":\"Navigacija stranicama\",\"dxFilterBuilder-and\":\"I (svi uvjeti moraju biti ispunjeni)\",\"dxFilterBuilder-or\":\"Ili (bilo koji uvjet može biti ispunjen)\",\"dxFilterBuilder-notAnd\":\"Ne\",\"dxFilterBuilder-notOr\":\"Ne ili\",\"dxFilterBuilder-addCondition\":\"Dodaj uvjet\",\"dxFilterBuilder-addGroup\":\"Dodaj grupu uvjeta\",\"dxFilterBuilder-enterValueText\":\"<unesite vrijednost>\",\"dxFilterBuilder-filterOperationEquals\":\"Jednako\",\"dxFilterBuilder-filterOperationNotEquals\":\"Nije jednako\",\"dxFilterBuilder-filterOperationLess\":\"Manje od\",\"dxFilterBuilder-filterOperationLessOrEquals\":\"Manje od ili jednako\",\"dxFilterBuilder-filterOperationGreater\":\"Veće od\",\"dxFilterBuilder-filterOperationGreaterOrEquals\":\"Veće od ili jednako\",\"dxFilterBuilder-filterOperationStartsWith\":\"Počinje sa\",\"dxFilterBuilder-filterOperationContains\":\"Sadrži\",\"dxFilterBuilder-filterOperationNotContains\":\"Ne sadrži\",\"dxFilterBuilder-filterOperationEndsWith\":\"Završava sa\",\"dxFilterBuilder-filterOperationIsBlank\":\"Prazno\",\"dxFilterBuilder-filterOperationIsNotBlank\":\"Nije prazno\",\"dxFilterBuilder-filterOperationBetween\":\"Između\",\"dxFilterBuilder-filterOperationAnyOf\":\"Bilo koji od...\",\"dxFilterBuilder-filterOperationNoneOf\":\"Nije nijedan od...\",\"dxFileUploader-selectFile\":\"Učitaj sliku\",\"dxFileUploader-dropFile\":\"         \",\"dxFileUploader-bytes\":\"bajtova\",\"dxFileUploader-kb\":\"kB\",\"dxFileUploader-Mb\":\"MB\",\"dxFileUploader-Gb\":\"GB\",\"dxFileUploader-upload\":\"Učitaj\",\"dxFileUploader-uploaded\":\"Učitano\",\"dxFileUploader-readyToUpload\":\"Ready to upload\",\"dxFileUploader-uploadFailedMessage\":\"Upload failed\",\"dxFileUploader-invalidFileExtension\":\"Format fajla nije podržan\",\"dxFileUploader-invalidMaxFileSize\":\"Fajl je prevelik\",\"dxFileUploader-invalidMinFileSize\":\"Fajl nije ispravan\",\"custom-dxToast-success\":\"Uspješno!\",\"custom-dxToast-error\":\"Greška!\",\"custom-searchGridModule-confirmDeleteFilterMessage\":\"Želite li sigurno obrisati ovaj filter?\",\"custom-searchGridModule-confirmDeleteFilterTitle\":\"Potvrdite izmjene\",\"custom-searchGridModule-savedSearchSettingsDropDownPlaceholder\":\"Spremljeni filteri \",\"custom-searchGridModule-savedSearchSettingsButtonLabel\":\"Spremi filter\",\"custom-searchGridModule-searchSettingsAreEmpty\":\"Lista spremljenih filtera je prazna\",\"custom-searchGridModule-typeSearchSettingsNamePlaceholder\":\"Upišite ime filtera\",\"custom-searchGridModule-subscriptions-frequency\":\"Frekvencija\",\"custom-searchGridModule-subscriptions-frequencyParameter\":\"Parametar\",\"custom-searchGridModule-subscriptions-title\":\"Pretplate\",\"custom-searchGridModule-export\":\"Izvoz\",\"custom-mailbox-recipients-column-recipient\":\"Primatelj\",\"custom-mailbox-recipients-validationMessage\":\"Potreban je barem jedan primatelj\",\"custom-mailbox-sendMessageConfirmation\":\"Želite li poslati poruku?\",\"custom-mailbox-sendMessageConfirmation-title\":\"Potvrda slanja\",\"custom-mailbox-sendMessage-success\":\"Poruka je uspješno poslana!\",\"custom-mailbox-sendMessage-error\":\"Greška kod obrade podataka!\",\"custom-mailbox-saveDraft-error\":\"Greška kod spremanja poruke!\",\"custom-mailbox-delete-buttonLabel\":\"Izbriši označeno\",\"custom-mailbox-delete-confirmationMessage\":\"Želite li obrisati izabrane poruke?\",\"custom-mailbox-delete-confirmationMessageTitle\":\"Potvrda brisanja\",\"custom-mailbox-delete-success\":\"Izabrane poruke su uspješno obrisane!\",\"custom-mailbox-delete-error\":\"Greška kod brisanja izabranih poruka!\",\"custom-mailbox-filterByTagPlaceholder\":\"Filter po tagu\",\"custom-mailbox-getMessage-error\":\"Greška kod dohvata podataka!\",\"custom-mailbox-inbox\":\"Ulazna pošta\",\"custom-mailbox-sentItems\":\"Poslane poruke\",\"custom-mailbox-drafts\":\"U pripremi\",\"custom-mailbox-dialog-fromLabel\":\"Od:\",\"custom-mailbox-dialog-toLabel\":\"Primatelj:\",\"custom-mailbox-dialog-subjectLabel\":\"Predmet:\",\"custom-mailbox-dialog-tagsLabel\":\"Tagovi:\",\"custom-mailbox-column-from\":\"Od\",\"custom-mailbox-column-sender-name\":\"Pošiljatelj\",\"custom-mailbox-column-to\":\"Primatelj\",\"custom-mailbox-column-subject\":\"Predmet\",\"custom-mailbox-column-timestamp\":\"Datum i vrijeme\",\"custom-mailbox-compose\":\"Nova poruka\",\"custom-mailbox-reply\":\"Odgovori\",\"custom-mailbox-send\":\"Pošalji\",\"custom-mailbox-archive\":\"Brisanje\",\"custom-mailbox-archived\":\"Obrisano\",\"custom-mailbox-undo-archive\":\"Vrati obrisano\",\"custom-mailbox-mark-as-read\":\"Označi kao pročitano\",\"custom-mailbox-delete-selected-confirmation\":\"Molimo potvrdite brisanje izabranih poruka\",\"custom-mailbox-delete-selected-title\":\"Potvrdi brisanje\",\"custom-mailbox-delete-selected-success\":\"Uspješno obrisano!\",\"custom-mailbox-delete-selected-error\":\"Greška prilikom brisanja!\",\"custom-actionLink-defaultConfirmationMessage\":\"Želite li sigurno izvršiti akciju?\",\"custom-actionLink-defaultConfirmationMessageTitle\":\"Potvrdite izmjene\",\"custom-planItems-removeFromFavoriteConfirmation\":\"Želite li sigurno ukloniti stavku plana iz liste nabava za koje ste zainteresirani?\",\"custom-historyOfSubmission-column-orderNo\":\"Redni broj\",\"custom-historyOfSubmission-column-label\":\"Oznaka\",\"custom-historyOfSubmission-column-timestamp\":\"Datum i vrijeme\",\"custom-documentControlModule-download-all\":\"Preuzmi sve\",\"custom-documentControlModule-secret\":\"Povjerljivo\",\"custom-documentControlModule-secret-elaboration\":\"Obrazloženje\",\"custom-catalogueGridModule-confirmDeleteImageMessage\":\"Molimo potvrdite brisanje izabrane slike\",\"custom-catalogueGridModule-confirmDeleteImageTitle\":\"Potvrdi brisanje\",\"custom-catalogueGridModule-validateAll\":\"Provjeri\",\"custom-catalogueGridModule-saveAndNextButton\":\"Sljedeća stavka\",\"custom-catalogueGridModule-saveButton\":\"Spremi\",\"custom-catalogueGridModule-cancelButton\":\"Odustani\",\"custom-catalogueGridModule-adjustDirtyButton\":\"Uskladite e-Katalog sa objavljenim formatom\",\"custom-catalogueGridModule-adjustDirty-confirmMessage\":\"Jeste li sigurni da želite uskladiti e-Katalog s objavljenim formatom?\",\"custom-catalogueGridModule-adjustDirty-confirmTitle\":\"Potvrda usklađivanja\",\"custom-importCatalogue-importSelectBoxLabel\":\"Vaš popunjeni e-Katalog iz kojeg želite importirati vrijednosti\",\"custom-importCatalogue-cancelButton\":\"Odustani\",\"custom-newCatalogue-newCatalogueNameTextBoxLabel\":\"Vaš naziv e-Kataloga koji popunjavate\",\"custom-newCatalogue-cancelButton\":\"Odustani\",\"custom-documentControl-history\":\"Povijest\",\"custom-documentControl-btnHistoryCompare\":\"Usporedi odabrano\",\"custom-downloading\":\"Preuzimanje...\",\"custom-dxPopup-dialogWindow\":\"Dijaloški prozor\"}","mobileAppDeviceInfo":null,"traceParentId":""});//]]>
+</script>
+</form>
+</body>
+</html>

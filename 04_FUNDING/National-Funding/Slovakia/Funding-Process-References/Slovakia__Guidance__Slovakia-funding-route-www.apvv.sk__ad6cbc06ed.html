@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- page_id: 1 -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="rating" content="general" />
+
+<meta name="description" content="APVV" />
+<meta name="keywords" content="APVV" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="author" content="APVV, https://www.apvv.sk" />
+<meta name="copyright" content="2008 - 2026 APVV" />
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+<!-- Bootstrap -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!-- Custom layout styles file -->
+<link href="/buxus/assets/css/style.css?v=41" rel="stylesheet">
+<link href="/buxus/assets/css/initialjswindowcss.css?v=41" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<title>SRDA | Main page</title>
+	<script type="text/javascript" src='https://www.apvv.sk/buxus/docs/jscripts/form_checks.js'></script>
+
+<script src="/buxus/assets/components/sticky-anything/jq-sticky-anything.min.js"></script>
+<script src="/buxus/assets/js/apvv.js?v=41"></script>
+
+<script src="/buxus/assets/components/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+<link rel="stylesheet" href="/buxus/assets/components/blueimp-gallery/css/blueimp-gallery.css">
+<!-- <link rel="stylesheet" href="/buxus/assets/components/blueimp-gallery/css/blueimp-gallery-controls.css"> -->
+
+<script src="https://www.apvv.sk/buxus/docs/jscripts/documentswindow.js?v=41"></script>
+
+<!-- Responsive Bootstrap Toolkit -->
+<script src="/buxus/assets/js/bootstrap-toolkit.min.js"></script>
+
+<script>
+	$(function() {
+		if (ResponsiveBootstrapToolkit.is(">md")) {
+			$('#navigation-bar').stickThis({zindex: 1000});
+			$(".navbar-link").on("click", function () {
+                $(this).closest('li').closest('ul').find('li>ul').removeClass('submenu-open').addClass('submenu-closed');
+			    $(this).parent('li').children('ul').removeClass('submenu-closed').addClass('submenu-open');
+                $(this).closest('.dropdown:not(.dropdown-submenu').addClass('has-submenu-open')
+				return false;
+			});
+		}
+    });
+
+</script>
+<style>
+    span.lesshour { font-weight: bold; color: #b80000; }
+    span.help-inline.error {
+        background:#fcf8e3;
+        border:1px solid #faebcc;
+        color:#a94442;
+        display: block;
+        padding:10px;
+        margin:5px 0px;
+    }
+.page-content h2 {
+	font-size: 24px;
+}
+
+#consentAllow {
+    line-height: 1.5em;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    padding: .4em .8em;
+    font-size: .9em;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    min-width: 140px;
+    color: whitesmoke;
+    background-color: #aa0518;
+}
+
+#consentAllow:hover {
+    background-color: #be061b;
+}
+
+#cookieConsent {
+    padding:  8px 25px 8px 25px;
+    position: fixed;
+    font-size: 16px;
+    line-height: 1.5em;
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 9999;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+#cookieConsentLink {
+    color: #96bee2;
+}
+@media print {
+	#cookieConsent {
+		display: none;
+	}
+}
+</style>
+
+</head>
+<body>
+<a href="#maincontent" class="skiptocontent">skip to main content</a>
+
+<!-- Page header -->
+<div class="container-fluid no-padding-container">
+    <div class="container">
+    <div class="row top-header">
+        <!-- logo -->
+        <div class="col-sm-3 col-xs-6">
+
+            <a class="header-logo" href="https://www.apvv.sk/">
+                <h1>                <img class="header-logo-image" src="/buxus/assets/images/apvv-en.png" alt="Logo - Slovak Research and Development Agency" title="Slovak Research and Development Agency">
+                </h1>            </a>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+                                <a class="header-logo" target="_blank" href="https://www.minedu.sk/about-the-ministry/">
+                        <img class="header-logo-image" src="/buxus/images/logo-minedu-en_28577_v2.png" alt="Logo - Ministry of Education, research, development and youth of the Slovak Republic" title="Ministry of Education, research, development and youth of the Slovak Republic">
+                    </a>
+                        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-5 header-right-col">
+            <div>
+                <div>
+                    <a href="https://www.apvv.sk/" class="header-references">Main page</a> | <a href="https://www.apvv.sk/mapa-stranok-1.html" class="header-references">Sitemap</a> | <a href="https://www.apvv.sk/contact/srda.html" class="header-references">Contacts</a>                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <div>
+                        <span class="header-references"><img src="/buxus/assets/images/phone.png" alt> Office: +421 2 572 04 501</span>
+                                            <span lang="sk"><a class="header-references" href="/?lang=sk"><img src="/buxus/assets/images/sk.png" alt> Slovenčina</a></span>
+                                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row top-header hidden-sm hidden-md hidden-lg">
+        <div class="col-sm-3">
+            <div id="header-search-xs">
+                <div id="search-xs">
+                    <form class="navbar-form header-search-box" role="search" id="search-form-xs" method="get" action="https://www.apvv.sk/search.html">
+                        <div class="input-group add-on">
+                            <input class="form-control" autocomplete="off" placeholder="Keywords" name="searchfield" id="search-text-xs" type="text" value="" aria-labelledby="search-text-xs-label" title="Search input field">
+<label  id="search-text-xs-label">Keywords</label>
+                            <input type="hidden" value="https://www.apvv.sk/vysledky-vyhladavania-quicksearch-1.html" />
+                            <div class="input-group-btn">
+                                <button class="btn header-search-button search-submit" type="submit" alt="Search submit button"><i class="glyphicon glyphicon-search"></i>Search                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    $('#search-text-xs').suggest({
+                        url: 'https://www.apvv.sk/vysledky-vyhladavania-quicksearch-1.html',
+                        suggest_parent: '#search-form-xs',
+                        suggest_parent: '#header-search-xs'
+                    });
+                </script>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+            <script>
+            		$(document).ready
+					(
+						function()
+						{
+
+
+							$('#bigsearch').submit
+							(
+								function()
+								{
+									var submit = true;
+									var searchfield = $('#bigsearch input[name="searchfield"]');
+
+									if (submit && searchfield.val() == '')
+									{
+										alert('Insert search term');
+										searchfield.focus();
+										submit = false;
+									}
+
+									return submit;
+								}
+							);
+
+							$('#search').submit
+							(
+								function()
+								{
+									var submit = true;
+									var searchfield = $('#search input[name="searchfield"]');
+
+									if (submit && searchfield.val() == '')
+									{
+										alert('Insert search term');
+										searchfield.focus();
+										submit = false;
+									}
+
+									return submit;
+								}
+							);
+						}
+					);
+            </script>
+    <!-- Navigation bar -->
+    <div id="navigation-bar" class="navbar navbar-default " role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <div data-toggle="collapse" data-target=".navbar-menubuilder">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder" aria-expanded="false" aria-controls="navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <span class="responsive-menu-button visible-xs">Menu</span>
+                </div>
+
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder" id="navbar-menubuilder">
+                <div style="margin: 0 auto;">
+                    
+<ul class="nav navbar-nav navbar-left">
+    <li class="no-border">
+        <a role="button" href="https://www.apvv.sk/" title="Start Page">
+            <div class="navbar-item-content">
+                <span class="glyphicon glyphicon-home"></span>
+            </div>
+        </a>
+    </li>
+
+                                
+            
+                            <li class="dropdown">
+                    <a role="button" data-toggle="dropdown" class="" data-target="#" href="#">
+                        <div class="navbar-item-content">
+                            <div class="navbar-item-text">Agency</div>
+                        </div>
+                        <div class="navbar-item-content">
+                            <div class="navbar-item-glyphicon glyphicon glyphicon-menu-down"></div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu">
+                                                    
+                                                                <li class="dropdown-item"><a href="https://www.apvv.sk/agency/o-nas.html">About Us</a></li>
+                                                                                
+                                                            <li class="dropdown-submenu dropdown">
+                                    <a class="navbar-link" href="https://www.apvv.sk/agency/structure-of-the-srda.html">Structure of the SRDA<span class="glyphicon glyphicon-menu-right hidden-xs"></span></a>
+
+                                    <ul class="dropdown-menu">
+                                                                                                                                                                                <li><a  href="https://www.apvv.sk/agency/structure-of-the-srda/agency-bureau.html">Agency Bureau</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/agency/structure-of-the-srda/presidium.html">Presidium</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/agency/structure-of-the-srda/agency-councils.html">Agency Councils</a></li>
+                                                                                                                        </ul>
+                                </li>
+                                                                                
+                                                            <li class="dropdown-submenu dropdown">
+                                    <a class="navbar-link" href="https://www.apvv.sk/agency/documents.html">Documents<span class="glyphicon glyphicon-menu-right hidden-xs"></span></a>
+
+                                    <ul class="dropdown-menu">
+                                                                                                                                                                                <li><a  href="https://www.apvv.sk/agency/documents/annual-reports.html">Annual Reports</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/agency/documents/publications-srda.html">Publications SRDA</a></li>
+                                                                                                                        </ul>
+                                </li>
+                                                                                
+                                                                <li class="dropdown-item"><a href="https://www.apvv.sk/agency/ochrana-osobnych-udajov-gdpr.html">Personal data protection (GDPR)</a></li>
+                                                                                
+                                                                <li class="dropdown-item"><a href="https://www.apvv.sk/agency/informacie-o-pouzivani-suborov-cookies.html">Use of Cookies</a></li>
+                                                                        </ul>
+                </li>
+            
+                                        
+            
+                            <li class="dropdown">
+                    <a role="button" data-toggle="dropdown" class="" data-target="#" href="#">
+                        <div class="navbar-item-content">
+                            <div class="navbar-item-text">Grant<br>schemes</div>
+                        </div>
+                        <div class="navbar-item-content">
+                            <div class="navbar-item-glyphicon glyphicon glyphicon-menu-down"></div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu">
+                                                    
+                                                            <li class="dropdown-submenu dropdown">
+                                    <a class="navbar-link" href="https://www.apvv.sk/grantbr-schemes/general-call.html">General calls<span class="glyphicon glyphicon-menu-right hidden-xs"></span></a>
+
+                                    <ul class="dropdown-menu">
+                                                                                                                                                                                <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-zv-2026.html">VV ZV 2026</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-avav-2026.html">VV AVaV 2026</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-2025.html">VV 2025</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-2024.html">VV 2024</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-mvp-2024.html">VV MVP 2024</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-2023.html">VV 2023</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-2022.html">VV 2022</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-2021.html">VV 2021</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/general-call/vv-2020.html">VV 2020</a></li>
+                                                                                                                        </ul>
+                                </li>
+                                                                                
+                                                            <li class="dropdown-submenu dropdown">
+                                    <a class="navbar-link" href="https://www.apvv.sk/grantbr-schemes/programy.html">Programs<span class="glyphicon glyphicon-menu-right hidden-xs"></span></a>
+
+                                    <ul class="dropdown-menu">
+                                                                                                                                                                                <li><a  href="https://www.apvv.sk/grantbr-schemes/programy/pp-msca-2022.html">PP MSCA 2022</a></li>
+                                                                                                                        </ul>
+                                </li>
+                                                                                
+                                                            <li class="dropdown-submenu dropdown">
+                                    <a class="navbar-link" href="https://www.apvv.sk/grantbr-schemes/bilateral-calls.html">Bilateral Calls<span class="glyphicon glyphicon-menu-right hidden-xs"></span></a>
+
+                                    <ul class="dropdown-menu">
+                                                                                                                                                                                <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-taiwan-2026.html">Slovakia – Taiwan 2026</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-bulgaria-2025.html">Slovakia – Bulgaria 2025</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-ukraine-2025.html">Slovakia - Ukraine 2025</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-montenegro-2025.html">Slovakia – Montenegro 2025</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-poland-2025.html">Slovakia – Poland 2025</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-serbia-2025.html">Slovakia – Serbia 2025</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-france-2024.html">Slovakia – France 2024</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-hungary-2024.html">Slovakia – Hungary 2024</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-taiwan-2024.html">Slovakia – Taiwan 2024</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-austria-2023.html">Slovakia – Austria 2023</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-bulgaria-2023.html">Slovakia – Bulgaria 2023</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-china-2023.html">Slovakia – China 2023</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-serbia-2023.html">Slovakia – Serbia 2023</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-poland-2023.html">Slovakia – Poland 2023</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-france-2022.html">Slovakia – France 2022</a></li>
+                                                                                                                        </ul>
+                                </li>
+                                                                                
+                                                            <li class="dropdown-submenu dropdown">
+                                    <a class="navbar-link" href="https://www.apvv.sk/grantbr-schemes/research-bilateral-calls.html">Research Bilateral Calls<span class="glyphicon glyphicon-menu-right hidden-xs"></span></a>
+
+                                    <ul class="dropdown-menu">
+                                                                                                                                                                                <li><a  href="https://www.apvv.sk/grantbr-schemes/research-bilateral-calls/slovakia-austria-rd-2026.html">Slovakia – Austria RD 2026</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/research-bilateral-calls/slovensko-izrael-2026.html">Slovensko – Izrael 2026</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/research-bilateral-calls/slovakia-taiwan-rd-2024.html">Slovakia – Taiwan RD 2024</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/research-bilateral-calls/slovakia-israel-rd-2023.html">Slovakia – Israel RD 2023</a></li>
+                                                                                                                        </ul>
+                                </li>
+                                                                                
+                                                            <li class="dropdown-submenu dropdown">
+                                    <a class="navbar-link" href="https://www.apvv.sk/grantbr-schemes/multilateral-calls.html">Multilateral Calls<span class="glyphicon glyphicon-menu-right hidden-xs"></span></a>
+
+                                    <ul class="dropdown-menu">
+                                                                                                                                                                                <li><a  href="https://www.apvv.sk/grantbr-schemes/multilateral-calls/ds-fr-2026.html">DS-FR 2026</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/multilateral-calls/ds-fr-2024.html">DS-FR 2024</a></li>
+                                                                                                                                                                                                                            <li><a  href="https://www.apvv.sk/grantbr-schemes/multilateral-calls/ds-fr-2022.html">DS-FR 2022</a></li>
+                                                                                                                        </ul>
+                                </li>
+                                                                        </ul>
+                </li>
+            
+                                                                                
+            
+                            <li>
+                    <a role="button" href="https://www.apvv.sk/expert-registration.html">
+                        <div class="navbar-item-content">
+                            <div>Expert<br />Registration</div>
+                        </div>
+                    </a>
+                </li>
+            
+                                                            
+            
+                            <li class="dropdown">
+                    <a role="button" data-toggle="dropdown" class="" data-target="#" href="#">
+                        <div class="navbar-item-content">
+                            <div class="navbar-item-text">Contact</div>
+                        </div>
+                        <div class="navbar-item-content">
+                            <div class="navbar-item-glyphicon glyphicon glyphicon-menu-down"></div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu">
+                                                    
+                                                                <li class="dropdown-item"><a href="https://www.apvv.sk/contact/srda.html">Contact Details</a></li>
+                                                                                
+                                                                <li class="dropdown-item"><a href="https://www.apvv.sk/contact/contact-form.html">Contact Form</a></li>
+                                                                        </ul>
+                </li>
+            
+            </ul>
+
+
+
+
+<div class="nav navbar-nav navbar-right hidden-xs">
+    <div id="header-search">
+        <div id="search">
+            <form class="navbar-form header-search-box" role="search" id="search-form" method="get" action="https://www.apvv.sk/search.html" style="position:relative;">
+                <div class="input-group add-on">
+                    <label id="search-text-label">Keywords</label>
+<input class="form-control" autocomplete="off" placeholder="Keywords" name="searchfield" id="search-text" type="text" value="" title="Search input field" aria-labelledby="search-text-label" />
+                    <input type="hidden" value="https://www.apvv.sk/vysledky-vyhladavania-quicksearch-1.html" />
+                    <div class="input-group-btn">
+<button class="btn header-search-button search-submit" type="submit" id="search-button" alt="Search submit button"><i class="glyphicon glyphicon-search"></i> Search</button> <label for="search-button">Search</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            $('#search-text').suggest({
+                url: 'https://www.apvv.sk/vysledky-vyhladavania-quicksearch-1.html',
+                suggest_parent: '#search-form',
+                token:'Ps60iqEvTLhUoMVPUOzRPIJusFqTV8ynNWbndocr'
+            });
+        </script>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" tabindex="0">
+                                                    <li data-target="#myCarousel" data-slide-to="0" class="active" aria-current="true" tabindex="0" aria-label="Go to 1"></li>
+                                                        <li data-target="#myCarousel" data-slide-to="1" class=""  tabindex="0" aria-label="Go to 2"></li>
+                                                        <li data-target="#myCarousel" data-slide-to="2" class=""  tabindex="0" aria-label="Go to 3"></li>
+                                                        <li data-target="#myCarousel" data-slide-to="3" class=""  tabindex="0" aria-label="Go to 4"></li>
+                                                    <li class="carousel-playpause">
+                    <span id="pauseButton" class="glyphicon glyphicon-pause" tabindex="0" aria-label="Pozastaviť/Spustiť"></span>
+                </li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                                                                        <div class="item active" aria-label="1 / 4" aria-current="true">
+                        <img class="banner-lg" src="/buxus/images/banner/banner-15_en.jpg" alt="" title="We support those who improve the world">
+                        <img class="banner-xs" src="/buxus/images/cache/banner_xs2/banner/banner-15_en.jpg" alt=""  title="We support those who improve the world">
+
+                                                                                        
+                                            </div>
+                                                                            <div class="item " aria-label="2 / 4" aria-hidden="true">
+                        <img class="banner-lg" src="/buxus/images/banner/banner-16_en.jpg" alt="" title="We support those who improve the world">
+                        <img class="banner-xs" src="/buxus/images/cache/banner_xs2/banner/banner-16_en.jpg" alt=""  title="We support those who improve the world">
+
+                                                                                        
+                                            </div>
+                                                                            <div class="item " aria-label="3 / 4" aria-hidden="true">
+                        <img class="banner-lg" src="/buxus/images/banner/banner-17_en.jpg" alt="" title="We support those who improve the world">
+                        <img class="banner-xs" src="/buxus/images/cache/banner_xs2/banner/banner-17_en.jpg" alt=""  title="We support those who improve the world">
+
+                                                                                        
+                                            </div>
+                                                                            <div class="item " aria-label="4 / 4" aria-hidden="true">
+                        <img class="banner-lg" src="/buxus/images/banner/banner-18_en.jpg" alt="" title="We support those who improve the world">
+                        <img class="banner-xs" src="/buxus/images/cache/banner_xs2/banner/banner-18_en.jpg" alt=""  title="We support those who improve the world">
+
+                                                                                        
+                                            </div>
+                                                </div>
+        </div>
+            
+    
+    <!-- Page content  -  two column layout -->
+    <div class="gray-background">
+        <div class="container content">
+            <div class="col-md-7">
+                
+        
+                        
+        
+                                        
+        
+                    <div class="about-agenture content-item">
+                    <div class="left-col-content-item-header">
+                        <h2 class="left-column-header">About SRDA</h2>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                                                            <div class="col-md-12">
+                                    <div class="about-agenture-description page-content">
+                                        <p>The Slovak Research and Development Agency was established in 2005 pursuant to Act No.172/2005 Coll., on State Support Administration of Research and Development and to Act No. 575/2001 Coll. on Government operations and Central State Administration Structure as amended.</p>
+<p>The Slovak Research and Development Agency is the only national grant agency established in order to support research and development in Slovakia by granting financial means from the State Budget to implement the following projects:</p>
+<ul>
+<li>research and development in particular science and technology fields</li>
+<li>within the Agency‘s programmes</li>
+<li>within bilateral or multilateral contracts on scientific and technological cooperation and projects within the Slovak participation in international programmes of research and development and community programmes projects as well as initiatives of European Union in research and development including preparation costs</li>
+</ul>
+<p>The Agency is a state-budget institution linked to the State Budget of the Slovak Republic through the budgetary chapter of the Ministry of Education, Science, Research and Sports of the Slovak Republic and fulfils the Programme Declaration of the Slovak Government whose core priority is formation of knowledge society in Slovakia.</p>
+<p>Agency’s mission:</p>
+<ul>
+<li>to promote high-end fundamental and applied research and development of all science and technology fields including interdisciplinary and multidisciplinary research performed by university sector, state sector of research and development, commercial and non-profit sector of research and development as well as natural bodies research and development in terms of Trade Licencing Act.</li>
+<li>to meet selected tasks and goals in accordance with a long-term intention of state scientific and technical policy via programmes approved by the Government as per proposal of the Ministry of Education.</li>
+<li>to stimulate participation of research and development entities from the Slovak Republic in international and European programmes and initiatives as well as the support of bilateral and multilateral cooperation in the field of research and technology.</li>
+</ul>
+<h4><span style="color: #106bb1;"><strong>General Calls</strong></span></h4>
+<p>Support for research and development projects in particular fields&nbsp;of science and technology (hereinafter R &amp; D) pursuant to § 6 of the Act no. 172/2005 Coll.</p>
+<p><span style="color: #333333;">Target group</span><br />Applicants of individual projects in basic research and applied research and development.</p>
+<p><span style="color: #333333;">Goals and objectives</span><br />Support of research and development in a "bottom-up" system - it is an open call for proposals in which research and development teams of any&nbsp;field may apply for funding on a project grounds.</p>
+<h4><span style="color: #106bb1;"><strong>Programmes</strong></span></h4>
+<p>Support of projects&nbsp;within the Agency’s programmes.</p>
+<p><span style="color: #333333;">Target group</span><br />Applicants of individual projects in fields focused on research and development support under the government-approved programmes.</p>
+<p><span style="color: #333333;">Goals and objectives</span><br /> Support of research and development in order to attain the goals and objectives selected in accordance with a long-term plan of state science and technology policy being implemented through calls that reflect the approved programmes.</p>
+<h4><span style="color: #106bb1;"><strong>International cooperation</strong></span></h4>
+<p>Projects support of international scientific and technological cooperation solved in the framework of international programs / organizations / contracts co-financed by funding agencies.</p>
+<p><span style="color: #333333;">Target group</span><br /> Applicants of individual projects in the field of research and development support.</p>
+<p><span style="color: #333333;">Goals and objectives</span><br /> Support of research and development implemented in the scope and under the terms defined by the relevant international contract, program or initiative.</p>
+<h5><span style="color: #106bb1;"><strong>Bilateral Calls</strong></span></h5>
+<p>Support of researchers’ mobility on the grounds of international contracts on scientific and technological co-operation.</p>
+<p>Currently the Slovak Republic has signed international contracts on scientific and technological co-operation with the following countries: Austria, Bulgaria, the Czech Republic, China, Egypt, France, Germany, Greece, Hungary, India, Israel, Italy, Latvia, Poland, Portugal, the Republic of South Africa, the Russian Federation, Serbia, Slovenia, South Korea, Spain, Taiwan, Ukraine and United States of America.</p>
+<h5><span style="color: #106bb1;"><strong>Multilateral cooperation</strong></span></h5>
+<p>Recently the&nbsp;support of research and development is conducted by complementary financing FP7 EU through the call “<em>Dunajská stratégia“</em> (translated as: The Strategy for Danube Region).</p>                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="col-md-5 test">
+                
+        
+    
+            <div class="fast-navigation content-item-right-col">
+            <div class="right-col-content-item-header">
+                <a class="fast-reference-button" href="#" aria-expanded="true" aria-controls="fast-navigation-menu" role="button" tabindex="0">
+                    <h3 class="right-col-content-item-header-title" style="display: inline">Quick navigation</h3>
+                    <span class="glyphicon glyphicon-chevron-down down-arrow"></span>
+                </a>
+            </div>
+            
+            <div class="fast-navigation-menu" id="fast-navigation-menu" data-url="http%3A%2F%2Fwww.apvv.sk%2F%3Flang%3Den">
+                                    <div class="fast-navigation-items" id="fast-navigation-items6addc8cd7f7d25.73770318">
+                                                    <p>Create custom menu</p>
+                <script>
+            $('.fast-navigation-menu .delete-fast-reference').each(function() {
+                $(this).attr('href', $(this).attr('href') + '&from_page=' + $('.fast-navigation-menu').data('url'));
+            });
+        </script>
+
+                
+        <p class="quickaftertext">More information about <a href="https://www.apvv.sk/quick-navigation.html">Quick Navigation</a>.</p>
+                                            </div>
+                            </div>
+        </div>
+    
+        
+    
+                        <div class="open-challenges content-item-right-col">
+                <div class="right-col-content-item-header">
+                    <h3 class="right-col-content-item-header-title">Open calls</h3>
+                </div>
+                                    <div class="right-col-item-content">Open Calls </div>
+                    <div class="challenges">
+                                                                                <div class="challenge">
+                                <div class="challenge-image">
+                                                                                                                        <img src="/buxus/images/call_logos/vseobecne/VV2026-ZV-logo-big.png" alt="minilogo" />
+                                                                                                            </div>
+                                <div class="challenge-content">
+                                    <div class="challenge-header">
+                                            <a href="https://www.apvv.sk/grantbr-schemes/general-call/vv-zv-2026.html">VV ZV 2026</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="challenge-date">Deadline: 8. 12. 2026</div>
+                                    <div class="challenge-date">Remaining time: 44 days, 1 hour</div>
+                                    <div class="challenge-date"><a href="https://www.apvv.sk/contact/contact-form.html">Contact Form</a></div>
+                                </div>
+                            </div>
+                                                                                <div class="challenge">
+                                <div class="challenge-image">
+                                                                                                                        <img src="/buxus/images/call_logos/vseobecne/VV2026-AVaV-logo-big.png" alt="minilogo" />
+                                                                                                            </div>
+                                <div class="challenge-content">
+                                    <div class="challenge-header">
+                                            <a href="https://www.apvv.sk/grantbr-schemes/general-call/vv-avav-2026.html">VV AVaV 2026</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="challenge-date">Deadline: 8. 12. 2026</div>
+                                    <div class="challenge-date">Remaining time: 44 days, 1 hour</div>
+                                    <div class="challenge-date"><a href="https://www.apvv.sk/contact/contact-form.html">Contact Form</a></div>
+                                </div>
+                            </div>
+                                                                                <div class="challenge">
+                                <div class="challenge-image">
+                                                                                                                        <img src="/buxus/images/call_logos/bilateralne/logo-big-sk-tw.png" alt="minilogo" />
+                                                                                                            </div>
+                                <div class="challenge-content">
+                                    <div class="challenge-header">
+                                            <a href="https://www.apvv.sk/grantbr-schemes/bilateral-calls/slovakia-taiwan-2026.html">Slovakia – Taiwan 2026</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="challenge-date">Deadline: 1. 12. 2026</div>
+                                    <div class="challenge-date">Remaining time: 37 days, 1 hour</div>
+                                    <div class="challenge-date"><a href="https://www.apvv.sk/contact/contact-form.html">Contact Form</a></div>
+                                </div>
+                            </div>
+                                            </div>
+                            </div>
+    
+        
+            
+            
+            
+            
+    
+            <div class="publishing-information content-item content-item-right-col">
+            <div class="right-col-content-item-header">
+                                    <h3 class="right-col-content-item-header-title">Excellence in Science 2025</h3>
+                            </div>
+            <div class="publishing-information">
+                                    <div class="content-item-subtitle ">
+                                                <div class="publishing-information-item">
+                            <div class="content-item-text"><p><a href="/buxus/docs/agentura/publikacie/publikacia-2025-en-A4.pdf" target="_blank" title="Excellence in Science 2025" rel="noopener"><img width="457" height="323" alt="Publication - Excellence in Science 2025" src="/buxus/images/publikacia-2025-obalka-en.jpg" caption="false" /></a></p></div>
+                        </div>
+                    </div>
+                
+                            </div>
+        </div>
+    
+        
+    
+            <div class="publishing-information content-item content-item-right-col">
+            <div class="right-col-content-item-header">
+                                    <h3 class="right-col-content-item-header-title">Annual report 2025</h3>
+                            </div>
+            <div class="publishing-information">
+                                    <div class="content-item-subtitle ">
+                                                <div class="publishing-information-item">
+                            <div class="content-item-text"><p><a href="/buxus/docs/agentura/vyrocne-spravy/apvv-vs-2025-en.pdf" title="Annual report 2025"><img width="278" height="278" style="margin-right: auto; margin-left: auto; display: block;" src="/buxus/images/vs-2025-obalka-en.jpg" alt="Annual report 2025" caption="false" /></a></p></div>
+                        </div>
+                    </div>
+                
+                            </div>
+        </div>
+    
+
+            </div>
+        </div>
+
+
+                <!--Images above footer  -->
+        <div class="images-container">
+            <div class="images container">
+                <div class="row">
+                                                                                        <div class="col-md-3  footer-image ">
+                                                                                        <a href="http://www.minedu.sk/about-the-ministry/" target="_blank">
+                                    <img src="/buxus/images/logo-minedu-en_28577_v2.png" alt="Logo - Ministry of Education, research, development and youth of the Slovak Republic" title="Ministry of Education, research, development and youth of the Slovak Republic">
+                                </a>
+                            
+                        </div>
+                                                                                            <div class="col-md-3  footer-image separated">
+                                                                                        <a href="http://www.scienceeurope.org/" target="_blank">
+                                    <img src="/buxus/images/SE_Logo_Horizontal.png" alt="Logo - Science Europe" title="Science Europe">
+                                </a>
+                            
+                        </div>
+                                                                                            <div class="col-md-3  footer-image separated">
+                                                                                        <a href="https://www.granted-project.eu/" target="_blank">
+                                    <img src="/buxus/images/image_11457_52_v2.png" alt="Logo - Grant Allocation Disparities from a Gender Perspective" title="Grant Allocation Disparities from a Gender Perspective">
+                                </a>
+                            
+                        </div>
+                                                                                            <div class="col-md-3  footer-image separated">
+                                                                                        <a href="http://eai.eu" target="_blank">
+                                    <img src="/buxus/images/image_9686_8_v2.png" alt="Logo - European Alliance for Innovation" title="European Alliance for Innovation">
+                                </a>
+                            
+                        </div>
+                                                            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+<!-- Footer of page -->
+<div class="footer en">
+    <div class="container">
+        <div class="row">
+                                                                        
+                <div class="col-md-3 ">
+                                            <h2 class="footer-header">Address</h2>
+                        
+                                            <div class="footer-item">
+                                                        <div style="">
+                                <div>Mýtna 23</div>
+<div>P.O.BOX 839 04</div>
+<div>839 04 Bratislava 32</div>
+<div>Slovakia</div>                            </div>
+                        </div>
+                    
+                                            <ul class="fast-references-ul">
+                                                    </ul>
+                    
+                                    </div>
+                                                            
+                <div class="col-md-3 ">
+                                            <h2 class="footer-header">Contact</h2>
+                        
+                    
+                                            <ul class="fast-references-ul">
+                                                    </ul>
+                    
+                                            <table>
+                                                                                                                                                            <tr>
+                                    <td>
+                                                                                    <img src="/buxus/images/cache/right_block/image_10519_8_v2.png" alt="">
+                                                                            </td>
+                                    <td>
+                                                                                <p>+421 2 571 04 501</p>                                    </td>
+                                </tr>
+                                                                                                                                                            <tr>
+                                    <td>
+                                                                                    <img src="/buxus/images/cache/right_block/image_10520_8_v2.png" alt="">
+                                                                            </td>
+                                    <td>
+                                                                                <p><a href="mailto:agentura@apvv.sk">agentura@apvv.sk</a></p>                                    </td>
+                                </tr>
+                                                                                                                                                            <tr>
+                                    <td>
+                                                                                    <img src="/buxus/images/cache/right_block/image_10521_8_v2.png" alt="">
+                                                                            </td>
+                                    <td>
+                                                                                <p><a href=https://www.apvv.sk/contact/contact-form.html>Contact form</a></p>                                    </td>
+                                </tr>
+                                                    </table>
+                                    </div>
+                                                            
+                <div class="col-md-3 ">
+                                            <h2 class="footer-header">Links</h2>
+                        
+                    
+                                            <ul class="fast-references-ul">
+                                                                                            <li><a href="https://www.apvv.sk/contact/srda.html">Contact Details</a></li>
+                                                                                            <li><a href="https://www.apvv.sk/agency/ochrana-osobnych-udajov-gdpr.html">Personal data protection (GDPR)</a></li>
+                                                                                            <li><a href="https://www.apvv.sk/agency/informacie-o-pouzivani-suborov-cookies.html">Use of Cookies</a></li>
+                                                                                            <li><a href="/vyhlasenie-o-pristupnosti.html">Accessibility Statement</a></li>
+                                                                                            <li><a href="/vyhlasenie-o-pristupnosti.html#contentEditor">Content Editor and Technical Operator</a></li>
+                                                    </ul>
+                    
+                                    </div>
+                    </div>
+    </div>
+
+    <hr class="footer-separation-line">
+    <div class="footer-footer">
+        <span>&copy; 2026  Slovak Research and Development Agency</span>
+        <a class="to-top" href="#top"><i class="glyphicon glyphicon-menu-up"></i>Up</a>
+    </div>
+</div>
+<script type="text/javascript">
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+	if (getCookie("cookieConsent") == 'allow') {
+	} else {
+		var myDiv = document.createElement("div");
+		myDiv.setAttribute("id", "cookieConsent");
+			myDiv.innerHTML = '<span style="flex: 1;">We use only essential cookies to make this site work. More information at <a href="/agentura/informacie-o-pouzivani-suborov-cookies.html?lang=en" id="cookieConsentLink">Use of Cookies</a> page.</span> <div><a id="consentAllow" role="button" tabindex="0">Got it</a></div>';
+	        document.body.insertBefore(myDiv, document.body.firstChild);
+		document.getElementById("consentAllow").addEventListener("click", clickedApproval);
+	}
+}
+
+function clickedApproval() {
+	setCookie("cookieConsent", 'allow', 180);
+	document.getElementById("cookieConsent").remove();
+}
+checkCookie();
+</script>
+<!-- print_page_header_start <sys_print_header><h1>Agentúra na podporu výskumu a vývoja</h1>
+<div>http://www.apvv.sk/?lang=en</div>
+<hr /></sys_print_header> print_page_header_end --><!--<sys_print_footer>
+				<p>
+					<hr />
+					Tlačená verzia stránky: https://www.apvv.sk/<br />
+					www.apvv.sk &copy; 2026
+				</p></sys_print_footer>//-->
+<form action="/buxus/project_scripts/print_page/print_page.php" method="post" style="height: 0px; display: none;" id="print_page">
+	<div>
+	<input type="hidden" name="CONTAINER" value="PRINT_THIS" />
+	<input type="hidden" name="HEAD" value="0" />
+	<input type="hidden" name="AUTO_BACK" value="0" />
+	<input type="hidden" name="COLORS" value="1" />
+	<input type="hidden" name="FOOTERS" value="1" />
+	<input type="hidden" name="TITLE_FILE_NAME" value="1" />
+	<input type="hidden" name="CHARSET" value="1" />
+	<input type="hidden" name="CSS" value="https://www.apvv.sk/buxus/docs/design/print_style.css" />
+	<input type="hidden" name="FILE" value="www.apvv.sk/?lang=en" />
+	<input type="hidden" name="PRINT_KEY" value="70707491dcabf8618f4f6e8a0c5a7b0915bcb020" />
+	</div>
+</form>
+<script type="text/javascript">
+	<!--
+		function apvv_print_page()
+		{
+			var the_form = document.getElementById('print_page');
+			the_form.setAttribute('target', '_blank');
+			the_form.submit();
+		}
+	//-->
+</script></div>
+
+
+<script type="text/javascript"  src="/buxus/assets/components/requirejs/require.js?v=752714f2d1b492dbd6f82b7cde248fde"></script>
+<script type="text/javascript">
+require.config({
+baseUrl: "/buxus/assets/build/js"
+,urlArgs: "v=86d2e8fae5f0266ed9ad4f680d773094",waitSeconds:30
+});
+</script></body>
+</html>
+

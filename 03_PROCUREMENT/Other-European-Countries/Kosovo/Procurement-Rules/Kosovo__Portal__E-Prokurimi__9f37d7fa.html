@@ -1,0 +1,854 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	E-Prokurimi
+</title><link href="favicon.ico" rel="SHORTCUT ICON" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" /><script type="text/javascript"> var Putanja ="/HOME"; var PutanjaIzbornik = "https://e-prokurimi.rks-gov.net/spin_prod/application/ipn/CMSConnect/MenuForm.aspx"; var PutanjaPrijavaOdjava = "https://e-prokurimi.rks-gov.net/spin_prod/application/ipn/CMSConnect/UserForm.aspx"; var PutanjaBamIzbornik = "http://EProkurimi-DEMO/SPIN_DEMO/application/ipn/BAM/LeftBamFrm.aspx"; var PutanjaChangeLanguage = "https://e-prokurimi.rks-gov.net/spin_prod/application/ipn/CMSConnect/ChangeLanguageFrm.aspx"; var SpinRootUrl = "https://e-prokurimi.rks-gov.net/spin_prod/application/ipn/"; </script>
+   
+
+        <!-- STYLESHEETS -->
+        <!--[if lt IE 9]>
+            <script src="/HOME/js/flot/excanvas.min.js"></script>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+
+
+        
+        
+        
+
+
+
+        
+        
+        
+        <!-- DATE RANGE PICKER -->
+        
+        <!-- UNIFORM -->
+        
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
+        
+        <!-- BOOTSTRAP THEME OVERRIDES ( CUSTOM STYLES ) -->
+        
+
+        <!-- JAVASCRIPTS -->
+        <!-- JQUERY -->
+        
+        <!-- JQUERY UI-->
+        
+        
+    
+<link href="/HOME/style/bundle?v=5yLqbRH1ho6pq5MQgKHwvRV_-rHVC5JbGDJaOekSCj41" rel="stylesheet"/>
+<link id="ctl00_TemplateCss" rel="Stylesheet" type="text/css" />
+    <style>
+        .linkZaSkrivanje {
+            cursor: pointer;
+        }
+    </style>
+    <script src="/HOME/scripts/bundles?v=dDM_aOhcETvKqmUYSmiHjV2s8FYfaemgg_aVvidi3R81"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V6SYF7KHL4"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V6SYF7KHL4');
+</script>
+
+
+<script>
+
+ $(document).ready( function() {
+    $( "#accordion" ).accordion({
+        collapsible: true,
+        heightStyle: "content",
+        active: false
+    });
+ });
+
+ 
+
+        $(document).ready(function () {
+            $(".odgovor").hide();
+            $(".linkZaSkrivanje").click(function () {
+                $(this).parent().find(".odgovor").toggle();
+            });
+            $("#hide").click(function () {
+                $(".odgovor").hide();
+                return false;
+            });
+            $("#show").click(function () {
+                $(".odgovor").show();
+                return false;
+            });
+        });
+
+
+    </script>
+
+
+</head>
+<body class="body">
+    
+    <form name="aspnetForm" method="post" action="/HOME/ClanakItemNew.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIxMjMzMTQ1MjIPFgIeCGNsYW5ha0lkAscCFgJmD2QWBgIBD2QWAgIFDxYCHgRUZXh0BZYLPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPiB2YXIgUHV0YW5qYSA9Ii9IT01FIjsgdmFyIFB1dGFuamFJemJvcm5payA9ICJodHRwczovL2UtcHJva3VyaW1pLnJrcy1nb3YubmV0L3NwaW5fcHJvZC9hcHBsaWNhdGlvbi9pcG4vQ01TQ29ubmVjdC9NZW51Rm9ybS5hc3B4IjsgdmFyIFB1dGFuamFQcmlqYXZhT2RqYXZhID0gImh0dHBzOi8vZS1wcm9rdXJpbWkucmtzLWdvdi5uZXQvc3Bpbl9wcm9kL2FwcGxpY2F0aW9uL2lwbi9DTVNDb25uZWN0L1VzZXJGb3JtLmFzcHgiOyB2YXIgUHV0YW5qYUJhbUl6Ym9ybmlrID0gImh0dHA6Ly9FUHJva3VyaW1pLURFTU8vU1BJTl9ERU1PL2FwcGxpY2F0aW9uL2lwbi9CQU0vTGVmdEJhbUZybS5hc3B4IjsgdmFyIFB1dGFuamFDaGFuZ2VMYW5ndWFnZSA9ICJodHRwczovL2UtcHJva3VyaW1pLnJrcy1nb3YubmV0L3NwaW5fcHJvZC9hcHBsaWNhdGlvbi9pcG4vQ01TQ29ubmVjdC9DaGFuZ2VMYW5ndWFnZUZybS5hc3B4IjsgdmFyIFNwaW5Sb290VXJsID0gImh0dHBzOi8vZS1wcm9rdXJpbWkucmtzLWdvdi5uZXQvc3Bpbl9wcm9kL2FwcGxpY2F0aW9uL2lwbi8iOyA8L3NjcmlwdD4NCiAgIA0KDQogICAgICAgIDwhLS0gU1RZTEVTSEVFVFMgLS0+DQogICAgICAgIDwhLS1baWYgbHQgSUUgOV0+DQogICAgICAgICAgICA8c2NyaXB0IHNyYz0iL0hPTUUvanMvZmxvdC9leGNhbnZhcy5taW4uanMiPjwvc2NyaXB0Pg0KICAgICAgICAgICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vaHRtbDVzaGl2Lmdvb2dsZWNvZGUuY29tL3N2bi90cnVuay9odG1sNS5qcyI+PC9zY3JpcHQ+DQogICAgICAgICAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jc3MzLW1lZGlhcXVlcmllcy1qcy5nb29nbGVjb2RlLmNvbS9zdm4vdHJ1bmsvY3NzMy1tZWRpYXF1ZXJpZXMuanMiPjwvc2NyaXB0PjwhW2VuZGlmXS0tPg0KDQoNCiAgICAgICAgDQogICAgICAgIA0KICAgICAgICANCg0KDQoNCiAgICAgICAgDQogICAgICAgIA0KICAgICAgICANCiAgICAgICAgPCEtLSBEQVRFIFJBTkdFIFBJQ0tFUiAtLT4NCiAgICAgICAgDQogICAgICAgIDwhLS0gVU5JRk9STSAtLT4NCiAgICAgICAgDQogICAgICAgIDwhLS0gRk9OVFMgLS0+DQogICAgICAgIDxsaW5rIGhyZWY9J2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1PcGVuK1NhbnM6MzAwLDQwMCw2MDAsNzAwJyByZWw9J3N0eWxlc2hlZXQnIHR5cGU9J3RleHQvY3NzJyAvPg0KICAgICAgICANCiAgICAgICAgPCEtLSBCT09UU1RSQVAgVEhFTUUgT1ZFUlJJREVTICggQ1VTVE9NIFNUWUxFUyApIC0tPg0KICAgICAgICANCg0KICAgICAgICA8IS0tIEpBVkFTQ1JJUFRTIC0tPg0KICAgICAgICA8IS0tIEpRVUVSWSAtLT4NCiAgICAgICAgDQogICAgICAgIDwhLS0gSlFVRVJZIFVJLS0+DQogICAgICAgIA0KICAgICAgICANCiAgICBkAgMPFgIeB1Zpc2libGVoFgJmDxYCHwEFyAQ8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+IHZhciBQdXRhbmphID0iL0hPTUUiOyB2YXIgUHV0YW5qYUl6Ym9ybmlrID0gImh0dHBzOi8vZS1wcm9rdXJpbWkucmtzLWdvdi5uZXQvc3Bpbl9wcm9kL2FwcGxpY2F0aW9uL2lwbi9DTVNDb25uZWN0L01lbnVGb3JtLmFzcHgiOyB2YXIgUHV0YW5qYVByaWphdmFPZGphdmEgPSAiaHR0cHM6Ly9lLXByb2t1cmltaS5ya3MtZ292Lm5ldC9zcGluX3Byb2QvYXBwbGljYXRpb24vaXBuL0NNU0Nvbm5lY3QvVXNlckZvcm0uYXNweCI7IHZhciBQdXRhbmphQmFtSXpib3JuaWsgPSAiaHR0cDovL0VQcm9rdXJpbWktREVNTy9TUElOX0RFTU8vYXBwbGljYXRpb24vaXBuL0JBTS9MZWZ0QmFtRnJtLmFzcHgiOyB2YXIgUHV0YW5qYUNoYW5nZUxhbmd1YWdlID0gImh0dHBzOi8vZS1wcm9rdXJpbWkucmtzLWdvdi5uZXQvc3Bpbl9wcm9kL2FwcGxpY2F0aW9uL2lwbi9DTVNDb25uZWN0L0NoYW5nZUxhbmd1YWdlRnJtLmFzcHgiOyB2YXIgU3BpblJvb3RVcmwgPSAiaHR0cHM6Ly9lLXByb2t1cmltaS5ya3MtZ292Lm5ldC9zcGluX3Byb2QvYXBwbGljYXRpb24vaXBuLyI7IDwvc2NyaXB0PmQCBQ8WAh4GYWN0aW9uBRgvSE9NRS9DbGFuYWtJdGVtTmV3LmFzcHgWBAIDD2QWCAIHDxYCHwJoZAIJDxYCHglpbm5lcmh0bWwFfTxzcGFuIHN0eWxlPSJkaXNwbGF5OiBub25lOyBjb2xvcjogI2NkMzMzMzsgZm9udC1mYW1pbHk6IFRpbWVzIE5ldyBSb21hbjsgZm9udC1zaXplOiB4eC1sYXJnZTsiPkUtUHJva3VyaW1pPC9zcGFuPkUtUHJva3VyaW1pZAILDxYCHwEFpGA8c3R5bGU+PCEtLQpsaSB7CiAgY29sb3I6IzVlODdiMAp9CgouZ3JhZCB7CiAgICBiYWNrZ3JvdW5kOiAjRTZFNkZBOyAvKiBGb3IgYnJvd3NlcnMgdGhhdCBkbyBub3Qgc3VwcG9ydCBncmFkaWVudHMgKi8KICAgIGJhY2tncm91bmQ6IC13ZWJraXQtbGluZWFyLWdyYWRpZW50KCNmNGY0ZjQsICNFOEU4RTggKTsgLyogRm9yIFNhZmFyaSA1LjEgdG8gNi4wICovCiAgICBiYWNrZ3JvdW5kOiAtby1saW5lYXItZ3JhZGllbnQoI2Y0ZjRmNCwgI0U4RThFOCApOyAvKiBGb3IgT3BlcmEgMTEuMSB0byAxMi4wICovCiAgICBiYWNrZ3JvdW5kOiAtbW96LWxpbmVhci1ncmFkaWVudCgjZjRmNGY0LCAjRThFOEU4ICk7IC8qIEZvciBGaXJlZm94IDMuNiB0byAxNSAqLwogICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KCNmNGY0ZjQsICNFOEU4RTggKTsgLyogU3RhbmRhcmQgc3ludGF4ICovCn0KLnZpamVzdGkgdGQge3RleHQtYWxpZ246IGp1c3RpZnk7CiAgICB0ZXh0LWp1c3RpZnk6IGthc2hpZGE7fQotLT48L3N0eWxlPgo8ZGl2IGNsYXNzPSJjb2wtbWQtMTIiPjxiciAvPjxiciAvPgo8ZGl2IGNsYXNzPSJyb3ciPgo8ZGl2IGNsYXNzPSJjb2wtbWQtOCBib3gtY29udGFpbmVyIHVpLXNvcnRhYmxlIj4KPGRpdiBjbGFzcz0iYm94Ij4KPGRpdiBjbGFzcz0iYm94LWJvZHkiPk1pciZldW1sOyBzZSB2aW5pIG4mZXVtbDsgZmFxZW4genlydGFyZSB0JmV1bWw7IGludGVybmV0aXQgdCZldW1sOyBQcm9rdXJpbWl0IFB1YmxpayB0JmV1bWw7IEtvc292JmV1bWw7cyBlIGNpbGEgJmV1bWw7c2h0JmV1bWw7IGUga3JpanVhciBzaSBQb3J0YWwgaSBQcm9rdXJpbWl0IFB1YmxpayBuJmV1bWw7IHQmZXVtbDsgY2lsJmV1bWw7biBkbyB0JmV1bWw7IGdqaW5kZW4gdCZldW1sOyBnaml0aGEgaW5mb3JtYWNpb25ldCByZWxldmFudGUgcSZldW1sOyBrYW4mZXVtbDsgdCZldW1sOyBiJmV1bWw7am4mZXVtbDsgbWUgZnVzaCZldW1sO24gZSBwcm9rdXJpbWl0IHB1YmxpayBuJmV1bWw7IEtvc292JmV1bWw7LjwvZGl2Pgo8cD4mbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsmbmJzcDs8L3A+CjxkaXYgY2xhc3M9ImJveC1ib2R5Ij5LUlBQIHNpcGFzIExpZ2ppdCBwJmV1bWw7ciBQcm9rdXJpbSBQdWJsaWsgdCZldW1sOyBLb3NvdiZldW1sO3MgTnIuMDQvTC0wNDIsICZldW1sO3NodCZldW1sOyBwJmV1bWw7cmdqZWdqJmV1bWw7c2UgcCZldW1sO3Igemh2aWxsaW1pbiwgZnVua3Npb25pbWluIGRoZSBtYmlrcXlyamVuIGUgcCZldW1sO3Jnaml0aHNobWUgdCZldW1sOyBzaXN0ZW1pdCB0JmV1bWw7IHByb2t1cmltaXQgcHVibGlrIG4mZXVtbDsgS29zb3YmZXVtbDssIGRoZSBpIHVzaHRyb24gZnVua3Npb25ldCBxJmV1bWw7IGkgaXBlbiBuZ2Ega3kgbGlnai48L2Rpdj4KJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyZuYnNwOzxiciAvPiZuYnNwOwo8ZGl2IGNsYXNzPSJib3gtYm9keSI+TmomZXVtbDtyYSBuZCZldW1sO3IgZnVua3Npb25ldCBxJmV1bWw7IGkgamFuJmV1bWw7IGRoJmV1bWw7biZldW1sOyBLUlBQLXMmZXVtbDsgbWUgbGlnaiAmZXVtbDtzaHQmZXVtbDsgcSZldW1sOyB0JmV1bWw7IGtyaWpvaiZldW1sOyBkaGUgbWlyJmV1bWw7bWJhaiZldW1sOyBmYXFlbiBpbmZvcm1hdGl2ZSBuJmV1bWw7IGludGVybmV0IHEmZXVtbDsgaSBvZnJvbiBwdWJsaWt1dCBxYXNqZSB0JmV1bWw7IHBha3VmaXp1YXIgcCZldW1sO3IgdCZldW1sOyBnaml0aGEgaW5mb3JtYWNpb25ldCBxJmV1bWw7IGthbiZldW1sOyB0JmV1bWw7IGImZXVtbDtqbiZldW1sOyBtZSBwcm9rdXJpbWluIHB1YmxpayBuJmV1bWw7IEtvc292JmV1bWw7LjwvZGl2Pgo8L2Rpdj4KPGJyIC8+IDwhLS0gL0JPWCAtLT48L2Rpdj4KPGRpdiBjbGFzcz0iY29sLW1kLTQiPgo8ZGl2IGNsYXNzPSJib3gtY29udGFpbmVyIHVpLXNvcnRhYmxlIj48IS0tIEJPWCBCT1JERVItLT4KPGRpdiBpZD0iY3RsMDlfcG5sQ3RsIiBjbGFzcz0iZ3JhZCIgc3R5bGU9ImJvcmRlci13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IFNvbGlkOyBoZWlnaHQ6IDI2MHB4OyI+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBsYW5ndWFnZT0iSmF2YVNjcmlwdDEuMiI+Ly8gPCFbQ0RBVEFbCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciBzY3JvbGxlcndpZHRoID0gIjMwMHB4IgoKCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciBzY3JvbGxlcmhlaWdodCA9ICIyNTBweCIKCgogICAgICAgICAgICAgICAgICAgICAgICB2YXIgc2Nyb2xsZXJzcGVlZCA9IDEKCgogICAgICAgICAgICAgICAgICAgICAgICB2YXIgc2Nyb2xsZXJjb250ZW50ID0gJycKCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciBwYXVzZWl0ID0gMQoKCiAgICAgICAgICAgICAgICAgICAgICAgIHNjcm9sbGVyc3BlZWQgPSAoZG9jdW1lbnQuYWxsKSA/IHNjcm9sbGVyc3BlZWQgOiBNYXRoLm1heCgxLCBzY3JvbGxlcnNwZWVkIC0gMSkKICAgICAgICAgICAgICAgICAgICAgICAgdmFyIGNvcHlzcGVlZCA9IHNjcm9sbGVyc3BlZWQKICAgICAgICAgICAgICAgICAgICAgICAgdmFyIGllZG9tID0gZG9jdW1lbnQuYWxsIHx8IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciBhY3R1YWxoZWlnaHQgPSAnJwogICAgICAgICAgICAgICAgICAgICAgICB2YXIgY3Jvc3Nfc2Nyb2xsZXIsIG5zX3Njcm9sbGVyCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciBwYXVzZXNwZWVkID0gKHBhdXNlaXQgPT0gMCkgPyBjb3B5c3BlZWQgOiAwCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciBsb2FkZWQgPSBmYWxzZTsKICAgICAgICAgICAgICAgICAgICAgICAgZnVuY3Rpb24gcG9wdWxhdGUoKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAvL0JFS0EKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIChsb2FkZWQpIHJldHVybjsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciB4bWxodHRwID0gbmV3IFhNTEh0dHBSZXF1ZXN0KCk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXIgYmFzZXVybCA9ICJOZXdzRmVlZC5hc214IjsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciB0YmwgPSAiIjsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHhtbGh0dHAub3BlbigiR0VUIiwgYmFzZXVybCArICIvR2V0TGFzdFRvcE5ld3NTcSIsIHRydWUpOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgeG1saHR0cC5vbnJlYWR5c3RhdGVjaGFuZ2UgPSBmdW5jdGlvbiAoKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHhtbGh0dHAucmVhZHlTdGF0ZSA9PT0gNCAmJiB4bWxodHRwLnN0YXR1cyA9PT0gMjAwKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vICAgd2luZG93LmFsZXJ0KHhtbGh0dHAucmVzcG9uc2VUZXh0KTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHBlcnNvbnMgPSBKU09OLnBhcnNlKHhtbGh0dHAucmVzcG9uc2VUZXh0KTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHRibHRvcCA9ICI8dGFibGUgd2lkdGg9XCIxMDAlIiArICJcIiBjbGFzcz1cInZpamVzdGlcIj4iOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvL21haW4gdGFibGUgY29udGVudCB3ZSBmaWxsIGZyb20gZGF0YSBmcm9tIHRoZSByZXN0IGNhbGwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIG1haW4gPSAiIjsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9yIChpID0gMDsgaSA8IHBlcnNvbnMubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciB4ID0gcGVyc29uc1tpXS50ZXh0OwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbWFpbiArPSAiPHRyPjx0ZD48Yj4iICsgcGVyc29uc1tpXS5kYXRlUmVnaXN0ZXJlZCArICIgLSAiICsgcGVyc29uc1tpXS50aXRsZSArICI8L2I+PGJyLz4iICsgeC5zcGxpdCgnICcpLnNsaWNlKDAsIDI1KS5qb2luKCcgJykgKyAiPGJyLz48YSBocmVmPVwiQ2xhbmFrSXRlbU5ldy5hc3B4P2lkPSIgKyBwZXJzb25zW2ldLmlkICsgIlwiPiBNZSB0ZXDDq3IuLi48L2EgPjxici8+PGJyIC8+PC90ZCA+PC90ciA+IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gbXNnKHBlcnNvbnNbaV0uZGF0ZVJlZ2lzdGVyZWQpOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciB0Ymxib3R0b20gPSAiPC90YWJsZT4iOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YmwgPSB0Ymx0b3AgKyBtYWluICsgdGJsYm90dG9tOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwZXJzb25pbmZvIikuaW5uZXJIVE1MID0gdGJsOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzY3JvbGxlcmNvbnRlbnQgPSB0Ymw7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIChpZWRvbSkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY3Jvc3Nfc2Nyb2xsZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCA/IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJpZXNjcm9sbGVyIikgOiBkb2N1bWVudC5hbGwuaWVzY3JvbGxlcgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY3Jvc3Nfc2Nyb2xsZXIuc3R5bGUudG9wID0gcGFyc2VJbnQoc2Nyb2xsZXJoZWlnaHQpICsgOCArICJweCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNyb3NzX3Njcm9sbGVyLmlubmVySFRNTCA9IHNjcm9sbGVyY29udGVudAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYWN0dWFsaGVpZ2h0ID0gY3Jvc3Nfc2Nyb2xsZXIub2Zmc2V0SGVpZ2h0CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZWxzZSBpZiAoZG9jdW1lbnQubGF5ZXJzKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBuc19zY3JvbGxlciA9IGRvY3VtZW50Lm5zX3Njcm9sbGVyLmRvY3VtZW50Lm5zX3Njcm9sbGVyMgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbnNfc2Nyb2xsZXIudG9wID0gcGFyc2VJbnQoc2Nyb2xsZXJoZWlnaHQpICsgOAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbnNfc2Nyb2xsZXIuZG9jdW1lbnQud3JpdGUoc2Nyb2xsZXJjb250ZW50KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbnNfc2Nyb2xsZXIuZG9jdW1lbnQuY2xvc2UoKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYWN0dWFsaGVpZ2h0ID0gbnNfc2Nyb2xsZXIuZG9jdW1lbnQuaGVpZ2h0CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbGVmdHRpbWUgPSBzZXRJbnRlcnZhbCgic2Nyb2xsc2Nyb2xsZXIoKSIsIDMwKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIH07CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB4bWxodHRwLnNlbmQoKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvYWRlZCA9IHRydWU7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAvL0VORCBCRUtBCgogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgICAgIHdpbmRvdy5vbmxvYWQgPSBwb3B1bGF0ZQoKICAgICAgICAgICAgICAgICAgICAgICAgZnVuY3Rpb24gc2Nyb2xsc2Nyb2xsZXIoKSB7CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGllZG9tKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHBhcnNlSW50KGNyb3NzX3Njcm9sbGVyLnN0eWxlLnRvcCkgPiAoYWN0dWFsaGVpZ2h0ICogKC0xKSArIDgpKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjcm9zc19zY3JvbGxlci5zdHlsZS50b3AgPSBwYXJzZUludChjcm9zc19zY3JvbGxlci5zdHlsZS50b3ApIC0gY29weXNwZWVkICsgInB4IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVsc2UKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY3Jvc3Nfc2Nyb2xsZXIuc3R5bGUudG9wID0gcGFyc2VJbnQoc2Nyb2xsZXJoZWlnaHQpICsgOCArICJweCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVsc2UgaWYgKGRvY3VtZW50LmxheWVycykgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIChuc19zY3JvbGxlci50b3AgPiAoYWN0dWFsaGVpZ2h0ICogKC0xKSArIDgpKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBuc19zY3JvbGxlci50b3AgLT0gY29weXNwZWVkCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZWxzZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBuc19zY3JvbGxlci50b3AgPSBwYXJzZUludChzY3JvbGxlcmhlaWdodCkgKyA4CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIChpZWRvbSB8fCBkb2N1bWVudC5sYXllcnMpIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdpdGggKGRvY3VtZW50KSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGllZG9tKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdyaXRlKCc8ZGl2IHN0eWxlPSJwb3NpdGlvbjpyZWxhdGl2ZTt3aWR0aDonICsgc2Nyb2xsZXJ3aWR0aCArICc7aGVpZ2h0OicgKyBzY3JvbGxlcmhlaWdodCArICc7b3ZlcmZsb3c6aGlkZGVuIiBvbk1vdXNlb3Zlcj0iY29weXNwZWVkPXBhdXNlc3BlZWQiIG9uTW91c2VvdXQ9ImNvcHlzcGVlZD1zY3JvbGxlcnNwZWVkIj4nKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB3cml0ZSgnPGRpdiBpZD0iaWVzY3JvbGxlciIgc3R5bGU9InBvc2l0aW9uOmFic29sdXRlO2xlZnQ6MjVweDt0b3A6MHB4O3dpZHRoOjg4JTsiPicpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdyaXRlKCc8L2Rpdj48L2Rpdj4nKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlIGlmIChkb2N1bWVudC5sYXllcnMpIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgd3JpdGUoJzxpbGF5ZXIgd2lkdGg9JyArIHNjcm9sbGVyd2lkdGggKyAnIGhlaWdodD0nICsgc2Nyb2xsZXJoZWlnaHQgKyAnIG5hbWU9Im5zX3Njcm9sbGVyIj4nKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB3cml0ZSgnPGxheWVyIG5hbWU9Im5zX3Njcm9sbGVyMiIgd2lkdGg9JyArIHNjcm9sbGVyd2lkdGggKyAnIGhlaWdodD0nICsgc2Nyb2xsZXJoZWlnaHQgKyAnIGxlZnQ9MCB0b3A9MCBvbk1vdXNlb3Zlcj0iY29weXNwZWVkPXBhdXNlc3BlZWQiIG9uTW91c2VvdXQ9ImNvcHlzcGVlZD1zY3JvbGxlcnNwZWVkIj48L2xheWVyPicpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdyaXRlKCc8L2lsYXllcj4nKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgfQovLyBdXT48L3NjcmlwdD4KPC9kaXY+CjxkaXYgY2xhc3M9ImJveCBib3JkZXIiPiZuYnNwOyZuYnNwOzxhIGhyZWY9Ii9IT01FL0NsYW5ha0l0ZW1OZXcuYXNweD9pZD00NzMiPkFya2l2aSBpIGxham1ldmUgPC9hPjwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iYm94LWNvbnRhaW5lciB1aS1zb3J0YWJsZSI+PCEtLSBCT1ggQk9SREVSLS0+CjxkaXYgY2xhc3M9ImJveCBib3JkZXIiPgo8ZGl2IGNsYXNzPSJib3gtdGl0bGUiPgo8aDQ+TGlkaGpldDwvaDQ+CjwvZGl2Pgo8ZGl2IGNsYXNzPSJib3gtYm9keSI+PG9sPgo8bGk+PGEgaHJlZj0iaHR0cHM6Ly9rcnBwLnJrcy1nb3YubmV0LyIgdGFyZ2V0PSJfYmxhbmsiPiBLb21pc2lvbmkgUnJlZ3VsbGF0aXYgaSBQcm9rdXJpbWl0IFB1YmxpayhLUlBQKTwvYT48L2xpPgo8bGk+PGEgaHJlZj0iaHR0cHM6Ly9hcXAucmtzLWdvdi5uZXQvc3EvYmFsbGluYSIgdGFyZ2V0PSJfYmxhbmsiPiBBZ2plbmNpb25pIFFlbmRyb3IgaSBQcm9rdXJpbWl0PC9hPjwvbGk+CjxsaT48YSBocmVmPSJodHRwczovL29zaHAucmtzLWdvdi5uZXQvIiB0YXJnZXQ9Il9ibGFuayI+IE9yZ2FuaSBTaHF5cnR1ZXMgaSBQcm9rdXJpbWl0IChPU0hQKTwvYT48L2xpPgo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cucmtzLWdvdi5uZXQiIHRhcmdldD0iX2JsYW5rIj4gUG9ydGFsaSBTaHRldCZldW1sO3JvciBpIFJlcHVibGlrJmV1bWw7cyBzJmV1bWw7IEtvc292JmV1bWw7czwvYT48L2xpPgo8L29sPjwvZGl2Pgo8L2Rpdj4KPCEtLSAvQk9YIEJPUkRFUiAtLT48L2Rpdj4KPC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iY29sLW1kLTEyIj4KPGRpdiBjbGFzcz0icm93Ij4KPGRpdiBjbGFzcz0iY29sLW1kLTQiPgo8ZGl2IGNsYXNzPSJib3gtY29udGFpbmVyIHVpLXNvcnRhYmxlIj48IS0tIEJPWCBCT1JERVIgU0xJTVNDUk9MTCAtLT4KPGRpdiBjbGFzcz0iYm94IGJvcmRlciBvcmFuZ2UiPgo8ZGl2IGNsYXNzPSJib3gtdGl0bGUiPgo8aDQ+SU5GT1JNQUNJT05FIFAmRXVtbDtSIEFLPC9oND4KPGRpdiBjbGFzcz0idG9vbHMiPiZuYnNwOzwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iYm94LWJvZHkiPgo8ZGl2IGNsYXNzPSJzbGltU2Nyb2xsRGl2IiBzdHlsZT0id2lkdGg6IGF1dG87IGhlaWdodDogMTEwcHg7IG92ZXJmbG93OiBoaWRkZW47IHBvc2l0aW9uOiByZWxhdGl2ZTsiPjxvbD4KPGxpPjxhIGhyZWY9Ii9Ib21lL01hbnVhbHMvTmFydWNpdGVsamkvUmVnamlzdHJpbWkgQ0EgLSBtYW51YWwucGRmIj5SZWdqaXN0cmltaSBpIEF1dG9yaXRldGl0IEtvbnRyYWt0dWVzPC9hPjwvbGk+CjxsaT48YSBocmVmPSIvSE9NRS9NYW51YWxzL1BvbnVkaXRlbGppL01hbnVhbCUyMHAmZXVtbDtyJTIwcCZldW1sO3Jkb3J1ZXNpdCUyMGUlMjBBSyUyMChwZXJkaXRlc3VhcikucGRmIj5QZXJnYXRpdGphIGRoZSBwdWJsaWtpbWkgaSB0ZW5kZXJpdDwvYT48L2xpPgo8bGk+PGEgaHJlZj0iL0hPTUUvQ2xhbmFrSXRlbU5ldy5hc3B4P2lkPTM4MSI+TWFudWFsZXQgLSBWaWRlbzwvYT48L2xpPgo8L29sPgo8ZGl2IGNsYXNzPSJzbGltU2Nyb2xsQmFyIiBzdHlsZT0iYm9yZGVyLXJhZGl1czogN3B4OyB0b3A6IDBweDsgd2lkdGg6IDdweDsgaGVpZ2h0OiAxNjVweDsgcmlnaHQ6IDFweDsgZGlzcGxheTogbm9uZTsgcG9zaXRpb246IGFic29sdXRlOyB6LWluZGV4OiA5OTsgb3BhY2l0eTogMC40OyBiYWNrZ3JvdW5kOiBub25lIDAlIDAlIHJlcGVhdCBzY3JvbGwgI2ExYjJiZDsiPiZuYnNwOzwvZGl2Pgo8ZGl2IGNsYXNzPSJzbGltU2Nyb2xsUmFpbCIgc3R5bGU9ImJhY2tncm91bmQ6ICMzMzMzMzM7IGJvcmRlci1yYWRpdXM6IDdweDsgdG9wOiAwcHg7IHdpZHRoOiA3cHg7IGhlaWdodDogMTAwJTsgcmlnaHQ6IDFweDsgZGlzcGxheTogbm9uZTsgcG9zaXRpb246IGFic29sdXRlOyB6LWluZGV4OiA5MDsgb3BhY2l0eTogMC4xOyI+Jm5ic3A7PC9kaXY+CiZuYnNwOzwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjwhLS0gL0JPWCBCT1JERVIgLS0+PC9kaXY+CjwvZGl2Pgo8ZGl2IGNsYXNzPSJjb2wtbWQtNCI+CjxkaXYgY2xhc3M9ImJveC1jb250YWluZXIgdWktc29ydGFibGUiPjwhLS0gQk9YIEJPUkRFUiBTTElNU0NST0xMIC0tPgo8ZGl2IGNsYXNzPSJib3ggYm9yZGVyIG9yYW5nZSI+CjxkaXYgY2xhc3M9ImJveC10aXRsZSI+CjxoND5JTkZPUk1BQ0lPTkUgUCZFdW1sO1IgRU88L2g0PgombmJzcDsKPGRpdiBjbGFzcz0idG9vbHMiPiZuYnNwOzwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iYm94LWJvZHkiPgo8ZGl2IGNsYXNzPSJzbGltU2Nyb2xsRGl2IiBzdHlsZT0id2lkdGg6IGF1dG87IGhlaWdodDogMTEwcHg7IG92ZXJmbG93OiBoaWRkZW47IHBvc2l0aW9uOiByZWxhdGl2ZTsiPjxvbD4KPGxpPjxhIGhyZWY9Ii9Ib21lL01hbnVhbHMvUG9udWRpdGVsamkvUmVnamlzdHJpbWkgT0UgLSBtYW51YWwucGRmIj5SZWdqaXN0cmltaSBpIE9wZXJhdG9yaXQgRWtvbm9taWs8L2E+PC9saT4KPGxpPjxhIGhyZWY9Ii9IT01FL01hbnVhbHMvUG9udWRpdGVsamkvTWFudWFsJTIwcCZldW1sO3IlMjBPRS0lMjBwZXJnYWRpdGphJTIwZG9yZXppbWklMjBpJTIwb2ZlcnRlcyUyMChwZXJkaXRlc3VhcikucGRmIj5NYW51YWxpIHBlciBPRSAtIFAmZXVtbDtyZ2F0aXRqYSBkaGUgZG9yJmV1bWw7emltaSBpIE9mZXJ0JmV1bWw7czwvYT48L2xpPgo8bGk+PGEgaHJlZj0iL0hPTUUvRG9jdW1lbnRzL05vdGljZXMvYWxiLzM2Ny9OSk9GVElNJTIwUCZFdW1sO1IlMjBPUEVSQVRPUiZFdW1sOyUyMEVLT05PTUlLLnBkZiI+TmpvZnRpbSBwJmV1bWw7ciBPcGVyYXRvciZldW1sO3QgRWtvbm9taWsgcCZldW1sO3IgcCZldW1sO3JkaXQmZXVtbDtzaW0gdCZldW1sOyBkaCZldW1sO25hdmU8L2E+PC9saT4KPGxpPjxhIGhyZWY9Ii9IT01FL0NsYW5ha0l0ZW1OZXcuYXNweD9pZD0zODAiPk1hbnVhbGV0IC0gVmlkZW88L2E+PC9saT4KPC9vbD4KPGRpdiBjbGFzcz0ic2xpbVNjcm9sbEJhciIgc3R5bGU9ImJvcmRlci1yYWRpdXM6IDdweDsgdG9wOiAwcHg7IHdpZHRoOiA3cHg7IGhlaWdodDogMTY1cHg7IHJpZ2h0OiAxcHg7IGRpc3BsYXk6IG5vbmU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgei1pbmRleDogOTk7IG9wYWNpdHk6IDAuNDsgYmFja2dyb3VuZDogbm9uZSAwJSAwJSByZXBlYXQgc2Nyb2xsICNhMWIyYmQ7Ij4mbmJzcDs8L2Rpdj4KPGRpdiBjbGFzcz0ic2xpbVNjcm9sbFJhaWwiIHN0eWxlPSJiYWNrZ3JvdW5kOiAjMzMzMzMzOyBib3JkZXItcmFkaXVzOiA3cHg7IHRvcDogMHB4OyB3aWR0aDogN3B4OyBoZWlnaHQ6IDEwMCU7IHJpZ2h0OiAxcHg7IGRpc3BsYXk6IG5vbmU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgei1pbmRleDogOTA7IG9wYWNpdHk6IDAuMTsiPiZuYnNwOzwvZGl2PgombmJzcDs8L2Rpdj4KPC9kaXY+CjwhLS0gL0JPWCBCT1JERVIgLS0+PC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iY29sLW1kLTQiPgo8ZGl2IGNsYXNzPSJib3gtY29udGFpbmVyIHVpLXNvcnRhYmxlIj48IS0tIEJPWCBCT1JERVIgU0xJTVNDUk9MTCAtLT4KPGRpdiBjbGFzcz0iYm94IGJvcmRlciBvcmFuZ2UiPgo8ZGl2IGNsYXNzPSJib3gtdGl0bGUiPgo8aDQ+SU5GT1JNQUNJT05FIFRFS05JS0U8L2g0Pgo8ZGl2IGNsYXNzPSJ0b29scyI+Jm5ic3A7PC9kaXY+CjwvZGl2Pgo8ZGl2IGNsYXNzPSJib3gtYm9keSI+CjxkaXYgY2xhc3M9InNsaW1TY3JvbGxEaXYiIHN0eWxlPSJ3aWR0aDogYXV0bzsgaGVpZ2h0OiAxMTBweDsgb3ZlcmZsb3c6IGhpZGRlbjsgcG9zaXRpb246IHJlbGF0aXZlOyI+CjxkaXYgY2xhc3M9InNjcm9sbGVyIiBzdHlsZT0id2lkdGg6IGF1dG87IGhlaWdodDogMTY1cHg7IG92ZXJmbG93OiBoaWRkZW47Ij48b2w+CjxsaT48YSBocmVmPSIvSG9tZS9NYW51YWxzLy9UZXJtc0FuZENvbmRpdGlvbnMvS3VzaHRldERoZVRlcm1hdEUtcHJva3VyaW1pLnBkZiI+VGVybWF0IGRoZSBLdXNodGV0PC9hPjwvbGk+CjxsaT48YSBocmVmPSIvSG9tZS9DbGFuYWtJdGVtTmV3LmFzcHg/aWQ9Mjg0Ij5LJmV1bWw7cmtlc2F0IHRla25pa2U8L2E+PC9saT4KPGxpPjxhIGhyZWY9Ii9Ib21lL0NsYW5ha0l0ZW1OZXcuYXNweD9pZD0yODQiPkluZm9ybWFjaW9uZSBtYiZldW1sO3NodGV0amUgU1NMPC9hPjwvbGk+CjxsaT48YSBocmVmPSIvSG9tZS9DbGFuYWtJdGVtTmV3LmFzcHg/aWQ9Mjg0Ij5EaXNjbGFpbWVyPC9hPjwvbGk+Cjwvb2w+PC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPCEtLSAvQk9YIEJPUkRFUiBTTElNU0NST0xMIC0tPjwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjwvZGl2Pgo8L2Rpdj5kAg0PFgIfBAUqPHNwYW4+TGFzdCB1cGRhdGU6PC9zcGFuPiAyOC4xMi4yMDE2IDEwOjEwZAIED2QWAgIBDxYCHwEFwRE8ZGl2IGNsYXNzPSJjb2wtbWQtMiI+ICAgDQogICAgPGg1PjxiPlJSRVRIIE5FU0g8L2I+PC9oNT4gICANCiAgICA8dWwgY2xhc3M9Imxpc3QtdW5zdHlsZWQiPiAgICAgDQogICAgPGxpPjxhIGhyZWY9IkNsYW5ha0l0ZW1OZXcuYXNweD9pZD0zMDUiPktSUFA8L2E+PC9saT4gICAgDQogICAgPGxpPjxhIGhyZWY9IkNsYW5ha0l0ZW1OZXcuYXNweD9pZD0zMDciPkJvcmRpIEkgS1JQUC1zw6s8L2E+PC9saT4gICAgDQogICAgPGxpPjxhIGhyZWY9IkNsYW5ha0l0ZW1OZXcuYXNweD9pZD0zMTAiPlJyZWd1bGxvcmV0IGUgS1JQUC3DqzwvYT48L2xpPiAgICAgICANCiAgICA8bGk+PGEgaHJlZj0iQ2xhbmFrSXRlbU5ldy5hc3B4P2lkPTMxMiI+T2JqZWt0aXZhdDwvYT48L2xpPiAgICAgICANCiAgICA8bGk+PGEgaHJlZj0iQ2xhbmFrSXRlbU5ldy5hc3B4P2lkPTMxNCI+UHVuw6tzaW1pPC9hPjwvbGk+ICAgDQogICAgICAgIDwvdWw+ICANCiAgICA8L2Rpdj4gIA0KPGRpdiBjbGFzcz0iY29sLW1kLTIiPiAgIA0KICAgIDxoNT48Yj5MRUdKSVNMQUNJT05JPC9iPjwvaDU+ICAgDQogICAgPHVsIGNsYXNzPSJsaXN0LXVuc3R5bGVkIj4gICAgIA0KICAgIDxsaT48YSBocmVmPSJDbGFuYWtJdGVtTmV3LmFzcHg/aWQ9MjA1Ij5MZWdqaXNsYWNpb25pPC9hPjwvbGk+ICAgIA0KICAgIDxsaT48YSBocmVmPSJDbGFuYWtJdGVtTmV3LmFzcHg/aWQ9MjMzIj5MZWdqaXNsYWNpb25pIFNla29uZGFyPC9hPjwvbGk+ICAgDQogICAgPC91bD4gIA0KICAgIDwvZGl2PiAgDQo8ZGl2IGNsYXNzPSJjb2wtbWQtMiI+ICAgDQogICAgPGg1PjxiPk1BTlVBTEVUPC9iPjwvaDU+ICAgDQogICAgPHVsIGNsYXNzPSJsaXN0LXVuc3R5bGVkIj4gICAgIA0KICAgIDxsaT48YSBocmVmPSJDbGFuYWtJdGVtTmV3LmFzcHg/aWQ9Mjk0Ij5NYW51YWxldCBww6tyIE9wZXJhdG9yw6sgRWtvbm9taWs8L2E+PC9saT4gICAgDQogICAgPGxpPjxhIGhyZWY9IkNsYW5ha0l0ZW1OZXcuYXNweD9pZD0yOTYiPk1hbnVhbGV0IHDDq3IgQXV0b3JpdGV0ZSBLb250cmFrdHVlc2U8L2E+PC9saT4gICANCiAgPC91bD4gIDwvZGl2PiAgDQo8ZGl2IGNsYXNzPSJjb2wtbWQtMiI+ICAgDQogICAgPGg1PjxiPklORk9STUFDSU9ORTwvYj48L2g1PiAgIA0KICAgIDx1bCBjbGFzcz0ibGlzdC11bnN0eWxlZCI+DQogICAgICAgIDxsaT48YSBocmVmPSJDbGFuYWtJdGVtTmV3LmFzcHg/aWQ9NDczIj5MYWptZTwvYT48L2xpPg0KICAgICAgICA8bGk+PGEgaHJlZj0iQ2xhbmFrSXRlbU5ldy5hc3B4P2lkPTU0NCI+SW50ZXJwcmV0aW1lPC9hPjwvbGk+DQogICAgICAgIDxsaT48YSBocmVmPSJDbGFuYWtJdGVtTmV3LmFzcHg/aWQ9NTQ1Ij5PcGluaW9uZTwvYT48L2xpPg0KDQogICAgICAgIDxsaT48YSBocmVmPSJDbGFuYWtJdGVtTmV3LmFzcHg/aWQ9MjI3IiBvbmNsaWNrPSJPcGVuSW5JZnJhbWUoJ3swfVByZWdsZWRpRnJtLmFzcHg/bWV0aG9kPVVnb3Zvcm5pQXV0b3JpdGV0aUFrdGl2bmknKTtyZXR1cm4gZmFsc2U7Ij5MaXN0YSBlIEF1dG9yaXRldGV2ZSBLb250cmFrdHVlc2U8L2E+PC9saT4NCiAgICA8L3VsPiAgDQogPC9kaXY+ICANCjxkaXYgY2xhc3M9ImNvbC1tZC0yIj4gICANCiAgICA8aDU+PGI+VFJBSU5JTUU8L2I+DQogICAgICAgIDwvaDU+ICAgPHVsIGNsYXNzPSJsaXN0LXVuc3R5bGVkIj4gICAgIA0KICAgIDxsaT48YSBocmVmPSJDbGFuYWtJdGVtTmV3LmFzcHg/aWQ9Mjc3Ij5UcmFqbmltZXQ8L2E+PC9saT4gICANCiAgICAgICAgICAgICAgIDwvdWw+ICA8L2Rpdj4gIA0KPGRpdiBjbGFzcz0iY29sLW1kLTIiPiAgDQogICAgPGg1PjxiPlJBUE9SVEVUPC9iPjwvaDU+ICANCiAgICA8dWwgY2xhc3M9Imxpc3QtdW5zdHlsZWQiPiAgICAgDQogICAgPGxpPjxhIGhyZWY9IkNsYW5ha0l0ZW1OZXcuYXNweD9pZD0zNDkiIHRhcmdldD0iX2JsYW5rIj5SYXBvcnRldCB2amV0b3JlPC9hPjwvbGk+ICAgIA0KICAgIDxsaT48YSBocmVmPSJDbGFuYWtJdGVtTmV3LmFzcHg/aWQ9MzIwIj5SYXBvcnRldCBlIE1vbml0b3JpbWl0PC9hPjwvbGk+ICAgDQogICAgICAgIDwvdWw+ICANCiAgICA8L2Rpdj4gIDwvYnI+PC9icj48L2JyPiAgPC9icj48L2JyPjwvYnI+PC9icj48L2JyPiAgPGEgaHJlZj0iaHR0cDovL2tycHAucmtzLWdvdi5uZXQvRGVmYXVsdC5hc3B4P0xJRD0xIj7CqSAyMDIyLCBLb21pc2lvbmkgUnJlZ3VsbGF0aXYgaSBQcm9rdXJpbWl0IFB1YmxpazwvYT4gIDwvYnI+PC9icj5kZHagSL+L3sEzf2rtEGMQfSlf5WCQNIO3H+85Wbl8LWe5" />
+
+
+<script src="/HOME/ScriptResource.axd?d=9T67FJfXnwONGAgFet9g7aio2EvweTUdvk2629AW0s_bqXcw7BrtSV1kL8IXXnsgT5XP99tUvPoCTBZa6ENW8BDYvbYRHlmTZCIuKaZA2zqteKPGKZyeYD2f4qb3RwvaTpXv-5AprJ4uZ1nKCgc4_gHBKxWbCkbPYPlPETRPudk1&amp;t=32e5dfca" type="text/javascript"></script>
+<script src="Administrator/WebServiceAdministrator.asmx/js" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F04DF0FE" />
+
+        
+
+        <div>
+            
+<!-- HEADER -->
+
+<style>
+    .navbar-brand {
+        width: 79px !important;
+    }
+</style>
+
+
+<header class="navbar clearfix" id="header">
+    <div class="container">
+
+        <div class="row bannerbrand">
+            
+            <img id="ctl00_ItemHeader_ctlBannerImage" class="prikaziServer" src="/HOME/images/banner/banner_sq-AL.gif" border="0" />
+            <div id="serverInfo" style="float: left; display: none"></div>
+
+            <div style="float: right; width: 150px; margin: 70px 30px 0 0; color: White; text-align: right; font-weight: bold;">
+                <span id="loginMenuTextTimeComponent"></span>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+
+        <div class="row" style="position: relative;">
+            <div class="navbar-brand">
+                <!-- COMPANY LOGO -->
+                <a href="./">
+                    
+                    
+                </a>
+                <!-- /COMPANY LOGO -->
+                <!-- TEAM STATUS FOR MOBILE -->
+                
+                <!-- /TEAM STATUS FOR MOBILE -->
+                <!-- SIDEBAR COLLAPSE -->
+                <div id="sidebar-collapse" class="sidebar-collapse btn" >
+                    <i class="fa fa-bars" style="float:left"
+                        data-icon1="fa fa-bars" 
+                        data-icon2="fa fa-bars"></i>
+                </div>
+                <!-- /SIDEBAR COLLAPSE -->
+            </div>
+
+            <!-- NAVBAR LEFT -->
+            <ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left" >
+                
+                        <li class="dropdown">
+                            <!-- dropdown-toggle -->
+                            <a id="ctl00_ItemHeader_RepeaterTopIzbornik_ctl00_HyperLinkLink" class="dropdown-toggle " href="./">                        
+                                <i class="fa  &nbsp; &nbsp; fa-home "></i>
+                                <span class="name ">&nbsp; &nbsp; &nbsp; &nbsp;FILLIMI&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                            </a>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <!-- dropdown-toggle -->
+                            <a id="ctl00_ItemHeader_RepeaterTopIzbornik_ctl01_HyperLinkLink" class="dropdown-toggle " href="ClanakItemNew.aspx?id=220">                        
+                                <i class="fa  fa-edit "></i>
+                                <span class="name ">RRETH NESH
+</span>
+                            </a>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <!-- dropdown-toggle -->
+                            <a id="ctl00_ItemHeader_RepeaterTopIzbornik_ctl02_HyperLinkLink" class="dropdown-toggle " href="ClanakItemNew.aspx?id=205">                        
+                                <i class="fa  fa-book "></i>
+                                <span class="name ">LEGJISLACIONI</span>
+                            </a>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <!-- dropdown-toggle -->
+                            <a id="ctl00_ItemHeader_RepeaterTopIzbornik_ctl03_HyperLinkLink" class="dropdown-toggle " href="ClanakItemNew.aspx?id=378">                        
+                                <i class="fa  fa-tachometer "></i>
+                                <span class="name ">MANUALET
+</span>
+                            </a>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <!-- dropdown-toggle -->
+                            <a id="ctl00_ItemHeader_RepeaterTopIzbornik_ctl04_HyperLinkLink" class="dropdown-toggle " href="ClanakItemNew.aspx?id=227">                        
+                                <i class="fa  fa-envelope "></i>
+                                <span class="name ">INFORMACIONE
+</span>
+                            </a>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <!-- dropdown-toggle -->
+                            <a id="ctl00_ItemHeader_RepeaterTopIzbornik_ctl05_HyperLinkLink" class="dropdown-toggle " href="ClanakItemNew.aspx?id=277">                        
+                                <i class="fa  fa-trophy "></i>
+                                <span class="name ">TRAJNIMET</span>
+                            </a>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <!-- dropdown-toggle -->
+                            <a id="ctl00_ItemHeader_RepeaterTopIzbornik_ctl06_HyperLinkLink" class="dropdown-toggle " href="ClanakItemNew.aspx?id=207">                        
+                                <i class="fa  fa-file-text "></i>
+                                <span class="name ">RAPORTET</span>
+                            </a>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <!-- dropdown-toggle -->
+                            <a id="ctl00_ItemHeader_RepeaterTopIzbornik_ctl07_HyperLinkLink" class="dropdown-toggle " href="ClanakItemNew.aspx?id=337">                        
+                                <i class="fa  fa-compass "></i>
+                                <span class="name ">KONTAKTET
+</span>
+                            </a>
+                        </li>
+                    
+            </ul>
+
+            <!-- SKINS -->
+            
+
+            <!-- /SKINS -->
+
+            <!-- TOP NAVIGATION MENU -->
+            <ul class="nav navbar-nav pull-right" style="margin-right: 17px;">
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+                <li class="dropdown user" id="header-user">
+                    <a href="#" id="LoginMenu" class="dropdown-toggle" data-toggle="dropdown">
+                        
+                        <img alt="Prijava" id="PrijavaSlika" src='/HOME/images/defaultAvatar.jpg' />
+                        <span class="username">Login - </span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="LoginLink"><i class="fa fa-user"></i>Login</a></li>
+                        
+                        
+                    </ul>
+                </li>
+
+                <!-- BEGIN { MODULE_ID:35 MODULE_NAME Language } --><li id="ctl00_ItemHeader_ctl03_headerLang" class="dropdown user" style="float:right">
+    <a href="#" id="language-label" class="dropdown-toggle" data-toggle="dropdown">
+        
+        <span id="ctl00_ItemHeader_ctl03_TrenutniJezik" class="username">Shqip</span>
+        <i class="fa fa-angle-down"></i>
+    </a>
+    <ul class="dropdown-menu">
+         
+                <li>
+        
+                    <a id="languageLinkButton" class="changeLanguageLink">
+                        <i class="fa fa-flag"></i>
+                        Shqip
+                        <input type="hidden" name="ctl00$ItemHeader$ctl03$RepeaterLang$ctl00$hiddenFieldLanguage" id="hiddenFieldLanguage" value="sq-AL" />
+                    </a>
+                   
+                </li>
+            
+                <li>
+        
+                    <a id="languageLinkButton" class="changeLanguageLink">
+                        <i class="fa fa-flag"></i>
+                        Srpski
+                        <input type="hidden" name="ctl00$ItemHeader$ctl03$RepeaterLang$ctl01$hiddenFieldLanguage" id="hiddenFieldLanguage" value="sr-Latn-RS" />
+                    </a>
+                   
+                </li>
+            
+                <li>
+        
+                    <a id="languageLinkButton" class="changeLanguageLink">
+                        <i class="fa fa-flag"></i>
+                        English
+                        <input type="hidden" name="ctl00$ItemHeader$ctl03$RepeaterLang$ctl02$hiddenFieldLanguage" id="hiddenFieldLanguage" value="en-GB" />
+                    </a>
+                   
+                </li>
+            
+    </ul>
+</li>
+
+
+<!-- END   { MODULE_ID:35 MODULE_NAME Language } -->
+
+                <!-- END USER LOGIN DROPDOWN -->
+            </ul>
+            <!-- /TOP NAVIGATION MENU -->
+
+            <!-- Modal -->
+            <div id="userInfoModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <input type="hidden" name="ctl00$ItemHeader$hfServerInfo" id="ctl00_ItemHeader_hfServerInfo" value="KRPP-NLB1" />
+    <script type="text/javascript">
+      
+        $('.prikaziServer').click(function (event) {
+            if (event.ctrlKey) {
+                serverInfo();
+            }
+        });
+
+        function serverInfo() {
+            alert(document.getElementById("ctl00_ItemHeader_hfServerInfo").value);
+            }
+    </script>
+</header>
+
+            <!--/HEADER -->
+
+            <!-- PAGE -->
+            <section id="page">
+
+                <!-- SIDEBAR MENU -->
+                
+    
+
+
+<!-- SEARCH BAR -->
+
+
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+    <div class="sidebar-menu nav-collapse">
+        <div>
+        <div class="divide-20"></div>
+        <!-- /SEARCH BAR -->
+        <div id="search-bar">
+            <div id="ctl00_Content_Nav_ItemIzbornik_PanelSearch">
+	
+                
+                
+            
+</div>
+        </div>
+        </div>
+
+         <ul id="ctl00_Content_Nav_ItemIzbornik_menu">
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+                <!-- /SIDEBAR -->
+
+                <div id="main-content">
+                    <div class="container">
+                        <div class="row IframeHolder">
+                            <div id="content" class="col-lg-12">
+
+
+                                <!-- BODY -->
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        <!-- BOX BODY. Main content display -->
+                                        
+
+
+
+    <div class="TopModul">
+
+
+         <div class="top-module-content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            
+        </div>
+
+    </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+ 
+
+                
+
+                
+                <h3 id="ctl00_Content_Col1_ItemNaslov" class="NaslovClanka" style="text-align: left; color:#253c80; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"><span style="display: none; color: #cd3333; font-family: Times New Roman; font-size: xx-large;">E-Prokurimi</span>E-Prokurimi</h3>
+            <hr />
+                <style><!--
+li {
+  color:#5e87b0
+}
+
+.grad {
+    background: #E6E6FA; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f4f4f4, #E8E8E8 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f4f4f4, #E8E8E8 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f4f4f4, #E8E8E8 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f4f4f4, #E8E8E8 ); /* Standard syntax */
+}
+.vijesti td {text-align: justify;
+    text-justify: kashida;}
+--></style>
+<div class="col-md-12"><br /><br />
+<div class="row">
+<div class="col-md-8 box-container ui-sortable">
+<div class="box">
+<div class="box-body">Mir&euml; se vini n&euml; faqen zyrtare t&euml; internetit t&euml; Prokurimit Publik t&euml; Kosov&euml;s e cila &euml;sht&euml; e krijuar si Portal i Prokurimit Publik n&euml; t&euml; cil&euml;n do t&euml; gjinden t&euml; gjitha informacionet relevante q&euml; kan&euml; t&euml; b&euml;jn&euml; me fush&euml;n e prokurimit publik n&euml; Kosov&euml;.</div>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<div class="box-body">KRPP sipas Ligjit p&euml;r Prokurim Publik t&euml; Kosov&euml;s Nr.04/L-042, &euml;sht&euml; p&euml;rgjegj&euml;se p&euml;r zhvillimin, funksionimin dhe mbikqyrjen e p&euml;rgjithshme t&euml; sistemit t&euml; prokurimit publik n&euml; Kosov&euml;, dhe i ushtron funksionet q&euml; i ipen nga ky ligj.</div>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />&nbsp;
+<div class="box-body">Nj&euml;ra nd&euml;r funksionet q&euml; i jan&euml; dh&euml;n&euml; KRPP-s&euml; me ligj &euml;sht&euml; q&euml; t&euml; krijoj&euml; dhe mir&euml;mbaj&euml; faqen informative n&euml; internet q&euml; i ofron publikut qasje t&euml; pakufizuar p&euml;r t&euml; gjitha informacionet q&euml; kan&euml; t&euml; b&euml;jn&euml; me prokurimin publik n&euml; Kosov&euml;.</div>
+</div>
+<br /> <!-- /BOX --></div>
+<div class="col-md-4">
+<div class="box-container ui-sortable"><!-- BOX BORDER-->
+<div id="ctl09_pnlCtl" class="grad" style="border-width: 0px; border-style: Solid; height: 260px;">
+<script type="text/javascript" language="JavaScript1.2">// <![CDATA[
+                        var scrollerwidth = "300px"
+
+
+                        var scrollerheight = "250px"
+
+
+                        var scrollerspeed = 1
+
+
+                        var scrollercontent = ''
+
+                        var pauseit = 1
+
+
+                        scrollerspeed = (document.all) ? scrollerspeed : Math.max(1, scrollerspeed - 1)
+                        var copyspeed = scrollerspeed
+                        var iedom = document.all || document.getElementById
+                        var actualheight = ''
+                        var cross_scroller, ns_scroller
+                        var pausespeed = (pauseit == 0) ? copyspeed : 0
+                        var loaded = false;
+                        function populate() {
+                            //BEKA
+                            if (loaded) return;
+                            var xmlhttp = new XMLHttpRequest();
+                            var baseurl = "NewsFeed.asmx";
+                            var tbl = "";
+                            xmlhttp.open("GET", baseurl + "/GetLastTopNewsSq", true);
+                            xmlhttp.onreadystatechange = function () {
+                                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                                    //   window.alert(xmlhttp.responseText);
+                                    var persons = JSON.parse(xmlhttp.responseText);
+                                    var tbltop = "<table width=\"100%" + "\" class=\"vijesti\">";
+                                    //main table content we fill from data from the rest call
+                                    var main = "";
+                                    for (i = 0; i < persons.length; i++) {
+                                        var x = persons[i].text;
+                                        main += "<tr><td><b>" + persons[i].dateRegistered + " - " + persons[i].title + "</b><br/>" + x.split(' ').slice(0, 25).join(' ') + "<br/><a href=\"ClanakItemNew.aspx?id=" + persons[i].id + "\"> Me tepër...</a ><br/><br /></td ></tr >"
+                                        // msg(persons[i].dateRegistered);
+                                    }
+                                    var tblbottom = "</table>";
+                                    tbl = tbltop + main + tblbottom;
+                                    //   document.getElementById("personinfo").innerHTML = tbl;
+                                    scrollercontent = tbl;
+                                    if (iedom) {
+                                        cross_scroller = document.getElementById ? document.getElementById("iescroller") : document.all.iescroller
+                                        cross_scroller.style.top = parseInt(scrollerheight) + 8 + "px"
+                                        cross_scroller.innerHTML = scrollercontent
+                                        actualheight = cross_scroller.offsetHeight
+                                    }
+                                    else if (document.layers) {
+                                        ns_scroller = document.ns_scroller.document.ns_scroller2
+                                        ns_scroller.top = parseInt(scrollerheight) + 8
+                                        ns_scroller.document.write(scrollercontent)
+                                        ns_scroller.document.close()
+                                        actualheight = ns_scroller.document.height
+                                    }
+                                    lefttime = setInterval("scrollscroller()", 30)
+                                }
+                            };
+                            xmlhttp.send();
+                            loaded = true;
+                            //END BEKA
+
+                        }
+                        window.onload = populate
+
+                        function scrollscroller() {
+
+                            if (iedom) {
+                                if (parseInt(cross_scroller.style.top) > (actualheight * (-1) + 8))
+                                    cross_scroller.style.top = parseInt(cross_scroller.style.top) - copyspeed + "px"
+                                else
+                                    cross_scroller.style.top = parseInt(scrollerheight) + 8 + "px"
+                            }
+                            else if (document.layers) {
+                                if (ns_scroller.top > (actualheight * (-1) + 8))
+                                    ns_scroller.top -= copyspeed
+                                else
+                                    ns_scroller.top = parseInt(scrollerheight) + 8
+                            }
+                        }
+
+                        if (iedom || document.layers) {
+                            with (document) {
+                                if (iedom) {
+                                    write('<div style="position:relative;width:' + scrollerwidth + ';height:' + scrollerheight + ';overflow:hidden" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=scrollerspeed">')
+                                    write('<div id="iescroller" style="position:absolute;left:25px;top:0px;width:88%;">')
+                                    write('</div></div>')
+                                }
+                                else if (document.layers) {
+                                    write('<ilayer width=' + scrollerwidth + ' height=' + scrollerheight + ' name="ns_scroller">')
+                                    write('<layer name="ns_scroller2" width=' + scrollerwidth + ' height=' + scrollerheight + ' left=0 top=0 onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=scrollerspeed"></layer>')
+                                    write('</ilayer>')
+                                }
+                            }
+                        }
+// ]]></script>
+</div>
+<div class="box border">&nbsp;&nbsp;<a href="/HOME/ClanakItemNew.aspx?id=473">Arkivi i lajmeve </a></div>
+</div>
+<div class="box-container ui-sortable"><!-- BOX BORDER-->
+<div class="box border">
+<div class="box-title">
+<h4>Lidhjet</h4>
+</div>
+<div class="box-body"><ol>
+<li><a href="https://krpp.rks-gov.net/" target="_blank"> Komisioni Rregullativ i Prokurimit Publik(KRPP)</a></li>
+<li><a href="https://aqp.rks-gov.net/sq/ballina" target="_blank"> Agjencioni Qendror i Prokurimit</a></li>
+<li><a href="https://oshp.rks-gov.net/" target="_blank"> Organi Shqyrtues i Prokurimit (OSHP)</a></li>
+<li><a href="https://www.rks-gov.net" target="_blank"> Portali Shtet&euml;ror i Republik&euml;s s&euml; Kosov&euml;s</a></li>
+</ol></div>
+</div>
+<!-- /BOX BORDER --></div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-4">
+<div class="box-container ui-sortable"><!-- BOX BORDER SLIMSCROLL -->
+<div class="box border orange">
+<div class="box-title">
+<h4>INFORMACIONE P&Euml;R AK</h4>
+<div class="tools">&nbsp;</div>
+</div>
+<div class="box-body">
+<div class="slimScrollDiv" style="width: auto; height: 110px; overflow: hidden; position: relative;"><ol>
+<li><a href="/Home/Manuals/Narucitelji/Regjistrimi CA - manual.pdf">Regjistrimi i Autoritetit Kontraktues</a></li>
+<li><a href="/HOME/Manuals/Ponuditelji/Manual%20p&euml;r%20p&euml;rdoruesit%20e%20AK%20(perditesuar).pdf">Pergatitja dhe publikimi i tenderit</a></li>
+<li><a href="/HOME/ClanakItemNew.aspx?id=381">Manualet - Video</a></li>
+</ol>
+<div class="slimScrollBar" style="border-radius: 7px; top: 0px; width: 7px; height: 165px; right: 1px; display: none; position: absolute; z-index: 99; opacity: 0.4; background: none 0% 0% repeat scroll #a1b2bd;">&nbsp;</div>
+<div class="slimScrollRail" style="background: #333333; border-radius: 7px; top: 0px; width: 7px; height: 100%; right: 1px; display: none; position: absolute; z-index: 90; opacity: 0.1;">&nbsp;</div>
+&nbsp;</div>
+</div>
+</div>
+<!-- /BOX BORDER --></div>
+</div>
+<div class="col-md-4">
+<div class="box-container ui-sortable"><!-- BOX BORDER SLIMSCROLL -->
+<div class="box border orange">
+<div class="box-title">
+<h4>INFORMACIONE P&Euml;R EO</h4>
+&nbsp;
+<div class="tools">&nbsp;</div>
+</div>
+<div class="box-body">
+<div class="slimScrollDiv" style="width: auto; height: 110px; overflow: hidden; position: relative;"><ol>
+<li><a href="/Home/Manuals/Ponuditelji/Regjistrimi OE - manual.pdf">Regjistrimi i Operatorit Ekonomik</a></li>
+<li><a href="/HOME/Manuals/Ponuditelji/Manual%20p&euml;r%20OE-%20pergaditja%20dorezimi%20i%20ofertes%20(perditesuar).pdf">Manuali per OE - P&euml;rgatitja dhe dor&euml;zimi i Ofert&euml;s</a></li>
+<li><a href="/HOME/Documents/Notices/alb/367/NJOFTIM%20P&Euml;R%20OPERATOR&Euml;%20EKONOMIK.pdf">Njoftim p&euml;r Operator&euml;t Ekonomik p&euml;r p&euml;rdit&euml;sim t&euml; dh&euml;nave</a></li>
+<li><a href="/HOME/ClanakItemNew.aspx?id=380">Manualet - Video</a></li>
+</ol>
+<div class="slimScrollBar" style="border-radius: 7px; top: 0px; width: 7px; height: 165px; right: 1px; display: none; position: absolute; z-index: 99; opacity: 0.4; background: none 0% 0% repeat scroll #a1b2bd;">&nbsp;</div>
+<div class="slimScrollRail" style="background: #333333; border-radius: 7px; top: 0px; width: 7px; height: 100%; right: 1px; display: none; position: absolute; z-index: 90; opacity: 0.1;">&nbsp;</div>
+&nbsp;</div>
+</div>
+<!-- /BOX BORDER --></div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="box-container ui-sortable"><!-- BOX BORDER SLIMSCROLL -->
+<div class="box border orange">
+<div class="box-title">
+<h4>INFORMACIONE TEKNIKE</h4>
+<div class="tools">&nbsp;</div>
+</div>
+<div class="box-body">
+<div class="slimScrollDiv" style="width: auto; height: 110px; overflow: hidden; position: relative;">
+<div class="scroller" style="width: auto; height: 165px; overflow: hidden;"><ol>
+<li><a href="/Home/Manuals//TermsAndConditions/KushtetDheTermatE-prokurimi.pdf">Termat dhe Kushtet</a></li>
+<li><a href="/Home/ClanakItemNew.aspx?id=284">K&euml;rkesat teknike</a></li>
+<li><a href="/Home/ClanakItemNew.aspx?id=284">Informacione mb&euml;shtetje SSL</a></li>
+<li><a href="/Home/ClanakItemNew.aspx?id=284">Disclaimer</a></li>
+</ol></div>
+</div>
+</div>
+<!-- /BOX BORDER SLIMSCROLL --></div>
+</div>
+</div>
+</div>
+</div>
+              <hr />
+ 
+
+            <br />
+                
+
+               <div class="backW">
+                    <a href="javascript:history.back(1);" id="ctl00_Content_Col1_ItemBack" class="back"><span>
+                        Back
+                       </span>
+                    </a>
+                </div>
+
+            </div>
+  
+
+        <div id="holderMiddleRight" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            
+        </div>
+
+    <div class="holderLeftBottom col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        
+    </div>
+
+    <input type="hidden" name="ctl00$Content_Col1$HiddenFieldClanakId" id="ctl00_Content_Col1_HiddenFieldClanakId" value="327" />
+    <input type="hidden" name="ctl00$Content_Col1$HiddenFieldKategorijaCss" id="ctl00_Content_Col1_HiddenFieldKategorijaCss" />
+
+                                        <!-- /BOX -->
+                                    </div>
+                                </div>
+                                <!-- /BODY -->
+
+                                
+                            </div>
+                            <!-- /CONTENT-->
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--/PAGE -->
+
+            <!-- FOOTER -->
+            
+
+<style>
+
+.footerLinks
+{
+	background-color:#2E57AE; color:rgb(255, 255, 255)
+}
+.footerLinks a
+{
+	color:rgb(255, 255, 255)
+}
+
+</style>
+<div align="center" class="footerLinks box border col-md-12">
+		
+    <div class="col-md-2">   
+    <h5><b>RRETH NESH</b></h5>   
+    <ul class="list-unstyled">     
+    <li><a href="ClanakItemNew.aspx?id=305">KRPP</a></li>    
+    <li><a href="ClanakItemNew.aspx?id=307">Bordi I KRPP-së</a></li>    
+    <li><a href="ClanakItemNew.aspx?id=310">Rregulloret e KRPP-ë</a></li>       
+    <li><a href="ClanakItemNew.aspx?id=312">Objektivat</a></li>       
+    <li><a href="ClanakItemNew.aspx?id=314">Punësimi</a></li>   
+        </ul>  
+    </div>  
+<div class="col-md-2">   
+    <h5><b>LEGJISLACIONI</b></h5>   
+    <ul class="list-unstyled">     
+    <li><a href="ClanakItemNew.aspx?id=205">Legjislacioni</a></li>    
+    <li><a href="ClanakItemNew.aspx?id=233">Legjislacioni Sekondar</a></li>   
+    </ul>  
+    </div>  
+<div class="col-md-2">   
+    <h5><b>MANUALET</b></h5>   
+    <ul class="list-unstyled">     
+    <li><a href="ClanakItemNew.aspx?id=294">Manualet për Operatorë Ekonomik</a></li>    
+    <li><a href="ClanakItemNew.aspx?id=296">Manualet për Autoritete Kontraktuese</a></li>   
+  </ul>  </div>  
+<div class="col-md-2">   
+    <h5><b>INFORMACIONE</b></h5>   
+    <ul class="list-unstyled">
+        <li><a href="ClanakItemNew.aspx?id=473">Lajme</a></li>
+        <li><a href="ClanakItemNew.aspx?id=544">Interpretime</a></li>
+        <li><a href="ClanakItemNew.aspx?id=545">Opinione</a></li>
+
+        <li><a href="ClanakItemNew.aspx?id=227" onclick="OpenInIframe('{0}PreglediFrm.aspx?method=UgovorniAutoritetiAktivni');return false;">Lista e Autoriteteve Kontraktuese</a></li>
+    </ul>  
+ </div>  
+<div class="col-md-2">   
+    <h5><b>TRAINIME</b>
+        </h5>   <ul class="list-unstyled">     
+    <li><a href="ClanakItemNew.aspx?id=277">Trajnimet</a></li>   
+               </ul>  </div>  
+<div class="col-md-2">  
+    <h5><b>RAPORTET</b></h5>  
+    <ul class="list-unstyled">     
+    <li><a href="ClanakItemNew.aspx?id=349" target="_blank">Raportet vjetore</a></li>    
+    <li><a href="ClanakItemNew.aspx?id=320">Raportet e Monitorimit</a></li>   
+        </ul>  
+    </div>  </br></br></br>  </br></br></br></br></br>  <a href="http://krpp.rks-gov.net/Default.aspx?LID=1">© 2022, Komisioni Rregullativ i Prokurimit Publik</a>  </br></br>
+    
+</div>
+        </div>
+        <div>
+
+            <div style="display: none">
+                <!-- JAVASCRIPTS -->
+                <!-- Placed at the end of the document so the pages load faster -->
+                <!-- JQUERY -->
+                >
+                
+                
+
+
+                
+                <!-- JQUERY UI-->
+                
+            </div>
+
+            <!-- BOOTSTRAP -->
+            
+
+            <!-- DATE RANGE PICKER -->
+            <!--<script src="/HOME/js/bootstrap-daterangepicker/moment.min.js"></script>
+	    <script src="/HOME/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>-->
+            <!-- SLIMSCROLL -->
+            
+            <!-- BLOCK UI -->
+            
+            <!-- UNIFORM -->
+            
+            <!-- BOOTSTRAP WYSIWYG -->
+            
+
+            <!-- COOKIE -->
+            
+            <!-- CUSTOM SCRIPT -->
+            
+
+
+            <!-- CUSTOM SITE SCRIPT -->
+            
+            <!-- /JAVASCRIPTS -->
+
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+        $(document).ready(function () {
+
+            var langCookieName = 'lang';
+            var langCookieExpirationDays = 365;
+
+            //var lang = readCookie(langCookieName);
+            var lang = $.cookie(langCookieName);
+            ChangeLanguage(lang);
+        
+
+            function ChangeLanguage(lang)
+            {
+                if(lang == null || lang == '' || lang == undefined)
+                {
+                    lang = 'sq-AL';
+                    $.cookie(langCookieName, lang, { expires: langCookieExpirationDays, path:'/' });
+                    //createCookie(langCookieName, lang, langCookieExpirationDays);
+                    __doPostBack('changeLanguage', lang);
+                }
+
+                var options = {
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'jsonp',
+                    type: 'GET',
+                    url: PutanjaChangeLanguage + '?lang=' + lang
+                };
+
+                $.ajax(options)
+                    .complete(function () {
+                        //__doPostBack('changeLanguage', lang);
+                    });
+            }
+
+            $('.changeLanguageLink').click(function () {
+                var lang = $(this).find('#hiddenFieldLanguage').val();
+                $.cookie(langCookieName, lang, { expires: 365, path:'/' });
+                //eraseCookie(langCookieName);
+                //createCookie(langCookieName, lang, langCookieExpirationDays);
+                __doPostBack('changeLanguage', lang);
+            });
+
+            function createCookie(name, value, days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    var expires = "; expires=" + date.toGMTString();
+                }
+                else var expires = "";
+
+          
+          
+
+                document.cookie = name + "=" + value + expires + "; path=/";
+            }
+
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            function eraseCookie(name) {
+                createCookie(name, "", -1);
+            }
+
+        });
+//]]>
+</script>
+</form>
+
+    
+
+    
+   
+    
+</body>
+</html>

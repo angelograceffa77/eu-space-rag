@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en_GB" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en_GB"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.9.16" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data.gov.ie</title>
+
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    
+
+    <!--[if IE]>
+    <script src="/classList.min.js"></script>
+    <![endif]-->
+
+    
+    
+
+
+
+    
+    
+
+
+
+  
+      
+      
+      
+    
+  
+
+
+
+<link rel="stylesheet" href="/styles/impactstories.css">
+
+
+
+
+
+
+
+    
+    
+
+
+    
+    
+
+
+
+
+
+
+    
+  
+  <script>
+   (()=>{
+       var ct = 0
+       window.addEventListener(
+           "message",
+           (event) => {
+               if (event.origin !== "https://superset.data.gov.ie") return;
+               // For unclear cross-origin reasons, event.source.frameElement isn't
+               // allowed, despite us running in precisely the context that *should* be
+               // allowed to acccess it.
+               // window.frames just gives us a list of the windows, so that's also
+               // not helpful.
+               // Technically, this breaks if someone tries to embed with a frame
+               // rather than an iframe. Don't.
+               for (var frame of document.getElementsByTagName('iframe')) {
+                   if (frame.contentWindow === event.source) {
+                       break;
+                   }
+               }
+               // The second condition can occur if we have a non-iframe embed
+               if (!frame || frame.contentWindow !== event.source) return;
+               
+               var height = event.data.height;
+               // Check that only height is set on event.data
+               if (!height || Object.keys(event.data).length !== 1) return;
+               // Use style.height because it overrides height=, and we've used both in
+               // various locations
+               // UNDONE -- there's a thing pushing out the height when logged in with filters
+               if (ct < 3) {
+                   ct = ct + 1;
+                   frame.style.height = height + "px";
+               }
+           }
+       )
+   })();
+  </script>
+
+
+    
+    <link href="/webassets/ckanext-pages/ff80043b_medium.css" rel="stylesheet"/>
+<link href="/webassets/vendor/f3b8236b_select2.css" rel="stylesheet"/>
+<link href="/webassets/vendor/0b01aef1_font-awesome.css" rel="stylesheet"/>
+<link href="/webassets/base/2471d0b8_main.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-scheming/728ec589_scheming_css.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-featured/0b79b321_featured_css.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-dgithree/4068f437_mailchimp.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-dgithree/20ae8349_dgithree.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-dgithree/50ef836a_dgithree_less.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-harvest/c95a0af2_harvest_css.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-geoview/77c3ca23_geo-resource-styles.css" rel="stylesheet"/>
+<link href="/webassets/cookieconsent/cookieconsent_9de201b1.css" rel="stylesheet"/>
+    
+  </head>
+
+  
+  <body data-site-root="https://data.gov.ie/" data-locale-root="https://data.gov.ie/" >
+
+    
+    <div class="sr-only sr-only-focusable"><a href="#content">Skip to content</a></div>
+  
+
+  
+    
+    
+
+    <nav id="dgi-nav">
+        
+        <div class="container" style="position:relative; z-index:10;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar" style="background-color: white"></span>
+                    <span class="icon-bar" style="background-color: white"></span>
+                    <span class="icon-bar" style="background-color: white"></span>
+                </button>
+                <a class="brand" href="/"><img style="max-height: 100%; padding: 5px;" src="/img/dgi-logo-new.png" alt="Data.Gov.IE" title="Data.Gov.IE" rel="home"/></a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="top-navbar-collapse">
+                <div class="">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/dataset/">Datasets</a></li>
+                        <li><a href="/organization/">Publishers</a></li>
+                        
+                        <li><a href="/dataset/suggest/">Suggest Data</a></li>
+                        <li><a href="/dashboards">Dashboards</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/about_page">About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/faqs">FAQs</a></li>
+                                <li><a href="/how-to-guides">How To Guides</a></li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li><a href="/blog">Latest News</a></li>
+                                <li><a href="/impact/">Impact Stories</a></li>
+                                <li><a href="/haleandhearty">Hale and Hearty</a></li>
+                                <li><a href="/showcase">Showcases</a></li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li><a href="/resources">Resources & Publications</a></li>
+                                <li><a href="/formats">Formats</a></li>
+
+                                
+                                <li><a href="/pages/re-useofpublicsectorinformation">Re-Use of Public Sector Information</a></li>
+                                
+                                
+                                <li><a href="/license">Open Data Licence </a></li>
+                                
+                                
+                                <li><a href="/resources/open-data-governance-board">Open Data Governance Board</a></li>
+                                
+                                <li role="separator" class="divider"></li>
+
+                                <li><a href="/developers_corner">Developer's Corner</a></li>
+                                <li><a href="/developers">Developer Resources</a></li>
+                                <li><a class="hidden-xs" href="/stats">Stats</a></li>
+                                <li><a href="/broken_links">Broken Links</a></li>
+                                <li><a href="/resources/useful-links">Useful Links</a></li>
+
+<!--                                <li role="separator" class="divider"></li>-->
+<!--                                <li><a href="/qa-report">QA Report</a></li>-->
+<!--                                <li><a href="/kpi-report">KPI Report</a></li>-->
+
+
+                            </ul>
+                        </li>
+                        
+                        
+                        
+<li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">EN/GA <span
+            class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        
+        
+        <li><a href="/en_GB/how-to-guides">English</a></li>
+        
+        
+        
+        <li><a href="/ga/how-to-guides">Gaeilge</a></li>
+        
+        
+    </ul>
+</li>
+                        
+                        
+                        <li><a href="/user/login">Login</a></li>
+                        
+  
+
+          <li><form class="d-flex site-search" action="/site_search/" method="get">
+              <div class="input-group" style="display:inline-flex;">
+                <input id="field-sitewide-search" class="form-control me-2"  type="text" name="q" placeholder="Search Articles, News & Events..." aria-label=" _('Search pages...') }}"/>
+                <span class="input-group-btn">
+                    <button class="btn" type="submit" aria-label="Submit"><span class="fa fa-search"></span></button>
+                </span>
+              </div>
+          </form></li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  
+<div class="guide-hub-wrap">
+  <h1 class="guide-title text-center">How To Guides</h1>
+  <p class="guide-subtitle text-center">Step-by-step walkthroughs for finding datasets, exploring dashboards, and editing dashboard content.</p>
+
+  <h3 class="guide-section">
+    <span class="guide-section-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    Searching data.gov.ie
+  </h3>
+  <div class="guide-list-group">
+    <ul class="guide-list">
+      <li>
+        <a class="guide-item" href="/how-to-guides/how-to-search-datasets-as-a-public-user">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-search"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">How to Search Datasets as a Public User</span>
+            <span class="guide-item-desc">Find datasets from the public site using keywords, filters, and result tools to narrow and review matches quickly.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+      <li>
+        <a class="guide-item" href="/how-to-guides/how-to-view-dashboard-as-a-public-user">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-bar-chart"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">How to View Dashboard as a Public User</span>
+            <span class="guide-item-desc">Open and navigate published dashboards from dataset pages and understand key dashboard sections as a public user.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+      <li>
+        <a class="guide-item" href="/how-to-guides/how-to-perform-advanced-search-for-datasets">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-filter"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">How to Perform Advanced Search for Datasets</span>
+            <span class="guide-item-desc">Use advanced search options to combine filters and refine dataset results by relevant metadata fields.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <h3 class="guide-section">
+    <span class="guide-section-icon" aria-hidden="true"><i class="fa fa-th-large"></i></span>
+    Using the Dashboard Feature
+  </h3>
+  <div class="guide-list-group">
+    <ul class="guide-list">
+      <li>
+        <a class="guide-item" href="/how-to-guides/how-to-create-dashboard-as-a-private-user">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-plus-square"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">How to Create Dashboard as a Private User</span>
+            <span class="guide-item-desc">Create a private dashboard in Superset by selecting charts, arranging layout elements, and saving draft or published versions.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+      <li>
+        <a class="guide-item" href="/how-to-guides/how-to-convert-your-dashboard-into-a-report">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-file-text-o"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">How to Convert Your Dashboard into a Report</span>
+            <span class="guide-item-desc">Convert a dashboard into a report-style layout by adding headers, text blocks, dividers, and structured narrative context.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+      <li>
+        <a class="guide-item" href="/how-to-guides/adding-text-to-dashboards-in-datadore-insights">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-font"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">Adding Text to Dashboards in datAdore Insights (Superset visualisation tool)</span>
+            <span class="guide-item-desc">Add and format text or markdown elements in dashboard edit mode, resize them, and save the updated dashboard view.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+      <li>
+        <a class="guide-item" href="/how-to-guides/edit-chart-values-using-custom-sql">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-code"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">Edit Chart Values Using Custom SQL</span>
+            <span class="guide-item-desc">Use CUSTOM SQL with CASE logic to relabel text-based chart dimension values and apply legend updates correctly.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <h3 class="guide-section">
+    <span class="guide-section-icon" aria-hidden="true"><i class="fa fa-upload"></i></span>
+    Publishing Datasets
+  </h3>
+  <div class="guide-list-group">
+    <ul class="guide-list">
+      <li>
+        <a class="guide-item" href="/how-to-guides/guide-for-publishers">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-book"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">Guide for Publishers</span>
+              <span class="guide-item-desc">Understand how to audit your data, decide what to publish, follow Technical Framework guidance, and publish datasets manually, by API, or with a harvester.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <h3 class="guide-section">
+    <span class="guide-section-icon" aria-hidden="true"><i class="fa fa-terminal"></i></span>
+    Using data.gov.ie as a Developer
+  </h3>
+  <div class="guide-list-group">
+    <ul class="guide-list">
+      <li>
+        <a class="guide-item" href="/developers_corner">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-laptop"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">Developer's Corner</span>
+              <span class="guide-item-desc">Learn what Jupyter notebooks are, who they are for, where to find the data.gov.ie examples, and how to contribute your own notebooks.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+      <li>
+        <a class="guide-item" href="/how-to-guides/developer-resources">
+          <span class="guide-item-left" aria-hidden="true"><i class="fa fa-puzzle-piece"></i></span>
+          <span class="guide-item-content">
+            <span class="guide-item-title">Developer Resources</span>
+              <span class="guide-item-desc">Explore 3-star open data, CKAN API documentation and example calls, suggested datasets for analysis, and links to the portal source code.</span>
+          </span>
+          <span class="guide-item-arrow" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    
+<div class="footer">
+    
+    <div class="container container-front">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-details">
+                    <div class="col-md-4">
+                        <h3 class="footer-header">Contact Information</h3>
+                        <address>
+                            Open Data Team<br/>
+                            <a style="color:#fff;" href="http://per.gov.ie">Department of Public Expenditure Infrastructure Public Service Reform and Digitalisation</a>,<br/>
+                            St. Stephen’s Green House,<br/>
+                            Earlsfort Terrace,
+                            D02 PH42
+                            Dublin 2
+                            Ireland.
+                        </address>
+                        <br>
+                        <div>
+                            <a href="mailto:opendata@per.gov.ie">
+                                <p><span class="fa fa-envelope"></span> opendata@per.gov.ie </p>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="tel:35316767571">
+                                <p><span class="fa fa-phone"></span> +353 1 6767571 </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="footer-header">Give us feedback</h3>
+                        <p>The Open Data Team values your feedback, questions or comments. We are always delighted to hear from you.</p>
+                        <div>
+                            
+                            <button class="btn btn-danger btn-feedback"><a style="color:#fff;" href="/contact">GIVE US FEEDBACK</a></button>
+                            
+
+                        </div>
+                        <br>
+                        <div>
+                            <a href="https://www.linkedin.com/company/dper/posts/?feedView=all">
+                                <p><span class="fa fa-linkedin"></span> DPER LinkedIn </p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="footer-header"> </h3>
+                        <div>
+                            <p>Powered by
+                                <a href="http://ckan.org"><img id="ckan-logo" src="/img/ckan-logo.png"
+                                                               alt="CKAN logo"/></a>
+                            </p>
+                            <p>Site by
+                                <a style="color:#fff;" href="https://derilinx.com"><img id="derilinx-logo" src="/img/derilinxthumb.png"
+                                                                                        alt="Derilinx logo"/>Derilinx</a>
+                            </p>
+                            <p><a style="color:#fff;" href="/privacy-policy">Privacy Policy</a></p>
+                            <p><a style="color:#fff;" href="/cookie-policy">Cookie Policy</a></p>
+                            <p><a style="color:#fff;" href="#" onclick="reconfigureCookiePref(); return false;">Manage Cookie Preferences</a></p>
+                            <p><a style="color:#fff;" href="/pages/accessibility">Accessibility</a></p>
+                            <br><br>
+                            <p>
+                                <img src="/img/footer_white_logo_2.png" alt="" class="img img-responsive"
+                                     style="max-width:80%;max-height:100px;margin-left:-24px">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+
+  
+  
+  
+  
+
+
+    
+
+<!--Force the navbar to be narrower due to extra chars in GA strings-->
+
+
+<!--End force-->
+
+
+
+
+<script type="text/javascript">
+	function getCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for (var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) === ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) === 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+
+	if (getCookie("accept-cookie-policy") === "all" || getCookie("accept-cookie-policy") === "analytics") {
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments);
+			};
+			i[r].l = 1 * new Date();
+			a = s.createElement(o);
+			m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m);
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-59685031-1', {
+			cookieDomain: 'auto',
+			cookieExpires: 15724800
+		});
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+
+		(function (w, d, id) {
+			if (w.__dgiGtagLoaded) {
+				return;
+			}
+			w.__dgiGtagLoaded = true;
+
+			var s = d.createElement('script');
+			s.async = true;
+			s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+			d.head.appendChild(s);
+
+			w.dataLayer = w.dataLayer || [];
+			w.gtag = w.gtag || function(){w.dataLayer.push(arguments);};
+			w.gtag('js', new Date());
+			w.gtag('config', id, {
+				cookie_expires: 15724800
+			});
+		})(window, document, 'G-0NBPSTCVM1');
+
+		(function (w, d) {
+			if (w.__dgiFathomLoaded) {
+				return;
+			}
+			w.__dgiFathomLoaded = true;
+
+			var s = d.createElement('script');
+			s.src = 'https://cdn.usefathom.com/script.js';
+			s.setAttribute('data-site', 'TWPPJEGW');
+			s.defer = true;
+			d.head.appendChild(s);
+		})(window, document);
+	}
+</script>
+
+
+
+
+      
+
+    
+    
+    
+    <script src="/webassets/vendor/d8ae4bed_jquery.js" type="text/javascript"></script>
+<script src="/webassets/vendor/b9799525_vendor.js" type="text/javascript"></script>
+<script src="/webassets/vendor/580fa18d_bootstrap.js" type="text/javascript"></script>
+<script src="/webassets/base/15a18f6c_main.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-pages/68633da1_medium.js" type="text/javascript"></script>
+<script src="/webassets/base/54c75ef1_ckan.js" type="text/javascript"></script>
+<script src="/webassets/cookieconsent/cookieconsent_89c86827.js" type="text/javascript"></script>
+  </body>
+</html>

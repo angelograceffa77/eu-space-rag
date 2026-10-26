@@ -1,0 +1,1134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Searching for orders - UVSR Portál</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/evoportal/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/evoportal/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/evoportal/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/evoportal/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/evoportal/favicon-16x16.png">
+<link rel="manifest" href="/evoportal/site.webmanifest">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/evoportal/css/idsk-frontend-2.10.0.min.css?v=-AGapppncnPGLnLSz81nwCDhqStOFRkeFZy6dh4XUhI" />
+<link rel="stylesheet" href="/evoportal/css/idsk-customizations.min.css?v=upvAqcK904Ch1UxWkgEhZ9rpXD4ZVq1xJKKlEtFSePw" />
+<link rel="stylesheet" href="/evoportal/css/idsk-custom.min.css?v=NltFQZvpGMKt4zgosY-ph5MkVoWNrh-Vm20m8FiHLwc" />
+<link rel="stylesheet" href="/evoportal/css/site.min.css?v=mvhwPMtXGL4RIqkJbtBb67dasRSABd8l4BMc6TDxQVY" />
+<link rel="stylesheet" href="/evoportal/css/print.min.css?v=4xJRrGaS6sHyP5ANb29XQYe6NnHCyc7VwUH_A6gYetc" />
+<link rel="stylesheet" href="/evoportal/css/spinner.min.css?v=S1DtmFRn6FG3fJZ06jvPFqAKXBIB-uKsktm19vGHf40" />
+<link rel="stylesheet" href="/evoportal/css/kendo-export.min.css?v=YdOt5-4bVDdPCm_PzapbhTLkwf9ESOvhSyGAC9qoDaA" />
+    
+<script src="/evoportal/lib/jquery/dist/jquery.min.js"></script>
+<script src="/evoportal/lib/jquery/jquery.tmpl.min.js"></script>
+<script src="/evoportal/lib/jquery.inputmask.min.js"></script>
+
+<script src="/evoportal/lib/kendo/kendo.core.min.js"></script>
+<script src="/evoportal/lib/kendo/cultures/kendo.culture.en-US.min.js"></script>
+<script src="/evoportal/lib/kendo/kendo.web.min.js"></script>
+<script src="/evoportal/lib/kendo/kendo.dom.min.js"></script>
+<script src="/evoportal/lib/kendo/kendo.pdf.min.js"></script>
+<script src="/evoportal/lib/kendo/kendo.drawing.min.js"></script>
+
+<script src="/evoportal/lib/signalr/dist/browser/signalr.min.js"></script>
+<script src="/evoportal/lib/lodash.debounce/index.js"></script>
+
+<script src="/evoportal/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/evoportal/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+<script src="/evoportal/js/date.format.min.js?v=3ulwGj7y42QAhllukntTs-QYjN5-bg5Za-Yet9XcjZo"></script>
+
+<script src="/evoportal/js/site.min.js?v=u-VwW-Sh6AOhKwz4XZZsQ30n3Vq0GNFo0hEm1xauVL4"></script>
+<script src="/evoportal/lib/softip/jquery.serialize-to-json.min.js?v=sc89kSoFre4p7BjFC-0e2mKaRoN_zYXBe5a3qLd4LyU"></script>
+<script src="/evoportal/lib/softip/common.min.js?v=KNCHo7xlDyTIq94WaI4sBr_6Fhd3Ci3JFrgPlKsrt8Y"></script>
+<script src="/evoportal/lib/softip/form.min.js?v=TdH9dPEaJayHu_oO0iNomv2BacDfXUDblg1KUXmf2as"></script>
+<script src="/evoportal/lib/softip/button.min.js?v=1dunj6AyhdzBf2or8kitcrRchCfKVUP8RyM4HQT0J2g"></script>
+<script src="/evoportal/lib/softip/datasource.min.js?v=cBtIewuoka9UPzWJydlMmj5g-zsaxZtLNy0s7g2DNQU"></script>
+<script src="/evoportal/lib/softip/grid.min.js?v=O5Zg2hoz33JlShdrzUb58mWpXOaDs7t_dfC_Qrcr4kU"></script>
+<script src="/evoportal/lib/softip/textbox.min.js?v=fG2CcdOugMLmm6JVTqYuS3wHPBd2WlTKNHE_a3Sb-O8"></script>
+<script src="/evoportal/lib/softip/textarea.min.js?v=ircdFoHUlqWyrCoEExkxuiKBZzM4dwN1E4dqg_UDZxI"></script>
+<script src="/evoportal/lib/softip/select.min.js?v=2JdE-ES7ldjYY1D84ZSVXTm3IRu_8f6AcuMSZGiE-rY"></script>
+<script src="/evoportal/lib/softip/dateinput.min.js?v=t02ln-vcz5wm5DLzXMGEG14vI-tw3-fR3G3EPZWLulE"></script>
+<script src="/evoportal/lib/softip/modalwindow.min.js?v=WKl5HFfCg3xkV9HDG_HUiKD2WOFSmJ4D1OCdJRPrkzY"></script>
+<script src="/evoportal/lib/softip/multiselectwindow.min.js?v=2FMFCUGEj-Aehi5P92o0A9m6rsgmmTwcPYZsWgA1xjA"></script>
+<script src="/evoportal/lib/softip/multiselect.min.js?v=w0kQxYG1RN9r-cFMtvt63XTWzmFvNBSOdnBsByjdwgw"></script>
+<script src="/evoportal/lib/softip/button-multiselect.min.js?v=2YrijnwalDSaNby_BVv5gxP7wpaIQISaycUPkSn78NY"></script>
+<script src="/evoportal/lib/softip/tab.min.js?v=muSaV93nRz1nlgwxyIAO9wE6BXBB0lXVkMVffMfXCKo"></script>
+<script src="/evoportal/lib/softip/sidewidget.min.js?v=3dLKasNdsdz33EY8gD6F8hErXZ26-9JHvdOdqH7uBxQ"></script>
+<script src="/evoportal/lib/softip/captcha.min.js?v=3eSpTifzBnTTImSyoTPlCTpqPvyxWQm3BKADNyfwlfI"></script>
+<script src="/evoportal/lib/softip/radio.min.js?v=uhtWEdD5RW9OWlX5ZgVadMzQVs8EyGYqoKDiyxvn_iY"></script>
+<script src="/evoportal/lib/softip/informationbar.min.js?v=mFEukJ8cj4Gd9oYKbuD1qGlUhoihOWlCGMKW_9nd59I"></script>
+<script src="/evoportal/lib/softip/checkboxes.min.js?v=Snfmr3K83J-7iccg_lGIs0PbobUvuRI6WYrZTzHPnMI"></script>
+<script src="/evoportal/lib/softip/fileupload.min.js?v=PQ52R-_Yztu1TmCJVE7g4VjwsUmf-biWoglzPPzbwQw"></script>
+<script src="/evoportal/lib/softip/fileupload-deluxe.min.js?v=m-xJ3zJLrwlAvnrCqWWtUo8YO1JdO2H2qa0o9HYkUeg"></script>
+<script src="/evoportal/lib/softip/fileupload-extend.min.js?v=9WzTqsQDDgzv7gF-LsOA9lVs4PCWxknDWvUyjjUsXeE"></script>
+<script src="/evoportal/lib/softip/breadcrumbs.min.js?v=Z-SdWKRZIP2cQjpg1Kmr_Yga5TvBEiiVOOkfpdutcok"></script>
+<script src="/evoportal/lib/softip/content-url.min.js?v=q7pxHgt26rvdvx-mybxl9aUA8QBSB15xfin1oyCmEHM"></script>
+<script src="/evoportal/lib/softip/leftmenu.min.js?v=WsBsoxoP8v-XA0XPaeld6WrQdUwqxBdUBWoI49WnhQ4"></script>
+<script src="/evoportal/lib/softip/autocomplete.min.js?v=0IQpyxBy9WYpQZ0DZljIV45c0FERnlvKzs0h1dz2kv4"></script>
+<script src="/evoportal/lib/softip/jquery.ext.min.js?v=dZiEIPq5lB9UBVXWsd87dxxiXhN1quBzc_0lYy3CKLk"></script>
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-BXM4FWS6WK'></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date);gtag('config','G-BXM4FWS6WK',{displayFeaturesTask:'null'});</script></head>
+<body class="js-enabled">
+
+	
+
+
+
+<header class="idsk-header-web " data-module="idsk-header-web">
+    <div class="idsk-header-web__scrolling-wrapper">
+
+
+
+        <div class="idsk-header-web__tricolor"></div>
+
+        <div class="idsk-header-web__brand ">
+
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-full">
+                        <div class="idsk-header-web__brand-gestor">
+                            <span class="govuk-body-s idsk-header-web__brand-gestor-text">
+                                Official Page
+                                <button class="idsk-header-web__brand-gestor-button" aria-label="Zobraziť informácie o stránke" aria-expanded="false" data-text-for-hide="Skryť informácie o stránke" data-text-for-show="Zobraziť informácie o stránke">
+                                    The Government Office of the Slovak Republic
+                                    <span class="idsk-header-web__link-arrow"></span>
+                                </button>
+                            </span>
+                            <span class="govuk-body-s idsk-header-web__brand-gestor-text--mobile">
+                                SK
+                                <button class="idsk-header-web__brand-gestor-button" aria-label="Zobraziť informácie o stránke" aria-expanded="false" data-text-for-hide="Skryť informácie o stránke" data-text-for-show="Zobraziť informácie o stránke">
+                                    e-gov
+                                    <span class="idsk-header-web__link-arrow"></span>
+                                </button>
+                            </span>
+
+                            <div class="idsk-header-web__brand-dropdown">
+                                <div class="govuk-width-container">
+                                    <div class="govuk-grid-row">
+                                        <div class="govuk-grid-column-one-half">
+                                            <h3 class="govuk-body-s">
+                                                The isepvo.sk domain is official
+                                            </h3>
+                                            <p class="govuk-body-s">
+                                                This is the official website of the public authority of the Slovak Republic. <a class="govuk-link" href="https://www.slovensko.sk/sk/agendy/agenda/_organy-verejnej-moci" target="_blank" rel="noopener" title="Links to individual websites of public authorities can be found at this link">Links to individual websites of public authorities can be found at this link</a>.
+                                            </p>
+                                        </div>
+                                        <div class="govuk-grid-column-one-half">
+                                            <h3 class="govuk-body-s">
+                                                This page is secured
+                                            </h3>
+                                            <p class="govuk-body-s">
+                                                Be careful and always make sure that you share information only through the secure website of the Slovak public administration. A secure page always starts with https:// before the domain name of the website.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="idsk-header-web__brand-spacer"></div>
+                        <div class="idsk-header-web__brand-language">
+                                <button class="idsk-header-web__brand-language-button" aria-label="Expand the language menu" aria-expanded="false" data-text-for-hide="Skryť jazykové menu" data-text-for-show="Expand the language menu">
+                                    English
+                                    <span class="idsk-header-web__link-arrow"></span>
+                                </button>
+                                <ul class="idsk-header-web__brand-language-list">
+                       
+                                            <li class="idsk-header-web__brand-language-list-item">
+                                                <a class="govuk-link idsk-header-web__brand-language-list-item-link" title="sk-SK" href="/evoportal/sk-sk/public/ordersearch/index">
+                                                    Slovak
+                                                </a>
+                                            </li>
+                                            <li class="idsk-header-web__brand-language-list-item">
+                                                <a class="govuk-link idsk-header-web__brand-language-list-item-link" title="en-US" href="/evoportal/en-us/public/ordersearch/index">
+                                                    English
+                                                </a>
+                                            </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="idsk-header-web__main">
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-full govuk-grid-column-one-third-from-desktop">
+                        <div class="idsk-header-web__main-headline">
+                            <a href="/evoportal/en-us/Public/Home/Index" title="Link to home page">
+                                <img src="https://evo.isepvo.sk/evoportal/css/img/ePVO.png" alt="logo"class="idsk-header-web__main-headline-logo">
+                            </a>
+
+                            <button class="idsk-button idsk-header-web__main-headline-menu-button" aria-label="Rozbaliť menu" aria-expanded="false"
+                                    data-text-for-show="Rozbaliť menu" data-text-for-hide="Zavrieť menu">
+                                Menu
+                                <span class="idsk-header-web__menu-open"></span>
+                                <span class="idsk-header-web__menu-close"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="govuk-grid-column-two-thirds">
+                        <div class="idsk-header-web__main-action">
+
+                            
+
+<div class="idsk-header-web__main--buttons">
+    <div class="idsk-header-web__main--login">
+        
+<a class="idsk-header-web__main--login-loginbtn idsk-button" data-module="idsk-button" data-srole="button" href="https://evo.isepvo.sk/evoportal/en-us/Public/Auth/Login" id="btn-login">Sing in</a>
+
+	<script>
+		softip.ready(function () {
+			$("#btn-login").softipIdSkButton({
+				url: "https://evo.isepvo.sk/evoportal/en-us/Public/Auth/Login",
+			});
+		})
+	</script>
+
+        <div class="idsk-header-web__main--login-action">
+            <div class="idsk-header-web__main--login-action-text">
+                <span class="govuk-body-s idsk-header-web__main--login-action-text-user-name">
+                    
+                </span>
+                <div class="govuk-!-margin-bottom-1">
+                    <a class="govuk-link" href="https://evo.isepvo.sk/evoportal/en-us/Private/MessageBox/Index" title="News">
+                        <i class="far fa-envelope"></i> News <span id="header-pocet-sprav"><i class="fas fa-spinner fa-spin"></i></span>
+                    </a>
+                    <span> | </span>
+   
+                        <form style="display: inline;" action="https://evo.isepvo.sk/logout?kc_locale=en" method="post" id="frmlogout">
+                        <a onclick="document.getElementById('frmlogout').submit(); return 0;" class="btn-logout govuk-link idsk-header-web__main--login-action-text-logout idsk-header-web__main--login-logoutbtn" href="#" title="odhlásiť">
+                                Sign out
+                        </a>    
+                    </form>
+
+                    <span> | </span>
+                    <a class="govuk-link idsk-header-web__main--login-action-text-profile idsk-header-web__main--login-profilebtn" href="https://evo.isepvo.sk/evoportal/en-us/Private/Account/MyAccount" title=" My Account">
+                        My Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="idsk-header-web__nav--divider"></div>
+
+        <div class="idsk-header-web__nav idsk-header-web__nav--mobile ">
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-full">
+                    </div>
+                    <div class="govuk-grid-column-full">
+                       
+                        <nav class="idsk-header-web__nav-bar--buttons">
+                            <ul class="idsk-header-web__nav-list "
+                                aria-label="Hlavná navigácia">
+                                    <li class="idsk-header-web__nav-list-item">
+                                        
+    <a href="##" onclick="history.back(); return false;" class="govuk-link idsk-header-web__nav-list-item-link @*govuk-back-link*@"><i class="fas fa-chevron-left"></i> Back</a>
+
+                                     </li>
+                                        <li class="idsk-header-web__nav-list-item">
+                                            <a class="govuk-link idsk-header-web__nav-list-item-link"  href="https://www.isepvo.sk/o-systeme/" title="About system">
+                                                About system
+                                            </a>
+                                        </li>
+                                        <li class="idsk-header-web__nav-list-item">
+                                            <a class="govuk-link idsk-header-web__nav-list-item-link" href="#1" title="Občan" aria-label="Rozbaliť Občan menu" aria-expanded="false"
+                                       data-text-for-hide="Zavrieť FAQ menu" data-text-for-show="Rozbaliť FAQ menu">
+                                                FAQ
+                                                <div class="idsk-header-web__link-arrow"></div>
+                                                <div class="idsk-header-web__link-arrow-mobile"></div>
+                                            </a>
+                                            <div class="idsk-header-web__nav-submenulite">
+                                                <ul class="idsk-header-web__nav-submenulite-list" aria-label="Vnútorná navigácia">
+                                                        <li class="idsk-header-web__nav-submenulite-list-item">
+                                                            <a class="govuk-link idsk-header-web__nav-submenulite-list-item-link" href="https://www.isepvo.sk/najcastejsie-otazky/#faq-evo" title="FAQ EVO">
+                                                                <span>FAQ EVO</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="idsk-header-web__nav-submenulite-list-item">
+                                                            <a class="govuk-link idsk-header-web__nav-submenulite-list-item-link" href="https://www.isepvo.sk/najcastejsie-otazky/#faq-et" title="FAQ ET">
+                                                                <span>FAQ ET</span>
+                                                            </a>
+                                                        </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="idsk-header-web__nav-list-item">
+                                            <a class="govuk-link idsk-header-web__nav-list-item-link" href="#1" title="Občan" aria-label="Rozbaliť Občan menu" aria-expanded="false"
+                                       data-text-for-hide="Zavrieť Manuals menu" data-text-for-show="Rozbaliť Manuals menu">
+                                                Manuals
+                                                <div class="idsk-header-web__link-arrow"></div>
+                                                <div class="idsk-header-web__link-arrow-mobile"></div>
+                                            </a>
+                                            <div class="idsk-header-web__nav-submenulite">
+                                                <ul class="idsk-header-web__nav-submenulite-list" aria-label="Vnútorná navigácia">
+                                                        <li class="idsk-header-web__nav-submenulite-list-item">
+                                                            <a class="govuk-link idsk-header-web__nav-submenulite-list-item-link" href="https://www.isepvo.sk/dokumentacia/" title="Documentation">
+                                                                <span>Documentation</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="idsk-header-web__nav-submenulite-list-item">
+                                                            <a class="govuk-link idsk-header-web__nav-submenulite-list-item-link" href="https://www.isepvo.sk/videonavody/" title="Video tutorials">
+                                                                <span>Video tutorials</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="idsk-header-web__nav-submenulite-list-item">
+                                                            <a class="govuk-link idsk-header-web__nav-submenulite-list-item-link" href="https://www.isepvo.sk/archiv-dokumentacia/" title="Archive - Manuals">
+                                                                <span>Archive - Manuals</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="idsk-header-web__nav-submenulite-list-item">
+                                                            <a class="govuk-link idsk-header-web__nav-submenulite-list-item-link" href="https://www.isepvo.sk/archiv-video-navody/" title="Archive - Video tutorials">
+                                                                <span>Archive - Video tutorials</span>
+                                                            </a>
+                                                        </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="idsk-header-web__nav-list-item">
+                                            <a class="govuk-link idsk-header-web__nav-list-item-link"  href="https://www.isepvo.sk/kurzy-a-skolenia/" title="Courses">
+                                                Courses
+                                            </a>
+                                        </li>
+                                        <li class="idsk-header-web__nav-list-item">
+                                            <a class="govuk-link idsk-header-web__nav-list-item-link"  href="https://www.isepvo.sk/aktuality/" title="News">
+                                                News
+                                            </a>
+                                        </li>
+                                        <li class="idsk-header-web__nav-list-item">
+                                            <a class="govuk-link idsk-header-web__nav-list-item-link"  href="https://www.isepvo.sk/helpdesk/" title="Helpdesk">
+                                                Helpdesk
+                                            </a>
+                                        </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+                
+
+<div class="idsk-header-web__main--buttons">
+    <div class="idsk-header-web__main--login">
+        
+<a class="idsk-header-web__main--login-loginbtn idsk-button" data-module="idsk-button" data-srole="button" href="https://evo.isepvo.sk/evoportal/en-us/Public/Auth/Login" id="btn-login">Sing in</a>
+
+	<script>
+		softip.ready(function () {
+			$("#btn-login").softipIdSkButton({
+				url: "https://evo.isepvo.sk/evoportal/en-us/Public/Auth/Login",
+			});
+		})
+	</script>
+
+        <div class="idsk-header-web__main--login-action">
+            <div class="idsk-header-web__main--login-action-text">
+                <span class="govuk-body-s idsk-header-web__main--login-action-text-user-name">
+                    
+                </span>
+                <div class="govuk-!-margin-bottom-1">
+                    <a class="govuk-link" href="https://evo.isepvo.sk/evoportal/en-us/Private/MessageBox/Index" title="News">
+                        <i class="far fa-envelope"></i> News <span id="header-pocet-sprav"><i class="fas fa-spinner fa-spin"></i></span>
+                    </a>
+                    <span> | </span>
+   
+                        <form style="display: inline;" action="https://evo.isepvo.sk/logout?kc_locale=en" method="post" id="frmlogout">
+                        <a onclick="document.getElementById('frmlogout').submit(); return 0;" class="btn-logout govuk-link idsk-header-web__main--login-action-text-logout idsk-header-web__main--login-logoutbtn" href="#" title="odhlásiť">
+                                Sign out
+                        </a>    
+                    </form>
+
+                    <span> | </span>
+                    <a class="govuk-link idsk-header-web__main--login-action-text-profile idsk-header-web__main--login-profilebtn" href="https://evo.isepvo.sk/evoportal/en-us/Private/Account/MyAccount" title=" My Account">
+                        My Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+	<div class="govuk-width-container softip-idsk-main-content">
+
+
+
+<div class="govuk-breadcrumbs" data-srole="breadcrumbs"> 
+  <ol class="govuk-breadcrumbs__list">
+			<li class="govuk-breadcrumbs__list-item">
+					<a class="govuk-breadcrumbs__link" href="/evoportal/en-us/Public/Home/Index">Main page</a>
+				
+        </li>
+			<li class="govuk-breadcrumbs__list-item">
+					<a class="govuk-breadcrumbs__link govuk-breadcrumbs__notunderlined" href="#">Searching for orders</a>
+				
+        </li>
+  </ol>
+</div>
+
+		<main class="govuk-main-wrapper" id="main-content" role="main">
+			<div class="softip-idsk-pdf-export-header"></div>
+
+			<div class="govuk-width-container">
+				<div class="govuk-grid-row">
+
+<div id="left-menu-1" class="softip-idsk-leftmenu govuk-grid-column-one-quarter idsk-in-page-navigation" data-srole="leftmenu" data-module="idsk-in-page-navigation">
+	</div>
+
+<script>
+
+	softip.ready(function () {
+		$("#left-menu-1").softipIdSkLeftMenu({
+			model: {"id":"left-menu-1","items":[{"text":"Searching for profiles","href":"/evoportal/en-us/Public/ProfileSearch/Index","siteMap":{"sitemapCode":"/Public/ProfileSearch/Index","sitemapParentCode":"/Public/Home/Index","descriptionCode":"","role":[],"icon":"","menu":false,"homepage":false,"breadcrumb":true,"relUrl":"~/Public/ProfileSearch/Index","baseUrl":"https://evo.isepvo.sk/evoportal","parrent":{"sitemapCode":"/Public/Home/Index","sitemapParentCode":"","descriptionCode":"","role":[],"icon":"","menu":false,"homepage":false,"breadcrumb":true,"relUrl":"~/Public/Home/Index","baseUrl":"https://evo.isepvo.sk/evoportal","parrent":null}},"nestedLinks":null,"redirect":true,"isGroup":false,"remoteMenu":false,"zona":null,"subjektId":null,"zakazkaId":null,"roles":null},{"text":"Searching for orders","href":"/evoportal/en-us/Public/OrderSearch/Index","siteMap":{"sitemapCode":"/Public/OrderSearch/Index","sitemapParentCode":"/Public/Home/Index","descriptionCode":"","role":[],"icon":"","menu":false,"homepage":false,"breadcrumb":true,"relUrl":"~/Public/OrderSearch/Index","baseUrl":"https://evo.isepvo.sk/evoportal","parrent":{"sitemapCode":"/Public/Home/Index","sitemapParentCode":"","descriptionCode":"","role":[],"icon":"","menu":false,"homepage":false,"breadcrumb":true,"relUrl":"~/Public/Home/Index","baseUrl":"https://evo.isepvo.sk/evoportal","parrent":null}},"nestedLinks":null,"redirect":true,"isGroup":false,"remoteMenu":false,"zona":null,"subjektId":null,"zakazkaId":null,"roles":null},{"text":"Document search","href":"/evoportal/en-us/Public/DocumentSearch/Index","siteMap":{"sitemapCode":"/Public/DocumentSearch/Index","sitemapParentCode":"/Public/Home/Index","descriptionCode":"","role":[],"icon":"","menu":false,"homepage":false,"breadcrumb":true,"relUrl":"~/Public/DocumentSearch/Index","baseUrl":"https://evo.isepvo.sk/evoportal","parrent":{"sitemapCode":"/Public/Home/Index","sitemapParentCode":"","descriptionCode":"","role":[],"icon":"","menu":false,"homepage":false,"breadcrumb":true,"relUrl":"~/Public/Home/Index","baseUrl":"https://evo.isepvo.sk/evoportal","parrent":null}},"nestedLinks":null,"redirect":true,"isGroup":false,"remoteMenu":false,"zona":null,"subjektId":null,"zakazkaId":null,"roles":null}],"width":null}
+			});
+	}, false)
+
+</script>					<div class="govuk-grid-column-full govuk-grid-column-three-quarters-from-desktop">
+						
+
+
+
+<h2 class="govuk-heading-l">Searching for orders</h2>
+
+<form id="order-search-filter-form" class="softip-idsk-filter-form">
+	<div class="govuk-width-container">
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-two-thirds">
+				
+		<div class="govuk-form-group ">
+
+<label class="govuk-label" for="OrderFilter_NazovZakazky" id="pageErrSummary">Order name</label><input class="govuk-input" data-srole="text" id="OrderFilter_NazovZakazky" name="OrderFilter.NazovZakazky" type="text" value="" />		</div>
+      <script>
+        
+        softip.ready(function() {
+            $("#OrderFilter_NazovZakazky").softipIdSkTextBox({
+				errorSummaryId: null
+            });   
+        })
+
+    </script>
+
+			</div>
+			<div class="govuk-grid-column-one-third">
+				
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="OrderFilter_TypZakazky" id="pageErrSummary">Order type</label><select class="govuk-select idsk-width-full" data-srole="select" id="OrderFilter_TypZakazky" name="OrderFilter.TypZakazky"><option selected="selected" value="">All orders</option>
+<option value="EVO">Only EVO orders</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#OrderFilter_TypZakazky").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":false,"pageSize":10,"read":null,"sort":[],"include":null,"exclude":null},
+				data: [{"Disabled":false,"Group":null,"Selected":true,"Text":"All orders","Value":""},{"Disabled":false,"Group":null,"Selected":false,"Text":"Only EVO orders","Value":"EVO"}],
+				labelText: "Order type",
+				errorSummaryId: null,
+				optionLabel: null,
+                value: null
+            });   
+        })
+    </script>
+
+			</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-full">
+				
+<div class="govuk-accordion" data-module="idsk-accordion" id="advanced-search" data-attribute="value">
+	<div class="govuk-accordion__controls">
+		<button class="govuk-accordion__open-all" data-open-title="Otvoriť všetky"
+				data-close-title="Zatvoriť všetky" type="button" aria-expanded="false">
+			<span class="govuk-visually-hidden govuk-accordion__controls-span" data-section-title="sekcie"></span>
+		</button>
+	</div>
+		<div class="govuk-accordion__section">
+			<div class="govuk-accordion__section-header">
+				<h2 class="govuk-accordion__section-heading">
+					<span class="govuk-accordion__section-button" id="advanced-search-heading-0">
+						Advanced search
+					</span>
+				</h2>
+			</div>
+			<div id="advanced-search-content-0" class="govuk-accordion__section-content" aria-labelledby="advanced-search-heading-0">
+				<div class="govuk-width-container">
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group ">
+
+<label class="govuk-label" for="OrderFilter_NazovOrganizacie" id="pageErrSummary">Name of the contracting authority</label><input class="govuk-input" data-srole="text" id="OrderFilter_NazovOrganizacie" name="OrderFilter.NazovOrganizacie" type="text" value="" />		</div>
+      <script>
+        
+        softip.ready(function() {
+            $("#OrderFilter_NazovOrganizacie").softipIdSkTextBox({
+				errorSummaryId: null
+            });   
+        })
+
+    </script>
+
+			</div>
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group ">
+
+<label class="govuk-label" for="OrderFilter_IcoOrganizacie" id="pageErrSummary">ID of the procuring entity</label><input class="govuk-input" data-srole="text" id="OrderFilter_IcoOrganizacie" name="OrderFilter.IcoOrganizacie" type="text" value="" />		</div>
+      <script>
+        
+        softip.ready(function() {
+            $("#OrderFilter_IcoOrganizacie").softipIdSkTextBox({
+				errorSummaryId: null
+            });   
+        })
+
+    </script>
+
+			</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group ">
+	<div class="softip-idsk-multiselect">
+
+<label class="govuk-label" for="OrderFilter_CpvZakazky" id="pageErrSummary">CPV orders</label><input class="govuk-input" id="OrderFilter_CpvZakazky_selectedtext" name="OrderFilter.CpvZakazky_selectedtext" type="text" value="" /><input data-srole="multiselect" data-val="true" data-val-required="CPV orders - mandatory data" id="OrderFilter_CpvZakazky" name="OrderFilter.CpvZakazky" type="hidden" value="" />		<button 
+			id=OrderFilter_CpvZakazky_selectbutton
+			type="button" 
+			class="idsk-button idsk-button--secondary softip-idsk-multiselect-button" 
+			data-module="idsk-button" 
+			data-srole=button>
+			Selection
+		</button>
+	</div>
+		</div>
+    <script>
+        
+        softip.ready(function() {
+            $("#OrderFilter_CpvZakazky").softipIdSkMultiSelect({
+				ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":true,"pageSize":9999,"read":{"url":"/evoportal/en-us/Codelist/Public/ReadMulti?codelist=CPV\u0026onlyActive=True","type":"POST","data":null},"sort":[],"include":null,"exclude":null},
+				data: null,
+				labelText: "CPV orders",
+				windowWidth: 0,
+				windowHeight: 0,
+				windowLabel: null,
+				inputType: "All",
+				inputTypePattern: "",
+				errorSummaryId: null,
+				dynamicNestedItems: true
+            });   
+        })
+
+    </script>
+
+			</div>
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="OrderFilter_DatumAktZakazky" id="pageErrSummary">Update date of the Order</label><select class="govuk-select idsk-width-full" data-srole="select" id="OrderFilter_DatumAktZakazky" name="OrderFilter.DatumAktZakazky"><option selected="selected" value="">the whole period</option>
+<option value="7">for the last 7 days</option>
+<option value="31">in the last 31 days</option>
+<option value="365">for the last 365 days</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#OrderFilter_DatumAktZakazky").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":false,"pageSize":10,"read":null,"sort":[],"include":null,"exclude":null},
+				data: [{"Disabled":false,"Group":null,"Selected":true,"Text":"the whole period","Value":""},{"Disabled":false,"Group":null,"Selected":false,"Text":"for the last 7 days","Value":"7"},{"Disabled":false,"Group":null,"Selected":false,"Text":"in the last 31 days","Value":"31"},{"Disabled":false,"Group":null,"Selected":false,"Text":"for the last 365 days","Value":"365"}],
+				labelText: "Update date of the Order",
+				errorSummaryId: null,
+				optionLabel: null,
+                value: null
+            });   
+        })
+    </script>
+
+			</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group ">
+	<div class="softip-idsk-multiselect">
+
+<label class="govuk-label" for="OrderFilter_NutsZakazky" id="pageErrSummary">NUTS orders</label><input class="govuk-input" id="OrderFilter_NutsZakazky_selectedtext" name="OrderFilter.NutsZakazky_selectedtext" type="text" value="" /><input data-srole="multiselect" data-val="true" data-val-required="NUTS orders - mandatory data" id="OrderFilter_NutsZakazky" name="OrderFilter.NutsZakazky" type="hidden" value="" />		<button 
+			id=OrderFilter_NutsZakazky_selectbutton
+			type="button" 
+			class="idsk-button idsk-button--secondary softip-idsk-multiselect-button" 
+			data-module="idsk-button" 
+			data-srole=button>
+			Selection
+		</button>
+	</div>
+		</div>
+    <script>
+        
+        softip.ready(function() {
+            $("#OrderFilter_NutsZakazky").softipIdSkMultiSelect({
+				ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":true,"pageSize":9999,"read":{"url":"/evoportal/en-us/Codelist/Public/ReadMulti?codelist=NUTS\u0026onlyActive=True","type":"POST","data":null},"sort":[],"include":null,"exclude":null},
+				data: null,
+				labelText: "NUTS orders",
+				windowWidth: 0,
+				windowHeight: 0,
+				windowLabel: null,
+				inputType: "All",
+				inputTypePattern: "",
+				errorSummaryId: null,
+				dynamicNestedItems: true
+            });   
+        })
+
+    </script>
+
+			</div>
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="OrderFilter_Obrana" id="pageErrSummary">Defense / security / protection</label><select class="govuk-select idsk-width-full" data-srole="select" id="OrderFilter_Obrana" name="OrderFilter.Obrana"><option selected="selected" value="">All of them</option>
+<option value="N">Not/No</option>
+<option value="A">Yes</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#OrderFilter_Obrana").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":false,"pageSize":10,"read":null,"sort":[],"include":null,"exclude":null},
+				data: [{"Disabled":false,"Group":null,"Selected":true,"Text":"All of them","Value":""},{"Disabled":false,"Group":null,"Selected":false,"Text":"Not/No","Value":"N"},{"Disabled":false,"Group":null,"Selected":false,"Text":"Yes","Value":"A"}],
+				labelText: "Defense / security / protection",
+				errorSummaryId: null,
+				optionLabel: null,
+                value: null
+            });   
+        })
+    </script>
+
+			</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="OrderFilter_Kriteria" id="pageErrSummary">Evaluation criteria</label><select class="govuk-select idsk-width-full" data-srole="select" id="OrderFilter_Kriteria" name="OrderFilter.Kriteria"><option value="">All of them</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#OrderFilter_Kriteria").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":true,"pageSize":9999,"read":{"url":"/evoportal/en-us/Codelist/Public/Read?codelist=18\u0026rodic=\u0026onlyActive=True","type":"POST","data":null},"sort":[],"include":null,"exclude":null},
+				data: [],
+				labelText: "Evaluation criteria",
+				errorSummaryId: null,
+				optionLabel: "All of them",
+                value: null
+            });   
+        })
+    </script>
+
+			</div>
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="OrderFilter_SpolufinEU" id="pageErrSummary">Co-financing from EU funds</label><select class="govuk-select idsk-width-full" data-srole="select" id="OrderFilter_SpolufinEU" name="OrderFilter.SpolufinEU"><option selected="selected" value="">All of them</option>
+<option value="N">Not/No</option>
+<option value="A">Yes</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#OrderFilter_SpolufinEU").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":false,"pageSize":10,"read":null,"sort":[],"include":null,"exclude":null},
+				data: [{"Disabled":false,"Group":null,"Selected":true,"Text":"All of them","Value":""},{"Disabled":false,"Group":null,"Selected":false,"Text":"Not/No","Value":"N"},{"Disabled":false,"Group":null,"Selected":false,"Text":"Yes","Value":"A"}],
+				labelText: "Co-financing from EU funds",
+				errorSummaryId: null,
+				optionLabel: null,
+                value: null
+            });   
+        })
+    </script>
+
+			</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="OrderFilter_DruhPostupu" id="pageErrSummary">Type of procedure</label><select class="govuk-select idsk-width-full" data-srole="select" id="OrderFilter_DruhPostupu" name="OrderFilter.DruhPostupu"><option value="">All of them</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#OrderFilter_DruhPostupu").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":true,"pageSize":9999,"read":{"url":"/evoportal/en-us/Codelist/Public/Read?codelist=31\u0026rodic=\u0026onlyActive=True","type":"POST","data":null},"sort":[],"include":null,"exclude":null},
+				data: [],
+				labelText: "Type of procedure",
+				errorSummaryId: null,
+				optionLabel: "All of them",
+                value: null
+            });   
+        })
+    </script>
+
+			</div>
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="OrderFilter_FinancLimit" id="pageErrSummary">Financial limit</label><select class="govuk-select idsk-width-full" data-srole="select" id="OrderFilter_FinancLimit" name="OrderFilter.FinancLimit"><option value="">All of them</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#OrderFilter_FinancLimit").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":true,"pageSize":9999,"read":{"url":"/evoportal/en-us/Codelist/Public/Read?codelist=32\u0026rodic=\u0026onlyActive=True","type":"POST","data":null},"sort":[],"include":null,"exclude":["INY"]},
+				data: [],
+				labelText: "Financial limit",
+				errorSummaryId: null,
+				optionLabel: "All of them",
+                value: null
+            });   
+        })
+    </script>
+
+			</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-one-half">
+				
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="OrderFilter_DruhZakazky" id="pageErrSummary">Order type</label><select class="govuk-select idsk-width-full" data-srole="select" id="OrderFilter_DruhZakazky" name="OrderFilter.DruhZakazky"><option value="">All of them</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#OrderFilter_DruhZakazky").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":true,"pageSize":9999,"read":{"url":"/evoportal/en-us/Codelist/Public/Read?codelist=30\u0026rodic=\u0026onlyActive=True","type":"POST","data":null},"sort":[],"include":null,"exclude":["INY"]},
+				data: [],
+				labelText: "Order type",
+				errorSummaryId: null,
+				optionLabel: "All of them",
+                value: null
+            });   
+        })
+    </script>
+
+			</div>
+		</div>
+	</div>
+			</div>
+		</div>
+</div>
+
+			</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-full">
+				
+<button class="idsk-button" data-module="idsk-button" data-srole="button" id="btn-order-search-filter-ok" type="submit">Search</button>
+
+	<script>
+		softip.ready(function () {
+			$("#btn-order-search-filter-ok").softipIdSkButton({
+				url: "",
+			});
+		})
+	</script>
+
+				
+<button class="idsk-button idsk-button--secondary" data-module="idsk-button" data-srole="button" id="btn-order-search-filter-clear" type="reset">Clear the form</button>
+
+	<script>
+		softip.ready(function () {
+			$("#btn-order-search-filter-clear").softipIdSkButton({
+				url: "",
+			});
+		})
+	</script>
+
+			</div>
+		</div>
+
+	</div>
+</form>
+
+
+    <div class="softip-idsk-grid" data-srole="grid" data-module="idsk-table" id="GridOrder">
+		<div class="softip-idsk-griddata-wrapper">
+			<table class="idsk-table" aria-label="">
+
+            <thead class="idsk-table__head">
+                  <tr class="idsk-table__row">
+<th class="idsk-table__header softip-idsk-sortable" data-column="NAZOV" scope="col" style="width:25%"><a href="#"><span class="th-span">Order name</span></a></th><th class="idsk-table__header softip-idsk-sortable" data-column="NAZOV_ORGANIZACIE" scope="col" style="width:25%"><a href="#"><span class="th-span">Name of the contracting authority</span></a></th><th class="idsk-table__header" data-column="HLAVNE_CPV" scope="col" style="width:13%"><span class="th-span">Main CPV</span></th><th class="idsk-table__header" data-column="HLAVNE_NUTS" scope="col" style="width:14%"><span class="th-span">Major NUTS</span></th><th class="idsk-table__header softip-idsk-sortable desc" data-column="AKTUALIZACIA" scope="col" style="width:13%"><a href="#"><span class="th-span">Update</span></a></th><th class="idsk-table__header" data-column="SpoluFinEU" scope="col" style="width:30px"><span class="th-span"></span></th><th class="idsk-table__header" data-column="Obrana" scope="col" style="width:30px"><span class="th-span"></span></th><th class="idsk-table__header" data-column="EVO" scope="col" style="width:40px"><span class="th-span"></span></th>                  </tr>
+            </thead>
+           
+            <tbody class="idsk-table__body">
+                
+
+
+            </tbody>      
+        </table>
+		
+
+<div class="softip-idsk-grid-norecords" data-srole="informationbar" id="GridOrderWarningBar"></div>	<script>
+
+		softip.ready(function () {
+			$("#GridOrderWarningBar").softipIdSkInformationBar({
+				type: "Warning",
+				content: "No records matching the specified search criteria were found.",
+				show: false
+			});
+		});
+
+	</script>
+
+        </div>
+             <div class="softip-idsk-pager hidden-print" style="width: 100%; position: relative;">
+
+					<div class="hidden-mobile total-counter">
+						<span class="total-counter-num">0</span>
+						<span class="total-counter-text">records</span>
+					</div>
+
+				<div class="center-pagination-wrapper">
+                    <nav class="center-pagination">
+                        <ul class="pagination">
+                           
+                        </ul>
+                    </nav>
+                </div>
+                <div class="hidden-mobile pagination-size-option">
+                    <div class="pagesize-text">Records on page </div>
+                    <div class="pagesize-select">
+                       
+		<div class="govuk-form-group">
+
+<label class="govuk-label" for="GridOrder_pagesize" id="pageErrSummary"></label><select class="softip-idsk-pagesize govuk-select" data-srole="select" id="GridOrder_pagesize" name="GridOrder_pagesize"><option selected="selected" value="10">10</option>
+<option value="20">20</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select>		</div>
+     <script>
+        softip.ready(function() {
+            $("#GridOrder_pagesize").softipIdSkSelect({
+                ajax: false,
+				autoBind: false,
+                dataSource: {"ajax":false,"pageSize":10,"read":null,"sort":[],"include":null,"exclude":null},
+				data: [{"Disabled":false,"Group":null,"Selected":true,"Text":"10","Value":"10"},{"Disabled":false,"Group":null,"Selected":false,"Text":"20","Value":"20"},{"Disabled":false,"Group":null,"Selected":false,"Text":"50","Value":"50"},{"Disabled":false,"Group":null,"Selected":false,"Text":"100","Value":"100"}],
+				labelText: null,
+				errorSummaryId: null,
+				optionLabel: null,
+                value: null
+            });   
+        })
+    </script>
+
+                    </div>
+                </div>  
+             </div>
+
+    </div>
+    <script>
+        
+        softip.ready(function() {
+            $("#GridOrder").softipIdSkGrid({
+                ajax: false,
+				autoBind: false,
+                pageable: true,
+                columns: [{"column":"NAZOV","title":"Order name","headerTemplate":null,"type":"string","format":null,"clientTemplate":"\u003Ca title=\u0022${data.NAZOV}\u0022 class=\u0022govuk-link softip-idsk-grid-link \u0022 href=\u0022{{html softip.createUrl(\u0022/evoportal/en-us/Public/OrderSearch/Detail\u0022, {id:data.ID}, true) }}\u0022\u003E${data.NAZOV}\u003C/a\u003E","width":"25%","sortable":true,"headerHtmlAttributes":{"data-column":"NAZOV","scope":"col","class":"idsk-table__header softip-idsk-sortable","style":"width:25%"},"htmlAttributes":{"class":"idsk-table__cell"}},{"column":"NAZOV_ORGANIZACIE","title":"Name of the contracting authority","headerTemplate":null,"type":"string","format":null,"clientTemplate":"\u003Ca title=\u0022${data.NAZOV_ORGANIZACIE}\u0022 class=\u0022govuk-link softip-idsk-grid-link \u0022 href=\u0022{{html softip.createUrl(\u0022/evoportal/en-us/Public/ProfileSearch/Detail\u0022, {id:data.ORGANIZACIA_ID}, true) }}\u0022\u003E${data.NAZOV_ORGANIZACIE}\u003C/a\u003E","width":"25%","sortable":true,"headerHtmlAttributes":{"data-column":"NAZOV_ORGANIZACIE","scope":"col","class":"idsk-table__header softip-idsk-sortable","style":"width:25%"},"htmlAttributes":{"class":"idsk-table__cell"}},{"column":"HLAVNE_CPV","title":"Main CPV","headerTemplate":null,"type":"string","format":null,"clientTemplate":null,"width":"13%","sortable":false,"headerHtmlAttributes":{"data-column":"HLAVNE_CPV","scope":"col","class":"idsk-table__header","style":"width:13%"},"htmlAttributes":{"class":"idsk-table__cell"}},{"column":"HLAVNE_NUTS","title":"Major NUTS","headerTemplate":null,"type":"string","format":null,"clientTemplate":null,"width":"14%","sortable":false,"headerHtmlAttributes":{"data-column":"HLAVNE_NUTS","scope":"col","class":"idsk-table__header","style":"width:14%"},"htmlAttributes":{"class":"idsk-table__cell"}},{"column":"AKTUALIZACIA","title":"Update","headerTemplate":null,"type":"date","format":"M/d/yyyy","clientTemplate":null,"width":"13%","sortable":true,"headerHtmlAttributes":{"data-column":"AKTUALIZACIA","scope":"col","class":"idsk-table__header softip-idsk-sortable desc","style":"width:13%"},"htmlAttributes":{"class":"idsk-table__cell"}},{"column":"SpoluFinEU","title":"","headerTemplate":null,"type":"boolean","format":null,"clientTemplate":"{{if data.SpoluFinEU}}\u003Ci class=\u0022softip-idsk-flag-eu softip-idsk-icon\u0022 title=\u0022The Order is financed from EU funds\u0022\u003E\u003C/i\u003E{{/if}}","width":"30px","sortable":false,"headerHtmlAttributes":{"data-column":"SpoluFinEU","scope":"col","class":"idsk-table__header","style":"width:30px"},"htmlAttributes":{"class":"idsk-table__cell"}},{"column":"Obrana","title":"","headerTemplate":null,"type":"boolean","format":null,"clientTemplate":"{{if data.Obrana}}\u003Ci class=\u0022fa fa-fighter-jet fa-lg softip-idsk-blue softip-idsk-fa-icon\u0022 title=\u0022Order in the field of defense and security\u0022\u003E\u003C/i\u003E{{/if}}","width":"30px","sortable":false,"headerHtmlAttributes":{"data-column":"Obrana","scope":"col","class":"idsk-table__header","style":"width:30px"},"htmlAttributes":{"class":"idsk-table__cell"}},{"column":"EVO","title":"","headerTemplate":null,"type":"boolean","format":null,"clientTemplate":"{{if data.EVO}}\u003Ci class=\u0022softip-idsk-evo softip-idsk-icon\u0022 title=\u0022Order managed in the EVO system\u0022 data-text=\u0022EVO\u0022\u003E\u003C/i\u003E{{/if}}","width":"40px","sortable":false,"headerHtmlAttributes":{"data-column":"EVO","scope":"col","class":"idsk-table__header","style":"width:40px"},"htmlAttributes":{"class":"idsk-table__cell"}}],
+                dataSource: {"ajax":true,"pageSize":10,"read":{"url":"/evoportal/en-us/Public/OrderSearch/GetAllData","type":"POST","data":null},"sort":[{"column":"AKTUALIZACIA","direction":"DESC"}],"include":null,"exclude":null},
+                checkboxSelection: {"enabled":false,"width":"30px","idColumn":""},
+				noRecords: true,
+				maxHeight: null,
+				paginationCounter: false
+            });   
+        })
+
+    </script>
+
+
+
+<div id="sidewidget" class="idsk-sidewidget-wrapper" data-srole="sidewidget">
+	<div class="idsk-widget-column">
+			<button class="idsk-sidewidget-icon" id="print-btn" title="Push">
+				<i class="fa fa-print" aria-hidden="true"></i>
+			</button>
+			<button class="idsk-sidewidget-icon" id="send-btn" title="Send">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</button>
+			<button class="idsk-sidewidget-icon" id="download-btn" title="Download">
+				<i class="fa fa-download" aria-hidden="true"></i>
+			</button>
+	</div>
+</div>
+
+<script>
+
+	softip.ready(function () {
+		$("#sidewidget").softipIdSkSideWidget({
+			standardButtons: true,
+			sideWidgetButtons: [{"id":"print-btn","iconClass":"fa fa-print","label":"Push","disabled":false},{"id":"send-btn","iconClass":"fa fa-envelope","label":"Send","disabled":false},{"id":"download-btn","iconClass":"fa fa-download","label":"Download","disabled":false}]
+		});
+	})
+
+</script>
+
+<script src="/evoportal/js/public/OrderSearch/index.min.js?v=C60xmPxHscSQIZya0GmGepNUFNsapfN2U0qEtS5oXMw"></script>
+
+<script>
+	new $App.Public.OrderSearchIndex({
+		resources: {"CHYBA":"An error"},
+	});
+</script>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	
+
+<div data-module="idsk-footer-extended">
+	<footer class="idsk-footer-extended idsk-footer-extended--up-button-enabled">
+		<div class="idsk-footer-extended-up-button-div softip-idsk-footer-extended-up-button-div" id="softip-footer-extended-up-button" style="display: none;">
+				<div class="govuk-grid-column-full">
+					<a href="#" role="button" draggable="false" class="idsk-button idsk-button--start idsk-footer-extended-up-button-a" data-module="idsk-button">
+						<svg class="idsk-footer-extended__up-button-svg" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10 5.5984L0 15L0 9.40174L10 0L10 5.5984Z" fill="white"></path>
+							<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M20 9.4016L10 0V5.59826L20 15V9.4016Z" fill="white"></path>
+						</svg>
+						Up
+					</a>
+				</div>
+		</div>
+		<div class="idsk-footer-extended-main-content">
+			<div class="govuk-width-container">
+
+				<div class="wp-block-idsk-container app-pane-gray govuk-!-padding-top-3 govuk-!-padding-bottom-0">
+					<div class="govuk-width-container">
+						<div class="wp-block-idsk-container">
+							<div class="wp-block-idsk-row">
+								<div class="govuk-grid-row   ">
+									<div class="wp-block-idsk-row">
+											<div class="wp-block-idsk-column is-style-one-third">
+												<div class="govuk-grid-column-one-third">
+													<ul class="govuk-list">
+														<li><strong>Links</strong></li>
+															<li>
+                                                                    <a class="govuk-link" title="uvo.gov.sk" href="https://www.uvo.gov.sk/">
+																	    uvo.gov.sk
+																    </a>
+															</li>
+															<li>
+                                                                    <a class="govuk-link" title="vlada.gov.sk" href="https://www.vlada.gov.sk/">
+																	    vlada.gov.sk
+																    </a>
+															</li>
+															<li>
+                                                                    <a class="govuk-link" title="slov-lex.sk" href="https://www.slov-lex.sk/">
+																	    slov-lex.sk
+																    </a>
+															</li>
+															<li>
+                                                                    <a class="govuk-link" title="crz.gov.sk" href="https://www.crz.gov.sk/">
+																	    crz.gov.sk
+																    </a>
+															</li>
+															<li>
+                                                                    <a class="govuk-link" title="slovensko.sk" href="https://www.slovensko.sk/">
+																	    slovensko.sk
+																    </a>
+															</li>
+													</ul>
+												</div>
+											</div>
+											<div class="wp-block-idsk-column is-style-one-third">
+												<div class="govuk-grid-column-one-third">
+													<ul class="govuk-list">
+														<li><strong>Menu</strong></li>
+															<li>
+                                                                    <a class="govuk-link" title="About system" href="https://www.isepvo.sk/o-systeme/">
+																	    About system
+																    </a>
+															</li>
+															<li>
+                                                                    <a class="govuk-link" title="FAQ" href="https://www.isepvo.sk/najcastejsie-otazky/">
+																	    FAQ
+																    </a>
+															</li>
+															<li>
+Manuals															</li>
+															<li>
+                                                                    <a class="govuk-link" title="Courses" href="https://www.isepvo.sk/kurzy-a-skolenia/">
+																	    Courses
+																    </a>
+															</li>
+															<li>
+                                                                    <a class="govuk-link" title="News" href="https://www.isepvo.sk/aktuality/">
+																	    News
+																    </a>
+															</li>
+															<li>
+                                                                    <a class="govuk-link" title="Helpdesk" href="https://www.isepvo.sk/helpdesk/">
+																	    Helpdesk
+																    </a>
+															</li>
+													</ul>
+												</div>
+											</div>
+											<div class="wp-block-idsk-column is-style-one-third">
+												<div class="govuk-grid-column-one-third">
+													<ul class="govuk-list">
+														<li><strong>Address</strong></li>
+															<li>
+Budova Lakeside park 02<br/>Tomášikova 14366/64A<br/>831 04 Bratislava															</li>
+													</ul>
+                                                        <img src="https://evo.isepvo.sk/evoportal/css/img/logo-urad-vlady.svg" style="height:4rem; max-width: 100%;" alt="Urad vlady"/>
+												</div>
+											</div>
+
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="govuk-grid-column-full">
+					<div class="idsk-footer-extended-description-panel idsk-footer-extended-description-panel-top-border">
+						<div class="govuk-grid-column-two-thirds idsk-footer-extended-info-links">
+
+							<div class="wp-block-idsk-container app-pane-gray govuk-!-padding-top-6 govuk-!-padding-bottom-0">
+								<div class="govuk-width-container">
+									<div class="wp-block-idsk-container">
+										<div class="wp-block-idsk-row">
+											<div class="govuk-grid-row   ">
+												<div class="wp-block-idsk-row">
+													<div class="wp-block-idsk-column">
+														<div class="govuk-grid-column-full">
+															<div class="   govuk-!-padding-left-3 govuk-!-padding-right-3">
+
+
+
+                                                                <p>Created in accordance with&nbsp;<a class="govuk-link" href="https://idsk.gov.sk/komponenty/footer-extended#">Uniform design manual of electronic services.</a></p>
+
+
+
+																<p>Copyright © 2026 ELECTRONIC PLATFORM. All rights reserved.</p>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+	
+
+
+<script src="/evoportal/js/idsk-frontend-2.10.0.min.js?v=PVlha4DXDKfx3kXb4TowgHWaaAB4jRpWZFWpcQ0NK6Y"></script>
+
+<script>
+    softip.culture.code = "en-US";
+    softip.culture.format = {
+        date: {
+            short: "M/d/yyyy",
+			shortTime: "h:mm tt",
+			shortDateTime: "M/d/yyyy h:mm tt"
+        }
+    }
+
+    $App.options = {
+        version: "18.1.1.21-build20250115T0840\u002B885c02d17b1f25365def4105577ac13c7636cd11",
+        url: {
+            base: "/evoportal/en-us/",
+			baseFiles: "/evoportal/",
+            logout: "/evoportal/en-us/Public/Auth/Logout",
+            menu: "/evoportal/en-us/Home/EvoMenu",
+            messagebox: {
+                summary: "/evoportal/en-us/Private/MessageBox/Summary",
+            },
+            back: "/evoportal/en-us/Public/Home/Index"
+        },
+        user: {
+            isAuth: false,
+            roles: []
+        },
+        requestVerification: {
+            token: "CfDJ8FF4qFfjkXlBsWGLoVbA2dO0I7CgRKUTsz3-RsJZoH6DZnjxV-n2iykw-4IsbIg7-2yZPksvjj8nNVM8BGdWc583Jp8uhvN5XeQvk6sXODM67qadVqjsFBDMxgVMkFX1pDglTo8Ei84erHbt19x-UsU",
+            headerName: "X-CSRF-TOKEN"
+        },
+        upload: {
+            maxSize: 100 * 1000 * 1000,
+        },
+        sitemap: {"sitemapCode":"/Public/OrderSearch/Index","sitemapParentCode":"/Public/Home/Index","descriptionCode":"","role":[],"icon":"","menu":false,"homepage":false,"breadcrumb":true,"relUrl":"~/Public/OrderSearch/Index","baseUrl":"https://evo.isepvo.sk/evoportal","parrent":{"sitemapCode":"/Public/Home/Index","sitemapParentCode":"","descriptionCode":"","role":[],"icon":"","menu":false,"homepage":false,"breadcrumb":true,"relUrl":"~/Public/Home/Index","baseUrl":"https://evo.isepvo.sk/evoportal","parrent":null}},
+        pageTitle: "Searching for orders",
+        govukStyleConstants: {"IdskButton":"idsk-button","GovukCheckboxes":"govuk-checkboxes","GovukCheckboxes_Input":"govuk-checkboxes__input","GovukCheckboxes_Item":"govuk-checkboxes__item","GovukCheckboxes_Label":"govuk-checkboxes__label","GovukCheckboxes_Conditional":"govuk-checkboxes__conditional","GovukCheckboxes_ConditionalHidden":"govuk-checkboxes__conditional--hidden","GovukCheckboxesSmall":"govuk-checkboxes--small","GovukErrorMessage":"govuk-error-message","GovukErrorSummary":"govuk-error-summary","GovukErrorSummary_Title":"govuk-error-summary__title","GovukErrorSummary_Body":"govuk-error-summary__body","GovukErrorSummary_List":"govuk-error-summary__list","GovukFieldset":"govuk-fieldset","GovukFieldset_Heading":"govuk-fieldset__heading","GovukFieldset_Legend":"govuk-fieldset__legend","GovukFieldset_Legend_l":"govuk-fieldset__legend--l","GovukFileUpload":"govuk-file-upload","GovukFormGroup":"govuk-form-group","GovukFormGroupError":"govuk-form-group--error","GovukHint":"govuk-hint","GovukInput":"govuk-input","GovukInsetText":"govuk-inset-text","GovukLabel":"govuk-label","GovukList":"govuk-list","GovukRadios":"govuk-radios","GovukRadiosConditional":"govuk-radios--conditional","GovukRadiosInline":"govuk-radios--inline","GovukRadiosSmall":"govuk-radios--small","GovukRadios_Conditional":"govuk-radios__conditional","GovukRadios_ConditionalHidden":"govuk-radios__conditional--hidden","GovukRadios_Divider":"govuk-radios__divider","GovukRadios_Input":"govuk-radios__input","GovukRadios_Item":"govuk-radios__item","GovukRadios_Label":"govuk-radios__label","GovukHeadingXL":"govuk-heading-xl","GovukHeadingL":"govuk-heading-l","GovukHeadingM":"govuk-heading-m","GovukSelect":"govuk-select","GovukTextarea":"govuk-textarea","GovukVisuallyHidden":"govuk-visually-hidden","GovukWidthContainer":"govuk-width-container","GovukWidthOneThird":"govuk-!-width-one-third","GovukWidthTwoThird":"govuk-!-width-two-third","OptionalExtraClass":"optional-extra-class","IdskTable":"idsk-table","GovukGridRow":"govuk-grid-row","GovukGridCollFull":"govuk-grid-column-full","GovukGridColOneThird":"govuk-grid-column-one-third","GovukGridColTwoThirds":"govuk-grid-column-two-thirds","GovukGridColOneHalf":"govuk-grid-column-one-half","GovukGridColOneQuarter":"govuk-grid-column-one-quarter","GovukGridColThreeQuarters":"govuk-grid-column-three-quarters","GovukGridColThreeQuartersDesktop":"govuk-grid-column-full govuk-grid-column-three-quarters-from-desktop","GovukGridColOneQuarterDesktop":"govuk-grid-column-one-half govuk-grid-column-one-quarter-from-desktop","GovukGridColTwoThirdsDesktop":"govuk-grid-column-three-quarters govuk-grid-column-two-thirds-from-desktop","GovukGridColTwoThirdsForDesktop":"govuk-grid-column-two-thirds-from-desktop","GovukContainer":"govuk-width-container","IdskWarningText":"idsk-warning-text","IdskWarningTextInfo":"idsk-warning-text--info","IdskWarningText_Text":"idsk-warning-text__text","GovukHeadingS":"govuk-heading-s"},
+        resources: {"ANO":"Yes","NIE":"Not/No","ZATVORIT":"Close","OK":"OK","PRIDAT":"Add","POSLAT_EMAIL_ZNAMEMU":"SEND AN E-MAIL TO A FRIEND","POSLAT":"Send","VYMAZ_OTAZKA":"Are you sure you want to delete this record?","VYMAZ":"Delete","EVO_NEDOSTUPNE":"EVO unavailable","POKRACOVAT":"Continue","CHYBA_VOLANIA":"Call error","UDAJE_BOLI_USPESNE_ULOZENE":"The data has been successfully saved","CHYBA":"An error","ZAZNAMOV":"records","ZAZNAM":"record","ZAZNAMY":"records","MAX_VELKOST_SUBORU":"Max upload file size is"}
+    }
+
+    $App.init();
+
+</script>
+
+	
+
+</body>
+</html>

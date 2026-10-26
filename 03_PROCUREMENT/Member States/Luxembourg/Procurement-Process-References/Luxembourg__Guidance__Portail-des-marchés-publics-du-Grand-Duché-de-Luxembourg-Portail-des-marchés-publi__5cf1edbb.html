@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<title>Portail des marchés publics du Grand-Duché de Luxembourg </title>
+
+
+	
+
+			<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+			<title>
+				Portail des marchés publics du Grand-Duché de Luxembourg 
+			</title>
+
+			
+			<link rel="stylesheet" href="https://pmp.b2g.etat.lu/themes/css/vue-multiselect.min.css?k=2026-00.03.06" type="text/css" />
+			<link rel="stylesheet" type="text/css" href="https://pmp.b2g.etat.lu/themes/css/ng-style-mpe.css?k=2026-00.03.06" media="all"/>
+			<link rel="stylesheet" type="text/css" href="https://pmp.b2g.etat.lu/themes/css/ng-style.css?k=2026-00.03.06" media="all"/>
+			<link rel="stylesheet" href="https://pmp.b2g.etat.lu/themes/css/chosen.css?k=2026-00.03.06" type="text/css" />
+			<link rel="stylesheet" href="https://pmp.b2g.etat.lu/themes/css/leaflet.css?k=2026-00.03.06" />
+			<link rel="stylesheet" href="https://pmp.b2g.etat.lu/themes/css/MarkerCluster.css?k=2026-00.03.06" type="text/css" />
+			<link rel="stylesheet" href="https://pmp.b2g.etat.lu/themes/css/leaflet.awesome-markers.css?k=2026-00.03.06" type="text/css" />
+
+            
+                    <link rel="stylesheet" href="app/assets/css/entreprise.css?k=2026-00.03.06" type="text/css" >
+                
+
+			<!-- end bloc -->
+			<link rel="stylesheet" type="text/css"
+				  href="https://pmp.b2g.etat.lu/themes/css/upload/jquery.fileupload-ui-noscript.css?k=2026-00.03.06"
+				  media="all"/>
+			<link rel="stylesheet" type="text/css"
+				  href="https://pmp.b2g.etat.lu/themes/css/upload/jquery.fileupload-ui.css?k=2026-00.03.06"
+				  media="all"/>
+
+		
+</head>
+
+<body class=' ' >
+
+<script>
+	var pfUrl = "/";
+	var isAgent = false;
+</script>
+
+
+
+
+<!--Debut Bandeau-->
+<!--Begin BandeauEntreprise-->
+        
+    
+    
+        
+    <header class="header" role="banner">
+        <div class="navbar-default navbar-section">
+            <div class="container  header-top">
+                <div class="pull-left relative header-left">
+    <div class="pull-left">
+        <a href="/entreprise"
+           alt="Accueil"
+           title="Accueil"
+           class="btn btn-link">
+            <img class="img-responsive header-img "
+                 src="/themes//images/img/logo-replace.png"
+                 alt="Accueil">
+        </a>
+    </div>
+</div>                            </div>
+        </div>
+    </header>
+
+    <div class="" id="skippy">
+        <a href="#horizonatal-menu"
+           class="sr-only sr-only-focusable clearfix btn-lg btn-block btn-xs">
+            Aller au menu
+        </a>
+        <a href="#middle"
+           class="sr-only sr-only-focusable clearfix btn-lg btn-block btn-xs">
+            Aller au contenu
+        </a>
+    </div>
+
+    <div class="nav-wrapper d-block">
+        <nav class="navbar horizonatal-menu" role="navigation" data-spy="affix" data-offset-top="20" id="horizonatal-menu">
+            <div class="container d-block">
+                <div class="top top-user-profile pull-right " id="ctl0_bandeauEntrepriseWithoutMenuSf_ctl0">
+                    <div id="user-infos" class="user-toogle-infos">
+                                                    <div id="ctl0_bandeauEntrepriseWithoutMenuSf_panelDisconnected" class="bloc-user-login">
+    <div class="bootstrap">
+        <div class="kt-profile" data-widget="profile" data-status="online"
+             data-json='{"profile":{"name":"", "lastname":"" } }'>
+            <div class="atx-popover-markup-login-usr">
+                <div class="trigger-btn selector btn-toggle-info_user kt-profile-dropdown-toggle"
+                                          aria-expanded="false" id="kt-profile-dropdown-Disconnected">
+                    <a href="/entreprise/login" data-placement="bottom" class="btn-block btn-login">
+                        <span class="text">
+                            <span class="hidden-xs">Se connecter</span>
+                            <span class="visible-xs pull-left">
+                                <i class="fa fa-user-o"></i>
+                            </span>
+                                                    </span>
+                    </a>
+                </div>
+
+                            </div>
+        </div>
+    </div>
+    <div id="ctl0_bandeauEntrepriseWithoutMenuSf_nonAuthentifie">
+        <div class="panel-user-infos">
+            <div class="panel-user-infos-arrow"></div>
+            <div class="content"></div>
+        </div>
+    </div>
+</div>                                            </div>
+                </div>
+                <div class="navbar-header">
+                    <div class="wrapper pull-right">
+                        <a class="mobile-help m-r-4" onclick="goToUtah()" aria-label="Contact"><i class="fa fa-phone"></i></a>
+                        <a class="mobile-search atx-popover-markup-login-usr m-r-2" href="/entreprise/login" aria-label="entreprise-auth"><i class="fa fa-user"></i></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand"
+                       href="/entreprise">
+                        <img src="/themes//images/img/logo_mobile.png"/>
+                    </a>
+                </div>
+                                    <div class="collapse navbar-collapse p-0" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                                                            <li class="hide">
+    <a href="#" class="dropdown-toggle pull-left"
+       data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Mon panier
+        <span class="fa fa-chevron-down pull-right arrow-position"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li class="container-fluid">
+            <ul class="list-unstyled">
+                <li class="dropdown-header">
+                    <div class="h4">
+                        Marchés en cours
+                    </div>
+                </li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise">
+                        <span class="fa fa-chevron-right"></span>
+                        Tous les marchés
+                    </a>
+                </li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;retraits">
+                        <span class="fa fa-chevron-right"></span>
+                        Avec
+                    </a>
+                    /
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;sansRetraits">
+                        sans retrait
+                    </a>
+                </li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;questions">
+                        <span class="fa fa-chevron-right"></span>
+                        Avec
+                    </a>
+                    /
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;sansQuestions">
+                        sans question posée
+                    </a>
+                </li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;depots">
+                        <span class="fa fa-chevron-right"></span>
+                        Avec
+                    </a>
+                    /
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;sansDepots">
+                        sans dépôt
+                    </a>
+                </li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;echanges">
+                        <span class="fa fa-chevron-right"></span>
+                        Avec
+                    </a>
+
+                    /
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;sansEchanges">
+                        sans message échangé
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;panierEntreprise&amp;panierEntreprise&amp;dateFinEnd">
+                        <span class="fa fa-chevron-right"></span>
+                        Consultations clôturées
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;searchAnnCons&amp;panierEntreprise">
+                        <span class="fa fa-chevron-right"></span>
+                        Recherche avancée
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</li>
+                                                            <li>
+    <a href="#" class="dropdown-toggle pull-left"
+       data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Avis
+        <span class="fa fa-chevron-down pull-right arrow-position"></span></a>
+
+    <ul class="dropdown-menu mega-dropdown-menu">
+        <li class="container-fluid">
+            <ul class="list-unstyled clearfix">
+                <li class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li class="dropdown-header">
+                            <div class="h4">
+                                Marchés en cours
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input-group form-group form-group-sm">
+                                <form class="input-group form-group form-group-sm"
+                                      action="/espace-entreprise/search"
+                                      method="get">
+                                    <label class="sr-only"
+                                           for="ctl0_bandeauEntrepriseWithoutMenuSf_quickSearch">
+                                        Recherche rapide
+                                    </label>
+                                    <input name="keyWord"
+                                           type="text"
+                                           aria-placeholder="Recherche rapide"
+                                           id="ctl0_bandeauEntrepriseWithoutMenuSf_quickSearch"
+                                           class="form-control input-quickSearch"
+                                           placeholder="Recherche rapide ..."
+                                           onfocus=""
+                                           onblur=""
+                                           title="Recherche rapide"
+                                    />
+                                    <span class="input-group-btn align-right">
+                                                                <button class="btn btn-sm btn-primary button-quickSearch"
+                                                                        type="submit"
+                                                                        id="btnGoToQuickResultSearch">
+                                                                    <i class="fa fa-search"></i>
+                                                                </button>
+                                                            </span>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                                                            <a href="/?page=Entreprise.EntrepriseAdvancedSearch&AllCons">
+                                    <span class="fa fa-chevron-right"></span>
+                                    Tous les marchés
+                                </a>
+                                                    </li>
+                        <li>
+                                                            <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;searchAnnCons&type=multicriteres">
+                                    <span class="fa fa-chevron-right"></span>
+                                    Recherche avancée
+                                </a>
+                                                    </li>
+                        <li>
+                                                            <a id="btnReview"
+                                   href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;searchAnnCons&type=restreinte">
+                                    <span class="fa fa-chevron-right"></span>
+                                    Recherche d&#039;une procédure restreinte
+                                </a>
+                                                    </li>
+                    </ul>
+                </li>
+                <li class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li class="dropdown-header">
+                            <div class="h4">
+                                Autres avis
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/?page=Entreprise.EntrepriseAdvancedSearch&AvisInformation">
+                                <span class="fa fa-chevron-right"></span>
+                                Tous les avis d&#039;information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/?page=Entreprise.EntrepriseAdvancedSearch&AvisAttribution">
+                                <span class="fa fa-chevron-right"></span>
+                                Tous les avis d&#039;attribution
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/?page=Entreprise.EntrepriseAdvancedSearch&AllAnn">
+                                <span class="fa fa-chevron-right"></span>
+                                Recherche avancée
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li class="dropdown-header"
+                            style="display:block">
+                            <div class="h4">
+                                Données essentielles des marchés conclus
+                            </div>
+                        </li>
+                        <li style="display:block">
+                            <div id="ctl0_bandeauEntrepriseWithoutMenuSf_panelArticle133">
+                                
+                                
+                                                            </div>
+                        </li>
+                        <li class="dropdown-header">
+                            <div class="h4">
+                                Enchères
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/?page=Entreprise.EntrepriseParticipationEnchere">
+                                <span class="fa fa-chevron-right"></span>
+                                Participation
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="col-md-12">
+                    <ul class="list-unstyled clearfix">
+                        
+                        <li class="dropdown-header clearfix">
+                            <div class="h4 pull-left">
+                                Mes alertes et recherches sauvegardées
+                            </div>
+                            <a href="/?page=Entreprise.EntrepriseGestionRecherches"
+                               class="pull-right btn btn-link btn-sm">
+                                <i class="fa fa-cog"></i>
+                                Gérer mes alertes et recherches sauvegardées
+                            </a>
+                        </li>
+                                            </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+                                                            <li class="hide">
+    <a href="/entreprise/dossier-volumineux/gestion/">
+        Dossiers volumineux
+    </a>
+</li>
+                                                            <li style="display:none;">
+    <a href="/?page=Entreprise.EntrepriseVisualiserEntitesAchatsRecherche">
+        Entités d&#039;Achat
+    </a>
+</li>
+
+                                                            <li>
+    <a href="#" class="dropdown-toggle pull-left" data-toggle="dropdown" role="button"
+       aria-haspopup="true" aria-expanded="false">
+        Signature
+        <span class="fa fa-chevron-down pull-right arrow-position"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li class="container-fluid">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="/entreprise/signer-document">
+                        <span class="fa fa-chevron-right"></span>
+                        Signer un document
+                    </a>
+                </li>
+                <li>
+                    <a href=" /entreprise/verification-signature ">
+                        <span class="fa fa-chevron-right"></span>
+                        Vérifier la signature
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+                                                            <li>
+    <a href="#" class="dropdown-toggle pull-left" data-toggle="dropdown" role="button"
+       aria-haspopup="true" aria-expanded="false">
+        Aide
+        <span class="fa fa-chevron-down pull-right arrow-position"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li class="container-fluid">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="/?page=Entreprise.EntreprisePremiereVisite">
+                        <span class="fa fa-chevron-right"></span>
+                        Première visite
+                    </a>
+                </li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseGuide&Aide">
+                        <span class="fa fa-chevron-right"></span>
+                        Guides d&#039;utilisation
+                    </a>
+                </li>
+                <li>
+                    <a href="/entreprise/aide/assistance-telephonique">
+                        <span class="fa fa-chevron-right"></span>
+                        Assistance
+                    </a>
+                </li>
+                <li style="display:none;">
+                    <a href="/?page=Entreprise.DocumentsDeReference&callFrom=entreprise"
+                       title="Documents de référence (nouvelle fenêtre)">
+                        <span class="fa fa-chevron-right"></span>
+                        Documents de référence
+                    </a>
+                </li>
+                                <li style="display:block;"></li>
+                <li style="display:block;">
+                    <a href="/entreprise/aide/outils-informatiques">
+                        <span class="fa fa-chevron-right"></span>
+                        Outils informatiques
+                    </a>
+                </li>
+
+                            </ul>
+        </li>
+    </ul>
+</li>
+                                                            <li>
+    <a href="#" class="dropdown-toggle pull-left"
+       data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Se préparer à répondre
+        <span class="fa fa-chevron-down pull-right arrow-position"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li class="container-fluid">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="/entreprise/footer/diagnostic-poste">
+                        <span class="fa fa-chevron-right"></span>
+                        Tester la configuration de mon poste
+                    </a>
+                </li>
+                <li>
+                    <a href="/?page=Entreprise.EntrepriseAdvancedSearch&amp;AllCons&amp;orgTest">
+                        <span class="fa fa-chevron-right"></span>
+                        Marchés de test
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+                                                                                </ul>
+                    </div>
+                            </div>
+        </nav>
+    </div>
+    <div id="infoErrone" class="m-t-7">
+    
+    </div>
+
+<div class="m-t-7">
+
+    </div>
+<!--End BandeauEntreprise-->
+<!--Begin BandeauAgent-->
+
+<!--End BandeauAgent-->
+<!--Begin BandeauAgentSocleInterne-->
+
+<!--End BandeauAgent-->
+<!--Fin Bandeau-->
+
+<form id="ctl0_ctl1" method="post" action="/?page=Entreprise.EntrepriseGuide&amp;Aide" name="main_form" autocomplete="on"><script src="/assets/d061d834/jquery.min.js"></script>
+<script src="/assets/45ec6803/prado.min.js"></script>
+<script src="/assets/45ec6803/controls/controls.min.js"></script>
+<script src="/assets/56ff3c31/jquery-ui.min.js"></script>
+<script src="/assets/45ec6803/activecontrols/ajax3.min.js"></script>
+<script src="/assets/45ec6803/activecontrols/activecontrols3.min.js"></script>
+
+	
+        
+    
+<script src="/assets/9ac6259a/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+    var J = jQuery.noConflict();
+</script>
+
+
+<script src="/assets/9ac6259a/sdk.js"></script>
+
+<script src="/assets/9ac6259a/bootboxjs.js"></script>
+
+<script src="/assets/5185ff/jquery.iframe-transport.js"></script>
+
+<script src="/assets/5185ff/jquery.fileupload.js"></script>
+
+<script src="/assets/9ac6259a/jquery.placeholder.js"></script>
+
+<script src="/assets/9ac6259a/chosen.jquery.js"></script>
+
+<script src="/assets/9ac6259a/modernizr.js"></script>
+
+<script src="/assets/9b86243c/printThis.js"></script>
+
+<script src="/assets/9ac6259a/placeholder.js"></script>
+
+
+<script src="/assets/9ac6259a/scripts.js"></script>
+
+<script src="/assets/9ac6259a/popup.inc.js"></script>
+
+<script src="/assets/9ac6259a/scripts-eval.js"></script>
+
+<script src="/assets/9ac6259a/atexoFileUpload.js"></script>
+
+<script src="/assets/9ac6259a/scripts-lieux-execution.js"></script>
+
+<script src="/assets/9ac6259a/tab.js"></script>
+
+<script src="/assets/9ac6259a/loader.js"></script>
+
+<script src="/assets/9ac6259a/data.js"></script>
+
+<script src="/assets/9ac6259a/standard.js"></script>
+
+<script src="/assets/9b86243c/printThis.js"></script>
+
+<script src="/assets/9ac6259a/attachmentMessec.js"></script>
+
+
+<script src="/assets/9ac6259a/jquery.numberformatter-1.2.js"></script>
+
+<script src="/assets/9ac6259a/OptionTransfer.js"></script>
+
+<script src="/assets/9ac6259a/scripts-lieux-execution.js"></script>
+
+<script src="/assets/9ac6259a/popUpInvites.js"></script>
+
+<script src="https://pmp.b2g.etat.lu/themes/js/atexoScript.fr.js?k=2026-00.03.06"></script>
+
+<script src="https://pmp.b2g.etat.lu/themes/js/codeCpv.fr.js?k=2026-00.03.06"></script>
+
+<script src="https://pmp.b2g.etat.lu/themes/js/atexoRef.fr.js?k=2026-00.03.06"></script>
+
+<script src="https://pmp.b2g.etat.lu/themes/js/calendrier.fr.js?k=2026-00.03.06"></script>
+
+
+<script src="https://pmp.b2g.etat.lu/themes/js/atexoApplet.fr.js?k=2026-00.03.06"></script>
+
+
+<script src="/assets/9ac6259a/vue.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="/assets/9ac6259a/prototype-noconflict.header.js"></script>
+
+
+
+
+
+
+
+	<!--Debut partie centrale-->
+	<main id="middle" class="clear-top atx-middle" role="main" style="">
+	    <div id="infoErrone" class="mt-2">
+    
+    </div>
+
+<div class="mt-2">
+
+    </div>
+
+		<div class="container container--690-sm m-b-10">
+			<div class="clearfix">
+				
+	<div class="entreprise-gw">
+		<div class="main-part" id="main-part">
+			<div class="clearfix">
+				<ul class="breadcrumb">
+					<li>
+						<a href="/entreprise">
+						Accueil
+                    </a>
+					</li>
+					<li>
+						Aide
+					</li>
+					<li>
+						Guides d'utilisation
+					</li>
+				</ul>
+			</div>
+
+			<!--BEGIN GUIDE D'UTILISATION -->
+			<div class="form-field ">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h1 class="h3 panel-title">
+							Guides d'utilisation
+						</h1>
+					</div>
+					<div class="panel-body">
+						<p>
+							Le guide d'utilisation est mis à disposition ci-dessous. Il est également possible de s'entraîner sur la plate-forme avec les
+							<a href="index.php?page=Entreprise.EntrepriseAdvancedSearch&AllCons&orgTest">
+								consultations de test disponibles dans la rubrique "Se préparer à répondre".
+							</a>
+						</p>
+					</div>
+					<div class="panel-footer">
+						<!--BEGIN BTN GUIDES -->
+						<div id="listeGuides">
+							<div class="">
+								<a href="/docs/guides_utilisateurs/simap/GuideUtilisateurEntreprise.zip"
+								   data-toggle="tooltip" data-placement="top"
+								   title=" Télécharger le guide (nouvelle fenêtre)"
+								   class="btn btn-sm btn-primary">
+									<i class="fa fa-download m-r-1" aria-hidden="true"></i>
+									Guide d'utilisation
+								</a>
+								<span style="display:none;">
+									<a href="/docs/guides_utilisateurs/atexo/FilmsAutoformationEntreprise.zip"
+									   data-toggle="tooltip" data-placement="top"
+									   title="Télécharger FILMS_D_AUTOFORMATION (nouvelle fenêtre)"
+									   class="btn btn-sm btn-primary">
+										<i class="fa fa-download m-r-1" aria-hidden="true"></i>
+										FILMS_D_AUTOFORMATION
+									</a>
+								</span>
+							</div>
+						</div>
+						<!--END BTN GUIDES -->
+					</div>
+				</div>
+			</div>
+			<!--END GUIDE D'UTILISATION -->
+		</div>
+	</div>
+
+			</div>
+		</div>
+	</main>
+	<!--Fin partie centrale-->
+
+    
+
+	<!--Debut Side menu-->
+<div>
+    <div id="acces-tel" class="help-bar" visible="0">
+		<ul>
+			<li style="display:none;">
+				<a href="/?page=Entreprise.EntrepriseFaq" target="_blank" class="faq">
+					TEXT_FAQ
+				</a>
+			</li>
+			<li>
+				<a class="hotline" target="_blank" title="Assistance (nouvelle fenêtre)" href="/index.php/entreprise/aide/assistance-telephonique">
+					<span class="text">
+						Assistance <span>(+352) 247-83377</span>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--Fin Side menu-->
+	</div>
+<div style="visibility:hidden;">
+<input type="text" style="display:none" autocomplete="off" name="PRADO_PAGESTATE" id="PRADO_PAGESTATE" value="eJylletumzAUx/MoiE/bpHILgeBqmrJumibtUvWyT5UqYw7BrWNT21SVqjzQ9hp9sR1CSy+jDdW+RGCfc37nxj9BQWEeMJqlUTYvGS2zNGXxPI9TOi/pLClnaULpLE3DOJ/llGZhnCVpGUMOec6KiJKIXBsSE5dZEbi7lGRP3kNyzUnQPRgyI+4RtwLcXXzOiLuvtKVcOAUYZ0U1q25+G6ducsGZcYrG+aKpLHY+Ne0FGjnfmitY5arRS8fdXa8NSZFUUZsr694xnoWj7S9ueN7iczxetwFCPM0RArT5LK2GWnMD23zDDTuMetfFEqQdQzQkih97HSom4Ku0oOVWbhehKzBsjaetTRgQ98xwyUSDfeyHMNuYRcm/QbHxh0zz2h5r0U4iQUplbW2I79er2sujpQeWWk80vq1gBcY/Mz61cKU6P6/U3pn5cP4+CqJkJwi8YOoFSTeRW2w6Ajsdg2WqgL36cgRyPgIZj670AMoRzGwEMxlVJhUgC81Bb6dOB5b7P2a6qGsBI2Y6HVilof28tR4YxwvWA4183joe+3VjVzYlHltatS4btQpxCWoqQSwYA3N3tS3aFjHoPsq0hzxQoQfv0SNSl01I3B/0ki8x0dvZzfCD9jlKxJVXV7UPvS75lBf4Yww3lkoGOxYE1JWS/KLZaGorBQtrNc8b20rBTzKdo8pqWqiTPSUEMMuVNCdHvdH9qdvlgx2evJucFn3muL6W6iXYzVoR9zQXVJ5v8sSbOzWftuQ+MeeNVM0lYGinBHnzBwt4i6uE6ocBJgP5fKf15FT3k3ux2Q8uI0xhT2F/lDAHcNFwzeVyXxn7kbLztoKAXK/X9/MZ6P/TSY8Oit3GYkqlULqf+esYAITjAa+v8/UefwEEHJIZ" />
+</div>
+</form>
+
+<script src="/build/runtime.96510773.js"></script>
+<script src="/build/5360.327a2067.js"></script>
+<script src="/build/1083.f7f04fc5.js"></script>
+<script src="/build/1128.c7268339.js"></script>
+<script src="/build/6187.8f84e83d.js"></script>
+<script src="/build/8601.ec860243.js"></script>
+<script src="/build/1685.9caf32f3.js"></script>
+<script src="/build/agent-header-statistics.a5041812.js"></script>
+<script src="/build/4692.ea0baeb8.js"></script>
+<script src="/build/8851.7170f0d0.js"></script>
+<script src="/build/2754.c2d5003c.js"></script>
+<script src="/build/6964.f3df8713.js"></script>
+<script src="/build/vendor.622e22a0.js"></script>
+
+
+
+<div class="clearfix">&nbsp;</div>
+<footer class="footer" role="contentinfo">
+    <div class="content footer_content text-center">
+        <div class="list-unstyled clearfix container">
+            <div class="footer-menu">
+                <ul class="list-unstyled">
+                                            <li>
+                            <a class="link-footer" href="/entreprise/footer/info-site">
+                                Mentions légales
+                            </a>
+                        </li>
+                    
+                                            <li>
+                            <a class="link-footer"
+                               href="/entreprise/footer/conditions-utilisation">
+                                Conditions d'utilisation
+                            </a>
+                        </li>
+                    
+                    <li>
+                        <a class="link-footer"
+                           href="/entreprise/footer/prerequis-techniques">
+                            Pré-requis techniques
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a class="link-footer"
+                           href="/entreprise/footer/accessibilite">
+                            Accessibilité
+                        </a>
+                    </li>
+
+                    
+                    
+                </ul>
+            </div>
+
+            <div>
+
+
+            </div>
+                            <div id="ctl0_ctl4_panelNaviguationMulilingue" class="footer-multilingual">
+                                            <div class="item-lang on lang-switcher"
+                             data-lang="fr">
+                            <a href="/language">
+                                <input type="button" name="ctl0$ctl4$langages$ctl1$flagImg"
+                                       value="fr"
+                                       id="ctl0_ctl4_langages_ctl1_flagImg"
+                                       class="language-choice flage-FR"
+                                />
+                            </a>
+                        </div>
+                                            <div class="item-lang on lang-switcher"
+                             data-lang="du">
+                            <a href="/language/du">
+                                <input type="button" name="ctl0$ctl4$langages$ctl5$flagImg"
+                                       value="du"
+                                       id="ctl0_ctl4_langages_ctl5_flagImg"
+                                       class="language-choice flage-DU"
+                                />
+                            </a>
+                        </div>
+                                    </div>
+            
+        </div>
+    </div>
+</footer>
+<div class="footer_go_top out" id="js-footer_go_top">
+    <a href="#" class="btn btn-primary btn-go-to-top animated" id="js-btn-go_to_top" 
+       title="Retour en haut">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+
+</div>
+<script  src="https://pmp.b2g.etat.lu/themes/js/prototype-noconflict.footer.js?k=2026-00.03.06" charset="UTF-8"></script>
+
+<!-- MainLayout -->
+
+		<script  src="https://pmp.b2g.etat.lu/themes/js/ng-script.js?k=2026-00.03.06" charset="UTF-8"></script>
+	
+
+
+
+
+</body>
+</html>

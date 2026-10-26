@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="SemiColonWeb" />
+
+        <meta name="csrf-token" content="sh5Zu95ey70WIJ2zUus3vYCd5YIZR061QleHF9Aa">
+        
+        <link rel="shortcut icon" href="https://aida-smefinance.gov.al/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://aida-smefinance.gov.al/favicon.ico" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/style.css" type="text/css" />
+
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/dark.css" type="text/css" />
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/font-icons.css" type="text/css" />
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/magnific-popup.css" type="text/css" />
+
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/custom.css" type="text/css" />
+
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/colors.php?color=0F66DD" type="text/css" />
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/movers.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.3.0/css/iziToast.css" type="text/css" />
+        
+        <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/selectize.min.css" type="text/css" />
+
+        <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+        <title>Akses në Financë</title>
+
+            <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/sweetalert.min.css" type="text/css" />
+    <style>
+         .button-disabled {
+            opacity: 0.8;
+            cursor: none;
+        }
+
+        .inactive{
+            background-color: #828c9a !important;
+        }
+
+        .btn-inactive{
+            background-color: #5c6a73 !important;
+        }
+
+        #header-wrap .header-buttons.abonohu-dropdown {
+            border-right: 0 !important; 
+            margin-right: 1em !important; 
+            margin-left: 0 !important; 
+            padding-right: 0 !important;
+        }
+
+        .abonohu-dropdown .abonohu-content {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+            background-color: none;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 1px;
+            padding-top: 13px;
+        }
+
+        .abonohu-dropdown .abonohu-content a {
+            color: #333;
+            background-color: #eee;
+            padding: 10px 16px;
+            font-size: 12px;
+            font-weight: 600 !important;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition:all .2s ease-in;
+            border-bottom: 2px solid #a5a5a5;
+        }
+
+        .abonohu-dropdown .abonohu-content a:last-child {
+            border-bottom: 0;
+        }
+
+        .abonohu-dropdown .abonohu-content a:hover {
+             background-color: #333;
+        }
+
+        .abonohu-dropdown:hover .abonohu-content {
+            display: block;
+        }
+
+        /* pinned css */
+        .pinned {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: unset !important;
+        }
+
+        .pinned span {
+            display: flex !important;
+            justify-content: left;
+            margin: auto 0;
+            gap: 10px;
+        }
+        .pinned span p {
+            margin-bottom: 0px !important;
+            color: #FFF;
+            font-weight: 600;
+            margin-top: -5px;
+            font-size: 12px;
+        }
+        .testimonial-card {
+          border: 2px solid #edf1f2;
+          width: 100%;
+          margin-top: 10px;
+          height: fit-content;
+          background-color: #FFF !important;
+          position: relative;
+        }
+        .testimonial-card .testimonial-title {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+        }
+        .testimonial-card .testimonial-title p {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0 !important;
+        }
+        .testimonial-card .testimonial-title p.right_info {
+            text-align: right;
+        }
+        .testimonial-card .testimonial-title p.right_info .year_span {
+            font-size: 1em;
+            color: #467fd0;
+        }
+        .testimonial-card .testimonial-title p span {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .testimonial-card .testimonial-title p a {
+            font-size: 18px;
+        }
+        .testimonial-card .testimonial-funds {
+            padding: 0 1em;
+        }
+        .testimonial-card .testimonial-funds h3 {
+            font-size: 18px;
+            margin-bottom: 10px !important;
+        }
+        .testimonial-card .testimonial-funds ul {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 15px !important;
+            width: auto !important;
+        }
+        .testimonial-card .testimonial-funds ul li {
+            margin-top: 10px;
+        }
+        .testimonial-card .testimonial-funds ul li a {
+            background-color: #edf1f2;
+            color: #444;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        .testimonial-card .testimonial-fields {
+            padding: 0 1em;
+            margin-bottom: 1em;
+        }
+        .testimonial-card .testimonial-fields h3 {
+            font-size: 18px;
+            margin-bottom: 10px !important;
+        }
+        .testimonial-card .testimonial-fields ul {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 15px !important;
+        }
+        .testimonial-card .testimonial-fields ul li {
+            margin-top: 10px;
+        }
+        .testimonial-card .testimonial-fields p {
+            margin-bottom: 15px;
+        }
+        .testimonial-card .testimonial-fields ul li a {
+            background-color: #edf1f2;
+            color: #444;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        .testimonial-card .created-by {
+            background-color: #467fd0;
+            padding: 1em;
+            bottom: -3.5em;
+            position: absolute;
+            width: 100%;
+        }
+        .testimonial-card .created-by p {
+            color: #fff;
+            margin-bottom: 0 !important;
+        }
+        .testimonial-card .created-by p a { 
+            color: #fff;
+            text-decoration: underline !important;
+        }
+        @media (max-width: 991px) {
+            .testimonial-card {
+                width: 100%;
+                margin-top: 20px;
+                height: auto;
+            }
+        }
+        .Sugjerime-card {
+          border: 2px solid #edf1f2;
+          margin-top: 10px;
+          height: 300px;
+          box-shadow: 0 1px 15px 5px rgb(52 40 104 / 8%);
+          position: relative;
+        }
+        .Sugjerime-card .quote-mark {
+            font-size: 4.5em;
+            font-family: 'Secular One', sans-serif !important;
+            position: absolute;
+            right: 20px;
+            top: -35px;
+            color: #467fd0;
+        }
+        .Sugjerime-card .Sugjerime-title {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+        }
+        .Sugjerime-card .Sugjerime-title p {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0 !important;
+        }
+        .Sugjerime-card .Sugjerime-title p.right_info {
+            text-align: right;
+            margin-top: -1.8em;
+        }
+        .Sugjerime-card .Sugjerime-title p.right_info .year_span {
+            font-size: 1em;
+            color: #467fd0;
+        }
+        .Sugjerime-card .Sugjerime-title p span {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .Sugjerime-card .Sugjerime-title p a {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #467fd0;
+        }
+        .Sugjerime-card .Sugjerime-funds {
+            padding: 0 1em 1em 1em;
+        }
+        .Sugjerime-card .Sugjerime-funds h3 {
+            font-size: 18px;
+            margin-bottom: 10px !important;
+        }
+        .Sugjerime-card .Sugjerime-funds ul {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 10px !important;
+            width: auto !important;
+        }
+        .Sugjerime-card .Sugjerime-funds ul li {
+            margin-top: 10px;
+        }
+        .Sugjerime-card .Sugjerime-funds ul li a {
+            background-color: #edf1f2;
+            color: #444;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        .Sugjerime-card .created-by {
+            background-color: #467fd0;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+        }
+        .Sugjerime-card .created-by p {
+            color: #fff;
+            margin-bottom: 0 !important;
+        }
+        .Sugjerime-card .created-by p a { 
+            color: #fff;
+            text-decoration: underline !important;
+        }
+        .blockquote-div {
+            display: none;
+            position: fixed;
+            width: 40%;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99999;
+        }
+        .blockquote-div blockquote .Sugjerime-card {
+            padding: 1em;
+            box-shadow: 0 1px 15px 2000px rgba(0, 0, 0, 0.08);
+        }
+        /* pinned css end */
+
+        @media (max-width: 991px) {
+            #header-wrap .header-buttons.abonohu-dropdown {
+                margin-right: 2em !important;
+            }
+
+            .abonohu-dropdown .abonohu-content {
+                padding-top: 8px !important;
+            }
+        }
+    </style>
+    <style>
+        .grant-btn {
+            display: flex;
+            gap: 30px;
+        }
+        @media (max-width: 991px) {
+            .grant-btn {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/select2.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://aida-smefinance.gov.al/css/select2_bootstrap4.min.css" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet"/>
+    </head>
+    <body class="stretched">
+        <div id="wrapper" class="clearfix">
+            <style>
+
+    .self-item > .menu-item:hover  {
+        background-color: #444;
+        color: #FFF;
+        text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+	}
+
+    #header-wrap .header-buttons {
+        margin-right: 1rem!important;
+        padding-right: 1.5rem!important;
+        border-right: 2px solid rgba(255, 255, 255, 0.4)!important;
+        border-left:none!important;
+    }
+
+        #header-wrap .header-buttons.abonohu-dropdown {
+            border-right: 0 !important; 
+            margin-right: 1em !important; 
+            margin-left: 0 !important; 
+            padding-right: 0 !important;
+        }
+
+        .abonohu-dropdown .abonohu-content {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+            background-color: none;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 1px;
+            padding-top: 13px;
+        }
+
+        .abonohu-dropdown .abonohu-content a {
+            color: #333;
+            background-color: #eee;
+            padding: 10px 16px;
+            font-size: 12px;
+            font-weight: 600 !important;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition:all .2s ease-in;
+            border-bottom: 2px solid #a5a5a5;
+        }
+
+        .abonohu-dropdown .abonohu-content a:last-child {
+            border-bottom: 0;
+        }
+
+        .abonohu-dropdown .abonohu-content a:hover {
+             background-color: #333;
+        }
+
+        .abonohu-dropdown:hover .abonohu-content {
+            display: block;
+        }
+
+        @media (max-width: 991px) {
+            #header-wrap .header-buttons.abonohu-dropdown {
+                margin-right: 2em !important;
+            }
+
+            .abonohu-dropdown .abonohu-content {
+                padding-top: 8px !important;
+            }
+        }
+
+ </style>   
+
+<header id="header" class="dark header-size-sm" data-sticky-shrink="false">
+    <div class="container">
+        <div class="header-row">
+
+            <!-- Logo
+            ============================================= -->
+            <div id="logo" class="ml-auto ml-md-0">
+                <a href="https://aida-smefinance.gov.al" class="standard-logo" data-dark-logo="https://aida-smefinance.gov.al/images/akses-ne-finance.png">
+                    <img class="mx-auto" src="https://aida-smefinance.gov.al/images/akses-ne-finance.png" alt="Aksesi ne Finance">
+                </a>
+                <a href="https://aida-smefinance.gov.al" class="retina-logo" data-dark-logo="https://aida-smefinance.gov.al/images/akses-ne-finance.png">
+                    <img class="mx-auto" src="https://aida-smefinance.gov.al/images/akses-ne-finance.png" alt="Aksesi ne Finance">
+                </a>
+            </div>
+
+            <!-- #logo end -->
+
+            <ul class="header-extras d-none d-sm-flex mx-auto mx-md-0 mb-4 mb-md-0">
+                <li>
+                    <i class="i-plain icon-call m-0"></i>
+                    <div class="he-text font-weight-normal text-white-50">
+                        Na telefononi:
+                        <span><a href="tel:042251001" class="text-white font-weight-medium">04 225 1001</a></span>
+                    </div>
+                </li>
+                <li>
+                    <i class="i-plain icon-line2-envelope m-0"></i>
+                    <div class="he-text font-weight-normal text-white-50">
+                        Na shkruani:
+                        <span><a href="/cdn-cgi/l/email-protection#167f78707956777f72773871796038777a" target="_top" class="text-white font-weight-medium"><span class="__cf_email__" data-cfemail="95fcfbf3fad5f4fcf1f4bbf2fae3bbf4f9">[email&#160;protected]</span></a></span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="header-wrap" class="">
+        <div class="container">
+            <div class="header-row justify-content-between flex-row-reverse flex-lg-row top-search-parent">
+                <div id="primary-menu-trigger">
+                    <svg class="svg-trigger" viewBox="0 0 100 100">
+                        <path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                        <path d="m 30,50 h 40"></path>
+                        <path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+                    </svg>
+                </div>
+
+                <div class="header-misc">
+                    <div class="header-buttons d-none d-sm-inline-block">
+                        <a href="https://aida-smefinance.gov.al/self-assessment-quiz"  class="button button-rounded button-white button-light button-small m-0">Vetëvlerësim</a>
+                    
+                    </div>
+
+                      <!-- Authentication Links -->
+                                                                  <div class="header-buttons d-sm-inline-block" style="border-right: 0 !important;">
+                            <a href="https://aida-smefinance.gov.al/register" class="button button-rounded button-white button-light button-small m-0">
+                                <i class="icon-user" aria-hidden="true"></i> 
+                                Hyr | Regjistrohu
+                            </a>
+                        </div>
+                      
+                                    
+
+                    <!-- Top Search
+                    ============================================= -->
+                   
+                                                <nav class="primary-menu with-arrows not-dark">
+                            <ul class="menu-container">
+                                <li class="menu-item">
+                                    <a class="menu-link " href="https://aida-smefinance.gov.al/lang/sq">
+                                        <div>AL</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link  text-white-50 " href="https://aida-smefinance.gov.al/lang/en">
+                                        <div>EN</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                   
+
+                    <!-- Header Buttons
+                    ============================================= -->
+                   
+
+                </div>
+               
+                <!-- Primary Navigation
+                ============================================= -->
+                
+<nav class="primary-menu with-arrows not-dark">
+    <ul class="menu-container">
+        <li class="menu-item sub-menu">
+            <a class="menu-link" href=""><div> Skema Financiare<i class="icon-angle-down"></i></div></a>
+            <ul class="sub-menu-container" style="display:none">
+                <li class="menu-item" style="">
+                    <a class="menu-link" href="https://aida-smefinance.gov.al/financial-schemes/grants">
+                        <div><i class="icon-news"></i> Grante</div>
+                    </a>
+                </li>
+                <li class="menu-item" style="">
+                    <a class="menu-link" href="https://aida-smefinance.gov.al/financial-schemes/others">
+                        <div><i class="icon-news"></i> Skema të tjera financiare</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+       
+        <li class="menu-item sub-menu">
+            <a class="menu-link" href=""><div> Informacion<i class="icon-angle-down"></i></div></a>
+            <ul class="sub-menu-container" style="display:none">
+                <li class="menu-item" style="">
+                    <a class="menu-link" href="https://aida-smefinance.gov.al/news">
+                        <div><i class="icon-news"></i> Lajme</div>
+                    </a>
+                </li>
+                <li class="menu-item" style="">
+                    <a class="menu-link" href="https://aida-smefinance.gov.al/dictionary">
+                        <div><i class="icon-language"></i> Fjalorth termash</div>
+                    </a>
+                </li>
+               
+                <li class="menu-item ">
+                    <a class="menu-link" href="https://aida-smefinance.gov.al/testimonials">
+                        <div><i class="icon-comment"></i>  Dëshmi suksesi</div>
+                    </a>
+                </li>
+                <li class="menu-item" style="">
+                    <a class="menu-link" href="https://aida-smefinance.gov.al/feedback">
+                        <div><i class="icon-comments"></i> Përshtypjet</div>
+                    </a>
+                </li>
+
+            </ul>
+        <button class="sub-menu-trigger icon-chevron-right"></button></li>
+                <li class="menu-item ">
+            <a class="menu-link" href="https://aida-smefinance.gov.al/about-us">
+                <div>Rreth Nesh</div>
+            </a>
+        </li>
+
+        <li class="menu-item sub-menu">
+            <a class="menu-link" href=""><div> Na kontaktoni<i class="icon-angle-down"></i></div></a>
+            <ul class="sub-menu-container" style="display:none">
+                <li class="menu-item" style="">
+                    <a class="menu-link" href="https://aida-smefinance.gov.al/contact-us">
+                        <div><i class="icon-news"></i> Na kontaktoni</div>
+                    </a>
+                </li>
+                <li class="menu-item" style="">
+                    <a class="menu-link" href="https://aida-smefinance.gov.al/comment">
+                        <div><i class="icon-comments"></i> Mendimi Juaj</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+
+        <li class="d-lg-none  menu-item ">
+            <a class="menu-link" href="https://aida-smefinance.gov.al/self-assessment-quiz">
+                <div>Vetëvlerësim</div>
+            </a>
+        </li>
+       
+        
+    </ul>
+</nav>
+
+               <!-- #primary-menu end -->
+
+
+            </div>
+        </div>
+    </div>
+    <div class="header-wrap-clone"></div>
+</header>
+
+
+                <div style="
+        background-image: url('https://aida-smefinance.gov.al/images/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    ">
+        <section id="slider" class="slider-element bg-color" style="background-color: #467fd096 !important;padding: 50px 0;">
+            <div class="container mt-4" style="z-index: 2">
+                <div class="center">
+                    
+                </div>
+            </div>
+                        <div class="row topmargin justify-content-center">
+    <div class="col-md-10 col-lg-8">
+        <div class="rounded-bottom shadow bg-white py-4 px-5">
+            <div class="form-widget">
+                <div class="grant-btn">
+                    <a href="https://aida-smefinance.gov.al/financial-schemes/grants" class="btn bg-color text-white font-weight-medium btn-block py-2 mt-2">
+                        Grante                        <svg width="25" height="23" viewBox="0 0 75 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M45.0087 7.80127C32.7536 7.80127 22.8188 17.736 22.8188 29.9912C22.8188 42.2463 32.7536 52.1811 45.0087 52.1811C57.2639 52.1811 67.1987 42.2463 67.1987 29.9912C67.1987 17.736 57.2639 7.80127 45.0087 7.80127ZM15.8188 29.9912C15.8188 13.87 28.8876 0.80127 45.0087 0.80127C61.1299 0.80127 74.1987 13.87 74.1987 29.9912C74.1987 46.1123 61.1299 59.1811 45.0087 59.1811C28.8876 59.1811 15.8188 46.1123 15.8188 29.9912ZM13.1532 53.2149C13.1532 52.1188 12.8244 49.9266 11.5091 49.9266H1.64415C1.0961 50.0636 0 50.6254 0 51.7763V76.2331C0 76.9866 0.369935 78.4938 1.84967 78.4938H11.098C11.7146 78.4253 12.9477 77.9594 12.9477 76.6441V74.3834H15.6195L31.4445 81.5766C32.5406 81.9876 35.4726 82.5631 38.4321 81.5766C38.4321 81.5766 67.8899 69.2454 68.6435 68.6289C68.7554 68.5373 68.9521 68.4094 69.2004 68.2479C70.6233 67.3224 73.7427 65.2936 72.3428 62.6688C71.7262 61.6412 69.6711 62.0522 66.3827 63.4909C66.3827 63.4909 63.0777 65.0638 57.7509 67.3958C56.0369 68.1461 54.5632 68.8316 53.4524 69.3484L53.452 69.3486L53.4514 69.3488C52.4038 69.8361 51.6791 70.1733 51.3798 70.273L51.3795 70.2731L51.3786 70.2734C51.1743 70.3415 51.1742 70.3416 51.1134 70.3644C50.9916 70.41 50.6263 70.547 47.886 71.5061C43.7756 72.9448 32.2665 71.9172 32.2665 71.9172C31.376 71.3006 30.1291 70.1908 32.2665 69.0399C32.2665 69.0399 43.9811 69.6565 46.4474 69.0399C48.9136 68.4233 49.5302 62.8743 46.4474 62.4633C44.7807 62.2411 42.8136 62.3192 40.6436 62.4054L40.6434 62.4054C38.7998 62.4786 36.8096 62.5577 34.7328 62.4633C32.4943 62.3615 30.806 60.4794 28.9754 58.4386C27.1084 56.3573 25.0935 54.111 22.1961 53.4204C18.76 52.6014 13.1532 53.2149 13.1532 53.2149ZM6.3711 74.7945C7.61965 74.7945 8.63181 73.7823 8.63181 72.5338C8.63181 71.2852 7.61965 70.2731 6.3711 70.2731C5.12254 70.2731 4.11038 71.2852 4.11038 72.5338C4.11038 73.7823 5.12254 74.7945 6.3711 74.7945ZM63.0367 30.2165C63.0367 40.0486 55.0662 48.0192 45.2341 48.0192C35.4019 48.0192 27.4314 40.0486 27.4314 30.2165C27.4314 20.3844 35.4019 12.4138 45.2341 12.4138C55.0662 12.4138 63.0367 20.3844 63.0367 30.2165ZM44.3449 40.1771V38.3974C43.3279 38.3416 42.4246 38.1507 41.6352 37.8246C40.688 37.4312 39.9478 36.8489 39.4147 36.0777C38.8868 35.3013 38.6099 34.3411 38.584 33.1973H41.8371C41.8733 33.7304 42.026 34.1755 42.2952 34.5327C42.5695 34.8846 42.9344 35.1512 43.3899 35.3324C43.684 35.4447 44.0023 35.5212 44.3449 35.5618V31.4709L43.3355 31.2174C41.995 30.8913 40.9365 30.3815 40.1601 29.6879C39.3837 28.9943 38.9981 28.0601 39.0032 26.8851C38.9981 25.9224 39.2543 25.0813 39.7719 24.3618C40.2946 23.6424 41.0115 23.0808 41.9225 22.677C42.6506 22.3544 43.458 22.1606 44.3449 22.0958V20.3013H45.6182V22.089C46.5548 22.1461 47.3881 22.3421 48.1182 22.677C49.0033 23.0808 49.6917 23.6424 50.1834 24.3618C50.6751 25.0813 50.9287 25.9146 50.9443 26.8618H47.7222C47.6601 26.2355 47.3935 25.749 46.9225 25.4022C46.5778 25.1484 46.143 24.9875 45.6182 24.9194V28.788L46.3946 28.9736C47.0881 29.1289 47.7248 29.336 48.3045 29.5948C48.8842 29.8536 49.3863 30.1719 49.8107 30.5497C50.2351 30.9276 50.5638 31.3727 50.7967 31.8851C51.0348 32.3976 51.1565 32.985 51.1617 33.6476C51.1565 34.6207 50.908 35.4643 50.4163 36.1786C49.9298 36.8877 49.2258 37.439 48.3045 37.8324C47.5405 38.1561 46.645 38.3449 45.6182 38.3986V40.1771H44.3449ZM46.4334 35.3479C46.1875 35.445 45.9157 35.5137 45.6182 35.5539V31.7976C45.9637 31.8976 46.2691 32.0044 46.5343 32.1181C46.938 32.2889 47.2434 32.4959 47.4505 32.7392C47.6627 32.9824 47.7688 33.2827 47.7688 33.6398C47.7688 34.0228 47.6523 34.3619 47.4194 34.6569C47.1865 34.9519 46.8578 35.1823 46.4334 35.3479ZM44.3449 24.925V28.4697C44.2228 28.4329 44.1038 28.3938 43.9877 28.3525C43.6823 28.2386 43.4132 28.1067 43.1803 27.9566C42.9473 27.8013 42.7636 27.6175 42.629 27.4053C42.4996 27.1931 42.4401 26.9446 42.4504 26.66C42.4504 26.3183 42.5488 26.013 42.7455 25.7438C42.9473 25.4747 43.2372 25.265 43.615 25.1149C43.8305 25.0264 44.0738 24.9631 44.3449 24.925Z" fill="white"></path>
+                        </svg>
+                    </a>
+                    <a href="https://aida-smefinance.gov.al/financial-schemes/others" class="btn bg-color text-white font-weight-medium btn-block py-2 mt-2" style="background-color: #8fadd7 !important;">
+                        Skema të tjera financiare                        <svg width="20" height="20" viewBox="0 0 186 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M114.045 6.51509C115.699 6.36477 120.42 7.25064 125.133 12.3563L125.132 12.3564L125.141 12.3655L176.104 64.827C176.509 65.4803 177.105 66.5597 177.603 67.7151C178.12 68.9137 178.5 70.1256 178.5 71.0172L178.5 71.0267L179 71.0172C178.5 71.0267 178.5 71.0272 178.5 71.0281L178.5 71.0323L178.501 71.049L178.502 71.1154L178.507 71.3782L178.526 72.4043C178.542 73.3036 178.566 74.6238 178.596 76.3072C178.655 79.6741 178.737 84.4941 178.828 90.3063C179.01 101.931 179.229 117.523 179.375 133.397C179.521 149.271 179.594 165.424 179.484 178.169C179.43 184.542 179.33 190.06 179.17 194.264C179.091 196.366 178.996 198.136 178.886 199.517C178.775 200.911 178.65 201.877 178.516 202.392C177.365 206.83 174.497 213.507 169.648 219.063C164.807 224.612 158.017 229.017 149 229.017C144.205 229.017 134.776 229.21 123.29 229.444L123.289 229.444C112.732 229.659 100.437 229.91 88.4055 230.08C75.8378 230.257 63.5528 230.345 53.8178 230.213C48.9498 230.146 44.7242 230.025 41.422 229.831C38.0985 229.637 35.7653 229.373 34.6429 229.038C29.9407 227.636 22.8773 224.537 17.0007 219.815C11.121 215.09 6.50029 208.803 6.5 201.018V201.017L6.99992 34.0447C7.49723 29.4443 9.42466 22.5475 13.5799 16.8104C17.7304 11.08 24.0909 6.51714 33.5 6.51714H114H114.023L114.045 6.51509ZM179.5 71.0133L179.5 71.0172L179.5 71.03L179.502 71.0966L179.507 71.3595L179.526 72.3859C179.542 73.2855 179.566 74.6059 179.596 76.2896C179.655 79.6571 179.737 84.4777 179.828 90.2906C180.01 101.916 180.229 117.511 180.375 133.388C180.521 149.263 180.594 165.423 180.484 178.178C180.43 184.555 180.329 190.084 180.17 194.302C180.09 196.41 179.995 198.196 179.883 199.597C179.772 200.986 179.642 202.033 179.484 202.643C178.301 207.204 175.37 214.028 170.402 219.721C165.427 225.422 158.383 230.017 149 230.017C144.21 230.017 134.801 230.209 123.33 230.443H123.329C112.774 230.659 100.473 230.91 88.4195 231.08C75.8497 231.257 63.5534 231.345 53.8041 231.212C48.9299 231.146 44.6875 231.024 41.3636 230.83C38.0609 230.637 35.6097 230.37 34.3571 229.996C29.5593 228.565 22.3727 225.414 16.3743 220.594C10.3792 215.777 5.5 209.232 5.5 201.017L5.5 201.016L6 34.0156L6.00008 33.9897L6.00285 33.9639C6.50994 29.231 8.48308 22.1428 12.7701 16.2238C17.0696 10.2876 23.7091 5.51714 33.5 5.51714H113.978C116.006 5.34434 120.996 6.40333 125.863 11.6732L125.867 11.678L176.859 64.1688L176.896 64.207L176.924 64.2522C177.352 64.9375 177.99 66.0848 178.522 67.3193C179.046 68.5355 179.499 69.9047 179.5 71.0123L179.5 71.0133ZM103.192 22.5383L103.098 22.4991L102.996 22.4999L39 22.9998H38.998C33.8107 23.0005 29.9733 25.6008 27.3034 28.8047C24.6403 32.0004 23.1106 35.8253 22.5131 38.3862L22.5 38.4423V38.4998V197.5C22.5 201.915 25.1296 205.419 28.3117 207.977C31.4973 210.538 35.3087 212.214 37.8563 212.979L37.9266 213H38H146C150.797 213 154.385 210.474 156.901 207.378C159.411 204.288 160.889 200.591 161.486 198.117L161.5 198.059V198V81.4998C161.5 79.6447 160.155 78.181 158.661 77.1397C157.146 76.0836 155.342 75.3633 154.137 75.0191L154.07 74.9998H154H117C114.569 74.9998 112.824 73.9159 111.612 72.5439C110.409 71.1811 109.744 69.5428 109.5 68.4459V30.4998C109.5 28.3233 108.411 26.5378 107.106 25.2117C105.803 23.8865 104.244 22.9767 103.192 22.5383ZM39.0039 23.9998L102.9 23.5006C103.848 23.9104 105.235 24.7354 106.394 25.913C107.589 27.1285 108.5 28.6763 108.5 30.4998V68.4998V68.5528L108.511 68.6046C108.776 69.8412 109.51 71.6731 110.863 73.2058C112.226 74.7505 114.231 75.9998 117 75.9998H153.929C155.057 76.3296 156.714 77.0017 158.089 77.96C159.512 78.952 160.5 80.155 160.5 81.4998V197.94C159.921 200.299 158.503 203.819 156.124 206.747C153.731 209.693 150.403 212 146 212H38.0738C35.6217 211.254 31.9737 209.638 28.9383 207.198C25.8704 204.731 23.5 201.484 23.5 197.5V38.5578C24.0784 36.1188 25.5456 32.4762 28.0716 29.4449C30.6097 26.3992 34.1883 23.9998 39 23.9998L39.0039 23.9998Z" fill="white"></path>
+                            <path d="M125.133 12.3563L128.482 16.0684L132.237 12.6807L128.807 8.96488L125.133 12.3563ZM114.045 6.51509L113.593 1.53562L113.593 1.53563L114.045 6.51509ZM125.132 12.3564L121.783 8.64425L117.932 12.1193L121.546 15.8401L125.132 12.3564ZM125.141 12.3655L121.555 15.8493L121.555 15.8495L125.141 12.3655ZM176.104 64.827L180.354 62.1932L180.068 61.7321L179.69 61.3431L176.104 64.827ZM177.603 67.7151L173.012 69.6942L173.012 69.6943L177.603 67.7151ZM178.5 71.0172H173.5V71.0412L173.5 71.0652L178.5 71.0172ZM178.5 71.0267L173.5 71.0748L173.549 76.1219L178.595 76.0258L178.5 71.0267ZM178.5 71.0281L173.501 71.1107L173.501 71.1191L178.5 71.0281ZM178.5 71.0323L173.501 71.1233L173.501 71.1282L178.5 71.0323ZM178.501 71.049L183.5 70.9549L183.5 70.9531L178.501 71.049ZM178.502 71.1154L183.501 71.0214L183.501 71.0213L178.502 71.1154ZM178.507 71.3782L183.506 71.2856L183.506 71.2842L178.507 71.3782ZM178.526 72.4043L183.525 72.3125L183.525 72.3117L178.526 72.4043ZM178.828 90.3063L183.828 90.2279L183.828 90.2279L178.828 90.3063ZM179.375 133.397L174.375 133.443L174.375 133.443L179.375 133.397ZM179.484 178.169L174.485 178.126L174.485 178.126L179.484 178.169ZM179.17 194.264L174.174 194.075L174.174 194.075L179.17 194.264ZM178.886 199.517L183.87 199.915L183.87 199.915L178.886 199.517ZM178.516 202.392L183.356 203.646L183.356 203.646L178.516 202.392ZM169.648 219.063L173.416 222.351L173.416 222.351L169.648 219.063ZM123.29 229.444L123.188 224.445L123.143 224.446L123.098 224.448L123.29 229.444ZM123.289 229.444L123.391 234.443L123.436 234.442L123.481 234.44L123.289 229.444ZM88.4055 230.08L88.335 225.08L88.335 225.08L88.4055 230.08ZM53.8178 230.213L53.8859 225.213L53.8859 225.213L53.8178 230.213ZM41.422 229.831L41.7138 224.84L41.7138 224.84L41.422 229.831ZM34.6429 229.038L36.0719 224.247L36.0719 224.247L34.6429 229.038ZM17.0007 219.815L20.1325 215.917L20.1325 215.917L17.0007 219.815ZM6.5 201.018L1.5 201.018L1.5 201.018L6.5 201.018ZM6.5 201.017L1.50002 201.002L1.5 201.01V201.017H6.5ZM6.99992 34.0447L2.02888 33.5073L2.00073 33.7678L1.99994 34.0297L6.99992 34.0447ZM13.5799 16.8104L9.53052 13.8775L9.53052 13.8775L13.5799 16.8104ZM114.023 6.51714V11.5171H114.25L114.475 11.4966L114.023 6.51714ZM179.5 71.0172L174.5 70.9976L174.5 71.0728L174.502 71.1479L179.5 71.0172ZM179.5 71.0133L184.5 71.0328L184.5 70.9852L184.499 70.9375L179.5 71.0133ZM179.5 71.03L184.499 70.936L184.499 70.9176L184.499 70.8993L179.5 71.03ZM179.502 71.0966L174.502 71.1905L174.502 71.1906L179.502 71.0966ZM179.507 71.3595L184.506 71.2669L184.506 71.2655L179.507 71.3595ZM179.526 72.3859L184.525 72.2941L184.525 72.2933L179.526 72.3859ZM179.596 76.2896L184.595 76.2017L184.595 76.2016L179.596 76.2896ZM179.828 90.2906L184.827 90.2122L184.827 90.2122L179.828 90.2906ZM180.375 133.388L185.375 133.342L185.375 133.342L180.375 133.388ZM180.484 178.178L185.484 178.221L185.484 178.221L180.484 178.178ZM180.17 194.302L185.166 194.491L185.166 194.491L180.17 194.302ZM179.883 199.597L174.899 199.199L174.899 199.199L179.883 199.597ZM179.484 202.643L174.644 201.388L174.644 201.388L179.484 202.643ZM170.402 219.721L166.634 216.434L166.634 216.434L170.402 219.721ZM123.33 230.443V235.443H123.381L123.432 235.442L123.33 230.443ZM123.329 230.443V225.443H123.278L123.227 225.444L123.329 230.443ZM88.4195 231.08L88.49 236.079L88.49 236.079L88.4195 231.08ZM53.8041 231.212L53.736 236.212L53.736 236.212L53.8041 231.212ZM41.3636 230.83L41.6554 225.838L41.6554 225.838L41.3636 230.83ZM34.3571 229.996L35.7861 225.205L35.7861 225.205L34.3571 229.996ZM16.3743 220.594L13.2425 224.492L13.2425 224.492L16.3743 220.594ZM5.5 201.017L0.5 201.01V201.017H5.5ZM5.5 201.016L0.500019 201.001L0.500008 201.008L5.5 201.016ZM6 34.0156L1.00002 34.0007L1.00002 34.0007L6 34.0156ZM6.00008 33.9897L1.02853 33.457L1.00088 33.7151L1.0001 33.9747L6.00008 33.9897ZM6.00285 33.9639L10.9744 34.4965L10.9744 34.4965L6.00285 33.9639ZM12.7701 16.2238L8.72063 13.2909L8.72063 13.2909L12.7701 16.2238ZM113.978 5.51714V10.5171H114.191L114.403 10.4991L113.978 5.51714ZM125.863 11.6732L122.19 15.0655L122.19 15.0661L125.863 11.6732ZM125.867 11.678L122.195 15.0709L122.237 15.1169L122.281 15.1619L125.867 11.678ZM176.859 64.1688L173.272 67.6527L173.272 67.6527L176.859 64.1688ZM176.896 64.207L181.136 61.5575L180.854 61.1054L180.482 60.723L176.896 64.207ZM176.924 64.2522L172.684 66.9017L172.684 66.9022L176.924 64.2522ZM178.522 67.3193L183.113 65.3401L183.113 65.3401L178.522 67.3193ZM179.5 71.0123L174.5 71.0183L174.5 71.0532L174.501 71.088L179.5 71.0123ZM103.098 22.4991L105.021 17.8837L104.079 17.4912L103.059 17.4992L103.098 22.4991ZM103.192 22.5383L105.115 17.9229L105.115 17.9229L103.192 22.5383ZM102.996 22.4999L103.035 27.4997L103.035 27.4997L102.996 22.4999ZM39 22.9998V27.9998H39.0195L39.0391 27.9997L39 22.9998ZM38.998 22.9998L38.998 17.9998L38.9974 17.9998L38.998 22.9998ZM27.3034 28.8047L31.1445 32.0057L31.1445 32.0057L27.3034 28.8047ZM22.5131 38.3862L17.6439 37.2501L17.6439 37.2501L22.5131 38.3862ZM22.5 38.4423L17.6308 37.3062L17.5 37.8667V38.4423H22.5ZM28.3117 207.977L25.1787 211.874L25.1787 211.874L28.3117 207.977ZM37.8563 212.979L39.2931 208.19L39.2931 208.19L37.8563 212.979ZM37.9266 213L36.4898 217.789L37.1927 218H37.9266V213ZM156.901 207.378L153.02 204.225L153.02 204.225L156.901 207.378ZM161.486 198.117L156.626 196.944L156.626 196.944L161.486 198.117ZM161.5 198.059L166.36 199.233L166.5 198.654V198.059H161.5ZM158.661 77.1397L161.52 73.038L161.52 73.038L158.661 77.1397ZM154.137 75.0191L155.511 70.2115L155.511 70.2114L154.137 75.0191ZM154.07 74.9998L155.443 70.1921L154.77 69.9998H154.07V74.9998ZM111.612 72.5439L115.361 69.2348L115.361 69.2347L111.612 72.5439ZM109.5 68.4459H104.5V68.9962L104.62 69.5334L109.5 68.4459ZM107.106 25.2117L103.542 28.7179L103.542 28.7179L107.106 25.2117ZM102.9 23.5006L104.885 18.9116L103.917 18.4925L102.861 18.5008L102.9 23.5006ZM39.0039 23.9998L39.0234 28.9998L39.0332 28.9997L39.043 28.9997L39.0039 23.9998ZM106.394 25.913L109.958 22.4068L109.958 22.4068L106.394 25.913ZM108.5 68.5528H103.5V69.0827L103.611 69.6008L108.5 68.5528ZM108.511 68.6046L113.4 67.557L113.4 67.5567L108.511 68.6046ZM110.863 73.2058L114.611 69.8966L114.611 69.8966L110.863 73.2058ZM153.929 75.9998L155.332 71.2008L154.645 70.9998H153.929V75.9998ZM158.089 77.96L155.23 82.0616L155.23 82.0617L158.089 77.96ZM160.5 197.94L165.356 199.131L165.5 198.544V197.94H160.5ZM156.124 206.747L152.244 203.594L152.244 203.594L156.124 206.747ZM38.0738 212L36.6197 216.784L37.3307 217H38.0738V212ZM28.9383 207.198L32.0713 203.301L32.0713 203.301L28.9383 207.198ZM23.5 38.5578L18.6349 37.4042L18.5 37.9731V38.5578H23.5ZM28.0716 29.4449L31.9127 32.6459L31.9127 32.6459L28.0716 29.4449ZM39 23.9998V28.9998H39.0098L39.0195 28.9998L39 23.9998ZM128.807 8.96488C123.222 2.9151 117.043 1.22192 113.593 1.53562L114.498 11.4946C114.354 11.5076 117.617 11.5862 121.459 15.7477L128.807 8.96488ZM128.482 16.0685L128.482 16.0684L121.783 8.64414L121.783 8.64425L128.482 16.0685ZM128.728 8.88182L128.719 8.87267L121.546 15.8401L121.555 15.8493L128.728 8.88182ZM179.69 61.3431L128.728 8.88161L121.555 15.8495L172.518 68.3109L179.69 61.3431ZM182.195 65.736C181.586 64.3237 180.87 63.0258 180.354 62.1932L171.854 67.4609C172.148 67.9349 172.624 68.7956 173.012 69.6942L182.195 65.736ZM183.5 71.0172C183.5 69.0402 182.753 67.0302 182.195 65.7359L173.012 69.6943C173.21 70.1534 173.35 70.5439 173.434 70.842C173.475 70.9877 173.495 71.0824 173.503 71.1295C173.512 71.1818 173.5 71.138 173.5 71.0172H183.5ZM183.5 70.9786L183.5 70.9691L173.5 71.0652L173.5 71.0748L183.5 70.9786ZM178.905 66.0181L178.405 66.0276L178.595 76.0258L179.095 76.0163L178.905 66.0181ZM183.499 70.9455C183.497 70.8019 183.603 72.0611 182.93 73.3461C182.221 74.7021 181.126 75.3205 180.613 75.5598C180.105 75.7963 179.675 75.8901 179.53 75.9208C179.339 75.961 179.185 75.9813 179.111 75.9905C178.96 76.009 178.842 76.0162 178.812 76.018C178.766 76.0209 178.73 76.0224 178.714 76.0231C178.668 76.025 178.636 76.0255 178.676 76.0246C178.728 76.0234 178.843 76.0211 179.095 76.0163L178.905 66.0181C178.657 66.0228 178.522 66.0255 178.449 66.0271C178.426 66.0277 178.364 66.029 178.302 66.0316C178.282 66.0324 178.243 66.0341 178.195 66.0371C178.163 66.039 178.043 66.0464 177.892 66.065C177.816 66.0743 177.663 66.0946 177.471 66.1349C177.325 66.1656 176.895 66.2595 176.388 66.496C175.874 66.7354 174.78 67.3538 174.07 68.7099C173.398 69.995 173.503 71.2542 173.501 71.1107L183.499 70.9455ZM183.499 70.9412L183.499 70.937L173.501 71.1191L173.501 71.1233L183.499 70.9412ZM183.5 70.9531L183.499 70.9364L173.501 71.1282L173.501 71.1449L183.5 70.9531ZM183.501 71.0213L183.5 70.9549L173.501 71.1431L173.503 71.2095L183.501 71.0213ZM183.506 71.2842L183.501 71.0214L173.503 71.2095L173.508 71.4723L183.506 71.2842ZM183.525 72.3117L183.506 71.2856L173.508 71.4709L173.527 72.4969L183.525 72.3117ZM183.595 76.2193C183.565 74.5344 183.541 73.213 183.525 72.3125L173.527 72.4961C173.543 73.3942 173.567 74.7131 173.597 76.3952L183.595 76.2193ZM183.828 90.2279C183.736 84.4121 183.654 79.5889 183.595 76.2193L173.597 76.3952C173.656 79.7594 173.738 84.5762 173.829 90.3847L183.828 90.2279ZM184.375 133.351C184.229 117.463 184.01 101.859 183.828 90.2279L173.829 90.3847C174.011 102.003 174.23 117.584 174.375 133.443L184.375 133.351ZM184.484 178.212C184.594 165.422 184.521 149.234 184.375 133.351L174.375 133.443C174.521 149.308 174.594 165.426 174.485 178.126L184.484 178.212ZM184.167 194.453C184.329 190.177 184.429 184.603 184.484 178.212L174.485 178.126C174.43 184.481 174.33 189.943 174.174 194.075L184.167 194.453ZM183.87 199.915C183.988 198.435 184.086 196.588 184.167 194.453L174.174 194.075C174.095 196.144 174.004 197.836 173.902 199.12L183.87 199.915ZM183.356 203.646C183.613 202.657 183.761 201.286 183.87 199.915L173.902 199.12C173.85 199.766 173.799 200.27 173.751 200.644C173.698 201.054 173.664 201.182 173.676 201.137L183.356 203.646ZM173.416 222.351C178.86 216.111 182.046 208.7 183.356 203.646L173.676 201.137C172.685 204.961 170.134 210.902 165.881 215.776L173.416 222.351ZM149 234.017C159.843 234.017 167.908 228.663 173.416 222.351L165.881 215.776C161.705 220.561 156.192 224.017 149 224.017V234.017ZM123.392 234.443C134.911 234.208 144.27 234.017 149 234.017V224.017C144.139 224.017 134.64 224.211 123.188 224.445L123.392 234.443ZM123.481 234.44L123.482 234.44L123.098 224.448L123.097 224.448L123.481 234.44ZM88.4759 235.079C100.526 234.909 112.836 234.658 123.391 234.443L123.187 224.445C112.627 224.66 100.348 224.911 88.335 225.08L88.4759 235.079ZM53.7496 235.212C63.5559 235.346 75.8969 235.256 88.4759 235.079L88.335 225.08C75.7788 225.257 63.5497 225.345 53.8859 225.213L53.7496 235.212ZM41.1301 234.823C44.5404 235.022 48.8505 235.145 53.7496 235.212L53.8859 225.213C49.049 225.147 44.908 225.027 41.7138 224.84L41.1301 234.823ZM33.2139 233.829C34.9878 234.359 37.9119 234.635 41.1302 234.823L41.7138 224.84C40.1057 224.746 38.7941 224.638 37.7836 224.521C37.2795 224.462 36.8779 224.405 36.5692 224.351C36.4163 224.324 36.2976 224.3 36.2089 224.28C36.1651 224.27 36.1318 224.262 36.1079 224.256C36.0961 224.253 36.0872 224.251 36.081 224.249C36.0748 224.247 36.0719 224.247 36.0719 224.247L33.2139 233.829ZM13.8689 223.713C20.3538 228.923 28.0336 232.284 33.2139 233.829L36.0719 224.247C31.8478 222.987 25.4008 220.15 20.1325 215.917L13.8689 223.713ZM1.5 201.018C1.50038 210.952 7.41241 218.525 13.8689 223.713L20.1325 215.917C14.8295 211.656 11.5002 206.653 11.5 201.018L1.5 201.018ZM1.5 201.017V201.018H11.5V201.017H1.5ZM1.99994 34.0297L1.50002 201.002L11.5 201.032L11.9999 34.0597L1.99994 34.0297ZM9.53052 13.8775C4.75637 20.469 2.59761 28.2463 2.02888 33.5073L11.971 34.5821C12.3969 30.6423 14.093 24.626 17.6294 19.7434L9.53052 13.8775ZM33.5 1.51714C22.1827 1.51714 14.4269 7.11722 9.53052 13.8775L17.6294 19.7434C21.0339 15.0429 25.999 11.5171 33.5 11.5171V1.51714ZM114 1.51714H33.5V11.5171H114V1.51714ZM114.023 1.51714H114V11.5171H114.023V1.51714ZM113.593 1.53563L113.57 1.53768L114.475 11.4966L114.498 11.4945L113.593 1.53563ZM184.5 71.0367L184.5 71.0328L174.5 70.9937L174.5 70.9976L184.5 71.0367ZM184.499 70.8993L184.498 70.8864L174.502 71.1479L174.502 71.1608L184.499 70.8993ZM184.501 71.0026L184.499 70.936L174.501 71.124L174.502 71.1905L184.501 71.0026ZM184.506 71.2655L184.501 71.0026L174.502 71.1906L174.507 71.4535L184.506 71.2655ZM184.525 72.2933L184.506 71.2669L174.507 71.4521L174.526 72.4785L184.525 72.2933ZM184.595 76.2016C184.565 74.5166 184.541 73.1948 184.525 72.2941L174.526 72.4778C174.543 73.3761 174.567 74.6952 174.596 76.3776L184.595 76.2016ZM184.827 90.2122C184.736 84.3957 184.654 79.5718 184.595 76.2017L174.596 76.3776C174.656 79.7423 174.738 84.5598 174.829 90.369L184.827 90.2122ZM185.375 133.342C185.229 117.451 185.01 101.844 184.827 90.2122L174.829 90.369C175.011 101.988 175.229 117.572 175.375 133.434L185.375 133.342ZM185.484 178.221C185.594 165.421 185.521 149.227 185.375 133.342L175.375 133.434C175.521 149.3 175.594 165.425 175.485 178.135L185.484 178.221ZM185.166 194.491C185.328 190.201 185.429 184.615 185.484 178.221L175.485 178.135C175.43 184.494 175.33 189.966 175.173 194.112L185.166 194.491ZM184.867 199.995C184.987 198.495 185.085 196.633 185.166 194.491L175.173 194.112C175.095 196.188 175.003 197.896 174.899 199.199L184.867 199.995ZM184.324 203.898C184.605 202.814 184.758 201.364 184.867 199.995L174.899 199.199C174.847 199.846 174.795 200.368 174.742 200.771C174.717 200.971 174.693 201.125 174.673 201.239C174.652 201.357 174.641 201.401 174.644 201.388L184.324 203.898ZM174.169 223.008C179.733 216.632 182.982 209.074 184.324 203.897L174.644 201.388C173.621 205.335 171.006 211.423 166.634 216.434L174.169 223.008ZM149 235.017C160.209 235.017 168.529 229.472 174.169 223.008L166.634 216.434C162.325 221.372 156.556 225.017 149 225.017V235.017ZM123.432 235.442C134.937 235.207 144.276 235.017 149 235.017V225.017C144.145 225.017 134.666 225.211 123.228 225.444L123.432 235.442ZM123.329 235.443H123.33V225.443H123.329V235.443ZM88.49 236.079C100.562 235.909 112.878 235.658 123.431 235.442L123.227 225.444C112.67 225.66 100.384 225.911 88.3491 226.08L88.49 236.079ZM53.736 236.212C63.5566 236.346 75.9087 236.256 88.49 236.079L88.3491 226.08C75.7906 226.257 63.5503 226.345 53.8723 226.213L53.736 236.212ZM41.0718 235.821C44.5037 236.022 48.8307 236.145 53.736 236.212L53.8723 226.213C49.0292 226.147 44.8713 226.026 41.6554 225.838L41.0718 235.821ZM32.928 234.788C34.8315 235.355 37.8719 235.634 41.0718 235.821L41.6554 225.838C38.2499 225.639 36.3879 225.384 35.7861 225.205L32.928 234.788ZM13.2425 224.492C19.8492 229.801 27.6522 233.214 32.9281 234.788L35.7861 225.205C31.4664 223.917 24.8961 221.028 19.5061 216.697L13.2425 224.492ZM0.5 201.017C0.5 211.383 6.67206 219.213 13.2425 224.492L19.5061 216.697C14.0864 212.342 10.5 207.081 10.5 201.017H0.5ZM0.500008 201.008L0.500006 201.01L10.5 201.025L10.5 201.023L0.500008 201.008ZM1.00002 34.0007L0.500025 201.001L10.5 201.031L11 34.0306L1.00002 34.0007ZM1.0001 33.9747L1.00002 34.0007L11 34.0306L11.0001 34.0047L1.0001 33.9747ZM1.0313 33.4312L1.02853 33.457L10.9716 34.5224L10.9744 34.4965L1.0313 33.4312ZM8.72063 13.2909C3.81386 20.0655 1.60936 28.0359 1.0313 33.4312L10.9744 34.4965C11.4105 30.426 13.1523 24.22 16.8195 19.1568L8.72063 13.2909ZM33.5 0.517143C21.8 0.517143 13.7654 6.32574 8.72063 13.2909L16.8195 19.1568C20.3738 14.2494 25.6183 10.5171 33.5 10.5171V0.517143ZM113.978 0.517143H33.5V10.5171H113.978V0.517143ZM129.536 8.28091C123.799 2.06866 117.362 0.210662 113.553 0.535201L114.403 10.4991C114.359 10.5028 114.584 10.4844 115.074 10.5774C115.537 10.6652 116.157 10.838 116.89 11.1516C118.345 11.7734 120.229 12.9422 122.19 15.0655L129.536 8.28091ZM129.54 8.28514L129.536 8.28036L122.19 15.0661L122.195 15.0709L129.54 8.28514ZM180.445 60.6848L129.454 8.19407L122.281 15.1619L173.272 67.6527L180.445 60.6848ZM180.482 60.723L180.445 60.6848L173.272 67.6527L173.309 67.691L180.482 60.723ZM181.164 61.6027L181.136 61.5575L172.655 66.8565L172.684 66.9017L181.164 61.6027ZM183.113 65.3401C182.469 63.8449 181.709 62.4737 181.164 61.6022L172.684 66.9022C172.996 67.4012 173.51 68.3248 173.93 69.2984L183.113 65.3401ZM184.5 71.0062C184.497 68.8187 183.68 66.6561 183.113 65.3401L173.93 69.2984C174.135 69.774 174.294 70.2063 174.395 70.5667C174.506 70.9567 174.5 71.0905 174.5 71.0183L184.5 71.0062ZM184.499 70.9375L184.499 70.9365L174.501 71.088L174.501 71.089L184.499 70.9375ZM101.175 27.1144L101.269 27.1537L105.115 17.9229L105.021 17.8837L101.175 27.1144ZM103.035 27.4997L103.137 27.4989L103.059 17.4992L102.957 17.5L103.035 27.4997ZM39.0391 27.9997L103.035 27.4997L102.957 17.5L38.9609 18L39.0391 27.9997ZM38.998 27.9998H39V17.9998H38.998V27.9998ZM31.1445 32.0057C33.1543 29.5939 35.6949 28.0003 38.9987 27.9998L38.9974 17.9998C31.9265 18.0007 26.7923 21.6078 23.4623 25.6038L31.1445 32.0057ZM27.3823 39.5224C27.8377 37.5707 29.0703 34.4948 31.1445 32.0057L23.4623 25.6038C20.2104 29.506 18.3836 34.0798 17.6439 37.2501L27.3823 39.5224ZM27.3692 39.5784L27.3823 39.5223L17.6439 37.2501L17.6308 37.3062L27.3692 39.5784ZM27.5 38.4998V38.4423H17.5V38.4998H27.5ZM27.5 197.5V38.4998H17.5V197.5H27.5ZM31.4447 204.08C28.8327 201.98 27.5 199.761 27.5 197.5H17.5C17.5 204.07 21.4264 208.857 25.1787 211.874L31.4447 204.08ZM39.2931 208.19C37.2215 207.568 34.0241 206.154 31.4447 204.08L25.1787 211.874C28.9706 214.922 33.3959 216.861 36.4196 217.768L39.2931 208.19ZM39.3634 208.211L39.2931 208.19L36.4195 217.768L36.4898 217.789L39.3634 208.211ZM38 208H37.9266V218H38V208ZM146 208H38V218H146V208ZM153.02 204.225C151.115 206.57 148.825 208 146 208V218C152.769 218 157.656 214.378 160.781 210.53L153.02 204.225ZM156.626 196.944C156.167 198.845 154.97 201.824 153.02 204.225L160.781 210.53C163.851 206.752 165.611 202.337 166.346 199.29L156.626 196.944ZM156.64 196.886L156.626 196.944L166.346 199.291L166.36 199.233L156.64 196.886ZM156.5 198V198.059H166.5V198H156.5ZM156.5 81.4998V198H166.5V81.4998H156.5ZM155.802 81.2413C156.017 81.3913 156.192 81.5331 156.33 81.6607C156.468 81.7893 156.544 81.8825 156.58 81.9321C156.614 81.9799 156.593 81.9628 156.563 81.8789C156.53 81.7866 156.5 81.653 156.5 81.4998H166.5C166.5 77.0903 163.363 74.3226 161.52 73.038L155.802 81.2413ZM152.764 79.8267C153.587 80.0619 154.851 80.5789 155.802 81.2413L161.52 73.038C159.441 71.5883 157.098 70.6648 155.511 70.2115L152.764 79.8267ZM152.697 79.8076L152.764 79.8268L155.511 70.2114L155.443 70.1921L152.697 79.8076ZM154 79.9998H154.07V69.9998H154V79.9998ZM117 79.9998H154V69.9998H117V79.9998ZM107.864 75.8531C109.839 78.0898 112.877 79.9998 117 79.9998V69.9998C116.557 69.9998 116.273 69.9078 116.071 69.8075C115.851 69.698 115.611 69.5188 115.361 69.2348L107.864 75.8531ZM104.62 69.5334C105.016 71.312 106.013 73.756 107.864 75.8531L115.361 69.2347C115.107 68.9479 114.88 68.5942 114.697 68.2165C114.511 67.8326 114.415 67.5141 114.38 67.3583L104.62 69.5334ZM104.5 30.4998V68.4459H114.5V30.4998H104.5ZM103.542 28.7179C104.304 29.4924 104.5 30.0895 104.5 30.4998H114.5C114.5 26.5571 112.518 23.5832 110.671 21.7055L103.542 28.7179ZM101.269 27.1537C101.8 27.3749 102.773 27.9361 103.542 28.7179L110.671 21.7055C108.833 19.837 106.689 18.5785 105.115 17.9229L101.269 27.1537ZM102.861 18.5008L38.9648 19L39.043 28.9997L102.939 28.5005L102.861 18.5008ZM109.958 22.4068C108.278 20.6984 106.324 19.5342 104.885 18.9116L100.915 28.0897C101.105 28.1718 101.429 28.337 101.804 28.5858C102.176 28.8324 102.533 29.1179 102.829 29.4192L109.958 22.4068ZM113.5 30.4998C113.5 26.9126 111.699 24.1764 109.958 22.4068L102.829 29.4191C103.48 30.0806 103.5 30.4401 103.5 30.4998H113.5ZM113.5 68.4998V30.4998H103.5V68.4998H113.5ZM113.5 68.5528V68.4998H103.5V68.5528H113.5ZM113.4 67.5567L113.389 67.5049L103.611 69.6008L103.622 69.6525L113.4 67.5567ZM114.611 69.8966C114.285 69.5279 114.006 69.0884 113.787 68.6321C113.565 68.1693 113.447 67.7753 113.4 67.557L103.622 69.6522C104.037 71.5881 105.106 74.2395 107.114 76.5149L114.611 69.8966ZM117 70.9998C116.396 70.9998 115.963 70.8699 115.628 70.7039C115.275 70.5287 114.934 70.2621 114.611 69.8966L107.114 76.5149C109.24 78.9224 112.536 80.9998 117 80.9998V70.9998ZM153.929 70.9998H117V80.9998H153.929V70.9998ZM160.949 73.8584C159.017 72.512 156.83 71.6387 155.332 71.2008L152.526 80.7989C153.284 81.0205 154.412 81.4915 155.23 82.0616L160.949 73.8584ZM165.5 81.4998C165.5 77.6072 162.73 75.1003 160.948 73.8583L155.23 82.0617C155.423 82.1961 155.561 82.3103 155.654 82.3973C155.748 82.4853 155.775 82.5259 155.764 82.5102C155.752 82.4932 155.686 82.3974 155.622 82.2202C155.555 82.0349 155.5 81.7876 155.5 81.4998H165.5ZM165.5 197.94V81.4998H155.5V197.94H165.5ZM160.005 209.9C162.94 206.287 164.639 202.055 165.356 199.131L155.644 196.749C155.204 198.544 154.066 201.351 152.244 203.594L160.005 209.9ZM146 217C152.373 217 157 213.599 160.005 209.9L152.244 203.594C150.463 205.787 148.433 207 146 207V217ZM38.0738 217H146V207H38.0738V217ZM25.8053 211.094C29.4428 214.019 33.6989 215.896 36.6197 216.784L39.528 207.216C37.5444 206.613 34.5047 205.257 32.0713 203.301L25.8053 211.094ZM18.5 197.5C18.5 203.637 22.1646 208.167 25.8053 211.094L32.0713 203.301C29.5763 201.295 28.5 199.332 28.5 197.5H18.5ZM18.5 38.5578V197.5H28.5V38.5578H18.5ZM24.2305 26.244C21.119 29.9778 19.356 34.3634 18.6349 37.4042L28.3651 39.7115C28.8008 37.8742 29.9722 34.9745 31.9127 32.6459L24.2305 26.244ZM39 18.9998C32.3062 18.9998 27.4302 22.4044 24.2305 26.244L31.9127 32.6459C33.7892 30.394 36.0704 28.9998 39 28.9998V18.9998ZM38.9844 18.9999L38.9805 18.9999L39.0195 28.9998L39.0234 28.9998L38.9844 18.9999Z" fill="white"></path>
+                            <rect x="40" y="95" width="104" height="18" rx="9" fill="white"></rect>
+                            <rect x="40" y="164" width="104" height="18" rx="9" fill="white"></rect>
+                            <rect x="40" y="130" width="86" height="18" rx="9" fill="white"></rect>
+                        </svg>
+                    </a>
+                </div>
+                <hr>
+                <h2 style="text-align: center;">
+                                                        </h2>
+                <form method="GET" action="https://aida-smefinance.gov.al/financial-schemes" accept-charset="UTF-8" class="row grant-form position-relative mb-0">
+                    <input name="_token" type="hidden" value="sh5Zu95ey70WIJ2zUus3vYCd5YIZR061QleHF9Aa">
+                    <div class="form-process">
+                        <div class="css3-spinner">
+                            <div class="css3-spinner-scaler"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="icon-key"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Kërko duke përdorur fjalë kyçe..." name="keywords" type="text">
+                    </div>
+
+                    <div class="col-sm-6 input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="icon-industry"></i></span>
+                        </div>
+                        <select class="form-control select2-single" name="industry"><option selected="selected" value="">Zgjidhni industrinë...</option><option value="92"></option><option value="73">AI</option><option value="59">Aftesi digjitale</option><option value="91">Agri-food Industry and Circular and sustainable economy</option><option value="88">Agri-food industry and industries with high energy consumption</option><option value="123">Agri-voltaike</option><option value="128">Agri-voltaike</option><option value="3">Agrikulturë</option><option value="160">Agro-industri</option><option value="93">Agro-ushqimore</option><option value="77">Aquamarine</option><option value="174">Arkitekturë</option><option value="165">Arsimi dhe kërkimi shkencor</option><option value="14">Artizanat</option><option value="24">Automation, Material management, Smart products, Quality control, Safety</option><option value="23">Automatizimi, Menaxhimi i materialeve, Produktet inteligjente, Kontrolli i cilësisë, Siguria</option><option value="109">Automotive</option><option value="156">Bashkëpunim ndërkufitar</option><option value="164">Bashkëpunim rajonal</option><option value="79">Big Data</option><option value="117">Biogaz dhe biometane</option><option value="146">Biogaz dhe biomethane</option><option value="119">Biznese mikro dhe të vogla</option><option value="147">Carbon Capture and Storage (CCS)</option><option value="143">Computer vision</option><option value="85">Construction</option><option value="131">Data Spaces</option><option value="75">Deep-tech</option><option value="84">Digitalization</option><option value="108">Dixhitalizim</option><option value="100">Dixhitalizim dhe Teknologji</option><option value="139">Dizajn inxhinierik dhe stimulim</option><option value="65">EKONOMI QARKULLUESE</option><option value="58">Edukim dhe Trajnim</option><option value="47">Edukim dhe Trajnim, Barazi Gjinore, Sport</option><option value="45">Edukimi, Trajnimi, Inovacioni, Kërkimi</option><option value="151">Efikasitet të burimeve</option><option value="55">Eko-Inovacioni</option><option value="56">Eko-inovacioni</option><option value="170">Elektrifikimi i transportit</option><option value="115">Energji diellore</option><option value="122">Energji diellore (PV)</option><option value="132">Energji dixhitale</option><option value="113">Energji e gjelbërt</option><option value="97">Energjia e rinovueshme</option><option value="49">Entrepreneurship and SMEs, Innovation, Environment</option><option value="57">Entrepreneurship, Innovation, Environment</option><option value="137">Generative AI</option><option value="94">Hapësirë ajrore dhe Mbrojtje</option><option value="12">Horeca</option><option value="74">IT</option><option value="62">IT e  aplikuar</option><option value="141">Imazhe mjekësore</option><option value="63">Implementim dhe zhvillim projektesh</option><option value="16">Industri e lehtë</option><option value="90">Industria Agro-ushqimore dhe Ekonomia qarkulluese dhe e qëndrueshme</option><option value="87">Industria Agro-ushqimore dhe Industrite me konsum të lartë energjie</option><option value="89">Industria Agro-ushqimore, Ekonomia qarkulluese dhe e qëndrueshme</option><option value="20">Industritë që përfshijnë teknologjinë dhe veprimtari të inovacionit</option><option value="136">Industry 4.0</option><option value="76">Innovation</option><option value="21">Innovation technology and activities</option><option value="51">Innovation, Gender Equality, Education and Training</option><option value="38">Inovacion</option><option value="133">Inovacion Dixhital</option><option value="101">Inovacion Industrial</option><option value="179">Inovacion dhe komercializim</option><option value="173">Inovacion dhe teknologji</option><option value="112">Inovacion industrial</option><option value="158">Inovacion social</option><option value="41">Inovacion, Dixhitalizim, Turizëm</option><option value="39">Inovacion, Edukim, Trajnime</option><option value="127">Inovacion, Kerkim-Zhvillim (R&amp;D)</option><option value="34">Inovacion, Mjedis</option><option value="37">Inovacion, Mjedis</option><option value="33">Inovacion, Mjedis, ‘Smart Cities’</option><option value="28">Inovacion, Teknologji etj.</option><option value="29">Inovacion, Teknologji, Energji e rinovueshme</option><option value="31">Inovacion, turizëm</option><option value="54">Inovacioni Social</option><option value="50">Inovacioni, Barazia Gjinore, Edukimi dhe Trajnimi</option><option value="32">Inovacioni, Mjedisi, Ekonomia Dixhitale, Teknologjia celulare</option><option value="43">Inovacioni, Ngritja e Kapaciteteve, Edukimi dhe Trajnimi</option><option value="44">Inovacioni, Ngritja e Kapaciteteve, Strehimi Social</option><option value="40">Inovacioni, SME-të, Sipërmarrja, CCI</option><option value="124">Integrim ne rrjet</option><option value="61">Inteligjenca Artificiale</option><option value="64">Intellectual Property</option><option value="80">IoT</option><option value="129">IoT</option><option value="171">Karburante alternative</option><option value="82">Kerkim</option><option value="66">Kulturë</option><option value="27">Kërkim dhe inovacion, Teknologji</option><option value="67">Kërkim-zhvillim</option><option value="5">Ligjore</option><option value="106">Logjistikë</option><option value="168">Logjistikë urbane</option><option value="180">Lëndë të para</option><option value="142">Machine learning</option><option value="86">Manifakture</option><option value="105">Marketing</option><option value="177">Materiale të avancuara</option><option value="184">Materiale të qëndrueshme, Zëvendësim materialesh</option><option value="175">Media audiovizuale</option><option value="11">Media/Marketing</option><option value="149">Menaxhim i mbetjeve të drurit</option><option value="181">Miniera të qëndrueshme</option><option value="48">Mjedisi, Teknologjia e Hapësirës Ajrore, Burimet Natyrore</option><option value="95">Mobilitet</option><option value="167">Mobilitet urban</option><option value="121">Moda dhe veshje</option><option value="176">Modë, Industri kulturore dhe krijuese</option><option value="10">Ndërtim</option><option value="96">Paketimi agro-ushqimor</option><option value="104">Prodhim</option><option value="110">Prodhim industrial</option><option value="152">Prodhim industrial</option><option value="81">Pronesia Intelektuale</option><option value="178">Pronësi intelektuale</option><option value="118">Përpunim</option><option value="148">Përpunim druri</option><option value="182">Përpunim industrial</option><option value="83">Research</option><option value="150">Riciklim</option><option value="135">Riciklim i tekstileve</option><option value="138">Robotikë autonome</option><option value="99">Rrjete elektrike</option><option value="116">Ruajtje e energjisë së baterive</option><option value="166">Shoqatat e biznesit</option><option value="163">Shoqëri civile</option><option value="172">Shëndet dhe mobilitet</option><option value="140">Shëndetësi dixhitale</option><option value="9">Shërbim klienti</option><option value="103">Shërbime biznesi</option><option value="6">Shërbime financiare</option><option value="7">Shërbime konsulence</option><option value="8">Shërbime shëndetësore</option><option value="53">Sipërmarrja</option><option value="46">Sipërmarrja dhe NVM-të, Inovacioni, Mjedisi</option><option value="161">Sipërmarrje dhe NVM</option><option value="35">Sipërmarrje, Inovacion</option><option value="36">Sipërmarrje, Inovacion, Mjedis</option><option value="42">Sipërmarrje, Prodhim Industrial, Prodhim Tekstili Industrial, Aeronautikë, Dizajn Industrial</option><option value="98">Sisteme energjitike</option><option value="130">Smart Grids</option><option value="134">Software</option><option value="107">Standartizim</option><option value="78">Technology</option><option value="1">Teknologji Informacioni</option><option value="114">Teknologji Net-Zero</option><option value="169">Teknologji dhe të dhëna për mobilitetin</option><option value="111">Teknologji e gjelbërt</option><option value="145">Teknologji hidrogjeni</option><option value="125">Teknologji te energjisë</option><option value="183">Teknologji të avancuara</option><option value="120">Tekstil</option><option value="22">Tekstil, Verë, Turizëm</option><option value="17">Tjetër</option><option value="18">Transport</option><option value="68">Tranzicion i gjelber</option><option value="126">Tranzicion i gjelbër</option><option value="154">Trashëgimi kulturore</option><option value="60">Trashëgimi kulturore, Restaurim</option><option value="159">Trashëgimi natyrore</option><option value="102">Tregti elektronike</option><option value="4">Tregti/Shitje</option><option value="2">Turizëm</option><option value="153">Turizëm i qëndrueshëm</option><option value="155">Turizëm kulturor</option><option value="30">Turizëm, Bujqësi, Tekstil, Lëkurës dhe këpucëve, Artizanat</option><option value="25">Turizëm, Transport-Automotive, Ndërtim, Agro-ushqim, Tekstil, Dixhitalizim, Energji e ripertëritshme, Elektronikë, Shëndetësi</option><option value="13">Të gjitha</option><option value="15">Zejtari</option><option value="162">Zhvillim biznesi</option><option value="157">Zhvillim rajonal</option><option value="52">Zhvillimi i qendrueshem</option><option value="19">a.	Energjia e rinovueshme, përfshirë hidrogjenin e rinovueshëm dhe depozitimin e energjisë 
+b.	Rinovimi i thellë i ndërtesave 
+c.	Industri me karbon të ulët 
+d.	Bateritë dhe sistemet e tjera të ruajtjes së energjisë 
+e.	Për informacione të mëtejshme, ju lutem shikoni Programin e Punës EIC 2021</option><option value="70">culture</option><option value="71">green practices</option><option value="72">green transition</option><option value="69">innovation</option><option value="26">Çështje Sociale, Edukimi dhe Trajnimi, Shkëmbimet Rinore</option><option value="144">•High-Performance Computing (HPC)</option></select>
+                    </div>
+
+                    <div class="col-sm-6 input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="icon-stack"></i></span>
+                        </div>
+                                                                                <select class="form-control select2-single" name="type"><option selected="selected" value="">Zgjidhni llojin...</option><option value="1">Grante</option><option value="2">Kredi/Garanci</option><option value="3">Kapital (VC)</option><option value="4">Instrument Këshillimor</option><option value="5">Mentorim</option><option value="6">Shërbime konsulente</option><option value="7">Cmim</option><option value="all">Të gjitha</option></select>
+                                            </div>
+
+                    <div class="col-sm-6 input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="icon-list"></i></span>
+                        </div>
+                                                <select class="form-control select2-single" name="category"><option selected="selected" value="">Zgjidhni kategorinë...</option><option value="1">Start-Up</option><option value="2">NVM/Ndërmarrje të Vogla dhe të Mesme</option><option value="3">Korporatë</option><option value="4">Organizata të Kërkimit dhe Teknologjisë</option><option value="5">Universitete</option><option value="6">Organizata jofitimprurëse</option><option value="7">Start-up, Scale Up, NVM</option><option value="8">NVM/Start-up</option><option value="9">SME, Research&amp;Technology Organization, University</option><option value="10">NVM, Organizata të Kërkimit dhe Teknologjisë, Universitetet</option><option value="11">NVM; start-up, Organizata kërkimore</option><option value="12">Organizata, Persona juridik publik/ privat</option><option value="13">NVM, Start-up, Universitetet, Qëndrat kërkimore, OJF</option><option value="14">Start-up, Inovatorë, Sipërmarrës</option><option value="15">Start-up, innovators, entrepreneurs</option><option value="16">NVM, sipërmarrës</option><option value="17">NVM, Organizata</option><option value="18">NVM, Organizata, subjekte ligjore</option><option value="19">NVM, subjekte ligjore</option><option value="20">NVM-të, Start-up</option><option value="21">NVM, OJF</option><option value="22">OJF</option><option value="23">Persona Juridik</option><option value="24">Persona juridikë, NVM</option><option value="25">NVM, universiteti, persona juridikë</option><option value="26">NVM, subjekt juridik, Start Up</option><option value="27">NVM, subjekte juridike</option><option value="28">Institucionet e formimit professional dhe trajnimeve, sipërmarrjet, subjekte juridike</option><option value="29">Gratë</option><option value="30">Women</option><option value="31">NVM, Sipërmarrje, Start Up</option><option value="33">Inovacion, Përshpejtues, Inkubacion</option><option value="34">Inovacioni, CCI, Qëndrueshmëria Mjedisore</option><option value="35">Inovacion, Dixhitalizim, Turizëm</option><option value="36">Ndërmarrja dhe Industria, Sipërmarrja dhe NVM-të, Lëndët e Para</option><option value="37">Inovacion, Edukim dhe Trajnim, Kërkim</option><option value="38">Inovacioni, Sipërmarrja dhe SME-të, Ngritja e Kapaciteteve</option><option value="39">Edukimi, Trajnimi, Inovacioni, Kërkimi</option><option value="40">Sipërmarrja dhe NVM-të, Inovacioni, Mjedisi</option><option value="41">Edukim dhe Trajnim, Barazi Gjinore, Sport</option><option value="42">Sipërmarrja dhe SME-të, Inovacioni, Mjedisi</option><option value="all">Të gjitha</option></select>
+                    </div>
+
+                    <div class="col-sm-6 input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="icon-university"></i></span>
+                        </div>
+                        <select class="form-control select2-single" name="institution"><option selected="selected" value="">Zgjidhni institucionin...</option><option value="130"></option><option value="150">AI-BOOST Consortium</option><option value="137">AIDA</option><option value="82">Agjencia Ekekutive Evropiane për Klimën, Infrastrukturën dhe Mjedisin</option><option value="86">Agjencia Ekzekutive Evropiane e Arsimit dhe Kulturës</option><option value="70">Agjencia Ekzekutive Evropiane e Arsimit dhe Kulturës (EACEA)</option><option value="83">Agjencia Ekzekutive Evropiane e Arsimit dhe Kulturës (EACEA)</option><option value="91">Agjencia Ekzekutive Evropiane e Kërkimeve (REA)</option><option value="52">Agjencia Europiane e Arsimit dhe Kulturës</option><option value="10">Agjencia Italiane e Bashkëpunimit për Zhvillim - AICS</option><option value="30">Agjencia Kombëtare e Kërkimit Shkencor dhe Inovacionit (AKKSHI)</option><option value="4">Agjencia Shqiptare e Zhvillimit të Investimeve/ AIDA</option><option value="87">Agjencia e BE-së për Programin Hapësinor (EUSPA)</option><option value="24">Agjencia e Zhvillimit Bujqesor Rural – AZHBR</option><option value="34">Alpha Bank</option><option value="27">Ambasada e Suedisë në Tiranë</option><option value="23">BE- Instrumenti për Asistencë të Para-Anëtarësimit/ IPA</option><option value="59">BERZH</option><option value="18">Banka Amerikane e Investimeve/ ABI Bank</option><option value="5">Banka Europiane për Rindërtim dhe Zhvillim – BERZH</option><option value="39">Banka Gjermane e Zhvillimit (KfW)</option><option value="74">Banka Gjermane për Zhvillim (KfW), Forumi Dhomës së Investimeve i WB6</option><option value="16">Banka Kombëtare Tregtare/ BKT</option><option value="37">Bashkia Tiranë</option><option value="55">Bashkimi Europian</option><option value="60">Bashkimi Europian</option><option value="49">Bashkimi Europian (BE)</option><option value="51">Bashkimi Europian (BE)</option><option value="71">Bashkimi Europian, KfW</option><option value="77">Bashkimi Europian, Këshilli Europian i Inovacionit</option><option value="128">Bashkimi Evropian (SMP-COSME)</option><option value="133">Bashkimi Evropian – Programi i Tregut të Vetëm (SMP/COSME)</option><option value="26">CBS - Creative Business Solutions</option><option value="101">CoSolve-19</option><option value="15">Credins Bank</option><option value="103">DG for Employment, Social Affairs and Inclusion</option><option value="106">Digital Europe Programme</option><option value="105">Digital Europe Programme (DIGITAL)</option><option value="62">Doka, ICNM</option><option value="158">EIT Culture &amp; Creativity</option><option value="127">EIT Food</option><option value="125">EIT RawMaterials</option><option value="156">EIT Urban Mobility</option><option value="157">EIT Urban Mobility / European Institute of Innovation and Technology (EIT)</option><option value="143">ELEVATEX Consortium</option><option value="89">EU Agency for the Space Programme (EUSPA)</option><option value="110">EU4INNOVATION</option><option value="102">EU4Innovation</option><option value="98">EXPO 2020 DUBAI</option><option value="100">EXPO 2020 Dubai</option><option value="104">European Commission – DG CONNECT</option><option value="94">European Innovation Council and SMEs Executive Agency (EISMA)</option><option value="114">European Innovation Council and SMEs Executive Agency (EISMEA)</option><option value="111">European Institute of Innovation and Technology (EIT)</option><option value="159">European Institute of Innovation and Technology (EIT) / Bashkimi Evropian</option><option value="112">European Investment Council (EIC)</option><option value="132">European Union – Single Market Programme (SMP/COSME)</option><option value="99">Expo Live Innovation Programme</option><option value="97">F6S</option><option value="20">FED Invest</option><option value="144">Federation of Industries of Greece (SVE), SolarHub SYNERGIES</option><option value="35">First Investment Bank</option><option value="72">Fondacioni Shqiptar i Garancisë së Zhvillimit (FSHZH)</option><option value="14">Fondi Besa</option><option value="32">Fondi Europian i Investimeve (EIF)</option><option value="129">Food &amp; Bio Cluster Denmark</option><option value="40">Forumi i Investimeve 6 Dhoma i Ballkanit Perëndimor (WB6 CIF)</option><option value="148">FutureProofTextiles Consortium</option><option value="119">G20 Global Lead Initiative</option><option value="66">GIZ</option><option value="152">GIZ Albania në kuadër të projektit EU4 Circular Economy and Livable Cities (EU4CELC)</option><option value="136">Green Grid Europe – Eurocluster for Renewable Energy Growth</option><option value="33">Grupi i Bankës Evropiane të Investimeve (EIB)</option><option value="146">HEDGE-IoT Consortium</option><option value="90">Horizon Europe</option><option value="92">Horizon Europe Framework for Research and Innovation</option><option value="88">Horizon Evropë</option><option value="131">I4BE partnership (clusters such as Flanders’ FOOD, WAGRALIM, FOOD+i, CLUSAGA, InnovAlliance, ATECluster)</option><option value="41">IPC Partner për Zhvillim</option><option value="118">International Trade Center</option><option value="2">Intesa San Paolo Bank</option><option value="81">KE- Këshilli Evropian i Inovacionit dhe Agjencia Ekzekutive e NVM-ve (EISMEA)</option><option value="44">KPMG Bulgaria</option><option value="48">Keshillli Europian i Inovacionit</option><option value="47">Komisioni Europian</option><option value="53">Komisioni Europian</option><option value="56">Komisioni Europian</option><option value="64">Komisioni Europian</option><option value="147">Komisioni Europian (Horizon Europe)</option><option value="149">Komisioni Europian – Single Market Programme (SMP)</option><option value="154">Komisioni Evropian – Directorate-General for Research and Innovation (DG RTD)</option><option value="57">Këshilli Europian i Inovacionit</option><option value="54">Këshilli Europian i Inovacionit (EIC)</option><option value="76">Këshilli Europian i Inovacionit, Agjencia Ekzekutive e NVM-ve</option><option value="78">Këshilli Europian i Inovacionit, Agjencia Ekzekutive e NVM-ve</option><option value="67">Këshilli Europian i Inovacionit, Agjencia Ekzekutive e NVM-ve (EISMEA)</option><option value="69">Këshilli Europian i Inovacionit, Agjencia Ekzekutive e SME-ve (EISMEA)</option><option value="79">Këshilli Evropian i Inovacionit, Agjencia Ekzekutive e SME-ve (EISMEA)</option><option value="153">Managing Authority of the Interreg VI-A IPA CBC Greece–Albania Programme</option><option value="124">Mazovia Cluster ICT</option><option value="29">Ministria Federale për Bashkëpunim Ekonomik dhe Zhvillim</option><option value="73">Ministria Gjermane për Zhvillim Ekonomik dhe Bashkëpunim (BMZ)</option><option value="75">Ministria Gjermane për Zhvillim Ekonomik dhe Bashkëpunim (BMZ)</option><option value="6">Ministria e Bujqësisë dhe Zhvillimit Rural</option><option value="155">Ministria e Ekonomisë dhe Inovacionit</option><option value="117">Ministria e Ekonomisë, Kulturës dhe Inovacionit</option><option value="122">Ministria e Ekonomisë, Kulturës dhe Inovacionit</option><option value="121">Ministria e Ekonomisë, Kulturës dhe Inovacionit (MEKI)</option><option value="1">Ministria e Financave dhe Ekonomisë</option><option value="95">Ministria e Kulturës</option><option value="38">Ministria e Turizmit dhe Mjedisit</option><option value="113">Ministria e Turizmit dhe Mjedisit</option><option value="123">Ministria e Turizmit dhe Mjedisit</option><option value="141">Ministria e Zhvillimit Rajonal (MZHR), Kosovëë</option><option value="21">NOA Bank</option><option value="12">OTP Bank</option><option value="42">PLANCO Consulting GmbH</option><option value="109">Partners Albania for Change and Development</option><option value="139">PoPowerUp NetZero Consortium</option><option value="135">Polymeris dhe partnerët MAT4EU</option><option value="140">PowerUp NetZero Consortium</option><option value="151">PowerUp NetZero Consortium (Fondazione Piemonte Innova &amp; Environment Park)</option><option value="3">Procredit Bank</option><option value="85">Programi Erasmus +</option><option value="84">Programi Horizon</option><option value="145">Programi Horizon Europe (përmes projektit SolarHub)</option><option value="11">Programi Italo – Shqiptar për Zhvillimin e SME-ve në Shqipëri</option><option value="80">Programi i Kërkimit dhe Inovacionit i Bashkimit Evropian Horizon 2020</option><option value="22">Programi i Zhvillimit dhe Inovacionit të Sipërmarrjeve të Ballkanit Perëndimor</option><option value="134">Qendra Balance</option><option value="8">Qendra e Inovacionit PROTIK</option><option value="96">Qeveria Shqiptare</option><option value="65">Qeveria Shqiptare, Qeveria Gjermane</option><option value="142">Qeveria e Republikës së Kosovës</option><option value="138">RESIST II Eurocluster Consortium</option><option value="13">Raiffeisen Bank Shqipëri</option><option value="45">Rockefeller Brothers Fund</option><option value="28">Shoqëria Gjermane për Bashkëpunim Ndërkombëtar (GIZ)</option><option value="93">Single Market Program</option><option value="43">Swisscontact</option><option value="126">The Western Balkans Fund (WBF)</option><option value="120">The Western Balkans Info Hub</option><option value="17">Tirana Bank</option><option value="107">UNDP Albania</option><option value="108">USAID</option><option value="25">USAID Ambasada Amerikane, Tiranë</option><option value="63">Umdasch Group</option><option value="36">UniFin</option><option value="19">Union Bank</option><option value="46">Vestbee</option><option value="58">Wegate</option><option value="115">World Intellectual Property Organization (WIPO)</option><option value="116">World Intellectual Property Organization (WIPO)</option></select>
+                    </div>
+
+                    
+
+                    <div class="col-6">
+                        <a class="btn button-yellow button-light  font-weight-medium btn-block py-2 mt-2" href="https://aida-smefinance.gov.al/financial-schemes"><i class="icon-refresh"></i> Rifillo kërkimin</a>
+                    </div>
+                    <div class="col-6">
+                        <button type="search" name="grant-form-submit" class="btn bg-color text-white font-weight-medium btn-block py-2 mt-2"><i class="icon-line-search"></i> Kërko</button>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <strong>* Informacioni në këtë faqe web është vetëm për qëllime të përgjithshme informative. AIDA nuk mban përgjegjësi për çfarëdolloj informacioni të pasaktë të pasqyruar në platformën “Akses në Financë”. AIDA nuk krijon asnjë lidhje me sipërmarrjet mikro, të vogla, të mesme (NMVM) dhe as me ndonjë konsulent, si dhe nuk mban përgjegjësi për asnjë marrëdhënie të krijuar nëpërmjet kësaj platforme ndërmjet palëve të interesuara.</strong>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </section>
+    </div>
+    <section id="content">
+        <div class="content-wrap pb-0">
+            <div class="container mb-5">
+                <div class="mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
+                    <h5 class="text-uppercase ls1 text-muted mb-3">Platforma</h5>
+                    <h2 class="nott mb-4">Akses në Financë</h2>
+                </div>
+
+                <div class="row justify-content-between">
+                                            <div style="padding: 0px 35px !important;" class="result-block container justify-content-center">
+    <div class="row">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 result-list-title  ">
+                        <h3>Innovation Projects 2026 – EIT Culture &amp; Creativity</h3>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 result-list-product-id ">
+            <h3 style="margin-left: auto;">
+                Lloji: Grante
+                                    <svg width="25" height="23" viewBox="0 0 75 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.0087 7.80127C32.7536 7.80127 22.8188 17.736 22.8188 29.9912C22.8188 42.2463 32.7536 52.1811 45.0087 52.1811C57.2639 52.1811 67.1987 42.2463 67.1987 29.9912C67.1987 17.736 57.2639 7.80127 45.0087 7.80127ZM15.8188 29.9912C15.8188 13.87 28.8876 0.80127 45.0087 0.80127C61.1299 0.80127 74.1987 13.87 74.1987 29.9912C74.1987 46.1123 61.1299 59.1811 45.0087 59.1811C28.8876 59.1811 15.8188 46.1123 15.8188 29.9912ZM13.1532 53.2149C13.1532 52.1188 12.8244 49.9266 11.5091 49.9266H1.64415C1.0961 50.0636 0 50.6254 0 51.7763V76.2331C0 76.9866 0.369935 78.4938 1.84967 78.4938H11.098C11.7146 78.4253 12.9477 77.9594 12.9477 76.6441V74.3834H15.6195L31.4445 81.5766C32.5406 81.9876 35.4726 82.5631 38.4321 81.5766C38.4321 81.5766 67.8899 69.2454 68.6435 68.6289C68.7554 68.5373 68.9521 68.4094 69.2004 68.2479C70.6233 67.3224 73.7427 65.2936 72.3428 62.6688C71.7262 61.6412 69.6711 62.0522 66.3827 63.4909C66.3827 63.4909 63.0777 65.0638 57.7509 67.3958C56.0369 68.1461 54.5632 68.8316 53.4524 69.3484L53.452 69.3486L53.4514 69.3488C52.4038 69.8361 51.6791 70.1733 51.3798 70.273L51.3795 70.2731L51.3786 70.2734C51.1743 70.3415 51.1742 70.3416 51.1134 70.3644C50.9916 70.41 50.6263 70.547 47.886 71.5061C43.7756 72.9448 32.2665 71.9172 32.2665 71.9172C31.376 71.3006 30.1291 70.1908 32.2665 69.0399C32.2665 69.0399 43.9811 69.6565 46.4474 69.0399C48.9136 68.4233 49.5302 62.8743 46.4474 62.4633C44.7807 62.2411 42.8136 62.3192 40.6436 62.4054L40.6434 62.4054C38.7998 62.4786 36.8096 62.5577 34.7328 62.4633C32.4943 62.3615 30.806 60.4794 28.9754 58.4386C27.1084 56.3573 25.0935 54.111 22.1961 53.4204C18.76 52.6014 13.1532 53.2149 13.1532 53.2149ZM6.3711 74.7945C7.61965 74.7945 8.63181 73.7823 8.63181 72.5338C8.63181 71.2852 7.61965 70.2731 6.3711 70.2731C5.12254 70.2731 4.11038 71.2852 4.11038 72.5338C4.11038 73.7823 5.12254 74.7945 6.3711 74.7945ZM63.0367 30.2165C63.0367 40.0486 55.0662 48.0192 45.2341 48.0192C35.4019 48.0192 27.4314 40.0486 27.4314 30.2165C27.4314 20.3844 35.4019 12.4138 45.2341 12.4138C55.0662 12.4138 63.0367 20.3844 63.0367 30.2165ZM44.3449 40.1771V38.3974C43.3279 38.3416 42.4246 38.1507 41.6352 37.8246C40.688 37.4312 39.9478 36.8489 39.4147 36.0777C38.8868 35.3013 38.6099 34.3411 38.584 33.1973H41.8371C41.8733 33.7304 42.026 34.1755 42.2952 34.5327C42.5695 34.8846 42.9344 35.1512 43.3899 35.3324C43.684 35.4447 44.0023 35.5212 44.3449 35.5618V31.4709L43.3355 31.2174C41.995 30.8913 40.9365 30.3815 40.1601 29.6879C39.3837 28.9943 38.9981 28.0601 39.0032 26.8851C38.9981 25.9224 39.2543 25.0813 39.7719 24.3618C40.2946 23.6424 41.0115 23.0808 41.9225 22.677C42.6506 22.3544 43.458 22.1606 44.3449 22.0958V20.3013H45.6182V22.089C46.5548 22.1461 47.3881 22.3421 48.1182 22.677C49.0033 23.0808 49.6917 23.6424 50.1834 24.3618C50.6751 25.0813 50.9287 25.9146 50.9443 26.8618H47.7222C47.6601 26.2355 47.3935 25.749 46.9225 25.4022C46.5778 25.1484 46.143 24.9875 45.6182 24.9194V28.788L46.3946 28.9736C47.0881 29.1289 47.7248 29.336 48.3045 29.5948C48.8842 29.8536 49.3863 30.1719 49.8107 30.5497C50.2351 30.9276 50.5638 31.3727 50.7967 31.8851C51.0348 32.3976 51.1565 32.985 51.1617 33.6476C51.1565 34.6207 50.908 35.4643 50.4163 36.1786C49.9298 36.8877 49.2258 37.439 48.3045 37.8324C47.5405 38.1561 46.645 38.3449 45.6182 38.3986V40.1771H44.3449ZM46.4334 35.3479C46.1875 35.445 45.9157 35.5137 45.6182 35.5539V31.7976C45.9637 31.8976 46.2691 32.0044 46.5343 32.1181C46.938 32.2889 47.2434 32.4959 47.4505 32.7392C47.6627 32.9824 47.7688 33.2827 47.7688 33.6398C47.7688 34.0228 47.6523 34.3619 47.4194 34.6569C47.1865 34.9519 46.8578 35.1823 46.4334 35.3479ZM44.3449 24.925V28.4697C44.2228 28.4329 44.1038 28.3938 43.9877 28.3525C43.6823 28.2386 43.4132 28.1067 43.1803 27.9566C42.9473 27.8013 42.7636 27.6175 42.629 27.4053C42.4996 27.1931 42.4401 26.9446 42.4504 26.66C42.4504 26.3183 42.5488 26.013 42.7455 25.7438C42.9473 25.4747 43.2372 25.265 43.615 25.1149C43.8305 25.0264 44.0738 24.9631 44.3449 24.925Z" fill="white"></path>
+                    </svg>
+                            </h3>
+        </div>
+    </div>
+    <div class="row">
+        
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Donatorë:</strong></span>
+            <span class="field-content">
+                European Institute of Innovation and Technology (EIT) / Bashkimi Evropian
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Zbatues:</strong></span>
+            <span class="field-content">
+                EIT Culture &amp; Creativity
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Afati i Aplikimit:</strong></span>
+            <span class="field-content">30.10.2026</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Statusi:</strong></span>
+            <span class="field-content">Aktive</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Industri:</strong></span>
+            <span class="field-content">Arkitekturë, Media audiovizuale, Modë, Industri kulturore dhe krijuese, Materiale të avancuara, Inteligjenca Artificiale, Inovacion dhe komercializim, Pronesia Intelektuale</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Kodi:</strong></span>
+            <span class="field-content">SF-26-0027</span>
+        </div>
+    </div>
+    <div class="row">
+                    <a href="https://aida-smefinance.gov.al/financial-schemes/innovation-projects-2026-eit-culture-creativity"
+                class="more-details-button-result button button-reveal button-large text-right"
+                style="margin-left:auto; margin-right:0px;background-color: #06304c">
+                <i class="icon-line-arrow-right"></i><span>Më shumë</span>
+            </a>
+            </div>
+</div>                                            <div style="padding: 0px 35px !important;" class="result-block container justify-content-center">
+    <div class="row">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 result-list-title  ">
+                        <h3>Financial Support to Startups Open Call</h3>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 result-list-product-id ">
+            <h3 style="margin-left: auto;">
+                Lloji: Grante
+                                    <svg width="25" height="23" viewBox="0 0 75 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.0087 7.80127C32.7536 7.80127 22.8188 17.736 22.8188 29.9912C22.8188 42.2463 32.7536 52.1811 45.0087 52.1811C57.2639 52.1811 67.1987 42.2463 67.1987 29.9912C67.1987 17.736 57.2639 7.80127 45.0087 7.80127ZM15.8188 29.9912C15.8188 13.87 28.8876 0.80127 45.0087 0.80127C61.1299 0.80127 74.1987 13.87 74.1987 29.9912C74.1987 46.1123 61.1299 59.1811 45.0087 59.1811C28.8876 59.1811 15.8188 46.1123 15.8188 29.9912ZM13.1532 53.2149C13.1532 52.1188 12.8244 49.9266 11.5091 49.9266H1.64415C1.0961 50.0636 0 50.6254 0 51.7763V76.2331C0 76.9866 0.369935 78.4938 1.84967 78.4938H11.098C11.7146 78.4253 12.9477 77.9594 12.9477 76.6441V74.3834H15.6195L31.4445 81.5766C32.5406 81.9876 35.4726 82.5631 38.4321 81.5766C38.4321 81.5766 67.8899 69.2454 68.6435 68.6289C68.7554 68.5373 68.9521 68.4094 69.2004 68.2479C70.6233 67.3224 73.7427 65.2936 72.3428 62.6688C71.7262 61.6412 69.6711 62.0522 66.3827 63.4909C66.3827 63.4909 63.0777 65.0638 57.7509 67.3958C56.0369 68.1461 54.5632 68.8316 53.4524 69.3484L53.452 69.3486L53.4514 69.3488C52.4038 69.8361 51.6791 70.1733 51.3798 70.273L51.3795 70.2731L51.3786 70.2734C51.1743 70.3415 51.1742 70.3416 51.1134 70.3644C50.9916 70.41 50.6263 70.547 47.886 71.5061C43.7756 72.9448 32.2665 71.9172 32.2665 71.9172C31.376 71.3006 30.1291 70.1908 32.2665 69.0399C32.2665 69.0399 43.9811 69.6565 46.4474 69.0399C48.9136 68.4233 49.5302 62.8743 46.4474 62.4633C44.7807 62.2411 42.8136 62.3192 40.6436 62.4054L40.6434 62.4054C38.7998 62.4786 36.8096 62.5577 34.7328 62.4633C32.4943 62.3615 30.806 60.4794 28.9754 58.4386C27.1084 56.3573 25.0935 54.111 22.1961 53.4204C18.76 52.6014 13.1532 53.2149 13.1532 53.2149ZM6.3711 74.7945C7.61965 74.7945 8.63181 73.7823 8.63181 72.5338C8.63181 71.2852 7.61965 70.2731 6.3711 70.2731C5.12254 70.2731 4.11038 71.2852 4.11038 72.5338C4.11038 73.7823 5.12254 74.7945 6.3711 74.7945ZM63.0367 30.2165C63.0367 40.0486 55.0662 48.0192 45.2341 48.0192C35.4019 48.0192 27.4314 40.0486 27.4314 30.2165C27.4314 20.3844 35.4019 12.4138 45.2341 12.4138C55.0662 12.4138 63.0367 20.3844 63.0367 30.2165ZM44.3449 40.1771V38.3974C43.3279 38.3416 42.4246 38.1507 41.6352 37.8246C40.688 37.4312 39.9478 36.8489 39.4147 36.0777C38.8868 35.3013 38.6099 34.3411 38.584 33.1973H41.8371C41.8733 33.7304 42.026 34.1755 42.2952 34.5327C42.5695 34.8846 42.9344 35.1512 43.3899 35.3324C43.684 35.4447 44.0023 35.5212 44.3449 35.5618V31.4709L43.3355 31.2174C41.995 30.8913 40.9365 30.3815 40.1601 29.6879C39.3837 28.9943 38.9981 28.0601 39.0032 26.8851C38.9981 25.9224 39.2543 25.0813 39.7719 24.3618C40.2946 23.6424 41.0115 23.0808 41.9225 22.677C42.6506 22.3544 43.458 22.1606 44.3449 22.0958V20.3013H45.6182V22.089C46.5548 22.1461 47.3881 22.3421 48.1182 22.677C49.0033 23.0808 49.6917 23.6424 50.1834 24.3618C50.6751 25.0813 50.9287 25.9146 50.9443 26.8618H47.7222C47.6601 26.2355 47.3935 25.749 46.9225 25.4022C46.5778 25.1484 46.143 24.9875 45.6182 24.9194V28.788L46.3946 28.9736C47.0881 29.1289 47.7248 29.336 48.3045 29.5948C48.8842 29.8536 49.3863 30.1719 49.8107 30.5497C50.2351 30.9276 50.5638 31.3727 50.7967 31.8851C51.0348 32.3976 51.1565 32.985 51.1617 33.6476C51.1565 34.6207 50.908 35.4643 50.4163 36.1786C49.9298 36.8877 49.2258 37.439 48.3045 37.8324C47.5405 38.1561 46.645 38.3449 45.6182 38.3986V40.1771H44.3449ZM46.4334 35.3479C46.1875 35.445 45.9157 35.5137 45.6182 35.5539V31.7976C45.9637 31.8976 46.2691 32.0044 46.5343 32.1181C46.938 32.2889 47.2434 32.4959 47.4505 32.7392C47.6627 32.9824 47.7688 33.2827 47.7688 33.6398C47.7688 34.0228 47.6523 34.3619 47.4194 34.6569C47.1865 34.9519 46.8578 35.1823 46.4334 35.3479ZM44.3449 24.925V28.4697C44.2228 28.4329 44.1038 28.3938 43.9877 28.3525C43.6823 28.2386 43.4132 28.1067 43.1803 27.9566C42.9473 27.8013 42.7636 27.6175 42.629 27.4053C42.4996 27.1931 42.4401 26.9446 42.4504 26.66C42.4504 26.3183 42.5488 26.013 42.7455 25.7438C42.9473 25.4747 43.2372 25.265 43.615 25.1149C43.8305 25.0264 44.0738 24.9631 44.3449 24.925Z" fill="white"></path>
+                    </svg>
+                            </h3>
+        </div>
+    </div>
+    <div class="row">
+        
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Donatorë:</strong></span>
+            <span class="field-content">
+                EIT Urban Mobility / European Institute of Innovation and Technology (EIT)
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Zbatues:</strong></span>
+            <span class="field-content">
+                EIT Urban Mobility
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Afati i Aplikimit:</strong></span>
+            <span class="field-content">16.11.2026</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Statusi:</strong></span>
+            <span class="field-content">Aktive</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Industri:</strong></span>
+            <span class="field-content">Mobilitet urban, Logjistikë urbane, Teknologji dhe të dhëna për mobilitetin, Elektrifikimi i transportit, Karburante alternative, Shëndet dhe mobilitet, Inovacion, Teknologji etj.</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Kodi:</strong></span>
+            <span class="field-content">SF-26-0026</span>
+        </div>
+    </div>
+    <div class="row">
+                    <a href="https://aida-smefinance.gov.al/financial-schemes/financial-support-to-startups-open-call"
+                class="more-details-button-result button button-reveal button-large text-right"
+                style="margin-left:auto; margin-right:0px;background-color: #06304c">
+                <i class="icon-line-arrow-right"></i><span>Më shumë</span>
+            </a>
+            </div>
+</div>                                            <div style="padding: 0px 35px !important;" class="result-block container justify-content-center">
+    <div class="row">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 result-list-title  ">
+                        <h3>Programi i Granteve për Fuqizimin e Bashkëpunimit Rajonal (ERC)</h3>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 result-list-product-id ">
+            <h3 style="margin-left: auto;">
+                Lloji: Grante
+                                    <svg width="25" height="23" viewBox="0 0 75 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.0087 7.80127C32.7536 7.80127 22.8188 17.736 22.8188 29.9912C22.8188 42.2463 32.7536 52.1811 45.0087 52.1811C57.2639 52.1811 67.1987 42.2463 67.1987 29.9912C67.1987 17.736 57.2639 7.80127 45.0087 7.80127ZM15.8188 29.9912C15.8188 13.87 28.8876 0.80127 45.0087 0.80127C61.1299 0.80127 74.1987 13.87 74.1987 29.9912C74.1987 46.1123 61.1299 59.1811 45.0087 59.1811C28.8876 59.1811 15.8188 46.1123 15.8188 29.9912ZM13.1532 53.2149C13.1532 52.1188 12.8244 49.9266 11.5091 49.9266H1.64415C1.0961 50.0636 0 50.6254 0 51.7763V76.2331C0 76.9866 0.369935 78.4938 1.84967 78.4938H11.098C11.7146 78.4253 12.9477 77.9594 12.9477 76.6441V74.3834H15.6195L31.4445 81.5766C32.5406 81.9876 35.4726 82.5631 38.4321 81.5766C38.4321 81.5766 67.8899 69.2454 68.6435 68.6289C68.7554 68.5373 68.9521 68.4094 69.2004 68.2479C70.6233 67.3224 73.7427 65.2936 72.3428 62.6688C71.7262 61.6412 69.6711 62.0522 66.3827 63.4909C66.3827 63.4909 63.0777 65.0638 57.7509 67.3958C56.0369 68.1461 54.5632 68.8316 53.4524 69.3484L53.452 69.3486L53.4514 69.3488C52.4038 69.8361 51.6791 70.1733 51.3798 70.273L51.3795 70.2731L51.3786 70.2734C51.1743 70.3415 51.1742 70.3416 51.1134 70.3644C50.9916 70.41 50.6263 70.547 47.886 71.5061C43.7756 72.9448 32.2665 71.9172 32.2665 71.9172C31.376 71.3006 30.1291 70.1908 32.2665 69.0399C32.2665 69.0399 43.9811 69.6565 46.4474 69.0399C48.9136 68.4233 49.5302 62.8743 46.4474 62.4633C44.7807 62.2411 42.8136 62.3192 40.6436 62.4054L40.6434 62.4054C38.7998 62.4786 36.8096 62.5577 34.7328 62.4633C32.4943 62.3615 30.806 60.4794 28.9754 58.4386C27.1084 56.3573 25.0935 54.111 22.1961 53.4204C18.76 52.6014 13.1532 53.2149 13.1532 53.2149ZM6.3711 74.7945C7.61965 74.7945 8.63181 73.7823 8.63181 72.5338C8.63181 71.2852 7.61965 70.2731 6.3711 70.2731C5.12254 70.2731 4.11038 71.2852 4.11038 72.5338C4.11038 73.7823 5.12254 74.7945 6.3711 74.7945ZM63.0367 30.2165C63.0367 40.0486 55.0662 48.0192 45.2341 48.0192C35.4019 48.0192 27.4314 40.0486 27.4314 30.2165C27.4314 20.3844 35.4019 12.4138 45.2341 12.4138C55.0662 12.4138 63.0367 20.3844 63.0367 30.2165ZM44.3449 40.1771V38.3974C43.3279 38.3416 42.4246 38.1507 41.6352 37.8246C40.688 37.4312 39.9478 36.8489 39.4147 36.0777C38.8868 35.3013 38.6099 34.3411 38.584 33.1973H41.8371C41.8733 33.7304 42.026 34.1755 42.2952 34.5327C42.5695 34.8846 42.9344 35.1512 43.3899 35.3324C43.684 35.4447 44.0023 35.5212 44.3449 35.5618V31.4709L43.3355 31.2174C41.995 30.8913 40.9365 30.3815 40.1601 29.6879C39.3837 28.9943 38.9981 28.0601 39.0032 26.8851C38.9981 25.9224 39.2543 25.0813 39.7719 24.3618C40.2946 23.6424 41.0115 23.0808 41.9225 22.677C42.6506 22.3544 43.458 22.1606 44.3449 22.0958V20.3013H45.6182V22.089C46.5548 22.1461 47.3881 22.3421 48.1182 22.677C49.0033 23.0808 49.6917 23.6424 50.1834 24.3618C50.6751 25.0813 50.9287 25.9146 50.9443 26.8618H47.7222C47.6601 26.2355 47.3935 25.749 46.9225 25.4022C46.5778 25.1484 46.143 24.9875 45.6182 24.9194V28.788L46.3946 28.9736C47.0881 29.1289 47.7248 29.336 48.3045 29.5948C48.8842 29.8536 49.3863 30.1719 49.8107 30.5497C50.2351 30.9276 50.5638 31.3727 50.7967 31.8851C51.0348 32.3976 51.1565 32.985 51.1617 33.6476C51.1565 34.6207 50.908 35.4643 50.4163 36.1786C49.9298 36.8877 49.2258 37.439 48.3045 37.8324C47.5405 38.1561 46.645 38.3449 45.6182 38.3986V40.1771H44.3449ZM46.4334 35.3479C46.1875 35.445 45.9157 35.5137 45.6182 35.5539V31.7976C45.9637 31.8976 46.2691 32.0044 46.5343 32.1181C46.938 32.2889 47.2434 32.4959 47.4505 32.7392C47.6627 32.9824 47.7688 33.2827 47.7688 33.6398C47.7688 34.0228 47.6523 34.3619 47.4194 34.6569C47.1865 34.9519 46.8578 35.1823 46.4334 35.3479ZM44.3449 24.925V28.4697C44.2228 28.4329 44.1038 28.3938 43.9877 28.3525C43.6823 28.2386 43.4132 28.1067 43.1803 27.9566C42.9473 27.8013 42.7636 27.6175 42.629 27.4053C42.4996 27.1931 42.4401 26.9446 42.4504 26.66C42.4504 26.3183 42.5488 26.013 42.7455 25.7438C42.9473 25.4747 43.2372 25.265 43.615 25.1149C43.8305 25.0264 44.0738 24.9631 44.3449 24.925Z" fill="white"></path>
+                    </svg>
+                            </h3>
+        </div>
+    </div>
+    <div class="row">
+        
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Donatorë:</strong></span>
+            <span class="field-content">
+                BE- Instrumenti për Asistencë të Para-Anëtarësimit/ IPA
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Zbatues:</strong></span>
+            <span class="field-content">
+                The Western Balkans Fund (WBF)
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Afati i Aplikimit:</strong></span>
+            <span class="field-content">26.10.2026</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Statusi:</strong></span>
+            <span class="field-content">Aktive</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Industri:</strong></span>
+            <span class="field-content">Shoqëri civile, Bashkëpunim rajonal, Arsimi dhe kërkimi shkencor, Shoqatat e biznesit, Zhvillimi i qendrueshem</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Kodi:</strong></span>
+            <span class="field-content">SF-26-0025</span>
+        </div>
+    </div>
+    <div class="row">
+                    <a href="https://aida-smefinance.gov.al/financial-schemes/programi-i-granteve-per-fuqizimin-e-bashkepunimit-rajonal-erc"
+                class="more-details-button-result button button-reveal button-large text-right"
+                style="margin-left:auto; margin-right:0px;background-color: #06304c">
+                <i class="icon-line-arrow-right"></i><span>Më shumë</span>
+            </a>
+            </div>
+</div>                                            <div style="padding: 0px 35px !important;" class="result-block container justify-content-center">
+    <div class="row">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 result-list-title  other-scheme  ">
+                        <h3>Programi IDEA Agro</h3>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 result-list-product-id  other-scheme ">
+            <h3 style="margin-left: auto;">
+                Lloji: Mentorim
+                                    <svg width="20" height="20" viewBox="0 0 186 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M114.045 6.51509C115.699 6.36477 120.42 7.25064 125.133 12.3563L125.132 12.3564L125.141 12.3655L176.104 64.827C176.509 65.4803 177.105 66.5597 177.603 67.7151C178.12 68.9137 178.5 70.1256 178.5 71.0172L178.5 71.0267L179 71.0172C178.5 71.0267 178.5 71.0272 178.5 71.0281L178.5 71.0323L178.501 71.049L178.502 71.1154L178.507 71.3782L178.526 72.4043C178.542 73.3036 178.566 74.6238 178.596 76.3072C178.655 79.6741 178.737 84.4941 178.828 90.3063C179.01 101.931 179.229 117.523 179.375 133.397C179.521 149.271 179.594 165.424 179.484 178.169C179.43 184.542 179.33 190.06 179.17 194.264C179.091 196.366 178.996 198.136 178.886 199.517C178.775 200.911 178.65 201.877 178.516 202.392C177.365 206.83 174.497 213.507 169.648 219.063C164.807 224.612 158.017 229.017 149 229.017C144.205 229.017 134.776 229.21 123.29 229.444L123.289 229.444C112.732 229.659 100.437 229.91 88.4055 230.08C75.8378 230.257 63.5528 230.345 53.8178 230.213C48.9498 230.146 44.7242 230.025 41.422 229.831C38.0985 229.637 35.7653 229.373 34.6429 229.038C29.9407 227.636 22.8773 224.537 17.0007 219.815C11.121 215.09 6.50029 208.803 6.5 201.018V201.017L6.99992 34.0447C7.49723 29.4443 9.42466 22.5475 13.5799 16.8104C17.7304 11.08 24.0909 6.51714 33.5 6.51714H114H114.023L114.045 6.51509ZM179.5 71.0133L179.5 71.0172L179.5 71.03L179.502 71.0966L179.507 71.3595L179.526 72.3859C179.542 73.2855 179.566 74.6059 179.596 76.2896C179.655 79.6571 179.737 84.4777 179.828 90.2906C180.01 101.916 180.229 117.511 180.375 133.388C180.521 149.263 180.594 165.423 180.484 178.178C180.43 184.555 180.329 190.084 180.17 194.302C180.09 196.41 179.995 198.196 179.883 199.597C179.772 200.986 179.642 202.033 179.484 202.643C178.301 207.204 175.37 214.028 170.402 219.721C165.427 225.422 158.383 230.017 149 230.017C144.21 230.017 134.801 230.209 123.33 230.443H123.329C112.774 230.659 100.473 230.91 88.4195 231.08C75.8497 231.257 63.5534 231.345 53.8041 231.212C48.9299 231.146 44.6875 231.024 41.3636 230.83C38.0609 230.637 35.6097 230.37 34.3571 229.996C29.5593 228.565 22.3727 225.414 16.3743 220.594C10.3792 215.777 5.5 209.232 5.5 201.017L5.5 201.016L6 34.0156L6.00008 33.9897L6.00285 33.9639C6.50994 29.231 8.48308 22.1428 12.7701 16.2238C17.0696 10.2876 23.7091 5.51714 33.5 5.51714H113.978C116.006 5.34434 120.996 6.40333 125.863 11.6732L125.867 11.678L176.859 64.1688L176.896 64.207L176.924 64.2522C177.352 64.9375 177.99 66.0848 178.522 67.3193C179.046 68.5355 179.499 69.9047 179.5 71.0123L179.5 71.0133ZM103.192 22.5383L103.098 22.4991L102.996 22.4999L39 22.9998H38.998C33.8107 23.0005 29.9733 25.6008 27.3034 28.8047C24.6403 32.0004 23.1106 35.8253 22.5131 38.3862L22.5 38.4423V38.4998V197.5C22.5 201.915 25.1296 205.419 28.3117 207.977C31.4973 210.538 35.3087 212.214 37.8563 212.979L37.9266 213H38H146C150.797 213 154.385 210.474 156.901 207.378C159.411 204.288 160.889 200.591 161.486 198.117L161.5 198.059V198V81.4998C161.5 79.6447 160.155 78.181 158.661 77.1397C157.146 76.0836 155.342 75.3633 154.137 75.0191L154.07 74.9998H154H117C114.569 74.9998 112.824 73.9159 111.612 72.5439C110.409 71.1811 109.744 69.5428 109.5 68.4459V30.4998C109.5 28.3233 108.411 26.5378 107.106 25.2117C105.803 23.8865 104.244 22.9767 103.192 22.5383ZM39.0039 23.9998L102.9 23.5006C103.848 23.9104 105.235 24.7354 106.394 25.913C107.589 27.1285 108.5 28.6763 108.5 30.4998V68.4998V68.5528L108.511 68.6046C108.776 69.8412 109.51 71.6731 110.863 73.2058C112.226 74.7505 114.231 75.9998 117 75.9998H153.929C155.057 76.3296 156.714 77.0017 158.089 77.96C159.512 78.952 160.5 80.155 160.5 81.4998V197.94C159.921 200.299 158.503 203.819 156.124 206.747C153.731 209.693 150.403 212 146 212H38.0738C35.6217 211.254 31.9737 209.638 28.9383 207.198C25.8704 204.731 23.5 201.484 23.5 197.5V38.5578C24.0784 36.1188 25.5456 32.4762 28.0716 29.4449C30.6097 26.3992 34.1883 23.9998 39 23.9998L39.0039 23.9998Z" fill="white"></path>
+                        <path d="M125.133 12.3563L128.482 16.0684L132.237 12.6807L128.807 8.96488L125.133 12.3563ZM114.045 6.51509L113.593 1.53562L113.593 1.53563L114.045 6.51509ZM125.132 12.3564L121.783 8.64425L117.932 12.1193L121.546 15.8401L125.132 12.3564ZM125.141 12.3655L121.555 15.8493L121.555 15.8495L125.141 12.3655ZM176.104 64.827L180.354 62.1932L180.068 61.7321L179.69 61.3431L176.104 64.827ZM177.603 67.7151L173.012 69.6942L173.012 69.6943L177.603 67.7151ZM178.5 71.0172H173.5V71.0412L173.5 71.0652L178.5 71.0172ZM178.5 71.0267L173.5 71.0748L173.549 76.1219L178.595 76.0258L178.5 71.0267ZM178.5 71.0281L173.501 71.1107L173.501 71.1191L178.5 71.0281ZM178.5 71.0323L173.501 71.1233L173.501 71.1282L178.5 71.0323ZM178.501 71.049L183.5 70.9549L183.5 70.9531L178.501 71.049ZM178.502 71.1154L183.501 71.0214L183.501 71.0213L178.502 71.1154ZM178.507 71.3782L183.506 71.2856L183.506 71.2842L178.507 71.3782ZM178.526 72.4043L183.525 72.3125L183.525 72.3117L178.526 72.4043ZM178.828 90.3063L183.828 90.2279L183.828 90.2279L178.828 90.3063ZM179.375 133.397L174.375 133.443L174.375 133.443L179.375 133.397ZM179.484 178.169L174.485 178.126L174.485 178.126L179.484 178.169ZM179.17 194.264L174.174 194.075L174.174 194.075L179.17 194.264ZM178.886 199.517L183.87 199.915L183.87 199.915L178.886 199.517ZM178.516 202.392L183.356 203.646L183.356 203.646L178.516 202.392ZM169.648 219.063L173.416 222.351L173.416 222.351L169.648 219.063ZM123.29 229.444L123.188 224.445L123.143 224.446L123.098 224.448L123.29 229.444ZM123.289 229.444L123.391 234.443L123.436 234.442L123.481 234.44L123.289 229.444ZM88.4055 230.08L88.335 225.08L88.335 225.08L88.4055 230.08ZM53.8178 230.213L53.8859 225.213L53.8859 225.213L53.8178 230.213ZM41.422 229.831L41.7138 224.84L41.7138 224.84L41.422 229.831ZM34.6429 229.038L36.0719 224.247L36.0719 224.247L34.6429 229.038ZM17.0007 219.815L20.1325 215.917L20.1325 215.917L17.0007 219.815ZM6.5 201.018L1.5 201.018L1.5 201.018L6.5 201.018ZM6.5 201.017L1.50002 201.002L1.5 201.01V201.017H6.5ZM6.99992 34.0447L2.02888 33.5073L2.00073 33.7678L1.99994 34.0297L6.99992 34.0447ZM13.5799 16.8104L9.53052 13.8775L9.53052 13.8775L13.5799 16.8104ZM114.023 6.51714V11.5171H114.25L114.475 11.4966L114.023 6.51714ZM179.5 71.0172L174.5 70.9976L174.5 71.0728L174.502 71.1479L179.5 71.0172ZM179.5 71.0133L184.5 71.0328L184.5 70.9852L184.499 70.9375L179.5 71.0133ZM179.5 71.03L184.499 70.936L184.499 70.9176L184.499 70.8993L179.5 71.03ZM179.502 71.0966L174.502 71.1905L174.502 71.1906L179.502 71.0966ZM179.507 71.3595L184.506 71.2669L184.506 71.2655L179.507 71.3595ZM179.526 72.3859L184.525 72.2941L184.525 72.2933L179.526 72.3859ZM179.596 76.2896L184.595 76.2017L184.595 76.2016L179.596 76.2896ZM179.828 90.2906L184.827 90.2122L184.827 90.2122L179.828 90.2906ZM180.375 133.388L185.375 133.342L185.375 133.342L180.375 133.388ZM180.484 178.178L185.484 178.221L185.484 178.221L180.484 178.178ZM180.17 194.302L185.166 194.491L185.166 194.491L180.17 194.302ZM179.883 199.597L174.899 199.199L174.899 199.199L179.883 199.597ZM179.484 202.643L174.644 201.388L174.644 201.388L179.484 202.643ZM170.402 219.721L166.634 216.434L166.634 216.434L170.402 219.721ZM123.33 230.443V235.443H123.381L123.432 235.442L123.33 230.443ZM123.329 230.443V225.443H123.278L123.227 225.444L123.329 230.443ZM88.4195 231.08L88.49 236.079L88.49 236.079L88.4195 231.08ZM53.8041 231.212L53.736 236.212L53.736 236.212L53.8041 231.212ZM41.3636 230.83L41.6554 225.838L41.6554 225.838L41.3636 230.83ZM34.3571 229.996L35.7861 225.205L35.7861 225.205L34.3571 229.996ZM16.3743 220.594L13.2425 224.492L13.2425 224.492L16.3743 220.594ZM5.5 201.017L0.5 201.01V201.017H5.5ZM5.5 201.016L0.500019 201.001L0.500008 201.008L5.5 201.016ZM6 34.0156L1.00002 34.0007L1.00002 34.0007L6 34.0156ZM6.00008 33.9897L1.02853 33.457L1.00088 33.7151L1.0001 33.9747L6.00008 33.9897ZM6.00285 33.9639L10.9744 34.4965L10.9744 34.4965L6.00285 33.9639ZM12.7701 16.2238L8.72063 13.2909L8.72063 13.2909L12.7701 16.2238ZM113.978 5.51714V10.5171H114.191L114.403 10.4991L113.978 5.51714ZM125.863 11.6732L122.19 15.0655L122.19 15.0661L125.863 11.6732ZM125.867 11.678L122.195 15.0709L122.237 15.1169L122.281 15.1619L125.867 11.678ZM176.859 64.1688L173.272 67.6527L173.272 67.6527L176.859 64.1688ZM176.896 64.207L181.136 61.5575L180.854 61.1054L180.482 60.723L176.896 64.207ZM176.924 64.2522L172.684 66.9017L172.684 66.9022L176.924 64.2522ZM178.522 67.3193L183.113 65.3401L183.113 65.3401L178.522 67.3193ZM179.5 71.0123L174.5 71.0183L174.5 71.0532L174.501 71.088L179.5 71.0123ZM103.098 22.4991L105.021 17.8837L104.079 17.4912L103.059 17.4992L103.098 22.4991ZM103.192 22.5383L105.115 17.9229L105.115 17.9229L103.192 22.5383ZM102.996 22.4999L103.035 27.4997L103.035 27.4997L102.996 22.4999ZM39 22.9998V27.9998H39.0195L39.0391 27.9997L39 22.9998ZM38.998 22.9998L38.998 17.9998L38.9974 17.9998L38.998 22.9998ZM27.3034 28.8047L31.1445 32.0057L31.1445 32.0057L27.3034 28.8047ZM22.5131 38.3862L17.6439 37.2501L17.6439 37.2501L22.5131 38.3862ZM22.5 38.4423L17.6308 37.3062L17.5 37.8667V38.4423H22.5ZM28.3117 207.977L25.1787 211.874L25.1787 211.874L28.3117 207.977ZM37.8563 212.979L39.2931 208.19L39.2931 208.19L37.8563 212.979ZM37.9266 213L36.4898 217.789L37.1927 218H37.9266V213ZM156.901 207.378L153.02 204.225L153.02 204.225L156.901 207.378ZM161.486 198.117L156.626 196.944L156.626 196.944L161.486 198.117ZM161.5 198.059L166.36 199.233L166.5 198.654V198.059H161.5ZM158.661 77.1397L161.52 73.038L161.52 73.038L158.661 77.1397ZM154.137 75.0191L155.511 70.2115L155.511 70.2114L154.137 75.0191ZM154.07 74.9998L155.443 70.1921L154.77 69.9998H154.07V74.9998ZM111.612 72.5439L115.361 69.2348L115.361 69.2347L111.612 72.5439ZM109.5 68.4459H104.5V68.9962L104.62 69.5334L109.5 68.4459ZM107.106 25.2117L103.542 28.7179L103.542 28.7179L107.106 25.2117ZM102.9 23.5006L104.885 18.9116L103.917 18.4925L102.861 18.5008L102.9 23.5006ZM39.0039 23.9998L39.0234 28.9998L39.0332 28.9997L39.043 28.9997L39.0039 23.9998ZM106.394 25.913L109.958 22.4068L109.958 22.4068L106.394 25.913ZM108.5 68.5528H103.5V69.0827L103.611 69.6008L108.5 68.5528ZM108.511 68.6046L113.4 67.557L113.4 67.5567L108.511 68.6046ZM110.863 73.2058L114.611 69.8966L114.611 69.8966L110.863 73.2058ZM153.929 75.9998L155.332 71.2008L154.645 70.9998H153.929V75.9998ZM158.089 77.96L155.23 82.0616L155.23 82.0617L158.089 77.96ZM160.5 197.94L165.356 199.131L165.5 198.544V197.94H160.5ZM156.124 206.747L152.244 203.594L152.244 203.594L156.124 206.747ZM38.0738 212L36.6197 216.784L37.3307 217H38.0738V212ZM28.9383 207.198L32.0713 203.301L32.0713 203.301L28.9383 207.198ZM23.5 38.5578L18.6349 37.4042L18.5 37.9731V38.5578H23.5ZM28.0716 29.4449L31.9127 32.6459L31.9127 32.6459L28.0716 29.4449ZM39 23.9998V28.9998H39.0098L39.0195 28.9998L39 23.9998ZM128.807 8.96488C123.222 2.9151 117.043 1.22192 113.593 1.53562L114.498 11.4946C114.354 11.5076 117.617 11.5862 121.459 15.7477L128.807 8.96488ZM128.482 16.0685L128.482 16.0684L121.783 8.64414L121.783 8.64425L128.482 16.0685ZM128.728 8.88182L128.719 8.87267L121.546 15.8401L121.555 15.8493L128.728 8.88182ZM179.69 61.3431L128.728 8.88161L121.555 15.8495L172.518 68.3109L179.69 61.3431ZM182.195 65.736C181.586 64.3237 180.87 63.0258 180.354 62.1932L171.854 67.4609C172.148 67.9349 172.624 68.7956 173.012 69.6942L182.195 65.736ZM183.5 71.0172C183.5 69.0402 182.753 67.0302 182.195 65.7359L173.012 69.6943C173.21 70.1534 173.35 70.5439 173.434 70.842C173.475 70.9877 173.495 71.0824 173.503 71.1295C173.512 71.1818 173.5 71.138 173.5 71.0172H183.5ZM183.5 70.9786L183.5 70.9691L173.5 71.0652L173.5 71.0748L183.5 70.9786ZM178.905 66.0181L178.405 66.0276L178.595 76.0258L179.095 76.0163L178.905 66.0181ZM183.499 70.9455C183.497 70.8019 183.603 72.0611 182.93 73.3461C182.221 74.7021 181.126 75.3205 180.613 75.5598C180.105 75.7963 179.675 75.8901 179.53 75.9208C179.339 75.961 179.185 75.9813 179.111 75.9905C178.96 76.009 178.842 76.0162 178.812 76.018C178.766 76.0209 178.73 76.0224 178.714 76.0231C178.668 76.025 178.636 76.0255 178.676 76.0246C178.728 76.0234 178.843 76.0211 179.095 76.0163L178.905 66.0181C178.657 66.0228 178.522 66.0255 178.449 66.0271C178.426 66.0277 178.364 66.029 178.302 66.0316C178.282 66.0324 178.243 66.0341 178.195 66.0371C178.163 66.039 178.043 66.0464 177.892 66.065C177.816 66.0743 177.663 66.0946 177.471 66.1349C177.325 66.1656 176.895 66.2595 176.388 66.496C175.874 66.7354 174.78 67.3538 174.07 68.7099C173.398 69.995 173.503 71.2542 173.501 71.1107L183.499 70.9455ZM183.499 70.9412L183.499 70.937L173.501 71.1191L173.501 71.1233L183.499 70.9412ZM183.5 70.9531L183.499 70.9364L173.501 71.1282L173.501 71.1449L183.5 70.9531ZM183.501 71.0213L183.5 70.9549L173.501 71.1431L173.503 71.2095L183.501 71.0213ZM183.506 71.2842L183.501 71.0214L173.503 71.2095L173.508 71.4723L183.506 71.2842ZM183.525 72.3117L183.506 71.2856L173.508 71.4709L173.527 72.4969L183.525 72.3117ZM183.595 76.2193C183.565 74.5344 183.541 73.213 183.525 72.3125L173.527 72.4961C173.543 73.3942 173.567 74.7131 173.597 76.3952L183.595 76.2193ZM183.828 90.2279C183.736 84.4121 183.654 79.5889 183.595 76.2193L173.597 76.3952C173.656 79.7594 173.738 84.5762 173.829 90.3847L183.828 90.2279ZM184.375 133.351C184.229 117.463 184.01 101.859 183.828 90.2279L173.829 90.3847C174.011 102.003 174.23 117.584 174.375 133.443L184.375 133.351ZM184.484 178.212C184.594 165.422 184.521 149.234 184.375 133.351L174.375 133.443C174.521 149.308 174.594 165.426 174.485 178.126L184.484 178.212ZM184.167 194.453C184.329 190.177 184.429 184.603 184.484 178.212L174.485 178.126C174.43 184.481 174.33 189.943 174.174 194.075L184.167 194.453ZM183.87 199.915C183.988 198.435 184.086 196.588 184.167 194.453L174.174 194.075C174.095 196.144 174.004 197.836 173.902 199.12L183.87 199.915ZM183.356 203.646C183.613 202.657 183.761 201.286 183.87 199.915L173.902 199.12C173.85 199.766 173.799 200.27 173.751 200.644C173.698 201.054 173.664 201.182 173.676 201.137L183.356 203.646ZM173.416 222.351C178.86 216.111 182.046 208.7 183.356 203.646L173.676 201.137C172.685 204.961 170.134 210.902 165.881 215.776L173.416 222.351ZM149 234.017C159.843 234.017 167.908 228.663 173.416 222.351L165.881 215.776C161.705 220.561 156.192 224.017 149 224.017V234.017ZM123.392 234.443C134.911 234.208 144.27 234.017 149 234.017V224.017C144.139 224.017 134.64 224.211 123.188 224.445L123.392 234.443ZM123.481 234.44L123.482 234.44L123.098 224.448L123.097 224.448L123.481 234.44ZM88.4759 235.079C100.526 234.909 112.836 234.658 123.391 234.443L123.187 224.445C112.627 224.66 100.348 224.911 88.335 225.08L88.4759 235.079ZM53.7496 235.212C63.5559 235.346 75.8969 235.256 88.4759 235.079L88.335 225.08C75.7788 225.257 63.5497 225.345 53.8859 225.213L53.7496 235.212ZM41.1301 234.823C44.5404 235.022 48.8505 235.145 53.7496 235.212L53.8859 225.213C49.049 225.147 44.908 225.027 41.7138 224.84L41.1301 234.823ZM33.2139 233.829C34.9878 234.359 37.9119 234.635 41.1302 234.823L41.7138 224.84C40.1057 224.746 38.7941 224.638 37.7836 224.521C37.2795 224.462 36.8779 224.405 36.5692 224.351C36.4163 224.324 36.2976 224.3 36.2089 224.28C36.1651 224.27 36.1318 224.262 36.1079 224.256C36.0961 224.253 36.0872 224.251 36.081 224.249C36.0748 224.247 36.0719 224.247 36.0719 224.247L33.2139 233.829ZM13.8689 223.713C20.3538 228.923 28.0336 232.284 33.2139 233.829L36.0719 224.247C31.8478 222.987 25.4008 220.15 20.1325 215.917L13.8689 223.713ZM1.5 201.018C1.50038 210.952 7.41241 218.525 13.8689 223.713L20.1325 215.917C14.8295 211.656 11.5002 206.653 11.5 201.018L1.5 201.018ZM1.5 201.017V201.018H11.5V201.017H1.5ZM1.99994 34.0297L1.50002 201.002L11.5 201.032L11.9999 34.0597L1.99994 34.0297ZM9.53052 13.8775C4.75637 20.469 2.59761 28.2463 2.02888 33.5073L11.971 34.5821C12.3969 30.6423 14.093 24.626 17.6294 19.7434L9.53052 13.8775ZM33.5 1.51714C22.1827 1.51714 14.4269 7.11722 9.53052 13.8775L17.6294 19.7434C21.0339 15.0429 25.999 11.5171 33.5 11.5171V1.51714ZM114 1.51714H33.5V11.5171H114V1.51714ZM114.023 1.51714H114V11.5171H114.023V1.51714ZM113.593 1.53563L113.57 1.53768L114.475 11.4966L114.498 11.4945L113.593 1.53563ZM184.5 71.0367L184.5 71.0328L174.5 70.9937L174.5 70.9976L184.5 71.0367ZM184.499 70.8993L184.498 70.8864L174.502 71.1479L174.502 71.1608L184.499 70.8993ZM184.501 71.0026L184.499 70.936L174.501 71.124L174.502 71.1905L184.501 71.0026ZM184.506 71.2655L184.501 71.0026L174.502 71.1906L174.507 71.4535L184.506 71.2655ZM184.525 72.2933L184.506 71.2669L174.507 71.4521L174.526 72.4785L184.525 72.2933ZM184.595 76.2016C184.565 74.5166 184.541 73.1948 184.525 72.2941L174.526 72.4778C174.543 73.3761 174.567 74.6952 174.596 76.3776L184.595 76.2016ZM184.827 90.2122C184.736 84.3957 184.654 79.5718 184.595 76.2017L174.596 76.3776C174.656 79.7423 174.738 84.5598 174.829 90.369L184.827 90.2122ZM185.375 133.342C185.229 117.451 185.01 101.844 184.827 90.2122L174.829 90.369C175.011 101.988 175.229 117.572 175.375 133.434L185.375 133.342ZM185.484 178.221C185.594 165.421 185.521 149.227 185.375 133.342L175.375 133.434C175.521 149.3 175.594 165.425 175.485 178.135L185.484 178.221ZM185.166 194.491C185.328 190.201 185.429 184.615 185.484 178.221L175.485 178.135C175.43 184.494 175.33 189.966 175.173 194.112L185.166 194.491ZM184.867 199.995C184.987 198.495 185.085 196.633 185.166 194.491L175.173 194.112C175.095 196.188 175.003 197.896 174.899 199.199L184.867 199.995ZM184.324 203.898C184.605 202.814 184.758 201.364 184.867 199.995L174.899 199.199C174.847 199.846 174.795 200.368 174.742 200.771C174.717 200.971 174.693 201.125 174.673 201.239C174.652 201.357 174.641 201.401 174.644 201.388L184.324 203.898ZM174.169 223.008C179.733 216.632 182.982 209.074 184.324 203.897L174.644 201.388C173.621 205.335 171.006 211.423 166.634 216.434L174.169 223.008ZM149 235.017C160.209 235.017 168.529 229.472 174.169 223.008L166.634 216.434C162.325 221.372 156.556 225.017 149 225.017V235.017ZM123.432 235.442C134.937 235.207 144.276 235.017 149 235.017V225.017C144.145 225.017 134.666 225.211 123.228 225.444L123.432 235.442ZM123.329 235.443H123.33V225.443H123.329V235.443ZM88.49 236.079C100.562 235.909 112.878 235.658 123.431 235.442L123.227 225.444C112.67 225.66 100.384 225.911 88.3491 226.08L88.49 236.079ZM53.736 236.212C63.5566 236.346 75.9087 236.256 88.49 236.079L88.3491 226.08C75.7906 226.257 63.5503 226.345 53.8723 226.213L53.736 236.212ZM41.0718 235.821C44.5037 236.022 48.8307 236.145 53.736 236.212L53.8723 226.213C49.0292 226.147 44.8713 226.026 41.6554 225.838L41.0718 235.821ZM32.928 234.788C34.8315 235.355 37.8719 235.634 41.0718 235.821L41.6554 225.838C38.2499 225.639 36.3879 225.384 35.7861 225.205L32.928 234.788ZM13.2425 224.492C19.8492 229.801 27.6522 233.214 32.9281 234.788L35.7861 225.205C31.4664 223.917 24.8961 221.028 19.5061 216.697L13.2425 224.492ZM0.5 201.017C0.5 211.383 6.67206 219.213 13.2425 224.492L19.5061 216.697C14.0864 212.342 10.5 207.081 10.5 201.017H0.5ZM0.500008 201.008L0.500006 201.01L10.5 201.025L10.5 201.023L0.500008 201.008ZM1.00002 34.0007L0.500025 201.001L10.5 201.031L11 34.0306L1.00002 34.0007ZM1.0001 33.9747L1.00002 34.0007L11 34.0306L11.0001 34.0047L1.0001 33.9747ZM1.0313 33.4312L1.02853 33.457L10.9716 34.5224L10.9744 34.4965L1.0313 33.4312ZM8.72063 13.2909C3.81386 20.0655 1.60936 28.0359 1.0313 33.4312L10.9744 34.4965C11.4105 30.426 13.1523 24.22 16.8195 19.1568L8.72063 13.2909ZM33.5 0.517143C21.8 0.517143 13.7654 6.32574 8.72063 13.2909L16.8195 19.1568C20.3738 14.2494 25.6183 10.5171 33.5 10.5171V0.517143ZM113.978 0.517143H33.5V10.5171H113.978V0.517143ZM129.536 8.28091C123.799 2.06866 117.362 0.210662 113.553 0.535201L114.403 10.4991C114.359 10.5028 114.584 10.4844 115.074 10.5774C115.537 10.6652 116.157 10.838 116.89 11.1516C118.345 11.7734 120.229 12.9422 122.19 15.0655L129.536 8.28091ZM129.54 8.28514L129.536 8.28036L122.19 15.0661L122.195 15.0709L129.54 8.28514ZM180.445 60.6848L129.454 8.19407L122.281 15.1619L173.272 67.6527L180.445 60.6848ZM180.482 60.723L180.445 60.6848L173.272 67.6527L173.309 67.691L180.482 60.723ZM181.164 61.6027L181.136 61.5575L172.655 66.8565L172.684 66.9017L181.164 61.6027ZM183.113 65.3401C182.469 63.8449 181.709 62.4737 181.164 61.6022L172.684 66.9022C172.996 67.4012 173.51 68.3248 173.93 69.2984L183.113 65.3401ZM184.5 71.0062C184.497 68.8187 183.68 66.6561 183.113 65.3401L173.93 69.2984C174.135 69.774 174.294 70.2063 174.395 70.5667C174.506 70.9567 174.5 71.0905 174.5 71.0183L184.5 71.0062ZM184.499 70.9375L184.499 70.9365L174.501 71.088L174.501 71.089L184.499 70.9375ZM101.175 27.1144L101.269 27.1537L105.115 17.9229L105.021 17.8837L101.175 27.1144ZM103.035 27.4997L103.137 27.4989L103.059 17.4992L102.957 17.5L103.035 27.4997ZM39.0391 27.9997L103.035 27.4997L102.957 17.5L38.9609 18L39.0391 27.9997ZM38.998 27.9998H39V17.9998H38.998V27.9998ZM31.1445 32.0057C33.1543 29.5939 35.6949 28.0003 38.9987 27.9998L38.9974 17.9998C31.9265 18.0007 26.7923 21.6078 23.4623 25.6038L31.1445 32.0057ZM27.3823 39.5224C27.8377 37.5707 29.0703 34.4948 31.1445 32.0057L23.4623 25.6038C20.2104 29.506 18.3836 34.0798 17.6439 37.2501L27.3823 39.5224ZM27.3692 39.5784L27.3823 39.5223L17.6439 37.2501L17.6308 37.3062L27.3692 39.5784ZM27.5 38.4998V38.4423H17.5V38.4998H27.5ZM27.5 197.5V38.4998H17.5V197.5H27.5ZM31.4447 204.08C28.8327 201.98 27.5 199.761 27.5 197.5H17.5C17.5 204.07 21.4264 208.857 25.1787 211.874L31.4447 204.08ZM39.2931 208.19C37.2215 207.568 34.0241 206.154 31.4447 204.08L25.1787 211.874C28.9706 214.922 33.3959 216.861 36.4196 217.768L39.2931 208.19ZM39.3634 208.211L39.2931 208.19L36.4195 217.768L36.4898 217.789L39.3634 208.211ZM38 208H37.9266V218H38V208ZM146 208H38V218H146V208ZM153.02 204.225C151.115 206.57 148.825 208 146 208V218C152.769 218 157.656 214.378 160.781 210.53L153.02 204.225ZM156.626 196.944C156.167 198.845 154.97 201.824 153.02 204.225L160.781 210.53C163.851 206.752 165.611 202.337 166.346 199.29L156.626 196.944ZM156.64 196.886L156.626 196.944L166.346 199.291L166.36 199.233L156.64 196.886ZM156.5 198V198.059H166.5V198H156.5ZM156.5 81.4998V198H166.5V81.4998H156.5ZM155.802 81.2413C156.017 81.3913 156.192 81.5331 156.33 81.6607C156.468 81.7893 156.544 81.8825 156.58 81.9321C156.614 81.9799 156.593 81.9628 156.563 81.8789C156.53 81.7866 156.5 81.653 156.5 81.4998H166.5C166.5 77.0903 163.363 74.3226 161.52 73.038L155.802 81.2413ZM152.764 79.8267C153.587 80.0619 154.851 80.5789 155.802 81.2413L161.52 73.038C159.441 71.5883 157.098 70.6648 155.511 70.2115L152.764 79.8267ZM152.697 79.8076L152.764 79.8268L155.511 70.2114L155.443 70.1921L152.697 79.8076ZM154 79.9998H154.07V69.9998H154V79.9998ZM117 79.9998H154V69.9998H117V79.9998ZM107.864 75.8531C109.839 78.0898 112.877 79.9998 117 79.9998V69.9998C116.557 69.9998 116.273 69.9078 116.071 69.8075C115.851 69.698 115.611 69.5188 115.361 69.2348L107.864 75.8531ZM104.62 69.5334C105.016 71.312 106.013 73.756 107.864 75.8531L115.361 69.2347C115.107 68.9479 114.88 68.5942 114.697 68.2165C114.511 67.8326 114.415 67.5141 114.38 67.3583L104.62 69.5334ZM104.5 30.4998V68.4459H114.5V30.4998H104.5ZM103.542 28.7179C104.304 29.4924 104.5 30.0895 104.5 30.4998H114.5C114.5 26.5571 112.518 23.5832 110.671 21.7055L103.542 28.7179ZM101.269 27.1537C101.8 27.3749 102.773 27.9361 103.542 28.7179L110.671 21.7055C108.833 19.837 106.689 18.5785 105.115 17.9229L101.269 27.1537ZM102.861 18.5008L38.9648 19L39.043 28.9997L102.939 28.5005L102.861 18.5008ZM109.958 22.4068C108.278 20.6984 106.324 19.5342 104.885 18.9116L100.915 28.0897C101.105 28.1718 101.429 28.337 101.804 28.5858C102.176 28.8324 102.533 29.1179 102.829 29.4192L109.958 22.4068ZM113.5 30.4998C113.5 26.9126 111.699 24.1764 109.958 22.4068L102.829 29.4191C103.48 30.0806 103.5 30.4401 103.5 30.4998H113.5ZM113.5 68.4998V30.4998H103.5V68.4998H113.5ZM113.5 68.5528V68.4998H103.5V68.5528H113.5ZM113.4 67.5567L113.389 67.5049L103.611 69.6008L103.622 69.6525L113.4 67.5567ZM114.611 69.8966C114.285 69.5279 114.006 69.0884 113.787 68.6321C113.565 68.1693 113.447 67.7753 113.4 67.557L103.622 69.6522C104.037 71.5881 105.106 74.2395 107.114 76.5149L114.611 69.8966ZM117 70.9998C116.396 70.9998 115.963 70.8699 115.628 70.7039C115.275 70.5287 114.934 70.2621 114.611 69.8966L107.114 76.5149C109.24 78.9224 112.536 80.9998 117 80.9998V70.9998ZM153.929 70.9998H117V80.9998H153.929V70.9998ZM160.949 73.8584C159.017 72.512 156.83 71.6387 155.332 71.2008L152.526 80.7989C153.284 81.0205 154.412 81.4915 155.23 82.0616L160.949 73.8584ZM165.5 81.4998C165.5 77.6072 162.73 75.1003 160.948 73.8583L155.23 82.0617C155.423 82.1961 155.561 82.3103 155.654 82.3973C155.748 82.4853 155.775 82.5259 155.764 82.5102C155.752 82.4932 155.686 82.3974 155.622 82.2202C155.555 82.0349 155.5 81.7876 155.5 81.4998H165.5ZM165.5 197.94V81.4998H155.5V197.94H165.5ZM160.005 209.9C162.94 206.287 164.639 202.055 165.356 199.131L155.644 196.749C155.204 198.544 154.066 201.351 152.244 203.594L160.005 209.9ZM146 217C152.373 217 157 213.599 160.005 209.9L152.244 203.594C150.463 205.787 148.433 207 146 207V217ZM38.0738 217H146V207H38.0738V217ZM25.8053 211.094C29.4428 214.019 33.6989 215.896 36.6197 216.784L39.528 207.216C37.5444 206.613 34.5047 205.257 32.0713 203.301L25.8053 211.094ZM18.5 197.5C18.5 203.637 22.1646 208.167 25.8053 211.094L32.0713 203.301C29.5763 201.295 28.5 199.332 28.5 197.5H18.5ZM18.5 38.5578V197.5H28.5V38.5578H18.5ZM24.2305 26.244C21.119 29.9778 19.356 34.3634 18.6349 37.4042L28.3651 39.7115C28.8008 37.8742 29.9722 34.9745 31.9127 32.6459L24.2305 26.244ZM39 18.9998C32.3062 18.9998 27.4302 22.4044 24.2305 26.244L31.9127 32.6459C33.7892 30.394 36.0704 28.9998 39 28.9998V18.9998ZM38.9844 18.9999L38.9805 18.9999L39.0195 28.9998L39.0234 28.9998L38.9844 18.9999Z" fill="white"></path>
+                        <rect x="40" y="95" width="104" height="18" rx="9" fill="white"></rect>
+                        <rect x="40" y="164" width="104" height="18" rx="9" fill="white"></rect>
+                        <rect x="40" y="130" width="86" height="18" rx="9" fill="white"></rect>
+                    </svg>
+                            </h3>
+        </div>
+    </div>
+    <div class="row">
+        
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Donatorë:</strong></span>
+            <span class="field-content">
+                Ministria e Ekonomisë dhe Inovacionit
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Zbatues:</strong></span>
+            <span class="field-content">
+                Qendra Balance
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Afati i Aplikimit:</strong></span>
+            <span class="field-content">26.08.2026</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Statusi:</strong></span>
+            <span class="field-content">Aktive</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Industri:</strong></span>
+            <span class="field-content">Agro-industri, Sipërmarrje dhe NVM, Zhvillim biznesi, Inovacion</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Kodi:</strong></span>
+            <span class="field-content">SF-26-0024</span>
+        </div>
+    </div>
+    <div class="row">
+                    <a href="https://aida-smefinance.gov.al/financial-schemes/programi-idea-agro"
+                class="more-details-button-result button button-reveal button-large text-right"
+                style="margin-left:auto; margin-right:0px;background-color: #06304c">
+                <i class="icon-line-arrow-right"></i><span>Më shumë</span>
+            </a>
+            </div>
+</div>                                            <div style="padding: 0px 35px !important;" class="result-block container justify-content-center">
+    <div class="row">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 result-list-title  other-scheme  ">
+                        <h3>Ready4EIC: Training Programme for Innovative SMEs in EU Enlargement Countries</h3>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 result-list-product-id  other-scheme ">
+            <h3 style="margin-left: auto;">
+                Lloji: Instrument Këshillimor
+                                    <svg width="20" height="20" viewBox="0 0 186 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M114.045 6.51509C115.699 6.36477 120.42 7.25064 125.133 12.3563L125.132 12.3564L125.141 12.3655L176.104 64.827C176.509 65.4803 177.105 66.5597 177.603 67.7151C178.12 68.9137 178.5 70.1256 178.5 71.0172L178.5 71.0267L179 71.0172C178.5 71.0267 178.5 71.0272 178.5 71.0281L178.5 71.0323L178.501 71.049L178.502 71.1154L178.507 71.3782L178.526 72.4043C178.542 73.3036 178.566 74.6238 178.596 76.3072C178.655 79.6741 178.737 84.4941 178.828 90.3063C179.01 101.931 179.229 117.523 179.375 133.397C179.521 149.271 179.594 165.424 179.484 178.169C179.43 184.542 179.33 190.06 179.17 194.264C179.091 196.366 178.996 198.136 178.886 199.517C178.775 200.911 178.65 201.877 178.516 202.392C177.365 206.83 174.497 213.507 169.648 219.063C164.807 224.612 158.017 229.017 149 229.017C144.205 229.017 134.776 229.21 123.29 229.444L123.289 229.444C112.732 229.659 100.437 229.91 88.4055 230.08C75.8378 230.257 63.5528 230.345 53.8178 230.213C48.9498 230.146 44.7242 230.025 41.422 229.831C38.0985 229.637 35.7653 229.373 34.6429 229.038C29.9407 227.636 22.8773 224.537 17.0007 219.815C11.121 215.09 6.50029 208.803 6.5 201.018V201.017L6.99992 34.0447C7.49723 29.4443 9.42466 22.5475 13.5799 16.8104C17.7304 11.08 24.0909 6.51714 33.5 6.51714H114H114.023L114.045 6.51509ZM179.5 71.0133L179.5 71.0172L179.5 71.03L179.502 71.0966L179.507 71.3595L179.526 72.3859C179.542 73.2855 179.566 74.6059 179.596 76.2896C179.655 79.6571 179.737 84.4777 179.828 90.2906C180.01 101.916 180.229 117.511 180.375 133.388C180.521 149.263 180.594 165.423 180.484 178.178C180.43 184.555 180.329 190.084 180.17 194.302C180.09 196.41 179.995 198.196 179.883 199.597C179.772 200.986 179.642 202.033 179.484 202.643C178.301 207.204 175.37 214.028 170.402 219.721C165.427 225.422 158.383 230.017 149 230.017C144.21 230.017 134.801 230.209 123.33 230.443H123.329C112.774 230.659 100.473 230.91 88.4195 231.08C75.8497 231.257 63.5534 231.345 53.8041 231.212C48.9299 231.146 44.6875 231.024 41.3636 230.83C38.0609 230.637 35.6097 230.37 34.3571 229.996C29.5593 228.565 22.3727 225.414 16.3743 220.594C10.3792 215.777 5.5 209.232 5.5 201.017L5.5 201.016L6 34.0156L6.00008 33.9897L6.00285 33.9639C6.50994 29.231 8.48308 22.1428 12.7701 16.2238C17.0696 10.2876 23.7091 5.51714 33.5 5.51714H113.978C116.006 5.34434 120.996 6.40333 125.863 11.6732L125.867 11.678L176.859 64.1688L176.896 64.207L176.924 64.2522C177.352 64.9375 177.99 66.0848 178.522 67.3193C179.046 68.5355 179.499 69.9047 179.5 71.0123L179.5 71.0133ZM103.192 22.5383L103.098 22.4991L102.996 22.4999L39 22.9998H38.998C33.8107 23.0005 29.9733 25.6008 27.3034 28.8047C24.6403 32.0004 23.1106 35.8253 22.5131 38.3862L22.5 38.4423V38.4998V197.5C22.5 201.915 25.1296 205.419 28.3117 207.977C31.4973 210.538 35.3087 212.214 37.8563 212.979L37.9266 213H38H146C150.797 213 154.385 210.474 156.901 207.378C159.411 204.288 160.889 200.591 161.486 198.117L161.5 198.059V198V81.4998C161.5 79.6447 160.155 78.181 158.661 77.1397C157.146 76.0836 155.342 75.3633 154.137 75.0191L154.07 74.9998H154H117C114.569 74.9998 112.824 73.9159 111.612 72.5439C110.409 71.1811 109.744 69.5428 109.5 68.4459V30.4998C109.5 28.3233 108.411 26.5378 107.106 25.2117C105.803 23.8865 104.244 22.9767 103.192 22.5383ZM39.0039 23.9998L102.9 23.5006C103.848 23.9104 105.235 24.7354 106.394 25.913C107.589 27.1285 108.5 28.6763 108.5 30.4998V68.4998V68.5528L108.511 68.6046C108.776 69.8412 109.51 71.6731 110.863 73.2058C112.226 74.7505 114.231 75.9998 117 75.9998H153.929C155.057 76.3296 156.714 77.0017 158.089 77.96C159.512 78.952 160.5 80.155 160.5 81.4998V197.94C159.921 200.299 158.503 203.819 156.124 206.747C153.731 209.693 150.403 212 146 212H38.0738C35.6217 211.254 31.9737 209.638 28.9383 207.198C25.8704 204.731 23.5 201.484 23.5 197.5V38.5578C24.0784 36.1188 25.5456 32.4762 28.0716 29.4449C30.6097 26.3992 34.1883 23.9998 39 23.9998L39.0039 23.9998Z" fill="white"></path>
+                        <path d="M125.133 12.3563L128.482 16.0684L132.237 12.6807L128.807 8.96488L125.133 12.3563ZM114.045 6.51509L113.593 1.53562L113.593 1.53563L114.045 6.51509ZM125.132 12.3564L121.783 8.64425L117.932 12.1193L121.546 15.8401L125.132 12.3564ZM125.141 12.3655L121.555 15.8493L121.555 15.8495L125.141 12.3655ZM176.104 64.827L180.354 62.1932L180.068 61.7321L179.69 61.3431L176.104 64.827ZM177.603 67.7151L173.012 69.6942L173.012 69.6943L177.603 67.7151ZM178.5 71.0172H173.5V71.0412L173.5 71.0652L178.5 71.0172ZM178.5 71.0267L173.5 71.0748L173.549 76.1219L178.595 76.0258L178.5 71.0267ZM178.5 71.0281L173.501 71.1107L173.501 71.1191L178.5 71.0281ZM178.5 71.0323L173.501 71.1233L173.501 71.1282L178.5 71.0323ZM178.501 71.049L183.5 70.9549L183.5 70.9531L178.501 71.049ZM178.502 71.1154L183.501 71.0214L183.501 71.0213L178.502 71.1154ZM178.507 71.3782L183.506 71.2856L183.506 71.2842L178.507 71.3782ZM178.526 72.4043L183.525 72.3125L183.525 72.3117L178.526 72.4043ZM178.828 90.3063L183.828 90.2279L183.828 90.2279L178.828 90.3063ZM179.375 133.397L174.375 133.443L174.375 133.443L179.375 133.397ZM179.484 178.169L174.485 178.126L174.485 178.126L179.484 178.169ZM179.17 194.264L174.174 194.075L174.174 194.075L179.17 194.264ZM178.886 199.517L183.87 199.915L183.87 199.915L178.886 199.517ZM178.516 202.392L183.356 203.646L183.356 203.646L178.516 202.392ZM169.648 219.063L173.416 222.351L173.416 222.351L169.648 219.063ZM123.29 229.444L123.188 224.445L123.143 224.446L123.098 224.448L123.29 229.444ZM123.289 229.444L123.391 234.443L123.436 234.442L123.481 234.44L123.289 229.444ZM88.4055 230.08L88.335 225.08L88.335 225.08L88.4055 230.08ZM53.8178 230.213L53.8859 225.213L53.8859 225.213L53.8178 230.213ZM41.422 229.831L41.7138 224.84L41.7138 224.84L41.422 229.831ZM34.6429 229.038L36.0719 224.247L36.0719 224.247L34.6429 229.038ZM17.0007 219.815L20.1325 215.917L20.1325 215.917L17.0007 219.815ZM6.5 201.018L1.5 201.018L1.5 201.018L6.5 201.018ZM6.5 201.017L1.50002 201.002L1.5 201.01V201.017H6.5ZM6.99992 34.0447L2.02888 33.5073L2.00073 33.7678L1.99994 34.0297L6.99992 34.0447ZM13.5799 16.8104L9.53052 13.8775L9.53052 13.8775L13.5799 16.8104ZM114.023 6.51714V11.5171H114.25L114.475 11.4966L114.023 6.51714ZM179.5 71.0172L174.5 70.9976L174.5 71.0728L174.502 71.1479L179.5 71.0172ZM179.5 71.0133L184.5 71.0328L184.5 70.9852L184.499 70.9375L179.5 71.0133ZM179.5 71.03L184.499 70.936L184.499 70.9176L184.499 70.8993L179.5 71.03ZM179.502 71.0966L174.502 71.1905L174.502 71.1906L179.502 71.0966ZM179.507 71.3595L184.506 71.2669L184.506 71.2655L179.507 71.3595ZM179.526 72.3859L184.525 72.2941L184.525 72.2933L179.526 72.3859ZM179.596 76.2896L184.595 76.2017L184.595 76.2016L179.596 76.2896ZM179.828 90.2906L184.827 90.2122L184.827 90.2122L179.828 90.2906ZM180.375 133.388L185.375 133.342L185.375 133.342L180.375 133.388ZM180.484 178.178L185.484 178.221L185.484 178.221L180.484 178.178ZM180.17 194.302L185.166 194.491L185.166 194.491L180.17 194.302ZM179.883 199.597L174.899 199.199L174.899 199.199L179.883 199.597ZM179.484 202.643L174.644 201.388L174.644 201.388L179.484 202.643ZM170.402 219.721L166.634 216.434L166.634 216.434L170.402 219.721ZM123.33 230.443V235.443H123.381L123.432 235.442L123.33 230.443ZM123.329 230.443V225.443H123.278L123.227 225.444L123.329 230.443ZM88.4195 231.08L88.49 236.079L88.49 236.079L88.4195 231.08ZM53.8041 231.212L53.736 236.212L53.736 236.212L53.8041 231.212ZM41.3636 230.83L41.6554 225.838L41.6554 225.838L41.3636 230.83ZM34.3571 229.996L35.7861 225.205L35.7861 225.205L34.3571 229.996ZM16.3743 220.594L13.2425 224.492L13.2425 224.492L16.3743 220.594ZM5.5 201.017L0.5 201.01V201.017H5.5ZM5.5 201.016L0.500019 201.001L0.500008 201.008L5.5 201.016ZM6 34.0156L1.00002 34.0007L1.00002 34.0007L6 34.0156ZM6.00008 33.9897L1.02853 33.457L1.00088 33.7151L1.0001 33.9747L6.00008 33.9897ZM6.00285 33.9639L10.9744 34.4965L10.9744 34.4965L6.00285 33.9639ZM12.7701 16.2238L8.72063 13.2909L8.72063 13.2909L12.7701 16.2238ZM113.978 5.51714V10.5171H114.191L114.403 10.4991L113.978 5.51714ZM125.863 11.6732L122.19 15.0655L122.19 15.0661L125.863 11.6732ZM125.867 11.678L122.195 15.0709L122.237 15.1169L122.281 15.1619L125.867 11.678ZM176.859 64.1688L173.272 67.6527L173.272 67.6527L176.859 64.1688ZM176.896 64.207L181.136 61.5575L180.854 61.1054L180.482 60.723L176.896 64.207ZM176.924 64.2522L172.684 66.9017L172.684 66.9022L176.924 64.2522ZM178.522 67.3193L183.113 65.3401L183.113 65.3401L178.522 67.3193ZM179.5 71.0123L174.5 71.0183L174.5 71.0532L174.501 71.088L179.5 71.0123ZM103.098 22.4991L105.021 17.8837L104.079 17.4912L103.059 17.4992L103.098 22.4991ZM103.192 22.5383L105.115 17.9229L105.115 17.9229L103.192 22.5383ZM102.996 22.4999L103.035 27.4997L103.035 27.4997L102.996 22.4999ZM39 22.9998V27.9998H39.0195L39.0391 27.9997L39 22.9998ZM38.998 22.9998L38.998 17.9998L38.9974 17.9998L38.998 22.9998ZM27.3034 28.8047L31.1445 32.0057L31.1445 32.0057L27.3034 28.8047ZM22.5131 38.3862L17.6439 37.2501L17.6439 37.2501L22.5131 38.3862ZM22.5 38.4423L17.6308 37.3062L17.5 37.8667V38.4423H22.5ZM28.3117 207.977L25.1787 211.874L25.1787 211.874L28.3117 207.977ZM37.8563 212.979L39.2931 208.19L39.2931 208.19L37.8563 212.979ZM37.9266 213L36.4898 217.789L37.1927 218H37.9266V213ZM156.901 207.378L153.02 204.225L153.02 204.225L156.901 207.378ZM161.486 198.117L156.626 196.944L156.626 196.944L161.486 198.117ZM161.5 198.059L166.36 199.233L166.5 198.654V198.059H161.5ZM158.661 77.1397L161.52 73.038L161.52 73.038L158.661 77.1397ZM154.137 75.0191L155.511 70.2115L155.511 70.2114L154.137 75.0191ZM154.07 74.9998L155.443 70.1921L154.77 69.9998H154.07V74.9998ZM111.612 72.5439L115.361 69.2348L115.361 69.2347L111.612 72.5439ZM109.5 68.4459H104.5V68.9962L104.62 69.5334L109.5 68.4459ZM107.106 25.2117L103.542 28.7179L103.542 28.7179L107.106 25.2117ZM102.9 23.5006L104.885 18.9116L103.917 18.4925L102.861 18.5008L102.9 23.5006ZM39.0039 23.9998L39.0234 28.9998L39.0332 28.9997L39.043 28.9997L39.0039 23.9998ZM106.394 25.913L109.958 22.4068L109.958 22.4068L106.394 25.913ZM108.5 68.5528H103.5V69.0827L103.611 69.6008L108.5 68.5528ZM108.511 68.6046L113.4 67.557L113.4 67.5567L108.511 68.6046ZM110.863 73.2058L114.611 69.8966L114.611 69.8966L110.863 73.2058ZM153.929 75.9998L155.332 71.2008L154.645 70.9998H153.929V75.9998ZM158.089 77.96L155.23 82.0616L155.23 82.0617L158.089 77.96ZM160.5 197.94L165.356 199.131L165.5 198.544V197.94H160.5ZM156.124 206.747L152.244 203.594L152.244 203.594L156.124 206.747ZM38.0738 212L36.6197 216.784L37.3307 217H38.0738V212ZM28.9383 207.198L32.0713 203.301L32.0713 203.301L28.9383 207.198ZM23.5 38.5578L18.6349 37.4042L18.5 37.9731V38.5578H23.5ZM28.0716 29.4449L31.9127 32.6459L31.9127 32.6459L28.0716 29.4449ZM39 23.9998V28.9998H39.0098L39.0195 28.9998L39 23.9998ZM128.807 8.96488C123.222 2.9151 117.043 1.22192 113.593 1.53562L114.498 11.4946C114.354 11.5076 117.617 11.5862 121.459 15.7477L128.807 8.96488ZM128.482 16.0685L128.482 16.0684L121.783 8.64414L121.783 8.64425L128.482 16.0685ZM128.728 8.88182L128.719 8.87267L121.546 15.8401L121.555 15.8493L128.728 8.88182ZM179.69 61.3431L128.728 8.88161L121.555 15.8495L172.518 68.3109L179.69 61.3431ZM182.195 65.736C181.586 64.3237 180.87 63.0258 180.354 62.1932L171.854 67.4609C172.148 67.9349 172.624 68.7956 173.012 69.6942L182.195 65.736ZM183.5 71.0172C183.5 69.0402 182.753 67.0302 182.195 65.7359L173.012 69.6943C173.21 70.1534 173.35 70.5439 173.434 70.842C173.475 70.9877 173.495 71.0824 173.503 71.1295C173.512 71.1818 173.5 71.138 173.5 71.0172H183.5ZM183.5 70.9786L183.5 70.9691L173.5 71.0652L173.5 71.0748L183.5 70.9786ZM178.905 66.0181L178.405 66.0276L178.595 76.0258L179.095 76.0163L178.905 66.0181ZM183.499 70.9455C183.497 70.8019 183.603 72.0611 182.93 73.3461C182.221 74.7021 181.126 75.3205 180.613 75.5598C180.105 75.7963 179.675 75.8901 179.53 75.9208C179.339 75.961 179.185 75.9813 179.111 75.9905C178.96 76.009 178.842 76.0162 178.812 76.018C178.766 76.0209 178.73 76.0224 178.714 76.0231C178.668 76.025 178.636 76.0255 178.676 76.0246C178.728 76.0234 178.843 76.0211 179.095 76.0163L178.905 66.0181C178.657 66.0228 178.522 66.0255 178.449 66.0271C178.426 66.0277 178.364 66.029 178.302 66.0316C178.282 66.0324 178.243 66.0341 178.195 66.0371C178.163 66.039 178.043 66.0464 177.892 66.065C177.816 66.0743 177.663 66.0946 177.471 66.1349C177.325 66.1656 176.895 66.2595 176.388 66.496C175.874 66.7354 174.78 67.3538 174.07 68.7099C173.398 69.995 173.503 71.2542 173.501 71.1107L183.499 70.9455ZM183.499 70.9412L183.499 70.937L173.501 71.1191L173.501 71.1233L183.499 70.9412ZM183.5 70.9531L183.499 70.9364L173.501 71.1282L173.501 71.1449L183.5 70.9531ZM183.501 71.0213L183.5 70.9549L173.501 71.1431L173.503 71.2095L183.501 71.0213ZM183.506 71.2842L183.501 71.0214L173.503 71.2095L173.508 71.4723L183.506 71.2842ZM183.525 72.3117L183.506 71.2856L173.508 71.4709L173.527 72.4969L183.525 72.3117ZM183.595 76.2193C183.565 74.5344 183.541 73.213 183.525 72.3125L173.527 72.4961C173.543 73.3942 173.567 74.7131 173.597 76.3952L183.595 76.2193ZM183.828 90.2279C183.736 84.4121 183.654 79.5889 183.595 76.2193L173.597 76.3952C173.656 79.7594 173.738 84.5762 173.829 90.3847L183.828 90.2279ZM184.375 133.351C184.229 117.463 184.01 101.859 183.828 90.2279L173.829 90.3847C174.011 102.003 174.23 117.584 174.375 133.443L184.375 133.351ZM184.484 178.212C184.594 165.422 184.521 149.234 184.375 133.351L174.375 133.443C174.521 149.308 174.594 165.426 174.485 178.126L184.484 178.212ZM184.167 194.453C184.329 190.177 184.429 184.603 184.484 178.212L174.485 178.126C174.43 184.481 174.33 189.943 174.174 194.075L184.167 194.453ZM183.87 199.915C183.988 198.435 184.086 196.588 184.167 194.453L174.174 194.075C174.095 196.144 174.004 197.836 173.902 199.12L183.87 199.915ZM183.356 203.646C183.613 202.657 183.761 201.286 183.87 199.915L173.902 199.12C173.85 199.766 173.799 200.27 173.751 200.644C173.698 201.054 173.664 201.182 173.676 201.137L183.356 203.646ZM173.416 222.351C178.86 216.111 182.046 208.7 183.356 203.646L173.676 201.137C172.685 204.961 170.134 210.902 165.881 215.776L173.416 222.351ZM149 234.017C159.843 234.017 167.908 228.663 173.416 222.351L165.881 215.776C161.705 220.561 156.192 224.017 149 224.017V234.017ZM123.392 234.443C134.911 234.208 144.27 234.017 149 234.017V224.017C144.139 224.017 134.64 224.211 123.188 224.445L123.392 234.443ZM123.481 234.44L123.482 234.44L123.098 224.448L123.097 224.448L123.481 234.44ZM88.4759 235.079C100.526 234.909 112.836 234.658 123.391 234.443L123.187 224.445C112.627 224.66 100.348 224.911 88.335 225.08L88.4759 235.079ZM53.7496 235.212C63.5559 235.346 75.8969 235.256 88.4759 235.079L88.335 225.08C75.7788 225.257 63.5497 225.345 53.8859 225.213L53.7496 235.212ZM41.1301 234.823C44.5404 235.022 48.8505 235.145 53.7496 235.212L53.8859 225.213C49.049 225.147 44.908 225.027 41.7138 224.84L41.1301 234.823ZM33.2139 233.829C34.9878 234.359 37.9119 234.635 41.1302 234.823L41.7138 224.84C40.1057 224.746 38.7941 224.638 37.7836 224.521C37.2795 224.462 36.8779 224.405 36.5692 224.351C36.4163 224.324 36.2976 224.3 36.2089 224.28C36.1651 224.27 36.1318 224.262 36.1079 224.256C36.0961 224.253 36.0872 224.251 36.081 224.249C36.0748 224.247 36.0719 224.247 36.0719 224.247L33.2139 233.829ZM13.8689 223.713C20.3538 228.923 28.0336 232.284 33.2139 233.829L36.0719 224.247C31.8478 222.987 25.4008 220.15 20.1325 215.917L13.8689 223.713ZM1.5 201.018C1.50038 210.952 7.41241 218.525 13.8689 223.713L20.1325 215.917C14.8295 211.656 11.5002 206.653 11.5 201.018L1.5 201.018ZM1.5 201.017V201.018H11.5V201.017H1.5ZM1.99994 34.0297L1.50002 201.002L11.5 201.032L11.9999 34.0597L1.99994 34.0297ZM9.53052 13.8775C4.75637 20.469 2.59761 28.2463 2.02888 33.5073L11.971 34.5821C12.3969 30.6423 14.093 24.626 17.6294 19.7434L9.53052 13.8775ZM33.5 1.51714C22.1827 1.51714 14.4269 7.11722 9.53052 13.8775L17.6294 19.7434C21.0339 15.0429 25.999 11.5171 33.5 11.5171V1.51714ZM114 1.51714H33.5V11.5171H114V1.51714ZM114.023 1.51714H114V11.5171H114.023V1.51714ZM113.593 1.53563L113.57 1.53768L114.475 11.4966L114.498 11.4945L113.593 1.53563ZM184.5 71.0367L184.5 71.0328L174.5 70.9937L174.5 70.9976L184.5 71.0367ZM184.499 70.8993L184.498 70.8864L174.502 71.1479L174.502 71.1608L184.499 70.8993ZM184.501 71.0026L184.499 70.936L174.501 71.124L174.502 71.1905L184.501 71.0026ZM184.506 71.2655L184.501 71.0026L174.502 71.1906L174.507 71.4535L184.506 71.2655ZM184.525 72.2933L184.506 71.2669L174.507 71.4521L174.526 72.4785L184.525 72.2933ZM184.595 76.2016C184.565 74.5166 184.541 73.1948 184.525 72.2941L174.526 72.4778C174.543 73.3761 174.567 74.6952 174.596 76.3776L184.595 76.2016ZM184.827 90.2122C184.736 84.3957 184.654 79.5718 184.595 76.2017L174.596 76.3776C174.656 79.7423 174.738 84.5598 174.829 90.369L184.827 90.2122ZM185.375 133.342C185.229 117.451 185.01 101.844 184.827 90.2122L174.829 90.369C175.011 101.988 175.229 117.572 175.375 133.434L185.375 133.342ZM185.484 178.221C185.594 165.421 185.521 149.227 185.375 133.342L175.375 133.434C175.521 149.3 175.594 165.425 175.485 178.135L185.484 178.221ZM185.166 194.491C185.328 190.201 185.429 184.615 185.484 178.221L175.485 178.135C175.43 184.494 175.33 189.966 175.173 194.112L185.166 194.491ZM184.867 199.995C184.987 198.495 185.085 196.633 185.166 194.491L175.173 194.112C175.095 196.188 175.003 197.896 174.899 199.199L184.867 199.995ZM184.324 203.898C184.605 202.814 184.758 201.364 184.867 199.995L174.899 199.199C174.847 199.846 174.795 200.368 174.742 200.771C174.717 200.971 174.693 201.125 174.673 201.239C174.652 201.357 174.641 201.401 174.644 201.388L184.324 203.898ZM174.169 223.008C179.733 216.632 182.982 209.074 184.324 203.897L174.644 201.388C173.621 205.335 171.006 211.423 166.634 216.434L174.169 223.008ZM149 235.017C160.209 235.017 168.529 229.472 174.169 223.008L166.634 216.434C162.325 221.372 156.556 225.017 149 225.017V235.017ZM123.432 235.442C134.937 235.207 144.276 235.017 149 235.017V225.017C144.145 225.017 134.666 225.211 123.228 225.444L123.432 235.442ZM123.329 235.443H123.33V225.443H123.329V235.443ZM88.49 236.079C100.562 235.909 112.878 235.658 123.431 235.442L123.227 225.444C112.67 225.66 100.384 225.911 88.3491 226.08L88.49 236.079ZM53.736 236.212C63.5566 236.346 75.9087 236.256 88.49 236.079L88.3491 226.08C75.7906 226.257 63.5503 226.345 53.8723 226.213L53.736 236.212ZM41.0718 235.821C44.5037 236.022 48.8307 236.145 53.736 236.212L53.8723 226.213C49.0292 226.147 44.8713 226.026 41.6554 225.838L41.0718 235.821ZM32.928 234.788C34.8315 235.355 37.8719 235.634 41.0718 235.821L41.6554 225.838C38.2499 225.639 36.3879 225.384 35.7861 225.205L32.928 234.788ZM13.2425 224.492C19.8492 229.801 27.6522 233.214 32.9281 234.788L35.7861 225.205C31.4664 223.917 24.8961 221.028 19.5061 216.697L13.2425 224.492ZM0.5 201.017C0.5 211.383 6.67206 219.213 13.2425 224.492L19.5061 216.697C14.0864 212.342 10.5 207.081 10.5 201.017H0.5ZM0.500008 201.008L0.500006 201.01L10.5 201.025L10.5 201.023L0.500008 201.008ZM1.00002 34.0007L0.500025 201.001L10.5 201.031L11 34.0306L1.00002 34.0007ZM1.0001 33.9747L1.00002 34.0007L11 34.0306L11.0001 34.0047L1.0001 33.9747ZM1.0313 33.4312L1.02853 33.457L10.9716 34.5224L10.9744 34.4965L1.0313 33.4312ZM8.72063 13.2909C3.81386 20.0655 1.60936 28.0359 1.0313 33.4312L10.9744 34.4965C11.4105 30.426 13.1523 24.22 16.8195 19.1568L8.72063 13.2909ZM33.5 0.517143C21.8 0.517143 13.7654 6.32574 8.72063 13.2909L16.8195 19.1568C20.3738 14.2494 25.6183 10.5171 33.5 10.5171V0.517143ZM113.978 0.517143H33.5V10.5171H113.978V0.517143ZM129.536 8.28091C123.799 2.06866 117.362 0.210662 113.553 0.535201L114.403 10.4991C114.359 10.5028 114.584 10.4844 115.074 10.5774C115.537 10.6652 116.157 10.838 116.89 11.1516C118.345 11.7734 120.229 12.9422 122.19 15.0655L129.536 8.28091ZM129.54 8.28514L129.536 8.28036L122.19 15.0661L122.195 15.0709L129.54 8.28514ZM180.445 60.6848L129.454 8.19407L122.281 15.1619L173.272 67.6527L180.445 60.6848ZM180.482 60.723L180.445 60.6848L173.272 67.6527L173.309 67.691L180.482 60.723ZM181.164 61.6027L181.136 61.5575L172.655 66.8565L172.684 66.9017L181.164 61.6027ZM183.113 65.3401C182.469 63.8449 181.709 62.4737 181.164 61.6022L172.684 66.9022C172.996 67.4012 173.51 68.3248 173.93 69.2984L183.113 65.3401ZM184.5 71.0062C184.497 68.8187 183.68 66.6561 183.113 65.3401L173.93 69.2984C174.135 69.774 174.294 70.2063 174.395 70.5667C174.506 70.9567 174.5 71.0905 174.5 71.0183L184.5 71.0062ZM184.499 70.9375L184.499 70.9365L174.501 71.088L174.501 71.089L184.499 70.9375ZM101.175 27.1144L101.269 27.1537L105.115 17.9229L105.021 17.8837L101.175 27.1144ZM103.035 27.4997L103.137 27.4989L103.059 17.4992L102.957 17.5L103.035 27.4997ZM39.0391 27.9997L103.035 27.4997L102.957 17.5L38.9609 18L39.0391 27.9997ZM38.998 27.9998H39V17.9998H38.998V27.9998ZM31.1445 32.0057C33.1543 29.5939 35.6949 28.0003 38.9987 27.9998L38.9974 17.9998C31.9265 18.0007 26.7923 21.6078 23.4623 25.6038L31.1445 32.0057ZM27.3823 39.5224C27.8377 37.5707 29.0703 34.4948 31.1445 32.0057L23.4623 25.6038C20.2104 29.506 18.3836 34.0798 17.6439 37.2501L27.3823 39.5224ZM27.3692 39.5784L27.3823 39.5223L17.6439 37.2501L17.6308 37.3062L27.3692 39.5784ZM27.5 38.4998V38.4423H17.5V38.4998H27.5ZM27.5 197.5V38.4998H17.5V197.5H27.5ZM31.4447 204.08C28.8327 201.98 27.5 199.761 27.5 197.5H17.5C17.5 204.07 21.4264 208.857 25.1787 211.874L31.4447 204.08ZM39.2931 208.19C37.2215 207.568 34.0241 206.154 31.4447 204.08L25.1787 211.874C28.9706 214.922 33.3959 216.861 36.4196 217.768L39.2931 208.19ZM39.3634 208.211L39.2931 208.19L36.4195 217.768L36.4898 217.789L39.3634 208.211ZM38 208H37.9266V218H38V208ZM146 208H38V218H146V208ZM153.02 204.225C151.115 206.57 148.825 208 146 208V218C152.769 218 157.656 214.378 160.781 210.53L153.02 204.225ZM156.626 196.944C156.167 198.845 154.97 201.824 153.02 204.225L160.781 210.53C163.851 206.752 165.611 202.337 166.346 199.29L156.626 196.944ZM156.64 196.886L156.626 196.944L166.346 199.291L166.36 199.233L156.64 196.886ZM156.5 198V198.059H166.5V198H156.5ZM156.5 81.4998V198H166.5V81.4998H156.5ZM155.802 81.2413C156.017 81.3913 156.192 81.5331 156.33 81.6607C156.468 81.7893 156.544 81.8825 156.58 81.9321C156.614 81.9799 156.593 81.9628 156.563 81.8789C156.53 81.7866 156.5 81.653 156.5 81.4998H166.5C166.5 77.0903 163.363 74.3226 161.52 73.038L155.802 81.2413ZM152.764 79.8267C153.587 80.0619 154.851 80.5789 155.802 81.2413L161.52 73.038C159.441 71.5883 157.098 70.6648 155.511 70.2115L152.764 79.8267ZM152.697 79.8076L152.764 79.8268L155.511 70.2114L155.443 70.1921L152.697 79.8076ZM154 79.9998H154.07V69.9998H154V79.9998ZM117 79.9998H154V69.9998H117V79.9998ZM107.864 75.8531C109.839 78.0898 112.877 79.9998 117 79.9998V69.9998C116.557 69.9998 116.273 69.9078 116.071 69.8075C115.851 69.698 115.611 69.5188 115.361 69.2348L107.864 75.8531ZM104.62 69.5334C105.016 71.312 106.013 73.756 107.864 75.8531L115.361 69.2347C115.107 68.9479 114.88 68.5942 114.697 68.2165C114.511 67.8326 114.415 67.5141 114.38 67.3583L104.62 69.5334ZM104.5 30.4998V68.4459H114.5V30.4998H104.5ZM103.542 28.7179C104.304 29.4924 104.5 30.0895 104.5 30.4998H114.5C114.5 26.5571 112.518 23.5832 110.671 21.7055L103.542 28.7179ZM101.269 27.1537C101.8 27.3749 102.773 27.9361 103.542 28.7179L110.671 21.7055C108.833 19.837 106.689 18.5785 105.115 17.9229L101.269 27.1537ZM102.861 18.5008L38.9648 19L39.043 28.9997L102.939 28.5005L102.861 18.5008ZM109.958 22.4068C108.278 20.6984 106.324 19.5342 104.885 18.9116L100.915 28.0897C101.105 28.1718 101.429 28.337 101.804 28.5858C102.176 28.8324 102.533 29.1179 102.829 29.4192L109.958 22.4068ZM113.5 30.4998C113.5 26.9126 111.699 24.1764 109.958 22.4068L102.829 29.4191C103.48 30.0806 103.5 30.4401 103.5 30.4998H113.5ZM113.5 68.4998V30.4998H103.5V68.4998H113.5ZM113.5 68.5528V68.4998H103.5V68.5528H113.5ZM113.4 67.5567L113.389 67.5049L103.611 69.6008L103.622 69.6525L113.4 67.5567ZM114.611 69.8966C114.285 69.5279 114.006 69.0884 113.787 68.6321C113.565 68.1693 113.447 67.7753 113.4 67.557L103.622 69.6522C104.037 71.5881 105.106 74.2395 107.114 76.5149L114.611 69.8966ZM117 70.9998C116.396 70.9998 115.963 70.8699 115.628 70.7039C115.275 70.5287 114.934 70.2621 114.611 69.8966L107.114 76.5149C109.24 78.9224 112.536 80.9998 117 80.9998V70.9998ZM153.929 70.9998H117V80.9998H153.929V70.9998ZM160.949 73.8584C159.017 72.512 156.83 71.6387 155.332 71.2008L152.526 80.7989C153.284 81.0205 154.412 81.4915 155.23 82.0616L160.949 73.8584ZM165.5 81.4998C165.5 77.6072 162.73 75.1003 160.948 73.8583L155.23 82.0617C155.423 82.1961 155.561 82.3103 155.654 82.3973C155.748 82.4853 155.775 82.5259 155.764 82.5102C155.752 82.4932 155.686 82.3974 155.622 82.2202C155.555 82.0349 155.5 81.7876 155.5 81.4998H165.5ZM165.5 197.94V81.4998H155.5V197.94H165.5ZM160.005 209.9C162.94 206.287 164.639 202.055 165.356 199.131L155.644 196.749C155.204 198.544 154.066 201.351 152.244 203.594L160.005 209.9ZM146 217C152.373 217 157 213.599 160.005 209.9L152.244 203.594C150.463 205.787 148.433 207 146 207V217ZM38.0738 217H146V207H38.0738V217ZM25.8053 211.094C29.4428 214.019 33.6989 215.896 36.6197 216.784L39.528 207.216C37.5444 206.613 34.5047 205.257 32.0713 203.301L25.8053 211.094ZM18.5 197.5C18.5 203.637 22.1646 208.167 25.8053 211.094L32.0713 203.301C29.5763 201.295 28.5 199.332 28.5 197.5H18.5ZM18.5 38.5578V197.5H28.5V38.5578H18.5ZM24.2305 26.244C21.119 29.9778 19.356 34.3634 18.6349 37.4042L28.3651 39.7115C28.8008 37.8742 29.9722 34.9745 31.9127 32.6459L24.2305 26.244ZM39 18.9998C32.3062 18.9998 27.4302 22.4044 24.2305 26.244L31.9127 32.6459C33.7892 30.394 36.0704 28.9998 39 28.9998V18.9998ZM38.9844 18.9999L38.9805 18.9999L39.0195 28.9998L39.0234 28.9998L38.9844 18.9999Z" fill="white"></path>
+                        <rect x="40" y="95" width="104" height="18" rx="9" fill="white"></rect>
+                        <rect x="40" y="164" width="104" height="18" rx="9" fill="white"></rect>
+                        <rect x="40" y="130" width="86" height="18" rx="9" fill="white"></rect>
+                    </svg>
+                            </h3>
+        </div>
+    </div>
+    <div class="row">
+        
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Donatorë:</strong></span>
+            <span class="field-content">
+                Bashkimi Europian (BE)
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Zbatues:</strong></span>
+            <span class="field-content">
+                Komisioni Evropian – Directorate-General for Research and Innovation (DG RTD)
+            </span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Afati i Aplikimit:</strong></span>
+            <span class="field-content">16.08.2026</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Statusi:</strong></span>
+            <span class="field-content">Aktive</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Industri:</strong></span>
+            <span class="field-content">Inovacion, Teknologji etj., Deep-tech, Dixhitalizim, Entrepreneurship and SMEs, Innovation, Environment, Inovacion, Kerkim-Zhvillim (R&amp;D)</span>
+        </div>
+        <div class="col-xl-6 result-field">
+            <span class="result-label-field"><strong>Kodi:</strong></span>
+            <span class="field-content">SF-26-0023</span>
+        </div>
+    </div>
+    <div class="row">
+                    <a href="https://aida-smefinance.gov.al/financial-schemes/ready4eic-training-programme-for-innovative-smes-in-eu-enlargement-countries"
+                class="more-details-button-result button button-reveal button-large text-right"
+                style="margin-left:auto; margin-right:0px;background-color: #06304c">
+                <i class="icon-line-arrow-right"></i><span>Më shumë</span>
+            </a>
+            </div>
+</div>                                        <nav>
+        <ul class="pagination">
+            
+                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                    <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                </li>
+            
+            
+                            
+                
+                
+                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=2">2</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=3">3</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=4">4</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=5">5</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=6">6</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=7">7</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=8">8</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=9">9</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=10">10</a></li>
+                                                                                        
+                                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                
+                
+                                            
+                
+                
+                                                                                        <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=34">34</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://aida-smefinance.gov.al?page=35">35</a></li>
+                                                                        
+            
+                            <li class="page-item">
+                    <a class="page-link" href="https://aida-smefinance.gov.al?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                </li>
+                    </ul>
+    </nav>
+
+                </div>
+            </div>
+        </div>
+        <div class="pb-0 content-wrap">
+            <div class="clear"></div>
+                            <div class="section section-gradient m-0">
+                    <div class="container">
+                        <div class="mx-auto" style="max-width: 1200px; padding: 0 0 50px;">
+                            <div class="d-flex justify-content-between align-items-center mb-4 dark">
+                                <h3 class="mb-0">Lajmet e fundit</h3>
+                                <a href="https://aida-smefinance.gov.al/news" class="button button-white button-light button-rounded button-small font-weight-medium m-0">Më shumë</a>
+                            </div>
+                            <div class="row row-eq-height">
+                                                                                                        <div class="entry col-lg-4 col-md-6">
+                                        <div class="grid-inner card">
+                                                                                            <a href="https://aida-smefinance.gov.al/news/calls/shpallet-thirrja-per-fondin-e-aida-s" data-lightbox="image">
+                                                    <img src="https://aida-smefinance.gov.al/uploads/20220831.jpeg" alt="Image" class="card-img-top">
+                                                </a>
+                                                                                        <div class="p-4">
+                                                <div class="entry-title title-sm">
+                                                    <h3 class="nott ls0 h5"><a href="https://aida-smefinance.gov.al/news/calls/shpallet-thirrja-per-fondin-e-aida-s">Shpallet thirrja për Fondin e AIDA-s</a></h3>
+                                                </div>
+                                                <div class="entry-meta">
+                                                    <ul>
+                                                        <li><i class="icon-calendar3"></i> 06 Sep 2022</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="entry-content mt-4">
+                                                    <p class="mb-0"><p>D&euml;shiron t&euml; ec&euml;sh me hapin e koh&euml;s, t&euml; digjitalizosh biznesin t&euml;r&euml;sisht apo pjes&euml;risht, t&euml; integrosh teknologji t&euml; reja, t&euml; krijosh platfor... </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                        <div class="entry col-lg-4 col-md-6">
+                                        <div class="grid-inner card">
+                                                                                            <a href="https://aida-smefinance.gov.al/news/calls/ceecat-fund-ii-achieves-first-closing-with-ebrd-support" data-lightbox="image">
+                                                    <img src="https://aida-smefinance.gov.al/uploads/1395297330810.jpg" alt="Image" class="card-img-top">
+                                                </a>
+                                                                                        <div class="p-4">
+                                                <div class="entry-title title-sm">
+                                                    <h3 class="nott ls0 h5"><a href="https://aida-smefinance.gov.al/news/calls/ceecat-fund-ii-achieves-first-closing-with-ebrd-support">CEECAT Fund II achieves first closing with EBRD support</a></h3>
+                                                </div>
+                                                <div class="entry-meta">
+                                                    <ul>
+                                                        <li><i class="icon-calendar3"></i> 15 Apr 2021</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="entry-content mt-4">
+                                                    <p class="mb-0"><ul>
+	<li>EBRD commits &euro;30 million to private equity fund CEECAT Fund II</li>
+	<li>CEECAT Fund II raises total commitments of &euro;120 million in its first closing</li>
+	<li>Fund dedicated... </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                        <div class="entry col-lg-4 col-md-6">
+                                        <div class="grid-inner card">
+                                                                                            <a href="https://aida-smefinance.gov.al/news/calls/webinar-opportunities-for-development-cooperation-with-the-private-sector-through-the-developpp-de-program-date-17-shkurt-2021-ora-11-00-12-30" data-lightbox="image">
+                                                    <img src="https://aida-smefinance.gov.al/uploads/Webinar  Opportunities_ event_expo-dubai.jpg" alt="Image" class="card-img-top">
+                                                </a>
+                                                                                        <div class="p-4">
+                                                <div class="entry-title title-sm">
+                                                    <h3 class="nott ls0 h5"><a href="https://aida-smefinance.gov.al/news/calls/webinar-opportunities-for-development-cooperation-with-the-private-sector-through-the-developpp-de-program-date-17-shkurt-2021-ora-11-00-12-30">Webinar: “Opportunities for development cooperation with the private sector through the develoPPP.de program’’ datë 17 shkurt 2021, ora 11:00 - 12:30</a></h3>
+                                                </div>
+                                                <div class="entry-meta">
+                                                    <ul>
+                                                        <li><i class="icon-calendar3"></i> 11 Feb 2021</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="entry-content mt-4">
+                                                    <p class="mb-0"><p>Agjencia Shqiptare e Zhvillimit t&euml; Investimeve (AIDA) njofton se n&euml; dat&euml;n 17 shkurt, K&euml;shilli Investitor&euml;ve t&euml; Huaj n&euml; Bosnj&euml; dhe Hercegovin&euml; dhe GIZ... </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            </div>
+                            
+                        </div>
+                                                                    </div>
+                </div>
+                    </div>
+    </section>
+ 
+     
+       
+   
+            <footer id="footer" class="bg-transparent border-0">
+    <div id="copyrights" class="bg-transparent">
+        <div class="section dark pt-0 mb-0 bg-color" style="background: url('images/bg-2.png') no-repeat center bottom / 100%; overflow: visible">
+            <svg viewBox="0 0 1960 206.8" class="bg-white">
+                <path class="svg-themecolor"
+                    style="opacity:0.2;"
+                    d="M0,142.8A2337.49,2337.49,0,0,1,297.5,56.3C569.33-3.53,783.89.22,849.5,2.3c215.78,6.86,382.12,45.39,503.25,73.45,158.87,36.8,283.09,79.13,458.75,54.55A816.49,816.49,0,0,0,1983,86.8v110H0Z" />
+                <path class="svg-themecolor" d="M.5,152.8s498-177,849-150,1031,238,1134,94v110H.5Z" />
+            </svg>
+            <div class="container">
+                <div class="row align-items-center justify-content-center center my-4">
+                    <div class="col-sm-6">
+
+                        <div class="heading-block border-bottom-0 mb-4">
+                            <h2 class="font-weight-semibold ls0 nott mb-3" style="font-size: 40px; line-height: 1.3">
+                                Regjistrim për Buletinin Elektronik                            </h2>
+                            <p style="font-size:18px">Informohuni në kohë për skemat e reja financiare që dalin në faqe</p>
+                            <button data-toggle="modal" data-target="#newsletterModal" class="button button-light button-white button-rounded font-weight-medium m-0">Abonohu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 50px;" class="clear"></div>
+        
+        <div class="container clearfix">
+           
+            <div class="footer-widgets-wrap pb-4 clearfix" style="padding:0px">
+
+                <div class="row">
+                    <div class="col-md-5">
+                    <ul class="clients-grid grid-3 mb-0" style="padding-bottom: 2em;">
+						
+						<li class="grid-item"><a href="https://www.ebrd.com/home" target="_blank"><img src="http://ebrd2.dm-consulting.biz/images/ebrd-logo.png" alt="EBRD"></a></li>
+						<li class="grid-item"><a href="https://www.financa.gov.al/" target="_blank"><img src="http://ebrd2.dm-consulting.biz/images/ministria.jpg" alt="Clients"></a></li>
+						<li class="grid-item"><a href="http://www.aida.gov.al/sq/" target="_blank"><img src="http://ebrd2.dm-consulting.biz/images/aida.png" alt="AIDA"></a></li>
+						
+					</ul>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 ">
+                        <div class="widget clearfix">
+                            <ul class="list-unstyled iconlist ml-0">
+                                <li class="mb-2"><a href="#"> Të gjitha të drejtat e rezervuara. Kjo platformë është një iniciativë e Ministrisë së Financave dhe Ekonomisë dhe Bankës Evropiane për Rindërtim dhe Zhvillim (BERZH). Riprodhimi dhe shpërndarja e materialit që përmbahet në këtë faqe interneti për qëllime arsimore ose qëllime të tjera jo-komerciale janë të autorizuara pa ndonjë leje paraprake me shkrim nga mbajtësit e të drejtës së autorit, me kusht që burimi të njihet plotësisht. Platforma do të mirëmbahet dhe administrohet nga Agjencia Shqiptare e Zhvillimit të Investimeve (AIDA), si një përfituese e drejtpërdrejtë në këtë projekt.</a></li>
+                            </ul>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text-md-right">
+                        <div class="widget clearfix">
+                            <div>
+                                <h4 class="ls0 mb-4 nott">Na kontaktoni:</h4>
+                                <address>
+                                    E-mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fc95929a93bc9d95989dd29b938ad29d90">[email&#160;protected]</a>
+                                    <h3 class="mb-3"><a href="tel:04 225 1001"><i class="icon-phone3 mr-1" style="font-size: 22px;"></i> 04 225 1001</a></h3>
+                                </address>
+                               
+                                <div class="d-flex justify-content-md-end">
+                                    <a href="https://www.facebook.com/investinalbania" target="_blank" class="social-icon si-small si-facebook" title="Facebook">
+                                        <i class="icon-facebook"></i>
+                                        <i class="icon-facebook"></i>
+                                    </a>
+
+                                    <a href="https://www.instagram.com/aida__albania/?igshid=9ftbl30pfgk0" target="_blank" class="social-icon si-small si-instagram" title="instagram">
+                                        <i class="icon-instagram"></i>
+                                        <i class="icon-instagram"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 text-black-50">
+                    Copyright&copy; European Bank for Reconstruction and Development  2020 - 2026.
+                </div>
+                <div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+                    <div class="copyrights-menu copyright-links text-black-50 clearfix">
+                        <a href="https://aida-smefinance.gov.al/terms-and-conditions">Termat dhe Kushtet</a>
+                        <a href="https://aida-smefinance.gov.al/privacy-policy">Politika e privatësisë</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+
+        <div id="gotoTop" class="icon-angle-up"></div>
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://aida-smefinance.gov.al/js/jquery.js"></script>
+        <script src="https://aida-smefinance.gov.al/js/plugins.min.js"></script>
+        <script src="https://aida-smefinance.gov.al/js/functions.js"></script>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.3.0/js/iziToast.js"></script>
+        <script src="https://aida-smefinance.gov.al/js/selectize.min.js"></script>
+        <script>
+    $(document).ready(function() {
+        
+        
+            });
+</script>
+                    <script src="https://aida-smefinance.gov.al/js/sweetalert.min.js"></script>
+    <script>
+        $(".trigger-custom1").on('click', function (event) {
+            event.preventDefault();
+
+            Swal.fire(
+                "",
+                "Kjo skemë nuk është më aktive.","warning"
+            );
+
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+    <script src="https://aida-smefinance.gov.al/js/select2.min.js"></script>
+    <script src="https://aida-smefinance.gov.al/js/select2_sq.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.select2-multiple').select2({
+                theme: 'bootstrap4',
+                placeholder: "Select",
+                allowClear: true,
+                width: 'auto',
+                language: "sq"
+            });
+
+            $('.select2-single').select2({
+                theme: 'bootstrap4',
+                placeholder: "Select",
+                allowClear: true,
+                width: 'auto',
+                language: "sq",
+                multiple: false
+            });
+
+            $(".datepicker").datepicker({
+                format: "yyyy",
+                viewMode: "years", 
+                minViewMode: "years"
+            });
+
+
+        });
+    </script>
+
+<style>
+.clients-grid .grid-item a {
+     opacity: 100!important;
+}
+
+</style>    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188325164-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-188325164-1');
+    </script>
+
+    <script>
+                $(document).ready(function() {
+
+            
+            $('#select-sectors').selectize({
+                persist: false,
+                maxItems: null,
+                delimiter: ',',
+                valueField: 'id',
+                labelField: 'name',
+                searchField: ['name'],
+                options: [{"id":1,"name":"Teknologji Informacioni"},{"id":2,"name":"Turiz\u00ebm"},{"id":3,"name":"Agrikultur\u00eb"},{"id":4,"name":"Tregti\/Shitje"},{"id":5,"name":"Ligjore"},{"id":6,"name":"Sh\u00ebrbime financiare"},{"id":7,"name":"Sh\u00ebrbime konsulence"},{"id":8,"name":"Sh\u00ebrbime sh\u00ebndet\u00ebsore"},{"id":9,"name":"Sh\u00ebrbim klienti"},{"id":10,"name":"Nd\u00ebrtim"},{"id":11,"name":"Media\/Marketing"},{"id":12,"name":"Horeca"},{"id":13,"name":"T\u00eb gjitha"},{"id":14,"name":"Artizanat"},{"id":15,"name":"Zejtari"},{"id":16,"name":"Industri e leht\u00eb"},{"id":17,"name":"Tjet\u00ebr"},{"id":18,"name":"Transport"},{"id":19,"name":"a.\tEnergjia e rinovueshme, p\u00ebrfshir\u00eb hidrogjenin e rinovuesh\u00ebm dhe depozitimin e energjis\u00eb \r\nb.\tRinovimi i thell\u00eb i nd\u00ebrtesave \r\nc.\tIndustri me karbon t\u00eb ul\u00ebt \r\nd.\tBaterit\u00eb dhe sistemet e tjera t\u00eb ruajtjes s\u00eb energjis\u00eb \r\ne.\tP\u00ebr informacione t\u00eb m\u00ebtejshme, ju lutem shikoni Programin e Pun\u00ebs EIC 2021"},{"id":20,"name":"Industrit\u00eb q\u00eb p\u00ebrfshijn\u00eb teknologjin\u00eb dhe veprimtari t\u00eb inovacionit"},{"id":21,"name":"Innovation technology and activities"},{"id":22,"name":"Tekstil, Ver\u00eb, Turiz\u00ebm"},{"id":23,"name":"Automatizimi, Menaxhimi i materialeve, Produktet inteligjente, Kontrolli i cil\u00ebsis\u00eb, Siguria"},{"id":24,"name":"Automation, Material management, Smart products, Quality control, Safety"},{"id":25,"name":"Turiz\u00ebm, Transport-Automotive, Nd\u00ebrtim, Agro-ushqim, Tekstil, Dixhitalizim, Energji e ripert\u00ebritshme, Elektronik\u00eb, Sh\u00ebndet\u00ebsi"},{"id":26,"name":"\u00c7\u00ebshtje Sociale, Edukimi dhe Trajnimi, Shk\u00ebmbimet Rinore"},{"id":27,"name":"K\u00ebrkim dhe inovacion, Teknologji"},{"id":28,"name":"Inovacion, Teknologji etj."},{"id":29,"name":"Inovacion, Teknologji, Energji e rinovueshme"},{"id":30,"name":"Turiz\u00ebm, Bujq\u00ebsi, Tekstil, L\u00ebkur\u00ebs dhe k\u00ebpuc\u00ebve, Artizanat"},{"id":31,"name":"Inovacion, turiz\u00ebm"},{"id":32,"name":"Inovacioni, Mjedisi, Ekonomia Dixhitale, Teknologjia celulare"},{"id":33,"name":"Inovacion, Mjedis, \u2018Smart Cities\u2019"},{"id":34,"name":"Inovacion, Mjedis"},{"id":35,"name":"Sip\u00ebrmarrje, Inovacion"},{"id":36,"name":"Sip\u00ebrmarrje, Inovacion, Mjedis"},{"id":37,"name":"Inovacion, Mjedis"},{"id":38,"name":"Inovacion"},{"id":39,"name":"Inovacion, Edukim, Trajnime"},{"id":40,"name":"Inovacioni, SME-t\u00eb, Sip\u00ebrmarrja, CCI"},{"id":41,"name":"Inovacion, Dixhitalizim, Turiz\u00ebm"},{"id":42,"name":"Sip\u00ebrmarrje, Prodhim Industrial, Prodhim Tekstili Industrial, Aeronautik\u00eb, Dizajn Industrial"},{"id":43,"name":"Inovacioni, Ngritja e Kapaciteteve, Edukimi dhe Trajnimi"},{"id":44,"name":"Inovacioni, Ngritja e Kapaciteteve, Strehimi Social"},{"id":45,"name":"Edukimi, Trajnimi, Inovacioni, K\u00ebrkimi"},{"id":46,"name":"Sip\u00ebrmarrja dhe NVM-t\u00eb, Inovacioni, Mjedisi"},{"id":47,"name":"Edukim dhe Trajnim, Barazi Gjinore, Sport"},{"id":48,"name":"Mjedisi, Teknologjia e Hap\u00ebsir\u00ebs Ajrore, Burimet Natyrore"},{"id":49,"name":"Entrepreneurship and SMEs, Innovation, Environment"},{"id":50,"name":"Inovacioni, Barazia Gjinore, Edukimi dhe Trajnimi"},{"id":51,"name":"Innovation, Gender Equality, Education and Training"},{"id":52,"name":"Zhvillimi i qendrueshem"},{"id":53,"name":"Sip\u00ebrmarrja"},{"id":54,"name":"Inovacioni Social"},{"id":55,"name":"Eko-Inovacioni"},{"id":56,"name":"Eko-inovacioni"},{"id":57,"name":"Entrepreneurship, Innovation, Environment"},{"id":58,"name":"Edukim dhe Trajnim"},{"id":59,"name":"Aftesi digjitale"},{"id":60,"name":"Trash\u00ebgimi kulturore, Restaurim"},{"id":61,"name":"Inteligjenca Artificiale"},{"id":62,"name":"IT e  aplikuar"},{"id":63,"name":"Implementim dhe zhvillim projektesh"},{"id":64,"name":"Intellectual Property"},{"id":65,"name":"EKONOMI QARKULLUESE"},{"id":66,"name":"Kultur\u00eb"},{"id":67,"name":"K\u00ebrkim-zhvillim"},{"id":68,"name":"Tranzicion i gjelber"},{"id":69,"name":"innovation"},{"id":70,"name":"culture"},{"id":71,"name":"green practices"},{"id":72,"name":"green transition"},{"id":73,"name":"AI"},{"id":74,"name":"IT"},{"id":75,"name":"Deep-tech"},{"id":76,"name":"Innovation"},{"id":77,"name":"Aquamarine"},{"id":78,"name":"Technology"},{"id":79,"name":"Big Data"},{"id":80,"name":"IoT"},{"id":81,"name":"Pronesia Intelektuale"},{"id":82,"name":"Kerkim"},{"id":83,"name":"Research"},{"id":84,"name":"Digitalization"},{"id":85,"name":"Construction"},{"id":86,"name":"Manifakture"},{"id":87,"name":"Industria Agro-ushqimore dhe Industrite me konsum t\u00eb lart\u00eb energjie"},{"id":88,"name":"Agri-food industry and industries with high energy consumption"},{"id":89,"name":"Industria Agro-ushqimore, Ekonomia qarkulluese dhe e q\u00ebndrueshme"},{"id":90,"name":"Industria Agro-ushqimore dhe Ekonomia qarkulluese dhe e q\u00ebndrueshme"},{"id":91,"name":"Agri-food Industry and Circular and sustainable economy"},{"id":92,"name":""},{"id":93,"name":"Agro-ushqimore"},{"id":94,"name":"Hap\u00ebsir\u00eb ajrore dhe Mbrojtje"},{"id":95,"name":"Mobilitet"},{"id":96,"name":"Paketimi agro-ushqimor"},{"id":97,"name":"Energjia e rinovueshme"},{"id":98,"name":"Sisteme energjitike"},{"id":99,"name":"Rrjete elektrike"},{"id":100,"name":"Dixhitalizim dhe Teknologji"},{"id":101,"name":"Inovacion Industrial"},{"id":102,"name":"Tregti elektronike"},{"id":103,"name":"Sh\u00ebrbime biznesi"},{"id":104,"name":"Prodhim"},{"id":105,"name":"Marketing"},{"id":106,"name":"Logjistik\u00eb"},{"id":107,"name":"Standartizim"},{"id":108,"name":"Dixhitalizim"},{"id":109,"name":"Automotive"},{"id":110,"name":"Prodhim industrial"},{"id":111,"name":"Teknologji e gjelb\u00ebrt"},{"id":112,"name":"Inovacion industrial"},{"id":113,"name":"Energji e gjelb\u00ebrt"},{"id":114,"name":"Teknologji Net-Zero"},{"id":115,"name":"Energji diellore"},{"id":116,"name":"Ruajtje e energjis\u00eb s\u00eb baterive"},{"id":117,"name":"Biogaz dhe biometane"},{"id":118,"name":"P\u00ebrpunim"},{"id":119,"name":"Biznese mikro dhe t\u00eb vogla"},{"id":120,"name":"Tekstil"},{"id":121,"name":"Moda dhe veshje"},{"id":122,"name":"Energji diellore (PV)"},{"id":123,"name":"Agri-voltaike"},{"id":124,"name":"Integrim ne rrjet"},{"id":125,"name":"Teknologji te energjis\u00eb"},{"id":126,"name":"Tranzicion i gjelb\u00ebr"},{"id":127,"name":"Inovacion, Kerkim-Zhvillim (R&D)"},{"id":128,"name":"Agri-voltaike"},{"id":129,"name":"IoT"},{"id":130,"name":"Smart Grids"},{"id":131,"name":"Data Spaces"},{"id":132,"name":"Energji dixhitale"},{"id":133,"name":"Inovacion Dixhital"},{"id":134,"name":"Software"},{"id":135,"name":"Riciklim i tekstileve"},{"id":136,"name":"Industry 4.0"},{"id":137,"name":"Generative AI"},{"id":138,"name":"Robotik\u00eb autonome"},{"id":139,"name":"Dizajn inxhinierik dhe stimulim"},{"id":140,"name":"Sh\u00ebndet\u00ebsi dixhitale"},{"id":141,"name":"Imazhe mjek\u00ebsore"},{"id":142,"name":"Machine learning"},{"id":143,"name":"Computer vision"},{"id":144,"name":"\u2022High-Performance Computing (HPC)"},{"id":145,"name":"Teknologji hidrogjeni"},{"id":146,"name":"Biogaz dhe biomethane"},{"id":147,"name":"Carbon Capture and Storage (CCS)"},{"id":148,"name":"P\u00ebrpunim druri"},{"id":149,"name":"Menaxhim i mbetjeve t\u00eb drurit"},{"id":150,"name":"Riciklim"},{"id":151,"name":"Efikasitet t\u00eb burimeve"},{"id":152,"name":"Prodhim industrial"},{"id":153,"name":"Turiz\u00ebm i q\u00ebndruesh\u00ebm"},{"id":154,"name":"Trash\u00ebgimi kulturore"},{"id":155,"name":"Turiz\u00ebm kulturor"},{"id":156,"name":"Bashk\u00ebpunim nd\u00ebrkufitar"},{"id":157,"name":"Zhvillim rajonal"},{"id":158,"name":"Inovacion social"},{"id":159,"name":"Trash\u00ebgimi natyrore"},{"id":160,"name":"Agro-industri"},{"id":161,"name":"Sip\u00ebrmarrje dhe NVM"},{"id":162,"name":"Zhvillim biznesi"},{"id":163,"name":"Shoq\u00ebri civile"},{"id":164,"name":"Bashk\u00ebpunim rajonal"},{"id":165,"name":"Arsimi dhe k\u00ebrkimi shkencor"},{"id":166,"name":"Shoqatat e biznesit"},{"id":167,"name":"Mobilitet urban"},{"id":168,"name":"Logjistik\u00eb urbane"},{"id":169,"name":"Teknologji dhe t\u00eb dh\u00ebna p\u00ebr mobilitetin"},{"id":170,"name":"Elektrifikimi i transportit"},{"id":171,"name":"Karburante alternative"},{"id":172,"name":"Sh\u00ebndet dhe mobilitet"},{"id":173,"name":"Inovacion dhe teknologji"},{"id":174,"name":"Arkitektur\u00eb"},{"id":175,"name":"Media audiovizuale"},{"id":176,"name":"Mod\u00eb, Industri kulturore dhe krijuese"},{"id":177,"name":"Materiale t\u00eb avancuara"},{"id":178,"name":"Pron\u00ebsi intelektuale"},{"id":179,"name":"Inovacion dhe komercializim"},{"id":180,"name":"L\u00ebnd\u00eb t\u00eb para"},{"id":181,"name":"Miniera t\u00eb q\u00ebndrueshme"},{"id":182,"name":"P\u00ebrpunim industrial"},{"id":183,"name":"Teknologji t\u00eb avancuara"},{"id":184,"name":"Materiale t\u00eb q\u00ebndrueshme, Z\u00ebvend\u00ebsim materialesh"}]
+            });
+ 
+        });
+
+
+    </script>
+    <script>
+        customNameErrorMsg='Ju lutemi plotësoni këtë fushë.';
+    
+        </script>
+    <script src="https://www.google.com/recaptcha/api.js?" async defer></script>
+
+        <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="newsletterModalLabel">Regjistrim për Buletinin Elektronik</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-sme-tab" data-toggle="tab" href="#nav-sme" role="tab" aria-controls="nav-home" aria-selected="true">NMVM</a>
+                            <a class="nav-item nav-link" id="nav-individual-tab" data-toggle="tab" href="#nav-individual" role="tab" aria-controls="nav-profile" aria-selected="false">Individ</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-sme" role="tabpanel" aria-labelledby="nav-sme-tab">
+                            <div class="pt-2">
+                                                                <form method="POST" action="https://aida-smefinance.gov.al/newsletter/sme/store" accept-charset="UTF-8"><input name="_token" type="hidden" value="sh5Zu95ey70WIJ2zUus3vYCd5YIZR061QleHF9Aa">
+                                    <input type="hidden" name="_token" value="sh5Zu95ey70WIJ2zUus3vYCd5YIZR061QleHF9Aa">                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label for="name">Emri i NMVM-s&euml; *</label>
+                                            <input class="form-control" name="name" type="text"  required="" placeholder="Emri" 
+                                            oninvalid="this.setCustomValidity(customNameErrorMsg)"
+                                            oninput="this.setCustomValidity('')" /> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label for="gender">Gjinia e administratorit *</label>
+                                            <select class="form-control" required oninvalid="this.setCustomValidity(customNameErrorMsg)" oninput="this.setCustomValidity(&#039;&#039;)" id="gender" name="gender"><option selected="selected" value="">Zgjidhni gjininë...</option><option value="1">Mashkull</option><option value="2">Femër</option></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label for="sectors">Sektor&euml;t *</label>
+                                            <input id="select-sectors" class="form-control" placeholder="Zgjidhni sektorët të cilëve i përkisni..." oninvalid="this.setCustomValidity(customNameErrorMsg)" oninput="this.setCustomValidity(&#039;&#039;)" name="sectors" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label for="email">Email *</label>
+                                            <input class="form-control" name="email" type="email"  required="" placeholder="Email" 
+                                            oninvalid="this.setCustomValidity(customNameErrorMsg)"
+                                            oninput="this.setCustomValidity('')" /> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label for="nipt">NIPT</label>
+                                            <input class="form-control" name="nipt" type="nipt"   /> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p><input type="checkbox" required="" name="terms_of_usage"  oninvalid="this.setCustomValidity(customNameErrorMsg)"
+                                                oninput="this.setCustomValidity('')" >  Unë i pranoj kushtet e përdorimit</p> 
+                                        </div>
+                                    </div>
+                                    <div data-sitekey="6LeFZMsqAAAAAJMOA2GEhN5eG4YDfaxcjXhTVkZt" class="g-recaptcha"></div>
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <input class="input-group-btn button button-light button-white button-rounded btn-block font-weight-medium m-0 mt-2" type="submit" value="Abonohu">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-individual" role="tabpanel" aria-labelledby="nav-individual-tab">
+                            <div class="pt-2">
+                                <form method="POST" action="https://aida-smefinance.gov.al/newsletter/individual/store" accept-charset="UTF-8"><input name="_token" type="hidden" value="sh5Zu95ey70WIJ2zUus3vYCd5YIZR061QleHF9Aa">
+                                    <input type="hidden" name="_token" value="sh5Zu95ey70WIJ2zUus3vYCd5YIZR061QleHF9Aa">                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label for="name">Emri *</label>
+                                            <input class="form-control" name="name" type="text"  required="" placeholder="Emri" 
+                                            oninvalid="this.setCustomValidity(customNameErrorMsg)"
+                                            oninput="this.setCustomValidity('')" /> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label for="gender">Gjinia *</label>
+                                            <select class="form-control" required id="gender" name="gender"><option selected="selected" value="">Zgjidhni gjininë...</option><option value="1">Mashkull</option><option value="2">Femër</option></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label for="email">Email *</label>
+                                            <input class="form-control" name="email" type="email"  required="" placeholder="Email" 
+                                            oninvalid="this.setCustomValidity(customNameErrorMsg)"
+                                            oninput="this.setCustomValidity('')" /> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p><input type="checkbox"  name="terms_of_usage" required=""  oninvalid="this.setCustomValidity(customNameErrorMsg)"
+                                                oninput="this.setCustomValidity('')">  Unë i pranoj kushtet e përdorimit</p> 
+                                        </div>
+                                    </div>
+                                    <div data-sitekey="6LeFZMsqAAAAAJMOA2GEhN5eG4YDfaxcjXhTVkZt" class="g-recaptcha"></div>
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <input class="input-group-btn button button-light button-white button-rounded btn-block font-weight-medium m-0 mt-2" type="submit" value="Abonohu">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+</html>

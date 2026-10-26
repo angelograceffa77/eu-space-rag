@@ -1,0 +1,3 @@
+'use strict';
+function validate(registry,scope=require('./country-scope.json')){const expected=[...scope.baselineCountries,...scope.additionalCountries],actual=registry.countries.map(c=>c.country);if(new Set(expected).size!==expected.length||new Set(actual).size!==actual.length||actual.length!==expected.length||expected.some(c=>!actual.includes(c)))throw Error('National registry differs from declared country scope');for(const c of registry.countries){if(!c.routes?.length)throw Error('Country has no registered route');for(const r of c.routes){const u=new URL(r.url);if(u.protocol!=='https:'||!Number.isInteger(r.depth)||r.depth<0||!Number.isInteger(r.maxPages)||r.maxPages<1)throw Error('Invalid national route');}}return true;}
+module.exports={validate};

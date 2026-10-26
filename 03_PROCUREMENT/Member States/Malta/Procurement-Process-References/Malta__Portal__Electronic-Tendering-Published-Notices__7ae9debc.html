@@ -1,0 +1,1095 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+    
+        <!-- ceproc.ok -->
+    
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+	<head>
+		<!--  -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title>Electronic Tendering - Published Notices</title>
+        <meta name="Description" content="e-Procurement platform home page"/>
+		<meta content="e-Procurement platform - Home page" name="Title"/>
+		<meta content="57" name="Type"/>
+		<meta content="DOCUMENTS/COMM/EN" name="Reference"/>
+		<meta content="European Dynamics" name="Creator"/>
+		<meta name="Language" content="en"/>
+		<meta content="25" name="Classification"/>
+		<meta content="tenders, e-procurement, documents, european law, legislation, economic operator, tenderer, procurement, contract, contracting authority, supplier, awarding authority, institutions, european union, eu" name="Keywords"/>
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+        
+        
+
+
+<script>
+	const PAGE_LITERAL = 'Page';
+	const RESULTS_PER_PAGE_LITERAL = 'Results Per page';
+	const ERROR_MSG_LITERAL = 'An error has occurred';
+	const WARNING_MSG_LITERAL = 'Warning';
+	const GOTO_PAGE_LITERAL = 'Goto Page';
+    const RESULTS_PER_PAGE_OPTIONS_LITERAL = ["10","20","50","100"];
+    const CONTEXT_PATH_LITERAL = '/epps';
+    const UPLOAD_ACCEPT_LITERAL = '.7z,.avi,.csv,.doc,.docm,.docx,.dot,.dotx,.dwg,.e0x,.fr,.geojson,.info,.jpeg,.jpg,.json,.mov,.mp4,.mpp,.msg,.odp,.ods,.odt,.p7m,.pages,.pdf,.png,.ppt,.pptx,.rar,.rtf,.svg,.tar,.tiff,.txt,.util,.webp,.wmv,.xls,.xlsb,.xlsm,.xlsx,.xml,.zip,.zipx';
+</script>
+
+        
+        <script src="/epps/scripts/bt/jquery-1.11.3.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/popper.min.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/navScroll.js" type="text/javascript"></script>
+		
+        <script type="text/javascript">
+	        //<![CDATA[
+	        var $j = jQuery.noConflict();
+	        //]]>
+        </script>
+        <script type="text/javascript">
+            var LOCALE = '';
+            var INVALID_CHARACTERS = '<>&%';
+            var defaults = {
+            		language: 'en', 
+                    showOn: "both",
+                    buttonText: "Calendar",
+                    buttonImage: "/epps/images/action_calendar.gif",
+                    buttonImageOnly: true, clearBtn: true,
+                    firstDay: 1,
+                    weekStart: 0,
+                    format: "dd/mm/yyyy",
+                    mandatory: false,
+                    todayHighlight: true
+           };
+            
+        </script>
+        <script type="text/javascript" src="/epps/scripts/common.js"></script>
+        <script type="text/javascript" src="/epps/scripts/bt/common.js"></script>
+        
+		<script type="text/javascript" src="/epps/scripts/bt/moment.min.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/moment-timezone-data.min.js"></script>
+		
+        <script type="text/javascript" src="/epps/scripts/jqComm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqForm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqTableSet.js"></script>
+        
+		
+        	<script type="text/javascript" src="/epps/scripts/bt/htmx.min.js"></script>
+			<!-- Morph Swaps supported on Chrome <script src="https://unpkg.com/idiomorph@0.3.0"></script> -->
+			<script type="text/javascript" src="/epps/scripts/bt/htmx.common.js"></script>
+		
+		
+		<link href="/epps/css/bt/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<link href="/epps/css/bt/bootstrap-datepicker3.min.css" rel="stylesheet" media='screen'/> 	
+		<link href="/epps/css/bt/jquery.treefilter.css" rel="stylesheet"/>
+		<link href="/epps/css/quill.css" rel="stylesheet">
+
+		<link href="/epps/css/bt/bootstrap-tour.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/bootstrap-tour.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="/epps/scripts/bt/bootstrap-tour.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/bootstrap-tour.min.js"></script>
+
+     	<script src="/epps/scripts/bt/bootstrap-datepicker.min.js" type="text/javascript" ></script>
+     	<script type="text/javascript" src="/epps/scripts/jquery.formatCurrency-1.4.0.min.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/jquery.formatCurrency.all.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/bt/jcv_handleMessages.js"></script>
+        
+       	<script type="text/javascript">
+			// functions from bt/common.js
+			$j(document).ready(function(){
+				noResultFoundBeautifier();
+				stackModeDataColumn();
+				$j('.countdown').textCountdown({remaining_text: " remaining characters"});
+				
+			    var millisDiff = 0;
+		        setInterval(function() {
+		        		millisDiff = rollTime(millisDiff); 
+		        	}, 1000);
+				
+				//TODO: modify to be enabled in internal sorting:
+				// tableSawSortableStackMode();
+
+				
+				HtmxCommon.addHtmxAttributesOnMainNavbar();
+				
+			});
+			
+			function rollTime(millisDiff) {
+	        	millisDiff += 1000;
+	            
+	        	var startDate = moment(1792874221113);
+	            var currentDate = new moment(startDate); 
+	            
+	            currentDate.add(millisDiff, 'ms');
+	            
+	            $j('.Time').html(currentDate.tz("Europe/Malta").format("HH:mm:ss z"));
+	            
+	            return millisDiff;
+            }
+
+		</script>
+		
+        <script type="text/javascript">
+            function setParentHref(link){
+                window.location.href=link;
+            }
+            
+            if(typeof String.prototype.trim !== 'function') {
+	             String.prototype.trim = function() {
+	            	  return this.replace(/^\s+|\s+$/g, ''); 
+	             }
+             }   
+        </script>		
+        
+      
+       
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<link href="/epps/css/bt/custom.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/bootstrap-datetimepicker.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/mm-folder.css" rel="stylesheet"/>
+		<script src="/epps/scripts/bt/tablesaw.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/tablesaw-init.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/jquery.treefilter.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/bt/bootstrap-datetimepicker.js" type="text/javascript" ></script>
+     	<script src="/epps/scripts/bt/metisMenu.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/bt/maincard.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/quill.js"></script>
+		<script src="/epps/scripts/quill.commons.js"></script>
+     	
+     	<script type="text/javascript">
+     		
+     			HtmxCommon.addEventListeners();
+			
+		</script>
+		
+	</head>
+	<body class="">
+
+	 
+	<header>
+			<nav class="navbar navbar-light bg-white navbar-expand-md p-0">
+				<div class="flex-column col-12 p-0">
+					<div class="row no-gutters p-2 align-items-center">
+						<div class="col">	
+							
+
+
+
+
+
+
+
+
+<div class="navbar-brand  mr-0 py-lg-1 py-xl-1 px-lg-2 px-xl-2"> 
+	<a href="/epps">
+		<img class="mr-lg-2 mr-xl-2 img-fluid " src="/epps/images/bt/logo.gif"  alt="Malta logo" />
+	</a>
+	<a href="http://www.gov.mt/" target="_blank">
+		<img class="mr-lg-2 mr-xl-2 img-fluid " src="/epps/images/logo_govmt.png"  alt="Malta goverment logo" />
+	</a>
+</div>
+						</div>
+						
+						
+
+
+
+
+
+
+
+
+
+
+	<div id="htmx-load-indicator" class="progress">
+		<div class="indeterminate"></div>
+	</div>
+
+
+
+						<div class="col">
+							<ul class="navbar-nav flex-row justify-content-end">
+								<li class="nav-item d-flex justify-content-between bd-highlight">
+									<div class="p-2 bd-highlight"style="margin-top:4px;">
+									  <p class="Time"> 						
+										</p>
+									</div>
+								</li>
+								<!-- Search -->
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function checkSubmit() {
+		var	quicSearchForm = document.forms["searchForm"];
+		var col = document.getElementsByName("searchType")[0];
+		if (col.selectedIndex != 0) {
+			if(checkInputField(quicSearchForm))quicSearchForm.submit();
+		}
+		return false;
+	}
+
+	function checkInputField(form){
+		var input = form[1].value;
+		if(containForbidenChars(input)){
+			form[1].value = '*';
+			alert("An invalid character was provided for search. Invalid characters include: <, >, &, % .");
+			return false;
+		}
+		return true;
+	}
+
+	function containForbidenChars(input){
+		return input.indexOf("<")!=-1 || input.indexOf(">")!=-1 || input.indexOf("%")!=-1 || input.indexOf("&")!=-1;
+	}
+
+	$j(document).ready(function(){
+		$j('#SearchInput').mouseover(function() {
+			$j(this).attr('title', "Tip: provide a relevant term within asterisks, eg. *consultancy*");
+
+		});
+		let sel = $j('#select1');  
+		if (!sel.val()  || sel.val()  === "Select...") { 
+			sel.val("cftFTS"); 
+		}
+	});
+
+	function openForm() {
+		document.getElementById("simple-search").style.height = "100%";
+		$j(".container").attr("aria-hidden","false");
+		$j("#simple-search").attr("aria-hidden","false");
+		$j("#simple-search").css("display", "block");
+	}
+	function closeForm() {
+		document.getElementById("simple-search").style.height = "0%";
+		$j(".container").attr("aria-hidden","true");
+		$j("#simple-search").attr("aria-hidden","true");
+		$j("#simple-search").css("display", "none");
+	}
+
+</script>
+
+
+
+	<li class="nav-item mr-2">
+		<div>
+			<a href="/epps/prepareAdvancedSearch.do?type=cftFTS" class="nav-link p-2"><span class="fa fa-search" aria-label='Advanced search'></span>
+				
+					
+				
+				
+
+				<span class="d-none d-lg-inline">Advanced search</span></a>
+		</div>
+	</li>
+
+
+
+
+
+
+
+								<!--// Search -->
+								
+								<li class="nav-item dropdown user">
+									
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+    	
+	    	<a href="/epps/authenticate/login" id="loginButton" role="button" class="btn login" aria-label="Log in">
+				<i class="fa fa-sign-in" aria-hidden="true"></i>
+				<span>Log in</span>
+	    	</a>
+        
+        
+	
+
+
+								</li>
+								
+							</ul>
+						</div>	
+					</div>	
+					<!-- MAIN NAVIGATION MENU -->
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- /.#mainnav || MAIN NAVIGATION MENU-->
+				</div>		
+			</nav>
+		</header> <!-- /.header -->
+		
+		
+
+		<div id="main-container" class="container-fluid pt-2" role="main">
+		
+            
+                
+            
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<h1 class="my-4">Published Notices</h1>
+
+
+
+
+            
+			<div class="row">
+				<div id="msgCol" class="col">
+          			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          		</div>
+    		</div>
+    		
+			<div class="row">
+				<div class="col">
+                	
+
+
+
+
+
+
+
+
+
+
+<noscript>
+	<div id="NoJavascriptMessage" class="alert alert-warning alert-dismissible">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		For enjoying the full functionality of this application, please ensure that Javascript is enabled in your browser.
+	</div>
+</noscript>
+
+          		</div>
+    		</div>
+			
+            <div class="row">
+				<div class="col">
+					
+         			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 		
+<script type="text/javascript">
+    $j('document').ready(function(ev) {
+    	// Adding column-toggle to T01
+        var table01 = $j("#T01");
+        table01.attr('data-tablesaw-mode', 'columntoggle');
+
+        //data-tablesaw-sortable-col
+        $j("#T01 thead th").each(function(index) {
+            $j(this).attr('data-tablesaw-sortable-col', '');
+            if([0,1,2,5].indexOf(index) <= -1) {  
+           		$(this).attr('data-tablesaw-priority', index);
+            }            
+        });
+    });
+</script>
+
+
+<div class="card-wrapper">
+	
+	<div class="Pagination6 row p-1 m-1  justify-content-between table-pagination">
+		<div class="col-12 col-sm-6"> 
+		 	| Displaying: <strong>1-10</strong> | <strong>75,575</strong> results in total.
+		</div>
+
+
+		<div>
+			<script type="text/javascript">
+				var scriptNode = $j(document.currentScript.parentElement);
+				writePageSelection("7,558", "?d-446978-p=", this, scriptNode, "1");
+			</script>
+		</div>
+		
+		<div class="btn-group align-self-end" role="group" aria-label="pagination toolbar">
+			<button type="button" class="btn btn-primary btn-lg rounded-left" title="First" type="button" id="firstNav" disabled="disabled">
+				<i class="fa fa-angle-double-left"></i>
+			</button>
+			<button type="button" class="btn btn-primary btn-lg" title="Previous" type="button" id="previousNav" disabled="disabled">
+				<i class="fa fa-angle-left"></i>
+			</button>
+			
+			<div class="btn-group" role="group">
+				<!-- Go to Page: JS Code Append -->
+			</div>
+			
+			<button type="button" class="btn btn-lg btn-primary" title="Next" type="button" id="nextNav"
+				onclick=window.location.href=this.getAttribute("href") href="?d-446978-p=2">
+				<i class="fa fa-angle-right"></i>
+			</button>
+			<button type="button" class="btn btn-lf btn-primary rounded-right btn-primary" title="Last" type="button" id="lastNav"
+				onclick=window.location.href=this.getAttribute("href") href="?d-446978-p=7558">
+				<i class="fa fa-angle-double-right"></i>
+			</button>
+		</div>
+
+	</div>
+
+<table id="T01" class="table table-striped tablesaw">
+<thead>
+<tr>
+<th>Type<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=title.keyword&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=title.keyword&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Title<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=noticeTitle.keyword&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=noticeTitle.keyword&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Date Upl.<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=dateCreated&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=dateCreated&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Lang.<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=language&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=language&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Status<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=status&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=status&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Date Pub.<a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=datePublished&amp;d-446978-p=1"><a href="?d-446978-o=2&amp;d-446978-n=1&amp;d-446978-s=datePublished&amp;d-446978-p=1"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th></tr></thead>
+<tbody>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112147" value="d35c92a8-cba8-4985-bf3a-c647a4a94825"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=14221810&amp;documentId=14221865&amp;noticeType=16&amp;extId=d35c92a8-cba8-4985-bf3a-c647a4a94825&amp;lang=en&amp;noticeId=14221863&amp;isNational=true">National Contract notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            SPD3/2026/083 - TENDER FOR THE HIRING AND INSTALLATION OF VIDEO PROJECTION SYSTEMS FOR THE ‘CHRISTMAS IT’S TIME’ CONCERT IN GOZO
+	        
+	        
+	    </td>
+<td>
+			
+				23/10/2026 17:20:42
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 22:01:04
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112139" value="5727e65b-ce40-457f-b5a8-6b2a6b37da0a"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=13625575&amp;documentId=14221158&amp;noticeType=29&amp;extId=5727e65b-ce40-457f-b5a8-6b2a6b37da0a&amp;lang=en&amp;noticeId=14221129&amp;isNational=true">National Contract award notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            SPD4/2026/011 - Tender for Research on Integration Issues and the Development of Topic-Specific Information Packages for the Human Rights Directorate
+	        
+	        
+	    </td>
+<td>
+			
+				23/10/2026 13:40:31
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 13:57:11
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112132" value="406ce7ac-5ca1-4eb5-87dc-1ae4c3f8cc81"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=13765754&amp;documentId=14220204&amp;noticeType=29&amp;extId=406ce7ac-5ca1-4eb5-87dc-1ae4c3f8cc81&amp;lang=en&amp;noticeId=14220181&amp;isNational=true">National Contract award notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            SPD7/2025/081 - SUPPLIES – TENDER FOR THE PROVISION AND INSTALLATION OF BROADBAND ABSORPTION ACOUSTIC PANELS AT THE FINANCIAL INTELLIGENCE ANALYSIS UNIT’S (FIAU) PREMISES
+	        
+	        
+	    </td>
+<td>
+			
+				23/10/2026 10:50:07
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 10:58:29
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112123" value="a52ab4af-8cf6-44c2-bcee-c887f6de226c"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=13952303&amp;documentId=14220000&amp;noticeType=29&amp;extId=a52ab4af-8cf6-44c2-bcee-c887f6de226c&amp;lang=en&amp;noticeId=14219023&amp;isNational=true">National Contract award notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            RESTORATION OF TWO (2) IN NUMBER STATUES LOCATED ON THE FAÇADE OF THE FONTANA PARISH CHURCH, FONTANA, GOZO
+	        
+	        
+	    </td>
+<td>
+			
+				23/10/2026 09:58:29
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 10:11:49
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112125" value="9f8bca1d-c04f-4ccb-b144-bb6427f8eaf5"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=14049592&amp;documentId=14219959&amp;noticeType=16&amp;extId=9f8bca1d-c04f-4ccb-b144-bb6427f8eaf5&amp;lang=en&amp;noticeId=14219953&amp;isNational=true">National Contract notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            SPD4/2026/040 - Tender For The Supply And Delivery Of Two (2) New Fully Electric Vehicles For Saint Vincent De Paul
+	        
+	        
+	    </td>
+<td>
+			
+				23/10/2026 10:08:27
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 10:11:01
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112121" value="4f659c94-587d-45d1-8dd3-1346690ff4d6"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=13948410&amp;documentId=14218912&amp;noticeType=29&amp;extId=4f659c94-587d-45d1-8dd3-1346690ff4d6&amp;lang=en&amp;noticeId=14218891&amp;isNational=true">National Contract award notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            SERVICES– FRAMEWORK CONTRACT FOR THE SERVICES OF A HEALTH AND SAFETY PROJECT SUPERVISOR TO THE GRAND HARBOUR REGENERATION CORPORATION
+	        
+	        
+	    </td>
+<td>
+			
+				23/10/2026 09:35:50
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 09:44:13
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112056" value="9468e83a-9fa6-43ca-8564-be9f5216f183"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=14202381&amp;documentId=14205901&amp;noticeType=16&amp;extId=9468e83a-9fa6-43ca-8564-be9f5216f183&amp;lang=en&amp;noticeId=14205392&amp;isNational=true">National Contract notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Supply, Installation, Commissioning, and Support of an Automatic Number Plate Recognition (ANPR) System
+	        
+	        
+	    </td>
+<td>
+			
+				20/10/2026 10:51:21
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 09:00:02
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112118" value="b2fa7207-fe4a-44ae-b58a-d4c365b45da4"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=14211883&amp;documentId=14217749&amp;noticeType=16&amp;extId=b2fa7207-fe4a-44ae-b58a-d4c365b45da4&amp;lang=en&amp;noticeId=14217743&amp;isNational=true">National Contract notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            SPD6/2026/058 - SUPPLIES - FRAMEWORK CONTRACT FOR THE LEASING OF CARD PRINTERS AND LAMINATORS AND SUPPLY OF CARD AND LAMINATES TO TRANSPORT MALTA
+	        
+	        
+	    </td>
+<td>
+			
+				23/10/2026 07:12:43
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 07:25:17
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112102" value="67ad2ea5-6200-4263-a706-d87546fd5823"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=14216145&amp;documentId=14216420&amp;noticeType=20&amp;extId=67ad2ea5-6200-4263-a706-d87546fd5823&amp;lang=en&amp;noticeId=14216378&amp;isNational=false">Contract notice - general directive, light regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            Call for Quotations for the Provision of Waste Collection Services, using environmentally friendly transportation services, for the Malta Financial Services Authority.
+	        
+	        
+	    </td>
+<td>
+			
+				22/10/2026 13:35:38
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 00:00:00
+			
+	    </td></tr>
+<tr>
+<td>
+			<input type="hidden" id="external_id_112087" value="11efb22d-9211-48ef-84d9-0af948018b18"/>
+	        
+	            <a href="/epps/notices/viewPublishedContractNotice.do?resourceId=14214427&amp;documentId=14214872&amp;noticeType=16&amp;extId=11efb22d-9211-48ef-84d9-0af948018b18&amp;lang=en&amp;noticeId=14214855&amp;isNational=false">Contract notice - general directive, standard regime</a>
+	        
+	        
+	    </td>
+<td>
+	        
+	            CT2193/2026 - FRAMEWORK CONTRACT FOR THE SUPPLY OF DOWNLIGHT - 2000 LUMENS, DALI
+	        
+	        
+	    </td>
+<td>
+			
+				22/10/2026 10:12:10
+			
+	    </td>
+<td>
+	        EN
+	    </td>
+<td>
+	        Published
+	    </td>
+<td>
+			
+				23/10/2026 00:00:00
+			
+	    </td></tr></tbody></table><input type="hidden" name="tableUid" value="notice">
+</div>
+
+
+
+				</div>
+			</div>
+						
+			
+			
+			
+
+		</div><!-- /.container-fluid -->
+		
+	
+
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	<script type="text/javascript">
+	
+	    $j('document').ready(function(ev){
+	    	$j("a.PopUp").click(function(){
+	    		PopUpOpts = {
+	        		windowname: 'popupwindow',
+	        		width:		810,
+	        		height:		600,
+	        		scroll:		1,
+	        		resizable:	0
+	        	};
+	           	$j(this).PopUp(this.href, PopUpOpts); 
+	            return false; 
+	        }); 
+	    });
+	    
+	</script>
+	
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+			
+				<div class="col-sm">
+					<ul class="list-unstyled menu-footer-list">
+                        
+                            <li>
+                                <a href="/epps/app/viewPublication.do">Published Annual Procurement Plan</a>
+                            </li>
+                        
+			        	<li>
+							<a href="/epps/prepareCurrentOpportunities.do?currentType=cft">Latest CfTs</a>
+			            </li>
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=legal">Public procurement legislation</a>
+			            </li>
+			      		
+				       	
+					    
+					    	
+					       	
+					       		<li>
+					 				<a href="/epps/prepareAdvancedSearch.do?type=cftFTS&amp;viewMode=searchOpened">Opened Tender Details</a>
+				        		</li>
+					       	
+					    
+						
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=statistics">Resources</a>
+			            </li>
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=calendar">Calendar</a>
+			            </li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<ul class="list-unstyled">
+						<li>
+			            	<a href="/epps/viewInfo.do?section=eproc">Procurement Guidance Publications</a>
+			            </li>
+			            <li>
+			               <a href="/epps/viewInfo.do?section=newItems">News</a>
+			            </li>
+			            <li>
+			            	<a href="/epps/viewInfo.do?section=links">Relevant links</a>
+			            </li>
+		        		<li>
+			            	<a href="/epps/viewInfo.do?section=faq">FAQ</a>
+			            </li>
+		        		<li>
+			            	<a href="/epps/viewInfo.do?section=thresholds">Legislation on Threshold</a>
+			            </li>
+			            <li>
+			            	<a href="/epps/viewInfo.do?section=templates">Templates</a>
+			            </li>
+					</ul>
+				</div>
+			
+				<div class="col-sm">
+					<ul class="list-unstyled">	
+                    
+		    		    
+				        
+
+				        
+			        	<li id="Help">
+				            <a href="/epps/viewInfo.do?isPopup=true&amp;section=userManual" style="margin:0;" class="PopUp">Help</a>
+				        </li>
+				        <li id="About">
+				            <a href="/epps/DisplayHeaderStaticTextAction.do" style="margin:0;" class="PopUp">About</a>
+				        </li>		        
+				        <li id="Contact">
+				            <a href="/epps/PrepareContactUsAction.do" style="margin:0;" class="PopUp">Contact us</a>
+				        </li>
+                        <li id="Terms">
+                            <a href="/epps/PrepareTermsOfUseAction.do" style="margin:0;" class="PopUp">Terms of Use</a>
+                        </li>
+                        
+                            <li id="Ocds">
+                                <a href="/epps/PrepareOcdsPolicyAction.do" style="margin:0;" class="PopUp">OCDS policy</a>
+                            </li>
+                        
+                        
+                        <li>
+                            <a href="/epps/viewAccessibilityStatement.do">Accessibility statement</a>
+                        </li>
+                        
+                        
+					</ul>
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col text-center">
+					<span>Copyright &copy; European Dynamics - Last update: 24 October 2026</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Footer // -->
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+		
+	</body>
+	
+
+</html>
+

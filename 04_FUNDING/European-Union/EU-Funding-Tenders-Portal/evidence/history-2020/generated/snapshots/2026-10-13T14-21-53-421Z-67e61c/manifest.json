@@ -1,0 +1,5089 @@
+{
+  "schemaVersion": 1,
+  "collectorVersion": "1.0.0",
+  "runId": "2026-10-13T14-21-53-421Z-67e61c",
+  "status": "complete",
+  "config": {
+    "version": "1.0.0",
+    "mode": "history",
+    "since": 2020,
+    "until": 2020,
+    "pageSize": 100
+  },
+  "startedAt": "2026-10-13T14:21:53.422Z",
+  "finishedAt": "2026-10-13T14:31:11.881Z",
+  "error": null,
+  "gaps": [],
+  "scope": "Public English SEDIA funding types 1,2,8. Historical startDate OR deadlineDate in selected years; undated retained for review.",
+  "absoluteHistoricalCompleteness": false,
+  "detailDocumentsDownloaded": false,
+  "awardsCollected": false,
+  "source": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA",
+  "ledger": [
+    {
+      "id": "history-2020-01",
+      "totalAtStart": 482,
+      "received": 482,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-02",
+      "totalAtStart": 263,
+      "received": 263,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-03",
+      "totalAtStart": 282,
+      "received": 282,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-04",
+      "totalAtStart": 362,
+      "received": 362,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-05",
+      "totalAtStart": 348,
+      "received": 348,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-06",
+      "totalAtStart": 344,
+      "received": 344,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-07",
+      "totalAtStart": 119,
+      "received": 119,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-08",
+      "totalAtStart": 119,
+      "received": 119,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-09",
+      "totalAtStart": 333,
+      "received": 333,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-10",
+      "totalAtStart": 131,
+      "received": 131,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-11",
+      "totalAtStart": 85,
+      "received": 85,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "history-2020-12",
+      "totalAtStart": 109,
+      "received": 109,
+      "complete": true,
+      "warnings": []
+    },
+    {
+      "id": "undated-review",
+      "totalAtStart": 254,
+      "received": 254,
+      "complete": true,
+      "warnings": []
+    }
+  ],
+  "pages": [
+    {
+      "shard": "history-2020-01",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-01-page-00001.json",
+      "sha256": "ec18601309c35efa35ec645e501d681b16ef5362b2a6c77d299ad6dfa0ec1a67",
+      "fingerprint": "57a07bb0cdf5d9a22595c34a8a9176cb8bf91034b5a6708e169a449c42e8d122",
+      "checkedAt": "2026-10-13T14:21:56.761Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-01",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-01-page-00002.json",
+      "sha256": "78587b2d0d106631d646889d35f95132566669f764b75c66a0d1c9c8b65decc3",
+      "fingerprint": "1d79bf733cad9d788396f16eec61c55266bd331b75b2c60b9fb45c5d23ac61c4",
+      "checkedAt": "2026-10-13T14:22:14.752Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-01",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-01-page-00003.json",
+      "sha256": "9b402e8d6c078d792b60e55e9ca284e13eba74129c2f0dcbacffe5ec6d46f487",
+      "fingerprint": "65d251c8bc5f41bfd3b312ce42a46bcae7257e671b91d90bcc066e584fb769d3",
+      "checkedAt": "2026-10-13T14:22:17.347Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=3",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-01",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-01-page-00004.json",
+      "sha256": "d44fb8ce8554cdf557231f76343c0ca85c635b1c28b209acaa6ee2b315d10b06",
+      "fingerprint": "52fc4da88de7182779961b16de09610048e7d1d186c9fc20f1d9672864e86098",
+      "checkedAt": "2026-10-13T14:22:25.889Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=4",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-01",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-01-page-00005.json",
+      "sha256": "ac89c9a606a66bf5fed51a71219ea2a622b42c3c888657a379f602dab3a20eeb",
+      "fingerprint": "eb21e3dadae592606ff0fdc31626d641c5ab1878811a646fbc92c815697c8aed",
+      "checkedAt": "2026-10-13T14:22:32.842Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=5",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1577836800000,
+                        "lte": 1580515199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 82
+    },
+    {
+      "shard": "history-2020-02",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-02-page-00001.json",
+      "sha256": "092d761d8301924eba3a559b659f3be363866847ac4083a7ab58acd8e4c948f7",
+      "fingerprint": "967157d49e9571fc687f67b4163ae808433ffeb43ef15d66530e9efc4088fccc",
+      "checkedAt": "2026-10-13T14:25:11.607Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1580515200000,
+                        "lte": 1583020799999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1580515200000,
+                        "lte": 1583020799999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-02",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-02-page-00002.json",
+      "sha256": "9505db7fdcdab83bece2fdddcbb1352525dcf4563523c19cd757d8c84d56ace2",
+      "fingerprint": "f1e8affc17def8b85190e41ceb10df5b6ffe263b209b2c22b7d50f19bd4f8fc7",
+      "checkedAt": "2026-10-13T14:25:12.942Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1580515200000,
+                        "lte": 1583020799999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1580515200000,
+                        "lte": 1583020799999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-02",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-02-page-00003.json",
+      "sha256": "968e0c3ef23164840d4406b5fdfb1d302ee4aac161d6401613c513b909038da1",
+      "fingerprint": "75b448616be1ba9ba1aadeaf717b5d7c887cc9c219dfe3f936a6b09d03a4709b",
+      "checkedAt": "2026-10-13T14:25:15.290Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=3",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1580515200000,
+                        "lte": 1583020799999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1580515200000,
+                        "lte": 1583020799999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 63
+    },
+    {
+      "shard": "history-2020-03",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-03-page-00001.json",
+      "sha256": "eebb737a4e0c2caf55a5cb9e210a8bd66bb82b8b2e8706cb69733f1b1e3411f0",
+      "fingerprint": "3f563a68ef916633483ff0a845c6a6f8021ad90e686bae037187c23f17958486",
+      "checkedAt": "2026-10-13T14:25:22.499Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1583020800000,
+                        "lte": 1585699199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1583020800000,
+                        "lte": 1585699199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-03",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-03-page-00002.json",
+      "sha256": "e1195aac11035ad3d160759cf73ff6c50d5954e09c17ecdb037d411f6b791ea7",
+      "fingerprint": "57c3dd45fcb16de15e7f80b96bd6a0d2a436992e09ae3e00c6dc37f35ca65479",
+      "checkedAt": "2026-10-13T14:25:27.696Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1583020800000,
+                        "lte": 1585699199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1583020800000,
+                        "lte": 1585699199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-03",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-03-page-00003.json",
+      "sha256": "e4833c40ed896b67c0ec3f2aaf7be3968ea15f74b970ffb457dd4c7501b1034a",
+      "fingerprint": "161b183620ccf427fe2030f7087c711a85a3e74071782a37dd9278856ab67c90",
+      "checkedAt": "2026-10-13T14:25:32.043Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=3",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1583020800000,
+                        "lte": 1585699199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1583020800000,
+                        "lte": 1585699199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 82
+    },
+    {
+      "shard": "history-2020-04",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-04-page-00001.json",
+      "sha256": "fbafeab174d17717733defa9d5cdb3b3da934c9f1d2be1004baddafbbeca2aa2",
+      "fingerprint": "fab6edc9d5c9b5340448c5d700493bec049de4ec6aa9125b02a8843b3a53af95",
+      "checkedAt": "2026-10-13T14:25:38.350Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1585699200000,
+                        "lte": 1588291199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1585699200000,
+                        "lte": 1588291199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-04",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-04-page-00002.json",
+      "sha256": "868745ac39ef1ecadb6c1f71e10ab8c9b8de5d695bdfeb96e96958690baf18bb",
+      "fingerprint": "5b18dfb366e653a1ea278af9bef468a57ccd6fa18a773be3058edb737cbae7b9",
+      "checkedAt": "2026-10-13T14:25:41.473Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1585699200000,
+                        "lte": 1588291199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1585699200000,
+                        "lte": 1588291199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-04",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-04-page-00003.json",
+      "sha256": "e95140c294bf608ca9cd34f5a9c5ce02aeaaf0f9e7642371e5d7783752879241",
+      "fingerprint": "ce1db5fd76f9781fd3104544ee9e5ed67215b66277d79a7eac2598f1bc232458",
+      "checkedAt": "2026-10-13T14:25:47.910Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=3",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1585699200000,
+                        "lte": 1588291199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1585699200000,
+                        "lte": 1588291199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-04",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-04-page-00004.json",
+      "sha256": "8cbf20294050f370147860bce7796b7bea8eb1f1ae063741e77e638c07ba9b11",
+      "fingerprint": "1c5955484e25ee4a4cdac796568edad01b50a9d5d3cc378a72d71afa4dec1f52",
+      "checkedAt": "2026-10-13T14:25:51.413Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=4",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1585699200000,
+                        "lte": 1588291199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1585699200000,
+                        "lte": 1588291199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 62
+    },
+    {
+      "shard": "history-2020-05",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-05-page-00001.json",
+      "sha256": "9198f8d274502109a23a49a7dada5503fcec59387f741040d97c7681018eb25f",
+      "fingerprint": "5cd82e219987104a5b8ee90cfcf756b1be6c09bcfe0f9f79d715f16678ccc6b8",
+      "checkedAt": "2026-10-13T14:25:54.793Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1588291200000,
+                        "lte": 1590969599999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1588291200000,
+                        "lte": 1590969599999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-05",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-05-page-00002.json",
+      "sha256": "3f3432ec3d0ea0126e935d3482b9ee116fc45873302fdb36bd497ce9dfa1ad69",
+      "fingerprint": "422f77568c6325fcd479d9ac7d0940a08cd8922c2ec3f5af496e650a232ad5f1",
+      "checkedAt": "2026-10-13T14:25:57.046Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1588291200000,
+                        "lte": 1590969599999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1588291200000,
+                        "lte": 1590969599999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-05",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-05-page-00003.json",
+      "sha256": "08ed17e296ce7b1e4283f713657f649647ac9d9dc678e523a8bab7bdc25b86a3",
+      "fingerprint": "9e82a4ee5316ae96aa6907ab676f6548b6019805123aee1c583f93118e0999f5",
+      "checkedAt": "2026-10-13T14:26:01.532Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=3",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1588291200000,
+                        "lte": 1590969599999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1588291200000,
+                        "lte": 1590969599999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-05",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-05-page-00004.json",
+      "sha256": "61afe984ed4aa410873e3cc4e86278d140acfd36efcdf8eec2f6e6f7de5de154",
+      "fingerprint": "5d5f4ab3e0f2e82ebdc32cccfdc1f8ae87755e3c5376cddf0679a0c130584f91",
+      "checkedAt": "2026-10-13T14:26:02.617Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=4",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1588291200000,
+                        "lte": 1590969599999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1588291200000,
+                        "lte": 1590969599999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 48
+    },
+    {
+      "shard": "history-2020-06",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-06-page-00001.json",
+      "sha256": "081da5dc54d9068434c91aa86f3aa87f82f575611d69d14a071469ebdcf8e087",
+      "fingerprint": "d4914cc59625404f8fcc012a5e7fbe2ba42b20df8ee1184a4f019466315016c5",
+      "checkedAt": "2026-10-13T14:26:05.245Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1590969600000,
+                        "lte": 1593561599999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1590969600000,
+                        "lte": 1593561599999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-06",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-06-page-00002.json",
+      "sha256": "356a8328c5039131145432ffb6937e70351468d4829b606feee4daea3f30818a",
+      "fingerprint": "d35c0daa27ee0791b5e0ef23c1e618a4535cb553af79057b3002996b258833cf",
+      "checkedAt": "2026-10-13T14:26:09.776Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1590969600000,
+                        "lte": 1593561599999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1590969600000,
+                        "lte": 1593561599999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-06",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-06-page-00003.json",
+      "sha256": "b21dc9f2be65e5b6937a70fd4e5e2a4cb080516a27a071f944dd55a14ae65e64",
+      "fingerprint": "1c7ca0a96668f12d4b61434ca5e65302820baeff2a06bfc07277b03430b0983f",
+      "checkedAt": "2026-10-13T14:26:13.148Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=3",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1590969600000,
+                        "lte": 1593561599999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1590969600000,
+                        "lte": 1593561599999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-06",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-06-page-00004.json",
+      "sha256": "4f7a9ea78bd834191692f6420dc4c9bb97d4b13b626fa2bb497babc81839df29",
+      "fingerprint": "2e43f2e21005c40738bc3ca7c85c8c974563524909f0da86be9f910e6737615e",
+      "checkedAt": "2026-10-13T14:26:14.459Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=4",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1590969600000,
+                        "lte": 1593561599999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1590969600000,
+                        "lte": 1593561599999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 44
+    },
+    {
+      "shard": "history-2020-07",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-07-page-00001.json",
+      "sha256": "fbd874bdc3f26bfb771aa15fd109dbf4d0b96fc834eede065cabd00dabd53746",
+      "fingerprint": "8a222ccb283c21ecac41512933c787465ff9c8e474e7973ba73ad6c0cccdd2b8",
+      "checkedAt": "2026-10-13T14:26:15.874Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1593561600000,
+                        "lte": 1596239999999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1593561600000,
+                        "lte": 1596239999999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-07",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-07-page-00002.json",
+      "sha256": "574384f17fc81ce23fd81997337fddcef3defc4dbe39a586fa0c1df69a8cda3d",
+      "fingerprint": "d5aa6c432972e29f83be1d15552c9224a5bc7f1cae314b46f39232605fd7c750",
+      "checkedAt": "2026-10-13T14:26:16.799Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1593561600000,
+                        "lte": 1596239999999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1593561600000,
+                        "lte": 1596239999999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 19
+    },
+    {
+      "shard": "history-2020-08",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-08-page-00001.json",
+      "sha256": "85b4bfd8418510f97dfd926a5eea8dad482a409b045c30c3c9802f6f0e935765",
+      "fingerprint": "c6e79c61c1fb4a1d735ddd38968ea860ac8bab6d516f46b793609294360645a6",
+      "checkedAt": "2026-10-13T14:26:18.776Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1596240000000,
+                        "lte": 1598918399999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1596240000000,
+                        "lte": 1598918399999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-08",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-08-page-00002.json",
+      "sha256": "fd2e8069adb2b5402c980cc31ab20414288f80123f7332daae2639605b7cb9f9",
+      "fingerprint": "19ec807f83789c84d47deda72a30390c0a2d6e58376763d7d0ae6158130f36a3",
+      "checkedAt": "2026-10-13T14:26:19.869Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1596240000000,
+                        "lte": 1598918399999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1596240000000,
+                        "lte": 1598918399999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 19
+    },
+    {
+      "shard": "history-2020-09",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-09-page-00001.json",
+      "sha256": "ba4e8e6c15b73c1a92d934ecf0d4a69600632d41c1e55db9335d116134e41634",
+      "fingerprint": "2e268855f90c1f1861a1629e8be75065004a4a5a4a110d238d208c6b63aaa1a6",
+      "checkedAt": "2026-10-13T14:26:26.048Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1598918400000,
+                        "lte": 1601510399999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1598918400000,
+                        "lte": 1601510399999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-09",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-09-page-00002.json",
+      "sha256": "94a11ccd9d5f616c1c55919ef8153462e64869316588b46d1a18dcdf5a2f0e65",
+      "fingerprint": "4a927deef47461579524f965c74530c0442f77ff15d72f7dfe2b377c990ffd29",
+      "checkedAt": "2026-10-13T14:26:33.333Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1598918400000,
+                        "lte": 1601510399999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1598918400000,
+                        "lte": 1601510399999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-09",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-09-page-00003.json",
+      "sha256": "84ef5cea02c42fabf4b67ad1e38797710229970d408dbc857b14da9e209f005c",
+      "fingerprint": "621474f37a638d1f792eb91f8f09e2e1d68e119ea927018ea6ec0a083e84fec2",
+      "checkedAt": "2026-10-13T14:26:54.695Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=3",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1598918400000,
+                        "lte": 1601510399999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1598918400000,
+                        "lte": 1601510399999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-09",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-09-page-00004.json",
+      "sha256": "e3cdd180581dad2e72eeba158128ec023e1ab42be3afab659275334fe8d1949c",
+      "fingerprint": "97fb52ae689d6e2ddc677f1dedcd82280f334a8b4ab0ccbeb5f070c70ff6759a",
+      "checkedAt": "2026-10-13T14:26:59.877Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=4",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1598918400000,
+                        "lte": 1601510399999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1598918400000,
+                        "lte": 1601510399999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 33
+    },
+    {
+      "shard": "history-2020-10",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-10-page-00001.json",
+      "sha256": "ced71bec1f29e14843dc7df0fa3898185753095ec3630318e356d8d18d23e6fe",
+      "fingerprint": "c91c9953b55f7044de596547afd7563c65aad76560f834ca3f259daef765093a",
+      "checkedAt": "2026-10-13T14:27:01.796Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1601510400000,
+                        "lte": 1604188799999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1601510400000,
+                        "lte": 1604188799999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-10",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-10-page-00002.json",
+      "sha256": "7cffa770344369d89e7237ec962bc7af396e7bf14f7a929eeb1ef53132a05efb",
+      "fingerprint": "e8694047d8445886d780149ab0739f6fe285fd8bfd63a0787584669d171fe812",
+      "checkedAt": "2026-10-13T14:27:03.393Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1601510400000,
+                        "lte": 1604188799999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1601510400000,
+                        "lte": 1604188799999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 31
+    },
+    {
+      "shard": "history-2020-11",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-11-page-00001.json",
+      "sha256": "8bd49b6f9b5324e1d76a7067a1013d75d8d26cb3d738d9b4c4c67ba9e9f528bf",
+      "fingerprint": "82011c83fcbfb0528f164b94bc10a61a326ce36decea021ac28d8729e7fdafd3",
+      "checkedAt": "2026-10-13T14:27:05.291Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1604188800000,
+                        "lte": 1606780799999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1604188800000,
+                        "lte": 1606780799999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 85
+    },
+    {
+      "shard": "history-2020-12",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-12-page-00001.json",
+      "sha256": "4b54426dce882ed0c46ea0c45387dee735a15297019e7dceccc030ff63dcb5e9",
+      "fingerprint": "7950f24afa1d211f13e271cdde37eebea9fcbd72cdb0a602dd6c476edb6b4481",
+      "checkedAt": "2026-10-13T14:27:06.697Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1606780800000,
+                        "lte": 1609459199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1606780800000,
+                        "lte": 1609459199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "history-2020-12",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/history-2020-12-page-00002.json",
+      "sha256": "8481612ab3492ec1cbf60637d4adacc9ffe1442312b7bd0902a210cf91f67b76",
+      "fingerprint": "e70b87fc0e8836a202fd4d85c458068147ae2b210a620764a0f6eb4ee51224b0",
+      "checkedAt": "2026-10-13T14:27:07.388Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 1606780800000,
+                        "lte": 1609459199999
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 1606780800000,
+                        "lte": 1609459199999
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 9
+    },
+    {
+      "shard": "undated-review",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/undated-review-page-00001.json",
+      "sha256": "7762317b5c196958175bcfa0094efee1909c992bf3564534b2927fc6d6cc2e31",
+      "fingerprint": "a83daa316a303d26185baa48c1dfe13711edc3813a8b8434eac569774a6114ff",
+      "checkedAt": "2026-10-13T14:27:08.056Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=1",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "must_not": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 0
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 0
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "undated-review",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/undated-review-page-00002.json",
+      "sha256": "57c3a754e49af5e5ff24c9bfac426abbb2a0944b87fa04b02e92b0324d3d890c",
+      "fingerprint": "bb1ed62653d299c1fda68b13ae16c1be59d94ad21e7522a0b3d5e93c1a7aaa8c",
+      "checkedAt": "2026-10-13T14:27:08.757Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=2",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "must_not": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 0
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 0
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 100
+    },
+    {
+      "shard": "undated-review",
+      "file": "raw/2026-10-13T14-21-53-421Z-67e61c/undated-review-page-00003.json",
+      "sha256": "0e781b28d9bec0e859e287d1e1f45d4c5f29af38adc45ad7c8459a53745c24b9",
+      "fingerprint": "4a84e31b1547c8927ae9551a66e1767d0f691aeec3e99ba0258e5b25d5cb73f0",
+      "checkedAt": "2026-10-13T14:27:09.428Z",
+      "requestUrl": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=100&pageNumber=3",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "terms": {
+                "type": [
+                  "1",
+                  "2",
+                  "8"
+                ]
+              }
+            },
+            {
+              "bool": {
+                "must_not": [
+                  {
+                    "range": {
+                      "startDate": {
+                        "gte": 0
+                      }
+                    }
+                  },
+                  {
+                    "range": {
+                      "deadlineDate": {
+                        "gte": 0
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "terms": {
+                "language": [
+                  "en"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "records": 54
+    }
+  ],
+  "counts": {
+    "records": 1201,
+    "observed": 1201,
+    "retained": 0,
+    "duplicates": 2030,
+    "changedVersions": 0,
+    "completedShardRecords": 3231
+  },
+  "limitations": [
+    "No CORDIS awards/beneficiaries collection in item 1.",
+    "Eligibility, budgets and multiple-stage deadlines require topic-document review.",
+    "Records with both dates before 2020 are outside backfill scope; undated records are not asserted to be post-2020.",
+    "Live pagination is not a transaction; rerun periodically to reconcile.",
+    "complete means the requested index traversal passed coverage checks, not all EU funding is known."
+  ],
+  "conflictingCanonicalIds": [],
+  "files": [
+    {
+      "view": "master",
+      "file": "funding-master.part-0001.jsonl",
+      "records": 6,
+      "bytes": 127415,
+      "sha256": "12757a03dba978fb346f785462648df8a9f4b77ded7d9784a07440bcac02c341"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0002.jsonl",
+      "records": 6,
+      "bytes": 127070,
+      "sha256": "f1d3b626a164ca31c6441aed5c8a68724cad9f46d712f0a25fe17bc921913212"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0003.jsonl",
+      "records": 3,
+      "bytes": 46202,
+      "sha256": "cae74b6ed4c18b00dec1e93d629a0649d5ded784af31957e7cf73c2a1bbb72e8"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0004.jsonl",
+      "records": 1,
+      "bytes": 185421,
+      "sha256": "124556b87a9069e0c360ee967e9a51639a937dd776ed8ea26101412fd7644abc"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0005.jsonl",
+      "records": 1,
+      "bytes": 144141,
+      "sha256": "35131e202e9d5a57654a09890eafbf2bf1a1601e15dfc66ea906734b0fa78a1a"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0006.jsonl",
+      "records": 1,
+      "bytes": 142999,
+      "sha256": "1c2393d43c8c3e564e96bbe6527c19817e13e8051e5114a79c191452ffda313f"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0007.jsonl",
+      "records": 1,
+      "bytes": 146275,
+      "sha256": "4e1cd53f67897741391916afd824082c7f065dfd9b433300ae8b278e3dcc216e"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0008.jsonl",
+      "records": 1,
+      "bytes": 147147,
+      "sha256": "8195fa609511e262663836e862606a78c8d5bf950c3b848e03ae80c3f1e66d4f"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0009.jsonl",
+      "records": 1,
+      "bytes": 142916,
+      "sha256": "84056f95a32455257db57ad5d59fb5cbbd6245ecdd4c0338a83dc5667ac86e6f"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0010.jsonl",
+      "records": 1,
+      "bytes": 142882,
+      "sha256": "65f1773be0a14206267289649f08a7a5b94a651d7b71f87f5a6496370dc2fa4d"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0011.jsonl",
+      "records": 1,
+      "bytes": 144516,
+      "sha256": "7823f3705e79b66fa3e65a8b6b20eb9ca1a1ed931a63f3f7e0feda767fafbe1b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0012.jsonl",
+      "records": 1,
+      "bytes": 142480,
+      "sha256": "e210236079e980aa9c9bf09ae2c1c0e01ddbd498039740bf11d1b23a175226f9"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0013.jsonl",
+      "records": 1,
+      "bytes": 143196,
+      "sha256": "fffa4da7c348be6e0ff6a8d4c7f24b3614c641b55de70ed2cd8c4b549b69aab2"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0014.jsonl",
+      "records": 1,
+      "bytes": 145014,
+      "sha256": "37d5a40a2d8953ba93dffc99cbcdc5fe64f074aa6b39c15080781f969ee3c864"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0015.jsonl",
+      "records": 1,
+      "bytes": 142801,
+      "sha256": "8286bc528dcaf4c60e97bbf6cc54deeb30597017d47d7ddaa92cbd225673974d"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0016.jsonl",
+      "records": 1,
+      "bytes": 142623,
+      "sha256": "1350b4861c337baafe99d07ad00bb2e06b8151a2e8c6711881520cc6971fe22c"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0017.jsonl",
+      "records": 1,
+      "bytes": 142855,
+      "sha256": "662af7cf46423298d077771c01f63aba67c8ad7117f191af9fdf2516e5e5dbb4"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0018.jsonl",
+      "records": 1,
+      "bytes": 143835,
+      "sha256": "cf186d9b2bc9cf387a072a8fc3627391f0477d94a3e026d7855c5b741e876ffc"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0019.jsonl",
+      "records": 1,
+      "bytes": 144503,
+      "sha256": "725c0fa26f754ae09052720fecf58bcef79ddc9a616e181b019e280e5b15956e"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0020.jsonl",
+      "records": 5,
+      "bytes": 118535,
+      "sha256": "c44a581c3be402d0cf3f03b6578075fb723b6b736f32cf8e6beadd1d216a3ed6"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0021.jsonl",
+      "records": 6,
+      "bytes": 127353,
+      "sha256": "e1fca00f99297fdb8ea9d3f238f2d29742355ff94b15612c7afd2bb57d2e29e5"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0022.jsonl",
+      "records": 5,
+      "bytes": 117389,
+      "sha256": "dcde35959313ffde06fa0164ea6bb6cb0802d6485531224275190a188a815ec7"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0023.jsonl",
+      "records": 6,
+      "bytes": 123906,
+      "sha256": "c00bf21b55251fc35c29d88f049c6f56913488a51cecddf768a56b09700a5086"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0024.jsonl",
+      "records": 5,
+      "bytes": 110642,
+      "sha256": "8b2e0ab2ba8f5d07ec8d850eec694aa95d69215f5edbbceb52b61ff12cdeb3bb"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0025.jsonl",
+      "records": 4,
+      "bytes": 76398,
+      "sha256": "d6a8898d487780db790e63fc8c423e21a3eb5b4383271f1f9ec50e3e86d96c86"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0026.jsonl",
+      "records": 1,
+      "bytes": 220517,
+      "sha256": "1a24c82da1263d9e5c3d62c297b6862c8136ffbc1d561c5d1c907fc1079f072a"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0027.jsonl",
+      "records": 5,
+      "bytes": 117608,
+      "sha256": "3a72fd0086b9a379f4704afdf17e4b3881f04f745de8ae99975fa809408936ae"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0028.jsonl",
+      "records": 4,
+      "bytes": 125853,
+      "sha256": "b034e29fff3a1b5a9c02a409a954a9679454198d350b630eb31f8cb8316b6f90"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0029.jsonl",
+      "records": 10,
+      "bytes": 126432,
+      "sha256": "1ec1dc7c430bb63e3e0c20f215f88482a8618412ef6d6c05c08c0bec467c21e9"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0030.jsonl",
+      "records": 7,
+      "bytes": 111718,
+      "sha256": "c8a2faab5c790a191b141e13ed064ba90f51acfdd771ef16b2142816d93763e6"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0031.jsonl",
+      "records": 6,
+      "bytes": 118073,
+      "sha256": "ba0755239f77d97f4e2dd662f74d857df1069a24036f5fc0fcd7fa8c008e799b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0032.jsonl",
+      "records": 6,
+      "bytes": 129317,
+      "sha256": "d82b066fa94949342c80685d768996a6326e9fd6a9eeef7ba4a4b87ee28041f6"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0033.jsonl",
+      "records": 4,
+      "bytes": 90684,
+      "sha256": "491373d7f62bbfb7232443103fb9ef0519abd4aaf3ad3d9197bd46262c4568de"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0034.jsonl",
+      "records": 6,
+      "bytes": 129518,
+      "sha256": "78f735f9acf03ed192e26d254c380b14f09c569eb2d3bf07d4c1a5ab8d5a5b69"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0035.jsonl",
+      "records": 7,
+      "bytes": 130788,
+      "sha256": "9a60d84c3f2d75eb4c5fa739f6f90074692232beedf3c9a0c5ecc8c46486356b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0036.jsonl",
+      "records": 3,
+      "bytes": 60771,
+      "sha256": "ba663404cc1766d0478d6992d4b05990894587181f0aa96a4796a521738f57ff"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0037.jsonl",
+      "records": 1,
+      "bytes": 976615,
+      "sha256": "079d3da9c6e35f32c654c20aa2a2f4baf523395ba458a230cfc55c9fb7483a0a"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0038.jsonl",
+      "records": 13,
+      "bytes": 125942,
+      "sha256": "28edaf63ee45473dc2f406d80aaec18a3548f3034ec809c86735757624c51ebd"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0039.jsonl",
+      "records": 16,
+      "bytes": 120989,
+      "sha256": "30cec726fcada2655dec98d4b1d657bffa73a70996efb840b15570d85e576bc6"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0040.jsonl",
+      "records": 7,
+      "bytes": 124981,
+      "sha256": "34a8b0992ea4e0b3cd1d68e1c28499a3d6a3b0461352c35c75b516973be102ca"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0041.jsonl",
+      "records": 7,
+      "bytes": 116756,
+      "sha256": "d7632d69043311a1d932770398607103989686ab4a9bc0ed050b4d48401a486f"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0042.jsonl",
+      "records": 7,
+      "bytes": 126068,
+      "sha256": "71a50368cc8354f3dc0c49cda97194075f532413f17a9f7d40c87dde43972c6c"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0043.jsonl",
+      "records": 3,
+      "bytes": 85183,
+      "sha256": "1c93da2c5a0f0ffd0c47d5a986411456347c7071c51d6413b51129833f379e6b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0044.jsonl",
+      "records": 2,
+      "bytes": 95835,
+      "sha256": "13f1546668aabf29a47e9def6f18c7474f0916a68a379e3a479883888feb5df1"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0045.jsonl",
+      "records": 3,
+      "bytes": 127605,
+      "sha256": "a1e415dea6c26aa8bae64e68873f4c23895cf85cb9e73ea2ac40674e33425386"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0046.jsonl",
+      "records": 1,
+      "bytes": 212216,
+      "sha256": "77110317ceae91c76ad84646e6f96e42caca7073fb3c78f64daea4a464f78f62"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0047.jsonl",
+      "records": 2,
+      "bytes": 52974,
+      "sha256": "0272496e38f822720ebc23100a78e027b169dfe7c8051af8b7522da39b755ec2"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0048.jsonl",
+      "records": 1,
+      "bytes": 156279,
+      "sha256": "5c8ca389f5ca9df8900133fce5311d859fa18368da3823138d880c884c9551e8"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0049.jsonl",
+      "records": 8,
+      "bytes": 125469,
+      "sha256": "aa4c02f5ba2aee7b86ac7c173d70e9c0d62190014dfa8fd64857664ff59642fe"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0050.jsonl",
+      "records": 8,
+      "bytes": 125173,
+      "sha256": "5705e03e8bc2ef728088110124eaa7d40b3a173e7672380bbe19fa3278388e4b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0051.jsonl",
+      "records": 5,
+      "bytes": 127140,
+      "sha256": "9d88d8744297fb39957fdba71816685c12ba65844e9287bff22ed4ce863eed46"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0052.jsonl",
+      "records": 1,
+      "bytes": 325229,
+      "sha256": "fa571d26942216e4c5097e13f914571e02db8157aff61130ff279d739a7d61b5"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0053.jsonl",
+      "records": 2,
+      "bytes": 122537,
+      "sha256": "e4343038f31d77ccc874af65bcbec5388da6b11d3597ccec68b434b0d408022f"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0054.jsonl",
+      "records": 3,
+      "bytes": 90604,
+      "sha256": "5ad75cbfad1c7ac28a3307f07143c2564ddb4f6f06d2bc4d66b34d2c07735a4a"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0055.jsonl",
+      "records": 30,
+      "bytes": 130034,
+      "sha256": "1e9057fe2add501a569a17e2e14c8b197be6cb0f3a6e8ba8798283ad99cdb8c7"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0056.jsonl",
+      "records": 78,
+      "bytes": 129521,
+      "sha256": "074ea52fc4a855054e64e362c8fd762a08d0ce699f31824d530b7ed2cba71d24"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0057.jsonl",
+      "records": 77,
+      "bytes": 130687,
+      "sha256": "8fcba0eeb32c3ace70b0da09bf83e3d66ed1753b54af540c7867ff23fc2233d4"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0058.jsonl",
+      "records": 77,
+      "bytes": 129655,
+      "sha256": "84866996f99c3a5139f0bbed4d2ec45df991776c5ba3b9372527432405506739"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0059.jsonl",
+      "records": 16,
+      "bytes": 120784,
+      "sha256": "de5b244065c6286bbaf41a19643adc3c19e844f2416df6577d7f01abc943fdb7"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0060.jsonl",
+      "records": 3,
+      "bytes": 106687,
+      "sha256": "92fb08a02935cdd50b44775788313b51d954e811da6a9734a65f935538e151d9"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0061.jsonl",
+      "records": 3,
+      "bytes": 100264,
+      "sha256": "10dd0a1798ddf5582f2563cbdb101820f39a1232ebe11e425a95c67dc13fc35c"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0062.jsonl",
+      "records": 3,
+      "bytes": 101273,
+      "sha256": "558198f24939ebab339a59037b5abd8067472d7ecb8f346d159ce2a3e411bdf7"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0063.jsonl",
+      "records": 3,
+      "bytes": 96993,
+      "sha256": "b8a35c5a43c37eeed15673d1e17c1b2f560df089a695089929a49330dc945f40"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0064.jsonl",
+      "records": 3,
+      "bytes": 103048,
+      "sha256": "b897110ac30c5e67c4fe8e5c4aa7c482c4210a5430dae925e78a37c32b7042de"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0065.jsonl",
+      "records": 3,
+      "bytes": 107739,
+      "sha256": "2f7f77e54a1861c8d6dc350a23c99fa364967d15bd81a97d851f39951fb556dd"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0066.jsonl",
+      "records": 4,
+      "bytes": 116708,
+      "sha256": "f9859dbcb830791c6c37d47a6ce9e1e3a043b314e1d28bb8db143a25d4d6d853"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0067.jsonl",
+      "records": 5,
+      "bytes": 121175,
+      "sha256": "4a2d4672bfb6910528d44f390cc377286ce0f0f88ab437cd205ae75460c82eaa"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0068.jsonl",
+      "records": 6,
+      "bytes": 122675,
+      "sha256": "c887450c70d51bdf362cbc6ec0670e569f9d3788c7d05ec05a61928c46173d25"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0069.jsonl",
+      "records": 6,
+      "bytes": 115945,
+      "sha256": "9a306744b2f7b9677dd62a9d8aed13018ef915ff1f2954d38f974edbd585805d"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0070.jsonl",
+      "records": 3,
+      "bytes": 96724,
+      "sha256": "223a24d8fdd5aab440565cfb7d11554d6addb5c380ed58313f9e7cec537b6bbc"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0071.jsonl",
+      "records": 3,
+      "bytes": 116107,
+      "sha256": "4016c4dda5a65dbf6a37ffa4457ac2f9a42153715e2dc53074274dd8bcf9f5c0"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0072.jsonl",
+      "records": 5,
+      "bytes": 111295,
+      "sha256": "7736a1c64a64b6187b0032d425b981e42c6cf458d22edc3b1db389703d7a0585"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0073.jsonl",
+      "records": 6,
+      "bytes": 112624,
+      "sha256": "290d8b5f8714b40e99b7cd4a05c4c0ec9d43f61c154dd1159ed1a4f8215e6bd0"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0074.jsonl",
+      "records": 6,
+      "bytes": 125212,
+      "sha256": "de38dbe67e83f23fdb8fbeb7fc90bbaf78d77311a10d4ccd13b991cdc1fc00fd"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0075.jsonl",
+      "records": 6,
+      "bytes": 124922,
+      "sha256": "09290b55456e49e0a83ad017ba08d5c3650c4387f7e60da82e6c78f00d6eedd8"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0076.jsonl",
+      "records": 4,
+      "bytes": 85939,
+      "sha256": "4b7ba75bcbea5be6a5f137b6b2ea45daecb4600287a4475abfa6eda7c9c1de73"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0077.jsonl",
+      "records": 1,
+      "bytes": 210334,
+      "sha256": "5d9f15563570b5617cf341b7f3948754c6f92d7d2d3889145ba02854b512efbd"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0078.jsonl",
+      "records": 6,
+      "bytes": 128261,
+      "sha256": "983512204a56560df2e104eb72551a4c6d2965bcc1e7a65f8f51b83c911a5d13"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0079.jsonl",
+      "records": 2,
+      "bytes": 119314,
+      "sha256": "fc55e794c51902586fbaac7974f0c41047f08642ac4197a60b24c36e95d2b111"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0080.jsonl",
+      "records": 2,
+      "bytes": 122816,
+      "sha256": "d6fea339806f85a9ba365aa50c0cd07b5e1f6ddb9b2d6adef84ae4f2e1fa6612"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0081.jsonl",
+      "records": 2,
+      "bytes": 122018,
+      "sha256": "0fc36a22923fc1c4271637f22c6b9f1163074bae5f628f3f9003a0083093184c"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0082.jsonl",
+      "records": 1,
+      "bytes": 139581,
+      "sha256": "2002e6b3fb60f034543e2cd4ac2270f478fe9bd6c2b6ffda39e5545311244d66"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0083.jsonl",
+      "records": 2,
+      "bytes": 116841,
+      "sha256": "ee961283dc463a8346f7e259d81f7b397629b37b6ded0ac3fa268bc5afabaac5"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0084.jsonl",
+      "records": 2,
+      "bytes": 118696,
+      "sha256": "e929fa106a710a34b6e0fd414e1dc1adb4d11489f877f68cc3ad8823d9bff19d"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0085.jsonl",
+      "records": 2,
+      "bytes": 120937,
+      "sha256": "099fb38bded2410a66aa4c3bd0fea6e5043f361effdb479fdedf76d3866b5497"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0086.jsonl",
+      "records": 4,
+      "bytes": 127564,
+      "sha256": "0ccece4d882a929a3e50407e1526d291ef4859cfaf03ab7ec5cb2a3c42421fb1"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0087.jsonl",
+      "records": 1,
+      "bytes": 267683,
+      "sha256": "e018dc6a835a79322a27d1c89e115ab1111d5176f42498b1c40ff70feb312402"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0088.jsonl",
+      "records": 1,
+      "bytes": 153939,
+      "sha256": "7ec1b4d6a3a96630e6a5cf1a673e9e742c8fd8987350277c52de8f037a2f6702"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0089.jsonl",
+      "records": 4,
+      "bytes": 110700,
+      "sha256": "71c9f3ca0ea11a4583c55a277779556917301fcc93e25b8ca9e6558c789bc6ff"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0090.jsonl",
+      "records": 3,
+      "bytes": 100911,
+      "sha256": "c0f85e19ac335ed74d24dc50ebebc06ae89f412596791097e891ec77d646b993"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0091.jsonl",
+      "records": 6,
+      "bytes": 123852,
+      "sha256": "bf03595355b818478a06aa0e7c625643edaaf902b23c4c96ea737a00cf90666b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0092.jsonl",
+      "records": 8,
+      "bytes": 130736,
+      "sha256": "002ffa4a284fd29fbc47dffed7c7ec203d46fae8c606d31abcda5e7068b82cfe"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0093.jsonl",
+      "records": 6,
+      "bytes": 131057,
+      "sha256": "62b208aa445132cc1d97ebea4941107220673ad6f87a72d8d2e14905774ff699"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0094.jsonl",
+      "records": 9,
+      "bytes": 118169,
+      "sha256": "fb1d554de2aad4cc477a35cbc2bcdec9e1ff9b3ea6c9beb16a50512558dca5b2"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0095.jsonl",
+      "records": 10,
+      "bytes": 130860,
+      "sha256": "98f6713ce799f150fc636a88f0dfbbd4e8a77d6bede54576fa79189519f09714"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0096.jsonl",
+      "records": 10,
+      "bytes": 129872,
+      "sha256": "8a673d124497d1e0e57ae3eabadbe1979554e886b086508fa3af77babb79fb21"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0097.jsonl",
+      "records": 6,
+      "bytes": 81166,
+      "sha256": "5c3a3b0f2361896e7574c470e4ca6ad67e835acd233fd0b84406c03d41d581e5"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0098.jsonl",
+      "records": 1,
+      "bytes": 120498,
+      "sha256": "1dfd03e204665b0129cfd432172e9aa56032a1773eb8428abf77afa40f75b0e1"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0099.jsonl",
+      "records": 1,
+      "bytes": 117990,
+      "sha256": "4329e8e532048667c4a29b0b3c3bd76d4d7dabfc9ca1dfe30ca71829384eca57"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0100.jsonl",
+      "records": 1,
+      "bytes": 127536,
+      "sha256": "14fbfe47e8a346b707a5bb98394c1ba628f0c285d48bc4646504738ddb0fe69d"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0101.jsonl",
+      "records": 1,
+      "bytes": 126245,
+      "sha256": "7e3cd9b53502f6387f88bead6229c7a34650c69ffa92601668e60e54a170c9a7"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0102.jsonl",
+      "records": 6,
+      "bytes": 120583,
+      "sha256": "359b11c5c1c648d7fffe974bb8ef213ead150a58e4740bebdc0261c70daa0872"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0103.jsonl",
+      "records": 6,
+      "bytes": 125198,
+      "sha256": "3eec3257128cdd3e3d9acf9825f1887ca6de3b8aa4a72384b278791aaa676401"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0104.jsonl",
+      "records": 6,
+      "bytes": 126994,
+      "sha256": "eba37a48c5412983d45b70bbad1840aae82aa11c570d918cb24485f19bafab2a"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0105.jsonl",
+      "records": 6,
+      "bytes": 117954,
+      "sha256": "31a69bd064f34359cf9b4c6478872b5e5009bbcdc07cd85223775feddf42e34e"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0106.jsonl",
+      "records": 5,
+      "bytes": 127131,
+      "sha256": "538b0ce94f1d50ea5f6c0bac8bd73636527198ae86a20422cebbe4997fb3bf75"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0107.jsonl",
+      "records": 4,
+      "bytes": 116213,
+      "sha256": "515d21047e98c05ba605884e52f68ebce2d322786f2552be7fe6859fd86c2c00"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0108.jsonl",
+      "records": 4,
+      "bytes": 119018,
+      "sha256": "933dc5621b00328dbcbbb30e19720ec12ab44fe36bcac810ffd4c4cb54b88718"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0109.jsonl",
+      "records": 4,
+      "bytes": 119915,
+      "sha256": "e2d9feac238e8e7aa12828dc7026b59369380d9339b216830e4150ad157b35dd"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0110.jsonl",
+      "records": 4,
+      "bytes": 127451,
+      "sha256": "54e9ad3f5877b1773484cc6a486d043f28f7bb017405e0b2756207490df0d332"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0111.jsonl",
+      "records": 4,
+      "bytes": 113446,
+      "sha256": "aa4ede291b59990af5e02bfb5ac2accfcd705bfd478a7d19615c8f3767727d9c"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0112.jsonl",
+      "records": 5,
+      "bytes": 112896,
+      "sha256": "c65fc8a9f1e20b4a4222ee3b1269906652aa25b58dd3628e0b3f28c4f20268eb"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0113.jsonl",
+      "records": 5,
+      "bytes": 116540,
+      "sha256": "138a68c0da86c415ae564da1d1fb8dfd5e83e3241debf49d3e5468402427b2e1"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0114.jsonl",
+      "records": 5,
+      "bytes": 114306,
+      "sha256": "5fd60107df8d4410363eee928aa8436f1025b915d5dd594791315236dbe42f86"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0115.jsonl",
+      "records": 5,
+      "bytes": 113352,
+      "sha256": "720541af83126ad03bb67162261c3baccfe85572a2caaa24f4a53d7a4d14a144"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0116.jsonl",
+      "records": 5,
+      "bytes": 110440,
+      "sha256": "c052323976b036edf59e4f367d3cce30c5e2eb8febf7518fd4060612ad2f7728"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0117.jsonl",
+      "records": 5,
+      "bytes": 112600,
+      "sha256": "d12a42670ac4e5c9d6781f54dc1771f11dd59d826ea06fe73dd6cfd16963979f"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0118.jsonl",
+      "records": 6,
+      "bytes": 120157,
+      "sha256": "b68b021b5ac49ce33e90e689156685b2d0acb21a9d5f3a938610be07fcbcf9f2"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0119.jsonl",
+      "records": 6,
+      "bytes": 130549,
+      "sha256": "8f908c3230bd87e5a522bec36bcab72a9cbb39fe96bb31cc8e8f549efa393a4a"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0120.jsonl",
+      "records": 7,
+      "bytes": 123559,
+      "sha256": "e20dd81ab33704b5be1ae5646e224e5e87002dce458e22cead57a11fe94d6f35"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0121.jsonl",
+      "records": 6,
+      "bytes": 128236,
+      "sha256": "6d21a3d160658fcbc8661883ce7e43ff3df3bcf7bfdb3918ccf544b60517521f"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0122.jsonl",
+      "records": 5,
+      "bytes": 108772,
+      "sha256": "378942e150dd0f3d217827e6e3b34254443e45e95e544e9a6c305df903ca016e"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0123.jsonl",
+      "records": 7,
+      "bytes": 126509,
+      "sha256": "ad092a7ff2c9b7511a5c67a2bcaae45a91de7aea6eefbb0038948cc27f7ba779"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0124.jsonl",
+      "records": 6,
+      "bytes": 123582,
+      "sha256": "3351592a9a008bde4badff1d48b3e3a509324dd62363ab900d542616353e21a6"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0125.jsonl",
+      "records": 6,
+      "bytes": 125214,
+      "sha256": "17d51bccbae4b4f4bb5d9c4f70ad68fef80d57007745041df21509957a8819dc"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0126.jsonl",
+      "records": 6,
+      "bytes": 120764,
+      "sha256": "df1ecb12703616676cb966205903bc137b0674e94965767ee8cef255a4de0cd1"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0127.jsonl",
+      "records": 5,
+      "bytes": 119515,
+      "sha256": "12d7526de8952b8fd9d44756849e0b8d76fdcfcd28f2c3b6cddeb5dfebb6b274"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0128.jsonl",
+      "records": 4,
+      "bytes": 90826,
+      "sha256": "425a19a447e8ff11e498e115786401478e5676872bba5252adff3b5b58855b00"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0129.jsonl",
+      "records": 1,
+      "bytes": 102030,
+      "sha256": "45706cf0dafe7f4d896e54717350da2626a7fa32ccf5538dd0ca2b6f0e67b5d3"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0130.jsonl",
+      "records": 1,
+      "bytes": 101045,
+      "sha256": "f9349cb5201b29f891d13beb97d3bf257dfeb1a66d65febf8d8d84ba2558d003"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0131.jsonl",
+      "records": 1,
+      "bytes": 99946,
+      "sha256": "4b4900d94f3d24eca0db9b9d452943d6247ebd279149f571c14b5206f2a85990"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0132.jsonl",
+      "records": 1,
+      "bytes": 122621,
+      "sha256": "dea7b238a9571fd8f54f48937af8439fbd2f33e0f62c448a1b188293732ace17"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0133.jsonl",
+      "records": 6,
+      "bytes": 119021,
+      "sha256": "e355dfc703c0418c1604e48b091c2ab53191edb93f9b664b1077f2834c68cb94"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0134.jsonl",
+      "records": 4,
+      "bytes": 90495,
+      "sha256": "41a2c9755c42597a262aed25c2e324267f6f5207c005da3767ce524d607d2070"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0135.jsonl",
+      "records": 1,
+      "bytes": 221524,
+      "sha256": "22e72b1f409fcd47b45bb5964622a11543c93e66dc91ae7761a5878b9f45ca92"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0136.jsonl",
+      "records": 1,
+      "bytes": 221254,
+      "sha256": "d3bc780dafb8b6c52f27b9ab8fe3e5c315a07ae3b573a8508e42dc8bbc39d041"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0137.jsonl",
+      "records": 1,
+      "bytes": 221492,
+      "sha256": "3aae26727c57b2e4324444e369b14c051657ed46fbe7ff3caff493689bb1287a"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0138.jsonl",
+      "records": 1,
+      "bytes": 198330,
+      "sha256": "e4f229f8c2a39be0049e72d10cd14ee30242320ff781c71c091237962633caa2"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0139.jsonl",
+      "records": 1,
+      "bytes": 199629,
+      "sha256": "d6916f718288fe838e46bbfac971c3127e0148823b33d30ed91454da5b413d1b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0140.jsonl",
+      "records": 1,
+      "bytes": 205329,
+      "sha256": "34e1294fd2733ffd0831a3a7590dc41c0ae845485fb1016dcaecded3cc214285"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0141.jsonl",
+      "records": 1,
+      "bytes": 204971,
+      "sha256": "5b51bb67f4bf52407ecc07286292b375166045d006524e5697eaf91aa6882c00"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0142.jsonl",
+      "records": 1,
+      "bytes": 198217,
+      "sha256": "6a4ff0640686b4ba7fff505d5d15f395ed7c4a6c7a83fce0f9d38f3bbdda133e"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0143.jsonl",
+      "records": 1,
+      "bytes": 199004,
+      "sha256": "8e05511196b4327170fe37b3f0b15b98a82cabd42b0a16190692410413a254ce"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0144.jsonl",
+      "records": 1,
+      "bytes": 197675,
+      "sha256": "eecd743b4e8093049f737d554d7f6bf6d8fb284f418111b329f86ba74f76fbfe"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0145.jsonl",
+      "records": 3,
+      "bytes": 53959,
+      "sha256": "3fa59466a54733e40fb2127f70785adb91f048f30945de2ecd4ffe74fe9f326e"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0146.jsonl",
+      "records": 2,
+      "bytes": 110921,
+      "sha256": "71980504bd895d5245189a9cb85abc725340ae360b36f66d0d46cec5d2a2faf4"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0147.jsonl",
+      "records": 2,
+      "bytes": 73277,
+      "sha256": "feb9a50b422cd190aad6c9ffaffe0c4f9d88e31a0dbf50a47159206eaee2345c"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0148.jsonl",
+      "records": 1,
+      "bytes": 122210,
+      "sha256": "343c8f764318ae79dcb37eaed10f3905d253bb2a9c6317fd7a558513c9a90154"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0149.jsonl",
+      "records": 1,
+      "bytes": 121421,
+      "sha256": "cf9f41ee7f9d63ff671fd87f06c20d99195f7d055da1d549c300fe9aa0209f5b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0150.jsonl",
+      "records": 1,
+      "bytes": 149501,
+      "sha256": "792aff3a7ac1c42796ee6a50072aae45090e66f9674366e5bc29cddb183d2180"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0151.jsonl",
+      "records": 1,
+      "bytes": 151960,
+      "sha256": "57cdfbfb3817dd05f0bae76ed8661d6bb0d0f008c1b1bdbe94b4e4bf1e7cefed"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0152.jsonl",
+      "records": 1,
+      "bytes": 124651,
+      "sha256": "5ba37d3e06493c0d65fe7f39810582a8a6ea160a5b1c18941e29bf920524aa7b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0153.jsonl",
+      "records": 1,
+      "bytes": 112957,
+      "sha256": "ef4db267a15cbc894e6f3b57efd3e788d7284f6d116d1b3acfe7345abaa7ff31"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0154.jsonl",
+      "records": 1,
+      "bytes": 132555,
+      "sha256": "018cbdede1071778d2da7e6f8f32fd7534110cb5c6598ba5b9cb107f763e3ec5"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0155.jsonl",
+      "records": 1,
+      "bytes": 128785,
+      "sha256": "2c17c363ef2fc7cbd1a04b2aa44a9251a95d4ba12ddaf0b35989da2e6f003a90"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0156.jsonl",
+      "records": 6,
+      "bytes": 126594,
+      "sha256": "790a94788593ab622b1fb99a28f95f8ab165b48e51222410a714e12c1ccca73d"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0157.jsonl",
+      "records": 7,
+      "bytes": 121130,
+      "sha256": "12f6077065341f867b0709aee25be6e5f2143895aa5f381c959b33761df9942d"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0158.jsonl",
+      "records": 7,
+      "bytes": 118666,
+      "sha256": "eb7ff94686b2618c3e6b3a67046148b32d6250cfbb8d273dfb87f077096f62fa"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0159.jsonl",
+      "records": 7,
+      "bytes": 117042,
+      "sha256": "66663fe4eab21689647081bcc4d19bd8bac01cd10e7d3bda3677fda646c19508"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0160.jsonl",
+      "records": 6,
+      "bytes": 119153,
+      "sha256": "2d42e200410324e8d1a4164fffb20fe927bf5ff65457dbe7ed8c661f04e0d7ab"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0161.jsonl",
+      "records": 6,
+      "bytes": 124063,
+      "sha256": "44d0d49efc78c96ea4ad74fc5a670eaeb50d43324485695274fc57efbcbb8359"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0162.jsonl",
+      "records": 5,
+      "bytes": 118499,
+      "sha256": "87a023d96b866cbd90542caa67da70f1c7165e0254b25806dd6893317c8c65b1"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0163.jsonl",
+      "records": 5,
+      "bytes": 111371,
+      "sha256": "1326574376f77d8c69271acc11f2f0a4f30aa002375e53fed3f84f80219bcda4"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0164.jsonl",
+      "records": 6,
+      "bytes": 125791,
+      "sha256": "55f728a05bc2760b8fded20e4347c388681fa7e14b13a04bb0f32db66ab17d16"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0165.jsonl",
+      "records": 6,
+      "bytes": 122172,
+      "sha256": "754ba27f3056b2323501ac5c5fa3baabe5535c5a5a37fa38fdc4475e119d35e1"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0166.jsonl",
+      "records": 6,
+      "bytes": 130629,
+      "sha256": "b041ad97cb0fa56fb04eea9275493e773bbcf57c940355fb2fb1090912905ca8"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0167.jsonl",
+      "records": 6,
+      "bytes": 116578,
+      "sha256": "22fa3b87b00d541930cc6df2197c54b9b1410c02af76aa20ac5aa74343897fce"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0168.jsonl",
+      "records": 7,
+      "bytes": 127988,
+      "sha256": "525a6f78166b82b1bc753422ca1b8832094b9ea36abe4bd70376d0346022dd2e"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0169.jsonl",
+      "records": 6,
+      "bytes": 129354,
+      "sha256": "99c8fe2ec8a3ec67a90bbff63b490e2eb1016538e4f9e2cf30a82769a51ba6d4"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0170.jsonl",
+      "records": 6,
+      "bytes": 130886,
+      "sha256": "8fa09bd6649d0ea97f92378d6764d03ed1a0bcf5af5696d094d003f6c19b1c20"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0171.jsonl",
+      "records": 3,
+      "bytes": 70294,
+      "sha256": "3e4e2762cfc29507500b40b552d7294e5b9d1e66727f93b6b04afdbdcfffc446"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0172.jsonl",
+      "records": 1,
+      "bytes": 183964,
+      "sha256": "02db57a9ad421edd293e7656032d00717e3fb3b7b8bf1552e91978ad325b7501"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0173.jsonl",
+      "records": 1,
+      "bytes": 183276,
+      "sha256": "d5564120876733efbcc1e03c5253fc0b3eabfce178672b25f7c1d296c699e17b"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0174.jsonl",
+      "records": 1,
+      "bytes": 182788,
+      "sha256": "684294992688786bfbb096f60098e865410501bb4a02d7e0270f221eff122bfe"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0175.jsonl",
+      "records": 1,
+      "bytes": 182655,
+      "sha256": "c008e0c42c3e3e6b7b629a21ca3e4660a835a81822841c34299399fa5ea82592"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0176.jsonl",
+      "records": 1,
+      "bytes": 182645,
+      "sha256": "d67893ece1cd0d1108d0223f09f4118514b8ed669932fca7c54ae1397d96ad20"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0177.jsonl",
+      "records": 1,
+      "bytes": 183012,
+      "sha256": "7f26eb7fb3624900a0a3667694e73b848a2cbb6518acdb31bafb5a18e549f7ea"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0178.jsonl",
+      "records": 1,
+      "bytes": 144353,
+      "sha256": "6c9809d24da7f53e42dbdac8631ebb41cc77b8477d0cadbcc2d4af3010764008"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0179.jsonl",
+      "records": 2,
+      "bytes": 129458,
+      "sha256": "0080219461d1acc06c6b87e5c2aafc4bf5868d6c87e3354c10f5106a8f55258e"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0180.jsonl",
+      "records": 4,
+      "bytes": 122164,
+      "sha256": "18c1de18f252bd0e501d75bd813f3078e679c4b5fce586ec205797e5f46ae1de"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0181.jsonl",
+      "records": 5,
+      "bytes": 117449,
+      "sha256": "f5fdc06eca660c84d216ef0501f9921d3d241c53f7efba4819817b9a23e7486d"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0182.jsonl",
+      "records": 5,
+      "bytes": 126263,
+      "sha256": "2cb90eef195f9d83843191d583ff234b2379a5871b2da34837391226afe27112"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0183.jsonl",
+      "records": 5,
+      "bytes": 123277,
+      "sha256": "c353ebb075feaed7342fc3e3430b345745217754145e5a8ed71600f3857b2da2"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0184.jsonl",
+      "records": 5,
+      "bytes": 127952,
+      "sha256": "c84ec6ea3c2a5160a70f7fa044d69a0ac0da6f98f54b298e26ab90f3b757a6ef"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0185.jsonl",
+      "records": 5,
+      "bytes": 110027,
+      "sha256": "04d718e88d00aa552533dc4d0ada6da88d7ae488c05ee9a99d82409bbfee4796"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0186.jsonl",
+      "records": 4,
+      "bytes": 112791,
+      "sha256": "2bcb34c0128c1bf294ca6c2b71645f137e04b12c055e778153208a9cffe64ea5"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0187.jsonl",
+      "records": 5,
+      "bytes": 129683,
+      "sha256": "a4004b037bc6b47a588f8abbc63cf0ce73a949777a62531dd3e4bcc3675efa75"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0188.jsonl",
+      "records": 5,
+      "bytes": 125960,
+      "sha256": "00c611155d3faa031b04401330884eff7fdf244da8c438970bdccfbff662da15"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0189.jsonl",
+      "records": 7,
+      "bytes": 128150,
+      "sha256": "03521cc7d2ae3d961cbc0e7769ba8fbae6690cb0cff11120aa2cf29424ce0305"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0190.jsonl",
+      "records": 16,
+      "bytes": 129750,
+      "sha256": "d5a6b76a83ae44f3dd160eb593cc1c6f9bdac721d2c41e2ccee95a70a3f55dc8"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0191.jsonl",
+      "records": 89,
+      "bytes": 130542,
+      "sha256": "ff9f973f1d54370b424505c6504c194ca701bb0b5a98cf20e2f513ce5195d813"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0192.jsonl",
+      "records": 88,
+      "bytes": 130524,
+      "sha256": "f0fb5880ae3fb31a504c37533aa3ff70397abfaf48ea5de1c03933b6ebaaacfb"
+    },
+    {
+      "view": "master",
+      "file": "funding-master.part-0193.jsonl",
+      "records": 19,
+      "bytes": 28428,
+      "sha256": "18722ba3f806d494f256181cce813e45593c45d35521afc420c02835af9f52f6"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0001.jsonl",
+      "records": 4,
+      "bytes": 99542,
+      "sha256": "e19052296a7fbb3d9389cd6be60ea9e69894a11846a4a39166d3ae74ff7b56b5"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0002.jsonl",
+      "records": 6,
+      "bytes": 121516,
+      "sha256": "41a86551568435694662aefcae118d4870a96768cd26ed2ba78ec6d0fa5e2e10"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0003.jsonl",
+      "records": 7,
+      "bytes": 118237,
+      "sha256": "c679b54b0ef46185ef716266fc4d4ad258b0548ebd61bec5e685132de47b2dfb"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0004.jsonl",
+      "records": 7,
+      "bytes": 126133,
+      "sha256": "00dc3a79be47ad30716742dedaa623c878fbd8373ff388ad559cdc38fb26ccea"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0005.jsonl",
+      "records": 5,
+      "bytes": 129492,
+      "sha256": "707bb06baccbc392f385ba35383d558f4ff1d0885153c5493b536a9b3c386bd0"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0006.jsonl",
+      "records": 3,
+      "bytes": 77558,
+      "sha256": "57d6a9b9c3a3b1adf465f54b25163892bde5db2020c9e22a6e133178359b636e"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0007.jsonl",
+      "records": 1,
+      "bytes": 153939,
+      "sha256": "7ec1b4d6a3a96630e6a5cf1a673e9e742c8fd8987350277c52de8f037a2f6702"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0008.jsonl",
+      "records": 6,
+      "bytes": 128042,
+      "sha256": "9cc24cab34354186c0e738d2c515db1a8e3506544de9f4e9c42909a7f714578b"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0009.jsonl",
+      "records": 5,
+      "bytes": 120887,
+      "sha256": "29da8aee926997622df26a6ff22cc0334b329a3fe9a6b09c5bc1fbd111cd41d4"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0010.jsonl",
+      "records": 4,
+      "bytes": 120161,
+      "sha256": "2b64c42e6c17c9852fc05551e78cbc46b05d2501aec20304f8be06fb599e2cd9"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0011.jsonl",
+      "records": 3,
+      "bytes": 102244,
+      "sha256": "415b1b80827f48986396f5f3248a87acd48776badba6ee284b725cd24ed22dd4"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0012.jsonl",
+      "records": 4,
+      "bytes": 127089,
+      "sha256": "4d844344e2895c75deb257780ead177475b72d89b65507c9993dc9084f44ff23"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0013.jsonl",
+      "records": 5,
+      "bytes": 117161,
+      "sha256": "7c8bb449d0e4a09ea9753fb5bf7b2fa860c8d98a02f2ff50065fc1ab124baf35"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0014.jsonl",
+      "records": 6,
+      "bytes": 123339,
+      "sha256": "b29d22a543cb0afcc8907f6ae3e4f6464d2c29917f757cf03ccef0258f5b27fc"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0015.jsonl",
+      "records": 6,
+      "bytes": 124056,
+      "sha256": "fee01c8aef0c1ecb57f9f5d08a176b31a0194acc39b579a6e70d58cfdf8e6548"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0016.jsonl",
+      "records": 4,
+      "bytes": 90866,
+      "sha256": "c32f4c18a50679031daa93b072bee319bc0745c057f883ae6ab0ffdc85a3ec34"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0017.jsonl",
+      "records": 2,
+      "bytes": 129458,
+      "sha256": "0080219461d1acc06c6b87e5c2aafc4bf5868d6c87e3354c10f5106a8f55258e"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0018.jsonl",
+      "records": 4,
+      "bytes": 122164,
+      "sha256": "18c1de18f252bd0e501d75bd813f3078e679c4b5fce586ec205797e5f46ae1de"
+    },
+    {
+      "view": "historical",
+      "file": "funding-historical.part-0019.jsonl",
+      "records": 4,
+      "bytes": 104035,
+      "sha256": "fc95316f9c44893e1ccf5fbc4432efd718b49544176402c25bdb6b6fbe545b31"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0001.jsonl",
+      "records": 5,
+      "bytes": 94990,
+      "sha256": "4c4f11dc4bbffa1d095ee112b9698d6472dcdc63dcd5e385438888b0148331fa"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0002.jsonl",
+      "records": 1,
+      "bytes": 185421,
+      "sha256": "124556b87a9069e0c360ee967e9a51639a937dd776ed8ea26101412fd7644abc"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0003.jsonl",
+      "records": 1,
+      "bytes": 144141,
+      "sha256": "35131e202e9d5a57654a09890eafbf2bf1a1601e15dfc66ea906734b0fa78a1a"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0004.jsonl",
+      "records": 1,
+      "bytes": 142999,
+      "sha256": "1c2393d43c8c3e564e96bbe6527c19817e13e8051e5114a79c191452ffda313f"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0005.jsonl",
+      "records": 1,
+      "bytes": 146275,
+      "sha256": "4e1cd53f67897741391916afd824082c7f065dfd9b433300ae8b278e3dcc216e"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0006.jsonl",
+      "records": 1,
+      "bytes": 147147,
+      "sha256": "8195fa609511e262663836e862606a78c8d5bf950c3b848e03ae80c3f1e66d4f"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0007.jsonl",
+      "records": 1,
+      "bytes": 142916,
+      "sha256": "84056f95a32455257db57ad5d59fb5cbbd6245ecdd4c0338a83dc5667ac86e6f"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0008.jsonl",
+      "records": 1,
+      "bytes": 142882,
+      "sha256": "65f1773be0a14206267289649f08a7a5b94a651d7b71f87f5a6496370dc2fa4d"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0009.jsonl",
+      "records": 1,
+      "bytes": 144516,
+      "sha256": "7823f3705e79b66fa3e65a8b6b20eb9ca1a1ed931a63f3f7e0feda767fafbe1b"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0010.jsonl",
+      "records": 1,
+      "bytes": 142480,
+      "sha256": "e210236079e980aa9c9bf09ae2c1c0e01ddbd498039740bf11d1b23a175226f9"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0011.jsonl",
+      "records": 1,
+      "bytes": 143196,
+      "sha256": "fffa4da7c348be6e0ff6a8d4c7f24b3614c641b55de70ed2cd8c4b549b69aab2"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0012.jsonl",
+      "records": 1,
+      "bytes": 145014,
+      "sha256": "37d5a40a2d8953ba93dffc99cbcdc5fe64f074aa6b39c15080781f969ee3c864"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0013.jsonl",
+      "records": 1,
+      "bytes": 142801,
+      "sha256": "8286bc528dcaf4c60e97bbf6cc54deeb30597017d47d7ddaa92cbd225673974d"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0014.jsonl",
+      "records": 1,
+      "bytes": 142855,
+      "sha256": "662af7cf46423298d077771c01f63aba67c8ad7117f191af9fdf2516e5e5dbb4"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0015.jsonl",
+      "records": 6,
+      "bytes": 128872,
+      "sha256": "a559b54043afff5f0eaa62cb12c49785f9900ecb70853d1fb43b8ec08b34afc3"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0016.jsonl",
+      "records": 6,
+      "bytes": 130141,
+      "sha256": "0a3800cb0a604db2dfa11122c434ac058025b3151da00d97dd2075e8a64fcfa0"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0017.jsonl",
+      "records": 6,
+      "bytes": 129288,
+      "sha256": "8b71e48f0b107a63962ca261c5edab71d393b61718f2916cfe653551c35826fd"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0018.jsonl",
+      "records": 6,
+      "bytes": 122690,
+      "sha256": "59142ea5657e5c9300d92bf9d5fe1585b468caa5d499f5e527929ac9b042808d"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0019.jsonl",
+      "records": 6,
+      "bytes": 123128,
+      "sha256": "4553fa9e67075044d1fb50e6367a7cb59ee583ffefbf3bab4c3bf19ab43c5f1a"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0020.jsonl",
+      "records": 5,
+      "bytes": 112241,
+      "sha256": "3d46498c6ecf597350c6c9b5e447069eeb174fe6dabc9abaa01d1b297cc752b7"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0021.jsonl",
+      "records": 6,
+      "bytes": 130718,
+      "sha256": "43d51059a2765a3a674bf89cc1ba5f083f93f72841beb58281060d6ce8e5d5f7"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0022.jsonl",
+      "records": 6,
+      "bytes": 109729,
+      "sha256": "56effda81b096f94de087e69750daaa4ab79ffb2a373efeebadba48a474fc338"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0023.jsonl",
+      "records": 2,
+      "bytes": 79928,
+      "sha256": "74ace45812f7fcbb43766ea1e8d5e44684020e8d6f7092b2f1f4489621c22331"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0024.jsonl",
+      "records": 1,
+      "bytes": 212216,
+      "sha256": "77110317ceae91c76ad84646e6f96e42caca7073fb3c78f64daea4a464f78f62"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0025.jsonl",
+      "records": 2,
+      "bytes": 52974,
+      "sha256": "0272496e38f822720ebc23100a78e027b169dfe7c8051af8b7522da39b755ec2"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0026.jsonl",
+      "records": 1,
+      "bytes": 156279,
+      "sha256": "5c8ca389f5ca9df8900133fce5311d859fa18368da3823138d880c884c9551e8"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0027.jsonl",
+      "records": 3,
+      "bytes": 42434,
+      "sha256": "76b420f8031388900c9ce97cc772fc7626e1b03d78273c130209938987181258"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0028.jsonl",
+      "records": 2,
+      "bytes": 123197,
+      "sha256": "ac95407d4d8aa186c8eb9d2917aefcb3a46a2e1c38763bad433ebd631a16a4e1"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0029.jsonl",
+      "records": 2,
+      "bytes": 93752,
+      "sha256": "00db1a0709c7ed0416ca526d6b188737cd55ff3af83e61c4cb6799b649c7ea45"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0030.jsonl",
+      "records": 56,
+      "bytes": 129429,
+      "sha256": "2fd8c7eceeca01253588d8399aeefea72e8ab8e5a1b9bdda8cce6c7d369bdcea"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0031.jsonl",
+      "records": 77,
+      "bytes": 129716,
+      "sha256": "55282c8e6bc072d1cd7e521f869405993d65390918fb1b992730944bfcf39ee4"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0032.jsonl",
+      "records": 76,
+      "bytes": 129455,
+      "sha256": "a1f3b33a19173f51cad1a2fb145d91695e2f8c542e5de075ea9e307412d870c8"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0033.jsonl",
+      "records": 65,
+      "bytes": 106526,
+      "sha256": "577aafbd48d370844f3e584d4eb223f692f89484fa3b8e45c33280f9f23eb1fd"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0034.jsonl",
+      "records": 3,
+      "bytes": 104064,
+      "sha256": "a16b2d6c0080cf85f8464a035c57212b15f8a4f8fc0d8dfdf00068ec7c9bd182"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0035.jsonl",
+      "records": 3,
+      "bytes": 104058,
+      "sha256": "0fb27f5f6bda79fbb1c2e6dce17b4da0df1912cb7fbf588a7ef29af912d12f5f"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0036.jsonl",
+      "records": 3,
+      "bytes": 102872,
+      "sha256": "1701f2008b83293ffeb9ac2d2fadb13e7ffbf19cbd983ce92a70181389762ab0"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0037.jsonl",
+      "records": 4,
+      "bytes": 129051,
+      "sha256": "9d5323c5abd2de818b97c042510dd52d75ce884b6ef933dbfbf7de1d9a655ec2"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0038.jsonl",
+      "records": 3,
+      "bytes": 103048,
+      "sha256": "b897110ac30c5e67c4fe8e5c4aa7c482c4210a5430dae925e78a37c32b7042de"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0039.jsonl",
+      "records": 3,
+      "bytes": 107739,
+      "sha256": "2f7f77e54a1861c8d6dc350a23c99fa364967d15bd81a97d851f39951fb556dd"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0040.jsonl",
+      "records": 4,
+      "bytes": 105785,
+      "sha256": "bbf1a0b6ea846747b4e754dd7e15fb0aaa860308f4815b70913215bd37142519"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0041.jsonl",
+      "records": 5,
+      "bytes": 118811,
+      "sha256": "9a69d9e5a901fe7738c5f18a5efbaf532a1753a621719d890b75f1a6a4727583"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0042.jsonl",
+      "records": 4,
+      "bytes": 83196,
+      "sha256": "42672f1b86aacb379107276d4b61822b201acb9d63ef475c18ebdde5d3274b0e"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0043.jsonl",
+      "records": 1,
+      "bytes": 58795,
+      "sha256": "6e2461785fd34916313844939f54cd9edd5079ed91e1ace942304a98ae8817da"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0044.jsonl",
+      "records": 3,
+      "bytes": 129166,
+      "sha256": "d97260d5d8537480c3de9591ee672773a1cc84c69c825612d86964ddc206dc08"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0045.jsonl",
+      "records": 6,
+      "bytes": 111019,
+      "sha256": "8f75d0334c6148e0df5e6b46d7885091a297de6d7f697aebf0355cc71f608e87"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0046.jsonl",
+      "records": 6,
+      "bytes": 125233,
+      "sha256": "82d0db1978a65922246bb62e0ea12f4e93f4093912d2aecdbf193190e4d73980"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0047.jsonl",
+      "records": 4,
+      "bytes": 85939,
+      "sha256": "4b7ba75bcbea5be6a5f137b6b2ea45daecb4600287a4475abfa6eda7c9c1de73"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0048.jsonl",
+      "records": 1,
+      "bytes": 210334,
+      "sha256": "5d9f15563570b5617cf341b7f3948754c6f92d7d2d3889145ba02854b512efbd"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0049.jsonl",
+      "records": 3,
+      "bytes": 101602,
+      "sha256": "c1570e6859cde8fb7d64bb867aaabf2a8249b46dd1e42ef5994b11b464b881c7"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0050.jsonl",
+      "records": 2,
+      "bytes": 120053,
+      "sha256": "3a03229ae8545dc0c2707fd68ed97bba077bd0c9451de0dc840a4b338c4e3eea"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0051.jsonl",
+      "records": 2,
+      "bytes": 123534,
+      "sha256": "40caa4cc428955536ba06ab6d2366f4fa97bd41b23f08a135b56a4ff3cebc3d7"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0052.jsonl",
+      "records": 3,
+      "bytes": 94090,
+      "sha256": "78462083f67f1b4ffbb7d8ec34b2291e32f2c89d65960d8351e6abc8c33c0e70"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0053.jsonl",
+      "records": 3,
+      "bytes": 116820,
+      "sha256": "f19018e0293102111c5fc294f5688f8c7ba1c02d65e174678e4af187d53f7820"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0054.jsonl",
+      "records": 8,
+      "bytes": 125544,
+      "sha256": "e704ed32b220e79ede8690ddfff51747f7f30c9a6d2112a2f110fb8c919542ec"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0055.jsonl",
+      "records": 1,
+      "bytes": 117990,
+      "sha256": "4329e8e532048667c4a29b0b3c3bd76d4d7dabfc9ca1dfe30ca71829384eca57"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0056.jsonl",
+      "records": 6,
+      "bytes": 120583,
+      "sha256": "359b11c5c1c648d7fffe974bb8ef213ead150a58e4740bebdc0261c70daa0872"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0057.jsonl",
+      "records": 6,
+      "bytes": 123376,
+      "sha256": "41bc4c5b7a284f4db8621b9e32af2731bf74bae84ee89fa26f263e3e656b81f1"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0058.jsonl",
+      "records": 6,
+      "bytes": 124972,
+      "sha256": "19f5b8178db0c91c464aa516058ba18d117222b32eb6206cb884cce69cce04b5"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0059.jsonl",
+      "records": 4,
+      "bytes": 115070,
+      "sha256": "0ac67e78fbb0032d040ecc2d35e45846b24ac65a92850f9f9f6771e23cc553cc"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0060.jsonl",
+      "records": 5,
+      "bytes": 118850,
+      "sha256": "eb663c3604aac6684bfdadccb11c8ee73b0aa17a79043eb2b6d8f6fea8da994d"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0061.jsonl",
+      "records": 5,
+      "bytes": 117308,
+      "sha256": "224eebfb20845b28af9251726bee9928ea238dca811283641fbcccbb23126813"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0062.jsonl",
+      "records": 5,
+      "bytes": 123187,
+      "sha256": "fad58aa86ea559afc230a70542595eb01e909dda0d658f608b2fba64b8db7ba0"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0063.jsonl",
+      "records": 5,
+      "bytes": 110721,
+      "sha256": "0326d4ca42afb4b0cf24ee556975e17b4299937eb2b844021a4c7c6266369c53"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0064.jsonl",
+      "records": 5,
+      "bytes": 112035,
+      "sha256": "38a2a7bae847444134ed429636d0e71d6ca5cbcb86b53724d2f835f3ae40da07"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0065.jsonl",
+      "records": 5,
+      "bytes": 110665,
+      "sha256": "a38ed6c0b97805e4e6c1f4f847c562bac0fdd31788ca7002b2da47ef0acf2705"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0066.jsonl",
+      "records": 6,
+      "bytes": 120268,
+      "sha256": "32bd7d71dfb4dcaf6ba0efd2a4e06394e28c7dc56a08f9c53d4dd88140010608"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0067.jsonl",
+      "records": 5,
+      "bytes": 118822,
+      "sha256": "e9d079de2ff3256aae3e4c9933d0696c987681ab37a0018ebb39db391e2231e6"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0068.jsonl",
+      "records": 7,
+      "bytes": 127555,
+      "sha256": "25ebe064cc9678be70ac17f7c2700e8f6306f434d1b9b9d85945bed8b58bd705"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0069.jsonl",
+      "records": 7,
+      "bytes": 123394,
+      "sha256": "cdb98c92ef021fa7454c3845a7e383811fb45f7d835ee98eee14f85423af4a97"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0070.jsonl",
+      "records": 6,
+      "bytes": 125995,
+      "sha256": "f8e77e45d4398a6b6d6572158752f622970c8507b25aa67c8743633c20899f4c"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0071.jsonl",
+      "records": 5,
+      "bytes": 126901,
+      "sha256": "544f106771dfc93ffc3f0a799725d86e7b8a3efdcf0353a4ee53c9433e4ed7b7"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0072.jsonl",
+      "records": 6,
+      "bytes": 122986,
+      "sha256": "f2a216eb8c96087571b137caa252373b14fecbf8111b8cafa409f10056d462d5"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0073.jsonl",
+      "records": 6,
+      "bytes": 122086,
+      "sha256": "721ffa960019ff20ea16acd73c14c4474383d3e6fb0d98235248c594290d9f2b"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0074.jsonl",
+      "records": 2,
+      "bytes": 129058,
+      "sha256": "04a7eadb4e4a6190086f0e18f6cb03215bfe001ff1e0fe3c57fec99bd0e3343e"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0075.jsonl",
+      "records": 1,
+      "bytes": 101045,
+      "sha256": "f9349cb5201b29f891d13beb97d3bf257dfeb1a66d65febf8d8d84ba2558d003"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0076.jsonl",
+      "records": 2,
+      "bytes": 119805,
+      "sha256": "d0acb8aadb6c381efc1193e0e9f967dd172ab7f85fa4bf87a81b9d29d31eecf5"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0077.jsonl",
+      "records": 6,
+      "bytes": 122461,
+      "sha256": "490db4479b52b31edd35d06ffaeb2a9f8b13ab44a967ba29e93fc404708ef7fd"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0078.jsonl",
+      "records": 2,
+      "bytes": 73277,
+      "sha256": "feb9a50b422cd190aad6c9ffaffe0c4f9d88e31a0dbf50a47159206eaee2345c"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0079.jsonl",
+      "records": 1,
+      "bytes": 122210,
+      "sha256": "343c8f764318ae79dcb37eaed10f3905d253bb2a9c6317fd7a558513c9a90154"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0080.jsonl",
+      "records": 1,
+      "bytes": 149501,
+      "sha256": "792aff3a7ac1c42796ee6a50072aae45090e66f9674366e5bc29cddb183d2180"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0081.jsonl",
+      "records": 1,
+      "bytes": 132555,
+      "sha256": "018cbdede1071778d2da7e6f8f32fd7534110cb5c6598ba5b9cb107f763e3ec5"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0082.jsonl",
+      "records": 6,
+      "bytes": 126594,
+      "sha256": "790a94788593ab622b1fb99a28f95f8ab165b48e51222410a714e12c1ccca73d"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0083.jsonl",
+      "records": 7,
+      "bytes": 121068,
+      "sha256": "44d928c06f50015e6f1c93ee75f910dd4a9babb88a4a3412931765f3cceebb6d"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0084.jsonl",
+      "records": 7,
+      "bytes": 119026,
+      "sha256": "f581fc7cf5487239c04df8b72bb80662828ffe7ccc3dd4a3223ae56c2aa50f58"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0085.jsonl",
+      "records": 7,
+      "bytes": 122216,
+      "sha256": "fa09894ec54807e1460c6c37aa41d36c432c535c30145e7c4022fd71b1cbab2c"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0086.jsonl",
+      "records": 5,
+      "bytes": 115087,
+      "sha256": "51252ea96c9271461477497816c65b261b9cca9905cd7326f90a9f1889a47b90"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0087.jsonl",
+      "records": 5,
+      "bytes": 109014,
+      "sha256": "5dcf19269638151fe8e9601ee440ad8bfed3f055cc9f314606a47dc5df6f84b6"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0088.jsonl",
+      "records": 5,
+      "bytes": 109840,
+      "sha256": "f72594c327ef6d4f7eae9a334139d03cb8c755cc149a0aa128c8104ffa5267d1"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0089.jsonl",
+      "records": 5,
+      "bytes": 115919,
+      "sha256": "05d710c562a931c979899d75b9bb3dabc834e0a3b47a5c5080ed51a13484e9be"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0090.jsonl",
+      "records": 1,
+      "bytes": 17632,
+      "sha256": "f26672f417d35cdc6bfba031f0d1489aa8a8dda4e85d95995287d693caf65226"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0091.jsonl",
+      "records": 1,
+      "bytes": 183964,
+      "sha256": "02db57a9ad421edd293e7656032d00717e3fb3b7b8bf1552e91978ad325b7501"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0092.jsonl",
+      "records": 1,
+      "bytes": 183276,
+      "sha256": "d5564120876733efbcc1e03c5253fc0b3eabfce178672b25f7c1d296c699e17b"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0093.jsonl",
+      "records": 1,
+      "bytes": 182788,
+      "sha256": "684294992688786bfbb096f60098e865410501bb4a02d7e0270f221eff122bfe"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0094.jsonl",
+      "records": 1,
+      "bytes": 182655,
+      "sha256": "c008e0c42c3e3e6b7b629a21ca3e4660a835a81822841c34299399fa5ea82592"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0095.jsonl",
+      "records": 1,
+      "bytes": 182645,
+      "sha256": "d67893ece1cd0d1108d0223f09f4118514b8ed669932fca7c54ae1397d96ad20"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0096.jsonl",
+      "records": 1,
+      "bytes": 183012,
+      "sha256": "7f26eb7fb3624900a0a3667694e73b848a2cbb6518acdb31bafb5a18e549f7ea"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0097.jsonl",
+      "records": 5,
+      "bytes": 117449,
+      "sha256": "f5fdc06eca660c84d216ef0501f9921d3d241c53f7efba4819817b9a23e7486d"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0098.jsonl",
+      "records": 5,
+      "bytes": 125039,
+      "sha256": "779522f0bddb3f2d353b0e5f84e8c6716f96813ae14737944d801464952f238a"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0099.jsonl",
+      "records": 5,
+      "bytes": 127023,
+      "sha256": "10fbb868c086097b57c5239473c9ab214913e9432ffc87d36ee7b46c74969faa"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0100.jsonl",
+      "records": 5,
+      "bytes": 119758,
+      "sha256": "df75b69a3d849ae7592c09131bdd579f298580785041668cac82a7a37e6558bf"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0101.jsonl",
+      "records": 8,
+      "bytes": 130671,
+      "sha256": "7f4aa6366e3198a0421da273961b64624a114815fb2b744b891ca847f1b70fe8"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0102.jsonl",
+      "records": 89,
+      "bytes": 129933,
+      "sha256": "e448c4b9b75f016e83c5c647271acaff22a122e11cbc6e3db2a7da9880e1a3ed"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0103.jsonl",
+      "records": 87,
+      "bytes": 129979,
+      "sha256": "a433e8c6fdee2fb9f1d276257b9f89bffffb30d06fbad50d58e13b33de9b0572"
+    },
+    {
+      "view": "manual-review",
+      "file": "funding-manual-review.part-0104.jsonl",
+      "records": 29,
+      "bytes": 42851,
+      "sha256": "31d862ef90da643588564d0fa9bdc11f286faff25febf13d0dac11bfecb62049"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0001.jsonl",
+      "records": 4,
+      "bytes": 99542,
+      "sha256": "e19052296a7fbb3d9389cd6be60ea9e69894a11846a4a39166d3ae74ff7b56b5"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0002.jsonl",
+      "records": 6,
+      "bytes": 121516,
+      "sha256": "41a86551568435694662aefcae118d4870a96768cd26ed2ba78ec6d0fa5e2e10"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0003.jsonl",
+      "records": 7,
+      "bytes": 118237,
+      "sha256": "c679b54b0ef46185ef716266fc4d4ad258b0548ebd61bec5e685132de47b2dfb"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0004.jsonl",
+      "records": 7,
+      "bytes": 126133,
+      "sha256": "00dc3a79be47ad30716742dedaa623c878fbd8373ff388ad559cdc38fb26ccea"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0005.jsonl",
+      "records": 5,
+      "bytes": 129492,
+      "sha256": "707bb06baccbc392f385ba35383d558f4ff1d0885153c5493b536a9b3c386bd0"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0006.jsonl",
+      "records": 3,
+      "bytes": 77558,
+      "sha256": "57d6a9b9c3a3b1adf465f54b25163892bde5db2020c9e22a6e133178359b636e"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0007.jsonl",
+      "records": 1,
+      "bytes": 153939,
+      "sha256": "7ec1b4d6a3a96630e6a5cf1a673e9e742c8fd8987350277c52de8f037a2f6702"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0008.jsonl",
+      "records": 6,
+      "bytes": 128042,
+      "sha256": "9cc24cab34354186c0e738d2c515db1a8e3506544de9f4e9c42909a7f714578b"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0009.jsonl",
+      "records": 5,
+      "bytes": 120887,
+      "sha256": "29da8aee926997622df26a6ff22cc0334b329a3fe9a6b09c5bc1fbd111cd41d4"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0010.jsonl",
+      "records": 4,
+      "bytes": 120161,
+      "sha256": "2b64c42e6c17c9852fc05551e78cbc46b05d2501aec20304f8be06fb599e2cd9"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0011.jsonl",
+      "records": 3,
+      "bytes": 102244,
+      "sha256": "415b1b80827f48986396f5f3248a87acd48776badba6ee284b725cd24ed22dd4"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0012.jsonl",
+      "records": 4,
+      "bytes": 127089,
+      "sha256": "4d844344e2895c75deb257780ead177475b72d89b65507c9993dc9084f44ff23"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0013.jsonl",
+      "records": 5,
+      "bytes": 117161,
+      "sha256": "7c8bb449d0e4a09ea9753fb5bf7b2fa860c8d98a02f2ff50065fc1ab124baf35"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0014.jsonl",
+      "records": 6,
+      "bytes": 123339,
+      "sha256": "b29d22a543cb0afcc8907f6ae3e4f6464d2c29917f757cf03ccef0258f5b27fc"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0015.jsonl",
+      "records": 6,
+      "bytes": 124056,
+      "sha256": "fee01c8aef0c1ecb57f9f5d08a176b31a0194acc39b579a6e70d58cfdf8e6548"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0016.jsonl",
+      "records": 4,
+      "bytes": 90866,
+      "sha256": "c32f4c18a50679031daa93b072bee319bc0745c057f883ae6ab0ffdc85a3ec34"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0017.jsonl",
+      "records": 2,
+      "bytes": 129458,
+      "sha256": "0080219461d1acc06c6b87e5c2aafc4bf5868d6c87e3354c10f5106a8f55258e"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0018.jsonl",
+      "records": 4,
+      "bytes": 122164,
+      "sha256": "18c1de18f252bd0e501d75bd813f3078e679c4b5fce586ec205797e5f46ae1de"
+    },
+    {
+      "view": "space-relevant",
+      "file": "funding-space-relevant.part-0019.jsonl",
+      "records": 4,
+      "bytes": 104035,
+      "sha256": "fc95316f9c44893e1ccf5fbc4432efd718b49544176402c25bdb6b6fbe545b31"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0001.jsonl",
+      "records": 6,
+      "bytes": 124605,
+      "sha256": "12dada63edaa9d97e87632394e185db0ed6a44a076544b1b20fcd940905fd957"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0002.jsonl",
+      "records": 4,
+      "bytes": 81092,
+      "sha256": "76023089d93cd9d50b3d36ccd6e94f67903305f1c5bd78772ee6b9afbbf1fcbe"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0003.jsonl",
+      "records": 1,
+      "bytes": 142623,
+      "sha256": "1350b4861c337baafe99d07ad00bb2e06b8151a2e8c6711881520cc6971fe22c"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0004.jsonl",
+      "records": 1,
+      "bytes": 143835,
+      "sha256": "cf186d9b2bc9cf387a072a8fc3627391f0477d94a3e026d7855c5b741e876ffc"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0005.jsonl",
+      "records": 1,
+      "bytes": 144503,
+      "sha256": "725c0fa26f754ae09052720fecf58bcef79ddc9a616e181b019e280e5b15956e"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0006.jsonl",
+      "records": 6,
+      "bytes": 126556,
+      "sha256": "f330e52cc55a097f031998ac2c63d1351a80eab95ce98e00c9794b639b4ee788"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0007.jsonl",
+      "records": 1,
+      "bytes": 220517,
+      "sha256": "1a24c82da1263d9e5c3d62c297b6862c8136ffbc1d561c5d1c907fc1079f072a"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0008.jsonl",
+      "records": 5,
+      "bytes": 117608,
+      "sha256": "3a72fd0086b9a379f4704afdf17e4b3881f04f745de8ae99975fa809408936ae"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0009.jsonl",
+      "records": 4,
+      "bytes": 125853,
+      "sha256": "b034e29fff3a1b5a9c02a409a954a9679454198d350b630eb31f8cb8316b6f90"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0010.jsonl",
+      "records": 11,
+      "bytes": 124507,
+      "sha256": "4171448413a05a2b7a74a1672dc83da9c16b40cafd2c78ebf22b750548407ad6"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0011.jsonl",
+      "records": 7,
+      "bytes": 131024,
+      "sha256": "36fa64534604443c527954b99edae2ae731313c532e350734a1eed034d819420"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0012.jsonl",
+      "records": 7,
+      "bytes": 123995,
+      "sha256": "02fb5838ee0e74e8bf5c8f464e95ea8431c856ce00fc5b05f530e2e3302038ee"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0013.jsonl",
+      "records": 1,
+      "bytes": 976615,
+      "sha256": "079d3da9c6e35f32c654c20aa2a2f4baf523395ba458a230cfc55c9fb7483a0a"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0014.jsonl",
+      "records": 13,
+      "bytes": 125942,
+      "sha256": "28edaf63ee45473dc2f406d80aaec18a3548f3034ec809c86735757624c51ebd"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0015.jsonl",
+      "records": 16,
+      "bytes": 116214,
+      "sha256": "9ba817273ab2fa651a915d3bc7a5f4cca9e6100b5f716e0011b61fdc019b1eee"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0016.jsonl",
+      "records": 3,
+      "bytes": 117564,
+      "sha256": "7b0c860c7e0a439193683f53a234235c9eaf3f6c7742ae67cc7f971a41200d27"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0017.jsonl",
+      "records": 4,
+      "bytes": 124412,
+      "sha256": "337fe4c5c9e81ef97adb21dcffc3e06ab1dce08e95d43f79a76c100f6090a33e"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0018.jsonl",
+      "records": 7,
+      "bytes": 124714,
+      "sha256": "c9ffd33b64c55028434edfdb0e40a76718a657e682444622e4b9b8b8be133eb6"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0019.jsonl",
+      "records": 8,
+      "bytes": 125874,
+      "sha256": "5c3e391eb649e5489a594d7007f994ce3ead3bda594ddcd1c4dfc83fffa8d04c"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0020.jsonl",
+      "records": 2,
+      "bytes": 77585,
+      "sha256": "39b62613e33a45994561fed5a8746a27ef1efe82e8e827367b745cd951fd51a5"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0021.jsonl",
+      "records": 1,
+      "bytes": 325229,
+      "sha256": "fa571d26942216e4c5097e13f914571e02db8157aff61130ff279d739a7d61b5"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0022.jsonl",
+      "records": 71,
+      "bytes": 129526,
+      "sha256": "f1108a82023f5d5e7ad4cc027c928eded66ef4c1f91a2c01e433dd83edec8580"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0023.jsonl",
+      "records": 77,
+      "bytes": 129414,
+      "sha256": "a02a3ff3d7740e855b405f3ae3e4beda2fbd88a76059c0cdcb192c95bc91ffb6"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0024.jsonl",
+      "records": 77,
+      "bytes": 130255,
+      "sha256": "870ca8d08c81015fb61963ba660ffbd9a0c6bedaae4b04e6102797a534e5bf88"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0025.jsonl",
+      "records": 39,
+      "bytes": 129140,
+      "sha256": "95b5e24f29ebeb4ae6f21684029a3555d4f3cea96961fd3f3c3c22415f6c3323"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0026.jsonl",
+      "records": 7,
+      "bytes": 125054,
+      "sha256": "d3e2d8b4922c1f590bafadd47fc6e5afd9d58c6a6c6831dcef7d5f0b38352162"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0027.jsonl",
+      "records": 6,
+      "bytes": 129435,
+      "sha256": "9f57866a9026cd281b42aeb36e843c7369bb101fde5cef6975a71f294e416205"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0028.jsonl",
+      "records": 5,
+      "bytes": 104724,
+      "sha256": "980a0d90fe4be57e1e85f87550d043c5622fb1e364f53f8bde25f4ae19fd5e13"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0029.jsonl",
+      "records": 1,
+      "bytes": 60988,
+      "sha256": "8891a393d02acc53981660cef9769a77bd318868fd96836bab3643abddd347f7"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0030.jsonl",
+      "records": 1,
+      "bytes": 139581,
+      "sha256": "2002e6b3fb60f034543e2cd4ac2270f478fe9bd6c2b6ffda39e5545311244d66"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0031.jsonl",
+      "records": 2,
+      "bytes": 116841,
+      "sha256": "ee961283dc463a8346f7e259d81f7b397629b37b6ded0ac3fa268bc5afabaac5"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0032.jsonl",
+      "records": 2,
+      "bytes": 118696,
+      "sha256": "e929fa106a710a34b6e0fd414e1dc1adb4d11489f877f68cc3ad8823d9bff19d"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0033.jsonl",
+      "records": 2,
+      "bytes": 122195,
+      "sha256": "05219e75ef523273e54d598223549dc7139100ff436e63ce934b2e4c4787447d"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0034.jsonl",
+      "records": 1,
+      "bytes": 267683,
+      "sha256": "e018dc6a835a79322a27d1c89e115ab1111d5176f42498b1c40ff70feb312402"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0035.jsonl",
+      "records": 5,
+      "bytes": 129763,
+      "sha256": "2fa74c10ff7304d1a0eea6b079bcc59fe651cb1e9b9b7a1afff299e0de6a6440"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0036.jsonl",
+      "records": 9,
+      "bytes": 124607,
+      "sha256": "eb10a6a5dd91a58ea96a6ef6cc1f26bc4f780dc3d7992fa26b644ba0ab6c1d4d"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0037.jsonl",
+      "records": 5,
+      "bytes": 125062,
+      "sha256": "1a7afa002de127e75b9e430de97a85ff169a19d4f833b4066ec584d4875e58f5"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0038.jsonl",
+      "records": 9,
+      "bytes": 125518,
+      "sha256": "7c1a95775b5168e2b594fb0f13844e61492b756d09febbceddf3326851aa5490"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0039.jsonl",
+      "records": 10,
+      "bytes": 131023,
+      "sha256": "04e01000f07bf41d7d9ac8ce7ace67fc9034f1edd084e05709eb6cf03fcbf751"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0040.jsonl",
+      "records": 10,
+      "bytes": 130502,
+      "sha256": "aa2d0ce51e52d0f7b1309d6cc211a9f7d796c6cf041c5ecee683ed3388bf114c"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0041.jsonl",
+      "records": 2,
+      "bytes": 27335,
+      "sha256": "6dae173d8fab8422a27e1d16fd0a470c332fec2c0287a4b538445c7074c81e74"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0042.jsonl",
+      "records": 1,
+      "bytes": 120498,
+      "sha256": "1dfd03e204665b0129cfd432172e9aa56032a1773eb8428abf77afa40f75b0e1"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0043.jsonl",
+      "records": 1,
+      "bytes": 127536,
+      "sha256": "14fbfe47e8a346b707a5bb98394c1ba628f0c285d48bc4646504738ddb0fe69d"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0044.jsonl",
+      "records": 1,
+      "bytes": 126245,
+      "sha256": "7e3cd9b53502f6387f88bead6229c7a34650c69ffa92601668e60e54a170c9a7"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0045.jsonl",
+      "records": 7,
+      "bytes": 130704,
+      "sha256": "3110c535c1d5a0a9d3e373691f9e22da04ce8fbf9cab6e372a3f699c17c25fec"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0046.jsonl",
+      "records": 4,
+      "bytes": 82339,
+      "sha256": "a6b62e5c8732b0af5cc51b7a426f98fc9731cdcb3eb60e32a7007668c56fd1c2"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0047.jsonl",
+      "records": 1,
+      "bytes": 122621,
+      "sha256": "dea7b238a9571fd8f54f48937af8439fbd2f33e0f62c448a1b188293732ace17"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0048.jsonl",
+      "records": 5,
+      "bytes": 102380,
+      "sha256": "07710b354e6e034a48a266a4fd6e61240bdf3ba80706d4060d0d162f42df22c5"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0049.jsonl",
+      "records": 1,
+      "bytes": 221524,
+      "sha256": "22e72b1f409fcd47b45bb5964622a11543c93e66dc91ae7761a5878b9f45ca92"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0050.jsonl",
+      "records": 1,
+      "bytes": 221254,
+      "sha256": "d3bc780dafb8b6c52f27b9ab8fe3e5c315a07ae3b573a8508e42dc8bbc39d041"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0051.jsonl",
+      "records": 1,
+      "bytes": 221492,
+      "sha256": "3aae26727c57b2e4324444e369b14c051657ed46fbe7ff3caff493689bb1287a"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0052.jsonl",
+      "records": 1,
+      "bytes": 198330,
+      "sha256": "e4f229f8c2a39be0049e72d10cd14ee30242320ff781c71c091237962633caa2"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0053.jsonl",
+      "records": 1,
+      "bytes": 199629,
+      "sha256": "d6916f718288fe838e46bbfac971c3127e0148823b33d30ed91454da5b413d1b"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0054.jsonl",
+      "records": 1,
+      "bytes": 205329,
+      "sha256": "34e1294fd2733ffd0831a3a7590dc41c0ae845485fb1016dcaecded3cc214285"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0055.jsonl",
+      "records": 1,
+      "bytes": 204971,
+      "sha256": "5b51bb67f4bf52407ecc07286292b375166045d006524e5697eaf91aa6882c00"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0056.jsonl",
+      "records": 1,
+      "bytes": 198217,
+      "sha256": "6a4ff0640686b4ba7fff505d5d15f395ed7c4a6c7a83fce0f9d38f3bbdda133e"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0057.jsonl",
+      "records": 1,
+      "bytes": 199004,
+      "sha256": "8e05511196b4327170fe37b3f0b15b98a82cabd42b0a16190692410413a254ce"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0058.jsonl",
+      "records": 1,
+      "bytes": 197675,
+      "sha256": "eecd743b4e8093049f737d554d7f6bf6d8fb284f418111b329f86ba74f76fbfe"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0059.jsonl",
+      "records": 2,
+      "bytes": 114373,
+      "sha256": "57a63f40f4f71240c055b281d285cf00ea00ff25bda30a04d894b0963b78d61f"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0060.jsonl",
+      "records": 1,
+      "bytes": 121421,
+      "sha256": "cf9f41ee7f9d63ff671fd87f06c20d99195f7d055da1d549c300fe9aa0209f5b"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0061.jsonl",
+      "records": 1,
+      "bytes": 151960,
+      "sha256": "57cdfbfb3817dd05f0bae76ed8661d6bb0d0f008c1b1bdbe94b4e4bf1e7cefed"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0062.jsonl",
+      "records": 1,
+      "bytes": 124651,
+      "sha256": "5ba37d3e06493c0d65fe7f39810582a8a6ea160a5b1c18941e29bf920524aa7b"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0063.jsonl",
+      "records": 1,
+      "bytes": 112957,
+      "sha256": "ef4db267a15cbc894e6f3b57efd3e788d7284f6d116d1b3acfe7345abaa7ff31"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0064.jsonl",
+      "records": 1,
+      "bytes": 128785,
+      "sha256": "2c17c363ef2fc7cbd1a04b2aa44a9251a95d4ba12ddaf0b35989da2e6f003a90"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0065.jsonl",
+      "records": 6,
+      "bytes": 118823,
+      "sha256": "ca45a2832aa934f42cfc2371179408baa1fbc5cdf03754ba87fdc5261ad31d12"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0066.jsonl",
+      "records": 6,
+      "bytes": 130885,
+      "sha256": "2b7633e1a5c4babf0b8316479309503b7546269cc050cd7cebe9a9861f4973c0"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0067.jsonl",
+      "records": 6,
+      "bytes": 129915,
+      "sha256": "3bc3793cbe0b503ea049c606d2bf00b40280c693e8dae41ab8da0b629b204f4b"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0068.jsonl",
+      "records": 6,
+      "bytes": 116686,
+      "sha256": "3df129b028ed9fd5d751b4d1ded22303af718ed97ade4c42c3b588a8fa77078a"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0069.jsonl",
+      "records": 7,
+      "bytes": 128263,
+      "sha256": "1d29e66a3696e6662cb3bc1528187702dfb4a0f82ddc14469afff3643017b1fe"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0070.jsonl",
+      "records": 5,
+      "bytes": 97595,
+      "sha256": "907f6e32863182c276883d2c00971617a17d2cc4e8f0eca6ee6cd30e5e397b02"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0071.jsonl",
+      "records": 1,
+      "bytes": 144353,
+      "sha256": "6c9809d24da7f53e42dbdac8631ebb41cc77b8477d0cadbcc2d4af3010764008"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0072.jsonl",
+      "records": 5,
+      "bytes": 116523,
+      "sha256": "2d16b90ee214c2b79b37b212c390919831958e8d4e3bd00c2c233e748ae139c3"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0073.jsonl",
+      "records": 5,
+      "bytes": 119851,
+      "sha256": "bd0e8c9bf132672d27147381c89ad75c2e653891ae5df756c09487c960da5be5"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0074.jsonl",
+      "records": 4,
+      "bytes": 106481,
+      "sha256": "b59c75c30e65cef7871d08c7e38cd1d359c94923144c17f832f306ec5bdb1ce9"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0075.jsonl",
+      "records": 6,
+      "bytes": 126351,
+      "sha256": "3cf2f23668838cfdbc756066d3b99d95b8a65c892baf1a1390b60110faf57ae3"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0076.jsonl",
+      "records": 74,
+      "bytes": 130638,
+      "sha256": "176bf845d65697987dd629ed786665f3aea6ba45ca66f902b6c32501b0c07327"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0077.jsonl",
+      "records": 88,
+      "bytes": 131068,
+      "sha256": "b3d40205c0506b91a463ebf4f64669a23ad5671222f9129744038751822a932e"
+    },
+    {
+      "view": "excluded",
+      "file": "funding-excluded.part-0078.jsonl",
+      "records": 37,
+      "bytes": 54646,
+      "sha256": "082c7b2ed4ba42b00fb329510fe8f92e0d52ad4ab2bf619463109d46ef173df6"
+    }
+  ],
+  "excelClippedCells": 4,
+  "excelSanitizedCells": 0
+}

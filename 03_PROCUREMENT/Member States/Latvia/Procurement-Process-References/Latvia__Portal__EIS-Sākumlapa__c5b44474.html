@@ -1,0 +1,1029 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><link id="ctl00_uxFaviconLink" rel="shortcut icon" href="favicon.ico" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" type="text/css" href="css/custom.css" media="all" /><link rel="stylesheet" type="text/css" href="css/common_feauters.css" media="all" /><link id="ctl00_uxMainCssFile" rel="stylesheet" type="text/css" href="css/core_styles.css" media="all" /><link id="ctl00_uxSizeCssFile" rel="stylesheet" type="text/css" href="css/styles_size_normal.css" media="all" />
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/printie7.css" media="print" /><![endif]-->
+    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/common_feauters_ie6.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/common_feauters_ie7.css" /><![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" /><link rel="stylesheet" type="text/css" href="css/glyphicons.css" media="all" /><link rel="Stylesheet" type="text/css" href="css/cookieconsent.min.css" media="all" /><script src="/EIS/Scripts/custom?v=Tc_MImq1sPN0n0r4lIv_chdq2ec3Ketu4ZUZ7vDSkNU1"></script>
+
+	<script type="text/javascript" src="Scripts/va.js"></script>	
+	
+	<script type="text/javascript">
+	
+	    var hasFormDataChanges = false;
+	    var FormDataChangesSaveControlId = null;
+	    var NavigationUrlHidden = null;
+
+	    function CheckAjaxRequestForError(sender, args) {
+	        if (args.get_error() != undefined) {
+                console.log(args.get_error());
+
+	            var msg = 'Atvainojiet, notika neparedzēta kļūda AJAX apstrādes laikā. Lapa tiks automātiski atjaunota. Lūdzu mēģiniet veikt darbību vēlreiz. Ja tas neizdodas, lūdzu pāris minūtes uzgaidīt. Ja kļūda atkārtojas, lūdzam ziņot sistēmas administratoram.';
+	            alert(msg);
+
+	            args.set_errorHandled(true);
+
+	            window.location = window.location;
+	        }
+	    }
+
+	    function SaveAndNavigate(NavigationElement) {	        
+	        if (hasFormDataChanges) {
+	            if (NavigationUrlHidden && NavigationElement && NavigationElement.href) {
+	                NavigationUrlHidden.value = NavigationElement.href;
+	            }
+	            if (FormDataChangesSaveControlId) {
+	                FormDataChangesSaveControl = document.getElementById(FormDataChangesSaveControlId);
+	                if (FormDataChangesSaveControl && FormDataChangesSaveControl.href) {
+	                    if (FormDataChangesSaveControl.href.indexOf('__doPostBack', 0) >= 0) {
+	                        __doPostBack(FormDataChangesSaveControl, '');
+	                    }
+	                    else {
+	                        window.location = FormDataChangesSaveControl.href;
+	                    }
+	                    return false;
+	                }
+	            }
+	        }
+	        return true;
+	    }
+	    function resetCss()
+        {
+            document.getElementById('ctl00_uxChangeToSmallCss').className = "";
+            document.getElementById('ctl00_uxChangeToNormalCss').className = "";
+            document.getElementById('ctl00_uxChangeToLargeCss').className = "";
+        }
+	    function setCss(cssUrl) {
+	        var mainCssFile = document.getElementById('ctl00_uxSizeCssFile');
+	        mainCssFile.href = cssUrl;
+	    }
+	    function setSmallFont() {
+	        setCookie('Eis.FontSize', 'small', 7);
+            resetCss();
+            document.getElementById('ctl00_uxChangeToSmallCss').className = "selected";
+	        setCss('css/styles_size_small.css');  
+	    }
+	    function setNormFont() {
+	        setCookie('Eis.FontSize', 'normal', 7);
+            resetCss();
+            document.getElementById('ctl00_uxChangeToNormalCss').className = "selected";
+	        setCss('css/styles_size_normal.css'); 
+	    }
+	    function setLargeFont() {
+	        setCookie('Eis.FontSize', 'large', 7);
+            resetCss();
+            document.getElementById('ctl00_uxChangeToLargeCss').className = "selected";
+	        setCss('css/styles_size_big.css');
+	    }
+
+	 </script>
+
+    
+    <title>
+	EIS - Sākumlapa
+</title></head>
+<body>
+	<form name="aspnetForm" method="post" action="./" id="aspnetForm" onsubmit="return checkErrorFields();" autocomplete="off" aria-autocomplete="none">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+    var warningModal;
+    var warningCaller;
+    var warningResult;
+    var warningCallerClient;
+    var warningResultClient;
+
+    function ShowWarning(senderUniqueID, text) {
+        //saglabājam izsaucēju, lai Accept gadījumā varētu izsaukt postBack
+        warningCaller = senderUniqueID;
+        //uzstādām textu
+        warningText = document.getElementById('ctl00_uxWarningBlock_uxWarningText');
+        warningText.innerHTML = text;
+        //atradam warning formu
+        warningModal = $find('WarningModalForm');
+        //uzstadam formas pogu onclick handlerus
+        cancelButton = document.getElementById('ctl00_uxWarningBlock_uxCancel');
+        cancelButton.onclick = function() {CancelWarningForm(); return false;};
+        acceptButton = document.getElementById('ctl00_uxWarningBlock_uxAccept');
+        acceptButton.onclick = function () {AcceptWarningForm(); return false;};
+        //parādam formu
+        warningModal.show(); 
+    }
+
+    function ShowNavigationWarning(senderUniqueID, senderClientID, resultUniqueId, resultClientId, text) {
+        //saglabājam izsaucēju, lai Accept gadījumā varētu izsaukt postBack
+        warningCaller = senderUniqueID;
+        warningCallerClient = senderClientID;
+        if (FormDataChangesSaveControlId){
+            warningResult = FormDataChangesSaveControlId;
+            warningResultClient = FormDataChangesSaveControlId;
+        }
+        else {
+            warningResult = resultUniqueId;
+            warningResultClient = resultClientId;
+        }        
+        //uzstādām textu
+        warningText = document.getElementById('ctl00_uxWarningBlock_uxWarningText');
+        warningText.innerHTML = text;
+        //atradam warning formu
+        warningModal = $find('WarningModalForm');
+        //uzstadam formas pogu onclick handlerus
+        cancelButton = document.getElementById('ctl00_uxWarningBlock_uxCancel');
+        cancelButton.onclick = function() {CancelNavigationWarningForm(); return false;};
+        acceptButton = document.getElementById('ctl00_uxWarningBlock_uxAccept');
+        acceptButton.onclick = function () {AcceptNavigationWarningForm(); return false;};
+        //parādam formu
+        warningModal.show(); 
+    }
+    
+    function CancelWarningForm() {
+        warningModal.hide();        
+    }
+
+    function AcceptWarningForm() {
+        warningModal.hide();
+        __doPostBack(warningCaller, '');
+    }
+
+    function CancelNavigationWarningForm() {
+        warningModal.hide();
+        if (warningCallerClient) {
+            warningCallerElement = document.getElementById(warningCallerClient);
+            if (warningCallerElement && warningCallerElement.href) {
+                if (warningCallerElement.href.indexOf('__doPostBack', 0) >= 0) {
+                    __doPostBack(warningCaller, '');
+                }
+                else {
+                    window.location = warningCallerElement.href;
+                }
+            }
+        }             
+    }
+
+    function AcceptNavigationWarningForm() {
+        warningModal.hide();
+        if (warningResultClient) {
+            warningResultElement = document.getElementById(warningResultClient);
+            if (warningResultElement && warningResultElement.href) {
+                if (warningResultElement.href.indexOf('__doPostBack', 0) >= 0) {
+                    __doPostBack(warningResult, '');
+                }
+                else {
+                    window.location = warningResultElement.href;
+                }        
+            }
+        }        
+    }
+        function ShowQuestionWarning(UniqueID, MessageText){ShowWarning(UniqueID, MessageText); return false;}var __cultureInfo = {"name":"lv-LV","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"NS","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"priekšp.","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402293599999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2049,"IsReadOnly":false},"DateSeparator":".","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, yyyy. \u0027gada\u0027 d. MMMM HH:mm:ss","LongDatePattern":"dddd, yyyy. \u0027gada\u0027 d. MMMM","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d. MMMM","PMDesignator":"pēcp.","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd.MM.yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"yyyy. \u0027g\u0027. MMMM","AbbreviatedDayNames":["svētd.","pirmd.","otrd.","trešd.","ceturtd.","piektd.","sestd."],"ShortestDayNames":["Sv","Pr","Ot","Tr","Ce","Pk","Se"],"DayNames":["svētdiena","pirmdiena","otrdiena","trešdiena","ceturtdiena","piektdiena","sestdiena"],"AbbreviatedMonthNames":["janv.","febr.","marts","apr.","maijs","jūn.","jūl.","aug.","sept.","okt.","nov.","dec.",""],"MonthNames":["janvāris","februāris","marts","aprīlis","maijs","jūnijs","jūlijs","augusts","septembris","oktobris","novembris","decembris",""],"IsReadOnly":false,"NativeCalendarName":"Gregora kalendārs","AbbreviatedMonthGenitiveNames":["janv.","febr.","marts","apr.","maijs","jūn.","jūl.","aug.","sept.","okt.","nov.","dec.",""],"MonthGenitiveNames":["janvāris","februāris","marts","aprīlis","maijs","jūnijs","jūlijs","augusts","septembris","oktobris","novembris","decembris",""]},"eras":[1,"m.ē.",null,0]};//]]>
+</script>
+
+<script src="/EIS/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yIdBqwUJRuxqJFTpDgNVfzk7GFIiSecONP2-H3CwFRHXS-DnJCDM-Q7LzTjqiV3JpV_iirduaWn_5xvtV1PfaWKTs-GgPBF9FW-2km1QOrP5KsVuATxQQUojZBF2APYEhtyvhvGQU7wsuYdq87pz5Sc1&amp;t=3e3fe94" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=5h0NtxUlQa8Df2oWXPhUL3tsu0cBOLjOI780gAS_m7Xf_70ibBFM508Reoh9SSH3_17pSh7yroq4pOhU3ZYRdvrIZ8n-54ca7u7_Cmn0QKQ5t3NVGSCm0Ys6H55Vq12i7Pv3uWAyZA0JKr4bJPdzvQ2&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=I5r_uwF_kmHq3vRnqwJ1AcopZZFJLDuVgtB6bubLet5cEIco_brsZz-xVnvP6OI9jHcbLs2vIdrd71vVx273Y8mnT08O7yss46zZsG2tLPvm8qsi0Tq-ZSSe_VlagMTX3Rm9GxoqyqFqIsKk1TTpSQD_2M3tQux3v0hj4JxkIyc1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=6wa3I55aEUG9Dm2RoAuxyOgEjVlunPBqYoEzFXA_WB6B0yUuHp8laUXnFUh6FXh-k5UflOHzITyL-sHMKDoKRc9fAHwl7nzz7s-AL9g95TFjN0a3aP7UIrwm6RztW3hCaNRcZagsVr7I_plnSViipLNZaRj_wwWcWKZdg-05wPHNj38MbFbqK9Zn7tUpXiPe0&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=rlicvrbMGEB1GFbgiKVbMLRA7i8fDDkOJipxT_wK7u-d3IR5WZ1JlIavnyuHbG1d8xFNgD-SpOiklFg4fC_y7PQLMB4375frasvc8XNUXrcGhGXespYOwhoszObYXenq-nV6EaW3zxFoF8lfSGvlrQ2&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=iJc5GC8IP03yL3OMTkjySole5t0kVZo-gb21WZCdoYkxos3XXRYK2QfFuFhoK-83YCYev-MImmpcUHCIgnGR2Yv0VHSMsypZAo5CrR-0VefbKUlVFU-e6PaYggzWSIeJV50le-zSZQCAnXdTGqAWSM_SFFVvEgxG2MIu51A-Wfg1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=8atfSV1JXUIsloAr70CRL1kRt-Ht3SixZrzSok0MozoUhCzh9DQHLpCm2Y-Tgw5n6qh9EC4hqv7-0DQ93soVLijM_4v2GNnPkOo5AeyqkcSL8B4lPEoA38i3I0CWbs-VO_B4uEQdbQjoJTGSRua2C9tsmoHXHbN_G4awxoNa7P41&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=1_HN8NE_aonX90W5kRPrGdN6O1rvmj7riCIFsJY0D9vTpe0ypvD5UTscTIIi8Z4QMuvaTzlibNbmXPELrjD_qAZvxe52nEAQCPW_6yeZoZVyvRtL-Fap0CfpJYC2gMfDobdTRgDi_B-aJOMcjjz5lovmkhPGpZOrXE1o0wtxwYs1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=a8-5fblyF_ztGy9t8kO_wGbzEQZc5mgSLytxYdH649Dz6XB55iaxijRfuIf6jlhhEmbLnqnvgyUMiH4L8Xw148JWi-f3Iz1oT4PTxxlYMPRDa70QVUKL8YHRs4kFAGEZs29YiQysk_5I-Sf76H1OyCS0xeRM2sr8THymBY-BXZsJs3vRMlbEKxdabp12Xbaa0&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/EIS/ScriptResource.axd?d=u2luSl1xdo5oVvzd8PiF7efIwqaeF3tCz3OPTfZ1QkpDGlPfZSLPwX2DkTuLU_nLBrg4MCOJfLCg4SgiDGhEgPkA2VRqphIxojqoJqx78_-DvQQYUuqASpvaOwVTJCYUV0ckjYlHrJSkMbcgbtBTu0ccG09kNkA8lc2CCWkalVQ1&amp;t=5f915bbd" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A6A7BF48" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="DWAY/dz07I1Hq83at16tugAD21NATcl1IoR+36kxz0+KLop8DIrb1NF64ch19f4ZDDxnT/wavcpGx6v2Y4XxsaHP5oFkq0j5LzHq+5TE5WN4GfX0qXMXzbGg/PXmP+/KyJDM7LyOiWN/UkwbLPdwadg/QQ6UyEnHLC6k+Oplnuz1DDdItbZuUxko7wXA85Wpf4WPxer6UuILjGPJZimgdK5odAvIjFOSxtPpTXI5Pqyl1+bdsibFfQ2EOBIEh8JveJQ6RuXLBdFGg2CRxYuClQIGCK5wKJExqd8Y5KeJQehndjKgQT3erZExK+IClNTNlGZutWKG7VpQWwLBsA7chQzC1JSxJ08IBf++1WfJ48YnMYIF2FrFEeMzQmOQbXEiRgckvTv0r+dk5Amsi7noIQ==" />
+    
+    
+    
+    <div style="display: none; " id="progressIndicatorDiv">
+		<div class="progressBackgroundFilter">
+		</div>
+		<div class="processMessageOutter">
+		    <div class="processMessageMiddle">
+		        <div class="processMessageInner">
+		            <div class="processMessage">
+		                <div style="text-align:center" class="contentheader">
+		                    <h1>
+		                    <img id="ctl00_uxLoaderImage" src="img/ajax-loader.gif" border="0" style="vertical-align:middle;" />&nbsp;&nbsp;&nbsp;Lūdzu uzgaidiet...</h1>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+    <div class="logo printElement">
+        <table class="maincontainer">
+            <tr>
+                <td class="leftpanel">
+                    <img src="img/EIS_menu_logo_sm.png" id="ctl00_uxLogoPrint" width="177" height="81" alt="~" />
+                </td>
+                <td class="rightpanel">
+                    <div class="header-title-row">
+					    <span id="ctl00_uxPrintTitle" class="header-title">Elektronisko Iepirkumu Sistēma</span>
+                    </div>
+                </td>
+            </tr>             
+        </table>
+    </div>
+
+    <table class="maincontainer">
+	    <tr class="maincontainer-header">
+		    <td class="leftpanel">
+    		    <div class="leftpanel-top-part">
+                    <div class="header-logo webElement">
+                        <div class="header-logo-brand">
+                            <a href="Default.aspx?" id="ctl00_uxLogoUrl"></a>
+                        </div>
+                        <ul class="header-logo-navigation">
+                            <li id="ctl00_uxLogoCatalogue"><a href="Categories/CategoryList.aspx?" id="ctl00_uxCatalogueLink"><span id="ctl00_ctl12" class="">e-pasūtījumi</span></a></li>
+                            <li><a href="https://www.eis.gov.lv/EKEIS/SupplierAuction/" id="ctl00_uxBiddingLink"><span id="ctl00_ctl14" class="">e-izsoles</span></a></li>
+                            <li><a href="https://www.eis.gov.lv/EKEIS/Supplier/" id="ctl00_uxTenderLink"><span id="ctl00_ctl16" class="">e-konkursi</span></a></li>
+                            <li id="ctl00_uxLogoCertificate"><a href="https://www.eis.gov.lv/EKEIS/Certificate/" id="ctl00_uxCertificateLink"><span id="ctl00_ctl17" class="">e-izziņas</span></a></li>
+                        </ul>
+                    </div>
+		        </div>
+                </td>
+            <td class="rightpanel">
+                <div class="header-title-row">
+					<span id="ctl00_uxTitle" class="header-title">Elektronisko Iepirkumu Sistēma</span>
+					
+					<div class="menu-selector">
+						<a href="Base/#" id="ctl00_uxHelpUrl" class="help" onclick="window.open(&#39;NetHelp/_d2h_ctxt_help.htm?contextID=KAR.S02&#39;);return false;"><span id="ctl00_uxHelpTitle" class="">Palīdzība</span></a>  
+						<a href="##" id="ctl00_uxChangeToSmallCss" onclick="setSmallFont();return false;">A</a>
+						<span class="fontsize-seperator">|</span>
+						<a href="##" id="ctl00_uxChangeToNormalCss" onclick="setNormFont();return false;" class="selected">A</a>
+						<span class="fontsize-seperator">|</span>
+						<a href="##" id="ctl00_uxChangeToLargeCss" onclick="setLargeFont();return false;">A</a>  
+                        <div class="language">
+                            <a href="/EIS/?NewLang=ENG">EN</a><span>|</span><a href="/EIS/?NewLang=LAT" class="selected">LV</a>
+                        </div>      
+						
+					</div>
+				</div>
+    		    <div id="ctl00_uxTabUpdatePanel">
+	
+			    <ul class="topmenu">
+                     <li id="ctl00_uxHome">
+					    <a href="Default.aspx?" id="ctl00_uxHomeUrl" class="tab">
+                            <span class="tableftcap"></span>
+                            <span class="tabbody">
+                                <span class="glyphicons glyphicons-home"></span>
+						    </span>
+                            <span class="tabrightcap"></span>
+					    </a>
+				    </li>
+
+                    
+
+				    
+				    
+				    
+				    
+				    
+				    
+				    				    				    
+				    <li id="ctl00_uxTabReport">
+					    <a href="Reports/PublishedReportList.aspx?" id="ctl00_uxTabReportUrl" class="tab">
+						    <span class="tableftcap"></span>
+						    <span class="tabbody">
+							    <!--<span class="iconreport mr5"></span>-->
+							    <span id="ctl00_uxTabReportTitle" class="">Statistika</span>
+						    </span>
+						    <span class="tabrightcap"></span>
+					    </a>
+				    </li>	
+                    				    
+				 
+			    </ul>
+			    
+</div>
+            </td>
+        </tr>
+        <tr id="ctl00_uxWelcomeBannerRow">
+	<td colspan="2">
+                <div>
+<div style="height: 180px; width: 100%; border: none; background-repeat: no-repeat; background-position: right; background-image: url('https://www.eis.gov.lv/EIS/img/Sveicinajuma_baneris.png'); text-align: right;"><span style="font-size: 16px; font-weight: bold; text-align: center; color: #535353; width: 100%;"><br>&nbsp; &nbsp;</span><span style="font-size: 16px; font-weight: bold; text-align: right; color: #535353; width: 100%;"><br>&nbsp;</span></div>
+</div>
+            </td>
+</tr>
+
+         <tr>
+		    <td class="leftpanel leftpanel-menu">
+                
+
+<script>
+    function _refreshReCaptcha(fieldId)
+    {
+        var recaptcha = $("#" + fieldId);
+        if (recaptcha.length > 0)
+        {
+            grecaptcha.render(fieldId, {
+                sitekey: '6LdfPhcUAAAAAF-mx31HHE3QrnrkHLDgmdI4C_Kb',
+                theme: "light"
+            });
+        }
+    }
+    function refreshReCaptcha() {
+        _refreshReCaptcha("uxReCaptcha");
+    }
+    function setFocus()
+    {
+        var loginElement = $('#ctl00_uxAuthenticationBlock_uxLoginText');
+        if (loginElement != null) {
+            loginElement.focus();
+        }
+        refreshReCaptcha();
+    }
+    function setPasswordFocus() {
+        document.getElementById('ctl00_uxAuthenticationBlock_uxPasswordText').focus();
+        refreshReCaptcha();
+    }
+    function setCodeFocus() {
+        document.getElementById('ctl00_uxAuthenticationBlock_uxSecondStepCodeText').focus();
+    }
+    function setTwoFactorCodeFocus() {
+        document.getElementById('ctl00_uxAuthenticationBlock_uxTwoFactorCode').focus();
+        }
+    function loginKeyPress(event)
+    {
+        if (event.keyCode == 13)
+        {
+            document.getElementById('ctl00_uxAuthenticationBlock_uxPasswordText').focus();
+            return false;
+        }
+        return true;
+    }
+    function passwordKeyPress(event) {
+        if (event.keyCode == 13) {
+            document.getElementById('ctl00_uxAuthenticationBlock_uxLoginFirstButton').click();
+            return false;
+        }
+        return true;
+    }
+    function codecardKeyPress(event) {
+        if (event.keyCode == 13) {
+            document.getElementById('ctl00_uxAuthenticationBlock_uxLoginSecondButton').click();
+            return false;
+        }
+        return true;
+    }
+    function twoFactorCodeKeyPress(event) {
+        if (event.keyCode == 13) {
+            document.getElementById('ctl00_uxAuthenticationBlock_uxLoginSecondButton').click();
+               return false;
+           }
+           return true;
+       }
+</script>
+
+<div id="ctl00_uxAuthenticationBlock_uxBlock" class="bluebox default">
+    <div class="blueboxbody">
+        <div id="ctl00_uxAuthenticationBlock_uxAnonymousBlock" class="login-block button-group row">
+	
+            <a class="btn btn-default username-btn">
+                <span id="ctl00_uxAuthenticationBlock_uxAnonymousLabel" class="">Viesis</span>
+            </a>
+            <div>
+                <a id="ctl00_uxAuthenticationBlock_uxOpenLogin" class="btn btn-default login-btn iconlogin" ButtonStyle="Small" title="Pieslēgties" href="javascript:__doPostBack(&#39;ctl00$uxAuthenticationBlock$uxOpenLogin&#39;,&#39;&#39;)"></a>
+            </div>
+        
+</div>
+        
+    </div>
+</div>  
+
+<div id="ctl00_uxAuthenticationBlock_uxAuthenticationPanel">
+	
+    <div id="uxAuthenticateModalWindow">
+    
+    <div id="ctl00_uxAuthenticationBlock_uxLoginPanel" style="display:none;">
+		
+    <div id="ctl00_uxAuthenticationBlock_uxLoginUpdatePanel">
+			        
+
+        
+        
+
+<script src='https://www.google.com/recaptcha/api.js?hl=lv'></script>
+<script>
+    function refreshPasswordResetReCaptcha() {
+        _refreshReCaptcha("uxPasswordResetReCaptcha");
+    }
+    function resfreshPasswordUsernameKeyPress(event) {
+        if (event.keyCode == 13) {
+            document.getElementById('ctl00_uxAuthenticationBlock_uxResetPasswordPopup_uxEmail').focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+
+
+        
+
+<script>
+    function onSmartIdPersonCodeKeypress(event) {
+        if (event.keyCode == 13) {
+            document.getElementById('ctl00_uxAuthenticationBlock_uxSmartIdPopup_uxContinueButton').click();
+            return false;
+        }
+        return true;
+    }
+    function smartIdRefreshResult() {
+        ignoreIndicator();
+        document.getElementById('ctl00_uxAuthenticationBlock_uxSmartIdPopup_uxGetResultButton').click();
+    }
+    function initSmartIdRefreshResult(timeout) {
+        setTimeout(smartIdRefreshResult, timeout);
+    }
+</script>
+
+
+
+
+        <script>
+            function latvijaLvActive(isActive) {
+                $('#ctl00_uxAuthenticationBlock_uxLatvijaLvTab').prop('src', isActive ? "img/latvijalv_hover.png" : "img/latvijalv.png")
+            }
+        </script>
+
+        <table id="ctl00_uxAuthenticationBlock_uxLoginFormTable" class="modal authentication-modal">
+				<tr>
+					<td colspan="2">
+                    <div id="ctl00_uxAuthenticationBlock_uxPopupHeaderControl_uxPopupHeaderPanel" class="popupheader" style="">
+						
+<table class="popupheadertable" style="width:100%">
+    
+    <tr>
+        <td style="text-align:left; width:100%;">
+            <h1 style="display:inline-block;">        
+                <span id="ctl00_uxAuthenticationBlock_uxPopupHeaderControl_uxPopupHeader" class="">Autentifikācija</span>        
+            </h1>            
+        </td>             
+        <td class="nowrap" style="text-align:right;">
+            <a id="ctl00_uxAuthenticationBlock_uxPopupHeaderControl_uxCloseButton" class="iconclosepopup" title="" href="javascript:__doPostBack(&#39;ctl00$uxAuthenticationBlock$uxPopupHeaderControl$uxCloseButton&#39;,&#39;&#39;)"></a>
+            <a href="Controls/#" id="ctl00_uxAuthenticationBlock_uxPopupHeaderControl_uxHelpUrl" onclick="window.open(&#39;NetHelp/_d2h_ctxt_help.htm?contextID=AUT.S01&#39;);return false;">
+                <span class="iconmodalhelp"></span>
+                <span id="ctl00_uxAuthenticationBlock_uxPopupHeaderControl_uxHelpTitle" class="modalHelpTitle">Palīdzība</span>
+            </a>            
+        </td>      
+    </tr>
+</table>
+
+					</div>
+                </td>
+				</tr>
+				<tr id="ctl00_uxAuthenticationBlock_uxAuthSelectionRow" class="login-select-auth-type-block">
+					<td colspan="2">
+                    <span id="ctl00_uxAuthenticationBlock_ctl04" class="m0 nowrap login-title-block">Izvēlieties autentifikācijas metodi</span>
+                    <table class="w-100 login-selection-auth-wrap-block">
+                        <tr>
+                            <td class="login-select-auth-type-cell">
+                                <h3><span id="ctl00_uxAuthenticationBlock_ctl05" class=""> </span></h3>
+                                <a id="ctl00_uxAuthenticationBlock_uxLoginByEparaksts" class="login-eparaksts button-login" href="javascript:__doPostBack(&#39;ctl00$uxAuthenticationBlock$uxLoginByEparaksts&#39;,&#39;&#39;)"><span><ins>e-Paraksts</ins></span></a>
+                                <a id="ctl00_uxAuthenticationBlock_uxLoginBySmartId" class="login-smart-id button-login" href="javascript:__doPostBack(&#39;ctl00$uxAuthenticationBlock$uxLoginBySmartId&#39;,&#39;&#39;)"><span><ins>Smart-ID</ins></span></a>
+                                <h3><span id="ctl00_uxAuthenticationBlock_ctl06" class=""> </span></h3>
+                                <a id="ctl00_uxAuthenticationBlock_uxLoginByLoginPassword" class="login-password button-login" href="javascript:__doPostBack(&#39;ctl00$uxAuthenticationBlock$uxLoginByLoginPassword&#39;,&#39;&#39;)"><span><ins>Parole un kods</ins></span></a>
+                                <a id="ctl00_uxAuthenticationBlock_uxLoginByLatvija" class="login-latvija-lv button-login" href="javascript:__doPostBack(&#39;ctl00$uxAuthenticationBlock$uxLoginByLatvija&#39;,&#39;&#39;)"><span><ins>Vienotā pieteikšanās</ins></span></a>
+                                <div class="floatright" style="padding-top:5px">
+                                    <a id="ctl00_uxAuthenticationBlock_uxHowToRegister1" href="https://www.eis.gov.lv/EIS/Publications/PublicationView.aspx?PublicationId=4&amp;systemCode=CORE">Kā reģistrēties?</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+				</tr>
+			</table>
+			
+       
+		</div>
+    
+	</div>
+</div>
+
+</div>
+                  
+                
+                
+<div class="whitebox">
+    <div class="whiteboxhead">
+        <!--<span class="iconinfo mr9"></span>-->
+	    <span><span id="ctl00_uxPublicationBlock_uxHeaderLabel" class="">Publikācijas</span></span>
+    </div>
+    <div class="whiteboxbody p0">
+        
+        
+                <ul class="whiteboxlist">
+            
+                <li><a href="Publications/PublicationView.aspx?PublicationId=21&amp;systemCode=CORE">Par e-iepirkumu sistēmu</a>
+                </li>
+            
+                <li><a href="Publications/PublicationView.aspx?PublicationId=1&amp;systemCode=CORE">Kontaktinformācija</a>
+                </li>
+            
+                <li><a href="Publications/PublicationView.aspx?PublicationId=4&amp;systemCode=CORE">Reģistrācijas informācija</a>
+                </li>
+            
+                <li><a href="Publications/PublicationView.aspx?PublicationId=5&amp;systemCode=CORE">Saistošie dokumenti</a>
+                </li>
+            
+                <li><a href="Publications/PublicationView.aspx?PublicationId=933&amp;systemCode=CORE">Piekļūstamības paziņojums</a>
+                </li>
+            
+                </ul>
+            
+    </div>
+    <div class="whiteboxfoot"></div>
+</div>
+
+			    
+                
+                <a class="copyright" href="https://europa.eu/youreurope/index.htm#lv" target="_blank">
+	                <!--<div class="eraftext">			        
+		                    <span id="ctl00_uxErafTitle" class="">Projektu līdzfinansē Eiropas Savienība</span>
+			                <br /><br />
+			                <span id="ctl00_uxCopyright" class="">VRAA (c) 2009</span>
+		                </div>
+		                <div class="erafsmall"></div>-->
+	            </a>
+		    </td>
+		    <!--<td class="spacercell"><img src="img/0.png" width="9" height="1" alt="0.png" /></td>-->
+		    <td class="rightpanel rightpanel-content">
+    		
+                
+			    <div id="ctl00_uxBreadcrumbsbox" class="breadcrumbsbox breadcrumb-critical-message">
+				    <div class="breadcrumbs">
+					    
+				    </div>
+			    </div>
+    				
+			    
+			    
+			    
+			    <div class="content">
+			        
+                    
+			        <div id="ctl00_uxInfoMessagesUpdatePanel">
+	
+			                
+                            
+			            
+</div>
+			        
+                    
+
+    
+    
+       
+    <table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-CORE">
+                        <span class="publication_title"><b><font color='red'>Plānoti tehniski darbi IDC</font>
+</b></span>
+                        <div style="color:Black" class="alignjustify"><b>25.10.2026. | 19:00 - 23:00</b><br>
+Iespējami traucējumi e-identitātes apliecināšanā ar eID, eParaksts kartēm un...</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">23.10.2026</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=2265"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl01_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-CORE">
+                        <span class="publication_title"><b><font color='red'>Līdz 02.11.2026. pagarināts moratorijs IKT iepirkumiem!</font></b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">05.10.2026</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=2966"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl02_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b><font color='navy'>Groza apstiprināšanas termiņa pagarinājums</font></b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">27.07.2026</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=2996"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl03_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b>Atvērts jauns katalogs CI133P "Servertehnikas pakalpojumi"</b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">27.05.2026</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=1725"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl04_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KON">
+                        <span class="publication_title"><b>Atvērta jauna DIS par Mākoņskaitļošanas pakalpojumu piegādi.</b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">06.05.2026</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="https://www.eis.gov.lv/EKEIS/Publication/View/1769"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl05_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b>Atvērts jauns katalogs CI132 "Mobilie sakari"</b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">15.01.2026</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=2846"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl06_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KON">
+                        <span class="publication_title"><b><font color='005BAA'>Pieejama jauna apziņošanas funkcionalitāte</font></b></span>
+                        <div style="color:Black" class="alignjustify">Piegādātājiem iespēja pieteikties jaunumiem par izsludinātiem iepirkumiem, uzspiežot uz <font face="Glyphicons Halflings">🔔</font> ikonu.</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">23.12.2025</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="https://www.eis.gov.lv/EKEIS/Publication/View/2836"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl07_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KON">
+                        <span class="publication_title"><b><font color='005BAA'>EIS atjauninājumi</font></b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">22.12.2025</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="https://www.eis.gov.lv/EKEIS/Publication/View/944"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl08_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KON">
+                        <span class="publication_title"><b><font color='005BAA'>ESPD rīka jaunumi</font></b></span>
+                        <div style="color:Black" class="alignjustify">ESPD aizpildes rīks atjaunots un pieejams lietotājiem.</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">29.04.2025</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="https://www.eis.gov.lv/EKEIS/Publication/View/2676"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl09_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b><font color='005BAA'>Par zāļu cenām MK Nr.803</b></span>
+                        <div style="color:Black" class="alignjustify">No 01.01.2025. ir stājušies spēkā grozījumi MK noteikumos Nr.803</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">22.01.2025</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=2646"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl10_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b>Uzmanību piegādātāji</b></span>
+                        <div style="color:Black" class="alignjustify">No 2025. gada ir obligāti e-rēķini</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">01.01.2025</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=519"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl11_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b>Ja esat komersants, kas vēlas piedāvāt preces/pakalpojumus e-katalogos</b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">12.12.2024</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=2648"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl12_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-CORE">
+                        <span class="publication_title"><b><font color='005BAA'>EIS dati LADP</font></b></span>
+                        <div style="color:Black" class="alignjustify">Latvijas Atvērto datu portālā (LADP) pieejamās ziņas no EIS.</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">14.10.2024</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=1394"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl13_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b><font color='005BAA'>Datortehnikas e-katalogi CI123!</font></b></span>
+                        <div style="color:Black" class="alignjustify">Par vispārīgās vienošanās un tiesību aktu nosacījumu ievērošanu datortehnikas katalogos CI-123V, CI-123P,...</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">04.07.2024</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=2465"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl14_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KON">
+                        <span class="publication_title"><b>Par divfaktoru autentifikāciju</b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">05.02.2024</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="https://www.eis.gov.lv/EKEIS/Publication/View/2316"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl15_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b>Par medikamentu iegādes atļaujām</b></span>
+                        <div style="color:Black" class="alignjustify">Par MK noteikumiem Nr.220 “Zāļu iegādes, uzglabāšanas, izlietošanas, uzskaites un iznīcināšanas kārtība ā...</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">11.09.2023</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=2185"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl16_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-IZZ">
+                        <span class="publication_title"><b>Uzmanību e-izziņu pieprasītāji</b></span>
+                        <div style="color:Black" class="alignjustify">e-izziņu pieprasīšanas nosacījumi pārejas periodā. Papildināts 19.01.2023</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">19.01.2023</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="https://www.eis.gov.lv/EKEIS/Publication/View/1845"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl17_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b>Nosacījumi atlikto grozu izveidei</b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">15.01.2023</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=1595"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl18_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-KAT">
+                        <span class="publication_title"><b>Uzmanību! Visos EIS darījumos paredzēta tikai 100% pēcapmaksa!</b></span>
+                        <div style="color:Black" class="alignjustify"></div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">12.12.2022</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=1995"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl19_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table><table style="display:inline-table" class="actual_publications">
+            <tr>
+                <td>
+                    <div class="actual_publications_content publication-block-CORE">
+                        <span class="publication_title"><b><font color='005BAA'>Pašreģistrācija</b></span>
+                        <div style="color:Black" class="alignjustify">Latvijā reģistrētiem piegādātājiem ir iespēja reģistrēties EIS tiešsaistē</div>
+                        <div style="display:block;position:absolute;bottom:5px;" class="publication_date">25.07.2019</div>
+                        <div style="color:Black;position:absolute;right:5px;bottom:5px;">
+                            <a href="Publications/PublicationView.aspx?PublicationId=1464"
+                                <span id="ctl00_uxMainContent_uxPublicationList_uxPublicationRepeater_ctl20_ctl01" class="">Lasīt vairāk</span>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr></table>
+    
+    
+    <div id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxMainPanel">
+	
+<a id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxHiddenTargetControlForModalPopup" href="javascript:__doPostBack(&#39;ctl00$uxMainContent$uxIvisAuthenticationUserList$uxHiddenTargetControlForModalPopup&#39;,&#39;&#39;)" style="display:none"></a>
+    
+    
+    <div id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxUserListPopupPanel" class="popup" style="display:none;">
+		            
+        <div id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxUpdatePanel">
+			
+        <div id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxPopupHeaderControl_uxPopupHeaderPanel" class="popupheader" style="">
+				
+<table class="popupheadertable" style="width:100%">
+    
+    <tr>
+        <td style="text-align:left; width:100%;">
+            <h1 style="display:inline-block;">        
+                <span id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxPopupHeaderControl_uxPopupHeader" class="">Lietotāja izvēle</span>        
+            </h1>            
+        </td>             
+        <td class="nowrap" style="text-align:right;">
+            <a id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxPopupHeaderControl_uxCloseButton" class="iconclosepopup" title="" href="javascript:__doPostBack(&#39;ctl00$uxMainContent$uxIvisAuthenticationUserList$uxPopupHeaderControl$uxCloseButton&#39;,&#39;&#39;)"></a>
+            <a href="Controls/#" id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxPopupHeaderControl_uxHelpUrl" onclick="window.open(&#39;NetHelp/_d2h_ctxt_help.htm?contextID=AUT.S03&#39;);return false;">
+                <span class="iconmodalhelp"></span>
+                <span id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxPopupHeaderControl_uxHelpTitle" class="modalHelpTitle">Palīdzība</span>
+            </a>            
+        </td>      
+    </tr>
+</table>
+
+			</div>
+        <div id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxPopupContent" style="overflow:auto; max-height:800px; padding:10px;">
+				
+            
+                    
+                    
+                    <span id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxTitle" class="">Izvēlieties ar kuru lietotāju vēlaties strādāt:</span>
+                    <br /><br />
+
+                    <div>
+
+				</div>
+                    <br />
+                    <div class="aligncenter">                
+                        <a id="ctl00_uxMainContent_uxIvisAuthenticationUserList_uxCancelButton" class="mlr5 buttonyellow" href="javascript:__doPostBack(&#39;ctl00$uxMainContent$uxIvisAuthenticationUserList$uxCancelButton&#39;,&#39;&#39;)"><span><ins>Atcelt</ins></span></a>            
+                    </div>   
+                
+        
+			</div>
+        
+		</div>
+    
+	</div>
+
+</div>
+
+			    </div>
+    						
+			    <!--<div class="contentleftcorner"></div>
+			    <div class="contentrightcorner"></div>-->
+		    </td>
+	    </tr>
+    </table>    
+    <div id="ctl00_uxWarningBlockUpdatePanel">
+	
+            <input type="hidden" name="ctl00$uxWarningBlock$uxWarningTargetControl" id="ctl00_uxWarningBlock_uxWarningTargetControl" />
+
+
+    
+<div id="ctl00_uxWarningBlock_uxWarningPanel" style="display:none;">
+		
+    <div id="ctl00_uxWarningBlock_uxWarningUpdatePanel">
+			    
+            <table border="0" width="350">
+            <tr>
+                <td style="background-color:#FFFFFF;">
+                    <div class="warningTitle">
+                        <span id="ctl00_uxWarningBlock_uxLoginHeader" class="">Brīdinājums</span> 
+                    </div>
+                    <div style="padding: 10px 10px 10px 10px">
+                    <span id="ctl00_uxWarningBlock_uxWarningText"></span>
+                    </div>
+                    <div style="text-align:center">
+                        <a id="ctl00_uxWarningBlock_uxAccept" class="mlr5 buttongreen" href="javascript:__doPostBack(&#39;ctl00$uxWarningBlock$uxAccept&#39;,&#39;&#39;)"><span><ins>Labi</ins></span></a>            
+                        <a id="ctl00_uxWarningBlock_uxCancel" class="mlr5 buttonred" href="javascript:__doPostBack(&#39;ctl00$uxWarningBlock$uxCancel&#39;,&#39;&#39;)"><span><ins>Aizvērt</ins></span></a>            
+                    </div>
+                    
+                </td>
+            </tr>
+            </table>
+        
+		</div>
+
+	</div>
+
+        
+</div>     
+     
+     <div id="ctl00_uxScreenResolutionDetectorPanel">
+	
+        <input type="hidden" name="ctl00$uxX" id="ctl00_uxX" />
+        <input type="hidden" name="ctl00$uxY" id="ctl00_uxY" />
+        <script language="javascript" type="text/javascript">
+        // <![CDATA[
+
+            var uxX = document.getElementById('ctl00_uxX');
+            var uxY = document.getElementById('ctl00_uxY');
+            if (uxX && uxY) {
+                uxX.value = screen.width;
+                uxY.value = screen.height;
+            }
+
+        // ]]>
+        </script>
+     
+</div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(EnableFaMode) === 'function') {EnableFaMode(false);}(function() {var fn = function() {AjaxControlToolkit.ModalPopupBehavior.invokeViaServer('uxUserListPopupBehaviour', false); Sys.Application.remove_load(fn);};Sys.Application.add_load(fn);})();//]]>
+</script>
+<script src="Scripts/validators.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"ctl00_uxAuthenticationBlock_uxLoginPanel","dynamicServicePath":"/EIS/default.aspx","id":"AuthFirstStep"}, null, null, $get("ctl00_uxAuthenticationBlock_uxOpenLogin"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"ctl00_uxMainContent_uxIvisAuthenticationUserList_uxUserListPopupPanel","PopupDragHandleControlID":"ctl00_uxMainContent_uxIvisAuthenticationUserList_uxPopupHeaderControl","dynamicServicePath":"/EIS/default.aspx","id":"uxUserListPopupBehaviour"}, null, null, $get("ctl00_uxMainContent_uxIvisAuthenticationUserList_uxHiddenTargetControlForModalPopup"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","DropShadow":true,"PopupControlID":"ctl00_uxWarningBlock_uxWarningPanel","dynamicServicePath":"/EIS/default.aspx","id":"WarningModalForm"}, null, null, $get("ctl00_uxWarningBlock_uxWarningTargetControl"));
+});
+//]]>
+</script>
+</form>
+    <span id="spnToolTip" style="BORDER-RIGHT: gray 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: gray 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 8pt; Z-INDEX: 999999; BACKGROUND: lightyellow; VISIBILITY: hidden; PADDING-BOTTOM: 2px; BORDER-LEFT: gray 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: gray 1px solid; FONT-FAMILY: Verdana; POSITION: absolute" onmouseout="hideToolTip()">
+    </span>
+	<div id="webchat-app-bot"></div>
+    
+	<script type="text/javascript">
+		Sys.Application.add_load(AppLoad);
+
+		function AppLoad() {
+			Sys.WebForms.PageRequestManager.getInstance().add_endRequest(CheckAjaxRequestForError);
+		}
+
+		window.addEventListener("load", function () {
+
+			var header = 'Paziņojums par sīkdatņu izmantošanu';
+			var dismiss = 'Iepazinos';
+			var message = 'Lai nodrošinātu e-iepirkumu sistēmas un tās apakšsistēmu darbību, portālā tiek izmantotas sīkdatnes.';
+			var link = 'Vairāk informācijas šeit!';
+			var href = 'https://www.eis.gov.lv/EIS/Publications/AttachedFiles/LietSaistDok/EIS_privatuma_politika.docx';
+			var days = 90;
+     
+			showCookieConsent(days, header, dismiss, message, link, href);
+		});
+	</script>
+
+</body>
+</html>

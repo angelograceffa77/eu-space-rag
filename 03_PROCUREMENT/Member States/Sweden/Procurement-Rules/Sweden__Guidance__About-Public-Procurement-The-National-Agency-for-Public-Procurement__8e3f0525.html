@@ -1,0 +1,883 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="robots" content="index, follow">
+	
+
+
+
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/v1.1.2/uc.js"
+        integrity="sha384-YprxiQRFqVuzj9AtKVRN9kRxxFjNMoqly/Za+eqBWINcd9WHwmhKz9fsl+o0Iuft"
+        crossorigin="anonymous"
+        data-culture="EN"
+        type="text/javascript" data-gcm-enabled="false"></script>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-T62Z58L');
+    </script>
+    <!-- End Google Tag Manager -->
+	
+	<script>
+!function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{src: "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js", crossOrigin: "anonymous", cfg: {connectionString: 'InstrumentationKey=7c032545-f4d9-4d58-92df-02612298b510;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/;ApplicationId=3f6c5b22-0cae-46cc-b01d-79ffff4efa68', disableCookiesUsage: false }});
+</script>
+
+
+    <title data-react-helmet="true">About Public Procurement | The National Agency for Public Procurement</title><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:title" content="About Public Procurement"/><meta data-react-helmet="true" property="og:description" content="Public procurement is the purchasing process used by public sector organisations. There are rules governing how this is conducted. Public procurement can also be used to contribute to sustainable societal development."/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="About Public Procurement"/><meta data-react-helmet="true" name="twitter:description" content="Public procurement is the purchasing process used by public sector organisations. There are rules governing how this is conducted. Public procurement can also be used to contribute to sustainable societal development."/><meta data-react-helmet="true" name="pageid" content="603"/><meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=Edge"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/><meta data-react-helmet="true" name="description" content="Public procurement is the purchasing process used by public sector organisations. There are rules governing how this is conducted. Public procurement can also be used to contribute to sustainable societal development."/><link data-react-helmet="true" rel="alternate" hrefLang="en" href="https://www.upphandlingsmyndigheten.se/en/about-public-procurement/"/><link data-react-helmet="true" rel="alternate" hrefLang="sv" href="https://www.upphandlingsmyndigheten.se/om-offentlig-upphandling/"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="144x144" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-144x144-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="114x114" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-114x114-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="72x72" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-72x72-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-57x57-precomposed.png"/><link data-react-helmet="true" rel="shortcut icon" href="/Areas/Upphandlingsmyndigheten/Assets/favicon.ico"/><link data-react-helmet="true" rel="canonical" href="https://www.upphandlingsmyndigheten.se/en/about-public-procurement/"/>
+
+        <link rel="stylesheet" href="/Areas/Upphandlingsmyndigheten/Assets/static/css/main.d54f584f.css" />
+</head>
+
+<body>
+	
+
+
+
+<script src="/global-assets/react/react.production.min.js"></script>
+<script src="/global-assets/react/react-dom.production.min.js"></script>
+
+<script src="" data-consent-src="https://www.youtube.com/iframe_api"
+    data-category-consent="cookie_cat_marketing"
+    integrity="sha384-Fx5m0JNllZnCO3PqnnBg7wLveKJ1uq3tmW6+9USE6XkgWYtfdcxqu7BIPOH+doxI"
+    crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T62Z58L"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+	
+
+	
+
+
+<script>
+    window.__model = {
+  "content": {
+    "tableOfContents": {
+      "heading": "Content",
+      "isSticky": true,
+      "titles": [
+        {
+          "text": "Shall safeguard tax funds and ensure healthy competition",
+          "targetId": "shall_safeguard_tax_funds_and_ensure_healthy_competition",
+          "titles": []
+        },
+        {
+          "text": "Differences between public procurement and private-sector purchases",
+          "targetId": "differences_between_public_procurement_and_private_sector_purchases",
+          "titles": []
+        },
+        {
+          "text": "Contributing to sustainable development in society",
+          "targetId": "contributing_to_sustainable_development_in_society",
+          "titles": []
+        },
+        {
+          "text": "Public purchases are subject to certain rules",
+          "targetId": "public_purchases_are_subject_to_certain_rules",
+          "titles": []
+        },
+        {
+          "text": "How to conduct public procurements",
+          "targetId": "how_to_conduct_public_procurements",
+          "titles": []
+        }
+      ],
+      "modelType": "TableOfContents",
+      "chapters": [
+        "shall_safeguard_tax_funds_and_ensure_healthy_competition",
+        "differences_between_public_procurement_and_private_sector_purchases",
+        "contributing_to_sustainable_development_in_society",
+        "public_purchases_are_subject_to_certain_rules",
+        "how_to_conduct_public_procurements"
+      ]
+    },
+    "text": {
+      "modelType": "Html",
+      "hasContent": true,
+      "fragments": [
+        {
+          "modelType": "Chapter",
+          "id": "shall_safeguard_tax_funds_and_ensure_healthy_competition",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "Shall safeguard tax funds and ensure healthy competition"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>Public procurement shall ensure that organisations within the public sector open their purchasing to competition. This is to ensure that tax funds are used as effectively as possible and that businesses within the European Union can trade with public sector stakeholders on equal terms.</p><p>For major procurements, which entail a duty to advertise, the public is also given insight into the process and how their taxes are being used. In other words, it is easier to check whether purchases are made for business rather than personal reasons.</p>"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "differences_between_public_procurement_and_private_sector_purchases",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "Differences between public procurement and private-sector purchases"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>The procuring organisations finance their purchases with public funds. For this reason, they must abide by stricter procurement rules than private stakeholders. For example, procuring organisations cannot directly contact a previous supplier, or someone recommended to them, when purchasing goods or services.&nbsp;</p><p>A public procurement often takes longer than a private-sector purchase, particularly for major procurements. Depending on the value of the procurement, different rules apply. Minor transactions, so called direct awards, are more similar to private-sector purchases than major transactions, where more procurement rules apply.</p>"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "contributing_to_sustainable_development_in_society",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "Contributing to sustainable development in society"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>Swedish public procurements amount to more than 800 billion krona each year. This corresponds to almost one fifth of Sweden&rsquo;s GDP.&nbsp;</p><p>When public procurements are used strategically there is every opportunity to&nbsp;</p><ul>\n<li>drive developments to a more sustainable society by demanding socially and environmentally sustainable products and services</li>\n<li>using suppliers&rsquo; capacity for innovation in order to develop new solutions.</li>\n</ul>"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "public_purchases_are_subject_to_certain_rules",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "Public purchases are subject to certain rules"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>More or less all purchasing done within the public sector, including rent and leasing, constitutes public procurement and is therefore subject to procurement legislation. Depending on what will be procured and how much the procurement is valued at, different sections of the procurement legislation will be applicable. Even a purchase worth 1 krona is a public procurement as per the legal definition.</p>"
+              },
+              {
+                "id": null,
+                "isEmpty": false,
+                "steps": [
+                  {
+                    "id": null,
+                    "heading": null,
+                    "subHeading": null,
+                    "isOpen": false,
+                    "isEmpty": false,
+                    "fragments": [],
+                    "steps": [
+                      {
+                        "id": "",
+                        "heading": "Laws governing public procurement",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>The Swedish procurement legislation consists of four laws:&nbsp;</p><ul>\n<li>The Public Procurement Act (LOU)</li>\n<li>The Act on Procurement in the Utilities Sector (LUF)</li>\n<li>The Act on Procurement of Concessions (LUK)</li>\n<li>The Defence and Security Procurement Act (LUFS)</li>\n</ul><p>Most procurements are conducted in accordance with LOU. The Act on System of Choice in the Public Sector (LOV) can be used as an alternative to procurement in accordance with LOU for healthcare and social services.</p><p><a href=\"/en/the-act-on-systems-of-choice-lov/\">The Act on System of Choice in the Public Sector - LOV</a></p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "Public sector organisations shall comply with the procurement legislation",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>The organisations that shall follow the procurement legislation primarily include:</p><ul>\n<li>state or municipal agencies</li>\n<li>governing bodies in a municipality or region</li>\n<li>publicly governed bodies such as most municipal and some state companies</li>\n<li>associations of one or more authorities, assemblies or publicly governed bodies.</li>\n</ul><p>Companies that conduct operations within water, energy, transport or postal services with an exclusive right or a specific right are also obligated to follow the procurement legislation.</p><p>In the legislation, these procuring organisations are called contracting authorities or entities.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "Suppliers are not subject to the procurement legislation",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>The procurement legislation is a regulatory framework that is aimed at procuring organisations. A supplier who wishes to submit a tender in a public procurement process is not obligated to follow the procurement legislation, but the supplier must follow the instructions in the tender documents for the individual procurement. The tender documents comprise the documents used by a procuring organisation to describe and stipulate the contents of a procurement.</p><p><a href=\"/en/conducting-business-with-public-sector-stakeholders/\">Doing business with public sector stakeholders</a></p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "Five basic principles of procurement",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>Irrespective of which law is applicable to the procurement, there are five basic principles that the procuring organisation must consider at all stages of the public procurement. Most of the legal provisions are basically an expression of these principles.</p><p>The basic procurement principles are:&nbsp;</p><ul>\n<li>non-discrimination</li>\n<li>equal treatment</li>\n<li>proportionality</li>\n<li>transparency</li>\n<li>mutual recognition</li>\n</ul><p>They mean that procuring organisations must always remain objective and neutral to the stakeholders that wish to become suppliers, and the entire procurement process must be characterised by transparency and proportionality.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "Fewer rules for direct awards",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>In direct awards, there are no specific rules regarding how to carry out the procurement. For example, there are no requirements on how to draft a tender or that the procurement must be advertised. <br><br>However, even a direct award is subject to certain aspects of the procurement rules. Among other things, the basic procurement principles shall be observed.</p><p>The most common situation when direct awards are used is when the item to be purchased has a value that does not exceed the so-called limit for direct awards.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "Certain products and services are exempted",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>There are exemptions for certain products and services which means that these do not need to be procured in accordance with the procurement rules. These exemptions include renting or purchasing property and purchasing certain financial or legal services.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      }
+                    ],
+                    "modelType": "Step"
+                  }
+                ],
+                "modelType": "StepByStep",
+                "listType": "none"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "how_to_conduct_public_procurements",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "How to conduct public procurements"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>Below is a general description of what a public procurement might look like.</p>"
+              },
+              {
+                "id": null,
+                "isEmpty": false,
+                "steps": [
+                  {
+                    "id": null,
+                    "heading": null,
+                    "subHeading": null,
+                    "isOpen": false,
+                    "isEmpty": false,
+                    "fragments": [],
+                    "steps": [
+                      {
+                        "id": "",
+                        "heading": "1. Is a purchase necessary?",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>A procurement begins when a public body has a need that they are not able to or cannot meet themselves. The organisation therefore decides to make a purchase &ndash; a public procurement.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "2. Analysing the needs and the market",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>The procuring organisation analyses their needs in order to formulate requirements for what needs to be purchased. The needs, in combination with the value of the procurement, will impact the requirements that can be specified in the procurement as well as how the procurement will be conducted.</p><p>In order to find out which requirements may be relevant, the procuring organisation can contact companies and experts in the market in question. There is no obligation to have these discussions but it can often be both appropriate and necessary. A prerequisite for the discussion is that the procuring organisation treats all suppliers the same and does not give any supplier a competitive advantage.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "3. The requirements are compiled in the tender documents",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>The procuring organisation outlines their requirements in the so-called tender documents. These documents contain all the relevant information required by the suppliers in order to submit tenders in the procurement. Terms that are frequently used in a procurement include mandatory requirements (must have) and non-mandatory requirements (nice to have).</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "4. Advertising the procurement",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>Procuring organisations must advertise all procurements that are not direct awards in an advertising database registered with the Competition Authority. If the value of the procurement exceeds the so-called threshold, it must also be advertised in the joint EU advertising database, the Tenders Electronics Daily (TED).&nbsp;</p><p>There is no national advertising database for procurements taking place in Sweden. For that reason, anyone wishing to conduct business with public sector stakeholders should register with several Swedish advertising databases as well as subscribe to an advertising monitoring service.</p><p><a href=\"https://www.konkurrensverket.se/upphandling/registrerade-annonsdatabaser/annonsdatabasregistret/\" rel=\"external\">List of registered databases at the Swedish Competition Authority (in Swedish)</a></p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "5. Suppliers submit tenders",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>Any suppliers interested in participating in the procurement respond to the advertisement by submitting a tender. In the tender, the supplier describes the various requirements in the tender documents.&nbsp;</p><p>During the advertising period, the procuring organisation is obligated to provide additional information about the tender documents no later than six days before the listed tender closing date, provided that the supplier has asked their questions well in advance. For that reason, it is important that the supplier asks their questions within the time limits that apply to questions and answers, and which are listed in the tender documents. The answers shall be provided in writing and made available at the same time to everyone participating in the procurement, for example by publishing the answer in the procurement tool.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "6. Examining the tenders",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>After the time limit for submitting tenders has expired, the procuring organisation examines the submitted tenders based on the requirements in the tender documents.&nbsp;</p><p>The organisation shall award the contract to the supplier that submitted the best tender.&nbsp;</p><p>It shall be apparent from the tender documents how the tenders will be assessed.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "7. Award notice and contract",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>The procuring organisation decides which supplier or suppliers will be awarded the contract and sends information about the decision to all tenderers.</p><p>In most procurements, there is a so-called standstill period during which the procuring organisation cannot conclude a contract with the new supplier. During this period it is possible for the suppliers that were not awarded a contract to request a review by a court of law. When the standstill period expires a contract may be concluded, provided that the procurement is not under review.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      }
+                    ],
+                    "modelType": "Step"
+                  }
+                ],
+                "modelType": "StepByStep",
+                "listType": "none"
+              }
+            ]
+          },
+          "isEmpty": false
+        }
+      ]
+    },
+    "contentArea": [],
+    "relatedLinks": [],
+    "feedbackModel": null,
+    "preamble": "Public procurement is the purchasing process used by public sector organisations. There are rules governing how this is conducted. Public procurement can also be used to contribute to sustainable societal development.",
+    "heading": "About Public Procurement",
+    "id": "603",
+    "url": "/en/about-public-procurement/",
+    "isEditable": false,
+    "modelType": "UpphandlingsmyndighetenArticlePage"
+  },
+  "kundoChatScript": {
+    "script": null,
+    "kundoRenderHardCodedJavaScript": true
+  },
+  "alertBar": {
+    "alerts": []
+  },
+  "contact": {
+    "addresses": {
+      "first": {
+        "name": "Visiting Address",
+        "street": "Svetsarvägen 10",
+        "zipCode": "171 41 ",
+        "city": "Solna"
+      },
+      "second": {
+        "name": "Postal Address",
+        "street": "Upphandlingsmyndigheten",
+        "zipCode": "Box 1194, 171 23 ",
+        "city": "Solna"
+      }
+    },
+    "channels": {
+      "heading": "Contact",
+      "items": [
+        {
+          "name": "Telephone",
+          "value": "08-586 217 01",
+          "type": "phone"
+        },
+        {
+          "name": "Telephone hours",
+          "value": "Mon-Fri 9-15",
+          "type": "phone"
+        }
+      ]
+    },
+    "social": [
+      {
+        "name": "Twitter",
+        "value": "https://twitter.com/uhmynd",
+        "type": "twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "value": "https://www.linkedin.com/company/upphandlingsmyndigheten",
+        "type": "linkedin"
+      },
+      {
+        "name": "Facebook",
+        "value": "https://www.facebook.com/upphandlingsmyndigheten",
+        "type": "facebook"
+      }
+    ]
+  },
+  "search": {
+    "searchPageUrl": "/en/search/",
+    "apiUrl": "/api/en/upphandlingsmyndigheten/search",
+    "numberOfHitsPerPage": 10,
+    "placeholderText": "Search site",
+    "performSearchText": "Searching...",
+    "showMoreResultsText": "Show more"
+  },
+  "logotype": {
+    "url": "/en/",
+    "alt": "Start",
+    "logo": null
+  },
+  "popularPages": {
+    "first": {
+      "heading": "Quick links",
+      "links": [
+        {
+          "href": "/en/public-procurement/",
+          "text": "Public Procurement",
+          "title": "Public Procurement",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/statsstod/state-aid-guidance/",
+          "text": "State Aid guidance",
+          "title": "State Aid guidance",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/the-act-on-systems-of-choice-lov/",
+          "text": "The Act on Systems of Choice (LOV)",
+          "title": "The Act on Systems of Choice (LOV)",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/conducting-business-with-public-sector-stakeholders/",
+          "text": "Conducting business with public sector stakeholders",
+          "title": "Conducting business with public sector stakeholders",
+          "target": null,
+          "external": false
+        }
+      ]
+    },
+    "second": {
+      "heading": "Quick links",
+      "links": [
+        {
+          "href": "/en/sustainable-public-procurement/",
+          "text": "Sustainable public procurement",
+          "title": "Sustainable public procurement",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/criteria/",
+          "text": "Our sustainability criteria",
+          "title": "Our sustainability criteria",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/about-us/",
+          "text": "About us",
+          "title": "About us",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/about-us/contact-us/",
+          "text": "Contact us",
+          "title": "Contact us",
+          "target": null,
+          "external": false
+        }
+      ]
+    }
+  },
+  "quickLinksBar": {
+    "links": [
+      {
+        "modelType": "LanguageSelector"
+      }
+    ]
+  },
+  "quickLinksFooter": {
+    "quickLinks": []
+  },
+  "skipToMainContent": {
+    "text": null
+  },
+  "theme": {
+    "color": "default"
+  },
+  "webAnalytics": {
+    "googleTagManagerCode": "GTM-T62Z58L"
+  },
+  "breadcrumbs": {
+    "breadcrumbs": [
+      {
+        "url": "/en/",
+        "text": "Start",
+        "isActive": false
+      },
+      {
+        "url": "/en/about-public-procurement/",
+        "text": "About Public Procurement",
+        "isActive": true
+      }
+    ]
+  },
+  "languages": {
+    "culture": "en",
+    "languages": [
+      {
+        "id": "sv",
+        "name": "Swedish",
+        "text": "På svenska",
+        "url": "/om-offentlig-upphandling/",
+        "isExactMatch": true
+      }
+    ]
+  },
+  "metadata": {
+    "title": "About Public Procurement | The National Agency for Public Procurement",
+    "description": "Public procurement is the purchasing process used by public sector organisations. There are rules governing how this is conducted. Public procurement can also be used to contribute to sustainable societal development.",
+    "canonicalUrl": "https://www.upphandlingsmyndigheten.se/en/about-public-procurement/",
+    "contentId": "603",
+    "noIndex": false,
+    "twitter": {
+      "card": null,
+      "title": "About Public Procurement",
+      "description": "Public procurement is the purchasing process used by public sector organisations. There are rules governing how this is conducted. Public procurement can also be used to contribute to sustainable societal development.",
+      "image": null
+    },
+    "openGraph": {
+      "title": "About Public Procurement",
+      "description": "Public procurement is the purchasing process used by public sector organisations. There are rules governing how this is conducted. Public procurement can also be used to contribute to sustainable societal development.",
+      "image": null
+    },
+    "languages": [
+      {
+        "culture": "en",
+        "url": "https://www.upphandlingsmyndigheten.se/en/about-public-procurement/"
+      },
+      {
+        "culture": "sv",
+        "url": "https://www.upphandlingsmyndigheten.se/om-offentlig-upphandling/"
+      }
+    ],
+    "administrativeArea": "FO Inköpsprocessen - juridik och praktik"
+  },
+  "navigation": {
+    "items": [
+      {
+        "url": "/en/public-procurement/",
+        "text": "Public Procurement",
+        "title": "Public Procurement",
+        "isOpen": false,
+        "isActive": false,
+        "items": [
+          {
+            "url": "/en/public-procurement/about-public-procurement/",
+            "text": "About Public Procurement",
+            "title": "About Public Procurement",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/sustainable-public-procurement/",
+            "text": "Sustainable Procurement",
+            "title": "Sustainable Procurement",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/criteria/",
+            "text": "Find sustainability criteria",
+            "title": "Find sustainability criteria",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/innovation-in-procurement/",
+            "text": "Innovation in procurement",
+            "title": "Innovation in procurement",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/public-procurement/e-commerce/",
+            "text": "E-commerce",
+            "title": "E-commerce",
+            "isOpen": false,
+            "isActive": false,
+            "items": [
+              {
+                "url": "/en/public-procurement/e-commerce/e-invoicing-for-suppliers-to-the-public-sector/",
+                "text": "E-invoicing for suppliers to the public sector",
+                "title": "E-invoicing for suppliers to the public sector",
+                "isOpen": false,
+                "isActive": false,
+                "items": []
+              },
+              {
+                "url": "/en/public-procurement/e-commerce/mandatory-e-invoicing-in-the-public-sector/",
+                "text": "Mandatory e-invoicing in the public sector",
+                "title": "Mandatory e-invoicing in the public sector",
+                "isOpen": false,
+                "isActive": false,
+                "items": []
+              },
+              {
+                "url": "/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/",
+                "text": "The Law and Regulation on e-invoices",
+                "title": "The Law and Regulation on e-invoices",
+                "isOpen": false,
+                "isActive": false,
+                "items": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "url": "/en/conducting-business-with-public-sector-stakeholders/",
+        "text": "Conducting business with public sector stakeholders",
+        "title": "Conducting business with public sector stakeholders",
+        "isOpen": false,
+        "isActive": false,
+        "items": []
+      },
+      {
+        "url": "/en/statsstod/state-aid-guidance/",
+        "text": "State Aid guidance",
+        "title": "State Aid guidance",
+        "isOpen": false,
+        "isActive": false,
+        "items": []
+      },
+      {
+        "url": "/en/the-act-on-systems-of-choice-lov/",
+        "text": "The Act on Systems of Choice (LOV)",
+        "title": "The Act on Systems of Choice (LOV)",
+        "isOpen": false,
+        "isActive": false,
+        "items": []
+      },
+      {
+        "url": "/en/about-us/",
+        "text": "About us",
+        "title": "About us",
+        "isOpen": false,
+        "isActive": false,
+        "items": [
+          {
+            "url": "/en/about-us/our-mission/",
+            "text": "Our mission",
+            "title": "Our mission",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/about-us/contact-us/",
+            "text": "Contact us",
+            "title": "Contact us",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          }
+        ]
+      }
+    ],
+    "accessibilityDescription": null,
+    "openNavigationItemLabel": "Open",
+    "closeNavigationItemLabel": "Close",
+    "navigationButtonLabel": "Menu"
+  },
+  "epi": {
+    "isEditable": true,
+    "inEditMode": false,
+    "inPreviewMode": false,
+    "displayChannels": [],
+    "fullRefreshProperties": [],
+    "version": "1.0.24535.0"
+  },
+  "localization": {
+    "culture": "en",
+    "translations": {
+      "/frontend/components/signIn/title": "Logga in",
+      "/frontend/components/signIn/orWith": "eller logga in med",
+      "/frontend/components/applicationCookie/username/label": "Användarnamn",
+      "/frontend/components/applicationCookie/username/placeholder": "Användarnamn",
+      "/frontend/components/applicationCookie/password/label": "Lösenord",
+      "/frontend/components/applicationCookie/password/placeholder": "Lösenord",
+      "/frontend/components/files/actions/heading": "Ladda ner fil",
+      "/frontend/components/headerMenu/menu": "Meny",
+      "/frontend/components/headerMenu/search": "Sök",
+      "/frontend/components/searchResults/heading": "Sökresultat",
+      "/frontend/components/searchBar/actions/search": "Sök",
+      "/frontend/actions/signIn": "Logga in",
+      "/frontend/actions/download": "Ladda ner"
+    }
+  },
+  "react": {
+    "library": "demoMaster",
+    "siteBaseUrl": "www.upphandlingsmyndigheten.se",
+    "clientOnly": false,
+    "serverOnly": false,
+    "containerId": "App",
+    "apiUrl": "/",
+    "apiEditUrl": "/api/content",
+    "renderingState": 1
+  },
+  "manifest": {
+    "entrypoints": [
+      "/Areas/Upphandlingsmyndigheten/Assets/static/js/vendors~main.9af48341.chunk.js",
+      "/Areas/Upphandlingsmyndigheten/Assets/static/css/main.d54f584f.css",
+      "/Areas/Upphandlingsmyndigheten/Assets/client/client-main.4cd102c3.js"
+    ],
+    "clientCss": "",
+    "favIcon": ""
+  }
+}
+</script>
+
+<div id="App"><div tabindex="-1" style="outline:none"><div class=""><header data-cid="PageHeader"><nav data-cid="QuickLinksBar" class="relative bg-greyLighter py-3 overflow-hidden border-b border-greyLight quick-links-bar"><div class="mx-auto max-w-site"><div class="pl-4 lg:pl-6 flex grid-item -ml-4"><div class="mx-4 w-full"><ul class="text-p flex justify-end"><li class="ml-6"><a href="/om-offentlig-upphandling/" id="sv" class="flex items-center text-teal hover:underline" aria-label="Byt språk till svenska">På svenska</a></li></ul></div></div></div></nav><div class="pt-2 md:py-3 border-b-2 border-greyLight"><div class="mx-auto max-w-site"><div class="pl-4 lg:pl-6 flex grid-item -ml-4"><div class="mx-4 w-full"><div class="flex justify-between items-center"><a href="/en/" class=""><img class="h-10 md:h-16 w-auto" src="/assets/static/media/uhm.a8e48fa7.svg" alt="Upphandlingsmyndighetens logotyp som leder till startsidan" height="64" width="178"/></a><div class="flex items-center"><div class="hidden ml-auto searchwrapper md:block"><div class="relative searchfield__wrapper" data-cid="SearchField"><form method="post" action="" encType="application/x-www-form-urlencoded" novalidate=""><label class="sr-only" for="searchfieldDesktop">Search site</label><div class="relative"><input type="text" class="pl-10 text-p leading-4 h-10 w-full px-3 py-1 border-2 border-greySemiLight focus:border-blue rounded transition-all focus:outline-none disabled:text-greyLight disabled:cursor-not-allowed placeholder-greyDarker placeholder-opacity-100" placeholder="Search site" aria-invalid="true" value="" name="searchfieldDesktop" id="searchfieldDesktop" aria-describedby="formsearchfieldDesktop__desc" validation="false" autoComplete="off" role="combobox" aria-expanded="false" aria-controls="searchfield-dropdown-226"/></div><button class="absolute top-0 left-0 w-auto mt-2 ml-3" type="submit" tabindex="0" data-cid="SearchFieldSubmit"><span class="sr-only" data-cid="Text">Searching...</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button></form></div></div><div class="ml-auto md:hidden"><button type="button" aria-controls="mobile-search-11232" aria-expanded="false" aria-label="Öppna sök" data-cid="MobileSearch"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-black inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><div id="mobile-search-11232" class="absolute top-0 left-0 w-full min-h-full overflow-y-scroll z-50 page-overlay animate-fade-in" hidden=""><div class="flex p-4 bg-white mobilesearch__searchfield-wrapper"><div class="relative searchfield__wrapper" data-cid="SearchField"><form method="post" action="" encType="application/x-www-form-urlencoded" novalidate=""><label class="sr-only" for="searchfieldMobile">Search site</label><div class="relative"><input type="text" class="pl-10 text-p leading-4 h-10 w-full px-3 py-1 border-2 border-greySemiLight focus:border-blue rounded transition-all focus:outline-none disabled:text-greyLight disabled:cursor-not-allowed placeholder-greyDarker placeholder-opacity-100" placeholder="Search site" aria-invalid="true" value="" name="searchfieldMobile" id="searchfieldMobile" aria-describedby="formsearchfieldMobile__desc" validation="false" autoComplete="off" role="combobox" aria-expanded="false" aria-controls="searchfield-dropdown-227"/></div><button class="absolute top-0 left-0 w-auto mt-2 ml-3" type="submit" tabindex="0" data-cid="SearchFieldSubmit"><span class="sr-only" data-cid="Text">Searching...</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button></form></div><button type="button" class="mx-4" aria-controls="mobile-search-11232" aria-expanded="false" aria-label="Stäng sökfält"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" data-cid="Icon" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button></div></div></div><div class="ml-4"><div><button type="button" aria-label="Open null menu" aria-controls="mobile-menu-11233" aria-expanded="false" data-cid="MobileMenu"><span class="mr-2 pl-1 hidden md:inline-block">Menu</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-black inline-block align-middle transition-all duration-300 transform fill-current w-5 h-5 rotate-0"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button><div id="mobile-menu-11233" hidden="" class="right-0 mt-4 md:mt-10 absolute w-full z-50 bg-transparent animate-fade-in"><div class="mx-auto max-w-site"><div class="flex grid-item"><div class="md:flex flex-row-reverse w-full"><nav class="w-full md:w-96 bg-white border-t-2 border-white"><ul><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/public-procurement/" class="w-full my-3 hover:underline">Public Procurement</a><button aria-controls="menu-pane-11234" aria-expanded="false" aria-label="Open Public Procurement" class="w-12 h-12"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white inline-block align-middle transition-all duration-300 transform fill-current w-5 h-5 rotate-0"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button></div><ul id="menu-pane-11234" class="animate-fade-in" hidden=""><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/public-procurement/about-public-procurement/" class="w-full my-3 hover:underline">About Public Procurement</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/sustainable-public-procurement/" class="w-full my-3 hover:underline">Sustainable Procurement</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/criteria/" class="w-full my-3 hover:underline">Find sustainability criteria</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/innovation-in-procurement/" class="w-full my-3 hover:underline">Innovation in procurement</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/public-procurement/e-commerce/" class="w-full my-3 hover:underline">E-commerce</a><button aria-controls="menu-pane-11239" aria-expanded="false" aria-label="Open E-commerce" class="w-12 h-12"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal inline-block align-middle transition-all duration-300 transform fill-current w-5 h-5 rotate-0"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button></div><ul id="menu-pane-11239" class="animate-fade-in" hidden=""><li><div class="bg-greyLightest text-black border-greyLight pl-14 border-b  flex justify-between"><a href="/en/public-procurement/e-commerce/e-invoicing-for-suppliers-to-the-public-sector/" class="w-full my-3 hover:underline">E-invoicing for suppliers to the public sector</a></div></li><li><div class="bg-greyLightest text-black border-greyLight pl-14 border-b  flex justify-between"><a href="/en/public-procurement/e-commerce/mandatory-e-invoicing-in-the-public-sector/" class="w-full my-3 hover:underline">Mandatory e-invoicing in the public sector</a></div></li><li><div class="bg-greyLightest text-black border-greyLight pl-14 border-b  flex justify-between"><a href="/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/" class="w-full my-3 hover:underline">The Law and Regulation on e-invoices</a></div></li></ul></li></ul></li><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/conducting-business-with-public-sector-stakeholders/" class="w-full my-3 hover:underline">Conducting business with public sector stakeholders</a></div></li><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/statsstod/state-aid-guidance/" class="w-full my-3 hover:underline">State Aid guidance</a></div></li><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/the-act-on-systems-of-choice-lov/" class="w-full my-3 hover:underline">The Act on Systems of Choice (LOV)</a></div></li><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/about-us/" class="w-full my-3 hover:underline">About us</a><button aria-controls="menu-pane-11246" aria-expanded="false" aria-label="Open About us" class="w-12 h-12"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white inline-block align-middle transition-all duration-300 transform fill-current w-5 h-5 rotate-0"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button></div><ul id="menu-pane-11246" class="animate-fade-in" hidden=""><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/about-us/our-mission/" class="w-full my-3 hover:underline">Our mission</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/about-us/contact-us/" class="w-full my-3 hover:underline">Contact us</a></div></li></ul></li></ul></nav></div></div></div></div></div></div></div></div></div></div></div></div></header><div data-cid="Breadcrumbs" class="py-4 border-b-borderWidth border-borderColor"><div class="mx-auto max-w-site"><div class="pl-4 lg:pl-6 flex grid-item -ml-4"><div class="mx-4 w-full"><nav aria-label="Brödsmulor"><ul class="text-lg text-alt leading-6"><li class="root parent breadcrumbs__item text-p md:text-l font-fontStandard" data-cid="BreadcrumbsItem"><a href="/en/" class="inline-flex items-center no-underline text-primary-2 hover:underline"><svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" class="breadcrumbs__back-icon md:hidden inline-block align-middle transition-all duration-300 transform fill-current w-3 h-3 rotate-0" aria-hidden="true"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-21.000000, -15.000000)" fill="currentColor"><g><g transform="translate(16.000000, 0.000000)"><g transform="translate(0.000000, 12.000000)"><path d="M10.4714045,4.47140451 C10.7317541,4.21105498 10.7317541,3.78894499 10.4714045,3.52859546 C10.211055,3.26824593 9.78894501,3.26824593 9.52859549,3.52859546 L5.52859547,7.52859548 C5.26824594,7.78894501 5.26824594,8.21105499 5.52859547,8.47140452 L9.52859549,12.4714045 C9.78894501,12.7317541 10.211055,12.7317541 10.4714045,12.4714045 C10.7317541,12.211055 10.7317541,11.788945 10.4714045,11.5285955 L6.94280904,8 L10.4714045,4.47140451 Z"></path></g></g></g></g></g></svg>Start</a></li><li class=" current breadcrumbs__item text-p md:text-l font-fontStandard" data-cid="BreadcrumbsItem">About Public Procurement</li></ul></nav></div></div></div></div><main class="pt-10 md:pt-8 global__page-content" id="main-content"><div class="mx-auto max-w-site"><div class="-mt-4 md:mt-0 lg:px-6 px-4 flex grid-item"><div class="w-full lg:w-7/12"><h1 class="font-fontAlt font-semibold text-h1 mb-4" data-epi-property-name="heading" data-epi-property-render="none" data-cid="Text">About Public Procurement</h1></div></div></div><div class="mx-auto max-w-site"><div class="flex-row-reverse lg:px-6 px-4 flex grid-item"><div class="w-full lg:w-7/12"><p class="font-fontStandard text-preamble mb-8" data-epi-property-name="preamble" data-epi-property-render="none" data-cid="Text">Public procurement is the purchasing process used by public sector organisations. There are rules governing how this is conducted. Public procurement can also be used to contribute to sustainable societal development.</p><div class="mb-8" data-cid="Toc"><h2 class="font-semibold text-h4 mb-2">Content</h2><ul class=""><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#shall_safeguard_tax_funds_and_ensure_healthy_competition" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">Shall safeguard tax funds and ensure healthy competition</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#differences_between_public_procurement_and_private_sector_purchases" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">Differences between public procurement and private-sector purchases</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#contributing_to_sustainable_development_in_society" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">Contributing to sustainable development in society</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#public_purchases_are_subject_to_certain_rules" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">Public purchases are subject to certain rules</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#how_to_conduct_public_procurements" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">How to conduct public procurements</a></li></ul></div><div data-epi-property-name="text" data-epi-property-render="none"><div id="shall_safeguard_tax_funds_and_ensure_healthy_competition"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>Shall safeguard tax funds and ensure healthy competition</span></h2><div class="richtext"><div><p>Public procurement shall ensure that organisations within the public sector open their purchasing to competition. This is to ensure that tax funds are used as effectively as possible and that businesses within the European Union can trade with public sector stakeholders on equal terms.</p><p>For major procurements, which entail a duty to advertise, the public is also given insight into the process and how their taxes are being used. In other words, it is easier to check whether purchases are made for business rather than personal reasons.</p></div></div></div><div id="differences_between_public_procurement_and_private_sector_purchases"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>Differences between public procurement and private-sector purchases</span></h2><div class="richtext"><div><p>The procuring organisations finance their purchases with public funds. For this reason, they must abide by stricter procurement rules than private stakeholders. For example, procuring organisations cannot directly contact a previous supplier, or someone recommended to them, when purchasing goods or services.&nbsp;</p><p>A public procurement often takes longer than a private-sector purchase, particularly for major procurements. Depending on the value of the procurement, different rules apply. Minor transactions, so called direct awards, are more similar to private-sector purchases than major transactions, where more procurement rules apply.</p></div></div></div><div id="contributing_to_sustainable_development_in_society"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>Contributing to sustainable development in society</span></h2><div class="richtext"><div><p>Swedish public procurements amount to more than 800 billion krona each year. This corresponds to almost one fifth of Sweden&rsquo;s GDP.&nbsp;</p><p>When public procurements are used strategically there is every opportunity to&nbsp;</p><ul>
+<li>drive developments to a more sustainable society by demanding socially and environmentally sustainable products and services</li>
+<li>using suppliers&rsquo; capacity for innovation in order to develop new solutions.</li>
+</ul></div></div></div><div id="public_purchases_are_subject_to_certain_rules"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>Public purchases are subject to certain rules</span></h2><div class="richtext"><div><p>More or less all purchasing done within the public sector, including rent and leasing, constitutes public procurement and is therefore subject to procurement legislation. Depending on what will be procured and how much the procurement is valued at, different sections of the procurement legislation will be applicable. Even a purchase worth 1 krona is a public procurement as per the legal definition.</p></div></div><div class="border-primary-1" data-cid="StepByStep"><div class="mb-16"><div class="relative mb-6 pb-6 border-b-2 border-greyLight mt-6 pt-6 border-t-2" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11249" id="accordion-item-button-11249"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Laws governing public procurement</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11249" role="region" aria-labelledby="accordion-item-button-11249" hidden=""><div><div class="richtext"><div><p>The Swedish procurement legislation consists of four laws:&nbsp;</p><ul>
+<li>The Public Procurement Act (LOU)</li>
+<li>The Act on Procurement in the Utilities Sector (LUF)</li>
+<li>The Act on Procurement of Concessions (LUK)</li>
+<li>The Defence and Security Procurement Act (LUFS)</li>
+</ul><p>Most procurements are conducted in accordance with LOU. The Act on System of Choice in the Public Sector (LOV) can be used as an alternative to procurement in accordance with LOU for healthcare and social services.</p><p><a href="/en/the-act-on-systems-of-choice-lov/">The Act on System of Choice in the Public Sector - LOV</a></p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11250" id="accordion-item-button-11250"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Public sector organisations shall comply with the procurement legislation</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11250" role="region" aria-labelledby="accordion-item-button-11250" hidden=""><div><div class="richtext"><div><p>The organisations that shall follow the procurement legislation primarily include:</p><ul>
+<li>state or municipal agencies</li>
+<li>governing bodies in a municipality or region</li>
+<li>publicly governed bodies such as most municipal and some state companies</li>
+<li>associations of one or more authorities, assemblies or publicly governed bodies.</li>
+</ul><p>Companies that conduct operations within water, energy, transport or postal services with an exclusive right or a specific right are also obligated to follow the procurement legislation.</p><p>In the legislation, these procuring organisations are called contracting authorities or entities.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11251" id="accordion-item-button-11251"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Suppliers are not subject to the procurement legislation</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11251" role="region" aria-labelledby="accordion-item-button-11251" hidden=""><div><div class="richtext"><div><p>The procurement legislation is a regulatory framework that is aimed at procuring organisations. A supplier who wishes to submit a tender in a public procurement process is not obligated to follow the procurement legislation, but the supplier must follow the instructions in the tender documents for the individual procurement. The tender documents comprise the documents used by a procuring organisation to describe and stipulate the contents of a procurement.</p><p><a href="/en/conducting-business-with-public-sector-stakeholders/">Doing business with public sector stakeholders</a></p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11252" id="accordion-item-button-11252"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Five basic principles of procurement</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11252" role="region" aria-labelledby="accordion-item-button-11252" hidden=""><div><div class="richtext"><div><p>Irrespective of which law is applicable to the procurement, there are five basic principles that the procuring organisation must consider at all stages of the public procurement. Most of the legal provisions are basically an expression of these principles.</p><p>The basic procurement principles are:&nbsp;</p><ul>
+<li>non-discrimination</li>
+<li>equal treatment</li>
+<li>proportionality</li>
+<li>transparency</li>
+<li>mutual recognition</li>
+</ul><p>They mean that procuring organisations must always remain objective and neutral to the stakeholders that wish to become suppliers, and the entire procurement process must be characterised by transparency and proportionality.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11253" id="accordion-item-button-11253"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Fewer rules for direct awards</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11253" role="region" aria-labelledby="accordion-item-button-11253" hidden=""><div><div class="richtext"><div><p>In direct awards, there are no specific rules regarding how to carry out the procurement. For example, there are no requirements on how to draft a tender or that the procurement must be advertised. <br><br>However, even a direct award is subject to certain aspects of the procurement rules. Among other things, the basic procurement principles shall be observed.</p><p>The most common situation when direct awards are used is when the item to be purchased has a value that does not exceed the so-called limit for direct awards.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11254" id="accordion-item-button-11254"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Certain products and services are exempted</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11254" role="region" aria-labelledby="accordion-item-button-11254" hidden=""><div><div class="richtext"><div><p>There are exemptions for certain products and services which means that these do not need to be procured in accordance with the procurement rules. These exemptions include renting or purchasing property and purchasing certain financial or legal services.</p></div></div></div></div></div></div></div></div><div id="how_to_conduct_public_procurements"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>How to conduct public procurements</span></h2><div class="richtext"><div><p>Below is a general description of what a public procurement might look like.</p></div></div><div class="border-primary-1" data-cid="StepByStep"><div class="mb-16"><div class="relative mb-6 pb-6 border-b-2 border-greyLight mt-6 pt-6 border-t-2" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11255" id="accordion-item-button-11255"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>1. Is a purchase necessary?</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11255" role="region" aria-labelledby="accordion-item-button-11255" hidden=""><div><div class="richtext"><div><p>A procurement begins when a public body has a need that they are not able to or cannot meet themselves. The organisation therefore decides to make a purchase &ndash; a public procurement.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11256" id="accordion-item-button-11256"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>2. Analysing the needs and the market</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11256" role="region" aria-labelledby="accordion-item-button-11256" hidden=""><div><div class="richtext"><div><p>The procuring organisation analyses their needs in order to formulate requirements for what needs to be purchased. The needs, in combination with the value of the procurement, will impact the requirements that can be specified in the procurement as well as how the procurement will be conducted.</p><p>In order to find out which requirements may be relevant, the procuring organisation can contact companies and experts in the market in question. There is no obligation to have these discussions but it can often be both appropriate and necessary. A prerequisite for the discussion is that the procuring organisation treats all suppliers the same and does not give any supplier a competitive advantage.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11257" id="accordion-item-button-11257"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>3. The requirements are compiled in the tender documents</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11257" role="region" aria-labelledby="accordion-item-button-11257" hidden=""><div><div class="richtext"><div><p>The procuring organisation outlines their requirements in the so-called tender documents. These documents contain all the relevant information required by the suppliers in order to submit tenders in the procurement. Terms that are frequently used in a procurement include mandatory requirements (must have) and non-mandatory requirements (nice to have).</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11258" id="accordion-item-button-11258"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>4. Advertising the procurement</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11258" role="region" aria-labelledby="accordion-item-button-11258" hidden=""><div><div class="richtext"><div><p>Procuring organisations must advertise all procurements that are not direct awards in an advertising database registered with the Competition Authority. If the value of the procurement exceeds the so-called threshold, it must also be advertised in the joint EU advertising database, the Tenders Electronics Daily (TED).&nbsp;</p><p>There is no national advertising database for procurements taking place in Sweden. For that reason, anyone wishing to conduct business with public sector stakeholders should register with several Swedish advertising databases as well as subscribe to an advertising monitoring service.</p><p><a href="https://www.konkurrensverket.se/upphandling/registrerade-annonsdatabaser/annonsdatabasregistret/" rel="external">List of registered databases at the Swedish Competition Authority (in Swedish)</a></p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11259" id="accordion-item-button-11259"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>5. Suppliers submit tenders</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11259" role="region" aria-labelledby="accordion-item-button-11259" hidden=""><div><div class="richtext"><div><p>Any suppliers interested in participating in the procurement respond to the advertisement by submitting a tender. In the tender, the supplier describes the various requirements in the tender documents.&nbsp;</p><p>During the advertising period, the procuring organisation is obligated to provide additional information about the tender documents no later than six days before the listed tender closing date, provided that the supplier has asked their questions well in advance. For that reason, it is important that the supplier asks their questions within the time limits that apply to questions and answers, and which are listed in the tender documents. The answers shall be provided in writing and made available at the same time to everyone participating in the procurement, for example by publishing the answer in the procurement tool.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11260" id="accordion-item-button-11260"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>6. Examining the tenders</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11260" role="region" aria-labelledby="accordion-item-button-11260" hidden=""><div><div class="richtext"><div><p>After the time limit for submitting tenders has expired, the procuring organisation examines the submitted tenders based on the requirements in the tender documents.&nbsp;</p><p>The organisation shall award the contract to the supplier that submitted the best tender.&nbsp;</p><p>It shall be apparent from the tender documents how the tenders will be assessed.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11261" id="accordion-item-button-11261"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>7. Award notice and contract</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11261" role="region" aria-labelledby="accordion-item-button-11261" hidden=""><div><div class="richtext"><div><p>The procuring organisation decides which supplier or suppliers will be awarded the contract and sends information about the decision to all tenderers.</p><p>In most procurements, there is a so-called standstill period during which the procuring organisation cannot conclude a contract with the new supplier. During this period it is possible for the suppliers that were not awarded a contract to request a review by a court of law. When the standstill period expires a contract may be concluded, provided that the procurement is not under review.</p></div></div></div></div></div></div></div></div></div></div></div></div></main><footer data-cid="PageFooter" class="global__page-footer"><div class="py-6 border-t-2 border-b-2 border-greySemiLight bg-greyLight"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full"><img src="/assets/static/media/uhm.a8e48fa7.svg" alt="" class="footer-logo" height="61" width="169"/></div></div></div></div><div class="pt-6 bg-greyLight"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Visiting Address</h2><p class="mb-6 lg:mb-4 text-p">Svetsarvägen 10<br/>171 41 <!-- --> <!-- -->Solna</p><h2 class="text-p font-bold">Contact</h2><dl class="text-p footer__dl mb-6 lg:mb-4"><dt>Telephone</dt><dd>08-586 217 01</dd><dt>Telephone hours</dt><dd>Mon-Fri 9-15</dd></dl></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Postal Address</h2><p class="mb-6 lg:mb-4 text-p">Upphandlingsmyndigheten<br/>Box 1194, 171 23 <!-- --> <!-- -->Solna</p></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Quick links</h2><ul class="text-p footer__linklist footer__dl mb-6 lg:mb-4"><li><a href="/en/public-procurement/" class="">Public Procurement</a></li><li><a href="/en/statsstod/state-aid-guidance/" class="">State Aid guidance</a></li><li><a href="/en/the-act-on-systems-of-choice-lov/" class="">The Act on Systems of Choice (LOV)</a></li><li><a href="/en/conducting-business-with-public-sector-stakeholders/" class="">Conducting business with public sector stakeholders</a></li></ul></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Quick links</h2><ul class="text-p footer__linklist footer__dl mb-6 lg:mb-4"><li><a href="/en/sustainable-public-procurement/" class="">Sustainable public procurement</a></li><li><a href="/en/criteria/" class="">Our sustainability criteria</a></li><li><a href="/en/about-us/" class="">About us</a></li><li><a href="/en/about-us/contact-us/" class="">Contact us</a></li></ul></div></div></div><div class="py-2 mt-6 bg-greySemiLight pt-4 lg:pt-0"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full"><div class="items-center justify-between pt-2 md:flex"><div class="mb-2 lg:mb-0"></div><div class="-ml-2 lg:ml-0"><a href="https://twitter.com/uhmynd" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" data-cid="Icon" aria-label="Twitter" role="img" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a href="https://www.linkedin.com/company/upphandlingsmyndigheten" title="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" style="fill:none" data-cid="Icon" aria-label="LinkedIn" role="img" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://www.facebook.com/upphandlingsmyndigheten" title="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" style="fill:none" data-cid="Icon" aria-label="Facebook" role="img" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></div></div></div></div></div></div></div></footer><kundo-lazy-button text="Chatta med oss" script="https://static-chat.kundo.se/chat-js/org/909/widget.js"></kundo-lazy-button></div></div><div class="sr-only" aria-live="assertive"></div><div tabindex="-1" style="outline:none"></div></div>
+
+		<script src="/Areas/Upphandlingsmyndigheten/Assets/static/js/vendors~main.9af48341.chunk.js"></script>
+		<script src="/Areas/Upphandlingsmyndigheten/Assets/client/client-main.4cd102c3.js"></script>
+
+	<script defer="defer" src="/Util/Find/epi-util/find.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){if(typeof FindApi === 'function'){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}})
+</script>
+
+</body>
+</html>

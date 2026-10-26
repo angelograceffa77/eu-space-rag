@@ -1,0 +1,901 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+    
+        <!-- ceproc.ok -->
+    
+    
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt" xml:lang="lt">
+
+	<head>
+		<!--  -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title>European Dynamics - Centrinė viešųjų pirkimų informacinė sistema </title>
+        <meta name="Description" content="e-Procurement platform home page"/>
+		<meta content="e-Procurement platform - Home page" name="Title"/>
+		<meta content="57" name="Type"/>
+		<meta content="DOCUMENTS/COMM/EN" name="Reference"/>
+		<meta content="European Dynamics" name="Creator"/>
+		<meta name="Language" content="lt"/>
+		<meta content="25" name="Classification"/>
+		<meta content="tenders, e-procurement, documents, european law, legislation, economic operator, tenderer, procurement, contract, contracting authority, supplier, awarding authority, institutions, european union, eu" name="Keywords"/>
+        <link rel="shortcut icon" type="image/ico" href="/epps/images/favicon.ico" />
+        
+        
+
+
+<script>
+	const PAGE_LITERAL = 'Puslapis';
+	const RESULTS_PER_PAGE_LITERAL = 'Rezultatai viename puslapyje';
+	const ERROR_MSG_LITERAL = 'Įvyko klaida';
+	const WARNING_MSG_LITERAL = 'Įspėjimas';
+	const GOTO_PAGE_LITERAL = 'Pereiti į puslapį';
+    const RESULTS_PER_PAGE_OPTIONS_LITERAL = ["10","20","50","100"];
+    const CONTEXT_PATH_LITERAL = '/epps';
+    const UPLOAD_ACCEPT_LITERAL = '.7z,.avi,.csv,.doc,.docm,.docx,.dot,.dotx,.dwg,.e0x,.fr,.geojson,.info,.jpeg,.jpg,.json,.mov,.mp4,.mpp,.msg,.odp,.ods,.odt,.p7m,.pages,.pdf,.png,.ppt,.pptx,.rar,.rtf,.svg,.tar,.tiff,.txt,.util,.webp,.wmv,.xls,.xlsb,.xlsm,.xlsx,.xml,.zip,.zipx,.adoc';
+</script>
+
+        
+        <script src="/epps/scripts/bt/jquery-1.11.3.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/popper.min.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/navScroll.js" type="text/javascript"></script>
+		
+        <script type="text/javascript">
+	        //<![CDATA[
+	        var $j = jQuery.noConflict();
+	        //]]>
+        </script>
+        <script type="text/javascript">
+            var LOCALE = '';
+            var INVALID_CHARACTERS = '<>&%';
+            
+            var defaults = {
+            		language: 'lt', 
+                    showOn: "both",
+                    buttonText: "Calendar",
+                    buttonImage: "/epps/images/action_calendar.gif",
+                    buttonImageOnly: true, clearBtn: true,
+                    firstDay: 1,
+                    weekStart: 0,
+                    format: "dd/mm/yyyy",
+                    mandatory: false,
+                    todayHighlight: true
+           };
+            
+        </script>
+        <script type="text/javascript" src="/epps/scripts/common.js"></script>
+        <script type="text/javascript" src="/epps/scripts/bt/common.js"></script>
+        
+        <script type="text/javascript" src="/epps/scripts/jqComm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqForm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqTableSet.js"></script>
+        
+		
+        	<script type="text/javascript" src="/epps/scripts/bt/htmx.min.js"></script>
+			<!-- Morph Swaps supported on Chrome <script src="/epps/scripts/bt/idiomorph-0.3.0.min.js"></script> -->
+			<script type="text/javascript" src="/epps/scripts/bt/htmx.common.js"></script>
+		
+
+		<link href="/epps/css/bt/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<link href="/epps/css/bt/bootstrap-datepicker3.min.css" rel="stylesheet" media='screen'/> 	
+		<link href="/epps/css/bt/jquery.treefilter.css" rel="stylesheet"/>
+     	<script type="text/javascript" src="/epps/scripts/bt/bootstrap-datepicker.min.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/bt/bootstrap-datepicker.lt.min.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/jquery.formatCurrency-1.4.0.min.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/jquery.formatCurrency.all.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/bt/jcv_handleMessages.js"></script>
+		
+       	<script type="text/javascript">
+			// functions from bt/common.js
+			$j(document).ready(function(){
+				noResultFoundBeautifier();
+				stackModeDataColumn();
+				$j('.countdown').textCountdown({remaining_text: " likusieji simboliai"});
+				//TODO: modify to be enabled in internal sorting:
+				// tableSawSortableStackMode();
+				
+				
+					HtmxCommon.addHtmxAttributesOnMainNavbar();
+				
+				
+			});
+		</script>
+		
+        <script type="text/javascript">
+            function setParentHref(link){
+                window.location.href=link;
+            }
+            
+            if(typeof String.prototype.trim !== 'function') {
+	             String.prototype.trim = function() {
+	            	  return this.replace(/^\s+|\s+$/g, ''); 
+	             }
+             }   
+        </script>		
+        
+      
+       
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<link href="/epps/css/bt/custom.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/bootstrap-datetimepicker.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/mm-folder.css" rel="stylesheet"/>
+		<script src="/epps/scripts/bt/tablesaw.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/tablesaw-init.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/jquery.treefilter.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/moment.min.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/bt/bootstrap-datetimepicker.js" type="text/javascript" ></script>
+     	<script src="/epps/scripts/bt/metisMenu.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/bt/maincard.js" type="text/javascript"></script>
+     	
+     	<script type="text/javascript">
+     		
+     			HtmxCommon.addEventListeners();
+			
+		</script>
+		
+	</head>
+	<body class="">
+	
+		<header>
+			<nav class="navbar navbar-light bg-white navbar-expand-md p-0">
+				<div class="flex-column col-12 p-0">
+					<div class="row no-gutters p-2 align-items-center">
+						<div class="col">	
+							
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+	
+	
+
+
+
+<button class="navbar-toggler pl-0 border-0" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="???Toggle navigation">
+	<span class="fa fa-bars" aria-hidden="true"></span>
+</button>
+
+<a class="navbar-brand  mr-0 py-lg-1 py-xl-1 px-lg-2 px-xl-2" href="/epps">
+	<img class="mr-lg-2 mr-xl-2 img-fluid " src="/epps/images/bt/logo_lt.png" alt="Pradžia" />
+</a>
+
+						</div>
+						
+						
+
+
+
+
+
+
+
+
+
+
+	<div id="htmx-load-indicator" class="progress">
+		<div class="indeterminate"></div>
+	</div>
+
+
+						
+						<div class="col">
+							<ul class="navbar-nav flex-row justify-content-end">
+								
+								<!-- Search -->
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function checkSubmit() {
+		var	quicSearchForm = document.forms["searchForm"];
+		var col = document.getElementsByName("searchType")[0];
+		if (col.selectedIndex != 0) {
+			if(checkInputField(quicSearchForm))quicSearchForm.submit();
+    	}
+    	return false;
+	}
+	
+	function checkInputField(form){
+		var input = form[1].value;
+		if(containForbidenChars(input)){
+			form[1].value = '*';
+			alert("Paieškos metu buvo pateiktas netinkamas simbolis. Netinkamais simboliais laikomi: <, >, &amp;, % .");
+			return false;
+		}
+		return true;
+	}
+	
+	function containForbidenChars(input){
+    	return input.indexOf("<")!=-1 || input.indexOf(">")!=-1 || input.indexOf("%")!=-1 || input.indexOf("&")!=-1;
+    }
+    
+    $j(document).ready(function(){
+        $j('#SearchInput').mouseover(function() {
+           $j(this).attr('title', "Patarimas: pateikite atitinkamą terminą su žvaigždutėmis, pvz., *konsultacinė veikla*");
+
+        });
+    });
+	
+	function openForm() {
+		document.getElementById("simple-search").style.height = "100%";
+		$j(".container").attr("aria-hidden","false");
+		$j("#simple-search").attr("aria-hidden","false");
+		$j("#simple-search").css("display", "block");
+	}
+	function closeForm() {
+		document.getElementById("simple-search").style.height = "0%";
+		$j(".container").attr("aria-hidden","true");
+		$j("#simple-search").attr("aria-hidden","true");
+		$j("#simple-search").css("display", "none");
+	}
+	
+</script>
+	
+	
+	 
+        <li class="nav-item mr-2">
+            <div>
+                <a href="/epps/prepareAdvancedSearch.do?type=cftFTS" class="nav-link p-2"><span class="fa fa-search" aria-label='Išplėstinė paieška'></span>
+                    
+                     	
+			       	
+					
+                    
+                    <span class="d-none d-lg-inline">Išplėstinė paieška</span></a>
+            </div>
+        </li>
+        <li class="nav-item mr-2">
+            <div>
+                <a href="/epps/prepareCurrentOpportunities.do?currentType=cft" class="nav-link p-2"><span class="fa fa-search-plus" aria-label='Naujausi pirkimai'></span>
+                        <span class="d-none d-lg-inline">Naujausi pirkimai</span></a>
+            </div>
+        </li>
+        
+	        <li class="nav-item mr-2">
+	            <div>
+	                <a href="/epps/prepareCurrentOpportunities.do?currentType=notice" class="nav-link p-2"><span class="fa fa-search-plus" aria-label='Naujausi skelbimai'></span>
+	                        <span class="d-none d-lg-inline">Naujausi skelbimai</span></a>
+	            </div>
+	        </li>
+                 
+    
+	
+	
+	
+    <li class="nav-item mr-2 dropdown">
+		<a class="nav-item nav-link dropdown-toggle mr-md-2 font-weight-bold lang" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			LT
+		</a>	
+		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+		 	
+			 	
+        	
+			 	
+	               <a class="dropdown-item" href="/epps/changeLanguage.do?language=en">EN</a>
+	            
+        	
+		</div>
+	</li> 
+	
+
+
+
+								<!--// Search -->
+								
+								<li class="nav-item dropdown user">
+									
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+    	
+	    	<a href="/epps/authenticate/login" id="loginButton" role="button" class="btn login" aria-label="Prisijungti">
+				<i class="fa fa-sign-in" aria-hidden="true"></i>
+				<span>Prisijungti</span>
+	    	</a>
+        
+        
+	
+
+
+								</li>
+								
+							</ul>
+						</div>	
+					</div>	
+					<!-- MAIN NAVIGATION MENU -->
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- /.#mainnav || MAIN NAVIGATION MENU-->
+				</div>		
+			</nav>
+		</header> <!-- /.header -->
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function checkSubmitMain() {
+		var	quickSearchForm = $("#homeSearch form")[0];
+		if(checkInputField(quickSearchForm)) {
+			quickSearchForm.submit(); 
+		}
+    	return false;
+	}
+</script>
+
+				
+		<div id="main-container" class="container-fluid pt-2" role="main">
+		
+            
+                
+            
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<h1 class="my-4">Centrinė viešųjų pirkimų informacinė sistema </h1>
+
+
+
+
+            
+			<div class="row">
+				<div id="msgCol" class="col">
+          			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          		</div>
+    		</div>
+    		
+			<div class="row">
+				<div class="col">
+                	
+
+
+
+
+
+
+
+
+
+
+<noscript>
+	<div id="NoJavascriptMessage" class="alert alert-warning alert-dismissible">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		Jei norite naudotis visomis šios programos funkcijomis, įsitikinkite, kad jūsų naršyklėje įjungtas Javascript.
+	</div>
+</noscript>
+
+          		</div>
+    		</div>
+			
+            <div class="row">
+				<div class="col">
+					
+         			
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+						
+			
+			
+			
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+	<!--  Left Column -->
+	<div class="col-md-5">
+		<div class="card-wrapper">				
+			<div class="row">
+				<div class="col-12">
+					<h2><span class="fa fa-info-circle" aria-hidden="true"></span>Informacija naujiems naudotojams</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<ul class="square">
+						<li><a href="prepareRegisterEOOrg.do?registerEO=true">Registruotis</a> kaip Tiekėjui (tas, kuris dalyvauja konkursuose ir teikia savo paslaugas)</li>
+						
+							<li><a href="prepareRegisterCAOrg.do?registerCA=true">Registruotis</a> kaip Pirkimo vykdytojui</li>
+						
+						<li>Susipažinti su <a href="#" onclick="window.open('viewInfo.do?isPopup=true&amp;section=userManual','name','height=550,width=810,scrollbars=yes,resizable=yes,left=60,top=10')">instrukcijomis</a> ir <a href="https://vpt.lrv.lt/lt/nauja-cvp-is-aktuali-nuo-2024-12-01/metodine-medziaga-instrukcijos/" target="_blank">Metodinė medžiaga</a></li>
+						<li>Naršykite <a href="viewInfo.do?section=faq&amp;selectedItem=viewInfo.do?section=faq">DUK</a></li>
+						
+				    		<li>Peržiūrėti <a href="quickSearchAction.do?searchType=cftFTS">naujausių pirkimų</a> skelbimus</li>
+							<li>Konkretų pirkimą rasite išplėstinėje <a href="prepareAdvancedSearch.do?type=cftFTS">paieškoje</a></li>
+				       							
+					</ul>
+				</div>
+			</div>
+		</div> <!-- ./CARD 01 -->
+	</div>
+		
+	<!--  Right Column -->
+	<div class="col-md-7">
+		<div class="card-wrapper">				
+			<div class="row">
+				<div class="col-12">
+					<h3>
+						<a href="/epps/viewInfo.do?section=newItems">Naujienos</a>
+					</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<ul class="news">				
+						
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=9873576">
+							 		<span class="eventDate">
+										<span>01</span>
+										<span>Spal.</span>
+									</span>
+									Centrinė viešųjų pirkimų informacinė sistema (CVP IS) bus nepasiekiama dėl techninės priežiūros darbų
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=9306467">
+							 		<span class="eventDate">
+										<span>20</span>
+										<span>Rugp.</span>
+									</span>
+									Aktualu CVP IS naudotojams – dvigubas autentifikavimas prisijungiant prie CVP IS
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=9270117">
+							 		<span class="eventDate">
+										<span>18</span>
+										<span>Rugp.</span>
+									</span>
+									CVP IS sutrikimai
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=9170679">
+							 		<span class="eventDate">
+										<span>11</span>
+										<span>Rugp.</span>
+									</span>
+									CVP IS sutrikimai pašalinti
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=9169845">
+							 		<span class="eventDate">
+										<span>11</span>
+										<span>Rugp.</span>
+									</span>
+									CVP IS sutrikimai
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=8889617">
+							 		<span class="eventDate">
+										<span>22</span>
+										<span>Liep.</span>
+									</span>
+									Centrinė viešųjų pirkimų informacinė sistema (CVP IS) bus nepasiekiama dėl planinių darbų
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=8746421">
+							 		<span class="eventDate">
+										<span>10</span>
+										<span>Liep.</span>
+									</span>
+									Planuojami techninės įrangos priežiūros darbai
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=8411541">
+							 		<span class="eventDate">
+										<span>17</span>
+										<span>Bir.</span>
+									</span>
+									Centrinės viešųjų pirkimų informacinės sistemos (CVP IS) sutrikimai pašalinti 
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=8249489">
+							 		<span class="eventDate">
+										<span>08</span>
+										<span>Bir.</span>
+									</span>
+									Centrinės viešųjų pirkimų informacinės sistemos (CVP IS) sutrikimai pašalinti
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=8246875">
+							 		<span class="eventDate">
+										<span>08</span>
+										<span>Bir.</span>
+									</span>
+									Centrinės viešųjų pirkimų informacinės sistemos (CVP IS) sutrikimai
+								</a>
+							</li>
+							
+			  				
+						 	<li>
+						 		<a href="/epps/viewInfo.do?sec=newItems&amp;entryId=8068566">
+							 		<span class="eventDate">
+										<span>27</span>
+										<span>Geg.</span>
+									</span>
+									Informacija dėl Centrinės viešųjų pirkimų informacinės sistemos (CVP IS) sutrikimų ir jų pašalinimo
+								</a>
+							</li>
+							
+								
+					</ul>
+				</div>
+			</div>
+		</div> <!-- ./CARD 02 -->
+	</div>
+	
+</div>
+
+
+
+
+		</div><!-- /.container-fluid -->
+		
+	
+	
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	<script type="text/javascript">
+	
+	    $j('document').ready(function(ev){
+	    	$j("a.PopUp").click(function(){
+	    		PopUpOpts = {
+	        		windowname: 'popupwindow',
+	        		width:		810,
+	        		height:		600,
+	        		scroll:		1,
+	        		resizable:	0
+	        	};
+	           	$j(this).PopUp(this.href, PopUpOpts); 
+	            return false; 
+	        }); 
+	    });
+	    
+	</script>
+	
+	<footer role="contentinfo">
+	
+	
+		<div class="container-fluid">
+			<div class="row">
+			
+				<div class="col-sm">
+					<ul class="list-unstyled">
+                        
+                            <li>
+                                <a href="/epps/app/viewPublication.do">Paskelbtos pirkimų suvestinės</a>
+                            </li>
+                        
+			        	<li>
+		                   <a href="/epps/prepareCurrentOpportunities.do?currentType=cft">Naujausi pirkimai</a>
+	                    </li>
+			        	
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=legal">Viešųjų pirkimų teisės aktai</a>
+			            </li>
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=statistics">Statistika</a>
+			            </li>
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=calendar">Kalendorius</a>
+			            </li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<ul class="list-unstyled">
+						<li>
+			            	<a href="/epps/viewInfo.do?section=eproc">Elektroniniai viešieji pirkimai</a>
+			            </li>
+			            <li>
+			               <a href="/epps/viewInfo.do?section=newItems">Naujienos</a>
+			            </li>
+			            <li>
+			            	<a href="/epps/viewInfo.do?section=links">Naudingos nuorodos</a>
+			            </li>
+		        		<li>
+			            	<a href="/epps/viewInfo.do?section=faq">DUK</a>
+			            </li>
+		        		<li>
+			            	<a href="/epps/viewInfo.do?section=thresholds">Tarptautinio pirkimo vertės ribos</a>
+			            </li>
+					</ul>
+				</div>
+			
+				<div class="col-sm">
+					<ul class="list-unstyled">		        	
+		    		    
+				        
+				        
+				        
+									        
+			        	<li id="Help">
+				            <a href="/epps/viewInfo.do?isPopup=true&amp;section=userManual" class="PopUp">Pagalba</a>
+				        </li>
+				        <li id="About">
+				            <a href="/epps/DisplayHeaderStaticTextAction.do" class="PopUp">Apie</a>
+				        </li>		        
+				        <li class="Last" id="Contact">
+				            <a href="/epps/PrepareContactUsAction.do" class="PopUp">Susisiekite su mumis</a>
+				        </li>
+					</ul>
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col text-center">
+					<span>Copyright &copy; European Dynamics - Paskutinis atnaujinimas: 24 spalis 2026</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Footer // -->
+
+
+
+        
+
+
+
+
+
+
+		
+	</body>
+	
+	
+</html>
+

@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>Агенция по обществени поръчки - Поръчки, публикувани вчера</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="SHORTCUT ICON" href="https://www.aop.bg/favicon.ico">
+    <link rel="StyleSheet"
+	  href="https://www.aop.bg/css/portal_header.css"
+	  type="text/css">
+    <link rel="StyleSheet"
+	  href="https://www.aop.bg/css/calendar-win2k-cold-1.css"
+	  type="text/css" title="win2k-cold-1">
+
+    <script language="javascript" src="https://www.aop.bg/js/calendar.js"></script>
+    <script language="javascript" src="https://www.aop.bg/js/functions.js"></script>
+    <script type="text/javascript" src="https://www.aop.bg/js/lang/calendar-bg.js"></script>
+    <script type="text/javascript" src="https://www.aop.bg/js/calendar-setup.js"></script> 
+    <script type="text/javascript" src="https://www.aop.bg/js/popup.js"></script> 
+    <script type="text/javascript" src="https://www.aop.bg/js/jquery.js"></script>
+    <script type="text/javascript" src="https://www.aop.bg/js/matomo.js"></script>
+  </head>
+  <BODY topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" background="#E9FCE9">
+
+
+<style type="text/css">
+
+table {
+    border-collapse: collapse;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    $("select").keypress(function(e) {
+        if (e.which == 13) {
+            do_search();
+        }
+    });
+
+});
+
+function do_search()
+{
+    document.esearch.mode.value = "search";
+    document.esearch.submit();
+}
+
+</script>
+
+<br>
+<form name="esearch" action="https://www.aop.bg/esearch_cases_from_to.php" method="GET">
+  <input type="hidden" name="mode" value="search">
+  <table width="95%" cellspasing="0" cellpadding="5" align="center" border="1">
+    <tr>
+      <td align="top">
+	<table width="100%" border="0">
+
+	  <tr>
+	    <td class="newstext" align="right">Провери поръчките, публикувани в периода:</td>
+	    <td class="newstext"><input class="input_elements" style="width: 78px;" size="16" name="validated_on_from" id="validated_on_from" value="23/10/2026">&nbsp;<img src="images/calendar_icon.gif" id="but_validated_on_from" style="cursor: pointer;" onmouseover="this.style.background='red';" onmouseout="this.style.background=''"/>&nbsp;<i>(дд/мм/гггг)</i>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_elements" style="width: 78px;" size="16" name="validated_on_to" id="validated_on_to" value="23/10/2026">&nbsp;<img src="images/calendar_icon.gif" id="but_validated_on_to" style="cursor: pointer;" onmouseover="this.style.background='red';" onmouseout="this.style.background=''"/>&nbsp;<i>(дд/мм/гггг)</i></td>
+	    <td class="newstext"><input type="submit" value="Търси" class="input_elements" style="width: 350px; font-weight: bold;" onClick="do_search();"></td>
+	  </tr>
+	</table>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<script type="text/javascript">
+	Calendar.setup({
+        inputField     :    "validated_on_from",     // id of the input field
+        ifFormat       :    "%d/%m/%Y",      // format of the input field
+        button         :    "but_validated_on_from",  // trigger for the calendar (button ID)
+        align          :    "cl",           // alignment (defaults to "Bl")
+        singleClick    :    true,
+		firstDay	   :	1,
+		weekNumbers	   :	false
+    });
+	Calendar.setup({
+        inputField     :    "validated_on_to",     // id of the input field
+        ifFormat       :    "%d/%m/%Y",      // format of the input field
+        button         :    "but_validated_on_to",  // trigger for the calendar (button ID)
+        align          :    "cl",           // alignment (defaults to "Bl")
+        singleClick    :    true,
+		firstDay	   :	1,
+		weekNumbers	   :	false
+    });
+</script>
+<style type="text/css">
+
+.results table
+{
+    margin: auto;
+    width: 95%;
+}
+
+.results tr td
+{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.pager tr td
+{
+    border: 0px;
+    padding: 0px;
+}
+
+.pager table
+{
+    margin: 0px;
+    width: 50px;
+}
+
+
+</style>
+
+<div class="results">
+  <table>
+    <tr>
+      <td><b>&numero;</b></td>
+      <td><b>Дата на публикуване</b></td>
+      <td nowrap><b>УНП</b></td>
+      <td><b>Възложител</b></td>
+      <td><b>Процедура</b></td>
+      <td><b>Обект</b></td>
+      <td><b>Предмет</b></td>
+      <td><b>Прогнозна стойност</b></td>
+      <td><b>Валута</b></td>
+      <td><b>Европейско финансиране</b></td>
+    </tr>
+
+
+    <tr>
+      <td colspan="10">
+	<div class="pager">
+	  <table width='100%' cellspacing='0' cellpadding='0' border='0'><tr><tr><td colspan='2' class='text'>Общ брой: 0&nbsp;<a href='https://www.aop.bg/excel.php?hash=2d02960ad00349c8159ca603bcf3902b' title='Експорт в excel'><img src='https://www.aop.bg/images/icons/doc/xls.ico' border='0' width='15' /></a></td></td></tr><tr><td width='50$' class='text'>Страница&nbsp;0&nbsp;от&nbsp;0&nbsp;</td><td class='text' align='right'><table width='50' cellspacing='0' cellpadding='0' border='0'><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></table></tr></table>	</div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="10"><i><u>Забележка: </u> Ако желаете да получавате информация ежедневно, използвайте възможностите на електронния абонамент, предлаган от АОП</i></td>
+    </tr>
+  </table>
+</div>
+<div style="padding: 60px;">
+</div>  
+
+

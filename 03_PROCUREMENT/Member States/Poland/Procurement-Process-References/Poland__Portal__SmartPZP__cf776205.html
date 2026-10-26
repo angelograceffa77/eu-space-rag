@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl"><head id="j_idt2"><link type="text/css" rel="stylesheet" href="/javax.faces.resource/fa/font-awesome.css.xhtml?ln=primefaces&amp;v=6.0" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=6.0" /><script type="text/javascript" src="/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/javax.faces.resource/core.js.xhtml?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/javax.faces.resource/components.js.xhtml?ln=primefaces&amp;v=6.0"></script><link type="text/css" rel="stylesheet" href="/javax.faces.resource/smart.css.xhtml?ln=css" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/clock/clock.css.xhtml?ln=css" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/layout/layout.css.xhtml?ln=primefaces&amp;v=6.0" /><script type="text/javascript" src="/javax.faces.resource/layout/layout.js.xhtml?ln=primefaces&amp;v=6.0"></script><link type="text/css" rel="stylesheet" href="/javax.faces.resource/bootstrap/dist/css/bootstrap.css.xhtml?ln=vendor" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/pzp-icons.css.xhtml?ln=css" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/app-pzp.css.xhtml?ln=css" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/organizacje/all_outer.css.xhtml?ln=css" /><style type="text/css">
+            .form-checkbox {
+                display: inline-block !important;
+                padding-right: 0 !important;
+            }
+        </style><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='pl';}</script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon" type="image/png" href="/resources/images/smartpzp/favicon.ico" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/resources/images/smartpzp/favicon.ico" sizes="16x16" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>SmartPZP</title><script type="text/javascript" src="/javax.faces.resource/szafirsdk_web/szafirsdk-module.js.xhtml?ln=js"></script><script type="text/javascript" src="/javax.faces.resource/clock/clock-module.js.xhtml?ln=js"></script><script type="text/javascript" src="/javax.faces.resource/timer/timer-module.js.xhtml?ln=js"></script><script type="text/javascript" src="/javax.faces.resource/session/idle-monitor.js.xhtml?ln=js"></script><script type="text/javascript" src="/javax.faces.resource/multipleTabs/multipleTabs.js.xhtml?ln=js"></script><div id="j_idt12" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt12_title" class="ui-dialog-title">Wykryto otwarcie kolejnej karty</span></div><div class="ui-dialog-content ui-widget-content">
+            <div style="margin-top:15px; text-align: center">
+                <p>System pozwala na pracę tylko na jednej karcie.</p>
+                <p>Prosimy o zamknięcie pozostałych kart.</p>
+            </div></div></div><script id="j_idt12_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","multiTabDialog",{id:"j_idt12",draggable:false,modal:true,width:"650px",height:"110px",showEffect:"fade",hideEffect:"fade"});});</script></head><body>
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+        <div class="small-spinner"></div><script type="text/javascript" src="/javax.faces.resource/bootstrap/dist/js/bootstrap.js.xhtml?ln=vendor"></script><script type="text/javascript" src="/javax.faces.resource/jquery-touchswipe/jquery.touchSwipe.js.xhtml?ln=vendor"></script><script type="text/javascript" src="/javax.faces.resource/jquery-month-picker/jquery.ui.monthpicker.js.xhtml?ln=vendor"></script><script type="text/javascript" src="/javax.faces.resource/app.js.xhtml?ln=js"></script><script type="text/javascript" src="/javax.faces.resource/smart-ui-components.js.xhtml?ln=js"></script>
+        <style>
+        .hc .page-wrapper
+        {
+            background: url("/javax.faces.resource/header_bg_hc.png.xhtml?ln=images") no-repeat top center!important;
+        }
+        </style>
+        <div class="header-components"><script type="text/javascript">
+        idleMonitors.add('j_idt29_sessionIdleMonitor',
+            new IdleMonitor(
+                'j_idt29_sessionIdleMonitor',
+                '1800',
+                'https://portal.smartpzp.pl/' + 'cbkpan'
+            )
+        );
+        $(document).on('pfAjaxComplete', function (evt) {
+            idleMonitors.get('j_idt29_sessionIdleMonitor').resetTimer();
+        });
+        idleMonitors.get('j_idt29_sessionIdleMonitor').start();
+    </script>
+<form id="j_idt32" name="j_idt32" method="post" action="/cbkpan/" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt32" value="j_idt32" />
+<div id="j_idt32:cookie" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container dialog-cookie"><div class="ui-dialog-content ui-widget-content">
+        <div class="cookie-notification">
+            <div class="cookie-icon"><i class="icon-cookie"></i></div>
+            <div class="content">Strona korzysta z plików cookies(ciasteczek). Zapoznaj się z
+                    <a id="j_idt32:j_idt35" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt32:j_idt35&quot;});return false;">Polityka prywatności Serwisu</a></div>
+            <div class="close-btn"><a id="j_idt32:j_idt37" href="#" class="ui-commandlink ui-widget close" onclick="PF('cookieDlg').hide();PrimeFaces.ab({s:&quot;j_idt32:j_idt37&quot;});return false;"><i class="fa fa-close"></i></a></div>
+        </div>
+        <div class="col-md-12 accept-btn text-center"><a id="j_idt32:cookie-acpt" href="#" class="ui-commandlink ui-widget form-button primary  left" onclick=";PrimeFaces.ab({s:&quot;j_idt32:cookie-acpt&quot;,onco:function(xhr,status,args){PF('cookieDlg').hide();;}});return false;" tabindex="" style="">
+        <div data-placement="top" data-trigger="hover">
+                <i class="fa fa-check"></i>
+            Akceptuję
+            
+        </div></a>
+
+        </div></div></div><script id="j_idt32:cookie_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","cookieDlg",{id:"j_idt32:cookie",position:"center top"});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="4854136953889122422:-5377197232803176946" autocomplete="off" />
+</form>
+        </div>
+        <div class="page-wrapper no-animations" style="background: url('/javax.faces.resource/header_bg.png.xhtml?ln=images') no-repeat top center; background-size:130% 300px">
+            <div class="aside-container" style="background: none">
+                <div class="nav-div">
+                    <div class="client-logo hidden-xs">
+                        <button type="button" class="navbar-toggle navigation-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo">
+                        </div>
+                    </div><div id="j_idt47" class="ui-outputpanel ui-widget visible-xs text-center clock-menu-xs">
+<form id="j_idt48:serverTimeDisplayForm" name="j_idt48:serverTimeDisplayForm" method="post" action="/cbkpan/" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt48:serverTimeDisplayForm" value="j_idt48:serverTimeDisplayForm" />
+
+        <div id="j_idt48_serverTimeDisplay" class="smart-clock"><span class="serverTimeDisplay"></span>
+        </div><script type="text/javascript">
+            clock.init('https://portal.smartpzp.pl', 'jErP%5DN8dted%3CLbR%268h-6%27%3EXEc%3APDN%40F%5D');
+            $(window).load(function(){clock.run('j_idt48' + '_serverTimeDisplay');});
+        </script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="4854136953889122422:-5377197232803176946" autocomplete="off" />
+</form></div>
+            <div class="hadicap-status" data-hadicap-status="false"></div>
+            <div class="hadicap-status-size"></div>
+            <script type="text/javascript">
+                $('body').addClass($('.hadicap-status').attr('data-hadicap-status') == "true" ? "hc" : " ");
+                $('body').addClass($('.hadicap-status-size').attr('data-hadicap-status') == "2" ? "size-2x" : $('.hadicap-status-size').attr('data-hadicap-status') == "3" ? "size-3x" : " ");
+            </script><div id="j_idt55" class="no-animations" data-save-scroll-position="false" data-expaded="false">
+<form id="j_idt56" name="j_idt56" method="post" action="/cbkpan/" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt56" value="j_idt56" />
+
+            <div class="scroll-button up"></div>
+            <ul class="nav nav-pills">
+        <li class="nav-item  " data-toggle="tooltip" data-placement="right" title="Strona główna"><a id="j_idt56:j_idt58:0:j_idt61" href="#" class="ui-commandlink ui-widget subNavigation-toggle" onclick="spinner.show();PrimeFaces.addSubmitParam('j_idt56',{'j_idt56:j_idt58:0:j_idt61':'j_idt56:j_idt58:0:j_idt61'}).submit('j_idt56');return false;">
+                 <i class="fa icon-pzp-home"></i>
+                <span>Strona główna</span></a>
+        </li>
+        <li class="nav-item visible-xs " data-toggle="tooltip" data-placement="right" title="Zaloguj się"><a id="j_idt56:j_idt58:1:j_idt61" href="#" class="ui-commandlink ui-widget subNavigation-toggle" onclick="spinner.show();PrimeFaces.addSubmitParam('j_idt56',{'j_idt56:j_idt58:1:j_idt61':'j_idt56:j_idt58:1:j_idt61'}).submit('j_idt56');return false;">
+                 <i class="fa fa-sign-in"></i>
+                <span>Zaloguj się</span></a>
+        </li>
+        <li class="nav-item  " data-toggle="tooltip" data-placement="right" title="Wstępne ogłoszenia informacyjne"><a id="j_idt56:j_idt58:2:j_idt61" href="#" class="ui-commandlink ui-widget subNavigation-toggle" onclick="spinner.show();PrimeFaces.addSubmitParam('j_idt56',{'j_idt56:j_idt58:2:j_idt61':'j_idt56:j_idt58:2:j_idt61'}).submit('j_idt56');return false;">
+                 <i class="fa fa fa-cube"></i>
+                <span>Wstępne ogłoszenia informacyjne</span></a>
+        </li>
+        <li class="nav-item  " data-toggle="tooltip" data-placement="right" title="Plan postępowań"><a id="j_idt56:j_idt58:3:j_idt61" href="#" class="ui-commandlink ui-widget subNavigation-toggle" onclick="spinner.show();PrimeFaces.addSubmitParam('j_idt56',{'j_idt56:j_idt58:3:j_idt61':'j_idt56:j_idt58:3:j_idt61'}).submit('j_idt56');return false;">
+                 <i class="fa fa fa-cubes"></i>
+                <span>Plan postępowań</span></a>
+        </li>
+        <li class="nav-item  " data-toggle="tooltip" data-placement="right" title="e-learning"><a id="j_idt56:j_idt58:4:j_idt61" href="#" class="ui-commandlink ui-widget subNavigation-toggle" onclick="spinner.show();PrimeFaces.addSubmitParam('j_idt56',{'j_idt56:j_idt58:4:j_idt61':'j_idt56:j_idt58:4:j_idt61'}).submit('j_idt56');return false;">
+                 <i class="fa fa fa-play-circle-o"></i>
+                <span>e-learning</span></a>
+        </li>
+        <li class="nav-item  " data-toggle="tooltip" data-placement="right" title="Weryfikacja oprogramowania do podpisu"><a id="j_idt56:j_idt58:5:j_idt61" href="#" class="ui-commandlink ui-widget subNavigation-toggle" onclick="spinner.show();PrimeFaces.addSubmitParam('j_idt56',{'j_idt56:j_idt58:5:j_idt61':'j_idt56:j_idt58:5:j_idt61'}).submit('j_idt56');return false;">
+                 <i class="fa fa-magic"></i>
+                <span>Weryfikacja oprogramowania do podpisu</span></a>
+        </li>
+        <li class="nav-item  " data-toggle="tooltip" data-placement="right" title="Zgłoszenie problemu"><a id="j_idt56:j_idt58:6:j_idt61" href="#" class="ui-commandlink ui-widget subNavigation-toggle" onclick="spinner.show();PrimeFaces.addSubmitParam('j_idt56',{'j_idt56:j_idt58:6:j_idt61':'j_idt56:j_idt58:6:j_idt61'}).submit('j_idt56');return false;">
+                 <i class="fa fa fa-medkit"></i>
+                <span>Zgłoszenie problemu</span></a>
+        </li>
+            </ul>
+            <div class="scroll-button down"></div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="4854136953889122422:-5377197232803176946" autocomplete="off" />
+</form></div><script id="j_idt55_s" type="text/javascript">$(function(){PrimeFaces.cw("JsContainer","widget_j_idt55",{id:"j_idt55",subComponentName:"asideNav",behaviors:{actionEventOne:function(ext,event) {PrimeFaces.ab({s:"j_idt55",e:"actionEventOne",p:"j_idt55"},ext);},actionEventTwo:function(ext,event) {PrimeFaces.ab({s:"j_idt55",e:"actionEventTwo",p:"j_idt55"},ext);}}});});</script>
+                </div>
+                <div class="arrow-div"></div>
+            </div>
+            <div class="main-container">
+                <div class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <div class="revision">
+                            </div>
+                            <button type="button" class="navbar-toggle navigation-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="navbar-brand" style="cursor:pointer;">
+    <div id="counterComponent" style="line-height: 15px;">Czas do końca sesji:<span id="sCounter:sessionCount"></span>
+    </div>
+<form id="j_idt75" name="j_idt75" method="post" action="/cbkpan/" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt75" value="j_idt75" />
+
+
+                <!-- Logo producenta --><a id="j_idt75:j_idt79" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt75:j_idt79&quot;});return false;"><img src="/resources/images/smartpzp/logo.png" alt="logo" width="200" /></a>
+
+                <!-- Logo klienta -->
+                <a>
+                </a><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3" value="4854136953889122422:-5377197232803176946" autocomplete="off" />
+</form>
+                        </span>
+                        </div>
+                        <div class="collapse navbar-collapse right">
+<form id="j_idt85" name="j_idt85" method="post" action="/cbkpan/" class="navbar-right" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt85" value="j_idt85" />
+
+            <div class="avatar-box">
+                <div class="row"><div id="j_idt85:av" class="ui-outputpanel ui-widget">
+                        <div class="avatar"><img src="/javax.faces.resource/empty-avatarv1.png.xhtml?ln=images" alt="avatar" />
+                        </div></div>
+                        <div class="options user-name" style="width: auto;">NIEZALOGOWANY
+                        </div>
+                </div>
+            </div>
+            <style type="text/css">
+                .lang-options {
+                    display: inline-block;
+                    position: absolute;
+                    top: -35px;
+                    right: 150px;
+                }
+
+                .lang-options a {
+                    color: white;
+                }
+
+                .lang-options a:hover {
+                    color: white;
+                }
+            </style>
+            <div class="lang-options">
+<script type="text/javascript" src="/javax.faces.resource/jsf.js.xhtml?ln=javax.faces"></script>
+<a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt85'),{'j_idt85:j_idt94':'j_idt85:j_idt94'},'');return false" class="btn btn-link">PL</a><a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt85'),{'j_idt85:j_idt95':'j_idt85:j_idt95'},'');return false" class="btn btn-link">EN</a>
+            </div>
+
+            <div class="login-options">
+                <div class="loginBtn"><a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt85'),{'j_idt85:j_idt99':'j_idt85:j_idt99'},'');return false" class="btn btn-link">Zaloguj</a>
+                </div>
+                <div class="register"><a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt85'),{'j_idt85:j_idt101':'j_idt85:j_idt101'},'');return false" class="btn btn-link">Załóż konto</a>
+                </div>
+            </div><div id="j_idt85:j_idt120" class="ui-outputpanel ui-widget hidden-xs clock-head-right-ext">
+    <div id="j_idt121_serverTimeDisplay" class="smart-clock"><span class="serverTimeDisplay"></span>
+    </div><script type="text/javascript">
+        clock.init('https://portal.smartpzp.pl', 'jErP%5DN8dted%3CLbR%268h-6%27%3EXEc%3APDN%40F%5D');
+        $(window).load(function(){clock.run('j_idt121' + '_serverTimeDisplay');});
+    </script></div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:4" value="4854136953889122422:-5377197232803176946" autocomplete="off" />
+</form>
+                        </div>
+                    </div>
+                    <div class="page-options">
+<form id="j_idt128" name="j_idt128" method="post" action="/cbkpan/" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt128" value="j_idt128" />
+
+    <!--&lt;o:tagAttribute name="value" /&gt;--><a id="j_idt128:size1" href="#" class="ui-commandlink ui-widget form-button form-button-icon  sizeBtn s1x " onclick="spinner.show();;PrimeFaces.ab({s:&quot;j_idt128:size1&quot;,onco:function(xhr,status,args){location.reload(); spinner.hide();;}});return false;" style="">
+        <div data-placement="top">
+            <i class="fa fa-font small"></i>
+        </div></a>
+    <!--&lt;o:tagAttribute name="value" /&gt;--><a id="j_idt128:size2" href="#" class="ui-commandlink ui-widget form-button form-button-icon  sizeBtn s2x " onclick="spinner.show();;PrimeFaces.ab({s:&quot;j_idt128:size2&quot;,onco:function(xhr,status,args){location.reload(); spinner.hide();;}});return false;" style="">
+        <div data-placement="top">
+            <i class="fa fa-font small"></i>
+        </div></a>
+    <!--&lt;o:tagAttribute name="value" /&gt;--><a id="j_idt128:size3" href="#" class="ui-commandlink ui-widget form-button form-button-icon  sizeBtn s3x " onclick="spinner.show();;PrimeFaces.ab({s:&quot;j_idt128:size3&quot;,onco:function(xhr,status,args){location.reload(); spinner.hide();;}});return false;" style="">
+        <div data-placement="top">
+            <i class="fa fa-font small"></i>
+        </div></a>
+    <!--&lt;o:tagAttribute name="value" /&gt;--><a id="j_idt128:hc" href="#" class="ui-commandlink ui-widget form-button form-button-icon  hcBtn " onclick="spinner.show();;PrimeFaces.ab({s:&quot;j_idt128:hc&quot;,onco:function(xhr,status,args){location.reload(); spinner.hide();;}});return false;" style="">
+        <div data-placement="top">
+            <i class="fa fa-adjust fa-2x small"></i>
+        </div></a><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:5" value="4854136953889122422:-5377197232803176946" autocomplete="off" />
+</form>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="container margin-bottom">
+                        <div class="row text-right">
+                        </div>
+                    </div>
+            <div class="nask-logo" style="text-align: center">
+            </div>
+        <div class="container"><div id="j_idt153" class="ui-outputpanel ui-widget panel form-panel primary" style=""><div id="j_idt154" class="ui-outputpanel ui-widget panel-heading">
+        <div class="description">
+            WYSZUKIWANIE POSTĘPOWAŃ
+        </div></div><div id="j_idt156" class="ui-messages ui-widget" aria-live="polite"></div><div id="j_idt157" class="ui-outputpanel ui-widget panel-body"><img id="j_idt158" height="10" alt="" src="/javax.faces.resource/spacer/dot_clear.gif.xhtml?ln=primefaces&amp;v=6.0" />
+<form id="wyszukPostepowanForm" name="wyszukPostepowanForm" method="post" action="/cbkpan/" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="wyszukPostepowanForm" value="wyszukPostepowanForm" />
+
+                        <div class="col-md-12 row">
+                            <div class="col-md-4 row">
+                                <div><label id="wyszukPostepowanForm:j_idt160" class="ui-outputlabel ui-widget pzp-outputtext-header2" for="wyszukPostepowanForm:dataWszczeciaOd_input">Data wszczęcia od</label><div id="wyszukPostepowanForm:j_idt161" class="ui-outputpanel ui-widget form-group form-input form-input-datepicker ">
+        <div data-placement="top" data-trigger="hover">
+            <div class="activity"></div><span id="wyszukPostepowanForm:dataWszczeciaOd" class="ui-calendar " style=""><input id="wyszukPostepowanForm:dataWszczeciaOd_input" name="wyszukPostepowanForm:dataWszczeciaOd_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-corner-all" autocomplete="off" tabindex="" aria-labelledby="wyszukPostepowanForm:j_idt160" /></span><script id="wyszukPostepowanForm:dataWszczeciaOd_s" type="text/javascript">$(function(){PrimeFaces.cw("Calendar","widget_wyszukPostepowanForm_dataWszczeciaOd",{id:"wyszukPostepowanForm:dataWszczeciaOd",popup:true,locale:"pl",dateFormat:"dd-mm-yy",showOn:"button",mask:"99-99-9999",behaviors:{dateSelect:function(ext,event) {PrimeFaces.ab({s:"wyszukPostepowanForm:dataWszczeciaOd",e:"dateSelect",p:"wyszukPostepowanForm:dataWszczeciaOd"},ext);}}});});</script>
+
+            <div class="validation-message">
+            </div>
+        </div></div>
+                                </div>
+                                <div><label id="wyszukPostepowanForm:j_idt168" class="ui-outputlabel ui-widget pzp-outputtext-header2" for="wyszukPostepowanForm:dataWszczeciaDo_input">Data wszczęcia do</label><div id="wyszukPostepowanForm:j_idt169" class="ui-outputpanel ui-widget form-group form-input form-input-datepicker ">
+        <div data-placement="top" data-trigger="hover">
+            <div class="activity"></div><span id="wyszukPostepowanForm:dataWszczeciaDo" class="ui-calendar " style=""><input id="wyszukPostepowanForm:dataWszczeciaDo_input" name="wyszukPostepowanForm:dataWszczeciaDo_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-corner-all" autocomplete="off" tabindex="" aria-labelledby="wyszukPostepowanForm:j_idt168" /></span><script id="wyszukPostepowanForm:dataWszczeciaDo_s" type="text/javascript">$(function(){PrimeFaces.cw("Calendar","widget_wyszukPostepowanForm_dataWszczeciaDo",{id:"wyszukPostepowanForm:dataWszczeciaDo",popup:true,locale:"pl",dateFormat:"dd-mm-yy",showOn:"button",mask:"99-99-9999",behaviors:{dateSelect:function(ext,event) {PrimeFaces.ab({s:"wyszukPostepowanForm:dataWszczeciaDo",e:"dateSelect",p:"wyszukPostepowanForm:dataWszczeciaDo"},ext);}}});});</script>
+
+            <div class="validation-message">
+            </div>
+        </div></div>
+                                </div>
+                                <div><label id="wyszukPostepowanForm:j_idt176" class="ui-outputlabel ui-widget pzp-outputtext-header2" for="wyszukPostepowanForm:numerPostepowania">Numer postępowania</label><div id="wyszukPostepowanForm:j_idt177" class="ui-outputpanel ui-widget form-group form-input pzp1">
+        <div data-placement="top" data-trigger="hover">
+            <div class="activity"></div><input id="wyszukPostepowanForm:numerPostepowania" name="wyszukPostepowanForm:numerPostepowania" type="text" autocomplete="" maxlength="10000" tabindex="" style="" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" /><script id="wyszukPostepowanForm:numerPostepowania_s" type="text/javascript">PrimeFaces.cw("InputText","widget_wyszukPostepowanForm_numerPostepowania",{id:"wyszukPostepowanForm:numerPostepowania"});</script>
+            <div class="validation-message">
+            </div>
+        </div></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 row">
+                                <div><label id="wyszukPostepowanForm:j_idt193" class="ui-outputlabel ui-widget pzp-outputtext-header2">Tryb</label><div id="wyszukPostepowanForm:j_idt194" class="ui-outputpanel ui-widget form-group form-input form-dropdown pzp1">
+        <div data-placement="top" data-trigger="hover">
+                <label for="wyszukPostepowanForm:fd234_focus" class="placeholder ">Tryb</label>
+            <label for="wyszukPostepowanForm:fd234_input" style="position: absolute; height: 0; width: 0; visibility: hidden">Tryb</label>
+            <div class="activity"></div><div id="wyszukPostepowanForm:fd234" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all "><div class="ui-helper-hidden-accessible"><input id="wyszukPostepowanForm:fd234_focus" name="wyszukPostepowanForm:fd234_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="" onblur="PrimeFaces.ab({s:&quot;wyszukPostepowanForm:fd234&quot;,e:&quot;blur&quot;,p:&quot;wyszukPostepowanForm:fd234&quot;});" /></div><div class="ui-helper-hidden-accessible"><select id="wyszukPostepowanForm:fd234_input" name="wyszukPostepowanForm:fd234_input" tabindex="-1" onchange=""><option value="" selected="selected">Wszystkie tryby</option><option value="DIALOG_KONKURENCYJNY">Dialog konkurencyjny</option><option value="DIALOG_TECHNICZNY_TRYB">Dialog techniczny</option><option value="DYNAMICZNY_SYSTEM_ZAKUPOW">Dynamiczny system zakupów</option><option value="MANUALNE_PRZESYLANIE_DOKUMENTACJI">JEDZ</option><option value="KONKURS_NIEOGRANICZONY">Konkurs nieograniczony</option><option value="KONKURS_OGRANICZONY">Konkurs ograniczony</option><option value="LICYTACJA_ELEKTRONICZNA">Licytacja elektroniczna</option><option value="NEGOCJACJE_BEZ_OGLOSZENIA">Negocjacje bez ogłoszenia</option><option value="NEGOCJACJE_Z_OGLOSZENIEM">Negocjacje z ogłoszeniem</option><option value="PARTNERSTWO_INNOWACYJNE">Partnerstwo innowacyjne</option><option value="PODSTAWOWY_ART_275_PKT_1">Podstawowy art. 275 pkt 1</option><option value="PODSTAWOWY_ART_275_PKT_2">Podstawowy art. 275 pkt 2</option><option value="PODSTAWOWY_ART_275_PKT_3_NEGOCJACJE">Podstawowy art. 275 pkt 3 - Negocjacje</option><option value="PODSTAWOWY_ART_275_PKT_3_OFERTY_PODSTAWOWE">Podstawowy art. 275 pkt 3 – Oferty podstawowe</option><option value="NIEOGRANICZONE">Przetarg nieograniczony</option><option value="OGRANICZONE">Przetarg ograniczony</option><option value="RFX_OTWARTY">RFX otwarty</option><option value="RFX_ZAMKNIETY">RFX zamknięty</option><option value="REGULAMINOWY_WOLNA_REKA">Regulaminowy z wolnej ręki</option><option value="UMOWA_RAMOWA">Umowa ramowa</option><option value="USLUGI_SPOLECZNE">Usługi społeczne art. 138o</option><option value="USLUGI_SPOLECZNE_138_O">Usługi społeczne art. 138o</option><option value="WSTEPNE_KONSULTACJE_RYNKOWE_TRYB">Wstępne konsultacje rynkowe</option><option value="ZAMOWIENIA_Z_DZIEDZINY_NAUKI">Zamówienia z dziedziny nauki</option><option value="ZAMOWIENIE">Zamówienie</option><option value="WOLNA_REKA">Zamówienie z wolnej ręki</option><option value="ZAPYTANIE_O_CENE">Zapytanie o cenę</option><option value="ZGODNY_Z_REGULAMINEM_OTWARTY">Zgodny z regulaminem otwarty</option><option value="ZGODNY_Z_REGULAMINEM_ZAMKNIETY">Zgodny z regulaminem zamkniety</option></select></div><label id="wyszukPostepowanForm:fd234_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="wyszukPostepowanForm:fd234_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:200px"><ul id="wyszukPostepowanForm:fd234_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Wszystkie tryby" tabindex="-1" role="option">Wszystkie tryby</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Dialog konkurencyjny" tabindex="-1" role="option">Dialog konkurencyjny</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Dialog techniczny" tabindex="-1" role="option">Dialog techniczny</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Dynamiczny system zakupów" tabindex="-1" role="option">Dynamiczny system zakupów</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="JEDZ" tabindex="-1" role="option">JEDZ</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Konkurs nieograniczony" tabindex="-1" role="option">Konkurs nieograniczony</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Konkurs ograniczony" tabindex="-1" role="option">Konkurs ograniczony</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Licytacja elektroniczna" tabindex="-1" role="option">Licytacja elektroniczna</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Negocjacje bez ogłoszenia" tabindex="-1" role="option">Negocjacje bez ogłoszenia</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Negocjacje z ogłoszeniem" tabindex="-1" role="option">Negocjacje z ogłoszeniem</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Partnerstwo innowacyjne" tabindex="-1" role="option">Partnerstwo innowacyjne</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Podstawowy art. 275 pkt 1" tabindex="-1" role="option">Podstawowy art. 275 pkt 1</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Podstawowy art. 275 pkt 2" tabindex="-1" role="option">Podstawowy art. 275 pkt 2</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Podstawowy art. 275 pkt 3 - Negocjacje" tabindex="-1" role="option">Podstawowy art. 275 pkt 3 - Negocjacje</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Podstawowy art. 275 pkt 3 – Oferty podstawowe" tabindex="-1" role="option">Podstawowy art. 275 pkt 3 – Oferty podstawowe</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Przetarg nieograniczony" tabindex="-1" role="option">Przetarg nieograniczony</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Przetarg ograniczony" tabindex="-1" role="option">Przetarg ograniczony</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="RFX otwarty" tabindex="-1" role="option">RFX otwarty</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="RFX zamknięty" tabindex="-1" role="option">RFX zamknięty</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Regulaminowy z wolnej ręki" tabindex="-1" role="option">Regulaminowy z wolnej ręki</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Umowa ramowa" tabindex="-1" role="option">Umowa ramowa</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Usługi społeczne art. 138o" tabindex="-1" role="option">Usługi społeczne art. 138o</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Usługi społeczne art. 138o" tabindex="-1" role="option">Usługi społeczne art. 138o</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Wstępne konsultacje rynkowe" tabindex="-1" role="option">Wstępne konsultacje rynkowe</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Zamówienia z dziedziny nauki" tabindex="-1" role="option">Zamówienia z dziedziny nauki</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Zamówienie" tabindex="-1" role="option">Zamówienie</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Zamówienie z wolnej ręki" tabindex="-1" role="option">Zamówienie z wolnej ręki</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Zapytanie o cenę" tabindex="-1" role="option">Zapytanie o cenę</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Zgodny z regulaminem otwarty" tabindex="-1" role="option">Zgodny z regulaminem otwarty</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Zgodny z regulaminem zamkniety" tabindex="-1" role="option">Zgodny z regulaminem zamkniety</li></ul></div></div></div><script id="wyszukPostepowanForm:fd234_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_wyszukPostepowanForm_fd234",{id:"wyszukPostepowanForm:fd234",behaviors:{blur:function(ext,event) {PrimeFaces.ab({s:"wyszukPostepowanForm:fd234",e:"blur",p:"wyszukPostepowanForm:fd234"},ext);}}});});</script>
+            <div class="validation-message">
+            </div>
+        </div></div>
+                                </div>
+                                <div><label id="wyszukPostepowanForm:j_idt204" class="ui-outputlabel ui-widget pzp-outputtext-header2">Rodzaj</label><div id="wyszukPostepowanForm:j_idt205" class="ui-outputpanel ui-widget form-group form-input form-dropdown pzp1">
+        <div data-placement="top" data-trigger="hover">
+                <label for="wyszukPostepowanForm:fd235_focus" class="placeholder ">Rodzaj</label>
+            <label for="wyszukPostepowanForm:fd235_input" style="position: absolute; height: 0; width: 0; visibility: hidden">Rodzaj</label>
+            <div class="activity"></div><div id="wyszukPostepowanForm:fd235" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all "><div class="ui-helper-hidden-accessible"><input id="wyszukPostepowanForm:fd235_focus" name="wyszukPostepowanForm:fd235_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="" onblur="PrimeFaces.ab({s:&quot;wyszukPostepowanForm:fd235&quot;,e:&quot;blur&quot;,p:&quot;wyszukPostepowanForm:fd235&quot;});" /></div><div class="ui-helper-hidden-accessible"><select id="wyszukPostepowanForm:fd235_input" name="wyszukPostepowanForm:fd235_input" tabindex="-1" onchange=""><option value="" selected="selected">Wszystkie rodzaje</option><option value="BRAK">Brak</option><option value="USLUGI">Usługi</option><option value="DOSTAWY">Dostawy</option><option value="ROBOTY_BUDOWLANE">Roboty budowlane</option><option value="USLUGI_SPOLECZNE">Usługi społeczne</option></select></div><label id="wyszukPostepowanForm:fd235_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="wyszukPostepowanForm:fd235_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul id="wyszukPostepowanForm:fd235_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Wszystkie rodzaje" tabindex="-1" role="option">Wszystkie rodzaje</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Brak" tabindex="-1" role="option">Brak</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Usługi" tabindex="-1" role="option">Usługi</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Dostawy" tabindex="-1" role="option">Dostawy</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Roboty budowlane" tabindex="-1" role="option">Roboty budowlane</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Usługi społeczne" tabindex="-1" role="option">Usługi społeczne</li></ul></div></div></div><script id="wyszukPostepowanForm:fd235_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_wyszukPostepowanForm_fd235",{id:"wyszukPostepowanForm:fd235",behaviors:{blur:function(ext,event) {PrimeFaces.ab({s:"wyszukPostepowanForm:fd235",e:"blur",p:"wyszukPostepowanForm:fd235"},ext);}}});});</script>
+            <div class="validation-message">
+            </div>
+        </div></div>
+                                </div>
+                                <div><label id="wyszukPostepowanForm:j_idt215" class="ui-outputlabel ui-widget pzp-outputtext-header2" for="wyszukPostepowanForm:slowaKluczowe">Nazwa</label><div id="wyszukPostepowanForm:j_idt216" class="ui-outputpanel ui-widget form-group form-input pzp1">
+        <div data-placement="top" data-trigger="hover">
+            <div class="activity"></div><input id="wyszukPostepowanForm:slowaKluczowe" name="wyszukPostepowanForm:slowaKluczowe" type="text" autocomplete="off" maxlength="10000" tabindex="" onblur="PrimeFaces.ab({s:&quot;wyszukPostepowanForm:slowaKluczowe&quot;,e:&quot;blur&quot;,p:&quot;wyszukPostepowanForm:slowaKluczowe&quot;});" style="" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" /><script id="wyszukPostepowanForm:slowaKluczowe_s" type="text/javascript">PrimeFaces.cw("InputText","widget_wyszukPostepowanForm_slowaKluczowe",{id:"wyszukPostepowanForm:slowaKluczowe"});</script>
+            <div class="validation-message">
+            </div>
+        </div></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 row"><div id="wyszukPostepowanForm:tylkoNiezakonczoneCB" class="ui-outputpanel ui-widget"><div id="wyszukPostepowanForm:j_idt223" class="ui-outputpanel ui-widget form-group form-checkbox no-empty   transparent "><div id="wyszukPostepowanForm:fc236" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="wyszukPostepowanForm:fc236_input" name="wyszukPostepowanForm:fc236_input" type="checkbox" checked="checked" aria-checked="true" onchange="PrimeFaces.ab({s:&quot;wyszukPostepowanForm:fc236&quot;,e:&quot;change&quot;,p:&quot;wyszukPostepowanForm:fc236&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active"><span class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span></div></div><script id="wyszukPostepowanForm:fc236_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_wyszukPostepowanForm_fc236",{id:"wyszukPostepowanForm:fc236"});</script>
+        <div class="placeholder"></div>
+        <div class="validation-message">
+        </div></div><label id="wyszukPostepowanForm:j_idt227" class="ui-outputlabel ui-widget pzp-outputtext-header" for="wyszukPostepowanForm:fc236_input">Tylko niezakończone</label></div>
+                                <div><div id="wyszukPostepowanForm:tylkoMojeCB" class="ui-outputpanel ui-widget"><div id="wyszukPostepowanForm:j_idt229" class="ui-outputpanel ui-widget form-group form-checkbox    transparent "><div id="wyszukPostepowanForm:fc237" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="wyszukPostepowanForm:fc237_input" name="wyszukPostepowanForm:fc237_input" type="checkbox" aria-checked="false" onchange="PrimeFaces.ab({s:&quot;wyszukPostepowanForm:fc237&quot;,e:&quot;change&quot;,p:&quot;wyszukPostepowanForm:fc237&quot;});" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="wyszukPostepowanForm:fc237_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_wyszukPostepowanForm_fc237",{id:"wyszukPostepowanForm:fc237"});</script>
+        <div class="placeholder"></div>
+        <div class="validation-message">
+        </div></div><label id="wyszukPostepowanForm:j_idt233" class="ui-outputlabel ui-widget pzp-outputtext-header" for="wyszukPostepowanForm:fc237_input">Tylko moje</label></div>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"><script id="wyszukPostepowanForm:j_idt241_s" type="text/javascript">$(function(){PrimeFaces.cw("DefaultCommand","widget_wyszukPostepowanForm_j_idt241",{id:"wyszukPostepowanForm:j_idt241",target:"wyszukPostepowanForm:wyszukaj"});});</script>
+                            <div class="col-md-6"><a id="wyszukPostepowanForm:wyszukaj" href="#" class="ui-commandlink ui-widget form-button   left" onclick="spinner.show();PrimeFaces.ab({s:&quot;wyszukPostepowanForm:wyszukaj&quot;,p:&quot;wyszukPostepowanForm&quot;,u:&quot;listaPostepowanForm:postepowaniaTabela&quot;,onco:function(xhr,status,args){spinner.hide();}});return false;" tabindex="" style="">
+        <div data-placement="top" data-trigger="hover">
+                <i class="fa icon-pzp-lupka"></i>
+            Wyszukaj
+            
+        </div></a>
+                            </div>
+                            <div class="col-md-6 text-right"><a id="wyszukPostepowanForm:wyczysc" href="#" class="ui-commandlink ui-widget form-button gray  left" onclick="spinner.show();PrimeFaces.ab({s:&quot;wyszukPostepowanForm:wyczysc&quot;,u:&quot;wyszukPostepowanForm&quot;,onco:function(xhr,status,args){spinner.hide();}});return false;" tabindex="" style="">
+        <div data-placement="top" data-trigger="hover">
+                <i class="fa icon-pzp-zamknij"></i>
+            Wyczyść
+            
+        </div></a>
+                            </div>
+                        </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:6" value="4854136953889122422:-5377197232803176946" autocomplete="off" />
+</form></div><div id="j_idt253" class="ui-outputpanel ui-widget panel-heading">
+        <div class="description">
+            LISTA POSTĘPOWAŃ
+        </div></div><div id="j_idt255" class="ui-outputpanel ui-widget panel-body">
+<form id="listaPostepowanForm" name="listaPostepowanForm" method="post" action="/cbkpan/" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="listaPostepowanForm" value="listaPostepowanForm" />
+<img id="listaPostepowanForm:j_idt256" width="20" alt="" src="/javax.faces.resource/spacer/dot_clear.gif.xhtml?ln=primefaces&amp;v=6.0" /><div id="listaPostepowanForm:postepowaniaTabela" class="ui-datatable ui-widget ui-datatable-scrollable data-table ui-datatable-resizable" style="overflow: inherit"><div class="ui-widget-header ui-datatable-scrollable-header"><div class="ui-datatable-scrollable-header-box"><table role="grid"><thead id="listaPostepowanForm:postepowaniaTabela_head"><tr role="row"><th id="listaPostepowanForm:postepowaniaTabela:j_idt257" class="ui-state-default ui-sortable-column ui-resizable-column ui-column-p-1" role="columnheader" aria-label="Numer" style="width:15%"><span class="ui-column-title">Numer</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="listaPostepowanForm:postepowaniaTabela:j_idt259" class="ui-state-default ui-sortable-column ui-resizable-column ui-column-p-1" role="columnheader" aria-label="Nazwa" style="width:30%"><span class="ui-column-title">Nazwa</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="listaPostepowanForm:postepowaniaTabela:j_idt261" class="ui-state-default ui-sortable-column ui-resizable-column ui-column-p-1" role="columnheader" aria-label="Tryb" style="width:15%"><span class="ui-column-title">Tryb</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="listaPostepowanForm:postepowaniaTabela:j_idt263" class="ui-state-default ui-sortable-column ui-resizable-column ui-column-p-1" role="columnheader" aria-label="Termin składania ofert" style="width:10%"><span class="ui-column-title">Termin składania ofert</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="listaPostepowanForm:postepowaniaTabela:j_idt265" class="ui-state-default ui-sortable-column ui-resizable-column" role="columnheader" aria-label="Data wszczęcia" style="width: 15%;"><span class="ui-column-title">Data wszczęcia</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="listaPostepowanForm:postepowaniaTabela:j_idt267" class="ui-state-default ui-sortable-column ui-resizable-column ui-column-p-1" role="columnheader" aria-label="Termin składania wniosków" style="width:10%"><span class="ui-column-title">Termin składania wniosków</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="listaPostepowanForm:postepowaniaTabela:j_idt271" class="ui-state-default ui-sortable-column ui-resizable-column ui-column-p-1" role="columnheader" aria-label="Status" style="width:15%"><span class="ui-column-title">Status</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th></tr></thead></table></div></div><div class="ui-datatable-scrollable-body" tabindex="-1"><table role="grid"><tbody id="listaPostepowanForm:postepowaniaTabela_data" class="ui-datatable-data ui-widget-content" tabindex="0"><tr data-ri="0" data-rk="-492555634" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.03.2024</td><td role="gridcell" class="ui-column-p-1">Wykonanie i dostawa wiązek przewodów dla projektu Comet Interceptor. </td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">15-03-2024 11:00</td><td role="gridcell" style="width: 15%;">06-03-2024 16:12</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr><tr data-ri="1" data-rk="-992303934" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.01.2024</td><td role="gridcell" class="ui-column-p-1">Dostawa sprzętu komputerowego część I: dostawa przenośnego sprzętu komputerowego część II: dostawa stacjonarnego sprzętu komputerowego</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">23-02-2024 11:00</td><td role="gridcell" style="width: 15%;">14-02-2024 17:43</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr><tr data-ri="2" data-rk="44620074" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.02.2024</td><td role="gridcell" class="ui-column-p-1">Dostawa biurowego oprogramowania komputerowego</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">20-02-2024 11:00</td><td role="gridcell" style="width: 15%;">12-02-2024 15:35</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr><tr data-ri="3" data-rk="-1846211145" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.04.2024</td><td role="gridcell" class="ui-column-p-1">Dostawa obliczeniowego oprogramowania komputerowego</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">09-02-2024 11:00</td><td role="gridcell" style="width: 15%;">31-01-2024 16:17</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr><tr data-ri="4" data-rk="1380248583" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.32.2023</td><td role="gridcell" class="ui-column-p-1">Przedłużenie serwisów bezpieczeństwa oraz usług wsparcia serwisowego dla posiadanej przez Zamawiającego zapory sieciowej</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">27-11-2023 11:00</td><td role="gridcell" style="width: 15%;">17-11-2023 15:08</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr><tr data-ri="5" data-rk="-1922521341" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.30.2023</td><td role="gridcell" class="ui-column-p-1">Odnowienie rocznego kontraktu serwisowego do posiadanej przez użytkownika licencji IDL wraz z dostawą nowych licencji</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">07-11-2023 11:00</td><td role="gridcell" style="width: 15%;">30-10-2023 13:45</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr><tr data-ri="6" data-rk="1905037617" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.29.2023</td><td role="gridcell" class="ui-column-p-1">Wznowienie usługi wsparcia technicznego dla posiadanej przez Zamawiającego licencji oprogramowania służącego do przetwarzania i analizy zobrazowań</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">06-11-2023 11:00</td><td role="gridcell" style="width: 15%;">26-10-2023 17:10</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Ogłoszone</td></tr><tr data-ri="7" data-rk="-1389287117" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.31.2023</td><td role="gridcell" class="ui-column-p-1">Wznowienie usługi wsparcia technicznego dla posiadanej przez Zamawiającego licencji oprogramowania służącego do przetwarzania i analizy zobrazowań</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">15-11-2023 11:00</td><td role="gridcell" style="width: 15%;">07-11-2023 10:28</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr><tr data-ri="8" data-rk="59907152" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.28.2023</td><td role="gridcell" class="ui-column-p-1">Dostawa prenumeraty czasopism zagranicznych</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">08-11-2023 11:00</td><td role="gridcell" style="width: 15%;">30-10-2023 14:13</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr><tr data-ri="9" data-rk="-1656776842" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="ui-column-p-1">KP.ZP.26.27.2023</td><td role="gridcell" class="ui-column-p-1">Dostawa oprogramowania służącego do analizowania i wizualizacji danych GIS</td><td role="gridcell" class="ui-column-p-1">Podstawowy art. 275 pkt 1</td><td role="gridcell" class="ui-column-p-1">18-10-2023 11:00</td><td role="gridcell" style="width: 15%;">10-10-2023 12:24</td><td role="gridcell" class="ui-column-p-1">-</td><td role="gridcell" class="ui-column-p-1">Po wyborze najkorzystniejszej oferty</td></tr></tbody></table></div><div class="ui-widget-header ui-datatable-scrollable-footer"><div class="ui-datatable-scrollable-footer-box"><table role="grid"></table></div></div><div id="listaPostepowanForm:postepowaniaTabela_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"><a class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0" href="#">1</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">2</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">3</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">4</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">5</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">6</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">7</a></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all" aria-label="Next Page" tabindex="0"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all" aria-label="Last Page" tabindex="0"><span class="ui-icon ui-icon-seek-end">p</span></a></div><input type="hidden" id="listaPostepowanForm:postepowaniaTabela_selection" name="listaPostepowanForm:postepowaniaTabela_selection" autocomplete="off" value="" /><input type="hidden" id="listaPostepowanForm:postepowaniaTabela_columnOrder" name="listaPostepowanForm:postepowaniaTabela_columnOrder" autocomplete="off" /><input type="hidden" id="listaPostepowanForm:postepowaniaTabela_scrollState" name="listaPostepowanForm:postepowaniaTabela_scrollState" autocomplete="off" value="0,0" /></div><script id="listaPostepowanForm:postepowaniaTabela_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_listaPostepowanForm_postepowaniaTabela",{id:"listaPostepowanForm:postepowaniaTabela",paginator:{id:['listaPostepowanForm:postepowaniaTabela_paginator_bottom'],rows:10,rowCount:67,page:0,currentPageTemplate:'({currentPage} of {totalPages})'},selectionMode:"single",scrollable:true,liveScroll:false,scrollStep:0,scrollLimit:67,liveScrollBuffer:0,resizableColumns:true,draggableColumns:true,behaviors:{rowDblselect:function(ext,event) {PrimeFaces.ab({s:"listaPostepowanForm:postepowaniaTabela",e:"rowDblselect",p:"listaPostepowanForm:postepowaniaTabela",onst:function(cfg){spinner.show();}},ext);},rowSelect:function(ext,event) {PrimeFaces.ab({s:"listaPostepowanForm:postepowaniaTabela",e:"rowSelect",p:"listaPostepowanForm:postepowaniaTabela",u:"listaPostepowanForm:buttony",d:200},ext);}}});});</script>
+                        <div class="col-md-12 text-right"><div id="listaPostepowanForm:buttony" class="ui-outputpanel ui-widget">
+                                <div class="row">
+                                    <div class="col-md-12 text-right"><a id="listaPostepowanForm:podgladPublicId" href="#" class="ui-commandlink ui-widget form-button primary  left" onclick="spinner.show();PrimeFaces.ab({s:&quot;listaPostepowanForm:podgladPublicId&quot;,onco:function(xhr,status,args){;}});return false;" tabindex="" style="">
+        <div data-placement="top" data-trigger="hover">
+                <i class="fa icon-pzp-oko"></i>
+            Podgląd
+            
+        </div></a>
+                                    </div>
+                                </div></div>
+                        </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:7" value="4854136953889122422:-5377197232803176946" autocomplete="off" />
+</form></div></div>
+        </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-componets">
+                <div class="col-md-12" style="text-align: center"><span style="font-size: 20pt;">Infolinia techniczna PL: +48 22 123 77 97</span>
+                </div>
+                <div class="col-md-12" style="text-align: center"><span style="font-size: 15pt;">Mail PL / ENG: pomoc@portalpzp.pl</span>
+                </div>
+                <div class="col-md-12" style="text-align: center"><span style="font-size: 15pt;">Godziny pracy infolinii: 7:00-17:00 (w dni robocze)</span>
+                </div>
+                <div class="col-md-12" style="text-align: center"><span style="font-size: 15pt;">Po godz. 17:00 wsparcie techniczne udzielane jest za pośrednictwem maila pomoc@portalpzp.pl</span>
+                </div><script type="text/javascript" src="/javax.faces.resource/szafir.js.xhtml?ln=js"></script><script type="text/javascript" src="/javax.faces.resource/custom.js.xhtml?ln=js"></script>
+        </div><script type="text/javascript">$(function(){PF('cookieDlg').show();;PF('cookieDlg').show();;});</script></body>
+</html>

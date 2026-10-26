@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="bg-BG" class="not-ie" style="scrollbar-color: #353535 #1d1d1d;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon-precomposed" href="#">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+    <link rel="stylesheet" href="../../static/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-quantico@0.0.71/index.css"
+        integrity="sha256-U8bHYqupMBWwnF81YrXYXtj772pZ+I70EANeZ3LY16Q=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <title>ИКИТ-БАН</title>        
+    <meta name="description" content="Обяви за конкурси за академични длъжности от Института за Космически Изследвания и Технологии, БАН.">
+    <meta property="og:title" content="Обяви за Конкурси | ИКИТ">
+    <meta property="og:description" content="Обяви за конкурси за академични длъжности от Института за Космически Изследвания и Технологии, БАН.">
+    <meta property="og:image" content="http://space.bas.bg/thumbnail-min.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+    <meta property="og:url" content="http://space.bas.bg/">
+    <link rel="stylesheet" href="../../static/css/master.css">
+    <link rel="stylesheet" href="../../static/css/flags.css">
+    <script src="../../static/js/jquery.js"></script>
+    <script src="../../static/js/popper.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/head.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: false,
+            live: true,
+            callback: function (box) {},
+            scrollContainer: null,
+            resetAnimation: true,
+        });
+        wow.init();
+
+        function toggleNavbarColor() {
+            let nav = document.querySelectorAll(".navbar");
+            if ($(nav).hasClass("colorized")) {
+                $(nav).removeClass("colorized");
+            } else {
+                $(nav).addClass("colorized");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container" style="box-sizing: content-box;">
+            <a class="navbar-brand brand-logo-standard" href="#">
+                <!-- LOGO Navigation IKIT -->
+                <img src="../../static/img/ikit_c_450x340.png" title="SRTI-BAS Logo">
+                <!-- end LOGO Navigation IKIT -->
+            </a>
+            <button class="navbar-toggler" onclick="toggleNavbarColor();" type="button" data-toggle="collapse"
+                data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            НАЧАЛО
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="../../index.html">ЗА ИКИТ</a></li><li class="nav-item"><a href="../../bg/about/history.html">ИСТОРИЯ</a></li>
+                            <li class="nav-item"><a href="../../bg/about/projects.html">ПРОЕКТИ</a></li>
+                            <li class="nav-item"><a href="../../bg/about/patents.html">ПАТЕНТИ</a></li>
+                            <li class="nav-item"><a href="../../bg/about/reports.html">ОТЧЕТИ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../bg/news/blog.html">НОВИНИ</a>
+                    </li>
+                    <li class="dropdown">
+                            <a  href="../../bg/structure/structure.html" class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                СТРУКТУРА
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="../../bg/structure/structure.html">РЪКОВОДСТВО</a></li>
+                            <li class="nav-item"><a href="../../bg/structure/sc.html">НАУЧЕН СЪВЕТ</a></li>
+                            <li class="nav-item"><a href="../../bg/structure/units.html">НАУЧНИ ЗВЕНА</a></li>
+                            <li class="nav-item"><a href="../../bg/structure/admn.html">АДМИНИСТРАЦИЯ</a></li>
+                            </ul>
+                        </li>
+                    <li class="dropdown">
+                            <a  href="../../bg/training/PhD_students.html" class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                ОБУЧЕНИЕ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="../../bg/training/PhD_students.html">ДОКТОРАНТИ</a></li>
+                            </ul>
+                    </li>
+                     <li class="nav-item active">                          
+                        <a class="nav-link" href="../../bg/contests_and_procedures/contests.html">КОНКУРСИ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../bg/members_of_the_BAS/members.html">ЧЛЕНОВЕ НА БАН</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="../../bg/publishing_activity/books_and_journals.html">ИЗДАТЕЛСКА ДЕЙНОСТ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../bg/procurement/procurement.html">ПРОФИЛ НА КУПУВАЧА</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../en/index.html"><span class="flag flag-gb"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation bar -->
+    <!-- Header title -->
+    <div class="header-container">
+        <div class="header-cover" style="height: auto;">
+            <div class="inner" style="height: 230px;">
+                <h2 class="wow fadeInDown">
+                    <span style="color: #ffffff91;">КОНКУРСИ</span>
+                    &nbsp;&nbsp;
+                    <i class="fas fa-xs fa-chevron-right" style="color: #11e2ffa6;vertical-align: baseline;"></i>
+                    &nbsp;&nbsp;
+                    ОБЯВИ ЗА КОНКУРСИ
+                </h2>
+            </div>
+            <div class="inner" style="padding-left: 0px;">
+                <div class="row" style="padding: 4em 0; margin: 0 auto;">
+                    <a href="files/PRAVILNIK_IKIT.pdf" target="_blank" style="text-decoration: none !important;"
+                        class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="pure-button fuller-button blue header-button">ПРАВИЛНИК<br>НА ИКИТ</div>
+                    </a>
+                    <a href="contests.html" style="text-decoration: none !important;"
+                        class="col-sm-12 col-md-6 col-lg-3 selected">
+                        <div class="pure-button fuller-button blue header-button selected">ОБЯВИ ЗА<br>КОНКУРСИ</div>
+                    </a>
+                    <a href="procedures.html" style="text-decoration: none !important;"
+                        class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="pure-button fuller-button blue header-button" style="line-height: 47px;">ТЕКУЩИ</div>
+                    </a>
+                    <a href="past-procedures.html" style="text-decoration: none !important;"
+                        class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="pure-button fuller-button blue header-button" style="line-height: 47px;">ПРИКЛЮЧИЛИ</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header title -->
+    <!-- Content -->
+    <main class="main-content news" id="content">
+        <div class="panel-layout">
+            <!-- Block -->
+            <div class="block">
+                <div class="container wow slideInLeft">                    
+                    <div class="title-bordered">
+                        <div class="title-inner">
+                            <a href="https://edu.bas.bg/documents/2026/08-04/ob.pdf" target="_blank">Конкурс за прием на редовни и задочни докторанти за учебната 2026/2027 г.</a><br>
+                            <a href="https://edu.bas.bg/documents/2026/08-04/spec.pdf" target="_blank">
+                                Списък на специалностите, по които се обявяват конкурси за докторанти в ИКИТ-БАН</a>
+                            <br>
+                            Документи за кандидатстване се приемат в срок от 14.08.2026 г. до 13.10.2026 г. в 
+                            Деловодството на ИКИТ-БАН, <br> гр. София, ул. "Акад. Георги Бончев" бл. 1.
+                        </div>
+                    </div>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=245253"
+                            target="_blank"> доцент - Държавен вестник брой 73 | 14.08.2026 г. (стр. 82, № 4380)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=245253"
+                            target="_blank"> доцент - Държавен вестник брой 73 | 14.08.2026 г. (стр. 82, № 4380)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=245253"
+                            target="_blank"> главен асистент - Държавен вестник брой 73 | 14.08.2026 г. (стр. 82, № 4380)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=243504"
+                            target="_blank"> главен асистент - Държавен вестник брой 49 | 29.05.2026 г. (стр. 166, № 2705)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=242726"
+                            target="_blank"> главен асистент - Държавен вестник брой 38 | 24.04.2026 г. (стр. 71, № 1988)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=242726"
+                            target="_blank"> главен асистент - Държавен вестник брой 38 | 24.04.2026 г. (стр. 71, № 1988)</a></p>                        
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=242172"
+                            target="_blank"> професор - Държавен вестник брой 31 | 31.03.2026 г. (стр. 36, № 1520)</a></p>                        
+                            <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=241425"
+                            target="_blank"> главен асистент - Държавен вестник брой 22 | 24.02.2026 г. (стр. 53, № 880)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=240687"
+                            target="_blank"> главен асистент - Държавен вестник брой 08 | 21.01.2026 г. (стр. 136, № 261)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238043"
+                            target="_blank"> професор - Държавен вестник брой 88 | 21.10.2025 г. (стр. 132, № 5745)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=237593"
+                            target="_blank"> доцент - Държавен вестник брой 82 | 07.10.2025 г. (стр. 183, № 5328)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=237593"
+                            target="_blank"> главен асистент - Държавен вестник брой 82 | 07.10.2025 г. (стр. 183, № 5328)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=236154"
+                            target="_blank"> професор - Държавен вестник брой 61 | 29.07.2025 г. (стр. 214, № 4061)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=235125"
+                            target="_blank"> главен асистент - Държавен вестник брой 45 | 03.06.2025 г. (стр. 68, № 3044)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=235125"
+                            target="_blank"> доцент - Държавен вестник брой 45 | 03.06.2025 г. (стр. 68, № 3044)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=235125"
+                            target="_blank"> доцент - Държавен вестник брой 45 | 03.06.2025 г. (стр. 68, № 3044)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=235125"
+                            target="_blank"> професор - Държавен вестник брой 45 | 03.06.2025 г. (стр. 68, № 3044)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=233896"
+                            target="_blank"> главен асистент - Държавен вестник брой 30 | 08.04.2025 г. (стр. 19, № 1821)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=232969"
+                            target="_blank"> главен асистент - Държавен вестник брой 16 | 25.02.2025 г. (стр. 42, № 907)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=232884"
+                            target="_blank"> доцент - Държавен вестник брой 15 | 21.02.2025 г. (стр. 61, № 822)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=215800"
+                            target="_blank"> главен асистент - Държавен вестник брой 44 | 21.05.2024 г. (стр. 18, № 3380)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=206000"
+                            target="_blank"> главен асистент - Държавен вестник брой 13 | 13.02.2024 г. (стр. 117, № 1169)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=194366"
+                            target="_blank"> доцент - Държавен вестник брой 45 | 23.05.2023 г. (стр. 73, № 3744)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=191540"
+                            target="_blank"> главен асистент - Държавен вестник брой 38 | 28.04.2023 г. (стр. 79, № 3227)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=191540"
+                            target="_blank"> главен асистент - Държавен вестник брой 38 | 28.04.2023 г. (стр. 79, № 3227)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=180005"
+                            target="_blank"> главен асистент - Държавен вестник брой 91 | 15.11.2022 г. (стр. 58, № 7221)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=178843"
+                            target="_blank"> главен асистент - Държавен вестник брой 82 | 14.10.2022 г. (стр. 71, № 6416)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=178843"
+                            target="_blank"> главен асистент - Държавен вестник брой 82 | 14.10.2022 г. (стр. 71, № 6416)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=174841"
+                            target="_blank"> професор - Държавен вестник брой 56 | 19.07.2022 г. (стр. 129, № 4327)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=174841"
+                            target="_blank"> главен асистент - Държавен вестник брой 56 | 19.07.2022 г. (стр. 129, № 4327)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=173879"
+                            target="_blank"> доцент - Държавен вестник брой 43 | 10.06.2022 г. (стр. 67, № 3407)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=173879"
+                            target="_blank"> доцент - Държавен вестник брой 43 | 10.06.2022 г. (стр. 67, № 3407)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=171630"
+                            target="_blank"> професор - Държавен вестник брой 29 | 12.04.2022 г. (стр. 117, № 2220)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=164939"
+                            target="_blank"> професор - Държавен вестник брой 96 | 19.11.2021 г. (стр. 53, № 7031)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=162990"
+                            target="_blank"> доцент - Държавен вестник брой 86 | 15.10.2021 г. (стр. 106, № 5994)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=160302"
+                            target="_blank"> професор - Държавен вестник брой 62 | 27.07.2021 г. (стр. 93, № 4458)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=159436"
+                            target="_blank"> главен асистент - Държавен вестник брой 54 | 29.06.2021 г. (стр. 203, № 3847)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=158215"
+                            target="_blank"> професор - Държавен вестник брой 41 | 18.05.2021 г. (стр. 155, № 3044)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=158215"
+                            target="_blank"> доцент - Държавен вестник брой 41 | 18.05.2021 г. (стр. 155, № 3044)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=156590"
+                            target="_blank"> главен асистент - Държавен вестник брой 22 | 16.03.2021 г. (стр. 214, № 1542)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=153854"
+                            target="_blank"> доцент - Държавен вестник брой 100 | 24.11.2020 г. (стр. 67, № 8925)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=153854"
+                            target="_blank"> доцент - Държавен вестник брой 100 | 24.11.2020 г. (стр. 67, № 8925)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=149155"
+                            target="_blank"> доцент - Държавен вестник брой 56 | 23.06.2020 г. (стр. 88, № 4551)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=143553"
+                            target="_blank"> професор - Държавен вестник брой 98 | 13.12.2019 г. (стр. 117-118, № 9347)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=143553"
+                            target="_blank"> професор - Държавен вестник брой 98 | 13.12.2019 г. (стр. 117-118, № 9347)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=143553"
+                            target="_blank"> доцент - Държавен вестник брой 98 | 13.12.2019 г. (стр. 117-118, № 9347)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=129976"
+                            target="_blank"> доцент - Държавен вестник бр. 76 | 14.09.2018 г. (стр. 73-74, № 8243)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=129976"
+                            target="_blank"> доцент - Държавен вестник бр. 76 | 14.09.2018 г. (стр. 73-74, № 8243)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=129976"
+                            target="_blank"> доцент - Държавен вестник бр. 76 | 14.09.2018 г. (стр. 73-74, № 8243)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=125922"
+                            target="_blank"> доцент - Държавен вестник бр. 37 | 04.05.2018 г. (стр. 119, № 4416)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=125922"
+                            target="_blank"> доцент - Държавен вестник бр. 37 | 04.05.2018 г. (стр. 119, № 4416)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=125922"
+                            target="_blank"> професор - Държавен вестник бр. 37 | 04.05.2018 г. (стр. 119, № 4416)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=122371" 
+                            target="_blank"> професор - Държавен вестник бр. 12 | 06.02.2018 г. (стр. 59, № 1019)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=120719" 
+                            target="_blank"> доцент - Държавен вестник бр. 100 | 15.12.2017 г. (стр. 165, № 9507)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=119721"
+                            target="_blank"> доцент - Държавен вестник бр. 91 | 14.11.2017 г. (стр. 41, № 8568)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=119721"
+                            target="_blank"> доцент - Държавен вестник бр. 91 | 14.11.2017 г. (стр. 41, № 8568)</a></p>
+                        <p><i class="fas fa fa-link"></i><a href="http://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=119721"
+                            target="_blank">  професор - Държавен вестник бр. 91 | 14.11.2017 г. (стр. 41, № 8568)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_glas_AKI_10102017.pdf"
+                            target="_blank"> главен асистент - Държавен вестник&nbsp;бр. 81 / 10.10.2017 г. (стр. 58, № 7307)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava_konkurs_za_url_ikit_prof_14072017.pdf" 
+                            target="_blank"> професор - Държавен вестник&nbsp;бр. 57 / 14.07.2017 г. (стр. 216, № 4934)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_doc_glas_21042017.pdf"
+                            target="_blank"> доцент и главен асистент - Държавен вестник&nbsp;бр. 32 / 21.04.2017 г. (№ 2780)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_glas_20012017.pdf" 
+                            target="_blank"> главен асистент - Държавен вестник&nbsp;бр. 7 / 20.01.2017 г. (№ 115)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_glas_doc_08112016.pdf"
+                            target="_blank"> главен асистент и доцент- Държавен вестник&nbsp;бр. 88 / 08.11.2016 г. (№ 8723)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/Obyava_07.2016_IKIT.pdf" 
+                            target="_blank"> доцент и главен асистент - Държавен вестник&nbsp;бр. 51 / 05.07.2016 г. (№ 5195)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_doc_doc_03062016.pdf"
+                            target="_blank"> доценти - Държавен вестник&nbsp;бр. 42 / 03.06.2016 г. (№ 4170)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_glas_19042016.pdf"
+                            target="_blank"> главен асистент - Държавен вестник&nbsp;бр. 31 / 19.04.2016 г. (№ 2833)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava_konkurs_za_url_ikit_prof_08012016.pdf" 
+                            target="_blank"> професор - Държавен вестник&nbsp;бр. 2 / 08.01.2016 г. (№ 8389)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_doc_14072015.pdf" 
+                            target="_blank"> доцент - Държавен вестник&nbsp;бр. 53 / 14.07.2015 г. (№ 4571)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/Obyava_05.2015_IKIT.pdf" 
+                            target="_blank"> професор - Държавен вестник&nbsp;бр. 35 / 15.05.2015 г. (№ 3173)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/Obyava_04.2015_IKIT.pdf" 
+                            target="_blank"> професор - Държавен вестник&nbsp;бр. 26 / 7.04.2015 г. (№ 2362)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/Obyava_03.2015_IKIT.pdf" 
+                            target="_blank"> доцент - Държавен вестник&nbsp;бр. 20 / 17.03.2015 г. (№ 1736)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_prof_doc_022015.pdf"
+                            target="_blank"> професор и доцент - Държавен вестник&nbsp;бр. 13 / 17.02.2015 г. (№ 100)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiavi_konkursi_za_url_ikit_glas-1.pdf"
+                            target="_blank"> главен асистент - Държавен вестник&nbsp;бр. 4 / 16.01.2015 г. (№ 40)</a></p>
+
+<!--
+
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/Obyava-docent-4-14.pdf" 
+                            target="_blank"> доцент - Държавен вестник&nbsp;бр. 33 / 11.04.2014 г. (№ 79)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/Obyava_02.2014_IKIT.pdf" 
+                            target="_blank"> професор и доцент - Държавен вестник&nbsp;бр. 12 / 11.02.2014 г. (№ 27)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obyava_gl_as_31.01.14.pdf" 
+                            target="_blank"> главен асистент - Държавен вестник&nbsp;бр. 9 / 31.01.2014 г. (№ 25)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava dv-100-2013.pdf" 
+                            target="_blank"> професор - Държавен вестник&nbsp;бр. 100 / 19.11.2013 г. (№ 22)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava dv-97-2013.pdf" 
+                            target="_blank"> главен асистент - Държавен вестник&nbsp;бр. 97 / 08.11.2013 г. (№ 8115)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/Obyava-doc-2013-1.pdf" 
+                            target="_blank"> доцент - Държавен вестник&nbsp;бр. 31 / 29.03.2013 г. (№ 282)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava konkurs_IKIT_30.11.2012.pdf" 
+                            target="_blank"> професори, доцент и главен асистент - Държавен вестник&nbsp;бр. 94 / 30.11.2012 г. (№ 10747)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava konkurs_IKIT_30.11.2012.pdf" 
+                            target="_blank"> професор и доцент - Държавен вестник&nbsp;бр. 85 / 06.11.2012 г. (№ 9669)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava konkurs_IKIT_30.11.2012.pdf" 
+                            target="_blank"> професори и главен асистент - Държавен вестник&nbsp;бр. 46 / 19.06.2012 г. (№ 621)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava konkurs_IKIT_30.11.2012.pdf" 
+                            target="_blank"> професор и доценти - Държавен вестник&nbsp;бр. 17 / 28.02.2012 г. (№ 56)</a></p>
+                        <p><i class="fas fa-file-pdf"></i>&nbsp;<a href="files/contests/obiava konkurs_IKIT_30.11.2012.pdf" 
+                            target="_blank"> доцент - Държавен вестник&nbsp; бр. 94 / 29.11.2011 г.&nbsp; (№ 45 )</a></p>
+
+
+-->
+                    
+                </div>
+            </div>
+            <!-- End Block -->
+            <!-- Footer -->
+            <div class="block footer">
+                <div class="container">
+                    <!-- Widgets -->
+                    <section class="footer">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <aside id="contacts_info-widget-2" class="footer-contacts contacts_info">
+                                    <div class="footer-element-title">
+                                        <h4>СВЪРЖИ СЕ С НАС</h4>
+                                    </div>
+                                    <ul class="footer-contacts-list list-unstyled">
+                                        <li>
+                                            <i class="fa fa-map-marker"></i>София 1113, ул. "Акад. Георги Бончев" бл. 1
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-phone"></i>
+                                            +359 2 988 35 03
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-envelope"></i>
+                                            <a href="">office@space.bas.bg</a>
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <aside id="latest-posts-2" class="footer-contacts latest-posts">
+                                    <div class="footer-element-title" style="margin-bottom: 10px;">
+                                        <h4>ВРЪЗКИ</h4>
+                                    </div>
+                                    <ul class="footer-contacts-list list-unstyled">
+                                        <br>
+                                        <li>
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <a href="http://www.space.bas.bg:3000/" target="_blank">Webmail</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-network-wired"></i>
+                                            <a href="http://space.bas.bg/intranet" target="_blank">Intranet</a>
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                <div class="col-12" style="text-align:center;background-color: #101a2b;letter-spacing: 3px;">
+                    <h3 style="width: 80%;text-align: center;margin: 0 auto;padding-bottom: 5px;"> <a
+                            style="color: #9aadce;" href="http://www.bas.bg/" target="_blank">БЪЛГАРСКА АКАДЕМИЯ НА НАУКИТЕ</a> </h3>
+                </div>
+            </div>
+            <!-- End Footer -->
+            <!-- Block -->
+        </div>
+    </main>
+    <!-- End Content -->
+    <div class="footer-copyright">
+        <div class="container">
+            <!-- Logo Standard -->
+            <a href="../../index.html" class="footer-logo-img" rel="home"><img src="../../static/img/ikit_c_450x340.png"
+                    style="width:40px;" alt="SRTI-BAS" title="SRTI-BAS"></a>
+            © 2019. All rights reserved. <a href="">SRTI-BAS</a>
+        </div>
+    </div>
+</body>
+
+</html>

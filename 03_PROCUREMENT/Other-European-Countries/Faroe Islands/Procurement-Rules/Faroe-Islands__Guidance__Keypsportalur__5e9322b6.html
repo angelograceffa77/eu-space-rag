@@ -1,0 +1,574 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keypsportalur</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
+    <!-- COOKIES begin  -->
+    <script src="https://cookies.fo/qookies/v1.1/latest.js"></script>
+    <script src="https://cookies.fo/api/v2/config?api_key=NmlGJNXDSeOXtGxIcon5lg"></script>
+    <script defer src="https://cookies.fo/api/v2/consent?api_key=NmlGJNXDSeOXtGxIcon5lg"></script>
+    <!-- COOKIES end  -->
+    <!--<link href="~/Css/BootStrap-5.1.13/bootstrap.min.css" rel="stylesheet">-->
+    <link href="/Css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery datepicker bootstrap theme source: https://gist.github.com/miwahall/7028640 -->
+    <link href="/Css/jquery-ui-calendar-bootstrap-theme.css" rel="stylesheet" />
+    <link href="/Css/datatables.2.1.8.min.css" rel="stylesheet">
+    <link href="/Css/DataTables-1.10.11/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="/Css/DataTables-1.10.11/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="/Css/style.css?y" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.1/jquery-ui-timepicker-addon.css" />
+    <style>
+        table td {
+            vertical-align: top;
+        }
+
+        #menu-top-right-container {
+            width: 400px;
+        }
+
+        #menu-top-right li {
+            display: inline;
+            list-style-type: none;
+            padding-left: 10px;
+            float: right;
+        }
+    </style>
+    <script src="/Scripts/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body id="frontpage">
+    <!--- HEADER --->
+    <nav >
+        <div class="container">
+            <div class="col-md-3 left-header">
+                <div class="navbar-header">
+                    <a class="navbar-brand logo" href="/"><span>Keypsportalur</span></a>
+                </div>
+            </div>
+            <!--- HEADER EXTRAS --->
+            <div class="col-md-9">
+                <div class="pull-left">
+                    <h1 style="position:relative; top:15px; left: 0px;">Keypsportalur landsins</h1>
+                </div>
+                <div class="pull-right">
+                    <div id="menu-top-right-container">
+                        <span class="pull-right">
+                        </span>
+                        <br /><br />
+                        <ul id="menu-top-right">
+
+<form action="/utbodsyvirlit/utbod/nordic-overview-of-instruments-measures-and-barriers-to-achieving-the-objectives-of-the-lulucf-regulation/" enctype="multipart/form-data" id="login-form" method="post"><input name="__RequestVerificationToken" type="hidden" value="3ezgUYDpfHna1TLcDMhr_2EZrPYIXCytDRw22wGA-uTrPBTfiMCpr6f3bBOGLT_QG-oDXyT6dfcaZZJBrYqCsn_3ewmufDRkJU7oUiUcXEA1" />                                            <li  style="display:none;"><button type="submit" class="login-button btn btn-primary" id="Federation" name="provider" value="Federation">Innrita</button></li>
+<input name='ufprt' type='hidden' value='F5A47BED8DC87006C92D2240A4107D0F71B4F54B3B0FCFABA103B9D239B51533DC4B8BE038106618271DB888BC65E6521933436FF6EE1146C152F2D683F690BBDFF5A9FB25B44C427B38E965CF0A03CCEC5406CACDC1E8A5530A8209452050DB1813AC7FB4C51B7DF4F977E8A01CE972343E7D465FB69E2AFCADA8D70ACE9BFC0701C807610C0F32E907D690E640E5B18525F3B93775FF9DC79ABABAB699492EE7A61B4B33241A79DC2B96843AB1F011' /></form>                            <li>
+                                <form role="search" action="/leiti-urslit/">
+
+                                    <button id='search-button' class='btn btn-default' style="margin:0px;"><span class='glyphicon glyphicon-search'></span></button>
+                                </form>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!---/ HEADER EXTRAS --->
+        </div>
+    </nav>
+    <!---/ HEADER --->
+
+    <div class="container">
+        <div class="topbar row">
+            <div class="col-sm-4 col-md-3 hidden-xs circle-pattern"></div>
+            <div class="col-xs-12 col-sm-8 col-md-9"></div>
+        </div>
+        <div class="col-sm-4 col-md-3 left-sidebar" style="min-height: 100%;">
+            <nav>
+    
+        <ul class="left-sidebar-nav collapse" id="sideBarNavigation">
+            <li><a href="/" class="inside-list  headline ">Forsíða</a></li>
+                                        <li><a href="/admin/" class="inside-list "></a></li>
+                            <li><a href="/utbodsyvirlit/" class="inside-list ">&#218;tbo&#240;syvirlit</a></li>
+                            <li><a href="/undantok/" class="inside-list ">Undant&#248;k</a></li>
+                            <li><a href="/register/" class="inside-list ">Rita inn - til stovnar</a></li>
+                            <li><a href="/fylg-vid-i-utbodum/" class="inside-list ">Fylg vi&#240; &#250;tbo&#240;um - til fyrit&#248;kur</a></li>
+                    <li>
+                        <span class="nav-header tree-toggle">
+                            <a class="nav-header inside-list " name="tree-level1" href="/um-keypsportalin/">Um keypsportalin</a> &raquo;</span>
+                        <ul class="nav nav-list tree" style="display:none;">
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/um-keypsportalin/bakgrund-og-endamal/">Bakgrund og endam&#225;l</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/um-keypsportalin/rattargrundarlag/">R&#230;ttargrundarlag</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/um-keypsportalin/utbjodingarhattir/">&#218;tbj&#243;&#240;ingarh&#230;ttir</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/um-keypsportalin/&#225;rsfr&#225;grei&#240;ing-2022/">&#193;rsfr&#225;grei&#240;ing 2022</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="nav-header tree-toggle">
+                            <a class="nav-header inside-list " name="tree-level1" href="/radhjalpogvegleidingar/">R&#225;&#240;, hj&#225;lp og veglei&#240;ingar</a> &raquo;</span>
+                        <ul class="nav nav-list tree" style="display:none;">
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/radhjalpogvegleidingar/tilutbjodara/">Til &#250;tbj&#243;&#240;ara</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/radhjalpogvegleidingar/tilveitara/">Til veitara</a></li>
+                        </ul>
+                    </li>
+                            <li><a href="/samband/" class="inside-list ">Samband</a></li>
+                            <li><a href="/leiti-urslit/" class="inside-list ">Leita</a></li>
+                            <li><a href="/white-list-filter/" class="inside-list "></a></li>
+                    <li>
+                        <span class="nav-header tree-toggle">
+                            <a class="nav-header inside-list " name="tree-level1" href="/rammusattmalar/">Rammus&#225;ttm&#225;lar</a> &raquo;</span>
+                        <ul class="nav nav-list tree" style="display:none;">
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/ferdatryggingar/">Fer&#240;atryggingar</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/trygging-av-akfoerum/">Trygging av akf&#248;rum</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/dekk-skift-&#225;-bilum/">Dekk skift &#225; bilum</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/veiting-av-d&#225;tusamskifti-&#250;tgongur/">Veiting av d&#225;tusamskifti til landsins stovnar, &#250;tgongur</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/kopi-papp&#237;r/">Kopi papp&#237;r</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/s&#225;pur/">S&#225;pur</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/br&#250;kspapp&#237;r/">Br&#250;kspapp&#237;r</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/posar/">Posar</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/einn&#253;tis-b&#250;n&#253;ti/">Einn&#253;tis b&#250;n&#253;ti</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/battar&#237;/">Battar&#237;</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/prentarar-og-t&#243;narar/">Prentarar og t&#243;narar</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/bensin-og-diesel-til-akfoer/">Bensin og diesel til akf&#248;r</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/reinger&#240;ar&#250;tger&#240;/">Reinger&#240;ings&#250;tger&#240;</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/farma-flutningur/">Farmaflutningur</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/nitril-handskar/">Nitril handskar</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/telefoni/">Telefoni og internet</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/teldur/">Teldur</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/teldu&#250;tger&#240;/">Teldu&#250;tger&#240;</a></li>
+                                        <li><a class="nav-header inside-list " name="tree-level2" href="/rammusattmalar/kaffi/">Kaffi</a></li>
+                        </ul>
+                    </li>
+        </ul>
+</nav>
+        </div>
+        <div class="col-sm-8 col-md-9" style="min-height: 100%;" id="body-content">
+            
+        <h2>Útboð</h2>
+    <table style="width:100%;">
+        <tr>
+            <td style="width:210px;">
+                Heiti
+            </td>
+            <td>Nordic overview of instruments, measures and barriers to achieving the objectives of the LULUCF Regulation</td>
+        </tr>
+        <tr>
+            <td>
+                Nr.
+            </td>
+            <td>10540</td>
+        </tr>
+        <tr>
+            <td style="width:210px;">
+                Útboðsformur
+            </td>
+            <td>Útboð</td>
+        </tr>
+        <tr>
+            <td>
+                Stutt lýsing
+            </td>
+            <td>The project will assess how Nordic countries balance climate and biodiversity goals under the EU’s LULUCF and Nature Restoration Regulations. It will examine synergies and conflicts in policy design and implementation to increase carbon removals while protecting ecosystems.</td>
+        </tr>
+        <tr>
+            <td>
+                Lýsing
+            </td>
+            <td>
+                <p style="white-space: pre-line">
+                    The project examines how Nordic countries address the EU’s targets for increasing net greenhouse gas removals in the land use sector under the LULUCF Regulation, while also meeting biodiversity goals in the Nature Restoration Regulation. Many ecosystems in the EU are in poor condition, but protecting and restoring them can boost carbon sinks. The study will analyse where synergies and conflicts arise between climate and biodiversity objectives, such as in forest wetlands or areas with intensive
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Slag
+            </td>
+            <td><p>Ymiskt</p> </td>
+        </tr>
+        <tr>
+            <td>
+                Bólkur
+            </td>
+            <td>Tænasta</td>
+        </tr>
+        <tr>
+            <td>
+                Veitingarstaður
+            </td>
+            <td>Føroyar</td>
+        </tr>
+        <tr>
+            <td>
+                Veitingardagur
+            </td>
+            <td>31-12-2026</td>
+        </tr>
+        <tr style="display:table-row">
+            <td>
+                Vekting
+            </td>
+            <td>
+                <p style="white-space: pre-line">
+                    1.	Understanding of the assignment (20%)
+2.	Competence and experience (20%)
+3.	Communication (10%)
+4.	Offered price (50%)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Støða
+            </td>
+            <td>Avgreitt</td>
+        </tr>
+        <tr>
+            <td>
+                Kunngjørt
+            </td>
+            <td>09-07-2025</td>
+        </tr>
+        <tr>
+            <td>
+                Spurnarfreist
+            </td>
+            <td>22-08-2025 15:00</td>
+        </tr>
+        <tr>
+            <td>
+                Innlatingarfreist
+            </td>
+            <td>05-10-2025 23:59</td>
+        </tr>
+        <tr>
+            <td>
+                    <span>Útboð latast upp</span>
+
+            </td>
+            <td>28-11-2025 23:59</td>
+        </tr>
+        <tr>
+            <td>
+                    <span>Vinnari kunngerðast</span>
+
+            </td>
+            <td>05-12-2025</td>
+        </tr>
+        
+        <tr>
+            <td>
+                Útbjóðari
+            </td>
+            <td>Umhvørvisstovan</td>
+        </tr>
+        <tr>
+            <td>
+                Bústaður
+            </td>
+            <td>
+                <p style="white-space: pre-line">
+                    Traðagøta 38, FO-165 Argir
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Kontaktpersónur
+            </td>
+            <td>
+                Fía Niclasen
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Telefon
+            </td>
+            <td>234341</td>
+        </tr>
+        <tr>
+            <td>
+                Teldupostur
+            </td>
+            <td>fian@us.fo</td>
+        </tr>
+        <tr>
+            <td>
+                Rættingar og viðmerkingar
+            </td>
+            <td>
+                <p style="white-space: pre-line">
+                    Tilboð skulu sendast til nbm@us.fo
+Tenders should be sent to nbm@us.fo
+                </p>
+            </td>
+        </tr>
+            <!-- skal verða alment tá status er avgreitt  (alment). Feltir: Útboðsvinnari og Tilboðsprísur -->
+            <tr style="display:table-row">
+                <td>
+                    Útboðsvinnari
+                </td>
+                <td>RISE Research Institutes of Sweden</td>
+            </tr>
+            <tr style="display:table-row">
+                <td>
+                    Tilboðsprísur
+                </td>
+                <td>695.000</td>
+            </tr>
+                            <!-- skal verða alment tá status er avgreitt  (alment). Feltir: Tilboðsveitarar -->
+            <tr>
+                <td>
+                        <span>Tilboðsveitarar</span>
+
+                </td>
+                <td>
+                    <p style="white-space: pre-line">
+                        .
+                    </p>
+                </td>
+            </tr>
+                <tr>
+            <td>
+                Viðheft skjøl
+            </td>
+            <td>
+                <style>
+    .file-link {
+        color: blue;
+    }
+</style>
+
+
+
+        <table>
+                    <tr>
+                        <td>
+                                <a target="_blank" href="/media/6418/Nordic overview of instruments, measures and barriers to achieving the objectives of the LULUCF Regulation.pdf" class="file-link">Nordic overview of instruments, measures and barriers to achieving the objectives of the LULUCF Regulation.pdf</a>
+                        </td>
+                    </tr>
+
+        </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Stovnað av
+            </td>
+            <td>
+                Hallur@gjaldstovan.fo - 7/9/2025 12:50:10 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Seinast broytt av
+            </td>
+            <td>
+                hallurr@gjaldstovan.fo - 12/1/2025 10:18:33 AM
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <div class="col-md-12 utbod-buttons">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function acceptOrRejectUtbod(url, data) {
+            $.ajax({
+                'url': url,
+                'type': 'POST',
+                'data': data
+            }).done(function (result) {
+                if (result && typeof result === 'object') {
+                    if (result.IsSuccess) {
+                        window.location.reload(true);
+                    }
+                    else {
+                        alert(result.Message);
+                    }
+                }
+            });
+        }
+        $(function () {
+            $("#acceptUtbod").click(function () {
+                acceptOrRejectUtbod('/umbraco/surface/UtbodFormSurface/AcceptRejectUtbod', $('#acceptUtbodData').serialize());
+            });
+            $("#rejectUtbod").click(function () {
+                acceptOrRejectUtbod('/umbraco/surface/UtbodFormSurface/AcceptRejectUtbod', $('#rejectUtbodData').serialize());
+            });
+        });
+    </script>
+
+        </div>
+    </div>
+
+    <div class="bottom-info container">
+        <div class="row">
+            <p class="text-center">Gjaldstovan | Kvíggjartún 1 | FO-160 Argir | Tel: +298 35 24 00 | Fax: +298 35 24 01 | <a href="mailto:gjaldstovan@gjaldstovan.fo">gjaldstovan@gjaldstovan.fo</a> | EAN 5797100000010 | V-tal 343269</p>
+        </div>
+    </div>
+
+    <script src="/Scripts/jquery-ui.js"></script>
+    <script src="/Scripts/jquery.validate.js"></script>
+    <script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+
+
+
+    <script src="/Scripts/DataTablesNew/jquery.dataTables.min.js"></script>
+    <script src="/Scripts/DataTablesNew/dataTables.buttons.min.js"></script>
+    <script src="/Scripts/DataTablesNew/jszip.min.js"></script>
+
+    <script src="/Scripts/DataTablesNew/vfs_fonts.js"></script>
+    <script src="/Scripts/DataTablesNew/buttons.html5.min.js"></script>
+
+
+
+
+
+    <script src="/Scripts/script.js?v=5"></script>
+    <script src="/Scripts/bootstrap-filestyle.js"></script>
+    <script src="/Scripts/moment-with-locales.min.js"></script>
+    <script src="/Scripts/datepicker-fo.js"></script>
+
+
+    <script>
+
+
+
+function sendMail(data) {
+
+
+
+$.ajax({
+'url': '/umbraco/surface/UtbodFormSurface/SendMailToSubscribers',
+'type': 'POST',
+'data': data
+}).done(function (result) {
+if (result && typeof result === 'object') {
+if (confirm(result.Message)) {
+window.location.reload(true);
+}
+}
+});
+}
+$(function () {
+$(".sendMailToSubscribers").click(function () {
+$('#mailData').find('input[name="TemplateId"]').val($(this).data('template-id'));
+if ($('#IsTest').is(':checked')) {
+$('#IsTest').val('true');
+}
+sendMail($('#mailData').serialize());
+});
+});
+    </script>
+    <!-- http://trentrichardson.com/examples/timepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.1/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.1/i18n/jquery-ui-timepicker-addon-i18n.js" type="text/javascript"></script>
+    <script>
+        /* Faroese initialisation for the jQuery UI date picker plugin */
+        /* Written by Sverri Mohr Olsen, sverrimo@gmail.com */
+        (function (factory) {
+            if (typeof define === "function" && define.amd) {
+
+                // AMD. Register as an anonymous module.
+                define(["../widgets/datepicker"], factory);
+            } else {
+
+                // Browser globals
+                factory(jQuery.datepicker);
+            }
+        }(function (datepicker) {
+
+            datepicker.regional.fo = {
+                closeText: "Lat aftur",
+                prevText: "&#x3C;Fyrra",
+                nextText: "Næsta&#x3E;",
+                currentText: "Í dag",
+                monthNames: ["Januar", "Februar", "Mars", "Apríl", "Mei", "Juni",
+                    "Juli", "August", "September", "Oktober", "November", "Desember"],
+                monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun",
+                    "Jul", "Aug", "Sep", "Okt", "Nov", "Des"],
+                dayNames: [
+                    "Sunnudagur",
+                    "Mánadagur",
+                    "Týsdagur",
+                    "Mikudagur",
+                    "Hósdagur",
+                    "Fríggjadagur",
+                    "Leyardagur"
+                ],
+                dayNamesShort: ["Sun", "Mán", "Týs", "Mik", "Hós", "Frí", "Ley"],
+                dayNamesMin: ["Su", "Má", "Tý", "Mi", "Hó", "Fr", "Le"],
+                weekHeader: "Vk",
+                dateFormat: "dd-mm-yy",
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ""
+            };
+            datepicker.setDefaults(datepicker.regional.fo);
+
+            return datepicker.regional.fo;
+
+        }));
+    </script>
+    <script>
+        $(function () {
+
+            // Add Faroese Locales for jQuery Date Picker, jQuery DateTime Picker & Moment.js
+            var locale = 'fo',
+                datetimeFormat = 'DD-MM-YYYY hh:mm';
+            $.datepicker.setDefaults($.datepicker.regional[locale]);
+            $.timepicker.setDefaults($.timepicker.regional[locale]);
+            moment.locale(locale);
+
+
+
+            // Setup DateTime Picker
+            $('.datetime-picker').datetimepicker({
+                showHour: true,
+                showMinute: true,
+                showSecond: false,
+                showMillisec: false,
+                showMicrosec: false,
+                showTimezone: true,
+                showTime: false,
+                showTimezone: false,
+                oneLine: true,
+                hour: 15,
+                onSelect: function (dateTime, instance) {
+                    //console.log(dateTime);
+                }
+            });
+            // Setup jQuery UI Date Picker
+            $(".date-picker").datepicker({
+                showButtonPanel: true,
+                format: 'dd-mm-yyyy',
+                dateFormat: 'dd-mm-yy',
+                beforeShow: function (input, inst) {
+                    var pos = { marginTop: -input.offsetHeight + 'px', marginLeft: input.offsetWidth + 'px' };
+                    //console.log(pos);
+                    inst.dpDiv.css(pos);
+                }
+            });
+            $.datepicker._gotoToday = function (id) {
+                $(id).datepicker('setDate', new Date()).datepicker('hide').blur();
+            };
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+
+    </script>
+    
+</body>
+</html>

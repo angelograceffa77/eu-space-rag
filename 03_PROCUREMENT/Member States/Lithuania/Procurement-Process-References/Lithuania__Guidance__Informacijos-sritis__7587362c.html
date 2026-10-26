@@ -1,0 +1,491 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    
+        <!-- ceproc.ok -->
+    
+
+    <html:html>
+
+    <head>
+        <!-- /WEB-INF/jsp/inf/viewInfoArea.jsp -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Informacijos sritis</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=11" />
+        <meta name="Description" content="e-Procurement platform home page"/>
+		<meta content="e-Procurement platform - Home page" name="Title"/>
+		<meta content="57" name="Type"/>
+		<meta content="DOCUMENTS/COMM/EN" name="Reference"/>
+		<meta content="European Dynamics" name="Creator"/>
+		<meta name="Language" content="En"/>
+		<meta content="25" name="Classification"/>
+		<meta content="tenders, e-procurement, documents, european law, legislation, economic operator, tenderer, procurement, contract, contracting authority, supplier, awarding authority, institutions, european union, eu" name="Keywords"/>
+        <link rel="shortcut icon"   type="image/ico" href="/epps/images/favicon.ico" />
+		
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<link rel="stylesheet" href="/epps/css/bt/custom.css"/>
+		<link rel="stylesheet" href="/epps/css/bt/bootstrap-datetimepicker.css"/>
+		<link rel="stylesheet" href="/epps/css/bt/bootstrap-datepicker3.min.css" media='screen'/> 	
+		<link rel="stylesheet" href="/epps/css/bt/jquery.treefilter.css"/>
+        <link rel="stylesheet" href="/epps/css/print.css" type="text/css" media="print" />
+        
+        
+
+
+<script>
+	const PAGE_LITERAL = 'Puslapis';
+	const RESULTS_PER_PAGE_LITERAL = 'Rezultatai viename puslapyje';
+	const ERROR_MSG_LITERAL = 'Įvyko klaida';
+	const WARNING_MSG_LITERAL = 'Įspėjimas';
+	const GOTO_PAGE_LITERAL = 'Pereiti į puslapį';
+    const RESULTS_PER_PAGE_OPTIONS_LITERAL = ["10","20","50","100"];
+    const CONTEXT_PATH_LITERAL = '/epps';
+    const UPLOAD_ACCEPT_LITERAL = '.7z,.avi,.csv,.doc,.docm,.docx,.dot,.dotx,.dwg,.e0x,.fr,.geojson,.info,.jpeg,.jpg,.json,.mov,.mp4,.mpp,.msg,.odp,.ods,.odt,.p7m,.pages,.pdf,.png,.ppt,.pptx,.rar,.rtf,.svg,.tar,.tiff,.txt,.util,.webp,.wmv,.xls,.xlsb,.xlsm,.xlsx,.xml,.zip,.zipx,.adoc';
+</script>
+
+
+        <script type="text/javascript" src="/epps/scripts/bt/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/popper.min.js" ></script>
+		<script type="text/javascript" src="/epps/scripts/bt/bootstrap.min.js"></script>
+            
+        <script type="text/javascript">
+       		var $j = jQuery.noConflict();
+            var LOCALE = '';
+            var INVALID_CHARACTERS = '<>&%';
+        </script>
+        
+        <script type="text/javascript" src="/epps/scripts/jquery-migrate-1.2.1.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jquery.formatCurrency-1.4.0.min.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jquery.formatCurrency.all.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/navScroll.js"></script>
+		<script type="text/javascript" src="/epps/scripts/jqComm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqForm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqTableSet.js"></script>
+        <script type="text/javascript" src="/epps/scripts/add.criteria.js"></script>
+        <script type="text/javascript" src="/epps/scripts/common.js"></script>
+        <script type="text/javascript" src="/epps/scripts/bt/common.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/tablesaw.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/tablesaw-init.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/jquery.treefilter.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/bootstrap-datepicker.min.js" ></script>
+		<script type="text/javascript" src="/epps/scripts/bt/moment.min.js" ></script>
+		<script type="text/javascript" src="/epps/scripts/bt/bootstrap-datetimepicker.js"></script>
+    
+        <script type="text/javascript">           
+           /*@cc_on
+			if (document && document.execCommand) {
+				try { 
+					document.execCommand("BackgroundImageCache",false, true); 
+				}
+				catch (e) {}
+			}
+			@*/
+        </script>
+                
+        <script type="text/javascript">
+        //<![CDATA[
+            $j('document').ready(function(ev){
+                $j("table").tableZebra();
+                //$j("form").prepareForm();
+                $j('button#MClose').hideAlert("#Message");
+                $j('.countdown').textCountdown({remaining_text: " likusieji simboliai"});
+                
+                
+            });
+        //]]>
+        
+        
+            var defaults = {
+            		language: 'lt', 
+                    showOn: "both",
+                    buttonText: "Calendar",
+                    buttonImage: "/epps/images/action_calendar.gif",
+                    buttonImageOnly: true, clearBtn: true,
+                    firstDay: 1,
+                    weekStart: 0,
+                    format: "dd/mm/yyyy",
+                    mandatory: false,
+                    todayHighlight: true
+           };
+        
+        </script>
+        
+        <script type="text/javascript">
+			// functions from bt/common.js
+			$j(document).ready(function(){
+				noResultFoundBeautifier();
+				stackModeDataColumn();
+			});
+			
+			function jcv_handleErrors(messages, focusField) {
+
+			    if (focusField && focusField != null) {
+			        var doFocus = true;
+			        if (focusField.disabled || focusField.type == 'hidden') {
+			            doFocus = false;
+			        }
+			        if (doFocus &&
+			                focusField.style &&
+			                focusField.style.visibility &&
+			                focusField.style.visibility == 'hidden') {
+			            doFocus = false;
+			        }
+			        if (doFocus) {
+			            focusField.focus();
+			        }
+			    }
+
+			    if ($j("#Message")) {
+			        $j("#Message").remove();
+			    }
+			    var mesagesCont = document.createElement("div");
+			    $j(mesagesCont)
+			        .attr("id", "Message")
+			        .addClass("alert alert-danger alert-dismissible");
+
+			   	// Close "X" 
+				var closeButton = document.createElement("a");
+			    $j(closeButton)
+		        	.attr("href", "#")
+		        	.attr('data-dismiss','alert')
+		        	.attr('aria-label','close')
+		        	.addClass('close');
+			    $j(closeButton).html("&times;");
+
+			    // The Error Message "An error has occurred:"
+			   	var errorMSG = document.createElement("div");
+			   	$j(errorMSG)
+		            .addClass("row container-fluid")
+	    	        .append(closeButton)
+	                .append("<strong>Įvyko klaida:</strong>");
+
+				// Div of col
+				var divColMessages = document.createElement("div");
+				$j(divColMessages)
+					.addClass('col');
+
+				// List of messages
+			    var listMessages = document.createElement("ul");
+			    for (i=0; i< messages.length; i++){
+			    	$j(listMessages).append("<li>" + messages[i] + "</li>");
+			    }
+				// Append List inside col
+			    $j(divColMessages)
+		    		.append(listMessages);
+			    $j(errorMSG).append(divColMessages);
+
+			    // Append the errorMessage
+			    // the close button
+			    // the row of messages
+			    $j(mesagesCont)
+		       		.append(errorMSG)
+		       		.append(closeButton);
+			        
+			    $j("#msgCol")[0]
+			        .appendChild(mesagesCont);
+			} 									
+		</script>
+		
+    </head>
+    
+	
+
+    <body class="popup">
+		<div class="container-fluid pt-2 pb-2">
+			
+			<div class="row">
+				<div class="col-md-12">
+					<noscript>
+						<div class="NoScript">
+							Jei norite naudotis visomis šios programos funkcijomis, įsitikinkite, kad jūsų naršyklėje įjungtas Javascript.
+						</div>
+					</noscript>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="msgCol" class="col-md-12">
+           			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           		</div>
+           	</div>
+           	
+			<div class="row">
+				<div class="col-md-12">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card-wrapper">
+
+	<div class="row">
+		<div class="col">
+
+			
+
+			
+				<h2 class="px-4 py-2">Naudotojo vadovas</h2>
+			
+
+			<div id="docs-title"></div>
+
+		</div>
+	</div>
+
+	<div class="row" id="docs-container">
+		<div class="col">
+		    
+
+
+			
+				
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	
+
+
+
+	
+<div class="row" id="docs-container">
+	<div class="col">
+	    
+			
+		
+			<div class="tablesaw-overflow SearchResults">
+				
+	<div class="Pagination5 row p-1 m-1  justify-content-between table-pagination">
+		<div class="col-8 col-sm-6">	
+		 	| Rodomos visos <strong>3</strong> atitiktys.
+		</div>
+
+		<div>
+			<script type="text/javascript">
+				var scriptNode = $j(document.currentScript.parentElement);
+				writePageSelection("1", "?isPopup=true&amp;section=userManual&amp;d-3635378-p=", this, scriptNode, "1");
+			</script>
+		</div>
+		<div class="btn-group align-self-end" role="group" aria-label="pagination toolbar">
+			<button type="button" class="btn btn-primary btn-lg rounded-left" title="Pirmas" type="button" id="firstNav" disabled="disabled">
+				<i class="fa fa-angle-double-left"></i>
+			</button>
+			<button type="button" class="btn btn-primary btn-lg" title="Ankstesnis" type="button" id="previousNav" disabled="disabled">
+				<i class="fa fa-angle-left"></i>
+			</button>
+			
+			<div class="btn-group" role="group">
+				<!-- Go to Page: JS Code Append -->
+			</div>
+			
+			<button type="button" class="btn btn-lg btn-primary" title="Kitas" type="button" id="nextNav" disabled="disabled">
+				<i class="fa fa-angle-right"></i>
+			</button>
+			<button type="button" class="btn btn-lg rounded-right btn-primary" title="Paskutinis" type="button" id="lastNav" disabled="disabled">
+				<i class="fa fa-angle-double-right"></i>
+			</button>
+		</div>
+	
+	</div>
+
+<table id="T01" class="table table-striped tablesaw">
+<thead>
+<tr>
+<th>Pavadinimas<a href="?d-3635378-n=1&amp;section=userManual&amp;d-3635378-s=title&amp;isPopup=true&amp;d-3635378-p=1&amp;d-3635378-o=2"><a href="?d-3635378-n=1&amp;section=userManual&amp;d-3635378-s=title&amp;isPopup=true&amp;d-3635378-p=1&amp;d-3635378-o=2"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Aprašymas<a href="?d-3635378-n=1&amp;section=userManual&amp;d-3635378-s=abstract&amp;isPopup=true&amp;d-3635378-p=1&amp;d-3635378-o=2"><a href="?d-3635378-n=1&amp;section=userManual&amp;d-3635378-s=abstract&amp;isPopup=true&amp;d-3635378-p=1&amp;d-3635378-o=2"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Įkėlimo data<a href="?d-3635378-n=1&amp;section=userManual&amp;d-3635378-s=dateCreated&amp;isPopup=true&amp;d-3635378-p=1&amp;d-3635378-o=2"><a href="?d-3635378-n=1&amp;section=userManual&amp;d-3635378-s=dateCreated&amp;isPopup=true&amp;d-3635378-p=1&amp;d-3635378-o=2"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th>
+<th>Priedas<a href="?d-3635378-n=1&amp;section=userManual&amp;d-3635378-s=documentName&amp;isPopup=true&amp;d-3635378-p=1&amp;d-3635378-o=2"><a href="?d-3635378-n=1&amp;section=userManual&amp;d-3635378-s=documentName&amp;isPopup=true&amp;d-3635378-p=1&amp;d-3635378-o=2"><div class="THSort">
+				<img src="/epps/images/ascending.gif" alt="Sort ascending"><img
+					src="/epps/images/descending.gif" alt="Sort descending" class="Descending">
+			</div></a>
+</th></tr></thead>
+<tbody>
+<tr>
+<td style="display:block; text-align:left">
+						
+	                        
+	                        
+	                            Economic Operators User Manual
+	                        
+	                    
+							
+					</td>
+<td>
+						This document presents information for Economic Operators (suppliers). Please download the document in order to obtain guidance on the usage of the service.
+
+					</td>
+<td>
+						Thu Nov 14 12:08:28 EET 2024
+					</td>
+<td>
+						
+							
+								<a href="/epps/cft/downloadInfoItem.do?documentId=1153">2. ePPS_User_manual_for_EO_end-users_v.2.0.pdf</a>
+							
+						
+					</td></tr>
+<tr>
+<td style="display:block; text-align:left">
+						
+	                        
+	                        
+	                            Registravimose CVP IS tvarkos aprašas (LT)
+	                        
+	                    
+							
+					</td>
+<td>
+						Registracijos Centrinėje viešųjų pirkimų informacinėje sistemoje tvarkos aprašas
+					</td>
+<td>
+						Mon Nov 11 11:48:53 EET 2024
+					</td>
+<td>
+						
+							
+								<a href="/epps/cft/downloadInfoItem.do?documentId=1053">Registravimose CVP IS tvarkos aprašas_LT.docx</a>
+							
+						
+					</td></tr>
+<tr>
+<td style="display:block; text-align:left">
+						
+	                        
+	                        
+	                            PROCEDURE FOR REGISTRATION IN THE CVP IS (EN)
+	                        
+	                    
+							
+					</td>
+<td>
+						Procedure for Registration in the Central Public Procurement Information System
+					</td>
+<td>
+						Mon Nov 11 11:47:02 EET 2024
+					</td>
+<td>
+						
+							
+								<a href="/epps/cft/downloadInfoItem.do?documentId=1052">Procedure for registration in the CVP IS_EN.docx</a>
+							
+						
+					</td></tr></tbody></table><input type="hidden" name="tableUid" value="infoEntry">				
+			</div><!-- end -->
+		
+	</div>
+</div>
+				
+			
+		</div>
+	</div>
+</div>
+
+
+				</div>
+			</div>
+			
+		</div>
+    </body>
+    
+</html:html>
+

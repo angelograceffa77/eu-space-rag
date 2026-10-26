@@ -1,0 +1,724 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="robots" content="index, follow">
+	
+
+
+
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/v1.1.2/uc.js"
+        integrity="sha384-YprxiQRFqVuzj9AtKVRN9kRxxFjNMoqly/Za+eqBWINcd9WHwmhKz9fsl+o0Iuft"
+        crossorigin="anonymous"
+        data-culture="EN"
+        type="text/javascript" data-gcm-enabled="false"></script>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-T62Z58L');
+    </script>
+    <!-- End Google Tag Manager -->
+	
+	<script>
+!function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{src: "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js", crossOrigin: "anonymous", cfg: {connectionString: 'InstrumentationKey=7c032545-f4d9-4d58-92df-02612298b510;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/;ApplicationId=3f6c5b22-0cae-46cc-b01d-79ffff4efa68', disableCookiesUsage: false }});
+</script>
+
+
+    <title data-react-helmet="true">State Aid guidance  | The National Agency for Public Procurement</title><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:title" content="State Aid guidance "/><meta data-react-helmet="true" property="og:description" content="State aid is being granted when one or more companies receives public funding and gain an advantage in relation to its competitors. State aid has an impact on the economy. There are rules governing the possibilities for the state, regions and municipalities to provide such public funding. The National Agency for Public Procurement has been tasked by the Swedish government with providing guidance to municipalities and regions in matters of state aid, and contributing to improving their ability to assess when and how to apply state aid rules."/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="State Aid guidance "/><meta data-react-helmet="true" name="twitter:description" content="State aid is being granted when one or more companies receives public funding and gain an advantage in relation to its competitors. State aid has an impact on the economy. There are rules governing the possibilities for the state, regions and municipalities to provide such public funding. The National Agency for Public Procurement has been tasked by the Swedish government with providing guidance to municipalities and regions in matters of state aid, and contributing to improving their ability to assess when and how to apply state aid rules."/><meta data-react-helmet="true" name="pageid" content="1364"/><meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=Edge"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/><meta data-react-helmet="true" name="description" content="State aid is being granted when one or more companies receives public funding and gain an advantage in relation to its competitors. State aid has an impact on the economy. There are rules governing the possibilities for the state, regions and municipalities to provide such public funding. The National Agency for Public Procurement has been tasked by the Swedish government with providing guidance to municipalities and regions in matters of state aid, and contributing to improving their ability to assess when and how to apply state aid rules."/><link data-react-helmet="true" rel="alternate" hrefLang="en" href="https://www.upphandlingsmyndigheten.se/en/statsstod/state-aid-guidance/"/><link data-react-helmet="true" rel="alternate" hrefLang="sv" href="https://www.upphandlingsmyndigheten.se/statsstod/statsstod-oversikt/"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="144x144" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-144x144-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="114x114" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-114x114-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="72x72" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-72x72-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-57x57-precomposed.png"/><link data-react-helmet="true" rel="shortcut icon" href="/Areas/Upphandlingsmyndigheten/Assets/favicon.ico"/><link data-react-helmet="true" rel="canonical" href="https://www.upphandlingsmyndigheten.se/en/statsstod/state-aid-guidance/"/>
+
+        <link rel="stylesheet" href="/Areas/Upphandlingsmyndigheten/Assets/static/css/main.d54f584f.css" />
+</head>
+
+<body>
+	
+
+
+
+<script src="/global-assets/react/react.production.min.js"></script>
+<script src="/global-assets/react/react-dom.production.min.js"></script>
+
+<script src="" data-consent-src="https://www.youtube.com/iframe_api"
+    data-category-consent="cookie_cat_marketing"
+    integrity="sha384-Fx5m0JNllZnCO3PqnnBg7wLveKJ1uq3tmW6+9USE6XkgWYtfdcxqu7BIPOH+doxI"
+    crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T62Z58L"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+	
+
+	
+
+
+<script>
+    window.__model = {
+  "content": {
+    "tableOfContents": {
+      "heading": "Content",
+      "isSticky": true,
+      "titles": [
+        {
+          "text": "What is state aid?",
+          "targetId": "what_is_state_aid_",
+          "titles": []
+        },
+        {
+          "text": "What is a Service of General Interest?",
+          "targetId": "what_is_a_service_of_general_interest_",
+          "titles": []
+        },
+        {
+          "text": "When can de minimis aid be provided?",
+          "targetId": "when_can_de_minimis_aid_be_provided_",
+          "titles": []
+        },
+        {
+          "text": "When is it possible to grant state aid?",
+          "targetId": "when_is_it_possible_to_grant_state_aid_",
+          "titles": []
+        },
+        {
+          "text": "What is the consequence of breaking the state aid rules?",
+          "targetId": "what_is_the_consequence_of_breaking_the_state_aid_rules_",
+          "titles": []
+        },
+        {
+          "text": "Targeted guidance",
+          "targetId": "targeted_guidance",
+          "titles": []
+        }
+      ],
+      "modelType": "TableOfContents",
+      "chapters": [
+        "what_is_state_aid_",
+        "what_is_a_service_of_general_interest_",
+        "when_can_de_minimis_aid_be_provided_",
+        "when_is_it_possible_to_grant_state_aid_",
+        "what_is_the_consequence_of_breaking_the_state_aid_rules_",
+        "targeted_guidance"
+      ]
+    },
+    "text": {
+      "modelType": "Html",
+      "hasContent": true,
+      "fragments": [
+        {
+          "modelType": "Chapter",
+          "id": "what_is_state_aid_",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "What is state aid?"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>State aid is an objective legal concept regulated by EU law. State aid rules apply when the public sector supports economic activity using public funds, by favouring certain undertakings or certain forms of production. Aid may take different forms. The public sector refers to the state, municipalities or regions.</p><p>State aid may only be granted if it has been approved by the European Commission or been designed in accordance with certain exemptions. When state aid is allowed it can contribute to political goals such as sustainable development, finance important infrastructure, finance the provision of welfare services or to make European companies more competitive. Under certain conditions, a municipality may, for example, provide state aid to a regional airport.&nbsp;</p><p>The state aid rules are designed to ensure that the political objectives with granting the aid are reached in a way that ensures that tax payers&acute; money is used effectively. If state aid is designed in the right way the distortion of competition caused by the aid will be kept to a minimum. State aid rules ensure that companies within the European Union are given the opportunity to compete on a level playing field.</p><p>The notion of state aid is regulated in Article 107.1 of the Treaty on the Functioning of the European Union (TFEU) and the interpretation of this notion has evolved through the case law of the European Court of Justice. The article contains several legal criteria (requirements) that must all be met in order for a measure to constitute state aid. Some criteria in the article are linked to each other, and the number of criteria as well as the boundaries between them can be described in different ways.</p>"
+              },
+              {
+                "id": null,
+                "isEmpty": false,
+                "steps": [
+                  {
+                    "id": null,
+                    "heading": null,
+                    "subHeading": null,
+                    "isOpen": false,
+                    "isEmpty": false,
+                    "fragments": [],
+                    "steps": [
+                      {
+                        "id": "",
+                        "heading": "Article 107.1 TFEU",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>Save as otherwise provided in the Treaties, any aid granted by a Member State or through State resources in any form whatsoever which distorts or threatens to distort competition by favouring certain undertakings or the production of certain goods shall, in so far as it affects trade between Member States, be incompatible with the internal market.</p><p>What determines whether a measure constitutes state aid is the consequences it may have for competition in the internal market. What the politicians deciding on the measure wish to achieve by it (for example to ensure housing policy) is of no importance in determining whether the measure constitutes state aid. However, the purpose of the measure is important when the Commission assesses whether state aid can be approved.&nbsp;</p><p>In order for a measure to constitute state aid, the following five criteria must be met (more information regarding the different criteria is available in Swedish or in English in the Commission notice on the Notion of state aid):</p><ol>\n<li><a href=\"/statsstod/vad-ar-statsstod/kriterier/kriteriet-offentliga-medel/\">It must be imputable to the public sector and it shall be financed using public resources (public resources)(SV)</a>.</li>\n<li><a href=\"/statsstod/vad-ar-statsstod/kriterier/selektivitetskriteriet/\">The measure must be aimed at certain activities or production (selectivity)(SV)</a>.</li>\n<li><a href=\"/statsstod/vad-ar-statsstod/kriterier/foretagskriteriet/\">The beneficiary must be an undertaking carrying out an economic activity (undertaking)(SV)</a>.</li>\n<li><a href=\"/statsstod/vad-ar-statsstod/kriterier/gynnandekriteriet/\">The measure must give the recipient an advantage (advantage)(SV)</a>.</li>\n<li><a href=\"/statsstod/vad-ar-statsstod/kriterier/konkurrens-och-samhandelskriteriet/\">The measure must distort or threaten to distort competition and affect trade between EU member states (competition and trade)(SV)</a>.&nbsp;</li>\n</ol><p><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016XC0719(05)&amp;from=EN\" rel=\"external\">The Commission notice on the Notion of state aid</a></p><p>The state, municipality and region must not implement or change an aid measure until the Commission has approved it. All state aid must be reported to and approved by the Commission (Article 108.3 TFEU) before it is granted, unless it is designed in accordance with certain exemption rules adopted by the Commission. This is called the standstill obligation. State aid that is granted in violation of the standstill obligation constitutes unlawful aid.</p><p><a href=\"https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-2013388-om-tillampning-av-europeiska_sfs-2013-388\" rel=\"external\">The Swedish Act on the Application of the European Union's State Aid Rules (in Swedish)(SV)</a></p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "Which measures may constitute state aid?",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>Measures that constitute state aid may take different forms. It may for example involve grants, loans on favourable terms, guarantee commitments, warranties, rent reduction or reduced public fees or taxes. Other examples include lower required rates of return on public companies than the rate required for comparable private companies by their owners, or the sale of public property at prices below market value. It can also involve purchasing goods or services at prices or on terms that are higher or otherwise more beneficial for the vendor than the value of the goods or service on the market.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "Why do we have state aid rules?",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>The state aid rules are here to safeguard competition in the internal market. The rules are designed to achieve the political objectives of different types of state aid in a manner that ensures that our shared resources are used effectively. What the politicians deciding on the measure wish to achieve by it (for example to ensure housing policy or environmental goals) is of no importance in determining whether the measure constitutes state aid. However, the purpose of the measure is important when the Commission assesses whether state aid can be approved. If state aid is designed correctly, it limits the impact of the aid measure on competition, and companies within the European Union are able to compete on a level playing field.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "What are the different roles within state aid?",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>Many stakeholders have roles to play within state aid, but state aid shall always be the result of political decisions. Municipalities and regions need to know the role of the Swedish government with respect to the implementation of state aid. Municipalities and regions can grant as well as receive state aid but they must inform the Government so that it may notify the measure to the Commission. Municipalities and regions must also understand the role of the Commission and the national courts concerning state aid.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      }
+                    ],
+                    "modelType": "Step"
+                  }
+                ],
+                "modelType": "StepByStep",
+                "listType": "none"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "what_is_a_service_of_general_interest_",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "What is a Service of General Interest?"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>A Service of General Interest is a service that is aimed at citizens and where public funding is necessary. It may for example involve the provision of pharmacy services in sparsely populated areas, or other services that the market is unable to provide in a manner that meets the needs of society.</p><p>The financing of Services of General Interest can be subject to the rules governing state aid if the businesses receiving the public funding offer the services on a market.</p>"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "when_can_de_minimis_aid_be_provided_",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "When can de minimis aid be provided?"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>De minimis aid is aid of low value, which under certain circumstances does not constitute state aid. If all the provisions in one of the regulations on de minimis aid are met, the criteria for state aid in Article 107.1 TFEU are not met. De minimis aid is therefore not subject to the prohibition on state aid.</p><p><a href=\"https://eur-lex.europa.eu/eli/reg/2023/2831/oj/eng\" rel=\"external\">Commission regulation on de minimis aid</a></p>"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "when_is_it_possible_to_grant_state_aid_",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "When is it possible to grant state aid?"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>It is possible for municipalities and regions to grant state aid when national regulations permit it. In Sweden, it is normally parliament, the government or state agencies that decide on state aid, and apply the state aid rules.&nbsp;&nbsp;</p><p>It is prohibited to grant new state aid (the standstill obligation) unless the Commission has approved it, or if the aid has been designed in accordance with certain exemptions. Approved state aid is called existing aid.&nbsp;</p><p>If all state aid criteria have been met, and it is a matter of state aid that cannot be granted in accordance with the rules in one of the different regulations on de minimis aid, state aid can only be granted if:</p><ul>\n<li>the aid is subject to a block exemption</li>\n<li>the aid is subject to the SGEI decision</li>\n<li>the aid has been approved by the Commission</li>\n</ul>"
+              },
+              {
+                "id": null,
+                "isEmpty": false,
+                "steps": [
+                  {
+                    "id": null,
+                    "heading": null,
+                    "subHeading": null,
+                    "isOpen": false,
+                    "isEmpty": false,
+                    "fragments": [],
+                    "steps": [
+                      {
+                        "id": "",
+                        "heading": "What is the mandate of Swedish municipalities and regions for providing state aid?",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>State aid affects the rights of individuals and constitutes the exercise of public power. The types of state aid that municipalities and regions are permitted to grant &ndash; in accordance with the state aid rules &ndash; are listed in the laws and regulations governing the division of powers between the Swedish state, Swedish municipalities and regions. The Local Government Act and the Act on Certain Municipal Powers contain the national legal basis for granting state aid unless there is a specific legal Act regulating the matter, as for instance the Act on Municipal Housing Companies.</p><p><a href=\"https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/kommunallag-2017725_sfs-2017-725\" rel=\"external\">The Local Government Act (SV)</a></p><p><a href=\"/statsstod/vad-ar-statsstod/statsstodsarenden-som-beror-kommuner-och-regioner/\">The Act on Certain Municipal Powers (SV)</a>&nbsp;</p><p>The state aid rules apply without prejudice to how Sweden has divided responsibilities between the state, the municipalities and the regions. Therefore, the state aid rules cannot provide Swedish municipalities and regions with greater powers to grant state aid than what is stated in e.g. the Local Government Act. Thus, municipalities and regions are not permitted to grant state aid just because it would be possible for parliament or the government to do so. A municipality or a region that is considering to grant aid must therefore first determine that it is within their powers as regulated in e.g. the Local Government Act. The measure must also be in line with other rules as for example the procurement legislation, before considering whether it is possible to grant aid in accordance with the state aid rules.&nbsp;</p><p>Municipalities and regions may grant aid in accordance with the rules in the Local Government Act. According to the Local Government Act, municipal activity shall be of general interest in the municipality. The Local Government Act limits the municipalities&rsquo;, and also the regions&rsquo;, ability to grant aid to companies not operated by the municipality.&nbsp;</p><p>Aid to businesses may be granted if it benefits trade and industry in the municipality in general, or if there are exceptional reasons. Thus, the municipalities and regions have more opportunity to grant state aid to their own operations than to other operations (undertakings, etc.). The National Agency for Public Procurement provides guidance on matters of state aid and procurement. In our guidance we also deal with related regulations to some extent. However, we do not provide guidance on how the Local Government Act or other regulations, which may impact the ability of municipalities and regions to grant aid, will be applicable.</p>"
+                          },
+                          {
+                            "src": "/globalassets/bilder/statsstod/the-powers-of-municipalities-and-regions-for-granting-aid.png",
+                            "largeSrc": "/globalassets/bilder/statsstod/the-powers-of-municipalities-and-regions-for-granting-aid.png",
+                            "zoom": true,
+                            "alt": "The Powers of Municipalities and Regions for Granting Aid",
+                            "size": "default",
+                            "modelType": "Image",
+                            "caption": null,
+                            "openBtnLabel": "Öppna",
+                            "closeBtnLabel": "Stäng"
+                          },
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>The Powers of Municipalities and Regions for Granting Aid</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "Register of Swedish municipal and regional state aid",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>In order to increase knowledge about how municipalities and regions can apply the state aid rules and grant state aid in accordance with the rules, we publish a register of Swedish municipal and regional state aid. The register mainly contains information and links to decisions published by the Commission, as well as certain judicial rulings. The register includes examples of state aid that municipalities or regions have granted to regional airports, film production, broadband infrastructure and sports infrastructure. Our list of Commission decisions is available in Swedish, but the Commission decisions you can also usually find in English on the website of the Commission.</p><p><a href=\"/statsstod/vad-ar-statsstod/statsstodsarenden-som-beror-kommuner-och-regioner/\">State aid matters that concern municipalities and regions (SV)</a></p><p>In the Act on Regional Development Responsibility in Certain Regions, there are rules governing the regions&rsquo; (and the Gotland municipality&rsquo;s) ability to grant aid to businesses. The Swedish Agency for Economic and Regional Growth has information about regional aid to businesses on their website. The regions can apply the regulations (so-called aid schemes) drafted by the government and which apply to e.g. regional development funds.</p><p><a href=\"https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-2010630-om-regionalt-utvecklingsansvar_sfs-2010-630\" rel=\"external\">The Act on Regional Development Responsibility in Certain Regions (SV)</a></p><p><a href=\"https://tillvaxtverket.se/tillvaxtverket/sokfinansiering/utlysningar/utlysningar/regionaltinvesteringsstod.3519.html\" rel=\"external\">The website of the Swedish Agency for Economic and Regional Growth on regional aid to businesses (SV)</a></p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "What type of aid is covered by the block exemption?",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>It is possible to grant several types of state aid as long as the conditions in the Commission&rsquo;s block exemption are met. Block exemptions are specific regulations adopted by the Commission. These regulations are called block exemptions because they exempt certain blocks of aid from the prohibition against granting aid without the Commission first approving it (the standstill obligation).</p><p>Block exemptions enable a simpler and faster way of granting aid. By applying a block exemption, the granting body can avoid months (and sometimes years) of work drafting and discussing documentation for a state aid notification with the Commission (notification per Article 108 in the TFEU). A municipality or region that wishes to design a new state aid should therefore consider whether it is possible to apply the conditions in the General Block Exemption Regulation before considering submitting a notification to the Commission.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "When may state aid be granted according to the rules in the Commission’s SGEI decision?",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>When municipalities and regions finance public services, so-called Services of General Economic Interest (SGEI), that are open to competition, there is case law that provides guidance when assessing whether the financing constitutes state aid or not (see the Altmark criteria and SGEI de minimis aid). When public services are financed with state aid, so-called Services of General Economic Interest, there are specific rules that can be followed in order to exempt such state aid from the prohibition against state aid. Primarily, a municipality or region that considers granting such aid should make use of the SGEI decision (Commission Decision (EU) 2025/2630). As in the case of the application of the block exemptions, municipalities and regions can, by complying with the rules in the SGEI decision, provide state aid without making a state aid notification to the Commission.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      },
+                      {
+                        "id": "",
+                        "heading": "When will the Commission approve notified aid?",
+                        "subHeading": "",
+                        "isOpen": false,
+                        "isEmpty": false,
+                        "fragments": [
+                          {
+                            "modelType": "RawFragment",
+                            "raw": "<p>Only the Commission may approve state aid. The state aid rules contain provisions for how member states can notify aid to the Commission. In Sweden, only the government may notify state aid to the Commission. Although municipalities and regions are not allowed to notify state aid to the Commission themselves, they must follow the state aid rules. A municipality or region that is planning to introduce a new measure that may be state aid must therefore know the regulatory framework, as well as having a plan for how to comply with the regulatory requirements.</p><p>A municipality or region that wishes to grant state aid under conditions other than those outlined in an applicable block exemption must contact the government which, in turn, submits a notification concerning the intended aid to the Commission. For the most common types of state aid, the Commission has determined guidelines or regulatory frameworks that clarify what the Commission considers to be state aid within a given area, and how state aid must be designed in order to be approved by the Commission.</p>"
+                          }
+                        ],
+                        "steps": [],
+                        "modelType": "Step"
+                      }
+                    ],
+                    "modelType": "Step"
+                  }
+                ],
+                "modelType": "StepByStep",
+                "listType": "none"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "what_is_the_consequence_of_breaking_the_state_aid_rules_",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "What is the consequence of breaking the state aid rules?"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>If the public sector (state, municipality, or region) gives unlawful and incompatible state aid, the Commission can decide that the member state shall recover the aid from the recipient, with interest. This applies even if it results in the recipient ending up in a situation where they must file for bankruptcy.&nbsp;</p><p>If the Commission decides that the aid shall be recovered and the member state fails to comply with this decision, the Commission can institute proceedings before the European Court of Justice. In such instances, the member state risks considerable fines, if the member state does not comply with its obligations under EU-law.&nbsp;</p><p>Granting authorities are obligated to recover any state aid that was granted in breach of the standstill obligation, as per the Act on the Application of the European Union State Aid Rules (2013:388). A Swedish court is also able to assess whether a certain measure constitutes state aid that should have been notified to the Commission.</p>"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "targeted_guidance",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "Targeted guidance"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p>We offer guidance on state aid questions that arise during specific activities typical for regions and municipalities. Targeted guidance comprise information that is customised for specific target groups, situations or issues. The guidance can be read independently but do not contain information about all parts of the regulatory framework for state aid. In our guidance we also deal with other rules that apply to a municipality or region in the situation described. The guidance are only available in Swedish.</p><ul>\n<li><a href=\"/statsstod/riktade-vagledningar/marknadsmassig-forsaljning-av-kommunal-mark-for-bebyggelse/\">How do municipalities avoid state aid issues in the process of developing land? (SV)</a></li>\n<li><a href=\"/statsstod/riktade-vagledningar/ar-kommunens-eller-regionens-borgensatagande-tillatet-enligt-statsstodsreglerna/\">Is the municipality's or region's guarantee commitment permitted under the state aid rules? (SV)</a></li>\n<li><a href=\"/statsstod/riktade-vagledningar/hur-anvands-ekonomiska-kalkyler-vid-statsstodsbedomningar/\">How are financial estimates used when assessing state aid? (SV)</a></li>\n</ul>"
+              }
+            ]
+          },
+          "isEmpty": false
+        }
+      ]
+    },
+    "contentArea": [],
+    "relatedLinks": [],
+    "feedbackModel": null,
+    "preamble": "State aid is being granted when one or more companies receives public funding and gain an advantage in relation to its competitors. State aid has an impact on the economy. There are rules governing the possibilities for the state, regions and municipalities to provide such public funding. The National Agency for Public Procurement has been tasked by the Swedish government with providing guidance to municipalities and regions in matters of state aid, and contributing to improving their ability to assess when and how to apply state aid rules.",
+    "heading": "State Aid guidance ",
+    "id": "1364",
+    "url": "/en/statsstod/state-aid-guidance/",
+    "isEditable": false,
+    "modelType": "UpphandlingsmyndighetenArticlePage"
+  },
+  "kundoChatScript": {
+    "script": null,
+    "kundoRenderHardCodedJavaScript": true
+  },
+  "alertBar": {
+    "alerts": []
+  },
+  "contact": {
+    "addresses": {
+      "first": {
+        "name": "Visiting Address",
+        "street": "Svetsarvägen 10",
+        "zipCode": "171 41 ",
+        "city": "Solna"
+      },
+      "second": {
+        "name": "Postal Address",
+        "street": "Upphandlingsmyndigheten",
+        "zipCode": "Box 1194, 171 23 ",
+        "city": "Solna"
+      }
+    },
+    "channels": {
+      "heading": "Contact",
+      "items": [
+        {
+          "name": "Telephone",
+          "value": "08-586 217 01",
+          "type": "phone"
+        },
+        {
+          "name": "Telephone hours",
+          "value": "Mon-Fri 9-15",
+          "type": "phone"
+        }
+      ]
+    },
+    "social": [
+      {
+        "name": "Twitter",
+        "value": "https://twitter.com/uhmynd",
+        "type": "twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "value": "https://www.linkedin.com/company/upphandlingsmyndigheten",
+        "type": "linkedin"
+      },
+      {
+        "name": "Facebook",
+        "value": "https://www.facebook.com/upphandlingsmyndigheten",
+        "type": "facebook"
+      }
+    ]
+  },
+  "search": {
+    "searchPageUrl": "/en/search/",
+    "apiUrl": "/api/en/upphandlingsmyndigheten/search",
+    "numberOfHitsPerPage": 10,
+    "placeholderText": "Search site",
+    "performSearchText": "Searching...",
+    "showMoreResultsText": "Show more"
+  },
+  "logotype": {
+    "url": "/en/",
+    "alt": "Start",
+    "logo": null
+  },
+  "popularPages": {
+    "first": {
+      "heading": "Quick links",
+      "links": [
+        {
+          "href": "/en/public-procurement/",
+          "text": "Public Procurement",
+          "title": "Public Procurement",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/statsstod/state-aid-guidance/",
+          "text": "State Aid guidance",
+          "title": "State Aid guidance",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/the-act-on-systems-of-choice-lov/",
+          "text": "The Act on Systems of Choice (LOV)",
+          "title": "The Act on Systems of Choice (LOV)",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/conducting-business-with-public-sector-stakeholders/",
+          "text": "Conducting business with public sector stakeholders",
+          "title": "Conducting business with public sector stakeholders",
+          "target": null,
+          "external": false
+        }
+      ]
+    },
+    "second": {
+      "heading": "Quick links",
+      "links": [
+        {
+          "href": "/en/sustainable-public-procurement/",
+          "text": "Sustainable public procurement",
+          "title": "Sustainable public procurement",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/criteria/",
+          "text": "Our sustainability criteria",
+          "title": "Our sustainability criteria",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/about-us/",
+          "text": "About us",
+          "title": "About us",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/about-us/contact-us/",
+          "text": "Contact us",
+          "title": "Contact us",
+          "target": null,
+          "external": false
+        }
+      ]
+    }
+  },
+  "quickLinksBar": {
+    "links": [
+      {
+        "modelType": "LanguageSelector"
+      }
+    ]
+  },
+  "quickLinksFooter": {
+    "quickLinks": []
+  },
+  "skipToMainContent": {
+    "text": null
+  },
+  "theme": {
+    "color": "default"
+  },
+  "webAnalytics": {
+    "googleTagManagerCode": "GTM-T62Z58L"
+  },
+  "breadcrumbs": {
+    "breadcrumbs": [
+      {
+        "url": "/en/statsstod/state-aid-guidance/",
+        "text": "State Aid guidance ",
+        "isActive": true
+      }
+    ]
+  },
+  "languages": {
+    "culture": "en",
+    "languages": [
+      {
+        "id": "sv",
+        "name": "Swedish",
+        "text": "På svenska",
+        "url": "/statsstod/statsstod-oversikt/",
+        "isExactMatch": true
+      }
+    ]
+  },
+  "metadata": {
+    "title": "State Aid guidance  | The National Agency for Public Procurement",
+    "description": "State aid is being granted when one or more companies receives public funding and gain an advantage in relation to its competitors. State aid has an impact on the economy. There are rules governing the possibilities for the state, regions and municipalities to provide such public funding. The National Agency for Public Procurement has been tasked by the Swedish government with providing guidance to municipalities and regions in matters of state aid, and contributing to improving their ability to assess when and how to apply state aid rules.",
+    "canonicalUrl": "https://www.upphandlingsmyndigheten.se/en/statsstod/state-aid-guidance/",
+    "contentId": "1364",
+    "noIndex": false,
+    "twitter": {
+      "card": null,
+      "title": "State Aid guidance ",
+      "description": "State aid is being granted when one or more companies receives public funding and gain an advantage in relation to its competitors. State aid has an impact on the economy. There are rules governing the possibilities for the state, regions and municipalities to provide such public funding. The National Agency for Public Procurement has been tasked by the Swedish government with providing guidance to municipalities and regions in matters of state aid, and contributing to improving their ability to assess when and how to apply state aid rules.",
+      "image": null
+    },
+    "openGraph": {
+      "title": "State Aid guidance ",
+      "description": "State aid is being granted when one or more companies receives public funding and gain an advantage in relation to its competitors. State aid has an impact on the economy. There are rules governing the possibilities for the state, regions and municipalities to provide such public funding. The National Agency for Public Procurement has been tasked by the Swedish government with providing guidance to municipalities and regions in matters of state aid, and contributing to improving their ability to assess when and how to apply state aid rules.",
+      "image": null
+    },
+    "languages": [
+      {
+        "culture": "en",
+        "url": "https://www.upphandlingsmyndigheten.se/en/statsstod/state-aid-guidance/"
+      },
+      {
+        "culture": "sv",
+        "url": "https://www.upphandlingsmyndigheten.se/statsstod/statsstod-oversikt/"
+      }
+    ],
+    "administrativeArea": "FO Statsstöd"
+  },
+  "epi": {
+    "isEditable": true,
+    "inEditMode": false,
+    "inPreviewMode": false,
+    "displayChannels": [],
+    "fullRefreshProperties": [],
+    "version": "1.0.24535.0"
+  },
+  "localization": {
+    "culture": "en",
+    "translations": {
+      "/frontend/components/signIn/title": "Logga in",
+      "/frontend/components/signIn/orWith": "eller logga in med",
+      "/frontend/components/applicationCookie/username/label": "Användarnamn",
+      "/frontend/components/applicationCookie/username/placeholder": "Användarnamn",
+      "/frontend/components/applicationCookie/password/label": "Lösenord",
+      "/frontend/components/applicationCookie/password/placeholder": "Lösenord",
+      "/frontend/components/files/actions/heading": "Ladda ner fil",
+      "/frontend/components/headerMenu/menu": "Meny",
+      "/frontend/components/headerMenu/search": "Sök",
+      "/frontend/components/searchResults/heading": "Sökresultat",
+      "/frontend/components/searchBar/actions/search": "Sök",
+      "/frontend/actions/signIn": "Logga in",
+      "/frontend/actions/download": "Ladda ner"
+    }
+  },
+  "react": {
+    "library": "demoMaster",
+    "siteBaseUrl": "www.upphandlingsmyndigheten.se",
+    "clientOnly": false,
+    "serverOnly": false,
+    "containerId": "App",
+    "apiUrl": "/",
+    "apiEditUrl": "/api/content",
+    "renderingState": 1
+  },
+  "manifest": {
+    "entrypoints": [
+      "/Areas/Upphandlingsmyndigheten/Assets/static/js/vendors~main.9af48341.chunk.js",
+      "/Areas/Upphandlingsmyndigheten/Assets/static/css/main.d54f584f.css",
+      "/Areas/Upphandlingsmyndigheten/Assets/client/client-main.4cd102c3.js"
+    ],
+    "clientCss": "",
+    "favIcon": ""
+  }
+}
+</script>
+
+<div id="App"><div tabindex="-1" style="outline:none"><div class=""><header data-cid="PageHeader"><nav data-cid="QuickLinksBar" class="relative bg-greyLighter py-3 overflow-hidden border-b border-greyLight quick-links-bar"><div class="mx-auto max-w-site"><div class="pl-4 lg:pl-6 flex grid-item -ml-4"><div class="mx-4 w-full"><ul class="text-p flex justify-end"><li class="ml-6"><a href="/statsstod/statsstod-oversikt/" id="sv" class="flex items-center text-teal hover:underline" aria-label="Byt språk till svenska">På svenska</a></li></ul></div></div></div></nav><div class="pt-2 md:py-3 border-b-2 border-greyLight"><div class="mx-auto max-w-site"><div class="pl-4 lg:pl-6 flex grid-item -ml-4"><div class="mx-4 w-full"><div class="flex justify-between items-center"><a href="/en/" class=""><img class="h-10 md:h-16 w-auto" src="/assets/static/media/uhm.a8e48fa7.svg" alt="Upphandlingsmyndighetens logotyp som leder till startsidan" height="64" width="178"/></a><div class="flex items-center"><div class="hidden ml-auto searchwrapper md:block"><div class="relative searchfield__wrapper" data-cid="SearchField"><form method="post" action="" encType="application/x-www-form-urlencoded" novalidate=""><label class="sr-only" for="searchfieldDesktop">Search site</label><div class="relative"><input type="text" class="pl-10 text-p leading-4 h-10 w-full px-3 py-1 border-2 border-greySemiLight focus:border-blue rounded transition-all focus:outline-none disabled:text-greyLight disabled:cursor-not-allowed placeholder-greyDarker placeholder-opacity-100" placeholder="Search site" aria-invalid="true" value="" name="searchfieldDesktop" id="searchfieldDesktop" aria-describedby="formsearchfieldDesktop__desc" validation="false" autoComplete="off" role="combobox" aria-expanded="false" aria-controls="searchfield-dropdown-224"/></div><button class="absolute top-0 left-0 w-auto mt-2 ml-3" type="submit" tabindex="0" data-cid="SearchFieldSubmit"><span class="sr-only" data-cid="Text">Searching...</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button></form></div></div><div class="ml-auto md:hidden"><button type="button" aria-controls="mobile-search-11292" aria-expanded="false" aria-label="Öppna sök" data-cid="MobileSearch"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-black inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><div id="mobile-search-11292" class="absolute top-0 left-0 w-full min-h-full overflow-y-scroll z-50 page-overlay animate-fade-in" hidden=""><div class="flex p-4 bg-white mobilesearch__searchfield-wrapper"><div class="relative searchfield__wrapper" data-cid="SearchField"><form method="post" action="" encType="application/x-www-form-urlencoded" novalidate=""><label class="sr-only" for="searchfieldMobile">Search site</label><div class="relative"><input type="text" class="pl-10 text-p leading-4 h-10 w-full px-3 py-1 border-2 border-greySemiLight focus:border-blue rounded transition-all focus:outline-none disabled:text-greyLight disabled:cursor-not-allowed placeholder-greyDarker placeholder-opacity-100" placeholder="Search site" aria-invalid="true" value="" name="searchfieldMobile" id="searchfieldMobile" aria-describedby="formsearchfieldMobile__desc" validation="false" autoComplete="off" role="combobox" aria-expanded="false" aria-controls="searchfield-dropdown-225"/></div><button class="absolute top-0 left-0 w-auto mt-2 ml-3" type="submit" tabindex="0" data-cid="SearchFieldSubmit"><span class="sr-only" data-cid="Text">Searching...</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button></form></div><button type="button" class="mx-4" aria-controls="mobile-search-11292" aria-expanded="false" aria-label="Stäng sökfält"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" data-cid="Icon" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button></div></div></div></div></div></div></div></div></div></header><main class="pt-10 md:pt-8 global__page-content" id="main-content"><div class="mx-auto max-w-site"><div class="-mt-4 md:mt-0 lg:px-6 px-4 flex grid-item"><div class="w-full lg:w-7/12"><h1 class="font-fontAlt font-semibold text-h1 mb-4" data-epi-property-name="heading" data-epi-property-render="none" data-cid="Text">State Aid guidance </h1></div></div></div><div class="mx-auto max-w-site"><div class="flex-row-reverse lg:px-6 px-4 flex grid-item"><div class="w-full lg:w-7/12"><p class="font-fontStandard text-preamble mb-8" data-epi-property-name="preamble" data-epi-property-render="none" data-cid="Text">State aid is being granted when one or more companies receives public funding and gain an advantage in relation to its competitors. State aid has an impact on the economy. There are rules governing the possibilities for the state, regions and municipalities to provide such public funding. The National Agency for Public Procurement has been tasked by the Swedish government with providing guidance to municipalities and regions in matters of state aid, and contributing to improving their ability to assess when and how to apply state aid rules.</p><div class="mb-8" data-cid="Toc"><h2 class="font-semibold text-h4 mb-2">Content</h2><ul class=""><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#what_is_state_aid_" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">What is state aid?</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#what_is_a_service_of_general_interest_" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">What is a Service of General Interest?</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#when_can_de_minimis_aid_be_provided_" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">When can de minimis aid be provided?</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#when_is_it_possible_to_grant_state_aid_" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">When is it possible to grant state aid?</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#what_is_the_consequence_of_breaking_the_state_aid_rules_" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">What is the consequence of breaking the state aid rules?</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#targeted_guidance" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">Targeted guidance</a></li></ul></div><div data-epi-property-name="text" data-epi-property-render="none"><div id="what_is_state_aid_"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>What is state aid?</span></h2><div class="richtext"><div><p>State aid is an objective legal concept regulated by EU law. State aid rules apply when the public sector supports economic activity using public funds, by favouring certain undertakings or certain forms of production. Aid may take different forms. The public sector refers to the state, municipalities or regions.</p><p>State aid may only be granted if it has been approved by the European Commission or been designed in accordance with certain exemptions. When state aid is allowed it can contribute to political goals such as sustainable development, finance important infrastructure, finance the provision of welfare services or to make European companies more competitive. Under certain conditions, a municipality may, for example, provide state aid to a regional airport.&nbsp;</p><p>The state aid rules are designed to ensure that the political objectives with granting the aid are reached in a way that ensures that tax payers&acute; money is used effectively. If state aid is designed in the right way the distortion of competition caused by the aid will be kept to a minimum. State aid rules ensure that companies within the European Union are given the opportunity to compete on a level playing field.</p><p>The notion of state aid is regulated in Article 107.1 of the Treaty on the Functioning of the European Union (TFEU) and the interpretation of this notion has evolved through the case law of the European Court of Justice. The article contains several legal criteria (requirements) that must all be met in order for a measure to constitute state aid. Some criteria in the article are linked to each other, and the number of criteria as well as the boundaries between them can be described in different ways.</p></div></div><div class="border-primary-1" data-cid="StepByStep"><div class="mb-16"><div class="relative mb-6 pb-6 border-b-2 border-greyLight mt-6 pt-6 border-t-2" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11293" id="accordion-item-button-11293"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Article 107.1 TFEU</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11293" role="region" aria-labelledby="accordion-item-button-11293" hidden=""><div><div class="richtext"><div><p>Save as otherwise provided in the Treaties, any aid granted by a Member State or through State resources in any form whatsoever which distorts or threatens to distort competition by favouring certain undertakings or the production of certain goods shall, in so far as it affects trade between Member States, be incompatible with the internal market.</p><p>What determines whether a measure constitutes state aid is the consequences it may have for competition in the internal market. What the politicians deciding on the measure wish to achieve by it (for example to ensure housing policy) is of no importance in determining whether the measure constitutes state aid. However, the purpose of the measure is important when the Commission assesses whether state aid can be approved.&nbsp;</p><p>In order for a measure to constitute state aid, the following five criteria must be met (more information regarding the different criteria is available in Swedish or in English in the Commission notice on the Notion of state aid):</p><ol>
+<li><a href="/statsstod/vad-ar-statsstod/kriterier/kriteriet-offentliga-medel/">It must be imputable to the public sector and it shall be financed using public resources (public resources)(SV)</a>.</li>
+<li><a href="/statsstod/vad-ar-statsstod/kriterier/selektivitetskriteriet/">The measure must be aimed at certain activities or production (selectivity)(SV)</a>.</li>
+<li><a href="/statsstod/vad-ar-statsstod/kriterier/foretagskriteriet/">The beneficiary must be an undertaking carrying out an economic activity (undertaking)(SV)</a>.</li>
+<li><a href="/statsstod/vad-ar-statsstod/kriterier/gynnandekriteriet/">The measure must give the recipient an advantage (advantage)(SV)</a>.</li>
+<li><a href="/statsstod/vad-ar-statsstod/kriterier/konkurrens-och-samhandelskriteriet/">The measure must distort or threaten to distort competition and affect trade between EU member states (competition and trade)(SV)</a>.&nbsp;</li>
+</ol><p><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016XC0719(05)&amp;from=EN" rel="external">The Commission notice on the Notion of state aid</a></p><p>The state, municipality and region must not implement or change an aid measure until the Commission has approved it. All state aid must be reported to and approved by the Commission (Article 108.3 TFEU) before it is granted, unless it is designed in accordance with certain exemption rules adopted by the Commission. This is called the standstill obligation. State aid that is granted in violation of the standstill obligation constitutes unlawful aid.</p><p><a href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-2013388-om-tillampning-av-europeiska_sfs-2013-388" rel="external">The Swedish Act on the Application of the European Union's State Aid Rules (in Swedish)(SV)</a></p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11294" id="accordion-item-button-11294"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Which measures may constitute state aid?</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11294" role="region" aria-labelledby="accordion-item-button-11294" hidden=""><div><div class="richtext"><div><p>Measures that constitute state aid may take different forms. It may for example involve grants, loans on favourable terms, guarantee commitments, warranties, rent reduction or reduced public fees or taxes. Other examples include lower required rates of return on public companies than the rate required for comparable private companies by their owners, or the sale of public property at prices below market value. It can also involve purchasing goods or services at prices or on terms that are higher or otherwise more beneficial for the vendor than the value of the goods or service on the market.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11295" id="accordion-item-button-11295"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Why do we have state aid rules?</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11295" role="region" aria-labelledby="accordion-item-button-11295" hidden=""><div><div class="richtext"><div><p>The state aid rules are here to safeguard competition in the internal market. The rules are designed to achieve the political objectives of different types of state aid in a manner that ensures that our shared resources are used effectively. What the politicians deciding on the measure wish to achieve by it (for example to ensure housing policy or environmental goals) is of no importance in determining whether the measure constitutes state aid. However, the purpose of the measure is important when the Commission assesses whether state aid can be approved. If state aid is designed correctly, it limits the impact of the aid measure on competition, and companies within the European Union are able to compete on a level playing field.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11296" id="accordion-item-button-11296"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>What are the different roles within state aid?</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11296" role="region" aria-labelledby="accordion-item-button-11296" hidden=""><div><div class="richtext"><div><p>Many stakeholders have roles to play within state aid, but state aid shall always be the result of political decisions. Municipalities and regions need to know the role of the Swedish government with respect to the implementation of state aid. Municipalities and regions can grant as well as receive state aid but they must inform the Government so that it may notify the measure to the Commission. Municipalities and regions must also understand the role of the Commission and the national courts concerning state aid.</p></div></div></div></div></div></div></div></div><div id="what_is_a_service_of_general_interest_"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>What is a Service of General Interest?</span></h2><div class="richtext"><div><p>A Service of General Interest is a service that is aimed at citizens and where public funding is necessary. It may for example involve the provision of pharmacy services in sparsely populated areas, or other services that the market is unable to provide in a manner that meets the needs of society.</p><p>The financing of Services of General Interest can be subject to the rules governing state aid if the businesses receiving the public funding offer the services on a market.</p></div></div></div><div id="when_can_de_minimis_aid_be_provided_"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>When can de minimis aid be provided?</span></h2><div class="richtext"><div><p>De minimis aid is aid of low value, which under certain circumstances does not constitute state aid. If all the provisions in one of the regulations on de minimis aid are met, the criteria for state aid in Article 107.1 TFEU are not met. De minimis aid is therefore not subject to the prohibition on state aid.</p><p><a href="https://eur-lex.europa.eu/eli/reg/2023/2831/oj/eng" rel="external">Commission regulation on de minimis aid</a></p></div></div></div><div id="when_is_it_possible_to_grant_state_aid_"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>When is it possible to grant state aid?</span></h2><div class="richtext"><div><p>It is possible for municipalities and regions to grant state aid when national regulations permit it. In Sweden, it is normally parliament, the government or state agencies that decide on state aid, and apply the state aid rules.&nbsp;&nbsp;</p><p>It is prohibited to grant new state aid (the standstill obligation) unless the Commission has approved it, or if the aid has been designed in accordance with certain exemptions. Approved state aid is called existing aid.&nbsp;</p><p>If all state aid criteria have been met, and it is a matter of state aid that cannot be granted in accordance with the rules in one of the different regulations on de minimis aid, state aid can only be granted if:</p><ul>
+<li>the aid is subject to a block exemption</li>
+<li>the aid is subject to the SGEI decision</li>
+<li>the aid has been approved by the Commission</li>
+</ul></div></div><div class="border-primary-1" data-cid="StepByStep"><div class="mb-16"><div class="relative mb-6 pb-6 border-b-2 border-greyLight mt-6 pt-6 border-t-2" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11297" id="accordion-item-button-11297"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>What is the mandate of Swedish municipalities and regions for providing state aid?</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11297" role="region" aria-labelledby="accordion-item-button-11297" hidden=""><div><div class="richtext"><div><p>State aid affects the rights of individuals and constitutes the exercise of public power. The types of state aid that municipalities and regions are permitted to grant &ndash; in accordance with the state aid rules &ndash; are listed in the laws and regulations governing the division of powers between the Swedish state, Swedish municipalities and regions. The Local Government Act and the Act on Certain Municipal Powers contain the national legal basis for granting state aid unless there is a specific legal Act regulating the matter, as for instance the Act on Municipal Housing Companies.</p><p><a href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/kommunallag-2017725_sfs-2017-725" rel="external">The Local Government Act (SV)</a></p><p><a href="/statsstod/vad-ar-statsstod/statsstodsarenden-som-beror-kommuner-och-regioner/">The Act on Certain Municipal Powers (SV)</a>&nbsp;</p><p>The state aid rules apply without prejudice to how Sweden has divided responsibilities between the state, the municipalities and the regions. Therefore, the state aid rules cannot provide Swedish municipalities and regions with greater powers to grant state aid than what is stated in e.g. the Local Government Act. Thus, municipalities and regions are not permitted to grant state aid just because it would be possible for parliament or the government to do so. A municipality or a region that is considering to grant aid must therefore first determine that it is within their powers as regulated in e.g. the Local Government Act. The measure must also be in line with other rules as for example the procurement legislation, before considering whether it is possible to grant aid in accordance with the state aid rules.&nbsp;</p><p>Municipalities and regions may grant aid in accordance with the rules in the Local Government Act. According to the Local Government Act, municipal activity shall be of general interest in the municipality. The Local Government Act limits the municipalities&rsquo;, and also the regions&rsquo;, ability to grant aid to companies not operated by the municipality.&nbsp;</p><p>Aid to businesses may be granted if it benefits trade and industry in the municipality in general, or if there are exceptional reasons. Thus, the municipalities and regions have more opportunity to grant state aid to their own operations than to other operations (undertakings, etc.). The National Agency for Public Procurement provides guidance on matters of state aid and procurement. In our guidance we also deal with related regulations to some extent. However, we do not provide guidance on how the Local Government Act or other regulations, which may impact the ability of municipalities and regions to grant aid, will be applicable.</p></div></div><div data-cid="ImageModal" class="relative"><div class="relative"><img src="/globalassets/bilder/statsstod/the-powers-of-municipalities-and-regions-for-granting-aid.png?width=684" alt="The Powers of Municipalities and Regions for Granting Aid" class="w-full mb-4 image__object-fit" data-cid="Image" loading="lazy"/><button class="group block focus:outline-none imagemodal__btn--zoomin" aria-label="Öppna"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-6 absolute bottom-0 right-0 p-3 mr-3 cursor-pointer group-focus:border-blue group-focus:border-2 inline-block align-middle transition-all duration-300 transform fill-current w-12 h-12 rotate-0" style="fill:none" data-cid="Icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></button></div></div><div class="richtext"><div><p>The Powers of Municipalities and Regions for Granting Aid</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11298" id="accordion-item-button-11298"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>Register of Swedish municipal and regional state aid</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11298" role="region" aria-labelledby="accordion-item-button-11298" hidden=""><div><div class="richtext"><div><p>In order to increase knowledge about how municipalities and regions can apply the state aid rules and grant state aid in accordance with the rules, we publish a register of Swedish municipal and regional state aid. The register mainly contains information and links to decisions published by the Commission, as well as certain judicial rulings. The register includes examples of state aid that municipalities or regions have granted to regional airports, film production, broadband infrastructure and sports infrastructure. Our list of Commission decisions is available in Swedish, but the Commission decisions you can also usually find in English on the website of the Commission.</p><p><a href="/statsstod/vad-ar-statsstod/statsstodsarenden-som-beror-kommuner-och-regioner/">State aid matters that concern municipalities and regions (SV)</a></p><p>In the Act on Regional Development Responsibility in Certain Regions, there are rules governing the regions&rsquo; (and the Gotland municipality&rsquo;s) ability to grant aid to businesses. The Swedish Agency for Economic and Regional Growth has information about regional aid to businesses on their website. The regions can apply the regulations (so-called aid schemes) drafted by the government and which apply to e.g. regional development funds.</p><p><a href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-2010630-om-regionalt-utvecklingsansvar_sfs-2010-630" rel="external">The Act on Regional Development Responsibility in Certain Regions (SV)</a></p><p><a href="https://tillvaxtverket.se/tillvaxtverket/sokfinansiering/utlysningar/utlysningar/regionaltinvesteringsstod.3519.html" rel="external">The website of the Swedish Agency for Economic and Regional Growth on regional aid to businesses (SV)</a></p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11299" id="accordion-item-button-11299"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>What type of aid is covered by the block exemption?</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11299" role="region" aria-labelledby="accordion-item-button-11299" hidden=""><div><div class="richtext"><div><p>It is possible to grant several types of state aid as long as the conditions in the Commission&rsquo;s block exemption are met. Block exemptions are specific regulations adopted by the Commission. These regulations are called block exemptions because they exempt certain blocks of aid from the prohibition against granting aid without the Commission first approving it (the standstill obligation).</p><p>Block exemptions enable a simpler and faster way of granting aid. By applying a block exemption, the granting body can avoid months (and sometimes years) of work drafting and discussing documentation for a state aid notification with the Commission (notification per Article 108 in the TFEU). A municipality or region that wishes to design a new state aid should therefore consider whether it is possible to apply the conditions in the General Block Exemption Regulation before considering submitting a notification to the Commission.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11300" id="accordion-item-button-11300"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>When may state aid be granted according to the rules in the Commission’s SGEI decision?</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11300" role="region" aria-labelledby="accordion-item-button-11300" hidden=""><div><div class="richtext"><div><p>When municipalities and regions finance public services, so-called Services of General Economic Interest (SGEI), that are open to competition, there is case law that provides guidance when assessing whether the financing constitutes state aid or not (see the Altmark criteria and SGEI de minimis aid). When public services are financed with state aid, so-called Services of General Economic Interest, there are specific rules that can be followed in order to exempt such state aid from the prohibition against state aid. Primarily, a municipality or region that considers granting such aid should make use of the SGEI decision (Commission Decision (EU) 2025/2630). As in the case of the application of the block exemptions, municipalities and regions can, by complying with the rules in the SGEI decision, provide state aid without making a state aid notification to the Commission.</p></div></div></div></div></div><div class="relative mb-6 pb-6 border-b-2 border-greyLight" data-cid="StepByStepItem"><h2><button class="flex justify-between w-full overflow-visible group" aria-expanded="false" aria-controls="accordion-item-content-11301" id="accordion-item-button-11301"><span class="flex -ml-20 font-semibold text-h3 text-left items-center"><span class="border-primary-1  flex items-center justify-center flex-shrink-0 w-3 h-3 mr-10 setbystep__item__dot"></span>When will the Commission approve notified aid?</span><span class="border-primary-1 relative flex items-center justify-center flex-shrink-0 w-8 h-8 bg-white rounded-full"><span class="self-start text-p font-light text-teal group-hover:underline"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none" class="text-primary-1 inline-block align-middle transition-all duration-300 transform fill-current w-7 h-7 rotate-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></button></h2><div class="mt-8 animate-fade-in" id="accordion-item-content-11301" role="region" aria-labelledby="accordion-item-button-11301" hidden=""><div><div class="richtext"><div><p>Only the Commission may approve state aid. The state aid rules contain provisions for how member states can notify aid to the Commission. In Sweden, only the government may notify state aid to the Commission. Although municipalities and regions are not allowed to notify state aid to the Commission themselves, they must follow the state aid rules. A municipality or region that is planning to introduce a new measure that may be state aid must therefore know the regulatory framework, as well as having a plan for how to comply with the regulatory requirements.</p><p>A municipality or region that wishes to grant state aid under conditions other than those outlined in an applicable block exemption must contact the government which, in turn, submits a notification concerning the intended aid to the Commission. For the most common types of state aid, the Commission has determined guidelines or regulatory frameworks that clarify what the Commission considers to be state aid within a given area, and how state aid must be designed in order to be approved by the Commission.</p></div></div></div></div></div></div></div></div><div id="what_is_the_consequence_of_breaking_the_state_aid_rules_"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>What is the consequence of breaking the state aid rules?</span></h2><div class="richtext"><div><p>If the public sector (state, municipality, or region) gives unlawful and incompatible state aid, the Commission can decide that the member state shall recover the aid from the recipient, with interest. This applies even if it results in the recipient ending up in a situation where they must file for bankruptcy.&nbsp;</p><p>If the Commission decides that the aid shall be recovered and the member state fails to comply with this decision, the Commission can institute proceedings before the European Court of Justice. In such instances, the member state risks considerable fines, if the member state does not comply with its obligations under EU-law.&nbsp;</p><p>Granting authorities are obligated to recover any state aid that was granted in breach of the standstill obligation, as per the Act on the Application of the European Union State Aid Rules (2013:388). A Swedish court is also able to assess whether a certain measure constitutes state aid that should have been notified to the Commission.</p></div></div></div><div id="targeted_guidance"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>Targeted guidance</span></h2><div class="richtext"><div><p>We offer guidance on state aid questions that arise during specific activities typical for regions and municipalities. Targeted guidance comprise information that is customised for specific target groups, situations or issues. The guidance can be read independently but do not contain information about all parts of the regulatory framework for state aid. In our guidance we also deal with other rules that apply to a municipality or region in the situation described. The guidance are only available in Swedish.</p><ul>
+<li><a href="/statsstod/riktade-vagledningar/marknadsmassig-forsaljning-av-kommunal-mark-for-bebyggelse/">How do municipalities avoid state aid issues in the process of developing land? (SV)</a></li>
+<li><a href="/statsstod/riktade-vagledningar/ar-kommunens-eller-regionens-borgensatagande-tillatet-enligt-statsstodsreglerna/">Is the municipality's or region's guarantee commitment permitted under the state aid rules? (SV)</a></li>
+<li><a href="/statsstod/riktade-vagledningar/hur-anvands-ekonomiska-kalkyler-vid-statsstodsbedomningar/">How are financial estimates used when assessing state aid? (SV)</a></li>
+</ul></div></div></div></div></div></div></div></main><footer data-cid="PageFooter" class="global__page-footer"><div class="py-6 border-t-2 border-b-2 border-greySemiLight bg-greyLight"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full"><img src="/assets/static/media/uhm.a8e48fa7.svg" alt="" class="footer-logo" height="61" width="169"/></div></div></div></div><div class="pt-6 bg-greyLight"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Visiting Address</h2><p class="mb-6 lg:mb-4 text-p">Svetsarvägen 10<br/>171 41 <!-- --> <!-- -->Solna</p><h2 class="text-p font-bold">Contact</h2><dl class="text-p footer__dl mb-6 lg:mb-4"><dt>Telephone</dt><dd>08-586 217 01</dd><dt>Telephone hours</dt><dd>Mon-Fri 9-15</dd></dl></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Postal Address</h2><p class="mb-6 lg:mb-4 text-p">Upphandlingsmyndigheten<br/>Box 1194, 171 23 <!-- --> <!-- -->Solna</p></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Quick links</h2><ul class="text-p footer__linklist footer__dl mb-6 lg:mb-4"><li><a href="/en/public-procurement/" class="">Public Procurement</a></li><li><a href="/en/statsstod/state-aid-guidance/" class="">State Aid guidance</a></li><li><a href="/en/the-act-on-systems-of-choice-lov/" class="">The Act on Systems of Choice (LOV)</a></li><li><a href="/en/conducting-business-with-public-sector-stakeholders/" class="">Conducting business with public sector stakeholders</a></li></ul></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Quick links</h2><ul class="text-p footer__linklist footer__dl mb-6 lg:mb-4"><li><a href="/en/sustainable-public-procurement/" class="">Sustainable public procurement</a></li><li><a href="/en/criteria/" class="">Our sustainability criteria</a></li><li><a href="/en/about-us/" class="">About us</a></li><li><a href="/en/about-us/contact-us/" class="">Contact us</a></li></ul></div></div></div><div class="py-2 mt-6 bg-greySemiLight pt-4 lg:pt-0"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full"><div class="items-center justify-between pt-2 md:flex"><div class="mb-2 lg:mb-0"></div><div class="-ml-2 lg:ml-0"><a href="https://twitter.com/uhmynd" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" data-cid="Icon" aria-label="Twitter" role="img" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a href="https://www.linkedin.com/company/upphandlingsmyndigheten" title="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" style="fill:none" data-cid="Icon" aria-label="LinkedIn" role="img" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://www.facebook.com/upphandlingsmyndigheten" title="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" style="fill:none" data-cid="Icon" aria-label="Facebook" role="img" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></div></div></div></div></div></div></div></footer><kundo-lazy-button text="Chatta med oss" script="https://static-chat.kundo.se/chat-js/org/909/widget.js"></kundo-lazy-button></div></div><div class="sr-only" aria-live="assertive"></div><div tabindex="-1" style="outline:none"></div></div>
+
+		<script src="/Areas/Upphandlingsmyndigheten/Assets/static/js/vendors~main.9af48341.chunk.js"></script>
+		<script src="/Areas/Upphandlingsmyndigheten/Assets/client/client-main.4cd102c3.js"></script>
+
+	<script defer="defer" src="/Util/Find/epi-util/find.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){if(typeof FindApi === 'function'){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1485 @@
+DERIVED SEARCH TEXT — original file is authoritative.
+Source: https://esastar-emr.sso.esa.int/Account/DownloadFile
+Retrieved: 2026-10-24T20:43:04.829885+00:00
+
+→  R E G I S T R A T I O N  U S E R  M A N U A L
+e s a - s t a r
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+ 
+ 
+ 
+ 
+ESA-STAR REGISTRATION 
+USER MANUAL 
+ 
+ 
+Prepared by 
+ 
+Capgemini Spa 
+Reference  
+Issue/Revision 4.4 
+Date of Issue 04/05/2026 
+Status Released 
+ 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 2/52 
+ 
+ 
+CHANGE LOG 
+Reason for change Issue Nr Date Paragraph(s) 
+First Issue 1.0 01/03/2016 All  
+Updated Bank account creation procedure. Added par 
+2.9 
+1.1 12/05/2016 2.7, 2.9 
+Release 1.1 1.2 22/06/2016 2.3, 2.4, 2.9 
+Release 1.2 1.3 11/10/2016 2.3,2.4,2.7 
+Release 1.6 1.4 05/06/2017 2.3, 2.5, 2.6 
+Release 1.7 1.5 22/09/2017 2.3, 2.6, 2.9 
+Release 1.8 1.6 14/11/2017 5, 7 
+Release 2.0 1.7 17/12/2018 2.1, 2.3, 2.6, 2.8, 
+2.9 
+Release 2.1 1.8 31/05/2019 2.1, 2.3, 2.4, 2.6, 
+2.9  
+Release 2.3 1.9 13/12/2019 2.3, 2.4, 2.5, 2.6 
+Release 2.4.2 2.0 11/05/2020 4 
+Release 2.5 2.1 17/07/2020 2, 2, 2.3,2.6; 2.7 
+Release 3.0 3.0 23/03/2021 1.1, 2.1, 2.8, 2.9 
+Release 3.1 3.1 09/07/2021 2.3, 2.8 
+Release 3.1.2 3.2 21/09/2021 2.10 (added) 
+Release 3.2 3.3 29/10/2021 2.3, 2.9 
+Release 3.4 3.4 15/04/2022 2.3, 2.9 
+Release 3.6.1 3.5 30/09/2022 3 (added) 
+Release 3.8 3.6 03/03/2023 2.1, 2.3 
+Release 3.9 3.7 28/04/2023 2.2, 2.3, 2.7 
+(added), 2.11 
+(added), 3.1 
+Release 3.10 3.8 21/07/2023 2.1, 2.3, 2.5, 2.10 
+Release 3.11 3.9 24/11/2023 2.3 
+Release 3.14 4.0 16/12/2024 2.1, 2.3, 2.7, 2.8, 
+2.9, 2.10 
+Release 3.16 4.1 23/06/2025 2.1 
+Release 3.20 4.2 10/11/2025 2.3 
+Release 3.21 4.3 16/02/2026 2.3, 2.7 
+Release 3.23 4.4 30/04/2026 2.3, 2.4, 2.7, 2.8 
+  
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 3/52 
+ 
+Table of Contents 
+1. Introduction ........................................................................................................................................ 4 
+1.1. Acronyms ........................................................................................................................................ 4 
+1.2. Document structure ......................................................................................................................... 4 
+2. GENERAL ESA-STAR REGISTRATION CONCEPTS ...................................................................... 5 
+2.1. System Overview and Users ........................................................................................................... 5 
+2.2. New Registration ............................................................................................................................. 8 
+2.3. How to register a new Legal Entity ............................................................................................... 11 
+2.4. How to claim SME status .............................................................................................................. 24 
+2.5. How to register a Business Unit .................................................................................................... 26 
+2.6. Questionnaire information publicly available ................................................................................. 28 
+2.7. How to update the questionnaire .................................................................................................. 29 
+2.8. How to create, update or revoke a Bank Account ......................................................................... 32 
+2.9. How to request the External Entity attribute .................................................................................. 35 
+2.10. How to add additional contacts or grant an existing contact with an application role ................. 41 
+2.11. How to delete an existing contact ............................................................................................... 44 
+2.12. How to reactivate an expired user account for an existing contact ............................................. 45 
+3. ESA BIC INCUBATION CONTRACT MANAGEMENT .................................................................... 47 
+3.1. How to add Incubated Entities to an ESA BIC Contract ............................................................... 47 
+ 
+  
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 4/52 
+ 
+1. INTRODUCTION 
+This document is the Software User Manual (SUM) for the esa-star Registration module. 
+The purpose of this document is to function as an explanatory manual for esa-star Registration 
+users by providing the required guidelines and assistance to correctly use the system. It 
+includes a detailed description of the operations performed in the esa-star Registration module. 
+1.1. Acronyms 
+This section contains the list of acronyms directly used in this document. 
+Acronyms Description 
+BU Business Unit 
+BUIA Business Unit Information Administrator 
+CO Contracts Officer 
+ECM Entity Capability Mapping 
+ECOS ESA Costing Software 
+EIA Entity Information Administrator 
+esa-p ESA Procurement system 
+esa-star ESA System for Tendering, Registration, Publication, Entity Capability 
+Mapping and esa-match 
+ESA European Space Agency 
+ET e-Tendering 
+LE Legal Entity 
+LSI Large Systems Integrators 
+SME Small and Medium Sized Enterprises. Reference to the SME 
+definition. 
+TA Tender Action 
+URL Uniform Resource Locator 
+Table 1- Acronyms 
+1.2. Document structure 
+This document is organized according to the following structure:  
+ 
+Chapter 1 ‘Introduction’: contains the purpose and the scope of the document. 
+Chapter 2 ‘General esa -star Registration Concepts’: contains the general concept of the 
+application and the procedures to follow to use the esa-star registration system. 
+ 
+  
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 5/52 
+ 
+ 
+2. GENERAL ESA-STAR REGISTRATION CONCEPTS  
+The esa-star Registration Solution is the ESA Corporate Application supporting the following 
+processes: 
+• Registration of Legal Entities in the ESA corporate systems for tendering, purchase and 
+financial tasks 
+• Collection and regular update of data provided by the registered entities used by ESA 
+procurement, industrial policy and finance processes 
+• Registration and maintenance of entities’ user information, to grant them access to the 
+esa-star Registration, esa-star Publication,  esa-star Tendering, esa-match, esa-star 
+ECM and esa-p systems. 
+ 
+New functionalities implemented are totally integrated within the ESA Corporate Information 
+System architecture. 
+2.1. System Overview and Users 
+The esa-star Registration System is made up of the two principal components: 
+1. esa-star Registration Public Web Site: this application allows registration of a new entity 
+in the ESA corporate systems for tendering, purchase and financial tasks. 
+2. esa-star Registration Internal Web Site : this application allows updating of entity 
+information as required and maintenance of entities’ user account information, i.e. in 
+order to grant entity users access to the esa-star Tendering, esa-star Publication, esa-
+match, ECM and esa-p systems. 
+ 
+The esa-star Registration users are the following: 
+Role Type Description 
+Entity Validator ESA ESA authority responsible for first registration approval. 
+Approves questionnaires updated by entities and if needed 
+directly updates questionnaires. 
+Financial Vendor Master 
+Data Responsible  
+ESA ESA authority for entity financial matters. 
+Reviews and approves entity banking details to trigger bank 
+account transfer to esa-p, and manages accounting data for 
+entities.  
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 6/52 
+ 
+CSR Reviewer ESA  ESA authority who accesses and updates the information 
+available in the CSR Section.  
+Guest N/A Can view the data in the public entities directory and request 
+the registration of her/his own entity and/or business unit. 
+Entity Information 
+Administrator 
+Legal Entity The Entity Information Administrator is responsible for: 
+• the information collected from the users under their 
+own entity 
+•  creating and maintaining the entity data  
+•  submitting the questionnaire to ESA  
+•  accessing published Entity information  
+•  updating or requesting user ids and contact points 
+for the entity staff and defining their role  
+•  submitting the request to obtain the External Entity 
+attribute (see par. 2.9)  
+•  requesting ESA to freeze his/her Entity  
+•  authorising creation of business units for the legal 
+entity replying to an ESA Interact item for which their 
+own Entity meets the restriction requirements in esa-
+star Publication. 
+• managing CSR section  
+Business Unit 
+Information 
+Administrator 
+Business Unit Once granted access by the EIA, has the same 
+authorisations as the EIA in the context of the relevant 
+business unit. 
+Entity Information 
+Administrator Deputy 
+Legal Entity The Entity Information Administrator Deputy has the same 
+authorisations as the Entity Information Administrator. 
+Entity User Entity (Legal 
+or BU) 
+Authorised to: 
+• view the published Entity Information (except for 
+financial figures and entity structure) in esa-star 
+Registration,  
+• view tender action information in esa-star 
+Publication,  
+• find business partners in esa-match and view their 
+entity details, including the list of competences and 
+products,  
+• view harmonisation outcomes in esa-star ECM. 
+Bid Manager Entity (Legal 
+or BU) 
+Authorised to: 
+• view the published Entity Information (except for 
+financial figures and entity structure) in esa-star 
+Registration,  
+• request the creation of a Bidder Restricted Area in 
+esa-star Tendering and submit offers, 
+• view and express interest in Tender Actions view 
+and download tender documentation depending on 
+the entity status and access rights in esa-star 
+Publication, 
+• reply to an ESA Interact item for which their own 
+Entity meets the restriction requirements in esa-star 
+Publication. 
+Contract Manager Entity (Legal 
+or BU) 
+Authorised to: 
+• submit contract change proposals in esa-star 
+Tendering.  
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 7/52 
+ 
+• view the published Entity Information except for 
+financial figures and entity structure in esa-star 
+Registration.  
+• reply to an ESA Interact item for which their own 
+Entity meets the restriction requirements in esa-star 
+Publication. 
+• fill in the Contract Closure Documentation and 
+submit it to ESA stakeholders for approval in esa-
+star CCD 
+Bank Details 
+Administrator 
+Legal Entity Entity Contact Point for financial and payment matters: has 
+read access to the entity's data and can edit bank details 
+information. Can view the published Entity Information 
+except for financial figures and entity structure. 
+esa-p Entity User Legal Entity Entity user authorised to access esa-p and allowed to post 
+confirmations and invoices on entity contracts. S/he can be 
+assigned only if the entity has Valid Full status  
+ECOS Responsible Legal Entity Entity Contact Point for ECOS matters. 
+Entity Tender 
+Administrator 
+External Entity S/he is the person authorised to publish External Entity 
+tenders (non-ESA TAs) in esa-star Publication for the entity 
+concerned (see par. 2.9). 
+esa-match Responsible Entity (Legal 
+or BU) 
+Entity user responsible for: 
+• managing the entity profile and information, 
+• nominating one or more esa-match Conversation 
+Managers in the esa-match application,  
+• managing the conversations in the Lounge Area,  
+• replying to ESA Communications,  
+• managing entity Ads and related messages / 
+conversations in the Marketspace. 
+esa-match Conversation 
+manager 
+Entity (Legal 
+or BU) 
+Role managed and assigned directly in the esa-match 
+application by the esa-match Responsible (as a prerequisite, 
+the esa-match Conversation Manager must be an entity user 
+previously registered in esa-star Registration). In esa-match 
+s/he can: 
+• manage conversations in the Lounge Area,  
+• manage the entity’s Ads and related messages / 
+conversations in the Marketspace, 
+• reply to ESA Communications. 
+Entity Capabilities 
+Responsible 
+ Entity user responsible for the management of the entity 
+capabilities in esa-star ECM. Can accept harmonisation 
+outcomes and manage entity contact points on esa-star 
+ECM. Can only access the data of their own entity. 
+TPS User Legal Entity Authorised to: 
+• view the published Entity Information (except for 
+financial figures and entity structure) in esa-star 
+Registration. 
+ESA BIC Manager Legal Entity Entity user responsible for the management of the Legal 
+Entity Incubatees related to the Entity Incubator. 
+Authorised to: 
+• view the Legal Entity questionnaires and Business 
+Units related in read-only mode in esa-star 
+Registration. 
+Rates Responsible Entity (Legal 
+or BU) 
+Entity user responsible for the approval or rejection of the 
+Rates Forms in esa-star ASTRA. 
+Claims Responsible Entity (Legal 
+Entity or BU) 
+Entity user responsible for the management of the Claims 
+process. 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 8/52 
+ 
+ 
+ 
+The esa-star Registration user interface comprises the following components:  
+ 
+• The Header contains: 
+• On the left, the ESA logo and the full application name 
+• On the right, a world icon which links to the “Doing Business with ESA” portal, 
+giving access to all relevant applications and esa-star modules. There is also  a 
+clickable user card icon that shows the full name of the logged -in user and the 
+log-out button 
+• The Breadcrumb shows where the user is in the site hierarchy and facilitates navigation 
+of the different levels in the hierarchy tree 
+• The Quick Launch menu contains entries related to the esa-star functions 
+• The Content Area shows the content of the different functions assigned to the user 
+• The Footer contains the esa-star system version, and links to Contact Us, Help, Terms 
+& Conditions of esa -star, the Privacy Notice (only for Entity Users) and ESA’s social  
+media accounts. 
+ 
+ 
+2.2. New Registration 
+You can access the esa-star Registration Public Website at the following URL: 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 9/52 
+ 
+https://esastar-emr.sso.esa.int/ 
+ 
+esa-star Registration is not compatible with Internet Explorer and all versions of EDGE prior to 
+79.0.309. To get the best experience using esa -star Registration, please use a more modern 
+browser (i.e. EDGE-Chromium, Chrome or Firefox).  
+ 
+ 
+The ‘New Registration’ menu contains two links: 
+• ‘Start’ 
+• ‘Resume’ 
+You need to click on ‘Start’ if either of the following apply: 
+• You are accessing the esa-star system for the first time, and you wish to register a legal 
+entity as a potential tenderer  
+• You wish to register a new business unit which is part of a legal entity already registered 
+in the system. 
+ 
+ 
+ 
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 10/52 
+ 
+ 
+ 
+If you click on ‘Start’, the following Private Notice pop-up appears: 
+ 
+To continue with the registration, you need to accept the conditions of the notice by clicking on 
+‘Accept’. If the button is not clicked or the page is closed, the new registration or log -in will be 
+cancelled. 
+ 
+You need to click on ‘Resume’ if you wish to resume a suspended registration process. To do 
+this, the Entity Information Administrator (EIA) needs to log in using: 
+• The email address used during registration 
+• The temporary code received via email 
+• The captcha shown on the ‘Resume’ screen. 
+If the EIA does not remember the temporary code, it can be regenerated by inserting the email 
+and the captcha, and then clicking on the ‘Forgot Your Temporary Code?’ link. The system will 
+send an email with a new temporary code to the EIA. 
+ 
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 11/52 
+ 
+ 
+2.3. How to register a new Legal Entity 
+A Legal Entity is any physical or legal person or public entity or group of persons and/or bodies 
+which offers on the market, respectively, the delivery of supplies, products or services and 
+which satisfies the eligibility criteria specified in Article 12 of the ESA Contracting Regulations 
+and therefore is eligible to submit proposals to ESA. 
+If you identify yourself with this definition, you can register your legal entity in the esa -star 
+system. 
+The registration process is organised as a wizard that guides the user step by step through the 
+filling out of the questionnaire sections. Based on the information you provide during the 
+registration process; the registration may be Light or Full. 
+The following image shows what information to provide for both a Light Registration and Full 
+Registration. 
+ 
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 12/52 
+ 
+The first step of registration is to verify that the LE is not already registered. This check is 
+necessary because an entity should not be registered more than once in the system. 
+In the ESA Entities Directory is possible to find Entities that have updated the Name also before 
+the Questionnaire’s validation, therefore you can find the name of Entities updated. 
+ 
+When the legal entity already exists in the esa-star, there may be three cases: 
+1. The Legal Entity has a valid status: the user cannot register the LE but can register a 
+related Business Unit. In this case it is recommended to contact the corresponding EIA. 
+2. The Legal Entity is already in the registration process: the system suggests that you 
+resume a previous registration (if you are the EIA) 
+3. The Legal Entity is obsolete: the system suggests that you contact the helpdesk. 
+ 
+The table below summarises all statuses of an entity and the actions on related systems. 
+Entity Status esa-star 
+ Registration 
+Tendering 
+esa-star 
+Publication 
+esa-p esa-match ECM 
+Guest The entity has not yet 
+been registered for 
+ESA, its data is in the 
+temporary staging 
+area of the esa-star 
+system, waiting to be 
+completed and 
+submitted by the 
+entity or approved by 
+ESA. 
+The entity can 
+access only the 
+public part of the 
+system. 
+The entity 
+cannot access 
+the system. 
+The entity has no 
+profile in esa-match.  
+The entity is not 
+added in the 
+system. 
+Valid Partial The light registration 
+process is 
+completed. 
+Authorised users of 
+the entity can update 
+and submit the 
+questionnaire. 
+The entity bid 
+managers can submit 
+offers in esa-star. 
+Authorised users of 
+the entity can 
+access Tenders 
+information, express 
+interest and reply to 
+ESA Interacts 
+items. 
+The entity 
+cannot be 
+awarded with a 
+contract as 
+prime in esa-p. 
+The entity profile is 
+automatically created 
+in esa-match for 
+entities entitled to 
+have it. The access to 
+the protected 
+component is 
+automatically granted 
+to all users available 
+in esa-star 
+registration. 
+All entity users 
+available in esa-
+star registration 
+can view their 
+entity details, 
+including the list of 
+competences and 
+products. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 13/52 
+ 
+Entity Status esa-star 
+ Registration 
+Tendering 
+esa-star 
+Publication 
+esa-p esa-match ECM 
+Valid Full The full registration 
+process is 
+completed. 
+Authorised users of 
+the entity can update 
+and submit the 
+questionnaire. 
+The entity bid 
+managers can submit 
+offers in esa-star. 
+Authorised users of 
+the entity can 
+access Tenders 
+information, express 
+interest and reply to 
+ESA Interacts 
+items. 
+The entity can 
+be awarded with 
+a contract as 
+prime in esa-p. 
+The entity profile is 
+automatically created 
+in esa-match for 
+entities entitled to 
+have it. The access to 
+the protected 
+component is 
+automatically granted 
+to all users available 
+in esa-star 
+registration. 
+All entity users 
+available in esa-
+star registration 
+can view their 
+entity details, 
+including the list of 
+competences and 
+products. 
+To be updated Authorised users of 
+the entity are 
+required to update 
+and re-submit the 
+questionnaire on an 
+annual basis. 
+The entity bid 
+managers can submit 
+offers in esa-star. 
+Authorised users of 
+the entity can 
+access Tenders 
+information, express 
+interest and reply to 
+ESA Interacts 
+items. 
+The entity 
+cannot be 
+awarded with a 
+contract as 
+prime in esa-p 
+The entity profile is 
+automatically created 
+in esa-match for 
+entities entitled to 
+have it. The access to 
+the protected 
+component is 
+automatically granted 
+to all users available 
+in esa-star 
+registration. 
+All entity users 
+available in esa-
+star registration 
+can view their 
+entity details, 
+including the list of 
+competences and 
+products. 
+Blocked All access to the esa-
+star system by entity 
+users is disabled. 
+All access to the 
+Publication system 
+by entity users and 
+by its own business 
+units' users is 
+disabled. 
+The entity's 
+status is set to 
+"Not Valid" in 
+esa-p, but there 
+will be no impact 
+on the on-going 
+contracts. 
+All the Entity related 
+information available 
+in esa-match will be 
+no longer visible. 
+Access to the esa-
+match protected 
+component (if 
+granted) is 
+immediately revoked 
+to all entity's users.  
+Also, all its own 
+business units' users’ 
+access is revoked. 
+The entity cannot 
+be part of new 
+harmonisation 
+cycles. Access to 
+the ECM system 
+for entity users is 
+disabled. 
+Obsolete All access to the esa-
+star system by entity 
+users is disabled. 
+All access to the 
+Publication system 
+by entity users is 
+disabled. 
+The entity's 
+status is set to 
+"Not Valid" in 
+esa-p, but there 
+will be no impact 
+on the on-going 
+contracts. 
+All the Entity related 
+information available 
+in esa-match will be 
+no longer visible. 
+Access to the esa-
+match protected 
+component (if 
+granted) is 
+immediately revoked 
+to all entity's users.  
+Also all its own 
+business units' users’ 
+access is revoked. 
+The entity cannot 
+be part of new 
+harmonisation 
+cycles. Access to 
+the ECM system 
+for entity users is 
+disabled. 
+Revoked 
+(applicable at  
+Business Unit  
+level only) 
+All access to the esa-
+star system by 
+business unit users is 
+disabled. 
+All access to the 
+Publication system 
+by entity users is 
+disabled. 
+The business 
+unit status is set 
+to "Revoked" in 
+esa-p, but there 
+will be no impact 
+on the on-going 
+contracts. 
+All the Business Unit 
+related information 
+available in esa-
+match will be no 
+longer visible. 
+Access to the esa-
+match protected 
+component (if 
+granted) is 
+immediately revoked 
+The BU cannot be 
+part of new 
+harmonisation 
+cycles. Access to 
+the ECM system 
+for entity users is 
+disabled. 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 14/52 
+ 
+Entity Status esa-star 
+ Registration 
+Tendering 
+esa-star 
+Publication 
+esa-p esa-match ECM 
+to all Business Unit's 
+users.  
+ 
+If your LE does not exist in the esa-star system, you can proceed with the registration wizard, 
+which will show the first section of the questionnaire, the identification section. 
+ 
+ 
+To get the temporary code for resuming the registration, you need to enter information about 
+entity identification and EIA contact: the temporary code will be sent to the EIA’s email. 
+The sections that you need to enter for Light Registration are: 
+• Entity Details: description, address, email  (the email address will be visible publicly in 
+the ESA Entities Directory to Registered entities. It is recommended to use a generic or 
+anonymous email address  such as info@company.com, rather than a personal 
+address). 
+• Locations: specifies all locations of the LE.   
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 15/52 
+ 
+ 
+A new process for the Nationality attribution is available to better comply with the ESA 
+convention: a self-assessment questionnaire is part of the Legal Entity registration process in 
+esa-star, mandatory for both Light and Full Registrations. 
+Once the Criteria 2, 3 and 4 are filled in, the Nationality Questionnaire will appear.  
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 16/52 
+ 
+ 
+ 
+In this section, it is possible to add facilities by clicking on the ‘+’ icon and filling in the data in 
+the pop-up. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 17/52 
+ 
+ 
+ 
+Further information can be added by selecting the option “Yes” for the question “Member of a 
+corporate/family group of companies/institutions?” Additional information about the Group can 
+then be provided, and files can also be added in the Attachments section. 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 18/52 
+ 
+ 
+ 
+• Entity Type: defines the type of legal person (Private or Public) and the entity category 
+(Profit or Non -Profit). Based on the selected values, it is possible to select a different 
+entity type (company, research organisation, international organisation,  governmental 
+organisation.) 
+• Financial and Staff Basics : defines the end of accounting period for the entity and the 
+financial data for the last two years.  
+Financial data for the last two years are mandatory according to: 
+1. Entity Registration Date 
+2. End of accounting period 
+In this phase of registration, if you are not in possession of the information, you 
+can declare that now you don’t have this information and you commit to provide 
+it as soon as possible. 
+ 
+When the last section is filled -in for Light Registration, an information summary is displayed, 
+and you can decide to submit the questionnaire for approval by ESA or proceed with full 
+registration.  
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 19/52 
+ 
+ 
+To submit the questionnaire for Light Registration, the Nationality Questionnaire must 
+be completed. If not, the following pop-up is displayed: 
+ 
+On this page, you can also enter the following additional information for your entity: 
+• Previous Entity Name: defines the list of all the previous entity names (if they exist). You 
+can fill in a new value or you have the possibility to select as Previous Entity Name the 
+Entity Name of an already registered Legal Entity. 
+• Merge & acquisition, split and spin-off: allows you to specify if the entity has been 
+involved in any operations of merge, acquisition, split or spin-off with other entities. 
+• Competences: allows you to specify the products, technologies and activities of your 
+entity. 
+• Bank Details: allows you to specify the bank accounts for your entity. For further details, 
+see below. 
+If you decide to submit the questionnaire, the request for approval is sent by email to the Entity 
+Validator and your questionnaire becomes accessible only in read mode. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 20/52 
+ 
+ 
+ 
+The Entity Validator can: 
+• Approve your registration: you will receive an email with the credentials for accessing 
+the esa-star Registration Internal Application through the following link: 
+https://esastar-em.sso.esa.int 
+You will be automatically assigned the Entity Information Administrator role. 
+If the nationality of your entity is in an ESA Member State, EU Country, Associate 
+Member State or Cooperating State, you will also be automatically assigned the roles 
+of esa-match Responsible and Entity Capabilities Responsible. You will receive an 
+email with the relevant information for accessing esa-match and ECM, along with how 
+to manage your entity profile information and visibility. 
+• Furthermore, as soon as the registration is approved, the role of Rates Responsible will 
+be automatically assigned to the Entity Information Administrator. You will receive an 
+email with the relevant information for accessing esa -star ASTRA, to manage your 
+Rates Form s. Reject your registration: you will receive an email with the reason for 
+rejection and you can restart the registration process. 
+• Send back your registration to request clarification of the information:  you will receive 
+an email with comments on the questionnaire. So, the questionnaire will be available 
+again in edit mode and you’ll be able to update your information and resubmit it. 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 21/52 
+ 
+If you decide to proceed with full registration, all sections of questionnaire must be completed: 
+for this reason, the system checks all sections, including sections already edited for light 
+registration, and the wizard prompts you at the first incomplete section. 
+As part of the Full Registration process, in some sections you will be requested to tick a box to 
+confirm the validity of the information provided. The boxes will be automatically unticked at the 
+end of the accounting period and so will need to be ticked again to confirm the full registration 
+of the entity. 
+The additional sections that you must complete for full registration are: 
+• Owners of Shares / Voting Rights Details: defines all shareholders of the entity.  
+NOTE: The sum of percentage of shares must be 100%. 
+• Contacts: defines the two main entity contacts (see also par. 0).  
+o If the entity type is company, you must select Chief Executive Officer and Chief 
+Financial Officer in the Function section. It is also possible to add new Functions 
+by typing them into this section. 
+o If the entity type is different from company, you must select Head of Institution  
+and Head of Administration . It is also possible  to add new Functions by typing 
+them into this section. 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 22/52 
+ 
+ 
+• Other Financial Indicators and Staff : defines other information of the last two financial 
+years. Furthermore, you must upload the ‘Latest Approve Financial Statement’ file. The 
+allowed file types are pdf, doc, txt, png , gif, jpeg, ppt.  The file uploaded in the ‘Latest 
+Approved Financial Statement ’” field is automatically replicated in the "‘Financial 
+Statement’" area (at the bottom of the section). The Financial Statement list shows all 
+files uploaded, ordered by year and Last Update Time. It is possible to upload several 
+files for the same Reference year. The ‘Latest Approved Financial Statement ’” field 
+shows information concerning the most recent year. 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 23/52 
+ 
+ 
+• Compliance: defines all statements for compliance with Article 12 of the ESA 
+Contracting Regulations. You can select True or False for each statement of regulations 
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 24/52 
+ 
+• Corporate Social Responsibility (CSR): Entities are required to complete the section 
+Corporate Social Responsibility Code of Conduct to obtain Full Registration. 
+ 
+When the last section is filled-in for Full Registration, an information summary is displayed, and 
+you can submit the questionnaire for approval by ESA (for further details see above). 
+To submit the questionnaire for Full Registration, the CSR section must be completed.  
+ 
+ 
+2.4. How to claim SME status 
+During the process of registration, you can claim the status of SME in the SME section. The 
+valid SME status will enable the entity to benefit from tendering and payment conditions for 
+SMEs when so defined.  
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 25/52 
+ 
+You can claim the status of SME only when your entity size is different from Large and when 
+at least data for a financial year has been provided. Entity size is calculated based on inserted 
+financial and staff data. Once your SME status has been validated, you do not need to continue 
+claiming it each year. Your SME status will be reassessed annually by the entity validator or 
+the system, based on the updated information.  You can provide further information through 
+dedicated functions ( Upload SME Status fil e and Upload Additional Annex/Linked/ Partner 
+enterprise) on a voluntary basis or upon specific request by ESA.  The two functions are 
+available after the Claim of the SME Status and only if the Entity Validators enable them 
+  
+ 
+• Upload SME Status file : one or more files can be uploaded upon ESA request or on 
+voluntary basis.  
+ 
+ 
+ 
+• Upload Additional Annex/Linked/ Partner enterprise : one or more files can be 
+uploaded.  
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 26/52 
+ 
+ 
+ 
+  
+(http://www.esa.int/About_Us/Business_with_ESA/Small_and_Medium_Sized_Enterprises). 
+ 
+2.5. How to register a Business Unit 
+A Business Unit is a part or segment of the Legal Entity, representing a specific functional or 
+geographic area. It can be - for example - a Department, a Division or an Establishment. A 
+Business Unit can have its own bid manager users, allowed to create a  bidder restricted area 
+and post offers on behalf of the business unit. If the offer is selected a contract is awarded to 
+the legal entity. 
+ 
+If you identify yourself with this definition, you can register your business unit in the esa -star 
+system. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 27/52 
+ 
+The registration process is very simple, and the first step requires you to select the legal entity.  
+ 
+When you have selected your legal entity, you need to enter the following: 
+• information for the identification of business unit (name, address and so on)  
+• information of the contact person (first name, last name, email and so on) 
+• captcha 
+Submitting the information, an email to the EIA and deputies of your Legal Entity is sent for 
+their approval.  
+The EIA can: 
+• Reject the request: the business unit goes to the status Rejected and it is no longer 
+available in the system. 
+• Accept the request: the EIA must define a business unit information administrator. An 
+email is sent to the Entity Validator for approval by ESA. 
+The Entity Validator can: 
+• Approve your registration: an email to BUIA is sent with the credentials to access the 
+esa-star Registration Internal Application using the following link: 
+https://esastar-em.sso.esa.int 
+An entity profile is automatically created in esa-match if the Business Unit is entitled to 
+have one. The BUIA is notified and automatically assigned the esa-match Responsible 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 28/52 
+ 
+role. The BUIA is also automatically assigned the Entity Capabilities Responsible role 
+and is granted access to the ECM module of esa-star. 
+The BUIA is notified and automatically assigned the Business Unit Rates Responsible 
+role, to access esa-star ASTRA. 
+• Reject your registration: an email is sent to EIA and the business unit is no longer 
+available in the system. The entity Validator can restore it: the BU returns in approval 
+by legal entity and an email is sent to EIA. 
+• Send back your registration in order to request clarification of the information: the 
+business unit returns to in approval by legal entity and an email is sent to EIA. 
+ 
+Business Units can be revoked by the ESA entity validator only. Revoked business units are 
+no longer available for new contracts but there is no impact on running esa-p contracts.  User 
+access to all esa-star modules, including esa -match and ECM if applicable, is disabled while 
+esa-p users are transferred at legal-entity level. All the Entity-related information available in 
+esa-match and ECM (where applicable) will no longer be visible to any other users except ESA 
+authorised personnel. 
+2.6. Questionnaire information publicly available 
+As soon as an entity is registered on esa -star Registration, a set of information  filled in the 
+questionnaire will be publicly available on the public site at the following urls: 
+• https://esastar-emr.sso.esa.int/PublicEntityDir/PublicEntityDir 
+• https://esastar-emr.sso.esa.int/PublicEntityDir/PublicEntityDirSme 
+More specifically, unregistered users can access the following data: 
+• Entity Name 
+• Country of Registration 
+• Entity Code 
+• VAT Number 
+• SME Status 
+• LSI 
+• Entity Description in English 
+• Entity Type 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 29/52 
+ 
+• Entity Size 
+• Address 
+• House Number 
+• City  
+• Postal Code 
+• Web Site 
+ 
+2.7. How to update the questionnaire 
+ESA Contracting Regulations require valid entities (not Blocked or Obsolete Entities) to update 
+their registration information annually. Failure to do so in a timely manner may result in entity 
+status being set to Blocked. Blocked status entails totally denied access to all esa -star 
+modules, including esa-match and ECM when applicable. 
+ 
+To update questionnaire information, you must be the EIA or Deputy. After logging in to 
+https://esastar-em.sso.esa.int with the ESA Corporate Authentication credentials received by 
+email, the home page of your questionnaire opens. 
+ 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 30/52 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 31/52 
+ 
+Entity code     Entity Name                                              
+                                                                                                                                     Actions available  
+ 
+When you modify the data, you need to resubmit the questionnaire for approval by ESA. 
+The system only automatically validates the updated Questionnaire if the following fields have 
+been modified: 
+• Entity Details : Street, House Number, Postal Code, City, Organisation Chart, 
+Telephone, Fax, Entity Email, Entity Web Site 
+• Entity Type: All sections 
+• CSR: All sections 
+• Financial Indicator and Staff Basics & Other: Additional Information (attachments) 
+• Structure: Email, Telephone, (shareholder information); I confirm that the Information 
+provided in the section is valid and up-to-date. 
+• Compliance: I confirm that the Information provided in the section is valid and up -to-
+date; You have answered “False” to the previous question. Please justify your answer  
+(needed for each question if the selected option is “False”) 
+• Competences: All sections 
+• Location: Nationality Check Performed , I confirm that the Information provided in the 
+section is valid and up-to-date. 
+ 
+Updating of the questionnaire depends on its status: 
+Questionnaire Status Description 
+In preparation The questionnaire is in edit mode. For a registered Entity a copy is made from the 
+published one and made available for modification. The published one remains 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 32/52 
+ 
+available to all systems concerned (esa-star modules and esa-p). Information is 
+available only to the Entity and to ESA authorised users.  
+The questionnaire has to be submitted to ESA to be validated. 
+In Preparation by ESA The questionnaire is in edit mode for the ESA Validator and in read mode for the 
+entity. 
+Submitted for validation The questionnaire is under validation by ESA. Information is available only to the 
+Entity and to ESA authorised users. 
+The questionnaire is in edit mode for the ESA Validator and in read mode for the 
+entity. 
+Published Questionnaire has been validated by ESA. A sub-set of Information is visible to all 
+users in all concerned systems (esa-star modules and esa-p). Full Information is 
+available only to the Entity and to ESA authorised users. 
+Sent back The questionnaire is sent back by the ESA validator to ask for modification. The 
+questionnaire is in edit mode for the Entity and ESA Validator. 
+Rejected The Entity has been considered by the ESA Entity validator not eligible to do 
+business with ESA.  The questionnaire data is visible only to ESA selected users 
+for reference. No Entity Code is assigned. No external users have access to this 
+questionnaire. 
+When you modify data in Identification or Financial Indicator and Staff section, the SME Status 
+field will be recalculated; in case its value becomes “ No”, the SME Status Claim field will be 
+automatically set to “Not Claimed”. 
+When the accounting period for the entity expires, the esa -star system automatically sets the 
+entity status to To Be Updated. In this case, it is necessary to update all financial data for the 
+last year: 
+• Financial Basic and Staff 
+• Other Financial Indicators and Staff 
+When updating, you can claim the SME status based on the financial data for the last three 
+years, if you have not previously done so. After these changes, you need to resubmit the 
+questionnaire for approval by ESA. 
+2.8. How to create, update or revoke a Bank Account 
+Each entity can notify ESA of one or more Bank Accounts that are used in the context of the 
+esa-p system. In particular, when a contract is awarded to an entity, your updated bank account 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 33/52 
+ 
+information validated through esa-star is a necessary pre -requisite for you to submit invoices 
+through esa-p and subsequently for ESA to process the payment. The entry and update of 
+bank account information for the entity is allowed only by the Bank Detail  Administrator (see 
+table in par 2.1 and par. 2.9). 
+If you are not the Bank Administrator, please check the Contact section of the questionnaire to 
+find the responsible person for your company (see below). 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 34/52 
+ 
+ 
+Opening the section ‘Bank Details’, the page with all bank accounts of the entity is presented 
+in read mode: when you click on the ‘ Edit’ button, the page is displayed in edit mode. SWIFT 
+code does not have to be inserted as it will be automatically generated by the system when the 
+bank account is approved by ESA. 
+ 
+You can upload multiple attachments from relevant section by clicking on the arrow. 
+For non IBAN related countries from “Country of Bank” section you can find a drop down menu 
+with the list of non IBAN related countries. 
+You can submit the bank accounts one by one for approval by the ESA Finance User. 
+The finance user can: 
+• Approve the bank account 
+• Send back  
+If you decide to submit a bank account, the request for approval is sent by email to the Finance 
+User and your bank account becomes accessible only in read mode. 
+The Finance User can: 
+• Approve the bank account: bank account becomes Published, and you will receive an 
+approval email with ESA comments. 
+• Send back the bank account to request clarification of the information:  you will receive 
+an email with comments on the bank account. So, the questionnaire will be available 
+again in edit mode and you’ll be able to update your information and resubmit it.  
+The editing of a single bank account depends on its status. 
+Bank Account Status Description 
+In preparation The bank account is in edit mode for the bank account administrator of the Legal 
+Entity and ESA Finance User. 
+In Preparation by ESA The bank account is in edit mode for the ESA Finance User and in read mode for 
+the entity. 
+Submitted for validation The bank account is under validation by ESA. Information is available only to the 
+Entity and to ESA authorized users. 
+The questionnaire is in edit mode for the ESA Finance User and in read mode for 
+the entity. 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 35/52 
+ 
+Published The bank account has been validated by ESA. A sub -set of Information is visible 
+to all users in all concerned systems. Full Information is available only to the Entity 
+and to ESA authorised users. 
+Sent back The bank account is sent back by the ESA Finance User to ask for modification. 
+The bank account is in edit mode for the Entity and ESA Finance User. 
+ 
+The following fields cannot be modified for an account after its validation by ESA: 
+• For countries using IBAN: IBAN 
+• For countries not using IBAN: Country of Bank, Bank Number, Bank Account Number, 
+Bank Name, Bank Address 
+If one of these fields needs to be modified, a new account should be created and the old one 
+deactivated by unchecking the relevant flag. 
+ 
+In exceptional cases where esa -star is not operational , or does not yet support the entry of 
+certain bank data:  
+Please contact the ESA Helpdesk directly (esait.Service.Desk@esa.int). 
+If you believe that the validation of your data is overdue, please contact the ESA Finance 
+Department directly via email at: vendordata@esa.int  
+2.9. How to request the External Entity attribute 
+An External Entity is a generic definition for a company institute or agency with consolidated 
+relations with ESA. 
+Contracts awarded by External Entities may or may not be related to activities financed by 
+ESA. In particular, the esa-star Publication module allows: 
+• Prime contractors (and major sub -contractors) working for the Agency, to publish 
+invitations to tender for procurement  actions initiated by them in the context of ESA 
+programmes/projects, for which they have industrial responsibility 
+• National Agencies to publish invitations to tender on behalf of ESA, or on programmes 
+related to ESA (e.g. the Arianne Programme). 
+If you wish to request the attribute of “External Entity” for your own Entity, you must be the EIA 
+or Deputy . L og in to https://esastar-em.sso.esa.int/ with the ESA Corporate Authentication 
+credentials received by email. You will see the home page of your questionnaire. Please note 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 36/52 
+ 
+that in order to proceed with the request , as a minimum requirement  an Entity Tender 
+Administrator needs to be defined in the “Contacts” section for your Entity (see Section 0). 
+ 
+Click on ‘External Entity Request’ in the Actions section in order to open the form. 
+ 
+ 
+When you submit the request, an email is sent to the External Entity Validator for approval. 
+The External Entity Validator can: 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 37/52 
+ 
+• Accept the request: your entity becomes an External Entity. An email is sent to the EIA 
+and Deputy to inform them that the request has been accepted by ESA. The “ External 
+Entity” flag is marked in the “Entity Details” summary page. 
+If you are an EIA or Deputy , you can also access the details of the request by clicking 
+on the “ External Entities Details ” button on the homepage of the questionnaire . This 
+replaces the “External Entities Request” button. 
+ 
+• Send back the request : in this case the information provided in the request is not 
+sufficient for ESA and further details are required in order to carry out the assessment 
+(approve/reject the request).  The EIA and Deputy receive an email with the relevant 
+information. B y accessing “ External Entity Request ”, they can see the “Sent Back 
+Comment”, update the form and resubmit the request to ESA. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 38/52 
+ 
+ 
+• Reject the request: the request is not accepted by ESA. An email is sent to the EIA and 
+Deputy to inform them that the request has been rejected. By accessing the “External 
+Entity Request” section, they can see the “Rejection comment”.   
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 39/52 
+ 
+ 
+ 
+If a request is rejected by ESA and you need to submit a new request for your entity, provided 
+you are an authorised entity user you can reuse the “ Rejected” request instead of creating a 
+new one. In this case, you can edit the “Rejected” request and resubmit it to ESA for approval. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 40/52 
+ 
+ 
+ESA can revoke an existing External Entity attribute. In this case the EIA, EIA Deputy and 
+ETAs will be notified, the External Entity flag will be removed in the Entity Details summary 
+page and you will find details of the revocation in the “External Entity Request” section. 
+ 
+If you need to submit a new request in the future, you will be able to use the same form. 
+Once the request to become an External Entity has been accepted by ESA, your Entity may 
+be allowed to submit a request in esa-star Tendering to publish Tender Actions under a specific 
+ESA Contract (so-called “Best Practices”). The Entity Tender Administrator role is responsible 
+for this action. 
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 41/52 
+ 
+ 
+ 
+ 
+ 
+ 
+2.10. How to add additional contacts or grant an existing contact with an 
+application role 
+During the registration/update of an entity, the EIA (or their deputy) can assign to each contact 
+available in the Contact section of the questionnaire one or more roles that grant them a 
+specific role(s) for the various ESA Corporate applications (see table in par. 2.1 for reference). 
+In particular, if you want to create a new contact for a colleague and assign to them a role for 
+an ESA Corporate application complete the steps as follows: 
+1. Open the Contact section of the questionnaire 
+2. Enter in Edit mode and click on the + icon 
+3. In the pop-up screen fill in the mandatory contact information (marked with *) 
+4. In the Role field select the role you want to grant to the user (you can insert multiple 
+roles for each contact) 
+5. Click Save in the pop-up screen 
+ 
+ 
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 42/52 
+ 
+ 
+ 
+ 
+  
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 43/52 
+ 
+ 
+6. Click Save in the Contact section of the questionnaire. 
+ 
+If you want to grant an existing contact an application role you have to enter the Contact section 
+of the questionnaire in Edit mode, click on the pencil icon on the right of the contact and then 
+proceed as per steps 4, 5 and 6 above. 
+ 
+Please note that: 
+• For contacts of Business Units, the Business Unit Information Administrator is 
+responsible for role assignment and the roles that can be selected are only the ones 
+applicable in the context of a Business Unit. 
+• The granting of the role ‘esa -p User’ is available only after the entity has obtained 
+the status Valid Full. However, it is recommended that users are granted such roles 
+only after the entity has been awarded with a contract. The granting of this role is not 
+an immediate action but starts a process of account creation for the esa -p system 
+that may take up to 1 day for completion. 
+• The granting of the role ‘Contract Manager’ is available only after the entity has 
+obtained the status Valid Full. However, it is recommended to grant users such roles 
+only after the entity has been awarded with a contract. 
+• Granting the ‘esa-match Responsible’ role is only possible if the entity is entitled to 
+have a profile in esa-match. At least one user belonging to your entity needs to have 
+this role assigned , as only esa-match Responsibles can manage the entity profile 
+and assign esa-match Conversation managers in the esa-match system. 
+• Granting the ‘Entit y Capabilities Responsible ’ role is only possible if the entity is 
+entitled to have a profile in esa -star ECM. At least one user belonging to your 
+organisation needs to have this role assigned , to monitor and accept the 
+Harmonisation Cycle outcomes and manage the Contact Points in ECM. 
+• At least one user belonging to your organisation needs to have  the Rates 
+Responsible role assigned, to manage your Rates Forms on esa-star ASTRA. 
+• Granting the ‘ESA BIC Manager’ role is only available when the Entity has already 
+been defined as an Incubator. 
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 44/52 
+ 
+• The list of roles owned by each contact is visible in the ‘Role’ column in the Contact 
+section of the questionnaire. 
+ 
+2.11. How to delete an existing contact 
+During the registration/update of an entity, the Entity Information Administrator (or their deputy) 
+and/or the Business Unit Information Administrator (in case the entity is a Business Unit)  can 
+delete an existing contact defined in the “Contacts” section of the questionnaire. 
+To remove a contact from the list, the following steps should be performed: 
+1. Access the “Contacts” section of the questionnaire home page. 
+2. Enter Edit mode. 
+ 
+3. For each existing contact it is possible to modify data (  icon) or to remove it from the 
+list (  icon).  
+ 
+ 
+ 
+4. Click on the  icon. 
+5. Click Save in the Contact section of the questionnaire. 
+ 
+As soon as the data have been successfully saved, the deleted user: 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 45/52 
+ 
+• Is no longer available in the list. 
+• No longer  has access to all the esa -star applications , as the account has been 
+disabled. 
+ 
+2.12. How to reactivate an expired user account for an existing contact  
+In order to improve the lifecycle management of user identities and to reduce the exposure to 
+security incidents, ESA will implement the rule  below, which is applicable to user accounts 
+enabled to access ESA Corporate Applications in compliance with the esait Password 
+Management Policy: 
+• Any ESA Corporate Account that has not been used for more than one year to access 
+any ESA system service will be permanently deactivated. 
+ 
+The ESA Corporate Account and Single-Sign-On system is configured to send reminder emails 
+automatically to the address associated with the user account, informing the user of  the 
+expiration deadline and the actions needed to keep the account active. 
+The ESA Corporate Authentication account status is visible in the esa-star Registration Contact 
+section as shown below. 
+ 
+As you can see, the Account Status  column indicates the status of each ESA Corporate 
+Authentication user account: 
+• Active: the user account is enabled, and the user can log in to ESA Corporate 
+Applications granted to him/her. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 46/52 
+ 
+• Inactive: the user account is disabled and log ging in to ESA Corporate Applications is 
+prevented. 
+For inactive user accounts, the disabled username is removed from the relevant contact 
+information, but the EIA or EIA Deputies are able to reactivate the contact by using the following 
+functions available only to them in the Contact section: 
+• Re-activate button: available directly in the list for each inactive user account . Only 
+allows the specific user account to be re-enabled. 
+• Re-activate All button: available in the toolbar at the bottom of the list. Allows all inactive 
+user accounts to be reactivated in one go. 
+ 
+ 
+In both cases, after clicking on the button a pop-up appears to confirm the required action: 
+ 
+By clicking on Ok, the following operations are carried out: 
+• A new ESA Corporate Authentication account is created for the relevant contact(s). 
+The account will be automatically assigned the same roles as those before 
+deactivation. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 47/52 
+ 
+• The new user accounts will be propagated to the other esa-star modules and esa-p (if 
+needed). 
+Once the above operations are complete, the contacts list in the Contacts section is updated 
+accordingly. 
+ 
+The reactivated contact(s) will be informed of their new username via email by the ESA 
+Corporate Authentication system (as per the current process).  
+Please be aware that when an account is permanently deactivated, all the personal 
+preferences and settings stored at user-account level (e.g. privacy or notifications settings) 
+will be lost and not transferred to the re-enabled account. 
+ 
+If the ESA Corporate Authentication accounts of the EIA and EIA Deputies are all inactive, 
+please contact the esait Service Desk. 
+ 
+3. ESA BIC INCUBATION CONTRACT MANAGEMENT 
+3.1. How to add Incubated Entities to an ESA BIC Contract 
+Adding Incubated Entities falls under the responsibility of the ESA BIC Manager of a Legal 
+Entity defined as ESA BIC. 
+The ESA BIC Manager is a role assigned by the Entity Information Administrator in the 
+Contacts section (see par. 2. 9 for more information about how to create contacts or assign 
+roles in esa-star Registration). 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 48/52 
+ 
+ 
+ 
+The ESA BIC Manager can edit/delete (1) and add (2) the Incubated Entities part of the 
+Incubation Contract by clicking on ‘Incubated Entities List’ in the quick launch menu. 
+ 
+ 
+ 
+There are two possible ways to create the ‘Incubated Entities List’: 
+1) By adding each Entity in the list as follows: 
+• Click on the ‘+’ icon as shown above 
+• In the pop-up window that appears, fill in the mandatory information (marked with *) 
+• Click on the ‘?’ icon (1) for information on each field 
+• Click on ‘Save’ (2) 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 49/52 
+ 
+ 
+ 
+2) By adding multiple Entities at the same time by clicking on the ‘Import in Excel’ icon 
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 50/52 
+ 
+ 
+A pop-up will appear where you can: 
+(1) Download an Excel file showing the required information  
+(2) Upload the Excel file with all the Incubated Entities’ details 
+ 
+Please note that to ensure that the information is loaded into the system correctly, you should 
+fill in the requested information in the Excel file without modifying the columns or titles. 
+ 
+ 
+ 
+Once the Excel file is ready, you can upload it in the relevant section. 
+ 
+As soon as the system uploads all the Incubated Entities, you will receive an email either 
+confirming that the upload has been successful and how many Entities were added, or that the 
+upload was not successful with details on the error.  
+ 
+ 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 51/52 
+ 
+ 
+ 
+If required, you can transfer an Incubated Entity to another ESA BIC Contract and/or to another 
+ESA BIC Name by using the “Transfer” function. 
+ 
+ 
+ 
+A pop-up will appear which is the same as the window for creating an Incubated Entity. Insert 
+the mandatory information (marked with *) . Click on ‘Save’ to transfer the Incubated Entity to 
+the new Incubator Entity. 
+
+ESA UNCLASSIFIED – For ESA Official Use Only 
+ 
+Page 52/52 
+ 
+Once the entity has been transferred, it will be visible in the list in read -only mode with the 
+status set to “Transferred”. 
+ 
+ 
+It is also possible to transfer an Incubated Entity in the upload Excel file by entering ‘Yes’ in the 
+“To be Transferred” column. 
+ 
+ 

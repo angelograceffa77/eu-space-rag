@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="ro" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ro">
+<!--<![endif]-->
+<head>
+    <link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2019-07-03T17:11:48/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2019-07-03T17:11:48/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2019-07-03T17:11:48/font-awesome/css/font-awesome.min.css" />
+
+  <meta charset="utf-8" />
+  
+  <meta name="generator" content="ckan 2.8.3" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bine ai venit - data.gov.ro</title>
+
+  
+  
+    <link rel="shortcut icon" href="/base/images/ckan.ico" />
+  
+    
+        <link rel="alternate" type="text/n3" href="https://data.gov.ro/catalog.n3"/>
+        <link rel="alternate" type="text/ttl" href="https://data.gov.ro/catalog.ttl"/>
+        <link rel="alternate" type="application/rdf+xml" href="https://data.gov.ro/catalog.xml"/>
+        <link rel="alternate" type="application/ld+json" href="https://data.gov.ro/catalog.jsonld"/>
+    
+
+
+  
+  <!-- WEB FONTS : use %7C instead of | (pipe) -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Titillium+Web&display=swap" rel="stylesheet">
+    <!-- <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+    rel="stylesheet" type="text/css" /> -->
+  <!-- <link rel="stylesheet" href="/base/css/custom.css" />
+  <link rel="stylesheet" href="/assets/css/datagovro_theme.css" /> -->  
+  <!-- REVOLUTION SLIDER -->
+  <link href="/assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />  
+  <!-- THEME CSS -->
+  <link href="/assets/css/essentials.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/layout.css" rel="stylesheet" type="text/css" />  
+  <!-- PAGE LEVEL SCRIPTS -->
+  <link href="/assets/css/color_scheme/darkblue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+  <!-- Custom style -->
+  <link href="/assets/css/datagovro.css" rel="stylesheet" type="text/css" />  
+  <link href="/assets/css/header-1.css" rel="stylesheet" type="text/css" />
+  
+
+
+
+  
+  
+  
+  <style>
+    {
+        {
+        g.site_custom_css | safe
+      }
+    }
+  </style>
+  
+  </head>
+
+  
+  <body class="smoothscroll enable-animation"  data-site-root="https://data.gov.ro/"
+    data-locale-root="https://data.gov.ro/" >
+    <div id="wrapper">
+    
+<div class="hide"><a href="#content">Mergi la conținut</a></div>
+
+
+
+ 
+    
+    <div id="topBar">
+        <div class="container">
+             
+            
+
+            <ul class="top-links list-inline pull-right">
+                
+                <li><a href="/user/login">Autentificare</a></li>
+                
+                <li><a class="sub" href="/user/register">Înregistrare</a></li>
+                 
+            </ul>
+            <ul class="top-links list-inline">
+                <li class="hidden-xs"><a href="/contact">CONTACT</a></li>
+                
+
+<li>
+    
+    
+    <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><img class="flag-lang" src="/assets/images/flags/ro.png" width="16" height="11" alt="lang" /> română</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="dropdown-langs dropdown-menu">
+        
+        <li><a tabindex="-1" href="/ro/"><img class="flag-lang" src="/assets/images/flags/ro.png" width="16" height="11" alt="lang" /> română</a></li>
+        <li class="divider"></li>
+        
+        <li><a tabindex="-1" href="/en/"><img class="flag-lang" src="/assets/images/flags/en.png" width="16" height="11" alt="lang" /> English</a></li>
+        <li class="divider"></li>
+        
+        <li><a tabindex="-1" href="/it/"><img class="flag-lang" src="/assets/images/flags/it.png" width="16" height="11" alt="lang" /> italiano</a></li>
+        <li class="divider"></li>
+        
+        <li><a tabindex="-1" href="/fr/"><img class="flag-lang" src="/assets/images/flags/fr.png" width="16" height="11" alt="lang" /> français</a></li>
+        <li class="divider"></li>
+        
+        <li><a tabindex="-1" href="/es/"><img class="flag-lang" src="/assets/images/flags/es.png" width="16" height="11" alt="lang" /> español</a></li>
+        <li class="divider"></li>
+        
+        <li><a tabindex="-1" href="/de/"><img class="flag-lang" src="/assets/images/flags/de.png" width="16" height="11" alt="lang" /> Deutsch</a></li>
+        <li class="divider"></li>
+        
+    </ul>
+</li>
+            </ul>
+             
+            
+        </div>
+    </div>
+    
+    <div id="header" class="sticky shadow-after-3 clearfix">
+          
+        <!-- TOP NAV -->
+        <header id="topNav">
+            <div class="container">
+                <!-- Mobile Menu Button -->
+                <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- BUTTONS -->
+                <ul class="pull-right nav nav-pills nav-second-main">
+                
+                    <!-- SEARCH -->
+                    
+                    <li class="search">
+                        <a href="javascript:;">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <div class="search-box">
+                            <form action="/dataset" method="get">
+                                <div class="input-group">
+                                    <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="Caută" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="submit">Caută</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    
+                
+                </ul>
+                <!-- /BUTTONS -->
+                <!-- Logo -->
+                <a class="logo pull-left" href="/">
+                    <!-- <img src="/uploads/admin/data-gov-ro-logo.png" alt="" /> -->
+                    <img src="/assets/images/gov/gov3.png" alt="" />
+                </a>
+
+                <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+                    
+                    <nav class="nav-main">
+                        <ul id="topMain" class="nav nav-pills nav-main">
+                            <!-- ('group_index', _('Groups')|upper), -->
+                            <li><a href="/dataset">SETURI DE DATE</a></li><li><a href="/organization">INSTITUȚII</a></li><li><a href="/pages/hvds">HVDs</a></li>
+                            <li><a href="/blog">NOUTĂȚI</a></li>
+                            <!-- <li><a href="/blog">Noutăți</a></li> -->
+                            <li><a href="/showcase">APLICAȚII</a></li>
+                            <li><a href="/pages/resources">RESURSE</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle fa fa-bars" href="#"></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/pages/publish"><i class="fa fa-bullhorn"></i> GHID DE PUBLICARE</a></li>
+                                    <li><a href="/pages/reutilizare"><i class="ico-category et-beaker"></i> REUTILIZARE</a></li>
+                                    <li><a href="/pages/developers"><i class="ico-category et-heart"></i> DEZVOLTATORI</a></li>
+                                    <li><a href="/pages/solicitare-date"><i class="fa fa-edit"></i> SOLICITĂRI DATE</a></li>
+                                    <li><a href="/pages/licence"><i class="fa fa-trophy"></i> LICENȚĂ</a></li>
+                                    <!-- <li><a href="/base/images/logoinst/OGL-ROU-1.0.pdf" target="_blank"><i class="fa fa-trophy"></i> LICENȚĂ</a></li> -->
+                                    <li><a href="/stats"><i class="fa fa-bar-chart"></i> STATISTICI</a></li>
+                                    <li><a href="/contact"><i class="ico-category et-map-pin"></i> CONTACT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+  <!-- <div class="homepage layout-3"> -->
+    <div class="container">
+      
+            <div class="flash-messages">
+                
+                
+                
+            </div>
+            
+    </div>
+    
+      
+
+
+
+
+<section class="padding-xlg" style="background-image: url('/assets/images/gov/wall5.jpg');">
+    <div class="container">
+
+        <header class="text-center margin-bottom-40">
+            <h1 class="weight-300" style="color:#f5f5f5">Start căutare în DATA.GOV.RO</h1>
+            
+            <h2 class="weight-300 letter-spacing-1 size-13"><span>Caută în mai mult de 1700 de seturi de date</span></h2>
+        </header>
+
+        <form class="clearfix well well-sm search-big nomargin" method="get" action="/dataset">
+            <!-- <h3 class="heading">Caută date</h3> -->
+
+            <!-- <div class="search-input form-group search-giant">
+                <input aria-label="Caută seturi de date" id="field-main-search" type="text" class="form-control" name="q" value="" autocomplete="off" placeholder="Ex. mediu" />
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                    <span class="sr-only">Caută</span>
+                </button>
+            </div> -->
+
+            <div class="input-group">
+            
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default input-lg dropdown-toggle noborder-right" data-toggle="dropdown">
+                        Toate Grupurile <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="active">
+                            <a href="#"><i class="fa fa-check"></i> Toate Grupurile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="/group/finante">Economie și Finanțe</a>
+                        </li>
+                        <li>
+                            <a href="/group/agricultura-silvicultura-si-pescuit">Agricultura</a>
+                        </li>
+                        <li>
+                            <a href="/group/drept">Justiție</a>
+                        </li>
+                        <li>
+                            <a href="/group/nomenclatoare">Nomenclatoare</a>
+                        </li>
+                        <li>
+                            <a href="/group/transport">Transport</a>
+                        </li>
+                        <li>
+                            <a href="/group/poitica">Guvernare</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <input name="q" id="field-main-search" class="form-control input-lg" type="text" placeholder="Caută în toate seturile de date ...">
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default input-lg noborder-left">
+                        <i class="fa fa-search fa-lg nopadding"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        <!-- TAGS -->
+        <div class="margin-top-10">
+            
+            <a class="tag_under_search" href="/dataset?tags=plati">
+                <span class="txt">plati</span>
+                <span class="num">466</span>
+            </a>
+            
+            <a class="tag_under_search" href="/dataset?tags=refugia%C8%9Bi">
+                <span class="txt">refugiați</span>
+                <span class="num">392</span>
+            </a>
+            
+            <a class="tag_under_search" href="/dataset?tags=pompierii">
+                <span class="txt">pompierii</span>
+                <span class="num">280</span>
+            </a>
+            
+            <a class="tag_under_search" href="/dataset?tags=anofm">
+                <span class="txt">anofm</span>
+                <span class="num">177</span>
+            </a>
+            
+            <a class="tag_under_search" href="/dataset?tags=pompieri">
+                <span class="txt">pompieri</span>
+                <span class="num">176</span>
+            </a>
+            
+        </div>
+
+
+    </div>
+</section>
+<!-- /TAGS -->
+
+
+
+
+<!-- /INFO BAR -->
+<section class="info-bar info-bar-clean">
+    <div class="row countTo-sm text-center">
+
+        <div class="col-xs-6 col-sm-5th">
+            <span class="countTo" data-speed="3000" style="color:#59BA41">5259</span>
+            <h4>SETURI DE DATE</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-5th">
+            <span class="countTo" data-speed="3000" style="color:#774F38">40582</span>
+            <h4>FIȘIERE CORELATE</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-5th">
+            <span class="countTo" data-speed="3000" style="color:#C02942"><span>181</span></span>
+            <h4>INSTITUȚII</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-5th">
+            <span class="countTo" data-speed="3000" style="color:#C02942"><span>14</span></span>
+            <h4>GRUPURI</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-5th">
+            <span class="countTo" data-speed="3000" style="color:#1693A5">18647</span>
+            <h4>ADRESE DE LEGĂTURĂ EXTERNE</h4>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- 
+			CALLOUT
+			FULLWIDTH: OUTSIDE OF <section> 
+
+				Available Classes:
+				alert-transparent
+				alert-default
+				alert-info
+				alert-warning
+				alert-danger
+				alert-success
+				alert-dark
+				
+				bordered-bottom
+				bordered-top
+			-->
+<div class="alert alert-info bordered-bottom nomargin">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-9 col-sm-12">
+                <!-- left text -->
+                <h3>Solicită <span><strong>Seturi de Date</strong></span></h3>
+                <p class="weight-300 size-20 nomargin-bottom">
+                    Sigur există date pe care le-ai dori în Portal.
+                </p>
+            </div><!-- /left text -->
+
+            <div class="col-md-3 col-sm-12 text-right">
+                <!-- right btn -->
+                <a href="/datarequest" rel="nofollow" class="btn btn-info btn-lg margin-top-10"><i class="fa fa-edit"></i> SOLICITĂ DATE </a>
+            </div><!-- /right btn -->
+
+        </div>
+
+    </div>
+</div>
+<!-- /CALLOUT -->
+
+
+
+
+<!-- GROUPS -->
+<section class="alternate padding-xs">
+    <div class="container">
+        <header class="text-center margin-bottom-40">
+            <h1 class="weight-300">DATA.GOV.RO</h1>
+            <h2 class="weight-300 letter-spacing-1 size-13"><span>PORTALUL SETURILOR DE DATE DESCHISE</span>
+            </h2>
+        </header>
+
+        <div class="text-center">
+            <p class="lead size-16">
+                Punct central de acces pentru seturile de date deschise livrate de autoritățile și instituțiile administrației publice, ajutând publicul să găsească, să descarce și să folosească informațiile generate și deținute de structurile administrative.
+            </p>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/finante" data-toggle="tooltip"
+                        data-placement="bottom" title="ECONOMIE ȘI FINANȚE">
+                        <img src="/assets/images/gov/icons/finante.png"
+                            onmouseover="this.src='/assets/images/gov/icons/finante-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/finante.png'" alt="ECONOMIE ȘI FINANȚE"
+                            height="50" />
+                    </a>
+                    <h4>ECONOMIE</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/drept" data-toggle="tooltip"
+                        data-placement="bottom" title="JUSTIȚIE, SISTEM LEGISLATIV ȘI SIGURANȚĂ PUBLICĂ">
+                        <img src="/assets/images/gov/icons/drept.png"
+                            onmouseover="this.src='/assets/images/gov/icons/drept-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/drept.png'" alt="JUSTIȚIE, SISTEM LEGISLATIV ȘI SIGURANȚĂ PUBLICĂ"
+                            height="50" />
+                    </a>
+                    <h4>JUSTIȚIE</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/agricultura-silvicultura-si-pescuit" data-toggle="tooltip"
+                        data-placement="bottom" title="AGRICULTURĂ, SILVICULTURĂ, PESCUIT ȘI PRODUSE ALIMENTARE">
+                        <img src="/assets/images/gov/icons/agricultura-silvicultura-si-pescuit.png"
+                            onmouseover="this.src='/assets/images/gov/icons/agricultura-silvicultura-si-pescuit-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/agricultura-silvicultura-si-pescuit.png'" alt="AGRICULTURĂ, SILVICULTURĂ, PESCUIT ȘI PRODUSE ALIMENTARE"
+                            height="50" />
+                    </a>
+                    <h4>AGRICULTURĂ</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/nomenclatoare" data-toggle="tooltip"
+                        data-placement="bottom" title="NOMENCLATOARE">
+                        <img src="/assets/images/gov/icons/nomenclatoare.png"
+                            onmouseover="this.src='/assets/images/gov/icons/nomenclatoare-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/nomenclatoare.png'" alt="NOMENCLATOARE"
+                            height="50" />
+                    </a>
+                    <h4>NOMENCLATOARE</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/politica" data-toggle="tooltip"
+                        data-placement="bottom" title="GUVERNARE ȘI SECTOR PUBLIC">
+                        <img src="/assets/images/gov/icons/politica.png"
+                            onmouseover="this.src='/assets/images/gov/icons/politica-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/politica.png'" alt="GUVERNARE ȘI SECTOR PUBLIC"
+                            height="50" />
+                    </a>
+                    <h4>GUVERNARE</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/probleme-sociale" data-toggle="tooltip"
+                        data-placement="bottom" title="POPULAȚIE ȘI CONDIȚII SOCIALE">
+                        <img src="/assets/images/gov/icons/probleme-sociale.png"
+                            onmouseover="this.src='/assets/images/gov/icons/probleme-sociale-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/probleme-sociale.png'" alt="POPULAȚIE ȘI CONDIȚII SOCIALE"
+                            height="50" />
+                    </a>
+                    <h4>POPULAȚIE</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/orase-regiuni" data-toggle="tooltip"
+                        data-placement="bottom" title="ORAȘE, REGIUNI, ADMINISTRAȚIE PUBLICĂ LOCALĂ">
+                        <img src="/assets/images/gov/icons/orase-regiuni.png"
+                            onmouseover="this.src='/assets/images/gov/icons/orase-regiuni-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/orase-regiuni.png'" alt="ORAȘE, REGIUNI, ADMINISTRAȚIE PUBLICĂ LOCALĂ"
+                            height="50" />
+                    </a>
+                    <h4>ORAȘE</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/mediu-inconjurator" data-toggle="tooltip"
+                        data-placement="bottom" title="MEDIU ÎNCONJURĂTOR">
+                        <img src="/assets/images/gov/icons/mediu-inconjurator.png"
+                            onmouseover="this.src='/assets/images/gov/icons/mediu-inconjurator-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/mediu-inconjurator.png'" alt="MEDIU ÎNCONJURĂTOR"
+                            height="50" />
+                    </a>
+                    <h4>MEDIU</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/relatii-internationale" data-toggle="tooltip"
+                        data-placement="bottom" title="RELAȚII INTERNAȚIONALE">
+                        <img src="/assets/images/gov/icons/relatii-internationale.png"
+                            onmouseover="this.src='/assets/images/gov/icons/relatii-internationale-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/relatii-internationale.png'" alt="RELAȚII INTERNAȚIONALE"
+                            height="50" />
+                    </a>
+                    <h4>RELAȚII</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/energie" data-toggle="tooltip"
+                        data-placement="bottom" title="ENERGIE">
+                        <img src="/assets/images/gov/icons/energie.png"
+                            onmouseover="this.src='/assets/images/gov/icons/energie-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/energie.png'" alt="ENERGIE"
+                            height="50" />
+                    </a>
+                    <h4>ENERGIE</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-6">
+                <div class="text-center">
+                    <a href="/group/sanatate" data-toggle="tooltip"
+                        data-placement="bottom" title="SĂNĂTATE">
+                        <img src="/assets/images/gov/icons/sanatate.png"
+                            onmouseover="this.src='/assets/images/gov/icons/sanatate-o.png'"
+                            onmouseout="this.src='/assets/images/gov/icons/sanatate.png'" alt="SĂNĂTATE"
+                            height="50" />
+                    </a>
+                    <h4>SĂNĂTATE</h4>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+<!-- /GROUPS -->
+
+
+
+
+
+
+<section class="padding-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <div class="price-clean">
+                    <h4><i class="fa fa-info"></i> INFO</h4>
+                    <hr />
+                    <p>Link-uri, Documentații, Video</p>
+                    <hr />
+                    <a href="/pages/resources" class="btn btn-3d btn-default">Mai Mult</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3">
+                <div class="price-clean price-clean-popular">
+                    <div class="ribbon">
+                        <div class="ribbon-inner">NOU</div>
+                    </div>
+                    <h4><i class="ico-category et-heart"></i> Programatori</h4>
+                    <hr />
+                    <p>API-uri, Exemple de Cod</p>
+                    <hr />
+                    <a href="/pages/developers" class="btn btn-3d btn-default">Mai Mult</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3">
+                <div class="price-clean price-clean-popular">
+                    <div class="ribbon">
+                        <div class="ribbon-inner">NOU</div>
+                    </div>
+                    <h4><i class="ico-category et-beaker"></i> REUTILIZARE</h4>
+                    <hr />
+                    <p>Reutilizare date publicate</p>
+                    <hr />
+                    <a href="/pages/reutilizare" class="btn btn-3d btn-default">Mai Mult</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3">
+                <div class="price-clean">
+                    <h4><i class="fa fa-trophy"></i> LICENȚĂ</h4>
+                    <hr />
+                    <p>Informații despre Licență</p>
+                    <hr />
+                    <a href="/pages/licence" class="btn btn-3d btn-default">Mai Mult</a>
+                    <!-- <a href="/base/images/logoinst/OGL-ROU-1.0.pdf" target="_blank" class="btn btn-3d btn-default">Mai Mult</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- ARTICLES -->
+<section class="alternate padding-xs">
+    <div class="container">
+        <header class="text-center margin-bottom-40">
+            <h1 class="weight-300">NOUTĂȚI</h1>
+        </header>
+        <div class="row">
+            
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail img-hover">
+                    <a href="/blog/lansare-proiect-portal-date-deschise">
+                        
+                        <img class="img-responsive" src="https://data.gov.ro/uploads/page_images/2026-05-22-065401.447658WhatsApp-Image-2026-05-21-at-14.34.50.jpeg" alt="" />
+                        
+                    </a>
+                    <h5 class="text-left margin-top-20"><a href="/blog/lansare-proiect-portal-date-deschise">LANSAREA PROIECTULUI ”ACCES ÎMBUNĂTĂȚIT ȘI IMPACT EXTINS PRIN MODERNIZAREA ȘI EXTINDEREA FUNCȚIONALITĂȚILOR PORTALULUI NAȚIONAL DE DATE DESCHISE”, COD SMIS 338598</a></h5>
+                    <p class="text-left size-14">&Icirc;n data de 20 mai 2026, orele 09:30&ndash;14:00, a avut loc conferința de lansare a proiectului &bdquo;Acces &icirc;mbunătățit și impact extins prin modernizarea și extinderea...</p>
+                    
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            21 Mai 2026
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail img-hover">
+                    <a href="/blog/conferinta-lansare-proiect">
+                        
+                        <img class="img-responsive" src="https://data.gov.ro/uploads/page_images/2026-05-05-090251.145487Conferinta-lansare-data.gov.ro.png" alt="" />
+                        
+                    </a>
+                    <h5 class="text-left margin-top-20"><a href="/blog/conferinta-lansare-proiect">Conferință lansare proiect ”Acces îmbunătățit și impact extins prin modernizarea și extinderea funcționalităților Portalului Național de Date Deschise”, cod SMIS 338598</a></h5>
+                    <p class="text-left size-14">Secretariatul General al Guvernului organizează &icirc;n data de 20 mai 2026, orele 09:30&ndash;14:00, conferința de lansare a proiectului &bdquo;Acces &icirc;mbunătățit și impact extins...</p>
+                    
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            5 Mai 2026
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail img-hover">
+                    <a href="/blog/evaluarea-romaniei-in-indexul-ocde-ourdata-2025">
+                        
+                        <img class="img-responsive" src="https://data.gov.ro/uploads/page_images/2026-02-19-121257.452015ourdata-index.jpg" alt="" />
+                        
+                    </a>
+                    <h5 class="text-left margin-top-20"><a href="/blog/evaluarea-romaniei-in-indexul-ocde-ourdata-2025">Evaluarea României în Indexul OCDE OURdata 2025</a></h5>
+                    <p class="text-left size-14">&Icirc;n data de 16 februarie 2026, Organizația pentru Cooperare și Dezvoltare Economică (OCDE), prin Comitetul pentru Guvernanță Publică (Public Governance Committee), a lansat un...</p>
+                    
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            19 Februarie 2026
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail img-hover">
+                    <a href="/blog/europa-digitala-date-mai-accesibile-mai-putina-birocratie-inovatie-accelerata">
+                        
+                        <img class="img-responsive" src="https://data.gov.ro/uploads/page_images/2025-12-08-145011.560152Timeline-or-Roadmap-Slide-Presentation-in-Mustard-Black-White-Style-4.jpg" alt="" />
+                        
+                    </a>
+                    <h5 class="text-left margin-top-20"><a href="/blog/europa-digitala-date-mai-accesibile-mai-putina-birocratie-inovatie-accelerata">Europa digitală: date mai accesibile, mai puțină birocrație, inovație accelerată</a></h5>
+                    <p class="text-left size-14">Comisia Europeană a lansat un nou pachet digital menit să transforme modul &icirc;n care companiile europene &icirc;și desfășoară activitatea. De la fabrici la start-up-uri, firmele vor...</p>
+                    
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            4 Decembrie 2025
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+<!-- /ARTICLES -->
+
+
+
+    
+  <!-- </div> -->
+
+<footer class="site-footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-8 footer-links">
+        
+          <ul class="list-unstyled">
+            
+              <li><a href="/about">Despre data.gov.ro</a></li>
+            
+          </ul>
+          <ul class="list-unstyled">
+            
+    <li><a href="/termeni.html">Termeni și Condiții</a></li>
+    <li><a href="/cookie.html">Politică Cookies</a></li>
+    <li><a href="http://docs.ckan.org/en/2.8/api/">API CKAN</a></li>
+    <li><a href="http://www.okfn.org/">Fundația pentru Cunoaștere Deschisă </a></li>
+    <li><a href="https://github.com/govro/">Sursele Libere pe Github</a></li>
+    <li><a href="/stats">Statistici</a></li>
+    <li><a href="/datarequest">Solicitări Seturi de Date</a></li>
+    <li><a href="/datagovro_theme/ga">Statistici ale traficului</a></li>
+    <li><a href="https://data.gov.ro/feeds/dataset.atom" target="_blank">Feeds</a></li>
+
+          </ul>
+        
+      </div>
+      <div class="col-md-4 attribution">
+        
+          <p><strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a></p>
+        
+        
+          
+<form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
+  <label for="field-lang-select">Limbă</label>
+  <select id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+    
+      <option value="/ro/" selected="selected">
+        română
+      </option>
+    
+      <option value="/en/" >
+        English
+      </option>
+    
+      <option value="/it/" >
+        italiano
+      </option>
+    
+      <option value="/fr/" >
+        français
+      </option>
+    
+      <option value="/es/" >
+        español
+      </option>
+    
+      <option value="/de/" >
+        Deutsch
+      </option>
+    
+  </select>
+  <button class="btn btn-default js-hide" type="submit">Go</button>
+</form>
+        
+      </div>
+    </div>
+    
+  </div>
+
+  
+    
+  
+</footer>
+
+
+
+
+
+
+
+    <script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+    <script type="text/javascript" src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+    
+    <script type="text/javascript" src="/assets/js/scripts.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/cookiemonster.js"></script>
+<script src="/cookieconsent.js"></script>
+<script type="text/javascript">
+    window.cookieconsent_options = {
+        "message": "Acest site folosește cookies. Navigând în continuare vă exprimați acordul asupra folosirii cookie-urilor.",
+        "dismiss": "Sunt de acord",
+        "link": "http://data.gov.ro/cookie.html",
+        "theme": "dark-top"
+    };
+</script>
+
+    
+    </div>
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2019-07-03T17:11:48/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2019-07-03T17:11:48/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2019-07-03T17:11:48/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;plugins/jquery.images-loaded.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js;modules/followers-counter.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2019-07-03T17:11:48/tracking.min.js"></script></body>
+
+</html>

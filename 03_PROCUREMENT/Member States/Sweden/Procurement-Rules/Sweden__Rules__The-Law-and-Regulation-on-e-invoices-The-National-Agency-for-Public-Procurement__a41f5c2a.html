@@ -1,0 +1,654 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="robots" content="index, follow">
+	
+
+
+
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/v1.1.2/uc.js"
+        integrity="sha384-YprxiQRFqVuzj9AtKVRN9kRxxFjNMoqly/Za+eqBWINcd9WHwmhKz9fsl+o0Iuft"
+        crossorigin="anonymous"
+        data-culture="EN"
+        type="text/javascript" data-gcm-enabled="false"></script>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-T62Z58L');
+    </script>
+    <!-- End Google Tag Manager -->
+	
+	<script>
+!function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{src: "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js", crossOrigin: "anonymous", cfg: {connectionString: 'InstrumentationKey=7c032545-f4d9-4d58-92df-02612298b510;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/;ApplicationId=3f6c5b22-0cae-46cc-b01d-79ffff4efa68', disableCookiesUsage: false }});
+</script>
+
+
+    <title data-react-helmet="true">The Law and Regulation on e-invoices | The National Agency for Public Procurement</title><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:title" content="The Law and Regulation on e-invoices"/><meta data-react-helmet="true" property="og:description" content="E-commerce and electronic purchasing processes is a prioritised area both in the EU and in Sweden. In Sweden, there are formal requirements in the form of a law, a regulation and various rules that govern the area. Read about what applies to you as a public sector organisation and your suppliers of goods and services."/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="The Law and Regulation on e-invoices"/><meta data-react-helmet="true" name="twitter:description" content="E-commerce and electronic purchasing processes is a prioritised area both in the EU and in Sweden. In Sweden, there are formal requirements in the form of a law, a regulation and various rules that govern the area. Read about what applies to you as a public sector organisation and your suppliers of goods and services."/><meta data-react-helmet="true" name="pageid" content="8880"/><meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=Edge"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/><meta data-react-helmet="true" name="description" content="E-commerce and electronic purchasing processes is a prioritised area both in the EU and in Sweden. In Sweden, there are formal requirements in the form of a law, a regulation and various rules that govern the area. Read about what applies to you as a public sector organisation and your suppliers of goods and services."/><link data-react-helmet="true" rel="alternate" hrefLang="en" href="https://www.upphandlingsmyndigheten.se/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="144x144" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-144x144-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="114x114" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-114x114-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" sizes="72x72" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-72x72-precomposed.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" href="/Areas/Upphandlingsmyndigheten/Assets/ico/apple-touch-icon-57x57-precomposed.png"/><link data-react-helmet="true" rel="shortcut icon" href="/Areas/Upphandlingsmyndigheten/Assets/favicon.ico"/><link data-react-helmet="true" rel="canonical" href="https://www.upphandlingsmyndigheten.se/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/"/>
+
+        <link rel="stylesheet" href="/Areas/Upphandlingsmyndigheten/Assets/static/css/main.d54f584f.css" />
+</head>
+
+<body>
+	
+
+
+
+<script src="/global-assets/react/react.production.min.js"></script>
+<script src="/global-assets/react/react-dom.production.min.js"></script>
+
+<script src="" data-consent-src="https://www.youtube.com/iframe_api"
+    data-category-consent="cookie_cat_marketing"
+    integrity="sha384-Fx5m0JNllZnCO3PqnnBg7wLveKJ1uq3tmW6+9USE6XkgWYtfdcxqu7BIPOH+doxI"
+    crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T62Z58L"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+	
+
+	
+
+
+<script>
+    window.__model = {
+  "content": {
+    "tableOfContents": {
+      "heading": "Content",
+      "isSticky": true,
+      "titles": [
+        {
+          "text": "The Law and Regulation on e-invoices",
+          "targetId": "h-TheLawandRegulationoneinvoices-0",
+          "titles": []
+        },
+        {
+          "text": "Regulation and rules on e-commerce",
+          "targetId": "h-Regulationandrulesonecommerce",
+          "titles": []
+        }
+      ],
+      "modelType": "TableOfContents",
+      "chapters": [
+        "h-TheLawandRegulationoneinvoices-0",
+        "h-Regulationandrulesonecommerce"
+      ]
+    },
+    "text": {
+      "modelType": "Html",
+      "hasContent": true,
+      "fragments": [
+        {
+          "modelType": "RawFragment",
+          "raw": "<p class=\"dg-normal\">The law, regulation and rules on e-invoicing as a result of public procurement affect both public actors and suppliers to public actors. Both the regulation and the e-invoicing rules apply to public authorities under the Government.</p>"
+        },
+        {
+          "modelType": "Chapter",
+          "id": "h-TheLawandRegulationoneinvoices-0",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "The Law and Regulation on e-invoices"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">The Act on electronic invoices resulting from public procurement <em>(2018:1277) (the E-Invoicing Act)</em> applies from 1 April 2019. The Agency for Digital Government (Digg) has since issued a regulation to the e-invoicing law, <em>Regulation on registration in PEPPOL (MDFFS 2019:1) </em>which applies from 1 December 2019. The E-invoicing Act affects both public actors who are to make a procurement and suppliers who have been awarded a contract through procurement.</p>"
+              },
+              {
+                "id": "h-TheEinvoicingAct",
+                "level": 3,
+                "modelType": "HeadingFragment",
+                "raw": "The E-invoicing Act"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">The E-invoicing Act applies to invoices issued as a result of public procurement in accordance with the following laws and applies to procurements commenced from 1 April 2019.</p><ul class=\" env-text-list dg-normal\">\n<li>Public Procurement Act, LOU, (2016:1145)</li>\n<li>Act on Procurement in the Utilities Sectors, LUF, (2016:1146)</li>\n<li>Act on Procurement in the Field of Defence and Security, LUFS, (2011:1029)</li>\n<li>Act on Procurement of Concessions, LUK, (2016:1147).</li>\n</ul>"
+              },
+              {
+                "id": "h-Whatdoesthelawstate",
+                "level": 4,
+                "modelType": "HeadingFragment",
+                "raw": "What does the law state?"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">Invoices issued by a supplier to an authority or entity shall be electronic. The format of the invoices shall comply with the European standard for electronic invoicing referred to by the European Commission in the Official Journal of the European Union. However, the parties may agree on a different standard for e-invoices. There are also some exceptions where an invoice does not need to be sent electronically and these are mentioned below.</p>"
+              },
+              {
+                "id": "h-Diggrecommendationsoneinvoices",
+                "level": 4,
+                "modelType": "HeadingFragment",
+                "raw": "The National Agency for Public Procurement recommendations on e-invoices"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">In order to comply with the legal requirements of the European standard for e-invoicing, The National Agency for Public Procurement recommends that you use the implementation of the European standard, Peppol BIS Billing 3.</p><p class=\"dg-normal\">The National Agency for Public Procurement also recommends using the Peppol network for sending and receiving invoices. Invoices should not be converted to other formats as this may result in the loss of information.</p>"
+              },
+              {
+                "id": "h-ExemptionsfromtheeInvoicingAct",
+                "level": 4,
+                "modelType": "HeadingFragment",
+                "raw": "Exemptions from the e-Invoicing Act"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">There are some cases where an invoice does not need to be sent electronically:</p><ul class=\" env-text-list dg-normal\">\n<li>If the procurement has started before the law came into force on 1 April 2019, suppliers can continue to send invoices in the agreed format.</li>\n<li>When e-invoicing would entail a risk of disclosing information covered by confidentiality or otherwise jeopardising security-sensitive activities. It is up to the procuring entity to decide whether such a risk exists for specific invoice flows.</li>\n<li>When payment is made in cash or by payment card. The Act thus does not impose any additional invoicing obligation for financial services beyond the provisions of the Value Added Tax Act (2023:200).</li>\n</ul>"
+              },
+              {
+                "id": "h-Whatqualifiesasaneinvoice",
+                "level": 4,
+                "modelType": "HeadingFragment",
+                "raw": "What qualifies as an e-invoice"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">According to the E-invoicing Act, an e-invoice is an invoice that is issued, transmitted and received in a structured electronic format that allows it to be processed automatically and electronically.</p><p class=\"dg-normal\">Please note that a PDF invoice does not fulfil these requirements and therefore does not count as an e-invoice under the E-Invoicing Act.</p>"
+              },
+              {
+                "id": "h-Whatmighthappenifthelawisnotfollowed",
+                "level": 4,
+                "modelType": "HeadingFragment",
+                "raw": "What might happen if the law is not followed"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">If a supplier does not send e-invoices or sends incorrect e-invoices, the supplier might be reported to The National Agency for Public Procurement by the public buyer. The National Agency for Public Procurement will then conduct an investigation. The supplier might be ordered to send an e-invoice and this can also be linked to a fine. However, we always suggest that the parties first engage in a dialogue between themselves before reporting.</p>"
+              },
+              {
+                "id": "h-RegulationtotheEInvoicingAct",
+                "level": 3,
+                "modelType": "HeadingFragment",
+                "raw": "Regulation to the E-Invoicing Act"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">The regulation on registration in Peppol (MDFFS2019:1) states that contracting authorities and entities must be registered in Peppol's register function in order to receive electronic invoices. The purpose of the regulation is to facilitate the transmission of invoices, as contracting authorities can easily be found and invoiced electronically. Digg's regulations to the E-invoicing Act apply from 1 December 2019.</p>"
+              }
+            ]
+          },
+          "isEmpty": false
+        },
+        {
+          "modelType": "Chapter",
+          "id": "h-Regulationandrulesonecommerce",
+          "text": {
+            "modelType": "Html",
+            "hasContent": true,
+            "fragments": [
+              {
+                "id": "",
+                "level": 2,
+                "modelType": "HeadingFragment",
+                "raw": "Regulation and rules on e-commerce"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">Government agencies must comply with the <em>Ordinance (2003:770) on the Electronic Exchange of information by Government Agencies.</em> Digg has developed rules linked to the regulation, <em>Regulations on the handling of orders and standards in electronic information exchange (MDFFS 2021:1).</em></p>"
+              },
+              {
+                "id": "h-Regulation",
+                "level": 3,
+                "modelType": "HeadingFragment",
+                "raw": "Regulation"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">Authorities under the regulation must promote the development of secure and efficient electronic information exchange in public administration in their activities. Authorities with more than 50 employees must handle their outgoing orders for goods and services electronically. However, there are some exceptions to the regulation.</p>"
+              },
+              {
+                "id": "h-Rules",
+                "level": 3,
+                "modelType": "HeadingFragment",
+                "raw": "Rules"
+              },
+              {
+                "modelType": "RawFragment",
+                "raw": "<p class=\"dg-normal\">The associated rules contain provisions that apply to government agencies with more than 50 employees. The regulations apply to the electronic handling of outgoing orders for goods and services and standards or similar requirements that apply to electronic information exchange in connection with ordering and delivery.</p><p class=\"dg-normal\">The rules also contain provisions on standards or similar requirements that are common to all government agencies, regardless of the number of employees, regarding electronic information exchange regarding invoicing of goods and services.</p>"
+              }
+            ]
+          },
+          "isEmpty": false
+        }
+      ]
+    },
+    "contentArea": [],
+    "relatedLinks": [],
+    "feedbackModel": null,
+    "preamble": "E-commerce and electronic purchasing processes is a prioritised area both in the EU and in Sweden. In Sweden, there are formal requirements in the form of a law, a regulation and various rules that govern the area. Read about what applies to you as a public sector organisation and your suppliers of goods and services.",
+    "heading": "The Law and Regulation on e-invoices",
+    "id": "8880",
+    "url": "/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/",
+    "isEditable": false,
+    "modelType": "UpphandlingsmyndighetenArticlePage"
+  },
+  "kundoChatScript": {
+    "script": null,
+    "kundoRenderHardCodedJavaScript": true
+  },
+  "alertBar": {
+    "alerts": []
+  },
+  "contact": {
+    "addresses": {
+      "first": {
+        "name": "Visiting Address",
+        "street": "Svetsarvägen 10",
+        "zipCode": "171 41 ",
+        "city": "Solna"
+      },
+      "second": {
+        "name": "Postal Address",
+        "street": "Upphandlingsmyndigheten",
+        "zipCode": "Box 1194, 171 23 ",
+        "city": "Solna"
+      }
+    },
+    "channels": {
+      "heading": "Contact",
+      "items": [
+        {
+          "name": "Telephone",
+          "value": "08-586 217 01",
+          "type": "phone"
+        },
+        {
+          "name": "Telephone hours",
+          "value": "Mon-Fri 9-15",
+          "type": "phone"
+        }
+      ]
+    },
+    "social": [
+      {
+        "name": "Twitter",
+        "value": "https://twitter.com/uhmynd",
+        "type": "twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "value": "https://www.linkedin.com/company/upphandlingsmyndigheten",
+        "type": "linkedin"
+      },
+      {
+        "name": "Facebook",
+        "value": "https://www.facebook.com/upphandlingsmyndigheten",
+        "type": "facebook"
+      }
+    ]
+  },
+  "search": {
+    "searchPageUrl": "/en/search/",
+    "apiUrl": "/api/en/upphandlingsmyndigheten/search",
+    "numberOfHitsPerPage": 10,
+    "placeholderText": "Search site",
+    "performSearchText": "Searching...",
+    "showMoreResultsText": "Show more"
+  },
+  "logotype": {
+    "url": "/en/",
+    "alt": "Start",
+    "logo": null
+  },
+  "popularPages": {
+    "first": {
+      "heading": "Quick links",
+      "links": [
+        {
+          "href": "/en/public-procurement/",
+          "text": "Public Procurement",
+          "title": "Public Procurement",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/statsstod/state-aid-guidance/",
+          "text": "State Aid guidance",
+          "title": "State Aid guidance",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/the-act-on-systems-of-choice-lov/",
+          "text": "The Act on Systems of Choice (LOV)",
+          "title": "The Act on Systems of Choice (LOV)",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/conducting-business-with-public-sector-stakeholders/",
+          "text": "Conducting business with public sector stakeholders",
+          "title": "Conducting business with public sector stakeholders",
+          "target": null,
+          "external": false
+        }
+      ]
+    },
+    "second": {
+      "heading": "Quick links",
+      "links": [
+        {
+          "href": "/en/sustainable-public-procurement/",
+          "text": "Sustainable public procurement",
+          "title": "Sustainable public procurement",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/criteria/",
+          "text": "Our sustainability criteria",
+          "title": "Our sustainability criteria",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/about-us/",
+          "text": "About us",
+          "title": "About us",
+          "target": null,
+          "external": false
+        },
+        {
+          "href": "/en/about-us/contact-us/",
+          "text": "Contact us",
+          "title": "Contact us",
+          "target": null,
+          "external": false
+        }
+      ]
+    }
+  },
+  "quickLinksBar": {
+    "links": [
+      {
+        "modelType": "LanguageSelector"
+      }
+    ]
+  },
+  "quickLinksFooter": {
+    "quickLinks": []
+  },
+  "skipToMainContent": {
+    "text": null
+  },
+  "theme": {
+    "color": "default"
+  },
+  "webAnalytics": {
+    "googleTagManagerCode": "GTM-T62Z58L"
+  },
+  "breadcrumbs": {
+    "breadcrumbs": [
+      {
+        "url": "/en/",
+        "text": "Start",
+        "isActive": false
+      },
+      {
+        "url": "/en/public-procurement/e-commerce/",
+        "text": "E-commerce",
+        "isActive": false
+      },
+      {
+        "url": "/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/",
+        "text": "The Law and Regulation on e-invoices",
+        "isActive": true
+      }
+    ]
+  },
+  "languages": {
+    "culture": "en",
+    "languages": [
+      {
+        "id": "sv",
+        "name": "Swedish",
+        "text": "På svenska",
+        "url": "/",
+        "isExactMatch": false
+      }
+    ]
+  },
+  "metadata": {
+    "title": "The Law and Regulation on e-invoices | The National Agency for Public Procurement",
+    "description": "E-commerce and electronic purchasing processes is a prioritised area both in the EU and in Sweden. In Sweden, there are formal requirements in the form of a law, a regulation and various rules that govern the area. Read about what applies to you as a public sector organisation and your suppliers of goods and services.",
+    "canonicalUrl": "https://www.upphandlingsmyndigheten.se/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/",
+    "contentId": "8880",
+    "noIndex": false,
+    "twitter": {
+      "card": null,
+      "title": "The Law and Regulation on e-invoices",
+      "description": "E-commerce and electronic purchasing processes is a prioritised area both in the EU and in Sweden. In Sweden, there are formal requirements in the form of a law, a regulation and various rules that govern the area. Read about what applies to you as a public sector organisation and your suppliers of goods and services.",
+      "image": null
+    },
+    "openGraph": {
+      "title": "The Law and Regulation on e-invoices",
+      "description": "E-commerce and electronic purchasing processes is a prioritised area both in the EU and in Sweden. In Sweden, there are formal requirements in the form of a law, a regulation and various rules that govern the area. Read about what applies to you as a public sector organisation and your suppliers of goods and services.",
+      "image": null
+    },
+    "languages": [
+      {
+        "culture": "en",
+        "url": "https://www.upphandlingsmyndigheten.se/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/"
+      }
+    ],
+    "administrativeArea": "Inget"
+  },
+  "navigation": {
+    "items": [
+      {
+        "url": "/en/public-procurement/",
+        "text": "Public Procurement",
+        "title": "Public Procurement",
+        "isOpen": false,
+        "isActive": false,
+        "items": [
+          {
+            "url": "/en/public-procurement/about-public-procurement/",
+            "text": "About Public Procurement",
+            "title": "About Public Procurement",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/sustainable-public-procurement/",
+            "text": "Sustainable Procurement",
+            "title": "Sustainable Procurement",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/criteria/",
+            "text": "Find sustainability criteria",
+            "title": "Find sustainability criteria",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/innovation-in-procurement/",
+            "text": "Innovation in procurement",
+            "title": "Innovation in procurement",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/public-procurement/e-commerce/",
+            "text": "E-commerce",
+            "title": "E-commerce",
+            "isOpen": false,
+            "isActive": false,
+            "items": [
+              {
+                "url": "/en/public-procurement/e-commerce/e-invoicing-for-suppliers-to-the-public-sector/",
+                "text": "E-invoicing for suppliers to the public sector",
+                "title": "E-invoicing for suppliers to the public sector",
+                "isOpen": false,
+                "isActive": false,
+                "items": []
+              },
+              {
+                "url": "/en/public-procurement/e-commerce/mandatory-e-invoicing-in-the-public-sector/",
+                "text": "Mandatory e-invoicing in the public sector",
+                "title": "Mandatory e-invoicing in the public sector",
+                "isOpen": false,
+                "isActive": false,
+                "items": []
+              },
+              {
+                "url": "/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/",
+                "text": "The Law and Regulation on e-invoices",
+                "title": "The Law and Regulation on e-invoices",
+                "isOpen": false,
+                "isActive": false,
+                "items": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "url": "/en/conducting-business-with-public-sector-stakeholders/",
+        "text": "Conducting business with public sector stakeholders",
+        "title": "Conducting business with public sector stakeholders",
+        "isOpen": false,
+        "isActive": false,
+        "items": []
+      },
+      {
+        "url": "/en/statsstod/state-aid-guidance/",
+        "text": "State Aid guidance",
+        "title": "State Aid guidance",
+        "isOpen": false,
+        "isActive": false,
+        "items": []
+      },
+      {
+        "url": "/en/the-act-on-systems-of-choice-lov/",
+        "text": "The Act on Systems of Choice (LOV)",
+        "title": "The Act on Systems of Choice (LOV)",
+        "isOpen": false,
+        "isActive": false,
+        "items": []
+      },
+      {
+        "url": "/en/about-us/",
+        "text": "About us",
+        "title": "About us",
+        "isOpen": false,
+        "isActive": false,
+        "items": [
+          {
+            "url": "/en/about-us/our-mission/",
+            "text": "Our mission",
+            "title": "Our mission",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          },
+          {
+            "url": "/en/about-us/contact-us/",
+            "text": "Contact us",
+            "title": "Contact us",
+            "isOpen": false,
+            "isActive": false,
+            "items": []
+          }
+        ]
+      }
+    ],
+    "accessibilityDescription": null,
+    "openNavigationItemLabel": "Open",
+    "closeNavigationItemLabel": "Close",
+    "navigationButtonLabel": "Menu"
+  },
+  "epi": {
+    "isEditable": true,
+    "inEditMode": false,
+    "inPreviewMode": false,
+    "displayChannels": [],
+    "fullRefreshProperties": [],
+    "version": "1.0.24535.0"
+  },
+  "localization": {
+    "culture": "en",
+    "translations": {
+      "/frontend/components/signIn/title": "Logga in",
+      "/frontend/components/signIn/orWith": "eller logga in med",
+      "/frontend/components/applicationCookie/username/label": "Användarnamn",
+      "/frontend/components/applicationCookie/username/placeholder": "Användarnamn",
+      "/frontend/components/applicationCookie/password/label": "Lösenord",
+      "/frontend/components/applicationCookie/password/placeholder": "Lösenord",
+      "/frontend/components/files/actions/heading": "Ladda ner fil",
+      "/frontend/components/headerMenu/menu": "Meny",
+      "/frontend/components/headerMenu/search": "Sök",
+      "/frontend/components/searchResults/heading": "Sökresultat",
+      "/frontend/components/searchBar/actions/search": "Sök",
+      "/frontend/actions/signIn": "Logga in",
+      "/frontend/actions/download": "Ladda ner"
+    }
+  },
+  "react": {
+    "library": "demoMaster",
+    "siteBaseUrl": "www.upphandlingsmyndigheten.se",
+    "clientOnly": false,
+    "serverOnly": false,
+    "containerId": "App",
+    "apiUrl": "/",
+    "apiEditUrl": "/api/content",
+    "renderingState": 1
+  },
+  "manifest": {
+    "entrypoints": [
+      "/Areas/Upphandlingsmyndigheten/Assets/static/js/vendors~main.9af48341.chunk.js",
+      "/Areas/Upphandlingsmyndigheten/Assets/static/css/main.d54f584f.css",
+      "/Areas/Upphandlingsmyndigheten/Assets/client/client-main.4cd102c3.js"
+    ],
+    "clientCss": "",
+    "favIcon": ""
+  }
+}
+</script>
+
+<div id="App"><div tabindex="-1" style="outline:none"><div class=""><header data-cid="PageHeader"><nav data-cid="QuickLinksBar" class="relative bg-greyLighter py-3 overflow-hidden border-b border-greyLight quick-links-bar"><div class="mx-auto max-w-site"><div class="pl-4 lg:pl-6 flex grid-item -ml-4"><div class="mx-4 w-full"><ul class="text-p flex justify-end"><li class="ml-6"><a href="/" id="sv" class="flex items-center text-teal hover:underline" aria-label="Byt språk till svenska">På svenska</a></li></ul></div></div></div></nav><div class="pt-2 md:py-3 border-b-2 border-greyLight"><div class="mx-auto max-w-site"><div class="pl-4 lg:pl-6 flex grid-item -ml-4"><div class="mx-4 w-full"><div class="flex justify-between items-center"><a href="/en/" class=""><img class="h-10 md:h-16 w-auto" src="/assets/static/media/uhm.a8e48fa7.svg" alt="Upphandlingsmyndighetens logotyp som leder till startsidan" height="64" width="178"/></a><div class="flex items-center"><div class="hidden ml-auto searchwrapper md:block"><div class="relative searchfield__wrapper" data-cid="SearchField"><form method="post" action="" encType="application/x-www-form-urlencoded" novalidate=""><label class="sr-only" for="searchfieldDesktop">Search site</label><div class="relative"><input type="text" class="pl-10 text-p leading-4 h-10 w-full px-3 py-1 border-2 border-greySemiLight focus:border-blue rounded transition-all focus:outline-none disabled:text-greyLight disabled:cursor-not-allowed placeholder-greyDarker placeholder-opacity-100" placeholder="Search site" aria-invalid="true" value="" name="searchfieldDesktop" id="searchfieldDesktop" aria-describedby="formsearchfieldDesktop__desc" validation="false" autoComplete="off" role="combobox" aria-expanded="false" aria-controls="searchfield-dropdown-224"/></div><button class="absolute top-0 left-0 w-auto mt-2 ml-3" type="submit" tabindex="0" data-cid="SearchFieldSubmit"><span class="sr-only" data-cid="Text">Searching...</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button></form></div></div><div class="ml-auto md:hidden"><button type="button" aria-controls="mobile-search-11449" aria-expanded="false" aria-label="Öppna sök" data-cid="MobileSearch"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-black inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><div id="mobile-search-11449" class="absolute top-0 left-0 w-full min-h-full overflow-y-scroll z-50 page-overlay animate-fade-in" hidden=""><div class="flex p-4 bg-white mobilesearch__searchfield-wrapper"><div class="relative searchfield__wrapper" data-cid="SearchField"><form method="post" action="" encType="application/x-www-form-urlencoded" novalidate=""><label class="sr-only" for="searchfieldMobile">Search site</label><div class="relative"><input type="text" class="pl-10 text-p leading-4 h-10 w-full px-3 py-1 border-2 border-greySemiLight focus:border-blue rounded transition-all focus:outline-none disabled:text-greyLight disabled:cursor-not-allowed placeholder-greyDarker placeholder-opacity-100" placeholder="Search site" aria-invalid="true" value="" name="searchfieldMobile" id="searchfieldMobile" aria-describedby="formsearchfieldMobile__desc" validation="false" autoComplete="off" role="combobox" aria-expanded="false" aria-controls="searchfield-dropdown-225"/></div><button class="absolute top-0 left-0 w-auto mt-2 ml-3" type="submit" tabindex="0" data-cid="SearchFieldSubmit"><span class="sr-only" data-cid="Text">Searching...</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" style="fill:none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button></form></div><button type="button" class="mx-4" aria-controls="mobile-search-11449" aria-expanded="false" aria-label="Stäng sökfält"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal inline-block align-middle transition-all duration-300 transform fill-current w-6 h-6 rotate-0" data-cid="Icon" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button></div></div></div><div class="ml-4"><div><button type="button" aria-label="Open null menu" aria-controls="mobile-menu-11450" aria-expanded="false" data-cid="MobileMenu"><span class="mr-2 pl-1 hidden md:inline-block">Menu</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-black inline-block align-middle transition-all duration-300 transform fill-current w-5 h-5 rotate-0"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button><div id="mobile-menu-11450" hidden="" class="right-0 mt-4 md:mt-10 absolute w-full z-50 bg-transparent animate-fade-in"><div class="mx-auto max-w-site"><div class="flex grid-item"><div class="md:flex flex-row-reverse w-full"><nav class="w-full md:w-96 bg-white border-t-2 border-white"><ul><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/public-procurement/" class="w-full my-3 hover:underline">Public Procurement</a><button aria-controls="menu-pane-11451" aria-expanded="false" aria-label="Open Public Procurement" class="w-12 h-12"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white inline-block align-middle transition-all duration-300 transform fill-current w-5 h-5 rotate-0"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button></div><ul id="menu-pane-11451" class="animate-fade-in" hidden=""><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/public-procurement/about-public-procurement/" class="w-full my-3 hover:underline">About Public Procurement</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/sustainable-public-procurement/" class="w-full my-3 hover:underline">Sustainable Procurement</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/criteria/" class="w-full my-3 hover:underline">Find sustainability criteria</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/innovation-in-procurement/" class="w-full my-3 hover:underline">Innovation in procurement</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/public-procurement/e-commerce/" class="w-full my-3 hover:underline">E-commerce</a><button aria-controls="menu-pane-11456" aria-expanded="false" aria-label="Open E-commerce" class="w-12 h-12"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal inline-block align-middle transition-all duration-300 transform fill-current w-5 h-5 rotate-0"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button></div><ul id="menu-pane-11456" class="animate-fade-in" hidden=""><li><div class="bg-greyLightest text-black border-greyLight pl-14 border-b  flex justify-between"><a href="/en/public-procurement/e-commerce/e-invoicing-for-suppliers-to-the-public-sector/" class="w-full my-3 hover:underline">E-invoicing for suppliers to the public sector</a></div></li><li><div class="bg-greyLightest text-black border-greyLight pl-14 border-b  flex justify-between"><a href="/en/public-procurement/e-commerce/mandatory-e-invoicing-in-the-public-sector/" class="w-full my-3 hover:underline">Mandatory e-invoicing in the public sector</a></div></li><li><div class="bg-greyLightest text-black border-greyLight pl-14 border-b  flex justify-between"><a href="/en/public-procurement/e-commerce/the-law-and-regulation-on-e-invoices/" class="w-full my-3 hover:underline">The Law and Regulation on e-invoices</a></div></li></ul></li></ul></li><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/conducting-business-with-public-sector-stakeholders/" class="w-full my-3 hover:underline">Conducting business with public sector stakeholders</a></div></li><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/statsstod/state-aid-guidance/" class="w-full my-3 hover:underline">State Aid guidance</a></div></li><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/the-act-on-systems-of-choice-lov/" class="w-full my-3 hover:underline">The Act on Systems of Choice (LOV)</a></div></li><li><div class="text-h4 bg-teal text-white border-white pl-4 border-b  flex justify-between"><a href="/en/about-us/" class="w-full my-3 hover:underline">About us</a><button aria-controls="menu-pane-11463" aria-expanded="false" aria-label="Open About us" class="w-12 h-12"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white inline-block align-middle transition-all duration-300 transform fill-current w-5 h-5 rotate-0"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button></div><ul id="menu-pane-11463" class="animate-fade-in" hidden=""><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/about-us/our-mission/" class="w-full my-3 hover:underline">Our mission</a></div></li><li><div class="text-h5 bg-white text-black border-greyLight pl-8 border-b  flex justify-between"><a href="/en/about-us/contact-us/" class="w-full my-3 hover:underline">Contact us</a></div></li></ul></li></ul></nav></div></div></div></div></div></div></div></div></div></div></div></div></header><div data-cid="Breadcrumbs" class="py-4 border-b-borderWidth border-borderColor"><div class="mx-auto max-w-site"><div class="pl-4 lg:pl-6 flex grid-item -ml-4"><div class="mx-4 w-full"><nav aria-label="Brödsmulor"><ul class="text-lg text-alt leading-6"><li class="root breadcrumbs__item text-p md:text-l font-fontStandard" data-cid="BreadcrumbsItem"><a href="/en/" class="inline-flex items-center no-underline text-primary-2 hover:underline"><svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" class="breadcrumbs__back-icon md:hidden inline-block align-middle transition-all duration-300 transform fill-current w-3 h-3 rotate-0" aria-hidden="true"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-21.000000, -15.000000)" fill="currentColor"><g><g transform="translate(16.000000, 0.000000)"><g transform="translate(0.000000, 12.000000)"><path d="M10.4714045,4.47140451 C10.7317541,4.21105498 10.7317541,3.78894499 10.4714045,3.52859546 C10.211055,3.26824593 9.78894501,3.26824593 9.52859549,3.52859546 L5.52859547,7.52859548 C5.26824594,7.78894501 5.26824594,8.21105499 5.52859547,8.47140452 L9.52859549,12.4714045 C9.78894501,12.7317541 10.211055,12.7317541 10.4714045,12.4714045 C10.7317541,12.211055 10.7317541,11.788945 10.4714045,11.5285955 L6.94280904,8 L10.4714045,4.47140451 Z"></path></g></g></g></g></g></svg>Start</a></li><li class=" parent breadcrumbs__item text-p md:text-l font-fontStandard" data-cid="BreadcrumbsItem"><a href="/en/public-procurement/e-commerce/" class="inline-flex items-center no-underline text-primary-2 hover:underline"><svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" class="breadcrumbs__back-icon md:hidden inline-block align-middle transition-all duration-300 transform fill-current w-3 h-3 rotate-0" aria-hidden="true"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-21.000000, -15.000000)" fill="currentColor"><g><g transform="translate(16.000000, 0.000000)"><g transform="translate(0.000000, 12.000000)"><path d="M10.4714045,4.47140451 C10.7317541,4.21105498 10.7317541,3.78894499 10.4714045,3.52859546 C10.211055,3.26824593 9.78894501,3.26824593 9.52859549,3.52859546 L5.52859547,7.52859548 C5.26824594,7.78894501 5.26824594,8.21105499 5.52859547,8.47140452 L9.52859549,12.4714045 C9.78894501,12.7317541 10.211055,12.7317541 10.4714045,12.4714045 C10.7317541,12.211055 10.7317541,11.788945 10.4714045,11.5285955 L6.94280904,8 L10.4714045,4.47140451 Z"></path></g></g></g></g></g></svg>E-commerce</a></li><li class=" current breadcrumbs__item text-p md:text-l font-fontStandard" data-cid="BreadcrumbsItem">The Law and Regulation on e-invoices</li></ul></nav></div></div></div></div><main class="pt-10 md:pt-8 global__page-content" id="main-content"><div class="mx-auto max-w-site"><div class="-mt-4 md:mt-0 lg:px-6 px-4 flex grid-item"><div class="w-full lg:w-7/12"><h1 class="font-fontAlt font-semibold text-h1 mb-4" data-epi-property-name="heading" data-epi-property-render="none" data-cid="Text">The Law and Regulation on e-invoices</h1></div></div></div><div class="mx-auto max-w-site"><div class="flex-row-reverse lg:px-6 px-4 flex grid-item"><div class="w-full lg:w-7/12"><p class="font-fontStandard text-preamble mb-8" data-epi-property-name="preamble" data-epi-property-render="none" data-cid="Text">E-commerce and electronic purchasing processes is a prioritised area both in the EU and in Sweden. In Sweden, there are formal requirements in the form of a law, a regulation and various rules that govern the area. Read about what applies to you as a public sector organisation and your suppliers of goods and services.</p><div class="mb-8" data-cid="Toc"><h2 class="font-semibold text-h4 mb-2">Content</h2><ul class=""><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#h-TheLawandRegulationoneinvoices-0" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">The Law and Regulation on e-invoices</a></li><li class="pl-4 border-l-2 text-p toc-li border-greyLight py-1"><a href="#h-Regulationandrulesonecommerce" class="text-p text-primary-2 hover:underline toc-link" data-cid="TocLink">Regulation and rules on e-commerce</a></li></ul></div><div data-epi-property-name="text" data-epi-property-render="none"><div class="richtext"><div><p class="dg-normal">The law, regulation and rules on e-invoicing as a result of public procurement affect both public actors and suppliers to public actors. Both the regulation and the e-invoicing rules apply to public authorities under the Government.</p></div></div><div id="h-TheLawandRegulationoneinvoices-0"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>The Law and Regulation on e-invoices</span></h2><div class="richtext"><div><p class="dg-normal">The Act on electronic invoices resulting from public procurement <em>(2018:1277) (the E-Invoicing Act)</em> applies from 1 April 2019. The Agency for Digital Government (Digg) has since issued a regulation to the e-invoicing law, <em>Regulation on registration in PEPPOL (MDFFS 2019:1) </em>which applies from 1 December 2019. The E-invoicing Act affects both public actors who are to make a procurement and suppliers who have been awarded a contract through procurement.</p></div></div><h3 class="font-fontStandard font-semibold text-h3 mt-7 mb-2" id="h-TheEinvoicingAct" data-cid="Text"><span>The E-invoicing Act</span></h3><div class="richtext"><div><p class="dg-normal">The E-invoicing Act applies to invoices issued as a result of public procurement in accordance with the following laws and applies to procurements commenced from 1 April 2019.</p><ul class=" env-text-list dg-normal">
+<li>Public Procurement Act, LOU, (2016:1145)</li>
+<li>Act on Procurement in the Utilities Sectors, LUF, (2016:1146)</li>
+<li>Act on Procurement in the Field of Defence and Security, LUFS, (2011:1029)</li>
+<li>Act on Procurement of Concessions, LUK, (2016:1147).</li>
+</ul></div></div><h4 class="font-fontStandard font-semibold text-h4 mb-2" id="h-Whatdoesthelawstate" data-cid="Text"><span>What does the law state?</span></h4><div class="richtext"><div><p class="dg-normal">Invoices issued by a supplier to an authority or entity shall be electronic. The format of the invoices shall comply with the European standard for electronic invoicing referred to by the European Commission in the Official Journal of the European Union. However, the parties may agree on a different standard for e-invoices. There are also some exceptions where an invoice does not need to be sent electronically and these are mentioned below.</p></div></div><h4 class="font-fontStandard font-semibold text-h4 mb-2" id="h-Diggrecommendationsoneinvoices" data-cid="Text"><span>The National Agency for Public Procurement recommendations on e-invoices</span></h4><div class="richtext"><div><p class="dg-normal">In order to comply with the legal requirements of the European standard for e-invoicing, The National Agency for Public Procurement recommends that you use the implementation of the European standard, Peppol BIS Billing 3.</p><p class="dg-normal">The National Agency for Public Procurement also recommends using the Peppol network for sending and receiving invoices. Invoices should not be converted to other formats as this may result in the loss of information.</p></div></div><h4 class="font-fontStandard font-semibold text-h4 mb-2" id="h-ExemptionsfromtheeInvoicingAct" data-cid="Text"><span>Exemptions from the e-Invoicing Act</span></h4><div class="richtext"><div><p class="dg-normal">There are some cases where an invoice does not need to be sent electronically:</p><ul class=" env-text-list dg-normal">
+<li>If the procurement has started before the law came into force on 1 April 2019, suppliers can continue to send invoices in the agreed format.</li>
+<li>When e-invoicing would entail a risk of disclosing information covered by confidentiality or otherwise jeopardising security-sensitive activities. It is up to the procuring entity to decide whether such a risk exists for specific invoice flows.</li>
+<li>When payment is made in cash or by payment card. The Act thus does not impose any additional invoicing obligation for financial services beyond the provisions of the Value Added Tax Act (2023:200).</li>
+</ul></div></div><h4 class="font-fontStandard font-semibold text-h4 mb-2" id="h-Whatqualifiesasaneinvoice" data-cid="Text"><span>What qualifies as an e-invoice</span></h4><div class="richtext"><div><p class="dg-normal">According to the E-invoicing Act, an e-invoice is an invoice that is issued, transmitted and received in a structured electronic format that allows it to be processed automatically and electronically.</p><p class="dg-normal">Please note that a PDF invoice does not fulfil these requirements and therefore does not count as an e-invoice under the E-Invoicing Act.</p></div></div><h4 class="font-fontStandard font-semibold text-h4 mb-2" id="h-Whatmighthappenifthelawisnotfollowed" data-cid="Text"><span>What might happen if the law is not followed</span></h4><div class="richtext"><div><p class="dg-normal">If a supplier does not send e-invoices or sends incorrect e-invoices, the supplier might be reported to The National Agency for Public Procurement by the public buyer. The National Agency for Public Procurement will then conduct an investigation. The supplier might be ordered to send an e-invoice and this can also be linked to a fine. However, we always suggest that the parties first engage in a dialogue between themselves before reporting.</p></div></div><h3 class="font-fontStandard font-semibold text-h3 mt-7 mb-2" id="h-RegulationtotheEInvoicingAct" data-cid="Text"><span>Regulation to the E-Invoicing Act</span></h3><div class="richtext"><div><p class="dg-normal">The regulation on registration in Peppol (MDFFS2019:1) states that contracting authorities and entities must be registered in Peppol's register function in order to receive electronic invoices. The purpose of the regulation is to facilitate the transmission of invoices, as contracting authorities can easily be found and invoiced electronically. Digg's regulations to the E-invoicing Act apply from 1 December 2019.</p></div></div></div><div id="h-Regulationandrulesonecommerce"><h2 class="font-fontStandard font-semibold text-h2 mb-2 mt-7" data-cid="Text"><span>Regulation and rules on e-commerce</span></h2><div class="richtext"><div><p class="dg-normal">Government agencies must comply with the <em>Ordinance (2003:770) on the Electronic Exchange of information by Government Agencies.</em> Digg has developed rules linked to the regulation, <em>Regulations on the handling of orders and standards in electronic information exchange (MDFFS 2021:1).</em></p></div></div><h3 class="font-fontStandard font-semibold text-h3 mt-7 mb-2" id="h-Regulation" data-cid="Text"><span>Regulation</span></h3><div class="richtext"><div><p class="dg-normal">Authorities under the regulation must promote the development of secure and efficient electronic information exchange in public administration in their activities. Authorities with more than 50 employees must handle their outgoing orders for goods and services electronically. However, there are some exceptions to the regulation.</p></div></div><h3 class="font-fontStandard font-semibold text-h3 mt-7 mb-2" id="h-Rules" data-cid="Text"><span>Rules</span></h3><div class="richtext"><div><p class="dg-normal">The associated rules contain provisions that apply to government agencies with more than 50 employees. The regulations apply to the electronic handling of outgoing orders for goods and services and standards or similar requirements that apply to electronic information exchange in connection with ordering and delivery.</p><p class="dg-normal">The rules also contain provisions on standards or similar requirements that are common to all government agencies, regardless of the number of employees, regarding electronic information exchange regarding invoicing of goods and services.</p></div></div></div></div></div></div></div></main><footer data-cid="PageFooter" class="global__page-footer"><div class="py-6 border-t-2 border-b-2 border-greySemiLight bg-greyLight"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full"><img src="/assets/static/media/uhm.a8e48fa7.svg" alt="" class="footer-logo" height="61" width="169"/></div></div></div></div><div class="pt-6 bg-greyLight"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Visiting Address</h2><p class="mb-6 lg:mb-4 text-p">Svetsarvägen 10<br/>171 41 <!-- --> <!-- -->Solna</p><h2 class="text-p font-bold">Contact</h2><dl class="text-p footer__dl mb-6 lg:mb-4"><dt>Telephone</dt><dd>08-586 217 01</dd><dt>Telephone hours</dt><dd>Mon-Fri 9-15</dd></dl></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Postal Address</h2><p class="mb-6 lg:mb-4 text-p">Upphandlingsmyndigheten<br/>Box 1194, 171 23 <!-- --> <!-- -->Solna</p></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Quick links</h2><ul class="text-p footer__linklist footer__dl mb-6 lg:mb-4"><li><a href="/en/public-procurement/" class="">Public Procurement</a></li><li><a href="/en/statsstod/state-aid-guidance/" class="">State Aid guidance</a></li><li><a href="/en/the-act-on-systems-of-choice-lov/" class="">The Act on Systems of Choice (LOV)</a></li><li><a href="/en/conducting-business-with-public-sector-stakeholders/" class="">Conducting business with public sector stakeholders</a></li></ul></div><div class="mx-4 w-full lg:w-grid-3/12"><h2 class="text-p font-bold">Quick links</h2><ul class="text-p footer__linklist footer__dl mb-6 lg:mb-4"><li><a href="/en/sustainable-public-procurement/" class="">Sustainable public procurement</a></li><li><a href="/en/criteria/" class="">Our sustainability criteria</a></li><li><a href="/en/about-us/" class="">About us</a></li><li><a href="/en/about-us/contact-us/" class="">Contact us</a></li></ul></div></div></div><div class="py-2 mt-6 bg-greySemiLight pt-4 lg:pt-0"><div class="mx-auto max-w-site"><div class="px-4 lg:px-6 flex grid-item -ml-4"><div class="mx-4 w-full"><div class="items-center justify-between pt-2 md:flex"><div class="mb-2 lg:mb-0"></div><div class="-ml-2 lg:ml-0"><a href="https://twitter.com/uhmynd" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" data-cid="Icon" aria-label="Twitter" role="img" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a href="https://www.linkedin.com/company/upphandlingsmyndigheten" title="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" style="fill:none" data-cid="Icon" aria-label="LinkedIn" role="img" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://www.facebook.com/upphandlingsmyndigheten" title="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="px-1 py-2 border-2 rounded-full text-teal text-h2 bg-greySemiLight border-greySemiLight hover:bg-teal hover:border-teal hover:text-white inline-block align-middle transition-all duration-300 transform fill-current w-10 h-10 rotate-0" style="fill:none" data-cid="Icon" aria-label="Facebook" role="img" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></div></div></div></div></div></div></div></footer><kundo-lazy-button text="Chatta med oss" script="https://static-chat.kundo.se/chat-js/org/909/widget.js"></kundo-lazy-button></div></div><div class="sr-only" aria-live="assertive"></div><div tabindex="-1" style="outline:none"></div></div>
+
+		<script src="/Areas/Upphandlingsmyndigheten/Assets/static/js/vendors~main.9af48341.chunk.js"></script>
+		<script src="/Areas/Upphandlingsmyndigheten/Assets/client/client-main.4cd102c3.js"></script>
+
+	<script defer="defer" src="/Util/Find/epi-util/find.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){if(typeof FindApi === 'function'){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}})
+</script>
+
+</body>
+</html>

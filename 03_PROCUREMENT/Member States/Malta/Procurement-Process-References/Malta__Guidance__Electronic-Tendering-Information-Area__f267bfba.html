@@ -1,0 +1,744 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+    
+        <!-- ceproc.ok -->
+    
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+	<head>
+		<!--  -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title>Electronic Tendering - Information Area</title>
+        <meta name="Description" content="e-Procurement platform home page"/>
+		<meta content="e-Procurement platform - Home page" name="Title"/>
+		<meta content="57" name="Type"/>
+		<meta content="DOCUMENTS/COMM/EN" name="Reference"/>
+		<meta content="European Dynamics" name="Creator"/>
+		<meta name="Language" content="en"/>
+		<meta content="25" name="Classification"/>
+		<meta content="tenders, e-procurement, documents, european law, legislation, economic operator, tenderer, procurement, contract, contracting authority, supplier, awarding authority, institutions, european union, eu" name="Keywords"/>
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+        
+        
+
+
+<script>
+	const PAGE_LITERAL = 'Page';
+	const RESULTS_PER_PAGE_LITERAL = 'Results Per page';
+	const ERROR_MSG_LITERAL = 'An error has occurred';
+	const WARNING_MSG_LITERAL = 'Warning';
+	const GOTO_PAGE_LITERAL = 'Goto Page';
+    const RESULTS_PER_PAGE_OPTIONS_LITERAL = ["10","20","50","100"];
+    const CONTEXT_PATH_LITERAL = '/epps';
+    const UPLOAD_ACCEPT_LITERAL = '.7z,.avi,.csv,.doc,.docm,.docx,.dot,.dotx,.dwg,.e0x,.fr,.geojson,.info,.jpeg,.jpg,.json,.mov,.mp4,.mpp,.msg,.odp,.ods,.odt,.p7m,.pages,.pdf,.png,.ppt,.pptx,.rar,.rtf,.svg,.tar,.tiff,.txt,.util,.webp,.wmv,.xls,.xlsb,.xlsm,.xlsx,.xml,.zip,.zipx';
+</script>
+
+        
+        <script src="/epps/scripts/bt/jquery-1.11.3.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/popper.min.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/navScroll.js" type="text/javascript"></script>
+		
+        <script type="text/javascript">
+	        //<![CDATA[
+	        var $j = jQuery.noConflict();
+	        //]]>
+        </script>
+        <script type="text/javascript">
+            var LOCALE = '';
+            var INVALID_CHARACTERS = '<>&%';
+            var defaults = {
+            		language: 'en', 
+                    showOn: "both",
+                    buttonText: "Calendar",
+                    buttonImage: "/epps/images/action_calendar.gif",
+                    buttonImageOnly: true, clearBtn: true,
+                    firstDay: 1,
+                    weekStart: 0,
+                    format: "dd/mm/yyyy",
+                    mandatory: false,
+                    todayHighlight: true
+           };
+            
+        </script>
+        <script type="text/javascript" src="/epps/scripts/common.js"></script>
+        <script type="text/javascript" src="/epps/scripts/bt/common.js"></script>
+        
+		<script type="text/javascript" src="/epps/scripts/bt/moment.min.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/moment-timezone-data.min.js"></script>
+		
+        <script type="text/javascript" src="/epps/scripts/jqComm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqForm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqTableSet.js"></script>
+        
+		
+        	<script type="text/javascript" src="/epps/scripts/bt/htmx.min.js"></script>
+			<!-- Morph Swaps supported on Chrome <script src="https://unpkg.com/idiomorph@0.3.0"></script> -->
+			<script type="text/javascript" src="/epps/scripts/bt/htmx.common.js"></script>
+		
+		
+		<link href="/epps/css/bt/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<link href="/epps/css/bt/bootstrap-datepicker3.min.css" rel="stylesheet" media='screen'/> 	
+		<link href="/epps/css/bt/jquery.treefilter.css" rel="stylesheet"/>
+		<link href="/epps/css/quill.css" rel="stylesheet">
+
+		<link href="/epps/css/bt/bootstrap-tour.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/bootstrap-tour.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="/epps/scripts/bt/bootstrap-tour.js"></script>
+		<script type="text/javascript" src="/epps/scripts/bt/bootstrap-tour.min.js"></script>
+
+     	<script src="/epps/scripts/bt/bootstrap-datepicker.min.js" type="text/javascript" ></script>
+     	<script type="text/javascript" src="/epps/scripts/jquery.formatCurrency-1.4.0.min.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/jquery.formatCurrency.all.js"></script>
+     	<script type="text/javascript" src="/epps/scripts/bt/jcv_handleMessages.js"></script>
+        
+       	<script type="text/javascript">
+			// functions from bt/common.js
+			$j(document).ready(function(){
+				noResultFoundBeautifier();
+				stackModeDataColumn();
+				$j('.countdown').textCountdown({remaining_text: " remaining characters"});
+				
+			    var millisDiff = 0;
+		        setInterval(function() {
+		        		millisDiff = rollTime(millisDiff); 
+		        	}, 1000);
+				
+				//TODO: modify to be enabled in internal sorting:
+				// tableSawSortableStackMode();
+
+				
+				HtmxCommon.addHtmxAttributesOnMainNavbar();
+				
+			});
+			
+			function rollTime(millisDiff) {
+	        	millisDiff += 1000;
+	            
+	        	var startDate = moment(1792874219885);
+	            var currentDate = new moment(startDate); 
+	            
+	            currentDate.add(millisDiff, 'ms');
+	            
+	            $j('.Time').html(currentDate.tz("Europe/Malta").format("HH:mm:ss z"));
+	            
+	            return millisDiff;
+            }
+
+		</script>
+		
+        <script type="text/javascript">
+            function setParentHref(link){
+                window.location.href=link;
+            }
+            
+            if(typeof String.prototype.trim !== 'function') {
+	             String.prototype.trim = function() {
+	            	  return this.replace(/^\s+|\s+$/g, ''); 
+	             }
+             }   
+        </script>		
+        
+      
+       
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<link href="/epps/css/bt/custom.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/bootstrap-datetimepicker.css" rel="stylesheet"/>
+		<link href="/epps/css/bt/mm-folder.css" rel="stylesheet"/>
+		<script src="/epps/scripts/bt/tablesaw.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/tablesaw-init.js" type="text/javascript"></script>
+		<script src="/epps/scripts/bt/jquery.treefilter.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/bt/bootstrap-datetimepicker.js" type="text/javascript" ></script>
+     	<script src="/epps/scripts/bt/metisMenu.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/bt/maincard.js" type="text/javascript"></script>
+     	<script src="/epps/scripts/quill.js"></script>
+		<script src="/epps/scripts/quill.commons.js"></script>
+     	
+     	<script type="text/javascript">
+     		
+     			HtmxCommon.addEventListeners();
+			
+		</script>
+		
+	</head>
+	<body class="">
+
+	 
+	<header>
+			<nav class="navbar navbar-light bg-white navbar-expand-md p-0">
+				<div class="flex-column col-12 p-0">
+					<div class="row no-gutters p-2 align-items-center">
+						<div class="col">	
+							
+
+
+
+
+
+
+
+
+<div class="navbar-brand  mr-0 py-lg-1 py-xl-1 px-lg-2 px-xl-2"> 
+	<a href="/epps">
+		<img class="mr-lg-2 mr-xl-2 img-fluid " src="/epps/images/bt/logo.gif"  alt="Malta logo" />
+	</a>
+	<a href="http://www.gov.mt/" target="_blank">
+		<img class="mr-lg-2 mr-xl-2 img-fluid " src="/epps/images/logo_govmt.png"  alt="Malta goverment logo" />
+	</a>
+</div>
+						</div>
+						
+						
+
+
+
+
+
+
+
+
+
+
+	<div id="htmx-load-indicator" class="progress">
+		<div class="indeterminate"></div>
+	</div>
+
+
+
+						<div class="col">
+							<ul class="navbar-nav flex-row justify-content-end">
+								<li class="nav-item d-flex justify-content-between bd-highlight">
+									<div class="p-2 bd-highlight"style="margin-top:4px;">
+									  <p class="Time"> 						
+										</p>
+									</div>
+								</li>
+								<!-- Search -->
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function checkSubmit() {
+		var	quicSearchForm = document.forms["searchForm"];
+		var col = document.getElementsByName("searchType")[0];
+		if (col.selectedIndex != 0) {
+			if(checkInputField(quicSearchForm))quicSearchForm.submit();
+		}
+		return false;
+	}
+
+	function checkInputField(form){
+		var input = form[1].value;
+		if(containForbidenChars(input)){
+			form[1].value = '*';
+			alert("An invalid character was provided for search. Invalid characters include: <, >, &, % .");
+			return false;
+		}
+		return true;
+	}
+
+	function containForbidenChars(input){
+		return input.indexOf("<")!=-1 || input.indexOf(">")!=-1 || input.indexOf("%")!=-1 || input.indexOf("&")!=-1;
+	}
+
+	$j(document).ready(function(){
+		$j('#SearchInput').mouseover(function() {
+			$j(this).attr('title', "Tip: provide a relevant term within asterisks, eg. *consultancy*");
+
+		});
+		let sel = $j('#select1');  
+		if (!sel.val()  || sel.val()  === "Select...") { 
+			sel.val("cftFTS"); 
+		}
+	});
+
+	function openForm() {
+		document.getElementById("simple-search").style.height = "100%";
+		$j(".container").attr("aria-hidden","false");
+		$j("#simple-search").attr("aria-hidden","false");
+		$j("#simple-search").css("display", "block");
+	}
+	function closeForm() {
+		document.getElementById("simple-search").style.height = "0%";
+		$j(".container").attr("aria-hidden","true");
+		$j("#simple-search").attr("aria-hidden","true");
+		$j("#simple-search").css("display", "none");
+	}
+
+</script>
+
+
+
+	<li class="nav-item mr-2">
+		<div>
+			<a href="/epps/prepareAdvancedSearch.do?type=cftFTS" class="nav-link p-2"><span class="fa fa-search" aria-label='Advanced search'></span>
+				
+					
+				
+				
+
+				<span class="d-none d-lg-inline">Advanced search</span></a>
+		</div>
+	</li>
+
+
+
+
+
+
+
+								<!--// Search -->
+								
+								<li class="nav-item dropdown user">
+									
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+    	
+	    	<a href="/epps/authenticate/login" id="loginButton" role="button" class="btn login" aria-label="Log in">
+				<i class="fa fa-sign-in" aria-hidden="true"></i>
+				<span>Log in</span>
+	    	</a>
+        
+        
+	
+
+
+								</li>
+								
+							</ul>
+						</div>	
+					</div>	
+					<!-- MAIN NAVIGATION MENU -->
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- /.#mainnav || MAIN NAVIGATION MENU-->
+				</div>		
+			</nav>
+		</header> <!-- /.header -->
+		
+		
+
+		<div id="main-container" class="container-fluid pt-2" role="main">
+		
+            
+                
+            
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<h1 class="my-4">Information Area</h1>
+
+
+
+
+            
+			<div class="row">
+				<div id="msgCol" class="col">
+          			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          		</div>
+    		</div>
+    		
+			<div class="row">
+				<div class="col">
+                	
+
+
+
+
+
+
+
+
+
+
+<noscript>
+	<div id="NoJavascriptMessage" class="alert alert-warning alert-dismissible">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		For enjoying the full functionality of this application, please ensure that Javascript is enabled in your browser.
+	</div>
+</noscript>
+
+          		</div>
+    		</div>
+			
+            <div class="row">
+				<div class="col">
+					
+         			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card-wrapper">
+
+	<div class="row">
+		<div class="col">
+
+			
+
+			
+				<h2 class="px-4 py-2">Legislation on Threshold</h2>
+			
+
+			<div id="docs-title"></div>
+
+		</div>
+	</div>
+
+	<div class="row" id="docs-container">
+		<div class="col">
+		    
+
+
+			
+				
+				
+					<div hx-get="/epps/viewInfo.do?partial=true&section=thresholds"
+								hx-trigger="load"
+							 	hx-target="#docs-container"
+							 	hx-swap="outerHTML"
+							 	hx-indicator="#htmx-load-indicator">
+					</div>
+				
+			
+		</div>
+	</div>
+</div>
+
+
+				</div>
+			</div>
+						
+			
+			
+			
+
+		</div><!-- /.container-fluid -->
+		
+	
+
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	<script type="text/javascript">
+	
+	    $j('document').ready(function(ev){
+	    	$j("a.PopUp").click(function(){
+	    		PopUpOpts = {
+	        		windowname: 'popupwindow',
+	        		width:		810,
+	        		height:		600,
+	        		scroll:		1,
+	        		resizable:	0
+	        	};
+	           	$j(this).PopUp(this.href, PopUpOpts); 
+	            return false; 
+	        }); 
+	    });
+	    
+	</script>
+	
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+			
+				<div class="col-sm">
+					<ul class="list-unstyled menu-footer-list">
+                        
+                            <li>
+                                <a href="/epps/app/viewPublication.do">Published Annual Procurement Plan</a>
+                            </li>
+                        
+			        	<li>
+							<a href="/epps/prepareCurrentOpportunities.do?currentType=cft">Latest CfTs</a>
+			            </li>
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=legal">Public procurement legislation</a>
+			            </li>
+			      		
+				       	
+					    
+					    	
+					       	
+					       		<li>
+					 				<a href="/epps/prepareAdvancedSearch.do?type=cftFTS&amp;viewMode=searchOpened">Opened Tender Details</a>
+				        		</li>
+					       	
+					    
+						
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=statistics">Resources</a>
+			            </li>
+			        	<li>
+			            	<a href="/epps/viewInfo.do?section=calendar">Calendar</a>
+			            </li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<ul class="list-unstyled">
+						<li>
+			            	<a href="/epps/viewInfo.do?section=eproc">Procurement Guidance Publications</a>
+			            </li>
+			            <li>
+			               <a href="/epps/viewInfo.do?section=newItems">News</a>
+			            </li>
+			            <li>
+			            	<a href="/epps/viewInfo.do?section=links">Relevant links</a>
+			            </li>
+		        		<li>
+			            	<a href="/epps/viewInfo.do?section=faq">FAQ</a>
+			            </li>
+		        		<li>
+			            	<a href="/epps/viewInfo.do?section=thresholds">Legislation on Threshold</a>
+			            </li>
+			            <li>
+			            	<a href="/epps/viewInfo.do?section=templates">Templates</a>
+			            </li>
+					</ul>
+				</div>
+			
+				<div class="col-sm">
+					<ul class="list-unstyled">	
+                    
+		    		    
+				        
+
+				        
+			        	<li id="Help">
+				            <a href="/epps/viewInfo.do?isPopup=true&amp;section=userManual" style="margin:0;" class="PopUp">Help</a>
+				        </li>
+				        <li id="About">
+				            <a href="/epps/DisplayHeaderStaticTextAction.do" style="margin:0;" class="PopUp">About</a>
+				        </li>		        
+				        <li id="Contact">
+				            <a href="/epps/PrepareContactUsAction.do" style="margin:0;" class="PopUp">Contact us</a>
+				        </li>
+                        <li id="Terms">
+                            <a href="/epps/PrepareTermsOfUseAction.do" style="margin:0;" class="PopUp">Terms of Use</a>
+                        </li>
+                        
+                            <li id="Ocds">
+                                <a href="/epps/PrepareOcdsPolicyAction.do" style="margin:0;" class="PopUp">OCDS policy</a>
+                            </li>
+                        
+                        
+                        <li>
+                            <a href="/epps/viewAccessibilityStatement.do">Accessibility statement</a>
+                        </li>
+                        
+                        
+					</ul>
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col text-center">
+					<span>Copyright &copy; European Dynamics - Last update: 24 October 2026</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Footer // -->
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+		
+	</body>
+	
+
+</html>
+

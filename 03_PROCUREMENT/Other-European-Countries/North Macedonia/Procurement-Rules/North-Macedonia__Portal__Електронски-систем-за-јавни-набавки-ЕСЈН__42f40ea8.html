@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+
+<html lang="mk">
+<head>
+    
+
+    <script type="text/javascript" language="javascript">
+        var baseUrl = 'https://e-nabavki.gov.mk/';
+        var resourceVersion = '?v=12.341';
+
+        if (!window.location.origin) {
+            window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+        }
+    </script>
+    <meta name="description" content="ЕСЈН - Електронски систем за јавни набавки на Република Северна Македонија. Огласи, тендери и е-аукции." /><meta name="robots" content="index, follow" />
+    <base href="https://e-nabavki.gov.mk/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Електронски систем за јавни набавки | ЕСЈН
+</title><meta charset="utf-8" /><link rel="icon" href="favicon.png" type="image/png" />
+    <link href="/Styles/lib/bootstrap.css?v=12.341" rel="stylesheet" type="text/css" />
+    <link href="/Styles/jasny-bootstrap.css?v=12.341" rel="stylesheet" type="text/css" />
+    <link href="/Styles/lib/toastr.min.css?v=12.341" rel="stylesheet" type="text/css" />
+    <link href="/Styles/angular-wizard.css?v=12.341" rel="stylesheet" type="text/css" />
+    <link href="/Content/css/select2.css?v=12.341" rel="stylesheet" type="text/css" />
+    <link href="/Content/css/select2-bootstrap.css?v=12.341" rel="stylesheet" type="text/css" />
+    <link href="/Styles/ns-implementation.css?v=12.341" rel="stylesheet" type="text/css" />
+    <link href="/Styles/angular-json-tree.css?v=12.341" rel="stylesheet" type="text/css" />
+    <link href="/Content/font-awesome.min.css?v=12.341" rel="stylesheet" type="text/css" />
+    
+    </head>
+
+<script src="/JavaScripts/GoogleAnalytics.js" type="text/javascript"></script>
+
+
+<body ng-app="esjnApp" ng-cloak>
+    <form method="post" action="./Home.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="PBZkit1SFx2wB7YChJmtC6Uy9kLmB9KseYdaEWQDtOyxCK6PUEdKOYOmk+gcTgDTybVtNDJLRpz6wK0GNvHt8877gnRFWoWZf/E6U4n+yqeOMBgPBmehX/NU2n9xQFFFev+VsrZ1vwi1sMiPK7nP5Q==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="147FFF67" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+</div>
+        <div ng-controller="esjnAppMainController">
+            
+    <div class="header-top hidden-xs" ng-controller="login">
+        <div class="container-fluid p0">
+
+            <div class="time">
+                    <div ng-include="'partials/common/showServerTime.html' + $root.ResourceVersion"></div>
+                </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-2 ">
+                <div class="top-logo">
+                    <a href="{{$root.ProfileUrl}}">
+                        <img src="../Images/logo-bjn.png" /></a>
+                </div>
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-10 p0">
+                <div class="col-lg-12 col-md-12 col-sm-12 p0">
+                    <div class="col-lg-6 col-md-7 col-sm-7 p0">
+                        <div class="logo-name">
+                            <img src="../Images/logo-text.png" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-5">
+                        <div class="logo-links">
+                            <a href="PublicAccess/home.aspx#/home">
+                                <img src="../Images/e-home-home.png" /></a>
+                            <a href="#" ng-controller="archiveYearController" ng-click="openChangeArchiveYearDialog('sm',$event)">
+                                <img src="../Images/e-archive-home.png" /></a>
+                            <a href="PublicAccess/home.aspx#/askquestion">
+                                <img src="../Images/e-ask-home.png" /></a>
+                            <a href="PublicAccess/home.aspx#/sitemap">
+                                <img src="../Images/e-sitemap-home.png" /></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p0 hidden-sm hidden-md hidden-xs">
+                        <div class="support">
+                            <div class="center">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <img src="../Images/e-support.png" />
+                                    </div>
+                                    <div class="col-xs-9 p0">
+                                        <p >{{userSupportLabel}}</p>
+                                        <h2 >{{userSupportEsjnLabel}}</h2>
+                                       
+                                        <h2 >{{signSupportEsjnLabel}}</h2>
+                                        <h2 >{{userSupportAccountingLabel}}</h2>
+                                        <a href="https://www.bjn.gov.mk/kontakt/"><h2 style="color: #428bca">{{userSupportLegislativaLabel}}</h2></a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>           
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="navbar navbar-default navbar-fixed-top visible-xs">
+        <div id="logo-small">
+            <a href="{{$root.ProfileUrl}}">
+                <img src="../Images/logo-small.png" />
+            </a>
+            <a href="PublicAccess/home.aspx#/home">
+                    <img src="../Images/logo-text.png" />
+                </a>
+             <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        </div>
+       
+    </div>
+    <div class="container-fluid container-lg-height container-md-height container-sm-height p0">
+        <div class="row-lg-height row-md-height row-sm-height">
+            <div class="col-sm-3 col-md-3 col-lg-2 col-lg-height col-md-height col-sm-height col-top sidebar">
+                <div class="row mrl20">
+                    <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas disblock" role="navigation">
+                        <div class="col-lg-12 p0 " ng-controller="login" ng-if="!$root.CurrentUser">
+                            <div class="e-login" ng-if="loginModel.LoginFormVisible">
+                                <img src="../Images/e-login.png" /><h1 >{{loginLabel}}</h1>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 p0">
+                                    <form-row label="USERNAME" place-holder="USERNAME" model="loginModel.UserName" error="loginModel.Errors.UserName" max-length="50" cyrillic-enabled="false" autocomplete="on"></form-row>
+                                    <form-row label="PASSWORD" place-holder="PASSWORD" model="loginModel.Password" error="loginModel.Errors.Password" max-length="50" cyrillic-enabled="false" type="password" autocomplete="on"></form-row>
+
+                                    <div class="form-group" ng-if="!!loginMessage">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+                                            <span>{{loginMessage}}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 ">
+                                    <input type="submit" class="btn btn-default btn-block e-btn"  value="{{ciLoginLabel}}"  ng-click="login($event)" prevent-reload /> 
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+                                    <div class="panel-footer form-errors" ng-show="ValidationErrors" bind-html-unsafe="ValidationErrors"></div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 mt15">
+                                    <a href="#" ng-click="forgottenPassword()" prevent-reload>{{forgottenPasswordLabel}}</a>
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                            </div>
+                            <div class="e-login" ng-if="!loginModel.LoginFormVisible">
+                                <img src="../Images/e-login.png" /><h1 label-for="FORGOTPASSWORD"></h1>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 p0">
+                                    <div class="form-group">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+                                            <label label-for="USERNAME"></label>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+                                            <input class="form-control" place-holder-for="USERNAME" ng-model="loginModel.ForgotenPasswordUsername">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group" ng-if="!!forgotPasswordMessage">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+                                            <span>{{forgotPasswordMessage}}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="col-lg-12 p0">
+                                    <div class="panel-footer form-errors" ng-show="ValidationErrors" bind-html-unsafe="ValidationErrors"></div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 mt15">
+                                    <button class="btn btn-default btn-block e-btn" label-for="FORGOT_PASSWORD" ng-click="newPassword()" prevent-reload></button>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 mt15">
+                                    <a label-for="BACK_TO_LOGIN" href="#" ng-click="backToLogin()" prevent-reload></a>
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                            </div>
+                            <ns-loader show="showLoader"></ns-loader>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        
+                        <div class="nav navmenu-nav" ng-controller="sitemapController">
+                            <div id="menu-wrapper">
+
+                                    <div class="panel panel-default" style="margin-bottom: 0px;" ng-if="$root.CurrentUser">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a class="accordion-toggle" href="{{$root.ProfileUrl}}">
+                                                    <div class="menu-right">
+                                                        <span label-for="AUTHORIZED_ACCESS"></span>
+                                                    </div>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                   <accordion close-others="true">
+                                         <accordion-group ng-repeat="group in map" is-open="group.open" ng-click="accordionClick(group,this)">
+                                                <accordion-heading>
+                                                    <div ng-class="{'menu-down': group.open, 'menu-right': !group.open}">
+                                                           <span>{{group.groupName}}</span>
+                                                     </div>
+                                                </accordion-heading>
+                                                <ul>
+                                                    <li ng-repeat="item in group.items">
+                                                        
+                                                        <accordion close-others="true" ng-if="item.subgroups.length>0" class="subgroup-accordion subgroup-accordion-main-menu">
+                                                             <accordion-group ng-repeat="subgroup in item.subgroups" is-open="subgroup.open" ng-click="accordionClick(subgroup,this)">
+                                                                    
+                                                                 <accordion-heading>
+                                                                        <div ng-class="{'menu-down': subgroup.open, 'menu-right': !subgroup.open}" class="main-menu-item">
+                                                                               <span label-for="{{subgroup.groupName}}"></span>
+                                                                         </div>
+                                                                 </accordion-heading>
+                                                                 <ul>
+                                                                      <li ng-repeat="item in subgroup.items">
+                                    
+                                                                          <a data-target=".navmenu" data-toggle="offcanvas" href="{{item.url}}">
+                                                                              <span label-for="{{item.name}}"></span>
+                                                                          </a>
+
+                                                                      </li>                  
+                                                                 </ul>
+
+                                                             </accordion-group>                            
+                                                         </accordion>
+                                    
+                                                        <a ng-if="item.subgroups.length == 0" data-target=".navmenu" data-toggle="offcanvas" href="{{item.url}}">
+                                                            {{item.name}}
+                                                        </a>
+
+                                                    </li>                  
+                                                </ul>
+                                        </accordion-group>                            
+                                   </accordion>
+                            </div>
+                        </div>
+
+                        <div ng-controller="bannersController">
+                            <ul class="banners">
+                                <li ng-repeat="banner in banners">
+                                    <a href="{{banner.url}}" title="{{banner.title}}" target="_blank">
+                                        <img ng-src="{{banner.src}}" title="{{banner.title}}" alt="{{banner.alt}}" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-9  col-md-9 col-lg-10 col-lg-height col-md-height col-sm-height col-top main">
+                <div class="col-lg-12 p0">
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8 p0">
+                        <div class="inner-content">
+                            <h1 label-for="PG_TITLE" ng-bind="PageTitle"></h1>
+                            <h2 label-for="PG_TITLE" ng-bind="subscriptionEndNotification"></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p5" ng-controller="login">
+                        <div class="lang pull-right">
+
+                            <div class="choose-lang">
+                                <a ng-class="{active: choosenLanguage == 'mk-MK'}" href="#" ng-click="changeLanguage('mk')" prevent-reload>MK</a> |                                 
+                                <a ng-class="{active: choosenLanguage == 'en-GB'}" href="#" ng-click="changeLanguage('en')" prevent-reload>EN</a>
+                                <a ng-class="{active: choosenLanguage == 'sq-AL'}" ng-if="showAlLanguage" href="#" ng-click="changeLanguage('al')" prevent-reload>| AL</a>
+                                <p class="archive" ng-if="currentYear > 0">{{currentYear}}</p>
+
+                            </div>
+
+                            <img class="logout-user" ng-show="!!CurrentUser" ng-click="logout()" src="../images/log-out.png" />
+
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div ng-view ng-cloak class=""></div>
+                <toaster-container></toaster-container>
+                <div class="clearfix"></div>
+                <div ng-if="!isEoregistrationIndividual" class="declare" label-for="DECLARE"></div>
+                <div ng-if="isEoregistrationIndividual" class="declare" label-for="EO_DECLARE"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div ng-bind="softwareVersion" id="footer"></div>
+    <div class="clearfix"></div>
+   
+
+        </div>
+    </form>
+
+    <script src="/Scripts/jquery-2.1.1.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/jquery-migrate-1.2.1.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/select2.js?v=12.341" type="text/javascript"></script>
+
+    <script src="/Scripts/bootstrap.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/masonry.pkgd.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/jasny-bootstrap.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/angular.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/angular-route.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/angular-sanitize.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/angular-cookies.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/angular-animate.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/angular-touch.min.js?v=12.341" type="text/javascript"></script>
+    <script src="/Scripts/angular-ui-router.min.js?v=12.341"></script>
+    <script src="/Scripts/angular-ui/ui-bootstrap-tpls.js?v=12.341"></script>
+    <script src="/Scripts/jquery.dataTables.js?v=12.341"></script>
+    <script src="/Scripts/angular-data-tables.js?v=12.341"></script>
+    <script src="/Scripts/angular-select2.js?v=12.341"></script>
+    <script src="/Scripts/angular-wizard.js?v=12.341"></script>
+    <script src="/Scripts/underscore.min.js?v=12.341" type="text/javascript"></script>
+
+    <script src="/Scripts/toaster.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/controllers/common/utils.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/models.js?v=12.341" type="text/javascript"></script>
+
+    <script src="/js/app/app.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/acceptTerms.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/announcementPlansPublicController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/annualPlansPublicController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/askquestion.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/attachments.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/banners.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/cancelations.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/changeDateAndTime.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/changePassword.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/ciidAnnouncementPlansController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/ciidAnnouncmentsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/ciidContractsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/ciidRealizedContractsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/completedProcedures.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/compliantsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/concessionsAnnouncements.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/confirmRegistrationController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/continueSubscriptionController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/contractsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/defenceAnnouncementsListController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/DeleteOldGenerateNewProInvoice.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieAcppChangeController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieAcppController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieAnnouncementController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieAnnualPlanController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieAnnualPlanVersionController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieAttachmentController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieCancellationController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieEvidenceController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieNotificationForBidController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossiePriorInformationNoticeController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieQuartalEvidenceController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieRealizedContractController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/dossieTransparencyNotificationController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/eAuctions.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/evidences.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/faq.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/home.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/instructionTemplateFiles.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/internationaldonorannouncements.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/invoicePaymentBlockedVendorController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/lawsuitsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/login.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/negativereference.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/negativereferencecheck.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/newsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/notificationsForACPP.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/notificationsForACPPChange.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/notificationsForBid.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/ongoingEvaluation.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/onlinePaymentController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/otherannouncements.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/planComparementController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/previewDocumentController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/priorInformationNotices.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/procurements.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/PublicAttachmentPreviousChangesController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/realizedContract.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/registerEconomicOperator.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/registeredContractingInstitutions.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/resetPasswordController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/simpleCompetitiveProcedures.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/sitemap.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/technicalDialogAnnouncements.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/tenderWinners.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/transparencyNotificationContracts.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/transparencyNotifications.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/usefulDocuments.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/userManual.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/webLinks.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/welcomePageTextController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/archiveYearController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/attachTenderDocumentLink.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/beneficialOwners.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/confirmModal.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/defenceDocumentsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/documentsController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/enums.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/models.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/notices.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/procedureEMarket.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/PublicAppLookupsRepository.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/showDocuments.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/timeController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/uploadBidFileController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/uploadFileController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/uploadFileListResultController.js?v=12.341" type="text/javascript"></script>
+    
+    <script src="/js/app/controllers/common/utils.js?v=12.341" type="text/javascript"></script>
+    
+
+    <script src="/js/app/ci/registerContractingInstitution.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/ci/registerInternationalDonorUser.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/services.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/filters.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/nextsense.directives.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/shareDataServices.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/video-frame-size.js?v=12.341" type="text/javascript"></script>
+    <script src="/js/app/linkDispicherService.js?v=12.341" type="text/javascript"></script>
+
+    <div class="clearfix"></div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"7d4514573d8a4c1eb886e3377787dc72","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

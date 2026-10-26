@@ -1,0 +1,2063 @@
+<!DOCTYPE HTML>
+<html>
+<head id="ctl00_Head"><script id="ctl00_jquery" type="text/javascript" src="systems/scripts/jquery.min.js"></script>
+<meta name="description" content="NATO DIANA working with the private sector and academia, Allies will ensure that we can harness the best of new technology for transatlantic security." />
+<meta name="keywords" content="NATO, DIANA, academia, Allies, technology, transatlantic, security, NATO DIANA" />
+<meta name="ROBOTS" content="FOLLOW, INDEX" />
+<meta charset="utf-8" />
+<title>
+	NATO DIANA | Challenges
+</title>
+<link href="assets/frameworks/mdl/material.min.css" rel="stylesheet" type="text/css" /><script src="assets/frameworks/mdl/material.min.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" /><meta property="og:title" content="NATO DIANA | Official Website" /><meta property="og:description" content="Official home of the Defence Innovation Accelerator for the North Atlantic (DIANA)." /><meta property="og:url" content="https://www.diana.nato.int/" /><meta property="og:type" content="website" /><meta property="og:image" content="https://www.diana.nato.int/resources%2ftemplates%2f13%2flogowzsyf141315.svg" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@NATO_DIANA" />
+<link rel="canonical" href="https://www.diana.nato.int/" /><link href="app_themes/default-material/stylesheet.css" type="text/css" rel="stylesheet" /><link id="ctl00_BaseCss" type="text/css" href="assets/common/ui/base/base.css" rel="stylesheet"></link>
+<link id="ctl00_is-topbar-css" type="text/css" href="templates/diana/custom_topbar.css" rel="stylesheet"></link><meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://www.youtube.com https://player.vimeo.com">
+<link id="ctl00_SnippetCss" type="text/css" href="templates/diana/custom_content.css" rel="stylesheet"></link><link id="ctl00_BoxCss" type="text/css" href="assets/common/ui/box/box.css?1" rel="stylesheet"></link><link id="ctl00_AnimateCss" type="text/css" href="assets/scripts/animate/animate.css" rel="stylesheet"></link><link id="ctl00_SimpleLightBoxCss" type="text/css" href="assets/scripts/simplelightbox/simplelightbox.css" rel="stylesheet"></link><style>
+  /* ── Shared components ── */
+  .accel-circle {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    min-height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0b9fda, #0066cc);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "safiromedium";
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 auto;
+  }
+
+  .diana-cohort-btns .accel-circle {
+    margin: 0 !important;
+  }
+
+  /* ── Container margin resets ── */
+  .sect2 .is-container,
+  .sect3 .is-container,
+  .sect4 .is-container,
+  .sect5 .is-container,
+  .sect6 .is-container,
+  .sect7 .is-container,
+  .sect8 .is-container,
+  .sect9 .is-container,
+  .sect10 .is-container {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* ── Section specific padding ── */
+  .sect4 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .sect7 .is-container {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .sect10 {
+    overflow: hidden;
+  }
+
+  .sect10 .is-container {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* ── sect1 challenge banners ── */
+  .sect1 .mdl-cell--12-col > div {
+    min-height: 180px;
+  }
+
+  .sect1 .mdl-cell--12-col > div img {
+    min-height: 180px;
+    object-fit: cover;
+  }
+
+  /* ── sect5 grid fix ── */
+  .sect5 .mdl-grid {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* ── Timeline images ── */
+  .sect9 .timeline-desktop {
+    display: block;
+  }
+
+  .sect9 .timeline-mobile {
+    display: none;
+  }
+
+  /* ── Video slider ── */
+  .diana-slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .diana-slider-track-wrapper {
+    width: calc(100% + 160px);
+    margin-left: -80px;
+    margin-right: -80px;
+    overflow: hidden;
+  }
+
+  .diana-slider-track {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+  }
+
+  .diana-slide-item {
+    flex-shrink: 0;
+    text-decoration: none;
+    transition:
+      width 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.5s ease;
+  }
+
+  .diana-video-thumb {
+    position: relative;
+    background-color: #111;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .diana-video-thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .diana-play-icon {
+    position: relative;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    transition: background 0.2s ease;
+  }
+
+  .diana-slide-item:hover .diana-play-icon {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .diana-video-label {
+    font-family: "safiromedium";
+    font-size: 13px;
+    color: #1a265b;
+    text-align: center;
+    margin-top: 8px;
+    padding: 0 4px;
+  }
+
+  .diana-slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .diana-slider-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0b9fda, #0066cc);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+    padding: 0;
+    line-height: 0;
+  }
+
+  .diana-slider-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+
+  .diana-slider-btn:hover {
+    opacity: 0.85;
+  }
+
+  /* ── Video circles ── */
+  .diana-video-circles {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .diana-video-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #1a265b;
+    max-width: 160px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .diana-video-circle-play {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f15a24, #e8371a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+  }
+
+  .diana-video-circle:hover .diana-video-circle-play {
+    opacity: 0.85;
+  }
+
+  .diana-video-circle p {
+    font-family: "safiromedium";
+    font-size: 14px;
+    margin: 0;
+  }
+
+  /* ── Cohort buttons ── */
+  .diana-cohort-btns {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 760px) {
+    /* all containers 95% wide on mobile */
+    .sect1 .is-container,
+    .sect2 .is-container,
+    .sect3 .is-container,
+    .sect4 .is-container,
+    .sect5 .is-container,
+    .sect6 .is-container,
+    .sect7 .is-container,
+    .sect8 .is-container,
+    .sect9 .is-container,
+    .sect10 .is-container {
+      max-width: 95% !important;
+    }
+
+    /* sect0 */
+    .sect0 h1 {
+      font-size: 24px !important;
+      line-height: 1.3 !important;
+    }
+
+    /* sect1 */
+    .sect1 h3 {
+      font-size: 16px !important;
+    }
+
+    .sect1 .mdl-grid {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    .sect1 .mdl-cell--12-col {
+      padding: 4px !important;
+    }
+
+    .sect1 .mdl-cell--12-col > div {
+      min-height: 120px !important;
+    }
+
+    .sect1 .mdl-cell--12-col > div img {
+      min-height: 120px !important;
+      object-fit: cover !important;
+    }
+
+    .sect1 [style*="position: absolute; top: 75%"] {
+      position: relative !important;
+      top: auto !important;
+      bottom: auto !important;
+      left: auto !important;
+      transform: none !important;
+      display: block !important;
+      text-align: center !important;
+      margin-top: 8px !important;
+    }
+
+    /* sect2 */
+    .sect2 h2 {
+      font-size: 20px !important;
+    }
+
+    .sect2 .mdl-cell--2-col {
+      width: 100% !important;
+      justify-content: center;
+    }
+
+    .sect2 .mdl-cell--10-col {
+      width: 100% !important;
+    }
+
+    /* sect3 */
+    .sect3 h2 {
+      font-size: 20px !important;
+    }
+
+    .sect3 .mdl-cell--3-col,
+    .sect3 .mdl-cell--2-col,
+    .sect3 .mdl-cell--1-col {
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .sect3 .mdl-cell--1-col img {
+      transform: rotate(90deg);
+      width: 30px;
+      margin: 8px auto;
+      display: block;
+    }
+
+    /* sect4 */
+    .sect4 [style*="padding: 60px"] {
+      padding: 24px 20px !important;
+    }
+
+    .sect4 h2 {
+      font-size: 20px !important;
+    }
+
+    .sect4 p {
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+    }
+
+    .sect4 strong {
+      font-size: 14px !important;
+    }
+
+    /* sect5 */
+    .sect5 .mdl-grid {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .sect5 .mdl-cell--2-col {
+      width: 100% !important;
+      text-align: center !important;
+      padding: 24px 16px !important;
+    }
+
+    .sect5 .icon-wrapper {
+      margin: 0 auto 12px auto !important;
+    }
+
+    /* sect6 */
+    .sect6 h2 {
+      font-size: 20px !important;
+    }
+
+    .sect6 .mdl-cell--4-col {
+      width: 100% !important;
+    }
+
+    /* sect7 */
+    .sect7 h2 {
+      font-size: 22px !important;
+    }
+
+    .sect7 .is-container {
+      padding-top: 32px !important;
+      padding-bottom: 32px !important;
+    }
+
+    /* sect8 */
+    .sect8 .mdl-cell--4-col {
+      width: 100% !important;
+    }
+
+    .sect8 h3 {
+      font-size: 18px !important;
+    }
+
+    .sect8 [style*="display: flex; align-items: center"] {
+      flex-direction: column !important;
+      text-align: center !important;
+      gap: 12px !important;
+    }
+
+    /* sect9 */
+    .sect9 p {
+      font-size: 16px !important;
+    }
+
+    .sect9 .timeline-desktop {
+      display: none !important;
+    }
+
+    .sect9 .timeline-mobile {
+      display: block !important;
+      width: 60% !important;
+      margin: 0 auto 40px auto !important;
+    }
+
+    /* sect10 */
+    .sect10 h2 {
+      font-size: 20px !important;
+    }
+
+    .diana-slider-track-wrapper {
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .diana-cohort-btns {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 12px !important;
+    }
+
+    .diana-video-circles {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 16px !important;
+    }
+
+    .diana-video-circle-play {
+      width: 80px !important;
+      height: 80px !important;
+      min-width: 80px !important;
+      min-height: 80px !important;
+      font-size: 22px !important;
+    }
+
+    /* shared mobile circles - all the same */
+    .accel-circle {
+      width: 140px !important;
+      height: 140px !important;
+      min-width: 140px !important;
+      min-height: 140px !important;
+      font-size: 15px !important;
+    }
+
+    .diana-cohort-btns .accel-circle {
+      margin: 0 auto !important;
+    }
+  }
+</style>
+</head>
+<body id="ctl00_pageBody" class="topstyle-4  is-wide-layout">
+<form name="aspnetForm" method="post" style="margin:0;height:100%" action="/challenges" onsubmit="if (typeof(WebForm_OnSubmit) == 'function') return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="61" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5OTE0OTY5MTQPFgYeD19fQW50aVhzcmZUb2tlbgUgODE2NTY2ZDljY2QxNGMyY2JkYzA0MzNiZWJiNjU2OWIeEl9f" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="QW50aVhzcmZVc2VyTmFtZWUeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYCZg9kFgICAw8WAh4FY2xhc3MFGnRvcHN0eWxlLTQgIGlz" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="LXdpZGUtbGF5b3V0FgICAQ8WAh4Fc3R5bGUFFG1hcmdpbjowO2hlaWdodDoxMDAlFgQCAQ9kFgICAQ9kFgJmD2QWAgICD2QWAmYP" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="ZBYMAgUPDxYCHhRWYWxpZGF0aW9uRXhwcmVzc2lvbgVtXlthLXpBLVowLTlcdTAwQzAtXHUwMTdGXC1fXFw6IUAoKVx7XH1cW1xd" />
+<input type="hidden" name="__VIEWSTATE4" id="__VIEWSTATE4" value="LC5+PSdgO1xeXHNdKyguZ2lmfC5HSUZ8LmpwZ3wuSlBHfC5qcGVnfC5KUEVHfC5wbmd8LlBOR3wuYm1wfC5CTVApJGRkAhEPEGRk" />
+<input type="hidden" name="__VIEWSTATE5" id="__VIEWSTATE5" value="FgFmZAIZDxBkZBYBZmQCHQ8QZGQWAWZkAiEPEGRkFgFmZAIlDxBkZBYBZmQCAw9kFgoCAQ8WAh4HVmlzaWJsZWhkAgMPZBYCAgIP" />
+<input type="hidden" name="__VIEWSTATE6" id="__VIEWSTATE6" value="ZBYCAgQPZBYCZg9kFgICCw8QZGQWAWZkAgcPFgIfBmhkAgsPFgIeBFRleHQF0AI8YSBpZD0iYnRuQmFja1RvVG9wIiBjbGFzcz0i" />
+<input type="hidden" name="__VIEWSTATE7" id="__VIEWSTATE7" value="aWNvbiBpb24taW9zLWFycm93LXVwIj48L2E+PHNjcmlwdD52YXIgYnRuID0gJCgiI2J0bkJhY2tUb1RvcCIpOyQod2luZG93KS5z" />
+<input type="hidden" name="__VIEWSTATE8" id="__VIEWSTATE8" value="Y3JvbGwoZnVuY3Rpb24oKSB7ICBpZiAoJCh3aW5kb3cpLnNjcm9sbFRvcCgpID4gMzAwKSB7ICAgIGJ0bi5hZGRDbGFzcygic2hv" />
+<input type="hidden" name="__VIEWSTATE9" id="__VIEWSTATE9" value="dyIpOyAgfSBlbHNlIHsgICAgYnRuLnJlbW92ZUNsYXNzKCJzaG93Iik7ICB9fSk7YnRuLm9uKCJjbGljayIsIGZ1bmN0aW9uKGUp" />
+<input type="hidden" name="__VIEWSTATE10" id="__VIEWSTATE10" value="IHsgIGUucHJldmVudERlZmF1bHQoKTsgICQoImh0bWwsIGJvZHkiKS5hbmltYXRlKHtzY3JvbGxUb3A6MH0sICIzMDAiKTt9KTs8" />
+<input type="hidden" name="__VIEWSTATE11" id="__VIEWSTATE11" value="L3NjcmlwdD5kAg0PZBYEZg8WAh8HBdIEPHNjcmlwdD5mdW5jdGlvbiBsb2FkRG9jQ29va2llKCkge3ZhciB5ID0gZG9jdW1lbnQu" />
+<input type="hidden" name="__VIEWSTATE12" id="__VIEWSTATE12" value="Z2V0RWxlbWVudEJ5SWQoJ215TW9kYWwnKTsgeS5zdHlsZSA9ICdsZWZ0OiAtNTAwcHg7IC13ZWJraXQtdHJhbnNpdGlvbjogb3Bh" />
+<input type="hidden" name="__VIEWSTATE13" id="__VIEWSTATE13" value="Y2l0eSAwLjNzIGxpbmVhciwgbGVmdCAwLjNzIGVhc2Utb3V0OyAtbW96LXRyYW5zaXRpb246IG9wYWNpdHkgMC4zcyBsaW5lYXIs" />
+<input type="hidden" name="__VIEWSTATE14" id="__VIEWSTATE14" value="IGxlZnQgMC4zcyBlYXNlLW91dDsgLW8tdHJhbnNpdGlvbjogb3BhY2l0eSAwLjNzIGxpbmVhciwgbGVmdCAwLjNzIGVhc2Utb3V0" />
+<input type="hidden" name="__VIEWSTATE15" id="__VIEWSTATE15" value="OyB0cmFuc2l0aW9uOiBvcGFjaXR5IDAuM3MgbGluZWFyLCBsZWZ0IDAuM3MgZWFzZS1vdXQ7JzsgdmFyIHggPSBkb2N1bWVudC5n" />
+<input type="hidden" name="__VIEWSTATE16" id="__VIEWSTATE16" value="ZXRFbGVtZW50c0J5Q2xhc3NOYW1lKCdjYy10eXBlLW9wdC1pbicpOyB2YXIgaTsgZm9yIChpID0gMDsgaSA8IHgubGVuZ3RoOyBp" />
+<input type="hidden" name="__VIEWSTATE17" id="__VIEWSTATE17" value="KyspIHt4W2ldLnN0eWxlID0gJ2JvdHRvbTotMzAwcHg7IHRyYW5zaXRpb246YWxsIDFzIGVhc2UtaW47IC13ZWJraXQtdHJhbnNp" />
+<input type="hidden" name="__VIEWSTATE18" id="__VIEWSTATE18" value="dGlvbjphbGwgMXMgZWFzZS1pbjsgLW1vei10cmFuc2l0aW86YWxsIDFzIGVhc2UtaW47IC1vLXRyYW5zaXRpb246YWxsIDFzIGVh" />
+<input type="hidden" name="__VIEWSTATE19" id="__VIEWSTATE19" value="c2UtaW4nO319PC9zY3JpcHQ+ZAIBDxYCHwcFwxc8ZGl2IGNsYXNzPSJjb250YWluZXIgbXljb250ZW50LXdyYXAiPjxkaXYgY2xh" />
+<input type="hidden" name="__VIEWSTATE20" id="__VIEWSTATE20" value="c3M9Im1vZGFsIGxlZnQgZmFkZSIgaWQ9Im15TW9kYWwiIHRhYmluZGV4PSItMSIgcm9sZT0iZGlhbG9nIiBhcmlhLWxhYmVsbGVk" />
+<input type="hidden" name="__VIEWSTATE21" id="__VIEWSTATE21" value="Ynk9Im15TW9kYWxMYWJlbCI+PGRpdiBjbGFzcz0ibW9kYWwtZGlhbG9nIiBzdHlsZT0iZm9udC1zaXplOjEwcHggIWltcG9ydGFu" />
+<input type="hidden" name="__VIEWSTATE22" id="__VIEWSTATE22" value="dDsiIHJvbGU9ImRvY3VtZW50Ij48ZGl2IGNsYXNzPSJtb2RhbC1jb250ZW50Ij48ZGl2IGNsYXNzPSJtb2RhbC1oZWFkZXIiPjxo" />
+<input type="hidden" name="__VIEWSTATE23" id="__VIEWSTATE23" value="MyBjbGFzcz0ibW9kYWwtdGl0bGUiIGlkPSJteU1vZGFsTGFiZWwiPjxiPjxzcGFuIGlkPSJtb2RhbC10aXRsZSI+Q29va2llIE5v" />
+<input type="hidden" name="__VIEWSTATE24" id="__VIEWSTATE24" value="dGljZTwvc3Bhbj48L2I+PC9oMz48YnV0dG9uIHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImNsb3NlIiBkYXRhLWRpc21pc3M9Im1vZGFs" />
+<input type="hidden" name="__VIEWSTATE25" id="__VIEWSTATE25" value="IiBhcmlhLWxhYmVsPSJDbG9zZSI+PHNwYW4gYXJpYS1oaWRkZW49InRydWUiPiZ0aW1lczs8L3NwYW4+PC9idXR0b24+PC9kaXY+" />
+<input type="hidden" name="__VIEWSTATE26" id="__VIEWSTATE26" value="PGRpdiBjbGFzcz0ibW9kYWwtYm9keSI+PHA+PHNwYW4gaWQ9Im1vZGFsLWJvZHktaGVhZGVyIj5UaGlzIHdlYnNpdGUgdXNlcyBj" />
+<input type="hidden" name="__VIEWSTATE27" id="__VIEWSTATE27" value="b29raWVzIHRvIGltcHJvdmUgeW91ciB1c2VyIGV4cGVyaWVuY2UuPC9zcGFuPjxidXR0b24gdHlwZT0iYnV0dG9uIiBpZD0iYnRu" />
+<input type="hidden" name="__VIEWSTATE28" id="__VIEWSTATE28" value="TW9yZUluZm8iIG5hbWU9ImJ0bk1vcmVJbmZvIiAgY2xhc3M9ImlzLWJ0bi14c21hbGwtbm9zdHlsZSIgb25jbGljaz0ib3Blbldp" />
+<input type="hidden" name="__VIEWSTATE29" id="__VIEWSTATE29" value="bigpIj5Nb3JlIGluZm9ybWF0aW9uIGFib3V0IHRoZSBjb29raWUgcG9saWN5IG9uIHRoaXMgd2Vic2l0ZTwvYnV0dG9uPjwvcD48" />
+<input type="hidden" name="__VIEWSTATE30" id="__VIEWSTATE30" value="YnIgLz48ZGl2IHN0eWxlPSJkaXNwbGF5OmlubGluZS1mbGV4OyB2ZXJ0aWNhbC1hbGlnbjptaWRkbGU7Ij48ZGl2IGNsYXNzPSJk" />
+<input type="hidden" name="__VIEWSTATE31" id="__VIEWSTATE31" value="aXZTd2l0Y2ggZGlzYWJsZVN3aXRjaCI+PGRpdiBjbGFzcz0iY2hrY292ZXIiPjwvZGl2PjxsYWJlbCBjbGFzcz0ic3dpdGNoLW1v" />
+<input type="hidden" name="__VIEWSTATE32" id="__VIEWSTATE32" value="ZGFsIj48aW5wdXQgbmFtZT0iY2hrQ29va2llIiB0eXBlPSJjaGVja2JveCIgY2hlY2tlZD0iY2hlY2tlZCIgdmFsdWU9IkZ1bmN0" />
+<input type="hidden" name="__VIEWSTATE33" id="__VIEWSTATE33" value="aW9uYWwiIG9uY2xpY2s9ImNoYW5nZVRleHQoKSIgLz48c3BhbiBjbGFzcz0ic2xpZGVyLW1vZGFsIHJvdW5kLW1vZGFsIj48L3Nw" />
+<input type="hidden" name="__VIEWSTATE34" id="__VIEWSTATE34" value="YW4+PC9sYWJlbD48L2Rpdj48ZGl2PjxoMz48Yj48c3BhbiBpZD0ibW9kYWwtYm9keS1mdW5jdGlvbmFsLXRpdGxlIj5GdW5jdGlv" />
+<input type="hidden" name="__VIEWSTATE35" id="__VIEWSTATE35" value="bmFsIGNvb2tpZXM8L3NwYW4+PC9iPjwvaDM+PC9kaXY+PC9kaXY+PGRpdj48cD48c3BhbiBpZD0ibW9kYWwtYm9keS1mdW5jdGlv" />
+<input type="hidden" name="__VIEWSTATE36" id="__VIEWSTATE36" value="bmFsLWNvbnRlbnQiPlRoZXNlIGNvb2tpZXMgYXJlIHJlcXVpcmVkIGFzIGEgbWluaW11bSBmb3IgdGhlIHdlYnNpdGUgdG8gZnVu" />
+<input type="hidden" name="__VIEWSTATE37" id="__VIEWSTATE37" value="Y3Rpb24gcHJvcGVybHkuPC9zcGFuPjxpbnB1dCBuYW1lPSJoaWRDb29raWUiIHR5cGU9ImhpZGRlbiIgdmFsdWU9IiIgLz48L3A+" />
+<input type="hidden" name="__VIEWSTATE38" id="__VIEWSTATE38" value="PC9kaXY+PGRpdiBzdHlsZT0iZGlzcGxheTppbmxpbmUtZmxleDsgdmVydGljYWwtYWxpZ246bWlkZGxlOyI+PGRpdiBjbGFzcz0i" />
+<input type="hidden" name="__VIEWSTATE39" id="__VIEWSTATE39" value="ZGl2U3dpdGNoIj48bGFiZWwgY2xhc3M9InN3aXRjaC1tb2RhbCI+PGlucHV0IG5hbWU9ImNoa0Nvb2tpZSIgY2xhc3M9ImNoa0Nv" />
+<input type="hidden" name="__VIEWSTATE40" id="__VIEWSTATE40" value="b2tpZTEiIHR5cGU9ImNoZWNrYm94IiB2YWx1ZT0iU3RhdGlzdGljYWwiIG9uY2xpY2s9ImNoYW5nZVRleHQoKSIgLz48c3BhbiBj" />
+<input type="hidden" name="__VIEWSTATE41" id="__VIEWSTATE41" value="bGFzcz0ic2xpZGVyLW1vZGFsIHJvdW5kLW1vZGFsIj48L3NwYW4+PC9sYWJlbD48L2Rpdj48ZGl2PjxoMz48Yj48c3BhbiBpZD0i" />
+<input type="hidden" name="__VIEWSTATE42" id="__VIEWSTATE42" value="bW9kYWwtYm9keS1zdGF0aXN0aWNhbC10aXRsZSI+U3RhdGlzdGljYWwgY29va2llczwvc3Bhbj48L2I+PC9oMz48L2Rpdj48L2Rp" />
+<input type="hidden" name="__VIEWSTATE43" id="__VIEWSTATE43" value="dj48ZGl2PjxwPjxzcGFuIGlkPSJtb2RhbC1ib2R5LXN0YXRpc3RpY2FsLWNvbnRlbnQiPlRoZXNlIGNvb2tpZXMgY29sbGVjdCAt" />
+<input type="hidden" name="__VIEWSTATE44" id="__VIEWSTATE44" value="IGNvbXBsZXRlbHkgYW5vbnltb3VzbHkgLSBkYXRhIGFib3V0IHRoZSB1c2Ugb2YgdGhlIHdlYnNpdGUgaW4gb3JkZXIgdG8gcHJv" />
+<input type="hidden" name="__VIEWSTATE45" id="__VIEWSTATE45" value="dmlkZSB2aXNpdG9ycyB3aXRoIGFuIGV2ZW4gYmV0dGVyIHVzZXIgZXhwZXJpZW5jZS48L3NwYW4+PGlucHV0IG5hbWU9ImhpZENv" />
+<input type="hidden" name="__VIEWSTATE46" id="__VIEWSTATE46" value="b2tpZSIgdHlwZT0iaGlkZGVuIiB2YWx1ZT0iVHJTdGF0MXxnYSIgLz48L3A+PC9kaXY+PGRpdiBzdHlsZT0iZGlzcGxheTppbmxp" />
+<input type="hidden" name="__VIEWSTATE47" id="__VIEWSTATE47" value="bmUtZmxleDsgdmVydGljYWwtYWxpZ246bWlkZGxlOyI+PGRpdiBjbGFzcz0iZGl2U3dpdGNoIj48bGFiZWwgY2xhc3M9InN3aXRj" />
+<input type="hidden" name="__VIEWSTATE48" id="__VIEWSTATE48" value="aC1tb2RhbCI+PGlucHV0IG5hbWU9ImNoa0Nvb2tpZSIgY2xhc3M9ImNoa0Nvb2tpZTIiIHR5cGU9ImNoZWNrYm94IiB2YWx1ZT0i" />
+<input type="hidden" name="__VIEWSTATE49" id="__VIEWSTATE49" value="Q29udGVudCAmIFNvY2lhbCIgb25jbGljaz0iY2hhbmdlVGV4dCgpIiAvPjxzcGFuIGNsYXNzPSJzbGlkZXItbW9kYWwgcm91bmQt" />
+<input type="hidden" name="__VIEWSTATE50" id="__VIEWSTATE50" value="bW9kYWwiPjwvc3Bhbj48L2xhYmVsPjwvZGl2PjxkaXY+PGgzPjxiPjxzcGFuIGlkPSJtb2RhbC1ib2R5LXNvY2lhbC10aXRsZSI+" />
+<input type="hidden" name="__VIEWSTATE51" id="__VIEWSTATE51" value="Q29udGVudCAmIFNvY2lhbDwvc3Bhbj48L2I+PC9oMz48L2Rpdj48L2Rpdj48ZGl2PjxwPjxzcGFuIGlkPSJtb2RhbC1ib2R5LXNv" />
+<input type="hidden" name="__VIEWSTATE52" id="__VIEWSTATE52" value="Y2lhbC1jb250ZW50Ij5FbnN1cmUgb3B0aW1hbCBpbnRlcmFjdGlvbiB3aXRoIHNvY2lhbCBtZWRpYSBzdWNoIGFzIFlvdXR1YmUs" />
+<input type="hidden" name="__VIEWSTATE53" id="__VIEWSTATE53" value="IFR3aXR0ZXIsIEZhY2Vib29rLCBWaW1lbyBvciBJbnN0YWdyYW0uPC9zcGFuPjxpbnB1dCBuYW1lPSJoaWRDb29raWUiIHR5cGU9" />
+<input type="hidden" name="__VIEWSTATE54" id="__VIEWSTATE54" value="ImhpZGRlbiIgdmFsdWU9ImdtYXB8eXR8ZmN8ZnNwfGZwfHRifHRzfHN0fHZtIiAvPjwvcD48L2Rpdj48cD48YnIgLz48aW5wdXQg" />
+<input type="hidden" name="__VIEWSTATE55" id="__VIEWSTATE55" value="dHlwZT0ic3VibWl0IiBuYW1lPSJidG5EaXNhYmxlIiB2YWx1ZT0iQWNjZXB0IEFsbCBDb29raWVzIiBpZD0iYnRuRGlzYWJsZSIg" />
+<input type="hidden" name="__VIEWSTATE56" id="__VIEWSTATE56" value="b25jbGljaz0ic3VibWl0Q29va2llNSgpIiBjbGFzcz0iaXMtYnRuIGlzLWJ0bi1naG9zdDIgaXMtdXBwZXIgaXMtcm91bmRlZC0z" />
+<input type="hidden" name="__VIEWSTATE57" id="__VIEWSTATE57" value="MCBpcy1idG4tc21hbGwiIC8+PC9wPjxkaXY+PGlucHV0IHR5cGU9InN1Ym1pdCIgbmFtZT0iYnRuQWNjZXB0TWluIiB2YWx1ZT0i" />
+<input type="hidden" name="__VIEWSTATE58" id="__VIEWSTATE58" value="T25seSBhY2NlcHQgbWluaW11bSBjb29raWVzIiBpZD0iYnRuQWNjZXB0TWluIiBvbmNsaWNrPSJzdWJtaXRDb29raWUyKCkiIGNs" />
+<input type="hidden" name="__VIEWSTATE59" id="__VIEWSTATE59" value="YXNzPSJpcy1saW5rIiAvPjwvZGl2PjwvZGl2PjwvZGl2PjwvZGl2PmQYAQUhY3RsMDAkcGxhY2Vob2xkZXJCb2R5JGdyaWRNb2R1" />
+<input type="hidden" name="__VIEWSTATE60" id="__VIEWSTATE60" value="bGVzDzwrAAwCBhUBC21vZHVsZV9maWxlCAL/////D2Rm/WUIjbYZTBwXUWH0716i3dNCuJ3+/oSkYQpVC+g0NA==" />
+</div>
+<div id="ctl00_topbar" class="is-topbar">
+<div class="is-topbar-container">
+<div class="is-topbar-logo">
+<a class="is-logo-link" href="index.html" title=""><img class="is-photo-profile" src="resources%2ftemplates%2f13%2flogowzsyf141315.svg" alt="SiteName"></a>
+</div>
+<div class="is-topbar-menu">
+<a id="is-menu-toggle" href="javascript:void(0)" title="Menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></a><div class="is-menu"><ul class="animated fadeIn"><li><a href="about-diana.html">About</a></li><li></li><li></li><li></li><li></li><li></li><li><a href="accelerator-programme.html">Accelerator Programme</a></li><li><a href="challenges.html">Challenges</a></li><li><a href="test-centres.html">Test centres</a></li><li><a href="office-of-the-financial-controller.html">Business</a></li><li><a href="partner-with-us.html">Capital Network</a></li><li><a href="join-our-team.html">Join our team</a></li><li class="lastitem"><a href="connect.html">News</a></li></ul></div>
+<style>
+    .divMenuSearch a{
+        color:#000;
+    }
+
+    .divMenuSearch a:hover{
+        color:#000;
+    }
+</style>
+</div>
+</div>
+</div>
+<div class="is-wrapper" id="isw">
+<div class="is-section is-light-text is-box is-bg-grey sect0 is-section-10 is-section-50">
+<div class="is-overlay">
+<div class="is-overlay-color"></div>
+<div class="is-overlay-content"></div>
+<div class="is-overlay-bg" style="background-image: url('resources/site1/general/challenges/challenges2027/diana_header_challenges.png');"></div>
+</div>
+<div class="is-boxes">
+<div class="is-box-centered is-opacity-95">
+<div class="is-container is-builder is-content-800 ui-sortable">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;"><h1 style="font-family: 'safiromedium'; ">DIANA's Challenges for 2027 have now closed.</h1></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-dark-text sect1 is-section-10" style="background-color: #ffffff;">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<h3 style="line-height: 1.6; margin-bottom: 24px; color: #1A265B;" data-keep-line-height="">We are no longer accepting applications for DIANA's 2027 Challenges. Selected innovators will be notified of outcomes later this year and will join the Accelerator Programme in January 2027.</h3><h2 style="line-height: 1.6; margin-bottom: 24px; color: rgb(216, 67, 21);" data-keep-line-height="">Learn about our six challenges for 2027:</h2></div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="padding: 8px;">
+<div style="position: relative;">
+<img src="resources/site1/general/challenges/challenges2027/diana_humansurvivability_banner.jpg" style="width: 100%; display: block; border-radius: 8px;">
+<div style="position: absolute; top: 75%; left: 50%; transform: translatex(-50%);">
+<a href="resources/site1/general/challenges/challenges2027/challenge_pdf/2027_human_survivability.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised" style="border: none; background-image: linear-gradient(to right, rgb(71, 92, 167), rgb(11, 159, 218)); color: #fff; border-radius: 5px; white-space: nowrap;" data-upgraded=",MaterialButton" title="SEE CHALLENGE STATEMENT">SEE CHALLENGE STATEMENT</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="padding: 8px;">
+<div style="position: relative;">
+<img src="resources/site1/general/challenges/challenges2027/diana_uncrewedsystems_banner.jpg" style="width: 100%; display: block; border-radius: 8px;">
+<div style="position: absolute; top: 75%; left: 50%; transform: translatex(-50%);">
+<a href="resources/site1/general/challenges/challenges2027/challenge_pdf/2027_multidomain_autonomy_of_uncrewed_systems.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised" style="border: none; background-image: linear-gradient(to right, rgb(71, 92, 167), rgb(11, 159, 218)); color: #fff; border-radius: 5px; white-space: nowrap;" data-upgraded=",MaterialButton" title="SEE CHALLENGE STATEMENT">SEE CHALLENGE STATEMENT</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="padding: 8px;">
+<div style="position: relative;">
+<img src="resources/site1/general/challenges/challenges2027/diana_multidomainsensing_banner.jpg" style="width: 100%; display: block; border-radius: 8px;">
+<div style="position: absolute; top: 75%; left: 50%; transform: translatex(-50%);">
+<a href="resources/site1/general/challenges/challenges2027/challenge_pdf/2027_multidomain_sensing_and_advanced_data_processing_for_intelligence_and_surveillance.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised" style="border: none; background-image: linear-gradient(to right, rgb(71, 92, 167), rgb(11, 159, 218)); color: #fff; border-radius: 5px; white-space: nowrap;" data-upgraded=",MaterialButton" title="SEE CHALLENGE STATEMENT">SEE CHALLENGE STATEMENT</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="padding: 8px;">
+<div style="position: relative;">
+<img src="resources/site1/general/challenges/challenges2027/diana_contestedenvironments_banner.jpg" style="width: 100%; display: block; border-radius: 8px;">
+<div style="position: absolute; top: 75%; left: 50%; transform: translatex(-50%);">
+<a href="resources/site1/general/challenges/challenges2027/challenge_pdf/2027_operational_resilience_in_contested_environments.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised" style="border: none; background-image: linear-gradient(to right, rgb(71, 92, 167), rgb(11, 159, 218)); color: #fff; border-radius: 5px; white-space: nowrap;" data-upgraded=",MaterialButton" title="SEE CHALLENGE STATEMENT">SEE CHALLENGE STATEMENT</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="padding: 8px;">
+<div style="position: relative;">
+<img src="resources/site1/general/challenges/challenges2027/diana_responsivelogistics_banner.jpg" style="width: 100%; display: block; border-radius: 8px;">
+<div style="position: absolute; top: 75%; left: 50%; transform: translatex(-50%);">
+<a href="resources/site1/general/challenges/challenges2027/challenge_pdf/2027_responsive_logistics.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised" style="border: none; background-image: linear-gradient(to right, rgb(71, 92, 167), rgb(11, 159, 218)); color: #fff; border-radius: 5px; white-space: nowrap;" data-upgraded=",MaterialButton" title="SEE CHALLENGE STATEMENT">SEE CHALLENGE STATEMENT</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="padding: 8px;">
+<div style="position: relative;">
+<img src="resources/site1/general/challenges/challenges2027/diana_airdefence_banner.jpg" style="width: 100%; display: block; border-radius: 8px;">
+<div style="position: absolute; top: 75%; left: 50%; transform: translatex(-50%);">
+<a href="resources/site1/general/challenges/challenges2027/challenge_pdf/2027_scalable_and_adaptable_countermeasures_for_air_defence.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised" style="border: none; background-image: linear-gradient(to right, rgb(71, 92, 167), rgb(11, 159, 218)); color: #fff; border-radius: 5px; white-space: nowrap;" data-upgraded=",MaterialButton" title="SEE CHALLENGE STATEMENT">SEE CHALLENGE STATEMENT</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-dark-text sect2 is-section-10" style="background-color: #ffffff;">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<p class="display" style="font-size: 13px; letter-spacing: 2px; margin-bottom: 24px; color: rgb(239, 87, 33);">HOW DIANA WORKS</p>
+<h2 style="color: #1A265B; font-family: 'safiromedium'; font-size: 28px; line-height: 1.4; margin-bottom: 40px;">DIANA seeks cutting-edge and mature technological solutions to critical defence and security challenges through public challenge calls.</h2>
+</div>
+</div>
+<div class="mdl-grid" style="align-items: center; margin-bottom: 32px;">
+<div class="mdl-cell mdl-cell--2-col" style="display: flex; justify-content: center; padding: 16px;">
+<div class="accel-circle">Innovators<br>Selection</div>
+</div>
+<div class="mdl-cell mdl-cell--10-col" style="padding: 16px;">
+<p>Through a highly competitive selection process, DIANA selects innovators based on their proposed solutions and invites them to join the DIANA Programme. These innovators sign a framework agreement to become "DIANA Innovators" and continue iterating the solution they proposed in response to the challenge.</p>
+</div>
+</div>
+<div class="mdl-grid" style="align-items: center; margin-bottom: 32px;">
+<div class="mdl-cell mdl-cell--2-col" style="display: flex; justify-content: center; padding: 16px;">
+<div class="accel-circle">Accelerator<br>Programme</div>
+</div>
+<div class="mdl-cell mdl-cell--10-col" style="padding: 16px;">
+<p>Selected Innovators then enter the <a href="https://www.diana.nato.int/accelerator-programme.html" style="color: rgb(239, 87, 33);" target="_blank" title="Accelerator Programme">Accelerator Programme</a> with an opportunity to apply to the defence adoption oriented Mission Track. During the programme DIANA innovators can access DIANA's test centre network to test, verify and validate their solutions against end-user needs.</p>
+</div>
+</div>
+<div class="mdl-grid" style="align-items: center; margin-bottom: 50px;">
+<div class="mdl-cell mdl-cell--2-col" style="display: flex; justify-content: center; padding: 16px;">
+<div class="accel-circle">Solutions<br>Adoption</div>
+</div>
+<div class="mdl-cell mdl-cell--10-col" style="padding: 16px;">
+<p>All DIANA Innovators, as part of the DIANA Programme, work to have their solutions adopted by end-users across NATO and Allies.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-light-text is-box sect3 is-section-10 is-section-75">
+<div class="is-overlay">
+<div class="is-overlay-color" style="background: rgba(10, 20, 60, 0.7);"></div>
+<div class="is-overlay-bg" style="background-image: url('resources/site1/general/challenges/challenges2027/diana_sect3_header.png');"></div>
+</div>
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<p class="display" style="font-size: 13px; letter-spacing: 2px; margin-bottom: 24px;">DYNAMIC CHALLENGES</p>
+<h2 style="font-family: 'safiromedium'; font-size: 28px; line-height: 1.5; margin-bottom: 24px;">Alongside our June challenges, DIANA will also be rolling out targeted Dynamic Challenges throughout the year.</h2>
+<p style="margin-bottom: 40px;">Dynamic Challenges will seek to address urgent needs, focusing on more specific capabilities, and may be launched at any point in the year – offering innovators more regular opportunities to engage with DIANA and shape NATO's future defence and security landscape.</p>
+</div>
+</div>
+<div class="mdl-grid" style="justify-content: center; align-items: center;">
+<div class="mdl-cell mdl-cell--3-col" style="text-align: center; padding: 8px;">
+<p style="color: rgb(239, 87, 33); font-family: 'safiromedium'; font-size: 18px; margin-bottom: 8px;">Urgent<br>Need</p>
+<p style="font-size: 14px;">Funding for opt-in programme available</p>
+</div>
+<div class="mdl-cell mdl-cell--1-col" style="display: flex; align-items: center; justify-content: center;">
+<img src="resources/site1/general/design2024/arrow_white.png" style="width: 40px;">
+</div>
+<div class="mdl-cell mdl-cell--2-col" style="text-align: center; padding: 8px;">
+<p style="color: rgb(239, 87, 33); font-family: 'safiromedium'; font-size: 18px; margin-bottom: 8px;">Dynamic<br>Challenge Call</p>
+</div>
+<div class="mdl-cell mdl-cell--1-col" style="display: flex; align-items: center; justify-content: center;">
+<img src="resources/site1/general/design2024/arrow_white.png" style="width: 40px;">
+</div>
+<div class="mdl-cell mdl-cell--2-col" style="text-align: center; padding: 8px;">
+<p style="color: rgb(239, 87, 33); font-family: 'safiromedium'; font-size: 18px; margin-bottom: 8px;">Rapid Iteration<br>&amp; Demonstration</p>
+</div>
+<div class="mdl-cell mdl-cell--1-col" style="display: flex; align-items: center; justify-content: center;">
+<img src="resources/site1/general/design2024/arrow_white.png" style="width: 40px;">
+</div>
+<div class="mdl-cell mdl-cell--2-col" style="text-align: center; padding: 8px;">
+<p style="color: rgb(239, 87, 33); font-family: 'safiromedium'; font-size: 18px; margin-bottom: 8px;">Rapid Adoption<br>Service</p>
+<p style="font-size: 14px;">Prototype contract</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-light-text sect4 is-section-10" style="background-color: #ffffff;">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col">
+<div style="background-image: url('resources/site1/general/challenges/challenges2027/diana_sect4_header.png'); background-size: cover; background-position: center; border-radius: 12px; overflow: hidden;">
+<div style="background: rgba(10, 20, 60, 0.75); padding: 60px; text-align: center;">
+<h2 style="font-family: 'safiromedium'; font-size: 28px; line-height: 1.5; margin-bottom: 24px; color: rgb(239, 87, 33);">Participation in the<br>Accelerator Programme</h2>
+<p style="margin-bottom: 24px;">Innovators selected for DIANA's annual Challenge Call taking place in June will continue to benefit from DIANA's Accelerator Programme, being able to engage with end users and becoming eligible for follow-on contracts through DIANA's Rapid Adoption Service.</p>
+<p style="margin-bottom: 24px;">Innovators selected for DIANA's Dynamic Challenges will not take part in the Accelerator Programme, as these challenges are designed to identify mature solutions to address urgent needs.</p>
+<p style="margin-bottom: 32px;"><strong>Our first dynamic challenge of the year:<br>Decision Superiority for NATO Warfighters challenge</strong></p>
+<a href="https://www.diana.nato.int/challenges/decision-superiority-for-nato-warfighters.html" class="mdl-button mdl-js-button mdl-button--raised" style="border: none; background-image: linear-gradient(to right, rgb(71, 92, 167), rgb(11, 159, 218)); color: #fff; border-radius: 5px; padding-left: 30px; padding-right: 30px;" data-upgraded=",MaterialButton" target="_blank" title="decision superiority for NATO warfighters">FIND OUT MORE</a>
+</div>
+<div style="height: 16px; background: linear-gradient(to right, #485ecb, #0b9fda);"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-light-text sect5 is-section-10 is-section-75" style="background-color: #1a265b;">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid" style="justify-content: space-between;">
+<div class="mdl-cell mdl-cell--2-col" style="text-align: left; padding: 0px;">
+<div class="icon-wrapper" style="margin: 0 0 12px 0;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_1.png"></div>
+<p style="color: #0B9FDA; font-family: 'safiromedium'; margin-bottom: 8px;">Call for Proposal</p>
+<p style="font-size: 14px;">Submit your proposal by 3 July. A competitive selection process will follow.</p>
+</div>
+<div class="mdl-cell mdl-cell--2-col" style="text-align: left; padding: 0px;">
+<div class="icon-wrapper" style="margin: 0 0 12px 0;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_2.png"></div>
+<p style="color: #0B9FDA; font-family: 'safiromedium'; margin-bottom: 8px;">Programme</p>
+<p style="font-size: 14px;">Innovators selected to join DIANA's Accelerator Programme receive contractual funding of 100,000 euros to continue iterating their solution in response to the Challenge.</p>
+</div>
+<div class="mdl-cell mdl-cell--2-col" style="text-align: left; padding: 0px;">
+<div class="icon-wrapper" style="margin: 0 0 12px 0;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_3.png"></div>
+<p style="color: #0B9FDA; font-family: 'safiromedium'; margin-bottom: 8px;">Down-Selection</p>
+<p style="font-size: 14px;">At the end of the Programme, a competitive down-selection takes place and a select number of DIANA Innovators will move forward to Mission Track of DIANA's Accelerator Programme.</p>
+</div>
+<div class="mdl-cell mdl-cell--2-col" style="text-align: left; padding: 0px;">
+<div class="icon-wrapper" style="margin: 0 0 12px 0;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_4.png"></div>
+<p style="color: #0B9FDA; font-family: 'safiromedium'; margin-bottom: 8px;">Mission Track</p>
+<p style="font-size: 14px;">Selected DIANA Innovators may receive additional funding of up to 300,000 euros to further iterate and demonstrate their solution, develop transition strategies, and work with investors and end users to identify pathways to adoption.</p>
+</div>
+<div class="mdl-cell mdl-cell--2-col" style="text-align: left; padding: 0px;">
+<div class="icon-wrapper" style="margin: 0 0 12px 0;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_5.png"></div>
+<p style="color: #0B9FDA; font-family: 'safiromedium'; margin-bottom: 8px;">Adoption</p>
+<p style="font-size: 14px;">All DIANA Innovators selected through the initial challenge call are supported in identifying adoption pathways to get their solutions into the hands of end-users.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-dark-text sect6 is-section-10 is-section-auto" style="background-color: #ffffff;">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<p class="display" style="font-size: 13px; letter-spacing: 2px; margin-bottom: 24px;"><span style="color: rgb(239, 87, 33);">WHO CAN SUBMIT A PROPOSAL</span></p>
+<h2 style="color: #1A265B; font-family: 'safiromedium'; font-size: 28px; line-height: 1.4; margin-bottom: 40px;">We encourage companies with innovative solutions from across the Alliance to submit proposals. Basic eligibility criteria include:</h2>
+</div>
+</div>
+<div class="mdl-grid" style="justify-content: center;">
+<div class="mdl-cell mdl-cell--4-col" style="text-align: center; padding: 16px;">
+<div class="accel-circle" style="margin-bottom: 20px;">Company<br>details</div>
+<p>Companies are required to provide identifying information such as legal name, place of registration, company headquarters, attestations relating to ownership and control.</p>
+</div>
+<div class="mdl-cell mdl-cell--4-col" style="text-align: center; padding: 16px;">
+<div class="accel-circle" style="margin-bottom: 20px;">Company<br>size or type</div>
+<p>DIANA will accept proposals from all companies meeting the basic eligibility criteria. However, start-ups or small and medium-sized enterprises with limited experience in defence and security benefit most from the unique DIANA Challenge Programme.</p>
+</div>
+<div class="mdl-cell mdl-cell--4-col" style="text-align: center; padding: 16px;">
+<div class="accel-circle" style="margin-bottom: 20px;">Universities &amp;<br>non-profit<br>groups</div>
+<p>Universities and non-profit groups are not eligible to submit a proposal, although we foresee opportunities for collaboration in future years.</p>
+</div>
+</div>
+<div class="mdl-grid" style="justify-content: center;">
+<div class="mdl-cell mdl-cell--4-col" style="text-align: center; padding: 16px;">
+<div class="accel-circle" style="margin-bottom: 20px;">Technology<br>or product<br>maturity</div>
+<p>DIANA seeks technology solutions at maturity levels of TRL 4 and above. Lower TRL solutions will not be considered at the moment.</p>
+</div>
+<div class="mdl-cell mdl-cell--4-col" style="text-align: center; padding: 16px;">
+<div class="accel-circle" style="margin-bottom: 20px;">T&amp;Cs<br>governing the<br>competitive<br>selection process</div>
+<p>Companies are required to agree to terms and conditions governing their participation in this competitive selection process, to ensure its integrity.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-light-text sect7 is-section-10" style="background: linear-gradient(to top right, #126c50, #0d9749);">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<p class="display" style="font-size: 13px; letter-spacing: 2px; margin-bottom: 24px;"><font style="color: rgb(255, 255, 255);">HOW TO SUBMIT A PROPOSAL</font></p>
+<p style="margin-bottom: 40px;">The following content details is what we look for in proposals:</p>
+<h2 style="font-family: 'safiromedium'; font-size: 28px; line-height: 1.5; margin-bottom: 16px;">Proposal Content</h2>
+<p style="margin-bottom: 32px;">We aim to make our submission process as straightforward and efficient as possible, using concise proposal templates. We encourage you to carefully tailor your proposal – setting out how it addresses the challenge, following the submission instructions.</p>
+<img src="resources/site1/general/logo_transparent.png" style="width: 50px; margin-bottom: 32px; filter: brightness(0) invert(1); rotate: 180deg;">
+<h2 style="font-family: 'safiromedium'; font-size: 28px; line-height: 1.5; margin-bottom: 16px;">Business Identification</h2>
+<p style="margin-bottom: 32px;">You will be required to provide identifying information such as your company's legal name, place of registration, and company headquarters.</p>
+<img src="resources/site1/general/logo_transparent.png" style="width: 50px; margin-bottom: 32px; filter: brightness(0) invert(1); rotate: 180deg;">
+<h2 style="font-family: 'safiromedium'; font-size: 28px; line-height: 1.5; margin-bottom: 16px;">Short Form Proposal</h2>
+<p style="margin-bottom: 32px;">This is a concise means of presenting key information focusing on your technical solution.</p>
+<img src="resources/site1/general/logo_transparent.png" style="width: 50px; margin-bottom: 32px; filter: brightness(0) invert(1); rotate: 180deg;">
+<h2 style="font-family: 'safiromedium'; font-size: 28px; line-height: 1.5; margin-bottom: 16px;">Long Form Proposal</h2>
+<p style="margin-bottom: 32px;">This focuses on your technical solution, as well as its dual use potential including its adoption potential by defence and security end users, and its commercial viability.</p>
+<img src="resources/site1/general/logo_transparent.png" style="width: 50px; margin-bottom: 32px; filter: brightness(0) invert(1); rotate: 180deg;">
+<h2 style="font-family: 'safiromedium'; font-size: 28px; line-height: 1.5; margin-bottom: 16px;">Virtual Panel Session</h2>
+<p>This will involve delivering your proposal through a presentation in a live setting to an evaluation panel.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-light-text sect8 is-section-10" style="background-color: #ffffff;">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<div class="spacer height-40"></div><p class="display" style="font-size: 13px; letter-spacing: 2px; margin-bottom: 40px; color: rgb(239, 87, 33);">THE COMPETITIVE SELECTION PROCESS</p>
+</div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--4-col" style="padding: 8px;">
+<div style="background-color: #111111; border-radius: 12px; padding: 32px; color: #fff; text-align: center; height: 100%; box-sizing: border-box;">
+<div class="icon-wrapper" style="margin: 0 auto 20px auto;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_6.png"></div>
+<h3 style="font-family: 'safiromedium'; margin-bottom: 16px;">Short Form<br>Proposal</h3>
+<p style="font-size: 14px;">After the submission deadline, eligible proposals will have their short form proposals evaluated. Step 1 involves being scored against technical criteria – including alignment to the challenge, validity, feasibility, dual-use potential, and coherence.</p>
+</div>
+</div>
+<div class="mdl-cell mdl-cell--4-col" style="padding: 8px;">
+<div style="background: linear-gradient(to top right, #000000, #1a265b); border-radius: 12px; padding: 32px; color: #fff; text-align: center; height: 100%; box-sizing: border-box;">
+<div class="icon-wrapper" style="margin: 0 auto 20px auto;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_7.png"></div>
+<h3 style="font-family: 'safiromedium'; margin-bottom: 16px;">Long Form<br>Proposal</h3>
+<p style="font-size: 14px;">Applicants that pass Step 1 will proceed to Step 2. Step 2 involves the long form proposal being scored against technical criteria – including alignment to the challenge, novelty, feasibility and validity; defence and security criteria – including relevance and impact; commercial and adoption criteria – including viability and commercial approach; and general criteria – including resources and dependencies and DIANA suitability.</p>
+</div>
+</div>
+<div class="mdl-cell mdl-cell--4-col" style="padding: 8px;">
+<div style="background: linear-gradient(135deg, #0b9fda, #0066cc); border-radius: 12px; padding: 32px; color: #fff; text-align: center; height: 100%; box-sizing: border-box;">
+<div class="icon-wrapper" style="margin: 0 auto 20px auto;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_8.png"></div>
+<h3 style="font-family: 'safiromedium'; margin-bottom: 16px;">Virtual Panel<br>Session</h3>
+<p style="font-size: 14px;">Applicants that pass Step 2 will be invited to Step 3, where they will present their proposal to an evaluation panel comprised of a DIANA Challenge Manager and evaluators with technical expertise, defence and security expertise, and commercial and adoption expertise, considering the same criteria as Step 2.</p>
+</div>
+</div>
+</div>
+<div class="mdl-grid" style="margin-top: 16px;">
+<div class="mdl-cell mdl-cell--12-col" style="padding: 8px;">
+<div style="background-color: #111111; border-radius: 12px; padding: 24px 32px; color: #fff; display: flex; align-items: center; gap: 24px;">
+<div class="icon-wrapper" style="flex-shrink: 0; margin: 0;"><img src="resources/site1/general/challenges/challenges2027/diana_vector_9.png"></div>
+<strong style="font-size: 18px; white-space: nowrap;">Outcomes</strong>
+<p style="margin: 0px; text-align: center;">Outcomes will be communicated to all applicants later this year.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-light-text sect9 is-section-10" style="background-color: #1a265b;">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;"><img class="timeline-desktop" src="resources/site1/general/challenges/challenges2027/2026-05-27_16h42_20.png" style="width: 100%; border-radius: 8px; margin-bottom: 40px;">
+<img class="timeline-mobile" src="resources/site1/general/challenges/challenges2027/2026-05-28_12h27_39.png" style="width: 60%; border-radius: 8px; margin-bottom: 40px;">
+<p style="font-size: 20px; margin-bottom: 24px;">You can download the full list of challenge statements here:</p>
+<a href="resources/site1/general/challenges/challenges2027/challenge_pdf/challenge statements_2027.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised" style="border: none; background-image: linear-gradient(to right, rgb(71, 92, 167), rgb(11, 159, 218)); color: #fff; border-radius: 5px; padding: 20px 60px; font-size: 16px; line-height: 1.6; height: auto; white-space: normal; margin-bottom: 40px;" data-upgraded=",MaterialButton">DOWNLOAD FULL CHALLENGE STATEMENTS</a><br><br></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-box is-dark-text sect10 is-section-10" style="background-color: #ffffff;">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable" style="max-width: 80%;">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<p class="display" style="font-size: 13px; letter-spacing: 2px; margin-bottom: 24px; color: rgb(239, 87, 33);">VIDEO RESOURCES</p>
+<h2 style="color: #1A265B; font-family: 'safiromedium'; font-size: 28px; line-height: 1.4; margin-bottom: 16px;">To help you learn more about DIANA, watch our latest video series covering how the programme works and offering practical insights into preparing your proposal.</h2>
+<p style="margin-bottom: 40px;">Watch to find out more, whether you're new to DIANA or looking to deepen your understanding:</p>
+</div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col">
+<!-- ============================================================ -->
+<!-- VIDEO SLIDER - currently active                              -->
+<!-- To deactivate: wrap in comment tags                          -->
+<!-- ============================================================ -->
+<div class="diana-slider-wrapper">
+<div class="diana-slider-track-wrapper">
+<div class="diana-slider-track" id="dianaSliderTrack">
+<a href="https://youtu.be/XzKCeOKFuJA" target="_blank" class="diana-slide-item">
+<div class="diana-video-thumb">
+<img src="https://img.youtube.com/vi/XzKCeOKFuJA/maxresdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+<div class="diana-play-icon" style="position: absolute;">▶</div>
+</div>
+<p class="diana-video-label">DIANA Accelerator Programme Overview</p>
+</a>
+<a href="https://youtu.be/XTDpnPkZvIY" target="_blank" class="diana-slide-item">
+<div class="diana-video-thumb">
+<img src="https://img.youtube.com/vi/XTDpnPkZvIY/maxresdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+<div class="diana-play-icon" style="position: absolute;">▶</div>
+</div>
+<p class="diana-video-label">DIANA Challenges Overview</p>
+</a>
+<a href="https://youtu.be/1ev243ETU88" target="_blank" class="diana-slide-item">
+<div class="diana-video-thumb">
+<img src="https://img.youtube.com/vi/1ev243ETU88/maxresdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+<div class="diana-play-icon" style="position: absolute;">▶</div>
+</div>
+<p class="diana-video-label">Tips and Tricks for Applying to DIANA and Pitching in the Dual Use Ecosystem</p>
+</a>
+<a href="https://youtu.be/q4oKNgTHnn4" target="_blank" class="diana-slide-item">
+<div class="diana-video-thumb">
+<img src="https://img.youtube.com/vi/q4oKNgTHnn4/maxresdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+<div class="diana-play-icon" style="position: absolute;">▶</div>
+</div>
+<p class="diana-video-label">Entering the Defence Market and Military Adoption</p>
+</a>
+<a href="https://youtu.be/DOoC4RMcj6Y" target="_blank" class="diana-slide-item">
+<div class="diana-video-thumb">
+<img src="https://img.youtube.com/vi/DOoC4RMcj6Y/maxresdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+<div class="diana-play-icon" style="position: absolute;">▶</div>
+</div>
+<p class="diana-video-label">Go-to-Defence Market Fundamentals</p>
+</a>
+<a href="https://youtu.be/DhB-xQ5aWQU" target="_blank" class="diana-slide-item">
+<div class="diana-video-thumb">
+<img src="https://img.youtube.com/vi/DhB-xQ5aWQU/maxresdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+<div class="diana-play-icon" style="position: absolute;">▶</div>
+</div>
+<p class="diana-video-label">Navigating Legal Hurdles with DIANA</p>
+</a>
+</div>
+</div>
+<div class="diana-slider-controls">
+<button class="diana-slider-btn diana-slider-prev" onclick="dianaSlide(event, -1)">
+<img src="resources/site1/general/logo_transparent.png" style="width: 20px; filter: brightness(0) invert(1); transform: rotate(-90deg);">
+</button>
+<button class="diana-slider-btn diana-slider-next" onclick="dianaSlide(event, 1)">
+<img src="resources/site1/general/logo_transparent.png" style="width: 20px; filter: brightness(0) invert(1); transform: rotate(90deg);">
+</button>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- END VIDEO SLIDER                                             -->
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+<!-- VIDEO CIRCLES - currently commented out                      -->
+<!-- To activate: remove the opening and closing comment tags     -->
+<!-- ============================================================ -->
+<!--
+<div class="diana-video-circles">
+<a href="https://youtu.be/XzKCeOKFuJA" target="_blank" class="diana-video-circle">
+<div class="diana-video-circle-play">▶</div>
+<p>DIANA Accelerator Programme Overview</p>
+</a>
+<a href="https://youtu.be/XTDpnPkZvIY" target="_blank" class="diana-video-circle">
+<div class="diana-video-circle-play">▶</div>
+<p>DIANA Challenges Overview</p>
+</a>
+<a href="https://youtu.be/1ev243ETU88" target="_blank" class="diana-video-circle">
+<div class="diana-video-circle-play">▶</div>
+<p>Tips and Tricks for Applying to DIANA and Pitching in the Dual Use Ecosystem</p>
+</a>
+<a href="https://youtu.be/q4oKNgTHnn4" target="_blank" class="diana-video-circle">
+<div class="diana-video-circle-play">▶</div>
+<p>Entering the Defence Market and Military Adoption</p>
+</a>
+<a href="https://youtu.be/DOoC4RMcj6Y" target="_blank" class="diana-video-circle">
+<div class="diana-video-circle-play">▶</div>
+<p>Go-to-Defence Market Fundamentals</p>
+</a>
+<a href="https://youtu.be/DhB-xQ5aWQU" target="_blank" class="diana-video-circle">
+<div class="diana-video-circle-play">▶</div>
+<p>Navigating Legal Hurdles with DIANA</p>
+</a>
+</div>
+-->
+<!-- ============================================================ -->
+<!-- END VIDEO CIRCLES                                            -->
+<!-- ============================================================ -->
+</div>
+</div>
+<div class="mdl-grid" style="margin-top: 40px;">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<h3 style="color: #1A265B; font-family: 'safiromedium'; margin-bottom: 32px;">Find out about our previous Innovator cohorts:</h3>
+<div class="diana-cohort-btns">
+<a href="about-diana/2024-cohort-of-companies.html" class="accel-circle" style="text-decoration: none; color: #fff;" target="_blank" title="2024 Cohort innovators">2024 Cohort<br>innovators</a>
+<a href="about-diana/2025-cohort-of-companies.html" class="accel-circle" style="text-decoration: none; color: #fff;" target="_blank" title="2025 Cohor innovators">2025 Cohort<br>innovators</a>
+<a href="about-diana/2026-cohort-of-companies.html" class="accel-circle" style="text-decoration: none; color: #fff;" target="_blank" title="2026 Cohort innovators">2026 Cohort<br>innovators</a>
+</div>
+</div>
+</div>
+<div class="mdl-grid" style="margin-top: 40px;">
+<div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+<h3 style="color: #1A265B; font-family: 'safiromedium'; margin-bottom: 32px;">Watch our latest Innovator Webinars:</h3>
+<div class="diana-cohort-btns">
+<a href="https://vimeo.com/1191861416/881290ca71?share=copy&amp;fl=sv&amp;fe=ci" class="accel-circle" style="text-decoration: none; color: #fff; background: linear-gradient(135deg, #0d9749, #126c50);" title="Innovator Webinar 1" target="_blank">Innovator Webinar 1</a>
+<a href="https://vimeo.com/1191866786/67401078e9" class="accel-circle" style="text-decoration: none; color: #fff; background: linear-gradient(135deg, #0d9749, #126c50);" title="Innovator Webinar 2" target="_blank">Innovator Webinar 2<br></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="is-section is-section-auto is-bg-light is-shadow-1 is-box"><div class="is-boxes"><div class="is-box-centered"><div class="is-container is-builder"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">
+</div></div></div></div></div></div><div id="footer" style="background-color: #19255a"
+	class="is-section  is-section-auto is-box is-section-20 is-light-text" runat="server">
+<div class="is-boxes">
+<div class="is-box-centered">
+<div class="is-container is-builder ui-sortable is-content-1200">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--5-col" data-keeper-edited="yes">
+<img src="resources/site1/general/design2024/new_diana_logo_correct_color.svg" style="margin-top:60px;width:150px" /><br>
+</div>
+<div class="mdl-cell mdl-cell--5-col" data-keeper-edited="yes" style="padding-left: 20px;">
+<div class="spacer height-40"></div>
+<p class="size-16" style="line-height:160%">
+								DIANA Headquarters: London, United Kingdom<br>
+Regional Hub: Tallinn, Estonia<br>
+North American Office: Halifax, Canada       <br>
+</p>
+</div>
+<div class="mdl-cell mdl-cell--2-col right" data-keeper-edited="yes" style="padding-left: 20px; vertical-align: bottom;">
+<div class="spacer height-120"></div>
+<div class="size-21 is-social right">
+<a style="color:white" title="Youtube" target="_blank"
+								href="https://www.youtube.com/@NATO-DIANA"><i style="margin:0 10px 0 0 !important"
+									class="icon ion-social-youtube"></i></a>
+<a style="color:white" title="LinkedIn" target="_blank"
+								href="https://www.linkedin.com/company/nato-diana"><i style="margin:0 10px 0 0 !important"
+									class="icon ion-social-linkedin"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="divSystem">
+<div style="display:none">
+<!-- AJAX FIX -->
+<div style="display:none">
+<input name="ctl00$placeholderBody$ic_dummy" type="text" value="dummy" id="ctl00_placeholderBody_ic_dummy" class="mdl-textfield__input" />&nbsp;
+                </div>
+</div>
+</div>
+<a id="btnBackToTop" class="icon ion-ios-arrow-up"></a>
+<style>
+        .nav-tabs>li:hover{cursor:pointer;}
+
+        .icon {color:#000;}
+
+        img {image-rendering: -webkit-optimize-contrast; }
+
+        .cookie-blocked-caption{
+            top: 65%;
+            position: absolute;
+            text-align: center;
+            background: hsla(0,0%,0%,.8);
+            color: #fff;
+        }
+
+        .cookie-blocked-caption img{
+            width: 100%;
+        }
+
+        .cookie-blocked-caption a{
+            color: #5a61e8;
+            text-decoration:underline;
+        }
+
+        .cookie-blocked-caption a:hover{
+            color: #5a61e8;
+            text-decoration:none;
+        }
+
+        #btnBackToTop{
+          display: inline-block;
+          background-color: #333333;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          border-radius: 4px;
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          transition: background-color .3s, 
+            opacity .5s, visibility .5s;
+          opacity: 0;
+          visibility: hidden;
+          z-index: 1000;
+        }
+        #btnBackToTop::before {
+          font-weight: normal;
+          font-style: normal;
+          font-size: 2em;
+          line-height: 50px;
+          color: #fff;
+          cursor: pointer;
+        }
+        #btnBackToTop:hover {
+          cursor: pointer;
+          background-color: #e3445d;
+        }
+        #btnBackToTop:active {
+          background-color: #e3445d;
+        }
+        #btnBackToTop.show {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        @media (min-width: 500px) {
+          #btnBackToTop {
+            margin: 30px;
+          }
+        }
+        </style>
+<div id="ctl00_placeholderBody_panelModal">
+<style>
+        /*Adjustment button accept all & customize with css only*/
+        #btnAcceptAll0{
+            position: absolute;
+            right: 250px;
+            top: 2px;
+        }
+
+         .cc-message {
+                font-size:90% !important;
+            }
+
+        #btnCustomize{
+            right: 30px;
+            position: absolute;
+            top: 2px;
+        }
+
+        .is-link{
+            background: none!important;
+            border: none;
+            padding: 0!important;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .is-btn-xsmall {
+            padding: 6px 10px;
+            font-size: 0.75em;
+            letter-spacing: 1px;
+            margin: 10px 0 0px 0 !important;
+            line-height: 1rem;
+        }
+
+        .is-btn.is-rounded-30, .is-rounded-30 {
+            border-radius: 7px;
+        }
+
+        .is-btn-ghost3, a.is-btn-ghost3 {
+            color: #fff;
+            border: 2px solid #fff;
+            background-color: #ca0928 !important;
+        }
+
+        .cc-banner .cc-message {
+            display: block;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            max-width: 100%;
+            margin-right: 1em;
+            color: white !important;
+        }
+
+        .cc-window {
+            opacity: 1;
+            transition: opacity 1s ease;
+            background-color: #ca0928;
+        }
+
+        .is-btn-xsmall-nostyle {
+            padding: 6px 10px;
+            font-size: 0.75em;
+            letter-spacing: 1px;
+            margin: 10px 0 0px 0 !important;
+            line-height: 1rem;
+            background: none !important;
+            border: none !important;
+            cursor: pointer !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            text-decoration: underline !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            text-align:left;
+        }
+
+        @media (max-width:950px) {
+            #btnAcceptAll0{
+                top: 60px;
+            }
+
+            #btnCustomize{
+                top: 60px;
+            }
+
+            .cc-window.cc-banner {
+                padding: 2.5em 1.8em !important;
+            }
+        }
+
+          @media (max-width:540px) {
+            #btnAcceptAll0{
+                top: 90px; padding:10px !important; 
+            }
+
+            #btnCustomize{
+                top: 90px;padding:10px !important; 
+            }
+             .cc-compliance {
+             margin:10px !important; padding:10px !important;
+            }
+              .cc-message {
+                color:white !important;
+            }
+              .cc-window {min-height:90px;
+               
+            }
+        }
+
+        /*bootstrap*/
+        /*adjustment for overflow and padding by bootstrap modal*/
+        .mycontent-wrap {
+            bottom: 0;
+            position: absolute;
+            top: 0;
+            width: auto;
+            left: -20px;
+        }
+
+        .mycontent-wrap p {
+            font-size: 16px;
+            margin: 3px !important;
+        }
+
+        .mycontent-wrap li {
+            font-size: 16px
+        }
+
+        .mycontent-wrap h3 {
+            font-size: 18px
+        }
+
+        /*adjustment for overflow and padding by bootstrap modal*/
+        .modal-open {
+            overflow: hidden;
+            padding-right:0px !important;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000000;
+            display: none;
+            overflow: hidden;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+            padding-right:0px !important;
+        }
+
+        .modal-header {
+            min-height: 16.43px;
+            padding: 15px;
+            border-bottom: 1px solid #e5e5e5;
+            display: inline-flex;
+            width: 100% !important;
+        }
+
+            .modal-header .close {
+                margin-top: -2px;
+                border: none !important;
+                background-color: transparent !important;
+                font-size: 22px !important;
+                font-weight: bold;
+            }
+
+            .modal-header .h3 {
+                width: 100% !important;
+                font-size: 22px !important;
+                font-weight: bold;
+            }
+
+        .modal-title {
+            margin: 0;
+            line-height: 1.42857143;
+            width: 100% !important;
+        }
+
+        .modal-body {
+            position: relative;
+            padding: 15px;
+        }
+
+        .modal-footer {
+            padding: 15px;
+            text-align: right;
+            border-top: 1px solid #e5e5e5
+        }
+
+            .modal-footer .btn + .btn {
+                margin-bottom: 0;
+                margin-left: 5px
+            }
+
+            .modal-footer .btn-group .btn + .btn {
+                margin-left: -1px
+            }
+
+            .modal-footer .btn-block + .btn-block {
+                margin-left: 0
+            }
+
+        .modal-scrollbar-measure {
+            position: absolute;
+            top: -9999px;
+            width: 50px;
+            height: 50px;
+            overflow: scroll
+        }
+
+        @media (max-width:500px) {
+            .modal-dialog {
+                width: 100%;
+                margin: 30px auto;
+                z-index: 1000000 !important;
+            }
+
+            .mycontent-wrap p {
+                font-size: 14px
+            }
+
+            .mycontent-wrap li {
+                font-size: 14px
+            }
+
+            .mycontent-wrap h3 {
+                font-size: 16px
+            }
+
+            .modal-open {
+                overflow: hidden
+            }
+
+            .modal {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 1000000;
+                display: none;
+                overflow: hidden;
+                -webkit-overflow-scrolling: touch;
+                outline: 0
+            }
+
+            .modal-header {
+                min-height: 16.43px;
+                padding: 15px;
+                border-bottom: 1px solid #e5e5e5
+            }
+
+                .modal-header .close {
+                    margin-top: -2px
+                }
+
+            .modal-title {
+                margin: 0;
+                line-height: 1.42857143
+            }
+
+            .modal-body {
+                position: relative;
+                padding: 15px;
+            }
+
+            .modal-footer {
+                padding: 15px;
+                text-align: right;
+                border-top: 1px solid #e5e5e5
+            }
+
+                .modal-footer .btn + .btn {
+                    margin-bottom: 0;
+                    margin-left: 5px
+                }
+
+                .modal-footer .btn-group .btn + .btn {
+                    margin-left: -1px
+                }
+
+                .modal-footer .btn-block + .btn-block {
+                    margin-left: 0
+                }
+
+            .modal-scrollbar-measure {
+                position: absolute;
+                top: -9999px;
+                width: 50px;
+                height: 50px;
+                overflow: scroll
+            }
+
+            .modal-backdrop {
+                z-index: -1;
+            }
+
+            .modal.left .modal-dialog {
+                display: flex;
+                position: absolute;
+                margin: auto;
+                width: 100% !important;
+                height: 100%;
+                -webkit-transform: translate3d(0%, 0, 0);
+                -ms-transform: translate3d(0%, 0, 0);
+                -o-transform: translate3d(0%, 0, 0);
+                transform: translate3d(0%, 0, 0);
+                z-index: 1000000 !important;
+            }
+
+            .modal.left .modal-content {
+                height: 100%;
+                overflow-y: auto;
+            }
+
+            .modal.left .modal-body {
+                padding: 15px 15px 80px;
+                z-index: 1000000;
+            }
+
+            /*Left*/
+            .modal.left.fade .modal-dialog {
+                left: -500px;
+                -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+                -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+                -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+                transition: opacity 0.3s linear, left 0.3s ease-out;
+                z-index: 1000000;
+                background: #fff;
+            }
+
+            .modal.left.fade.in .modal-dialog {
+                left: 0;
+                z-index: 1000000;
+            }
+
+            /* ----- MODAL STYLE ----- */
+            .modal-content {
+                border-radius: 0;
+                border: none;
+                z-index: 1000000;
+            }
+
+            .modal-header {
+                border-bottom-color: #EEEEEE;
+                background-color: #FAFAFA;
+                z-index: 1000000;
+            }
+
+            .modal {
+                position: fixed;
+                z-index: 1000000;
+                color: #000;
+            }
+
+            .chkcover {
+                top: 150px !important;
+                left: 0;
+                display: block;
+            }
+        }
+
+        .modal-backdrop {
+            z-index: -1;
+        }
+
+        .modal.left .modal-dialog {
+            display: flex;
+            position: absolute;
+            margin: auto;
+            width: 500px;
+            height: 100%;
+            -webkit-transform: translate3d(0%, 0, 0);
+            -ms-transform: translate3d(0%, 0, 0);
+            -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+            z-index: 1000000 !important;
+        }
+
+        .modal.left .modal-content {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .modal.left .modal-body {
+            padding: 15px 15px 0px;
+            z-index: 1000000;
+        }
+
+        /*Left*/
+        .modal.left.fade .modal-dialog {
+            left: -500px;
+            -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+            -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+            -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+            transition: opacity 0.3s linear, left 0.3s ease-out;
+            z-index: 1000000;
+            background: #fff;
+        }
+
+        .modal.left.fade.in .modal-dialog {
+            left: 0;
+            z-index: 1000000;
+        }
+
+        /* ----- MODAL STYLE ----- */
+        .modal-content {
+            border-radius: 0;
+            border: none;
+            z-index: 1000000;
+        }
+
+        .modal-header {
+            border-bottom-color: #EEEEEE;
+            background-color: #FAFAFA;
+            z-index: 1000000;
+        }
+
+        .modal {
+            position: fixed;
+            z-index: 1000000;
+            color: #000;
+        }
+
+        /* The switch - the box around the slider */
+        .divSwitch > .switch-modal {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+            /* Hide default HTML checkbox */
+            .divSwitch > .switch-modal input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        /* The slider */
+        .slider-modal {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+            .slider-modal:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+        input:checked + .slider-modal {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider-modal {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider-modal:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded slider-modals */
+        .slider-modal.round-modal {
+            border-radius: 34px;
+        }
+
+            .slider-modal.round-modal:before {
+                border-radius: 50%;
+            }
+
+        .divSwitch > label {
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+
+        /*This to disable switch*/
+        .chkcover {
+            width: 200px;
+            height: 50px;
+            background: transparent;
+            position: absolute;
+            z-index: 2;
+            top: 90px;
+            left: 0;
+            display: block;
+        }
+
+        .disableSwitch {
+            -khtml-opacity: .30;
+            -moz-opacity: .30;
+            -ms-filter: ”alpha(opacity=30)”;
+            filter: alpha(opacity=30);
+            filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.3);
+            opacity: 0.3;
+        }
+    </style>
+<div class="container mycontent-wrap"><div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog" style="font-size:10px !important;" role="document"><div class="modal-content"><div class="modal-header"><h3 class="modal-title" id="myModalLabel"><b><span id="modal-title">Cookie Notice</span></b></h3><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><p><span id="modal-body-header">This website uses cookies to improve your user experience.</span><button type="button" id="btnMoreInfo" name="btnMoreInfo"  class="is-btn-xsmall-nostyle" onclick="openWin()">More information about the cookie policy on this website</button></p><br /><div style="display:inline-flex; vertical-align:middle;"><div class="divSwitch disableSwitch"><div class="chkcover"></div><label class="switch-modal"><input name="chkCookie" type="checkbox" checked="checked" value="Functional" onclick="changeText()" /><span class="slider-modal round-modal"></span></label></div><div><h3><b><span id="modal-body-functional-title">Functional cookies</span></b></h3></div></div><div><p><span id="modal-body-functional-content">These cookies are required as a minimum for the website to function properly.</span><input name="hidCookie" type="hidden" value="" /></p></div><div style="display:inline-flex; vertical-align:middle;"><div class="divSwitch"><label class="switch-modal"><input name="chkCookie" class="chkCookie1" type="checkbox" value="Statistical" onclick="changeText()" /><span class="slider-modal round-modal"></span></label></div><div><h3><b><span id="modal-body-statistical-title">Statistical cookies</span></b></h3></div></div><div><p><span id="modal-body-statistical-content">These cookies collect - completely anonymously - data about the use of the website in order to provide visitors with an even better user experience.</span><input name="hidCookie" type="hidden" value="TrStat1|ga" /></p></div><div style="display:inline-flex; vertical-align:middle;"><div class="divSwitch"><label class="switch-modal"><input name="chkCookie" class="chkCookie2" type="checkbox" value="Content & Social" onclick="changeText()" /><span class="slider-modal round-modal"></span></label></div><div><h3><b><span id="modal-body-social-title">Content & Social</span></b></h3></div></div><div><p><span id="modal-body-social-content">Ensure optimal interaction with social media such as Youtube, Twitter, Facebook, Vimeo or Instagram.</span><input name="hidCookie" type="hidden" value="gmap|yt|fc|fsp|fp|tb|ts|st|vm" /></p></div><p><br /><input type="submit" name="btnDisable" value="Accept All Cookies" id="btnDisable" onclick="submitCookie5()" class="is-btn is-btn-ghost2 is-upper is-rounded-30 is-btn-small" /></p><div><input type="submit" name="btnAcceptMin" value="Only accept minimum cookies" id="btnAcceptMin" onclick="submitCookie2()" class="is-link" /></div></div></div></div>
+</div>
+</div>
+<span id="dummy"></span>
+<div>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div></form>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  "name": "NATO DIANA",
+  "url": "https://diana.nato.int/",
+  "logo": "https://diana.nato.int/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/nato-diana",
+    "https://twitter.com/NATO_DIANA"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "NATO",
+    "url": "https://www.nato.int"
+  }
+}
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-PYQTQ2JVN4"></script><script src="systems/scripts/semantic-ui-css-master/semantic.js"></script><script type="text/javascript" >
+        var theForm = document.forms['aspnetForm'];
+
+        if (!theForm) {
+            theForm = document.aspnetForm;
+        }
+
+        var elements = theForm.elements;
+        for (var i = 0, len = elements.length; i < len; ++i) {
+            elements[i].disabled = true;
+        }
+
+        function enableForm() { 
+            var elements = theForm.elements;
+            for (var i = 0, len = elements.length; i < len; ++i) {
+                elements[i].disabled = false;
+            }
+        } 
+
+        window.onLoad = enableForm();
+    </script><script type="text/javascript" src="assets/common/ui/base/base.js"></script><script id="ctl00_placeholderScript_is-topbar-js" type="text/javascript" src="assets/scripts/topbar/topbar.js"></script><script id="ctl00_placeholderScript_BoxJs" type="text/javascript" src="assets/common/ui/box/box.js"></script><script id="ctl00_placeholderScript_SimpleLightBoxJs" type="text/javascript" src="assets/scripts/simplelightbox/simple-lightbox.min.js"></script><script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-PYQTQ2JVN4');</script><script>$(document).ready(function ($) {$('.is-topbar').addClass('fixed static');})</script><script>
+    function showSearchModal() {
+        $(document).ready(function () {
+            jQuery('#idSearch').cleanmodal();
+            jQuery('#idSearch').data('cleanmodal').show();
+            var value = $('#txtSearch').val();
+            $('#txtSearch').focus().val('').blur().focus().val(value);
+        });
+    }
+</script><script>
+            $(document).ready(function () {
+                $('#divSystem').detach().appendTo('form:first');
+                $(".ion-ios-arrow-thin-down").addClass("ion-ios-arrow-down");
+                $(".ion-ios-arrow-thin-down").removeClass("ion-ios-arrow-thin-down");
+            });
+        </script><script>
+<!--
+                    try {
+                        var prm = Sys.WebForms.PageRequestManager.getInstance();
+                    }
+                    catch (e) { }        
+                // -->
+</script><script>var btn = $("#btnBackToTop");$(window).scroll(function() {  if ($(window).scrollTop() > 300) {    btn.addClass("show");  } else {    btn.removeClass("show");  }});btn.on("click", function(e) {  e.preventDefault();  $("html, body").animate({scrollTop:0}, "300");});</script><script>
+        $('a[href*="#"]')
+        .not('[href="default.aspx#"]')
+        .not('[href="default.aspx#0"]')
+        .click(function (event) {
+            if (
+              location.pathname.replace(/^\//, '').replace('.aspx', '') == this.pathname.replace(/^\//, '').replace('.aspx', '')
+              && 
+              location.hostname == this.hostname
+            ) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { 
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); 
+                    $target.focus();
+                  };
+                });
+              }
+            }
+          });
+        </script><script>function loadDocCookie() {var y = document.getElementById('myModal'); y.style = 'left: -500px; -webkit-transition: opacity 0.3s linear, left 0.3s ease-out; -moz-transition: opacity 0.3s linear, left 0.3s ease-out; -o-transition: opacity 0.3s linear, left 0.3s ease-out; transition: opacity 0.3s linear, left 0.3s ease-out;'; var x = document.getElementsByClassName('cc-type-opt-in'); var i; for (i = 0; i < x.length; i++) {x[i].style = 'bottom:-300px; transition:all 1s ease-in; -webkit-transition:all 1s ease-in; -moz-transitio:all 1s ease-in; -o-transition:all 1s ease-in';}}</script><script>
+        var hid10 = '';
+        var hid11 = '';
+        var hid12 = '';
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () { hid10 = ''; hid11 = ''; hid12 = ''; document.getElementById("btnAcceptMin").value = hid12; }, 3000);          
+        });
+
+        function submitCookie() {
+            event.preventDefault();
+            _getCookieSelect();
+        }
+
+        function submitCookie2() {
+            event.preventDefault();
+            _getCookieSelect2();
+        }
+
+        function submitCookie5() {
+            event.preventDefault();
+            _getCookieSelect5();
+        }
+
+        function changeText() {
+            var x = document.getElementsByClassName("chkCookie1");
+            var y = document.getElementsByClassName("chkCookie2");
+
+            if (x[0].checked == true && y[0].checked == true) {
+                document.getElementById("btnDisable").value = hid10;
+            } else {
+                document.getElementById("btnDisable").value = hid11;
+            }
+        }
+
+        function openWin() {
+            window.open("");
+        }        
+
+        $(document).ready(function () {
+            window.setInterval(function() {
+                $("#btnCustomize").addClass("is-btn is-btn-ghost3 is-upper is-rounded-30 is-btn-xsmall");
+            }, 10);
+
+            setTimeout(function(){ 
+                var x = document.getElementsByClassName("is-lightbox");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].getElementsByTagName('IMG')[0].title = x[i].title;
+                }
+            }, 500);
+        });
+        //loadDoc();
+    </script><script>
+    $(document).ready(function() {
+     var intervalId = null;
+     var varCounter = 0;
+     var isCst = 'true';
+
+     var icTimer = function(){
+     var cookies = document.cookie.split(";");
+
+     if (varCounter == 0) {
+        $.each($('input'),function(){
+           if($(this).attr("type")=="hidden"){
+              var valueOfHidFiled = 'nothing';
+
+              try {
+                 valueOfHidFiled = $(this).attr("id");
+              } catch(err) {
+                 valueOfHidFiled = 'nothing';
+              }
+ 
+              try {
+                 if (valueOfHidFiled.indexOf("hidDisable") >= 0) {
+                    if ($(this).val() == '') {} else { 
+                        clearInterval(intervalId);
+                    }
+                 }
+              } catch(err2) {
+                 //do nothing
+              }     
+           }
+        });
+     } else { 
+     //no consented cookie     
+     for(var j=0; j < cookies.length; j++) {
+        var equals2 = cookies[j].indexOf("=");
+        var name2 = equals2 > -1 ? cookies[j].substr(0, equals2) : cookies[j];
+          
+        if ((name2.indexOf("pop-active") >= 0) || (name2.indexOf("wstoken") >= 0) || (name2.indexOf("aspxauth") >= 0) || (name2.indexOf("AntiXsrfToken") >= 0) || (name2.indexOf("ASP.NET_SessionId") >= 0)) {
+           //do nothing 
+        } else {
+           setExpired(name2);
+        }
+     }
+     }
+     
+     varCounter++;
+
+     if(varCounter > 5000) {
+          clearInterval(intervalId);
+     }
+};
+
+function setExpired(name) { 
+   var expires; 
+   expires = '; expires=Thu, 01 Jan 2010 00:00:00 UTC'; 
+   document.cookie = name + '=' + expires + '; path=/; domain=' + window.location.host + ';';
+   document.cookie = name + '=' + expires + '; path=/; domain=' + window.location.host + ';';
+   document.cookie = name + '=' + expires + '; path=/; domain=google.com;';
+}
+
+function startCheck() {
+   intervalId = setInterval(icTimer, 100);
+}
+
+setTimeout(startCheck, 500);   
+});
+</script><script>
+    function _getselectionsearchdummy() {}
+
+    function addEventToDiv() {
+        try {
+            var element = document.getElementById('divCustomTags');
+            element.addEventListener('DOMSubtreeModified', changeBreaktoModule);
+
+            var element2 = document.getElementById('ifrIdeasPanel');
+            element2.src = document.getElementById("hidCustomSrc").value
+        }
+        catch(err) {
+          
+        }
+
+        try {
+            $('div[title~="Titelprofiel1"]').html('<h1></h1>');
+            $('div[title~="Titelprofiel2"]').html('<h2></h2>');
+            $('div[title~="Titelprofiel3"]').html('<h3></h3>');
+            $('div[title~="Titelprofiel4"]').html('<h4></h4>');
+            $('div[title~="Paragraaf"]').html('<p></p>');
+            $('div[title~="Bijschrift"]').html('<p style="font-family:courier;"></p>')
+        }
+        catch(err) {
+          
+        }
+    }
+
+    function changeBreaktoModule() {
+        content = document.getElementById("divCustomTags");
+        kbButtons = content.getElementsByTagName("button");
+        
+        for (var iIndex = 0; iIndex < kbButtons.length; iIndex++){
+            if (kbButtons[iIndex].getAttribute('data-value') == '[%BREAK%]') {
+                kbButtons[iIndex].setAttribute('data-value', '[%MODULE%]');
+                kbButtons[iIndex].innerHTML = ' MODULE ';
+            }
+        };
+    }
+
+    $(document).ready(function () {
+        setTimeout(checkUseSection, 1);
+
+        try {
+            setTimeout(addEventToDiv, 1);
+        }
+        catch(err) {
+          
+        }
+
+        setTimeout(function(){ 
+            $('.cell-add-more').click(function () {
+                var $modal = $('.is-modal.snippets');
+                $modal.find('iframe').attr('src', document.getElementById("hidCustomSnippet").value);
+            });
+        }, 3000);
+
+        setTimeout(function(){ 
+            var x = document.getElementsByClassName("is-lightbox");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].getElementsByTagName('IMG')[0].title = x[i].title;
+            }
+        }, 500);
+    });
+
+    function checkUseSection() {
+        var hid1 = "true";
+
+        try {
+            hid1 = document.getElementById("hidUseSection").value;
+        }
+        catch(err) {
+            hid1 = "true";
+        }
+        
+
+        if (hid1 == "false") {
+            var x = document.getElementsByClassName("is-sidebar-button");
+            
+            var i;
+            for (i = 0; i < x.length; i++) {
+                if (x[i].title == "Sections") {
+                    x[i].style = "display:none !important;"
+                }
+
+                if (x[i].title == "HTML") {
+                    x[i].style = "display:none !important;"
+                }
+            }
+
+            var y = document.getElementsByClassName("cl-button");
+            
+            var j;
+            for (j = 0; j < y.length; j++) {
+                if (y[j].innerHTML.indexOf("cb-icon-wrench") !== -1) {
+                    y[j].style = "display:none;"
+                }
+            }
+        }
+    }
+</script><script>$(document).ready(function (e) { $('a.is-lightbox').simpleLightbox({closeText:'<i style="font-size:35px" class="icon ion-ios-close-empty"></i>',navText:['<i class="icon ion-ios-arrow-left"></i>','<i class="icon ion-ios-arrow-right"></i>'],disableScroll:false}); });</script><script>
+  var dianaCurrentSlide = 0;
+  var dianaTotalSlides = 6;
+
+  function dianaGetCircular(index) {
+    return ((index % dianaTotalSlides) + dianaTotalSlides) % dianaTotalSlides;
+  }
+
+  function dianaUpdateSlider() {
+    var track = document.getElementById("dianaSliderTrack");
+    if (!track) return;
+    var items = track.querySelectorAll(".diana-slide-item");
+    var wrapper = track.parentElement;
+    var container = document.querySelector(".sect10 .is-container");
+    var wrapperWidth = container ? container.offsetWidth : wrapper.offsetWidth;
+    var isMobile = window.innerWidth <= 760;
+
+    var sideWidth, centerWidth;
+
+    if (isMobile) {
+      // On mobile just show one centered video
+      centerWidth = wrapperWidth * 0.9;
+      sideWidth = 0;
+    } else {
+      sideWidth = wrapperWidth * 0.22;
+      centerWidth = wrapperWidth * 0.56;
+    }
+
+    var centerAspectHeight = centerWidth * (9 / 16);
+    wrapper.style.height = centerAspectHeight + "px";
+
+    var prev = dianaGetCircular(dianaCurrentSlide - 1);
+    var curr = dianaGetCircular(dianaCurrentSlide);
+    var next = dianaGetCircular(dianaCurrentSlide + 1);
+
+    items.forEach(function (item) {
+      item.style.display = "none";
+      item.style.order = "0";
+    });
+
+    if (!isMobile) {
+      items[prev].style.display = "block";
+      items[prev].style.width = sideWidth + "px";
+      items[prev].style.opacity = "0.5";
+      items[prev].style.order = "1";
+    }
+
+    items[curr].style.display = "block";
+    items[curr].style.width = centerWidth + "px";
+    items[curr].style.opacity = "1";
+    items[curr].style.order = "2";
+
+    if (!isMobile) {
+      items[next].style.display = "block";
+      items[next].style.width = sideWidth + "px";
+      items[next].style.opacity = "0.5";
+      items[next].style.order = "3";
+    }
+
+    track.style.transform = "none";
+  }
+
+  function dianaSlide(e, dir) {
+    e.preventDefault();
+    dianaCurrentSlide = dianaGetCircular(dianaCurrentSlide + dir);
+    dianaUpdateSlider();
+  }
+
+  window.addEventListener("load", dianaUpdateSlider);
+  window.addEventListener("resize", dianaUpdateSlider);
+</script>
+</body>
+</html>
