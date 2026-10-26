@@ -46,3 +46,8 @@ The master includes `recordType: awaiting_recheck` separately from verified open
 
 
 Planned opportunities and contract awards are separate from the open master. Read Planned-and-Awarded/RETRIEVAL-GUIDE.txt and the separate Lifecycle-Data manifests. Never add planned or awarded records to open counts.
+
+Company matching update (24 October 2026)
+Company suggestions retain source excerpts, explicit requirement wording, missing capability evidence, source age and eligibility questions. A score is not a probability of winning. Missing evidence does not mean a company is incapable. Legal eligibility, certification, capacity and bidding intent remain unknown unless separately evidenced.
+Planned-opportunity shortlists are preparation only and must never appear as open opportunities. Award winners are linked to company profiles only with verified identity evidence; name-only matches remain review leads. Verified relevant contract awards may break equal technical scores, but a consortium value is not the revenue of each member.
+Company matching refresh dates do not replace official opportunity status/deadline verification dates. Preserve answer-time deadline checks. Public company website enrichment uses unchanged original evidence and excludes Dealroom.

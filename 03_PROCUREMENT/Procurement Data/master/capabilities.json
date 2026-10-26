@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-21.2",
+  "version": "2026-10-24.1",
   "policy": "Conservative multilingual phrase dictionary. Tags describe mentions, not verified requirements or supplier qualifications. Generic space/software/research words alone never qualify a match. Coverage is incomplete across EU languages.",
   "capabilities": [
     {
@@ -23,7 +23,9 @@
         "fjaerranalys",
         "fjärranalys",
         "aardobservatie",
-        "observarea pamantului"
+        "observarea pamantului",
+        "satellite (?:image|imagery) (?:analysis|processing|analytics)",
+        "processing (?:of )?satellite (?:images|imagery)"
       ]
     },
     {
@@ -39,7 +41,9 @@
         "navigation satellitaire",
         "navegacion por satelite",
         "navigazione satellitare",
-        "positioning,? navigation (?:and|or) timing"
+        "positioning,? navigation (?:and|or) timing",
+        "global navigation satellite systems?",
+        "satellite[- ]based positioning"
       ]
     },
     {
@@ -68,7 +72,12 @@
         "space telecommunications",
         "satellite networks?",
         "satellite connectivity",
-        "optical communications?"
+        "optical communications?",
+        "satellite[- ]based communications?",
+        "space[- ]to[- ]ground communications?",
+        "fluxuri satelitare",
+        "comunicatii prin satelit",
+        "comunicatii satelitare"
       ]
     },
     {
@@ -82,7 +91,9 @@
         "station[a-z]* sol",
         "bodenstation[a-z]*",
         "segmento (?:terrestre|di terra)",
-        "estacion[a-z]* terrestre[a-z]*"
+        "estacion[a-z]* terrestre[a-z]*",
+        "satellite ground infrastructure",
+        "ground[- ]station (?:networks?|equipment)"
       ]
     },
     {
@@ -216,7 +227,9 @@
         "rf systems?",
         "rf amplifier[a-z]*",
         "radio-frequency",
-        "radio frequency systems?"
+        "radio frequency systems?",
+        "radio[- ]frequency (?:engineering|electronics|components|systems)",
+        "microwave engineering"
       ]
     },
     {
@@ -279,7 +292,9 @@
         "cartograf[a-z]*",
         "geographic data",
         "geolocalisa[a-z]*",
-        "geolocaliza[a-z]*"
+        "geolocaliza[a-z]*",
+        "geographic(?:al)? information systems?",
+        "geospatial (?:analytics|analysis|data processing)"
       ]
     },
     {
@@ -406,7 +421,11 @@
         "semiconductor (?:testing|qualification)",
         "leistungselektronik",
         "electronique de puissance",
-        "elettronica di potenza"
+        "elettronica di potenza",
+        "embedded hardware",
+        "embedded electronic systems?",
+        "pcb (?:design|assembly|manufacturing)",
+        "edge[- ]computing hardware"
       ]
     },
     {
@@ -512,7 +531,9 @@
         "usinage cnc",
         "feinmechanik",
         "precision mechanical",
-        "lavorazioni meccaniche di precisione"
+        "lavorazioni meccaniche di precisione",
+        "computer numerical control machining",
+        "cnc (?:milling|turning|machining)"
       ]
     },
     {
@@ -527,7 +548,9 @@
         "qualification of semiconductors",
         "reliability assessment",
         "essais environnementaux",
-        "umwelttests"
+        "umwelttests",
+        "thermal[- ]vacuum test(?:ing|s)?",
+        "vibration test(?:ing|s)?"
       ]
     },
     {
