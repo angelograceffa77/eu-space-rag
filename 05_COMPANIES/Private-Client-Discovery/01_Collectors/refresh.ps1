@@ -3,7 +3,7 @@ $ErrorActionPreference='Stop'
 $moduleRoot=Split-Path $PSScriptRoot -Parent
 $companies=Split-Path $moduleRoot -Parent
 $repository=Split-Path $companies -Parent
-$archive=if($env:GAGARIN_CLIENT_ARCHIVE){$env:GAGARIN_CLIENT_ARCHIVE}else{Join-Path (Split-Path $repository -Parent) '05_COMPANIES\Private-Client-Discovery'}
+$archive='C:\Users\angel\OneDrive\Desktop\knowledge\05_COMPANIES\Private-Client-Discovery'
 $work=Join-Path $archive ('Refresh-Inputs\'+[guid]::NewGuid().ToString())
 New-Item -ItemType Directory -Path $work -Force | Out-Null
 $lock=Join-Path $moduleRoot 'refresh.lock'

@@ -1,0 +1,13 @@
+{
+  "name": "gagarin-company-directories",
+  "version": "1.0.0",
+  "description": "Dependencies for ESA company export and periodic directory refresh",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "axios": "1.20.0"
+  }
+}

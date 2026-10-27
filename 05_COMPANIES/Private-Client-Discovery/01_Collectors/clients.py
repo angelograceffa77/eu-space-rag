@@ -104,6 +104,33 @@ def build(args):
    r=base('web:'+sha(url.encode())[:20],name,country,sector);r.update(website=url,ownership='source_asserts_private_ownership',nonSpaceBusinessStatus='reviewed_business_activity',ownershipEvidence={'excerpt':s[max(0,m.start()-50):m.end()+100],'verification':'official_company_self_description_not_registry_due_diligence'},provenance=[p])
    records.append(r)
   except Exception as e:errors.append({'url':url,'error':str(e)})
+ # Supplementary LEI records remain unverified research leads, never verified private buyers.
+ discovery_file=root.parent/'Periodic-Refresh'/'country-discovery.json'
+ if discovery_file.exists():
+  discovery=json.loads(discovery_file.read_text('utf-8'));source=pathlib.Path(discovery['recordsFile']);raw=source.read_bytes()
+  if sha(raw)!=discovery['recordsSha256']:raise ValueError('Country discovery checksum')
+  for line in raw.decode('utf-8').splitlines():
+   lead=json.loads(line);name=lead['name']
+   if re.search(r'\b(ministry|government|central bank|university|municipal|foundation|pension fund|trustee|sovereign)\b',name,re.I):continue
+   r=base(lead['id'],name,lead['country'],name)
+   r.update(recordType='client_research_lead',sourceSector='unverified; name-based research signal only',nonSpaceBusinessStatus='unverified_requires_activity_review',legalEntityIdentifier=lead['legalEntityIdentifier'],countryCode=lead['countryCode'],africa=lead['africa'],legalStatus=lead['legalStatus'],provenance=lead['provenance'],sourceUpdatedAt=lead['sourceUpdatedAt'],countryMeaning=lead.get('countryMeaning','legal_address_country'),businessActivityEvidence=lead.get('businessActivity','unverified'))
+   records.append(r)
+ # Never silently remove previous profiles merely because they were not observed.
+ prior=root/'Client-Master'/'manifest.json'
+ if prior.exists():
+  pointer=json.loads(prior.read_text('utf-8'));previous=(prior.parent/pointer['path']).resolve()
+  if not previous.is_relative_to(prior.parent.resolve()):raise ValueError('Previous path escape')
+  if sha((previous/'manifest.json').read_bytes())!=pointer['manifestSha256']:raise ValueError('Previous manifest checksum')
+  pm=validate(previous);current_ids={r['id'] for r in records}
+  for part in pm['parts']:
+   if part['file'].startswith('clients.'):
+    for line in (previous/part['file']).read_text('utf-8').splitlines():
+     r=json.loads(line)
+     if r['id'] not in current_ids:r['observationStatus']='not_observed_this_run_retained_for_review';records.append(r);current_ids.add(r['id'])
+ scope_file=root.parent/'Periodic-Refresh'/'procurement-scope.json'
+ scope=json.loads(scope_file.read_text('utf-8')) if scope_file.exists() else {'countries':[]}
+ names={x['name'] for x in scope['countries']};codes={x['code'] for x in scope['countries']}
+ for r in records:r['inProcurementGeographicScope']=r['country'] in names or r.get('countryCode') in codes
  suppliers=[json.loads(l) for l in pathlib.Path(args.suppliers).read_text(encoding='utf-8').splitlines() if l];shutil.copy2(args.suppliers,run/'supplier-input.jsonl')
  # Keep source identities separate; expose possible duplicates instead of silently merging legal entities.
  groups=collections.defaultdict(list)
@@ -127,6 +154,9 @@ def build(args):
  pp+=ap
  counts={'clientProfiles':len(records),'sourceAssertedPrivate':sum(r['ownership']!='unknown' for r in records),'ownershipUnverified':sum(r['ownership']=='unknown' for r in records),'excludedProfiles':len(excluded),'africaProfiles':len(africa),'countries':len(set(r['country'] for r in records)),'supplierProfiles':len(suppliers),'businessAreas':len(set(r['businessArea'] for r in records))}
  manifest=dict(schemaVersion=1,generation=gen,asOf=NOW(),counts=counts,parts=pp,coverage='partial_not_exhaustive',sourceFailures=errors,countryCounts=dict(collections.Counter(r['country'] for r in records)),africaCountryCounts=dict(collections.Counter(r['country'] for r in records if r['africa'])),sectorCounts=dict(collections.Counter(r['businessArea'] for r in records)),limitations=['SBTi climate-participant selection bias; not a world business census','Most ownership, space-sector identity, operating status, budgets and buying intentions unverified','Supplier profiles are not deduplicated legal entities','Africa reflects source location, not all companies trading in Africa','No verified purchasing requests in this snapshot','Private ownership is an official website assertion, not independent legal verification'])
+ coverage={'scopeSha256':scope.get('scopeSha256'),'countryResults':discovery.get('countries',[]) if discovery_file.exists() else [],'procurementEntities':[dict(entity,coverageStatus='not_a_client_population_source; discovery_scope_only',complete=False) for entity in scope.get('entities',[])],'allAfricanCountriesSearched':54 if discovery_file.exists() else 0,'completeCoverage':False}
+ write(out/'procurement-scope-coverage.json',coverage)
+ manifest['procurementScope']={'file':'procurement-scope-coverage.json','sha256':sha((out/'procurement-scope-coverage.json').read_bytes())}
  write(out/'manifest.json',manifest);validate(out)
  pointer=dict(schemaVersion=1,path='snapshots/'+gen,manifestSha256=sha((out/'manifest.json').read_bytes()))
  write(root/'Client-Master'/'manifest.tmp',pointer);(root/'Client-Master'/'manifest.tmp').replace(root/'Client-Master'/'manifest.json')
@@ -134,6 +164,8 @@ def build(args):
  write(run/'receipt.json',manifest);print(json.dumps(counts));print(json.dumps(errors))
 def validate(folder):
  m=json.loads((folder/'manifest.json').read_text(encoding='utf-8'));ids=set();counts=collections.Counter()
+ if m.get('procurementScope'):
+  meta=m['procurementScope'];f=(folder/meta['file']).resolve();assert f.is_relative_to(folder.resolve());assert sha(f.read_bytes())==meta['sha256']
  for p in m['parts']:
   f=(folder/p['file']).resolve()
   if not f.is_relative_to(folder.resolve()):raise ValueError('Path escape')

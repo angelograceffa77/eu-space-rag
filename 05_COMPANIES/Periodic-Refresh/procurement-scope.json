@@ -1,0 +1,2200 @@
+{
+  "schemaVersion": 1,
+  "source": "current procurement registers and intake jobs",
+  "countries": [
+    {
+      "code": "AT",
+      "name": "Austria",
+      "portal": "https://ausschreibungen.usp.gv.at/"
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "portal": "https://www.publicprocurement.be/"
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "portal": "https://app.eop.bg/today"
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "portal": "https://eojn.hr/"
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "portal": "https://www.eprocurement.gov.cy/"
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "portal": "https://nen.nipez.cz/en/"
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "portal": "https://udbud.dk/"
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "portal": "https://riigihanked.riik.ee/"
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "portal": "https://www.hankintailmoitukset.fi/en/"
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "portal": "https://www.boamp.fr/"
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "portal": "https://oeffentlichevergabe.de/ui/en"
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "portal": "https://portal.eprocurement.gov.gr/"
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "portal": "https://ekr.gov.hu/"
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "portal": "https://www.etenders.gov.ie/"
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "portal": "https://www.acquistinretepa.it/"
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "portal": "https://www.eis.gov.lv/"
+    },
+    {
+      "code": "LT",
+      "name": "Lithuania",
+      "portal": "https://viesiejipirkimai.lt/"
+    },
+    {
+      "code": "LU",
+      "name": "Luxembourg",
+      "portal": "https://pmp.b2g.etat.lu/"
+    },
+    {
+      "code": "MT",
+      "name": "Malta",
+      "portal": "https://www.etenders.gov.mt/"
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "portal": "https://www.tenderned.nl/"
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "portal": "https://ezamowienia.gov.pl/"
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "portal": "https://www.base.gov.pt/base4"
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "portal": "https://www.e-licitatie.ro/pub/"
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "portal": "https://www.uvo.gov.sk/"
+    },
+    {
+      "code": "SI",
+      "name": "Slovenia",
+      "portal": "https://www.enarocanje.si/"
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "portal": "https://contrataciondelestado.es/wps/portal/plataforma"
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "portal": "https://www.kommersannons.se/"
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "portal": "https://www.app.gov.al/e-procurement/"
+    },
+    {
+      "code": "BA",
+      "name": "Bosnia and Herzegovina",
+      "portal": "https://www.ejn.gov.ba"
+    },
+    {
+      "code": "XK",
+      "name": "Kosovo",
+      "portal": "https://e-prokurimi.rks-gov.net"
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "portal": "https://cejn.gov.me/landingPage"
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "portal": "https://e-nabavki.gov.mk"
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "portal": "https://mtender.gov.md/en"
+    },
+    {
+      "code": "AM",
+      "name": "Armenia",
+      "portal": "https://gnumner.am/en/"
+    },
+    {
+      "code": "GE",
+      "name": "Georgia",
+      "portal": "https://tenders.procurement.gov.ge/login.php?lang=en"
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "portal": "https://etender.gov.az/"
+    },
+    {
+      "code": "LI",
+      "name": "Liechtenstein"
+    },
+    {
+      "code": "AD",
+      "name": "Andorra"
+    },
+    {
+      "code": "MC",
+      "name": "Monaco"
+    },
+    {
+      "code": "SM",
+      "name": "San Marino"
+    },
+    {
+      "code": "VA",
+      "name": "Vatican City",
+      "portal": "https://bandipubblici.va/"
+    },
+    {
+      "code": "FO",
+      "name": "Faroe Islands",
+      "portal": "https://keypsportal.fo/utbodsyvirlit/"
+    },
+    {
+      "code": "GL",
+      "name": "Greenland"
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom"
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland"
+    },
+    {
+      "code": "NO",
+      "name": "Norway"
+    }
+  ],
+  "entities": [
+    {
+      "id": "AT-portal",
+      "name": "Austria national procurement",
+      "country": "AT",
+      "url": "https://ausschreibungen.usp.gv.at/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "AT-space",
+      "name": "FFG",
+      "country": "AT",
+      "url": "https://www.ffg.at/weltraum",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BE-portal",
+      "name": "Belgium national procurement",
+      "country": "BE",
+      "url": "https://www.publicprocurement.be/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BE-space",
+      "name": "BELSPO",
+      "country": "BE",
+      "url": "https://www.belspo.be/belspo/space/index_en.stm",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BG-portal",
+      "name": "Bulgaria national procurement",
+      "country": "BG",
+      "url": "https://app.eop.bg/today",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BG-space",
+      "name": "Space Research and Technology Institute, BAS",
+      "country": "BG",
+      "url": "http://www.space.bas.bg/bg/procurement/procurement.html",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "HR-portal",
+      "name": "Croatia national procurement",
+      "country": "HR",
+      "url": "https://eojn.hr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "HR-space",
+      "name": "Ministry of Science, Education and Youth",
+      "country": "HR",
+      "url": "https://mzom.gov.hr/pristup-informacijama/javna-nabava/92",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CY-portal",
+      "name": "Cyprus national procurement",
+      "country": "CY",
+      "url": "https://www.eprocurement.gov.cy/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CY-space",
+      "name": "Cyprus Department of Electronic Communications procurement",
+      "country": "CY",
+      "url": "https://www.eprocurement.gov.cy/epps/prepareViewCAOrganisation.do?id=1658",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CZ-portal",
+      "name": "Czechia national procurement",
+      "country": "CZ",
+      "url": "https://nen.nipez.cz/en/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CZ-space",
+      "name": "Ministry of Transport",
+      "country": "CZ",
+      "url": "https://nen.nipez.cz/en/profily-zadavatelu-platne/detail-profilu/mdcr",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DK-portal",
+      "name": "Denmark national procurement",
+      "country": "DK",
+      "url": "https://udbud.dk/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DK-space",
+      "name": "Danish Agency for Higher Education and Science",
+      "country": "DK",
+      "url": "https://ufsn.dk/forskning-og-innovation/rumomraadet/aktuelt/opslag/aktuelle-opslag/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "EE-portal",
+      "name": "Estonia national procurement",
+      "country": "EE",
+      "url": "https://riigihanked.riik.ee/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "EE-space",
+      "name": "Estonian Business and Innovation Agency",
+      "country": "EE",
+      "url": "https://eis.ee/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "FI-portal",
+      "name": "Finland national procurement",
+      "country": "FI",
+      "url": "https://www.hankintailmoitukset.fi/en/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "FI-space",
+      "name": "Business Finland",
+      "country": "FI",
+      "url": "https://www.businessfinland.fi/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "FR-portal",
+      "name": "France national procurement",
+      "country": "FR",
+      "url": "https://www.boamp.fr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "FR-space",
+      "name": "CNES",
+      "country": "FR",
+      "url": "https://marches.cnes.fr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DE-portal",
+      "name": "Germany national procurement",
+      "country": "DE",
+      "url": "https://oeffentlichevergabe.de/ui/en",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DE-space",
+      "name": "DLR",
+      "country": "DE",
+      "url": "https://www.dlr.de/en/dlr/about-us/organisation/procurement-and-compliance/procurement",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "GR-portal",
+      "name": "Greece national procurement",
+      "country": "GR",
+      "url": "https://portal.eprocurement.gov.gr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "GR-space",
+      "name": "Hellenic Space Center",
+      "country": "GR",
+      "url": "https://hsc.gov.gr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "HU-portal",
+      "name": "Hungary national procurement",
+      "country": "HU",
+      "url": "https://ekr.gov.hu/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "HU-space",
+      "name": "Hungarian space programme",
+      "country": "HU",
+      "url": "https://space.kormany.hu/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IE-portal",
+      "name": "Ireland national procurement",
+      "country": "IE",
+      "url": "https://www.etenders.gov.ie/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IE-space",
+      "name": "Enterprise Ireland",
+      "country": "IE",
+      "url": "https://www.enterprise-ireland.com/en/legal/policies-guidelines/procurement-policy",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-portal",
+      "name": "Italy national procurement",
+      "country": "IT",
+      "url": "https://www.acquistinretepa.it/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-space",
+      "name": "ASI",
+      "country": "IT",
+      "url": "https://www.asi.it/bandi/bandi-asi/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LV-portal",
+      "name": "Latvia national procurement",
+      "country": "LV",
+      "url": "https://www.eis.gov.lv/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LV-space",
+      "name": "Latvian space programme",
+      "country": "LV",
+      "url": "https://www.izm.gov.lv/lv/iepirkumi",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LT-portal",
+      "name": "Lithuania national procurement",
+      "country": "LT",
+      "url": "https://viesiejipirkimai.lt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LT-space",
+      "name": "Innovation Agency Lithuania",
+      "country": "LT",
+      "url": "https://inovacijuagentura.lt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LU-portal",
+      "name": "Luxembourg national procurement",
+      "country": "LU",
+      "url": "https://pmp.b2g.etat.lu/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LU-space",
+      "name": "Luxembourg Space Agency",
+      "country": "LU",
+      "url": "https://space-agency.public.lu/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "MT-portal",
+      "name": "Malta national procurement",
+      "country": "MT",
+      "url": "https://www.etenders.gov.mt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "MT-space",
+      "name": "Xjenza Malta",
+      "country": "MT",
+      "url": "https://xjenzamalta.mt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "NL-portal",
+      "name": "Netherlands national procurement",
+      "country": "NL",
+      "url": "https://www.tenderned.nl/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "NL-space",
+      "name": "Netherlands Space Agency",
+      "country": "NL",
+      "url": "https://www.nlsa.nl/en/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PL-portal",
+      "name": "Poland national procurement",
+      "country": "PL",
+      "url": "https://ezamowienia.gov.pl/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PL-space",
+      "name": "POLSA procurement",
+      "country": "PL",
+      "url": "https://platformazakupowa.pl/pn/polsa/proceedings",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PT-portal",
+      "name": "Portugal national procurement",
+      "country": "PT",
+      "url": "https://www.base.gov.pt/base4",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PT-space",
+      "name": "Portugal Space",
+      "country": "PT",
+      "url": "https://ptspace.pt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "RO-portal",
+      "name": "Romania national procurement",
+      "country": "RO",
+      "url": "https://www.e-licitatie.ro/pub/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "RO-space",
+      "name": "Romanian Space Agency",
+      "country": "RO",
+      "url": "https://rosa.ro/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SK-portal",
+      "name": "Slovakia national procurement",
+      "country": "SK",
+      "url": "https://evo.isepvo.sk/evoportal/en-us/public/ordersearch/index",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SK-space",
+      "name": "Slovak space-related institutions — UVO procurement",
+      "country": "SK",
+      "url": "https://www.uvo.gov.sk/vyhladavanie/vyhladavanie-zakaziek",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SI-portal",
+      "name": "Slovenia national procurement",
+      "country": "SI",
+      "url": "https://www.enarocanje.si/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SI-space",
+      "name": "Slovenian Space Office / Ministry",
+      "country": "SI",
+      "url": "https://www.gov.si/en/topics/space/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "ES-portal",
+      "name": "Spain national procurement",
+      "country": "ES",
+      "url": "https://contrataciondelestado.es/wps/portal/plataforma",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "ES-space",
+      "name": "Spanish Space Agency",
+      "country": "ES",
+      "url": "https://www.aee.gob.es/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SE-portal",
+      "name": "Sweden national procurement",
+      "country": "SE",
+      "url": "https://www.kommersannons.se/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SE-space",
+      "name": "Swedish National Space Agency",
+      "country": "SE",
+      "url": "https://www.rymdstyrelsen.se/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "FR-place",
+      "name": "French state procurement (PLACE)",
+      "country": "FR",
+      "url": "https://www.marches-publics.gouv.fr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-inaf",
+      "name": "INAF procurement",
+      "country": "IT",
+      "url": "https://inaf.ubuy.cineca.it/PortaleAppalti/it/ppgare_bandi_lista.wp",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-defence",
+      "name": "TELEDIFE procurement",
+      "country": "IT",
+      "url": "https://www.difesa.it/dna/staff/dt/teledife/amministrazione-trasparente/25270.html",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PL-polsa",
+      "name": "POLSA",
+      "country": "PL",
+      "url": "https://polsa.gov.pl/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PT-azores",
+      "name": "Azores space mission structure",
+      "country": "PT",
+      "url": "https://spaceazores.pt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LT-legacy",
+      "name": "Lithuania procurement notices before December 2024",
+      "country": "LT",
+      "url": "https://cvpp.eviesiejipirkimai.lt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LV-iub",
+      "name": "Latvia Procurement Monitoring Bureau",
+      "country": "LV",
+      "url": "https://open.iub.gov.lv/data",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SE-eavrop",
+      "name": "e-Avrop registered procurement database",
+      "country": "SE",
+      "url": "https://www.e-avrop.com/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SE-mercell",
+      "name": "Mercell registered procurement database",
+      "country": "SE",
+      "url": "https://app.mercell.com/search?filter=delivery_place_code%3ASE",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "EU-SST",
+      "name": "EU SST national-entity procurement",
+      "country": "EU",
+      "url": "https://www.eusst.eu/about-us/procurement",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CY-awards",
+      "name": "Cyprus Treasury annual awarded-contract exports",
+      "country": "CY",
+      "url": "https://www.data.gov.cy/index.php/el/dataset/katalogos-dimosion-symbaseon-poy-katakyrothikan",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-suppliers",
+      "name": "ASI public supplier portal",
+      "country": "IT",
+      "url": "https://app.albofornitori.it/alboeproc/albo_asi",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-mepa",
+      "name": "MePA public RDOs and Altri Bandi",
+      "country": "IT",
+      "url": "https://www.acquistinretepa.it/opencms/opencms/vetrina_bandi.html?filter=RDO",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "NL-public",
+      "name": "TenderNed public TNS notice service",
+      "country": "NL",
+      "url": "https://www.tenderned.nl/papi/tenderned-rs-tns/v2/publicaties",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "ES-public",
+      "name": "PLACSP public historical procurement search",
+      "country": "ES",
+      "url": "https://contrataciondelestado.es/wps/portal/plataforma",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "ES-monthly",
+      "name": "PLACSP current-month official archive",
+      "country": "ES",
+      "url": "https://contrataciondelestado.es/wps/portal/plataforma",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "ES-documents",
+      "name": "PLACSP public document metadata search",
+      "country": "ES",
+      "url": "https://contrataciondelestado.es/wps/portal/plataforma",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "ES-Catalonia",
+      "name": "Catalonia official PSCP open data",
+      "country": "ES",
+      "url": "https://contractaciopublica.cat/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "ES-agencies",
+      "name": "Spanish space and astronomy bodies current notices",
+      "country": "ES",
+      "url": "https://contrataciondelestado.es/wps/portal/plataforma",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DE-live",
+      "name": "German public live competition search",
+      "country": "DE",
+      "url": "https://oeffentlichevergabe.de/ui/en",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DE-cpv",
+      "name": "German public live space-category competition search",
+      "country": "DE",
+      "url": "https://oeffentlichevergabe.de/ui/en",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IE-archive",
+      "name": "OGP official historical procurement open data",
+      "country": "IE",
+      "url": "https://data.gov.ie/dataset/contract-notices-published-on-etenders",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IE-cpv",
+      "name": "Irish live space and astronomy procurement categories",
+      "country": "IE",
+      "url": "https://www.etenders.gov.ie/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PL-public",
+      "name": "Polish public BZP and TED Board search",
+      "country": "PL",
+      "url": "https://ezamowienia.gov.pl/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PL-legacy",
+      "name": "Polish public legacy-law BZP mirror",
+      "country": "PL",
+      "url": "https://ezamowienia.gov.pl/bzp-archival-client",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PL-CBK",
+      "name": "CBK PAN public procurement",
+      "country": "PL",
+      "url": "https://cbkpan.ezamawiajacy.pl/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LT-cpv",
+      "name": "Lithuanian public space procurement categories",
+      "country": "LT",
+      "url": "https://viesiejipirkimai.lt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LT-agency",
+      "name": "Innovation Agency pre-commercial procurements",
+      "country": "LT",
+      "url": "https://inovacijuagentura.lt/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DK-cpv",
+      "name": "Danish public space procurement categories",
+      "country": "DK",
+      "url": "https://udbud.dk/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DK-buyers",
+      "name": "Danish DTU, DMI and climate-data buyer notices",
+      "country": "DK",
+      "url": "https://udbud.dk/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DK-archive",
+      "name": "Danish official 2022–2024 below-threshold archive",
+      "country": "DK",
+      "url": "https://udbud.dk/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "DK-DTU",
+      "name": "DTU Space Swarm DISC procurements",
+      "country": "DK",
+      "url": "https://www.space.dtu.dk/english/research-divisions/geomagnetism-and-geospace/projects/swarm/swarm-disc-invitations-to-tender",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BE-cpv",
+      "name": "Belgian space procurement categories",
+      "country": "BE",
+      "url": "https://www.publicprocurement.be/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BE-buyers",
+      "name": "Belgian space, astronomy and Earth-observation buyers",
+      "country": "BE",
+      "url": "https://www.publicprocurement.be/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BG-cpv",
+      "name": "Bulgarian space procurement categories",
+      "country": "BG",
+      "url": "https://app.eop.bg/today",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BG-buyers",
+      "name": "Bulgarian space and astronomy institute buyers",
+      "country": "BG",
+      "url": "https://app.eop.bg/today",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BG-legacy",
+      "name": "Bulgarian pre-CAIS public register export",
+      "country": "BG",
+      "url": "https://www.aop.bg/esearch_cases_from_to.php",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "BG-open",
+      "name": "Bulgarian complete current-open register screening",
+      "country": "BG",
+      "url": "https://app.eop.bg/today",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "HR-archive",
+      "name": "Croatian legacy EOJN monthly XML archive",
+      "country": "HR",
+      "url": "https://eojn.nn.hr/SPIN/application/ipn/Oglasnik/PreuzimanjeObavijesti.aspx",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "HR-cpv",
+      "name": "Croatian space procurement categories",
+      "country": "HR",
+      "url": "https://eojn.hr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "HR-buyers",
+      "name": "Croatian space, geodesy and research buyers",
+      "country": "HR",
+      "url": "https://eojn.hr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "HR-open",
+      "name": "Croatian complete published and invitation-stage procedure screening",
+      "country": "HR",
+      "url": "https://eojn.hr/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LV-open",
+      "name": "Latvian full announced-procedure screening",
+      "country": "LV",
+      "url": "https://www.eis.gov.lv/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "LV-buyers",
+      "name": "Latvian space, science and geospatial buyer searches",
+      "country": "LV",
+      "url": "https://www.eis.gov.lv/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CZ-rvz",
+      "name": "Czech official RVZ and historical VVZ open data",
+      "country": "CZ",
+      "url": "https://isvz.nipez.cz/opendata",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CZ-research",
+      "name": "Czech astronomy and Earth-observation research buyer profiles",
+      "country": "CZ",
+      "url": "https://www.vhodne-uverejneni.cz/profil/67985815",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CZ-ufa",
+      "name": "Czech Institute of Atmospheric Physics procurement profile",
+      "country": "CZ",
+      "url": "https://www.e-zakazky.cz/profil-zadavatele/f56f00fb-93a2-4453-9863-6aaca1b48c5f",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CZ-cenia",
+      "name": "CENIA current NEN procurement profile",
+      "country": "CZ",
+      "url": "https://nen.nipez.cz/profil/CENIA",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CZ-description",
+      "name": "Czech NEN subject-description searches",
+      "country": "CZ",
+      "url": "https://nen.nipez.cz/en/verejne-zakazky",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SK-uvo",
+      "name": "Slovakia UVO procedure register and notice histories",
+      "country": "SK",
+      "url": "https://www.uvo.gov.sk/vyhladavanie/vyhladavanie-zakaziek",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SK-astronomy",
+      "name": "Slovak Astronomical Institute public procurement register",
+      "country": "SK",
+      "url": "https://www.astro.sk/rozne/verejne-obstaravanie/zmluvy-zakazky/zakazky/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SK-archives",
+      "name": "Slovakia official procurement bulletin open data",
+      "country": "SK",
+      "url": "https://data.slovensko.sk/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SK-live",
+      "name": "Slovakia archive-discovered live procedure checks",
+      "country": "SK",
+      "url": "https://www.uvo.gov.sk/vyhladavanie/vyhladavanie-zakaziek",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SK-sario",
+      "name": "SARIO and Slovak Space Office procurement pages",
+      "country": "SK",
+      "url": "https://www.sario.sk/sk/o-nas/verejne-obstaravanie",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SK-fallback",
+      "name": "Slovakia unavailable archive HTML fallback",
+      "country": "SK",
+      "url": "https://www.uvo.gov.sk/vyhladavanie/vyhladavanie-zakaziek",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "RO-advertisements",
+      "name": "Romania SEAP public advertisements",
+      "country": "RO",
+      "url": "https://www.e-licitatie.ro/pub/adv-notices/list/1",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "RO-archives",
+      "name": "Romania ADR official procurement archives",
+      "country": "RO",
+      "url": "https://data.gov.ro/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-anac",
+      "name": "Italy ANAC national legal-publication portal",
+      "country": "IT",
+      "url": "https://pubblicitalegale.anticorruzione.it/bandi",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CY-published",
+      "name": "Cyprus all-buyer published-notice catalogue",
+      "country": "CY",
+      "url": "https://www.eprocurement.gov.cy/epps/notices/viewPublishedNotices.do",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "CY-published-created",
+      "name": "Cyprus all-buyer catalogue creation-date reconciliation",
+      "country": "CY",
+      "url": "https://www.eprocurement.gov.cy/epps/notices/viewPublishedNotices.do",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "MT-published",
+      "name": "Malta all-buyer published-notice catalogue",
+      "country": "MT",
+      "url": "https://www.etenders.gov.mt/epps/notices/viewPublishedNotices.do",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "MT-published-created",
+      "name": "Malta all-buyer creation-date reconciliation",
+      "country": "MT",
+      "url": "https://www.etenders.gov.mt/epps/notices/viewPublishedNotices.do",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SE-clira",
+      "name": "Clira public procurement catalogue",
+      "country": "SE",
+      "url": "https://public.clira.io/upphandling",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "SE-konstpool",
+      "name": "Konstpool public procurement calls",
+      "country": "SE",
+      "url": "https://konstpool.se/sv/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PL-CBK-archive",
+      "name": "CBK PAN historical SmartPZP profile",
+      "country": "PL",
+      "url": "https://portal.smartpzp.pl/cbkpan/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "PL-CBK-documents",
+      "name": "CBK PAN recovered historical documents",
+      "country": "PL",
+      "url": "https://cbkpan.pl/o-nas/zamowienia-publiczne/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-INAF-Rome-history",
+      "name": "INAF Rome historical procurement disclosures",
+      "country": "IT",
+      "url": "https://www.oa-roma.inaf.it/bandi-di-gara/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-INAF-Arcetri-history",
+      "name": "INAF Arcetri historical procurement disclosures",
+      "country": "IT",
+      "url": "https://www.arcetri.inaf.it/articoli/amministrazione-trasparente/informazionitabellariannualisuproceduredigaraecontratti",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-INAF-IAPS-history",
+      "name": "INAF IAPS public procurement directory",
+      "country": "IT",
+      "url": "https://www.iaps.inaf.it/index.php/it/amministrazione-trasparente/bandi-di-gara",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-INAF-Capodimonte-history",
+      "name": "INAF Capodimonte historical procurement documents",
+      "country": "IT",
+      "url": "https://www.oacn.inaf.it/uffici-e-servizi-generali/amministrazione-trasparente-archivio/",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "IT-INAF-IAPS-annual",
+      "name": "INAF IAPS annual contract disclosures",
+      "country": "IT",
+      "url": "https://www.iaps.inaf.it/index.php/it/amministrazione-trasparente/bandi-di-gara",
+      "kind": "registered_procurement_source"
+    },
+    {
+      "id": "EC-DG-AGRI",
+      "name": "EC-DG-AGRI",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-CLIMA",
+      "name": "EC-DG-CLIMA",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-CONNECT",
+      "name": "EC-DG-CONNECT",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-DEFIS",
+      "name": "EC-DG-DEFIS",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-ECHO",
+      "name": "EC-DG-ECHO",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-ENV",
+      "name": "EC-DG-ENV",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-HOME",
+      "name": "EC-DG-HOME",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-MARE",
+      "name": "EC-DG-MARE",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-MOVE",
+      "name": "EC-DG-MOVE",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EC-DG-RTD",
+      "name": "EC-DG-RTD",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "ECMWF",
+      "name": "ECMWF",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EDA",
+      "name": "EDA",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EEA",
+      "name": "EEA",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EMSA",
+      "name": "EMSA",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "ESA",
+      "name": "ESA",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "ESO",
+      "name": "ESO",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EU-SatCen",
+      "name": "EU-SatCen",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EUMETSAT",
+      "name": "EUMETSAT",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "Eurocontrol",
+      "name": "Eurocontrol",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "EUSPA",
+      "name": "EUSPA",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "Frontex",
+      "name": "Frontex",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "JRC",
+      "name": "JRC",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "NATO",
+      "name": "NATO",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "OCCAR",
+      "name": "OCCAR",
+      "kind": "institutional_procurement_collector"
+    },
+    {
+      "id": "national-MK-eNabavki-current",
+      "name": "national-MK-eNabavki-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SM-Gov-goods-services-current",
+      "name": "national-SM-Gov-goods-services-current",
+      "country": null,
+      "url": "https://www.gov.sm/pub1/.rest/delivery/appalti?tipo=Appalto%20di%20Beni%20e%20Servizi",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SM-Gov-works-current",
+      "name": "national-SM-Gov-works-current",
+      "country": null,
+      "url": "https://www.gov.sm/pub1/.rest/delivery/appalti?tipo=Appalto%20di%20Lavori%20e%20Opere%20Pubbliche",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-GL-BusinessInGreenland-current",
+      "name": "national-GL-BusinessInGreenland-current",
+      "country": null,
+      "url": "https://api-eu1.cludo.com/api/v3/3478/14584/search",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-FO-Keypsportal-current",
+      "name": "national-FO-Keypsportal-current",
+      "country": null,
+      "url": "https://keypsportal.fo/utbodsyvirlit/",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-UA-Prozorro-tendering",
+      "name": "national-UA-Prozorro-tendering",
+      "country": null,
+      "url": "https://prozorro.gov.ua/api/search/tenders?status%5B0%5D=active.tendering&page=1",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-RS-JNPortal-current",
+      "name": "national-RS-JNPortal-current",
+      "country": null,
+      "url": "https://jnportal.ujn.gov.rs/api/searchgrid/TendersAll/get?filter=%5B%22SubmissionDeadline%22%2C%22%3E%3D%22%2C%222026-10-27%22%5D&skip=0&take=20",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IS-Utbodsvefur-current",
+      "name": "national-IS-Utbodsvefur-current",
+      "country": null,
+      "url": "https://utbodsvefur.is/",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-ESO-current",
+      "name": "institution-ESO-current",
+      "country": null,
+      "url": "https://in-tendhost.co.uk/eso/aspx/Services/Projects.svc/GetProjects?strMode=Current&searchvalue=&bUseSearch=false&OrderBy=Title&OrderDirection=ASC&iPage=1&iPageSize=10&bOnlyWithCorrespondenceAllowed=false&iCustomerFilter=0&iOptInStatus=-1",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-GB-ContractsFinder-open",
+      "name": "national-GB-ContractsFinder-open",
+      "country": null,
+      "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-GB-FTS-open",
+      "name": "national-GB-FTS-open",
+      "country": null,
+      "url": "https://www.find-tender.service.gov.uk/Search/Results",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-CH-SIMAP-tenders",
+      "name": "national-CH-SIMAP-tenders",
+      "country": null,
+      "url": "https://www.simap.ch/api/publications/v2/project/project-search?projectSubTypes=service,supply,construction&newestPubTypes=tender",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-NO-DOFFIN-ANNOUNCEMENT_OF_COMPETITION",
+      "name": "national-NO-DOFFIN-ANNOUNCEMENT_OF_COMPETITION",
+      "country": null,
+      "url": "https://www.doffin.no/search?status=ACTIVE&type=ANNOUNCEMENT_OF_COMPETITION&hitsPerPage=100&page=1&sortBy=PUBLICATION_DATE_ASC",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-NO-DOFFIN-DYNAMIC_PURCHASING_SCHEME",
+      "name": "national-NO-DOFFIN-DYNAMIC_PURCHASING_SCHEME",
+      "country": null,
+      "url": "https://www.doffin.no/search?status=ACTIVE&type=DYNAMIC_PURCHASING_SCHEME&hitsPerPage=100&page=1&sortBy=PUBLICATION_DATE_ASC",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-NO-DOFFIN-PRE_ANNOUNCEMENT",
+      "name": "national-NO-DOFFIN-PRE_ANNOUNCEMENT",
+      "country": null,
+      "url": "https://www.doffin.no/search?status=ACTIVE&type=PRE_ANNOUNCEMENT&hitsPerPage=100&page=1&sortBy=PUBLICATION_DATE_ASC",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-NO-DOFFIN-QUALIFICATION_SCHEME",
+      "name": "national-NO-DOFFIN-QUALIFICATION_SCHEME",
+      "country": null,
+      "url": "https://www.doffin.no/search?status=ACTIVE&type=QUALIFICATION_SCHEME&hitsPerPage=100&page=1&sortBy=PUBLICATION_DATE_ASC",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SK-EKS-current",
+      "name": "national-SK-EKS-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SK-JOSEPHINE-current",
+      "name": "national-SK-JOSEPHINE-current",
+      "country": null,
+      "url": "https://josephine.proebiz.com/sk/public-tenders/all?filter%5Bstate%5D=executed&filter%5Bnuts%5D=1&order=id&sort=ASC",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-AT-USP-current",
+      "name": "national-AT-USP-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-NATO-current-deadline",
+      "name": "institution-NATO-current-deadline",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SE-eAvrop-current",
+      "name": "national-SE-eAvrop-current",
+      "country": null,
+      "url": "https://www.e-avrop.com/e-Upphandling/Default.aspx",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-CZ-CzechGlobe-current",
+      "name": "national-CZ-CzechGlobe-current",
+      "country": null,
+      "url": "https://zakazky.czechglobe.cz/contract_index.html?state=active&archive=ACTUAL",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-CZ-CENIA-current",
+      "name": "national-CZ-CENIA-current",
+      "country": null,
+      "url": "https://ezak.mzp.cz/profile_display_4.html?state=active&archive=ACTUAL",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-CZ-UFA-current",
+      "name": "national-CZ-UFA-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-PL-CBK-publicpzp-current",
+      "name": "national-PL-CBK-publicpzp-current",
+      "country": null,
+      "url": "https://cbkpan.ezamawiajacy.pl/pn/CBKPAN/demand/notice/publicpzp/current/list?USER_MENU_HOVER=publicpzpCurrentNoticePublicList",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-PL-CBK-lowcost-current",
+      "name": "national-PL-CBK-lowcost-current",
+      "country": null,
+      "url": "https://cbkpan.ezamawiajacy.pl/pn/CBKPAN/demand/notice/lowcost/current/list?USER_MENU_HOVER=lowcostCurrentNoticePublicList",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-PL-CBK-research-current",
+      "name": "national-PL-CBK-research-current",
+      "country": null,
+      "url": "https://cbkpan.ezamawiajacy.pl/pn/CBKPAN/demand/notice/research/current/list?USER_MENU_HOVER=researchCurrentNoticePublicList",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IT-ANAC-current-deadline",
+      "name": "national-IT-ANAC-current-deadline",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IT-ASI-suppliers-current",
+      "name": "national-IT-ASI-suppliers-current",
+      "country": null,
+      "url": "https://app.albofornitori.it/alboeproc/albo_asi",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-EUSST-open",
+      "name": "institution-EUSST-open",
+      "country": null,
+      "url": "https://www.eusst.eu/about-us/procurement",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-CZ-astronomy-current",
+      "name": "national-CZ-astronomy-current",
+      "country": null,
+      "url": "https://www.vhodne-uverejneni.cz/profil/67985815",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-LT-legacy-current-deadline",
+      "name": "national-LT-legacy-current-deadline",
+      "country": null,
+      "url": "https://cvpp.eviesiejipirkimai.lt/?DeadlineFromDate=2026-10-27&IncludeExpired=false&OrderingType=2&OrderingDirection=0&PageSize=100&PageNumber=1",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-AT-BBG-current",
+      "name": "national-AT-BBG-current",
+      "country": null,
+      "url": "https://www.bbg.gv.at/information/aktuelle-ausschreibungen",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-LV-ministry-announced",
+      "name": "national-LV-ministry-announced",
+      "country": null,
+      "url": "https://www.izm.gov.lv/lv/iepirkumi?field_purchases_status_target_id[21]=21",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-ES-Catalonia-current",
+      "name": "national-ES-Catalonia-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SE-Konstpool-current",
+      "name": "national-SE-Konstpool-current",
+      "country": null,
+      "url": "https://konstpool.se/api/public/calls/available?limit=100&skip=0",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-PL-POLSA-current",
+      "name": "national-PL-POLSA-current",
+      "country": null,
+      "url": "https://platformazakupowa.pl/pn/polsa/proceedings/ajax?status=active&page=1&query=&sort-field=endsAt&sort-type=DESC",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IT-ASI-operations-current",
+      "name": "national-IT-ASI-operations-current",
+      "country": null,
+      "url": "https://www.asi.it/bandi/bandi-asi/bandi-per-contratti-di-funzionamento/?status=open",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IT-ASI-scientific-current",
+      "name": "national-IT-ASI-scientific-current",
+      "country": null,
+      "url": "https://www.asi.it/bandi/bandi-asi/bandi-per-appalti-istituzionali-tecnologici-e-scientifici/?status=open",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SE-Clira-current",
+      "name": "national-SE-Clira-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-SatCen-current",
+      "name": "institution-SatCen-current",
+      "country": null,
+      "url": "https://www.satcen.europa.eu/api/ArticlePerma/ongoing-calls-tender",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-PT-active",
+      "name": "national-PT-active",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-GR-works-active",
+      "name": "national-GR-works-active",
+      "country": null,
+      "url": "https://pwgopendata.eprocurement.gov.gr/actSearchErgwn/faces/active_search_main.jspx",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-GR-NEPPS-active",
+      "name": "national-GR-NEPPS-active",
+      "country": null,
+      "url": "https://nepps-search.eprocurement.gov.gr/actSearch/faces/active_search_main.jspx",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-FR-CNES-current",
+      "name": "national-FR-CNES-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-FR-PLACE-current",
+      "name": "national-FR-PLACE-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IT-MePA-RDO-current",
+      "name": "national-IT-MePA-RDO-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IT-other-bandi-current",
+      "name": "national-IT-other-bandi-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-DE-DLR-current",
+      "name": "national-DE-DLR-current",
+      "country": null,
+      "url": "https://www.dlr.de/en/dlr/about-us/organisation/procurement-and-compliance/procurement",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IT-INAF-current",
+      "name": "national-IT-INAF-current",
+      "country": null,
+      "url": "https://inaf.ubuy.cineca.it/PortaleAppalti/it/ppgare_bandi_lista.wp",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-EUROCONTROL-current",
+      "name": "institution-EUROCONTROL-current",
+      "country": null,
+      "url": "https://www.eurocontrol.int/procurement",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-EMSA-current",
+      "name": "institution-EMSA-current",
+      "country": null,
+      "url": "https://www.emsa.europa.eu/procurement/calls.html",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-ES-published",
+      "name": "national-ES-published",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-ES-deadline",
+      "name": "national-ES-deadline",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-EUMETSAT-current",
+      "name": "institution-EUMETSAT-current",
+      "country": null,
+      "url": "https://eumits.eumetsat.int/pub/pub_citt_list.jsf",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-ECMWF-Copernicus-current",
+      "name": "institution-ECMWF-Copernicus-current",
+      "country": null,
+      "url": "https://www.ecmwf.int/en/about/suppliers/copernicus-procurement/update-itts",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-ECMWF-DestinE-current",
+      "name": "institution-ECMWF-DestinE-current",
+      "country": null,
+      "url": "https://www.ecmwf.int/en/about/suppliers/destine-procurement/update-destine-itts",
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-EE-status-11",
+      "name": "national-EE-status-11",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-EE-status-14",
+      "name": "national-EE-status-14",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-EE-status-23",
+      "name": "national-EE-status-23",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-LU-open",
+      "name": "national-LU-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SE-kommers-open",
+      "name": "national-SE-kommers-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-CZ-open",
+      "name": "national-CZ-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-ESA-issued-competition",
+      "name": "institution-ESA-issued-competition",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-ESA-issued-cfp",
+      "name": "institution-ESA-issued-cfp",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IT-consip-open",
+      "name": "national-IT-consip-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-IE-open",
+      "name": "national-IE-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-LT-open",
+      "name": "national-LT-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-CY-open",
+      "name": "national-CY-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-MT-open",
+      "name": "national-MT-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-HR-open",
+      "name": "national-HR-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-HU-open",
+      "name": "national-HU-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-RO-advertisements-recent",
+      "name": "national-RO-advertisements-recent",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-RO-open",
+      "name": "national-RO-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-BE-open",
+      "name": "national-BE-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-BG-open",
+      "name": "national-BG-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-PL-open",
+      "name": "national-PL-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SI-open",
+      "name": "national-SI-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-LV-IUB-active",
+      "name": "national-LV-IUB-active",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-LV-IUB-deadline",
+      "name": "national-LV-IUB-deadline",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-SE-Mercell-current",
+      "name": "national-SE-Mercell-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-LV-open",
+      "name": "national-LV-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-DE-open",
+      "name": "national-DE-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "institution-EUSPA-current",
+      "name": "institution-EUSPA-current",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-NL-open",
+      "name": "national-NL-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-DK-open",
+      "name": "national-DK-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-FR-open",
+      "name": "national-FR-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "national-FI-open",
+      "name": "national-FI-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-AUT",
+      "name": "ted-AUT",
+      "country": "AUT",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-BEL",
+      "name": "ted-BEL",
+      "country": "BEL",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-BGR",
+      "name": "ted-BGR",
+      "country": "BGR",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-HRV",
+      "name": "ted-HRV",
+      "country": "HRV",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-CYP",
+      "name": "ted-CYP",
+      "country": "CYP",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-CZE",
+      "name": "ted-CZE",
+      "country": "CZE",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-DNK",
+      "name": "ted-DNK",
+      "country": "DNK",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-EST",
+      "name": "ted-EST",
+      "country": "EST",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-FIN",
+      "name": "ted-FIN",
+      "country": "FIN",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-FRA",
+      "name": "ted-FRA",
+      "country": "FRA",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-DEU",
+      "name": "ted-DEU",
+      "country": "DEU",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-GRC",
+      "name": "ted-GRC",
+      "country": "GRC",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-HUN",
+      "name": "ted-HUN",
+      "country": "HUN",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-IRL",
+      "name": "ted-IRL",
+      "country": "IRL",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-ITA",
+      "name": "ted-ITA",
+      "country": "ITA",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-LVA",
+      "name": "ted-LVA",
+      "country": "LVA",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-LTU",
+      "name": "ted-LTU",
+      "country": "LTU",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-LUX",
+      "name": "ted-LUX",
+      "country": "LUX",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-MLT",
+      "name": "ted-MLT",
+      "country": "MLT",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-NLD",
+      "name": "ted-NLD",
+      "country": "NLD",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-POL",
+      "name": "ted-POL",
+      "country": "POL",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-PRT",
+      "name": "ted-PRT",
+      "country": "PRT",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-ROU",
+      "name": "ted-ROU",
+      "country": "ROU",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-SVK",
+      "name": "ted-SVK",
+      "country": "SVK",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-SVN",
+      "name": "ted-SVN",
+      "country": "SVN",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-ESP",
+      "name": "ted-ESP",
+      "country": "ESP",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-SWE",
+      "name": "ted-SWE",
+      "country": "SWE",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-GBR",
+      "name": "ted-GBR",
+      "country": "GBR",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-CHE",
+      "name": "ted-CHE",
+      "country": "CHE",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-NOR",
+      "name": "ted-NOR",
+      "country": "NOR",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-TUR",
+      "name": "ted-TUR",
+      "country": "TUR",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-UKR",
+      "name": "ted-UKR",
+      "country": "UKR",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-ISL",
+      "name": "ted-ISL",
+      "country": "ISL",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-SRB",
+      "name": "ted-SRB",
+      "country": "SRB",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-ALB",
+      "name": "ted-ALB",
+      "country": "ALB",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-BIH",
+      "name": "ted-BIH",
+      "country": "BIH",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-XKX",
+      "name": "ted-XKX",
+      "country": "XKX",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-MNE",
+      "name": "ted-MNE",
+      "country": "MNE",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-MKD",
+      "name": "ted-MKD",
+      "country": "MKD",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-MDA",
+      "name": "ted-MDA",
+      "country": "MDA",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-ARM",
+      "name": "ted-ARM",
+      "country": "ARM",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-GEO",
+      "name": "ted-GEO",
+      "country": "GEO",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-AZE",
+      "name": "ted-AZE",
+      "country": "AZE",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-LIE",
+      "name": "ted-LIE",
+      "country": "LIE",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-AND",
+      "name": "ted-AND",
+      "country": "AND",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-MCO",
+      "name": "ted-MCO",
+      "country": "MCO",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-SMR",
+      "name": "ted-SMR",
+      "country": "SMR",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-VAT",
+      "name": "ted-VAT",
+      "country": "VAT",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-FRO",
+      "name": "ted-FRO",
+      "country": "FRO",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "ted-GRL",
+      "name": "ted-GRL",
+      "country": "GRL",
+      "url": null,
+      "kind": "active_procurement_job"
+    },
+    {
+      "id": "sedia-open",
+      "name": "sedia-open",
+      "country": null,
+      "url": null,
+      "kind": "active_procurement_job"
+    }
+  ],
+  "completeCoverage": false,
+  "scopeSha256": "030e0382bc25e7248a298dd6697a1a05e420dcc2fd242d6466d9c3c582cf62d6"
+}

@@ -6,7 +6,7 @@ const path = require("path");
 const BASE_URL =
   "https://esastar-esamatch-ext.sso.esa.int/api/companiesDirectory/filter";
 
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 100;
 
 // Salva un checkpoint ogni 500 aziende
 const CHECKPOINT_EVERY = 500;
@@ -31,46 +31,15 @@ function sleep(ms) {
 // Se la connessione cade, riprova automaticamente
 // ======================================================
 
-async function getPage(start) {
-  const url =
-    `${BASE_URL}/${PAGE_SIZE}/${start}`;
-
-  let attempt = 1;
-
-  while (true) {
-    try {
-      const response = await axios.get(url, {
-        params: {
-          sortBy: "LastUpdateTime"
-        },
-
-        timeout: 60000,
-
-        headers: {
-          "User-Agent": "Mozilla/5.0"
-        }
-      });
-
-      return response.data;
-
-    } catch (error) {
-      console.log("");
-
-      console.log(
-        `Connection error at ${start}. Retry ${attempt}...`
-      );
-
-      console.log(
-        "Waiting 10 seconds before retry..."
-      );
-
-      attempt++;
-
-      await sleep(10000);
-    }
-  }
-}
-
+const requestPage=require('./esa-request.cjs').requester({size:PAGE_SIZE,
+ request:async(start,size)=>{
+  const failures=path.join(OUTPUT_FOLDER,'large-page-timeouts.json'),known=fs.existsSync(failures)?JSON.parse(fs.readFileSync(failures)):[];
+  if(size>10&&known.includes(start))throw Error('Previously timed-out large page; use small-page fallback');
+  try{return (await axios.get(`${BASE_URL}/${size}/${start}`,{params:{sortBy:'LastUpdateTime'},timeout:60000,headers:{'User-Agent':'Gagarin-Company-Directory/1.0'}})).data;}
+  catch(e){console.log(`ESA page ${start}/${size}: ${e.message}`);if(size>10&&e.code==='ECONNABORTED'&&!known.includes(start)){known.push(start);fs.writeFileSync(failures,JSON.stringify(known));}throw e;}
+ },save:(start,size,data)=>{const raw=JSON.stringify(data),hash=require('node:crypto').createHash('sha256').update(raw).digest('hex');const dir=path.join(OUTPUT_FOLDER,'original-pages');fs.mkdirSync(dir,{recursive:true});const file=path.join(dir,start+'-'+size+'-'+hash+'.json');if(!fs.existsSync(file))fs.writeFileSync(file,raw,{flag:'wx'});}
+});
+async function getPage(start){return requestPage(start);}
 
 // ======================================================
 // CHECKPOINT
@@ -95,7 +64,7 @@ function saveCheckpoint(
   );
 
   console.log("");
-  fs.renameSync(CHECKPOINT_FILE + ".tmp", CHECKPOINT_FILE);
+  for(let retry=0;;retry++){try{fs.renameSync(CHECKPOINT_FILE+'.tmp',CHECKPOINT_FILE);break;}catch(e){if(!['EPERM','EACCES','EBUSY'].includes(e.code)||retry>=8)throw e;Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,Math.min(100*2**retry,1000));}}
   console.log(
     `CHECKPOINT SAVED: ${companies.length} / ${total}`
   );
@@ -138,110 +107,8 @@ function loadCheckpoint() {
 // ======================================================
 
 async function downloadCompanies() {
-  let allCompanies = [];
-  let start = 0;
-  let total = null;
-
-  const checkpoint =
-    loadCheckpoint();
-
-  if (checkpoint) {
-    allCompanies =
-      checkpoint.companies || [];
-
-    start =
-      checkpoint.nextStart || 0;
-
-    total =
-      checkpoint.total || null;
-
-    console.log("");
-    console.log("CHECKPOINT FOUND");
-
-    console.log(
-      `Resuming from ${start}`
-    );
-
-    console.log(
-      `Already downloaded: ${allCompanies.length}`
-    );
-
-    console.log("");
-  }
-
-  while (
-    total === null ||
-    start < total
-  ) {
-    console.log(
-      `Downloading ${start}...`
-    );
-
-    const data =
-      await getPage(start);
-
-    if (!Number.isSafeInteger(data.total) || data.total < 0 || !Array.isArray(data.items)) {
-      throw new Error("Invalid ESA page response; nothing published");
-    }
-    if (total !== null && total !== data.total) throw new Error("ESA total changed during download; restart with a fresh checkpoint");
-    if (total === null) {
-      total = data.total;
-
-      console.log(
-        `Total companies/entities: ${total}`
-      );
-    }
-
-    const items =
-      data.items || [];
-
-    console.log(
-      `Found: ${items.length}`
-    );
-
-    if (items.length !== Math.min(PAGE_SIZE, total - start)) {
-      throw new Error("Incomplete ESA page; checkpoint preserved, nothing published");
-    }
-
-    allCompanies.push(...items);
-
-    start += PAGE_SIZE;
-
-    console.log(
-      `Downloaded ${allCompanies.length} / ${total}`
-    );
-
-    if (
-      allCompanies.length %
-        CHECKPOINT_EVERY ===
-      0
-    ) {
-      saveCheckpoint(
-        allCompanies,
-        start,
-        total
-      );
-    }
-
-    // Piccola pausa per non sovraccaricare ESA
-    await sleep(500);
-  }
-
-  if (allCompanies.length !== total) throw new Error("Downloaded count does not match ESA total");
-  const profileIds = allCompanies.map(c => c.companyProfileId);
-  if (profileIds.some(id => id == null) || new Set(profileIds).size !== profileIds.length) {
-    throw new Error("Missing or duplicate profile IDs; restart download with a fresh checkpoint");
-  }
-  // Ultimo checkpoint prima dell'Excel
-  saveCheckpoint(
-    allCompanies,
-    start,
-    total
-  );
-
-  return allCompanies;
+ return require('./esa-pagination.cjs').collect({getPage,checkpoint:loadCheckpoint(),pageSize:PAGE_SIZE,workers:3,allowSourceDuplicates:true,onSourceDuplicates:report=>fs.writeFileSync(path.join(OUTPUT_FOLDER,'source-duplicate-reconciliation.json'),JSON.stringify(report,null,2)),onCheckpoint:(rows,next,total)=>{saveCheckpoint(rows,next,total);console.log(`Downloaded ${rows.length} / ${total}`);}});
 }
-
 
 // ======================================================
 // PULIZIA HTML

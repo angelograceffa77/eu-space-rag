@@ -1,7 +1,9 @@
 {
-  "automaticScheduleEnabled": false,
-  "repositoryRoot": null,
-  "publicationEnabled": false,
-  "archiveRoot": null,
-  "automaticDeletionEnabled": false
+  "automaticScheduleEnabled": true,
+  "repositoryRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag",
+  "publicationEnabled": true,
+  "archiveRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\05_COMPANIES\\Investment-Discovery",
+  "automaticDeletionEnabled": false,
+  "scheduleController": "../../Periodic-Refresh/refresh.cjs",
+  "intervalCalendarMonths": 6
 }
