@@ -1,26 +1,62 @@
 {
   "schemaVersion": 1,
-  "generation": "2026-10-24T07-01-43-988Z",
+  "generation": "2026-10-27T14-06-52-731Z",
   "dataset": "planned_funding",
   "excludedFromOpenCount": true,
   "recordCount": 18,
   "files": [
     {
       "file": "records.part-0001.jsonl",
-      "rows": 18,
-      "bytes": 162396,
-      "sha256": "2e2b3ff99ce596c54e0b2963dd5d4962af8a8ab25cb4f9f8b5cb00cfcc5f6eaa"
+      "rows": 2,
+      "bytes": 157172,
+      "sha256": "d95ae6f7de1fa832334b730a7d67e5316a898c00c49cbd5ea1bab7b33f169f2b"
+    },
+    {
+      "file": "records.part-0002.jsonl",
+      "rows": 2,
+      "bytes": 146572,
+      "sha256": "b6b2f62327a6f74773bbfee02b89c033c92cf82b177902b538756ba2a34b4ce7"
+    },
+    {
+      "file": "records.part-0003.jsonl",
+      "rows": 2,
+      "bytes": 182920,
+      "sha256": "02b9d3e9e1b2531f8ea6beb1dded9184be19659128caa47bfb355e3c1a2e24e8"
+    },
+    {
+      "file": "records.part-0004.jsonl",
+      "rows": 5,
+      "bytes": 180003,
+      "sha256": "399755ba2a03599ca081433d8e593bba559797f725b09d5c5b48534441f04f40"
+    },
+    {
+      "file": "records.part-0005.jsonl",
+      "rows": 3,
+      "bytes": 197921,
+      "sha256": "31f47eefa7134822e7987f5f705581bbb63a62237eed6228402c58d347ef64c6"
+    },
+    {
+      "file": "records.part-0006.jsonl",
+      "rows": 3,
+      "bytes": 176051,
+      "sha256": "fc5b4d936ca31eafa6a3d53ab80d6e4578abff0b348456207dab117fdaa18ec7"
+    },
+    {
+      "file": "records.part-0007.jsonl",
+      "rows": 1,
+      "bytes": 73378,
+      "sha256": "67582e7bc5d9c4f280fcc0d711a3cf18181eb8f8c5b1866853bcb5f030051959"
     }
   ],
   "coverage": "partial_source_and_query_coverage",
   "sources": [
     {
-      "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Planned-and-Awarded\\Runs\\2026-10-23T21-23-42-801Z-2026-10-24T07-01-43-752Z\\planned-funding.jsonl",
-      "sha256": "2e2b3ff99ce596c54e0b2963dd5d4962af8a8ab25cb4f9f8b5cb00cfcc5f6eaa",
+      "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Planned-and-Awarded\\Runs\\2026-10-27T13-41-50-813Z-2026-10-27T14-06-43-054Z\\planned-funding.jsonl",
+      "sha256": "0020d2bc67d7cad66363cc56e2dc6dfc9120e58e58c6ccb12a16270084c7c774",
       "rows": 18
     }
   ],
-  "asOf": "2026-10-24T07:01:44.000Z",
+  "asOf": "2026-10-27T14:06:52.747Z",
   "retrievalRules": [
     "Not open for applications/bids.",
     "Recheck status and expected opening before acting.",
