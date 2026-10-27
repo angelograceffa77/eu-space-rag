@@ -9,6 +9,9 @@ def extract(receipt):
   if ev['status']!='downloaded_document' or ev['sha256'] in seen:continue
   seen.add(ev['sha256']);b=pathlib.Path(ev['file']).read_bytes()
   if sha(b)!=ev['sha256']:raise ValueError('Original document changed')
+  if ev['entity']=='EUSPA':
+   from euspa_disclosures import extract as euspa_extract
+   rr,gg=euspa_extract(ev);rows.extend(rr);gaps.extend(gg);continue
   with pdfplumber.open(ev['file']) as pdf:
    text='\n'.join(p.extract_text() or '' for p in pdf.pages)
    year=re.search(r'Annual\s+List\s+of\s+(?:Specific\s+)?Contracts\s+(202\d)',text,re.I)

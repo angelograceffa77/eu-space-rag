@@ -1,23 +1,47 @@
 {
   "dataset": "annual_contract_disclosures",
   "inputReceipt": {
-    "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\Annual-Lists\\combined-1793127443067.json",
-    "sha256": "5dc94a27a20a55a1f0f511c737d3fb9da3faff7673e14456234cfdf8bafbb664"
+    "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\Annual-Lists\\combined-1793130869012.json",
+    "sha256": "f91802d3ea502499ce0df1d08f14bfc18cf3890ecd0bf3a8c131135dd28a77ff"
   },
-  "asOf": "2026-10-27T18:57:35.641555+00:00",
-  "records": 126,
+  "asOf": "2026-10-27T19:54:54.605656+00:00",
+  "records": 487,
   "parts": [
     {
-      "file": "snapshots/20261027T185735635534/disclosures.part-0001.jsonl",
+      "file": "snapshots/20261027T195454587528/disclosures.part-0001.jsonl",
       "rows": 90,
       "sha256": "31272a57abde03f6ef77b7576e4f86c038651e1bc0bc580958f96e19e8fab988",
       "bytes": 179815
     },
     {
-      "file": "snapshots/20261027T185735635534/disclosures.part-0002.jsonl",
-      "rows": 36,
-      "sha256": "1cd66acff50476be799b825659d37714bccbf53fc623bf4939332de9297cc84e",
-      "bytes": 76353
+      "file": "snapshots/20261027T195454587528/disclosures.part-0002.jsonl",
+      "rows": 91,
+      "sha256": "d2c9b91c8fc2bbf7080d1ef9cbd1f708b549f88bb6629174821ccab9b25de08f",
+      "bytes": 179780
+    },
+    {
+      "file": "snapshots/20261027T195454587528/disclosures.part-0003.jsonl",
+      "rows": 94,
+      "sha256": "bf301ed3f60546c1ab962f804a65fee0ba01bce11e7c2e888c1d1ff91e646a40",
+      "bytes": 179241
+    },
+    {
+      "file": "snapshots/20261027T195454587528/disclosures.part-0004.jsonl",
+      "rows": 97,
+      "sha256": "f9c12bc0394e344cbcf75b6457539688751ff9e31ea8619a11051fe1af664378",
+      "bytes": 179087
+    },
+    {
+      "file": "snapshots/20261027T195454587528/disclosures.part-0005.jsonl",
+      "rows": 98,
+      "sha256": "cb84e808f2aa7ec06a7fe2cb3becee952979e89355f1dcae7d9d70b4e54bc018",
+      "bytes": 178242
+    },
+    {
+      "file": "snapshots/20261027T195454587528/disclosures.part-0006.jsonl",
+      "rows": 17,
+      "sha256": "7dfcf8c9f55468e8ea7e9d4868d8ecfd447c9e2a45591b16ec12739e8b4d2dd5",
+      "bytes": 30628
     }
   ],
   "excludedFromOpenCount": true,
@@ -43,6 +67,30 @@
     {
       "source": "https://www.eea.europa.eu/en/about/procurement-and-grants/contracts-and-grants-awarded/grant-agreements-awarded-by-eea-2021.pdf/@@download/file",
       "reason": "Not an identified annual contract list; grants remain separate"
+    },
+    {
+      "source": "https://www.euspa.europa.eu/sites/default/files/documents/EUSPA%20List%20of%20contractors%202023_3.pdf",
+      "reason": "PDF extraction is partial; split rows and unmatched table layouts require review. No missing row is treated as zero."
+    },
+    {
+      "source": "https://www.euspa.europa.eu/sites/default/files/documents/2022_euspa_contractors_list_-_corrigendum.pdf",
+      "reason": "PDF extraction is partial; split rows and unmatched table layouts require review. No missing row is treated as zero."
+    },
+    {
+      "source": "https://www.euspa.europa.eu/sites/default/files/documents/euspa_contractors_list_2022.pdf",
+      "reason": "PDF extraction is partial; split rows and unmatched table layouts require review. No missing row is treated as zero."
+    },
+    {
+      "source": "https://www.euspa.europa.eu/sites/default/files/documents/euspa_contractors_list_2021.pdf",
+      "reason": "PDF extraction is partial; split rows and unmatched table layouts require review. No missing row is treated as zero."
+    },
+    {
+      "source": "https://www.euspa.europa.eu/sites/default/files/documents/euspa_contractors_list_2020.pdf",
+      "reason": "PDF extraction is partial; split rows and unmatched table layouts require review. No missing row is treated as zero."
+    },
+    {
+      "source": "https://www.euspa.europa.eu/sites/default/files/documents/GSA%20contractors%20list%202014.pdf",
+      "reason": "Unidentified EUSPA reporting year"
     }
   ],
   "retrievalRule": "Use annual reporting year, not an invented award date. Keep distinct from individual dated awards and prevent double counting."

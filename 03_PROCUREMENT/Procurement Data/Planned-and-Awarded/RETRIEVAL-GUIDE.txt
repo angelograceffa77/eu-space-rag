@@ -21,3 +21,5 @@ Daily operation: planned discovery and recent award notices are separate from op
 Planned procurement counts are notice records, not guaranteed unique future purchases. Repeated market-dialogue notices can describe the same intended purchase; group only where official identity evidence establishes the relationship.
 
 Annual disclosures have their own manifest under Lifecycle-Data/Awarded-Contracts/annual-disclosures. They report contractor names, descriptions and values with original table references. Reporting year is not an award date. Do not add these totals to TED awards. entity-coverage.json records incomplete authority-specific history.
+
+EUSPA annual disclosures: disclosureKind distinguishes direct annual disclosures, aggregated specific contracts and amendments. Negative or zero amendment values are preserved exactly; they are not new contract awards. PDF extraction is partial and unmatched rows remain a coverage gap. Currency is recorded only when stated in the source cell/header/number format. Original workbooks and PDFs remain in the audit archive.
