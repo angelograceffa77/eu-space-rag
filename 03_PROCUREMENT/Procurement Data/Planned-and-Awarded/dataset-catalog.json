@@ -33,6 +33,13 @@
       "repositoryManifest": "04_FUNDING/funding data/Planned-Funding/manifest.json",
       "recordType": "planned_funding",
       "includeInOpenCount": false
+    },
+    {
+      "name": "Annual contractor disclosures",
+      "manifest": "Lifecycle-Data/Awarded-Contracts/annual-disclosures/manifest.json",
+      "recordType": "annual_contract_disclosure",
+      "includeInOpenCount": false,
+      "countMeaning": "Annual reporting rows, potentially combined contracts or amendments; never add to dated award totals."
     }
   ],
   "rule": "Resolve each manifest separately; never merge lifecycle categories or treat expired tenders as awards"

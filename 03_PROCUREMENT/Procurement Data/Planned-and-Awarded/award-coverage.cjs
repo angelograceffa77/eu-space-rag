@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('fs'),path=require('path');
+function build(){const procurement=path.resolve(__dirname,'..'),repo=path.resolve(procurement,'../..');
+ const scope=require(path.join(repo,'05_COMPANIES/Periodic-Refresh/scope.cjs')).scope(repo);
+ const out=path.join(procurement,'Lifecycle-Data/Awarded-Contracts'),m=require('./package.cjs').verify(out),p=JSON.parse(fs.readFileSync(path.join(out,'manifest.json'))),rows=m.files.flatMap(f=>fs.readFileSync(path.join(out,p.path,f.file),'utf8').split('\n').filter(Boolean).map(JSON.parse));
+ const buyers={};for(const r of rows){const k=r.buyer||'Unknown';buyers[k]=(buyers[k]||0)+1;}
+ const countries=scope.countries.map(c=>({...c,awardScopeFrom:'2020-01-01',status:'partial_TED_keyword_discovery; national_archive_not_reconciled',complete:false}));
+ const entities=scope.entities.map(e=>({...e,awardScopeFrom:'2020-01-01',status:'source_specific_award_collection_not_qualified',complete:false,reason:'Open-notice collection does not establish award-history coverage. TED may contain some awards; exact authority linkage is unverified.'}));
+ const report={schemaVersion:1,asOf:new Date().toISOString(),scopeSha256:scope.scopeSha256,awardGeneration:m.generation,awardRecords:rows.length,countMeaning:'Notice-version contract/lot outcomes, not unique contracts',from:'2020-01-01',countries,entities,observedBuyerCounts:buyers,complete:false,missingAuthorityCoverageMustNotBeReportedAsZero:true,requiredFields:['official winner identity','tender/lot description','verified award date','amount and currency when published','immutable source evidence'],limitations:['TED is not an exhaustive below-threshold or agency archive.','Some institutions publish annual PDF lists or only recent awards.','Missing amounts stay unknown; consortium values are not allocated to members.']};
+ require('../orchestration/atomic-state.cjs').write(path.join(out,'entity-coverage.json'),report);return report;}
+module.exports={build};if(require.main===module){const r=build();console.log(JSON.stringify({entities:r.entities.length,countries:r.countries.length,awards:r.awardRecords,complete:r.complete}));}

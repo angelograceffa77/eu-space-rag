@@ -1,0 +1,43 @@
+{
+  "dataset": "annual_contract_disclosures",
+  "inputReceipt": {
+    "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\Annual-Lists\\20261027T144838\\receipt.json",
+    "sha256": "d8108117d79583bae20b68c5ad13bc5142e29237162403afc46cead5c089dd11"
+  },
+  "asOf": "2026-10-27T18:40:49.685871+00:00",
+  "records": 82,
+  "parts": [
+    {
+      "file": "disclosures.part-0001.jsonl",
+      "rows": 82,
+      "sha256": "b9b60fcf5e32efba3e8de6d075eca456ab066db4bcc8988e41d426d6f1788672",
+      "bytes": 162775
+    }
+  ],
+  "excludedFromOpenCount": true,
+  "excludedFromDatedAwardCount": true,
+  "completeCoverage": false,
+  "gaps": [
+    {
+      "source": "https://www.eea.europa.eu/en/about/procurement-and-grants/contracts-and-grants-awarded/list-of-grant-agreements-2025.pdf/@@download/file",
+      "reason": "Not an identified annual contract list; grants remain separate"
+    },
+    {
+      "source": "https://www.eea.europa.eu/en/about/procurement-and-grants/contracts-and-grants-awarded/list-of-grant-agreements-2024.pdf/@@download/file",
+      "reason": "Not an identified annual contract list; grants remain separate"
+    },
+    {
+      "source": "https://www.eea.europa.eu/en/about/procurement-and-grants/contracts-and-grants-awarded/list-of-grant-agreements-2022.pdf/@@download/file",
+      "reason": "Not an identified annual contract list; grants remain separate"
+    },
+    {
+      "source": "https://www.eea.europa.eu/en/about/procurement-and-grants/contracts-and-grants-awarded/list-of-grant-agreements-2022-1.pdf/@@download/file",
+      "reason": "Not an identified annual contract list; grants remain separate"
+    },
+    {
+      "source": "https://www.eea.europa.eu/en/about/procurement-and-grants/contracts-and-grants-awarded/grant-agreements-awarded-by-eea-2021.pdf/@@download/file",
+      "reason": "Not an identified annual contract list; grants remain separate"
+    }
+  ],
+  "retrievalRule": "Use annual reporting year, not an invented award date. Keep distinct from individual dated awards and prevent double counting."
+}
