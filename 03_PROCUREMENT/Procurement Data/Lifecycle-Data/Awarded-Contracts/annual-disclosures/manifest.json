@@ -1,17 +1,23 @@
 {
   "dataset": "annual_contract_disclosures",
   "inputReceipt": {
-    "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\Annual-Lists\\20261027T144838\\receipt.json",
-    "sha256": "d8108117d79583bae20b68c5ad13bc5142e29237162403afc46cead5c089dd11"
+    "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\Planned-and-Awarded\\Annual-Lists\\combined-1793127443067.json",
+    "sha256": "5dc94a27a20a55a1f0f511c737d3fb9da3faff7673e14456234cfdf8bafbb664"
   },
-  "asOf": "2026-10-27T18:40:49.685871+00:00",
-  "records": 82,
+  "asOf": "2026-10-27T18:57:35.641555+00:00",
+  "records": 126,
   "parts": [
     {
-      "file": "disclosures.part-0001.jsonl",
-      "rows": 82,
-      "sha256": "b9b60fcf5e32efba3e8de6d075eca456ab066db4bcc8988e41d426d6f1788672",
-      "bytes": 162775
+      "file": "snapshots/20261027T185735635534/disclosures.part-0001.jsonl",
+      "rows": 90,
+      "sha256": "31272a57abde03f6ef77b7576e4f86c038651e1bc0bc580958f96e19e8fab988",
+      "bytes": 179815
+    },
+    {
+      "file": "snapshots/20261027T185735635534/disclosures.part-0002.jsonl",
+      "rows": 36,
+      "sha256": "1cd66acff50476be799b825659d37714bccbf53fc623bf4939332de9297cc84e",
+      "bytes": 76353
     }
   ],
   "excludedFromOpenCount": true,

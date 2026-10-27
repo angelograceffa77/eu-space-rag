@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-27T14:43:58.398Z",
+  "asOf": "2026-10-27T19:00:13.580Z",
   "scopeSha256": "030e0382bc25e7248a298dd6697a1a05e420dcc2fd242d6466d9c3c582cf62d6",
   "awardGeneration": "2026-10-27T09-02-45-594Z",
   "awardRecords": 2543,
@@ -1848,18 +1848,36 @@
       "name": "EDA",
       "kind": "institutional_procurement_collector",
       "awardScopeFrom": "2020-01-01",
-      "status": "source_specific_award_collection_not_qualified",
+      "status": "partial_annual_disclosure_tables",
       "complete": false,
-      "reason": "Open-notice collection does not establish award-history coverage. TED may contain some awards; exact authority linkage is unverified."
+      "reason": "Annual table disclosures available separately; exact dates, complete institutional history and overlap with TED remain unresolved",
+      "annualDisclosureRows": 21,
+      "reportingYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
     },
     {
       "id": "EEA",
       "name": "EEA",
       "kind": "institutional_procurement_collector",
       "awardScopeFrom": "2020-01-01",
-      "status": "source_specific_award_collection_not_qualified",
+      "status": "partial_annual_disclosure_tables",
       "complete": false,
-      "reason": "Open-notice collection does not establish award-history coverage. TED may contain some awards; exact authority linkage is unverified."
+      "reason": "Annual table disclosures available separately; exact dates, complete institutional history and overlap with TED remain unresolved",
+      "annualDisclosureRows": 105,
+      "reportingYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
     },
     {
       "id": "EMSA",

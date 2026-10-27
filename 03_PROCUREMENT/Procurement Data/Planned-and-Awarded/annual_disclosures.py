@@ -18,6 +18,7 @@ def extract(receipt):
     for ti,table in enumerate(page.extract_tables()):
      for ri,cells in enumerate(table):
       labels=[clean(x).lower() for x in cells]
+      if ev['entity']=='EDA' and year==2020 and 'contractors-2020-sc.pdf' in ev['url'] and len(labels)==7 and labels[4:7]==['subject','contractor','value']:labels[1]='framework contract reference number';labels[2]='merged header'
       if any('contractor' in x for x in labels) and any('subject' in x or 'description' in x for x in labels):header=labels;continue
       if not header or len(cells)!=len(header):continue
       def col(pattern):return next((clean(cells[i]) for i,h in enumerate(header) if re.search(pattern,h)),None)
@@ -40,13 +41,16 @@ def main():
    actual.extend(json.loads(line) for line in b.decode().split('\n') if line)
   if actual!=expected or len(actual)!=m['records']:raise ValueError('Original table extraction differs')
   print('Annual disclosures reproduced from original documents: '+str(len(actual)));return
- rows,gaps=extract(json.loads(pathlib.Path(a.receipt).read_text()));out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True);parts=[];chunk=[];size=0
+ rows,gaps=extract(json.loads(pathlib.Path(a.receipt).read_text()));out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True);generation=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%f');prefix='snapshots/'+generation+'/';folder=out/'snapshots'/generation;folder.mkdir(parents=True);parts=[];chunk=[];size=0
+ if not rows:raise ValueError('No qualified disclosure rows; prior package retained')
+ prior=out/'manifest.json'
+ if prior.exists() and len(rows)<json.loads(prior.read_text())['records']*.8:raise ValueError('Unexpected disclosure loss; prior package retained')
  def flush():
   if not chunk:return
-  b=('\n'.join(chunk)+'\n').encode();name='disclosures.part-'+str(len(parts)+1).zfill(4)+'.jsonl';(out/name).write_bytes(b);parts.append({'file':name,'rows':len(chunk),'sha256':sha(b),'bytes':len(b)})
+  b=('\n'.join(chunk)+'\n').encode();name='disclosures.part-'+str(len(parts)+1).zfill(4)+'.jsonl';(folder/name).write_bytes(b);parts.append({'file':prefix+name,'rows':len(chunk),'sha256':sha(b),'bytes':len(b)})
  for r in rows:
   line=json.dumps(r,ensure_ascii=False)
   if size+len(line.encode())>180000:flush();chunk=[];size=0
   chunk.append(line);size+=len(line.encode())+1
- flush();m={'dataset':'annual_contract_disclosures','inputReceipt':{'file':a.receipt,'sha256':sha(pathlib.Path(a.receipt).read_bytes())},'asOf':datetime.datetime.now(datetime.timezone.utc).isoformat(),'records':len(rows),'parts':parts,'excludedFromOpenCount':True,'excludedFromDatedAwardCount':True,'completeCoverage':False,'gaps':gaps,'retrievalRule':'Use annual reporting year, not an invented award date. Keep distinct from individual dated awards and prevent double counting.'};(out/'manifest.json').write_text(json.dumps(m,indent=2),encoding='utf-8');print(json.dumps({'disclosures':len(rows),'parts':len(parts),'unqualifiedDocuments':len(gaps)}))
+ flush();m={'dataset':'annual_contract_disclosures','inputReceipt':{'file':a.receipt,'sha256':sha(pathlib.Path(a.receipt).read_bytes())},'asOf':datetime.datetime.now(datetime.timezone.utc).isoformat(),'records':len(rows),'parts':parts,'excludedFromOpenCount':True,'excludedFromDatedAwardCount':True,'completeCoverage':False,'gaps':gaps,'retrievalRule':'Use annual reporting year, not an invented award date. Keep distinct from individual dated awards and prevent double counting.'};(out/'manifest.tmp').write_text(json.dumps(m,indent=2),encoding='utf-8');(out/'manifest.tmp').replace(out/'manifest.json');print(json.dumps({'disclosures':len(rows),'parts':len(parts),'unqualifiedDocuments':len(gaps)}))
 if __name__=='__main__':main()

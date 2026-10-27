@@ -10,6 +10,7 @@ def links(b,url):
 def main():
  run=ARCHIVE/datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S');run.mkdir(parents=True)
  queue=[('EEA','https://www.eea.europa.eu/en/about/procurement-and-grants/contracts-and-grants-awarded',0)]+[('EDA','https://eda.europa.eu/procurement/other-notices/annual-list-of-contractors-'+str(y),0) for y in range(2020,datetime.date.today().year)]
+ queue += [('EDA','https://eda.europa.eu/docs/default-source/procurement-library/'+name,0) for name in ['annual-list-of-contractors-2020.pdf','annual-list-of-contractors-2020-sc.pdf','annual-list-of-contracts-2025.pdf?Status=Master','annual-list-of-specific-contracts-2025.pdf?Status=Master']]
  seen=set();results=[];pending=[]
  while queue and len(seen)<80:
   entity,url,depth=queue.pop(0)
@@ -29,10 +30,12 @@ def main():
    elif depth<2:
     for link,label in links(b,final):
      if urllib.parse.urlparse(link).hostname!=urllib.parse.urlparse(url).hostname:continue
-     if not re.search(r'202[0-9]',link+' '+label):continue
-     if re.search(r'contract.*award|list.of.contract|annual.list|@@download|/download',link+' '+label,re.I):queue.append((entity,link,depth+1))
+     target=urllib.parse.urlparse(link).path.rsplit('/',1)[-1]+' '+label
+     if not re.search(r'202[0-9]',target):continue
+     if 'grant' in target.lower():continue
+     if re.search(r'contract.*award|list.of.contract|annual.list|@@download|/download',target,re.I):queue.append((entity,link,depth+1))
   except Exception as e:results.append({'entity':entity,'url':url,'status':'failed','error':str(e)})
- report={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'from':'2020-01-01','sources':results,'pendingDocumentPages':len(pending),'verifiedAwardsAdded':0,'complete':False}
+ report={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'from':'2020-01-01','sources':results,'pendingDocumentPages':len(pending),'verifiedAwardsAdded':0,'complete':False,'remainingQueue':len(queue),'traversalBoundReached':bool(queue)}
  (run/'pending.jsonl').write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in pending),encoding='utf-8');(run/'receipt.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
  (ROOT/'annual-list-coverage.json').write_text(json.dumps({**report,'archiveRun':str(run)},indent=2),encoding='utf-8');print(json.dumps({'sources':len(results),'documents':sum(x['status']=='downloaded_document' for x in results),'pendingPages':len(pending),'failed':sum(x['status']=='failed' for x in results)}))
 if __name__=='__main__':main()
