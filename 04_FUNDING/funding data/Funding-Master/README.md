@@ -13,3 +13,8 @@ Company suggestions indicate documented capability overlap only. They do not est
 Coverage is partial. Read the manifest's coverage and limitations before making completeness claims. Restricted systems, unlisted cascade funding and ambiguous application conditions can leave gaps. Missing observations never establish closure. Local absolute evidence paths identify preserved audit files; those raw files are deliberately not included in GitHub publication.
 
 The local reader is `02_Quality-and-Matching/verify.cjs --list`. Publication is a separately enabled action; package preparation does not mean GitHub was updated.
+
+Company matching update (24 October 2026)
+Company suggestions retain source excerpts, explicit requirement wording, missing capability evidence, source age and eligibility questions. A score is not a probability of winning. Missing evidence does not mean a company is incapable. Legal eligibility, certification, capacity and bidding intent remain unknown unless separately evidenced.
+Planned-opportunity shortlists are preparation only and must never appear as open opportunities. Award winners are linked to company profiles only with verified identity evidence; name-only matches remain review leads. Verified relevant contract awards may break equal technical scores, but a consortium value is not the revenue of each member.
+Company matching refresh dates do not replace official opportunity status/deadline verification dates. Preserve answer-time deadline checks. Public company website enrichment uses unchanged original evidence and excludes Dealroom.
