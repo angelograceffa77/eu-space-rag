@@ -18,7 +18,7 @@ def main():
   if url in seen:continue
   seen.add(url)
   try:
-   req=urllib.request.Request(url,headers={'User-Agent':'Gagarin-Public-Award-Archive/1.0'})
+   req=urllib.request.Request(url,headers={'User-Agent':'Bravestar-Public-Award-Archive/1.0'})
    with urllib.request.urlopen(req,timeout=25) as r:b=r.read(20*1024*1024+1);final=r.url
    if len(b)>20*1024*1024:raise ValueError('Response too large')
    ext='.pdf' if b.startswith(b'%PDF') else '.xlsx' if b.startswith(b'PK') and '.xlsx' in final.lower() else '.html';f=run/(sha(b)+ext)
