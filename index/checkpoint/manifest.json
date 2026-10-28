@@ -3,16 +3,21 @@
   "type": "checkpoint",
   "complete": false,
   "buildCommit": "8869fc6f99cbe9d7ec7c41a54812cec8501b79a7",
-  "createdAt": "2026-10-28T06:57:48.706Z",
+  "createdAt": "2026-10-28T07:27:19.618Z",
   "repository": "angelograceffa77/eu-space-rag",
   "branch": "main",
   "shardSizeMB": 20,
-  "totalChunks": 375,
+  "totalChunks": 656,
   "shards": [
     {
       "file": "rag-index-0001.ndjson",
       "chunks": 375,
       "bytes": 554684
+    },
+    {
+      "file": "rag-index-0002.ndjson",
+      "chunks": 281,
+      "bytes": 414033
     }
   ],
   "sources": {
@@ -45,20 +50,56 @@
       "size": 1060346,
       "status": "indexed",
       "chunks": 310
+    },
+    "01_POLICY/ESA/ESA_Strategy_2040_InDepth.pdf": {
+      "sha256": "3bd3f8f45dc6bd9597760a52e2509fc85ebd8d80351cab5cf6050a6f1e5fe569",
+      "size": 17371461,
+      "status": "indexed",
+      "chunks": 181
+    },
+    "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2023)1_EN.pdf": {
+      "sha256": "e874bb47eb7242a2b22795134353b968078c78240b1f23c78fe7ee40d12f1774",
+      "size": 607193,
+      "status": "skipped",
+      "reason": "Worker stopped with code null, signal SIGABRT",
+      "chunks": 0
+    },
+    "01_POLICY/ESA/Index _01Policy_ESA.docx": {
+      "sha256": "06b389b1e59c8ac2b8c29962837f307baeb728f7aa29696b81e3966b40f19e13",
+      "size": 14393,
+      "status": "indexed",
+      "chunks": 1
+    },
+    "01_POLICY/ESA/Technology_2040.pdf": {
+      "sha256": "bc98643fef68175613ee5c806e8ba11638cf7c107cba474cc692a307f839e54c",
+      "size": 13678373,
+      "status": "indexed",
+      "chunks": 68
+    },
+    "01_POLICY/EU/Commission/CELEX_52011DC0152_EN_TXT.pdf": {
+      "sha256": "ac2a3d0838c2977cd91d2e398d8f057482fc2fd363d2ac0566d38abb569a6ef7",
+      "size": 59051,
+      "status": "indexed",
+      "chunks": 31
     }
   },
   "report": {
     "discoveredFiles": 552,
-    "unchangedFiles": 0,
-    "changedFiles": 552,
-    "processedChangedFiles": 5,
-    "remainingChangedFiles": 547,
+    "unchangedFiles": 5,
+    "changedFiles": 547,
+    "processedChangedFiles": 10,
+    "remainingChangedFiles": 537,
     "deletedFiles": [],
-    "indexedFiles": 5,
-    "skippedFiles": 0,
+    "indexedFiles": 9,
+    "skippedFiles": 1,
     "copiedChunks": 0,
-    "newChunks": 375,
-    "totalChunks": 375,
-    "failures": []
+    "newChunks": 656,
+    "totalChunks": 656,
+    "failures": [
+      {
+        "file": "01_POLICY/ESA/ESA-ADMIN-IPOL-WORK(2023)1_EN.pdf",
+        "reason": "Worker stopped with code null, signal SIGABRT"
+      }
+    ]
   }
 }
