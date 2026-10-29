@@ -19,9 +19,9 @@
   "cutoverGeneration": "open-space-2026-10-20T15-57-51-973Z",
   "awaitingRecheck": {
     "enabled": true,
-    "maxCount": 5,
-    "maxFraction": 0.05,
+    "maxCount": 8,
+    "maxFraction": 1,
     "smallListAllowance": 1,
-    "policy": "Unverified previously open tenders remain searchable separately and are rechecked daily; never count as open or infer closure."
+    "policy": "User approved 28 October 2026: fixed maximum eight awaiting-recheck records; percentage restriction removed. Pending records excluded from verified-open counts, rechecked daily, and never inferred closed. Other integrity, freshness and publication gates unchanged."
   }
 }
