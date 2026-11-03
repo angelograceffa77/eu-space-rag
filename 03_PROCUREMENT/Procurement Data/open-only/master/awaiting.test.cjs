@@ -5,3 +5,5 @@ test('Pending retains originals and rejects corrupted evidence',()=>{const dir=f
 test('Pending is not reported as closure',()=>{const old={entity:{id:'p',title:'Satellite'},lots:[]};const c=require('../../daily/changes.cjs').changes([old],[],[{id:'p',title:'Satellite',reason:'download'}]);a.equal(c.closed.length,0);a.equal(c.awaitingRecheck.length,1);});
 test('Failed document binding remains available for next run',()=>{const old={noticeUrl:'u',lotId:'1',noticeSha256:'old'},fresh={...old,noticeSha256:'new'};a.deepEqual(h.mergeReviews([old],[]),[old]);a.deepEqual(h.mergeReviews([old],[fresh]),[fresh]);});
 test('Document retry is bounded and recorded',async()=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'retry-'));let n=0;await a.rejects(h.retryDownload(async()=>{n++;throw Error('cancelled')},{noticeUrl:'u'},dir));a.equal(n,3);a.equal(fs.readFileSync(path.join(dir,'download-retries.jsonl'),'utf8').trim().split('\n').length,3);});
+
+test('Explicit unlimited policy permits large pending lists without enabling disabled pending mode',()=>{a.equal(h.gate(100,100,{enabled:true,unlimited:true}),true);a.equal(h.gate(100,100,{enabled:false,unlimited:true}),false);});
