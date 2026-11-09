@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generation": "2026-11-06T12-10-06-948Z",
-  "asOf": "2026-11-06T12:10:06.948Z",
+  "generation": "2026-11-09T12-04-23-252Z",
+  "asOf": "2026-11-09T12:04:23.252Z",
   "status": "partial_source_coverage",
   "summary": {
-    "openFunding": 46,
-    "awaitingRecheck": 7,
-    "historicalTransitions": 2,
+    "openFunding": 43,
+    "awaitingRecheck": 9,
+    "historicalTransitions": 1,
     "contextProjects": 5,
     "byFunder": {
       "European Cybersecurity Competence Centre": 3,
@@ -14,9 +14,8 @@
       "European Commission / responsible programme authority": 4,
       "EU-funded cascade programme (see source)": 1,
       "EuroHPC Joint Undertaking": 1,
-      "European Space Agency": 24,
+      "European Space Agency": 22,
       "NATO Science for Peace and Security": 1,
-      "Sweden — Swedish National Space Agency": 1,
       "Switzerland — SERI/SBFI": 1,
       "Norwegian Space Agency": 2,
       "Norwegian Space Agency / ESA": 1,
@@ -32,68 +31,68 @@
       "file": "open-funding.part-0001.jsonl",
       "records": 4,
       "bytes": 482154,
-      "sha256": "dc507cb9bb2cb4da6fbc31a4b54ccbf34aab3afa39b8a3648d5253fc23ada7cc"
+      "sha256": "c908350a392ad4729b18006cf127db9fef4321ee8a2148f6abbe760fc7125517"
     },
     {
       "file": "open-funding.part-0002.jsonl",
       "records": 4,
       "bytes": 495299,
-      "sha256": "1de31431264546865c471d30a6ce24f4605436d8ce1472c19f6300ed9478724b"
+      "sha256": "aaaf765ca35ef9a4565c85e08ebc67a109cf893a5b6073f96ea59c39f5be3714"
     },
     {
       "file": "open-funding.part-0003.jsonl",
       "records": 3,
       "bytes": 468394,
-      "sha256": "ae14200fd573598fdfeca67219f6b195587a2b9096ef34254a83139234b18d19"
+      "sha256": "a825153fedc15bee9a61072ecc766b2dba18d4eef8fa9dcdff3e05d4dd2c9ea8"
     },
     {
       "file": "open-funding.part-0004.jsonl",
-      "records": 15,
-      "bytes": 473282,
-      "sha256": "9efd6e114cde2fe01829b56ad9a9d9f7c30d522651b7178ad25f1a8d00f4fa4b"
+      "records": 16,
+      "bytes": 517610,
+      "sha256": "214dccc852590b493c1b4d1468d1f7088a126d3997fca2448666ce9f766d47a4"
     },
     {
       "file": "open-funding.part-0005.jsonl",
-      "records": 14,
-      "bytes": 521666,
-      "sha256": "7d46868e8f3db4247474beb586dc56fcba7bc2ba825827c4cd03b85b826ab98d"
+      "records": 12,
+      "bytes": 483408,
+      "sha256": "18915f1d7dc6ea7a24c2aa7c9e128a9ec4d551bea18a5c304e9c70a040550e17"
     },
     {
       "file": "open-funding.part-0006.jsonl",
-      "records": 4,
-      "bytes": 449371,
-      "sha256": "5efbb9d86450cdf1e34836540d45425e2f9cfe5c5d18b38266a783d1cf777ec4"
+      "records": 3,
+      "bytes": 478082,
+      "sha256": "761eb2608edc1774b685f42737bbada5df6ac1a763f7f029f3f7e3c539ae8b08"
     },
     {
       "file": "open-funding.part-0007.jsonl",
-      "records": 2,
-      "bytes": 229373,
-      "sha256": "b9757a65bbd88d5594caba627b90e925ce7eedd52f000c95fa093fc6d52b8920"
+      "records": 1,
+      "bytes": 106305,
+      "sha256": "fa58e3831f90ace4cba4524fbdc4d49c002a8d5c140ae07a23b0d33251022184"
     },
     {
       "file": "awaiting-recheck.part-0001.jsonl",
-      "records": 5,
-      "bytes": 422707,
-      "sha256": "128bbee56e94579a5874a456acfdb4b8b770c1e5ece9aa48397a24fad54bff39"
+      "records": 7,
+      "bytes": 519231,
+      "sha256": "f949379137bc4d133c3eb99b3f9bfd04eb8f7f8c6c20f44cd2c10e37f69b29ac"
     },
     {
       "file": "awaiting-recheck.part-0002.jsonl",
       "records": 2,
       "bytes": 313966,
-      "sha256": "c77ada4fe60f61772abed9bc4aace38968fe771a5190614c6cf6b22d4d17ec10"
+      "sha256": "d568d9b219bb819dad93820fee482d9466d417318d1a5ff2541b3b1130a608a9"
     },
     {
       "file": "project-context.part-0001.jsonl",
       "records": 5,
-      "bytes": 116601,
-      "sha256": "3e3cc84631b9d747cdea219e582f6e9a9836f86421d7b228949d932b3ac2af7e"
+      "bytes": 116659,
+      "sha256": "3ea5bb16bc157375aba0ab17638f8443442ac74c91f8a483ca8f1eebd2a94a59"
     }
   ],
   "companyCatalog": {
     "verifiedIdentityProfiles": 1,
     "verifiedAwardLinks": 10,
     "profilesWithSourceDescriptionCapabilities": 9046,
-    "enrichedProfiles": 446,
+    "enrichedProfiles": 447,
     "staleEnrichmentProfiles": 16,
     "inputRows": 19882,
     "profiles": 19881,
@@ -102,9 +101,9 @@
     "profilesWithMultipleSourceVariants": 0
   },
   "sourceCollection": {
-    "runRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\funding data\\01_Daily-Update\\Runs\\2026-11-06T11-51-04-160Z",
+    "runRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\funding data\\01_Daily-Update\\Runs\\2026-11-09T11-47-09-368Z",
     "status": "complete",
-    "records": 1177,
+    "records": 1182,
     "conflictingIdentities": [
       "eu-ft:topic:ERASMUS-EDU-2022-ECHE-CERT-FP"
     ]
@@ -126,7 +125,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUSPA-Horizon\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUSPA-Horizon\\manifest.json"
     },
     {
       "id": "EUSPA-Startups",
@@ -144,7 +143,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUSPA-Startups\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUSPA-Startups\\manifest.json"
     },
     {
       "id": "CASSINI",
@@ -162,7 +161,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\CASSINI\\Collection-Runs\\2026-11-06T11-51-04-160Z\\CASSINI\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\CASSINI\\Collection-Runs\\2026-11-09T11-47-09-368Z\\CASSINI\\manifest.json"
     },
     {
       "id": "EUSPA-Undated-1",
@@ -180,7 +179,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUSPA-Undated-1\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUSPA-Undated-1\\manifest.json"
     },
     {
       "id": "EUSPA-Undated-0",
@@ -198,7 +197,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUSPA-Undated-0\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUSPA-Undated-0\\manifest.json"
     },
     {
       "id": "EDF",
@@ -206,37 +205,8 @@
       "rootUrl": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/european-defence-fund-edf-official-webpage-european-commission_en",
       "status": "partial",
       "scope": "Registered official route and linked calls/documents; not exhaustive programme coverage",
-      "pages": 21,
-      "errors": [
-        {
-          "url": "https://defence-industry-space.ec.europa.eu/document/download/7a881dc1-4f1c-4ca2-a0f9-816b179e8dc8_en?filename=EDF%20tutorial%20-%20Financial%20Support%20to%20Third%20Parties.pdf",
-          "error": "HTTP 503"
-        },
-        {
-          "url": "https://defence-industry-space.ec.europa.eu/system/files/2025-04/EDF%20tutorial%20-%20Ethics.pdf",
-          "error": "HTTP 503"
-        },
-        {
-          "url": "https://defence-industry-space.ec.europa.eu/document/22aa7006-d9bd-45dc-a184-df6ae1b156c6_en",
-          "error": "HTTP 503"
-        },
-        {
-          "url": "https://defence-industry-space.ec.europa.eu/document/download/9d9251dd-f7f0-4e0f-8d86-4ff16c493c1b_en?filename=EDF-2025-SGA%20Adopted%20Award%20Decision%20-%20C%282026%29%201606%20EN.PDF",
-          "error": "HTTP 503"
-        },
-        {
-          "url": "https://defence-industry-space.ec.europa.eu/document/download/f957f709-27a2-4cb0-8f33-6214d2141d35_en?filename=EDF-2025%20Adopted%20Award%20Decision%20-%20C%282026%29%204923%20EN.PDF",
-          "error": "HTTP 503"
-        },
-        {
-          "url": "https://defence-industry-space.ec.europa.eu/document/download/c2784284-edfc-49c8-894e-ec173679d8c6_en?filename=EDF-Work-Programme-2025-PartII.pdf",
-          "error": "HTTP 503"
-        },
-        {
-          "url": "https://defence-industry-space.ec.europa.eu/document/download/1058c1a2-c77c-4382-9e3f-6f80625a7709_en?filename=C_2025_6767_1_EN_ACT_part1.pdf",
-          "error": "HTTP 503"
-        }
-      ],
+      "pages": 28,
+      "errors": [],
       "remaining": 0,
       "cap": 40,
       "topicIds": [],
@@ -245,7 +215,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\European-Defence-Fund\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EDF\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\European-Defence-Fund\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EDF\\manifest.json"
     },
     {
       "id": "EUDIS",
@@ -263,7 +233,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUDIS\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUDIS\\manifest.json"
     },
     {
       "id": "EUDIS-SME",
@@ -281,7 +251,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUDIS-SME\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUDIS-SME\\manifest.json"
     },
     {
       "id": "EUDIS-Spin-in",
@@ -299,7 +269,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUDIS-Spin-in\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\DG-DEFIS-EUDIS\\EUDIS\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUDIS-Spin-in\\manifest.json"
     },
     {
       "id": "CINEA",
@@ -322,7 +292,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\CINEA\\Collection-Runs\\2026-11-06T11-51-04-160Z\\CINEA\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\CINEA\\Collection-Runs\\2026-11-09T11-47-09-368Z\\CINEA\\manifest.json"
     },
     {
       "id": "EIC",
@@ -345,7 +315,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EIC\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EIC\\manifest.json"
     },
     {
       "id": "EIC-Challenges",
@@ -363,7 +333,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EIC-Challenges\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIC\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EIC-Challenges\\manifest.json"
     },
     {
       "id": "DG-CONNECT",
@@ -391,7 +361,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\DG-CONNECT\\Collection-Runs\\2026-11-06T11-51-04-160Z\\DG-CONNECT\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\DG-CONNECT\\Collection-Runs\\2026-11-09T11-47-09-368Z\\DG-CONNECT\\manifest.json"
     },
     {
       "id": "Interreg",
@@ -409,7 +379,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\Interreg\\Collection-Runs\\2026-11-06T11-51-04-160Z\\Interreg\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\Interreg\\Collection-Runs\\2026-11-09T11-47-09-368Z\\Interreg\\manifest.json"
     },
     {
       "id": "CORDIS-PROTEUS",
@@ -429,7 +399,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-11-06T11-51-04-160Z\\CORDIS-PROTEUS\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-11-09T11-47-09-368Z\\CORDIS-PROTEUS\\manifest.json"
     },
     {
       "id": "CORDIS-COMUNIDAD",
@@ -449,7 +419,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-11-06T11-51-04-160Z\\CORDIS-COMUNIDAD\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-11-09T11-47-09-368Z\\CORDIS-COMUNIDAD\\manifest.json"
     },
     {
       "id": "CORDIS-CURE",
@@ -469,7 +439,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-11-06T11-51-04-160Z\\CORDIS-CURE\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\CORDIS\\Collection-Runs\\2026-11-09T11-47-09-368Z\\CORDIS-CURE\\manifest.json"
     },
     {
       "id": "EIT",
@@ -491,7 +461,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIT\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EIT\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\Sectoral-Portals\\EIT\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EIT\\manifest.json"
     },
     {
       "id": "ESA-STAR-issued-CFP",
@@ -512,7 +482,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Applications\\Collection-Runs\\2026-11-06T11-51-04-160Z\\e608898be2\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Applications\\Collection-Runs\\2026-11-09T11-47-09-368Z\\e608898be2\\manifest.json"
     },
     {
       "group": "ARTES",
@@ -522,7 +492,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\ARTES\\Collection-Runs\\2026-11-06T11-51-04-160Z\\70166f7d54\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\ARTES\\Collection-Runs\\2026-11-09T11-47-09-368Z\\70166f7d54\\manifest.json"
     },
     {
       "group": "NAVISP",
@@ -532,7 +502,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\NAVISP\\Collection-Runs\\2026-11-06T11-51-04-160Z\\07dad2ae51\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\NAVISP\\Collection-Runs\\2026-11-09T11-47-09-368Z\\07dad2ae51\\manifest.json"
     },
     {
       "group": "Technology-Programmes",
@@ -542,7 +512,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-11-06T11-51-04-160Z\\131755fd28\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-11-09T11-47-09-368Z\\131755fd28\\manifest.json"
     },
     {
       "group": "Technology-Programmes",
@@ -552,7 +522,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-11-06T11-51-04-160Z\\f523731ccd\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Technology-Programmes\\Collection-Runs\\2026-11-09T11-47-09-368Z\\f523731ccd\\manifest.json"
     },
     {
       "group": "Other-ESA-Programmes",
@@ -567,7 +537,7 @@
       ],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-11-06T11-51-04-160Z\\aebfb0a19d\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-11-09T11-47-09-368Z\\aebfb0a19d\\manifest.json"
     },
     {
       "group": "Other-ESA-Programmes",
@@ -577,7 +547,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-11-06T11-51-04-160Z\\1aba378a96\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-11-09T11-47-09-368Z\\1aba378a96\\manifest.json"
     },
     {
       "group": "Other-ESA-Programmes",
@@ -587,7 +557,7 @@
       "errors": [],
       "remaining": 0,
       "scope": "Registered official programme pages and linked calls; no historical backfill",
-      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-11-06T11-51-04-160Z\\d79756b75f\\manifest.json"
+      "manifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Other-ESA-Programmes\\Collection-Runs\\2026-11-09T11-47-09-368Z\\d79756b75f\\manifest.json"
     },
     {
       "group": "Business-Incubation-Centres",
@@ -598,10 +568,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -621,10 +591,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -644,10 +614,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -667,10 +637,10 @@
       "errors": [],
       "remaining": 3,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -685,15 +655,20 @@
       "group": "Business-Incubation-Centres",
       "centre": "ESA BIC Estonia",
       "rootUrl": "https://www.esabic.ee/",
-      "status": "partial",
-      "pages": 2,
-      "errors": [],
+      "status": "failed",
+      "pages": 0,
+      "errors": [
+        {
+          "url": "https://www.esabic.ee/",
+          "error": "certificate has expired"
+        }
+      ],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -713,10 +688,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -736,10 +711,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -759,10 +734,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -782,10 +757,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -805,10 +780,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -829,10 +804,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -854,10 +829,10 @@
           "url": "https://www.esa-bic.de/%22%3Ewww.esa-bic.de%3C/a%3E%3C/p",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\e3cf8f063d177639cc8e00b82fa8424c467da09bee1625d430e66a833d216c96-1793966079819.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\e3cf8f063d177639cc8e00b82fa8424c467da09bee1625d430e66a833d216c96-1794224987571.raw",
             "sha256": "ad4db79233393eeb71c9589a15920a459a160b1e2450f3f1b9672b61cfb71a54",
             "bytes": 117699,
-            "checkedAt": "2026-11-06T11:54:39.821Z",
+            "checkedAt": "2026-11-09T11:49:47.573Z",
             "url": "https://www.esa-bic.de/%22%3Ewww.esa-bic.de%3C/a%3E%3C/p",
             "httpStatus": 404
           }
@@ -865,10 +840,10 @@
       ],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -890,10 +865,10 @@
           "url": "https://www.esa-bic.de/%22%3Ewww.esa-bic.de%3C/a%3E%3C/p",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\e3cf8f063d177639cc8e00b82fa8424c467da09bee1625d430e66a833d216c96-1793966079851.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\e3cf8f063d177639cc8e00b82fa8424c467da09bee1625d430e66a833d216c96-1794224987598.raw",
             "sha256": "ad4db79233393eeb71c9589a15920a459a160b1e2450f3f1b9672b61cfb71a54",
             "bytes": 117699,
-            "checkedAt": "2026-11-06T11:54:39.852Z",
+            "checkedAt": "2026-11-09T11:49:47.599Z",
             "url": "https://www.esa-bic.de/%22%3Ewww.esa-bic.de%3C/a%3E%3C/p",
             "httpStatus": 404
           }
@@ -901,10 +876,10 @@
       ],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -926,10 +901,10 @@
           "url": "https://www.esa-bic.gr/&nbsp",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\6e4961a161322334437a8a848dd7166ca780081f7ea2c9ac03a0c730063deb18-1793966083817.raw",
-            "sha256": "a2a25a7166e7b04dae1d07442c688b3c8850f777a07d999eebb63468636fbbc9",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\6e4961a161322334437a8a848dd7166ca780081f7ea2c9ac03a0c730063deb18-1794224989142.raw",
+            "sha256": "185abc5a1b5344d677e9687c5fe82c1b24591469bde303a0841e5c86b1c5b871",
             "bytes": 125040,
-            "checkedAt": "2026-11-06T11:54:43.819Z",
+            "checkedAt": "2026-11-09T11:49:49.143Z",
             "url": "https://esa-bic.gr/&nbsp",
             "httpStatus": 404
           }
@@ -937,10 +912,10 @@
       ],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -960,10 +935,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -985,10 +960,10 @@
           "url": "https://www.esaspacesolutions.ie/",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\5346427864f34b45b5f6505b7a691cd335b8557c4ae31c42b077128741997f15-1793966092824.raw",
-            "sha256": "63ef34b3074c1e04ccace97efaf8c029363ef976f164dd25fc23d13c06abd1c4",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\5346427864f34b45b5f6505b7a691cd335b8557c4ae31c42b077128741997f15-1794225005768.raw",
+            "sha256": "6c294970b20683cd6196982cd37dd74e43ba021f2f9c6447f5d93761ab3f1f0a",
             "bytes": 5446,
-            "checkedAt": "2026-11-06T11:54:52.825Z",
+            "checkedAt": "2026-11-09T11:50:05.768Z",
             "url": "https://www.esaspacesolutions.ie/",
             "httpStatus": 403
           }
@@ -996,10 +971,10 @@
       ],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1019,10 +994,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1042,10 +1017,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1067,10 +1042,10 @@
           "url": "https://www.esabic-milan.it/&nbsp",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\6cad0b591b5e2afcbc935eaf0b7564f47c9b1c49757d73b2c526816bfb5aca79-1793966095629.raw",
-            "sha256": "2737098ff2cb9ef5ddf5d5a759fb6566e4fe74ca453907a634b1588bf9f4ba89",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\6cad0b591b5e2afcbc935eaf0b7564f47c9b1c49757d73b2c526816bfb5aca79-1794225008271.raw",
+            "sha256": "826ac93e985b25a9b018b95751cc4160f581e86bd2961a31153dc06ff121afae",
             "bytes": 99717,
-            "checkedAt": "2026-11-06T11:54:55.631Z",
+            "checkedAt": "2026-11-09T11:50:08.273Z",
             "url": "https://esabic-milan.it/&nbsp",
             "httpStatus": 404
           }
@@ -1078,10 +1053,10 @@
       ],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1101,10 +1076,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1124,10 +1099,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1148,10 +1123,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1171,10 +1146,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1194,10 +1169,10 @@
       "errors": [],
       "remaining": 1,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1219,10 +1194,10 @@
           "url": "https://www.esabic.no/&nbsp",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\c7a3dc7e7706a23895a6a5b66d21c14dff2fae11573f3e16260ae911897fc1c8-1793966131588.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\c7a3dc7e7706a23895a6a5b66d21c14dff2fae11573f3e16260ae911897fc1c8-1794225034035.raw",
             "sha256": "e7bd659088449b0f8d28330d893a9523b43d8f661808f2383eca18d7916da3ba",
             "bytes": 181,
-            "checkedAt": "2026-11-06T11:55:31.589Z",
+            "checkedAt": "2026-11-09T11:50:34.036Z",
             "url": "https://www.esabic.no/&nbsp",
             "httpStatus": 404
           }
@@ -1230,10 +1205,10 @@
       ],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1253,10 +1228,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1276,10 +1251,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1300,10 +1275,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1323,10 +1298,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1346,10 +1321,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1369,10 +1344,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1392,10 +1367,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1415,10 +1390,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1438,10 +1413,10 @@
       "errors": [],
       "remaining": 0,
       "directoryEvidence": {
-        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-06T11-51-04-160Z\\directory-1793966066800.html",
+        "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Space-Agency\\Business-Incubation-Centres\\Collection-Runs\\2026-11-09T11-47-09-368Z\\directory-1794224974131.html",
         "sha256": "a72ff2c32c4af03ac1bad0678612a5b0edb8cbeb22dc94ff0ea23bb63e77005c",
         "bytes": 97592,
-        "checkedAt": "2026-11-06T11:54:26.801Z",
+        "checkedAt": "2026-11-09T11:49:34.132Z",
         "url": "https://access.esa.int/about-access/about-scale-up/business-incubation-centres",
         "httpStatus": 200
       },
@@ -1473,7 +1448,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUREKA\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUREKA\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUREKA\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUREKA\\manifest.json"
     },
     {
       "id": "EUMETSAT",
@@ -1491,7 +1466,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUMETSAT\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUMETSAT\\manifest.json"
     },
     {
       "id": "NATO-DIANA",
@@ -1514,7 +1489,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\NATO-DIANA\\Collection-Runs\\2026-11-06T11-51-04-160Z\\NATO-DIANA\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\NATO-DIANA\\Collection-Runs\\2026-11-09T11-47-09-368Z\\NATO-DIANA\\manifest.json"
     },
     {
       "id": "ECMWF",
@@ -1532,7 +1507,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-11-06T11-51-04-160Z\\ECMWF\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-11-09T11-47-09-368Z\\ECMWF\\manifest.json"
     },
     {
       "id": "ECMWF-C3S",
@@ -1550,7 +1525,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-11-06T11-51-04-160Z\\ECMWF-C3S\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\ECMWF\\Collection-Runs\\2026-11-09T11-47-09-368Z\\ECMWF-C3S\\manifest.json"
     },
     {
       "id": "NATO-SPS",
@@ -1568,7 +1543,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-11-06T11-51-04-160Z\\NATO-SPS\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-11-09T11-47-09-368Z\\NATO-SPS\\manifest.json"
     },
     {
       "id": "NATO-SPS-Current-Call",
@@ -1586,7 +1561,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-11-06T11-51-04-160Z\\NATO-SPS-Current-Call\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\Other-Organizations\\NATO-SPS\\Collection-Runs\\2026-11-09T11-47-09-368Z\\NATO-SPS-Current-Call\\manifest.json"
     },
     {
       "id": "EUMETSAT-call-announcement",
@@ -1604,7 +1579,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUMETSAT-call-announcement\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUMETSAT-call-announcement\\manifest.json"
     },
     {
       "id": "EUMETSAT-news",
@@ -1622,7 +1597,7 @@
         "Page access and funding keywords do not establish open application status.",
         "Documents and ambiguous rolling or multistage access require evidence-bound review."
       ],
-      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-11-06T11-51-04-160Z\\EUMETSAT-news\\manifest.json"
+      "evidenceManifest": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\Other-International-Organizations\\EUMETSAT\\Collection-Runs\\2026-11-09T11-47-09-368Z\\EUMETSAT-news\\manifest.json"
     },
     {
       "id": "Austria-1",
@@ -1646,7 +1621,7 @@
       "url": "https://www.ffg.at/foerderungen",
       "status": "partial",
       "pages": 14,
-      "remaining": 121,
+      "remaining": 120,
       "errors": [],
       "cap": 14,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
@@ -1716,10 +1691,10 @@
           "url": "https://www.vlaio.be/en/subsidies-financing",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-11-06T11-51-04-160Z\\fb6d0749fde8a47c08b7efb0385b5bf358b8ce138b5dfd8071c3d08f5b3a72ac-1793966292386.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-11-09T11-47-09-368Z\\fb6d0749fde8a47c08b7efb0385b5bf358b8ce138b5dfd8071c3d08f5b3a72ac-1794225168488.raw",
             "sha256": "7dfdc55e6d40ece0d594f592301bdaa43a642fc756800dd9d9416c790c184691",
             "bytes": 2866,
-            "checkedAt": "2026-11-06T11:58:12.387Z",
+            "checkedAt": "2026-11-09T11:52:48.489Z",
             "url": "https://www.vlaio.be/en/subsidies-financing",
             "httpStatus": 403
           }
@@ -1745,10 +1720,10 @@
           "url": "https://eo.belspo.be/en/stereo-in-action/calls",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-11-06T11-51-04-160Z\\7470bfa88280aea79701f0d4e67fdc95673c2a11ae808d64d3f1696a85f863ce-1793966293383.raw",
-            "sha256": "96d1533d95e50037a175bc3ca83c56d5be9a4f702914f134fc501e20d502fcc0",
-            "bytes": 42246,
-            "checkedAt": "2026-11-06T11:58:13.384Z",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Belgium\\Collection-Runs\\2026-11-09T11-47-09-368Z\\7470bfa88280aea79701f0d4e67fdc95673c2a11ae808d64d3f1696a85f863ce-1794225169205.raw",
+            "sha256": "8d80eccb30f012fa43f5339977f16c2b294ea750a70a8d36849cfe1b535639e5",
+            "bytes": 42245,
+            "checkedAt": "2026-11-09T11:52:49.206Z",
             "url": "https://eo.belspo.be/en/stereo-in-action/calls",
             "httpStatus": 404
           }
@@ -1790,10 +1765,10 @@
           "url": "https://www.fni.bg/?q=node/10",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Bulgaria\\Collection-Runs\\2026-11-06T11-51-04-160Z\\c8509d8bcebd7f0d2824d76e60441b8eb8a5a25651869e02f6a6413a2277b764-1793966297609.raw",
-            "sha256": "1fab4c628d962ce9c04d735c9d177efc82c69283f27e4da582cb3cd069d59608",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Bulgaria\\Collection-Runs\\2026-11-09T11-47-09-368Z\\c8509d8bcebd7f0d2824d76e60441b8eb8a5a25651869e02f6a6413a2277b764-1794225177083.raw",
+            "sha256": "16c4e61e76ec17e3cf5081f3a38e8437c491086f5acdad7671a96b1f83b1e7f6",
             "bytes": 22078,
-            "checkedAt": "2026-11-06T11:58:17.611Z",
+            "checkedAt": "2026-11-09T11:52:57.084Z",
             "url": "https://www.fni.bg/?q=node/10",
             "httpStatus": 404
           }
@@ -2043,10 +2018,10 @@
           "url": "https://eis.ee/en/innovate-and-safeguard-your-business/space-estonia/company.link",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Estonia\\Collection-Runs\\2026-11-06T11-51-04-160Z\\84df9a1a8c6e432a1dfe7c51aced74ec5f7b6afee102885d9addec17dbd58ca0-1793966421586.raw",
-            "sha256": "5ee0a84f37c51c541fffedfafc841f3c61b7e1c1e0e61f160b722b46b3d738fe",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Estonia\\Collection-Runs\\2026-11-09T11-47-09-368Z\\84df9a1a8c6e432a1dfe7c51aced74ec5f7b6afee102885d9addec17dbd58ca0-1794225298089.raw",
+            "sha256": "13cca6795e3cdde3bace0fee4b15d3c68132705d10ad392fb55814614f8646c2",
             "bytes": 120802,
-            "checkedAt": "2026-11-06T12:00:21.588Z",
+            "checkedAt": "2026-11-09T11:54:58.090Z",
             "url": "https://eis.ee/en/innovate-and-safeguard-your-business/space-estonia/company.link",
             "httpStatus": 404
           }
@@ -2098,7 +2073,7 @@
       "url": "https://www.aka.fi/en/research-funding/apply-for-funding/",
       "status": "partial",
       "pages": 14,
-      "remaining": 83,
+      "remaining": 84,
       "errors": [],
       "cap": 14,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
@@ -2136,10 +2111,10 @@
           "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-11-06T11-51-04-160Z\\a2b5569474111c9043c78ebee2a73b91b76e3beb364860b6c649e86c15c862ad-1793966437717.raw",
-            "sha256": "cf9a3698d2756c1fa269a331b9d54b7d1d48f22bf7af7276836b4b879841f5bc",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\France\\Collection-Runs\\2026-11-09T11-47-09-368Z\\a2b5569474111c9043c78ebee2a73b91b76e3beb364860b6c649e86c15c862ad-1794225304677.raw",
+            "sha256": "666690b2cf0c9c0b929ac95189b99b7b61acb484c506f870f7dbdc70abd261ee",
             "bytes": 919,
-            "checkedAt": "2026-11-06T12:00:37.718Z",
+            "checkedAt": "2026-11-09T11:55:04.677Z",
             "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours",
             "httpStatus": 403
           }
@@ -2490,10 +2465,10 @@
           "url": "https://lmt.lrv.lt/en/",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Lithuania\\Collection-Runs\\2026-11-06T11-51-04-160Z\\5665d8a741fa369d907aa79ca4d6617728d49a9b90e332934fd9274b49a76f62-1793966615652.raw",
-            "sha256": "8acc031993f4839012def179c36a4623e240f9d32b5c5cb89c5515eee7e5c564",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Lithuania\\Collection-Runs\\2026-11-09T11-47-09-368Z\\5665d8a741fa369d907aa79ca4d6617728d49a9b90e332934fd9274b49a76f62-1794225454643.raw",
+            "sha256": "35a4cdc42d01a873b96cdc87e20ae7f0900af03ec1e03ad83e1b2f65e8fdc08b",
             "bytes": 5364,
-            "checkedAt": "2026-11-06T12:03:35.653Z",
+            "checkedAt": "2026-11-09T11:57:34.644Z",
             "url": "https://lmt.lrv.lt/en/",
             "httpStatus": 403
           }
@@ -2640,22 +2615,9 @@
       "country": "Netherlands",
       "url": "https://www.rvo.nl/subsidies-financiering",
       "status": "partial",
-      "pages": 13,
+      "pages": 14,
       "remaining": 2,
-      "errors": [
-        {
-          "url": "https://www.rvo.nl/node/504437",
-          "status": 404,
-          "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Netherlands\\Collection-Runs\\2026-11-06T11-51-04-160Z\\ea954be945a8bc911390c372dfc207d2851573a6825d28d241bdee38e429f1d6-1793966678937.raw",
-            "sha256": "33ea2d835e32b89f3c7f2825d5c5efa68877c32c3b85cd84026bcbdcc7982e78",
-            "bytes": 56509,
-            "checkedAt": "2026-11-06T12:04:38.938Z",
-            "url": "https://www.rvo.nl/onderwerpen/subsidiespelregels,/onderwerpen/subsidiespelregels",
-            "httpStatus": 404
-          }
-        }
-      ],
+      "errors": [],
       "cap": 14,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
       "limitations": [
@@ -2729,10 +2691,10 @@
           "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-11-06T11-51-04-160Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1793966726338.raw",
-            "sha256": "ae50cd346fcdea49972f2d31d4defe2557adff17c0b8eff9b63cc1e21e17b99c",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-11-09T11-47-09-368Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1794225572820.raw",
+            "sha256": "73ac67763c5f09852758b96c5c8deb35d8e1142c3b3ec14cd5b11b86e423bbcb",
             "bytes": 91673,
-            "checkedAt": "2026-11-06T12:05:26.339Z",
+            "checkedAt": "2026-11-09T11:59:32.822Z",
             "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
             "httpStatus": 404
           }
@@ -2774,10 +2736,10 @@
           "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-11-06T11-51-04-160Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1793966754114.raw",
-            "sha256": "ae50cd346fcdea49972f2d31d4defe2557adff17c0b8eff9b63cc1e21e17b99c",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Portugal\\Collection-Runs\\2026-11-09T11-47-09-368Z\\c3a9ae02211bed30b9cc2b807f2e4a9dbdd0e76bf85ce0f2206e555b835e6faf-1794225595153.raw",
+            "sha256": "73ac67763c5f09852758b96c5c8deb35d8e1142c3b3ec14cd5b11b86e423bbcb",
             "bytes": 91673,
-            "checkedAt": "2026-11-06T12:05:54.116Z",
+            "checkedAt": "2026-11-09T11:59:55.155Z",
             "url": "https://ptspace.pt/call-doctoral-scholarships-in-space-security/",
             "httpStatus": 404
           }
@@ -2978,7 +2940,7 @@
       "url": "https://www.vinnova.se/en/apply-for-funding/find-the-right-funding/",
       "status": "partial",
       "pages": 14,
-      "remaining": 141,
+      "remaining": 144,
       "errors": [],
       "cap": 14,
       "scope": "Registered national and agency routes; regional and defence/downstream coverage is partial",
@@ -3228,10 +3190,10 @@
           "url": "https://nrfu.org.ua/en/news-en/joint-call-collaborative-researcher-project-on-mental-health-in-ukraine-during-and-after-wartime/nrfu@nrfu.org.ua",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Ukraine\\Collection-Runs\\2026-11-06T11-51-04-160Z\\bcfc86b423d01f0439049020282fea166b2122b7be563d7b9ed3cbe04fc92cad-1793966827764.raw",
-            "sha256": "7dbc823dbcc39bfb305441365a1579b15b2940b2e11d693ebd00685bdf8167cc",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Ukraine\\Collection-Runs\\2026-11-09T11-47-09-368Z\\bcfc86b423d01f0439049020282fea166b2122b7be563d7b9ed3cbe04fc92cad-1794225697986.raw",
+            "sha256": "e6c50b702482d57c021bb41f3c0e5a1a3d31df692e0e4a3ecd4834c6f96d7c65",
             "bytes": 50079,
-            "checkedAt": "2026-11-06T12:07:07.765Z",
+            "checkedAt": "2026-11-09T12:01:37.987Z",
             "url": "https://nrfu.org.ua/en/news-en/joint-call-collaborative-researcher-project-on-mental-health-in-ukraine-during-and-after-wartime/nrfu@nrfu.org.ua",
             "httpStatus": 404
           }
@@ -3406,10 +3368,10 @@
           "url": "https://fondzainovacije.me/wp-content/uploads/2026/05/ToR-for-EXPERT-COMMITTEE-EARLY-STAGE-STARTUP-DEVELOPMENT.docx",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Montenegro\\Collection-Runs\\2026-11-06T11-51-04-160Z\\7301e4814d44fc73bc23b6061293e6ab7586a5546bf6acb1a91e612db56c3da3-1793966854756.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Montenegro\\Collection-Runs\\2026-11-09T11-47-09-368Z\\7301e4814d44fc73bc23b6061293e6ab7586a5546bf6acb1a91e612db56c3da3-1794225725871.raw",
             "sha256": "755481cf9ee538236a0f4040d7ea69e0be12347a31d8fb41842f8d7811885886",
             "bytes": 28097,
-            "checkedAt": "2026-11-06T12:07:34.757Z",
+            "checkedAt": "2026-11-09T12:02:05.872Z",
             "url": "https://fondzainovacije.me/wp-content/uploads/2026/05/ToR-for-EXPERT-COMMITTEE-EARLY-STAGE-STARTUP-DEVELOPMENT.docx",
             "httpStatus": 404
           }
@@ -3418,10 +3380,10 @@
           "url": "https://fondzainovacije.me/wp-content/uploads/2026/02/Projektni-zadatak-za-odabir-clanova-EK-za-GOV.TECH_faza-II.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Montenegro\\Collection-Runs\\2026-11-06T11-51-04-160Z\\a09af5240c1aea5ab4b99ecb34b5d47e8fa225bde7a6449a47bbab72d5e23f53-1793966854826.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Montenegro\\Collection-Runs\\2026-11-09T11-47-09-368Z\\a09af5240c1aea5ab4b99ecb34b5d47e8fa225bde7a6449a47bbab72d5e23f53-1794225725955.raw",
             "sha256": "f4537014499d2e09ae8499e521f5583bd9cad3c8b45f2d510f77589ea0ebb529",
             "bytes": 28105,
-            "checkedAt": "2026-11-06T12:07:34.827Z",
+            "checkedAt": "2026-11-09T12:02:05.956Z",
             "url": "https://fondzainovacije.me/wp-content/uploads/2026/02/Projektni-zadatak-za-odabir-clanova-EK-za-GOV.TECH_faza-II.pdf",
             "httpStatus": 404
           }
@@ -3430,10 +3392,10 @@
           "url": "https://fondzainovacije.me/wp-content/uploads/2026/01/PROJEKTNI-ZADATAK-ToR-za-odabir-eksperta-za-zivotnu-sredinu-i-socijalna-pitanja-Fonda-za-inovacije-Crne-Gore.docx",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Montenegro\\Collection-Runs\\2026-11-06T11-51-04-160Z\\88cc5264a91f012e9ece0229c68cdc0476b566058dcad744553d65813ca0f373-1793966854922.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Montenegro\\Collection-Runs\\2026-11-09T11-47-09-368Z\\88cc5264a91f012e9ece0229c68cdc0476b566058dcad744553d65813ca0f373-1794225726186.raw",
             "sha256": "fc06d5dfbc221b4f58ef1577ede1c42c2f2395ae8a1d63130ca1d1e7fe16b88d",
             "bytes": 28513,
-            "checkedAt": "2026-11-06T12:07:34.923Z",
+            "checkedAt": "2026-11-09T12:02:06.187Z",
             "url": "https://fondzainovacije.me/wp-content/uploads/2026/01/PROJEKTNI-ZADATAK-ToR-za-odabir-eksperta-za-zivotnu-sredinu-i-socijalna-pitanja-Fonda-za-inovacije-Crne-Gore.docx",
             "httpStatus": 404
           }
@@ -3453,7 +3415,7 @@
       "url": "https://fondzainovacije.me/en/",
       "status": "partial",
       "pages": 24,
-      "remaining": 204,
+      "remaining": 225,
       "errors": [],
       "cap": 24,
       "scope": "Official or official-linked programme discovery only; public accessibility, current funding and space relevance need live qualification. Registration is not complete coverage.",
@@ -3485,16 +3447,16 @@
       "url": "https://ancd.gov.md/ro",
       "status": "partial",
       "pages": 10,
-      "remaining": 28,
+      "remaining": 29,
       "errors": [
         {
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2021.02.2025.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\85a7001d405012375d298b82e32864b9cd981f534a8d4ae8d8b2f3428e9cd4e8-1793966874564.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\85a7001d405012375d298b82e32864b9cd981f534a8d4ae8d8b2f3428e9cd4e8-1794225735500.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:54.565Z",
+            "checkedAt": "2026-11-09T12:02:15.501Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2021.02.2025.pdf",
             "httpStatus": 404
           }
@@ -3503,10 +3465,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2023.12.24.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\f5c8a16c0f13fe7afd3db72eb3e2411f1c3324a5f4cbf039062fcb4569eda966-1793966875072.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\f5c8a16c0f13fe7afd3db72eb3e2411f1c3324a5f4cbf039062fcb4569eda966-1794225735787.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:55.074Z",
+            "checkedAt": "2026-11-09T12:02:15.788Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2023.12.24.pdf",
             "httpStatus": 404
           }
@@ -3515,10 +3477,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2004.12.2024_0.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\d370b9d617bb1476e6db7837acbc7919f5f9d2da148d0b4da03a8259a584a8b5-1793966875586.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\d370b9d617bb1476e6db7837acbc7919f5f9d2da148d0b4da03a8259a584a8b5-1794225736073.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:55.587Z",
+            "checkedAt": "2026-11-09T12:02:16.074Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2004.12.2024_0.pdf",
             "httpStatus": 404
           }
@@ -3527,10 +3489,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2005.11.2024.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\f474abffd4eb2ebccd1fc5a9c50c1329551d8428c026b20b312d00a7b5486842-1793966876096.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\f474abffd4eb2ebccd1fc5a9c50c1329551d8428c026b20b312d00a7b5486842-1794225736341.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:56.097Z",
+            "checkedAt": "2026-11-09T12:02:16.343Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2005.11.2024.pdf",
             "httpStatus": 404
           }
@@ -3539,10 +3501,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2016.10.2024.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\901718fa605c32ccd6d476b903179ff55588360d91e3bc93de8facc9eb0cb116-1793966876608.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\901718fa605c32ccd6d476b903179ff55588360d91e3bc93de8facc9eb0cb116-1794225736660.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:56.609Z",
+            "checkedAt": "2026-11-09T12:02:16.661Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2016.10.2024.pdf",
             "httpStatus": 404
           }
@@ -3551,10 +3513,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2013.09.2024%20-%201_0.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\fb0c282981f6515dfba640d0cedbd217452d4bbd4693d2fa3f6f6284c3ff6443-1793966877103.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\fb0c282981f6515dfba640d0cedbd217452d4bbd4693d2fa3f6f6284c3ff6443-1794225736931.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:57.104Z",
+            "checkedAt": "2026-11-09T12:02:16.932Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2013.09.2024%20-%201_0.pdf",
             "httpStatus": 404
           }
@@ -3563,10 +3525,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2022.07.2024%20-%201.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\b1bf24fc2b8462341a202f1daec89cb32971be9575c313bd5f7af54442ecead5-1793966877632.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\b1bf24fc2b8462341a202f1daec89cb32971be9575c313bd5f7af54442ecead5-1794225737211.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:57.634Z",
+            "checkedAt": "2026-11-09T12:02:17.211Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2022.07.2024%20-%201.pdf",
             "httpStatus": 404
           }
@@ -3575,10 +3537,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2013.06.2024.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\bd05bda053f3b79ce9000bbeef9b02589d1e867d6c7fa09bc95a1532d380c745-1793966878155.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\bd05bda053f3b79ce9000bbeef9b02589d1e867d6c7fa09bc95a1532d380c745-1794225737491.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:58.157Z",
+            "checkedAt": "2026-11-09T12:02:17.492Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2013.06.2024.pdf",
             "httpStatus": 404
           }
@@ -3587,10 +3549,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2002.05.2024.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\3a5e9dd92e4e094220eb986923efb8a88e81edab8c759fd765155c5ef241430d-1793966878661.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\3a5e9dd92e4e094220eb986923efb8a88e81edab8c759fd765155c5ef241430d-1794225737788.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:58.663Z",
+            "checkedAt": "2026-11-09T12:02:17.789Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2002.05.2024.pdf",
             "httpStatus": 404
           }
@@ -3599,10 +3561,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2010.04.2024.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\38ef2130d44d666556f05b26a912e64cc1a2815e1df7a2ee69f76deff2459385-1793966879203.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\38ef2130d44d666556f05b26a912e64cc1a2815e1df7a2ee69f76deff2459385-1794225738059.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:59.204Z",
+            "checkedAt": "2026-11-09T12:02:18.060Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2010.04.2024.pdf",
             "httpStatus": 404
           }
@@ -3611,10 +3573,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2024.02.2024.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\289dc85d2feb4fc8b5de53b1409b11d1b84dd113379f5d287cead1aa7f2ae2de-1793966879629.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\289dc85d2feb4fc8b5de53b1409b11d1b84dd113379f5d287cead1aa7f2ae2de-1794225738160.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:07:59.631Z",
+            "checkedAt": "2026-11-09T12:02:18.161Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/post%20vacant%20specialist%20principal%20Sec%C8%9Bia%20financiar%20administrativ%C4%83%2024.02.2024.pdf",
             "httpStatus": 404
           }
@@ -3623,10 +3585,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/%C8%99ef%20direc%C8%9Bie%2C%20Direc%C8%9Bia%20coperare%20interna%C8%9Bional%C4%83%20%C8%99i%20dezvoltare%20durabil%C4%83.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\59efb08f665aaf6d272a4c9ceee797bc550ea8c1a8f1fd79b22471617e882f8d-1793966880224.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\59efb08f665aaf6d272a4c9ceee797bc550ea8c1a8f1fd79b22471617e882f8d-1794225738429.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:08:00.224Z",
+            "checkedAt": "2026-11-09T12:02:18.431Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/%C8%99ef%20direc%C8%9Bie%2C%20Direc%C8%9Bia%20coperare%20interna%C8%9Bional%C4%83%20%C8%99i%20dezvoltare%20durabil%C4%83.pdf",
             "httpStatus": 404
           }
@@ -3635,10 +3597,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/Lista%20participan%C8%9Bilor%20care%20au%20promovat%20concursul%20DPC.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\69833c9dadcb57aec69c98afec95024aea807fd08ad8140c0ad50974c89bf518-1793966880658.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\69833c9dadcb57aec69c98afec95024aea807fd08ad8140c0ad50974c89bf518-1794225738726.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:08:00.659Z",
+            "checkedAt": "2026-11-09T12:02:18.727Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/Lista%20participan%C8%9Bilor%20care%20au%20promovat%20concursul%20DPC.pdf",
             "httpStatus": 404
           }
@@ -3647,10 +3609,10 @@
           "url": "https://ancd.gov.md/sites/default/files/document/attachments/Lista%20participan%C8%9Bilor%20care%20au%20promovat%20concursul%20DCCIDD_0.pdf",
           "status": 404,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-06T11-51-04-160Z\\ddc968e28fd4177483e575cf80079e7bdf13500cf59f0c69dbc69da80ec1d732-1793966881090.raw",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Moldova\\Collection-Runs\\2026-11-09T11-47-09-368Z\\ddc968e28fd4177483e575cf80079e7bdf13500cf59f0c69dbc69da80ec1d732-1794225738994.raw",
             "sha256": "6eb563d888b33f816b320af1114730375f3a84746d21b42485d6d6287dfc55c5",
             "bytes": 39166,
-            "checkedAt": "2026-11-06T12:08:01.091Z",
+            "checkedAt": "2026-11-09T12:02:18.995Z",
             "url": "https://ancd.gov.md/sites/default/files/document/attachments/Lista%20participan%C8%9Bilor%20care%20au%20promovat%20concursul%20DCCIDD_0.pdf",
             "httpStatus": 404
           }
@@ -3756,10 +3718,10 @@
           "url": "https://www.llv.li/en/business/financing-funding/funding",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Liechtenstein\\Collection-Runs\\2026-11-06T11-51-04-160Z\\609806cf358cf6825fb70a11e63acf9f59876aae39d516f3e3683fa388e79984-1793966890381.raw",
-            "sha256": "276a1267fb2911996cddee38d26d210b99ad5693cb7342642ada8416a57234b6",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Liechtenstein\\Collection-Runs\\2026-11-09T11-47-09-368Z\\609806cf358cf6825fb70a11e63acf9f59876aae39d516f3e3683fa388e79984-1794225745328.raw",
+            "sha256": "82789aba817ca7eaad53ff6101cb239fbda6726f8e7ad618b6accb2af06f2bd3",
             "bytes": 5564,
-            "checkedAt": "2026-11-06T12:08:10.382Z",
+            "checkedAt": "2026-11-09T12:02:25.329Z",
             "url": "https://www.llv.li/en/business/financing-funding/funding",
             "httpStatus": 403
           }
@@ -3785,10 +3747,10 @@
           "url": "https://www.llv.li/en/business/financing-funding/promotion-of-research-and-innovation",
           "status": 403,
           "evidence": {
-            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Liechtenstein\\Collection-Runs\\2026-11-06T11-51-04-160Z\\599b51376f35d0d79bcaa1dfa29bd479a93abbfae910f1de6858d462402ebaf2-1793966890450.raw",
-            "sha256": "060d2cd4414d0c21f37aad8754f8b584350d33d3598f4856890deafa100beecf",
+            "file": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\National-Funding\\Liechtenstein\\Collection-Runs\\2026-11-09T11-47-09-368Z\\599b51376f35d0d79bcaa1dfa29bd479a93abbfae910f1de6858d462402ebaf2-1794225745442.raw",
+            "sha256": "5187972e912683c88296c50901e57541d3a4ae5d2f2a9f8d29d7a2d89ad58488",
             "bytes": 5694,
-            "checkedAt": "2026-11-06T12:08:10.451Z",
+            "checkedAt": "2026-11-09T12:02:25.442Z",
             "url": "https://www.llv.li/en/business/financing-funding/promotion-of-research-and-innovation",
             "httpStatus": 403
           }
@@ -4069,32 +4031,32 @@
     {
       "id": "EUSPA-grants-listing",
       "status": "complete_listing_traversal",
-      "checkedAt": "2026-11-06T11:53:08.424Z",
+      "checkedAt": "2026-11-09T11:48:46.318Z",
       "pages": [
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants",
           "file": "page-1.html",
-          "sha256": "093171440243115e375e6013a200a9bfeaaa3c9f230ef220e49be00f519930c5"
+          "sha256": "d25a506c38531d34db0f1a4818d092fc6d49ba59135e4033c8bee21d29bcf98e"
         },
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=1",
           "file": "page-2.html",
-          "sha256": "acfb41c4c6f023665f9e563ebbecc3e849081b34b883d0acc2d8e0eb24cb7258"
+          "sha256": "66376eca5e7b0c6428e1ccdd2b46caf1267131b382c4e7bfb78b68dc63e5ada7"
         },
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=2",
           "file": "page-3.html",
-          "sha256": "baf76ece7c71abf44f4bd3180ae9e8a5512455d8ad105e98b584395547141c81"
+          "sha256": "5c082915971e77e711536adb428140a301d266d4bb878aeddcc0ea3c276acc68"
         },
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=3",
           "file": "page-4.html",
-          "sha256": "0e8cb2fa994089b1cb0a9608b9afa7e5eca2e0b7c8a523e6ee31730b6a8fc3d8"
+          "sha256": "bf7d5858f2d433fe40af00dd76b63eaee5ccbf595d16a890322d164c7fa71494"
         },
         {
           "url": "https://www.euspa.europa.eu/opportunities/procurement-grants/grants?page=4",
           "file": "page-5.html",
-          "sha256": "0d26546554ca38d75a1602865a59ea5e6d885641a5e620d594607d8bc240df36"
+          "sha256": "82caf246650dd66a56c3c9d34362c9014d96bbec9113afeaebb9872994746ae0"
         }
       ],
       "listed": 48,
@@ -4103,7 +4065,7 @@
       "limitations": [
         "Only the dedicated EUSPA grants listing. Horizon, prizes and startup programmes are separate routes. Non-closed records require deadline/timezone and detail checks before master admission."
       ],
-      "output": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-06T11-53-06-466Z"
+      "output": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\04_FUNDING\\European-Union\\EUSPA\\Collection-Runs\\2026-11-09T11-48-45-684Z"
     }
   ],
   "validation": {
