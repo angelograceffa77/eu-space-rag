@@ -51,14 +51,14 @@ SEEDS=[
  ('Al Habib Fishing Company','Somalia','fishing','https://alhabibfishing.so/about-us/local-roots-global-vision/','privately owned')]
 def fetch(url,folder):
  host=urllib.parse.urlsplit(url); robots=f'{host.scheme}://{host.netloc}/robots.txt'
- req=lambda u:urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'GagarinPublicClientResearch/1.0'}),timeout=35)
+ req=lambda u:urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'BravestarPublicClientResearch/1.0'}),timeout=35)
  try:
   with req(robots) as r: rb=r.read()
  except urllib.error.HTTPError as e:
   if e.code!=404: raise
   rb=b''
  rp=urllib.robotparser.RobotFileParser();rp.parse(rb.decode('utf-8','replace').splitlines())
- if not rp.can_fetch('GagarinPublicClientResearch',url):raise ValueError('robots restriction')
+ if not rp.can_fetch('BravestarPublicClientResearch',url):raise ValueError('robots restriction')
  time.sleep(max(1,rp.crawl_delay('*') or 0))
  with req(url) as r: b=r.read();final=r.url
  p=folder/(sha(url.encode())+'.html');p.write_bytes(b)

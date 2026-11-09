@@ -1,0 +1,1733 @@
+{
+  "schemaVersion": 1,
+  "version": "1.1.0",
+  "instructionVersion": "0.1.20",
+  "templates": [
+    {
+      "id": "POL-01",
+      "command": "Space Policy Landscape",
+      "area": "Policy",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/POL-01-space-policy-landscape.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Policy instruments and status",
+        "Institutional responsibilities",
+        "Budget and implementation evidence",
+        "Implications for the company"
+      ],
+      "requiredInputs": "Company capability profile; countries; technologies; policy question; horizon.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "c0c5c91902c206f596af91ca2f0334fe8aa3acbfd16497a6401b4aac5be69033"
+    },
+    {
+      "id": "POL-02",
+      "command": "Policy Opportunity Assessment",
+      "area": "Policy",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/POL-02-policy-opportunity-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Public needs and priorities",
+        "Capability-to-policy links",
+        "Commercial routes and dependencies",
+        "Opportunity priorities and counterarguments"
+      ],
+      "requiredInputs": "Company capability profile; countries; technologies; policy question; horizon.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "b9a152f999842a7cf2ecd924a39f4a635cf3866afb2bb79b67cef2c564740a26"
+    },
+    {
+      "id": "POL-03",
+      "command": "Strategic Positioning Report",
+      "area": "Policy",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/POL-03-strategic-positioning-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Current company positioning",
+        "Evidence-backed differentiation",
+        "Alternative positioning options",
+        "Recommended messages and supporting proof"
+      ],
+      "requiredInputs": "Company capability profile; countries; technologies; policy question; horizon.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "0e9a86df13a24b72ffef5947f6eab445b18049036914e3ba3167641b77ab3299"
+    },
+    {
+      "id": "POL-04",
+      "command": "Country Market Comparison",
+      "area": "Policy",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/POL-04-country-market-comparison.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Comparable country criteria",
+        "Country-by-country evidence",
+        "Market-access and support comparison",
+        "Preferred markets and sensitivity to assumptions"
+      ],
+      "requiredInputs": "Company capability profile; countries; technologies; policy question; horizon.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "3b4c1c78f45360cb1aaa911db8e6069589c66ccd92d37e334af9b9575d5b7cab"
+    },
+    {
+      "id": "POL-05",
+      "command": "Policy Change Impact Assessment",
+      "area": "Policy",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/POL-05-policy-change-impact-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Previous and new policy position",
+        "Confirmed changes and unresolved proposals",
+        "Company exposure and scenarios",
+        "Response options and triggers"
+      ],
+      "requiredInputs": "Company capability profile; countries; technologies; policy question; horizon.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "0c6b5348a031787f942207c35e591363eacc52f0e88fb61212ca8521de10ba80"
+    },
+    {
+      "id": "POL-06",
+      "command": "Strategic Action Roadmap",
+      "area": "Policy",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/POL-06-strategic-action-roadmap.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Strategic objectives",
+        "Prioritised initiatives",
+        "Resources and dependencies",
+        "Milestones and review triggers"
+      ],
+      "requiredInputs": "Company capability profile; countries; technologies; policy question; horizon.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "1dba9b7be4656a123a9f07459d7777d7dc6c55ee18877ccd1fde2ef6f72a180c"
+    },
+    {
+      "id": "STK-01",
+      "command": "Stakeholder Intelligence Map",
+      "area": "Stakeholders",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/STK-01-stakeholder-intelligence-map.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Stakeholder universe and scope",
+        "Mandates and responsibilities",
+        "Evidence of relevance",
+        "Public contact routes and gaps"
+      ],
+      "requiredInputs": "Organisation; engagement objective; target institutions or decision; country; timeframe.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "d2792571787dd1ef677735d72d36c2ce8d79e5cfab0483f248110fe77d2584ea"
+    },
+    {
+      "id": "STK-02",
+      "command": "Institutional Decision Map",
+      "area": "Stakeholders",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/STK-02-institutional-decision-map.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Decision or programme being examined",
+        "Formal decision stages",
+        "Funding and implementation responsibilities",
+        "Influence evidence versus inference"
+      ],
+      "requiredInputs": "Organisation; engagement objective; target institutions or decision; country; timeframe.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "dceb02c45e82d99bc4f2fac7eb5ee0d814d42752beafa0172172c3db953d90fc"
+    },
+    {
+      "id": "STK-03",
+      "command": "Stakeholder Priority Assessment",
+      "area": "Stakeholders",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/STK-03-stakeholder-priority-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Engagement objective",
+        "Relevance and access criteria",
+        "Priority groups and reasons",
+        "Uncertainty and alternative priorities"
+      ],
+      "requiredInputs": "Organisation; engagement objective; target institutions or decision; country; timeframe.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "a6f3b1e31fd14b5f389aca5a19b22fbc40cf060470ac70a1e30d959384fafe85"
+    },
+    {
+      "id": "STK-04",
+      "command": "Stakeholder Engagement Plan",
+      "area": "Stakeholders",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/STK-04-stakeholder-engagement-plan.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Engagement objectives and audiences",
+        "Evidence-backed messages",
+        "Contact sequence and channels",
+        "Preparation and follow-up measures"
+      ],
+      "requiredInputs": "Organisation; engagement objective; target institutions or decision; country; timeframe.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "8f659bff2a85edc46629b469d2a4bec6ea8b5aa1cf521942f0063b45b4275eec"
+    },
+    {
+      "id": "STK-05",
+      "command": "Institutional Meeting Brief",
+      "area": "Stakeholders",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/STK-05-institutional-meeting-brief.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Meeting purpose and participants",
+        "Institutional background",
+        "Agenda and questions",
+        "Talking points and follow-up actions"
+      ],
+      "requiredInputs": "Organisation; engagement objective; target institutions or decision; country; timeframe.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "31e26a61ed2bbe09d1863329f3755a2f83c70aea1632be28e4d4910088cba7a0"
+    },
+    {
+      "id": "STK-06",
+      "command": "Public Consultation Response Pack",
+      "area": "Stakeholders",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/STK-06-public-consultation-response-pack.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Consultation identifier and deadline",
+        "Questions and official response rules",
+        "Draft responses with supporting evidence",
+        "Company positions requiring approval"
+      ],
+      "requiredInputs": "Organisation; engagement objective; target institutions or decision; country; timeframe.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "af59bc11c78f06ff922bfd135767687c800d12b3dd128394088bbd49306e3837"
+    },
+    {
+      "id": "LAW-01",
+      "command": "Regulatory Landscape Report",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-01-regulatory-landscape-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Activity and jurisdiction",
+        "Applicable instruments and legal status",
+        "Competent authorities and obligations",
+        "Applicability gaps and specialist questions"
+      ],
+      "requiredInputs": "Exact activity; jurisdictions; legal entity; transaction or documents under review; relevant factual evidence.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "92acc80fe2cbca967cd3172ce9eb411eeda57859a123f1df3f548252a08abf32"
+    },
+    {
+      "id": "LAW-02",
+      "command": "Market Access and Licensing Roadmap",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-02-market-access-and-licensing-roadmap.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Activity and proposed market",
+        "Authorisations and prerequisites",
+        "Application sequence and official timing",
+        "Costs and unresolved approvals"
+      ],
+      "requiredInputs": "Exact activity; jurisdictions; legal entity; transaction or documents under review; relevant factual evidence.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "4e5027646f873ae3b515954b84064c2434aa6f790668936cc373b14e058b39ad"
+    },
+    {
+      "id": "LAW-03",
+      "command": "Compliance Readiness Assessment",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-03-compliance-readiness-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Applicable requirement inventory",
+        "Company evidence against each requirement",
+        "Non-compliance versus missing evidence",
+        "Remediation and professional review"
+      ],
+      "requiredInputs": "Exact activity; jurisdictions; legal entity; transaction or documents under review; relevant factual evidence.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "65e271a2b08c5050744a896b57bd6b08753a35c881d15b0f2080329610a5a5d5"
+    },
+    {
+      "id": "LAW-04",
+      "command": "Space Data and IP Assessment",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-04-space-data-and-ip-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Data and IP asset inventory",
+        "Ownership and chain of rights",
+        "Licence and exploitation conditions",
+        "Restrictions and unresolved permissions"
+      ],
+      "requiredInputs": "Exact activity; jurisdictions; legal entity; transaction or documents under review; relevant factual evidence.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "93d456a91221ca424a842a129f069ec752825b756824a8231fcdcb618a243024"
+    },
+    {
+      "id": "LAW-05",
+      "command": "Contract and Risk Allocation Review",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-05-contract-and-risk-allocation-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Contract and document hierarchy",
+        "Clause-by-clause risks",
+        "Allocation of liability and IP",
+        "Negotiation options and unresolved terms"
+      ],
+      "requiredInputs": "Exact activity; jurisdictions; legal entity; transaction or documents under review; relevant factual evidence.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "57cee42195223094b3dda6de6839dd81624122b825b4764832e1852c374ef121"
+    },
+    {
+      "id": "LAW-06",
+      "command": "Consortium and Partnership Legal Brief",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-06-consortium-and-partnership-legal-brief.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Parties and permitted structure",
+        "Governance and contributions",
+        "IP and access rights",
+        "Exit disputes and negotiation points"
+      ],
+      "requiredInputs": "Exact activity; jurisdictions; legal entity; transaction or documents under review; relevant factual evidence.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "f510ad8b16771503f3e02eff6bde4342a5384bf76edcac42d606237848df0e91"
+    },
+    {
+      "id": "LAW-07",
+      "command": "Initial Contract Draft",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-07-initial-contract-draft.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Drafting brief and model suitability",
+        "Initial agreement",
+        "Schedules and transaction-specific terms",
+        "Separate drafting and negotiation note"
+      ],
+      "requiredInputs": "Exact activity; jurisdictions; legal entity; transaction or documents under review; relevant factual evidence.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "572a6da6bd681b72a165d4c5a0d9be923caec05de2845f8644e916b933aeab7e"
+    },
+    {
+      "id": "LAW-08",
+      "command": "Regulatory Due Diligence Report",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-08-regulatory-due-diligence-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Transaction and review perimeter",
+        "Licensing and regulatory evidence",
+        "IP title and material contract issues",
+        "Red flags and conditions requiring review"
+      ],
+      "requiredInputs": "Exact activity; jurisdictions; legal entity; transaction or documents under review; relevant factual evidence.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "ae041922c9924706850647ad52b414fefa7820133a8cdca7eafb746ef6279847"
+    },
+    {
+      "id": "PRO-01",
+      "command": "Public Procurement Market Assessment",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-01-public-procurement-market-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Products and addressable public needs",
+        "Buyer groups and purchasing routes",
+        "Observed procurement and award evidence",
+        "Market priorities and coverage limits"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "5a9fb2801d31ffaf72dda79603b2c296c321e798b1b49bcb8096dd8d34caebc8"
+    },
+    {
+      "id": "PRO-02",
+      "command": "Tender Opportunity Radar",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-02-tender-opportunity-radar.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Scope and complete dataset review",
+        "Verified open tender shortlist",
+        "Lot-level requirements and company fit",
+        "Priority opportunities and next checks"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "b096c7154adf8d8ba74fbe5ef29d4fe93fec3fd57eaa94854875d51d4c2533b5"
+    },
+    {
+      "id": "PRO-03",
+      "command": "Procurement Pipeline Outlook",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-03-procurement-pipeline-outlook.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Planned notices and source dates",
+        "Expected timing and uncertainty",
+        "Preparation and partner needs",
+        "Opening verification triggers"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "21f05bdc06c8cb4d8522dddf1c3d69fdc1844dfdb29c4ff548a4400341654842"
+    },
+    {
+      "id": "PRO-04",
+      "command": "Buyer and Award Intelligence Report",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-04-buyer-and-award-intelligence-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Buyer mandate and procurement process",
+        "Observed awards and suppliers",
+        "Amounts lots and corrections",
+        "Implications and historical coverage gaps"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "1fafcc4cf22fb601c69f9c1a925820a3b3f37c90db5ef9b19f0f666dd70d0f22"
+    },
+    {
+      "id": "PRO-05",
+      "command": "Bid/No-Bid Assessment",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-05-bid-no-bid-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Tender document completeness",
+        "Mandatory requirements and company evidence",
+        "Commercial delivery and contractual assessment",
+        "Pursue hold or decline recommendation"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [
+        "Official specifications",
+        "Participation and exclusion criteria",
+        "Evaluation criteria",
+        "Contractual terms",
+        "Annexes",
+        "Published clarifications and amendments"
+      ],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "0fce11824c59c0446b2cf74b7de78998d92d5580c871fe92f46c954024e04bd1"
+    },
+    {
+      "id": "PRO-06",
+      "command": "Consortium and Supply-Chain Assessment",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-06-consortium-and-supply-chain-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Requirement and capability gaps",
+        "Potential partner evidence",
+        "Consortium and subcontracting permissions",
+        "Partner shortlist and verification actions"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "d90609c2be847d6045fbf53e500260e6af267a5a4f6e9317e3b3e0ca8d9cba85"
+    },
+    {
+      "id": "PRO-07",
+      "command": "Bid Preparation Plan",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-07-bid-preparation-plan.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Official submission requirements",
+        "Compliance and document matrix",
+        "Roles dependencies and timetable",
+        "Clarification questions and review milestones"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "43a4e5bb6eed4aca152b99ce4d0660a7196907eaeb3f323eaf64434414739521"
+    },
+    {
+      "id": "PRO-08",
+      "command": "Bid Readiness Review",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-08-bid-readiness-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Submission version and official baseline",
+        "Completeness and compliance findings",
+        "Consistency and unresolved issues",
+        "Release recommendation and final checklist"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "bbcc56f09206c14c22e4f0a23f57ecd06aa018ac7c483748c33b63d4dc531130"
+    },
+    {
+      "id": "PRO-09",
+      "command": "Tender Outcome Review",
+      "area": "Procurement",
+      "version": "1.1.0",
+      "path": "04_Procurement/PRO-09-tender-outcome-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Official outcome and feedback",
+        "Criteria-by-criteria comparison",
+        "Evidenced reasons versus unknowns",
+        "Improvement plan for future bids"
+      ],
+      "requiredInputs": "Company capabilities and capacity; buyer/geography; notice and lot identifiers when selected; delivery constraints.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "e8fe7ecb73ba9ed21fffba95a295a5f04c51d235685bf7bf24f302f67b30fc05"
+    },
+    {
+      "id": "FUN-01",
+      "command": "Project Funding Readiness Review",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-01-project-funding-readiness-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Project objectives and outcomes",
+        "Maturity and readiness evidence",
+        "Resources budget and partner needs",
+        "Missing inputs and next preparation steps"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "62409bf68c2824e59a3ad8b0ed71f2e7b0b929b2654557e61e1d245e51c67e35"
+    },
+    {
+      "id": "FUN-02",
+      "command": "Funding Opportunity Radar",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-02-funding-opportunity-radar.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Project profile and search scope",
+        "Verified open calls",
+        "Applicant and project fit",
+        "Priority applications and verification gaps"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "5157599e4682348c8968c37bd4c658e0c0c7e9caf0198a8c7aab1ddbf3149da5"
+    },
+    {
+      "id": "FUN-03",
+      "command": "Funding Pipeline Outlook",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-03-funding-pipeline-outlook.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Planned calls and programme evidence",
+        "Expected opening and uncertainty",
+        "Preparation dependencies",
+        "Monitoring and opening checks"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "410b4bd7eb8dfbbf90b03dc6e02ba26551745df704d212674e65cf5f8fbc297d"
+    },
+    {
+      "id": "FUN-04",
+      "command": "Funding Fit and Eligibility Assessment",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-04-funding-fit-and-eligibility-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Official call document completeness",
+        "Applicant and geographic eligibility",
+        "Project costs maturity and consortium fit",
+        "Conditional conclusion and missing evidence"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [
+        "Official call text",
+        "Applicant guidance",
+        "Eligibility rules",
+        "Evaluation criteria",
+        "Funding conditions",
+        "Annexes",
+        "Published clarifications and amendments"
+      ],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "15c3e310d97132d9932e2eb2705e2aac4db3c0e9034f98d0532c51b6cddf9e62"
+    },
+    {
+      "id": "FUN-05",
+      "command": "Project Funding Strategy",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-05-project-funding-strategy.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Project stages and financing needs",
+        "Suitable instruments and sequence",
+        "Co-financing and combination restrictions",
+        "Funding plan and contingencies"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "00c2cdcbd1de0d2ada589dc51e9d801193b8f634f42ddeeda813107de8b141cb"
+    },
+    {
+      "id": "FUN-06",
+      "command": "Funding Consortium Assessment",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-06-funding-consortium-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Call consortium requirements",
+        "Needed capabilities and roles",
+        "Potential partner evidence",
+        "Selection conditions and next checks"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "a68be6a08eb9a99025afad4c49210a103963dd40dc721833868f6578f53661f9"
+    },
+    {
+      "id": "FUN-07",
+      "command": "Application Development Plan",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-07-application-development-plan.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Call requirements and evaluation criteria",
+        "Proposal and work-package outline",
+        "Responsibilities inputs and milestones",
+        "Evidence and review plan"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "fca03ab75658e694722a65b2c1e31e66ec2db6cf6cbd8d906742d672b4358b19"
+    },
+    {
+      "id": "FUN-08",
+      "command": "Budget and Co-Financing Review",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-08-budget-and-co-financing-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Budget baseline and call rules",
+        "Eligible costs and rates",
+        "Co-financing cash flow and double-funding checks",
+        "Reconciliation and unresolved cost questions"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "4cd4119a9ee955bbb493858359ec69e58ff228ff4a8aee706df154ea38b5ae81"
+    },
+    {
+      "id": "FUN-09",
+      "command": "Application Readiness Review",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-09-application-readiness-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Application and official document versions",
+        "Criterion and attachment completeness",
+        "Budget narrative and partner consistency",
+        "Corrections and submission readiness"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "c1d8338f43cce0d0d53e16f880a85da9dce322240915c5cdd66bbe8195e890c7"
+    },
+    {
+      "id": "FUN-10",
+      "command": "Grant Delivery Readiness Plan",
+      "area": "Funding",
+      "version": "1.1.0",
+      "path": "05_Funding/FUN-10-grant-delivery-readiness-plan.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Signed agreement and award conditions",
+        "Deliverables reporting and payment milestones",
+        "Roles records and audit requirements",
+        "Change-control and implementation risks"
+      ],
+      "requiredInputs": "Applicant entity and country; project objectives; maturity; budget; co-financing; partners; call/topic identifiers when selected.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "5174ba9046a8fa6ee4f05f9898d52df7eeff0366d6ca924a4d6f68ae34aaa66f"
+    },
+    {
+      "id": "STA-01",
+      "command": "Startup Positioning Review",
+      "area": "Startups",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-01-startup-positioning-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Product and customer problem",
+        "Capability and traction evidence",
+        "Differentiation and competitor context",
+        "Positioning options and evidence gaps"
+      ],
+      "requiredInputs": "Legal entity; product; stage; evidenced traction; support/financing needs; geography.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "9ce423abd693578bcbfb668834c551f879d016daed896ad02e4958ba2d0fb4f2"
+    },
+    {
+      "id": "STA-02",
+      "command": "Startup Growth Readiness Assessment",
+      "area": "Startups",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-02-startup-growth-readiness-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Current stage and growth objective",
+        "Commercial operational and regulatory readiness",
+        "Critical constraints",
+        "Prioritised improvements"
+      ],
+      "requiredInputs": "Legal entity; product; stage; evidenced traction; support/financing needs; geography.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "ac07968a9f37259e1b2168ac3b3e44dd9a7c97e4f98961ff8e9af79b4b50de2b"
+    },
+    {
+      "id": "STA-03",
+      "command": "Incubator and Accelerator Match",
+      "area": "Startups",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-03-incubator-and-accelerator-match.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Support needs and eligibility",
+        "Programme services and terms",
+        "Current windows and participation obligations",
+        "Shortlist and next application steps"
+      ],
+      "requiredInputs": "Legal entity; product; stage; evidenced traction; support/financing needs; geography.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "267327b94582ee400283322b65a0842042350be2deea521e69e8c465e321b8a6"
+    },
+    {
+      "id": "STA-04",
+      "command": "Investor Fit Report",
+      "area": "Startups",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-04-investor-fit-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Financing needs and company profile",
+        "Investor mandate stage and geography",
+        "Documented activity and possible conflicts",
+        "Fit shortlist and engagement prerequisites"
+      ],
+      "requiredInputs": "Legal entity; product; stage; evidenced traction; support/financing needs; geography.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "0ccb83f6c426ca7195db69f7b32c3fe260b5dc1cfb20d2323dde56da26ef6ce3"
+    },
+    {
+      "id": "STA-05",
+      "command": "Investment Readiness Review",
+      "area": "Startups",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-05-investment-readiness-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Investment objective and materials",
+        "Commercial technical and financial evidence",
+        "Data-room and diligence gaps",
+        "Readiness actions"
+      ],
+      "requiredInputs": "Legal entity; product; stage; evidenced traction; support/financing needs; geography.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "f54a6a243a784057bca460b1b8793e226dc3cc5da955f13965ad6c321ba8f16b"
+    },
+    {
+      "id": "STA-06",
+      "command": "Fundraising Preparation Pack",
+      "area": "Startups",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-06-fundraising-preparation-pack.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Evidence-backed company brief",
+        "Pitch narrative and presentation outline",
+        "Data-room checklist",
+        "Investor engagement preparation"
+      ],
+      "requiredInputs": "Legal entity; product; stage; evidenced traction; support/financing needs; geography.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "3e5626e44bdba0632828548b687d6651eee8eb9e1b8075628208b997a112795e"
+    },
+    {
+      "id": "STA-07",
+      "command": "Startup Growth Roadmap",
+      "area": "Startups",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-07-startup-growth-roadmap.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Growth objectives and baseline",
+        "Customer funding and partnership actions",
+        "Resources and milestones",
+        "Risks and review triggers"
+      ],
+      "requiredInputs": "Legal entity; product; stage; evidenced traction; support/financing needs; geography.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "151e82c82a9bf2d71da29d27d3a0f2e4b6e8cddd7607f8eddb8fedd1eccdfc52"
+    },
+    {
+      "id": "INC-01",
+      "command": "Startup Intake Assessment",
+      "area": "Incubators and accelerators",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-01-startup-intake-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Programme criteria and applicant evidence",
+        "Capability and maturity assessment",
+        "Support fit and gaps",
+        "Selection questions and recommendation"
+      ],
+      "requiredInputs": "Programme mandate; selection criteria; portfolio profiles; support capacity; review period.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "3ca3867a503b95b236ffec7cab686d46d079e5d75bf017b7250f95d2c484fec9"
+    },
+    {
+      "id": "INC-02",
+      "command": "Portfolio Needs Review",
+      "area": "Incubators and accelerators",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-02-portfolio-needs-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Portfolio and comparable criteria",
+        "Company-specific needs",
+        "Shared constraints and opportunities",
+        "Support priorities"
+      ],
+      "requiredInputs": "Programme mandate; selection criteria; portfolio profiles; support capacity; review period.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "af42f5d1915a292382e1fcf006d5eab3e6a8d85deacd78672e72bd81b784c375"
+    },
+    {
+      "id": "INC-03",
+      "command": "Portfolio Opportunity Match",
+      "area": "Incubators and accelerators",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-03-portfolio-opportunity-match.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Portfolio profiles and scope",
+        "Relevant opportunities by company",
+        "Eligibility and timing gaps",
+        "Prioritised next actions"
+      ],
+      "requiredInputs": "Programme mandate; selection criteria; portfolio profiles; support capacity; review period.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "a20dd8280788339242281f15b564b490210e0cbd4f7f45c994b204b19dcbbb65"
+    },
+    {
+      "id": "INC-04",
+      "command": "Portfolio Development Plan",
+      "area": "Incubators and accelerators",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-04-portfolio-development-plan.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Portfolio objectives",
+        "Individual company development plans",
+        "Shared support resources",
+        "Milestones and responsibility matrix"
+      ],
+      "requiredInputs": "Programme mandate; selection criteria; portfolio profiles; support capacity; review period.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "a057d77f66dbae53c7c37667daf3057ce8d060448bc18f6a0290ed6fd3faa4e8"
+    },
+    {
+      "id": "INC-05",
+      "command": "Investor and Corporate Partner Match",
+      "area": "Incubators and accelerators",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-05-investor-and-corporate-partner-match.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Portfolio needs",
+        "Investor and corporate mandates",
+        "Evidence-backed matches",
+        "Engagement and qualification plan"
+      ],
+      "requiredInputs": "Programme mandate; selection criteria; portfolio profiles; support capacity; review period.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "056fa25383db3c0259640a91a4291f4e8f4dc8c947de7ec01a669246ce344fa1"
+    },
+    {
+      "id": "INC-06",
+      "command": "Portfolio Progress Report",
+      "area": "Incubators and accelerators",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-06-portfolio-progress-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Comparable baseline and review period",
+        "Verified changes by company",
+        "Milestone progress and remaining gaps",
+        "Revised support priorities"
+      ],
+      "requiredInputs": "Programme mandate; selection criteria; portfolio profiles; support capacity; review period.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "eb9e185012814e2c25e9e2f99e8b2f21c39aa5a907dc6ebfc7818160c9f658cb"
+    },
+    {
+      "id": "INV-01",
+      "command": "Space Investment Landscape",
+      "area": "Investors",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-01-space-investment-landscape.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Investment scope and thesis",
+        "Technology and market segments",
+        "Company universe and policy context",
+        "Risks and screening priorities"
+      ],
+      "requiredInputs": "Mandate; stage; sector; geography; instrument; investment size where supplied; target companies.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "a2ef1bf6e3b72a68e3541028219081a549ea75d7b67c6ef096bdc2a606d226fd"
+    },
+    {
+      "id": "INV-02",
+      "command": "Investment Target Screening",
+      "area": "Investors",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-02-investment-target-screening.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Investor criteria",
+        "Company universe and screening evidence",
+        "Shortlist and exclusion reasons",
+        "Next diligence questions"
+      ],
+      "requiredInputs": "Mandate; stage; sector; geography; instrument; investment size where supplied; target companies.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "a7d60f5d553af7853e35eb338fdc8a617e8c6df204461d51c4d296e88c7efe91"
+    },
+    {
+      "id": "INV-03",
+      "command": "Investment Target Comparison",
+      "area": "Investors",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-03-investment-target-comparison.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Common comparison criteria",
+        "Company evidence profiles",
+        "Strengths risks and unknowns",
+        "Relative priorities and limitations"
+      ],
+      "requiredInputs": "Mandate; stage; sector; geography; instrument; investment size where supplied; target companies.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "b70795da03f15c8ecec08ead4db04ac2d453417ac163a7256266723309cc12c1"
+    },
+    {
+      "id": "INV-04",
+      "command": "Commercial Due Diligence Brief",
+      "area": "Investors",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-04-commercial-due-diligence-brief.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Diligence scope and available materials",
+        "Product market and customer evidence",
+        "Commercial model and competitor context",
+        "Red flags and further diligence"
+      ],
+      "requiredInputs": "Mandate; stage; sector; geography; instrument; investment size where supplied; target companies.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "4ec28a514569878018a42b86e3bc60c77d3a2f1d786523b40f6eee589e9388e4"
+    },
+    {
+      "id": "INV-05",
+      "command": "Regulatory and IP Due Diligence Brief",
+      "area": "Investors",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-05-regulatory-and-ip-due-diligence-brief.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Entity assets and transaction scope",
+        "Regulatory and licensing position",
+        "IP ownership and key contractual questions",
+        "Specialist diligence and conditions"
+      ],
+      "requiredInputs": "Mandate; stage; sector; geography; instrument; investment size where supplied; target companies.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "6516a082e58d3f87d2300bd4820c0481e51dfa7fd9876085210c78941feccb9b"
+    },
+    {
+      "id": "INV-06",
+      "command": "Investment Committee Brief",
+      "area": "Investors",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-06-investment-committee-brief.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Decision requested and investment rationale",
+        "Commercial regulatory and financial evidence",
+        "Risks alternatives and sensitivities",
+        "Outstanding diligence and proposed conditions"
+      ],
+      "requiredInputs": "Mandate; stage; sector; geography; instrument; investment size where supplied; target companies.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "2434cf51ea4c1946909838bd430fcec846e6cab30aa91070d5f75bb21d9201b0"
+    },
+    {
+      "id": "INV-07",
+      "command": "Portfolio Opportunity Review",
+      "area": "Investors",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-07-portfolio-opportunity-review.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Portfolio scope and objectives",
+        "Relevant tenders funding partners and clients",
+        "Fit and eligibility gaps",
+        "Actions by portfolio company"
+      ],
+      "requiredInputs": "Mandate; stage; sector; geography; instrument; investment size where supplied; target companies.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "087fb0cb37193e1b65049d8fed37abf5ba944c9bcc2482322ce34f28f75f42a5"
+    },
+    {
+      "id": "CLI-01",
+      "command": "Downstream Market Assessment",
+      "area": "Potential clients",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-01-downstream-market-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Supplier capabilities",
+        "Customer problems and industry workflows",
+        "Evidenced use cases and adoption barriers",
+        "Priority markets and validation needs"
+      ],
+      "requiredInputs": "Supplier offer; customer problem; sector; geography including Africa if requested; capacity and preferred route.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "9e118554b6d224e3d54aec19eae9d9d304bc45ea4223949106b29d6093ae98c1"
+    },
+    {
+      "id": "CLI-02",
+      "command": "Market Segment Prioritisation",
+      "area": "Potential clients",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-02-market-segment-prioritisation.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Segment definitions and comparison criteria",
+        "Problem severity and evidence",
+        "Solution fit access and delivery constraints",
+        "Priority segments and sensitivities"
+      ],
+      "requiredInputs": "Supplier offer; customer problem; sector; geography including Africa if requested; capacity and preferred route.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "a46c7edef4865bd8f163c8c5975ac123c8954713c57ffdeb8132845594b6f5e2"
+    },
+    {
+      "id": "CLI-03",
+      "command": "Potential Client Shortlist",
+      "area": "Potential clients",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-03-potential-client-shortlist.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Target profile and geography",
+        "Client identity ownership and activity",
+        "Need evidence and prospect classification",
+        "Shortlist and qualification actions"
+      ],
+      "requiredInputs": "Supplier offer; customer problem; sector; geography including Africa if requested; capacity and preferred route.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "6cc35777ceec6f761e5aa91b7eb834e80fcc2b87e6defefe9b76ba1024d9285e"
+    },
+    {
+      "id": "CLI-04",
+      "command": "Target Account Intelligence",
+      "area": "Potential clients",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-04-target-account-intelligence.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Entity business units and operations",
+        "Public developments and buying signals",
+        "Existing solutions and procurement routes",
+        "Verified contacts and open questions"
+      ],
+      "requiredInputs": "Supplier offer; customer problem; sector; geography including Africa if requested; capacity and preferred route.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "998519c16c14a41008478cb6eba6eff891e02959f434df3937fa9e5f2a9a7815"
+    },
+    {
+      "id": "CLI-05",
+      "command": "Client–Solution Fit Assessment",
+      "area": "Potential clients",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-05-client-solution-fit-assessment.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Client problem evidence",
+        "Solution and integration fit",
+        "Benefit hypotheses and validation",
+        "Risks gaps and next discovery questions"
+      ],
+      "requiredInputs": "Supplier offer; customer problem; sector; geography including Africa if requested; capacity and preferred route.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "808f4f183d8e0311147fe94adc10e228646dd3d1e8286548c261376c02aaed0d"
+    },
+    {
+      "id": "CLI-06",
+      "command": "Commercial Engagement Plan",
+      "area": "Potential clients",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-06-commercial-engagement-plan.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Account priorities",
+        "Tailored value propositions",
+        "Verified contact channels and sequence",
+        "Meeting goals and follow-up criteria"
+      ],
+      "requiredInputs": "Supplier offer; customer problem; sector; geography including Africa if requested; capacity and preferred route.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "3e3a48af6283e327aaa0f1a3cdb8433c87c23182df0cb692d0929b2a33b2a517"
+    },
+    {
+      "id": "CLI-07",
+      "command": "Pilot Project Proposal",
+      "area": "Potential clients",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-07-pilot-project-proposal.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Problem baseline and pilot objective",
+        "Scope inputs and deliverables",
+        "Success measures and acceptance",
+        "Timeline assumptions costs and next decision"
+      ],
+      "requiredInputs": "Supplier offer; customer problem; sector; geography including Africa if requested; capacity and preferred route.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "faaa53d939c172567264701799b557fb2d11e8456c1af461d71941cb31f20268"
+    },
+    {
+      "id": "CLI-08",
+      "command": "Client Proposal Pack",
+      "area": "Potential clients",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-08-client-proposal-pack.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Client requirements",
+        "Proposed solution and deliverables",
+        "Delivery pricing and commercial assumptions",
+        "Acceptance next steps and unresolved terms"
+      ],
+      "requiredInputs": "Supplier offer; customer problem; sector; geography including Africa if requested; capacity and preferred route.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "df84836e86cc4694e3258b4f68685aa9d60bbff1c9698ed31b296c5eaa46fc62"
+    },
+    {
+      "id": "COM-01",
+      "command": "Company Growth and Market Access Report",
+      "area": "Combined reports",
+      "version": "1.1.0",
+      "path": "07_Combined-Business-Reports/COM-01-company-growth-and-market-access-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Company baseline and business objectives",
+        "Integrated policy legal and opportunity findings",
+        "Investors partners and clients",
+        "Prioritised growth and market-access plan"
+      ],
+      "requiredInputs": "Company/portfolio profiles; decision; selected areas; countries; timeframe; constraints and shared assumptions.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "2ee5b47652bb8bedea080204b9e31f1d16541f50f250e902c0a5271627352057"
+    },
+    {
+      "id": "COM-02",
+      "command": "Country Expansion Report",
+      "area": "Combined reports",
+      "version": "1.1.0",
+      "path": "07_Combined-Business-Reports/COM-02-country-expansion-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Target country and entry objective",
+        "Policy stakeholders and legal access",
+        "Procurement funding and commercial routes",
+        "Entry options risks and roadmap"
+      ],
+      "requiredInputs": "Company/portfolio profiles; decision; selected areas; countries; timeframe; constraints and shared assumptions.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "37f5a48191561c7968dd2053cc4bee41781f78c7efcd60a330203de5f1dffbda"
+    },
+    {
+      "id": "COM-03",
+      "command": "Investment Screening Report",
+      "area": "Combined reports",
+      "version": "1.1.0",
+      "path": "07_Combined-Business-Reports/COM-03-investment-screening-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Investor criteria and targets",
+        "Company and market comparison",
+        "Commercial regulatory and IP questions",
+        "Screening decision and diligence plan"
+      ],
+      "requiredInputs": "Company/portfolio profiles; decision; selected areas; countries; timeframe; constraints and shared assumptions.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "e530b6b5238c6a2170b452a48252c26ea8187f341d2e69bff8220f412e262657"
+    },
+    {
+      "id": "COM-04",
+      "command": "Incubator Portfolio Strategy",
+      "area": "Combined reports",
+      "version": "1.1.0",
+      "path": "07_Combined-Business-Reports/COM-04-incubator-portfolio-strategy.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Portfolio objectives and baseline",
+        "Company needs and cross-portfolio opportunities",
+        "Support investor and client priorities",
+        "Resource plan and milestones"
+      ],
+      "requiredInputs": "Company/portfolio profiles; decision; selected areas; countries; timeframe; constraints and shared assumptions.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "ce933adf38e5342cd71c83ea1bcda315f7f5285fbdc4876ec5b6580b97e8c9f5"
+    },
+    {
+      "id": "COM-05",
+      "command": "Public-Sector Business Development Plan",
+      "area": "Combined reports",
+      "version": "1.1.0",
+      "path": "07_Combined-Business-Reports/COM-05-public-sector-business-development-plan.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Company capabilities and target public markets",
+        "Buyers policy context and awards",
+        "Open and planned opportunities",
+        "Engagement and bid preparation roadmap"
+      ],
+      "requiredInputs": "Company/portfolio profiles; decision; selected areas; countries; timeframe; constraints and shared assumptions.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "c36686e00a1a5a194aaa9ae0ac74311529502e959507ba6245b0d1ccf7a27dd0"
+    },
+    {
+      "id": "COM-06",
+      "command": "Commercial Partnership Report",
+      "area": "Combined reports",
+      "version": "1.1.0",
+      "path": "07_Combined-Business-Reports/COM-06-commercial-partnership-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Partnership objective and capability needs",
+        "Counterparty evidence and two-way fit",
+        "Commercial legal and governance options",
+        "Qualification and negotiation plan"
+      ],
+      "requiredInputs": "Company/portfolio profiles; decision; selected areas; countries; timeframe; constraints and shared assumptions.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "e5fdcd2b72f000b84dabed8f0c68450a961d5e10583adb22e4fba99433d3f3a5"
+    },
+    {
+      "id": "POL-07",
+      "command": "Policy — Monthly Space Update",
+      "area": "Policy",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/POL-07-monthly-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Adopted policies and proposals",
+        "Institutional decisions and implementation",
+        "Business implications and actions"
+      ],
+      "requiredInputs": "Scope and reporting month; company context when relevant.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "313a5561dd0aa634e75822145f61daa7858ee39425b53e32cef077641dc36c0d"
+    },
+    {
+      "id": "LAW-09",
+      "command": "Law — Monthly Space Regulation Update",
+      "area": "Law",
+      "version": "1.1.0",
+      "path": "03_Law-and-Regulation/LAW-09-monthly-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "New laws amendments and judgments",
+        "Entry into force application and transition dates",
+        "Compliance implications and next steps"
+      ],
+      "requiredInputs": "Scope and reporting month; company context when relevant.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "7428fc959bbfc8fd07ce351a3b2840539a40dc3eac2dba1552d70127d083ddc5"
+    },
+    {
+      "id": "MON-01",
+      "command": "Monitoring — Next-Month Space Outlook",
+      "area": "Monitoring",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/MON-01-monthly-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Policy and legislative calendar",
+        "Procurement and funding dates",
+        "Confirmed dates versus forecasts and watchlist"
+      ],
+      "requiredInputs": "Scope and reporting month; company context when relevant.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "579cd10826fd52b2615b40afe021b6d1d8a4bff75431f01c3311c56bfd40c903"
+    },
+    {
+      "id": "STK-07",
+      "command": "Stakeholders — Next-Month Space Events",
+      "area": "Stakeholders",
+      "version": "1.1.0",
+      "path": "02_Policy-and-Stakeholders/STK-07-monthly-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Verified events dates locations and organisers",
+        "Registration deadlines fees and access",
+        "Relevant stakeholders and business purpose"
+      ],
+      "requiredInputs": "Scope and reporting month; company context when relevant.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "030caada336da1b16221d9539a4d4e45877e960049c77da48aaf685773fae2a6"
+    },
+    {
+      "id": "NEWS-01",
+      "command": "News — Monthly Space Industry Review",
+      "area": "News",
+      "version": "1.1.0",
+      "path": "06_Companies-Investment-and-Clients/NEWS-01-monthly-report.md",
+      "format": "markdown-authoring-template",
+      "sections": [
+        "Industrial developments and transactions",
+        "Launches technology deployments and partnerships",
+        "Commercial significance competing evidence and implications"
+      ],
+      "requiredInputs": "Scope and reporting month; company context when relevant.",
+      "requiredOfficialUploads": [],
+      "sharedStandards": [
+        "01_Shared-Standards/REPORT-STANDARD.md",
+        "01_Shared-Standards/EVIDENCE-GATE.md",
+        "09_Quality-Checks/RELEASE-CHECKLIST.md"
+      ],
+      "sha256": "54e15a04aba0a76bd530e04c0bf17798719a12ff386b3cecd4fb303dbe7850ca"
+    }
+  ]
+}

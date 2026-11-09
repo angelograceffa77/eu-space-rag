@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "templateRoot": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\eu-space-rag\\00_GPT_CONFIGURATION\\Report-Templates",
+  "commands": [
+    {
+      "command": "Space Policy Landscape",
+      "description": "explains relevant policies, institutions and priorities.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/POL-01-space-policy-landscape.md",
+      "requiredOfficialUploads": [],
+      "id": "POL-01"
+    },
+    {
+      "command": "Policy Opportunity Assessment",
+      "description": "identifies business opportunities associated with policy priorities.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/POL-02-policy-opportunity-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "POL-02"
+    },
+    {
+      "command": "Strategic Positioning Report",
+      "description": "assesses how the organisation can position itself within those priorities.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/POL-03-strategic-positioning-report.md",
+      "requiredOfficialUploads": [],
+      "id": "POL-03"
+    },
+    {
+      "command": "Country Market Comparison",
+      "description": "compares relevant policy environments across countries.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/POL-04-country-market-comparison.md",
+      "requiredOfficialUploads": [],
+      "id": "POL-04"
+    },
+    {
+      "command": "Policy Change Impact Assessment",
+      "description": "assesses the practical effects of a specific development.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/POL-05-policy-change-impact-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "POL-05"
+    },
+    {
+      "command": "Strategic Action Roadmap",
+      "description": "converts findings into prioritised actions.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/POL-06-strategic-action-roadmap.md",
+      "requiredOfficialUploads": [],
+      "id": "POL-06"
+    },
+    {
+      "command": "Stakeholder Intelligence Map",
+      "description": "identifies relevant organisations, people and responsibilities.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/STK-01-stakeholder-intelligence-map.md",
+      "requiredOfficialUploads": [],
+      "id": "STK-01"
+    },
+    {
+      "command": "Institutional Decision Map",
+      "description": "explains who decides, through which process and when.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/STK-02-institutional-decision-map.md",
+      "requiredOfficialUploads": [],
+      "id": "STK-02"
+    },
+    {
+      "command": "Stakeholder Priority Assessment",
+      "description": "prioritises stakeholders using evidenced responsibilities and the user’s needs.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/STK-03-stakeholder-priority-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "STK-03"
+    },
+    {
+      "command": "Stakeholder Engagement Plan",
+      "description": "proposes objectives, messages, timing and engagement routes.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/STK-04-stakeholder-engagement-plan.md",
+      "requiredOfficialUploads": [],
+      "id": "STK-04"
+    },
+    {
+      "command": "Institutional Meeting Brief",
+      "description": "prepares the user for a specific meeting.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/STK-05-institutional-meeting-brief.md",
+      "requiredOfficialUploads": [],
+      "id": "STK-05"
+    },
+    {
+      "command": "Public Consultation Response Pack",
+      "description": "develops an evidence-based response to a consultation.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/STK-06-public-consultation-response-pack.md",
+      "requiredOfficialUploads": [],
+      "id": "STK-06"
+    },
+    {
+      "command": "Regulatory Landscape Report",
+      "description": "identifies the legal framework relevant to an activity.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-01-regulatory-landscape-report.md",
+      "requiredOfficialUploads": [],
+      "id": "LAW-01"
+    },
+    {
+      "command": "Market Access and Licensing Roadmap",
+      "description": "explains relevant permissions and practical steps.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-02-market-access-and-licensing-roadmap.md",
+      "requiredOfficialUploads": [],
+      "id": "LAW-02"
+    },
+    {
+      "command": "Compliance Readiness Assessment",
+      "description": "compares available company evidence with legal requirements.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-03-compliance-readiness-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "LAW-03"
+    },
+    {
+      "command": "Space Data and IP Assessment",
+      "description": "examines data use, ownership, licensing and intellectual-property issues.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-04-space-data-and-ip-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "LAW-04"
+    },
+    {
+      "command": "Contract and Risk Allocation Review",
+      "description": "explains contractual obligations, risks and negotiation points.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-05-contract-and-risk-allocation-review.md",
+      "requiredOfficialUploads": [],
+      "id": "LAW-05"
+    },
+    {
+      "command": "Consortium and Partnership Legal Brief",
+      "description": "identifies legal issues in collaborative arrangements.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-06-consortium-and-partnership-legal-brief.md",
+      "requiredOfficialUploads": [],
+      "id": "LAW-06"
+    },
+    {
+      "command": "Initial Contract Draft",
+      "description": "prepares a preliminary agreement using suitable models and supplied terms.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-07-initial-contract-draft.md",
+      "requiredOfficialUploads": [],
+      "id": "LAW-07"
+    },
+    {
+      "command": "Regulatory Due Diligence Report",
+      "description": "assesses material legal risks and unresolved questions for a transaction.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-08-regulatory-due-diligence-report.md",
+      "requiredOfficialUploads": [],
+      "id": "LAW-08"
+    },
+    {
+      "command": "Public Procurement Market Assessment",
+      "description": "explains buyers, purchasing patterns and participation routes.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "04_Procurement/PRO-01-public-procurement-market-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "PRO-01"
+    },
+    {
+      "command": "Tender Opportunity Radar",
+      "description": "identifies relevant currently open tenders.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "04_Procurement/PRO-02-tender-opportunity-radar.md",
+      "requiredOfficialUploads": [],
+      "id": "PRO-02"
+    },
+    {
+      "command": "Procurement Pipeline Outlook",
+      "description": "examines planned opportunities separately from open tenders.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "04_Procurement/PRO-03-procurement-pipeline-outlook.md",
+      "requiredOfficialUploads": [],
+      "id": "PRO-03"
+    },
+    {
+      "command": "Buyer and Award Intelligence Report",
+      "description": "analyses evidenced buyers, winners, contract descriptions and values.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "04_Procurement/PRO-04-buyer-and-award-intelligence-report.md",
+      "requiredOfficialUploads": [],
+      "id": "PRO-04"
+    },
+    {
+      "command": "Bid/No-Bid Assessment",
+      "description": "assesses whether pursuing a specific tender is justified.",
+      "owner": "bravestar-procurement-funding",
+      "support": [
+        "bravestar-companies"
+      ],
+      "template": "04_Procurement/PRO-05-bid-no-bid-assessment.md",
+      "requiredOfficialUploads": [
+        "Official specifications",
+        "Participation and exclusion criteria",
+        "Evaluation criteria",
+        "Contractual terms",
+        "Annexes",
+        "Published clarifications and amendments"
+      ],
+      "id": "PRO-05"
+    },
+    {
+      "command": "Consortium and Supply-Chain Assessment",
+      "description": "identifies participation roles and partnership gaps.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "04_Procurement/PRO-06-consortium-and-supply-chain-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "PRO-06"
+    },
+    {
+      "command": "Bid Preparation Plan",
+      "description": "sets out the work, documents and deadlines needed.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "04_Procurement/PRO-07-bid-preparation-plan.md",
+      "requiredOfficialUploads": [],
+      "id": "PRO-07"
+    },
+    {
+      "command": "Bid Readiness Review",
+      "description": "checks a supplied bid against official requirements.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "04_Procurement/PRO-08-bid-readiness-review.md",
+      "requiredOfficialUploads": [],
+      "id": "PRO-08"
+    },
+    {
+      "command": "Tender Outcome Review",
+      "description": "examines actual evaluation or award feedback.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "04_Procurement/PRO-09-tender-outcome-review.md",
+      "requiredOfficialUploads": [],
+      "id": "PRO-09"
+    },
+    {
+      "command": "Project Funding Readiness Review",
+      "description": "identifies preparation needed before seeking funding.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-01-project-funding-readiness-review.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-01"
+    },
+    {
+      "command": "Funding Opportunity Radar",
+      "description": "identifies relevant open calls.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-02-funding-opportunity-radar.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-02"
+    },
+    {
+      "command": "Funding Pipeline Outlook",
+      "description": "examines forthcoming calls and programmes.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-03-funding-pipeline-outlook.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-03"
+    },
+    {
+      "command": "Funding Fit and Eligibility Assessment",
+      "description": "checks an applicant and project against a specific call.",
+      "owner": "bravestar-procurement-funding",
+      "support": [
+        "bravestar-companies"
+      ],
+      "template": "05_Funding/FUN-04-funding-fit-and-eligibility-assessment.md",
+      "requiredOfficialUploads": [
+        "Official call text",
+        "Applicant guidance",
+        "Eligibility rules",
+        "Evaluation criteria",
+        "Funding conditions",
+        "Annexes",
+        "Published clarifications and amendments"
+      ],
+      "id": "FUN-04"
+    },
+    {
+      "command": "Project Funding Strategy",
+      "description": "compares suitable funding routes and sequencing.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-05-project-funding-strategy.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-05"
+    },
+    {
+      "command": "Funding Consortium Assessment",
+      "description": "assesses partner requirements and gaps.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-06-funding-consortium-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-06"
+    },
+    {
+      "command": "Application Development Plan",
+      "description": "sets out application work and deadlines.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-07-application-development-plan.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-07"
+    },
+    {
+      "command": "Budget and Co-Financing Review",
+      "description": "checks costs and financing assumptions against call rules.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-08-budget-and-co-financing-review.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-08"
+    },
+    {
+      "command": "Application Readiness Review",
+      "description": "checks a supplied application against official requirements.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-09-application-readiness-review.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-09"
+    },
+    {
+      "command": "Grant Delivery Readiness Plan",
+      "description": "identifies preparations for managing an awarded grant.",
+      "owner": "bravestar-procurement-funding",
+      "support": [],
+      "template": "05_Funding/FUN-10-grant-delivery-readiness-plan.md",
+      "requiredOfficialUploads": [],
+      "id": "FUN-10"
+    },
+    {
+      "command": "Startup Positioning Review",
+      "description": "explains the startup’s evidenced offering and market position.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Startups/STA-01-startup-positioning-review.md",
+      "requiredOfficialUploads": [],
+      "id": "STA-01"
+    },
+    {
+      "command": "Startup Growth Readiness Assessment",
+      "description": "identifies gaps affecting growth.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Startups/STA-02-startup-growth-readiness-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "STA-02"
+    },
+    {
+      "command": "Incubator and Accelerator Match",
+      "description": "finds suitable support programmes.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Startups/STA-03-incubator-and-accelerator-match.md",
+      "requiredOfficialUploads": [],
+      "id": "STA-03"
+    },
+    {
+      "command": "Investor Fit Report",
+      "description": "identifies investors with compatible documented mandates.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Startups/STA-04-investor-fit-report.md",
+      "requiredOfficialUploads": [],
+      "id": "STA-04"
+    },
+    {
+      "command": "Investment Readiness Review",
+      "description": "assesses preparation and evidence needed for fundraising.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Startups/STA-05-investment-readiness-review.md",
+      "requiredOfficialUploads": [],
+      "id": "STA-05"
+    },
+    {
+      "command": "Fundraising Preparation Pack",
+      "description": "organises information and actions for investor discussions.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Startups/STA-06-fundraising-preparation-pack.md",
+      "requiredOfficialUploads": [],
+      "id": "STA-06"
+    },
+    {
+      "command": "Startup Growth Roadmap",
+      "description": "prioritises practical growth steps.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Startups/STA-07-startup-growth-roadmap.md",
+      "requiredOfficialUploads": [],
+      "id": "STA-07"
+    },
+    {
+      "command": "Startup Intake Assessment",
+      "description": "assesses a startup against programme requirements.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Incubators/INC-01-startup-intake-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "INC-01"
+    },
+    {
+      "command": "Portfolio Needs Review",
+      "description": "identifies common and company-specific support needs.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Incubators/INC-02-portfolio-needs-review.md",
+      "requiredOfficialUploads": [],
+      "id": "INC-02"
+    },
+    {
+      "command": "Portfolio Opportunity Match",
+      "description": "connects portfolio companies with relevant opportunities.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Incubators/INC-03-portfolio-opportunity-match.md",
+      "requiredOfficialUploads": [],
+      "id": "INC-03"
+    },
+    {
+      "command": "Portfolio Development Plan",
+      "description": "sets out support actions and milestones.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Incubators/INC-04-portfolio-development-plan.md",
+      "requiredOfficialUploads": [],
+      "id": "INC-04"
+    },
+    {
+      "command": "Investor and Corporate Partner Match",
+      "description": "identifies suitable external relationships.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Incubators/INC-05-investor-and-corporate-partner-match.md",
+      "requiredOfficialUploads": [],
+      "id": "INC-05"
+    },
+    {
+      "command": "Portfolio Progress Report",
+      "description": "reports evidenced progress against agreed objectives.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Incubators/INC-06-portfolio-progress-report.md",
+      "requiredOfficialUploads": [],
+      "id": "INC-06"
+    },
+    {
+      "command": "Space Investment Landscape",
+      "description": "explains relevant segments, companies and developments.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Investors/INV-01-space-investment-landscape.md",
+      "requiredOfficialUploads": [],
+      "id": "INV-01"
+    },
+    {
+      "command": "Investment Target Screening",
+      "description": "identifies candidates against an investment mandate.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Investors/INV-02-investment-target-screening.md",
+      "requiredOfficialUploads": [],
+      "id": "INV-02"
+    },
+    {
+      "command": "Investment Target Comparison",
+      "description": "compares shortlisted companies consistently.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Investors/INV-03-investment-target-comparison.md",
+      "requiredOfficialUploads": [],
+      "id": "INV-03"
+    },
+    {
+      "command": "Commercial Due Diligence Brief",
+      "description": "assesses commercial claims, positioning and gaps.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Investors/INV-04-commercial-due-diligence-brief.md",
+      "requiredOfficialUploads": [],
+      "id": "INV-04"
+    },
+    {
+      "command": "Regulatory and IP Due Diligence Brief",
+      "description": "combines commercial context with legal analysis supplied by the Law specialist.",
+      "owner": "bravestar-companies",
+      "support": [
+        "bravestar-law"
+      ],
+      "template": "06_Companies-Investment-and-Clients/Investors/INV-05-regulatory-and-ip-due-diligence-brief.md",
+      "requiredOfficialUploads": [],
+      "id": "INV-05"
+    },
+    {
+      "command": "Investment Committee Brief",
+      "description": "organises evidence, risks and questions for a decision.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Investors/INV-06-investment-committee-brief.md",
+      "requiredOfficialUploads": [],
+      "id": "INV-06"
+    },
+    {
+      "command": "Portfolio Opportunity Review",
+      "description": "identifies opportunities relevant to portfolio companies.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Investors/INV-07-portfolio-opportunity-review.md",
+      "requiredOfficialUploads": [],
+      "id": "INV-07"
+    },
+    {
+      "command": "Downstream Market Assessment",
+      "description": "identifies relevant non-space customer markets.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Clients/CLI-01-downstream-market-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "CLI-01"
+    },
+    {
+      "command": "Market Segment Prioritisation",
+      "description": "compares segments using evidenced needs and practical fit.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Clients/CLI-02-market-segment-prioritisation.md",
+      "requiredOfficialUploads": [],
+      "id": "CLI-02"
+    },
+    {
+      "command": "Potential Client Shortlist",
+      "description": "identifies and classifies prospects.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Clients/CLI-03-potential-client-shortlist.md",
+      "requiredOfficialUploads": [],
+      "id": "CLI-03"
+    },
+    {
+      "command": "Target Account Intelligence",
+      "description": "researches a specific customer and buying context.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Clients/CLI-04-target-account-intelligence.md",
+      "requiredOfficialUploads": [],
+      "id": "CLI-04"
+    },
+    {
+      "command": "Client–Solution Fit Assessment",
+      "description": "tests how the offering addresses an evidenced need.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Clients/CLI-05-client-solution-fit-assessment.md",
+      "requiredOfficialUploads": [],
+      "id": "CLI-05"
+    },
+    {
+      "command": "Commercial Engagement Plan",
+      "description": "proposes an engagement approach without authorising outreach.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Clients/CLI-06-commercial-engagement-plan.md",
+      "requiredOfficialUploads": [],
+      "id": "CLI-06"
+    },
+    {
+      "command": "Pilot Project Proposal",
+      "description": "prepares a pilot proposal using evidence and explicit assumptions.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Clients/CLI-07-pilot-project-proposal.md",
+      "requiredOfficialUploads": [],
+      "id": "CLI-07"
+    },
+    {
+      "command": "Client Proposal Pack",
+      "description": "organises a customer-specific commercial proposal.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/Clients/CLI-08-client-proposal-pack.md",
+      "requiredOfficialUploads": [],
+      "id": "CLI-08"
+    },
+    {
+      "command": "Company Growth and Market Access Report",
+      "description": "combines relevant commercial, policy, legal and opportunity findings.",
+      "owner": "bravestar-reports",
+      "support": [],
+      "template": "07_Combined-Business-Reports/COM-01-company-growth-and-market-access-report.md",
+      "requiredOfficialUploads": [],
+      "id": "COM-01"
+    },
+    {
+      "command": "Country Expansion Report",
+      "description": "assesses conditions for entering selected countries.",
+      "owner": "bravestar-reports",
+      "support": [],
+      "template": "07_Combined-Business-Reports/COM-02-country-expansion-report.md",
+      "requiredOfficialUploads": [],
+      "id": "COM-02"
+    },
+    {
+      "command": "Investment Screening Report",
+      "description": "combines commercial and legal findings for screening.",
+      "owner": "bravestar-reports",
+      "support": [],
+      "template": "07_Combined-Business-Reports/COM-03-investment-screening-report.md",
+      "requiredOfficialUploads": [],
+      "id": "COM-03"
+    },
+    {
+      "command": "Incubator Portfolio Strategy",
+      "description": "coordinates development priorities across a portfolio.",
+      "owner": "bravestar-reports",
+      "support": [],
+      "template": "07_Combined-Business-Reports/COM-04-incubator-portfolio-strategy.md",
+      "requiredOfficialUploads": [],
+      "id": "COM-04"
+    },
+    {
+      "command": "Public-Sector Business Development Plan",
+      "description": "combines buyer intelligence, opportunities, institutional context and participation planning.",
+      "owner": "bravestar-reports",
+      "support": [],
+      "template": "07_Combined-Business-Reports/COM-05-public-sector-business-development-plan.md",
+      "requiredOfficialUploads": [],
+      "id": "COM-05"
+    },
+    {
+      "command": "Commercial Partnership Report",
+      "description": "assesses evidence, conditions and next steps for a proposed relationship.",
+      "owner": "bravestar-reports",
+      "support": [],
+      "template": "07_Combined-Business-Reports/COM-06-commercial-partnership-report.md",
+      "requiredOfficialUploads": [],
+      "id": "COM-06"
+    },
+    {
+      "command": "Policy — Monthly Space Update",
+      "description": "Summarises space policy developments in the previous calendar month.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/POL-07-monthly-report.md",
+      "requiredOfficialUploads": [],
+      "aliases": [
+        "Policy"
+      ],
+      "period": "previous-calendar-month",
+      "id": "POL-07"
+    },
+    {
+      "command": "Law — Monthly Space Regulation Update",
+      "description": "Summarises space law and regulatory developments in the previous calendar month.",
+      "owner": "bravestar-law",
+      "support": [],
+      "template": "03_Law-and-Regulation/LAW-09-monthly-report.md",
+      "requiredOfficialUploads": [],
+      "aliases": [
+        "Law"
+      ],
+      "period": "previous-calendar-month",
+      "id": "LAW-09"
+    },
+    {
+      "command": "Monitoring — Next-Month Space Outlook",
+      "description": "Reviews next month’s expected policy, legislation, procurement and funding developments.",
+      "owner": "bravestar-policy",
+      "support": [
+        "bravestar-law",
+        "bravestar-procurement-funding"
+      ],
+      "template": "02_Policy-and-Stakeholders/MON-01-monthly-report.md",
+      "requiredOfficialUploads": [],
+      "aliases": [
+        "Monitoring"
+      ],
+      "period": "next-calendar-month",
+      "id": "MON-01"
+    },
+    {
+      "command": "Stakeholders — Next-Month Space Events",
+      "description": "Identifies important space-industry events and stakeholder opportunities in the next calendar month.",
+      "owner": "bravestar-policy",
+      "support": [],
+      "template": "02_Policy-and-Stakeholders/STK-07-monthly-report.md",
+      "requiredOfficialUploads": [],
+      "aliases": [
+        "Stakeholders"
+      ],
+      "period": "next-calendar-month",
+      "id": "STK-07"
+    },
+    {
+      "command": "News — Monthly Space Industry Review",
+      "description": "Reviews important space-industry news from the previous calendar month.",
+      "owner": "bravestar-companies",
+      "support": [],
+      "template": "06_Companies-Investment-and-Clients/NEWS-01-monthly-report.md",
+      "requiredOfficialUploads": [],
+      "aliases": [
+        "News"
+      ],
+      "period": "previous-calendar-month",
+      "id": "NEWS-01"
+    }
+  ],
+  "bundledTemplateRoot": "skills/bravestar-reports/assets/report-templates",
+  "reportChoices": {
+    "formats": [
+      "Executive Standard",
+      "Detailed Report"
+    ],
+    "emailDelivery": [
+      "Yes",
+      "No"
+    ],
+    "askUnlessAlreadyAnswered": true,
+    "estimateTimeBeforeStarting": true
+  }
+}

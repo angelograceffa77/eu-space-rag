@@ -1,0 +1,4052 @@
+{
+  "version": "1.5.0",
+  "reviewedAt": "2026-11-02",
+  "profiles": {
+    "POL-01": {
+      "id": "POL-01",
+      "title": "Space Policy Landscape",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/POL-01-space-policy-landscape.md",
+      "inputs": "Policy versions and company exposure",
+      "benchmarkIds": [
+        "POL2",
+        "POL7"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "POL-01-R1",
+          "text": "Separate policy intent, adopted measures and funded implementation",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-01-R2",
+          "text": "Map objectives to the actual product and public need",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-01-R3",
+          "text": "Identify institutional competence and implementation evidence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Instrument,Status,Company exposure,Implementation evidence,Next decision",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-01-R5",
+          "text": "Do not describe a political announcement as an available budget",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Instrument",
+        "Status",
+        "Company exposure",
+        "Implementation evidence",
+        "Next decision"
+      ],
+      "executiveFocus": "Separate policy intent, adopted measures and funded implementation",
+      "detailedFocus": [
+        "Map objectives to the actual product and public need",
+        "Identify institutional competence and implementation evidence"
+      ]
+    },
+    "POL-02": {
+      "id": "POL-02",
+      "title": "Policy Opportunity Assessment",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/POL-02-policy-opportunity-assessment.md",
+      "inputs": "Capabilities and proposed public-value proposition",
+      "benchmarkIds": [
+        "POL2",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "POL-02-R1",
+          "text": "Define the problem and counterfactual without the proposed intervention",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-02-R2",
+          "text": "Compare realistic options including no action",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-02-R3",
+          "text": "Explain benefits, costs, affected groups and adoption dependencies",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Option,Public need,Company contribution,Benefit evidence,Dependency",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-02-R5",
+          "text": "A policy priority alone does not establish a commercial opportunity",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Option",
+        "Public need",
+        "Company contribution",
+        "Benefit evidence",
+        "Dependency"
+      ],
+      "executiveFocus": "Define the problem and counterfactual without the proposed intervention",
+      "detailedFocus": [
+        "Compare realistic options including no action",
+        "Explain benefits, costs, affected groups and adoption dependencies"
+      ]
+    },
+    "POL-03": {
+      "id": "POL-03",
+      "title": "Strategic Positioning Report",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/POL-03-strategic-positioning-report.md",
+      "inputs": "Company differentiators and intended audience",
+      "benchmarkIds": [
+        "POL2",
+        "VALUE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "POL-03-R1",
+          "text": "Connect each positioning claim to a demonstrated capability",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-03-R2",
+          "text": "Test competing narratives and the strongest objection",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-03-R3",
+          "text": "Identify proof needed before public advocacy",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Audience,Proposed message,Supporting proof,Counterargument,Validation action",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-03-R5",
+          "text": "Do not turn an inferred differentiator into a factual superiority claim",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Audience",
+        "Proposed message",
+        "Supporting proof",
+        "Counterargument",
+        "Validation action"
+      ],
+      "executiveFocus": "Connect each positioning claim to a demonstrated capability",
+      "detailedFocus": [
+        "Test competing narratives and the strongest objection",
+        "Identify proof needed before public advocacy"
+      ]
+    },
+    "POL-04": {
+      "id": "POL-04",
+      "title": "Country Market Comparison",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/POL-04-country-market-comparison.md",
+      "inputs": "Countries and common comparison date",
+      "benchmarkIds": [
+        "POL2",
+        "MARKET"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "POL-04-R1",
+          "text": "Use comparable market definitions and denominators",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-04-R2",
+          "text": "Separate market attractiveness from access feasibility",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-04-R3",
+          "text": "Show how priorities change with costs and eligibility assumptions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Country,Demand evidence,Access barrier,Delivery cost basis,Priority rationale",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-04-R5",
+          "text": "Do not rank countries using incomparable or missing figures as zero",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Country",
+        "Demand evidence",
+        "Access barrier",
+        "Delivery cost basis",
+        "Priority rationale"
+      ],
+      "executiveFocus": "Use comparable market definitions and denominators",
+      "detailedFocus": [
+        "Separate market attractiveness from access feasibility",
+        "Show how priorities change with costs and eligibility assumptions"
+      ]
+    },
+    "POL-05": {
+      "id": "POL-05",
+      "title": "Policy Change Impact Assessment",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/POL-05-policy-change-impact-assessment.md",
+      "inputs": "Old and new instruments and affected activities",
+      "benchmarkIds": [
+        "POL2",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "POL-05-R1",
+          "text": "Provide a before-and-after obligation or policy change log",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-05-R2",
+          "text": "Distinguish adoption, entry into force and application",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-05-R3",
+          "text": "Test impact under delayed, unchanged and accelerated implementation",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Change,Previous position,New position,Status,Exposure,Response trigger",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-05-R5",
+          "text": "Do not apply draft measures as enacted obligations",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Change",
+        "Previous position",
+        "New position",
+        "Status",
+        "Exposure",
+        "Response trigger"
+      ],
+      "executiveFocus": "Provide a before-and-after obligation or policy change log",
+      "detailedFocus": [
+        "Distinguish adoption, entry into force and application",
+        "Test impact under delayed, unchanged and accelerated implementation"
+      ]
+    },
+    "POL-06": {
+      "id": "POL-06",
+      "title": "Strategic Action Roadmap",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/POL-06-strategic-action-roadmap.md",
+      "inputs": "Objectives and resource limits",
+      "benchmarkIds": [
+        "CASE",
+        "POL2"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "POL-06-R1",
+          "text": "Set measurable outcomes with baselines and targets",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-06-R2",
+          "text": "Sequence initiatives with dependencies and decision owners",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-06-R3",
+          "text": "Specify review triggers and fallback actions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Initiative,Baseline,Target,Resources,Milestone,Decision owner",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-06-R5",
+          "text": "Do not promise outcomes without resource and dependency assumptions",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Initiative",
+        "Baseline",
+        "Target",
+        "Resources",
+        "Milestone",
+        "Decision owner"
+      ],
+      "executiveFocus": "Set measurable outcomes with baselines and targets",
+      "detailedFocus": [
+        "Sequence initiatives with dependencies and decision owners",
+        "Specify review triggers and fallback actions"
+      ]
+    },
+    "POL-07": {
+      "id": "POL-07",
+      "title": "Policy — Monthly Space Update",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/POL-07-monthly-report.md",
+      "inputs": "Calendar month and prior baseline",
+      "benchmarkIds": [
+        "POL2",
+        "NEWS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "POL-07-R1",
+          "text": "Include material developments within the agreed date boundary",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-07-R2",
+          "text": "Separate announcement date from event and legal effect",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-07-R3",
+          "text": "Explain what changed for the company and what needs monitoring",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-07-R4",
+          "text": "Populate or justify the tailored matrix fields: Development,Event date,Publication date,Status,Business implication,Follow-up",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "POL-07-R5",
+          "text": "Do not repackage old news as a new monthly development",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Development",
+        "Event date",
+        "Publication date",
+        "Status",
+        "Business implication",
+        "Follow-up"
+      ],
+      "executiveFocus": "Include material developments within the agreed date boundary",
+      "detailedFocus": [
+        "Separate announcement date from event and legal effect",
+        "Explain what changed for the company and what needs monitoring"
+      ]
+    },
+    "MON-01": {
+      "id": "MON-01",
+      "title": "Monitoring — Next-Month Space Outlook",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/MON-01-monthly-report.md",
+      "inputs": "Next calendar month and scope",
+      "benchmarkIds": [
+        "POL2",
+        "HE",
+        "NEWS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "MON-01-R1",
+          "text": "Separate confirmed dates, provisional plans and analyst watchpoints",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "MON-01-R2",
+          "text": "Distinguish policy, law, procurement and funding stages",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "MON-01-R3",
+          "text": "Order preparation actions by lead time rather than headline prominence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "MON-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Item,Category,Expected date,Date basis,Preparation lead time,Trigger",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "MON-01-R5",
+          "text": "No forecast date may be presented as a confirmed deadline",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Item",
+        "Category",
+        "Expected date",
+        "Date basis",
+        "Preparation lead time",
+        "Trigger"
+      ],
+      "executiveFocus": "Separate confirmed dates, provisional plans and analyst watchpoints",
+      "detailedFocus": [
+        "Distinguish policy, law, procurement and funding stages",
+        "Order preparation actions by lead time rather than headline prominence"
+      ]
+    },
+    "STK-01": {
+      "id": "STK-01",
+      "title": "Stakeholder Intelligence Map",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/STK-01-stakeholder-intelligence-map.md",
+      "inputs": "Engagement objective and stakeholder universe",
+      "benchmarkIds": [
+        "POL7",
+        "STK"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STK-01-R1",
+          "text": "Separate statutory mandate from evidenced influence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-01-R2",
+          "text": "Identify affected and under-represented groups",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-01-R3",
+          "text": "Record relationships and published contact provenance",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Actor,Mandate,Interest,Influence evidence,Relationship,Contact source",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-01-R5",
+          "text": "No assumed personal influence or inferred private contact details",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Actor",
+        "Mandate",
+        "Interest",
+        "Influence evidence",
+        "Relationship",
+        "Contact source"
+      ],
+      "executiveFocus": "Separate statutory mandate from evidenced influence",
+      "detailedFocus": [
+        "Identify affected and under-represented groups",
+        "Record relationships and published contact provenance"
+      ]
+    },
+    "STK-02": {
+      "id": "STK-02",
+      "title": "Institutional Decision Map",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/STK-02-institutional-decision-map.md",
+      "inputs": "Specific decision and procedural instruments",
+      "benchmarkIds": [
+        "POL7",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STK-02-R1",
+          "text": "Trace formal stages and responsible institutions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-02-R2",
+          "text": "Distinguish decision maker, adviser, implementer and budget holder",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-02-R3",
+          "text": "Identify dependencies, consultation windows and approval points",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Stage,Formal authority,Supporting actors,Input,Decision date basis",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-02-R5",
+          "text": "Do not substitute an informal relationship map for legal competence",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Stage",
+        "Formal authority",
+        "Supporting actors",
+        "Input",
+        "Decision date basis"
+      ],
+      "executiveFocus": "Trace formal stages and responsible institutions",
+      "detailedFocus": [
+        "Distinguish decision maker, adviser, implementer and budget holder",
+        "Identify dependencies, consultation windows and approval points"
+      ]
+    },
+    "STK-03": {
+      "id": "STK-03",
+      "title": "Stakeholder Priority Assessment",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/STK-03-stakeholder-priority-assessment.md",
+      "inputs": "Engagement goal and stakeholder evidence",
+      "benchmarkIds": [
+        "POL7",
+        "STK"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STK-03-R1",
+          "text": "Declare priority criteria before comparing stakeholders",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-03-R2",
+          "text": "Explain interest, impact and access separately",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-03-R3",
+          "text": "Test priorities if the timetable or institutional role changes",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Stakeholder,Relevance,Impact,Access evidence,Priority reason",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-03-R5",
+          "text": "Do not assign unsupported influence scores",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Stakeholder",
+        "Relevance",
+        "Impact",
+        "Access evidence",
+        "Priority reason"
+      ],
+      "executiveFocus": "Declare priority criteria before comparing stakeholders",
+      "detailedFocus": [
+        "Explain interest, impact and access separately",
+        "Test priorities if the timetable or institutional role changes"
+      ]
+    },
+    "STK-04": {
+      "id": "STK-04",
+      "title": "Stakeholder Engagement Plan",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/STK-04-stakeholder-engagement-plan.md",
+      "inputs": "Approved position and available resources",
+      "benchmarkIds": [
+        "POL7",
+        "STK"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STK-04-R1",
+          "text": "Set a measurable engagement objective per audience",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-04-R2",
+          "text": "Specify message, method, owner and feedback loop",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-04-R3",
+          "text": "Check transparency, confidentiality and approval conditions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Audience,Objective,Message,Channel,Owner,Timing,Feedback measure",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-04-R5",
+          "text": "A plan never authorises outreach or lobbying submissions",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Audience",
+        "Objective",
+        "Message",
+        "Channel",
+        "Owner",
+        "Timing",
+        "Feedback measure"
+      ],
+      "executiveFocus": "Set a measurable engagement objective per audience",
+      "detailedFocus": [
+        "Specify message, method, owner and feedback loop",
+        "Check transparency, confidentiality and approval conditions"
+      ]
+    },
+    "STK-05": {
+      "id": "STK-05",
+      "title": "Institutional Meeting Brief",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/STK-05-institutional-meeting-brief.md",
+      "inputs": "Meeting purpose participants and duration",
+      "benchmarkIds": [
+        "POL7",
+        "SALES"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STK-05-R1",
+          "text": "State the decision or request sought from the meeting",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-05-R2",
+          "text": "Prepare timed agenda, questions and evidence-backed talking points",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-05-R3",
+          "text": "List likely objections and agreed follow-up recording method",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Agenda item,Time,Lead,Question,Desired outcome",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-05-R5",
+          "text": "Do not imply a meeting or participant is confirmed without evidence",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Agenda item",
+        "Time",
+        "Lead",
+        "Question",
+        "Desired outcome"
+      ],
+      "executiveFocus": "State the decision or request sought from the meeting",
+      "detailedFocus": [
+        "Prepare timed agenda, questions and evidence-backed talking points",
+        "List likely objections and agreed follow-up recording method"
+      ]
+    },
+    "STK-06": {
+      "id": "STK-06",
+      "title": "Public Consultation Response Pack",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/STK-06-public-consultation-response-pack.md",
+      "inputs": "Official consultation questions and submission rules",
+      "benchmarkIds": [
+        "POL7",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STK-06-R1",
+          "text": "Answer exact question identifiers and respect word limits",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-06-R2",
+          "text": "Separate company-approved positions from draft suggestions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-06-R3",
+          "text": "Explain evidence, alternative options and publication/confidentiality choices",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Question ID,Draft answer,Evidence,Company approval,Submission limit",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-06-R5",
+          "text": "Missing official questions or approval prevents submission-ready status",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Question ID",
+        "Draft answer",
+        "Evidence",
+        "Company approval",
+        "Submission limit"
+      ],
+      "executiveFocus": "Answer exact question identifiers and respect word limits",
+      "detailedFocus": [
+        "Separate company-approved positions from draft suggestions",
+        "Explain evidence, alternative options and publication/confidentiality choices"
+      ]
+    },
+    "STK-07": {
+      "id": "STK-07",
+      "title": "Stakeholders — Next-Month Space Events",
+      "version": "1.5.0",
+      "path": "02_Policy-and-Stakeholders/STK-07-monthly-report.md",
+      "inputs": "Next month geography and event purpose",
+      "benchmarkIds": [
+        "STK",
+        "NEWS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STK-07-R1",
+          "text": "Verify organizer dates location timezone and registration status",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-07-R2",
+          "text": "Separate attendance, speaking, exhibition and sponsorship options",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-07-R3",
+          "text": "Explain relevance, costs where published and follow-up goals",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-07-R4",
+          "text": "Populate or justify the tailored matrix fields: Event,Organizer,Dates,Location,Registration cutoff,Business purpose",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STK-07-R5",
+          "text": "Do not present unconfirmed speakers or cancelled events as current",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Event",
+        "Organizer",
+        "Dates",
+        "Location",
+        "Registration cutoff",
+        "Business purpose"
+      ],
+      "executiveFocus": "Verify organizer dates location timezone and registration status",
+      "detailedFocus": [
+        "Separate attendance, speaking, exhibition and sponsorship options",
+        "Explain relevance, costs where published and follow-up goals"
+      ]
+    },
+    "LAW-01": {
+      "id": "LAW-01",
+      "title": "Regulatory Landscape Report",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-01-regulatory-landscape-report.md",
+      "inputs": "Jurisdiction activity and legal entities",
+      "benchmarkIds": [
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-01-R1",
+          "text": "State the legal questions and material facts",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-01-R2",
+          "text": "Separate binding instruments, guidance and proposals by legal status",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-01-R3",
+          "text": "Apply rules to the activity with contrary interpretations and limits",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Activity,Instrument/provision,Status,Applicability,Authority,Action",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-01-R5",
+          "text": "No claim of universal European applicability from one jurisdiction",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Activity",
+        "Instrument/provision",
+        "Status",
+        "Applicability",
+        "Authority",
+        "Action"
+      ],
+      "executiveFocus": "State the legal questions and material facts",
+      "detailedFocus": [
+        "Separate binding instruments, guidance and proposals by legal status",
+        "Apply rules to the activity with contrary interpretations and limits"
+      ]
+    },
+    "LAW-02": {
+      "id": "LAW-02",
+      "title": "Market Access and Licensing Roadmap",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-02-market-access-and-licensing-roadmap.md",
+      "inputs": "Operating model markets and licence history",
+      "benchmarkIds": [
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-02-R1",
+          "text": "Map each activity to authority and required permission",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-02-R2",
+          "text": "Show prerequisites, filing sequence and evidenced processing times",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-02-R3",
+          "text": "Distinguish statutory deadlines from estimates and ongoing obligations",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Permission,Trigger,Authority,Documents,Dependency,Timing basis",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-02-R5",
+          "text": "No guaranteed licence approval or invented processing period",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Permission",
+        "Trigger",
+        "Authority",
+        "Documents",
+        "Dependency",
+        "Timing basis"
+      ],
+      "executiveFocus": "Map each activity to authority and required permission",
+      "detailedFocus": [
+        "Show prerequisites, filing sequence and evidenced processing times",
+        "Distinguish statutory deadlines from estimates and ongoing obligations"
+      ]
+    },
+    "LAW-03": {
+      "id": "LAW-03",
+      "title": "Compliance Readiness Assessment",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-03-compliance-readiness-assessment.md",
+      "inputs": "Requirements and company controls evidence",
+      "benchmarkIds": [
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-03-R1",
+          "text": "Map obligation to evidence and accountable owner",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-03-R2",
+          "text": "Distinguish breach, missing evidence and not-applicable findings",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-03-R3",
+          "text": "Specify remediation and evidence needed to close each issue",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Provision,Control,Evidence,Finding,Remedy,Owner,Due date",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-03-R5",
+          "text": "No compliance clearance based only on absence of contrary evidence",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Provision",
+        "Control",
+        "Evidence",
+        "Finding",
+        "Remedy",
+        "Owner",
+        "Due date"
+      ],
+      "executiveFocus": "Map obligation to evidence and accountable owner",
+      "detailedFocus": [
+        "Distinguish breach, missing evidence and not-applicable findings",
+        "Specify remediation and evidence needed to close each issue"
+      ]
+    },
+    "LAW-04": {
+      "id": "LAW-04",
+      "title": "Space Data and IP Assessment",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-04-space-data-and-ip-assessment.md",
+      "inputs": "Asset register licences and data flows",
+      "benchmarkIds": [
+        "LAW",
+        "IP"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-04-R1",
+          "text": "Trace ownership, assignments and third-party rights",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-04-R2",
+          "text": "Map permitted uses, onward distribution and territorial restrictions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-04-R3",
+          "text": "Separate IP ownership from freedom to operate and privacy permissions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Asset,Owner basis,Licence,Permitted use,Restriction,Missing consent",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-04-R5",
+          "text": "No freedom-to-operate conclusion without suitable legal and technical search",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Asset",
+        "Owner basis",
+        "Licence",
+        "Permitted use",
+        "Restriction",
+        "Missing consent"
+      ],
+      "executiveFocus": "Trace ownership, assignments and third-party rights",
+      "detailedFocus": [
+        "Map permitted uses, onward distribution and territorial restrictions",
+        "Separate IP ownership from freedom to operate and privacy permissions"
+      ]
+    },
+    "LAW-05": {
+      "id": "LAW-05",
+      "title": "Contract and Risk Allocation Review",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-05-contract-and-risk-allocation-review.md",
+      "inputs": "Complete contract schedules and negotiating objectives",
+      "benchmarkIds": [
+        "LAW",
+        "IP"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-05-R1",
+          "text": "Check precedence, definitions and clause cross-references",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-05-R2",
+          "text": "Review payment, acceptance, liability, insurance, IP, termination and disputes",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-05-R3",
+          "text": "Propose preferred and fallback positions with commercial consequences",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Clause,Current term,Risk,Preferred change,Fallback,Decision owner",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-05-R5",
+          "text": "No clause approval where material schedules are missing",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Clause",
+        "Current term",
+        "Risk",
+        "Preferred change",
+        "Fallback",
+        "Decision owner"
+      ],
+      "executiveFocus": "Check precedence, definitions and clause cross-references",
+      "detailedFocus": [
+        "Review payment, acceptance, liability, insurance, IP, termination and disputes",
+        "Propose preferred and fallback positions with commercial consequences"
+      ]
+    },
+    "LAW-06": {
+      "id": "LAW-06",
+      "title": "Consortium and Partnership Legal Brief",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-06-consortium-and-partnership-legal-brief.md",
+      "inputs": "Parties work shares and programme requirements",
+      "benchmarkIds": [
+        "IP",
+        "HE",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-06-R1",
+          "text": "Allocate governance, voting, contribution and default responsibilities",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-06-R2",
+          "text": "Separate background from project results and access rights",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-06-R3",
+          "text": "Plan accession, exit, disputes and grant-agreement precedence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Issue,Party obligation,Proposed allocation,Programme constraint,Open term",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-06-R5",
+          "text": "No generic model assumed valid for every governing law",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Issue",
+        "Party obligation",
+        "Proposed allocation",
+        "Programme constraint",
+        "Open term"
+      ],
+      "executiveFocus": "Allocate governance, voting, contribution and default responsibilities",
+      "detailedFocus": [
+        "Separate background from project results and access rights",
+        "Plan accession, exit, disputes and grant-agreement precedence"
+      ]
+    },
+    "LAW-07": {
+      "id": "LAW-07",
+      "title": "Initial Contract Draft",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-07-initial-contract-draft.md",
+      "inputs": "Drafting brief parties terms governing law and models",
+      "benchmarkIds": [
+        "IP",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-07-R1",
+          "text": "Document model selection, jurisdiction, date and reuse conditions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-07-R2",
+          "text": "Prepare coherent definitions, operative clauses and schedules with explicit open terms",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-07-R3",
+          "text": "Check document hierarchy, execution and separate negotiation notes",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-07-R4",
+          "text": "Populate or justify the tailored matrix fields: Clause/topic,Agreed instruction,Model adaptation,Open term,Review needed",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-07-R5",
+          "text": "Unagreed commercial terms must remain marked; legal review warning required",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Clause/topic",
+        "Agreed instruction",
+        "Model adaptation",
+        "Open term",
+        "Review needed"
+      ],
+      "executiveFocus": "Document model selection, jurisdiction, date and reuse conditions",
+      "detailedFocus": [
+        "Prepare coherent definitions, operative clauses and schedules with explicit open terms",
+        "Check document hierarchy, execution and separate negotiation notes"
+      ]
+    },
+    "LAW-08": {
+      "id": "LAW-08",
+      "title": "Regulatory Due Diligence Report",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-08-regulatory-due-diligence-report.md",
+      "inputs": "Transaction perimeter data room and reliance limits",
+      "benchmarkIds": [
+        "LAW",
+        "IP"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-08-R1",
+          "text": "Maintain document-request list and materiality basis",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-08-R2",
+          "text": "Link each issue to evidence, transaction consequence and remediation",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-08-R3",
+          "text": "Separate pre-completion conditions from post-completion actions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-08-R4",
+          "text": "Populate or justify the tailored matrix fields: Issue,Evidence,Consequence,Condition/remedy,Owner,Open request",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-08-R5",
+          "text": "No clean diligence opinion from an incomplete data room",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Issue",
+        "Evidence",
+        "Consequence",
+        "Condition/remedy",
+        "Owner",
+        "Open request"
+      ],
+      "executiveFocus": "Maintain document-request list and materiality basis",
+      "detailedFocus": [
+        "Link each issue to evidence, transaction consequence and remediation",
+        "Separate pre-completion conditions from post-completion actions"
+      ]
+    },
+    "LAW-09": {
+      "id": "LAW-09",
+      "title": "Law — Monthly Space Regulation Update",
+      "version": "1.5.0",
+      "path": "03_Law-and-Regulation/LAW-09-monthly-report.md",
+      "inputs": "Month jurisdictions and instrument baseline",
+      "benchmarkIds": [
+        "LAW",
+        "NEWS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "LAW-09-R1",
+          "text": "Distinguish proposals, enacted law, judgments and guidance",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-09-R2",
+          "text": "Track entry into force, application, transition and appeal status",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-09-R3",
+          "text": "Explain affected operations and deadlines with pinpoint provisions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-09-R4",
+          "text": "Populate or justify the tailored matrix fields: Instrument,Development,Legal status,Effective date,Affected activity,Action",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "LAW-09-R5",
+          "text": "Do not imply all reported instruments create immediate obligations",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Instrument",
+        "Development",
+        "Legal status",
+        "Effective date",
+        "Affected activity",
+        "Action"
+      ],
+      "executiveFocus": "Distinguish proposals, enacted law, judgments and guidance",
+      "detailedFocus": [
+        "Track entry into force, application, transition and appeal status",
+        "Explain affected operations and deadlines with pinpoint provisions"
+      ]
+    },
+    "PRO-01": {
+      "id": "PRO-01",
+      "title": "Public Procurement Market Assessment",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-01-public-procurement-market-assessment.md",
+      "inputs": "Offer buyer universe and dataset period",
+      "benchmarkIds": [
+        "CASE",
+        "MARKET",
+        "BID"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-01-R1",
+          "text": "Define addressable market and procurement routes",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-01-R2",
+          "text": "Separate observed spend from estimated future demand",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-01-R3",
+          "text": "Explain concentration, award coverage and lot-level opportunity",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Buyer segment,Need,Route,Observed spend basis,Access barrier",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-01-R5",
+          "text": "No exhaustive market-size claim from partial award data",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Buyer segment",
+        "Need",
+        "Route",
+        "Observed spend basis",
+        "Access barrier"
+      ],
+      "executiveFocus": "Define addressable market and procurement routes",
+      "detailedFocus": [
+        "Separate observed spend from estimated future demand",
+        "Explain concentration, award coverage and lot-level opportunity"
+      ]
+    },
+    "PRO-02": {
+      "id": "PRO-02",
+      "title": "Tender Opportunity Radar",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-02-tender-opportunity-radar.md",
+      "inputs": "Company profile and current notice corpus",
+      "benchmarkIds": [
+        "BID",
+        "PSS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-02-R1",
+          "text": "Use canonical procedure and lot IDs to reconcile duplicates",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-02-R2",
+          "text": "Verify stage deadline timezone and amendment status",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-02-R3",
+          "text": "Separate technical fit, participation conditions and next document checks",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Procedure/lot,Buyer,Deadline,Value basis,Fit,Eligibility gap,Official link",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-02-R5",
+          "text": "No open status from old snapshots or elapsed deadlines",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Procedure/lot",
+        "Buyer",
+        "Deadline",
+        "Value basis",
+        "Fit",
+        "Eligibility gap",
+        "Official link"
+      ],
+      "executiveFocus": "Use canonical procedure and lot IDs to reconcile duplicates",
+      "detailedFocus": [
+        "Verify stage deadline timezone and amendment status",
+        "Separate technical fit, participation conditions and next document checks"
+      ]
+    },
+    "PRO-03": {
+      "id": "PRO-03",
+      "title": "Procurement Pipeline Outlook",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-03-procurement-pipeline-outlook.md",
+      "inputs": "Planned notices and programme calendars",
+      "benchmarkIds": [
+        "CASE",
+        "BID"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-03-R1",
+          "text": "Classify prior-information notices, plans and market consultations",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-03-R2",
+          "text": "Show estimated values and dates as provisional",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-03-R3",
+          "text": "Specify opening checks and preparation dependencies",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Planned item,Source type,Expected timing,Uncertainty,Preparation trigger",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-03-R5",
+          "text": "Never include planned opportunities in verified-open counts",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Planned item",
+        "Source type",
+        "Expected timing",
+        "Uncertainty",
+        "Preparation trigger"
+      ],
+      "executiveFocus": "Classify prior-information notices, plans and market consultations",
+      "detailedFocus": [
+        "Show estimated values and dates as provisional",
+        "Specify opening checks and preparation dependencies"
+      ]
+    },
+    "PRO-04": {
+      "id": "PRO-04",
+      "title": "Buyer and Award Intelligence Report",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-04-buyer-and-award-intelligence-report.md",
+      "inputs": "Award notices and supplier identity evidence",
+      "benchmarkIds": [
+        "BID",
+        "MARKET"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-04-R1",
+          "text": "Link winner legal entity, lot, description and award date",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-04-R2",
+          "text": "Separate estimated, awarded and modified amounts with currency and tax basis",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-04-R3",
+          "text": "Identify concentration without double-counting framework ceilings",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Buyer,Procedure/lot,Winner identity,Description,Award amount/basis,Date",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-04-R5",
+          "text": "Name-only supplier matches and framework maxima are not verified revenue",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Buyer",
+        "Procedure/lot",
+        "Winner identity",
+        "Description",
+        "Award amount/basis",
+        "Date"
+      ],
+      "executiveFocus": "Link winner legal entity, lot, description and award date",
+      "detailedFocus": [
+        "Separate estimated, awarded and modified amounts with currency and tax basis",
+        "Identify concentration without double-counting framework ceilings"
+      ]
+    },
+    "PRO-05": {
+      "id": "PRO-05",
+      "title": "Bid/No-Bid Assessment",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-05-bid-no-bid-assessment.md",
+      "inputs": "Official tender package and company capacity financials",
+      "benchmarkIds": [
+        "BID",
+        "PSS",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-05-R1",
+          "text": "Apply mandatory pass/fail participation tests before strategic fit",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-05-R2",
+          "text": "Assess weighted criteria, bid cost, margin assumptions and delivery capacity",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-05-R3",
+          "text": "Document go, conditional go, hold or no-go with decision owner",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Requirement,Official reference,Company proof,Gap,Decision consequence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-05-R5",
+          "text": "No final bid recommendation without material official documents and eligibility evidence",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Requirement",
+        "Official reference",
+        "Company proof",
+        "Gap",
+        "Decision consequence"
+      ],
+      "executiveFocus": "Apply mandatory pass/fail participation tests before strategic fit",
+      "detailedFocus": [
+        "Assess weighted criteria, bid cost, margin assumptions and delivery capacity",
+        "Document go, conditional go, hold or no-go with decision owner"
+      ]
+    },
+    "PRO-06": {
+      "id": "PRO-06",
+      "title": "Consortium and Supply-Chain Assessment",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-06-consortium-and-supply-chain-assessment.md",
+      "inputs": "Tender work breakdown and partner evidence",
+      "benchmarkIds": [
+        "BID",
+        "IP"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-06-R1",
+          "text": "Map capability gaps to work packages and proposed roles",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-06-R2",
+          "text": "Check subcontracting permissions, reliance and conflicts",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-06-R3",
+          "text": "Assess capacity, interfaces and commercial dependency",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Work package,Gap,Partner evidence,Role,Dependency,Due diligence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-06-R5",
+          "text": "A capability match is not partner consent or capacity verification",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Work package",
+        "Gap",
+        "Partner evidence",
+        "Role",
+        "Dependency",
+        "Due diligence"
+      ],
+      "executiveFocus": "Map capability gaps to work packages and proposed roles",
+      "detailedFocus": [
+        "Check subcontracting permissions, reliance and conflicts",
+        "Assess capacity, interfaces and commercial dependency"
+      ]
+    },
+    "PRO-07": {
+      "id": "PRO-07",
+      "title": "Bid Preparation Plan",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-07-bid-preparation-plan.md",
+      "inputs": "Latest tender instructions submission portal and team",
+      "benchmarkIds": [
+        "BID",
+        "PSS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-07-R1",
+          "text": "Build compliance matrix against each question and criterion",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-07-R2",
+          "text": "Plan writing, pricing, signatures and independent review backwards from deadline",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-07-R3",
+          "text": "Include portal registration, upload rehearsal and clarification cutoff",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-07-R4",
+          "text": "Populate or justify the tailored matrix fields: Requirement,Response location,Owner,Input,Review date,Submission control",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-07-R5",
+          "text": "No timetable that omits upload/signature prerequisites or official timezone",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Requirement",
+        "Response location",
+        "Owner",
+        "Input",
+        "Review date",
+        "Submission control"
+      ],
+      "executiveFocus": "Build compliance matrix against each question and criterion",
+      "detailedFocus": [
+        "Plan writing, pricing, signatures and independent review backwards from deadline",
+        "Include portal registration, upload rehearsal and clarification cutoff"
+      ]
+    },
+    "PRO-08": {
+      "id": "PRO-08",
+      "title": "Bid Readiness Review",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-08-bid-readiness-review.md",
+      "inputs": "Frozen submission version and amendments",
+      "benchmarkIds": [
+        "BID",
+        "PSS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-08-R1",
+          "text": "Reconcile attachments, signatures, exclusions and page limits",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-08-R2",
+          "text": "Cross-check technical promises against price, staffing and schedules",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-08-R3",
+          "text": "Log unresolved blockers and final approval responsibility",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-08-R4",
+          "text": "Populate or justify the tailored matrix fields: Requirement,Artifact/version,Check result,Correction,Owner,Release status",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-08-R5",
+          "text": "A checklist pass is not evidence that the portal accepted submission",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Requirement",
+        "Artifact/version",
+        "Check result",
+        "Correction",
+        "Owner",
+        "Release status"
+      ],
+      "executiveFocus": "Reconcile attachments, signatures, exclusions and page limits",
+      "detailedFocus": [
+        "Cross-check technical promises against price, staffing and schedules",
+        "Log unresolved blockers and final approval responsibility"
+      ]
+    },
+    "PRO-09": {
+      "id": "PRO-09",
+      "title": "Tender Outcome Review",
+      "version": "1.5.0",
+      "path": "04_Procurement/PRO-09-tender-outcome-review.md",
+      "inputs": "Official outcome feedback and submitted bid",
+      "benchmarkIds": [
+        "BID"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "PRO-09-R1",
+          "text": "Compare scores against actual award criteria and feedback",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-09-R2",
+          "text": "Separate documented reasons from hypotheses",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-09-R3",
+          "text": "Identify corrective actions and jurisdiction-specific review deadlines",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-09-R4",
+          "text": "Populate or justify the tailored matrix fields: Criterion,Available score,Actual feedback,Root-cause evidence,Improvement",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "PRO-09-R5",
+          "text": "No invented competitor scores or generic challenge deadline",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Criterion",
+        "Available score",
+        "Actual feedback",
+        "Root-cause evidence",
+        "Improvement"
+      ],
+      "executiveFocus": "Compare scores against actual award criteria and feedback",
+      "detailedFocus": [
+        "Separate documented reasons from hypotheses",
+        "Identify corrective actions and jurisdiction-specific review deadlines"
+      ]
+    },
+    "FUN-01": {
+      "id": "FUN-01",
+      "title": "Project Funding Readiness Review",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-01-project-funding-readiness-review.md",
+      "inputs": "Project concept maturity evidence and resource plan",
+      "benchmarkIds": [
+        "HE",
+        "BASS",
+        "CASE",
+        "PILOT"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-01-R1",
+          "text": "Define problem, measurable objectives and expected outcomes",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-01-R2",
+          "text": "Evidence technology readiness and validation needs",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-01-R3",
+          "text": "Estimate resource gaps and prerequisites to applying",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Readiness area,Baseline evidence,Gap,Required proof,Owner",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-01-R5",
+          "text": "Do not infer readiness level from promotional descriptions",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Readiness area",
+        "Baseline evidence",
+        "Gap",
+        "Required proof",
+        "Owner"
+      ],
+      "executiveFocus": "Define problem, measurable objectives and expected outcomes",
+      "detailedFocus": [
+        "Evidence technology readiness and validation needs",
+        "Estimate resource gaps and prerequisites to applying"
+      ]
+    },
+    "FUN-02": {
+      "id": "FUN-02",
+      "title": "Funding Opportunity Radar",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-02-funding-opportunity-radar.md",
+      "inputs": "Applicant project and official open-call corpus",
+      "benchmarkIds": [
+        "HE",
+        "BASS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-02-R1",
+          "text": "Verify instrument type, stage and submission cutoffs",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-02-R2",
+          "text": "Distinguish total call budget, maximum grant and funding rate",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-02-R3",
+          "text": "Match geography, legal status, maturity and consortium conditions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Call,Instrument,Deadline,Funding terms,Eligibility gap,Official source",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-02-R5",
+          "text": "No funding guarantee or open status from a programme landing page",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Call",
+        "Instrument",
+        "Deadline",
+        "Funding terms",
+        "Eligibility gap",
+        "Official source"
+      ],
+      "executiveFocus": "Verify instrument type, stage and submission cutoffs",
+      "detailedFocus": [
+        "Distinguish total call budget, maximum grant and funding rate",
+        "Match geography, legal status, maturity and consortium conditions"
+      ]
+    },
+    "FUN-03": {
+      "id": "FUN-03",
+      "title": "Funding Pipeline Outlook",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-03-funding-pipeline-outlook.md",
+      "inputs": "Published work programmes and future call schedules",
+      "benchmarkIds": [
+        "HE",
+        "BASS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-03-R1",
+          "text": "Separate work-programme intentions from published calls",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-03-R2",
+          "text": "Map expected themes to project preparation",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-03-R3",
+          "text": "Define launch checks and alternative financing if dates shift",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Planned call,Source status,Expected opening,Preparation task,Contingency",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-03-R5",
+          "text": "Provisional dates and budgets must not be presented as commitments",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Planned call",
+        "Source status",
+        "Expected opening",
+        "Preparation task",
+        "Contingency"
+      ],
+      "executiveFocus": "Separate work-programme intentions from published calls",
+      "detailedFocus": [
+        "Map expected themes to project preparation",
+        "Define launch checks and alternative financing if dates shift"
+      ]
+    },
+    "FUN-04": {
+      "id": "FUN-04",
+      "title": "Funding Fit and Eligibility Assessment",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-04-funding-fit-and-eligibility-assessment.md",
+      "inputs": "Official call annexes and applicant evidence",
+      "benchmarkIds": [
+        "HE",
+        "BASS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-04-R1",
+          "text": "Separate admissibility, eligibility, exclusions and evaluation fit",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-04-R2",
+          "text": "Check country, ownership/control, consortium, maturity and cost conditions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-04-R3",
+          "text": "Record exact criterion evidence and questions for the granting body",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Condition,Official clause,Applicant evidence,Result,Missing proof",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-04-R5",
+          "text": "Incomplete official package means preliminary assessment only",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Condition",
+        "Official clause",
+        "Applicant evidence",
+        "Result",
+        "Missing proof"
+      ],
+      "executiveFocus": "Separate admissibility, eligibility, exclusions and evaluation fit",
+      "detailedFocus": [
+        "Check country, ownership/control, consortium, maturity and cost conditions",
+        "Record exact criterion evidence and questions for the granting body"
+      ]
+    },
+    "FUN-05": {
+      "id": "FUN-05",
+      "title": "Project Funding Strategy",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-05-project-funding-strategy.md",
+      "inputs": "Stage budgets cash runway and funding constraints",
+      "benchmarkIds": [
+        "HE",
+        "CASE",
+        "PITCH"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-05-R1",
+          "text": "Match financing instruments to project stages and timing",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-05-R2",
+          "text": "Check co-financing, cumulation and double-funding restrictions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-05-R3",
+          "text": "Model cash shortfall and fallback sequence without assumed awards",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Stage,Need,Instrument,Decision date,Own funds,Gap,Alternative",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-05-R5",
+          "text": "Do not count pending awards as secured cash",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Stage",
+        "Need",
+        "Instrument",
+        "Decision date",
+        "Own funds",
+        "Gap",
+        "Alternative"
+      ],
+      "executiveFocus": "Match financing instruments to project stages and timing",
+      "detailedFocus": [
+        "Check co-financing, cumulation and double-funding restrictions",
+        "Model cash shortfall and fallback sequence without assumed awards"
+      ]
+    },
+    "FUN-06": {
+      "id": "FUN-06",
+      "title": "Funding Consortium Assessment",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-06-funding-consortium-assessment.md",
+      "inputs": "Call consortium rules and work-package needs",
+      "benchmarkIds": [
+        "HE",
+        "IP"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-06-R1",
+          "text": "Map country and independence requirements to proposed entities",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-06-R2",
+          "text": "Connect partner expertise and resources to deliverables",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-06-R3",
+          "text": "Plan coordination, access rights and replacement risks",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Partner,Eligibility basis,Work package,Resources,IP dependency,Gap",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-06-R5",
+          "text": "No assumed consortium eligibility from country labels alone",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Partner",
+        "Eligibility basis",
+        "Work package",
+        "Resources",
+        "IP dependency",
+        "Gap"
+      ],
+      "executiveFocus": "Map country and independence requirements to proposed entities",
+      "detailedFocus": [
+        "Connect partner expertise and resources to deliverables",
+        "Plan coordination, access rights and replacement risks"
+      ]
+    },
+    "FUN-07": {
+      "id": "FUN-07",
+      "title": "Application Development Plan",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-07-application-development-plan.md",
+      "inputs": "Official application template evaluation rules and team",
+      "benchmarkIds": [
+        "HE",
+        "BASS",
+        "PILOT"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-07-R1",
+          "text": "Map excellence, impact and implementation only where the call uses them",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-07-R2",
+          "text": "Plan work packages, deliverables, milestones, risks and resources",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-07-R3",
+          "text": "Assign evidence and review responsibility for every required form",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-07-R4",
+          "text": "Populate or justify the tailored matrix fields: Criterion/form,Response owner,Evidence,Work package,Review date",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-07-R5",
+          "text": "Use the actual call form; Bravestar report is not a substitute submission",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Criterion/form",
+        "Response owner",
+        "Evidence",
+        "Work package",
+        "Review date"
+      ],
+      "executiveFocus": "Map excellence, impact and implementation only where the call uses them",
+      "detailedFocus": [
+        "Plan work packages, deliverables, milestones, risks and resources",
+        "Assign evidence and review responsibility for every required form"
+      ]
+    },
+    "FUN-08": {
+      "id": "FUN-08",
+      "title": "Budget and Co-Financing Review",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-08-budget-and-co-financing-review.md",
+      "inputs": "Detailed budget funding rules and payment schedule",
+      "benchmarkIds": [
+        "HE",
+        "PSS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-08-R1",
+          "text": "Reconcile costs by category, partner and work package",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-08-R2",
+          "text": "Check eligible costs, indirect-cost bases, tax, currency and co-financing",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-08-R3",
+          "text": "Model payment timing and working-capital exposure",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-08-R4",
+          "text": "Populate or justify the tailored matrix fields: Cost item,Calculation basis,Eligibility clause,Funding share,Own cash,Timing",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-08-R5",
+          "text": "Never apply one programme rate or cost model universally",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Cost item",
+        "Calculation basis",
+        "Eligibility clause",
+        "Funding share",
+        "Own cash",
+        "Timing"
+      ],
+      "executiveFocus": "Reconcile costs by category, partner and work package",
+      "detailedFocus": [
+        "Check eligible costs, indirect-cost bases, tax, currency and co-financing",
+        "Model payment timing and working-capital exposure"
+      ]
+    },
+    "FUN-09": {
+      "id": "FUN-09",
+      "title": "Application Readiness Review",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-09-application-readiness-review.md",
+      "inputs": "Frozen application all forms and amendments",
+      "benchmarkIds": [
+        "HE",
+        "BASS",
+        "PILOT"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-09-R1",
+          "text": "Check administrative and narrative completeness plus page limits",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-09-R2",
+          "text": "Reconcile objectives, work packages, budget and partner commitments",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-09-R3",
+          "text": "Verify ethics/security annexes and portal submission controls",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-09-R4",
+          "text": "Populate or justify the tailored matrix fields: Requirement,File/version,Evidence,Defect,Owner,Release decision",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-09-R5",
+          "text": "No submission-ready claim while required annexes or signatures are absent",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Requirement",
+        "File/version",
+        "Evidence",
+        "Defect",
+        "Owner",
+        "Release decision"
+      ],
+      "executiveFocus": "Check administrative and narrative completeness plus page limits",
+      "detailedFocus": [
+        "Reconcile objectives, work packages, budget and partner commitments",
+        "Verify ethics/security annexes and portal submission controls"
+      ]
+    },
+    "FUN-10": {
+      "id": "FUN-10",
+      "title": "Grant Delivery Readiness Plan",
+      "version": "1.5.0",
+      "path": "05_Funding/FUN-10-grant-delivery-readiness-plan.md",
+      "inputs": "Signed grant agreement annexes and consortium terms",
+      "benchmarkIds": [
+        "HE",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "FUN-10-R1",
+          "text": "Translate obligations into reporting, deliverable and payment calendar",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-10-R2",
+          "text": "Assign records, procurement, IP, dissemination and audit responsibilities",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-10-R3",
+          "text": "Set change-control, escalation and cash-management processes",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-10-R4",
+          "text": "Populate or justify the tailored matrix fields: Obligation,Agreement clause,Owner,Evidence record,Due date,Dependency",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "FUN-10-R5",
+          "text": "Do not replace signed grant conditions with a generic programme checklist",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Obligation",
+        "Agreement clause",
+        "Owner",
+        "Evidence record",
+        "Due date",
+        "Dependency"
+      ],
+      "executiveFocus": "Translate obligations into reporting, deliverable and payment calendar",
+      "detailedFocus": [
+        "Assign records, procurement, IP, dissemination and audit responsibilities",
+        "Set change-control, escalation and cash-management processes"
+      ]
+    },
+    "CLI-01": {
+      "id": "CLI-01",
+      "title": "Downstream Market Assessment",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-01-downstream-market-assessment.md",
+      "inputs": "Supplier capabilities target sectors and geographies",
+      "benchmarkIds": [
+        "MARKET",
+        "VALUE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "CLI-01-R1",
+          "text": "Define buyer workflow and evidenced unmet need",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-01-R2",
+          "text": "Estimate accessible market with transparent geography and unit assumptions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-01-R3",
+          "text": "Assess non-space alternatives and adoption barriers",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Sector,Workflow problem,Space contribution,Alternative,Validation need",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-01-R5",
+          "text": "Market potential is not confirmed customer demand",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Sector",
+        "Workflow problem",
+        "Space contribution",
+        "Alternative",
+        "Validation need"
+      ],
+      "executiveFocus": "Define buyer workflow and evidenced unmet need",
+      "detailedFocus": [
+        "Estimate accessible market with transparent geography and unit assumptions",
+        "Assess non-space alternatives and adoption barriers"
+      ]
+    },
+    "CLI-02": {
+      "id": "CLI-02",
+      "title": "Market Segment Prioritisation",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-02-market-segment-prioritisation.md",
+      "inputs": "Candidate segments and commercial constraints",
+      "benchmarkIds": [
+        "MARKET",
+        "VALUE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "CLI-02-R1",
+          "text": "Compare segment pain, willingness-to-pay evidence and access costs",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-02-R2",
+          "text": "Separate market size from reachable customers",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-02-R3",
+          "text": "Test priorities under alternative adoption assumptions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Segment,Need evidence,Reachability,Sales cycle,Delivery economics,Priority",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-02-R5",
+          "text": "Do not use invented precision to rank thinly evidenced markets",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Segment",
+        "Need evidence",
+        "Reachability",
+        "Sales cycle",
+        "Delivery economics",
+        "Priority"
+      ],
+      "executiveFocus": "Compare segment pain, willingness-to-pay evidence and access costs",
+      "detailedFocus": [
+        "Separate market size from reachable customers",
+        "Test priorities under alternative adoption assumptions"
+      ]
+    },
+    "CLI-03": {
+      "id": "CLI-03",
+      "title": "Potential Client Shortlist",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-03-potential-client-shortlist.md",
+      "inputs": "Ideal customer profile and prospect scope",
+      "benchmarkIds": [
+        "MARKET",
+        "SALES"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "CLI-03-R1",
+          "text": "Verify legal identity, location and relevant business unit",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-03-R2",
+          "text": "Attach a dated need signal and qualification gap to each lead",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-03-R3",
+          "text": "Separate prospect classification from buying intent",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Client,Entity evidence,Need signal,Relevant unit,Qualification gap",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-03-R5",
+          "text": "No claim of budget, authority or purchase intent without evidence",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Client",
+        "Entity evidence",
+        "Need signal",
+        "Relevant unit",
+        "Qualification gap"
+      ],
+      "executiveFocus": "Verify legal identity, location and relevant business unit",
+      "detailedFocus": [
+        "Attach a dated need signal and qualification gap to each lead",
+        "Separate prospect classification from buying intent"
+      ]
+    },
+    "CLI-04": {
+      "id": "CLI-04",
+      "title": "Target Account Intelligence",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-04-target-account-intelligence.md",
+      "inputs": "Named account and proposed use case",
+      "benchmarkIds": [
+        "SALES",
+        "VALUE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "CLI-04-R1",
+          "text": "Map business units, operational footprint and current solutions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-04-R2",
+          "text": "Identify public triggers, decision roles and procurement route",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-04-R3",
+          "text": "Prepare unanswered discovery questions and source dates",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Business unit,Trigger,Decision role,Existing approach,Question",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-04-R5",
+          "text": "Do not infer personal decision authority from job title alone",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Business unit",
+        "Trigger",
+        "Decision role",
+        "Existing approach",
+        "Question"
+      ],
+      "executiveFocus": "Map business units, operational footprint and current solutions",
+      "detailedFocus": [
+        "Identify public triggers, decision roles and procurement route",
+        "Prepare unanswered discovery questions and source dates"
+      ]
+    },
+    "CLI-05": {
+      "id": "CLI-05",
+      "title": "Client–Solution Fit Assessment",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-05-client-solution-fit-assessment.md",
+      "inputs": "Client requirements and solution capabilities",
+      "benchmarkIds": [
+        "VALUE",
+        "SALES"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "CLI-05-R1",
+          "text": "Link customer needs to measurable performance requirements",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-05-R2",
+          "text": "Assess data coverage, latency, accuracy and integration limitations",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-05-R3",
+          "text": "Compare benefit assumptions with non-space alternatives",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Need,Requirement,Solution evidence,Integration gap,Validation test",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-05-R5",
+          "text": "No savings or performance promise without a testable basis",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Need",
+        "Requirement",
+        "Solution evidence",
+        "Integration gap",
+        "Validation test"
+      ],
+      "executiveFocus": "Link customer needs to measurable performance requirements",
+      "detailedFocus": [
+        "Assess data coverage, latency, accuracy and integration limitations",
+        "Compare benefit assumptions with non-space alternatives"
+      ]
+    },
+    "CLI-06": {
+      "id": "CLI-06",
+      "title": "Commercial Engagement Plan",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-06-commercial-engagement-plan.md",
+      "inputs": "Qualified accounts approved message and outreach constraints",
+      "benchmarkIds": [
+        "SALES",
+        "STK"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "CLI-06-R1",
+          "text": "Set account-specific engagement goals and value hypothesis",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-06-R2",
+          "text": "Plan lawful contact channels and response handling",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-06-R3",
+          "text": "Define qualification and stop criteria without automated outreach",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Account,Goal,Message,Channel,Owner,Next step,Stop condition",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-06-R5",
+          "text": "A generated plan does not authorise contacting prospects",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Account",
+        "Goal",
+        "Message",
+        "Channel",
+        "Owner",
+        "Next step",
+        "Stop condition"
+      ],
+      "executiveFocus": "Set account-specific engagement goals and value hypothesis",
+      "detailedFocus": [
+        "Plan lawful contact channels and response handling",
+        "Define qualification and stop criteria without automated outreach"
+      ]
+    },
+    "CLI-07": {
+      "id": "CLI-07",
+      "title": "Pilot Project Proposal",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-07-pilot-project-proposal.md",
+      "inputs": "Pilot sponsor baseline data and test site",
+      "benchmarkIds": [
+        "BASS",
+        "SALES",
+        "VALUE",
+        "PILOT"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "CLI-07-R1",
+          "text": "Define boundaries, baseline, sample and measurable success criteria",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-07-R2",
+          "text": "Specify inputs, responsibilities, data rights and acceptance method",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-07-R3",
+          "text": "Plan failure handling and scale-up or stop decision",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-07-R4",
+          "text": "Populate or justify the tailored matrix fields: Test,Dataset/baseline,Metric,Acceptance threshold,Owner,Decision",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-07-R5",
+          "text": "No pilot success claim before agreed tests are performed",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Test",
+        "Dataset/baseline",
+        "Metric",
+        "Acceptance threshold",
+        "Owner",
+        "Decision"
+      ],
+      "executiveFocus": "Define boundaries, baseline, sample and measurable success criteria",
+      "detailedFocus": [
+        "Specify inputs, responsibilities, data rights and acceptance method",
+        "Plan failure handling and scale-up or stop decision"
+      ]
+    },
+    "CLI-08": {
+      "id": "CLI-08",
+      "title": "Client Proposal Pack",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Clients/CLI-08-client-proposal-pack.md",
+      "inputs": "Client brief scope pricing authority and delivery capacity",
+      "benchmarkIds": [
+        "SALES",
+        "IP"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "CLI-08-R1",
+          "text": "Trace requirements to deliverables and acceptance",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-08-R2",
+          "text": "Itemise pricing basis, exclusions, payment, validity and change process",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-08-R3",
+          "text": "Support differentiation and distinguish draft terms from agreement",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-08-R4",
+          "text": "Populate or justify the tailored matrix fields: Deliverable,Acceptance,Price basis,Timing,Client dependency,Exclusion",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "CLI-08-R5",
+          "text": "No binding quotation or unapproved commercial commitments",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Deliverable",
+        "Acceptance",
+        "Price basis",
+        "Timing",
+        "Client dependency",
+        "Exclusion"
+      ],
+      "executiveFocus": "Trace requirements to deliverables and acceptance",
+      "detailedFocus": [
+        "Itemise pricing basis, exclusions, payment, validity and change process",
+        "Support differentiation and distinguish draft terms from agreement"
+      ]
+    },
+    "INC-01": {
+      "id": "INC-01",
+      "title": "Startup Intake Assessment",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-01-startup-intake-assessment.md",
+      "inputs": "Programme eligibility selection criteria and applicant evidence",
+      "benchmarkIds": [
+        "INC",
+        "PITCH"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INC-01-R1",
+          "text": "Separate admission criteria from support-needs diagnosis",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-01-R2",
+          "text": "Assess team, problem, product maturity and commitment",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-01-R3",
+          "text": "Record conflicts, selection reasons and conditions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Criterion,Applicant proof,Support need,Gap,Selection condition",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-01-R5",
+          "text": "No admission assurance or unsupported certification claim",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Criterion",
+        "Applicant proof",
+        "Support need",
+        "Gap",
+        "Selection condition"
+      ],
+      "executiveFocus": "Separate admission criteria from support-needs diagnosis",
+      "detailedFocus": [
+        "Assess team, problem, product maturity and commitment",
+        "Record conflicts, selection reasons and conditions"
+      ]
+    },
+    "INC-02": {
+      "id": "INC-02",
+      "title": "Portfolio Needs Review",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-02-portfolio-needs-review.md",
+      "inputs": "Portfolio baseline and service capacity",
+      "benchmarkIds": [
+        "INC",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INC-02-R1",
+          "text": "Compare needs using consistent stages and definitions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-02-R2",
+          "text": "Identify shared bottlenecks and individual critical gaps",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-02-R3",
+          "text": "Prioritise support by impact and available staff capacity",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Company,Stage,Need,Evidence,Support effort,Priority",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-02-R5",
+          "text": "Do not expose one company's confidential data to another",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Company",
+        "Stage",
+        "Need",
+        "Evidence",
+        "Support effort",
+        "Priority"
+      ],
+      "executiveFocus": "Compare needs using consistent stages and definitions",
+      "detailedFocus": [
+        "Identify shared bottlenecks and individual critical gaps",
+        "Prioritise support by impact and available staff capacity"
+      ]
+    },
+    "INC-03": {
+      "id": "INC-03",
+      "title": "Portfolio Opportunity Match",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-03-portfolio-opportunity-match.md",
+      "inputs": "Portfolio capabilities and dated opportunities",
+      "benchmarkIds": [
+        "INC",
+        "HE",
+        "BID"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INC-03-R1",
+          "text": "Match each company to relevant tenders, calls or partners",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-03-R2",
+          "text": "Check eligibility and deadlines per company rather than portfolio",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-03-R3",
+          "text": "Prevent duplicated allocations and document unmatched needs",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Company,Opportunity,Fit evidence,Eligibility gap,Deadline,Owner",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-03-R5",
+          "text": "Portfolio membership does not establish opportunity eligibility",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Company",
+        "Opportunity",
+        "Fit evidence",
+        "Eligibility gap",
+        "Deadline",
+        "Owner"
+      ],
+      "executiveFocus": "Match each company to relevant tenders, calls or partners",
+      "detailedFocus": [
+        "Check eligibility and deadlines per company rather than portfolio",
+        "Prevent duplicated allocations and document unmatched needs"
+      ]
+    },
+    "INC-04": {
+      "id": "INC-04",
+      "title": "Portfolio Development Plan",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-04-portfolio-development-plan.md",
+      "inputs": "Portfolio objectives service catalogue and budget",
+      "benchmarkIds": [
+        "INC",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INC-04-R1",
+          "text": "Set individual milestones and shared-service allocations",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-04-R2",
+          "text": "Assign mentor responsibilities, review cadence and exit criteria",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-04-R3",
+          "text": "Measure support outcomes with baselines and limitations",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Company,Milestone,Service,Resource owner,Target date,Outcome measure",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-04-R5",
+          "text": "Do not promise funding or growth attributable to support alone",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Company",
+        "Milestone",
+        "Service",
+        "Resource owner",
+        "Target date",
+        "Outcome measure"
+      ],
+      "executiveFocus": "Set individual milestones and shared-service allocations",
+      "detailedFocus": [
+        "Assign mentor responsibilities, review cadence and exit criteria",
+        "Measure support outcomes with baselines and limitations"
+      ]
+    },
+    "INC-05": {
+      "id": "INC-05",
+      "title": "Investor and Corporate Partner Match",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-05-investor-and-corporate-partner-match.md",
+      "inputs": "Portfolio needs and partner mandates",
+      "benchmarkIds": [
+        "INC",
+        "PITCH",
+        "SALES"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INC-05-R1",
+          "text": "Distinguish investor financing from corporate pilot or customer routes",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-05-R2",
+          "text": "Check stage, geography, ticket range and conflict evidence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-05-R3",
+          "text": "Record introduction readiness and permission requirements",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Company,Counterparty,Route,Mandate fit,Conflict,Readiness gap",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-05-R5",
+          "text": "A directory match is not investor interest or introduction consent",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Company",
+        "Counterparty",
+        "Route",
+        "Mandate fit",
+        "Conflict",
+        "Readiness gap"
+      ],
+      "executiveFocus": "Distinguish investor financing from corporate pilot or customer routes",
+      "detailedFocus": [
+        "Check stage, geography, ticket range and conflict evidence",
+        "Record introduction readiness and permission requirements"
+      ]
+    },
+    "INC-06": {
+      "id": "INC-06",
+      "title": "Portfolio Progress Report",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Incubators/INC-06-portfolio-progress-report.md",
+      "inputs": "Prior period cohort definitions and current evidence",
+      "benchmarkIds": [
+        "INC",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INC-06-R1",
+          "text": "Use consistent denominators and outcome definitions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-06-R2",
+          "text": "Separate activity outputs from company outcomes and attribution",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-06-R3",
+          "text": "Explain missing data, cohort changes and revised support",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Metric,Baseline,Current,Cohort denominator,Variance,Action",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INC-06-R5",
+          "text": "No improvement claim caused solely by changed cohort membership",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Metric",
+        "Baseline",
+        "Current",
+        "Cohort denominator",
+        "Variance",
+        "Action"
+      ],
+      "executiveFocus": "Use consistent denominators and outcome definitions",
+      "detailedFocus": [
+        "Separate activity outputs from company outcomes and attribution",
+        "Explain missing data, cohort changes and revised support"
+      ]
+    },
+    "INV-01": {
+      "id": "INV-01",
+      "title": "Space Investment Landscape",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-01-space-investment-landscape.md",
+      "inputs": "Investor mandate geography stage and horizon",
+      "benchmarkIds": [
+        "MARKET",
+        "PITCH"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INV-01-R1",
+          "text": "Define investable segments and market boundaries",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-01-R2",
+          "text": "Assess technology, demand and policy drivers with contrary scenarios",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-01-R3",
+          "text": "Map capital intensity and concentration risks",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Segment,Thesis,Demand evidence,Capital needs,Risk,Screening question",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-01-R5",
+          "text": "Sector growth does not imply investment returns",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Segment",
+        "Thesis",
+        "Demand evidence",
+        "Capital needs",
+        "Risk",
+        "Screening question"
+      ],
+      "executiveFocus": "Define investable segments and market boundaries",
+      "detailedFocus": [
+        "Assess technology, demand and policy drivers with contrary scenarios",
+        "Map capital intensity and concentration risks"
+      ]
+    },
+    "INV-02": {
+      "id": "INV-02",
+      "title": "Investment Target Screening",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-02-investment-target-screening.md",
+      "inputs": "Investment criteria and company universe",
+      "benchmarkIds": [
+        "PITCH",
+        "MARKET"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INV-02-R1",
+          "text": "Apply explicit inclusion and exclusion criteria consistently",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-02-R2",
+          "text": "Separate verified traction from founder claims",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-02-R3",
+          "text": "Record missing data and next diligence requirements",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Target,Criterion,Evidence,Exclusion/gap,Next diligence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-02-R5",
+          "text": "No investability or return assurance from a public-data screen",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Target",
+        "Criterion",
+        "Evidence",
+        "Exclusion/gap",
+        "Next diligence"
+      ],
+      "executiveFocus": "Apply explicit inclusion and exclusion criteria consistently",
+      "detailedFocus": [
+        "Separate verified traction from founder claims",
+        "Record missing data and next diligence requirements"
+      ]
+    },
+    "INV-03": {
+      "id": "INV-03",
+      "title": "Investment Target Comparison",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-03-investment-target-comparison.md",
+      "inputs": "Comparable targets stage and financial periods",
+      "benchmarkIds": [
+        "PITCH",
+        "MARKET"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INV-03-R1",
+          "text": "Normalise currencies, periods and business-model differences",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-03-R2",
+          "text": "Compare growth, unit economics, capital intensity and governance where evidenced",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-03-R3",
+          "text": "Show sensitivity and missing values rather than false rankings",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Target,Metric/period,Basis,Comparable adjustment,Risk,Unknown",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-03-R5",
+          "text": "No comparison of revenue and funding raised as equivalent metrics",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Target",
+        "Metric/period",
+        "Basis",
+        "Comparable adjustment",
+        "Risk",
+        "Unknown"
+      ],
+      "executiveFocus": "Normalise currencies, periods and business-model differences",
+      "detailedFocus": [
+        "Compare growth, unit economics, capital intensity and governance where evidenced",
+        "Show sensitivity and missing values rather than false rankings"
+      ]
+    },
+    "INV-04": {
+      "id": "INV-04",
+      "title": "Commercial Due Diligence Brief",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-04-commercial-due-diligence-brief.md",
+      "inputs": "Data room customer evidence and financial assumptions",
+      "benchmarkIds": [
+        "PITCH",
+        "MARKET",
+        "VALUE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INV-04-R1",
+          "text": "Test demand, customer concentration, retention and sales pipeline quality",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-04-R2",
+          "text": "Assess pricing, margins, sales cycle and unit-economics assumptions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-04-R3",
+          "text": "Separate desk research from customer validation",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Claim,Evidence,Test,Finding,Downside case,Follow-up",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-04-R5",
+          "text": "No verified traction from unsigned pipeline or press statements alone",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Claim",
+        "Evidence",
+        "Test",
+        "Finding",
+        "Downside case",
+        "Follow-up"
+      ],
+      "executiveFocus": "Test demand, customer concentration, retention and sales pipeline quality",
+      "detailedFocus": [
+        "Assess pricing, margins, sales cycle and unit-economics assumptions",
+        "Separate desk research from customer validation"
+      ]
+    },
+    "INV-05": {
+      "id": "INV-05",
+      "title": "Regulatory and IP Due Diligence Brief",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-05-regulatory-and-ip-due-diligence-brief.md",
+      "inputs": "Transaction scope licences IP and material contracts",
+      "benchmarkIds": [
+        "LAW",
+        "IP"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INV-05-R1",
+          "text": "Trace regulatory permissions and IP title to the target entity",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-05-R2",
+          "text": "Identify restrictions, change-of-control terms and third-party rights",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-05-R3",
+          "text": "Separate red flags, closing conditions and specialist investigations",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Asset/permission,Title basis,Restriction,Transaction impact,Condition",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-05-R5",
+          "text": "Do not describe public-record screening as a legal opinion",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Asset/permission",
+        "Title basis",
+        "Restriction",
+        "Transaction impact",
+        "Condition"
+      ],
+      "executiveFocus": "Trace regulatory permissions and IP title to the target entity",
+      "detailedFocus": [
+        "Identify restrictions, change-of-control terms and third-party rights",
+        "Separate red flags, closing conditions and specialist investigations"
+      ]
+    },
+    "INV-06": {
+      "id": "INV-06",
+      "title": "Investment Committee Brief",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-06-investment-committee-brief.md",
+      "inputs": "Investment proposal terms financial model and diligence",
+      "benchmarkIds": [
+        "PITCH",
+        "CASE",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INV-06-R1",
+          "text": "State decision sought, capital amount, valuation basis and use of funds",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-06-R2",
+          "text": "Assess downside, dilution, governance and exit assumptions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-06-R3",
+          "text": "Identify conditions precedent and unresolved diligence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Decision item,Proposed terms,Evidence,Downside,Condition,Owner",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-06-R5",
+          "text": "No investment recommendation without disclosed material missing inputs",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Decision item",
+        "Proposed terms",
+        "Evidence",
+        "Downside",
+        "Condition",
+        "Owner"
+      ],
+      "executiveFocus": "State decision sought, capital amount, valuation basis and use of funds",
+      "detailedFocus": [
+        "Assess downside, dilution, governance and exit assumptions",
+        "Identify conditions precedent and unresolved diligence"
+      ]
+    },
+    "INV-07": {
+      "id": "INV-07",
+      "title": "Portfolio Opportunity Review",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Investors/INV-07-portfolio-opportunity-review.md",
+      "inputs": "Portfolio objectives and current opportunity evidence",
+      "benchmarkIds": [
+        "INC",
+        "HE",
+        "BID"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "INV-07-R1",
+          "text": "Separate revenue opportunities, financing and strategic partnerships",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-07-R2",
+          "text": "Assess per-company timing, capacity and conflicts",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-07-R3",
+          "text": "Plan support and avoid double-counting portfolio benefits",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-07-R4",
+          "text": "Populate or justify the tailored matrix fields: Company,Opportunity type,Expected benefit basis,Constraint,Action",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "INV-07-R5",
+          "text": "No portfolio value uplift attributed to unawarded opportunities",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Company",
+        "Opportunity type",
+        "Expected benefit basis",
+        "Constraint",
+        "Action"
+      ],
+      "executiveFocus": "Separate revenue opportunities, financing and strategic partnerships",
+      "detailedFocus": [
+        "Assess per-company timing, capacity and conflicts",
+        "Plan support and avoid double-counting portfolio benefits"
+      ]
+    },
+    "NEWS-01": {
+      "id": "NEWS-01",
+      "title": "News — Monthly Space Industry Review",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/NEWS-01-monthly-report.md",
+      "inputs": "Calendar month scope and prior coverage",
+      "benchmarkIds": [
+        "NEWS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "NEWS-01-R1",
+          "text": "Deduplicate syndication and distinguish event date from publication date",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "NEWS-01-R2",
+          "text": "Separate verified facts, company claims and interpretation",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "NEWS-01-R3",
+          "text": "Prioritise commercial relevance and record corrections",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "NEWS-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Story,Event date,Original source,Verification,Company relevance,Watchpoint",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "NEWS-01-R5",
+          "text": "Do not repeat rumours or paid promotion as established fact",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Story",
+        "Event date",
+        "Original source",
+        "Verification",
+        "Company relevance",
+        "Watchpoint"
+      ],
+      "executiveFocus": "Deduplicate syndication and distinguish event date from publication date",
+      "detailedFocus": [
+        "Separate verified facts, company claims and interpretation",
+        "Prioritise commercial relevance and record corrections"
+      ]
+    },
+    "STA-01": {
+      "id": "STA-01",
+      "title": "Startup Positioning Review",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-01-startup-positioning-review.md",
+      "inputs": "Product customers alternatives and traction",
+      "benchmarkIds": [
+        "VALUE",
+        "PITCH"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STA-01-R1",
+          "text": "Define a specific customer problem and value proposition",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-01-R2",
+          "text": "Compare direct and non-space alternatives with proof",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-01-R3",
+          "text": "Test positioning against observed customer evidence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Customer,Problem,Offer,Differentiator evidence,Validation question",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-01-R5",
+          "text": "Do not claim product-market fit from a concept alone",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Customer",
+        "Problem",
+        "Offer",
+        "Differentiator evidence",
+        "Validation question"
+      ],
+      "executiveFocus": "Define a specific customer problem and value proposition",
+      "detailedFocus": [
+        "Compare direct and non-space alternatives with proof",
+        "Test positioning against observed customer evidence"
+      ]
+    },
+    "STA-02": {
+      "id": "STA-02",
+      "title": "Startup Growth Readiness Assessment",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-02-startup-growth-readiness-assessment.md",
+      "inputs": "Growth target team runway and operating evidence",
+      "benchmarkIds": [
+        "PITCH",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STA-02-R1",
+          "text": "Assess commercial, technical, financial and regulatory bottlenecks",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-02-R2",
+          "text": "Link hiring and delivery capacity to planned growth",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-02-R3",
+          "text": "Prioritise milestones that extend runway or reduce execution risk",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Readiness area,Baseline,Bottleneck,Milestone,Resource need",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-02-R5",
+          "text": "No growth forecast without explicit operating assumptions",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Readiness area",
+        "Baseline",
+        "Bottleneck",
+        "Milestone",
+        "Resource need"
+      ],
+      "executiveFocus": "Assess commercial, technical, financial and regulatory bottlenecks",
+      "detailedFocus": [
+        "Link hiring and delivery capacity to planned growth",
+        "Prioritise milestones that extend runway or reduce execution risk"
+      ]
+    },
+    "STA-03": {
+      "id": "STA-03",
+      "title": "Incubator and Accelerator Match",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-03-incubator-and-accelerator-match.md",
+      "inputs": "Startup needs and programme terms",
+      "benchmarkIds": [
+        "INC",
+        "BASS"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STA-03-R1",
+          "text": "Compare services, duration, geography and admission conditions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-03-R2",
+          "text": "Identify equity, fees, IP terms and participation obligations",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-03-R3",
+          "text": "Verify current window and measurable support fit",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Programme,Services,Eligibility,Cost/equity,IP terms,Window,Fit",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-03-R5",
+          "text": "Do not equate application availability with acceptance",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Programme",
+        "Services",
+        "Eligibility",
+        "Cost/equity",
+        "IP terms",
+        "Window",
+        "Fit"
+      ],
+      "executiveFocus": "Compare services, duration, geography and admission conditions",
+      "detailedFocus": [
+        "Identify equity, fees, IP terms and participation obligations",
+        "Verify current window and measurable support fit"
+      ]
+    },
+    "STA-04": {
+      "id": "STA-04",
+      "title": "Investor Fit Report",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-04-investor-fit-report.md",
+      "inputs": "Raise amount stage geography and investor evidence",
+      "benchmarkIds": [
+        "PITCH"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STA-04-R1",
+          "text": "Match investment mandate, ticket range and stage",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-04-R2",
+          "text": "Review recent activity, portfolio conflicts and follow-on capacity evidence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-04-R3",
+          "text": "Identify warm-route options only when documented",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Investor,Mandate,Ticket basis,Activity date,Conflict,Next proof",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-04-R5",
+          "text": "No inferred available capital or investor willingness",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Investor",
+        "Mandate",
+        "Ticket basis",
+        "Activity date",
+        "Conflict",
+        "Next proof"
+      ],
+      "executiveFocus": "Match investment mandate, ticket range and stage",
+      "detailedFocus": [
+        "Review recent activity, portfolio conflicts and follow-on capacity evidence",
+        "Identify warm-route options only when documented"
+      ]
+    },
+    "STA-05": {
+      "id": "STA-05",
+      "title": "Investment Readiness Review",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-05-investment-readiness-review.md",
+      "inputs": "Cap table financials product traction and data room",
+      "benchmarkIds": [
+        "PITCH",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STA-05-R1",
+          "text": "Reconcile fundraising ask with runway and milestones",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-05-R2",
+          "text": "Check corporate/IP/financial documents and founder commitments",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-05-R3",
+          "text": "Separate investor-ready evidence from preparation gaps",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Diligence item,Available evidence,Gap,Owner,Due date",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-05-R5",
+          "text": "No readiness clearance based solely on a polished pitch",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Diligence item",
+        "Available evidence",
+        "Gap",
+        "Owner",
+        "Due date"
+      ],
+      "executiveFocus": "Reconcile fundraising ask with runway and milestones",
+      "detailedFocus": [
+        "Check corporate/IP/financial documents and founder commitments",
+        "Separate investor-ready evidence from preparation gaps"
+      ]
+    },
+    "STA-06": {
+      "id": "STA-06",
+      "title": "Fundraising Preparation Pack",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-06-fundraising-preparation-pack.md",
+      "inputs": "Approved company facts raise terms and audience",
+      "benchmarkIds": [
+        "PITCH",
+        "SALES"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STA-06-R1",
+          "text": "Build problem-solution-market-model-traction-team-ask narrative",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-06-R2",
+          "text": "Connect use of funds to milestones and model assumptions",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-06-R3",
+          "text": "Prepare data-room index and questions without disclosing confidential files",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Pitch claim,Evidence,Data-room item,Open question,Approval",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-06-R5",
+          "text": "No invented traction valuation or fundraising commitments",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Pitch claim",
+        "Evidence",
+        "Data-room item",
+        "Open question",
+        "Approval"
+      ],
+      "executiveFocus": "Build problem-solution-market-model-traction-team-ask narrative",
+      "detailedFocus": [
+        "Connect use of funds to milestones and model assumptions",
+        "Prepare data-room index and questions without disclosing confidential files"
+      ]
+    },
+    "STA-07": {
+      "id": "STA-07",
+      "title": "Startup Growth Roadmap",
+      "version": "1.5.0",
+      "path": "06_Companies-Investment-and-Clients/Startups/STA-07-startup-growth-roadmap.md",
+      "inputs": "Growth objectives baseline cash and capacity",
+      "benchmarkIds": [
+        "CASE",
+        "PITCH"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "STA-07-R1",
+          "text": "Sequence customer validation, product, regulatory and funding milestones",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-07-R2",
+          "text": "Tie resource allocation to cash runway and dependencies",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-07-R3",
+          "text": "Define pivot, stop and review triggers",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-07-R4",
+          "text": "Populate or justify the tailored matrix fields: Milestone,Outcome measure,Dependency,Cost basis,Runway impact,Trigger",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "STA-07-R5",
+          "text": "Do not plan spending against unconfirmed funding as certain",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Milestone",
+        "Outcome measure",
+        "Dependency",
+        "Cost basis",
+        "Runway impact",
+        "Trigger"
+      ],
+      "executiveFocus": "Sequence customer validation, product, regulatory and funding milestones",
+      "detailedFocus": [
+        "Tie resource allocation to cash runway and dependencies",
+        "Define pivot, stop and review triggers"
+      ]
+    },
+    "COM-01": {
+      "id": "COM-01",
+      "title": "Company Growth and Market Access Report",
+      "version": "1.5.0",
+      "path": "07_Combined-Business-Reports/COM-01-company-growth-and-market-access-report.md",
+      "inputs": "Company objectives and specialist findings",
+      "benchmarkIds": [
+        "CASE",
+        "MARKET",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "COM-01-R1",
+          "text": "Integrate market, policy, legal and financing constraints into options",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-01-R2",
+          "text": "Resolve contradictory assumptions across specialist findings",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-01-R3",
+          "text": "Select initiatives by value, affordability and delivery feasibility",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-01-R4",
+          "text": "Populate or justify the tailored matrix fields: Initiative,Commercial case,Legal condition,Resources,Dependency,Priority",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-01-R5",
+          "text": "No combined conclusion that hides a blocking specialist finding",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Initiative",
+        "Commercial case",
+        "Legal condition",
+        "Resources",
+        "Dependency",
+        "Priority"
+      ],
+      "executiveFocus": "Integrate market, policy, legal and financing constraints into options",
+      "detailedFocus": [
+        "Resolve contradictory assumptions across specialist findings",
+        "Select initiatives by value, affordability and delivery feasibility"
+      ]
+    },
+    "COM-02": {
+      "id": "COM-02",
+      "title": "Country Expansion Report",
+      "version": "1.5.0",
+      "path": "07_Combined-Business-Reports/COM-02-country-expansion-report.md",
+      "inputs": "Entry geography activity budget and legal structure",
+      "benchmarkIds": [
+        "CASE",
+        "MARKET",
+        "LAW"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "COM-02-R1",
+          "text": "Compare direct sales, partnership and local establishment routes",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-02-R2",
+          "text": "Assess licences, data/export restrictions and operational costs",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-02-R3",
+          "text": "Sequence market validation before irreversible commitments",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-02-R4",
+          "text": "Populate or justify the tailored matrix fields: Entry option,Demand,Legal prerequisite,Cost basis,Partner need,Trigger",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-02-R5",
+          "text": "No assumption that EU eligibility extends to every European country",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Entry option",
+        "Demand",
+        "Legal prerequisite",
+        "Cost basis",
+        "Partner need",
+        "Trigger"
+      ],
+      "executiveFocus": "Compare direct sales, partnership and local establishment routes",
+      "detailedFocus": [
+        "Assess licences, data/export restrictions and operational costs",
+        "Sequence market validation before irreversible commitments"
+      ]
+    },
+    "COM-03": {
+      "id": "COM-03",
+      "title": "Investment Screening Report",
+      "version": "1.5.0",
+      "path": "07_Combined-Business-Reports/COM-03-investment-screening-report.md",
+      "inputs": "Investor mandate target data and screening scope",
+      "benchmarkIds": [
+        "PITCH",
+        "LAW",
+        "MARKET"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "COM-03-R1",
+          "text": "Combine commercial and legal screens using common criteria",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-03-R2",
+          "text": "Identify conflicting evidence and missing financial information",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-03-R3",
+          "text": "Separate shortlist decision from investment approval",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-03-R4",
+          "text": "Populate or justify the tailored matrix fields: Target,Commercial evidence,Legal red flag,Financial gap,Diligence action",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-03-R5",
+          "text": "Do not label screening as completed due diligence",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Target",
+        "Commercial evidence",
+        "Legal red flag",
+        "Financial gap",
+        "Diligence action"
+      ],
+      "executiveFocus": "Combine commercial and legal screens using common criteria",
+      "detailedFocus": [
+        "Identify conflicting evidence and missing financial information",
+        "Separate shortlist decision from investment approval"
+      ]
+    },
+    "COM-04": {
+      "id": "COM-04",
+      "title": "Incubator Portfolio Strategy",
+      "version": "1.5.0",
+      "path": "07_Combined-Business-Reports/COM-04-incubator-portfolio-strategy.md",
+      "inputs": "Incubator mandate cohort budget and delivery capacity",
+      "benchmarkIds": [
+        "INC",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "COM-04-R1",
+          "text": "Integrate selection, support, financing and market-access services",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-04-R2",
+          "text": "Set transparent resource-allocation and conflict rules",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-04-R3",
+          "text": "Define cohort metrics, review cadence and graduation criteria",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-04-R4",
+          "text": "Populate or justify the tailored matrix fields: Portfolio goal,Service,Company group,Capacity,KPI,Review",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-04-R5",
+          "text": "No unsupported certification or causal impact claim",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Portfolio goal",
+        "Service",
+        "Company group",
+        "Capacity",
+        "KPI",
+        "Review"
+      ],
+      "executiveFocus": "Integrate selection, support, financing and market-access services",
+      "detailedFocus": [
+        "Set transparent resource-allocation and conflict rules",
+        "Define cohort metrics, review cadence and graduation criteria"
+      ]
+    },
+    "COM-05": {
+      "id": "COM-05",
+      "title": "Public-Sector Business Development Plan",
+      "version": "1.5.0",
+      "path": "07_Combined-Business-Reports/COM-05-public-sector-business-development-plan.md",
+      "inputs": "Capabilities public markets and bid resources",
+      "benchmarkIds": [
+        "CASE",
+        "BID",
+        "POL7"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "COM-05-R1",
+          "text": "Connect buyer needs and policy drivers to lawful market engagement",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-05-R2",
+          "text": "Separate open pipeline, planned pipeline and award evidence",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-05-R3",
+          "text": "Allocate capture/bid resources with go/no-go checkpoints",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-05-R4",
+          "text": "Populate or justify the tailored matrix fields: Buyer,Need,Opportunity stage,Engagement boundary,Bid gate,Owner",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-05-R5",
+          "text": "Do not treat engagement as preferential access or guaranteed award",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Buyer",
+        "Need",
+        "Opportunity stage",
+        "Engagement boundary",
+        "Bid gate",
+        "Owner"
+      ],
+      "executiveFocus": "Connect buyer needs and policy drivers to lawful market engagement",
+      "detailedFocus": [
+        "Separate open pipeline, planned pipeline and award evidence",
+        "Allocate capture/bid resources with go/no-go checkpoints"
+      ]
+    },
+    "COM-06": {
+      "id": "COM-06",
+      "title": "Commercial Partnership Report",
+      "version": "1.5.0",
+      "path": "07_Combined-Business-Reports/COM-06-commercial-partnership-report.md",
+      "inputs": "Partnership objective counterparties and proposed terms",
+      "benchmarkIds": [
+        "IP",
+        "SALES",
+        "CASE"
+      ],
+      "classification": "Bravestar editorial adaptation; formal rules apply only after case-specific applicability verification",
+      "requirements": [
+        {
+          "id": "COM-06-R1",
+          "text": "Assess reciprocal contribution and commercial incentives",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-06-R2",
+          "text": "Compare reseller, licence, joint delivery and joint-venture structures",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-06-R3",
+          "text": "Plan governance, economics, IP, exit and diligence before negotiation",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-06-R4",
+          "text": "Populate or justify the tailored matrix fields: Structure,Contribution,Economics,IP/governance,Risk,Next condition",
+          "kind": "editorial-content-check"
+        },
+        {
+          "id": "COM-06-R5",
+          "text": "No partner consent or agreed exclusivity without documentation",
+          "kind": "release-boundary"
+        }
+      ],
+      "matrixColumns": [
+        "Structure",
+        "Contribution",
+        "Economics",
+        "IP/governance",
+        "Risk",
+        "Next condition"
+      ],
+      "executiveFocus": "Assess reciprocal contribution and commercial incentives",
+      "detailedFocus": [
+        "Compare reseller, licence, joint delivery and joint-venture structures",
+        "Plan governance, economics, IP, exit and diligence before negotiation"
+      ]
+    }
+  }
+}

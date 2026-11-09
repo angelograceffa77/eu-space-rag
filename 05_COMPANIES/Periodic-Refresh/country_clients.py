@@ -22,7 +22,7 @@ def collect(code,name,folder,max_pages):
    else:
     for attempt in range(3):
      try:
-      with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'GagarinPublicEntityResearch/1.0'}),timeout=45) as r:b=r.read()
+      with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'BravestarPublicEntityResearch/1.0'}),timeout=45) as r:b=r.read()
       json.loads(b);saved.write_bytes(b);break
      except Exception:
       if attempt==2:raise
@@ -61,7 +61,7 @@ def main():
   write(run/'ER'/'supplementary-gap.json',{'url':url,'error':str(e)})
   fallback='https://www.goafricaonline.com/er/329853-bisha-mining-company-asmara-erythree'
   try:
-   with urllib.request.urlopen(urllib.request.Request(fallback,headers={'User-Agent':'Gagarin-Public-Directory-Research/1.0'}),timeout=35) as response:page=response.read()
+   with urllib.request.urlopen(urllib.request.Request(fallback,headers={'User-Agent':'Bravestar-Public-Directory-Research/1.0'}),timeout=35) as response:page=response.read()
    content=page.decode('utf-8',errors='replace').lower()
    if 'bisha' not in content or not any(v in content for v in ['eritrea','erythree','érythrée']):raise ValueError('Secondary directory identity/location unverified')
    fp=run/'ER'/'goafrica-bisha.html';fp.write_bytes(page)

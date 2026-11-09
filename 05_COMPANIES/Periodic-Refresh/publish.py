@@ -64,7 +64,7 @@ def publish():
  subprocess.run(['node',str(ROOT/'05_COMPANIES/Investment-Discovery/01_Collectors/validate.cjs')],check=True)
  subprocess.run([sys.executable,str(ROOT/'05_COMPANIES/Private-Client-Discovery/01_Collectors/clients.py'),'validate','--root',str(ROOT/'05_COMPANIES/Private-Client-Discovery')],check=True)
  current=inventory();pub=ARCHIVE/'_publication';pub.mkdir(parents=True,exist_ok=True);bare=pub/'repository.git';work=pub/'worktree';work.mkdir(exist_ok=True)
- env=dict(os.environ,GIT_INDEX_FILE=str(pub/'index'),GIT_WORK_TREE=str(work),GIT_TERMINAL_PROMPT='0',GIT_AUTHOR_NAME='Gagarin Company Publisher',GIT_AUTHOR_EMAIL='gagarin@users.noreply.github.com',GIT_COMMITTER_NAME='Gagarin Company Publisher',GIT_COMMITTER_EMAIL='gagarin@users.noreply.github.com')
+ env=dict(os.environ,GIT_INDEX_FILE=str(pub/'index'),GIT_WORK_TREE=str(work),GIT_TERMINAL_PROMPT='0',GIT_AUTHOR_NAME='Bravestar Company Publisher',GIT_AUTHOR_EMAIL='gagarin@users.noreply.github.com',GIT_COMMITTER_NAME='Bravestar Company Publisher',GIT_COMMITTER_EMAIL='gagarin@users.noreply.github.com')
  def git(*args,data=None):
   p=subprocess.run(['git','--git-dir='+str(bare),*args],input=data,capture_output=True,env=env,timeout=600)
   if p.returncode:raise RuntimeError(p.stderr.decode(errors='replace'))

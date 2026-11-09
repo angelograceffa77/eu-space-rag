@@ -1,0 +1,1099 @@
+--- Page 1 ---
+Journal Pre-proof
+Technical Aspects of an International Space Traffic Management Framework
+Elena Ancona, Diego Guerra, Steven Armstrong, Henrique Oliveira da Mata, Claudia
+Medeiros, Jaime Silva, Eric Dahlstrom
+PII: S0094-5765(25)00109-2
+DOI: https://doi.org/10.1016/j.actaastro.2025.02.028
+Reference: AA 11005
+To appear in: Acta Astronautica
+Received Date: 24 May 2024
+Revised Date: 23 December 2024
+Accepted Date: 17 February 2025
+Please cite this article as: E. Ancona, D. Guerra, S. Armstrong, H. Oliveira da Mata, C. Medeiros, J.
+Silva, E. Dahlstrom, Technical Aspects of an International Space Traffic Management Framework, Acta
+Astronautica, https://doi.org/10.1016/j.actaastro.2025.02.028.
+This is a PDF file of an article that has undergone enhancements after acceptance, such as the addition
+of a cover page and metadata, and formatting for readability, but it is not yet the definitive version of
+record. This version will undergo additional copyediting, typesetting and review before it is published
+in its final form, but we are providing this version to give early visibility of the article. Please note that,
+during the production process, errors may be discovered which could affect the content, and all legal
+disclaimers that apply to the journal pertain.
+© 2025 Published by Elsevier Ltd on behalf of IAA.
+
+--- Page 2 ---
+                           Page 1 of 11 
+Technical Aspects of an International Space Traffic Management Framework  
+ 
+Elena Anconaa*, Diego Guerrab, Steven Armstrongc, Henrique Oliveira da Matad, Claudia Medeirose, 
+Jaime Silvaf, Eric Dahlstromg  
+  
+a Politecnico di Bari, Italy, elena.ancona@gmail.com    
+b Blue Origin LLC, United States, diego.guerra@asu.edu  
+c University of Strathclyde, United Kingdom, steven.armstrong@strath.ac.uk  
+d Aerospace Operations Command, Brazil, damatahom@fab.mil.br  
+e National Institute for Space Research (INPE), Brazil, ms.claudiamedeiros@gmail.com   
+f Brazilian Space Agency (AEB), Brazil, jaausilv@gmail.com   
+g SpaceBase Limited, New Zealand, eric@spacebase.co  
+* Corresponding Author   
+ 
+Abstract 
+As part of the International Space University (ISU) Space Studies Program (SSP) 2023 Team Project on Space 
+Situational Awareness (SSA), a group of students, researchers , and professionals with a very diverse background , 
+focused on proposing a global framework for Space Traffic Management (STM) [1, 2]. Present statistics indicate that 
+more than 7,000 operational satellites coexist within the same orbital regime, together with more than 36,500 medium-
+sized trackable fragments of space debris. Following the last few years big constellations' deployment, and considering 
+the ones that are scheduled for launch soon, the way satellites operations were carried out is rapidly becoming obsolete. 
+This situation substantially increases the threat of potenti al collisions, emphasizing the necessity for an open and 
+internationally coordinated  STM framework. This paper introduces an international  framework derived from the 
+research conducted by Murakami et al. in 2019 [ 3]. It offers a comprehensive approach to a ddressing the STM 
+challenges, with a particular emphasis on fostering precise data exchange, establishing channels for clear and direct 
+communication, and encouraging international collaboration.  
+In the current work, after some considerations on the  policy and legal aspects of our proposed  international 
+framework, we present the technical features and provide a broader perspective on the reasons that led to its 
+definition. In our analysis, we considered the vibrant scenario involving new commercial actors offering Space 
+Surveillance and Tracking (SST) services, collision risk prediction, recommendations for Collision Avoidance (CA) 
+manoeuvres, and autonomous CA systems. The authors of this work believe that the variety and complexity of this 
+ecosystem can only be beneficial, and by no means is the proposed framework intended to substitute those players. 
+Instead, its goal is to fill the gaps where the current system would be i ncomplete. As multiple entities offer insights 
+into space traffic and predict potential collisions among space objects, determining the most dependable source 
+becomes a challenge when significant inconsistencies arise. Still being aware of these challenges , we want to foster 
+collaboration within the evolving New Space landscape. Our proposed framework is designed to integrate existing 
+suppliers rather than replace them, allowing for the seamless inclusion of their data within our system. These suppliers 
+can continue to run their independent analysis and operations while also be contributing to, and benefiting from, the 
+enhanced functionality within our unified system.  
+ 
+Keywords: Space Traffic Management, Collision Avoidance, International Framework, Space Situational Awareness 
+ 
+1. Introduction 
+In the current era, where satellite technology is 
+fundamental to global connectivity, navigation, climate 
+monitoring, and many other crucial functions, the safety 
+and sustainability of space activities are of paramount 
+importance. The orbital environment i s undergoing a 
+rapid transformation, not merely due to the launch of 
+thousands of new satellites, including ambitious large 
+constellation projects such as Starlink, OneWeb, and 
+Kuiper, but also because of the growing population of 
+man-made inactive objects in space. The escalating risk 
+of collision between satellites and space debris is 
+nowadays a reality each satellite operator must deal with 
+closely. Current data suggests that over 7,000 active 
+satellites share orbital space with at least 36,500 medium-
+sized debris pieces, significantly elevating the risk of 
+potential collisions [4]. As stated by Oltrogge and Alfano 
+in 2019, already more than 10 years ago, “If operators 
+were to have a truly comprehensive set of conjunctions 
+against all objects larger than 1 cm, they would likely be 
+continuously conducting avoidance manoeuvres at the 
+risk of running out of fuel” [ 5]. A recent publication by 
+Yoon et al. gives an insider perspective on the challenges 
+faced by large constellations operators and the amount of 
+times manoeuvring was considered necessary to mitigate 
+collisions risk. This analysis also shows the impact of 
+events such as the break -up of COSMOS 1408 
+(November 2021) on the corresponding altitude [6]. 
+Journal Pre-proof
+
+--- Page 3 ---
+                           Page 2 of 11 
+Society’s reliance on space infrastructure has reached 
+a critical point.  In this scenario, t he long -term 
+sustainability of space-based infrastructure - both in orbit 
+and beyond - is becoming a key space policy issue of this 
+century. An analysis of the considerable socio-economic 
+reliance of modern societies on space assets and the 
+potential threats posed by space debris  was presented in 
+the OECD project on the economics of space 
+sustainability [7]. 
+Recognizing these challenges, our team proposes an 
+international fra mework for STM, drawing upon the 
+recommendations and insights from current research 
+practices and policies. This framework is designed to be 
+inclusive, adaptable, and scalable, catering to the needs 
+of a growing number of space operators, from those with 
+single satellites to large constellations. Enhanced 
+communication between operators, facilitated by new 
+technologies, will enable the sharing of relevant and 
+sensitive data, ensuring that every party has access to the 
+best information for decision-making.  
+Our proposed STM system represents a global 
+solution that fills the gap in international space 
+governance. It aims to ensure safe access to space for 
+operators worldwide, underpinned by international 
+consensus, cooperation, and accords. This framework 
+will not only address the current challenges of space 
+debris through an integrated approach combining SSA 
+and STM but also pave the way for future policy 
+adaptations by nations to enhance global space 
+governance. As such, it serves as a crucial reference point 
+in ongoing and future debates surrounding the 
+conceptualization and implementation of an International 
+STM system.  
+To ensure clarity, this paper adheres to the following 
+definitions: 
+- Space Situational Awareness (SSA): The 
+collection, processing, and sharing of 
+information on space objects and their 
+environment. SSA Suppliers provide data and 
+tools to monitor and predict the behavior of these 
+objects. 
+- Space Traffic Management (STM): The 
+coordinated actions and policies aimed at 
+preventing collisions an d ensuring safe and 
+sustainable space operations. STM Service 
+Suppliers integrate SSA data with operational 
+procedures to facilitate collision avoidance and 
+other traffic-related activities. 
+The proposed framework integrates these domains by 
+leveraging SSA data to enhance STM processes, ensuring 
+consistency and precision in addressing collision risks. 
+This paper is organized in the following way: Section 
+2 introduces the global entities involved in STM and their 
+needs; Section 3 discusses about implemented policies 
+and the legal aspects of the current scenario; in Section 4 
+we present the proposed international framework, the 
+technicalities of which are illustrated in Section 5; 
+finally, some remarks and considerations are given in 
+Section 6. 
+ 
+2. Global Actors in STM and their needs 
+Various (state and non -state) entities are actively 
+developing SSA capabilities for tracking objects in space 
+and STM capabilities for coordinating satellite 
+operations based on SSA data . Besides from the United 
+States 19th Space Defense Squadron (SDS), managed by 
+the US Space Command, featuring a network of 
+numerous sensors, including international partners, also 
+Russia, China and the European Union have prioritized 
+SSA capabilities in the last few years. Many other global 
+actors are recently joining the SSA collaboration, as 
+demonstrated by the U.S. Strategic Command's over 100 
+SSA agreements, which include over 20 countries , such 
+as Brazil [ 8]. In Europe, following a Commission’s 
+Decision, the European Union Agency for  the Space 
+Program (EUSPA) operat es the Space Surveillance and 
+Tracking (SST) Front Desk as of July 2022 [9]. 
+ 
+Figure 1: Example of global actors involved in SSA 
+activities. 
+Additionally, to help companies assessing the impact 
+of a space mission on the space debris environment, and 
+to encourage the whole space community to pursue 
+sustainable practices, the  European Space Agency has 
+Journal Pre-proof
+
+--- Page 4 ---
+                           Page 3 of 11 
+founded the development of a tool for  “Tracking the 
+Health of the Environment and Missions in Space” [10]. 
+The THEMIS project was led by Politecnico di Milano in 
+collaboration with DEIMOS UK and was presented in 
+2024 at the “ESA Zero Debris Week”. 
+Beyond major players, innovative companies and 
+startups are making strides within the SSA landscape. An 
+example of one of these that is already fully 
+operational and providing support to constellations in the 
+crowded LEO regime is LeoLabs; with its extensive 
+network of S-band and UHF radars, LeoLabs generates a 
+significant volume of radar measurements and 
+Conjunction Data Messages (CDMs) daily [ 11]. Given 
+the proven capabilities of companies like LeoLabs, in the 
+USA t he Office of Space Commerce awarded the first 
+contracts to shape the long-awaited Traffic Coordination 
+System for Space (TraCSS), a multi -year effort to move 
+the federal space situational awareness mission from the 
+Department of Defense (DoD) into civilian hands [12]. 
+Intergovernmental organizations such as the Inter -
+Agency Space Debris Coordination Committee (IADC) 
+and the Committee on the Peaceful Uses of Outer Space 
+(COPUOS) provided guidelines that are widely accepted 
+in the current handling of mitigation of risk for collision 
+in space.   
+Fig. 1 gives a representation of global actors involved 
+in the process: from satellite operators, those intere sted 
+in keeping their satellites safe, to private SSA companies, 
+who sell this as “service”, to governments and space 
+agencies, that are either regulating and supervising, or 
+providing this support themselves to keep LEO orbits 
+usable for everyone.  
+Thanks to SSA Service Providers, satellite operators 
+receive warnings  about potential collisions through 
+sensor data and updated space object catalogues, to 
+anticipate close encounters. This information, shared in 
+the file format of a CDM, helps the satellite co ntrol 
+centres to assess if a potential manoeuvre needs to be 
+planned. The workflow for CA using CDM goes as 
+follows: 
+  
+- Conjunction Assessment : Continuous space 
+surveillance identifies potential close approaches 
+and initial screenings occur from days to wee ks 
+before potential conjunctions, based on orbit 
+types and tracking capabilities. 
+- CDM Creation & Distribution : A detailed 
+analysis follows potential conjunction detection, 
+compiling data into a CDM. Then, operators 
+receive the CDM promptly for maximum 
+response time, often several days to hours before 
+the predicted close approach.   
+- CDM Analysis by Operators: Operators verify 
+the CDM using their tools and data. CA needs are 
+evaluated based on CDM data, mission goals, 
+available fuel and other parameters. Coordination 
+may happen between operators, if the 
+conjunction is between two active satellites. The 
+analysis typically spans from days to hours 
+before the expected close encounter. 
+- CA Maneuver (if needed): The operator plans a 
+maneuver. The CA maneuver cha racteristics 
+(timing, direction, magnitude) are shared with 
+SSA providers, that would screen the plan against 
+their catalogue and confirm if the maneuver is 
+safe. Execution occurs well ahead of the close 
+approach to allow adjustments, usually hours to a 
+day before the expected close approach.  
+- Post-Maneuver Assessment : Operators verify 
+the maneuver success and reassess risks. After 
+the execution, maneuvers and outcomes are 
+reported to authorities and surveillance 
+networks.  
+From the workflow above, it is th en clear how crucial 
+CDMs are  for STM, offering standardized conjunction 
+data. A timely CDM process helps in risk mitigation. The 
+procedure is time -critical, thus e ffective coordination, 
+communication, and adherence to standards are the only 
+way to ensure the process's success. 
+ 
+ 
+Figure 2: Survey results on the need of an International 
+STM framework. 
+The aim of this work was to tackle the key issues in STM, 
+and to achieve this goal, our team opted to collect insights 
+directly from individuals engaged in the field. The 
+feedback provided by the survey participants played a 
+crucial role in defining impactful solutions that resonated 
+Journal Pre-proof
+
+--- Page 5 ---
+                           Page 4 of 11 
+with everyone involved and having to face those 
+challenges daily. To gather this input, we came up with a 
+specialized online survey tailored for aerospace 
+professionals, encompassing engineers, policymakers, 
+and satellite operators.  
+The survey featured a mix of multiple -choice questions, 
+scale ratings, and open-ended responses. Within less than 
+48 hours, a total of 90 experts actively participated.  
+The diversity of the respondents’ background was 
+remarkable: from space agencies to the military se ctor, 
+from academics to satellite operators and private 
+companies offering SSA services. Results gathered were 
+pivotal in identifying those issues that the team then tried 
+to address with the proposed framework. As expected, 
+90% of respondents indicated that addressing current and 
+future STM related issues was a critical concern, and 
+more than 75% reported that a global STM framework 
+would be needed “right now”, as shown in Fig. 2. 
+Fig. 3 shows that more than 85% of respondents 
+would be in favour of a third-party in charge of the 
+mentioned framework. 
+Figure 3: Preference for an international third-party in 
+charge of STM. 
+However, only less than 10% of the audience would trust 
+a commercial entity to fill that role, as shown in Fig. 4. 
+By combining the responses from multiple -choice 
+questions with the more elaborated perspectives shared 
+by stakeholders in the open -ended questions, the team 
+gained a comprehensive view of STM's challenges and 
+shared needs. Although a complete analysis of the survey 
+results is available in [ 1], it is worth reporting here the 
+following couple responses to open questions , that  
+summarize the main challenges in the current situation 
+when it comes to STM: 
+"We lack an integrated platform where operators can 
+seamlessly coordinate." 
+[We need] " a cohesive approach to be followed by 
+everyone. There is too much division and single 
+frameworks proposed by this or that entity. A unified 
+framework with some serious international backing is 
+needed." 
+ 
+One of the most important understandings is that a new 
+framework with a central information provider is needed, 
+but it is hard for all stakeholders to trust a third -party to 
+distribute their sensitive information. Therefore, a 
+solution based on a supernational entity or 
+intergovernmental Agency would hardly be accepted or 
+would cover only a limited number of countries. This 
+understanding helped the team conceptualize the 
+framework based on a decentralized and shared open 
+software where all stakeholders can have safe channe ls 
+to share their data. 
+ 
+Figure 4: Respondents’ trust in a commercial entity being 
+responsible for an international framework.  Out of 90 
+participants, only 8 replied “Yes”, whereas the majority would 
+need additional guarantees to address their concerns. 
+ 
+ 
+Journal Pre-proof
+
+--- Page 6 ---
+                           Page 5 of 11 
+3. International Policy and Legal Aspects in STM  
+In this section we examine the  existing legal and 
+policy ecosystem concerning STM, highlighting gaps in 
+the set of rules and guidelines that should be addressed . 
+We focus on the binding and non-binding agreements and 
+treaties, whereas specific national laws are out of the 
+scope of the present work. 
+  
+3.1 Binding instruments 
+The legal framework for international space activities 
+is set within five binding treaties of the UN. Among 
+these, the Outer Space Treaty, the Registration 
+Convention, and the Liability Convention contain the 
+most relevant provisions to SSA. 
+The Outer Space Treaty is the key legal treaty that 
+outlines the fundamental principles of space law. Giv en 
+the treaty was drafted in the 1960s and space debris had 
+not reached significant levels of concern, it is 
+understandable that it does not explicitly address the 
+matter. However, Article IX of the Treaty obliges States 
+to conduct all their activities in outer space with due 
+regard to the corresponding interests of all other States 
+Parties to the Treaty. Space debris puts in risk the 
+exercise of the most fundamental right in international 
+space law: the freedom to use and to explore outer space 
+[13]. Another core provision in Outer Space Treaty, 
+Article VI, is that States Parties to the Treaty shall bear 
+international responsibility for national activities in outer 
+space, whether such activities are carried on by 
+governmental agencies or by non-governmental entities. 
+When proposing our framework and establishing the 
+relationship between States and economic operations, we 
+take this “state oversight” aspect into account . Finally, 
+the term “international cooperation” has been used in the 
+majority of the Articles in this Treaty (namely, Preamble 
+and Articles I, III, IX, X, XI). When making 
+recommendations to the international community, we 
+would like to emphasize that international cooperation is 
+key for the activities in outer space. 
+Expanding on the principles outlined in Article VII of 
+the Outer Space Treaty, the Liability Convention, in its 
+Article II, states that a State responsible for launching 
+space objects holds absolute liability to provide 
+compensation for any harm caused by its objects on 
+Earth's s urface or to aircraft.  However, according to 
+Article III, a launching State is only liable for damages if 
+they result from its own fault or the fault of those it is 
+responsible for. This applies specifically to damages that 
+occur outside of Earth's surface , such as when a space 
+object from one launching State causes harm to another 
+space object or to persons or property aboard it. 
+ 
+Regarding space debris and fault -based liability, a 
+United Nations Committee on the Peaceful Uses of Outer 
+Space (UNCOPUOS) report of the Legal Subcommittee, 
+on its fifty -fourth session , concludes that the “the 
+launching State is liable under Article III (of the Liability 
+Convention) if the operational control of the space object 
+is deemed to have negligently disregarded the relev ant 
+code of conduct in outer space adopted by competent 
+space agencies and international bodies” . The Liability 
+Convention also covers “component parts” in the 
+definition of “space object” in its Article 1(d), concluding 
+that a  State is liable also for the  damages caused by 
+component parts even if they are removed from its body 
+following a collision or accident.  
+Article VII of the Outer Space Treaty states that “A 
+State Party to the Treaty on whose registry an object 
+launched into outer space is carried sh all retain 
+jurisdiction and control over such object (…).” The 
+Registration Convention further details the obligations 
+regarding the registration of space objects. According to 
+the Convention, States and international 
+intergovernmental organizations that a gree to abide by 
+the Registration Convention are required to establish 
+their own national registries and provide information on 
+their space objects to the Secretary-General for inclusion 
+in the UN Register. One significant issue associated with 
+the Registration Convention pertains to the inconsistent 
+reliability of data due to the absence of an obligation for 
+States to maintain updates following any alterations [14]. 
+In contemplating a comparable registration framework 
+for the national authorities designate d to be the point of 
+contact regarding SSA, we highlight that the continuous 
+upkeep of data by states will hold importance. 
+In summary, the binding instruments of international 
+space law provide general principles applicable to SSA 
+and STM, yet they lack e xplicit framework. As a result, 
+the establishment of practices aimed at addressing these 
+gaps and establishing responsible conduct through 
+customary norms becomes important to build a 
+sustainable STM framework. Since no treaties about 
+space activities in s pace have been agreed upon since 
+1979, focusing only on making new treaties should not 
+be the only option and we should also consider 
+alternative solutions.  We believe that a treaty making 
+process requires extensive time and effort and poses 
+challenges achieving consensus on a binding document. 
+We therefore propose, in Section 4, a framework that 
+relies on states to take actions on their domestic laws to 
+establish easier communications, which has the potential 
+to create a widely accepted code of conduct for  
+responsible behaviour in STM. 
+ 
+Journal Pre-proof
+
+--- Page 7 ---
+                           Page 6 of 11 
+3.2 Non-Binding instruments 
+In 1986, a pivotal development unfolded as NASA 
+and ESA embarked on a collaborative initiative to 
+establish a Working Group on Space Debris  [15]. In 
+1993, the cooperation evolved into a 12 State a nd one 
+International Space Agency (ESA) cooperation, that is, 
+the Inter -Agency Space Debris Coordination (IADC) 
+Committee which was officially adopted in Moscow. 
+This committee was formed by the national space 
+agencies of Italy, France, China, Germany, India, Japan, 
+the US, Russia, Ukraine, and ESA. Thanks to the 
+consensus reached in 2003 within IADC, the guidelines 
+were sent to UNCOPUOS who then established a 
+dedicated working group. This working group was tasked 
+with evaluating input from member States re garding the 
+earlier proposals presented by IADC on the critical 
+subject of debris mitigation. The collaborative efforts of 
+these initiatives culminated in the eventual publication of 
+the Space Debris Mitigation Guidelines by the 
+UNCOPUOS in 2010. Concurren tly, the IADC also 
+played an active role by continually updating its own 
+Guidelines, with the most recent version dating back to 
+2020. It is important to point out that both the IADC and 
+United Nations Office for Outer Space Affairs 
+(UNOOSA) Guidelines are  on space debris mitigation 
+and do not make any recommendations on the STM. 
+These guidelines offer advice on aspects such as design, 
+operation, and end -of-life disposal of space objects to 
+minimize the creation of space debris. While not legally 
+binding, i t is an important achievement that the UN 
+General Assembly endorsed the guidelines and invited 
+Member States to implement them through relevant 
+national mechanisms.  
+While the guidelines are considered a remedial 
+scheme, there are a few weaknesses. Firstly, they are not 
+legally binding under international law. Secondly, most 
+of the recommendations are broad in nature, therefore, 
+they may be implemented differently subject to 
+interpretation. Lastly, and most importantly, these 
+guidelines only contain actions  on reducing the amount 
+of space debris. In that regard, while the guidelines have 
+resulted in a positive effect, we need more international 
+cooperation in the areas that are not limited to space 
+debris mitigation but also covering STM. 
+An additional notew orthy initiative is the Space 
+Sustainability Rating (SSR), developed to incentivize 
+responsible space behaviors by assessing and certifying 
+satellite operators' adherence to sustainability practices 
+[16]. By promoting transparency and accountability, the 
+SSR complements efforts like our proposed STM 
+framework, aligning with its goals of fostering 
+international cooperation and enhancing data -driven 
+decision-making. 
+The already mentioned OECD’s 2022 report "Earth’s 
+Orbits at Risk" highlights the economic impl ications of 
+unsustainable orbital practices  [7]. In particular, a 
+contribution from  the Polytechnic University of Bari 
+examined the costs associated with the irreversible 
+deterioration of orbital regimes, proposing an "orbital 
+toll" system [17]. Such a mechanism would require 
+operators to pay fees proportional to the risks their 
+activities introduce, aligning financial incentives with 
+sustainability goals. These economic considerations 
+underline the importance of integrating technical, policy, 
+and market -based approaches to ensure the long -term 
+viability of orbital activities. 
+We believe that any future guidelines specifically for 
+the STM should be established with a bottom -up 
+approach to capture the general practice and be more 
+effective. In that regard,  focusing on international 
+cooperation, communication and transparency should 
+have the utmost priority. A recent initiative that seems to 
+be very aligned with this approach is the “STM 
+Stakeholder Mechanism” proposed by the EU: in this 
+project, space operators (among other entities) have been 
+directly involved and are asked to assist DG DEFIS and 
+EEAS in the preparation of legislative proposals and 
+policy initiatives in the field of STM [18]. 
+ 
+4. An International Space Traffic Management 
+Framework  
+After di scussing t he actors and the international 
+cooperation legal and policy aspects, we here present the 
+proposed International STM framework in Fig. 5.   
+In accordance with this framework, the Operator is 
+anticipated to transmit the encrypted spacecraft state 
+vector, derived from on -board sensor information, to a 
+decentralized Conjunction Assessment Software (CAS) 
+database. Upon sharing this information, the operator 
+attains the status of a "Compliant Owner/Operator." The 
+CAS leverages data from sensors provide d by SSA 
+Suppliers and Supplemental Data Suppliers as described 
+in the next section. Notably, our framework does not 
+delve into the practical aspects of data gathering. By 
+amalgamating on-board data from Compliant Operators 
+with third -party data, the syste m facilitates a 
+comprehensive understanding of space traffic. Using this 
+augmented data, collision risks can be calculated by both 
+STM Service Suppliers/Compliant Operators and Non -
+Compliant Operators. 
+The Designated National Authority maintains an up -
+to-date list of communication data for the STM Service 
+Supplier and enforce  compliance with national laws and 
+Journal Pre-proof
+
+--- Page 8 ---
+                           Page 7 of 11 
+regulations, therefore establishing a federated approach 
+This approach is in line with Article VI of the Outer 
+Space Treaty stipulating that States Parties to the Treaty 
+are internationally responsible for national activities in 
+outer space, irrespective of whether these activities are 
+conducted by governmental agencies or non -
+governmental entities. The role of UNOOSA (the United 
+Nations Office for Outer Space Affairs) would be limited 
+to maintaining a web-based public repository to facilitate 
+and centralize the management of the contact information 
+of designated national authorities for each registered 
+spacecraft. 
+ 
+Figure 5: Proposed International Space Traffic 
+Management Framework. The direct communication between 
+operators is facilitated by the National Designated Authority 
+of each country. UNOOSA is acting as a public repository of 
+contact information. 
+Direct communication between Operators is initiated 
+once the National Designated Authority is informed. 
+During this stage, operators must reach consensus on 
+manoeuvres. Post-planning, operators, with support from 
+STM Service Suppliers and Non -Compliant Operators, 
+upload their proposed manoeuvres to the Conjunction 
+Assessment Supplier Software. The Software 
+subsequently conducts another calculation to anticipate 
+the effects of the planned manoeuvres. This feedback 
+loop, facilitated by the software, determines whether the 
+proposed orbit changes  might result in a new 
+conjunction, or worsen existing ones. With more precise 
+data from the Software, Operators can  then make well-
+informed decisions about manoeuvring. Upon 
+completion of the manoeuvre, Compliant Operators add 
+this information to the Conjunction Assessment Supplier 
+Software database.    
+The International STM system's proposed framework 
+emphasizes key players crucial to its successful 
+implementation. These players, each with distinct roles 
+and responsibilities within t he STM ecosystem, 
+constitute the backbone of the system. Detailed 
+descriptions of technical aspects  are provided in the 
+subsequent section.  
+ 
+4.1 Alternative approaches for SSA and challenges to 
+the implementation of an  International STM 
+Framework 
+The development of an effective STM framework 
+requires consideration of multiple governance models, 
+each with distinct advantages and limitations. It is worth 
+mentioning that when talking about STM, we refer to 
+actions (thus decision-making and responses chang es in 
+the space environment), oversight and coordination 
+activities. These highly depend  on (and are only 
+meaningful in the presence of ) valid systems for data 
+collection, data processing, and data sharing – these 
+systems are commonly referred to as SSA.  Previous 
+studies, such as the 2017 AMOS Dialogue [19] organized 
+by the Secure World Foundation (SWF) and the Science 
+and Technology Policy Institute (STPI), explored four 
+archetypal scenarios for future S SA, and how it might 
+support future STM regimes : (1) an extension of the 
+current U.S. government-led system, (2) a private-sector-
+led SSA system dominated by U.S. entities, (3) a globally 
+governed SSA system, and (4) many national SSA 
+systems. Each scenario reflects varying degrees of 
+government involvement and internationalization. 
+Similarly, the U.S. Department of Commerce’s 2024 
+white paper envisions a decentralized network of national 
+or regional hubs for SSA services, supported by 
+international partnerships and robust commercial sector 
+contributions [20]. 
+While these alternative approaches offer viable 
+pathways, each has significant limitations compared to 
+the globally governed scenario we propose. Scenario 1 
+relies heavily on unilateral governance, risking a lack of 
+inclusivity and transparency. Scenario  2 places 
+disproportionate emphasis on market -driven solutions, 
+potentially sidelining global security and equitable 
+access concerns. Scenario 4's fragmented system of 
+national frameworks could exacerbate operational 
+inefficiencies and create conflicts ove r data sharing, 
+standards, and compliance mechanisms. In contrast, a 
+globally governed SSA system would  facilitate the 
+implementation of an international STM framework,  
+establishing standardized protocols, foster ing 
+transparency and collaboration, addressing the inherently 
+international nature of space operations. 
+Achieving a globally governed STM framework , 
+however, poses considerable political, operational, and 
+financial challenges. The primary obstacle is securing 
+broad international cooperation, which r equires 
+reconciling competing national interests, sovereignty 
+Journal Pre-proof
+
+--- Page 9 ---
+                           Page 8 of 11 
+concerns, and variations in technical capabilities. 
+Establishing the necessary trust for data sharing and 
+compliance will also be complex, especially for nations 
+with differing levels of space a ctivity and strategic 
+priorities. Additionally, coordinating a centralized 
+system across diverse stakeholders could introduce 
+delays in decision-making and implementation. 
+Despite these challenges, the global approach 
+remains the most effective means of ad dressing the 
+growing risks of space congestion and collisions. It 
+provides a unified framework for ensuring long -term 
+sustainability and equitable treatment of all spacefaring 
+nations, in line with the principles of shared 
+responsibility outlined in international treaties. However, 
+achieving this vision requires a concerted effort to foster 
+transparency, build capacity, and deliver mutual benefits 
+to secure global support and effective implementation. In 
+this context, the recent advancements in regional STM  
+systems, such as the U.S. Department of Commerce's 
+TraCSS initiative and the EUSPA SST program, 
+represent inevitable intermediate steps. These systems 
+serve as vital contributors to the evolution of a global, 
+federated approach as envisioned in this paper, playing a 
+significant role within a broader, collaborative 
+framework. 
+ 
+5. Technical implementation 
+Our proposed Framework is designed to integrate 
+existing suppliers rather than replace them, allowing for 
+the seamless inclusion of their data within our system. 
+These suppliers can continue to run their independent 
+analysis and operations while also contributing to, and 
+benefiting from, the enhanced functionality and 
+collaboration within our system. For instance, a private 
+company already providing conjunc tion assessment 
+services can continue to function using its existing 
+business model, where the generation of CDM is 
+exclusively based on its own SSA database and 
+conjunction analysis models. Along with this approach, 
+they can also take advantage of our suggested framework 
+by accessing our enhanced database and utilizing their 
+proprietary models on our newly proposed system. This 
+process is carried out in a wholly confidential manner: 
+the SSA/STM service provider conveys its exclusive 
+conjunction analysis al gorithms model as encrypted 
+Intellectual Property, eliminating the need to access any 
+sensitive SSA data within our system. Consequently, our 
+system can execute their algorithms without infringing 
+on any of their trade secrets, and without requiring them 
+to access any data from foreign operators unwilling to 
+share information with anyone other than the trusted 
+international authority. The technical architecture of our 
+proposed International STM  framework is  outlined in 
+Fig. 6. 
+ 
+5.1 Concerns and challenges  
+As we venture further into the era of space exploration 
+and utilization, the development of an effective 
+International STM system has become imperative. This 
+system aims to address the increasingly complex 
+dynamics of space traffic, ensuring safety and 
+sustainability in outer space activities. However, the 
+realization of such a system is fraught with numerous 
+concerns and technical challenges, each requiring careful 
+consideration and innovative solutions.  
+International reluctance to share accurate SSA data , 
+which is foundational for effective STM, arises from a 
+myriad of factors . These include national security 
+concerns, the dual -use nature of space assets, lack of 
+trust, competitive and commercial interests, and legal or 
+policy constraints. Technical limit ations, existing 
+bilateral or multilateral agreements, geopolitical 
+considerations, and unwillingness to expose 
+vulnerabilities in surveillance capabilities further 
+compound these issues.  
+  
+   
+ 
+Figure 6: Technical architecture of the proposed 
+International STM Framework. 
+To enhance SSA data sharing, a trustworthy 
+technological solution is essential. Such a technology 
+must ensure data integrity and immutability through a 
+decentralized approach, making it challenging to alter or 
+tamper with recorded data. This approach bolsters data 
+integrity, ensuring the reliability and trustworthiness of 
+shared information. Additionally, the inherent 
+redundancy in a distributed system guarantees data 
+availability, even if some nodes are compromised. 
+A transparent, traceable process in this system is vital 
+for verifying data origin and history, enhancing 
+Journal Pre-proof
+
+--- Page 10 ---
+                           Page 9 of 11 
+transparency and accountability. Implementing a 
+consensus mechanism for data verification ensures the 
+authenticity of shared data. Significant progress on this 
+crucial aspect has been made by the team responsible of 
+Space DAO (Decentralized Autonomous Organization), 
+that “sets the base infrastructure to agree on consensus 
+mechanisms to reduce confusion and augment trust in 
+key decision-making information” [21].   
+The proposed framework, requiring extensive 
+national and international collaboration, faces several 
+technical challenges including:  
+- Real-time Data Processing and Analysis:  
+Handling and analysing vast amounts of data in 
+real-time for precise positioning and trajectory 
+prediction.  
+- Communication Latency and Integrity:  
+Establishing a secure, real-time communication 
+network with minimal latency and integrity 
+issues.  
+- Interoperability of Systems: Harmonizing 
+diverse technolog ical standards and systems 
+across various entities.  
+- Security Concerns: Protecting the system from 
+cyber threats.  
+- Error Handling and Redundancy: 
+Developing algorithms for error management 
+and implementing redundant systems for 
+continuous operations.  
+- Scalability Issues: Ensuring the system scales 
+efficiently with the increasing number of 
+satellites.  
+- Integration with Existing Systems:  
+Seamlessly integrating the framework with 
+existing STM systems. 
+- Technology Development:  Advancements in 
+Artificial Intelligence and communication 
+technologies are needed to automate the STM 
+system, requiring research and development 
+through collaborative efforts in academia and 
+industry.  
+These challenges underscore the need for an 
+innovative and collaborative approach to develop a 
+robust and scalable system.   
+   
+5.2 Technical Aspects of an International STM 
+Framework  
+The advancement of space technologies and the 
+increasing congestion in outer space necessitate a robust 
+technical framework for STM. It must be grounded in 
+modern technology and global cooperation, ensuring the 
+safe and sustainable use of outer space. In this context, 
+the role of international organizations and state-of-the-art 
+technological solutions becomes paramount in 
+developing and implementing an effective system.  
+International organizations like UNOOSA, ISO, 
+IADC, and the Space Data Association have the potential 
+to shape International STM  standards, as discussed in 
+Section 3 . UNOOSA and ISO address space debris 
+mitigation and could extend guidelines to CA standards, 
+while the IADC and Space Data Association, with their 
+existing focus on debris mitigation and traffic 
+coordination, can contribute significantly to the 
+development of universally accepted STM standards 
+through collaborative efforts. 
+The recommended approach aims to leverage state -
+of-the-art technologies to redefine STM.  The technical 
+framework that supports our vision is based on the 
+following key points:  
+- Data Integration and Real-Time Analytics: A 
+robust cloud-based infrastructure to integrating 
+datasets from various sources, including 
+Operators/Owners (O/Os), Satellite Service 
+Stations (S3s), and SSA  Suppliers. This 
+integration is achieved through an advanced 
+data processing pipeline, which ensu res 
+accurate and timely situational awareness.  
+- Unified Communication Protocols:  To 
+address communication challenges among S3s, 
+the system employs standardized 
+communication protocols. These protocols 
+facilitate secure and efficient data exchange, 
+leveraging modern encryption and distributed 
+ledger technologies for enhanced security and 
+reduced data latency. Additionally, efficient 
+cross-border data exchange mechanisms are 
+employed to ensure minimal overhead and a 
+harmonized approach to space management.  
+- Advanced Conjunction Assessment:  High-
+precision conjunction assessments are enabled 
+by integrating advanced deterministic 
+algorithms, which provide both depth and 
+transparency in analysis. This method, bolstered 
+by robust statistical models and data 
+assimilation techniques, significantly enhances 
+accuracy and reduces the likelihood of false 
+alarms. So far, s ystems based on Artificial 
+Intelligence have  found application limited to 
+characterization of and classification of space of 
+space object (i.e. SSA), but  not direct 
+application to STM.  
+- Unified Monitoring & Control System: The 
+framework includes a unified monitoring and 
+control system, offering real -time insights and 
+integrating various data feeds for 
+Journal Pre-proof
+
+--- Page 11 ---
+                           Page 10 of 11 
+comprehensive oversight. This system is 
+supported by di stributed databases, ensuring 
+prompt identification and resolution of technical 
+issues.  
+- Agile System Architecture: A microservices-
+based architecture ensures that the system 
+remains adaptable and responsive to changing 
+requirements. Dynamic policy updates , 
+informed by real-time technical data, ensure that 
+regulatory frameworks stay at the cutting -edge 
+of technology.  
+In the considered system, Satellite Service Stations 
+(S3s) act as critical intermediaries, aggregating data from 
+SSA providers and ensuring seamless data compatibility 
+for STM actions. Their role encompasses maintaining 
+interoperability standards, supporting real -time 
+processing of conjunction data, and providing operators 
+with actionable insights for collision avoidance. The 
+proposed framework  also allows for flexibility in the 
+relationships between operators, service providers, and 
+national authorities. Service providers and operators may 
+belong to different nations than the National Designated 
+Authority, provided they adhere to internationall y 
+accepted data -sharing and operational standards. This 
+design reflects the global nature of space operations, 
+promoting inclusivity while respecting national oversight 
+responsibilities. For instance, an operator based in one 
+nation could rely on an SSA provider from another, with 
+both entities coordinated through their respective 
+national authorities and the broader framework. 
+In summary, the proposed STM framework is a 
+tapestry of innovative tools and distributed systems, 
+supported by strategic collaborations. It envisions a 
+future where space operations are not just streamlined 
+and efficient but are also resilient and secure, effectively 
+managing the evolving dynamics of space traffic.  
+    
+6. Conclusions 
+This paper has underscored the urgency and necessity 
+for an innovative International STM framework in the 
+wake of escalating space traffic and the resultant 
+increased risk of collisions. The rapid proliferation of 
+satellites, especially with the a dvent of large 
+constellations, alongside a growing population of space 
+debris, has made the development of a cohesive and 
+globally recognized STM system an imperative. 
+In a decentralized federated framework like the 
+proposed one, standardization is crucial. Standardization 
+facilitates communication, collaboration, quality control, 
+and economic efficiency within the global space 
+community, serving as a foundational element for safe 
+and efficient operations.  Software enhancements for 
+improved orbital determination are expected to mitigate 
+collision risks. Effective CA systems, particularly crucial 
+for large satellite constellations and autonomously 
+manoeuvring satellites, will become increasingly vital. 
+With the surge in data, deterministic algorithms and 
+advanced statistical methods will become increasingly 
+important in predicting potential conjunctions, 
+optimizing satellite trajectories, and analysing space 
+environment trends. This development indicates a shift 
+towards more refined computational appro aches for 
+orbital determination and collision avoidance. As these 
+techniques advance, commercial opportunities may arise, 
+potentially benefiting the growing private space industry 
+with innovative services and solutions. For example, also 
+Amazon has entered  the STM scenario with Project 
+ARGUS, a new platform designed as an open 
+architecture to integrate with first and third -party data, 
+models, and visualizations to deliver targeted insights for 
+critical mission use cases [22]. 
+The framework advocates for the  seamless inclusion 
+of data from various stakeholders, emphasizing the 
+importance of international collaboration and transparent 
+data sharing. By fostering an environment of mutual trust 
+and cooperation, the framework aims to bridge the gaps 
+between differ ent space actors, be they commercial 
+entities, governmental organizations, or international 
+bodies. The challenges in implementing such a 
+comprehensive system are acknowledged, particularly in 
+terms of data security, technological integration, and 
+adherence to international standards. However, these 
+challenges also present opportunities for innovation and 
+cooperation at a global scale, encouraging advancements 
+in space technology and governance.  In envisioning the 
+future of STM, it is imperative that we adopt a proactive 
+and collaborative approach. The proposed STM 
+framework is not the final solution but rather a significant 
+step towards a safer and more sustainable space 
+environment. It is a call to action for all space -faring 
+nations and entities to unite under a common goal – to 
+preserve the space environment around Earth as a shared 
+resource for the benefit of all humankind. 
+ 
+Acknowledgments  
+   The authors wish to thank the International Space 
+University (ISU) and its staff members, especially those 
+involved in the SSP23 and responsible for the SSA Team 
+Project, for their continuous guidance and supervision, as 
+well as the SSP23 participants that took part in the project 
+for their extraordinary contribution. 
+We would like to also thank the professionals working in 
+the field, that offered to share their perspective as guest 
+lecturers during the course. 
+Journal Pre-proof
+
+--- Page 12 ---
+                           Page 11 of 11 
+Declaration of generative AI and AI -assisted 
+technologies in the writing process 
+   During the preparation of this work the authors used 
+ChatGPT in order to speed-up the content organization 
+process and improve the clarity of writing.  After using 
+this tool/service, the authors reviewed and edited the  
+content as needed and take full responsibility for the 
+content of the publication. 
+ 
+References 
+ 
+[1] D. Guerra et al. (2023). “International Approach 
+to Space Situational Awareness and Collision 
+Avoidance”, 74th International Astronautical 
+Congress (IAC) Proceedings. IAC -23,A6,8-
+E9.1,5,x77985. 
+[2] E. Ancona et al. (2024). “Technical Aspects of an 
+International Space Traffic Management 
+Framework”, Proceedings of the 10th Space 
+Traffic Management Conference (STM 2024), 
+Austin, USA, 27-28 February 2024.   
+[3] D. Murakami, S. Nag, M. Lifson, and P. 
+Kopardekar, “Space traffic management with a 
+NASA UAS traffic management (UTM) inspired 
+architecture”, AIAA Scitech 2019 Forum , pp. 1–
+27, 2019, doi: 10.2514/6.2019-2004. 
+[4] https://sdup.esoc.esa.int/discosweb/statistics/  
+[5] D. L. Oltrogge, S. Alfano (2019). “The technical 
+challenges of better Space Situational Awareness 
+and Space Traffic Management ”, Journal of 
+Space Safety Engineering,  
+https://doi.org/10.1016/j.jsse.2019.05.004  
+[6] Y.T. Yoon, P. Ghezzo, C. Hervieu et al. (2023) . 
+“Navigating a large satellite constellation in the 
+new space era: An operational perspective ”, 
+Journal of Space Safety Engineering, 
+https://doi.org/10.1016/j.jsse.2023.10.006  
+[7] OECD (2022), Earth’s Orbits at Risk: The 
+Economics of Space Sustainability, OECD 
+Publishing, https://doi.org/10.1787/16543990-
+en. 
+[8] L. J. Smith, I. Baumann and S. G. Wintermuth 
+(2023). “ Routledge Handbook of Commercial 
+Space Law ”, vol 6, pp. 1 –583. doi: 
+10.4324/9781003268475.  
+[9] https://www.euspa.europa.eu/newsroom/news/ 
+euspa-grows-further-support-eu-space-traffic-
+management 
+[10] C. Colombo, M. Muciaccia, L. Giudici et al. 
+“Tracking the health of the space debris 
+environment with THEMIS ”, EUCASS -CEAS 
+Conference 2023, 9-13 Jul. 2023, Lausanne. 
+[11] B. Reihs et al. (2022). “Increasing Capabilities in 
+a Growing Radar Network”, AMOS Tech 2022. 
+[12] https://payloadspace.com/commerce-takes-the-
+first-step-towards-civil-space-traffic-
+coordination/ 
+[13] Y. Radi . “Clearing up the Space Junk: On the 
+Flaws and Potential of International Space Law 
+to Tackle the Space Debris Problem,” ESIL 
+Reflections, vol. 12, no. 2, p. 12, 2023. 
+[14] P. J. Blount (2021). “Space Traffic Coordination: 
+Developing a Framework for Safety and Security 
+in Satellite Operations ”, Space: Science and 
+Technology (United States) , 2021. doi: 
+10.34133/2021/9830379 
+[15] N. Johnson (2014). “Origin of the Inter -Agency 
+Space Debris Coordination Committee,” ARES 
+Bienn. Rep. 2012 Final , no. April 1991, pp. 
+1991–1993, 2014. 
+[16] https://spacesustainabilityrating.org/ 
+[17] D. Vittori, C. Loporcaro, E. Ancona et al. (2022). 
+“Identifying the costs caused by an irreversible 
+deterioration of the orbital regimes” in Earth’s 
+Orbits at risk © OECD 2022   
+[18] https://defence-industry-space.ec.europa.eu/eu-
+space/space-traffic-management/space-traffic-
+management-stakeholder-mechanism_en 
+[19] 2017 AMOS Dialogue: Secure World 
+Foundation and Science and Technology Policy 
+Institute. 2017 AMOS Dialogue Report: 
+Scenarios for Future SSA and STM. Available at 
+https://swfound.org/media/206083/2017-amos-
+dialogue-report.pdf. 
+[20] U.S. Department of Commerce (2024). Global 
+SSA Coordination Vision. Available at 
+https://www.space.commerce.gov/global-ssa-
+coordination-vision. 
+[21] R. Boumghar et al. (2023). “Orbit Decentralized 
+Autonomous Organization Using Blockchain -
+Based Consensus Mechanisms”, SpaceOps -
+2023. 
+[22] https://aws.amazon.com/marketplace/solutions/ 
+public-sector/argus 
+ 
+ 
+Journal Pre-proof
+
+--- Page 13 ---
+ 
+Highlights for the submission to Acta Astronautica 
+ 
+TECHNICAL ASPECTS OF AN INTERNATIONAL SPACE TRAFFIC MANAGEMENT FRAMEWORK 
+Elena Ancona, Diego Guerra, Steven Armstrong, Henrique Oliveira da Mata, Claudia Medeiros, Jaime Silva, Eric Dahlstrom  
+ 
+• Over 7,000 satellites and 36,500 debris fragments share the same orbital space. 
+• Satellite operations are outdated due to increasing launches and space traffic. 
+• A new global Space Traffic Management framework is essential to prevent collisions. 
+• The framework promotes data sharing and international cooperation among space actors. 
+• The goal is to ensure safe space access and guide future global space policies. 
+ 
+Journal Pre-proof
+
+--- Page 14 ---
+Declaration of interests 
+ 
+☒ The authors declare that they have no known competing financial interests or personal relationships 
+that could have appeared to influence the work reported in this paper. 
+ 
+☐ The author is an Editorial Board Member/Editor-in-Chief/Associate Editor/Guest Editor for [Journal 
+name] and was not involved in the editorial review or the decision to publish this article. 
+ 
+☐ The authors declare the following financial interests/personal relationships which may be considered 
+as potential competing interests:  
+ 
+ 
+ 
+ 
+ 
+ 
+03/05/24 
+ 
+ 
+Journal Pre-proof

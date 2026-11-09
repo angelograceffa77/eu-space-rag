@@ -1,0 +1,2834 @@
+--- Page 1 ---
+DATA 
+CENTRES 
+IN SPACE
+ORBITAL BACKBONE 
+OF THE SECOND 
+DIGITAL ERA?
+WITH CONTRIBUTIONS BY:
+
+--- Page 2 ---
+ 
+ 
+ 
+  
+Report: 
+Title: “ESPI Report 98 – Data Centres in Space: Orbital Backbone of the Second Digital Era? - Full Report” 
+Published: November 2025 
+ISSN: 2218-0931 (print) • 2076-6688 (online)  
+ 
+Editor and publisher: 
+European Space Policy Institute (ESPI) 
+Schwarzenbergplatz 16 TOP1 • 1010 Vienna • Austria  
+Phone: +43 1 718 11 18 -0 
+E-Mail: office@espi.or.at 
+Website: www.espi.or.at 
+ 
+Rights reserved - No part of this report may be reproduced or transmitted in any form or for any purpose without 
+permission from ESPI. Citations and extracts to be published by other means are subject to mentioning “ ESPI Report 
+98 – Data Centres in Space: Orbital Backbone of the Second Digital Era? - Full Report, November 2025”. All rights 
+reserved and sample transmission to ESPI before publishing.  
+ 
+ESPI is not responsible for any losses, injury or damage caused to any person or property (including under contract, by 
+negligence, product liability or otherwise) whether they may be direct or indirect, special, incidental or consequential, 
+resulting from the information contained in this publication.  
+ 
+Internal layout design: www.copylot.at 
+Cover page picture credit: Julia Drössler 
+Future applications and new technologies, while carrying economic risk and technological uncertainty, need 
+to be part of discussions on Europe’s space policy, as they hold immense power to positively disrupt the 
+sector and unlock further growth. This self-funded study on Data Centres in Space aims to give way to such 
+discussions. Since the study's inception in late 2023 significant and sometimes unforeseen developments 
+have picked up speed, further accelerating in the final months of the report finalisation  with Google, 
+xAI/SpaceX, and Amazon all announcing interest, and in some cases investment, in this application.  
+
+--- Page 3 ---
+KEY TAKEAWAYS
+A second digital paradigm shift is upon us. 
+Space Based Data Centres (SBDCs) have 
+matured from a speculative idea into an 
+emerging field of industrial development, 
+garnering attention from digital giant executives 
+such as Amazon (Jeff Bezos), Google (Sundar 
+Pichai), xAI (Elon Musk), and the Alibaba Group 
+(through Zhejiang Lab). 
+1
+The global data centre market is expected to reach 
+€535 Billion in 2030. Driven by unprecedented demand 
+for data centre processing and computing power on 
+Earth for AI, an increased strain on terrestrial energy 
+and environmental resources, and increased data 
+generation of operational and future satellites in 
+orbit. These developments drove Jeff Bezos to assert 
+“We will be able to beat the cost of terrestrial data 
+centres in space in the next couple of decades.”
+2
+Several institutional programmes, including the EU-
+funded ASCEND study led by Thales Alenia Space, 
+and ESA missions such as Φ-sat, have developed 
+building blocks that can enable a future on-orbit 
+data processing infrastructure. 
+4
+A dynamic ecosystem of startups targeting the 
+market has emerged over the past years across 
+Europe, North America, and Asia. Close to €70 
+million in private investment was tracked targeting 
+the application itself, or directly relevant enabling 
+components.
+• ADA Space and Zhejiang Lab (China) have 
+launched the initial 12 satellites from the planned 
+2,800 satellite-strong Three-Body Computing 
+Constellation.
+• In November 2025, Starcloud (USA) launched its 
+initial demo satellite featuring the first Nvidia H100 
+GPU in space.
+• European startups and scaleups are also active in 
+this segment either directly targeting the market or 
+enabling infrastructure, including D-Orbit, KP Labs, 
+Edge Aerospace, and Loft Orbital. 
+3
+Formidable challenges remain  to reach gigawatt-
+scale infrastructure. 
+5 • Launch costs, while falling thanks to reusable rockets like SpaceX’s Falcon 9 and soon, Starship, 
+   remain a significant barrier. 
+• Thermal management itself, dissipating 
+gigawatts of waste heat in orbit is a daunting 
+engineering task. 
+• In-orbit assembly is still underdeveloped to 
+reach integrated gigawatt-scale infrastructure 
+in the short term
+OUR 
+RECOMMENDATION
+Europe cannot afford to miss a 
+new potential golden age with 
+high multiplier effects across the 
+economy. While developments are in 
+their infancy, Europe should capture 
+the opportunity using ESA’s GSTP 
+and the EC’s IOD/IOV programmes 
+as a public-private testbed for 
+enabling technologies, critical 
+components, and operational 
+practices in pursuit of SBDCs. Near-
+term opportunities already exist in 
+improved in-orbit edge computing 
+and satellite-to-cloud integration, 
+which could act as stepping stones 
+toward larger ambitions.
+Building on the findings of the 
+ASCEND study and in view of the 
+proposed Horizon Europe Moonshot 
+Projects under the 2028-2034 MFF, 
+an ambitious European Space 
+Based Data Centre initiative should 
+be proposed. Going beyond R&D and 
+demonstration, it should include a 
+phased roadmap towards potential 
+commercial deployment, supported 
+by ESA’s ARTES programme. 
+While the technical and economic 
+challenges remain a barrier, it is 
+exactly disruptive concepts such 
+as SBDCs that can, if successful,  
+massively boost Europe’s 
+competitiveness and, in turn,  
+autonomy, repositioning Europe as 
+a global leader. 
+
+--- Page 4 ---
+ 
+ 
+Executive Summary  
+Over the last decade, the concept of space-based data centres (SBDCs) has progressed from 
+speculative discussions to an area of tangible R&D, industrial, and programmatic development. 
+Approximately €70 million of private capital has been invested in SBDC ventures since 2020, 
+spread across close to 30 companies in Europe, North America, and Asia. These ventures, ranging 
+from purpose-built start-ups such as Starcloud and Lonestar Data Holdings to larger players like 
+Axiom Space, are testing concepts in orbital cloud computing, secure remote storage, and in -
+space edge processing. At the same time, public programmes are continually funding in -space 
+edge computing initiatives: the EU-funded ASCEND study explores the environmental benefits of 
+orbital data centres; ESA has launched Φ-Sat-2, demonstrating AI-enabled onboard processing; 
+NASA has deployed its Spaceborne Computer-2 on the ISS; and China’s “Three-Body Computing 
+Constellation” aims to field a satellite compute mesh. 
+This expansion of activities must be 
+understood against the tremendous rise in 
+global data generation and growing demand 
+for data processing. By 2028, total data 
+production is forecast to exceed 400 
+zettabytes, further accelerated by AI, IoT, and 
+EO applications. The terrestrial data centre sector, valued at over €324 billion in 2024, is straining 
+to keep pace. Projections suggest as much as €5.7 trillion in investment may be needed by 2030 
+to adequately keep pace with growth. Terrestrial data centres are becoming increasingly costly, 
+and land, energy, and cooling requirements are stretching grids and ecosystems to their limits. 
+In this context, space offers enticing advantages. The continuous availability of solar energy 
+coupled with the ability to process and filter data at source, presents a pathway to economically 
+advantageous, sustainable, and resilient infrastructure . As former Google CEO Eric Schmidt 
+warned in testimony before the U.S. Congress, an additional 67 gigawatts of new power 
+generation will be needed for terrestrial data centres by 
+2030 - equivalent to 67 nuclear plants. His subsequent 
+investment in launch provide r Relativity Space 
+underscores the view that orbital deployment could form 
+part of the solution. 
+Beyond economics, data sovereignty is emerging as a 
+decisive driver. The conflict between GDPR requirements and extraterritorial laws such as the U.S. 
+CLOUD Act highlights the risks of dependency on non -EU providers. For organisations handling 
+sensitive information, true compliance and security depend not just on where data is stored, but 
+who controls the infrastructure. By that token, sovereign European SBDC capacity is not optional; 
+it is essential. 
+This report examines the economic, environmental, 
+and strategic drivers behind the emergence of SBDCs 
+and evaluates their viability through a cost model 
+benchmarked against terrestrial data centres (TBDCs) 
+developed by researchers at the Technical University 
+of Munich (TUM). The report also situates SBDCs within broader industrial and regulatory 
+contexts. Interviews with industry experts and stakeholders reveal both optimism and caution: 
+When space journalist Eric Berger speculated 
+whether Eric Schmidt bought Relativity Space for 
+the purpose of building data centres in -orbit, 
+Schmidt himself replied with a simple “Yes.” 
+Eric Schmidt, X, 28 April 2025 
+ 
+ 
+ 
+ 
+ 
+ 
+"We will be able to beat the cost of 
+terrestrial data centres in space in the 
+next couple of decades." 
+Jeff Bezos, Italian Tech Week, Turin (IT), 
+October 2025  
+ 
+ 
+ 
+ 
+ 
+ 
+“Simply scaling up Starlink V3 satellites, 
+which have high speed laser links would 
+work. SpaceX will be doing this.” 
+Elon Musk, X, October 2025  
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- Page 5 ---
+ 
+ 
+advances in commercial off -the-shelf computing for space, combined with developments in 
+reusable heavy-lift launch systems, strengthen the business case, while challenges in radiation 
+protection, thermal management, latency, and data governance remain unresolved and demand 
+increased investment. 
+This study highlights an industrial opportunity; while large -scale SBDCs remain a long-term 
+prospect, near-term applications such as in -orbit edge processing of Earth observation data, 
+secure orbital storage, and sovereign satellite-to-cloud integration can act as valuable stepping 
+stones. 
+For Europe, this window of opportunity is open now. By embedding an outlook for SBDC 
+development within the future frameworks of IRIS², the EU Green Deal, and ongoing efforts to 
+create a sovereign cloud-edge continuum, Europe allows itself the opportunity to: 
+ 
+Figure 1: Benefits of SBDC developments and their convergence with EU strategic priorities. 
+If Europe acts decisively while the technological, financial, and political momentum converges, 
+SBDCs offer an opportunity to secure leadership in a critical domain of the perpetually growing 
+digital economy. While gigawatt-scale SBDCs remain a long -term prospect, they could evolve 
+from niche applications to a viable complement to terrestrial data centres in the decades ahead. 
+These developments clearly fall in line with EU strategic priorities, and thus, an argument is to 
+be made that this opportunity for a European flagship mission should not be squandered.
+Pioneer a potentially 
+game-changing 
+application with 
+considerable potential for 
+joint public-private 
+investment
+Advance its digital 
+sovereignty by ensuring a 
+secure EU-governed data 
+infrastructure
+Contribute to net-zero 
+goals by reducing the 
+environmental footprint of 
+computing
+Stimulate new industrial 
+ecosystems in launch, 
+robotics, and AI-enabled 
+space systems
+G1.1: Upholding European values within the EU
+G1.2: Living up to EU value at global level
+Goal 1: A Free and democratic Europe
+G2.1: Ensuring coherent and influential external action
+G2.2: Strengthening EU security and defence, and protecting EU citizens
+G2.3: Preparing for a bigger and strong Union
+G2.4: Pursuing a comprehensive approach to migration and border 
+management
+Goal 2: A strong and secure Europe
+G3.1: Bolstering the EU’s competitiveness
+G3.2: Making a success of the green and digital transition
+G3.3: Promoting an innovation and business friendly environment
+G3.4: Advancing together
+Goal 3: A prosperous and competitive Europe
+EU Strategic Priorities 2024-2029
+Based on informed assumptions, two architectures were modelled for a gigawatt-scale SBDC in Sun-
+synchronous orbit: I) a monolithic configuration comprising 96 10 MW units, and II) a constellation of 
+6,700 smaller 150 kW units. Results show that monolithic architectures achieve cost competitiveness 
+with high-end terrestrial Tier III data centres, w ith comparable capital expenditure and potentially 
+lower lifetime operating costs if IT hardware can endure three or more years in orbit and launch costs 
+fall cons iderably. By contrast, the constellation architecture remains prohibitively expensive, with 
+capital costs double and operating costs more than triple those of TBDCs if a 1GW scale architecture 
+is pursued. The analysis highlights hardware longevity, launch affordability, and the feasibility of 
+robotic in-orbit maintenance as critical enablers for economic viability.  
+ 
+Eric Schmidt, X, 28 April 2025 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- Page 6 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  2 
+ 
+CONTENTS 
+EXECUTIVE SUMMARY ..................................................................................................................... 2 
+REPORT OVERVIEW .......................................................................................................................... 4 
+1 ADVANCEMENTS IN SPACE-BASED DATA CENTRES (SBDCS) ................................................... 5 
+1.1 A brief introduction on computing in space .................................................................... 5 
+1.1.1 Technical building blocks of SBDCs ...................................................................... 7 
+2 THE IN-SPACE COMPUTING & STORAGE ECOSYSTEM .............................................................. 8 
+2.1 Publicly funded initiatives ................................................................................................ 8 
+2.1.1 Europe ................................................................................................................... 9 
+2.1.2 China ................................................................................................................... 10 
+2.1.3 United States of America ................................................................................... 10 
+2.2 Private investment in SBDCs and in-space storage ...................................................... 12 
+2.2.1 Companies pursuing cloud computing in space ................................................ 13 
+2.2.2 Companies pursuing remote storage ................................................................. 17 
+2.2.3 Supporting infrastructure providers ................................................................... 19 
+2.2.4 Other notable experiments and industrial partnerships for edge 
+computing in space ............................................................................................ 22 
+3 THREE FACTORS DRIVING SBDC DEVELOPMENT .................................................................... 25 
+3.1 Economic: Global surge in data generation and demand ............................................ 25 
+3.1.1 The strain on terrestrial data centres ................................................................ 26 
+3.1.2 Energy is a binding constraint .............................................................................27 
+3.1.3 AI workloads are exerting immense pressure .................................................... 28 
+3.1.4 Increase of in-space data generation ............................................................... 28 
+3.1.5 A continue drop in launch costs may make hosting AI data centres 
+competitive ......................................................................................................... 29 
+3.2 Environmental: Increase scrutiny over terrestrial data centre resource use ................ 31 
+3.2.1 Energy use is increasing ..................................................................................... 31 
+3.2.2 Cooling and byproducts ..................................................................................... 31 
+3.2.3 For environmental purposes, relocation to orbit is already considered 
+viable today ........................................................................................................ 32 
+3.3 Sovereign: Concerns around data location and control ................................................ 33 
+3.3.1 Extending the basis for EU’s sovereign cloud offering to space ....................... 34 
+4 THE PERCEIVED CHALLENGES OF SBDC DEPLOYMENT .......................................................... 35 
+4.1 Cost of launch ................................................................................................................. 35 
+4.2 Power and thermal management .................................................................................. 36 
+4.3 Scale, in-orbit servicing, and robotic maintenance ....................................................... 37 
+
+--- Page 7 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  3 
+ 
+4.4 Radiation shielding .......................................................................................................... 37 
+4.5 Other challenges ............................................................................................................. 38 
+ANNEX A: A COST MODEL FOR SPACE-BASED DATA CENTRES ................................................... 39 
+High level assumptions ............................................................................................................ 39 
+Summary of the SBDC Cost Model ........................................................................................... 39 
+Architecture ............................................................................................................................... 40 
+Results and Discussion ............................................................................................................. 42 
+ACKNOWLEDGMENT ...................................................................................................................... 49 
+AUTHORS........................................................................................................................................ 50 
+CO-AUTHORS ................................................................................................................................. 50 
+EDITOR............................................................................................................................................ 50 
+ 
+  
+
+--- Page 8 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  4 
+ 
+Report Overview 
+In Chapter 1 we lay the groundwork with a primer on 
+computing in space.  We introduce the advancements 
+in space-based data centres (SBDCs) before heading 
+into Chapter 2 . Chapter 2,  the in -space computing 
+and storage ecosystem  provides an industry 
+landscape review of today’s growing investment into 
+the sector, and profiling both privately funded 
+initiatives in orbital cloud computing, remote storage, 
+and supporting infrastructure, as well as publicly 
+funded projects. 
+Chapter 3 then zooms in on the drivers of SBDC 
+development, focusing on economic imperatives, 
+environmental pressures, and sovereignty concerns 
+tied to data centre development and its push towards 
+space. To balance, Chapter 4, an industry perspective 
+provided by industry experts, highlight s the 
+commercial opportunity, while also benchmarking the 
+costs of space -based versus terrestrial Tier IV data 
+centres, identifying enabling technologies and 
+acknowledging technical barriers. 
+Developed by TUM, within Annex A we offer a cost 
+model for SBDCs , setting out assumptions and 
+architectural considerations, before benchmarking 
+monolithic and constellation -based SBDC designs to 
+terrestrial data centres.  
+Upon request  the reader may gain access to the 
+technical derivation of the complete cost model , 
+detailing assumptions, methodologies, and 
+comparative results for terrestrial and space -based 
+data centres under different scenarios. 
+Figure 2: Render of ASCEND Data Centre in 
+orbit. (Source: Thales Alenia Space) 
+
+--- Page 9 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  5 
+ 
+1 Advancements in Space -Based Data Centres (SBDCs)  
+The compounding rise of data  generation in orbit, with increasing energy and environmental 
+resource scarcity on Earth for compute-demanding applications, is driving interest towards the 
+development of SBDC concepts and first real-world demonstrations. While significant technical, 
+economic, and operational challenges remain, accelerated efforts towards some of them are 
+clearly visible. SBDCs are considered a relevant candidate for investment in the unfolding AI 
+revolution, whereby the data centre market is expected to reach a CAGR of 11.2% between 2025 
+and 2030, and annual investments in data centre and cloud infrastructures to reach €247 billion 
+by 2028.1  
+This opening chapter provides an overview of the perimeter addressed by the report , and 
+provides a simple explanation of applications covered herein, targeting non-expert readers. 
+1.1 A brief introduction on computing in space 
+The term SBDCs in this report is used as a catch-all phrase for a number of operational concepts 
+addressing in-space cloud computing, edge computing, and data storage applications. The 
+report does not address data relay systems or communications networks.  
+ 
+Figure 3: Applications within the scope (blue) and outside (grey) the scope of the report. 
+In-space cloud computing  is categorised by the positioning of server infrastructure in orbit , 
+which then handle data processing for third parties. Constellations are being developed to build 
+a network of satellites forming a distributed computing infrastructure that can match services as 
+offered on Earth. Equally, monolithic architectures are being proposed resembling space stations 
+that host server racks to the benefit of paying users in orbit.  
+Relatedly, t oday in space, 
+latency is reduced by bringing 
+processing power closer to 
+the data source in a process 
+called edge computing.  
+Typically involving smaller 
+computing units integrated 
+within the satellites, edge 
+computing in space is 
+especially suited for 
+applications requiring rapid 
+decision-making and allows 
+circumventing typical SWAP 
+(size, weight and power) constraints.  AI is increasingly being integrated into edge computing 
+ 
+ 
+1 Arizton. Data Center Market – Global Outlook & Forecast 2023-2028, June 2023. (Link) 
+Edge ComputingIn-space cloud computing Data Storage
+ Data Relay & 
+Networks
+Figure 4: A concept for an edge computing device attached to an orbital 
+space station as envisioned by Sophia Space. (Source: Sophia Space) 
+
+--- Page 10 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  6 
+ 
+architectures in orbit, enabling greater autonomy and efficiency in space operations. By 
+embedding AI capabilities directly within satellites and spacecraft, data can be processed and 
+interpreted in situ, reducing reliance on ground -based analysis and alle viating pressures on 
+limited downlink capacity. Initiatives highlight the breadth of applications: NASA’s rovers employ 
+AI-driven navigation and target recognition systems; the European Space Agency’s Φ-Sat 
+missions demonstrate the ability to filter out cloud-obscured imagery and detect critical events 
+such as wildfires; and commercial actors such as Spire Global are incorporating AI to deliver 
+near-real-time insights from Earth observation data.2 
+This is particularly relevant in view of significant downlink bottlenecks caused by both the limited 
+bandwidth available and ground segment capacities. Earth Observation (EO) satellites send data 
+to ground stations for processing, of which they are in view for only a few minutes per orbital 
+pass. Radio frequency (RF) link technology used to downlink data only enables a transmission of 
+around 60Mbps, while SAR platforms gather between 1 -2Gb for each orbital pass. 3 Although 
+systems like the European Data Relay System (EDRS) can  provide data relay services to LEO 
+satellites for up to 1.8Gbit/s, 4 when scaled up to constellation s and considering technological 
+progresses being made in sensors, data collection grows exponentially and only a very limited 
+amount can therefore be effectively downlinked  and used .5 Analysis regarding the 10K, 
+hyperspectral frames captured by Landsat 8 estimates the ground segment to be only able to 
+capture 2% of the total image data collected.6 While downlink is optimised via data prioritisation, 
+platforms operating without in-orbit edge processing capabilities still transmit both high-value 
+and low-value data. Figures for Landsat 8 reveal about a third of high-value data, with the rest 
+being typically characterised by low-value data.7 Similarly, for Sentinel-2, only 28% of potentially 
+observable flood events are indeed observed with the low percentage being attributed to cloud 
+cover.8 In-orbit edge computing capabilities are thus used to reduce the pressure on downlink 
+capacities through refined processing and selection of high-value data. 
+Remote storage in space refers to the creation of physically remote data storage solutions, such 
+as on the Moon  or in-orbit for added security or redundancy. Terrestrial storage solutions are 
+quickly showing signs of struggle in keeping pace with the accelerated growth in global data 
+creation. Estimates of global data creation are set to reach more than 400 zettabytes by 2028 
+(400 billion terabytes), and a recent Raconteur infographic asserts that 463 exabytes of data (463 
+million terabytes) will be generated every day over the next two years. 9,10 Terrestrial storage 
+infrastructure is struggling to keep up, as the demand for physical space and energy grows for 
+companies managing petabytes of data daily. This shift to in -space remote storage not only 
+offers a resilient, high -capacity solution capabl e of operating in extreme conditions but also 
+ 
+ 
+2 Max Polyakov, AI in Space: Projects Currently under Development, August 2025. (Link) 
+3 Avalanche Technology. The Fluidity of Data in Space – Chapter 2: “Data Storage Needs Grow Astronomically in Orbit – Now what? 
+You are going to use the power of the sun to Store the data? (Link) 
+4 Calzolaio, F. Curreli, J. Duncan, A. Moorhouse, G. Perez, S. Voegt. EDRS-C – The second node of the European Data Relay System is 
+in orbit. Acta Astronautica, December 2020. (Link) 
+5 Bradley Denby et all. “Kodan: Addressing the Computational Bottleneck in Space”. In Proceedings of the 28th ACM International  
+Conference on Architectural Support for Programming Languages and Operating Systems, Volume 3 (ASPLOS ’23), March 25–29, 
+2023, Vancouver, BC, Canada. ACM, New York, NY, USA. (Link) 
+6 Ibid. 
+7 Ibid. 
+8 A., Mondini, A. C., and Camici, S.: Effectiveness of Sentinel-1 and Sentinel-2 for flood detection assessment in Europe, Nat. Hazards 
+Earth Syst. August 2022. (Link) 
+9 Statista. Data growth worldwide 2010-2028 (Link) 
+10 Recountour. A Day in Data (Link) 
+
+--- Page 11 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  7 
+ 
+alleviates pressures tied to electricity use and real estate on Earth. With several initiatives 
+underway, both established players and start-ups are actively exploring this opportunity. 
+Satellite network relay systems and telecommunication satellite constellations are considered 
+out of scope for this report as they primarily address data transmission challenges rather than 
+in-orbit processing or storage. Relay systems, such as EDRS, extend connectivity between 
+satellites and ground stations, while large -scale telec ommunication constellations focus on 
+global internet coverage and bandwidth provision. Although both play an important role in 
+mitigating downlink bottlenecks, their core function lies in enhancing communication pathways 
+rather than enabling on-board computing, in-orbit processing, or data storage capabilities. Since 
+the focus of this report is on in -space cloud computing and remote storage , i.e., where 
+computational tasks and data management occur directly in orbit to reduce latency, optimise 
+bandwidth usage, and expand capacity , transmission-focused infrastructures fall outside the 
+defined scope of analysis. 
+1.1.1 Technical building blocks of SBDCs 
+To achieve viable SBDC, a reduction in costs and  a number of  technological developments of 
+several key technical building blocks need to materialise, with the key technical building blocks 
+presented below: 
+  
+Figure 5: T echnical building blocks necessary to the development of viable space-based data centres (Credit: Edge Aerospace) 
+Communication systems represent a significant hidden cost. As launch and infrastructure costs 
+fall and considering the broader ecosystem SBDCs are to be embedded within, space-to-ground 
+communications are to become more dominant in the equation.  
+Besides the necessary funding and technological developments, efforts towards SBDCs will have 
+to grapple against the continued development of terrestrial data centre infrastructure in its own 
+attempt to rein in costs. Nonetheless, capturing a mere 1% of the estimated €650 billion terrestrial 
+data centre market would represent an attractive opportunity for the space sector. 
+Technical Building Blocks
+Essential components for viable SBDCs
+On-board processors
+Radiation resistance
+Thermal systems
+Efficient heat radiation
+Communication systems
+Small, efficient, standardised and 
+adaptable terminals for relay 
+constellations or ground stations
+Batteries
+Enabling orbital longevity and 
+flexibility
+Power systems
+Large, light, cheap, and resistant 
+solar arrays
+Spacecraft
+Should act as power collector and heat 
+dissipator, with objective of 80% in power-
+to-payload and mass-to-compute ratios
+
+--- Page 12 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  8 
+ 
+2 The In-Space Computing & Storage Ecosystem  
+Recent years have witnessed the transition of SBDCs into a n area of tangible industrial and 
+programmatic development. This transformation is evidenced by a growing cohort of private 
+companies supported by venture capital, partnerships with and among established aerospace 
+and technology companies, and the initiation of state -backed programmes across North 
+America, Europe, and Asia . This chapter attempts to provide a comprehensive review of the 
+current SBDC landscape.  
+ 
+Figure 6: Private SBDC and cloud computing venture ecosystem map. 
+2.1 Publicly funded initiatives 
+Publicly funded developments form important testbeds for lower technology readiness level (TRL) 
+technologies in the space while also linking to broader strategic policy considerations. In Europe 
+for example, the ASCEND project is linked directly to the EU’s Green Deal and digital sovereignty 
+objectives. Across Europe, North America, and Asia, governments are funding missions that 
+demonstrate the operational potential of high-performance edge processing in orbit or go as far 
+as funding the development for precursors of  large-scale orbital supercomputing capacity.  
+Beyond AI applications in space (edge computing), this section highlights publicly funded space-
+based computing architecture that may one day form the backbone of national SBDC projects. 
+In-Space Cloud 
+Computing
+Remote 
+Storage
+In-Space Cloud Computing includes satellite-as-a-service application hosting. 
+Only companies in lead of projects are depicted. Non-exhaustive.
+Supporting 
+Infrastructure
+
+
+--- Page 13 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  9 
+ 
+2.1.1 Europe 
+ASCEND or Advanced Space Cloud for European Net zero emissions and Data sovereignty, was 
+a research project launched in 2023 funded by the European Union to the tune of €2 million under 
+Horizon Europe. The consortium was led by Thales Alenia Space and comprised of major players 
+in relevant domains: Carbone 4 and Vito for environmental analysis, Orange, CloudFerro, and HPE 
+for data centres architecture and cloud computing, Airbus Defence and Space and DLR for space 
+systems development, and ArianeGroup for launchers. 
+The goal of the proposed study is to demonstrate that placing future data centre capacity in 
+orbit, using solar energy outside the Earth’s atmosphere, will substantially lower the carbon 
+footprint of digitalisation. Space data centres could therefore becom e an active contributor to 
+the European Commission’s (EC) Green Deal objective of carbon neutrality by 2050, which would 
+justify the investment required to develop and install such a large space infrastructure system. 
+Curbing the energy and environment impacts of data centres could kick-start major investments 
+within the framework of the  EU Green Deal , potentially justifying the development of a high -
+capacity, eco-designed and reusable launcher.  
+The results of the study offer several insights: The flagship endeavour, apart from generating 
+jobs and critical expertise in data centre  domains, could strengthen European digital 
+sovereignty, ensuring data security for European citizens and businesses. Contingent upon the 
+development of a launch vehicle ten times less emissive over its entire lifecycle, deploying the 
+infrastructure in space would also reduce the carbon footprint of the continent’s data processing 
+efforts. When considering the target of a 1GW deployment before 2050, ASCEND validates the 
+project’s economic viability and advances a return on investment of several billion euros by 2050. 
+From a technical perspective, synergies have been found regarding the assembly of the 
+infrastructure with the European Commission EROSS IOD (European Robotic Orbital Support 
+Services In Orbit Demonstrator - also led by Thales Alenia Space), which will seek to demonstrate 
+in-space servicing operations such as rendezvous, capture, or docking, and is planned for a first 
+mission in 2026.11 
+ 
+ 
+ 
+11 ASCEND. Advance Space Cloud for European Net zero Emission and Data sovereignty. Horizon Europe, January 2023. (Link) 
+Figure 7: ASCEND Data Centre in Space architecture. (Source: ASCEND Cloud in Space) 
+
+--- Page 14 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  10 
+ 
+2.1.2 China 
+China is fielding a purpose-built, in-space computing network through 
+ADA Space’s Star Compute program me, whose first tranche of 12 AI 
+computing satellites launched on May 14, 2025, aboard a Long March-
+2D from Jiuquan. The batch inaugurates the Three -Body Computing 
+Constellation, a planned 2,800 -satellite mesh that shifts heavy 
+processing from ground to orbit to cut downlink bottlenecks and 
+latency. Early specs published by the programme cite ~744 TOPS per 
+satellite, ~5 POPs combined for the first cluster, optical inter-satellite 
+laser links up to 100 Gbps, and ~30TB networked storage in this initial 
+node.12,13 The architecture is explicitly framed as in -orbit “edge” supercomputing. Roadmap 
+materials target ~1,000 POPs at full build-out.14 
+ADA Space (also known as Chengdu Guoxing Aerospace Technology Co., Ltd.) leads spacecraft 
+design and integration and publicly unveiled Star Compute in late 2024; the May 2025 mission is 
+designated “021” (“zero-to-one”), marking the programme’s operational start. Zhejiang Lab co-
+leads the constellation concept and in -orbit AI stack, describing the system as a thousand -
+satellite-scale space computing infrastructure . The latter is a research institute established 
+jointly by the Zhejiang Provincial Government, Zhejiang University, and the Alibaba Group. 
+CASC provided the launch capability. Programme communications also reference support from 
+regional innovation zones (e.g., Neijiang High-tech Zone) for industrialisation.  
+China’s approach emphasi ses on -board inference, filtering, compression, and cross -link 
+aggregation so that only refined products are downlinked. The first satellites demonstrate laser 
+cross-links to form an orbital compute mesh and carry a CAS National Astronomical 
+Observatories/Guangxi University X-ray polarisation detector for rapid transient detection (e.g., 
+GRBs), showcasing multi-mission, AI-assisted processing on orbit.15 
+2.1.3 United States of America 
+When it comes to high performance computing in space, the International Space Station in 2017 
+saw the arrival of the Spaceborne Computer-1 (SC-1). Designed by Hewlett Packard Enterprise 
+(HPE) as an experiment with NASA, the edge computer’s hardware was unmodified and therefore 
+publicly expected to run for about four days. It however performed for a year and a half, returning 
+to Earth in June 2019, after having executed benchmark tasks, nominally recovered from 
+anomalies, and opened way for supercomputing operations aboard the Station.  The second 
+iteration of the machine, Spaceborne Computer -2 (SC-2), arrived at the ISS and was set up in 
+May 2021, boasting double the computing power, equipped with HPE’s Edgeline ruggedise d 
+system, and was successfully connected to Microsoft’s Azure cloud.16  
+ 
+ 
+12 TOPS – Tera Operations Per Second i.e. trillions of operations of a system performed in one second. POPs – Point of Presence, refers 
+to a physical location, or node, where two or more different networks or communication devices share a connection. 
+13 Wes Davis. China begins assembling its supercomputer in space. The Verge, May 2025. (Link) 
+14 Andrew Jones. China launches first of 2,800 satellites for AI space computing constellation. SpaceNews May 2025. (Link) 
+15 Ben Turner. China is building a constellation of AI supercomputers in space — and just launched the first pieces. Live Science, June 2025 (Link) 
+16 ISS National Laboratory. “New T echnology Demonstration and Facility Installed on the Space Station to Enable Future Research.” (Link) 
+Figure 8: Logo of the launch 
+mission (Source: Zhejiang Lab) 
+
+--- Page 15 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  11 
+ 
+Spaceborne Computer -2 is able to run 
+machine learning models capable of swiftly 
+processing images to identify, for instance, 
+damage to astronaut equipment, or analyse 
+experimental data, allowing to reduce the 
+amount of information that needs to be 
+transmitted back to Earth - a process that 
+can take weeks or months, in the case of 
+unprocessed gigabytes, due to limited 
+bandwidth.17  
+Microsoft and NASA have conducted 
+experiments using the HPE SC-2 and Azure 
+cloud to sequence DNA data from 
+astronauts’ blood samples collected in the 
+ISS. It enables NASA to monitor the consequences of exposure to radiation on astronauts. Gene 
+sequencing is generating a large amount of data that needs to be compared against a large 
+database. HPE SC-2 is able to conduct in-orbit data processing of the gene sequences and only 
+offload data containing anomalies or selected interesting bits to HPE ground station , which is 
+then sent to Microsoft’s Azure cloud. 
+  
+ 
+ 
+17 Microsoft Azure. “Genomics testing on the ISS with HPE Spaceborne Computer-2 and Azure, 18 August 2021.” (Link) 
+Figure 9: Hewlett Packard Enterprise's Spaceborne 
+Computer-2 onboard the ISS. (Source: NASA) 
+
+--- Page 16 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  12 
+ 
+2.2 Private investment in SBDCs and in-space storage 
+In this section w e examine the global investment landscape, highlighting the extent of venture 
+capital and industrial engagement since 2020  by profiling leading privately funded initiatives. 
+These include ambitious orbital infrastructure projects such as Starcloud’s gigawatt-scale SBDC 
+concept, lunar-based storage solutions pioneered by Lonestar Data Holdings and integrated in-
+space cloud services advanced by LEOcloud and OrbitsEdge. Larger industrial players, such as 
+Axiom Space in partnership with AWS and Microsoft, and Space Compa ss in Japan, are also 
+assessed for their role in bringing commercial credibility and scale to the sector. The chapter 
+further outlines the contributions of enabling technology providers such as Skyloom, 
+Ramon.Space, and Loft Orbital, whose innovations in optical communications, hardened 
+computing hardware, and modular platforms can form key enablers for SBDC deployment. 
+Since 2020, nearly €70 million in private capital has been invested into SBDCs across 13 deals, 
+spiking in 2023 with €30 million raised for the year. 18 Ramon.Space, StarCloud, and Lonestar 
+constitute the top three companies that have raised capital to that purpose specifically.  
+ 
+ 
+18 ESPI In-house Space Venture Database 
+0
+1
+2
+3
+4
+5
+€-
+€5 
+€10 
+€15 
+€20 
+€25 
+€30 
+€35 
+2020 2021 2022 2023 2024
+Millions
+Sum of Deal Value (€) Number of Deals
+€ 180,000
+€ 15,624,000
+€ 6,000,000
+€ 30,607,955
+€ 12,785,450
+2020 2021 2022 2023 2024
+€ 0
+€ 10,000,000
+€ 20,000,000
+€ 30,000,000
+€ 40,000,000
+€ 50,000,000
+€ 60,000,000
+€ 70,000,000
+In-Space Computing
+Remote-storage
+Supporting 
+infrastructure
+Figure 10: VC investments into pure-play SBDC ventures since 2020. 
+Figure 11: Top private VC deals in SBDCs since 2020 
+
+--- Page 17 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  13 
+ 
+2.2.1 Companies pursuing cloud computing in space 
+Almost 30 private companies are identified to pursue development into SBDCs primarily split 
+between cloud computing services in space or ultra remote storage offerings . The U.S. invests 
+almost 10x more private capital into SBDC initiatives than Europe. The following section 
+highlights some private ventures looking into pure -play SBDCs or directly working with pure -
+SBDC ventures as a significant business line. The companies follow no particular order, and 
+include both recent additions, as well as some companies who are by now largely inactive, but 
+targeted the market over the past 5 years.  
+Starcloud 
+Starcloud, formerly Lumen Orbit, plans the 
+deployment of a modular 5GW data centre to Sun-
+synchronous orbit (SSO), benefitting from 
+uninterrupted solar power generation through a 
+plane which remains perpendicular to the Sun’s 
+direction year-round and reduced material fatigue.19 
+The data centre would sit at the centre of a 4 × 4 km 
+solar array made of low-cost silicon cells. A major 
+challenge is array deployment and maintaining 
+orientation of such a large structure.  Thermal 
+management is another significant challenge . 
+Starcloud is designing giant deployable radiators 
+designed to absorb heat waste away from the 
+compute modules through cooling loops, dissipating 
+gigawatts of thermal load . Starcloud aims at 
+deploying a first commercial satellite, Starcloud-2, in SSO by 2027 pending on their demonstrator 
+satellites, Lumen-1 is to be launched into LEO in 2025. Designed around a GPU cluster, it would 
+enable heavy processing of space -
+based data before beaming back 
+refined insights to Earth, therefore 
+avoiding large, bandwidth -heavy 
+transmissions. The startup signed a 
+MoU in January 2025 with Archangel 
+Lightworks, a company developing 
+optical communicati on systems, to 
+integrate their TERRA -M ground 
+station with Starcloud’s SBDC for 
+rapid and enhanced processing and 
+provision of EO  insights.20 Optical 
+communication systems offer the 
+advantage of not being subject to regulation, as opposed to most traditional and restricted 
+methods like radio spectrum. Starcloud also plans to mitigate impacts on astronomy by adhering 
+to International Astronomical Union guidelines for Dark and Quiet Skies.  
+ 
+ 
+19 Starcloud. Why we should train AI in space - White Paper. September 2024 (Link) 
+20 Archangel Lightworks. “Starcloud and Archangel Lightworks Sign MOU to Reshape Earth Observation with Space -Based Data 
+Centres.” January 2025 (Link) 
+ 
+Company type 
+Startup, venture-capital backed 
+Funding to date 
+EUR 25.96 million 
+Challenges investigated 
+Deployable infrastructure, mega 
+structures and robotic assembly, SSO 
+thermal management, in-space 
+maintenance 
+Figure 12: Stacloud compute container schematic. (Source: 
+Starcloud) 
+
+--- Page 18 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  14 
+ 
+ 
+OrbitsEdge 
+OrbitsEdge is exploring the deployment of a multi -
+orbit data centre constellation called Astraeus. The 
+distributed architecture will see a small number of 
+data centres in GEO store data acquired from a 
+larger LEO constellation, which would also serve as 
+a processing platform and low -latency relay for 
+distribution back to Earth.21 OrbitsEdge’s processing 
+power relies on COTS components, HPE’s EL8000 
+servers, with whom it signed an agreement in 2019,22 
+and which it encased in an in -house designed 
+hardened satellite bus, SatFrame. 23 SatFrame also 
+features the data centre’s cooling system, built 
+around a chassis and radiators and which enables 
+protection against radiation.24 Power is provided by 
+a large array of solar panels. OrbitEdge assumes however a different choice of orbit than SSO, 
+which would see the structure pass in Earth’s shadow, and therefore integrates a battery pack. 
+The company hoped for an initial satellite in orbit by 2021, befor e contracting with Vaya Space 
+in 2022 for the launch of the LEO segment by 2023. 25 As of May 2025 however, no launch has 
+occurred, with the next scheduled flights aboard SpaceX Falcon 9 in early 2026. 
+Space Compass 
+Space Compass was established as a joint 
+venture between NTT and Sky Perfect JSAT to 
+expand space-based ICT infrastructure. In April 
+2025, NTT and Microsoft claimed a 98% reduction 
+in EO images transmitted were possible by 
+leveraging AI  processing to extract only the 
+vessel information and delete unnecessary data. 
+The space data centre business will aim to 
+provide a high -capacity communication and 
+computing processing infrastructure in space by 
+steadily increasing the number of satellites 
+equipped with adva nced computing functions.  
+The company has finalised a partnership with 
+Skyloom to deliver a first GEO optical relay 
+platform, SkyCompass -1, by 2025, which is to 
+cover the Asia-Pacific region.26  
+ 
+ 
+ 
+21 Ryan Morrison. “Data Centres in Space will Boost Satellite Computing Power and Storage” Techmonitor 3 July 2022 (Link) 
+22 OrbitsEdge. “OrbitsEdge OEM Agreement with Hewlett Packard Enterprise.” 2019 (Link) 
+23 OrbitsEdge. SatFrame™ 445 LE – An Overview. 2024 (Link)  
+24 Ibid 
+25 OrbitsEdge. “Vaya Space and Orbits Edge Enter Into Long-Term Launch Agreement.” 2022 (Link) 
+26 Space Compass. Space Compass and Skyloom Finalize Partnership to Bring Optical Data Relay Services to the Earth Observation 
+Marke. Space Compass, January 2023. (Link) 
+ 
+Company type 
+Startup, venture-capital backed 
+Funding to date 
+EUR 0.18 million  
+Challenges investigated 
+Space radiation and thermal 
+management, multi-orbit data transfer 
+ 
+ 
+ 
+Company type 
+Established, joint venture (NTT & Sky 
+Perfect JSAT) 
+Funding to date 
+Undisclosed 
+Challenges investigated 
+Secure, high-bandwidth, low-latency 
+transmission; line-of-sight downlink 
+limitations 
+
+
+--- Page 19 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  15 
+ 
+LEOcloud 
+LEOcloud seeks to provide an integrated, end -to-
+end solution for space cloud services to private and 
+public customers. It identifies barriers caused by the 
+terrestrial exploitation of space-based data, which 
+can potentially hinder technical research and th e 
+success of missions leveraging said data. Likewise, 
+the sheer amount of unprocessed data being 
+transmitted back to Earth limits one’s ability to 
+leverage information due to its limited shelf -life 
+relevance. The startup provides little detail on its 
+architecture but puts forward the use of a “scalable 
+space-hardened micro datacentre” to offer a 
+“seamless cloud presence between Earth and 
+space” and allow hyperscalers to expand their 
+services into orbit. 27 In 2021, LEOcloud  signed several partnerships with Leaf Space, Exodus 
+Orbital, and Ramon.Cloud, to accelerate development of the technology and look into 
+deployment of hosted applications. In 2022, it announced cooperation with Axiom and Microsoft 
+for installing infrastructure aboard Axiom’s Station which would allow in -space deployment of 
+the Azure Space’s cloud computing platfo rm. I n May 2024, further progress provided the 
+opportunity to install its Space Edge virtual data centre on the ISS by the end of 2025. On April 
+3, 2025, Voyager announced its intention to acquire the startup.28 
+mu Space Corp 
+mu Space Corp is developing its Space Internet Data 
+Centre (Space IDC) infrastructure, made up of 
+“modified server computers and communication 
+systems”29 targeting both Earth -orbit and surface 
+applications. Notably , looking into material 
+endurance, the company undertook a strength 
+resistance test using a projectile with a speed 
+matching that of a space debris .30 The launch was 
+meant to occur in 2022. The same year, mu Space 
+Corp signed an MoU with Cloud Constellation 
+Corporation to supply small satellites enabling the 
+latter’s project SpaceBelt of data storage in space.31 
+ 
+ 
+ 
+27 LEOcloud. Our Value. (Link) 
+28 Debra Werner. “Voyager Technologies to acquire LEOcloud” . SpaceNews, 3 April 2025 (Link) 
+29 mu Space. Space Internet Data Center (Link) 
+30 mu Space. mu Space uncovered plan to push Thai technology into space industry. September 2020 (Link) 
+31 mu Space. Mu. “Space and SpaceBelt have signed an MoU and together developing the proof of concept and constellation system 
+for SpaceBelt’s Data Security-as-a-Service.” September 2022 (Link) 
+ 
+ 
+ 
+Company type 
+Startup, acquired 
+Funding to date 
+Acquired by Voyager in April 2025 
+Challenges investigated 
+Barriers caused by terrestrial 
+exploitation of space data; short data 
+shelf-life relevance; material hardening 
+ 
+Company type 
+Startup, venture-capital backed 
+Funding to date 
+EUR 35.07 million  
+Challenges investigated 
+Material resistance 
+
+
+--- Page 20 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  16 
+ 
+Nebula Compute 
+Nebula Compute is developing space -based cloud 
+computing platforms called ServerSats to support 
+government, blockchain, and cyber use cases. Set to 
+launch in 2027, the data centres will leverage the 
+vacuum of space for cooling and use solar and 
+nuclear for  powering. AI and machine learning 
+algorithms will be integrated to allow pre -
+processing and enable faster insight acquisition for 
+customers by reducing reliance on terrestrial 
+centres.32 In 2023, Nebula secured a Phase Two 
+contract from the U.S. Air Force innovation arm 
+(AFWERX) to advance security -relevant on -orbit 
+computing for the future Space Force architecture.33 
+No details on ServerSats’ readiness progresses 
+could be found. 
+ 
+Sophia Space 
+Sophia Space recently emerged from  stealth in 
+2025. The company’s modular TILE platform (1m 
+x1m x1cm) is designed to enable data processing, 
+AI acceleration, and edge computing for satellites, 
+defence systems , and commercial space 
+stations.  The solid -state, self -sustaining 
+computing modules include a  radiation tolerant 
+integrated back panel and radiator panel exposed 
+to space enabling cooling , as well as integrated 
+solar power , without affecting the motherships 
+power or thermal allocations . The offering is 
+vendor agnostic and envisioned to be “tacked-on” 
+to existing and upcoming satellite buses.34  
+  
+ 
+ 
+32 Nebula Media. Space Without Limits: Your Place in Space. September 2022 (Link) 
+33 Newswire. “Nebula Compute Awarded Space Force Contract for On -Orbit Computing Capabilities in Space Force Architecture.” 
+November 2023 (Link) 
+34 Sophia Space. (Link) 
+ 
+Company type 
+Startup 
+Funding to date 
+EUR 1.7 million 
+Challenges investigated 
+On-orbit computing cyber security 
+ 
+ 
+Company type 
+Startup, venture-capital backed 
+Funding to date 
+EUR 2.71 million 
+Challenges investigated 
+Data processing latency 
+Figure 13: A rendering of an orbital data centre and TILE platform from Sophia 
+Space. (Source: Sophia Space). 
+
+
+--- Page 21 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  17 
+ 
+2.2.2 Companies pursuing remote storage 
+These ventures pursue the development of ultra -remote secure storage solutions in orbit or on 
+the Moon.  
+Lonestar Data Holdings 
+Lonestar Data Holdings aims at establishing the first 
+data centre on the Moon, leveraging its environment 
+to use it as a platform for secure and critical data 
+infrastructure. The successful demonstration of their 
+Independence virtual data centre payload in 
+February 2024 marked a breakthrough, showcasing 
+operation and data retrieval from both Cislunar 
+space and the Lunar surface. The forthcoming 
+Freedom Payload, anticipated as the first physical 
+data centre on the Moon, seeks to redefine disaster 
+recovery and data processing capabilities in space. 
+According to the company’s press release, this 
+represents the first purpose -built data centre off 
+planet. The Freedom Payload carries 8TB worth of 
+data, from the State of Florida’s government records to business and cultural data originating 
+from several private companies and organisations, indicating potential institutional and market 
+demand and strong confidence in Lonestar’s technological offerings. Its architecture is built for 
+Lonestar by its contractor, Skycorp Inc., equipped with a storage device supplied by Phison, and 
+powered by a RISC V processor from Microchip, 
+running a speciali sed version of Linux. The 
+integrated system was thus delivered to Intuitive 
+Machines at their Houston facility in December 
+2023 after having undergone and passed a series 
+of rigorous space flight qualification tests.  
+Following the off -site landing and subsequent 
+tumble of IM -2 Athena on March 6, 2025, 
+Lonestar reported that its data centre was the 
+sole surviving payload and is therefore expected 
+to report on progress made. 35 The voyage itself 
+allowed the testing of key technologies such as 
+file downloads and uploads, processing tasks for 
+customers like Valkyrie AI and the Exploration 
+Institute, and also material resistance tasks regarding power, temperature, and CPU 
+management.36  
+ 
+ 
+ 
+ 
+ 
+35 Ryan Burkett. “Lunar data center intact despite lunar lander's botched landing, St. Pete company says” FOX 13 Tampa Bay, March 
+2025 (Link) 
+36 PRNewswire. “Lunar Data Center Achieves First Success En Route To The Moon” March 2025, (Link) 
+ 
+ 
+ 
+Company type 
+Startup, venture-capital backed 
+Funding to date 
+EUR 5.87 million  
+Challenges investigated 
+Space hardening, error correction, ultra 
+remote storage and retrieval, data 
+recovery 
+Figure 14: Odysseus lander in orbit above the moon 
+with the Lonestar Independence payload aboard. 
+(Source: Intuitive Machines) 
+
+--- Page 22 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  18 
+ 
+Cloud Constellation Corporation 
+Cloud Constellation Corporation is developing 
+SpaceBelt, a LEO, high-speed “global cloud storage 
+network of 10 space-based data centres.” By storing 
+and “isolating” data in space, the company seeks to 
+ensure data integrity for organisations, hence 
+achieving the “ultimate air gap security” and 
+coining their “Data Security as a Service”. 37 To 
+provide the service, SpaceBelt hopes to leverage a 
+complete architecture to offer secure storage and 
+global connectivity, with ground -based secure 
+terminals, GEO spacecraft for global coverage, and 
+the aforementioned LEO satellites for fast data 
+retrieval. Cloud Constellation Corporation was in 
+talks for a €72 million Series B round, led by HCH 
+Group from Hong Kong but ultimately cancelled. 38 It also tied several partnerships in the last 
+months of 2020, including with Australia-based cybersecurity technology developer Red Piranha, 
+Singapore Space and Technology, or Fintech -solutions provider MindCraft, but has gone silent 
+since.  
+ 
+LyteLoop 
+LyteLoop offers a model where “data storing is 
+technically always in transit between satellites”, 
+through ultra-high bandwidth lasers that allow data 
+to move in an endless circulating loop, helping to 
+increase performance and utili sation and reducing 
+the total cost of ownership by taking up less space 
+and using less electricity. In 2021, the team was 
+expanded to tackle the last remaining challenges on 
+the patented photonic method of data storage and 
+bring it to the market within the next three years. 
+However, as of today, three years later, the 
+company’s website and LinkedIn profile are no 
+longer accessible. 
+  
+ 
+ 
+37 Cloud Constellation. Cloud Constellation Corporation's SpaceBelt. (Link) 
+38 Caleb Henry. Why Cloud Constellation turned down $100 million. SpaceNews. November 2019 (Link) 
+ 
+ 
+Company type 
+Startup 
+Funding to date 
+EUR 4.5 million 
+Challenges investigated 
+Data vulnerability, fast data retrieval 
+ 
+ 
+  
+Company type 
+Startup 
+Funding to date 
+EUR 33 million 
+Challenges investigated 
+Mass to orbit, photon-based storage 
+
+
+--- Page 23 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  19 
+ 
+2.2.3 Supporting infrastructure providers 
+Tangential to the scope of the report but no less vital, t hese ventures are partners in the 
+development of SBDC and Remote storage infrastructure. They provide the more foundational 
+aspects to ensure an SBDC future is achievable. 
+Edge Aerospace 
+Edge Aerospace is a startup  currently transitioning 
+out of stealth and  developing high -performance 
+space computers for satellites and spacecraft. The 
+company leverages commercial-off-the-shelf CPUs 
+and GPUs, enhanced with advanced fault-tolerance 
+and recovery mechanisms to mitigate radiation -
+induced errors, eliminating the n eed for costly 
+radiation-hardened hardware. Edge Aerospace’s 
+computers run edge AI directly on satellites, 
+enabling real-time data processing and autonomy in 
+orbit. The company has succe ssfully tested its first 
+models in space-like environments and is preparing 
+to launch its inaugural flight units in 2026.  Today, 
+Edge Aerospace is focused on the first critical step 
+on the path to SBDCs: developing affordable, on -
+board computers and communication systems that can be scaled while maintaining the 
+hardware, software, and cybersecurity reliability expected in both spacecraft and Tier IV data 
+centres. 
+Axiom Space 
+As part of the development of their commercial 
+space station, the company has partnered with AWS 
+in April 2022 to launch and install an AWS Snowcone 
+computer on the ISS. The objective of what Axiom 
+calls a “first tranche of orbital data centre 
+capability” (ODC T1) is to provide a degree of “Earth 
+independence”, where collected data could directly 
+be processed aboard the Station. Ultimately, the 
+technology is envisioned to enable rapid feedback 
+on microgravity scientific research and 
+management applications for the company’s 
+customers. A latest partnership was announced  in 
+March 2025 with Red Hat, a provider of open-source 
+solutions.39 The collaboration saw success with Red 
+Hat Device Edge, a platform enabling edge computing on resource -constrained devices, power 
+Axiom’s Data Centre Unit-1, launched to the ISS in spring 2025.  
+ 
+ 
+ 
+39 Axiom Space. “Red Hat Teams Up with Axiom Space to Launch, Optimize the Space Company’s Data Center Unit -1 On Orbit.” 
+March 2025 (Link) 
+  
+Company type 
+Startup 
+Funding to date 
+Undisclosed 
+Challenges investigated 
+Radiation-tolerant computing 
+  
+Company type 
+Scaleup, venture-capital backed 
+Funding to date 
+EUR 500 million  
+Challenges investigated 
+Orbital station; high-bandwidth 
+transmission 
+
+
+--- Page 24 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  20 
+ 
+Skyloom 
+Skyloom is designing an optical, laser -based 
+network to allow data transport in space. The 
+company’s architecture is structured around four 
+pivots and products. First, an inter -satellite link, 
+“V’GER”, will allow high-bandwidth, 1-10 Gbps LEO 
+to LEO commun ications, but also LEO to ground, 
+airborne, and maritime. Then , “SCOTTY”, a user 
+terminal, will allow third -party connections from 
+LEO satellites to Skyloom’s GEO relay satellites. The 
+use of a GEO node permits to bypass rapid orbits of 
+LEO satellites, whi ch lead to reduced 
+communication windows with Earth and prevent 
+LEO satellites from offloading data. These GEO 
+satellites, “UHURA”, orbit at a speed matching 
+Earth’s and therefore allow a constant connection to ground stations. Finally, another terminal, 
+“KIRK”, designed for low -cost and easy integration to existing ground stations, allows data 
+retrieval. The integrated architecture is built on an all -optical communication chain, promising 
+high-capacity data transfer – notably putting a stop to traditional GEO offload latency, with 
+download speeds of 20 Gbps - and increased security over RF terminals. Skyloom entered into a 
+joint venture with Italy-based Officina Stellare, a manufacturer of mechanical optics, to set up a 
+factory in northern Italy and get access to the European market.  
+ 
+ 
+ 
+ 
+ 
+Company type 
+Startup, venture-capital backed 
+Funding to date 
+EUR 27.3 million  
+Challenges investigated 
+Optical inter-satellite data links 
+Figure 15: Axiom render of its ODC-T1 interaction with partners in orbit. (Source: Axiom Space) 
+
+--- Page 25 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  21 
+ 
+Ramon.Space 
+Ramon.Space designs space -resilient computing 
+hardware through three products: NuStream, a 1TB, 
+radiation-hardened storage drive; NuPod, a 
+hardened computing system allowing data 
+processing; and NuComm, a hardened 
+communications processor. These solutions 
+integrate AI and ML algorithms and permit third -
+party software integration, as well as “autonomous 
+operations and onboard analytics” for EO, IoT and 
+remote sensing applications. The company boasts 
+over 50 space missions and hundreds of “compute  
+units” in orbit.40 
+Loft Orbital 
+Loft Orbital develops hardware and software 
+“abstraction layers” on COTS buses which allows for 
+easy customers’ systems integration. The company 
+is also expanding towards virtual missions, where a 
+customer can deploy its software onto Loft’s 
+platform to le verage its onboard subsystems and 
+payloads. This was exemplified with YAM -6, a 
+satellite launched in March 2024 which enables real-
+time data processing through edge computing and 
+Microsoft’s Azure Orbital framework , therefore 
+reducing reliance on ground stations. 41 A year later, 
+Loft Orbital deployed YAM -8, introducing its new 
+Longbow platform of increased SWaP, offering more 
+capacity to run AI applications and “collect and 
+process data at scale” .42 The company teamed up 
+with Little Place Labs in 2024 to advance near real-
+time space analytics by integrating edge computing and low-latency operations into its satellite 
+infrastructure. It also joined forces in 2025 with Helsing to develop Europe’s first AI-driven multi-
+sensor satellite constellation for defence, designed to de liver real -time intelligence and 
+situational awareness.43 Set to launch in 2026, this constellation will operate in LEO, enhancing 
+real-time data processing and transmission through cloud computing.44 
+  
+ 
+ 
+40 Ramon.Space (Link) 
+41 Leandre Berstein. “Loft Orbital Brings Software Developers to Space with Virtual Satellite Missions”. Kratos Defence, 13 December 
+2023 (Link); Loft Orbital. YAM-6: The Rise of the Virtual Missions. November 2023 (Link). 
+42 Loft Orbital. YAM-8: Entering the Longbow Era. February 2025 (Link) 
+43 Loft Orbital. Helsing and Loft Orbital Join Forces to Deploy Europe’s First AI -Powered Multi-Sensor Satellite Constellation for 
+Governmental, Defence and Security Applications. Loft Orbital, 10 February 2025 (Link) 
+44 Ibid. 
+ 
+ 
+Company type 
+Startup, venture-capital backed 
+Funding to date 
+EUR 40 million  
+Challenges investigated 
+Hardened components; SWaP 
+optimising 
+ 
+Company type 
+Startup, venture-capital backed 
+Funding to date 
+EUR 302.82 million  
+Challenges investigated 
+Material resistance 
+
+
+--- Page 26 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  22 
+ 
+2.2.4 Other notable experiments and industrial partnerships for edge computing in space 
+The following are industry partnerships and public-private partnerships that further demonstrate 
+progress on computing in space developments. 
+ESA, KP Labs, OpenCosmos, TAS: Φ-Sat-2 
+ESA in cooperation with Open Cosmos as the prime contractor, supported by an industrial 
+consortium including CGI, Simera, Ubotica, CEiiA, GEO-K and KP Labs, Thales Alenia Space and 
+Microsoft, implemented a project under ESA’s Φ-lab that seeks to enhance satellite autonomy 
+through AI. Named Cognitive Cloud Computing in Space (3CS), it focuses on enabling on-board 
+data processing capabilities that reduce reliance on extensive downlinks of unprocessed data, 
+thereby alleviating bandwidth constraints and shortening the latency between observation and 
+analysis. As the next step, ESA’s Φ-sat-2 satellite, a 6U Cubesat designed and developed by 
+OpenCosmos, launched in August of 2024 and provided a platform for the in -flight uploading, 
+deployment, and updating of third -party ML models. 45 The onboard AI capabilities include 
+selecting images with clear visibility, while discarding images obscured by cloud cover.46  
+NASA, various 
+NASA sports a diverse portfolio of edge computing initiatives, with over two dozen AI projects aimed 
+at enhancing autonomy, efficiency, and scientific return in space missions. These range from rover-
+based systems such as AEGIS, which autonomously selects scientific targets, and Enhanced AutoNav, 
+which enables the Perseverance rover to navigate using 3D terrain reconstruction. To MLNav and 
+Terrain Relative Navigation, both of which employ on-board machine learning and computer vision 
+for safe and efficient path planning. Mission planning and resource optimisation are supported by 
+tools such as ASPEN and CLASP , while SensorWeb and SPOC exemplify the integration of AI into 
+environmental monitoring and soil classification. NASA’s collaborations with industry further extend 
+its capabilities, with projects like Skyline Nav AI demonstrating GPS-independent navigation through 
+advanced computer vision at the lunar surface.47 
+Huawei: Sky Computing Constellation 
+As early as December 2021, Huawei announced that its first cloud-native satellite part of its “Sky 
+Computing Constellation” initiative had been successfully placed into orbit and was operating 
+stably. This satellite was designed to combine both edge and central cloud capabilities directly 
+in space, enabling real -time AI inference, multitasking, and coordinated use of satellite and 
+ground resources. According to test data, this architecture improved computational accuracy by 
+over 50% and reduced the volume o f downlinked data by about 90%, while shrinking analysis 
+latency (for tasks like satellite imagery processing) from a typical ~1 day to ~1 hour.48 
+Sidus Space 
+Recognising the growing demand for real -time insights from orbit, Sidus Space has developed 
+and deployed the FeatherEdge GEN-2 on-orbit edge computer, now fully operational aboard its 
+LizzieSat-3 satellite. Built around NVIDIA’s Jetson Orin NX module, the system delivers up to 100 
+TOPS of AI inference in a compact, radiation-tolerant package designed specifically for low Earth 
+orbit operations. Carol Craig, Founder and CEO of Sidus Space, noted: “By bringing high -
+ 
+ 
+45 ESA. “Φsat-2 begins science phase for AI Earth images.” July 2024. (Link) 
+46 ESA. “ESA continues to explore the value of AI in space in partnership with Thales Alenia Space and Microsoft.” ESA Phi-lab. (Link) 
+47 Max Polyakov, AI in Space: Projects Currently under Development, August 2025. (Link) 
+48 Amy Sarlar. Huawei Cloud gets world’s first cloud native satellite with sky computing constellation in space. Huawei Central, 
+December 2021 (Link). 
+
+--- Page 27 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  23 
+ 
+performance AI to orbit, we reduce the need to downlink massive data sets, allowing customers 
+to access processed, actionable information in near real time.”49 
+The Edge Computing in Space Alliance 
+As early as 2021, several space start-ups and companies founded the “Edge Computing in Space 
+Alliance”, which is a working group that aims at promoting edge computing in space, the 
+Satellite-as-a-Service (SaaS) business model, as well as fostering cooperation between the IT 
+and space sector. The Alliance gathers companies such as Exodus Orbitals, Orbital Transport, 
+ModularitySpace, LEOcloud, Copernicus Space, EXO-Space, Orbits Edge, Skywatch, Spiral Blue, 
+Deploy Solutions, Ramon.Space, KP Labs, Ibeos, Spacelinks, Little Place Labs, Zephyr Computing 
+Systems, 3K SpaceTech, CySec, Pandio, Sfera Technologies, and Skudo.50 
+Amazon, D-Orbit, and Unibap 
+In November 2022, Amazon Web Services, in partnership with Italian space logistics company D-
+Orbit and Swedish AI company Unibap, conducted a 10 -months-long edge computing 
+experiment in LEO.51 The experiment demonstrated how in-orbit processing can enable satellite 
+operators to deal with high volumes of imagery and sensor data before delivering them to the 
+cloud to customers. AWS integrated its suite of ML models and its IoT Greengrass software  for 
+imagery analysis and cloud management onto Unibap’s processing payload, which was then 
+placed on D-Orbit’s ION spacecraft to conduct the experiment. AWS reported a 42% reduction in 
+image size, resulting in faster processing rates and the possibility of real-time analysis. 
+D-Orbit and Planetek Group 
+On April 4, 2025, at Italy’s Ministry of Enterprises and Made in Italy, D-Orbit and Planetek Group 
+announced a strategic business combination. While preserving their operational autonomy, the two 
+companies will integrate their complementary strengths to develop cloud-based applications in 
+space, AI-driven in-orbit data processing, and near-real-time data services. Planetek holds expertise 
+in geospatial analytics and mission software. Their past collaboration includes the AI -eXpress 
+mission, which leveraged artificial intelligence and blockchain to enhance satellite autonomy and 
+data security, enabling low-latency analytics transmitted directly from orbit.52 
+Palantir and Satellogic 
+In April 2022, U.S. data analytics company Palantir partnered with Uruguayan space company 
+Satellogic to integrate the latter’s NewSat platform with Palantir’s Edge AI technology.53 The mission 
+sought to test in-orbit imagery processing in-orbit, and in fine “separating signal from noise in high-
+scale data” to avoid saturating the bandwidth and enable real-time insights acquisition. Palantir’s 
+software was optimised for NVIDIA’s Jetson Platform, which powers Satellogic payload system, and 
+communication was established through Satellogic’s ground station network. Novel solutions to 
+identified challenges and proved capabilities across Edge AI’s deployment consisted of image pre-
+processing to improve model accuracy, fault tolerance design to achieve better data reliability, AI 
+integration with multiple third-party models to improve adaptability, in-orbit upgrade to enhance 
+onboard AI capabilities, and cryptographic mechanisms to augment d ata validation. Several AI 
+models were eventually successfully deployed, capable of identifying vehicles, buildings, clouds, or 
+ 
+ 
+49 Sidus Space. Sidus Space Announces Successful On-Orbit Operation of FeatherEdge™ Gen-2 Aboard LizzieSat®-3. Press Release 
+May 2025 (Link) 
+50 Spacequip. “Edge Computing in Space Alliance is Launched!” November 2021. (Link) 
+51 AWS. AWS successfully runs AWS compute and machine learning services on an orbiting satellite in a first -of-its kind space 
+experiment, November 2022. (Link) 
+52 Emilio Cozzi. “D-Orbit and Planetek Group announce a strategic business combination.” Wired. April 2025. (Link) 
+53 Palantir Blog. Palantir Edge AI in Space, April 2022. (Link) 
+
+--- Page 28 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  24 
+ 
+terrain types, and were able to run sequentially, then processed, to generate precise outputs of the 
+objects of interest to be downlinked. 
+IBM, Red Hat Technology, and EnduroSat 
+In May 2022, American cloud services providers IBM and Red Hat Technology integrated EO and 
+computing payloads onto EnduroSat’s NanoSat. Running on  IBM’s “Endurance” project, the 
+experiment is designed to allow developers and students to host and access data from NanoSat’s 
+sensors, and, by bringing processing closer to collection, saving time and bandwidth. 
+Seagate and Ball Aerospace 
+Recognising the need for robust, space -ready storage solutions, Seagate and Ball Aerospace 
+have signed an MoU to research the development of high-capacity data processing and storage 
+devices suitable for space environments, with a focus on LEO satellite systems applications. Plans 
+are underway to conduct testing of Seagate’s technology aboard a Ball -engineered payload. 
+Mike Gazarik, VP Engineering at Ball Aerospace, said in a statement: “There is a need for on -
+orbit, high-density storage capabilities to meet new mission requirements – in essence space-
+ready storage that works and acts like terrestrial storage. Therefore, we decided to collaborate 
+on a proof-of-concept solution”.54 Devices of today are either performant but fragile, designed 
+for terrestrial applications, or hardened, space -specific, but slow and expensive. Seagate is 
+therefore seeking to design device s that offer both state-of-the-art performances (or close to) 
+and whose manufacturing lay on off-the-shelf, commercially available components. The balance 
+found consists in the use of hardened components solely “where critical or inexpensive” and turn 
+towards “error detection and mitigation techniques” to prevent radiation damages on the other 
+parts of the device.55 
+ 
+ 
+ 
+54 Space Foundation. “Ball Aerospace and Seagate to Collaborate on Data Storage in Space.” July 2022 (Link)  
+55 Seagate. Space-Ready Data Storage Requires Next-Level Innovation. (Link) 
+
+--- Page 29 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  25 
+ 
+3 Three Factors Driving SBDC Development 
+SBDC developments are a consequence of the convergence of three major drivers: economic, 
+environmental, and sovereign. Each dimension lays out challenges experienced by the data centre 
+market for which SBDCs may provide added value and a suitable alternative destination. 
+The expansion of SBDC activities must be understood against the tremendous rise in global data 
+generation and growing demand for data processing. By 2028, total data production is forecast 
+to exceed 400 zettabytes, further accelerated by AI, IoT, and EO applications.  
+Space offers enticing advantages. The continuous 
+availability of solar energy coupled with the ability 
+to process and filter data at source and away from 
+earthly troubles, presents a pathway to both 
+sustainable and resilient infrastructure. As former 
+Google CEO Eric Schmidt warned in testimony 
+before the U .S. Congress, “an additional 67 
+gigawatts of new power generation will be needed 
+for terrestrial data centres by 2030 - equivalent to 
+67 nuclear plants.”56  
+Beyond economics and sustainability, sovereignty considerations add further momentum. In 
+Europe, the dependence on AWS, Azure , and GCP is estimated at over 70%. This discrepancy 
+between high market dependency and the political striving for digital sovereignty represents a 
+central area of tension. Governments and regions, particularly the European Union, increasingly 
+regard cloud and compute capacity as strategic infrastructure subject to regulatory and 
+geopolitical imperatives. Frameworks such as the GDPR, Data Act, and upcoming sovereign 
+connectivity initiatives  like IRIS 2 underscore the desire to secure sensitive data flows under 
+domestic or regional control. Space-based infrastructure presents an extension of sovereign 
+networks offering resilience, trusted connectivity, and sealed environments for critical workloads.  
+Together, these economic, environmental, and sovereignty drivers are pushing towards a reality 
+in which orbital data centres become integral to the global digital ecosystem. 
+3.1 Economic: Global surge in data generation and demand 
+The global data economy is entering a phase of rapid expansion, with creation and processing 
+needs growing at unprecedented rates. Terrestrial data centres and AI workloads dominate 
+current investment, while advances in Earth observation and non -terrestrial networks are also 
+accelerating space -based data generation , significantly increasing the operational costs of 
+space missions.   
+On Earth , cost pressures tied to energy, real estate, and infrastructure are reshaping the 
+economics of data management on Earth.  At the same time, f alling launch costs and 
+breakthroughs in reusable rockets may be opening the door for space -based data centres to 
+become a viable complement to terrestrial infrastructure in high-value markets. 
+ 
+ 
+56 Full Committee: "Future of AI Technology, Human Discovery, and American Global Competitiveness" April 9, 2025 (Link) 
+An estimated 92 % of data produced in the 
+Western world is currently stored in the 
+USA and only 4 % in Europe . Meanwhile 
+European cloud infrastructure companies 
+make up just 15 percent of the intra-
+European market. 
+European Parliamentary Research Service, July 
+2020 & Synergy Research Group, July 2025  
+
+--- Page 30 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  26 
+ 
+Global data creation is expected to grow to more than 394 zettabytes between 2024 and 2028.57 
+Between 2022 and 2024 alone, more data was produced than in all previous human history, with 
+daily volumes surpassing 400 million terabytes. This relentless growth  of the digital economy , 
+increasingly driven by AI workloads, IoT proliferation, but also remote sensing data, is reshaping 
+the economics of data infrastructure.  
+The global terrestrial data centre market in 2024 was valued at €323.25 billion, and expected to 
+reach €534.70 billion in 2030, a CAGR of 8.75% across the period. 58  Investments into the sector 
+are booming: in 2024, Alphabet, Amazon and Microsoft have spent a combined €154 billion in 
+data centre infrastructure, with the figure rising to €397 billion when accounting other players in 
+the sector.59 Despite initial reports of potential oversupply or of a “data centre bubble”, with 
+Microsoft and Amazon cancelling or not renewing leases, others point more towards a 
+recalibration following overcommitment, uncertainties surrounding tariffs, and the speci ficities 
+of the market.60 More recently, OpenAI reportedly plans to invest roughly €340 billion to develop 
+five new U.S. data centre sites, with locations spread across Texas, New Mexico and Ohio. The 
+expansion, in partnership with Oracle and Softbank, marks the biggest push yet to fulfil a pledge 
+to spend half a trillion dollars on  AI 
+infrastructure in the United States. This comes 
+after OpenAI struck a  €85 billion deal with 
+Nvidia in September 2025 to support data 
+centres.61 
+Projections into 2030 shed light on the scale of 
+investments necessary to keep up with data 
+processing demand. Translating demand in GW 
+capacity into capital expenditures, McKinsey 
+expects €5.7 trillion in investment worldwide 
+needed by 2030 , depending on two premises holding: AI is widely adopted, leveraged , and 
+transformed into added-values applications, and the pace of innovation cycles in the technology 
+doesn’t slow down. 62 The figure is mostly driven by AI workloads, which make up €4.4 trillion of 
+the total alone. 
+3.1.1 The strain on terrestrial data centres 
+The terrestrial data centre sector, valued at over €324 billion in 2024, is straining to keep pace. 
+Projections suggest as much as €5.7 trillion in investment may be needed by 2030 to adequately 
+keep up with growth.63 Terrestrial data centres are becoming increasingly costly, however, with 
+land, energy, and cooling requirements stretching grids and ecosystems to their limits. The average 
+data centre has a size of over 9000 square meters, with China Telecom's Inner Mongolia Information 
+Park Data Centre being the world’s largest, at almost a million square meters. While IT hardware 
+remains the biggest expense, real estate and energy are also major costs.  
+ 
+ 
+57 Statista, & Various sources. (May 31, 2024). Volume of data/information created, captured, copied, and consumed worldwide from 
+2010 to 2023, with forecasts from 2024 to 2028 (in zettabytes) [Graph]. Statista, May 2024. (Link) 
+58 Arizton. Investment Trends in Global Data Center Market 2025-2030 Ariizton, May 2025. (Link) 
+59 Kendrick Cai. Alphabet reaffirms $75 billion spending plan in 2025 despite tariff turmoil. Reuters April 2025. (Link) 
+60 Jackie Snow. AI data center race hits obstacles in power grid, land costs. Quartz, May 2028. (Link)  
+61 Bloomberg. OpenAI Expands Stargate With Five New Data Center Sites Across US. September 2025 (Link) 
+62 McKinsey. The cost of compute power: A $7 trillion race. McKinsey Quarterly, April 2025. (Link)  
+63 Ibid. 
+Expert interview extract 
+TBDCs means billions invested into new 
+power sources and grid ameliorations . In 
+addition to issues of cooling water , DC 
+manufacturers are now worried about social 
+impact as well. Hyperscalers have money to 
+build what’s needed, also through solar, but 
+will European states accept to see their grids 
+tapped into? Prices are thus expected to rise 
+rapidly in the next 10 years. 
+ 
+ 
+ 
+“ 
+
+--- Page 31 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  27 
+ 
+Recent years have seen delays and rising construction expenses due to low vacancy, labour 
+shortages, and supply chain issues, reversing a two-decade trend of falling costs.64 East Asia, Europe, 
+and North America are the most expensive regions. Tokyo (€12.2/W) and Singapore (€11.7/W) top a 
+2024 cost index, constrained by limited land and power. In Europe, the FLAP (Frankfurt, London, 
+Amsterdam, Paris) markets face competition from cities like Zurich, Helsinki, and Stockholm, offering 
+cooler climates and renewable energy, appealing to sustainability-focused investors.65 
+The increasing demand however leads to rising costs on top of local workforce issues . In North 
+America, Northern Virginia and the Silicon Valley remain prime locations. The former hosts the 
+world's largest concentration of data centres, including from companies like AWS or Equinix and 
+has seen rental rates surging by almost 42% between 2023 and 2024, with power costs also rising 
+by 21% year -on-year. Silicon Valley scores fourth in terms of cost, with €10.9 per Watt, and 
+developable land availability being scarce, with reports indicating more than a decade waiting 
+time.66 Less-expensive rural areas have experienced heightened interest for relocation, although 
+many require new fibre connectivity for AI training solutions and face workforce shortages. 
+3.1.2 Energy is a binding constraint 
+Data centres have a predicted energy consumption of 1000 TWh per year in 2026 up from the 460 
+TWh per year from 2022.67 The growing consumption is fuelled by the ever-growing amount of data 
+processed and stored. The development of new data centres is limited by grid build-out, congestion 
+and interconnection issues resulting in fluctuating electricity costs in times of high demand. It is 
+this fluctuation in OPEX for which SBDCs could potentially play a strong role, alleviating financial 
+pain through more predictable running costs and uninterrupted power generation. 
+Adding to the shortage, approval processes for wind, solar, storage , and hydro -renewable 
+projects now take more than four years on average, with project costs more than doubling since 
+2020. As a result, data centre pricing continues to rise. Following a projected 16% year-over-year 
+ 
+ 
+64 Turner and Townsend. Data centre cost trends - Data centre cost index 2024 (Link) 
+65 Enel X. Tight supply and Demand Drives New Demand Response Record in the Capacity Market. Press Release, December 2024 (Link)  
+66 CBRE. Global Data Center Trends 2024 (Link) 
+67 IEA. Electricity 2024 - Analysis and forecast to 2026. International Energy Agency, January 2024(Link) 
+Figure 16: Average Asking Rental Rate with Y-o-Y % Change for Primary Markets. (Source: CBRE) 
+
+--- Page 32 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  28 
+ 
+increase in pricing for 250 -to-500-kW requirements in 2023, experts at CBRE reported another 
+10% to 15% pricing increase in 2024. According to CBRE, operators may be willing to lower pricing 
+for legacy assets with vacancy, but this discount will not apply to AI workloads requiring high 
+power density. 
+3.1.3 AI workloads are exerting immense pressure 
+Data centres serve as the critical infrastructure supporting  the AI ecosystem. Global electricity 
+use from data centres is projected to more than double between 2022 and 2026, with AI training 
+and inference being far more energy -intensive than conventional cloud operations. 68 This 
+escalation pressures energy infrastructure, leading to 
+constrained supply (power lines, generation capacity) and 
+even local issues like water consumption, siting conflicts, and 
+higher electricity prices. Sam Altman, CEO at Open AI, points 
+out that while improvements in hardware, automation, and 
+production efficiencies will drive down many variable costs, the irreducible cost of electricity (and 
+how clean or carbon -intensive that electricity is), will increasingly determine which companies 
+or regions can lead in AI development. In November 2025, Google announced Project Suncatcher, 
+a novel research initiative to one day scale machine learning in space using the ubiquitous power 
+potential of the Sun.69 
+From an investment and policy perspective, energy infrastructure  becomes as strategically 
+critical as AI hardware or software. Energy cost volatility (fuel prices, carbon pricing, regulation) 
+will increasingly translate into competitiveness in AI. Firms that can secure clean, reliable power 
+at low marginal cost will hav e an edge.  As such, the ubiquitous power generation potential 
+offered by orbital infrastructure coupled with an AI use case provides an immense incentive for 
+companies to pursue SBDC developments. 
+3.1.4 Increase of in-space data generation  
+About 1,000 active remote sensing satellites are currently in orbit, while Novaspace expects the 
+launch of over 5400 new platforms between 2024 and 
+2033.70 The increased abundance and accessibility of high-
+resolution, high -frequency data lowers entry barriers for 
+downstream service providers and supports the 
+development of new commercial applications across 
+sectors. A study from the World Economic Forum and 
+Deloitte assesses a potential €595 billion in value-added 
+from Earth data by 2030, and €3.2 trillion in aggregated contribution to the global gross domestic 
+product between 2023 and 2030.71 
+The rise in commercial missions, and the growth of data generation through public programmes 
+such as Landsat and Copernicus, in part driven by  improvements in sensor technology, and an 
+increased number of missions,  however, also result in a significant in crease in data -downlink, 
+ 
+ 
+68 IEA. Data centres & networks. (Link)  
+69 Google. “Meet Project Suncatcher, a research moonshot to scale machine learning compute in space.” . Google, November 4, 2025. 
+(Link) 
+70 Novaspace. Earth Observation satellites set to triple over the next decade. Novaspace, July 2024. (Link) 
+71 WEF. Amplifying the Global Value of Earth Observation. Insight Report, May 2024. (Link)  
+Sam Altman, CEO at Open AI 
+The cost of AI will converge to 
+the cost of energy. 
+ 
+ 
+“ 
+Expert interview extract 
+Even if no drop in launch cost is 
+observed, there is still a 
+reasonable size business [for in 
+space computing]. Hundreds of 
+millions of dollars of revenue. 
+ 
+ 
+
+--- Page 33 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  29 
+ 
+data processing, and data storage needs.72  A small Synthetic Aperture Radar (SAR) satellite as 
+operated by ICEYE can collect over 1Gb  per orbital pass and conduct 15 revolutions in a day. 73 
+Larger platforms, like the Sentinel-2 satellite, generate up to 2.5Tb of data every day. Onboard 
+AI can address  these bottlenecks by pre -processing data directly in space. For example, AI 
+algorithms can filter noise from hyperspectral optical sensors, select in real time which images 
+should be prioritised for downlinking, and enhance image resolution. 74 Finally, geospatial 
+foundation models trained on satellite data are also being developed to analyse environmental 
+risks in near real time, reducing the need for extensive data cleaning and labelling. 75 
+Looking towards the future, while the operational cost per managed data volume continues to 
+decrease, the introduction of Copernicus expansion missions as well as the next generation 
+missions will significantly increase the volume of data . For example, the ROSE-L mission will 
+increase data generation 5-fold when compared to Sentinel-1. Computing a portion of this data 
+in space offers enticing advantages.  
+3.1.5 A continue drop in launch costs may make hosting AI data centres competitive 
+The launch cost deflation over the past 50 years has significantly altered the economics of 
+deploying large-scale infrastructure to orbit. While not yet a commodity today, access to space 
+has historically been prohibitively expensive, limiting the deployment of large, mass -intensive 
+systems to government programmes. From the 1960s through to the early 2000s, launch costs 
+consistently exceeded $10,000/kg.  
+The high costs were a consequence of low launch frequency, single -use vehicles, and a 
+dominance of government-funding backed industry, with limited incentive to drive down costs. A 
+ 
+ 
+72 Michael A. Wulder, Jeffrey G. Masek, Warren B. Cohen, Thomas R. Loveland, Curtis E. Woodcock. Opening the archive: How free 
+data has enabled the science and monitoring promise of Landsat. Remote Sensing of Environment, July 2012 (Link); Copernicus. 
+Access to data. (Link); ESA, Copernicus Data and Information Access Services Operations, January 2017 (Link) 
+73 ICEYE. SAR Product Guide. May 2021 (Link) 
+74 See Chapter 2.2.4 for examples of AI projects in space. 
+75 Sudmanns, M., Tiede, D., Lang, S., Bergstedt, H., Trost, G., Augustin, H., … Blaschke, T. Big Earth data: disruptive changes in Earth 
+observation data management and analysis? International Journal of Digital Earth, February 2019 (Link) 
+Figure 17: Launch cost per kilogram of payload (constant 2021 US$). Note:  Medium vehicles carry between 2,000-20,000kg to 
+LEO and heavy ones >20,000kg. Small vehicles are not highlighted. (Source: CSIS Aerospace Security Project (2022)) 
+
+--- Page 34 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  30 
+ 
+turning point occurred in the 2010s with the advent of commercial launch vehicles and reusable 
+rocket technologies, led primarily by SpaceX and facilitated by NASA’s procurement reform. 
+The Falcon 9 and Falcon Heavy 
+reduced launch costs up to  
+approximately $2,500/kg and 
+$1,500/kg respectively. Though these 
+priced to cost launches are primarily 
+enjoyed by SpaceX’s own Starlink 
+payloads with average real prices 
+currently to LEO for other customers 
+between $8,000/kg and $15,000/kg 
+and between $30 ,000/kg and 
+$35,000/kg to GEO destinations.  For 
+European launchers, Arianespace hasn't publicly disclosed the cost for an Ariane 6 launch . 
+However, the ESA’ s Acting Director of Space Transportation, Toni Tolker-Nielsen, said the Ariane 
+6 launch cost could fall in the range of €3,700/kg and €4700/kg, about 30-40% lower than the 
+cost of an Ariane 5 and 50% higher than a F9 launch.76  
+According to Citi Research, further declines are expected by 2040. Launch costs could fall as low 
+as $100/kg with projections supported by key drivers such as reusability of both rocket stages 
+and payload fairings, as well as anticipated reductions in material and operational costs. 
+One of the main barriers to the deployment of SBDCs has traditionally been launch cost. A typical 
+terrestrial data centre can weigh hundreds of tonnes once infrastructure and cooling systems are 
+included. At historical launch prices, 
+even a 100 -tonne orbital module 
+would have cost over $1 billion to 
+launch. However, should launch costs 
+ever fall as low as $100/kg, the 
+launch cost for such a module could 
+be reduced to just $10 million.77 This 
+cost shift fundamentally alters the 
+economic equation for SBDCs, 
+making them not only viable but 
+competitive in certain high -value 
+markets, such as defence, critical 
+infrastructure, and ultra-low-latency 
+financial services, when compared to 
+Tier IV terrestrial data centres . See 
+Annex A  on the results of our c ost 
+model for a comparison between SBDC and TDC costs.  
+ 
+ 
+76 Speaking at the June Paris Air Show 
+77 Citi GPS. Space – The Dawn of a New Age. Citi. May 2022. (Link) 
+Expert interview extract 
+A pivot to Starship will come, whose marginal costs is 
+$30/kg for 100 tons, but the question is how much of 
+these savings goes to customers? The hope is that 
+because they're building such gargantuan capacity, they 
+will be incentivised to pass some of that through, driving 
+high volume rather than having less frequent and 
+therefore more expensive launches. Starlink is getting 
+marginal costs, fuel, labour + upper stage = approx. 
+$10M, 100x times cheaper than ULA or Ariane.  
+ 
+ 
+“ 
+Figure 18: Drivers of forecast launch cost reduction by 
+2040. (Source: Citi Research) 
+
+--- Page 35 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  31 
+ 
+3.2 Environmental: Increase scrutiny over terrestrial data centre resource use 
+Data centres affect environmental pollution in 
+three dimensions: consumption  of 
+environmental resources , generation  of waste 
+and heat , and land utilisation. Locating these 
+facilities outside Earth’s biosphere would 
+alleviate land and water consumption, as well 
+as address the energy consumption related 
+issues on national grids, contributing to a more 
+sustainable digital infrastructure. 
+3.2.1 Energy use is increasing 
+Data centres and data transmission networks 
+account for nearly 1% of energy-related greenhouse gas (GHG) emissions. To align with the Net 
+Zero Emissions by 2050 Goals, these emissions need to be reduced by half by 2030. It is thus 
+obvious; data centres present a significant hurdle for reducing emissions.78 
+According to statistics from various sources including Cloudscene, Datacentermap and Statista, 
+there are around 11,800 data centre locations as of March 2024.79 In Germany for example, data 
+centres are a significant component of the nation's energy landscape. According to the German 
+Data centre Association (GDA), data centres in Germany account for approximately 2.7% of 
+national electricity usage. The GDA highlights that as digitalisation and the demand for data 
+services continue to expand, energy consumption by data centres is projected to increase, despite 
+improved efficiency. The association 
+advocates for a dual approach: 
+enhancing energy efficiency within 
+data centres and increasing the use 
+of renewable energy sources.80 
+3.2.2 Cooling and byproducts 
+Data centres consume vast amounts of water primarily for cooling purposes. This substantial 
+water usage intersects with broader global water issues. According to the United Nations, climate 
+change exacerbates water scarcity and alters precipitation patterns, intensifying the hydrological 
+cycle and leading to more frequent and severe droughts and floods. 81 Reports from the 
+Intergovernmental Panel on Climate Change (IPCC) and initiatives like the World Bank's Thirsty 
+Energy highlight the critical need for sustainable water management in energy-intensive sectors 
+like data centres. Despite the significant water usage, there is a notable lack of transparency in 
+the industry regarding how much water data centres consume.  
+ 
+Tech giants such as Google, Amazon, and Microsoft are significant consumers of water for their 
+expansive data centres. One example is Google’s 2019 report, whereby its data centres consumed 
+ 
+ 
+78Jacob Roundy. Assess the environmental impact of data centres. TechTarget, July 2023 (Link). 
+79 Brightlio. 255 Data Center Stats. September 2025 (Link) 
+80 German Datacenter Association. 2024 Data center impact report Deutschland. (Link) 
+81 United Nations. Water – at the center of the climate crisis. Climate Action, 2025. (Link)  
+Expert interview extract 
+Changes in needs are too quick for the construction of 
+TBDCs. Terrestrial power grids cannot support the growth, 
+and some countries already limit data centre expansion. 
+ 
+“ 
+SES operations, particularly satellite ground 
+stations and data centres, are energy intensive. 
+Stakeholders, including customers, investors, 
+and regulators, are increasingly scrutinising the 
+carbon footprints of companies in the 
+telecommunications sector. Failure to 
+demonstrate a robust and transparent 
+decarbonisation strategy aligned with science -
+based targets (“SBT”) could lead to potential 
+reputational damage, lost contracts, and 
+difficulty in attracting ESG-focused investors. 
+Emission from Operations – Extract from the SES 
+2024 Annual Report 
+
+--- Page 36 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  32 
+ 
+over 3.3 billion gallons of water.82 Techniques like water reuse and advanced water management 
+can reduce consumption while building data centres in colder climates or even space could result 
+in more efficient cooling systems. Improvements in efficiency are however on the way and might 
+further reduce long-term water consumption. Microsoft’s September 2025 development involves 
+an advanced microfluidic cooling system that embeds liquid coolant directly into silicon chips, 
+enhancing heat dissipation by up to three times compared to traditional cold plates.83  
+For now, however, terrestrial d ata centres not only consume significant resources but also 
+generate various byproducts, contributing 
+to global e -waste and environmental 
+concerns. According to the United Nations 
+Global E -waste Monitor, the rapid 
+expansion of data centres is a substantial 
+contributor to the growing volume of 
+electronic waste  which poses severe 
+environmental and health risks.84  
+3.2.3 For environmental purposes, relocation to orbit is already considered viable today 
+Locating computing capacity in orbit may offer a direct response to the environmental 
+constraints of terrestrial data centres. Unlike Earth-based facilities, orbital platforms can harness 
+uninterrupted solar radiation as a renewable and predictable energy source, bypassing reliance 
+on strained terrestrial grids and reducing exposure to volatile electricity costs and carbon pricing 
+regimes. Cooling as one of the largest resource burdens for data centres, responsible for billions 
+of gallons of freshwater use annual ly, is managed through radiation into spa ce, eliminating or 
+reducing the sector’s dependence on increasingly scarce water resources.  
+Orbital deployment also alleviates land pressures, avoiding the need for massive industrial 
+footprints that compete with housing, agriculture, and conservation priorities. Moreover, a 
+monolithic space-based system, encourages modularity and reuse, supported by robotics and 
+in-orbit servicing, reducing contributions to the growing global e-waste stream. 
+In pursuit of these advantages,  in 2023, the European Union launched the ASCEND research 
+project under Horizon Europe, with a €2 million budget and a consortium led by Thales Alenia 
+Space alongside Airbus, ArianeGroup, Orange, CloudFerro, HPE, DLR, and others. The study 
+demonstrates that orbital data centres powered by solar energy could significantly cut the 
+carbon footprint of digitalisation, directly contributing to the EU Green Deal’s 2050 carbon 
+neutrality target. ASCEND also highlights potential econo mic returns in the billions of euros, 
+ 
+ 
+82 Water Footprint Calculator. Google Data Center Water Use in the US Revealed To Be a Lot. January 2023. (Link)  
+83 Catherine Bolgar. AI chips are getting hotter. A microfluidics breakthrough goes straight to the silicon to cool up to three times 
+better. Microsoft, September 2025 (Link) 
+84 UNITAR. Global e-Waste Monitor 2024: Electronic Waste Rising Five Times Faster than Documented E-waste Recycling March 2024. (Link) 
+Expert interview extract 
+The digital economy has an emissions problem 
+which is accelerated by huge amounts of data and 
+AI. Data centres weren’t thought to be a problem 
+initially but with AI training it exploded. ADEME 
+(French environmental agency) sees 30% of all 
+European electricity needed for data centres. 
+ 
+“ 
+Christophe Valorge, Chief Technical Officer, Thales Alenia Space 
+The results of the ASCEND study confirm that deploying data centr es in space could transform 
+the European digital landscape, offering a more eco -friendly and sovereign solution for hosting 
+and processing data. We’re proud to be contributing to an initiative supporting Europe’s net-zero 
+objectives and strengthening its technological sovereignty. 
+ 
+“ 
+
+--- Page 37 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  33 
+ 
+strengthens European digital sovereignty, and identifies synergies with in -orbit servicing 
+programmes such as EROSS IOD, while also being in-line with future EU plans on ISOS.85 
+3.3 Sovereign: Concerns around data location and control 
+Data sovereignty does not only refer to the idea that data is governed by the legal frameworks 
+of the jurisdiction from which it originates ; for the EU, “digital sovereignty” extends data 
+protection laws to elements of control over data, operations, and the underlying technologies. 
+European policymakers increasingly frame cloud and compute as strategic infrastructure, noting 
+both market-power risks (e.g., extraterritorial access under the U.S. CLOUD Act) and dependency 
+on non-EU hyperscalers. This has led to calls for sovereign, cros s-border infrastructure and a 
+“cloud-edge continuum” built to European rules and operated by European players. 
+No European Data Sovereignty while U.S. Cloud Act exists with no U.S.-EU agreement  
+AWS, Microsoft Azure, and GCP at the end of 2023 and early 2025 controlled a share of around 66% 
+to 70% of global sales in the cloud infrastructure market. In Europe, the dependence on those three 
+cloud service providers is estimated at over 70%. This discrepancy between high market dependency 
+and the political striving for digital sovereignty represents a central area of tension.86 
+The CLOUD Act allows U.S. authorities to require disclosure of data even if the data is stored outside the 
+U.S. That may conflict with the GDPR’s restrictions on transfer/disclosure to third countries. The EDPB 
+stresses that the U.S. CLOUD Act “allows U.S. authorities to directly compel service providers subject to 
+U.S. jurisdiction to disclose data, irrespective of where the data is stored,” creating a direct clash with 
+EU rules. Under the GDPR, “any judgment of a court or tribunal and any decision of an administrative 
+authority of a third country requiring [...] disclose personal data may only be recognised or enforceable 
+if based on an international agreement” (Article 48). The EDPB and EDPS therefore warn that the CLOUD 
+Act “circumvents the existing frameworks for international cooperation and undermines the sovereignty 
+of EU law over personal data located within its territory.”87 
+European Data Protection Board, July 2019 
+Initiatives exist to remedy the situation. The T -Systems-led 8ra (IPCEI) initiative envisions a 
+multi-provider, open-standards “super cloud -edge continuum”, uniting hundreds of partners 
+including SAP, Siemens, Bosch, Airbus, Orange, Telefónica and others, under European 
+governance and open-source control. Targeting up to 10,000 interconnected edge -cloud nodes 
+by 2030, potentially scaling to over 100,000 across the EU, this model delivers high performance, 
+resilience, energy efficiency, and strong data protection while premised on European sovereignty. 
+Competitiveness and sovereignty need each other; one cannot be sustainable without the other. 
+The European continent has all it takes to reposition itself as a force of innovation, develop best-
+in-class sovereign capabilities, as proven with Galileo, and nurture a thriving commercial base 
+fit to win global markets in this thriving evolution of the digital economy. 
+ 
+ 
+85 See chapter 2.1.1 for more details 
+86 Konrad Wolfenstein. Why the US Cloud Act is a problem and risk for Europe and the rest of the world: a law with far -reaching 
+consequences. Xpert.digital, April 2025 (Link) 
+87 EDPB, Initial legal assessment of the impact of the US CLOUD Act on the EU legal framework for the protection of personal data 
+and the negotiations of an EU-US Agreement on cross-border access to electronic evidence. EDPS, July 2019. (Link)  
+
+--- Page 38 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  34 
+ 
+3.3.1 Extending the basis for EU’s sovereign cloud offering to space 
+Secure, sovereign connectivity is a prerequisite for any 
+orbital compute to participate in EU data spaces. Here , 
+the Union’s upcoming IRIS² multi-orbit constellation, part 
+of the Secure Connectivity Programme, aims to provide 
+EU-controlled satcom for government and commercial 
+users. As IRIS² deploys, it can furnish the trusted 
+backhaul that a future hybrid cloud wou ld require to 
+meet EU assurance 
+levels for public -sector and regulated workloads.  Europe 
+could expand the 8ra  Important Project of Common 
+European Interest on Next Generation Cloud Infrastructure 
+and Services  (IPCEI-CIS) initiative to include a dedicated 
+space layer by leveraging the IRIS² satellite constellation, 
+transforming today’s “cloud–edge continuum” into a fully 
+sovereign cloud–edge–space continuum. While the current 
+IPCEI design focuses on terrestrial infrastructure, adding a 
+space component could dramatically enhance resilience, 
+security, and efficient reach of each node. The framework for 
+such an experimental expansion already exists; the 
+Commission has carved out an option for a dedicated space 
+for startups and SMEs through a low-LEO constellation of at least 10 satellites, (co)financed by 
+the Commission, to serve as a testbed for new technologies from emerging players.88 
+The design principles  of distributed comput ation, interoperability, vendor neutrality, and 
+governance anchored in Europe , are directly applicable to space -based data centres. Orbital 
+compute, designed within the super-cloud framework, could act as an extension of the sovereign 
+edge continuum: offering low -latency, high -resilience compute that remains fully under EU 
+control. T he industrial coalition supporting terrestrial deployments could logically extend to 
+encompass orbital platforms, with the inclusion of Europe’s technically apt and market -driven 
+satcom operators, facilitating shared infrastructure, common operating stacks , and 
+interoperable launch-to-compute systems governed by EU law and standards. 
+Identified near-term, sovereignty-aligned use cases 
+• Preprocessing and fusing space-borne sensor data before selective downlink;  
+• High-throughput, latency -tolerant workloads (e.g., training runs/checkpointing staged over 
+sovereign satcom);  
+• “Sealed” processing for sensitive datasets where EU control over the full stack, including launch, 
+operations, ground stations, identity/attestation, and incident response, can be demonstrated. 
+ 
+ 
+ 
+88 ESPI. IRIS² Growing Up: From Strategic Roots to Commercial Power Play. Brief, April 2025 (Link) 
+Expert interview extract 
+Storage is a function of 
+sovereignty. EU nations have 
+signed up as customers because 
+they are interested in the solution 
+as it is illegal to store EU data 
+outside of EU. 
+ Expert interview extract 
+Resilience is a focus ; our 
+[satellite] company wants to 
+make sure customers always 
+have access to their data and 
+down time in case of natural 
+disasters, power outages etc. is 
+kept at a minimum. The goal is 
+to keep regions connected no 
+matter what, to build a ‘hybrid 
+sovereign gateway’. 
+ 
+“ 
+“ 
+
+--- Page 39 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  35 
+ 
+4 The Perceived Challenges of SBDC Deployment 
+The following chapter provides a short overview of some of the major challenges, based on expert 
+interviews and research, on the technicalities constraining SBDC deployment. We also collect 
+other constraints currently being discussed that may not constitute significant hurdles. 
+4.1 Cost of launch 
+The most obvious barrier to the development of SBDCs is the cost of launching the infrastructure 
+to orbit. While some industry experts and billionaires believe that within ten years, all new data 
+centres could be deployed in space, primarily due to the abundance of renewable energy in orbit, 
+this is based on uncertain assumptions. This vision is contingent on launch costs falling below a 
+threshold of approximately $400 per kilogram, which is widely seen as the point at which such 
+projects become economically viable. 89 Optimists have pointed to SpaceX’s Starship and its 
+potential marginal cost of $30 per kilogram for payloads of up to 
+100 tonnes. While it remains uncertain how much of these 
+savings would be passed on to customers, it is hoped that 
+economies of scale will incentivise SpaceX to drive high launch 
+volumes rather than fewer, more expensive launches. 
+Current launch costs are thus prohibitively high and most feasibility assessments for SBDCs 
+depend on the success of SpaceX’s Starship specifically. The second-generation Starship design 
+has faced significant structural challenges, but the industry continues to pin hopes on its ability 
+to radically reduce the cost of access to space. Without this step-change, the competitiveness 
+of SBDCs against terrestrial data centres would be significantly diminished.  
+Starship Test Flight 10 breaks streak of failures 
+SpaceX’s Starship Flight Test 10 on August 26, 2025, broke a streak of failures, restoring momentum 
+in Starship’s development toward reuse and lunar missions, while also lifting the hopes of the SBDC 
+community globally. 
+Booster 16 and Ship 37 launched from Starbase, Texas, completing hot -staging, controlled 
+splashdowns, as well as  the first payload deployment and in -space engine relight in Starship’s 
+history. Despite sustaining damage during re -entry, the spacecraft executed a landing flip and 
+splashed down upright in the Indian Ocean, while the booster performed a simulated engine-out test 
+before splashing into the Gulf of Mexico. 
+ 
+ 
+89 See the cost model in Annex A for more detail. 
+Expert interview extract 
+Launch costs pre-Starship 
+are way too high. 
+ 
+“ 
+
+--- Page 40 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  36 
+ 
+4.2 Power and thermal management 
+Experts continuously note that cooling remains essential, with at least half of engineering teams 
+at some SBDC ventures currently devoted to the 
+radiator challenge, underscoring its technical 
+complexity. On one side, it is argued that 
+advancements have been made in radiation 
+technology since the 1960s and thus costs 
+cannot be expected to balloon  to trillions of 
+dollars. On the other  side, the large -scale 
+infrastructure undertaking of a monolithic data 
+centre architecture in orbit would carry more 
+unknowns c ompared to the research conducted into small -sat and cube -sat thermal 
+management systems. Cooling under atmospheric conditions may be efficient but is highly 
+complex and introduces significant room for critical errors.  
+The Tiangong Space Station  maintains its 
+climate through a system of mechanically 
+pumped fluid loops (MPFLs), offer ing 
+robustness, reliability, and effective gravity -
+immunity since the coolant remains in a single 
+phase and its circulation can be precisely 
+controlled even in microgravity. However, such 
+single-phase systems are limited in their heat 
+transfer capacity, relying solely on sensible 
+heat, which restricts their ability to meet the 
+extreme heat flux demands of next -
+generation electronics.  By contrast, two -
+phase convective boiling systems leverage 
+both sensible and la tent heat, enabling far 
+higher heat transfer coefficients and heat flux 
+dissipation (up to 10² –10³ W/cm²). 90 Microchannel-based two -phase loops  face significant 
+challenges in phase management , particularly vapo ur–liquid separation, flow stability, and 
+cycling reliability under variable gravity, which remain barriers to their widespread deployment 
+in space.  
+In practice, this suggests that early space -based data centres may rely on conservative liquid 
+forced convection designs, such as ATA,  while hybrid or advanced two -phase solutions could 
+eventually unlock the density and efficiency needed to scale orbital computing to Earth -
+competitive levels.91  
+ 
+ 
+90 Jixiang WANG, Yunze LI, Xiangdong LIU, Chaoqun SHEN, Hongsheng ZHANG, Kai XIONG. Recent active thermal management technologies 
+for the development of energy-optimized aerospace vehicles in China. Chinese Journal of Aeronautics, February 2021 (Link) 
+91 NASA and JPL are working on a two-stage, single-phase mechanically pumped fluid loop to reject thermal power for energy dense 
+6U and above cubesats known as ATA. 
+ 
+Figure 19: Performance comparison of various heat 
+transport methods. (Source: Wang et al. 2021). 
+Expert interview extract 
+Energy supply is a critical bottleneck. The 
+International Space Station operates at 
+approximately 120 kilowatts, but a viable 
+SBDC, capable of meaningfully reducing the 
+global carbon footprint would need an energy 
+capacity in the range of 500 megawatts to 1 
+gigawatt. 
+“ 
+
+--- Page 41 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  37 
+ 
+4.3 Scale, in-orbit servicing, and robotic maintenance 
+A monolithic SBDC architecture demands the maintenance of terrestrial grade GPUs and server 
+components orbit require shuttles delivering replacements. The cost of in-orbit servicing remains 
+extremely high, to the extent that deorbiting a failed satellite and launching a replacement is 
+generally considered more cost-effective than sending robotic or human crews for repairs  akin 
+to the STS-31 crew to the Hubble space telescope in 1993 . In the absence of human servicing 
+capabilities, robotic systems would be essential. Autonomous repair units  are already under 
+development by actors such as the European Space Agency (RISE) and DLR. With the upcoming 
+ISOS pilot mission and the EIC Challenge Innovative in-space servicing, operations, robotics and 
+technologies for resilient EU space 
+infrastructure.92 Experts suggest a 
+reasonable approach might be to 
+replace servers on a five -year cycle 
+through hot -swapping modular 
+components. 
+Experts also raise c oncerns about the 
+resilience of the infrastructure, 
+especially with regard to data integrity 
+in the event of satellite node failures. 
+Questions remain about how tolerant 
+SBDCs will be to node failure, and how 
+such failures will be integrated into wider terrestrial systems. The maintenance cycle is expected 
+to depend heavily on redundancy, which in itself increases costs. 
+The problem of scaling infrastructure in orbit is compounded by the current lack of robotic 
+systems capable of large -scale assembly. At present, there are no commercially available 
+systems able to construct monolithic data centre structures, and the assumption that humanoid 
+robots could one day perform this work is regarded as speculative at best. 
+The necessary scale of a monolithic architecture derived data centre raises in-space 
+environmental concerns as well. The accumulation of orbital debris poses a significant risk to 
+SBDC development. To address these risks, robust end-of-life management protocols would need 
+to be introduced alongside spacecraft shielding.  
+4.4 Radiation shielding 
+The Mars helicopter, Ingenuity, designed for just three months in a radiation-heavy environment, 
+continued to operate five years later using a standard Snapdragon processor found in consumer 
+Android phones. Modern microchips are designed or can be reengine ered with considerable 
+redundancy; thus, some experts suggest, radiation may no longer be the critical barrier once feared. 
+Spaceborne Computer-1 and -2 also proved that software hardening may be enough to use 
+computing in LEO.93 Some unknowns still exist however, on the behaviour of GPUs and CPUs for long 
+duration missions as are envisioned for SBDCs, especially if deployed in GEO or Cislunar space. 
+The primary risks come from two sources: Galactic Cosmic Rays (GCRs), which are high-energy 
+ 
+ 
+92 See ESPI, On-orbit Servicing, Assembly, and Manufacturing. October 2023 (Link), for more OSAM projects; European Commission, 
+In-Space Operations and Services (Link); ESA, ESA to build first in-orbit servicing mission with D-Orbit, 14 October 2024 (Link) 
+93 NASA. Cutting-Edge Computing Goes Spaceborne. NASA Spinoff, February 2025 (Link) 
+Figure 20: A render of a SBDC ‘hot-swap’ (Source: Starcloud) 
+
+--- Page 42 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  38 
+ 
+particles originating outside the solar system, and Solar Particle Events (SPEs), which are bursts 
+of energetic particles from the Sun. These particles have enough energy to penetrate spacecraft 
+shielding, causing single -event effects (SEEs), which lead to  data errors and processor faults. 
+Protecting the critical hardware inside space -based data centres, therefore, requires a 
+combination of effective shielding strategies and radiation-tolerant computing systems. 
+NASA’s RadPC provides an excellent example of how radiation-tolerant technologies are evolving 
+to support space-based systems. Developed by Montana State University, RadPC uses redundant 
+processors, fault recovery mechanisms, and autonomous error detection  to ensure continued 
+operations despite radiation exposure. NASA is set to test RadPC on the Moon as part of its 
+Commercial Lunar Payload Services (CLPS) initiative , t o demonstrate the ability of onboard 
+computers to recover from radiation-induced faults during deep space missions.94 
+LEO radiation levels are lower than those encountered in deep space, but some risks still exist for 
+longer-duration missions, particularly during solar flares and geomagnetic storms  or frequent 
+passage through the South Atlantic Anomaly (SAA). Starlink satellites for example, are built with 
+lightweight materials such as carbon fibre-reinforced polymers (CFRPs), which replace 
+traditional aluminium structures used in older spacecraft designs  while still providing modest 
+shielding.95 
+A recent study of CFRP panels for small satellites has demonstrated that these materials, while 
+not as effective as traditional solid aluminium panels, can still provide adequate shielding in LEO 
+environments. Using Geant4 simulations, researchers at the Space Technology and Industry 
+Institute (STII) at Swinburne University of Technology assessed the ability of CFRP panels to 
+protect satellites from radiation. Preliminary results indicated that CFRP panels could provide 
+sufficient radiation shielding for missions lasting over 1000 days, based on the typical dose limits 
+of commercially available electronics.96  
+4.5 Other challenges 
+Bandwidth is a constraint, with satellites limited in their power allocations due to thermal 
+management requirements. Efficient bandwidth allocation remains a complex task, particularly 
+when seeking to accommodate high-demand services such as streaming video. Although orbital 
+data centres, when addressing terrestrial applications, may be able to process a portion of their 
+data in-situ, they will remain heavily dependent on ground stations for communication with Earth, 
+creating potential bottlenecks at ground segment level. Experts observed that the bandwidth 
+capacity, latency, and integration between ground stations and orbital infrastructure remain to be 
+explored, making it difficult to assess the technical feasibility of transmission systems for SBDCs. 
+From a regulatory aspect, European Union’s Digital Operational Resilience Act (DORA), which 
+mandates stringent data storage and backup requirements for financial institutions, illustrates 
+issues that might confront SBDCs . While the Act restricts storage of sensitive data outside the 
+EU, the interpretation of “EU territory” as merely “jurisdiction and control” remains to be seen.  
+ 
+ 
+94 Beth Ridgeway. NASA to Test Solution for Radiation-Tolerant Computing in Space. NASA, January 2025. (Link) 
+95 Rajarshi Pal Chowdhury, Luke A. Stegeman, Matthew L. Lund, Dan Fry, Stojan Madzunkov, Amir A. Bahadori. Hybrid methods of 
+radiation shielding against deep-space radiation. Life Sciences in Space Research, August 2023 (Link) 
+96 Matthew Large. CFRP vs Aluminium for Small Satellites: A comprehensive assessment of the radiation shielding performance of 
+structural panels in LEO. ESTEC June 2024 (Link) 
+ 
+
+--- Page 43 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  39 
+ 
+Annex A: A Cost Model for Space-Based Data Centres  
+The following section is a summary of the derived total cost equation for the installation and 
+running of data centres in space. The proposed equation estimates the capital expenses (CapEx) 
+and operating expenses (OpEx) of a 1GW SBDC on two defined architectures: A Sun-synchronous 
+orbit (SSO) monolithic and a SSO constellation architecture. Their cost is benchmarked against 
+current, existing terrestrial data centres. The cost breakdown shall be granular enough to capture 
+the influence of the major cost drivers in TBDCs and SBDCs. This may enable the firms investing 
+in SBDCs to identify potential cost saving opportunities. 
+High level assumptions 
+A number of assumptions have been made in the development of the cost model. A full list of 
+assumptions feeding into the cost model are documented in the complete cost model 
+documentation, available on request. 
+The cost model assumes that the SpaceX Starship will be the most affordable launcher available 
+in the near future for the required payload mass and orbit type. For this reason, the Starship is 
+selected as the baseline launcher. The model assumes that the S tarship can deliver 
+approximately 87.5 tonnes into SSO, based on 70% of its estimated 125-tonne capacity to LEO. It 
+is further assumed that the spacecraft has a cylindrical payload bay with a 9 -metre diameter 
+and 18-metre height. The cost per launch is tak en to be $10 million, assuming each vehicle is 
+reused five times. 
+The benchmark terrestrial data centre is assumed to operate with an availability of 99.9%, putting 
+it at least at Tier III. It is assumed that the benchmark terrestrial data centre has an average 
+power usage factor of 0.95, an electricity price of $0.010 per kilowatt-hour, and a power usage 
+effectiveness (PUE) of 1.2. 
+For hardware reliability, it is assumed that non-space-hardened components deployed in space 
+have a lifetime of two years. The cost model assumes that non -space-hardened core IT 
+components, rather than fully space-qualified hardware, are used in the SBDC. 
+Current terrestrial cost conditions for both data centre components and electricity pricing are 
+assumed. 
+Summary of the SBDC Cost Model 
+A cost equation for the CapEx and OpEx of two 1GW SBDCs is proposed. The chosen use-case of 
+the modelled data centres is high-performance computing for training of AI models. Two system 
+architectures were chosen for modelling: 
+• A SSO monolithic architecture: To reach 1GW of system power, 96 large 10MW SBDC units 
+are proposed. 
+• A SSO constellation architecture: Sixty-seven hundred 150kW SBDC units are proposed. 
+To assess their economic viability in detail, the CapEx and OpEx of the major cost elements of 
+both architectures are benchmarked against the major cost elements of TBDCs. 
+Decades of work are needed for the deployment of SBDCs at the GW -scale. Up to the point of 
+deployment, technology would most likely make both TBDCs and SBDCs cheaper with respect to 
+2025 costs. Still, in this model the costs are not projected to a future point in time. The basis for 
+all costs is the $FY2025. 
+
+--- Page 44 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  40 
+ 
+Three key economic barriers/cost-sensitive model parameters are identified: Cost of data centre 
+(DC) core information technology (IT) hardware, lifespan of the IT hardware under space 
+radiation, and launch affordability. Assuming equal core IT hardware costs for TBDCs and SBDCs, 
+a 2-year lifespan of IT hardware in space and a launch cost of $114/kg, the following study 
+outcomes are calculated: 
+Cost of the benchmark TBDC 𝐶𝑇𝐵𝐷𝐶                    = 28.8 ∙ 𝑃 + 09.0 ∙ 𝑃 ∙ 𝑡 (1) 
+Cost of the SSO monolithic SBDC 𝐶𝑆𝐵𝐷𝐶𝑀𝑜𝑛𝑜𝑙𝑖𝑡ℎ𝑖𝑐     = 30.6 ∙ 𝑃 + 11.4 ∙ 𝑃 ∙ 𝑡 (2) 
+Cost of the SSO constellation SBDC 𝐶𝑆𝐵𝐷𝐶𝐶𝑜𝑛𝑠𝑡𝑒𝑙𝑙𝑎𝑡𝑖𝑜𝑛  = 55.1 ∙ 𝑃 + 28.3 ∙ 𝑃 ∙ 𝑡 (3) 
+ 
+with 𝑃 denoting core IT hardware power in MW and 𝑡 being the operation time in years.  
+The models show that a SSO constellation is cost-efficient for up to the 1-MW-scale SBDCs. This 
+is because each SSO monolithic data centre is 10.4MW to maximi se the launch vehicle volume. 
+Above 1MW, b ased on Equations (1) - (3), the monolithic architecture proves much more 
+competitive than the constellation architecture. Its costs are very close to the terrestrial data 
+centres. 
+Given that the three above-mentioned assumptions for the cost and lifespan of core IT hardware 
+and launch costs are satisfied in practice, this cost model shows that SSO monolithic SBDCs will 
+offer an economically viable alternative to terrestrial solutions while being much more 
+environmentally friendly.97 
+Architecture 
+Depending on the use -case and the need, different dominant architectures emerge. The 
+architectural matrix in Table 1  structures the trade-space in architectural decisions, each 
+exhibiting multiple alternatives. The two architectures are chosen based on the existing SBDC 
+concepts.98,99,100 In Table 1, the blue line represents the SSO monolithic architecture, and the red 
+line represents the SSO constellation architecture. 
+In this model , the total costs are split between IT hardware costs and infrastructure costs for 
+both TBDCs and SBDCs. The IT hardware costs are derived from a cost model for TBDCs. The 
+infrastructure CapEx and OpEx are then broken down into the following categories: Maintenance, 
+Electricity, Cooling, Software, Ups, Transmission, Land and Shell, Building Fit -Out, Staff, 
+Insurance, Launch (Data Centre, IT Hardware, Solar, Cooling, Maintenance) and Radiation. The 
+costs that are present but not assigned to the above categori es are therefore assigned to the 
+category “Rest”. The currency used in the model is $FY2025. The IT hardware costs are derived 
+as a function of the TBDC infrastructure costs . The following derivations are the basis of the 
+results of this study: Table 2 and Table 3 as seen in the Results and Discussion section. 
+The main use-case for this cost model on SBDCs is data processing. Data processing is an active 
+service to process and manipulate data using programs. AI training is seen as a subset of cloud 
+computing. The computing resources are used to train machine learning models on large -scale 
+datasets in this case. Data storage enables users to store and manage data and objects. The  
+ 
+ 
+97 E. Hutchinson and D. Yves , “Intelligent Data Centres,” 26 July 2024. (Link) 
+98 E. Feilden, A. Oltean and P. Johnston, “Why we should train AI in space,” September 2024. (Link)]. 
+99 D. Dumestier and G. Durand , “ASCEND - SOLAR POWER FOR ON-SITE ORBITAL,” 18 April 2024. (Link) 
+100 J. C., China in Space, ADA Space Eyes Launching 2,800 AI Satellites, 15 May 2025. (Link).  
+
+--- Page 45 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  41 
+ 
+data handling is considered passive as the data is not altered.  In principle, data processing is 
+much more energy intensive than data storage. 
+ 
+Table 1: Architectural Matrix and proposed architectures: SSO monolithic (blue), SSO constellation (red). 
+ 
+ 
+Architectural 
+Decision Architectural Alternatives 
+Launcher Starship Future Starship Ariane 6 PROTEIN  
+Main Use-Case Data Storage Data Processing    
+Customer Government Private Both   
+Communication & 
+Data Acquisition  Direct Relay Satellite Satellite internet provider Physical Retrieval  
+Location GEO LEO SSO Moon Orbit Moon Surface 
+Satellite 
+Configuration Monolithic Constellatio n 
+ 
+  
+Cooling Natural Passive Active Hybrid Heat Pump 
+Cooling Medium Air Water Hybrid   
+ERD No ERD ERD    
+Power Generation Solar Cells Fuel Cell RTG Fission Reactor  
+Cooling SS Integrated External Distributed External Unitary   
+Energy Storage None Battery Fuel Vessel   
+Radiation 
+Protection 
+Commercial 
+hardware + 
+shielding 
+Space-
+Hardened 
+Space 
+hardened + 
+Shielding 
+Hybrid 
+hardware + 
+shielding 
+ 
+Servicing In-Orbit On-Earth None Hybrid  
+Interconnection None Mechanical Data Energy Combination 
+Assembly In-Orbit On-Earth    
+Data Latency ms sec hour month  
+Attitude and 
+orbital control Tug Satellite Onboard ADCS    
+End of Life Leave in orbit Bring to Earth Atmospheric Burn Graveyard Orbit  
+IT Hardware Type Of-the-Shelf Space- Hardened    
+ 
+
+--- Page 46 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  42 
+ 
+Results and Discussion 
+Table 2 compares the CapEx and OpEx costs for the TBDC and the monolithic SBDC architecture 
+while Table 3 compares the CapEx and OpEx costs for the TBDC and the constellation SBDC 
+architecture. From the data, the following cost equations is derived for the CapEx and the OpEx 
+of the three systems: The benchmark TBDC in Equation (1), the SSO monolithic architecture in 
+Equation (2) and the SSO constellation architecture in Equation (3). 
+Cost of the benchmark TBDC 𝐶𝑇𝐵𝐷𝐶                    = 28.8 ∙ 𝑃 + 09.0 ∙ 𝑃 ∙ 𝑡 (4) 
+Cost of the SSO monolithic SBDC 𝐶𝑆𝐵𝐷𝐶𝑀𝑜𝑛𝑜𝑙𝑖𝑡ℎ𝑖𝑐     = 30.6 ∙ 𝑃 + 11.4 ∙ 𝑃 ∙ 𝑡 (5) 
+Cost of the SSO constellation SBDC 𝐶𝑆𝐵𝐷𝐶𝐶𝑜𝑛𝑠𝑡𝑒𝑙𝑙𝑎𝑡𝑖𝑜𝑛  = 55.1 ∙ 𝑃 + 28.3 ∙ 𝑃 ∙ 𝑡 (6) 
+Overall, the monolithic SBDC architecture shows comparable CapEx to the TBDC architecture. 
+With respect to OpEx it’s still 38% more expensive than the TBDC given the modelling 
+assumptions. It is worth noting that with an IT hardware lifespan of over 3 year s, the lower 
+operating cost of the monolithic architecture makes the SBDC concept cheaper over its lifetime 
+than the TBDC. 
+According to the model, t he constellation architecture is not nearly as competitive as the 
+monolithic architecture in the GW-scale. Its CapEx is double the TBDCs and its OpEx more than 
+triple. It is worth comparing the cost of the infrastructure with the cost of the IT hardware fo r 
+each SBDC architecture. Overall, for the same amount of value -generating IT hardware, the 
+monolithic architecture is by far the most efficient solution. 
+This discrepancy in efficiency between the two architectures is due to two major reasons: First, 
+for each kg of core IT hardware in space, the constellation architecture requires more mass for 
+its support systems. The bigger the size of the data centre, th e better the performance of the 
+SBDC improves in this model. 
+The second major reason is the difference in the maintenance concepts between the two 
+architectures in combination with the lifetime of IT hardware in space. If all the components of 
+the data centre had similar lifespans, then the zero -maintenance concept of the constellation 
+architecture makes more sense, given its scalability benefits. Having to decommission all the 
+space infrastructure every 2 years wastes the lifespan potential of most of the components in the 
+data centre. That is not something that the  monolithic architecture avoids. This architectural 
+comparison highlights the need for in-orbit robotic maintenance, assuming that the lifespan of 
+core IT components does not improve substantially in the future. 
+Multiple representatives of companies working in SBDCs estimated life expectancies of around 5 
+years. This makes SBDCs much more economically viable, but no peer -reviewed material has 
+been found validating their claims. For this reason, the value of 2 years is used in this model. 101 
+Due to the high sensitivity of the model to this parameter, it is essential for more tests to be 
+conducted with HPC hardware under radiation conditions. 
+In conclusion, the potential for SBDCs being economically feasible is high. SBDCs will prove a 
+viable alternative to TBDCs given that the lifespan and cost of IT components improve, the 
+ 
+ 
+101 W. S. Slater, N. P. Tiwari, T. M. Lovelly and J. K. Mee, “Total Ionizing Dose Radiation Testing,” in 2020 IEEE High Performan ce 
+Extreme Computing Conference (HPEC), Massachusetts, 2020.  
+ 
+
+--- Page 47 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  43 
+ 
+robotic maintenance and assembly concept is proven feasible and successful at large scale, and 
+that for the launch vehicle a cost per kg of under $150/kg is achieved.  
+The limitations of the model are discussed in the full cost model. As SBDCs are still in the early 
+concept-exploration phase, with no fully operational systems currently in orbit, assumptions 
+need to be made for the development of the cost model. The assumptions pose limitations to the 
+model. The model does not consider the increased risk of an SBDC with respect to a TBDC. The 
+cost of capital is assumed to be the same for TBDCs and SBDCs. Hence, the increased cost of 
+loans awarded to novel high-risk ventures is not captured.  
+Due to GW -scale SBDCs being in the concept phase, the available data is insufficient for the 
+creation of a statistical dataset. The expected mean value of the cost is provided instead. In 
+conclusion, the cost equations include no measure of uncertainty.  
+The granular cost breakdown of TBDCs and SBDCs of this model is necessary to detect the 
+sources of their respective cost advantages and shortcomings. This analysis will enable better 
+informed decisions when the technology level is adequate to satisfy the p resented modelling 
+assumptions and future GW-scale SBDCs are built. Moreover, the insights of this work shed light 
+on which components of SBDCs require the most improvement to reach viability. 
+The costs of GW-scale SBDCs are very sensitive to their unique architecture, and most probably 
+their main use case. The feasibility of the SBDC concept is not a question of their cost, but rather 
+a question of their value -to-cost proposition with respect t o TBDCs. Due to their unique 
+environment, SBDCs have multiple unique selling propositions like edge computing for satellites 
+and cybersecurity in the kW scale. Serving these use -cases already acts as a steppingstone for 
+larger scale architectures, eventually leading to the GW scale that this work explores. 
+ 
+This section forms a simplified summary of the full model breakdown with a focus on the 
+SBDC architecture and results only. This cost model was fully developed by staff of the 
+TUM Chair of Spacecraft Systems. The reader may request the full details of the cost 
+model by email found at www.espi.eu. 
+  
+
+--- Page 48 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  44 
+ 
+ 
+Cost Category 
+CapEx [$M/MW] OpEx [$M/MW/y] 
+TBDC SBDC TBDC SBDC 
+Infrastructure 10.55 9.28 5.22 3.16 
+IT Hardware 19.18 19.18 3.78 9.59 
+Maintenance  0.04 2.64 0.02 
+Electricity 0.04 0.25 1.00 0.03 
+Cooling 2.64 5.70  0.57 
+Software   0.72 0.72 
+UPS 1.90    
+Transmission 1.19 0.30   
+Land and Shell 1.85    
+Building Fit-Out 2.64 0.02   
+Staff   0.96 0.01 
+Insurance  2.84  1.02 
+Launch  2.96  0.80 
+Radiation  0.02   
+Rest 0.31  -0.10  
+Total 29.73 31.30 9.00 12.75 
+Launch Cost Breakdown 
+Data Centre  1.04   
+IT Hardware    0.62 
+Electricity  0.20   
+Cooling  1.69  0.17 
+Maintenance  0.03  0.02 
+Table 2: TBDC vs Monolithic SBDC 
+
+--- Page 49 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  45 
+ 
+ 
+ 
+Figure 21: CapEx breakdown of the TBDC. 
+ 
+Figure 22: OpEx breakdown of the TBDC. 
+Cost Category
+IT Hardware
+Maintenance
+Electricity
+Cooling
+Software
+UPS
+Transmission
+Land and Shell
+Building Fit-Out
+Staff
+Insurance
+Launch
+Radiation
+Rest
+CapEx [$M/MW]/TBDC
+,000
+5,000
+10,000
+15,000
+20,000
+25,000
+30,000
+35,000
+40,000
+CapEx - TBDC
+Increase
+Decrease
+Total
+Cost Category
+IT Hardware
+Maintenance
+Electricity
+Cooling
+Software
+UPS
+Transmission
+Land and Shell
+Building Fit-Out
+Staff
+Insurance
+Launch
+Radiation
+Rest
+OpEx [$M/MW/y]/TBDC
+,000
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+14,000
+OpEx - TBDC
+Increase
+Decrease
+Total
+
+--- Page 50 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  46 
+ 
+Figure 23: CapEx breakdown of the monolithic SBDC. 
+ 
+  
+Figure 24: OpEx breakdown of the monolithic SBDC. 
+  
+Cost Category
+IT Hardware
+Maintenance
+Electricity
+Cooling
+Software
+UPS
+Transmission
+Land and Shell
+Building Fit-Out
+Staff
+Insurance
+Launch
+Radiation
+Rest
+CapEx [$M/MW]/SBDC
+,000
+5,000
+10,000
+15,000
+20,000
+25,000
+30,000
+35,000
+CapEx - Monolithic SBDC
+Increase
+Decrease
+Total
+Cost Category
+IT Hardware
+Maintenance
+Electricity
+Cooling
+Software
+UPS
+Transmission
+Land and Shell
+Building Fit-Out
+Staff
+Insurance
+Launch
+Radiation
+Rest
+OpEx [$M/MW/y]/SBDC
+,000
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+OPEX - Monolithic SBDC
+Increase
+Decrease
+Total
+
+--- Page 51 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  47 
+ 
+Cost Category CapEx [$M/MW] OpEx [$M/MW/y] TBDC SBDC TBDC SBDC 
+Infrastructure 10.55 31.53 5.22 18.99 
+IT Hardware 19.18 19.18 3.78 9.59 
+Maintenance   2.64  
+Electricity 0.04 0.25 1.00 0.13 
+Cooling 2.64 5.70  2.85 
+Software   0.72 0.72 
+UPS 1.90    
+Transmission 1.19 13.33  6.67 
+Land and Shell 1.85    
+Building Fit-Out 2.64 0.04   
+Staff   0.96 0.02 
+Insurance  5.07  2.53 
+Launch  12.16  6.08 
+Radiation  0.05   
+Rest 0.31  -0.10  
+Total 29.73 55.77 9.00 28.58 
+Launch Cost Breakdown 
+Data Centre  10.27  5.13 
+IT Hardware     
+Electricity  0.20  0.10 
+Cooling  1.69  0.85 
+Maintenance     
+Table 3: Cost comparison: TBDC vs SSO constellation SBDC. 
+  
+ 
+ 
+ 
+
+--- Page 52 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  48 
+ 
+ 
+Figure 25: CapEx breakdown of the constellation SBDC. 
+ 
+  
+Figure 26: OpEx breakdown of the constellation SBDC. 
+Cost Category
+IT Hardware
+Maintenance
+Electricity
+Cooling
+Software
+UPS
+Transmission
+Land and Shell
+Building Fit-Out
+Staff
+Insurance
+Launch
+Radiation
+Rest
+CapEx [$M/MW]/SBDC
+,000
+10,000
+20,000
+30,000
+40,000
+50,000
+60,000
+CapEx - Constellation SBDC
+Increase
+Decrease
+Total
+Cost Category
+IT Hardware
+Maintenance
+Electricity
+Cooling
+Software
+UPS
+Transmission
+Land and Shell
+Building Fit-Out
+Staff
+Insurance
+Launch
+Radiation
+Rest
+OpEx [$M/MW/y]/SBDC
+,000
+5,000
+10,000
+15,000
+20,000
+25,000
+30,000
+OpEx - Constellation SBDC
+Increase
+Decrease
+Total
+
+--- Page 53 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  49 
+ 
+ACKNOWLEDGMENT  
+The authors would like to sincerely thank the experts and professionals who generously 
+contributed their time and insights through interviews for this research. We are grateful to Edge 
+Aerospace, Starcloud , SES Satellites, Thales Alenia Space, Lonestar Data Holdings, Space 
+Renaissance International, and World Wide Technology. Their expert perspectives were 
+invaluable in shaping the findings of this work. 
+We would also like to extend our appreciation to the Technical University of Munich (TUM) team, 
+Alessandro Golkar, Lara Schuberth, and Minas Cholevas for their excellent contributions to this 
+study with the development of the cost model. 
+Our gratitude equally goes to the European Space Policy Institute (ESPI) team, including former 
+members Irene Saiz Briones and Paul Silye, for their constructive engagement and support early 
+in the project. Lastly, we would like to thank the ESPI Research Manager, Matija Rencelj, for his 
+guidance and continuous support in this research, as well as the whole ESPI team for constructive 
+and fruitful exchanges. 
+ 
+List of interviewees 
+Adriano Autino CEO, Space Renaissance International 
+Alessandro Ciappei Freelance Technical Consultant, Previously World Wide Technology 
+Yves Durand (Ret.) Director of Technology, Thales Alenia Space 
+Rafal Graczyk CTO, Edge Aerospace 
+Gunjan Hooja Business Development & Strategic Partnerships Manager, SES 
+Satellites 
+Jaroslaw Jaworski  CEO, Edge Aerospace 
+Philip Johnston Co-founder and CEO, Starcloud 
+Chriss Stott Founder, Chair and CEO, Lonestar Data Holdings 
+ 
+ 
+
+--- Page 54 ---
+Data Centres in Space - Orbital Backbone of the Second Digital Era? 
+ 
+European Space Policy Institute (ESPI)  50 
+ 
+AUTHORS 
+Jermaine F. Gutierrez is a Research Fellow at the European Space Policy Institute (ESPI). He 
+previously worked as a YGT in Data Analysis and Ecosystem Development at the European Space 
+Agency. He holds a Masters of Space Studies from the International Space University and a BSc 
+in Banking and Finance from the Frankfurt School of Finance and Management. 
+Valentin Hoffmann was a Research Intern at the European Space Policy Institute (ESPI). Prior to 
+joining ESPI, he worked in the French cultural network at the Alliance française du Manitoba, Canada, 
+took part in several research projects on China and the Indo-Pacific for the Central European Institute 
+of Asian Studies, and analysed DPRK sanctions implementation gaps for Korea Risk Group. 
+Paul Silye was a Graduate Trainee at the European Space Agency (ESA), where he supported the 
+activities of the European Centre for Space Economy and Commerce. Before joining ESA, he 
+worked as a Junior Researcher at an Austrian deep tech research company, contributing to the 
+dissemination and exploitation of various projects focused on GNSS, artificial intelligence, urban 
+air mobility, and space startup consultancy. 
+CO-AUTHORS 
+Minas Cholevas is research assistant at the Chair of Spacecraft Systems at TUM, where his work 
+focuses on cost modelling and architectural trade-off studies of Space-Based Data Centres. He 
+completed the B.Sc. degree in Mechanical Engineering at the Technische Universität München 
+(TUM) whilst being a DAAD scholarship holder. He is currently pursuing two master’s degrees at 
+TUM, in Aerospace Engineering and in Energy and Process Engineering. 
+Lara Schuberth is currently pursuing the Ph.D. degree with Technische Universität München  at 
+the Chair of Spacecraft Systems. She received the B.Sc. and M.Sc. degrees in mechanical 
+engineering from Technische Universität München (TUM), speciali sing in astronautics. In 2024, 
+she started her doctoral programme on neuromorphic vision for space situational awareness 
+focusing on neuromorphic optical payloads to detect fast-moving objects in low-light, resource-
+constrained space environments. 
+Dr. Alessandro Golkar is currently a Professor with Technische Universität München (TUM) and 
+the Chair of Spacecraft Systems received the B.Sc. and M.Sc. degrees in aerospace engineering 
+from the  University of Rome “La Sapienza, ” and the Ph.D. degree in aeronautics  
+and astronautics from the Massachusetts Institute of Technology (MIT). Dr. Golkar serves as an 
+Associate Editor for INCOSE Systems Engineering journal. 
+EDITOR 
+Matija Ren čelj is the Research Manager of the European Space Policy Institute (ESPI). He 
+previously worked at ESPI as a Research Fellow as well as at the European Space Agency, the 
+European Commission, in the aviation and commodities sectors, and started his career at a  
+corporate law firm. 
+  
+
+--- Page 55 ---
+oﬃce@espi.or.at
+www.espi.or.at
+Schwarzenbergplatz 16, 1010 Vienna, AT

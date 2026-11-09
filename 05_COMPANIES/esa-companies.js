@@ -35,7 +35,7 @@ const requestPage=require('./esa-request.cjs').requester({size:PAGE_SIZE,
  request:async(start,size)=>{
   const failures=path.join(OUTPUT_FOLDER,'large-page-timeouts.json'),known=fs.existsSync(failures)?JSON.parse(fs.readFileSync(failures)):[];
   if(size>10&&known.includes(start))throw Error('Previously timed-out large page; use small-page fallback');
-  try{return (await axios.get(`${BASE_URL}/${size}/${start}`,{params:{sortBy:'LastUpdateTime'},timeout:60000,headers:{'User-Agent':'Gagarin-Company-Directory/1.0'}})).data;}
+  try{return (await axios.get(`${BASE_URL}/${size}/${start}`,{params:{sortBy:'LastUpdateTime'},timeout:60000,headers:{'User-Agent':'Bravestar-Company-Directory/1.0'}})).data;}
   catch(e){console.log(`ESA page ${start}/${size}: ${e.message}`);if(size>10&&e.code==='ECONNABORTED'&&!known.includes(start)){known.push(start);fs.writeFileSync(failures,JSON.stringify(known));}throw e;}
  },save:(start,size,data)=>{const raw=JSON.stringify(data),hash=require('node:crypto').createHash('sha256').update(raw).digest('hex');const dir=path.join(OUTPUT_FOLDER,'original-pages');fs.mkdirSync(dir,{recursive:true});const file=path.join(dir,start+'-'+size+'-'+hash+'.json');if(!fs.existsSync(file))fs.writeFileSync(file,raw,{flag:'wx'});}
 });

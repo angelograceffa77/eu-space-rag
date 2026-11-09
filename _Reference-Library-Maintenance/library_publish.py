@@ -102,7 +102,7 @@ def publish(root,state,previous,current):
  if current!=inventory(root) or conflicts(root):raise ValueError('Inputs changed or daily workflow started; retry later')
  commit=parent
  if changed:
-  env.update(GIT_AUTHOR_NAME='Gagarin Library Publisher',GIT_AUTHOR_EMAIL='gagarin@users.noreply.github.com',GIT_COMMITTER_NAME='Gagarin Library Publisher',GIT_COMMITTER_EMAIL='gagarin@users.noreply.github.com')
+  env.update(GIT_AUTHOR_NAME='Bravestar Library Publisher',GIT_AUTHOR_EMAIL='gagarin@users.noreply.github.com',GIT_COMMITTER_NAME='Bravestar Library Publisher',GIT_COMMITTER_EMAIL='gagarin@users.noreply.github.com')
   commit=git('commit-tree',tree,'-p',parent,input=b'Update reference documents and indexes\n').decode().strip()
   if git('ls-remote',remote,'refs/heads/main').decode().split()[0]!=parent:raise ValueError('Remote advanced; retry')
   git('push',remote,commit+':refs/heads/main')

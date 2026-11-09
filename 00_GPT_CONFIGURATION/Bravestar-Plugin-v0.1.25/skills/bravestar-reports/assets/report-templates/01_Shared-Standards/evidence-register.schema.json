@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bravestar evidence register",
+  "type": "object",
+  "required": [
+    "reportId",
+    "scope",
+    "reviewStatus",
+    "sources",
+    "claims"
+  ],
+  "properties": {
+    "reportId": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "reviewStatus": {
+      "enum": [
+        "complete_within_scope",
+        "partial",
+        "blocked"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "reference",
+          "version",
+          "readStatus",
+          "limitations"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "reference": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "readStatus": {
+            "enum": [
+              "fully_read",
+              "partially_read",
+              "unread",
+              "unavailable"
+            ]
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "sourceIds",
+          "confidence"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "enum": [
+              "High",
+              "Medium",
+              "Low"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
