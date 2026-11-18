@@ -1,46 +1,15 @@
 [
   {
-    "job": "national-MK-eNabavki-current",
-    "state": "partial",
-    "observations": 130,
-    "reportedTotal": 1062,
-    "error": "Source total changed; start a new snapshot, retain evidence",
-    "limitations": [
-      "Official native current-notice Status=1 filter; no subject, buyer or publication-date restriction in request.",
-      "Portal archive/current-year behaviour and separate defence/international-donor channels require additional qualification.",
-      "Current announcement status is not proof of open bidding: complaints, divided procurements and detail deadlines must be rechecked."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
     "job": "national-SM-Gov-goods-services-current",
     "state": "traversed",
-    "observations": 13,
-    "reportedTotal": 13,
+    "observations": 12,
+    "reportedTotal": 12,
     "error": null,
     "limitations": [
       "Source current filter is client-side: unchanged full metadata index retained solely to locate current or undated candidates.",
       "No historical tender attachments/details collected. Explicit awarded, cancelled and completed metadata excluded from discovery, never used alone to close existing records.",
       "Index totals reconcile independently; no source-reported current count. Metadata deadline may differ from actual submission text and needs detail recheck.",
       "Undated records remain unverified metadata candidates without historical detail traversal."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-GL-BusinessInGreenland-current",
-    "state": "reconciled",
-    "observations": 14,
-    "reportedTotal": 14,
-    "error": null,
-    "limitations": [
-      "Official current-category search matched against native current-category count.",
-      "Native search pages are traversed and reconciled to the official current-category count; duplicates or changing totals fail closed.",
-      "Current category can include prequalified-only invitations; deadlines, space relevance and eligibility require individual checks.",
-      "Greenland is reported separately as a territory; local timezone is never inferred from a country-wide default."
     ],
     "scopeWarnings": [],
     "caps": [],
@@ -63,10 +32,26 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-GL-BusinessInGreenland-current",
+    "state": "reconciled",
+    "observations": 11,
+    "reportedTotal": 11,
+    "error": null,
+    "limitations": [
+      "Official current-category search matched against native current-category count.",
+      "Native search pages are traversed and reconciled to the official current-category count; duplicates or changing totals fail closed.",
+      "Current category can include prequalified-only invitations; deadlines, space relevance and eligibility require individual checks.",
+      "Greenland is reported separately as a territory; local timezone is never inferred from a country-wide default."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "national-FO-Keypsportal-current",
     "state": "traversed",
-    "observations": 8,
-    "reportedTotal": 8,
+    "observations": 4,
+    "reportedTotal": 4,
     "error": null,
     "limitations": [
       "Native current-procurement table only; separate historical table is not traversed or detailed.",
@@ -79,10 +64,10 @@
   },
   {
     "job": "national-UA-Prozorro-tendering",
-    "state": "reconciled",
+    "state": "partial",
     "observations": 1000,
     "reportedTotal": 1000,
-    "error": null,
+    "error": "Repeated institutional source identities prevent reconciliation",
     "limitations": [
       "Official active.tendering public search, all subjects and publication dates.",
       "10000-result ceiling is explicit partial coverage, never a complete national inventory.",
@@ -93,10 +78,25 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-IS-Utbodsvefur-current",
+    "state": "partial",
+    "observations": 0,
+    "reportedTotal": null,
+    "error": "Iceland row identity/deadline schema changed",
+    "limitations": [
+      "Official public inventory without keyword or publication-date filter; totals reconciled.",
+      "Listing contains tenders and market consultations; a future listed deadline alone does not establish open bidding.",
+      "Buyer-platform documents, restricted invitations and unlisted procurements remain separate coverage gaps."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "institution-ESO-current",
     "state": "reconciled",
-    "observations": 6,
-    "reportedTotal": 6,
+    "observations": 8,
+    "reportedTotal": 8,
     "error": null,
     "limitations": [
       "Official public Current catalogue, no keyword or publication-date filter; source counts reconciled.",
@@ -113,10 +113,10 @@
   },
   {
     "job": "national-GB-ContractsFinder-open",
-    "state": "reconciled",
-    "observations": 500,
-    "reportedTotal": 500,
-    "error": null,
+    "state": "partial",
+    "observations": 0,
+    "reportedTotal": null,
+    "error": "Unexpected token '<', \"\t\t<!DOCTYPE \"... is not valid JSON",
     "limitations": [
       "Official open contract notices, all publication dates and subjects.",
       "1000-result safety cap must reconcile; dynamic purchasing and stale status require later screening."
@@ -126,15 +126,15 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
-    "job": "national-IS-Utbodsvefur-current",
+    "job": "national-MK-eNabavki-current",
     "state": "reconciled",
-    "observations": 76,
-    "reportedTotal": 76,
+    "observations": 1077,
+    "reportedTotal": 1077,
     "error": null,
     "limitations": [
-      "Official public inventory without keyword or publication-date filter; totals reconciled.",
-      "Listing contains tenders and market consultations; a future listed deadline alone does not establish open bidding.",
-      "Buyer-platform documents, restricted invitations and unlisted procurements remain separate coverage gaps."
+      "Official native current-notice Status=1 filter; no subject, buyer or publication-date restriction in request.",
+      "Portal archive/current-year behaviour and separate defence/international-donor channels require additional qualification.",
+      "Current announcement status is not proof of open bidding: complaints, divided procurements and detail deadlines must be rechecked."
     ],
     "scopeWarnings": [],
     "caps": [],
@@ -143,8 +143,8 @@
   {
     "job": "national-SK-EKS-current",
     "state": "reconciled",
-    "observations": 176,
-    "reportedTotal": 176,
+    "observations": 195,
+    "reportedTotal": 195,
     "error": null,
     "limitations": [
       "Official EKS within-offer-deadline filter, all subjects and publication dates.",
@@ -160,8 +160,8 @@
   {
     "job": "national-RS-JNPortal-current",
     "state": "reconciled",
-    "observations": 2118,
-    "reportedTotal": 2118,
+    "observations": 1862,
+    "reportedTotal": 1862,
     "error": null,
     "limitations": [
       "Official submission-deadline search from collection day onward, without publication-date restriction; individual status and precise deadline require recheck.",
@@ -175,8 +175,8 @@
   {
     "job": "national-AT-USP-current",
     "state": "partial",
-    "observations": 1150,
-    "reportedTotal": 174775,
+    "observations": 1129,
+    "reportedTotal": 174915,
     "error": "Metadata traversal finished; undated notices and native bidding status are not verified",
     "limitations": [
       "Full public metadata index only; no historical detail downloads or publication-year restriction.",
@@ -192,9 +192,9 @@
   {
     "job": "institution-NATO-current-deadline",
     "state": "partial",
-    "observations": 145,
-    "reportedTotal": 500,
-    "error": "EPERM: operation not permitted, rename 'C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-11-16-1794819609333\\discovery\\institution-NATO-current-deadline\\state.json.tmp' -> 'C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-11-16-1794819609333\\discovery\\institution-NATO-current-deadline\\state.json'",
+    "observations": 153,
+    "reportedTotal": 505,
+    "error": "EPERM: operation not permitted, rename 'C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-11-18-1794992456337\\discovery\\institution-NATO-current-deadline\\state.json.tmp' -> 'C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-11-18-1794992456337\\discovery\\institution-NATO-current-deadline\\state.json'",
     "limitations": [
       "Official public NATO opportunity catalogue sorted by native planned closing date; no publication-year or subject search.",
       "Only records with current or future closing dates are exported; the boundary page remains unchanged in the audit evidence.",
@@ -209,11 +209,28 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-GB-FTS-open",
+    "state": "partial",
+    "observations": 120,
+    "reportedTotal": 120,
+    "error": "page.goto: Timeout 60000ms exceeded.",
+    "limitations": [
+      "Official open-opportunities form; all subjects and publication dates.",
+      "Includes planning and tender notices; later bidding verification required. Changing inventories may prevent reconciliation.",
+      "UK below-threshold and devolved portal omissions remain possible."
+    ],
+    "scopeWarnings": [
+      "Live UK inventory is not an atomic snapshot; every admitted notice requires current compiled-record verification."
+    ],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "national-SE-eAvrop-current",
-    "state": "traversed",
-    "observations": 1768,
+    "state": "partial",
+    "observations": 1714,
     "reportedTotal": null,
-    "error": null,
+    "error": "Native catalogue traversed with repeated identities or changing versions",
     "limitations": [
       "Official current advertisements, all procurement types and buyers, no CPV or keyword filters.",
       "Original server-rendered pages are retained; native next-page postbacks are followed.",
@@ -240,75 +257,10 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
-    "job": "national-IT-ANAC-current-deadline",
-    "state": "partial",
-    "observations": 0,
-    "reportedTotal": null,
-    "error": "timeout of 45000ms exceeded",
-    "limitations": [
-      "Supplementary contract-notice query sorted by native submission deadline, without subject or publication-date limits.",
-      "Traversal stops at the expired or undated boundary; missing-deadline notices and other legal notice types remain gaps.",
-      "Original source responses, lots and templates remain unchanged; only current-deadline row indices are exported.",
-      "This is partial discovery, not confirmation of open bids or complete Italian coverage."
-    ],
-    "scopeWarnings": [
-      "Missing-deadline notices are outside this supplementary query. Native deadline, status and amendments still require verification.",
-      "Only deadline-sorted current candidates are exported; the stopping page is retained unchanged as boundary evidence."
-    ],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-IT-ASI-suppliers-current",
-    "state": "reconciled",
-    "observations": 6,
-    "reportedTotal": 6,
-    "error": null,
-    "limitations": [
-      "Only the public current notices tab is traversed; expired tab and historical details are not requested.",
-      "The native current tab contains grants, amendments, expired deadlines and missing deadlines; all remain unverified candidates.",
-      "Original RPC payloads and rendered listing snapshots are preserved. Titles may be truncated in the listing; detail parsing remains a later qualification task.",
-      "Private invitations and account-only documents remain outside public coverage."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-ES-Catalonia-current",
-    "state": "reconciled",
-    "observations": 2493,
-    "reportedTotal": 2493,
-    "error": null,
-    "limitations": [
-      "Official PSCP dataset selected by current submission deadline, without subject or publication-year restrictions.",
-      "Source lots, descriptions and lifecycle fields are retained; native bidding eligibility needs later verification.",
-      "Dataset publication freshness, missing-deadline notices and attachment-only details remain limitations."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-SE-Clira-current",
-    "state": "partial",
-    "observations": 390,
-    "reportedTotal": 390,
-    "error": "Catalogue traversed but repeated identities prevent reconciliation",
-    "limitations": [
-      "Public advertised procurement catalogue across all subjects and publication years.",
-      "DPS admissions, consultations and source deadlines require later verification.",
-      "Private invitations and other Swedish platforms are outside this catalogue."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
     "job": "national-SK-JOSEPHINE-current",
     "state": "traversed",
-    "observations": 9914,
-    "reportedTotal": 9914,
+    "observations": 9896,
+    "reportedTotal": 9896,
     "error": null,
     "limitations": [
       "Official ongoing-state Slovakia inventory; no subject or publication-year filter.",
@@ -397,6 +349,22 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-IT-ASI-suppliers-current",
+    "state": "reconciled",
+    "observations": 6,
+    "reportedTotal": 6,
+    "error": null,
+    "limitations": [
+      "Only the public current notices tab is traversed; expired tab and historical details are not requested.",
+      "The native current tab contains grants, amendments, expired deadlines and missing deadlines; all remain unverified candidates.",
+      "Original RPC payloads and rendered listing snapshots are preserved. Titles may be truncated in the listing; detail parsing remains a later qualification task.",
+      "Private invitations and account-only documents remain outside public coverage."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "institution-EUSST-open",
     "state": "traversed",
     "observations": 3,
@@ -444,8 +412,8 @@
   {
     "job": "national-AT-BBG-current",
     "state": "traversed",
-    "observations": 90,
-    "reportedTotal": 90,
+    "observations": 88,
+    "reportedTotal": 88,
     "error": null,
     "limitations": [
       "Supplementary BBG current/planned inventory only; not the Austrian central national index.",
@@ -472,6 +440,21 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-ES-Catalonia-current",
+    "state": "reconciled",
+    "observations": 2484,
+    "reportedTotal": 2484,
+    "error": null,
+    "limitations": [
+      "Official PSCP dataset selected by current submission deadline, without subject or publication-year restrictions.",
+      "Source lots, descriptions and lifecycle fields are retained; native bidding eligibility needs later verification.",
+      "Dataset publication freshness, missing-deadline notices and attachment-only details remain limitations."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "national-SE-Konstpool-current",
     "state": "partial",
     "observations": 0,
@@ -488,10 +471,10 @@
   },
   {
     "job": "national-PL-POLSA-current",
-    "state": "reconciled",
-    "observations": 0,
-    "reportedTotal": 0,
-    "error": null,
+    "state": "partial",
+    "observations": 1,
+    "reportedTotal": 1,
+    "error": "One or more linked documents could not be retrieved",
     "limitations": [
       "Official POLSA active tab only; ended, cancelled and closed tabs are excluded.",
       "Zero records are accepted only when the source explicitly reports totalItems zero.",
@@ -532,6 +515,21 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-SE-Clira-current",
+    "state": "reconciled",
+    "observations": 403,
+    "reportedTotal": 403,
+    "error": null,
+    "limitations": [
+      "Public advertised procurement catalogue across all subjects and publication years.",
+      "DPS admissions, consultations and source deadlines require later verification.",
+      "Private invitations and other Swedish platforms are outside this catalogue."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "institution-SatCen-current",
     "state": "traversed",
     "observations": 1,
@@ -547,306 +545,11 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
-    "job": "national-PT-active",
-    "state": "reconciled",
-    "observations": 1046,
-    "reportedTotal": 1046,
-    "error": null,
-    "limitations": [
-      "Official BASE active-announcements filter without publication-date, subject or buyer restrictions.",
-      "Current amendments and other notice stages remain separate source records.",
-      "Portal freshness and native eligibility require later verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-FR-CNES-current",
-    "state": "reconciled",
-    "observations": 22,
-    "reportedTotal": 22,
-    "error": null,
-    "limitations": [
-      "Native all-current-consultations listing without keywords or publication dates.",
-      "Listing status and details require subsequent lifecycle verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-GR-works-active",
-    "state": "reconciled",
-    "observations": 197,
-    "reportedTotal": 197,
-    "error": null,
-    "limitations": [
-      "Official public-works bid-submission export without publication dates, keywords or CPV filters.",
-      "Status is preserved as source evidence; bidding eligibility and relevance need later verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-GR-NEPPS-active",
-    "state": "reconciled",
-    "observations": 1081,
-    "reportedTotal": 1081,
-    "error": null,
-    "limitations": [
-      "Official active supplies/services export without publication-year, keyword or CPV restrictions.",
-      "Active includes admissions and restricted procedures; native bidding and relevance verification remain required.",
-      "Public works and KIMDIS-only below-threshold notices remain separate."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-IT-MePA-RDO-current",
-    "state": "reconciled",
-    "observations": 442,
-    "reportedTotal": 442,
-    "error": null,
-    "limitations": [
-      "Public non-archived open RDO catalogue across all subjects.",
-      "Private invitations and regional platforms remain separate."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-IT-other-bandi-current",
-    "state": "reconciled",
-    "observations": 120,
-    "reportedTotal": 120,
-    "error": null,
-    "limitations": [
-      "Public non-archived Altri Bandi catalogue across all subjects.",
-      "Native status and actual bidding availability require later verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-DE-DLR-current",
-    "state": "traversed",
-    "observations": 13,
-    "reportedTotal": 13,
-    "error": null,
-    "limitations": [
-      "Dynamically discovers all current public ELViS feeds linked by DLR.",
-      "Feed traversal has no independent total; restricted packages and feed omissions remain gaps.",
-      "No historical feed traversal or space keyword filtering."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-IT-INAF-current",
-    "state": "traversed",
-    "observations": 1,
-    "reportedTotal": 1,
-    "error": null,
-    "limitations": [
-      "Native In corso inventory across all INAF buyers and subjects.",
-      "Source count must match visible rows; pagination growth blocks reconciliation until supported.",
-      "Native deadline and space relevance verification remain separate."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "institution-EUROCONTROL-current",
-    "state": "traversed",
-    "observations": 9,
-    "reportedTotal": 9,
-    "error": null,
-    "limitations": [
-      "Current-business-opportunities tab only; awarded and upcoming tabs excluded.",
-      "Source labels and deadlines require later lifecycle and relevance verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "institution-EMSA-current",
-    "state": "traversed",
-    "observations": 6,
-    "reportedTotal": 6,
-    "error": null,
-    "limitations": [
-      "Official ongoing listing across subjects; expired, asset-sale and admission records require later screening.",
-      "Linked public detail pages retained; additional attachments require detail enrichment."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-GB-FTS-open",
-    "state": "partial",
-    "observations": 919,
-    "reportedTotal": 919,
-    "error": "Inventory changed during traversal; observations retained without a completeness claim",
-    "limitations": [
-      "Official open-opportunities form; all subjects and publication dates.",
-      "Includes planning and tender notices; later bidding verification required. Changing inventories may prevent reconciliation.",
-      "UK below-threshold and devolved portal omissions remain possible."
-    ],
-    "scopeWarnings": [
-      "Live UK inventory is not an atomic snapshot; every admitted notice requires current compiled-record verification."
-    ],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-FR-PLACE-current",
-    "state": "partial",
-    "observations": 1903,
-    "reportedTotal": 1903,
-    "error": "Listing exhausted with changing totals or repeated records",
-    "limitations": [
-      "Native all-current-consultations listing without keywords or publication dates.",
-      "Listing status and details require subsequent lifecycle verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "institution-EUMETSAT-current",
-    "state": "traversed",
-    "observations": 7,
-    "reportedTotal": 7,
-    "error": null,
-    "limitations": [
-      "Official current listing across all subjects; no historical archive collection.",
-      "Listed records and linked documents require native deadline and lifecycle verification.",
-      "Listing exhaustion is not independent proof of complete institutional procurement coverage."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "institution-ECMWF-Copernicus-current",
-    "state": "traversed",
-    "observations": 5,
-    "reportedTotal": 5,
-    "error": null,
-    "limitations": [
-      "Official current listing across all subjects; no historical archive collection.",
-      "Listed records and linked documents require native deadline and lifecycle verification.",
-      "Listing exhaustion is not independent proof of complete institutional procurement coverage."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "institution-ECMWF-DestinE-current",
-    "state": "traversed",
-    "observations": 1,
-    "reportedTotal": 1,
-    "error": null,
-    "limitations": [
-      "Official current listing across all subjects; no historical archive collection.",
-      "Listed records and linked documents require native deadline and lifecycle verification.",
-      "Listing exhaustion is not independent proof of complete institutional procurement coverage."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-EE-status-11",
-    "state": "traversed",
-    "observations": 604,
-    "reportedTotal": 604,
-    "error": null,
-    "limitations": [
-      "Broad official current-status inventory without publication-year floor or subject filters.",
-      "Capped queries use date bounds discovered from the current inventory; independent count is unavailable.",
-      "Native status and admission eligibility require subsequent verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-EE-status-14",
-    "state": "traversed",
-    "observations": 226,
-    "reportedTotal": 226,
-    "error": null,
-    "limitations": [
-      "Broad official current-status inventory without publication-year floor or subject filters.",
-      "Capped queries use date bounds discovered from the current inventory; independent count is unavailable.",
-      "Native status and admission eligibility require subsequent verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-EE-status-23",
-    "state": "traversed",
-    "observations": 0,
-    "reportedTotal": 0,
-    "error": null,
-    "limitations": [
-      "Broad official current-status inventory without publication-year floor or subject filters.",
-      "Capped queries use date bounds discovered from the current inventory; independent count is unavailable.",
-      "Native status and admission eligibility require subsequent verification."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-LU-open",
-    "state": "reconciled",
-    "observations": 298,
-    "reportedTotal": 298,
-    "error": null,
-    "limitations": [
-      "Official deadline-bearing notices of all types without the default publication-date window.",
-      "No upper deadline cutoff; no space or buyer filter.",
-      "No-deadline and restricted procedures require separate discovery."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-SE-kommers-open",
-    "state": "partial",
-    "observations": 778,
-    "reportedTotal": 778,
-    "error": "All pages visited but repeated source identities prevent independent completeness",
-    "limitations": [
-      "Kommers current notices with old-notice search disabled and no subject filters.",
-      "Pagination traversal has no independent record total.",
-      "Other Swedish platforms and restricted invitations remain separate."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
     "job": "national-CH-SIMAP-tenders",
-    "state": "partial",
-    "observations": 9080,
-    "reportedTotal": 9080,
-    "error": "connect ETIMEDOUT 2a0d:e940:be6a:50f7::202:443; connect ETIMEDOUT 194.88.197.202:443",
+    "state": "traversed",
+    "observations": 9776,
+    "reportedTotal": 9776,
+    "error": null,
     "limitations": [
       "Latest-publication tender metadata index; no historical detail backfill.",
       "Index has no deadline filter; expired/undated records are not presumed open. Restricted documents remain gaps."
@@ -857,10 +560,10 @@
   },
   {
     "job": "national-NO-DOFFIN-ANNOUNCEMENT_OF_COMPETITION",
-    "state": "reconciled",
-    "observations": 915,
-    "reportedTotal": 915,
-    "error": null,
+    "state": "partial",
+    "observations": 921,
+    "reportedTotal": 921,
+    "error": "Repeated institutional source identities prevent reconciliation",
     "limitations": [
       "Official active inventory partitioned by notice type to avoid the 1000-result cap.",
       "No subject or publication-date restriction; status and submission deadline must be reverified before admission.",
@@ -916,6 +619,303 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-GR-works-active",
+    "state": "reconciled",
+    "observations": 189,
+    "reportedTotal": 189,
+    "error": null,
+    "limitations": [
+      "Official public-works bid-submission export without publication dates, keywords or CPV filters.",
+      "Status is preserved as source evidence; bidding eligibility and relevance need later verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-IT-ANAC-current-deadline",
+    "state": "partial",
+    "observations": 2476,
+    "reportedTotal": 79753,
+    "error": "Known-deadline prefix traversed; missing deadlines and other legal notice types remain outside this query",
+    "limitations": [
+      "Supplementary contract-notice query sorted by native submission deadline, without subject or publication-date limits.",
+      "Traversal stops at the expired or undated boundary; missing-deadline notices and other legal notice types remain gaps.",
+      "Original source responses, lots and templates remain unchanged; only current-deadline row indices are exported.",
+      "This is partial discovery, not confirmation of open bids or complete Italian coverage."
+    ],
+    "scopeWarnings": [
+      "Missing-deadline notices are outside this supplementary query. Native deadline, status and amendments still require verification.",
+      "Only deadline-sorted current candidates are exported; the stopping page is retained unchanged as boundary evidence."
+    ],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-GR-NEPPS-active",
+    "state": "reconciled",
+    "observations": 1040,
+    "reportedTotal": 1040,
+    "error": null,
+    "limitations": [
+      "Official active supplies/services export without publication-year, keyword or CPV restrictions.",
+      "Active includes admissions and restricted procedures; native bidding and relevance verification remain required.",
+      "Public works and KIMDIS-only below-threshold notices remain separate."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-FR-CNES-current",
+    "state": "reconciled",
+    "observations": 21,
+    "reportedTotal": 21,
+    "error": null,
+    "limitations": [
+      "Native all-current-consultations listing without keywords or publication dates.",
+      "Listing status and details require subsequent lifecycle verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-PT-active",
+    "state": "reconciled",
+    "observations": 1100,
+    "reportedTotal": 1100,
+    "error": null,
+    "limitations": [
+      "Official BASE active-announcements filter without publication-date, subject or buyer restrictions.",
+      "Current amendments and other notice stages remain separate source records.",
+      "Portal freshness and native eligibility require later verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-IT-MePA-RDO-current",
+    "state": "reconciled",
+    "observations": 463,
+    "reportedTotal": 463,
+    "error": null,
+    "limitations": [
+      "Public non-archived open RDO catalogue across all subjects.",
+      "Private invitations and regional platforms remain separate."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-IT-other-bandi-current",
+    "state": "reconciled",
+    "observations": 130,
+    "reportedTotal": 130,
+    "error": null,
+    "limitations": [
+      "Public non-archived Altri Bandi catalogue across all subjects.",
+      "Native status and actual bidding availability require later verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-IT-INAF-current",
+    "state": "traversed",
+    "observations": 1,
+    "reportedTotal": 1,
+    "error": null,
+    "limitations": [
+      "Native In corso inventory across all INAF buyers and subjects.",
+      "Source count must match visible rows; pagination growth blocks reconciliation until supported.",
+      "Native deadline and space relevance verification remain separate."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "institution-EUROCONTROL-current",
+    "state": "traversed",
+    "observations": 11,
+    "reportedTotal": 11,
+    "error": null,
+    "limitations": [
+      "Current-business-opportunities tab only; awarded and upcoming tabs excluded.",
+      "Source labels and deadlines require later lifecycle and relevance verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "institution-EMSA-current",
+    "state": "traversed",
+    "observations": 4,
+    "reportedTotal": 4,
+    "error": null,
+    "limitations": [
+      "Official ongoing listing across subjects; expired, asset-sale and admission records require later screening.",
+      "Linked public detail pages retained; additional attachments require detail enrichment."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-DE-DLR-current",
+    "state": "traversed",
+    "observations": 13,
+    "reportedTotal": 13,
+    "error": null,
+    "limitations": [
+      "Dynamically discovers all current public ELViS feeds linked by DLR.",
+      "Feed traversal has no independent total; restricted packages and feed omissions remain gaps.",
+      "No historical feed traversal or space keyword filtering."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "institution-EUMETSAT-current",
+    "state": "traversed",
+    "observations": 7,
+    "reportedTotal": 7,
+    "error": null,
+    "limitations": [
+      "Official current listing across all subjects; no historical archive collection.",
+      "Listed records and linked documents require native deadline and lifecycle verification.",
+      "Listing exhaustion is not independent proof of complete institutional procurement coverage."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "institution-ECMWF-Copernicus-current",
+    "state": "traversed",
+    "observations": 5,
+    "reportedTotal": 5,
+    "error": null,
+    "limitations": [
+      "Official current listing across all subjects; no historical archive collection.",
+      "Listed records and linked documents require native deadline and lifecycle verification.",
+      "Listing exhaustion is not independent proof of complete institutional procurement coverage."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "institution-ECMWF-DestinE-current",
+    "state": "traversed",
+    "observations": 1,
+    "reportedTotal": 1,
+    "error": null,
+    "limitations": [
+      "Official current listing across all subjects; no historical archive collection.",
+      "Listed records and linked documents require native deadline and lifecycle verification.",
+      "Listing exhaustion is not independent proof of complete institutional procurement coverage."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-EE-status-11",
+    "state": "traversed",
+    "observations": 596,
+    "reportedTotal": 596,
+    "error": null,
+    "limitations": [
+      "Broad official current-status inventory without publication-year floor or subject filters.",
+      "Capped queries use date bounds discovered from the current inventory; independent count is unavailable.",
+      "Native status and admission eligibility require subsequent verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-FR-PLACE-current",
+    "state": "partial",
+    "observations": 20,
+    "reportedTotal": 1768,
+    "error": "page.waitForFunction: Timeout 45000ms exceeded.",
+    "limitations": [
+      "Native all-current-consultations listing without keywords or publication dates.",
+      "Listing status and details require subsequent lifecycle verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-EE-status-14",
+    "state": "traversed",
+    "observations": 226,
+    "reportedTotal": 226,
+    "error": null,
+    "limitations": [
+      "Broad official current-status inventory without publication-year floor or subject filters.",
+      "Capped queries use date bounds discovered from the current inventory; independent count is unavailable.",
+      "Native status and admission eligibility require subsequent verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-EE-status-23",
+    "state": "traversed",
+    "observations": 0,
+    "reportedTotal": 0,
+    "error": null,
+    "limitations": [
+      "Broad official current-status inventory without publication-year floor or subject filters.",
+      "Capped queries use date bounds discovered from the current inventory; independent count is unavailable.",
+      "Native status and admission eligibility require subsequent verification."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-LU-open",
+    "state": "reconciled",
+    "observations": 270,
+    "reportedTotal": 270,
+    "error": null,
+    "limitations": [
+      "Official deadline-bearing notices of all types without the default publication-date window.",
+      "No upper deadline cutoff; no space or buyer filter.",
+      "No-deadline and restricted procedures require separate discovery."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-SE-kommers-open",
+    "state": "partial",
+    "observations": 749,
+    "reportedTotal": 749,
+    "error": "All pages visited but repeated source identities prevent independent completeness",
+    "limitations": [
+      "Kommers current notices with old-notice search disabled and no subject filters.",
+      "Pagination traversal has no independent record total.",
+      "Other Swedish platforms and restricted invitations remain separate."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "institution-ESA-issued-competition",
     "state": "reconciled",
     "observations": 142,
@@ -933,8 +933,8 @@
   {
     "job": "institution-ESA-issued-cfp",
     "state": "reconciled",
-    "observations": 110,
-    "reportedTotal": 110,
+    "observations": 111,
+    "reportedTotal": 111,
     "error": null,
     "limitations": [
       "Public ESA issued status for calls for proposals; no publication-year or keyword filter.",
@@ -963,8 +963,8 @@
   {
     "job": "national-IE-open",
     "state": "reconciled",
-    "observations": 611,
-    "reportedTotal": 611,
+    "observations": 610,
+    "reportedTotal": 610,
     "error": null,
     "limitations": [
       "Native tender-submission status across all subjects without publication-year filters.",
@@ -978,8 +978,8 @@
   {
     "job": "national-LT-open",
     "state": "reconciled",
-    "observations": 1022,
-    "reportedTotal": 1022,
+    "observations": 1014,
+    "reportedTotal": 1014,
     "error": null,
     "limitations": [
       "Native tender-submission status across all subjects without publication-year filters.",
@@ -1022,10 +1022,10 @@
   },
   {
     "job": "national-HR-open",
-    "state": "partial",
-    "observations": 1626,
-    "reportedTotal": 1628,
-    "error": "Cursor traversal finished but the live inventory changed; completeness remains partial",
+    "state": "reconciled",
+    "observations": 1664,
+    "reportedTotal": 1664,
+    "error": null,
     "limitations": [
       "Public current and invitation-only statuses without subject or publication-date filters.",
       "Invitation-only records are discovery candidates, not open bidding.",
@@ -1038,8 +1038,8 @@
   {
     "job": "national-HU-open",
     "state": "reconciled",
-    "observations": 1338,
-    "reportedTotal": 1338,
+    "observations": 1349,
+    "reportedTotal": 1349,
     "error": null,
     "limitations": [
       "Official current-procedures inventory without keyword, CPV or publication-date filters.",
@@ -1051,40 +1051,10 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
-    "job": "national-CZ-open",
-    "state": "partial",
-    "observations": 8800,
-    "reportedTotal": null,
-    "error": "EPERM: operation not permitted, rename 'C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-11-16-1794819609333\\discovery\\national-CZ-open\\state.json.tmp' -> 'C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-11-16-1794819609333\\discovery\\national-CZ-open\\state.json'",
-    "limitations": [
-      "All NEN not-terminated procedures without keywords or publication-year restrictions.",
-      "Not terminated includes expired or later-stage procedures; native lifecycle verification remains required.",
-      "Pagination exhaustion has no independent record total; other Czech platforms remain separate."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
-    "job": "national-RO-open",
-    "state": "reconciled",
-    "observations": 2055,
-    "reportedTotal": 2055,
-    "error": null,
-    "limitations": [
-      "SEAP public contract-notice submission deadline filter without subject or publication-date restrictions.",
-      "Advertisements and direct purchases need separate routes; searchTooLong is treated as incomplete.",
-      "Native lifecycle and space relevance remain unverified."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
     "job": "national-RO-advertisements-recent",
     "state": "partial",
-    "observations": 839,
-    "reportedTotal": 2734,
+    "observations": 803,
+    "reportedTotal": 2789,
     "error": "Recent publication window traversed; older still-open advertisements remain outside this source scope",
     "limitations": [
       "Rolling fourteen-day publication window plus today; current-deadline candidates only, no historical details.",
@@ -1099,15 +1069,30 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
-    "job": "national-BG-open",
+    "job": "national-RO-open",
     "state": "reconciled",
-    "observations": 1625,
-    "reportedTotal": 1625,
+    "observations": 1965,
+    "reportedTotal": 1965,
     "error": null,
     "limitations": [
-      "Official opened-status CAIS EOP inventory without keyword, CPV or publication-year restriction.",
-      "Opened status is discovery only; cancellations, suspensions and deadlines require native verification.",
-      "Restricted and unindexed procurements are outside this route."
+      "SEAP public contract-notice submission deadline filter without subject or publication-date restrictions.",
+      "Advertisements and direct purchases need separate routes; searchTooLong is treated as incomplete.",
+      "Native lifecycle and space relevance remain unverified."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
+    "job": "national-CZ-open",
+    "state": "partial",
+    "observations": 21697,
+    "reportedTotal": 21697,
+    "error": "Pagination exhausted with repeated identities or failed pages; coverage remains partial",
+    "limitations": [
+      "All NEN not-terminated procedures without keywords or publication-year restrictions.",
+      "Not terminated includes expired or later-stage procedures; native lifecycle verification remains required.",
+      "Pagination exhaustion has no independent record total; other Czech platforms remain separate."
     ],
     "scopeWarnings": [],
     "caps": [],
@@ -1116,8 +1101,8 @@
   {
     "job": "national-BE-open",
     "state": "reconciled",
-    "observations": 2121,
-    "reportedTotal": 2121,
+    "observations": 2055,
+    "reportedTotal": 2055,
     "error": null,
     "limitations": [
       "Official tender-submission deadline filter with no space or publication-year restrictions.",
@@ -1129,10 +1114,25 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-BG-open",
+    "state": "reconciled",
+    "observations": 1509,
+    "reportedTotal": 1509,
+    "error": null,
+    "limitations": [
+      "Official opened-status CAIS EOP inventory without keyword, CPV or publication-year restriction.",
+      "Opened status is discovery only; cancellations, suspensions and deadlines require native verification.",
+      "Restricted and unindexed procurements are outside this route."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "national-SI-open",
     "state": "reconciled",
-    "observations": 896,
-    "reportedTotal": 896,
+    "observations": 890,
+    "reportedTotal": 890,
     "error": null,
     "limitations": [
       "Official submission-date filter without CPV, keywords or publication-year restriction.",
@@ -1146,8 +1146,8 @@
   {
     "job": "national-LV-IUB-active",
     "state": "reconciled",
-    "observations": 1033,
-    "reportedTotal": 1033,
+    "observations": 1016,
+    "reportedTotal": 1016,
     "error": null,
     "limitations": [
       "Official active-procurement or native submission-date search without publication-year or subject restrictions.",
@@ -1165,8 +1165,8 @@
   {
     "job": "national-LV-IUB-deadline",
     "state": "reconciled",
-    "observations": 962,
-    "reportedTotal": 962,
+    "observations": 1014,
+    "reportedTotal": 1014,
     "error": null,
     "limitations": [
       "Official active-procurement or native submission-date search without publication-year or subject restrictions.",
@@ -1184,8 +1184,8 @@
   {
     "job": "national-SE-Mercell-current",
     "state": "partial",
-    "observations": 3237,
-    "reportedTotal": 6108,
+    "observations": 3222,
+    "reportedTotal": 6366,
     "error": "Changing catalogue or repeated identities; current inventory needs reconciliation",
     "limitations": [
       "Public Swedish catalogue metadata traversed without subject or publication-year filters; only native current candidates exported.",
@@ -1216,8 +1216,8 @@
   {
     "job": "national-DE-open",
     "state": "partial",
-    "observations": 4690,
-    "reportedTotal": 54436,
+    "observations": 22457,
+    "reportedTotal": 54698,
     "error": "German partition total changed; retain evidence and start a new snapshot",
     "limitations": [
       "Official active lots inventory without keywords, CPV or publication-year restrictions.",
@@ -1246,8 +1246,8 @@
   {
     "job": "national-NL-open",
     "state": "reconciled",
-    "observations": 4288,
-    "reportedTotal": 4288,
+    "observations": 4183,
+    "reportedTotal": 4183,
     "error": null,
     "limitations": [
       "Official closing-date filter; no keyword or publication-date restriction.",
@@ -1261,8 +1261,8 @@
   {
     "job": "national-DK-open",
     "state": "reconciled",
-    "observations": 2432,
-    "reportedTotal": 2432,
+    "observations": 2454,
+    "reportedTotal": 2454,
     "error": null,
     "limitations": [
       "Official AKTIV public listing without keyword or publication-date restrictions.",
@@ -1276,8 +1276,8 @@
   {
     "job": "national-FR-open",
     "state": "reconciled",
-    "observations": 7409,
-    "reportedTotal": 7409,
+    "observations": 6672,
+    "reportedTotal": 6672,
     "error": null,
     "limitations": [
       "BOAMP deadline-bearing notices across all subjects; no publication-year cutoff.",
@@ -1291,8 +1291,8 @@
   {
     "job": "national-FI-open",
     "state": "reconciled",
-    "observations": 1712,
-    "reportedTotal": 1712,
+    "observations": 1726,
+    "reportedTotal": 1726,
     "error": null,
     "limitations": [
       "Deadline-bearing HILMA index including all subject areas; no publication-year cutoff.",
@@ -1306,8 +1306,8 @@
   {
     "job": "ted-AUT",
     "state": "reconciled",
-    "observations": 419,
-    "reportedTotal": 419,
+    "observations": 402,
+    "reportedTotal": 402,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1321,8 +1321,8 @@
   {
     "job": "ted-BEL",
     "state": "reconciled",
-    "observations": 979,
-    "reportedTotal": 979,
+    "observations": 918,
+    "reportedTotal": 918,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1336,8 +1336,8 @@
   {
     "job": "ted-BGR",
     "state": "reconciled",
-    "observations": 776,
-    "reportedTotal": 776,
+    "observations": 746,
+    "reportedTotal": 746,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1351,8 +1351,8 @@
   {
     "job": "ted-HRV",
     "state": "reconciled",
-    "observations": 588,
-    "reportedTotal": 588,
+    "observations": 567,
+    "reportedTotal": 567,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1366,8 +1366,8 @@
   {
     "job": "ted-CYP",
     "state": "reconciled",
-    "observations": 96,
-    "reportedTotal": 96,
+    "observations": 89,
+    "reportedTotal": 89,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1381,8 +1381,8 @@
   {
     "job": "ted-CZE",
     "state": "reconciled",
-    "observations": 1506,
-    "reportedTotal": 1506,
+    "observations": 1488,
+    "reportedTotal": 1488,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1396,8 +1396,8 @@
   {
     "job": "ted-DNK",
     "state": "reconciled",
-    "observations": 289,
-    "reportedTotal": 289,
+    "observations": 286,
+    "reportedTotal": 286,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1411,8 +1411,8 @@
   {
     "job": "ted-EST",
     "state": "reconciled",
-    "observations": 252,
-    "reportedTotal": 252,
+    "observations": 246,
+    "reportedTotal": 246,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1441,8 +1441,8 @@
   {
     "job": "ted-FRA",
     "state": "reconciled",
-    "observations": 4951,
-    "reportedTotal": 4951,
+    "observations": 4544,
+    "reportedTotal": 4544,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1454,25 +1454,10 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
-    "job": "national-ES-published",
-    "state": "partial",
-    "observations": 15060,
-    "reportedTotal": 16943,
-    "error": "locator.textContent: Timeout 45000ms exceeded.",
-    "limitations": [
-      "Public PLACSP published query without space or publication-date restrictions.",
-      "Published status and future deadline are discovery signals, not verified bid availability.",
-      "Regional-only and restricted opportunities remain separate."
-    ],
-    "scopeWarnings": [],
-    "caps": [],
-    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
-  },
-  {
     "job": "ted-DEU",
     "state": "reconciled",
-    "observations": 8584,
-    "reportedTotal": 8584,
+    "observations": 8348,
+    "reportedTotal": 8348,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1486,8 +1471,8 @@
   {
     "job": "ted-GRC",
     "state": "reconciled",
-    "observations": 559,
-    "reportedTotal": 559,
+    "observations": 538,
+    "reportedTotal": 538,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1501,8 +1486,8 @@
   {
     "job": "ted-HUN",
     "state": "reconciled",
-    "observations": 321,
-    "reportedTotal": 321,
+    "observations": 309,
+    "reportedTotal": 309,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1516,8 +1501,8 @@
   {
     "job": "ted-IRL",
     "state": "reconciled",
-    "observations": 410,
-    "reportedTotal": 410,
+    "observations": 405,
+    "reportedTotal": 405,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1531,8 +1516,8 @@
   {
     "job": "ted-ITA",
     "state": "reconciled",
-    "observations": 1663,
-    "reportedTotal": 1663,
+    "observations": 1618,
+    "reportedTotal": 1618,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1546,8 +1531,8 @@
   {
     "job": "ted-LVA",
     "state": "reconciled",
-    "observations": 502,
-    "reportedTotal": 502,
+    "observations": 477,
+    "reportedTotal": 477,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1561,8 +1546,8 @@
   {
     "job": "ted-LTU",
     "state": "reconciled",
-    "observations": 545,
-    "reportedTotal": 545,
+    "observations": 503,
+    "reportedTotal": 503,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1576,8 +1561,8 @@
   {
     "job": "ted-LUX",
     "state": "reconciled",
-    "observations": 201,
-    "reportedTotal": 201,
+    "observations": 178,
+    "reportedTotal": 178,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1591,8 +1576,8 @@
   {
     "job": "ted-MLT",
     "state": "reconciled",
-    "observations": 145,
-    "reportedTotal": 145,
+    "observations": 148,
+    "reportedTotal": 148,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1606,8 +1591,8 @@
   {
     "job": "ted-NLD",
     "state": "reconciled",
-    "observations": 1472,
-    "reportedTotal": 1472,
+    "observations": 1398,
+    "reportedTotal": 1398,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1621,8 +1606,8 @@
   {
     "job": "ted-POL",
     "state": "reconciled",
-    "observations": 5568,
-    "reportedTotal": 5568,
+    "observations": 5240,
+    "reportedTotal": 5240,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1636,8 +1621,8 @@
   {
     "job": "ted-PRT",
     "state": "reconciled",
-    "observations": 627,
-    "reportedTotal": 627,
+    "observations": 631,
+    "reportedTotal": 631,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1651,8 +1636,8 @@
   {
     "job": "ted-ROU",
     "state": "reconciled",
-    "observations": 1274,
-    "reportedTotal": 1274,
+    "observations": 1214,
+    "reportedTotal": 1214,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1666,8 +1651,8 @@
   {
     "job": "ted-SVK",
     "state": "reconciled",
-    "observations": 383,
-    "reportedTotal": 383,
+    "observations": 360,
+    "reportedTotal": 360,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1681,8 +1666,8 @@
   {
     "job": "ted-SVN",
     "state": "reconciled",
-    "observations": 510,
-    "reportedTotal": 510,
+    "observations": 516,
+    "reportedTotal": 516,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1696,8 +1681,8 @@
   {
     "job": "ted-ESP",
     "state": "reconciled",
-    "observations": 2365,
-    "reportedTotal": 2365,
+    "observations": 2263,
+    "reportedTotal": 2263,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1711,8 +1696,8 @@
   {
     "job": "ted-SWE",
     "state": "reconciled",
-    "observations": 1389,
-    "reportedTotal": 1389,
+    "observations": 1346,
+    "reportedTotal": 1346,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1741,8 +1726,8 @@
   {
     "job": "ted-CHE",
     "state": "reconciled",
-    "observations": 717,
-    "reportedTotal": 717,
+    "observations": 689,
+    "reportedTotal": 689,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1756,8 +1741,8 @@
   {
     "job": "ted-NOR",
     "state": "reconciled",
-    "observations": 620,
-    "reportedTotal": 620,
+    "observations": 608,
+    "reportedTotal": 608,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1831,8 +1816,8 @@
   {
     "job": "ted-ALB",
     "state": "reconciled",
-    "observations": 17,
-    "reportedTotal": 17,
+    "observations": 21,
+    "reportedTotal": 21,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1891,8 +1876,8 @@
   {
     "job": "ted-MKD",
     "state": "reconciled",
-    "observations": 103,
-    "reportedTotal": 103,
+    "observations": 101,
+    "reportedTotal": 101,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1906,8 +1891,8 @@
   {
     "job": "ted-MDA",
     "state": "reconciled",
-    "observations": 26,
-    "reportedTotal": 26,
+    "observations": 28,
+    "reportedTotal": 28,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -1979,6 +1964,21 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
+    "job": "national-PL-open",
+    "state": "partial",
+    "observations": 10539,
+    "reportedTotal": 10494,
+    "error": "Polish inventory total changed after collection: 10494 -> 10539",
+    "limitations": [
+      "Broad public Board deadline search with no keyword or publication-year floor.",
+      "Publication-date partitions avoid the source result cap; source changes remain explicit coverage gaps.",
+      "Ten-record pages respect the 30 requests/minute limit; no-deadline and legacy sources are separate."
+    ],
+    "scopeWarnings": [],
+    "caps": [],
+    "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
+  },
+  {
     "job": "ted-AND",
     "state": "reconciled",
     "observations": 0,
@@ -2041,8 +2041,8 @@
   {
     "job": "ted-FRO",
     "state": "reconciled",
-    "observations": 1,
-    "reportedTotal": 1,
+    "observations": 2,
+    "reportedTotal": 2,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -2056,8 +2056,8 @@
   {
     "job": "ted-GRL",
     "state": "reconciled",
-    "observations": 1,
-    "reportedTotal": 1,
+    "observations": 2,
+    "reportedTotal": 2,
     "error": null,
     "limitations": [
       "Future deadline is discovery evidence, not confirmed bidding status.",
@@ -2071,8 +2071,8 @@
   {
     "job": "sedia-open",
     "state": "partial",
-    "observations": 929,
-    "reportedTotal": 929,
+    "observations": 933,
+    "reportedTotal": 933,
     "error": "Catalogue traversed but repeated identities prevent reconciliation",
     "limitations": [
       "Source-reported open procurement only; status requires detail verification.",
@@ -2083,15 +2083,15 @@
     "countScope": "Unclassified discovery observations; not the number of verified open space tenders"
   },
   {
-    "job": "national-PL-open",
+    "job": "national-ES-published",
     "state": "partial",
-    "observations": 11004,
-    "reportedTotal": 10961,
-    "error": "Polish inventory total changed after collection: 10961 -> 11004",
+    "observations": 16810,
+    "reportedTotal": 16810,
+    "error": "All visible pages traversed, but changing totals or repeated identities prevent reconciliation",
     "limitations": [
-      "Broad public Board deadline search with no keyword or publication-year floor.",
-      "Publication-date partitions avoid the source result cap; source changes remain explicit coverage gaps.",
-      "Ten-record pages respect the 30 requests/minute limit; no-deadline and legacy sources are separate."
+      "Public PLACSP published query without space or publication-date restrictions.",
+      "Published status and future deadline are discovery signals, not verified bid availability.",
+      "Regional-only and restricted opportunities remain separate."
     ],
     "scopeWarnings": [],
     "caps": [],
@@ -2100,8 +2100,8 @@
   {
     "job": "national-ES-deadline",
     "state": "partial",
-    "observations": 4380,
-    "reportedTotal": 9581,
+    "observations": 7180,
+    "reportedTotal": 9478,
     "error": "locator.textContent: Timeout 45000ms exceeded.",
     "limitations": [
       "Public PLACSP deadline query without space or publication-date restrictions.",
