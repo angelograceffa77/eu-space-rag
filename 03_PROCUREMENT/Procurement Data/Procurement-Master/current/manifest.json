@@ -1,41 +1,41 @@
 {
   "schemaVersion": 1,
-  "generation": "open-space-2026-11-23T15-01-42-060Z",
+  "generation": "open-space-2026-11-24T12-02-40-894Z",
   "datasetMode": "open-space-v1",
-  "asOf": "2026-11-23T15:01:42.060Z",
+  "asOf": "2026-11-24T12:02:40.894Z",
   "counts": {
-    "procurements": 166,
-    "lots": 34,
-    "sourceRecords": 230
+    "procurements": 167,
+    "lots": 35,
+    "sourceRecords": 228
   },
   "data": {
     "directory": "data",
-    "logicalRecords": 460,
+    "logicalRecords": 461,
     "recordTypes": {
-      "procurement": 166,
-      "lot": 34,
-      "awaiting_recheck": 30,
-      "source_record": 230
+      "procurement": 167,
+      "lot": 35,
+      "awaiting_recheck": 31,
+      "source_record": 228
     },
     "maxPartBytes": 262144,
     "partsCatalog": {
       "format": "json-array-catalog-v1",
-      "records": 70,
+      "records": 71,
       "parts": [
         {
           "file": "metadata/data.part-00001.json",
-          "sha256": "8c1776af9403a386f688d4f8558c97552694fdd2a21d44f60ed58a1d3093f7dd",
-          "records": 70,
-          "bytes": 11559
+          "sha256": "967d6b1485502f05529bc35f82b9a27bdbd64b62398b6b5a2db3caccbdfcd640",
+          "records": 71,
+          "bytes": 11725
         }
       ]
     }
   },
   "index": {
     "directory": "index",
-    "logicalRecords": 460,
+    "logicalRecords": 461,
     "recordTypes": {
-      "lookup": 460
+      "lookup": 461
     },
     "maxPartBytes": 262144,
     "partsCatalog": {
@@ -44,7 +44,7 @@
       "parts": [
         {
           "file": "metadata/index.part-00001.json",
-          "sha256": "7df71ce4507a9095a3b556c8070609e2e684aee0d9d4cd70551bd304b90bbcdc",
+          "sha256": "45bfd3e60a4147e78aa573f4e488f8cf6537412858e617cfb5006da146ca1aa7",
           "records": 1,
           "bytes": 168
         }
@@ -52,62 +52,62 @@
     }
   },
   "inputsFile": "inputs.json",
-  "inputsSha256": "8a25b947f05757a1d667e107639ab6e339f3dd1b985d6bf9af030a5ac574433c",
+  "inputsSha256": "567b8cc58effade23f3cf6ae33a515dfb93cc2c575476f9ca99819e6de8d11dd",
   "summary": {
-    "openProcurements": 166,
-    "openLots": 34,
-    "awaitingRecheck": 30,
+    "openProcurements": 167,
+    "openLots": 35,
+    "awaitingRecheck": 31,
     "byBuyer": {
       "БЛАГОДІЙНА ОРГАНІЗАЦІЯ «БЛАГОДІЙНИЙ ФОНД «ЕДС»": 1,
       "ДЕПАРТАМЕНТ З ПИТАНЬ ОБОРОННОЇ РОБОТИ, ЦИВІЛЬНОГО ЗАХИСТУ ТА ВЗАЄМОДІЇ З ПРАВООХОРОННИМИ ОРГАНАМИ ПОЛТАВСЬКОЇ ОБЛАСНОЇ ДЕРЖАВНОЇ АДМІНІСТРАЦІЇ": 1,
       "Макарівська селищна рада": 1,
       "Department for Science, Innovation & Technology": 3,
-      "Tecnologías y Servicios Agrarios S.A.,S.M.E., M.P., (TRAGSATEC)": 1,
       "Mace Dragados": 1,
       "Centre National d’Études Spatiales (CNES)": 6,
-      "EOESRI / UCA / UCA-DA - UNIVERSITE CLERMONT AUVERGNE": 1,
-      "MINARM / DGA / DOMN / S2A / PROD / DA-SE - Division achats - Sud-Est": 1,
       "EUMETSAT": 1,
       "Riigiside Sihtasutus": 2,
-      "European Space Agency": 122,
+      "EOESRI / UCA / UCA-DA - UNIVERSITE CLERMONT AUVERGNE": 1,
+      "MINARM / DGA / DOMN / S2A / PROD / DA-SE - Division achats - Sud-Est": 1,
+      "European Space Agency": 123,
       "Unknown": 1,
       "HAUS kehittämiskeskus Oy": 1,
       "Puolustusvoimien logistiikkalaitos": 1,
       "Österreichische Gesellschaft Großtrappenschutz (ÖGG)": 1,
       "European Defence Agency": 1,
+      "European Commission, DG DEFIS - Defence Industry and Space": 1,
       "МИНИСТЕРСТВО НА ЗЕМЕДЕЛИЕТО И ХРАНИТЕ": 1,
       "Department of Fisheries and Marine Research": 1,
       "European Union Agency for the Space Programme": 2,
       "Udenrigsministeriet": 1,
       "National Land Survey of Finland": 1,
       "Zentrum für Telematik e.V.": 2,
-      "Ministerium für Ländlichen Raum, Landwirtschaft und Heimat Baden-Württemberg": 1,
       "Stadt Gladbeck ZVST": 1,
       "Athens International Airport S.A.": 1,
       "Mbryonics Ltd": 1,
       "European Commission, DG JRC - Joint Research Centre": 3,
       "Przedsiębiorstwo Wodociągowo - Kanalizacyjne „Legionowo” Sp. z o.o": 1,
-      "Centrum Zasobów Cyberprzestrzeni Sił Zbrojnych": 1,
       "Instytut Chemii Bioorganicznej Polskiej Akademii Nauk, Poznańskie Centrum Superkomputerowo-Sieciowe": 1,
+      "Centrum Zasobów Cyberprzestrzeni Sił Zbrojnych": 1,
       "RETELE ELECTRICE ROMANIA S.A.": 1,
+      "Dirección de la Sociedad de Salvamento y Seguridad Marítima": 1,
       "European Commission, DG DEFIS - Defence Industry and Space | European Union Agency for the Space Programme": 1
     },
     "byCategory": {
-      "core_space": 122,
-      "downstream_space": 60,
-      "other_space_related": 63,
+      "core_space": 123,
+      "downstream_space": 58,
+      "other_space_related": 66,
       "dual_use_space_defence": 6
     },
     "categoriesOverlap": true
   },
   "coverage": {
     "status": "partial",
-    "candidateObservations": 163874,
-    "review": 599,
-    "excluded": 132,
+    "candidateObservations": 180373,
+    "review": 592,
+    "excluded": 133,
     "admissions": 15,
-    "discoveryInput": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-11-23-1795424495351\\discovery",
-    "qualificationArchive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\qualification\\open-space-2026-11-23T15-01-42-060Z",
+    "discoveryInput": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\daily-runs\\2026-11-24-1795510806157\\discovery",
+    "qualificationArchive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\qualification\\open-space-2026-11-24T12-02-40-894Z",
     "limitations": [
       "Only fresh identity-matched, parsed open bidding evidence is admitted. Other candidates remain outside this master.",
       "National portals and restricted agency systems have documented gaps; this is not exhaustive EU coverage.",
@@ -119,24 +119,24 @@
   "reconciliation": {
     "dailyRefresh": {
       "mode": "open-space-v1",
-      "sourceManifestSha256": "fd5ccc30fef16430d5809d0c3fd15e93072f788dfa4ce3d7fac197571139280f",
+      "sourceManifestSha256": "c10eed077dd69d2cc34a82101be93d8d652357c6b9d8db46bf52dcbe9d8176fa",
       "sourceCoverageCatalog": {
         "format": "json-array-catalog-v1",
         "records": 139,
         "parts": [
           {
             "file": "metadata/coverage.part-00001.json",
-            "sha256": "8052d92264a2462bc654c41b97118aa0b2327fbc5f4bd43fc30bcbac675591a1",
+            "sha256": "d2fc5373359c761af42fdf8eca1bb73fc98c945ee90eb1e329c8c142f7a4274c",
             "records": 139,
-            "bytes": 86149
+            "bytes": 85780
           }
         ]
       }
     }
   },
   "history": {
-    "newlyArchived": 7,
-    "archive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\historical-tenders\\open-space-2026-11-23T15-01-42-060Z\\records.jsonl",
+    "newlyArchived": 3,
+    "archive": "C:\\Users\\angel\\OneDrive\\Desktop\\knowledge\\03_PROCUREMENT\\Procurement Data\\open-only\\historical-tenders\\open-space-2026-11-24T12-02-40-894Z\\records.jsonl",
     "historicalBackfill": false
   },
   "validation": {
@@ -144,20 +144,20 @@
     "companyMatchEvidenceVerified": true,
     "openLifecycleVerified": true,
     "publicationAllowed": true,
-    "pendingPreviouslyOpen": 30,
+    "pendingPreviouslyOpen": 31,
     "awaitingRecheckPolicy": {
       "enabled": true,
       "smallListAllowance": 1,
       "policy": "User approved 3 November 2026: no numerical or percentage limit on awaiting-recheck records. Keep pending separate from verified-open, recheck daily and preserve evidence. All other integrity, relevance, freshness and publication checks remain required.",
       "unlimited": true
     },
-    "trackedPreviously": 191
+    "trackedPreviously": 196
   },
   "companyMatching": {
     "verifiedIdentityProfiles": 1,
     "verifiedAwardLinks": 10,
     "profilesWithSourceDescriptionCapabilities": 9046,
-    "enrichedProfiles": 529,
+    "enrichedProfiles": 537,
     "staleEnrichmentProfiles": 16,
     "inputRows": 19882,
     "profiles": 19881,
@@ -178,8 +178,8 @@
   },
   "publication": {
     "metadataFormat": "json-array-catalog-v1",
-    "originalManifestSha256": "7a0df9f8b4752678884f8a521e57135126631b77c3a61b45f78bf10fbb7e1570",
-    "originalInputsSha256": "0b1415b56b95107dfb18558f107acd6bb9b521f42f3637ea36c4ef5c148e0b58",
+    "originalManifestSha256": "43574d7646271fd541a9114bcd78ca79fe8e890cf1ab006b47d6b4b10fa04542",
+    "originalInputsSha256": "233aa31a6e077e8eb5b5aada2de6668ab60de4fbc1714423419eab36d3720d34",
     "instructions": "Read data.partsCatalog and index.partsCatalog referenced JSON arrays to obtain every part. inputsFile is a catalog of unchanged input metadata. Verify each catalog part checksum. Source records remain unchanged."
   }
 }
