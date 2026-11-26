@@ -5,7 +5,7 @@ async function recover({state,day,root,writeState}){
  const original=path.join(state.runDir,'discovery'),id='national-GL-BusinessInGreenland-current',f=path.join(original,id,'state.json');
  if(!fs.existsSync(path.join(original,'candidates/manifest.json'))||!fs.existsSync(f))return original;
  const old=JSON.parse(fs.readFileSync(f));
- if(old.error!=='Greenland current inventory pagination/count requires qualification'||old.total!==null||old.pages.length!==0)return original;
+ if(!['Greenland current inventory pagination/count requires qualification','Greenland listing and current-search totals differ'].includes(old.error)||old.total!==null||old.pages.length!==0)return original;
  // Exported evidence is immutable. Collect only the failed source into a new
  // snapshot and assemble same-day sources with their original signed hashes.
  const repair=path.join(state.runDir,'greenland-pagination-recovery'),output=path.join(state.runDir,'discovery-paginated');
